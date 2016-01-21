@@ -29,6 +29,8 @@ class NavegacionConfig {
     protected $sitio_titulo = 'IMPLAN Torreón';
     protected $logotipo     = 'imagenes/implan-barra-logo-chico-gris.png';
     protected $opciones     = array(
+        'Categorías'          => 'categorias/index.html',
+        'Autores'             => 'autores/index.html',
         'Análisis Publicados' => 'blog/index.html',
         'Indicadores' => array(
             'Indicadores > Introducción al S.M.I.'    => 'smi/introduccion.html',
@@ -67,6 +69,8 @@ class NavegacionConfig {
             'Contacto > Medios de contacto'        => 'contacto/contacto.html',
             'Contacto > Comentarios y Sugerencias' => 'http://trcimplan.mx/comentariossugerencias'));
     static public $iconos = array(
+        'Categorías'                      => 'fa fa-tags',
+        'Autores'                         => 'fa fa-user',
         'Análisis Publicados'             => 'fa fa-lightbulb-o',
         'Indicadores'                     => 'fa fa-area-chart',
             'Introducción al S.M.I.'      => 'fa fa-file-text-o',
