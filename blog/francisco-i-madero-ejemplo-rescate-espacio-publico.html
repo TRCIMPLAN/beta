@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Corredor Peatonal Madero ha motivado el crecimiento comercial y favorecido la conservación sus edificios históricos, en lo que hoy es una calle sólo para transeúntes.">
+  <meta name="author" content="Arq. Ángeles Melisa Rodríguez Salas">
+  <meta name="keywords" content="IMPLAN, Torreon">
+  <title>Francisco I. Madero: Ejemplo de un rescate de Espacio Público - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+<!-- Completo: publicación es esquema -->
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="encabezado">
+          <h1 itemprop="name">Francisco I. Madero: Ejemplo de un rescate de Espacio Público</h1>
+          <div class="encabezado-descripcion" itemprop="description">El Corredor Peatonal Madero ha motivado el crecimiento comercial y favorecido la conservación sus edificios históricos, en lo que hoy es una calle sólo para transeúntes.</div>
+                <div class="encabezado-autor-fecha">
+          Por <span itemprop="author">Arq. Ángeles Melisa Rodríguez Salas</span>
+          - <meta itemprop="datePublished" content="2015-04-21T15:25">21/04/2015 15:25
+        </div>
+        </div>
+        <meta itemprop="image" alt="Francisco I. Madero: Ejemplo de un rescate de Espacio Público" src="francisco-i-madero-ejemplo-rescate-espacio-publico/imagen.jpg">
+              <div itemprop="articleBody">
+        <blockquote>
+  <p>Espacio público rescatado o intervenido: se refiere a un espacio público que presentaba deterioro físico, abandono o inseguridad y que al ser intervenido con obras de mejoramiento físico y acciones para la participación social y la seguridad comunitaria, desarrolla condiciones físicas y sociales que son favorables.</p>
+  
+  <p>Martes 30 de diciembre de 2014</p>
+  
+  <p>DIARIO OFICIAL DE LA FEDERACIÓN</p>
+</blockquote>
+
+<div style="clear:left;"></div>
+
+<p><img class="img-responsive" src="francisco-i-madero-ejemplo-rescate-espacio-publico/calle-madero-cortesia-itinerario.jpg" alt="Calle Madero Cortesia Itinerario"></p>
+
+<p>El abandono progresivo de zonas habitacionales en los centros urbanos, conjuntamente a la necesidad de mayores recursos para lograr satisfacer las necesidades en espacios suburbanos, han desencadenado por el crecimiento de las ciudades de forma periférica, en la reducción de la concentración de la población y densificación en sus áreas centrales.</p>
+
+<p>Por lo que, en respuesta a este contexto se necesitan acciones para promover la re-densificación y compactación de las ciudades, además de ofrecer calles incluyentes y seguras para todos sus usuarios, de esa forma lograr las condiciones necesarias para que la movilidad urbana, genere mejor calidad de vida para sus ocupantes dotándolos de una mejor infraestructura y servicios urbanos..</p>
+
+<p>El Programa Sectorial de Desarrollo Agrario, Territorial y Urbano del Gobierno Federal, considera en su objetivo 3 “Consolidar ciudades compactas, productivas, competitivas, incluyentes y sustentables, que faciliten la movilidad y eleven la calidad de vida de sus habitantes.” La estrategia 3.3. “Promover la mejora de la infraestructura, equipamiento, servicios, espacios y movilidad en coordinación con gobiernos estatales y municipales.” Y la línea de acción 5 “Fortalecer el tejido social y la seguridad de las comunidades mediante el rescate de espacios públicos en condiciones de deterioro o abandono”.</p>
+
+<p>Estos objetivos se han materializado en rescates de espacios públicos, de los cuales la peatonalización y regeneración de la calle Francisco I Madero en la Ciudad de México nos ejemplifica estrategias exitosas de como aplicar estas acciones para formar sentido de pertenencia no solo en sus usuarios si no en los visitantes a la Ciudad.(1)</p>
+
+<p>Conforme transcurre la vida de las ciudades, van permaneciendo edificaciones que marcan la historia y la memoria de lo ocurrido en los lugares donde se encuentran, es por eso, que debemos conservarlos y cuidarlos para estar relacionados, ya que nos cuentan la historia de nuestra vida personal y comunitaria; además son la base de la cultura actual y la identidad de una ciudad.</p>
+
+<p><img class="img-responsive" src="francisco-i-madero-ejemplo-rescate-espacio-publico/calle-madero-cortesia-bici-tando-la-ciudad-de-mexico.jpg" alt="Calle Madero Cortesia Bici-Tando la Ciudad de Mexico"></p>
+
+<p>La calle Madero es una de las calles más antiguas e importantes de la ciudad, desde tiempos anteriores ha presenciado un sinfín de acontecimientos que han marcado parte de la historia de la ciudad y del país, desde los desfiles realizados por personajes históricos importantes de la historia de México, así como ha sido testigo de diferentes expresiones sociales y políticas. Además ha sido uno de los principales conectores entre dos lugares muy importantes del Centro Histórico, el Zócalo y la Alameda Central.</p>
+
+<p>Hoy en día, es cuna de diferentes comercios los cuales se han beneficiado de esta privilegiada ubicación, ya que, al caminar por ella podemos encontrar diferentes negocios que han sostenido la economía del lugar, desde reconocidos restaurantes, grandes hoteles, joyerías, cafés, hasta museos y tiendas de ropa de moda, lo que ofrece al paseante una diversidad comercial al caminar por el lugar. Además de que cuenta con muchas edificaciones con gran valor arquitectónico.</p>
+
+<p>El proyecto de regeneración de la Calle Madero se da por la necesidad de los transeúntes que recorren la calle a diario en la Ciudad, con todas las diferentes actividades que se realizan en el lugar; a partir de lo cual el Gobierno, se generó el proyecto para mejorar la experiencia urbana; así como mejorar la calidad de vida de los que recorren el centro de la Ciudad de México. Uno de los principales objetivos es el de llevar la experiencia de caminar por las calles de la ciudad de forma placentera además de fomentar las interacciones entre las personas, apreciar el arte y las formas arquitectónicas del lugar; ya que el flujo vehicular había mermado la visibilidad de su valor físico y arquitectónico, lo que provocaba la poca apreciación del mismo, además del riesgo que propiciaban a los peatones.</p>
+
+<p>Por lo anterior en el año 2009 se dio la iniciativa de realizar dicho proyecto con impulso de la conmemoración del día del peatón, que formaba parte del rescate de este eje olvidado.</p>
+
+<p>En base a las modalidades previstas en las reglas de operación del programa federal <a href="http://www.sedatu.gob.mx/sraweb/datastore/programas/2015/rescate_espacios_publicos/RO_PREP_2015_DOF.pdf">Rescate de Espacios Públicos 2015</a> (2) respecto a el mejoramiento físico de los espacios públicos, se prevé  la construcción, ampliación, habilitación o rehabilitación de los espacios públicos de uso comunitario con sentido de equidad e inclusión laboral, que se refleja en hacer peatonal la zona, lo cual es el caso del <a href="http://mexicodesignnet.com/download/6/">Corredor Peatonal Madero</a> la cual,es una de las calles más transitadas. (3)</p>
+
+<p>El programa previó el cierre de la calle para que los peatones pudieran recorrer estos espacios de calidad y fueran incluyentes para la sociedad, el cual comenzó de forma progresiva ya que al  principio se comenzó con la clausura solo los fines de semana, lo que hacía que los habitantes, locatarios, trabajadores y peatones se adaptaran al cambio, y así poder disfrutar de los beneficios que traería consigo el proceso, considerando que el éxito del mismo dependía de la apropiación del proyecto por tanto del consentimiento de sus habitantes. Conjuntamente, se realizó permitiendo el paso solo a algunos vehículos para el abastecimiento de los locales que se encuentran en la zona.</p>
+
+<p>La segunda acción fue la construcción y mejoramiento del alumbrado público deficiente o inexistente en la área, en la cual se sustituyó alrededor de <a href="http://www.jornada.unam.mx/2010/10/19/capital/037n1cap">100 lamparas modelo 1900</a> por lámparas especiales, que generó una calle iluminada, especialmente para el peatón y no para el automóvil,  lo cual propla vida nocturna en un entorno. seguro</p>
+
+<p>Cabe destacar que el alumbrado público fue acorde a la arquitectura de forma imponente para su apreciación.</p>
+
+<p>La rehabilitación del mobiliario urbano para el correcto funcionamiento del espacio, forma también parte del proyecto, por lo cual se implementaron diferentes equipamientos para la comodidad y servicio de los usuarios desde luminaria propia para sus corredores, bancas, así como los necesarios botes de basura; las fachadas, así como la colocación de piezas de mármol.</p>
+
+<p>Se cuenta con un sistema de bolardos retractiles para el paso permitido a vehículos de seguridad y emergencia  para garantizar la acción inmediata a problemas que se presenten. Además de contar con reductores de velocidad en los cruces.</p>
+
+<p><img class="img-responsive" src="francisco-i-madero-ejemplo-rescate-espacio-publico/la-vida-en-madero-cortesia-liliana-a.jpg" alt="La Vida en Madero Cortesia Liliana A"></p>
+
+<p>Por último, el mejoramiento de los accesos haciéndolos seguros para los peatones y ciclistas por medio del mejoramiento y dotación de señalética y semáforos en los cruces, además de el cierre de la calle para la comodidad de los transeúntes, los cuales transitan sin ninguna clase de peligro ni obstáculos que permitan disfrutar su trayecto, además de contar con diferentes comercios para poder satisfacer sus necesidades, desde ir a comprar ropa, descansar o comer un helado, lo que hace de éste recorrido una gran experiencia.</p>
+
+<p>Se invita a la gente a participar en diferentes actividades no solo comerciales si no también físicas para los corredores, y culturales, en las cuales los diferentes artistas urbanos que interpretan personajes como magos, malabaristas o estatuas vivientes invaden la calle, los visitantes pueden ir a ver diferentes danzas, escuchar música, disfrutar del teatro y cine para que, desde jóvenes hasta adultos mayores pueden encontrar actividades para ellos, lo cual mezclado con el entorno arquitectónico renovadogenera la posibilidad a la sociedad de apropiarse de este espacio.</p>
+
+<p>Actualmente transitan la zona, en promedio, 120 mil personas a diario y los fines de semana 200 mil de acuerdo a <a href="http://www.eluniversal.com.mx/ciudad-metropoli/2014/impreso/madero-peatonal-una-historia-de-exito-121607.html">Felipe Leal</a> (4). Esto muestra el éxito, de proyectos basados en las necesidades de la población, además de fomentar el desarrollo económico y social de la zona ya de por si transitada y comercial, detonando su potencial con simples acciones.</p>
+
+<p>La respuesta ciudadana es algo que todo proyecto debe de contemplar para saber si el proyecto será benéfico para la sociedad, lo cual en este caso se ha manifestado a través de redes sociales mediante comentarios positivos sobre el corredor.</p>
+
+<p><img class="img-responsive" src="francisco-i-madero-ejemplo-rescate-espacio-publico/nieve-artificial-en-madero-cortesia-roberto-p.jpg" alt="Nieve Artificial en Madero Cortesia Roberto P"></p>
+
+<p>El rescate del Corredor Madero nos invita a todos los ciudadanos a la reflexión, el análisis y la aplicación de acciones que han mostrado su efectividad; como en este espacio tan importante para la Ciudad de México y del cual tenemos mucho que aprender.</p>
+
+<h3>Referencias</h3>
+
+<ol>
+<li><a href="http://www.sedatu.gob.mx/sraweb/datastore/programas/2015/rescate_espacios_publicos/RO_PREP_2015_DOF.pdf">Rescate de Espacios Públicos 2015</a></li>
+<li><a href="http://www.sedatu.gob.mx/sraweb/datastore/programas/2015/rescate_espacios_publicos/RO_PREP_2015_DOF.pdf">Reglas de Operación, Programa de Espacios Públicos. DECIMA SECCIÓN/ SECRETARÍA DE DESARROLLO AGRARIO, TERRITORIAL Y URBANO - 3.4. Modalidades del Programa- Artículo 8.</a></li>
+<li><a href="http://mexicodesignnet.com/download/6/">Corredor Peatonal Madero</a></li>
+<li><a href="http://www.eluniversal.com.mx/ciudad-metropoli/2014/impreso/madero-peatonal-una-historia-de-exito-121607.html">El Universal - Madero peatonal una historia de éxito</a></li>
+</ol>
+
+        </div>
+      </div></article>
+<div class="contenido-social">
+  <h5>Compartir en Redes Sociales</h5>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
+  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Fblog%2Ffrancisco-i-madero-ejemplo-rescate-espacio-publico.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+</div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+
+</script>
+<script>
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

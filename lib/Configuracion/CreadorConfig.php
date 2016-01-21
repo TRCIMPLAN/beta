@@ -30,6 +30,7 @@ class CreadorConfig {
 
     // Rutas a las clases de ImprentaPublicaciones
     public $imprentas = array(
+        '\Blog\Imprenta',
         '\Contacto\Imprenta',
         '\Institucional\Imprenta',
         '\PreguntasFrecuentes\Imprenta',

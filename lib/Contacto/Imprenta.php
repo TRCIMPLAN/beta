@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * TrcIMPLAN Sitio Web - Contacto Imprenta
  *
  * Copyright (C) 2014 IMPLAN Torreón
@@ -19,7 +19,6 @@
  *
  */
 
-// Namespace
 namespace Contacto;
 
 /**

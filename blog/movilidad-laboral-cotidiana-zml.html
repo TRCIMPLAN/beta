@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Población ocupada que tiene trabajo en su PROPIO municipio y que tiene trabajo en OTRO Municipio de la Zona Metropolitana de la Laguna.">
+  <meta name="author" content="Lic. Luis A. Gutiérrez Arizpe">
+  <meta name="keywords" content="IMPLAN, Torreon, Poblacion, Ocupada, Trabajo, Municipio, La Laguna">
+  <title>Movilidad laboral cotidiana en la ZML - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+<!-- Completo: publicación es esquema -->
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="encabezado">
+          <h1 itemprop="name">Movilidad laboral cotidiana en la ZML</h1>
+          <div class="encabezado-descripcion" itemprop="description">Población ocupada que tiene trabajo en su PROPIO municipio y que tiene trabajo en OTRO Municipio de la Zona Metropolitana de la Laguna.</div>
+                <div class="encabezado-autor-fecha">
+          Por <span itemprop="author">Lic. Luis A. Gutiérrez Arizpe</span>
+          - <meta itemprop="datePublished" content="2014-08-06T08:05">06/08/2014 08:05
+        </div>
+        </div>
+        <meta itemprop="image" alt="Movilidad laboral cotidiana en la ZML" src="movilidad-laboral-cotidiana-zml/imagen.jpg">
+              <div itemprop="articleBody">
+        
+<p>En una zona metropolitana en donde los límites municipales son divisiones imaginarias, en términos prácticos, para las necesidades de la población el traslado de una ciudad a otra es una realidad.</p>
+
+<p>En cuestiones como la vivienda, el trabajo, el consumo, la educación y la oferta cultural, entre otras, analizar el flujo de personas de un municipio a otro se vuelve trascendental para comprender la dinámica metropolitana e indispensable para el diseño de políticas públicas eficientes. La movilidad cotidiana contempla la frecuencia de los traslados y en esta entrega analizaremos la movilidad con motivos laborales, que junto con las cuestiones educacionales abarca una gran parte de los viajes intermunicipales diarios propiciando fallas en los flujos de los sistemas viales en horas específicas (horas pico), sobretodo de las avenidas principales y zonas focalizadas de los municipios.</p>
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/01-poblacion-ocupada.png" alt="Población Ocupada">
+
+<p>Cada municipio de la ZML tiene características particulares que aportan a la totalidad del conjunto metropolitano y que definen a la Comarca Lagunera. Esta no puede desarrollarse sin un trabajo conjunto y coordinado. La movilidad es una parte esencial del flujo dinámico de las zonas metropolitanas, por lo cual la interconexión de las zonas residenciales, comerciales e industriales que la integran debe partir de un enfoque integral, es decir, considerando las necesidades del todo, no solo de sus partes.</p>
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/02-ubicacion-zml.png" alt="Ubicación de la Zona Metropolitana de la Laguna">
+
+<p>El desarrollo urbano de la ZML influye en los flujos dinámicos, desde la ubicación de los polos de desarrollo en los municipios de Torreón y Gómez Palacio, hasta la conectividad que proporciona el diseño de las vialidades principales.</p>
+
+<h3>Población Ocupada que tiene Trabajo en su Propio Municipio y Población Ocupada que tiene Trabajo en Otro Municipio de la ZML</h3>
+
+<p>¿Cuántas personas con trabajo tienen que trasladarse de su municipio de residencia a otro? La siguiente tabla nos clarifica en números, para después trabajar en porcentajes:</p>
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/03-tabla.png" alt="Tabla">
+
+<p>Los indicadores que muestran la proporción de la "Población Ocupada que tiene Trabajo en su Propio Municipio y que tiene Trabajo en Otro Municipio de la ZML" señalan una dinámica intermunicipal en vivienda y trabajo.</p>
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/04-poblacion-ocupada-en-otro-en-su.png" alt="Población ocupada en su propio y en otro municipio">
+
+<p>La excepción es Torreón con 4.2% de sus habitantes con la necesidad de trasladarse a algún municipio vecino para trabajar. Gómez Palacio con el 12% de su población ocupada tiene la necesidad de traslado, casi tres veces más que Torreón.</p>
+
+<p>De los porcentajes anteriores, es indispensable conocer cuantas personas se trasladan de un municipio a otro y a cual municipio en específico para determinar la influencia de la colindancia entre los municipios.</p>
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/05-poblacion-matamoros-en-otro.png" alt="Población de Matamoros ocupada en otro municipio">
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/06-poblacion-torreon-en-otro.png" alt="Población de Torreón ocupada en otro municipio">
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/07-poblacion-gomez-palacion-en-otro.png" alt="Población de Gómez Palacio ocupada en otro municipio">
+
+<img class="img-responsive contenido-imagen" src="movilidad-laboral-cotidiana-zml/08-poblacion-lerdo-en-otro.png" alt="Población de Lerdo ocupada en otro municipio">
+
+<p>La cantidad de matamorenses que trabajan en Torreón es abrumadoramente mayor que en cualquier otro municipio. El 95% que representan 7,073 personas.</p>
+
+<p>Gómez Palacio recibe 310 matamorenses, 4,955 torreonenses y 6,727 lerdenses. Torreón aporta trabajo para 7,073 matamorenses, 6,428 gomezpalatinos y 3,727 lerdenses.</p>
+
+<h3>Población ocupada que trabaja en otro municipio que NO forma parte de la ZML</h3>
+
+<p>Un dato importante es la cantidad de gomezpalatinos y torreonenses que trabajan en otros municipios que no forman parte de la ZML, ambos cercanos al 40%: Torreón con un 39.5% y Gómez Palacio con 40%, este fenómeno podría ser debido a la relevancia de ambas ciudades, que a pesar de no ser capitales, sus características económicas, demográficas y políticas obligan a que se tenga una relación en diferentes planos con las capitales de los estados, con otras ciudades importantes del país (sobre todo de la zona norte), con la capital de la República, e incluso con el extranjero.</p>
+
+<p>El caso de Lerdo es contrastante ya que a pesar de tener un porcentaje considerable de población trabajando fuera de la ZML, la extensión de su territorio y la dispersión de sus localidades trasciende mas allá de la ZML ya sea para trabajo en zonas rurales o urbanas, como la ZM de Durango. Para Matamoros la población que trabaja fuera de su municipio y fuera de la ZML es mínima: 0.2%, es decir, la oferta de trabajo para sus habitantes se limita a lo que el propio municipio puede generar y lo que Torreón oferte.</p>
+
+<p>La proporción de personas que trabajan y viven en el mismo municipio, a excepción de Torreón, muestra que ningún municipio de la ZML tiene la capacidad de ofrecer fuentes de trabajo a la totalidad de su población, lo cual se compensa con la interacción entre las demás ciudades de la ZML.</p>
+
+<p>Observamos que Torreón, al situarse en la zona céntrica de la ZML beneficia a los municipios colindantes, destacando una proporción más alta de migración laboral cotidiana en relación a la ubicación más cercana o más lejana de Torreón. Lerdo al ubicarse a mayor distancia tiene un mayor porcentaje de población ocupada que trabaja en otro municipio, similar a Matamoros, aunque más acentuada.</p>
+
+<p>De los porcentajes de la población ocupada que tienen la necesidad de trasladarse habrá que considerar a las personas que se trasladan a otros municipios que no forman parte de la ZML. Estos traslados son más largos y pueden realizarse partiendo de las Centrales de Autobuses, el Aeropuerto, las rutas suburbanas de transporte público, o en vehículo propio, y considerar también que no necesariamente se realizan todos los días laborales.</p>
+
+        </div>
+      </div></article>
+<div class="contenido-social">
+  <h5>Compartir en Redes Sociales</h5>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
+  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Fblog%2Fmovilidad-laboral-cotidiana-zml.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+</div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+
+</script>
+<script>
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

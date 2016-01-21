@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estudio sobre si debe considerarse la cantidad de alumnos por profesor como un factor en la mejora educativa.">
+  <meta name="author" content="Lic. Luis A. Gutiérrez Arizpe">
+  <meta name="keywords" content="IMPLAN, Torreon, Alumnos, Docente, Educacion">
+  <title>Alumnos por docente, indicador clave para la mejora de la educación (parte 2) - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+<!-- Completo: publicación es esquema -->
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="encabezado">
+          <h1 itemprop="name">Alumnos por docente, indicador clave para la mejora de la educación (parte 2)</h1>
+          <div class="encabezado-descripcion" itemprop="description">Estudio sobre si debe considerarse la cantidad de alumnos por profesor como un factor en la mejora educativa.</div>
+                <div class="encabezado-autor-fecha">
+          Por <span itemprop="author">Lic. Luis A. Gutiérrez Arizpe</span>
+          - <meta itemprop="datePublished" content="2015-07-15T16:10">15/07/2015 16:10
+        </div>
+        </div>
+        <meta itemprop="image" alt="Alumnos por docente, indicador clave para la mejora de la educación (parte 2)" src="alumnos-por-docente-parte-2/imagen.jpg">
+              <div itemprop="articleBody">
+        <p>Alumnos por docente, indicador clave para la mejora de la educación. Segunda parte.</p>
+
+<p>En esta segunda parte se repite el <a href="alumnos-por-docente-parte-1.html">ejercicio anterior</a> con la finalidad de determinar si se cumple la premisa que dice: a menor cantidad de alumnos por maestro, mejor educación. Tomando como parámetro el ranking  2013-2014 de Mejora tu Escuela.</p>
+
+<p>Mejora tu escuela es un proyecto elaborado por el Instituto Mexicano para la Competitividad en el cual, basándose en los resultados de la prueba ENLACE para la educación primaria, genera un semáforo educativo (excelente, bien, de panzazo y reprobado) y un ranking anual. A continuación se muestra el ranking de las escuelas que presentaron la prueba en el estado de Coahuila y el indicador de alumnos por maestro, para posteriormente analizar las estadísticas obtenidas para el municipio de Torreón.</p>
+
+<div style="clear:left;"></div>
+
+<h3>Top 10 Mejora tu Escuela en Coahuila</h3>
+
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+  <th align="right">Posición</th>
+  <th>Mantenimiento</th>
+  <th>Ubicación</th>
+  <th>Nombre</th>
+  <th align="right">Alumnos por docente</th>
+  <th>Ámbito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right">1</td>
+  <td>Privada</td>
+  <td>Castaños</td>
+  <td>Inmagusa</td>
+  <td align="right">17.350</td>
+  <td>rural</td>
+</tr>
+<tr>
+  <td align="right">2</td>
+  <td>Pública</td>
+  <td>Acuña</td>
+  <td>Club Rotario</td>
+  <td align="right">31.000</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">3</td>
+  <td>Privada</td>
+  <td>Sabinas</td>
+  <td>Colegio Modelo</td>
+  <td align="right">16.540</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">4</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Cervantes</td>
+  <td align="right">18.360</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">5</td>
+  <td>Privada</td>
+  <td>Sabinas</td>
+  <td>Montessori</td>
+  <td align="right">10.400</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">6</td>
+  <td>Pública</td>
+  <td>Sabinas</td>
+  <td>Club de Leones</td>
+  <td align="right">19.360</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">7</td>
+  <td>Privada</td>
+  <td>Ramos Arizpe</td>
+  <td>Cosmo</td>
+  <td align="right">9.750</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">8</td>
+  <td>Privada</td>
+  <td>Saltillo</td>
+  <td>Liceo Freinet</td>
+  <td align="right">16.430</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">9</td>
+  <td>Pública</td>
+  <td>Sabinas</td>
+  <td>Venustiano Carranza</td>
+  <td align="right">21.000</td>
+  <td>rural</td>
+</tr>
+<tr>
+  <td align="right">10</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Col. San Luis</td>
+  <td align="right">24.160</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right"></td>
+  <td></td>
+  <td></td>
+  <td>Promedio de alumnos por docentes</td>
+  <td align="right">18.435</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+<p>De las diez escuelas mejor rankeadas en el estado, siete son de financiamiento privado y tres de recursos públicos, a la inversa del ranking nacional, en donde siete son públicas y tres privadas. El 40% se ubican en el municipio de Sabinas, un 20% en Torreón, y el resto en partes iguales en  Saltillo, Ramos Arizpe, Acuña y Castaños. Ocho se encuentran en zonas urbanas y dos en rurales.</p>
+
+<p>El promedio de alumnos por maestro coincide con el dato de los primeros diez nacionales: 18.4</p>
+
+<p>Destaca la escuela que ocupa el primer lugar, al ser un instituto financiado con recursos privados, pero ubicada en una zona rural, la escuela Inmagusa, del municipio de Castaños con 17.4 alumnos por maestro, cifra por debajo del indicador de Corea del Sur (17.9 en 2012).</p>
+
+<p>Otro dato que otorga elementos para profundizar el análisis surge al separar las escuelas por tipo de financiamiento:</p>
+
+<p>En Coahuila, las siete escuelas privadas cuentan en promedio con 16.1 alumnos por maestro (con un rango entre 9.75 a 24.6 alumnos), mientras que las públicas con 23.8(con rango entre 19.4 a 31 alumnos). A nivel nacional; de las tres privadas en el top 10, promedian 23.4 alumnos y en las tres públicas restantes promedian 16.3.</p>
+
+<h3>Top 10 Mejora tu Escuela en Torreón</h3>
+
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+  <th align="right">Posición</th>
+  <th>Mantenimiento</th>
+  <th>Ubicación</th>
+  <th>Nombre</th>
+  <th align="right">Alumnos por docente</th>
+  <th>Ámbito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right">1</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Cervantes</td>
+  <td align="right">18.360</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">2</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Col. San Luis</td>
+  <td align="right">24.160</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">3</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>C.E. María Montessori</td>
+  <td align="right">11.830</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">4</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Colegio Alemán</td>
+  <td align="right">43.250</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">5</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Prof. Eliseo Mendoza Berrueto</td>
+  <td align="right">20.830</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">6</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Colegio Americano Torreón</td>
+  <td align="right">51.180</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">7</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Nueva Laguna</td>
+  <td align="right">43.660</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">8</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Fco. De Toledo</td>
+  <td align="right">31.330</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">9</td>
+  <td>Privada</td>
+  <td>Torreón</td>
+  <td>Colegio Torreón</td>
+  <td align="right">11.830</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right">10</td>
+  <td>Pública</td>
+  <td>Torreón</td>
+  <td>González Ortega</td>
+  <td align="right">26.830</td>
+  <td>urbana</td>
+</tr>
+<tr>
+  <td align="right"></td>
+  <td></td>
+  <td></td>
+  <td>Promedio de alumnos por docentes</td>
+  <td align="right">25.643</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+<p>El promedio de alumnos por docente para las diez escuelas torreonenses mejor ubicadas en el ranking se encuentra 18.1% por encima del promedio del top 10 de Coahuila y del país. 25.6 alumnos por docente en Torreón contra 18.4 de las top 10 de Coahuila y de México.</p>
+
+<p>Destaca el hecho de que las escuelas del ranking para Torreón se encuentran en el <a href="http://www.trcimplan.gob.mx/indicadores-torreon/sustentabilidad-area-no-urbanizada.html">área urbana</a>  y considerando el promedio del indicador para escuelas en zonas urbanas del top 10 nacional y estatal (23.4 y 18.25 respectivamente) se encuentra por encima en el comparativo. El Colegio Cervantes (18.4) se encuentra entre los primeros cinco del Estado, con un dato igual al promedio del top 10 estatal de 18.4 alumnos por cada docente frente a grupo. El Colegio San Luis, consiguió entrar al top 10 estatal, con el indicador ligeramente inferior al promedio de los top 10 de Torreón.</p>
+
+<p>Encontramos una relación entre la cantidad de alumnos que un maestro atiende y la ubicación en el ranking, aunque se debe de considerar a los factores que hacen que el número aumente o disminuya, entre estos factores es la ubicación de la escuela en zonas densamente pobladas. La escuela Niños de México en Ciudad de México cuenta con 34.3 alumnos por maestro, la mejor escuela primaria posicionada en el ranking nacional durante el ciclo 2013-2014.</p>
+
+<p>Niños de México se ubica en un sector de la Ciudad de México en donde un análisis alrededor de la ubicación del plantel arroja que dentro de un radio de 1 kilómetro habitan 40,860 personas. El Colegio Cervantes, con su dato de 18.36 alumnos por docente, se ubica en un sector de la ciudad de Torreón con 28,852 habitantes en un radio de un kilómetro alrededor del plantel ubicado en la Calzada Vasconcelos. Por lo que hipotéticamente  el Colegio Cervantes podría aumentar a 24.2 alumnos por docente sin que afecte su desempeño en el ranking, de acuerdo al comparativo con Niños de México entre el indicador, la ubicación y la población.</p>
+
+<h3>Institución: Niños de México (Primaria)</h3>
+
+<p><img class="img-responsive" src="alumnos-por-docente-parte-2/mapa-ninos-de-mexico.jpg" alt="Mapa Primaria Niños de México"></p>
+
+<ul>
+<li><strong>Ubicación:</strong> Urbano. Zacatecas 154, Cuauhtémoc, México, D.F.</li>
+<li><strong>Financiamiento:</strong> Privado</li>
+<li><strong>Ranking:</strong> 1er nacional</li>
+<li><strong>Alumnos por docente:</strong> 34.28</li>
+<li><strong>Población en polígono:</strong> 40,860 hab.</li>
+</ul>
+
+<p><em>Inventario Nacional de Vivienda. INEGI 2010.</em></p>
+
+<h3>Institución: Colegio Cervantes (Primaria)</h3>
+
+<p><img class="img-responsive" src="alumnos-por-docente-parte-2/mapa-colegio-cervantes-torreon.jpg" alt="Mapa Colegio Cervantes en Torreon Coahuila"></p>
+
+<ul>
+<li><strong>Ubicación:</strong> Urbano. Vasconcelos 545, Torreón, Coahuila.</li>
+<li><strong>Financiamiento:</strong> Privado</li>
+<li><strong>Ranking:</strong> 1er Torreón, 4to. Coahuila</li>
+<li><strong>Alumnos por docente:</strong> 18.36</li>
+<li><strong>Población en polígono:</strong> 28,852 hab.</li>
+</ul>
+
+<p><em>Inventario Nacional de Vivienda. INEGI 2010.</em></p>
+
+<h3>Compilación de datos</h3>
+
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+  <th>Grupo</th>
+  <th align="right">Alumnos por docente</th>
+  <th align="right">Ubicación: Urbana</th>
+  <th align="right">Ubicación: Rural</th>
+  <th align="right">Financiamiento: Privado</th>
+  <th align="right">Financiamiento: Público</th>
+  <th align="right">Año:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Top10 Nacional</td>
+  <td align="right">18.4</td>
+  <td align="right">30%</td>
+  <td align="right">70%</td>
+  <td align="right">30%</td>
+  <td align="right">70%</td>
+  <td align="right">2014</td>
+</tr>
+<tr>
+  <td>Top10 Coahuila</td>
+  <td align="right">18.4</td>
+  <td align="right">80%</td>
+  <td align="right">20%</td>
+  <td align="right">70%</td>
+  <td align="right">30%</td>
+  <td align="right">2014</td>
+</tr>
+<tr>
+  <td>Top10 Torreón</td>
+  <td align="right">25.6</td>
+  <td align="right">100%</td>
+  <td align="right">0%</td>
+  <td align="right">90%</td>
+  <td align="right">10%</td>
+  <td align="right">2014</td>
+</tr>
+<tr>
+  <td>Corea del Sur</td>
+  <td align="right">17.9</td>
+  <td align="right">ND</td>
+  <td align="right">ND</td>
+  <td align="right">ND</td>
+  <td align="right">ND</td>
+  <td align="right">2012</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Fuentes</h3>
+
+<ul>
+<li><a href="http://www.mejoratuecuela.org">MejoraTuEscuela</a></li>
+<li><a href="http://planeacion.sep.gob.mx/principalescifras/">SEP</a></li>
+<li><a href="http://www.inegi.org.mx">Inventario Nacional de Viviendas de INEGI</a></li>
+<li><a href="http://www.bancomundial.org">Banco Mundial</a></li>
+</ul>
+
+        </div>
+      </div></article>
+<div class="contenido-social">
+  <h5>Compartir en Redes Sociales</h5>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
+  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Fblog%2Falumnos-por-docente-parte-2.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+</div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+
+</script>
+<script>
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un incremento en la inflación como el que sufrió Torreón en 2014 no es necesariamente una señal negativa pues puede ser causada por exceso de dinero en la economía.">
+  <meta name="author" content="Lic. Alicia Valdez Ibarra">
+  <meta name="keywords" content="IMPLAN, Torreon, Inflacion">
+  <title>Tasa de inflación y precios en Torreón 2014 - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+<!-- Completo: publicación es esquema -->
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="encabezado">
+          <h1 itemprop="name">Tasa de inflación y precios en Torreón 2014</h1>
+          <div class="encabezado-descripcion" itemprop="description">Un incremento en la inflación como el que sufrió Torreón en 2014 no es necesariamente una señal negativa pues puede ser causada por exceso de dinero en la economía.</div>
+                <div class="encabezado-autor-fecha">
+          Por <span itemprop="author">Lic. Alicia Valdez Ibarra</span>
+          - <meta itemprop="datePublished" content="2015-02-03T08:05">03/02/2015 08:05
+        </div>
+        </div>
+        <meta itemprop="image" alt="Tasa de inflación y precios en Torreón 2014" src="tasa-inflacion-precios-torreon-2014/imagen.jpg">
+              <div itemprop="articleBody">
+        <p>Durante 2014 el municipio de Torreón, Coahuila tuvo una inflación de 4.28%, tasa cercana a la nacional de 4.08%. Otras ciudades de la república como Monclova, León y Acapulco tuvieron tasas inflacionarias de 4.37%, 4.58% y 4.45% respectivamente:</p>
+
+<div style="clear:left;"></div>
+
+<h3>Cambio porcentual en el INPC diciembre 2013 - diciembre 2014</h3>
+
+<p><img class="img-responsive" src="tasa-inflacion-precios-torreon-2014/cambio-porcentual-inpc-2014.png" alt="Cambio porcentual en el INPC diciembre 2013 diciembre 2014"></p>
+
+<ul>
+<li>Fuente: Elaborada por IMPLAN con datos de INEGI.</li>
+</ul>
+
+<p>En el caso de Torreón el precio total de la canasta básica, la cual incluye 82 de los 283 productos usados en el cálculo de la inflación, subió principalmente por el precio de los electrodomésticos, las medicinas, y algunos alimentos y servicios de vivienda como la electricidad y el gas. Los diez productos que sufrieron mayores incrementos se listan a continuación:</p>
+
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+  <th align="right">Lugar</th>
+  <th>Producto/Servicio</th>
+  <th align="right">Precio promedio en diciembre 2013</th>
+  <th align="right">Precio promedio en diciembre 2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right">1</td>
+  <td>Reproductores de video (1 unidad)</td>
+  <td align="right">$ 993.88</td>
+  <td align="right">$ 2,290.25</td>
+</tr>
+<tr>
+  <td align="right">2</td>
+  <td>Licuadoras (1 unidad)</td>
+  <td align="right">$ 740.50</td>
+  <td align="right">$ 1,185.23</td>
+</tr>
+<tr>
+  <td align="right">3</td>
+  <td>Galletas (1 Kg)</td>
+  <td align="right">$ 56.87</td>
+  <td align="right">$ 78.78</td>
+</tr>
+<tr>
+  <td align="right">4</td>
+  <td>Gas doméstico natural (costo/m3) (a)</td>
+  <td align="right">$ 262.91</td>
+  <td align="right">$ 345.63</td>
+</tr>
+<tr>
+  <td align="right">5</td>
+  <td>Focos (1 pieza)</td>
+  <td align="right">$ 47.95</td>
+  <td align="right">$ 62.23</td>
+</tr>
+<tr>
+  <td align="right">6</td>
+  <td>Carne de res (1 Kg)</td>
+  <td align="right">$ 95.00</td>
+  <td align="right">$ 122.79</td>
+</tr>
+<tr>
+  <td align="right">7</td>
+  <td>Refrescos envasados (1 l)</td>
+  <td align="right">$ 11.07</td>
+  <td align="right">$ 13.67</td>
+</tr>
+<tr>
+  <td align="right">8</td>
+  <td>Vísceras de res (1 Kg)</td>
+  <td align="right">$ 28.84</td>
+  <td align="right">$ 35.53</td>
+</tr>
+<tr>
+  <td align="right">9</td>
+  <td>Chiles envasados, moles y salsas (1 Kg)</td>
+  <td align="right">$ 41.37</td>
+  <td align="right">$ 48.90</td>
+</tr>
+<tr>
+  <td align="right">10</td>
+  <td>Azúcar (1 Kg)</td>
+  <td align="right">$ 12.20</td>
+  <td align="right">$ 14.07</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>(a) Precio medio facturado, incluye distribución y servicio.</li>
+<li>Fuente: Elaborado por IMPLAN con datos de INEGI.</li>
+</ul>
+
+<p>En cuanto al costo mensual de la electricidad en el consumo promedio de una vivienda clase media de 250 Kwh y 500 kwh, subió 3.96% y 3.91% respectivamente.</p>
+
+<p>Otros productos de la canasta básica como la tortilla de maíz, el jabón para lavar y la pasta dental redujeron sus precios durante el 2014. Los diez productos con mayor disminución en su precio promedio fueron los siguientes:</p>
+
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+  <th align="right">Lugar</th>
+  <th>Producto/Servicio</th>
+  <th align="right">Precio promedio en diciembre 2013</th>
+  <th align="right">Precio promedio en diciembre 2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right">1</td>
+  <td>Papel higiénico y pañuelos desechables (1 Pag. 4 rollos)</td>
+  <td align="right">$ 36.97</td>
+  <td align="right">$ 20.84</td>
+</tr>
+<tr>
+  <td align="right">2</td>
+  <td>Servicio telefónico local fijo (b)</td>
+  <td align="right">$ 726.52</td>
+  <td align="right">$ 511.84</td>
+</tr>
+<tr>
+  <td align="right">3</td>
+  <td>Gelatina en polvo (1 Kg)</td>
+  <td align="right">$ 333.36</td>
+  <td align="right">$ 245.69</td>
+</tr>
+<tr>
+  <td align="right">4</td>
+  <td>Frijol (1 Kg)</td>
+  <td align="right">$ 21.95</td>
+  <td align="right">$ 16.42</td>
+</tr>
+<tr>
+  <td align="right">5</td>
+  <td>Servicio de telefonía móvil (c)</td>
+  <td align="right">$ 105.54</td>
+  <td align="right">$ 88.54</td>
+</tr>
+<tr>
+  <td align="right">6</td>
+  <td>Estufas (1 unidad)</td>
+  <td align="right">$ 7,185.50</td>
+  <td align="right">$ 6,060.98</td>
+</tr>
+<tr>
+  <td align="right">7</td>
+  <td>Planchas eléctricas (1 unidad)</td>
+  <td align="right">$ 515.75</td>
+  <td align="right">$ 446.88</td>
+</tr>
+<tr>
+  <td align="right">8</td>
+  <td>Material escolar (1 pieza) (d)</td>
+  <td align="right">$ 24.78</td>
+  <td align="right">$ 21.54</td>
+</tr>
+<tr>
+  <td align="right">9</td>
+  <td>Dermatológicos (1 pieza)</td>
+  <td align="right">$ 510.14</td>
+  <td align="right">$ 446.33</td>
+</tr>
+<tr>
+  <td align="right">10</td>
+  <td>Frijol procesado (1 Kg)</td>
+  <td align="right">$ 28.29</td>
+  <td align="right">$ 25.40</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>(b) Costo promedio ponderado de una muestra de prepago y pospago.</li>
+<li>(c) Costo promedio de una muestra de telefonía doméstica y pública.</li>
+<li>(d) Promedio entre artículos como plumas, cuadernos, borradores, lápices, por pieza.</li>
+<li>Fuente: Elaborado por IMPLAN con datos de INEGI.</li>
+</ul>
+
+<p>A pesar del aumento en la tasa inflacionaria en el último año, la inflación del municipio tiene tendencia a disminuir en el largo plazo, como se muestra en la siguiente gráfica de la inflación anual del municipio desde el año 2000:</p>
+
+<h3>Inflación anual</h3>
+
+<p><img class="img-responsive" src="tasa-inflacion-precios-torreon-2014/inflacion-anual-torreon-nacional.png" alt="Inflacion Anual"></p>
+
+<p>Un incremento en la inflación como el que sufrió Torreón en 2014 no es necesariamente una señal negativa pues puede ser causada por exceso de dinero en la economía. La apertura de nuevas empresas, el aumento en la inversión y mayor gasto por parte del gobierno crean un excedente en el sistema generando una mayor demanda de bienes y servicios, lo que aumenta el precio de los productos ofrecidos, es entonces cuando el alza en los precios incentiva la producción y disminuye el desempleo.</p>
+
+<p>El ejemplo de esto podemos verlo claramente en el municipio de Torreón, pues a pesar de la inflación, la tasa de desempleo abierto permaneció a la baja y los empleados asegurados aumentaron. Sin embargo recordemos que debe cuidarse la relación de la inflación con el ingreso pues si los salarios no aumentan de acuerdo a los precios el poder adquisitivo de las personas se reduce y la planta productiva se ve afectada.</p>
+
+        </div>
+      </div></article>
+<div class="contenido-social">
+  <h5>Compartir en Redes Sociales</h5>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
+  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Fblog%2Ftasa-inflacion-precios-torreon-2014.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+</div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+
+</script>
+<script>
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

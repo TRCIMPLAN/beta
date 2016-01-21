@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publicaciones con esta categoría.">
+  <meta name="author" content="TrcIMPLAN Staff">
+  <meta name="keywords" content="Categoria, Movilidad">
+  <title>Movilidad - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+      <div class="encabezado">
+        <span><h1>Movilidad</h1></span>
+        <div class="encabezado-descripcion">Publicaciones con esta categoría.</div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/la-movilidad-urbana-y-laboral-en-la-laguna.html"><img class="media-object" src="../blog/la-movilidad-urbana-y-laboral-en-la-laguna/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/la-movilidad-urbana-y-laboral-en-la-laguna.html">La movilidad urbana y laboral en La Laguna</a></h3>
+          <p>La expansión de la mancha urbana en la región ha ocasionado que se privilegie el uso de automóvil particular, provocando efectos negativos sobre la salud, ocupación creciente del espacio y costos extremos.</p>
+          <p class="pull-left autor-fecha">Por Lic. Luis A. Gutiérrez Arizpe, Arq. Cecilio Pedro Secunza Schott, 14/10/2015 13:50</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/el-corredor-economico-del-norte-y-su-fortaleza-nacional.html"><img class="media-object" src="../blog/el-corredor-economico-del-norte-y-su-fortaleza-nacional/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/el-corredor-economico-del-norte-y-su-fortaleza-nacional.html">El Corredor Económico del Norte y su fortaleza nacional</a></h3>
+          <p>La Zona Metropolitana de la Laguna, anfitriona del 6to Encuentro de Instituciones del Corredor Económico del Norte, es una región líder en formación de capital humano, transparencia y productividad.</p>
+          <p class="pull-left autor-fecha">Por Lic. Alicia Valdez Ibarra, Lic. Rodrigo González Morales, 29/09/2015 10:40</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/cinco-claves-para-entender-la-movilidad-no-motorizada.html"><img class="media-object" src="../blog/cinco-claves-para-entender-la-movilidad-no-motorizada/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/cinco-claves-para-entender-la-movilidad-no-motorizada.html">Cinco Claves para entender la Movilidad No Motorizada</a></h3>
+          <p>Los resultados del taller para ubicar los esfuerzos y principios que tienen que realizarse para poder implementar un sistema de movilidad no motorizada.</p>
+          <p class="pull-left autor-fecha">Por Arq. Cecilio Pedro Secunza Schott, 27/08/2015 14:30</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/la-utopia-de-una-ciudad-caminable.html"><img class="media-object" src="../blog/la-utopia-de-una-ciudad-caminable/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/la-utopia-de-una-ciudad-caminable.html">La Utopía de una Ciudad Caminable</a></h3>
+          <p>Un lugar agradable y atractivo es un lugar lleno de gente; es por ello que un lugar ideal es caminable, compacto, accesible y diverso.</p>
+          <p class="pull-left autor-fecha">Por Lic. Adriana Vargas Flores, 07/08/2015 16:35</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/recomendaciones-pacificacion-transito.html"><img class="media-object" src="../blog/recomendaciones-pacificacion-transito/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/recomendaciones-pacificacion-transito.html">Recomendaciones para la Pacificación del Tránsito</a></h3>
+          <p>Técnicas para bajar la velocidad de los vehículos motorizados, logrando mejorar la seguridad de los peatones, incrementar las ventas y hacer de las calles céntricas espacios sociales y culturales.</p>
+          <p class="pull-left autor-fecha">Por Arq. Ángeles Melisa Rodríguez Salas, 17/06/2015 16:00</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/camina-la-roma-por-buenos-disenos-peatonales.html"><img class="media-object" src="../blog/camina-la-roma-por-buenos-disenos-peatonales/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/camina-la-roma-por-buenos-disenos-peatonales.html">#Camina La Roma por buenos diseños peatonales</a></h3>
+          <p>Ejercicio realizado por el Instituto de Políticas para el Transporte y el Desarrollo (ITDP por sus siglas en inglés) México para analizar cómo funcionaría una intersección vial si estuviera diseñada para las personas que andan a pie.</p>
+          <p class="pull-left autor-fecha">Por Alejandra Leal @alelealv y Luz Viramontes @yazvf, 10/06/2015 14:55</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/principios-nuevo-urbanismo.html"><img class="media-object" src="../blog/principios-nuevo-urbanismo/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/principios-nuevo-urbanismo.html">Los Principios del Nuevo Urbanismo</a></h3>
+          <p>Los principios del nuevo urbanismo: fundamento de una nueva forma de pensar, construir y gestionar ciudades.</p>
+          <p class="pull-left autor-fecha">Por Arq. Susana Montano, 19/05/2015 09:35</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/bicicleta-alternativa-transporte.html"><img class="media-object" src="../blog/bicicleta-alternativa-transporte/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/bicicleta-alternativa-transporte.html">La Bicicleta como alternativa de transporte</a></h3>
+          <p>No importa cuánto gastemos en construir vías rápidas, siempre serán insuficientes para alojar la creciente cantidad de vehículos que entran a la ciudad. Todos los ciudadanos debemos hacer conciencia e impulsar y fomentar el uso de la bicicleta.</p>
+          <p class="pull-left autor-fecha">Por Arq. Daniela Patricia Corral Hernández, 05/05/2015 10:00</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/francisco-i-madero-ejemplo-rescate-espacio-publico.html"><img class="media-object" src="../blog/francisco-i-madero-ejemplo-rescate-espacio-publico/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/francisco-i-madero-ejemplo-rescate-espacio-publico.html">Francisco I. Madero: Ejemplo de un rescate de Espacio Público</a></h3>
+          <p>El Corredor Peatonal Madero ha motivado el crecimiento comercial y favorecido la conservación sus edificios históricos, en lo que hoy es una calle sólo para transeúntes.</p>
+          <p class="pull-left autor-fecha">Por Arq. Ángeles Melisa Rodríguez Salas, 21/04/2015 15:25</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/calle-completa-espacio-vital-todos.html"><img class="media-object" src="../blog/calle-completa-espacio-vital-todos/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/calle-completa-espacio-vital-todos.html">La Calle Completa: espacio vial para todos</a></h3>
+          <p>Con la inclusión del automóvil en el espacio urbano se causó problemas como alta incidencia de accidentes, inaccesibilidad, contaminación, y el deterioro del espacio público más importante: la calle.</p>
+          <p class="pull-left autor-fecha">Por Arq. Cecilio Pedro Secunza Schott, 03/12/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/movilidad-nuestra-ciudad.html"><img class="media-object" src="../blog/movilidad-nuestra-ciudad/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/movilidad-nuestra-ciudad.html">Movilidad y nuestra ciudad</a></h3>
+          <p>De 1970 a la fecha la expansión de la mancha urbana en la ciudad de Torreón ha crecido siete veces mientras que la población únicamente tres.</p>
+          <p class="pull-left autor-fecha">Por Lic. Luis A. Gutiérrez Arizpe, 25/11/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/bicimetro-innovacion-transporte-urbano.html"><img class="media-object" src="../blog/bicimetro-innovacion-transporte-urbano/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/bicimetro-innovacion-transporte-urbano.html">Bicimetro: La innovación del Transporte Urbano</a></h3>
+          <p>Cada vez son más los ciudadanos que optan por dejar sus carros y se animan a desempolvar las bicicletas guardadas en los garajes y utilizarlas como medio de transporte ya sea habitual o por recreación.</p>
+          <p class="pull-left autor-fecha">Por Arq. Daniela Patricia Corral Hernández, 19/11/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/cultura-seguridad-vial.html"><img class="media-object" src="../blog/cultura-seguridad-vial/imagen-previa.png"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/cultura-seguridad-vial.html">Cultura y seguridad vial</a></h3>
+          <p>La cultura vial se refiere a la construcción de una convivencia armoniosa, responsable y de respeto entre todos los que hacemos uso de las vías de tránsito, sean estas aceras, rutas, caminos, ciclo vías, etc.</p>
+          <p class="pull-left autor-fecha">Por Lic. Alfredo Viesca Domínguez, 22/10/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/movilidad-laboral-cotidiana-zml.html"><img class="media-object" src="../blog/movilidad-laboral-cotidiana-zml/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/movilidad-laboral-cotidiana-zml.html">Movilidad laboral cotidiana en la ZML</a></h3>
+          <p>Población ocupada que tiene trabajo en su PROPIO municipio y que tiene trabajo en OTRO Municipio de la Zona Metropolitana de la Laguna.</p>
+          <p class="pull-left autor-fecha">Por Lic. Luis A. Gutiérrez Arizpe, 06/08/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/infraestructura.html"><img class="media-object" src="../blog/infraestructura/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/infraestructura.html">Infraestructura (Sectores precursores de clase mundial)</a></h3>
+          <p>Análisis de los indicadores sobre infraestructura en tecnologías de la información, carreteras avanzadas y tasa de accidentes viales.</p>
+          <p class="pull-left autor-fecha">Por Lic. Rodrigo González Morales, 26/06/2014 08:05</p>
+        </div>
+      </div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

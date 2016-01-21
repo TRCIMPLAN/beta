@@ -25,6 +25,9 @@ fi
 #
 echo "  Respaldando Imprentas..."
 cd $BETA_DIR/lib
+if [ -e Blog/Imprenta.php ]; then
+    mv Blog/Imprenta.php BlogImprenta.php
+fi
 if [ -e Contacto/Imprenta.php ]; then
     mv Contacto/Imprenta.php ContactoImprenta.php
 fi
@@ -50,6 +53,7 @@ rm -rf img
 rm -rf js
 rm -rf less
 rm -rf scss
+rm -rf blog
 rm -rf contacto
 rm -rf institucional
 rm -rf preguntas-frecuentes
@@ -61,6 +65,7 @@ echo "  Eliminando en /lib..."
 cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
+rm -rf Blog
 rm -rf Contacto
 rm -rf Institucional
 rm -rf PreguntasFrecuentes
@@ -78,10 +83,12 @@ cp -r $SITIO_WEB_DIR/img .
 cp -r $SITIO_WEB_DIR/js .
 cp -r $SITIO_WEB_DIR/less .
 cp -r $SITIO_WEB_DIR/scss .
+cp -r $SITIO_WEB_DIR/blog .
 cp -r $SITIO_WEB_DIR/contacto .
 cp -r $SITIO_WEB_DIR/institucional .
 cp -r $SITIO_WEB_DIR/preguntas-frecuentes .
 cp -r $SITIO_WEB_DIR/terminos .
+rm -f blog/*.html
 rm -f contacto/*.html
 rm -f institucional/*.html
 rm -f preguntas-frecuentes/*.html
@@ -93,6 +100,7 @@ echo "  Copiando a la /lib..."
 cd $BETA_DIR/lib
 cp -r $PLATAFORMA_DIR/lib/Base .
 cp -r $PLATAFORMA_DIR/lib/Michelf .
+cp -r $SITIO_WEB_DIR/lib/Blog .
 cp -r $SITIO_WEB_DIR/lib/Contacto .
 cp -r $SITIO_WEB_DIR/lib/Institucional .
 cp -r $SITIO_WEB_DIR/lib/PreguntasFrecuentes .
@@ -103,6 +111,10 @@ cp -r $SITIO_WEB_DIR/lib/Terminos .
 #
 echo "  Restaurando Imprentas..."
 cd $BETA_DIR/lib
+if [ -e BlogImprenta.php ]; then
+    rm -f Blog/Imprenta.php
+    mv BlogImprenta.php Blog/Imprenta.php
+fi
 if [ -e ContactoImprenta.php ]; then
     rm -f Contacto/Imprenta.php
     mv ContactoImprenta.php Contacto/Imprenta.php

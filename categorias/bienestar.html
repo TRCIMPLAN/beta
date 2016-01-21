@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publicaciones con esta categoría.">
+  <meta name="author" content="TrcIMPLAN Staff">
+  <meta name="keywords" content="Categoria, Bienestar">
+  <title>Bienestar - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+      <div class="encabezado">
+        <span><h1>Bienestar</h1></span>
+        <div class="encabezado-descripcion">Publicaciones con esta categoría.</div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/balance-2015-repunte-de-la-competitividad-en-la-laguna.html"><img class="media-object" src="../blog/balance-2015-repunte-de-la-competitividad-en-la-laguna/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/balance-2015-repunte-de-la-competitividad-en-la-laguna.html">Balance 2015: repunte de la competitividad en La Laguna</a></h3>
+          <p>Indicadores sociales, económicos y demográficos muestran la tendencia de recuperación de la competitividad de la Zona Metropolitana.</p>
+          <p class="pull-left autor-fecha">Por Lic. Rodrigo González Morales, 04/01/2016 11:00</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/ciudades-24-7-como-estrategia-para-revitalizar-el-espacio-urbano.html"><img class="media-object" src="../blog/ciudades-24-7-como-estrategia-para-revitalizar-el-espacio-urbano/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/ciudades-24-7-como-estrategia-para-revitalizar-el-espacio-urbano.html">Ciudades 24/7 como estrategia para revitalizar el espacio urbano</a></h3>
+          <p>El reto para nuestras ciudades está en desarrollar políticas que humanicen y promuevan la noche como un espacio social positivo y menos restringido.</p>
+          <p class="pull-left autor-fecha">Por Arq. Ángeles Melisa Rodríguez Salas, 15/10/2015 08:15</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/conviviendo-en-nuestras-ciudades.html"><img class="media-object" src="../blog/conviviendo-en-nuestras-ciudades/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/conviviendo-en-nuestras-ciudades.html">Conviviendo en Nuestras Ciudades</a></h3>
+          <p>La ciudad es el espacio donde sus habitantes se representan, reúnen, conviven fortalecen las estructuras sociales e inclusive se manifiestan. Por ello es necesario cuidar la cantidad y calidad de los servicios que ahí se prestan.</p>
+          <p class="pull-left autor-fecha">Por Arq. Ilse Ávila García, 27/09/2015 19:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/la-importancia-de-la-imagen-urbana.html"><img class="media-object" src="../blog/la-importancia-de-la-imagen-urbana/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/la-importancia-de-la-imagen-urbana.html">La Importancia de la Imagen Urbana</a></h3>
+          <p>Al darle a la ciudad una buena calidad visual, los usuarios son capaces de desarrollar conductas y comportamientos dignos y creativos. Sin embargo en Torreón el distrito del Centro Histórico sufre un deterioro en su imagen urbana.</p>
+          <p class="pull-left autor-fecha">Por Arq. Teresita Benítez Saludado, 15/09/2015 20:50</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/regeneracion-urbana-para-una-calidad-de-vida.html"><img class="media-object" src="../blog/regeneracion-urbana-para-una-calidad-de-vida/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/regeneracion-urbana-para-una-calidad-de-vida.html">Regeneración Urbana para una Mejor Calidad de Vida</a></h3>
+          <p>La regeneración implica recuperar la funcionalidad y la revitalización de la trama urbana del municipio, para lograr el modelo de ciudad sostenible que en la actualidad se quiere alcanzar.</p>
+          <p class="pull-left autor-fecha">Por Arq. Jair Miramontes Chávez, 09/09/2015 13:30</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/la-cultura-un-importante-indicador-en-la-calidad-de-vida.html"><img class="media-object" src="../blog/la-cultura-un-importante-indicador-en-la-calidad-de-vida/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/la-cultura-un-importante-indicador-en-la-calidad-de-vida.html">La Cultura: un importante indicador en la calidad de vida</a></h3>
+          <p>La Laguna tiene un promedio muy bajo de espacios culturales por cada mil habitantes. A favor, hay un renovado impulso a la cultura gracias a iniciativas independientes, colectivos y programas de gobierno.</p>
+          <p class="pull-left autor-fecha">Por Lic. Adriana Vargas Flores, 03/09/2015 15:22</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/analisis-de-resultados-coneval-2014-para-coahuila.html"><img class="media-object" src="../blog/analisis-de-resultados-coneval-2014-para-coahuila/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/analisis-de-resultados-coneval-2014-para-coahuila.html">Análisis de Resultados CONEVAL 2014 para Coahuila</a></h3>
+          <p>En Julio de 2015 se publicó el Informe de Medición de la Pobreza en México 2014, a cargo del CONEVAL. En este trabajo se analizan los cálculos para el estado de Coahuila así como los nacionales.</p>
+          <p class="pull-left autor-fecha">Por Lic. Luis A. Gutiérrez Arizpe, 12/08/2015 11:30</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/la-utopia-de-una-ciudad-caminable.html"><img class="media-object" src="../blog/la-utopia-de-una-ciudad-caminable/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/la-utopia-de-una-ciudad-caminable.html">La Utopía de una Ciudad Caminable</a></h3>
+          <p>Un lugar agradable y atractivo es un lugar lleno de gente; es por ello que un lugar ideal es caminable, compacto, accesible y diverso.</p>
+          <p class="pull-left autor-fecha">Por Lic. Adriana Vargas Flores, 07/08/2015 16:35</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/hacia-ciudades-que-construyen-humanos-en-convivencia.html"><img class="media-object" src="../blog/hacia-ciudades-que-construyen-humanos-en-convivencia/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/hacia-ciudades-que-construyen-humanos-en-convivencia.html">Hacia Ciudades que Construyen Humanos en Convivencia</a></h3>
+          <p>El espacio público es donde se tejen las relaciones sociales, por lo tanto su conformación debe contribuir a desarrollar las capacidades humanas.</p>
+          <p class="pull-left autor-fecha">Por Arq. Susana Montano, 07/07/2015 16:00</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/principios-nuevo-urbanismo.html"><img class="media-object" src="../blog/principios-nuevo-urbanismo/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/principios-nuevo-urbanismo.html">Los Principios del Nuevo Urbanismo</a></h3>
+          <p>Los principios del nuevo urbanismo: fundamento de una nueva forma de pensar, construir y gestionar ciudades.</p>
+          <p class="pull-left autor-fecha">Por Arq. Susana Montano, 19/05/2015 09:35</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/reinventar-futuro-metropoli.html"><img class="media-object" src="../blog/reinventar-futuro-metropoli/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/reinventar-futuro-metropoli.html">Reinventar el futuro de la metrópoli</a></h3>
+          <p>Ensayo sobre las nuevas tecnologías en materia de vivienda, agricultura y transporte que mejorarán nuestro futuro.</p>
+          <p class="pull-left autor-fecha">Por Ing. Guillermo Valdés Lozano, 06/05/2015 12:40</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/espacio-publico-urbano.html"><img class="media-object" src="../blog/espacio-publico-urbano/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/espacio-publico-urbano.html">Espacio Público Urbano</a></h3>
+          <p>Las calles son la forma más importante de espacio público. Requieren algunos cambios urbanos para que sean más seguras y amistosas para los niños y niñas; que lleguen a ser de alta calidad.</p>
+          <p class="pull-left autor-fecha">Por Arq. Teresita Benítez Saludado, 20/03/2015 14:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/generaciones-cambio.html"><img class="media-object" src="../blog/generaciones-cambio/presentacion-universitarios-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/generaciones-cambio.html">Las generaciones del cambio</a></h3>
+          <p>Los universitarios están involucrados con su sociedad, con las características de nuestra ciudad y sus necesidades, ya son parte de un entorno que si bien no es el mejor, están conscientes que se puede mejorar.</p>
+          <p class="pull-left autor-fecha">Por TrcIMPLAN Staff, 04/02/2015 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/prevencion-delito-espacio-publico.html"><img class="media-object" src="../blog/prevencion-delito-espacio-publico/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/prevencion-delito-espacio-publico.html">Prevención del delito mediante la construcción del espacio público</a></h3>
+          <p>Ante el miedo y el temor, el lagunero ha tomado medidas en lo individual y lo colectivo en un intento por evitar ser víctimas de algún delito, se ha encerrado en lo privado despreciando el espacio público como si fuera ajeno.</p>
+          <p class="pull-left autor-fecha">Por Arq. Victoria Aranzábal, 28/01/2015 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/objetivos-milenio.html"><img class="media-object" src="../blog/objetivos-milenio/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/objetivos-milenio.html">La Zona Metropolitana de La Laguna y los Objetivos del Milenio</a></h3>
+          <p>En septiembre del año 2000 fue celebrada la Cumbre del Milenio de las Naciones Unidas, durante la cual 147 jefes de estado firman y 189 países aprueban uno de los retos consensuados más ambicioso de las últimas décadas.</p>
+          <p class="pull-left autor-fecha">Por Lic. Luis A. Gutiérrez Arizpe, 27/01/2015 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/papel-organizaciones-civiles-aumento-competitividad.html"><img class="media-object" src="../blog/papel-organizaciones-civiles-aumento-competitividad/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/papel-organizaciones-civiles-aumento-competitividad.html">El papel de las Organizaciones Civiles en el aumento del bienestar y competitividad</a></h3>
+          <p>En toda ciudad, estado o país debe haber sinergia entre ciudadanos, asociaciones civiles y empresas para definir programas a largo plazo que mejoren la calidad y el bienestar de todos nosotros.</p>
+          <p class="pull-left autor-fecha">Por Ing. Guillermo Valdés Lozano, 10/12/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/urgencia-ser-estrategicos.html"><img class="media-object" src="../blog/urgencia-ser-estrategicos/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/urgencia-ser-estrategicos.html">La urgencia de ser estratégicos</a></h3>
+          <p>El futuro tiene cada vez más peso en las decisiones presentes, traer los probables escenarios futuros al presente nos pide innovar, ser más creativos y también nos invita a ser urgentes.</p>
+          <p class="pull-left autor-fecha">Por Arq. Victoria Aranzábal, 09/12/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/ciudades-mas-humanas.html"><img class="media-object" src="../blog/ciudades-mas-humanas/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/ciudades-mas-humanas.html">Ciudades más Humanas</a></h3>
+          <p>La calidad de vida en las ciudades es la posibilidad que tiene una persona, una familia o una comunidad, de alcanzar el bienestar y la satisfacción de todas sus necesidades.</p>
+          <p class="pull-left autor-fecha">Por Arq. Ilse Ávila García, 02/12/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/ciudades-reto-transformacion.html"><img class="media-object" src="../blog/ciudades-reto-transformacion/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/ciudades-reto-transformacion.html">Las ciudades y el reto de su transformación</a></h3>
+          <p>El futuro de la humanidad está intrínsecamente relacionado al futuro de las ciudades. A partir de la revolución industrial hubo una movilización de personas del campo a la ciudad, lo que trajo consigo una revolución urbana.</p>
+          <p class="pull-left autor-fecha">Por Arq. Victoria Aranzábal, 28/10/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/competitividad-planeacion-metropolitana.html"><img class="media-object" src="../blog/competitividad-planeacion-metropolitana/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/competitividad-planeacion-metropolitana.html">Competitividad y Planeación Metropolitana</a></h3>
+          <p>El Instituto Mexicano para la Competitividad dio a conocer el Índice de Competitividad Urbana 2014; en él muestra que la Zona Metropolitana de la Laguna (ZML) continúa en un nivel de competitividad media baja.</p>
+          <p class="pull-left autor-fecha">Por Lic. Rodrigo González Morales, 18/09/2014 08:05</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="../blog/sociedad-incluyente-preparada-sana.html"><img class="media-object" src="../blog/sociedad-incluyente-preparada-sana/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading"><a href="../blog/sociedad-incluyente-preparada-sana.html">Sociedad Incluyente, Preparada y Sana</a></h3>
+          <p>Este es uno de los subíndices que muestra mayores contrastes al interior de la zona metropolitana, ubicándose Torreón en la parte alta del ranking, la ZML en su conjunto en media alta, Gómez Palacio y Lerdo en media baja y Matamoros en la zona baja.</p>
+          <p class="pull-left autor-fecha">Por Lic. Rodrigo González Morales, 06/06/2014 08:05</p>
+        </div>
+      </div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

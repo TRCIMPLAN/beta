@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Este sistema fue elaborado por personal del IMPLAN Torreón.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+          Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Al usarlo está aceptando los términos de uso de la información y del sitio web:
+          http://trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Twitter Bootstrap    http://getbootstrap.com
+          StartBootStrap       http://startbootstrap.com
+          Morris.js            https://morrisjs.github.io/morris.js/
+          LeafLet              http://leafletjs.com
+          CartoDB              http://cartodb.com
+        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
+          GitHub               https://github.com/TRCIMPLAN
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manejar el tema de protección a la salud como punto estratégico en materia de ordenamiento territorial y urbano representa una oportunidad para el desarrollo de la región.">
+  <meta name="author" content="Arq. Susana Montano">
+  <meta name="keywords" content="IMPLAN, Torreon, Areas Verdes, Salud, Ordenamiento, Territorial, Urbano">
+  <title>Más áreas verdes para proteger la salud de los laguneros - IMPLAN Torreón</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../rss.xml" rel="alternate" type="application/rss+xml" title="IMPLAN Torreón">
+  <link href="../css/morris.css" rel="stylesheet">
+  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li><a href="../categorias/index.html"><span class="navegacion-icono"><i class="fa fa-tags"></i></span> Categorías</a></li>
+        <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Autores</a></li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.M.I.</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al S.I.G.</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-server"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> S.I.G. de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-sun-o"></i></span> Plan Estratégico Metropolitano<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Conoce el Plan</a></li>
+            <li><a href="../plan-estrategico-metropolitano/index.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Todas las Mesas</a></li>
+            <li><a href="http://trcimplan.mx/plan" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Participación Ciudadana</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos Estratégicos<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../proyectos/banco-municipal-proyectos-inversion.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Banco de Proyectos</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Todos los Proyectos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Mensaje del Director</a></li>
+            <li><a href="../institucional/quienes-somos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Reglamentos</a></li>
+            <li><a href="../institucional/informacion-financiera.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Información Financiera</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-comments"></i></span> Sala de Prensa</a></li>
+        <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-files-o"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="http://trcimplan.mx/comentariossugerencias" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+<!-- Completo: publicación es esquema -->
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="encabezado">
+          <h1 itemprop="name">Más áreas verdes para proteger la salud de los laguneros</h1>
+          <div class="encabezado-descripcion" itemprop="description">Manejar el tema de protección a la salud como punto estratégico en materia de ordenamiento territorial y urbano representa una oportunidad para el desarrollo de la región.</div>
+                <div class="encabezado-autor-fecha">
+          Por <span itemprop="author">Arq. Susana Montano</span>
+          - <meta itemprop="datePublished" content="2015-01-14T08:05">14/01/2015 08:05
+        </div>
+        </div>
+        <meta itemprop="image" alt="Más áreas verdes para proteger la salud de los laguneros" src="mas-areas-verdes-proteger-salud-laguneros/imagen.jpg">
+              <div itemprop="articleBody">
+        <p>La contaminación del aire en ciudades y zonas metropolitanas ha cobrado gran importancia y trascendencia por los riesgos que representa a la salud de sus habitantes y por tanto en el desarrollo sustentable de las áreas implicadas. La cubierta vegetal, el parque vehicular, las emisiones industriales, las fuentes de contaminantes orgánicos, los efectos climáticos, la temperatura, los vientos, la tecnología, la densidad de población y la construcción, son algunas variables que forman parte de la función multifactorial de la contaminación atmosférica. Por ser de naturaleza compleja, dependiente de múltiples factores, la contaminación del aire aún no ha sido atendida de manera holística, bajo los distintos enfoques ecosistémicos e interdisciplinarios que analicen desde las diversas áreas del conocimiento, las causas, los mecanismos y los efectos; para conseguir atenuar la creciente presencia de agentes contaminantes y sus graves consecuencias.</p>
+
+<p>A cada disciplina que tiene interés por el desarrollo sustentable, le corresponde aportar elementos de análisis y de solución que puedan articularse en proyectos integrados, encaminados a resolver en la medida de lo posible las causas de la contaminación del aire y aminorar los efectos nocivos. Así pues, les compete a organismos relacionados con el desarrollo, planeación y ordenamiento territorial y urbano proponer alternativas prácticas y efectivas y de acuerdo al contexto del lugar. En este sentido, se propone la implementación de una Estructura Ecológica como estrategia para mejorar la salud, bienestar social y calidad de vida de los laguneros, entre otros beneficios.</p>
+
+<p>Según las Directrices sobre Calidad del Aire del 2005 de la Organización Mundial de la Salud (OMS) “Los contaminantes atmosféricos, aunque tengan concentraciones bajas, se relacionan con efectos adversos para la salud. (…)Es posible establecer una relación cuantitativa entre los niveles de contaminación y resultados concretos relativos a la salud como el aumento de la mortalidad o la morbilidad.”</p>
+
+<p>De acuerdo a los especialistas, la Comarca Lagunera es un foco rojo en México por el elevado número de casos de asma, rinitis, y dermatitis atópicas, entre otras alergias y enfermedades provocadas por el polvo, el polen, el calor, y la emisión de metales pesados como plomo, dióxido de azufre y óxidos de nitrógeno. En 2008, la Jurisdicción Sanitaria VI que abarca los municipios de Torreón, Matamoros y Viesca, registró 3,469 casos de asma, 2,072 de neumonías y bronconeumonías y 133,736 de infecciones respiratorias agudas. Mientras que en la Laguna de Durango se registraron 40,411 casos de enfermedades respiratorias (El Siglo de Torreón, 2008).</p>
+
+<p>La OMS considera el asma como una enfermedad prioritaria, ya que los gastos directos e indirectos destinados a salud pública que implica son grandes. Además la tendencia de la prevalencia y la susceptibilidad a enfermedades respiratorias va en aumento. En general no solamente hay mayor incidencia sino que la severidad de los casos también está incrementando (GINA, 2004).En Torreón uno de cada diez niños, padece asma o algún tipo de alergia, pero sólo uno de cada 20 es diagnosticado, y cuatro de cada diez han tenido alguna vez síntomas de esta enfermedad (El Siglo de Torreón, 2008).</p>
+
+<p>En la ZML el clima seco favorece la presencia de tolvaneras, con las cuales se levanta la contaminación y se disemina por el medio ambiente, lo cual provoca un aumento notable en las incidencias y complicaciones de enfermedades relacionadas. Por otra parte las alteraciones en el clima, producidas por el calentamiento global, también empiezan a generar cambios en el comportamiento de las enfermedades de la población de la región.</p>
+
+<p>Recientemente estudios integrados refieren el rol de la vegetación urbana en la formación y degradación de contaminantes ambientales en las ciudades (Nowak et al., 2006). Un estudio en Nueva York concluye que el arbolado de las calles está asociado con una menor prevalencia de asma en la niñez temprana (ForestryCommission, 2012; Lovasi et al., 2008).También existen fuertes evidencias de que las azoteas verdes contribuyen a reducir la contaminación atmosférica (Rowe, 2011; Speak et al., 2012). En especial Speak, et al., (2012), las presenta como “filtros pasivos de partículas contaminantes” demostrando una reducción de 0.24 t por año de PM10(1) con los resultados de un estudio en el centro de Manchester.</p>
+
+<p>Por lo anterior, es claro que en la Zona Metropolitana de la Laguna es absolutamente necesario pasar a otro nivel de intervención, en el cual la normativa ambiental constituya la base de una política en la que la sustentabilidad ecológica sea asumida territorialmente por una estructura con identidad propia, que se asigne por las características incuestionables de las áreas que la constituyen: La Estructura Ecológica(2).Este concepto engloba todo el espacio revestido por vegetación y funge como un sistema de ordenación, tanto de otras áreas verdes urbanas, como de actividades humanas, además de que orienta a una planeación integrada del territorio.</p>
+
+<p><img class="img-responsive" src="mas-areas-verdes-proteger-salud-laguneros/subsistemas-urbanos.jpg" alt="Subsistemas Urbanos"></p>
+
+<p>SUBSISTEMAS URBANOS.
+Fuente: Adaptado de http://zaloamati.azc.uam.mx/handle/11191/565</p>
+
+<p>Los sistemas urbanos son sistemas complejos con una estructura, función y dinámica propia, formados por los recursos naturales y construidos, creados por y para la especie humana. Estructuralmente, las ciudades se componen de subsistemas que están interconectados y forman una unidad del paisaje urbano. La interacción entre los componentes, la dinámica y el funcionamiento de estos subsistemas son los responsables de la identidad de una ciudad, por lo que su planificación y gestión deberá llevarse a cabo de acuerdo con una teoría multidisciplinaria, que reúne a todos los componentes, valores y oportunidades de una zona urbana.</p>
+
+<p>Manejar el tema de protección a la salud como punto estratégico en materia de ordenamiento territorial y urbano representa una oportunidad para el desarrollo de la región. El desafío, en este caso es generar políticas, estrategias e instrumentos de gestión para la creación, ordenamiento y potencialización de áreas verdes urbanas en red, definiendo criterios para la sustentabilidad ecológica del territorio. La Estructura Ecológica es un instrumento de gestión territorial que se ha implementado en varios casos exitosos en Europa. En Portugal, los municipios han identificado este sistema, en su Plan Maestro Municipal desde 1999 sobresaliendo algunos como: la Estructura Ecológica del Área Metropolitana de Lisboa y Plano Regional de Ordenamiento del Territorio de Alentejo Litoral (con la designación de Estructura de Protección y Valorización del Paisaje).</p>
+
+<p><img class="img-responsive" src="mas-areas-verdes-proteger-salud-laguneros/estructura-ecologica-urbana-oporto-portugal.jpg" alt="Estructura Ecológica Urbana de Oporto, Portugal"></p>
+
+<p>ESTRUCTURA ECOLÓGICA URBANA DE OPORTO, PORTUGAL.
+Fuente:Adaptado de http://zaloamati.azc.uam.mx/handle/11191/565</p>
+
+<blockquote>
+  <p>"Plantar árboles no es la única solución pero es parte de la solución para la crisis climática"</p>
+  
+  <p>Al Gore, 2007</p>
+</blockquote>
+
+<p>Notas:</p>
+
+<ol>
+<li>Las PM10 o partículas gruesas, consisten en partículas menores a 10µm, en ellas se incluyen las formas más visibles de la materia particulada, tales como humo negro, tierra, polvo de las carreteras y obras de construcción, grandes partículas de sal procedentes de la espuma del mar, mohos, polen, esporas y otras partes de plantas, entre otras.</li>
+<li>El Decreto Reglamentar n. 9/2009 del Ministerio del Ambiente de Ordenamiento del Territorio y Desarrollo Regional de Portugal establece el concepto de Estructura Ecológica Municipal como el conjunto de áreas del suelo que, en virtud de sus características biofísicas o culturales, de su continuidad ecológica y de su ordenamiento, tienen por función principal contribuir al equilibrio ecológico para la protección, conservación y valorización ambiental, paisajística y de patrimonio natural de los espacios rurales y urbanos.</li>
+</ol>
+
+<p>Referencias:</p>
+
+<ul>
+<li>Quintas, A., Curado M.J., (2011). La estructura ecológica urbana como promotor de la calidad de vida: caso de Porto, Portugal. Fecha de consulta: enero 2015. Disponible en: http://zaloamati.azc.uam.mx/handle/11191/565</li>
+<li>El Siglo de Torreón (2008). El precio de vivir en La Laguna. Torreón, Coahuila. Fecha de consulta: enero 2015. Disponible en: http://www.elsiglodetorreon.com.mx/movil/?n=425761</li>
+<li>Espinosa, M. (2012). Política y contaminación. Periódico Excélsior, S.A. de C.V.</li>
+<li>Forestry Commission. (2012). Benefits of green infraestructure evidence note Great Britain.</li>
+<li>GINA. (2004). Global Burden of Asthma. New Zeland &amp; United Kingdom.</li>
+<li>Lovasi, G. S., Quinn, J. W., Neckerman, K. M., Perzanowski, M. S., &amp; Rundle, A. (2008). Children living in areas with more street trees have lower prevalence of asthma. J Epidemiol Community Health, 62(7), 647-649.</li>
+<li>Madureira, H. (2008). A Infra-estrutura Verde da Bacia do Leça - Uma Estratégia para o Desenvolvimento Sustentável na Região Metropolitana do Porto. Faculdade de Ciências Universidade do Porto, Porto, Portugal.</li>
+<li>Magalhaes, M (2003). A Estrutura Ecológica Metropolitana de Lisboa. Portugal. Fecha de consulta: enero 2015. Disponible en: http://www.isa.utl.pt/ceap/index_files/A_ESTRUTURA_ECOLOGICA_METROPOLITANA_DE_LISBOA.pdf</li>
+<li>Nowak, D. J., Crane, D. E., &amp; Stevens, J. C. (2006). Air pollution removal by urban trees and shrubs in the United States. Urban Forestry &amp; Urban Greening, 4(3-4), 115-123.</li>
+<li>OMS. (2011). Calidad del aire y salud. [Nota descriptiva]. Centro de prensa, N°313.</li>
+<li>Rowe, D. B. (2011). Green roofs as means of pollution abatment. Environmental Pollution, 159, 210-2110.</li>
+<li>Speak, A. F., Rothwell, J. J., Lindley, S. J., &amp; Smith, C. L. (2012). Urban partiiculate pollution reduction by four species of green roof vegetation in a UK city. Atmospheric Environment, 61, 283-293.</li>
+</ul>
+
+        </div>
+      </div></article>
+<div class="contenido-social">
+  <h5>Compartir en Redes Sociales</h5>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
+  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Fblog%2Fmas-areas-verdes-proteger-salud-laguneros.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+</div>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right mapa-inferior-redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script>
+
+</script>
+<script>
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58290501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
