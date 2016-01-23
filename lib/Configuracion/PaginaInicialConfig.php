@@ -198,28 +198,22 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $breves_indice->en_raiz         = true;
         $breves_indice->en_otro         = false;
         $breves_indice->cantidad_maxima = 4;
-        // Acumular Últimas Publicaciones
-        $this->contenido[]  = '  </section>';
-        // Acumular sección novedades
+        // Acumular Últimas Publicaciones y Twitter Timeline
         $this->contenido[]  = '  <section id="ultimas-publicaciones">';
         $this->contenido[]  = '    <div class="row">';
         $this->contenido[]  = '      <div class="col-md-8">';
-        // Análisis publicados
         $this->contenido[]  = '        <div class="analisis-publicados">';
         $this->contenido[]  = $breves_indice->html();
         $this->contenido[]  = '          <div class="text-center">';
         $this->contenido[]  = "            <a href=\"blog/index.html\" class=\"btn btn-default\" role=\"button\">Todos los Análisis Publicados</a>";
         $this->contenido[]  = '          </div>';
         $this->contenido[]  = '        </div>';
-        // Análisis publicados termina
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '      <div class="col-md-4">';
-        // Twitter Timeline Inicia
         $this->contenido[]  = '        <div class="red-social-twitter">';
         $this->contenido[]  = '          <a class="twitter-timeline" height="720px" href="https://twitter.com/trcimplan" data-chrome="nofooter transparent" data-theme="dark" data-widget-id="455819492145127424">Tweets por @trcimplan</a>';
         $this->contenido[]  = '        </div>';
         $this->javascript[] = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
-        // Twitter Timeline Termina
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';

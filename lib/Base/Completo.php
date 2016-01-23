@@ -78,11 +78,9 @@ class Completo {
         // Si el contenido de la publicación es una instancia
         if ($this->publicacion->es_contenido_esquema()) {
             // Es una instancia de esquema, debe tener el método html
-            $a[] = '<!-- Completo: publicación es esquema -->';
             $a[] = $this->publicacion->html();
         } else {
             // Es texto
-            $a[] = '<!-- Completo: publicación es texto -->';
             $a[] = '<article>';
             $a[] = '  <header>';
             // Si el encabezado está definido

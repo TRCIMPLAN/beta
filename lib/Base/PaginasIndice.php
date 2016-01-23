@@ -55,17 +55,16 @@ class PaginasIndice extends Paginas {
      */
     public function html() {
         // Pasar variables a Breves Índice
-        $this->breves_indice->en_raiz         = $this->en_raiz;
-        $this->breves_indice->en_otro         = $this->en_otro;
-        $this->breves_indice->cantidad_maxima = $this->cantidad_maxima;
-        // Acumularemos la entrega en este arreglo
-        $a = array();
-        // Acumular encabezado
-        $a[] = $this->encabezado_html();
-        // Acumular Breves Índice
-        $a[] = $this->breves_indice->html();
+        $this->breves_indice->titulo           = $this->titulo;
+        $this->breves_indice->descripcion      = $this->descripcion;
+        $this->breves_indice->encabezado       = $this->encabezado;
+        $this->breves_indice->encabezado_color = $this->encabezado_color;
+        $this->breves_indice->encabezado_icono = $this->encabezado_icono;
+        $this->breves_indice->en_raiz          = $this->en_raiz;
+        $this->breves_indice->en_otro          = $this->en_otro;
+        $this->breves_indice->cantidad_maxima  = $this->cantidad_maxima;
         // Entregar
-        return implode("\n", $a);
+        return $this->breves_indice->html();
     } // html
 
     /**

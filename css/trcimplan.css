@@ -25,10 +25,7 @@ body {
     line-height:1.4;
     background-color:#F0F0F0;
 }
-h1, .h1 {
-    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
-    line-height:1.2;
-}
+h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
@@ -37,9 +34,6 @@ h6, .h6 {
     font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
     line-height:1.2;
 }
-h1, .h1,
-h2, .h2,
-h3, .h3 { margin-top:10px; }
 h1, .h1 { font-size:32px; }
 h2, .h2 { font-size:28px; }
 h3, .h3 { font-size:24px; }
@@ -77,10 +71,9 @@ a:active  { color:#FF3300; text-decoration:none; }
 }
 
 /* Page Wrapper */
-#page-wrapper {
+#page-wrapper  {
     background-color:#E3E3E3;
-    padding-left:4px;
-    padding-right:4px;
+    padding:0 4px 0 4px;
 }
 .sidebar ul li { border-bottom:1px solid #CCC; }
 
@@ -248,22 +241,14 @@ a:active  { color:#FF3300; text-decoration:none; }
 }
 
 /* Mapa inferior */
-.mapa-inferior {
-    background-color:#F0F0F0;
-    padding:8px;
-}
-.mapa-inferior-inferior-logo {
-    padding:2px;
-}
-.mapa-inferior-redes-sociales {
-    color:#646464;
-    font-size:2.5em;
-}
-.mapa-inferior-redes-sociales a         { color:#646464; padding:2px; }
-.mapa-inferior-redes-sociales a:link,
-.mapa-inferior-redes-sociales a:visited { color:#646464; }
-.mapa-inferior-redes-sociales a:hover,
-.mapa-inferior-redes-sociales a:active  { color:#FF3300; }
+.mapa-inferior            { background-color:#F0F0F0; }
+.mapa-inferior-logo       { padding:4px; }
+.redes-sociales           { color:#646464; }
+.redes-sociales a         { color:#646464; padding:2px; }
+.redes-sociales a:link,
+.redes-sociales a:visited { color:#646464; }
+.redes-sociales a:hover,
+.redes-sociales a:active  { color:#FF3300; }
 
 /* Contenido con Índice */
 .indice-icono          { font-size:6em; }
@@ -398,15 +383,15 @@ a.galeria-icono:active  { color:#FF3300; }
     background-position:-200px 0;
 }
 
-/* Página Inicial novedades */
-#novedades {
+/* Página Inicial últimas publicaciones */
+#ultimas-publicaciones {
     background-color:#FFF;
 }
-#novedades .analisis-publicados {
+#ultimas-publicaciones .analisis-publicados {
     background-color:#FFF;
     padding:8px;
 }
-#novedades .red-social-twitter {
+#ultimas-publicaciones .red-social-twitter {
     background-color:#494043;
     padding:8px;
 }
@@ -589,7 +574,7 @@ a.galeria-icono:active  { color:#FF3300; }
     #servicio-smi:hover {
         background-position:-128px 0;
     }
-    #novedades .red-social-twitter {
+    #ultimas-publicaciones .red-social-twitter {
         display:none;
     }
     #mapa {
@@ -660,7 +645,7 @@ a.galeria-icono:active  { color:#FF3300; }
     #servicio-smi:hover {
         background-position:-64px 0;
     }
-    #novedades .red-social-twitter {
+    #ultimas-publicaciones .red-social-twitter {
         display:none;
     }
     #mapa {
@@ -732,7 +717,7 @@ a.galeria-icono:active  { color:#FF3300; }
     #servicio-smi:hover {
         background-position:-48px 0;
     }
-    #novedades .red-social-twitter {
+    #ultimas-publicaciones .red-social-twitter {
         display:none;
     }
     #mapa {

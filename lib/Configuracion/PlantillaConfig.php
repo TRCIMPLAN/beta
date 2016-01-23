@@ -30,12 +30,11 @@ namespace Configuracion;
  */
 class PlantillaConfig {
 
-    const  DEPENCENCIAS_EN_INTERNET = true; // Si es verdadero Twitter Bootstrap, Font Awesome, Google Fonts y jQuery se tomarán desde servidores en internet
     public $sitio_titulo     = 'IMPLAN Torreón';
     public $sitio_url        = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
     public $rss              = 'rss.xml';
     public $favicon          = 'favicon.ico';
-    public $propio_css       = 'css/plataforma-de-conocimiento.css';
+    public $propio_css       = 'css/trcimplan.css';
     public $en_raiz          = false; // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
     public $para_compartir   = false; // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook
     public $autor            = 'TrcIMPLAN Staff'; // Autor por defecto
@@ -73,28 +72,11 @@ FINAL;
 </script>
 FINAL;
     protected $google_site_verification;
-    protected $cabecera_bootstrap_css;
-    protected $cabecera_font_awesome_css;
-    protected $cabecera_google_fonts_css;
-    protected $scripts_jquery_css;
-    protected $scripts_bootstrap_js;
-
-    /**
-     * Constructor
-     */
-    public function __construct() {
-        if (self::DEPENCENCIAS_EN_INTERNET) {
-            // jQuery
-            $this->scripts_jquery_css        = '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>';
-            // Twitter Bootstrap
-            $this->cabecera_bootstrap_css    = '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">';
-            $this->scripts_bootstrap_js      = '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>';
-            // Font Awesome
-            $this->cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">';
-            // Google Fonts
-            $this->cabecera_google_fonts_css = '<link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">';
-        }
-    } // constructor
+    protected $cabecera_bootstrap_css    = '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">';
+    protected $cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">';
+    protected $cabecera_google_fonts_css = '<link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">';
+    protected $scripts_jquery_css        = '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>';
+    protected $scripts_bootstrap_js      = '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>';
 
 } // Clase PlantillaConfig
 

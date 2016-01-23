@@ -55,17 +55,16 @@ class PaginasTarjetas extends Paginas {
      */
     public function html() {
         // Pasar variables a Breves Tarjetas
-        $this->breves_tarjetas->en_raiz         = $this->en_raiz;
-        $this->breves_tarjetas->en_otro         = $this->en_otro;
-        $this->breves_tarjetas->cantidad_maxima = $this->cantidad_maxima;
-        // Acumularemos la entrega en este arreglo
-        $a = array();
-        // Acumular encabezado
-        $a[] = $this->encabezado_html();
-        // Acumular Breves Tarjetas
-        $a[] = $this->breves_tarjetas->html();
+        $this->breves_tarjetas->titulo           = $this->titulo;
+        $this->breves_tarjetas->descripcion      = $this->descripcion;
+        $this->breves_tarjetas->encabezado       = $this->encabezado;
+        $this->breves_tarjetas->encabezado_color = $this->encabezado_color;
+        $this->breves_tarjetas->encabezado_icono = $this->encabezado_icono;
+        $this->breves_tarjetas->en_raiz          = $this->en_raiz;
+        $this->breves_tarjetas->en_otro          = $this->en_otro;
+        $this->breves_tarjetas->cantidad_maxima  = $this->cantidad_maxima;
         // Entregar
-        return implode("\n", $a);
+        return $this->breves_tarjetas->html();
     } // html
 
     /**

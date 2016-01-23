@@ -28,6 +28,10 @@ namespace Base;
 class BrevesGalerias extends Breves {
 
     // public $titulo;
+    // public $descripcion;
+    // public $encabezado;
+    // public $encabezado_color;
+    // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
     // public $cantidad_maxima;

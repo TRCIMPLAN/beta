@@ -177,6 +177,7 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             if (!isset($this->cabecera_font_awesome_css)) {
                 $a[] = '  <link href="css/font-awesome.min.css" rel="stylesheet">';
             }
+            $a[] = '  <link href="css/plataforma-de-conocimiento.css" rel="stylesheet">';
             if ($this->propio_css != '') {
                 $a[] = "  <link href=\"{$this->propio_css}\" rel=\"stylesheet\">";
             }
@@ -197,6 +198,7 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             if (!isset($this->cabecera_font_awesome_css)) {
                 $a[] = '  <link href="../css/font-awesome.min.css" rel="stylesheet">';
             }
+            $a[] = '  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">';
             if ($this->propio_css != '') {
                 $a[] = "  <link href=\"../{$this->propio_css}\" rel=\"stylesheet\">";
             }

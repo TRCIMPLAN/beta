@@ -46,7 +46,7 @@ fi
 #
 echo "  Eliminando en la raíz..."
 cd $BETA_DIR
-rm -rf css
+rm -f css/plataforma-de-conocimiento.css
 rm -rf fonts
 rm -rf imagenes
 rm -rf img
@@ -76,7 +76,6 @@ rm -rf Terminos
 #
 echo "  Copiando a la raíz..."
 cd $BETA_DIR
-cp -r $SITIO_WEB_DIR/css .
 cp -r $SITIO_WEB_DIR/fonts .
 cp -r $SITIO_WEB_DIR/imagenes .
 cp -r $SITIO_WEB_DIR/img .
@@ -95,7 +94,7 @@ rm -f preguntas-frecuentes/*.html
 rm -f terminos/*.html
 echo "  Copiando a la /bin..."
 cd $BETA_DIR/bin
-cp -r $PLATAFORMA_DIR/bin/Crear.php .
+cp $PLATAFORMA_DIR/bin/Crear.php .
 echo "  Copiando a la /lib..."
 cd $BETA_DIR/lib
 cp -r $PLATAFORMA_DIR/lib/Base .
@@ -105,6 +104,9 @@ cp -r $SITIO_WEB_DIR/lib/Contacto .
 cp -r $SITIO_WEB_DIR/lib/Institucional .
 cp -r $SITIO_WEB_DIR/lib/PreguntasFrecuentes .
 cp -r $SITIO_WEB_DIR/lib/Terminos .
+echo "  Copiando a la /css..."
+cd $BETA_DIR/css
+cp $PLATAFORMA_DIR/css/plataforma-de-conocimiento.css .
 
 #
 # Restaurando Imprentas

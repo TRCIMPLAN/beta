@@ -28,6 +28,10 @@ namespace Base;
 class BrevesTarjetas extends Breves {
 
     // public $titulo;
+    // public $descripcion;
+    // public $encabezado;
+    // public $encabezado_color;
+    // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
     // public $cantidad_maxima;
@@ -45,10 +49,8 @@ class BrevesTarjetas extends Breves {
         }
         // Acumularemos la entrega en este arreglo
         $a = array();
-        // Acumular título
-        if ($this->titulo != '') {
-            $a[] = "      <h2>{$this->titulo}</h2>";
-        }
+        // Acumular encabezado
+        $a[] = $this->encabezado_html();
         // Acumular breves
         $a[] = '      <div class="row" id="tarjetas">';
         foreach ($this->recolector->obtener_publicaciones($this->cantidad_maxima) as $p) {
@@ -68,7 +70,9 @@ class BrevesTarjetas extends Breves {
             if ($p->descripcion != '') {
                 $a[] = sprintf('              <p class="caption-descripcion">%s</p>', $p->descripcion);
             }
-            $a[] = sprintf('              <a href="%s" class="btn btn-default caption-boton" role="button"%s>%s</a>', $p->boton_url, $p->boton_target, $p->url_etiqueta);
+            if (($p->url_etiqueta != '') && ($p->boton_url)) {
+                $a[] = sprintf('              <a href="%s" class="btn btn-default caption-boton" role="button"%s>%s</a>', $p->boton_url, $p->boton_target, $p->url_etiqueta);
+            }
             $a[] = '            </div>';
             $a[] = '          </div>';
             $a[] = '        </div>';

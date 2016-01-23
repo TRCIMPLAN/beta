@@ -44,46 +44,6 @@ abstract class Paginas {
     } // constructor
 
     /**
-     * Encabezado HTML
-     */
-    protected function encabezado_html() {
-        // Validar título
-        if (!is_string($this->titulo) || ($this->titulo == '')) {
-            $this->titulo = 'Sin título';
-        }
-        // Acumularemos la entrega en este arreglo
-        $a = array();
-        // Si el encabezado está definido
-        if ($this->encabezado != '') {
-            // Se pone el código HTML del encabezado
-            $a[] = $this->encabezado;
-            // Y el título de la página es invisible
-            if ($this->titulo != '') {
-                $a[] = "      <h1 style=\"display:none;\">{$this->titulo}</h1>";
-            }
-        } else {
-            // No hay código HTML, vamos a construir el encabezado
-            if ($this->encabezado_color != '') {
-                $a[] = sprintf('      <div class="encabezado" style="background-color:%s;">', $this->encabezado_color);
-            } else {
-                $a[] = '      <div class="encabezado">';
-            }
-            if ($this->encabezado_icono != '') {
-                $enca = sprintf('<i class="%s encabezado-icono"></i> %s', $this->encabezado_icono, $this->titulo);
-            } else {
-                $enca = $this->titulo;
-            }
-            $a[] = "        <span><h1>$enca</h1></span>";
-            if ($this->descripcion != '') {
-                $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
-            }
-            $a[] = '      </div>';
-        }
-        // Entregar
-        return implode("\n", $a);
-    } // encabezado_html
-
-    /**
      * HTML
      *
      * @return string Código HTML

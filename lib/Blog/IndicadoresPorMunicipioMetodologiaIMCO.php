@@ -33,7 +33,7 @@ class IndicadoresPorMunicipioMetodologiaIMCO extends \Base\Publicacion {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre          = 'Indicadores por municipio construidos por el IMPLAN con la base de datos y metodología del IMCO';
-        $this->autor           = 'Rodrigo González Morales y Luis A. Gutiérrez Arizpe';
+        $this->autor           = array('Lic. Rodrigo González Morales', 'Lic. Luis A. Gutiérrez Arizpe');
         $this->fecha           = '2014-05-28T08:05';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'indicadores-por-municipio-metodologia-imco';

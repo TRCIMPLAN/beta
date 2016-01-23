@@ -28,6 +28,10 @@ namespace Base;
 class BrevesIndice extends Breves {
 
     // public $titulo;
+    // public $descripcion;
+    // public $encabezado;
+    // public $encabezado_color;
+    // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
     // public $cantidad_maxima;
@@ -45,10 +49,8 @@ class BrevesIndice extends Breves {
         }
         // Acumularemos la entrega en este arreglo
         $a = array();
-        // Acumular título
-        if ($this->titulo != '') {
-            $a[] = "      <h2>{$this->titulo}</h2>";
-        }
+        // Acumular encabezado
+        $a[] = $this->encabezado_html();
         // Acumular breves
         foreach ($this->recolector->obtener_publicaciones($this->cantidad_maxima) as $p) {
             // Validar publicacion
