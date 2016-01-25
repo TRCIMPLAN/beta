@@ -27,16 +27,20 @@ namespace Base;
  */
 class ImprentaAutores extends Imprenta {
 
-    const AUTORES_DIR = 'autores';   // Nombre del directorio que se creará en la raiz para depositar los archivos HTML
-    public $imprentas;               // Arreglo con rutas a las clases de ImprentaPublicaciones
-    protected $recolector_autores;   // Instancia de RecolectorAutores
-    protected $autores_contador = 0; // Entero, cantidad de archivos HTML de autores creados
+    const AUTORES_DIR              = 'autores'; // Nombre del directorio que se creará en la raiz para depositar los archivos HTML
+    const NAVEGACION_OPCION_ACTIVA = 'Autores'; // Opción del menú en /Configuracion/NavegacionConfig
+    protected $imprentas;                       // Arreglo con rutas a las clases de ImprentaPublicaciones
+    protected $recolector;                      // Instancia de RecolectorAutores
+    protected $contador            = 0;         // Entero, cantidad de archivos HTML de autores creados
 
     /**
      * Constructor
+     *
+     * @param array Arreglo con rutas a las clases de ImprentaPublicaciones
      */
-    public function __construct() {
-        $this->recolector_autores = new RecolectorAutores();
+    public function __construct($imprentas) {
+        $this->imprentas  = $imprentas;
+        $this->recolector = new RecolectorAutores();
     } // constructor
 
     /**
@@ -44,34 +48,32 @@ class ImprentaAutores extends Imprenta {
      */
     protected function imprimir_autores() {
         // Iniciar la plantilla
-        $plantilla                = new Plantilla();
-        $plantilla->navegacion    = new Navegacion();
-        $plantilla->mapa_inferior = new MapaInferior();
-        $plantilla->directorio    = self::AUTORES_DIR;
-    //  $plantilla->navegacion->opcion_activa = '';
+        $plantilla                            = new Plantilla();
+        $plantilla->navegacion                = new Navegacion();
+        $plantilla->mapa_inferior             = new MapaInferior();
+        $plantilla->directorio                = self::AUTORES_DIR;
+        $plantilla->navegacion->opcion_activa = self::NAVEGACION_OPCION_ACTIVA;
         // Crear directorio
         $this->crear_directorio($plantilla->directorio);
         // Bucle por todas los autores
-        foreach ($this->recolector_autores->obtener_autores() as $autor) {
+        foreach ($this->recolector->obtener_autores() as $autor) {
             // Filtrar
-            $this->recolector_autores->filtrar_publicaciones_de_autor($autor);
-            // Iniciar Índice
-            $concentrador              = new PaginasIndice($this->recolector_autores);
-            $concentrador->titulo      = $autor;
-            $concentrador->descripcion = "Publicaciones del autor.";
-            $concentrador->en_raiz     = false;
-            $concentrador->en_otro     = true;
+            $this->recolector->filtrar_publicaciones_de_autor($autor);
+            // Iniciar PaginasAutoresIndividual
+            $pagina                  = new PaginasAutoresIndividual($this->recolector);
+            $pagina->titulo          = $autor;
+            $pagina->descripcion     = "Publicaciones de $autor.";
             // Pasar a la plantilla estos valores
-            $plantilla->titulo         = $concentrador->titulo;
-            $plantilla->descripcion    = $concentrador->descripcion;
-            $plantilla->claves         = "Autor, $autor";
-            $plantilla->archivo_ruta   = sprintf('%s/%s.html', $this->caracteres_para_web($plantilla->directorio), $this->caracteres_para_web($autor));
-            // Pasar a la plantilla el HTML y Javascript del concentrador
-            $plantilla->contenido      = $concentrador->html();
-            $plantilla->javascript     = $concentrador->javascript();
+            $plantilla->titulo       = $pagina->titulo;
+            $plantilla->descripcion  = $pagina->descripcion;
+            $plantilla->claves       = "Autor, $autor";
+            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, $this->caracteres_para_web($autor));
+            // Pasar a la plantilla el HTML y Javascript
+            $plantilla->contenido    = $pagina->html();
+            $plantilla->javascript   = $pagina->javascript();
             // Crear archivo
             $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
-            $this->autores_contador++;
+            $this->contador++;
         }
     } // imprimir_autores
 
@@ -80,35 +82,22 @@ class ImprentaAutores extends Imprenta {
      */
     protected function imprimir_index() {
         // Iniciar la plantilla
-        $plantilla                = new Plantilla();
-        $plantilla->navegacion    = new Navegacion();
-        $plantilla->mapa_inferior = new MapaInferior();
-    //  $plantilla->navegacion->opcion_activa = '';
-        $plantilla->titulo        = "Autores";
-        $plantilla->descripcion   = "Todas los autores";
-        $plantilla->claves        = "Autores";
-        $plantilla->directorio    = self::AUTORES_DIR;
-        $plantilla->archivo_ruta  = sprintf('%s/index.html', $this->caracteres_para_web($plantilla->directorio));
-        // Bucle por todos los autores
-        $vinculos = array();
-        foreach ($this->recolector_autores->obtener_autores() as $autor) {
-            $this->recolector_autores->filtrar_publicaciones_de_autor($autor);
-            $etiqueta            = sprintf('%s (%d)', $autor, $this->recolector_autores->obtener_cantidad_de_publicaciones());
-            $vinculos[$etiqueta] = sprintf('%s.html', $this->caracteres_para_web($autor));
-        }
-        // Acumular el HTML
-        $a   = array();
-        $a[] = '      <div class="encabezado">';
-        $a[] = sprintf('        <span><h1>%s</h1></span>', $plantilla->titulo);
-        $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $plantilla->descripcion);
-        $a[] = '      </div>';
-        $a[] = '      <ul>';
-        foreach ($vinculos as $etiqueta => $url) {
-            $a[] = sprintf('        <li><a href="%s">%s</a></li>', $url, $etiqueta);
-        }
-        $a[] = '      </ul>';
+        $plantilla                            = new Plantilla();
+        $plantilla->navegacion                = new Navegacion();
+        $plantilla->mapa_inferior             = new MapaInferior();
+        $plantilla->directorio                = self::AUTORES_DIR;
+        $plantilla->navegacion->opcion_activa = self::NAVEGACION_OPCION_ACTIVA;
+        $plantilla->titulo                    = "Autores";
+        $plantilla->descripcion               = "Todas los autores";
+        $plantilla->claves                    = "Autores";
+        $plantilla->archivo_ruta              = sprintf('%s/index.html', $this->caracteres_para_web($plantilla->directorio));
+        // Iniciar PaginasAutoresIndice
+        $pagina                = new PaginasAutoresIndice($this->recolector);
+        $pagina->titulo        = $plantilla->titulo;
+        $pagina->descripcion   = $plantilla->descripcion;
         // Definir contenido
-        $plantilla->contenido = implode("\n", $a);
+        $plantilla->contenido  = $pagina->html();
+        $plantilla->javascript = $pagina->javascript();
         // Crear archivo
         $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
     } // imprimir_index
@@ -118,11 +107,11 @@ class ImprentaAutores extends Imprenta {
      */
     public function imprimir() {
         echo "ImprentaAutores:       ";
-        $this->recolector_autores->agregar_publicaciones_de_imprentas($this->imprentas);
+        $this->recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         $this->imprimir_autores();
         $this->imprimir_index();
         // Mensaje
-        echo sprintf("  fueron %d en %s con índice.\n", $this->autores_contador, self::AUTORES_DIR);
+        echo sprintf("  fueron %d en %s con índice.\n", $this->contador, self::AUTORES_DIR);
     } // imprimir
 
 } // Clase ImprentaAutores

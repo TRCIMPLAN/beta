@@ -32,10 +32,10 @@ class PaginasGalerias extends Paginas {
     // public $encabezado;
     // public $encabezado_color;
     // public $encabezado_icono;
-    // protected $recolector;
-    public $en_raiz = false;    // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
-    public $en_otro = false;    // Si es verdadero el archivo va a OTRO lugar como al directorio autores, categorias, etc.
+    // public $en_raiz;
+    // public $en_otro;
     public $cantidad_maxima;    // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
+    protected $recolector;      // Instancia de Recolector
     protected $breves_galerias; // Instancia de BrevesGalerias
 
     /**
@@ -44,7 +44,7 @@ class PaginasGalerias extends Paginas {
      * @param mixed Instancia de Recolector
      */
     public function __construct(Recolector $recolector) {
-        parent::__construct($recolector);
+        $this->recolector      = $recolector;
         $this->breves_galerias = new BrevesGalerias($this->recolector);
     } // constructor
 

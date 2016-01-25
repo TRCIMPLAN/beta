@@ -46,12 +46,10 @@ class Creador extends \Configuracion\CreadorConfig {
             $imprenta_publicaciones->imprimir();
         }
         // Imprimir categorías
-        $imprenta_categorias = new ImprentaCategorias();
-        $imprenta_categorias->imprentas = $this->imprentas;
+        $imprenta_categorias = new ImprentaCategorias($this->imprentas);
         $imprenta_categorias->imprimir();
         // Imprimir autores
-        $imprenta_autores = new ImprentaAutores();
-        $imprenta_autores->imprentas = $this->imprentas;
+        $imprenta_autores = new ImprentaAutores($this->imprentas);
         $imprenta_autores->imprimir();
         // Imprimir página inicial (index.html)
         $imprenta_pagina_inicial = new ImprentaPaginaInicial();

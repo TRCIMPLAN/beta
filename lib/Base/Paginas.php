@@ -32,16 +32,24 @@ abstract class Paginas {
     public $encabezado;       // Código HTML para usarse como encabezado
     public $encabezado_color; // Texto, color de fondo del encabezado #nnnnnn
     public $encabezado_icono; // Texto, icono Font Awesome
-    protected $recolector;    // Instacia de Recolector
+    public $en_raiz = false;  // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
+    public $en_otro = true;   // Si es verdadero el archivo va a OTRO lugar como al directorio autores, categorias, etc.
 
     /**
-     * Constructor
+     * Caracteres para web
      *
-     * @param mixed Instancia de Recolector
+     * @param  string Texto a convertir
+     * @return string Convertido
      */
-    public function __construct(Recolector $recolector) {
-        $this->recolector = $recolector;
-    } // constructor
+    protected function caracteres_para_web($in_texto) {
+        $buscados            = array('ñ', 'Ñ', 'ü', 'Ü', 'á', 'Á', 'é', 'É', 'í', 'Í', 'ó', 'Ó', 'ú', 'Ú');
+        $cambios             = array('n', 'n', 'u', 'u', 'a', 'a', 'e', 'e', 'i', 'i', 'o', 'o', 'u', 'u');
+        $sin_acentos         = str_replace($buscados, $cambios, $in_texto);
+        $especiales          = array(' ', '#', '&', '%', '$', '@', '(', ')', '.', ',');
+        $sin_especiales      = str_replace($especiales, '-', $sin_acentos);
+        $sin_repetir_guiones = preg_replace('/\-+/', '-', $sin_especiales);
+        return strtolower($sin_repetir_guiones);
+    } // caracteres_para_web
 
     /**
      * HTML
