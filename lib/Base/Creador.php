@@ -26,10 +26,6 @@ namespace Base;
  * Clase Creador
  *
  * Esta clase coordina los conjuntos de programas que crean el sitio web
- *   1) Ejecuta cada una de las Imprentas de las publicaciones, creando sus archivos HTML y su index.html
- *   2) Ejecuta ImprentaPaginaInicial que crea el index.html en la raíz
- *   3) Ejecuta ImprentaMapaSitio que crea el sitemap.xml en la raíz
- *   4) Ejecuta ImprentaRedifusion que crea el rss.xml en la raíz
  * Se ejecuta con bin/Crear.php
  */
 class Creador extends \Configuracion\CreadorConfig {
@@ -44,25 +40,31 @@ class Creador extends \Configuracion\CreadorConfig {
         foreach ($this->imprentas as $imprenta) {
             $imprenta_publicaciones = new $imprenta();
             $imprenta_publicaciones->imprimir();
+            unset($imprenta_publicaciones);
         }
         // Imprimir categorías
         $imprenta_categorias = new ImprentaCategorias($this->imprentas);
         $imprenta_categorias->imprimir();
+        unset($imprenta_categorias);
         // Imprimir autores
         $imprenta_autores = new ImprentaAutores($this->imprentas);
         $imprenta_autores->imprimir();
+        unset($imprenta_autores);
         // Imprimir página inicial (index.html)
         $imprenta_pagina_inicial = new ImprentaPaginaInicial();
         $imprenta_pagina_inicial->imprimir();
+        unset($imprenta_pagina_inicial);
         // Imprimir mapa del sitio (sitemap.xml)
         $imprenta_mapa_sitio = new ImprentaMapaSitio();
         $imprenta_mapa_sitio->agregar_pagina_inicial();
         $imprenta_mapa_sitio->agregar_publicaciones_de_imprentas($this->imprentas);
         $imprenta_mapa_sitio->imprimir();
+        unset($imprenta_mapa_sitio);
         // Imprimir redifusión (RSS feed)
         $imprenta_redifusion = new ImprentaRedifusion();
         $imprenta_redifusion->agregar_publicaciones_de_imprentas($this->imprentas);
         $imprenta_redifusion->imprimir();
+        unset($imprenta_redifusion);
     } // imprimir
 
 } // Clase Creador

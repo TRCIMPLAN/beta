@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-01-24</lastmod>
+    <lastmod>2016-01-25</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -13,6 +13,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/competencias-en-lenguaje-y-matematicas-en-los-estudiantes-de-la-comarca-parte-1.html</loc>
     <lastmod>2016-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/consejo-directivo/integrantes.html</loc>
+    <lastmod>2016-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -31,13 +36,43 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/consejo-directivo/eleccion-de-consejeros-de-representacion-sectorial-2015.html</loc>
+    <lastmod>2015-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/evolucion-del-mercado-hipotecario-en-torreon-2015-12.html</loc>
     <lastmod>2015-12-14</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/seguridad-publica.html</loc>
+    <lastmod>2015-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-12-07-conoce-a-los-consejeros-del-implan-2014-2015.html</loc>
+    <lastmod>2015-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/diagnostico-del-problema-de-drenaje-pluvial-en-torreon.html</loc>
     <lastmod>2015-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-11-24-el-cide-premia-al-implan.html</loc>
+    <lastmod>2015-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-11-23-dicen-si-a-la-cultura-del-emprendimiento.html</loc>
+    <lastmod>2015-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/consejo-directivo/convocatoria-2015.html</loc>
+    <lastmod>2015-11-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -51,8 +86,28 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-11-12-laguna-robot-challange-2015-presentacion.html</loc>
+    <lastmod>2015-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-11-10-plataforma-trcimplangobmx-premio-iclei.html</loc>
+    <lastmod>2015-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/infraestructura-sector-salud.html</loc>
+    <lastmod>2015-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/una-laguna-competitiva-en-joyeria-de-plata.html</loc>
     <lastmod>2015-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-10-29-torreon-recibe-tres-reconocimientos-a-nivel-nacional.html</loc>
+    <lastmod>2015-10-29</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -62,6 +117,11 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/por-un-crecimiento-ordenado-en-torreon.html</loc>
+    <lastmod>2015-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/infraestructura-vial.html</loc>
     <lastmod>2015-10-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -93,6 +153,16 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/conviviendo-en-nuestras-ciudades.html</loc>
     <lastmod>2015-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-09-25-avances-del-proyecto-calle-completa.html</loc>
+    <lastmod>2015-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-09-24-interesa-como-referente-nacional.html</loc>
+    <lastmod>2015-09-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -141,13 +211,48 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-08-20-sesion-ordinaria.html</loc>
+    <lastmod>2015-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-08-19-comision-planeacion-competitividad.html</loc>
+    <lastmod>2015-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/introduccion-a-la-ciencia-de-datos-parte-1.html</loc>
     <lastmod>2015-08-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-movilidad-no-motorizada.html</loc>
+    <lastmod>2015-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-salud-laguna.html</loc>
+    <lastmod>2015-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-08-14-plan-estrategico-metropolitano-salud-laguna.html</loc>
+    <lastmod>2015-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-08-13-plan-estrategico-metropolitano-movilidad-no-motorizada.html</loc>
+    <lastmod>2015-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/turismo-urbano-como-motor-en-las-ciudades.html</loc>
     <lastmod>2015-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/zona-30.html</loc>
+    <lastmod>2015-08-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -166,8 +271,18 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/plan-centro-laguna.html</loc>
+    <lastmod>2015-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/resultados-de-los-censos-economicos-2014.html</loc>
     <lastmod>2015-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/centros-educativos.html</loc>
+    <lastmod>2015-07-28</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -231,6 +346,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/patrimonio-historico.html</loc>
+    <lastmod>2015-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/recomendaciones-pacificacion-transito.html</loc>
     <lastmod>2015-06-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -256,6 +376,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/crecimiento-decrecimiento-poblacion.html</loc>
+    <lastmod>2015-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/ninos-violencia.html</loc>
     <lastmod>2015-06-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -271,6 +396,16 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/calle-completa.html</loc>
+    <lastmod>2015-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/salud-laguna.html</loc>
+    <lastmod>2015-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/indicadores-economicos-primer-trimestre-2015-torreon.html</loc>
     <lastmod>2015-05-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -283,6 +418,26 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/principios-nuevo-urbanismo.html</loc>
     <lastmod>2015-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig/../sig-mapas-torreon/index.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/cobertura-transporte.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/vida-en-ciudad.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-05-13-financial-times-american-cities-future-2015-2016.html</loc>
+    <lastmod>2015-05-14</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -336,6 +491,51 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/maternidad-adolescente.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-con-agua-red-publica.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-con-computadora.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-con-drenaje.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-con-energia-electrica.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-con-internet.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-deshabitadas.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/viviendas-que-disponen-retrete.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/fotogaleria.html</loc>
+    <lastmod>2015-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/innovacion-internet-competitividad.html</loc>
     <lastmod>2015-04-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -348,6 +548,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/espacio-publico-urbano.html</loc>
     <lastmod>2015-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-03-18-comunicado-prensa.html</loc>
+    <lastmod>2015-03-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -368,6 +573,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/la-comarca-lagunera-implan.html</loc>
     <lastmod>2015-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-4.html</loc>
+    <lastmod>2015-03-05</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -407,6 +617,11 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/tasa-inflacion-precios-torreon-2014.html</loc>
+    <lastmod>2015-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/crecimiento-historico-torreon.html</loc>
     <lastmod>2015-02-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -451,6 +666,16 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-planes/plan-director-de-desarrollo-urbano-de-municipio-de-torreon.pdf</loc>
+    <lastmod>2015-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig/../sig-planes/index.html</loc>
+    <lastmod>2015-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/urbanismo-participativo.html</loc>
     <lastmod>2014-12-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -476,6 +701,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-3.html</loc>
+    <lastmod>2014-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/movilidad-nuestra-ciudad.html</loc>
     <lastmod>2014-11-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -486,7 +716,17 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/zonificacion-secundaria.html</loc>
+    <lastmod>2014-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/prevencion-delito-seguridad.html</loc>
+    <lastmod>2014-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/zonificacion-primaria.html</loc>
     <lastmod>2014-11-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -511,6 +751,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-2.html</loc>
+    <lastmod>2014-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/ciudades-reto-transformacion.html</loc>
     <lastmod>2014-10-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -531,6 +776,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2014-10-16-mesa-1-diagnostico-pronostico.html</loc>
+    <lastmod>2014-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/importancia-suelo-ciudades.html</loc>
     <lastmod>2014-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -538,6 +788,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/poligonos-actuacion-desarrollo-urbano-integral.html</loc>
     <lastmod>2014-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/mesa-1.html</loc>
+    <lastmod>2014-10-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -571,6 +826,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/introduccion.html</loc>
+    <lastmod>2014-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/nuevas-herramientas-nuevos-paradigmas.html</loc>
     <lastmod>2014-09-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -596,6 +856,16 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2014-09-11-plan-estrategico-metropolitano.html</loc>
+    <lastmod>2014-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-mapas-torreon/avance-reconversion-tecnologica-led-alumbrado-publico.html</loc>
+    <lastmod>2014-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/torreon-camino-redensificacion.html</loc>
     <lastmod>2014-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -617,6 +887,11 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/institucional/informacion-financiera.html</loc>
+    <lastmod>2014-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig/introduccion.html</loc>
     <lastmod>2014-08-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -691,6 +966,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/plata-laguna.html</loc>
+    <lastmod>2014-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/doing-business-torreon.html</loc>
     <lastmod>2014-05-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -703,6 +983,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/invertir-en-torreon.html</loc>
     <lastmod>2014-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2014-05-12-comunicado-prensa.html</loc>
+    <lastmod>2014-05-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -732,6 +1017,11 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/institucional/vision-mision.html</loc>
+    <lastmod>2014-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/banco-municipal-proyectos-inversion.html</loc>
     <lastmod>2014-05-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>

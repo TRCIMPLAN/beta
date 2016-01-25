@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Blog Imprenta
  *
- * Copyright (C) 2014 IMPLAN Torreón
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace Blog;
@@ -30,14 +31,19 @@ class Imprenta extends \Base\ImprentaPublicaciones {
      * Constructor
      */
     public function __construct() {
+        // Nombre del directorio dentro de /lib que contiene las clases con las publicaciones
         $this->publicaciones_directorio = 'Blog';
+        // Los siguientes parámetros dan datos para el concentrador y las páginas que no los tienen
         $this->titulo                   = 'Análisis Publicados';
         $this->descripcion              = 'Publicaciones sobre investigación y otros temas.';
         $this->claves                   = 'IMPLAN, Torreon, Blog';
-        $this->directorio               = 'blog';
-        $this->archivo_ruta             = 'blog/index.html';
-        $this->nombre_menu              = 'Análisis Publicados';
         $this->encabezado_color         = '#800000';
+        // Opción de Navegación a poner activa
+        $this->nombre_menu              = 'Análisis Publicados';
+        // El concentrador es el nombre de la clase que concentrará a las publicaciones para hacer el index.html
+        $this->concentrador             = 'Indice'; // Puede ser Indice, Galeria o Tarjetas
+        // Directorio en la raíz que será creado para alojar el concentrador y las páginas
+        $this->directorio               = 'blog';
         // Ejecutar constructor en el padre
         parent::__construct();
     } // constructor

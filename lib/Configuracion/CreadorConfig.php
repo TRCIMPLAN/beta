@@ -32,8 +32,15 @@ class CreadorConfig {
     public $imprentas = array(
         '\Blog\Imprenta',
         '\Contacto\Imprenta',
+        '\ConsejoDirectivo\Imprenta',
         '\Institucional\Imprenta',
+        '\PlanEstrategicoMetropolitano\Imprenta',
         '\PreguntasFrecuentes\Imprenta',
+        '\Proyectos\Imprenta',
+        '\SalaPrensa\Imprenta',
+        '\SIG\Imprenta',
+        '\SIGMapasTorreon\Imprenta',
+        '\SIGPlanes\Imprenta',
         '\Terminos\Imprenta');
 
 } // Clase CreadorConfig

@@ -34,11 +34,11 @@ class ImprentaPublicaciones extends Imprenta {
     public $encabezado_icono;              // Texto, icono Font Awesome
     public $claves;                        // Texto, palabras separadas por comas para meta tag
     public $nombre_menu;                   // Texto, opción del menú activa
-    protected $recolector;                 // Instancia de Recolector
-    protected $concentrador  = 'Indice';   // Texto, nombre de la clase que concentrará este conjunto de publicaciones (Indice, Galeria, Tarjetas)
     protected $titulo;                     // Texto, título de la página
     protected $descripcion;                // Texto, descripción para meta tag
     protected $archivo_ruta;               // Texto opcional, ruta al archivo HTML del concentrador
+    protected $concentrador  = 'Indice';   // Texto, nombre de la clase que concentrará este conjunto de publicaciones (Indice, Galeria, Tarjetas)
+    protected $recolector;                 // Instancia de Recolector
     protected $publicaciones_contador = 0; // Entero, cantidad de publicaciones producidas
 
     /**
@@ -90,8 +90,6 @@ class ImprentaPublicaciones extends Imprenta {
      * Imprimir publicaciones
      */
     protected function imprimir_publicaciones() {
-        // Cargar las publicaciones
-        $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
         // Validar que haya publicaciones
         if ($this->recolector->obtener_cantidad_de_publicaciones() == 0) {
             throw new \Exception("Error en ImprentaPublicaciones: No hay publicaciones para crear.");
@@ -153,8 +151,8 @@ class ImprentaPublicaciones extends Imprenta {
         $plantilla->archivo_ruta              = $this->archivo_ruta;
         $plantilla->navegacion->opcion_activa = $this->nombre_menu;
         // Pasar a la plantilla el HTML y Javascript del concentrador
-        $plantilla->contenido                 = $concentrador->html();
-        $plantilla->javascript[]              = $concentrador->javascript();
+        $plantilla->contenido    = $concentrador->html();
+        $plantilla->javascript[] = $concentrador->javascript();
         // Imprimir index.html
         $this->crear_directorio($plantilla->directorio);
         $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
@@ -166,6 +164,7 @@ class ImprentaPublicaciones extends Imprenta {
     public function imprimir() {
         echo "ImprentaPublicaciones: ";
         $this->validar();
+        $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
         $this->imprimir_publicaciones();
         $this->imprimir_index();
         echo sprintf("  fueron %d en %s con %s.\n", $this->publicaciones_contador, $this->publicaciones_directorio, strtolower($this->concentrador));

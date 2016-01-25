@@ -389,10 +389,10 @@ class Publicacion extends \Configuracion\PublicacionConfig {
     public function definir_encabezado_color($color) {
         if ($this->encabezado_color == '') {
             $this->encabezado_color = $color;
+            if (is_object($this->contenido) && ($this->contenido instanceof SchemaCreativeWork)) {
+                $this->contenido->headline_style = $color;
+            }
         }
-      //if ($this->es_contenido_esquema()) {
-      //    $this->contenido->headline_style = $this->encabezado_color;
-      //}
     } // definir_encabezado_color
 
     /**
@@ -400,10 +400,13 @@ class Publicacion extends \Configuracion\PublicacionConfig {
      *
      * @param String Icono
      */
-    public function definir_encabezado_icono($in_icono) {
-      //if ($this->es_contenido_esquema()) {
-      //    $this->contenido->headline_icon = $in_icono;
-      //}
+    public function definir_encabezado_icono($icono) {
+        if ($this->icono == '') {
+            $this->icono = $icono;
+            if (is_object($this->contenido) && ($this->contenido instanceof SchemaCreativeWork)) {
+                $this->contenido->headline_icon = $icono;
+            }
+        }
     } // definir_encabezado_icono
 
     /**
