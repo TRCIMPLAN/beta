@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN Sitio Web - Términos Imprenta
+ * TrcIMPLAN Sitio Web - Terminos Imprenta
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *

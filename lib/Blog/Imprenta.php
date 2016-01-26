@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * TrcIMPLAN Sitio Web - Blog Imprenta
  *
  * Copyright (C) 2016 IMPLAN Torreón
@@ -36,7 +36,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Los siguientes parámetros dan datos para el concentrador y las páginas que no los tienen
         $this->titulo                   = 'Análisis Publicados';
         $this->descripcion              = 'Publicaciones sobre investigación y otros temas.';
-        $this->claves                   = 'IMPLAN, Torreon, Blog';
+        $this->claves                   = 'IMPLAN, Torreon, Analisis, Publicaciones, Estudios, Investigacion';
         $this->encabezado_color         = '#800000';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Análisis Publicados';

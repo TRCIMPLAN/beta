@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN Sitio Web - DIRECTORIO Imprenta
+ * TrcIMPLAN Sitio Web - ConsejoDirectivo Imprenta
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *

@@ -27,49 +27,42 @@ namespace Base;
  */
 class ImprentaMapaSitio extends Imprenta {
 
-    protected $recolector; // Instancia de Recolector
-    protected $mapa_sitio; // Instancia de MapaSitio
+    protected $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones
 
     /**
      * Constructor
+     *
+     * @param array Arreglo con rutas a las clases de ImprentaPublicaciones
      */
-    public function __construct() {
-        $this->recolector = new Recolector();
-        $this->mapa_sitio = new MapaSitio();
+    public function __construct($imprentas) {
+        $this->imprentas = $imprentas;
     } // constructor
-
-    /**
-     * Agregar la página inicial del sitio web
-     */
-    public function agregar_pagina_inicial() {
-        $this->mapa_sitio->agregar_url('index.html', date('Y-m-d'), 'daily', '1');
-    } // agregar_pagina_inicial
-
-    /**
-     * Agregar publicaciones de imprentas
-     */
-    public function agregar_publicaciones_de_imprentas($entrada) {
-        $this->recolector->agregar_publicaciones_de_imprentas($entrada);
-    } // agregar_publicaciones_de_imprentas
 
     /**
      * Imprimir
      */
     public function imprimir() {
         echo "ImprentaMapaSitio:     ";
+        // Iniciar MapaSitio y Recolector
+        $mapa_sitio = new MapaSitio();
+        $recolector = new Recolector();
+        // Agregar la página inicial
+        $mapa_sitio->agregar_url('index.html', date('Y-m-d'), 'daily', '1');
+        // Recolectar publicaciones
+        $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Validar que haya publicaciones
-        if ($this->recolector->obtener_cantidad_de_publicaciones() == 0) {
+        if ($recolector->obtener_cantidad_de_publicaciones() == 0) {
             throw new \Exception("Aviso en ImprentaMapaSitio: No hay publicaciones para hacer el mapa del sitio.");
         }
-        // Agregar URLs de cada Publicacion
-        foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
+        // Bucle para agregar todas las publicaciones
+        foreach ($recolector->obtener_publicaciones() as $publicacion) {
             $publicacion->en_raiz = true;
-            $this->mapa_sitio->agregar_url($publicacion->url(), $publicacion->fecha, 'monthly', '1');
+            $mapa_sitio->agregar_url($publicacion->url(), $publicacion->fecha, 'monthly', '1');
         }
         // Crear archivo sitemap.xml
-        $this->crear_archivo($this->mapa_sitio->archivo, $this->mapa_sitio->xml());
+        $this->crear_archivo($mapa_sitio->archivo, $mapa_sitio->xml());
         // Mensaje
-        echo "  mapa del sitio en {$this->mapa_sitio->archivo}\n";
+        echo "  mapa del sitio en {$mapa_sitio->archivo}\n";
     } // imprimir
 
 } // Clase ImprentaMapaSitio

@@ -63,7 +63,7 @@ class SesionOrdinaria20150820 extends \Base\Publicacion {
         // Se define una ruta a una archivo HTML para que cuando se ejecute el método HTML se cargue
         $this->contenido_archivo_html = 'lib/SalaPrensa/SesionOrdinaria20150820.html';
         // Para el Organizador
-        $this->categorias      = array('Gobierno');
+        $this->categorias      = array();
         $this->fuentes         = array();
         $this->regiones        = array('Torreón');
     } // constructor

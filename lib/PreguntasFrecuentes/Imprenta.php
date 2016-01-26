@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN Sitio Web - Preguntas Frecuentes Imprenta
+ * TrcIMPLAN Sitio Web - PreguntasFrecuentes Imprenta
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *

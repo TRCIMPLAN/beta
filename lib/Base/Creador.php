@@ -51,18 +51,15 @@ class Creador extends \Configuracion\CreadorConfig {
         $imprenta_autores->imprimir();
         unset($imprenta_autores);
         // Imprimir página inicial (index.html)
-        $imprenta_pagina_inicial = new ImprentaPaginaInicial();
+        $imprenta_pagina_inicial = new ImprentaPaginaInicial($this->imprentas);
         $imprenta_pagina_inicial->imprimir();
         unset($imprenta_pagina_inicial);
         // Imprimir mapa del sitio (sitemap.xml)
-        $imprenta_mapa_sitio = new ImprentaMapaSitio();
-        $imprenta_mapa_sitio->agregar_pagina_inicial();
-        $imprenta_mapa_sitio->agregar_publicaciones_de_imprentas($this->imprentas);
+        $imprenta_mapa_sitio = new ImprentaMapaSitio($this->imprentas);
         $imprenta_mapa_sitio->imprimir();
         unset($imprenta_mapa_sitio);
         // Imprimir redifusión (RSS feed)
-        $imprenta_redifusion = new ImprentaRedifusion();
-        $imprenta_redifusion->agregar_publicaciones_de_imprentas($this->imprentas);
+        $imprenta_redifusion = new ImprentaRedifusion($this->imprentas);
         $imprenta_redifusion->imprimir();
         unset($imprenta_redifusion);
     } // imprimir

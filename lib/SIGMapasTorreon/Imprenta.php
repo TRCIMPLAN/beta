@@ -35,7 +35,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->publicaciones_directorio = 'SIGMapasTorreon';
         // Los siguientes parámetros dan datos para el concentrador y las páginas que no los tienen
         $this->titulo                   = 'Sistema de Información Geográfica de Torreón';
-        $this->descripcion              = 'Mapas con información georreferenciada para Torreón.';
+        $this->descripcion              = 'Mapas con información georreferenciada para Torreón';
         $this->claves                   = 'IMPLAN, Torreon, Información, Geográfica, Torreón';
         $this->encabezado_color         = '#008000';
         // Opción de Navegación a poner activa

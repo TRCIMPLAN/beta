@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN Sitio Web - DIRECTORIO Imprenta
+ * TrcIMPLAN Sitio Web - PlanEstrategicoMetropolitano Imprenta
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -41,7 +41,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Plan Estratégico Metropolitano';
         // El concentrador es el nombre de la clase que concentrará a las publicaciones para hacer el index.html
-        $this->concentrador             = 'Tarjetas'; // Puede ser Indice, Galeria o Tarjetas
+        $this->concentrador             = 'Indice'; // Puede ser Indice, Galeria o Tarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'plan-estrategico-metropolitano';
         // Ejecutar constructor en el padre

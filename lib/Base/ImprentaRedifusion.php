@@ -27,35 +27,33 @@ namespace Base;
  */
 class ImprentaRedifusion extends Imprenta {
 
-    protected $recolector; // Instancia de Recolector
+    protected $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones
 
     /**
      * Constructor
+     *
+     * @param array Arreglo con rutas a las clases de ImprentaPublicaciones
      */
-    public function __construct() {
-        $this->recolector = new Recolector();
+    public function __construct($imprentas) {
+        $this->imprentas = $imprentas;
     } // constructor
-
-    /**
-     * Agregar publicaciones de imprentas
-     */
-    public function agregar_publicaciones_de_imprentas($entrada) {
-        $this->recolector->agregar_publicaciones_de_imprentas($entrada);
-    } // agregar_publicaciones_de_imprentas
 
     /**
      * Imprimir
      */
     public function imprimir() {
         echo "ImprentaRedifusion:    ";
-        // Iniciar Redifusion
+        // Iniciar Redifusion y Recolector
         $redifusion = new Redifusion();
+        $recolector = new Recolector();
+        // Recolectar publicaciones
+        $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Validar que haya publicaciones
-        if ($this->recolector->obtener_cantidad_de_publicaciones() == 0) {
+        if ($recolector->obtener_cantidad_de_publicaciones() == 0) {
             throw new \Exception("Aviso en ImprentaRedifusion: No hay publicaciones para crear la redifusión.");
         }
-        // Agregar publicaciones
-        foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
+        // Bucle para agregar todas las publicaciones
+        foreach ($recolector->obtener_publicaciones() as $publicacion) {
             $publicacion->en_raiz = true;
             $redifusion->agregar_elemento($publicacion);
         }

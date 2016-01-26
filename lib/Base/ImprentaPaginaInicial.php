@@ -27,6 +27,17 @@ namespace Base;
  */
 class ImprentaPaginaInicial extends Imprenta {
 
+    protected $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones
+
+    /**
+     * Constructor
+     *
+     * @param array Arreglo con rutas a las clases de ImprentaPublicaciones
+     */
+    public function __construct($imprentas) {
+        $this->imprentas = $imprentas;
+    } // constructor
+
     /**
      * Imprimir
      */
@@ -37,6 +48,7 @@ class ImprentaPaginaInicial extends Imprenta {
         $navegacion->en_raiz = true;
         // Plantilla, su método html elabora el contenido
         $plantilla             = new \Configuracion\PaginaInicialConfig();
+        $plantilla->imprentas  = $this->imprentas;
         $plantilla->navegacion = $navegacion;
         // Imprimir index.html
         $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
