@@ -40,21 +40,6 @@ class Redifusion extends \Configuracion\RedifusionConfig {
     protected $elementos = array();
 
     /**
-     * Caracteres para web
-     *
-     * @param  string Texto a convertir
-     * @return string Convertido
-     */
-    protected function caracteres_para_web($in_texto) {
-        $buscados       = array('ñ', 'Ñ', 'ü', 'Ü', 'á', 'Á', 'é', 'É', 'í', 'Í', 'ó', 'Ó', 'ú', 'Ú');
-        $cambios        = array('n', 'n', 'u', 'u', 'a', 'a', 'e', 'e', 'i', 'i', 'o', 'o', 'u', 'u');
-        $sin_acentos    = str_replace($buscados, $cambios, $in_texto);
-        $especiales     = array(' ', '#', '&', '%', '$', '@', '(', ')', '.', ',');
-        $sin_especiales = str_replace($especiales, '-', $sin_acentos);
-        return strtolower($sin_especiales);
-    } // caracteres_para_web
-
-    /**
      * Vínculos absolutos
      *
      * Cambia los vínculos de relativos a absolutos en el código HTML del contenido

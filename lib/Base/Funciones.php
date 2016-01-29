@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - Funciones
+ * Plataforma de Conocimiento - Creador
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -20,28 +20,31 @@
  * @package PlataformaDeConocimiento
  */
 
-// TODOS LOS CARACTERES SERAN UTF-8
-mb_internal_encoding('utf-8');
+namespace Base;
 
-// AUTOCARGADOR DE CLASES
-spl_autoload_register(
+/**
+ * Clase Funciones
+ */
+class Funciones {
+
     /**
-     * Auto-cargador de Clases
+     * Caracteres para web
      *
-     * @param string Creación de la instancia
+     * Convierte el texto a minúsculas, quita acentos y cambia espacios por guiones
+     *
+     * @param  string Texto a convertir
+     * @return string Convertido
      */
-    function ($className) {
-        $className = ltrim($className, '\\');
-        $fileName  = '';
-        $namespace = '';
-        if ($lastNsPos = strrpos($className, '\\')) {
-            $namespace = substr($className, 0, $lastNsPos);
-            $className = substr($className, $lastNsPos + 1);
-            $fileName  = str_replace('\\', DIRECTORY_SEPARATOR, $namespace).DIRECTORY_SEPARATOR;
-        }
-        $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className).'.php';
-        require 'lib/'.$fileName;
-    } // auto-cargador de clases
-);
+    public static function caracteres_para_web($in_texto) {
+        $buscados            = array('ñ', 'Ñ', 'ü', 'Ü', 'á', 'Á', 'é', 'É', 'í', 'Í', 'ó', 'Ó', 'ú', 'Ú');
+        $cambios             = array('n', 'n', 'u', 'u', 'a', 'a', 'e', 'e', 'i', 'i', 'o', 'o', 'u', 'u');
+        $sin_acentos         = str_replace($buscados, $cambios, $in_texto);
+        $especiales          = array(' ', '#', '&', '%', '$', '@', '(', ')', '.', ',');
+        $sin_especiales      = str_replace($especiales, '-', $sin_acentos);
+        $sin_repetir_guiones = preg_replace('/\-+/', '-', $sin_especiales);
+        return strtolower($sin_repetir_guiones);
+    } // caracteres_para_web
+
+} // Clase Funciones
 
 ?>

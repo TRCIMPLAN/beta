@@ -48,6 +48,8 @@ abstract class Breves {
 
     /**
      * Encabezado HTML
+     *
+     * @return string Código HTML
      */
     protected function encabezado_html() {
         // Validar título
@@ -62,7 +64,7 @@ abstract class Breves {
             $a[] = $this->encabezado;
             // Y el título de la página es invisible
             if ($this->titulo != '') {
-                $a[] = "      <h1 style=\"display:none;\">{$this->titulo}</h1>";
+                $a[] = "      <h2 style=\"display:none;\">{$this->titulo}</h2>";
             }
         } else {
             // No hay código HTML, vamos a construir el encabezado
@@ -76,7 +78,7 @@ abstract class Breves {
             } else {
                 $enca = $this->titulo;
             }
-            $a[] = "        <span><h1>$enca</h1></span>";
+            $a[] = "        <span><h2>$enca</h2></span>";
             if ($this->descripcion != '') {
                 $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
             }

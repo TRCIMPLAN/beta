@@ -51,24 +51,44 @@ class PaginasAutoresIndice extends Paginas {
      * @return string Código HTML
      */
     public function html() {
+        // Acumularemos la entrega en este arreglo
+        $a = array();
+        // Acumular encabezado
+        $a[] = $this->encabezado_html();
+        // Cargar configuración de los autores
+        $autores_config = new \Configuracion\AutoresConfig();
+        $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
+        $concentrador   = new $clase();
         // Bucle por todos los autores
-        $vinculos = array();
-        foreach ($this->recolector->obtener_autores() as $autor) {
-            $this->recolector->filtrar_publicaciones_de_autor($autor);
-            $etiqueta            = sprintf('%s (%d)', $autor, $this->recolector->obtener_cantidad_de_publicaciones());
-            $vinculos[$etiqueta] = sprintf('%s.html', $this->caracteres_para_web($autor));
+        foreach ($this->recolector->obtener_autores() as $nombre) {
+            // Obtener la cantidad de publicaciones de este autor
+            $this->recolector->filtrar_publicaciones_de_autor($nombre);
+            $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
+            // Obtener instancia de Autor
+            $autor = $autores_config->obtener_con_apodo($nombre);
+            if ($autor === false) {
+                $autor = $autores_config->obtener_con_titulo_nombre_completo($nombre);
+            }
+            // Si está definido en \Configuracion\AutoresConfig
+            if ($autor instanceof Autor) {
+                $autor->en_raiz = false;
+                $autor->en_otro = false;
+                // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
+                $vinculo = new Vinculo(
+                    sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
+                    $autor->url(),
+                    $autor->icono,
+                    '',
+                    sprintf('%s, %s', $autor->empresa, $autor->cargo));
+                $vinculo->boton_etiqueta = "$cantidad publicaciones";
+            } else {
+                $vinculo = new Vinculo(sprintf('%s (%d)', $nombre, $cantidad)); // No lo está, sólo poner la etiqueta sin enlace
+            }
+            // Agregar
+            $concentrador->agregar($vinculo);
         }
-        // Acumular el HTML
-        $a   = array();
-        $a[] = '      <div class="encabezado">';
-        $a[] = sprintf('        <span><h1>%s</h1></span>', $this->titulo);
-        $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
-        $a[] = '      </div>';
-        $a[] = '      <ul>';
-        foreach ($vinculos as $etiqueta => $url) {
-            $a[] = sprintf('        <li><a href="%s">%s</a></li>', $url, $etiqueta);
-        }
-        $a[] = '      </ul>';
+        // Acumular concentrador
+        $a[] = $concentrador->html();
         // Entregar
         return implode("\n", $a);
     } // html

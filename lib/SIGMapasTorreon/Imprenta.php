@@ -41,7 +41,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Información Geográfica > S.I.G. de Torreón';
         // El concentrador es el nombre de la clase que concentrará a las publicaciones para hacer el index.html
-        $this->concentrador             = 'Tarjetas'; // Puede ser Indice, Galeria o Tarjetas
+        $this->concentrador             = 'Tarjetas'; // Puede ser Detallados, Galeria o Tarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'sig-mapas-torreon';
         // Ejecutar constructor en el padre

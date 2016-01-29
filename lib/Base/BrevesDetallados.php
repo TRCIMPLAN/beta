@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - Breves Índice
+ * Plataforma de Conocimiento - Breves Detallados
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace Base;
 
 /**
- * Clase BrevesIndice
+ * Clase BrevesDetallados
  */
-class BrevesIndice extends Breves {
+class BrevesDetallados extends Breves {
 
     // public $titulo;
     // public $descripcion;
@@ -45,7 +45,7 @@ class BrevesIndice extends Breves {
     public function html() {
         // Validar recolector
         if ($this->recolector->obtener_cantidad_de_publicaciones() == 0) {
-            throw new \Exception("Error en BrevesIndice: El recolector no tiene publicaciones.");
+            throw new \Exception("Error en BrevesDetallados: El recolector no tiene publicaciones.");
         }
         // Acumularemos la entrega en este arreglo
         $a = array();
@@ -55,7 +55,7 @@ class BrevesIndice extends Breves {
         foreach ($this->recolector->obtener_publicaciones($this->cantidad_maxima) as $p) {
             // Validar publicacion
             $p->validar();
-            // Pasar valores a la puyblicación
+            // Pasar valores a la publicación
             $p->en_raiz = $this->en_raiz;
             $p->en_otro = $this->en_otro;
             // Acumular
@@ -76,8 +76,8 @@ class BrevesIndice extends Breves {
             } else {
                 $a[] = sprintf('          <p class="pull-left autor-fecha">Por %s, %s</p>', $p->autor, $p->fecha_con_formato_humano());
             }
-            $a[] = '        </div>';
-            $a[] = '      </div>';
+            $a[] = '        </div>'; // media-body
+            $a[] = '      </div>'; // media breve
         }
         // Entregar
         return implode("\n", $a);
@@ -92,6 +92,6 @@ class BrevesIndice extends Breves {
         return '';
     } // javascript
 
-} // Clase BrevesIndice
+} // Clase BrevesDetallados
 
 ?>

@@ -51,24 +51,40 @@ class PaginasCategoriasIndice extends Paginas {
      * @return string Código HTML
      */
     public function html() {
+        // Acumularemos la entrega en este arreglo
+        $a = array();
+        // Acumular encabezado
+        $a[] = $this->encabezado_html();
+        // Cargar configuración de las categorías
+        $categorias_config = new \Configuracion\CategoriasConfig();
+        $clase             = sprintf('\\Base\\%s', $categorias_config->vinculos_indice);
+        $concentrador      = new $clase();
         // Bucle por todas las categorias
-        $vinculos = array();
-        foreach ($this->recolector->obtener_categorias() as $categoria) {
-            $this->recolector->filtrar_publicaciones_de_categoria($categoria);
-            $etiqueta            = sprintf('%s (%d)', $categoria, $this->recolector->obtener_cantidad_de_publicaciones());
-            $vinculos[$etiqueta] = sprintf('%s.html', $this->caracteres_para_web($categoria));
+        foreach ($this->recolector->obtener_categorias() as $nombre) {
+            // Obtener la cantidad de publicaciones de esta categoría
+            $this->recolector->filtrar_publicaciones_de_categoria($nombre);
+            $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
+            // Obtener instancia de Categoria
+            $categoria = $categorias_config->obtener_con_nombre($nombre);
+            // Si está definido en \Configuracion\CategoriasConfig
+            if ($categoria instanceof Categoria) {
+                $categoria->en_raiz = false;
+                $categoria->en_otro = false;
+                // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
+                $vinculo = new Vinculo(
+                    sprintf('%s (%d)', $categoria->nombre, $cantidad),
+                    $categoria->url(),
+                    $categoria->icono,
+                    '',
+                    $categoria->descripcion);
+            } else {
+                $vinculo = new Vinculo(sprintf('%s (%d)', $nombre, $cantidad)); // No lo está, sólo poner la etiqueta sin enlace
+            }
+            // Agregar
+            $concentrador->agregar($vinculo);
         }
-        // Acumular el HTML
-        $a   = array();
-        $a[] = '      <div class="encabezado">';
-        $a[] = sprintf('        <span><h1>%s</h1></span>', $this->titulo);
-        $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
-        $a[] = '      </div>';
-        $a[] = '      <ul>';
-        foreach ($vinculos as $etiqueta => $url) {
-            $a[] = sprintf('        <li><a href="%s">%s</a></li>', $url, $etiqueta);
-        }
-        $a[] = '      </ul>';
+        // Acumular concentrador
+        $a[] = $concentrador->html();
         // Entregar
         return implode("\n", $a);
     } // html

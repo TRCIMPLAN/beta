@@ -68,7 +68,7 @@ class Publicacion extends \Configuracion\PublicacionConfig {
     /**
      * Validar
      *
-     * Causa una excepción si hay propiedades incorrectas. También define los vínculos. Es usado por Indice y Tarjetas.
+     * Causa una excepción si hay propiedades incorrectas, también define los vínculos
      */
     public function validar() {
         // Si ya fue validado, no se hace nada
@@ -164,7 +164,7 @@ class Publicacion extends \Configuracion\PublicacionConfig {
         // Validar
         $this->validar();
         // Entregar URL de la imagen
-        if ($this->imagen === '') {
+        if ($this->imagen == '') {
             return '';
         } elseif ((strpos($this->imagen, 'http://') === 0) || (strpos($this->imagen, 'https://') === 0) || (strpos($this->imagen, '/') === 0)) {
             return $this->imagen;
@@ -190,7 +190,7 @@ class Publicacion extends \Configuracion\PublicacionConfig {
         // Validar
         $this->validar();
         // Entregar URL de la imagen previa
-        if ($this->imagen_previa === '') {
+        if ($this->imagen_previa == '') {
             return '';
         } elseif ((strpos($this->imagen_previa, 'http://') === 0) || (strpos($this->imagen_previa, 'https://') === 0) || (strpos($this->imagen_previa, '/') === 0)) {
             return $this->imagen_previa;

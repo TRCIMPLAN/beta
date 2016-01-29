@@ -45,6 +45,8 @@ class ImprentaAutores extends Imprenta {
 
     /**
      * Imprimir autores
+     *
+     * Crea los archivos para cada autor usando la clase PaginasAutoresIndividual
      */
     protected function imprimir_autores() {
         // Iniciar la plantilla
@@ -67,7 +69,7 @@ class ImprentaAutores extends Imprenta {
             $plantilla->titulo       = $pagina->titulo;
             $plantilla->descripcion  = $pagina->descripcion;
             $plantilla->claves       = "Autor, $autor";
-            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, $this->caracteres_para_web($autor));
+            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, Funciones::caracteres_para_web($autor));
             // Pasar a la plantilla el HTML y Javascript
             $plantilla->contenido    = $pagina->html();
             $plantilla->javascript   = $pagina->javascript();
@@ -78,7 +80,9 @@ class ImprentaAutores extends Imprenta {
     } // imprimir_autores
 
     /**
-     * Imprimir index.html
+     * Imprimir index
+     *
+     * Crea el archivo /autores/index.html usando PaginasAutoresIndice
      */
     protected function imprimir_index() {
         // Iniciar la plantilla
@@ -90,7 +94,7 @@ class ImprentaAutores extends Imprenta {
         $plantilla->titulo                    = "Autores";
         $plantilla->descripcion               = "Todas los autores";
         $plantilla->claves                    = "Autores";
-        $plantilla->archivo_ruta              = sprintf('%s/index.html', $this->caracteres_para_web($plantilla->directorio));
+        $plantilla->archivo_ruta              = sprintf('%s/index.html', $plantilla->directorio);
         // Iniciar PaginasAutoresIndice
         $pagina                = new PaginasAutoresIndice($this->recolector);
         $pagina->titulo        = $plantilla->titulo;

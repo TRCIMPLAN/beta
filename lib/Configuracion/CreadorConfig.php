@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace Configuracion;
@@ -28,20 +29,22 @@ namespace Configuracion;
  */
 class CreadorConfig {
 
-    // Rutas a las clases de ImprentaPublicaciones
+    // Rutas a las clases de ImprentaPublicaciones SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon
     public $imprentas = array(
-        '\Blog\Imprenta',
-        '\Contacto\Imprenta',
-        '\ConsejoDirectivo\Imprenta',
-        '\Institucional\Imprenta',
-        '\PlanEstrategicoMetropolitano\Imprenta',
-        '\PreguntasFrecuentes\Imprenta',
-        '\Proyectos\Imprenta',
-        '\SalaPrensa\Imprenta',
-        '\SIG\Imprenta',
-        '\SIGMapasTorreon\Imprenta',
-        '\SIGPlanes\Imprenta',
-        '\Terminos\Imprenta');
+        '\\Blog\\Imprenta',
+        '\\Contacto\\Imprenta',
+        '\\ConsejoDirectivo\\Imprenta',
+        '\\Institucional\\Imprenta',
+        '\\PlanEstrategicoMetropolitano\\Imprenta',
+        '\\PreguntasFrecuentes\\Imprenta',
+        '\\Proyectos\\Imprenta',
+        '\\SalaPrensa\\Imprenta',
+        '\\SIG\\Imprenta',
+        '\\SIGMapasTorreon\\Imprenta',
+        '\\SIGPlanes\\Imprenta',
+        '\\SMI\\Imprenta',
+        '\\SMIGeorreferenciados\\Imprenta',
+        '\\Terminos\\Imprenta');
 
 } // Clase CreadorConfig
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - Páginas Índice
+ * Plataforma de Conocimiento - Páginas Detallados
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace Base;
 
 /**
- * Clase PaginasIndice
+ * Clase PaginasDetallados
  */
-class PaginasIndice extends Paginas {
+class PaginasDetallados extends Paginas {
 
     // public $titulo;
     // public $descripcion;
@@ -34,9 +34,9 @@ class PaginasIndice extends Paginas {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
-    public $cantidad_maxima;  // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
-    protected $recolector;    // Instancia de Recolector
-    protected $breves_indice; // Instancia de BrevesIndice
+    public $cantidad_maxima; // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
+    protected $recolector;   // Instancia de Recolector
+    protected $breves;       // Instancia de BrevesDetallados
 
     /**
      * Constructor
@@ -44,8 +44,8 @@ class PaginasIndice extends Paginas {
      * @param mixed Instancia de Recolector
      */
     public function __construct(Recolector $recolector) {
-        $this->recolector    = $recolector;
-        $this->breves_indice = new BrevesIndice($this->recolector);
+        $this->recolector = $recolector;
+        $this->breves     = new BrevesDetallados($this->recolector);
     } // constructor
 
     /**
@@ -54,17 +54,17 @@ class PaginasIndice extends Paginas {
      * @return string Código HTML
      */
     public function html() {
-        // Pasar variables a Breves Índice
-        $this->breves_indice->titulo           = $this->titulo;
-        $this->breves_indice->descripcion      = $this->descripcion;
-        $this->breves_indice->encabezado       = $this->encabezado;
-        $this->breves_indice->encabezado_color = $this->encabezado_color;
-        $this->breves_indice->encabezado_icono = $this->encabezado_icono;
-        $this->breves_indice->en_raiz          = $this->en_raiz;
-        $this->breves_indice->en_otro          = $this->en_otro;
-        $this->breves_indice->cantidad_maxima  = $this->cantidad_maxima;
+        // Pasar variables a breves
+        $this->breves->titulo           = $this->titulo;
+        $this->breves->descripcion      = $this->descripcion;
+        $this->breves->encabezado       = $this->encabezado;
+        $this->breves->encabezado_color = $this->encabezado_color;
+        $this->breves->encabezado_icono = $this->encabezado_icono;
+        $this->breves->en_raiz          = $this->en_raiz;
+        $this->breves->en_otro          = $this->en_otro;
+        $this->breves->cantidad_maxima  = $this->cantidad_maxima;
         // Entregar
-        return $this->breves_indice->html();
+        return $this->breves->html();
     } // html
 
     /**
@@ -73,9 +73,9 @@ class PaginasIndice extends Paginas {
      * @return string Código Javascript
      */
     public function javascript() {
-        return $this->breves_indice->javascript();
+        return $this->breves->javascript();
     } // javascript
 
-} // Clase PaginasIndice
+} // Clase PaginasDetallados
 
 ?>

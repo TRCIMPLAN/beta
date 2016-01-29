@@ -35,7 +35,6 @@ class PaginasCategoriasIndividual extends Paginas {
     // public $en_raiz;
     // public $en_otro;
     protected $recolector; // Instancia de RecolectorCategorias
-    protected $breves;     // Instancia de BrevesIndice
 
     /**
      * Constructor
@@ -44,7 +43,6 @@ class PaginasCategoriasIndividual extends Paginas {
      */
     public function __construct(RecolectorCategorias $recolector) {
         $this->recolector = $recolector;
-        $this->breves     = new BrevesIndice($this->recolector);
     } // constructor
 
     /**
@@ -53,16 +51,37 @@ class PaginasCategoriasIndividual extends Paginas {
      * @return string Código HTML
      */
     public function html() {
-        // Pasar variables a Breves
-        $this->breves->titulo           = $this->titulo;
-        $this->breves->descripcion      = $this->descripcion;
-        $this->breves->encabezado       = $this->encabezado;
-        $this->breves->encabezado_color = $this->encabezado_color;
-        $this->breves->encabezado_icono = $this->encabezado_icono;
-        $this->breves->en_raiz          = $this->en_raiz;
-        $this->breves->en_otro          = $this->en_otro;
+        // Acumularemos la entrega en este arreglo
+        $a = array();
+        // Acumular encabezado
+        $a[] = $this->encabezado_html();
+        // Cargar configuración de las categorías
+        $categorias_config = new \Configuracion\CategoriasConfig();
+        $clase             = sprintf('\\Base\\%s', $categorias_config->vinculos_individual);
+        $concentrador      = new $clase();
+        // Bucle por todos los autores
+        foreach ($this->recolector->obtener_publicaciones() as $p) {
+            // Validar publicacion
+            $p->validar();
+            // Pasar valores a la publicación
+            $p->en_raiz = $this->en_raiz;
+            $p->en_otro = $this->en_otro;
+            // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
+            $vinculo = new Vinculo(
+                $p->nombre,
+                $p->url(),
+                '',
+                $p->imagen_previa_url(),
+                $p->descripcion,
+                $p->autor,
+                $p->fecha_con_formato_humano());
+             // Agregar
+            $concentrador->agregar($vinculo);
+        }
+        // Acumular concentrador
+        $a[] = $concentrador->html();
         // Entregar
-        return $this->breves->html();
+        return implode("\n", $a);
     } // html
 
     /**
@@ -71,7 +90,7 @@ class PaginasCategoriasIndividual extends Paginas {
      * @return string Código Javascript
      */
     public function javascript() {
-        return $this->breves->javascript();
+        return '';
     } // javascript
 
 } // Clase PaginasCategoriasIndividual

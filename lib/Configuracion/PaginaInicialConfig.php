@@ -49,6 +49,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     // public $javascript;
     // public $contenido_en_renglon;
     // public $google_site_verification;
+    public $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones
     public $mapa_servicios     = array(
         'Análisis Publicados'               => 'blog/index.html',
         'Indicadores'                       => 'indicadores-categorias/index.html',
@@ -187,23 +188,21 @@ class PaginaInicialConfig extends \Base\Plantilla {
      * Últimas publicaciones
      */
     protected function ultimas_publicaciones() {
-        // Iniciar CreadorConfig porque tiene las rutas a las Imprentas
-        $creador_config = new CreadorConfig();
         // Iniciar Recolector
         $recolector = new \Base\Recolector();
-        $recolector->agregar_publicaciones_de_imprentas($creador_config->imprentas);
+        $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Iniciar BrevesIndice
-        $breves_indice                  = new \Base\BrevesIndice($recolector);
-        $breves_indice->titulo          = 'Últimas publicaciones';
-        $breves_indice->en_raiz         = true;
-        $breves_indice->en_otro         = false;
-        $breves_indice->cantidad_maxima = 4;
+        $breves                  = new \Base\BrevesDetallados($recolector);
+        $breves->titulo          = 'Últimas publicaciones';
+        $breves->en_raiz         = true;
+        $breves->en_otro         = false;
+        $breves->cantidad_maxima = 5;
         // Acumular Últimas Publicaciones y Twitter Timeline
         $this->contenido[]  = '  <section id="ultimas-publicaciones">';
         $this->contenido[]  = '    <div class="row">';
         $this->contenido[]  = '      <div class="col-md-8">';
         $this->contenido[]  = '        <div class="analisis-publicados">';
-        $this->contenido[]  = $breves_indice->html();
+        $this->contenido[]  = $breves->html();
         $this->contenido[]  = '          <div class="text-center">';
         $this->contenido[]  = "            <a href=\"blog/index.html\" class=\"btn btn-default\" role=\"button\">Todos los Análisis Publicados</a>";
         $this->contenido[]  = '          </div>';

@@ -36,20 +36,46 @@ abstract class Paginas {
     public $en_otro = true;   // Si es verdadero el archivo va a OTRO lugar como al directorio autores, categorias, etc.
 
     /**
-     * Caracteres para web
+     * Encabezado HTML
      *
-     * @param  string Texto a convertir
-     * @return string Convertido
+     * @return string Código HTML
      */
-    protected function caracteres_para_web($in_texto) {
-        $buscados            = array('ñ', 'Ñ', 'ü', 'Ü', 'á', 'Á', 'é', 'É', 'í', 'Í', 'ó', 'Ó', 'ú', 'Ú');
-        $cambios             = array('n', 'n', 'u', 'u', 'a', 'a', 'e', 'e', 'i', 'i', 'o', 'o', 'u', 'u');
-        $sin_acentos         = str_replace($buscados, $cambios, $in_texto);
-        $especiales          = array(' ', '#', '&', '%', '$', '@', '(', ')', '.', ',');
-        $sin_especiales      = str_replace($especiales, '-', $sin_acentos);
-        $sin_repetir_guiones = preg_replace('/\-+/', '-', $sin_especiales);
-        return strtolower($sin_repetir_guiones);
-    } // caracteres_para_web
+    protected function encabezado_html() {
+        // Validar título
+        if (!is_string($this->titulo) || ($this->titulo == '')) {
+            return '<!-- Aviso: No hay título para encabezado. -->';
+        }
+        // Acumularemos la entrega en este arreglo
+        $a = array();
+        // Si el encabezado está definido
+        if ($this->encabezado != '') {
+            // Se pone el código HTML del encabezado
+            $a[] = $this->encabezado;
+            // Y el título de la página es invisible
+            if ($this->titulo != '') {
+                $a[] = "      <h2 style=\"display:none;\">{$this->titulo}</h2>";
+            }
+        } else {
+            // No hay código HTML, vamos a construir el encabezado
+            if ($this->encabezado_color != '') {
+                $a[] = sprintf('      <div class="encabezado" style="background-color:%s;">', $this->encabezado_color);
+            } else {
+                $a[] = '      <div class="encabezado">';
+            }
+            if ($this->encabezado_icono != '') {
+                $enca = sprintf('<i class="%s encabezado-icono"></i> %s', $this->encabezado_icono, $this->titulo);
+            } else {
+                $enca = $this->titulo;
+            }
+            $a[] = "        <span><h2>$enca</h2></span>";
+            if ($this->descripcion != '') {
+                $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
+            }
+            $a[] = '      </div>';
+        }
+        // Entregar
+        return implode("\n", $a);
+    } // encabezado_html
 
     /**
      * HTML

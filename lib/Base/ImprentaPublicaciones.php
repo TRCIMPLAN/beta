@@ -27,19 +27,19 @@ namespace Base;
  */
 class ImprentaPublicaciones extends Imprenta {
 
-    public $directorio;                  // Texto, nombre del directorio en raíz donde se guardará el archivo HTML
-    public $publicaciones_directorio;    // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
-    public $encabezado;                  // Código HTML para usarse como encabezado
-    public $encabezado_color;            // Texto, color de fondo del encabezado #nnnnnn
-    public $encabezado_icono;            // Texto, icono Font Awesome
-    public $claves;                      // Texto, palabras separadas por comas para meta tag
-    public $nombre_menu;                 // Texto, opción del menú activa
-    protected $titulo;                   // Texto, título de la página
-    protected $descripcion;              // Texto, descripción para meta tag
-    protected $archivo_ruta;             // Texto opcional, ruta al archivo HTML del concentrador
-    protected $concentrador  = 'Indice'; // Texto, nombre de la clase que concentrará este conjunto de publicaciones (Indice, Galeria, Tarjetas)
-    protected $recolector;               // Instancia de Recolector
-    protected $contador      = 0;        // Entero, cantidad de publicaciones producidas
+    public $directorio;                     // Texto, nombre del directorio en raíz donde se guardará el archivo HTML
+    public $publicaciones_directorio;       // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
+    public $encabezado;                     // Código HTML para usarse como encabezado
+    public $encabezado_color;               // Texto, color de fondo del encabezado #nnnnnn
+    public $encabezado_icono;               // Texto, icono Font Awesome
+    public $claves;                         // Texto, palabras separadas por comas para meta tag
+    public $nombre_menu;                    // Texto, opción del menú activa
+    protected $titulo;                      // Texto, título de la página
+    protected $descripcion;                 // Texto, descripción para meta tag
+    protected $archivo_ruta;                // Texto opcional, ruta al archivo HTML del concentrador
+    protected $concentrador = 'Detallados'; // Texto, nombre de la clase que concentrará este conjunto de publicaciones (Detallados, Galeria, Tarjetas)
+    protected $recolector;                  // Instancia de Recolector
+    protected $contador     = 0;            // Entero, cantidad de publicaciones producidas
 
     /**
      * Constructor
@@ -74,7 +74,7 @@ class ImprentaPublicaciones extends Imprenta {
         }
         // Validar directorio
         if (!is_string($this->directorio) || ($this->directorio == '')) {
-            $this->directorio = $this->caracteres_para_web($this->publicaciones_directorio);
+            $this->directorio = Funciones::caracteres_para_web($this->publicaciones_directorio);
         }
         // Validar archivo_ruta
         if (!is_string($this->archivo_ruta) || ($this->archivo_ruta == '')) {
@@ -117,21 +117,10 @@ class ImprentaPublicaciones extends Imprenta {
      * Imprimir index.html
      */
     protected function imprimir_index() {
-        // Validar concentrador
-        switch (strtolower($this->concentrador)) {
-            case 'indice':
-                $concentrador = new PaginasIndice($this->recolector);
-                break;
-            case 'galeria':
-                $concentrador = new PaginasGalerias($this->recolector);
-                break;
-            case 'tarjetas':
-                $concentrador = new PaginasTarjetas($this->recolector);
-                break;
-            default:
-                throw new \Exception("Error en ImprentaPublicaciones: El concentrador es incorrecto.");
-        }
-        // Iniciar la plantilla
+        // Iniciar el Concentrador
+        $clase        = sprintf('\\Base\\Paginas%s', $this->concentrador);
+        $concentrador = new $clase($this->recolector);
+        // Iniciar la Plantilla
         $plantilla                = new Plantilla();
         $plantilla->navegacion    = new Navegacion();
         $plantilla->mapa_inferior = new MapaInferior();

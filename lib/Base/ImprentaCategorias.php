@@ -45,6 +45,8 @@ class ImprentaCategorias extends Imprenta {
 
     /**
      * Imprimir categorías
+     *
+     * Crea los archivos para cada autor usando la clase PaginasCategoriasIndividual
      */
     protected function imprimir_categorias() {
         // Iniciar la plantilla
@@ -67,7 +69,7 @@ class ImprentaCategorias extends Imprenta {
             $plantilla->titulo       = $pagina->titulo;
             $plantilla->descripcion  = $pagina->descripcion;
             $plantilla->claves       = "Categoria, $categoria";
-            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, $this->caracteres_para_web($categoria));
+            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, Funciones::caracteres_para_web($categoria));
             // Pasar a la plantilla el HTML y Javascript
             $plantilla->contenido    = $pagina->html();
             $plantilla->javascript   = $pagina->javascript();
@@ -78,7 +80,9 @@ class ImprentaCategorias extends Imprenta {
     } // imprimir_categorias
 
     /**
-     * Imprimir index.html
+     * Imprimir index
+     *
+     * Crea el archivo /categorias/index.html usando PaginasCategoriasIndice
      */
     protected function imprimir_index() {
         // Iniciar la plantilla
@@ -90,7 +94,7 @@ class ImprentaCategorias extends Imprenta {
         $plantilla->titulo                    = "Categorías";
         $plantilla->descripcion               = "Todas las categorías";
         $plantilla->claves                    = "Categorias";
-        $plantilla->archivo_ruta              = sprintf('%s/index.html', $this->caracteres_para_web($plantilla->directorio));
+        $plantilla->archivo_ruta              = sprintf('%s/index.html', $plantilla->directorio);
         // Iniciar PaginasCategoriasIndice
         $pagina                = new PaginasCategoriasIndice($this->recolector);
         $pagina->titulo        = $plantilla->titulo;
