@@ -81,11 +81,11 @@ class PaginasAutoresIndice extends Paginas {
                     '',
                     sprintf('%s, %s', $autor->empresa, $autor->cargo));
                 $vinculo->boton_etiqueta = "$cantidad publicaciones";
-            } else {
+                $concentrador->agregar($vinculo);
+            } elseif ($autores_config->mostrar_no_definidos) {
                 $vinculo = new Vinculo(sprintf('%s (%d)', $nombre, $cantidad)); // No lo está, sólo poner la etiqueta sin enlace
+                $concentrador->agregar($vinculo);
             }
-            // Agregar
-            $concentrador->agregar($vinculo);
         }
         // Acumular concentrador
         $a[] = $concentrador->html();

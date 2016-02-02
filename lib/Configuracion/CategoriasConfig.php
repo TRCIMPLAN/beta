@@ -27,9 +27,10 @@ namespace Configuracion;
  */
 class CategoriasConfig {
 
-    public $categorias          = array();              // Arreglo asociativo con instancias de \Base\Categoria
-    public $vinculos_indice     = 'VinculosGalerias';   // Nombre de la clase para el índice de categorias, en categorias/index.html
-    public $vinculos_individual = 'VinculosDetallados'; // Nombre de la clase para listar las publicaciones de cada categoría, a usarse en las páginas de las categorías
+    public $categorias           = array();              // Arreglo asociativo con instancias de \Base\Categoria
+    public $vinculos_indice      = 'VinculosGalerias';   // Nombre de la clase para el índice de categorias, en categorias/index.html
+    public $vinculos_individual  = 'VinculosDetallados'; // Nombre de la clase para listar las publicaciones de cada categoría, a usarse en las páginas de las categorías
+    public $mostrar_no_definidos = false;                // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
 
     /**
      * Constructor

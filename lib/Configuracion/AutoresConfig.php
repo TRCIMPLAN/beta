@@ -27,17 +27,32 @@ namespace Configuracion;
  */
 class AutoresConfig {
 
-    public $autores             = array();            // Arreglo asociativo con instancias de \Base\Autor
-    public $vinculos_indice     = 'VinculosTarjetas'; // Nombre de la clase para el índice de autores, en autores/index.html
-    public $vinculos_individual = 'VinculosListado';  // Nombre de la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
+    public $autores              = array();            // Arreglo asociativo con instancias de \Base\Autor
+    public $vinculos_indice      = 'VinculosTarjetas'; // Nombre de la clase para el índice de autores, en autores/index.html
+    public $vinculos_individual  = 'VinculosListado';  // Nombre de la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
+    public $mostrar_no_definidos = true;               // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
 
     /**
      * Constructor
      */
     public function __construct() {
         // apodo, titulo, nombre_completo, icono, empresa, cargo, semblanza, email, twitter, estatus
-        $this->autores[] = new \Base\Autor('guivaloz', 'Ing.', 'Guillermo Valdés Lozano',        'preferences-desktop-user', 'IMPLAN Torreón', 'Desarrollador y Divulgador', '', 'guivaloz@movimientolibre.com', 'guivaloz');
-        $this->autores[] = new \Base\Autor('rosy',     '',     'Rosa Elena Espinoza Villarreal', 'preferences-desktop-user', 'Nemosíntesis',   'Escritora',                  '', 'rosyespin@gmail.com',          'hielitodelimon');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Ángeles Melisa Rodríguez Salas',    'arq-angeles-melisa-rodriguez-salas', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor('', 'Arq.', 'Cecilio Pedro Secunza Schott',      'arq-cecilio-pedro-secunza-schott', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Daniela Patricia Corral Hernández', 'arq-daniela-patricia-corral-hernandez', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Ilse Ávila García',                 'arq-ilse-avila-garcia', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Jair Miramontes Chávez',            'arq-jair-miramontes-chavez', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor('', 'Arq.', 'Susana Montano',                    'arq-susana-montano', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Teresita Benítez Saludado',         'arq-teresita-benitez-saludado', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', '',     'Francisco Valdés Perezgasga',       'francisco-valdes-perezgasga', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor('', 'Ing.', 'Guillermo Valdés Lozano',           'ing-guillermo-valdes-lozano', 'IMPLAN Torreón', 'Programación y Software', '', 'guivaloz@movimientolibre.com', 'guivaloz');
+        //~ $this->autores[] = new \Base\Autor('', 'Ing.', 'Luis Campos Hinojosa',              'ing-luis-campos-hinojosa', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Adriana Vargas Flores',             'lic-adriana-vargas-flores', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Alfredo Viesca Domínguez',          'lic-alfredo-viesca-dominguez', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Alicia Valdez Ibarra',              'lic-alicia-valdez-ibarra', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Eduardo Holguín Zehfuss',           'lic-eduardo-holguin-zehfuss', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor('', 'Lic.', 'Luis A. Gutiérrez Arizpe',          'lic-luis-a-gutierrez-arizpe', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor('', 'Lic.', 'Rodrigo González Morales',          'lic-rodrigo-gonzalez-morales', '', '', '', '', '');
     } // constructor
 
     /**
