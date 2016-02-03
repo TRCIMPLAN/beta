@@ -64,7 +64,7 @@ class RecolectorCategorias extends Recolector {
         }
         // Si no se encontraron categorías
         if (count($a) == 0) {
-            throw new \Exception("Error en RecolectorCategorias: No se encontraron categorías.");
+            throw new RecolectorExceptionVacio("Error en RecolectorCategorias: No se encontraron categorías.");
         }
         // Ordenar alfabéticamente
         sort($a, SORT_STRING);
@@ -106,7 +106,7 @@ class RecolectorCategorias extends Recolector {
         }
         // Si no se encontró ninguna publicación
         if (count($a) == 0) {
-            throw new \Exception("Error en RecolectorCategorias: No se encontraron publicaciones con la categoría $categoria.");
+            throw new RecolectorExceptionVacio("Aviso en RecolectorCategorias: No se encontraron publicaciones con la categoría $categoria.");
         }
         // Redefinir la propiedad publicaciones
         if (is_int($limite) && ($limite > 0)) {

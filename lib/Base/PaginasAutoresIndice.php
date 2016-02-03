@@ -59,32 +59,74 @@ class PaginasAutoresIndice extends Paginas {
         $autores_config = new \Configuracion\AutoresConfig();
         $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
         $concentrador   = new $clase();
-        // Bucle por todos los autores
-        foreach ($this->recolector->obtener_autores() as $nombre) {
-            // Obtener la cantidad de publicaciones de este autor
-            $this->recolector->filtrar_publicaciones_de_autor($nombre);
-            $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
-            // Obtener instancia de Autor
-            $autor = $autores_config->obtener_con_apodo($nombre);
-            if ($autor === false) {
-                $autor = $autores_config->obtener_con_titulo_nombre_completo($nombre);
+        // Si se van a mostrar los autores NO definidos
+        if ($autores_config->mostrar_no_definidos) {
+            // Bucle por todos los autores encontrados
+            foreach ($this->recolector->obtener_autores() as $nombre) {
+                // Obtener la cantidad de publicaciones de este autor
+                $this->recolector->filtrar_publicaciones_de_autor($nombre);
+                $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
+                // Obtener instancia de Autor
+                $autor = $autores_config->obtener_con_apodo($nombre);
+                if ($autor === false) {
+                    $autor = $autores_config->obtener_con_titulo_nombre_completo($nombre);
+                }
+                // Si está definido en \Configuracion\AutoresConfig
+                if ($autor instanceof Autor) {
+                    // Sí está definido
+                    $autor->en_raiz = false;
+                    $autor->en_otro = false;
+                    $vinculo = new Vinculo(
+                        sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
+                        $autor->url(),
+                        $autor->icono,
+                        '',
+                        $autor->elaborar_descripcion());
+                    $vinculo->boton_etiqueta = "Todas sus publicaciones"; // Si de competir se trata, puede mostrar la cantidad de publicaciones con "$cantidad publicaciones"
+                    $concentrador->agregar($vinculo);
+                } elseif ($autores_config->mostrar_no_definidos) {
+                    // No está definido
+                    $vinculo = new Vinculo(
+                        $nombre,
+                        sprintf('%s.html', Funciones::caracteres_para_web($nombre)),
+                        'unknown'); // Si de competir se trata, puede mostrar la cantidad de publicaciones con sprintf('%s (%d)', $nombre, $cantidad)
+                    $concentrador->agregar($vinculo);
+                }
             }
-            // Si está definido en \Configuracion\AutoresConfig
-            if ($autor instanceof Autor) {
-                $autor->en_raiz = false;
-                $autor->en_otro = false;
-                // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
-                $vinculo = new Vinculo(
-                    sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
-                    $autor->url(),
-                    $autor->icono,
-                    '',
-                    sprintf('%s, %s', $autor->empresa, $autor->cargo));
-                $vinculo->boton_etiqueta = "$cantidad publicaciones";
-                $concentrador->agregar($vinculo);
-            } elseif ($autores_config->mostrar_no_definidos) {
-                $vinculo = new Vinculo(sprintf('%s (%d)', $nombre, $cantidad)); // No lo está, sólo poner la etiqueta sin enlace
-                $concentrador->agregar($vinculo);
+        } else {
+            // Sólo los autores configurados, bucle por ellos
+            foreach ($autores_config->autores as $autor) {
+                // Definir titulo nombre completo
+                if ($autor->titulo != '') {
+                    $titulo_nombre_completo = "{$autor->titulo} {$autor->nombre_completo}";
+                } else {
+                    $titulo_nombre_completo = $autor->nombre_completo;
+                }
+                // Recolectar filtrando primero por apodo, luego por titulo nombre completo
+                if ($autor->apodo != '') {
+                    try {
+                        $this->recolector->filtrar_publicaciones_de_autor($autor->apodo);
+                    } catch (\RecolectorExceptionVacio $e) {
+                        $this->recolector->filtrar_publicaciones_de_autor($titulo_nombre_completo);
+                    }
+                } else {
+                    $this->recolector->filtrar_publicaciones_de_autor($titulo_nombre_completo);
+                }
+                // Obtener la cantidad de publicaciones de este autor
+                $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
+                // Si tiene publicaciones
+                if ($cantidad > 0) {
+                    $autor->en_raiz = false;
+                    $autor->en_otro = false;
+                    $vinculo = new Vinculo(
+                        sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
+                        $autor->url(),
+                        $autor->icono,
+                        '',
+                        $autor->elaborar_descripcion());
+                    $vinculo->boton_etiqueta = "Todas sus publicaciones"; // Si de competir se trata, puede mostrar la cantidad de publicaciones con "$cantidad publicaciones"
+                    $concentrador->agregar($vinculo);
+                }
             }
         }
         // Acumular concentrador

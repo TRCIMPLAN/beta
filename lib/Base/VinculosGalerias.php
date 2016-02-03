@@ -53,20 +53,18 @@ class VinculosGalerias extends Vinculos {
             $a[] = '        <div class="col-xs-6 col-md-4 col-lg-3">';
             $a[] = '          <div class="thumbnail galeria-thumbnail">';
             if ($vinculo->imagen_previa != '') {
-                $a[] = sprintf('            <a href="%s" title="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
+                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
                     $vinculo->url(),
-                    $vinculo->descripcion,
                     $vinculo->imagen_previa_url(),
-                    $vinculo->nombre);
+                    htmlentities($vinculo->nombre));
             } elseif ($vinculo->icono != '') {
-                $a[] = sprintf('            <a href="%s" title="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
+                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
                     $vinculo->url(),
-                    $vinculo->descripcion,
                     $vinculo->icono_url(128),
-                    $vinculo->nombre);
+                    htmlentities($vinculo->nombre));
             }
             $a[] = '            <div class="caption">';
-            $a[] = sprintf('              <a href="%s" title="%s">%s</a>', $vinculo->url(), $vinculo->descripcion, $vinculo->nombre);
+            $a[] = sprintf('              <a href="%s">%s</a>', $vinculo->url(), $vinculo->nombre);
             $a[] = '            </div>';
             $a[] = '          </div>'; // thumbnail galeria-thumbnail
             $a[] = '        </div>'; // col

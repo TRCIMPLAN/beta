@@ -52,22 +52,20 @@ class VinculosTarjetas extends Vinculos {
             $a[] = '        <div class="col-sm-6 col-md-3">';
             $a[] = '          <div class="thumbnail tarjetas-thumbnail">';
             if ($vinculo->imagen_previa != '') {
-                $a[] = sprintf('            <a href="%s" title="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
+                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
                     $vinculo->url(),
-                    $vinculo->descripcion,
                     $vinculo->imagen_previa_url(),
-                    $vinculo->nombre);
+                    htmlentities($vinculo->nombre));
             } elseif ($vinculo->icono != '') {
-                $a[] = sprintf('            <a href="%s" title="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
+                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
                     $vinculo->url(),
-                    $vinculo->descripcion,
                     $vinculo->icono_url(128),
-                    $vinculo->nombre);
+                    htmlentities($vinculo->nombre));
             }
             $a[] = '            <div class="caption">';
-            $a[] = sprintf('              <h3><a href="%s">%s</a></h3>', $vinculo->url(), $vinculo->nombre);
+            $a[] = sprintf('              <h4 class="tarjetas-nombre"><a href="%s">%s</a></h4>', $vinculo->url(), $vinculo->nombre);
             if ($vinculo->descripcion != '') {
-                $a[] = sprintf('              <p>%s</p>', $vinculo->descripcion);
+                $a[] = $vinculo->descripcion;
             }
             if ($vinculo->boton_etiqueta != '') {
                 $a[] = sprintf('              <a href="%s" class="btn btn-default" role="button">%s</a>', $vinculo->url(), $vinculo->boton_etiqueta);

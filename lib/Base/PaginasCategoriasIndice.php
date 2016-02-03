@@ -68,9 +68,9 @@ class PaginasCategoriasIndice extends Paginas {
             $categoria = $categorias_config->obtener_con_nombre($nombre);
             // Si está definido en \Configuracion\CategoriasConfig
             if ($categoria instanceof Categoria) {
+                // Sí está definido
                 $categoria->en_raiz = false;
                 $categoria->en_otro = false;
-                // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
                 $vinculo = new Vinculo(
                     sprintf('%s (%d)', $categoria->nombre, $cantidad),
                     $categoria->url(),
@@ -79,7 +79,11 @@ class PaginasCategoriasIndice extends Paginas {
                     $categoria->descripcion);
                 $concentrador->agregar($vinculo);
             } elseif ($categorias_config->mostrar_no_definidos) {
-                $vinculo = new Vinculo(sprintf('%s (%d)', $nombre, $cantidad)); // No lo está, sólo poner la etiqueta sin enlace
+                // No está definido
+                $vinculo = new Vinculo(
+                    sprintf('%s (%d)', $nombre, $cantidad),
+                    sprintf('%s.html', Funciones::caracteres_para_web($nombre)),
+                    'unknown');
                 $concentrador->agregar($vinculo);
             }
         }

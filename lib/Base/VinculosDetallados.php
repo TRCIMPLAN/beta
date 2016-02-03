@@ -58,14 +58,14 @@ class VinculosDetallados extends Vinculos {
             $a[] = '        <div class="media-body">';
             $a[] = sprintf('          <h3 class="media-heading"><a href="%s">%s</a></h3>', $vinculo->url(), $vinculo->nombre);
             if ($vinculo->descripcion != '') {
-                $a[] = sprintf('          <p>%s</p>', $vinculo->descripcion);
+                $a[] = $vinculo->descripcion;
             }
             if (($vinculo->autor != '') && ($vinculo->fecha != '')) {
-                $a[] = sprintf('          <p class="pull-left autor-fecha">Por %s, %s</p>', $vinculo->autor, $vinculo->fecha);
+                $a[] = sprintf('          <p class="detallados-autor-fecha">Por %s, %s</p>', $vinculo->autor, $vinculo->fecha);
             } elseif ($vinculo->autor != '') {
-                $a[] = sprintf('          <p class="pull-left autor-fecha">Por %s</p>', $vinculo->autor);
+                $a[] = sprintf('          <p class="detallados-autor-fecha">Por %s</p>', $vinculo->autor);
             } elseif ($vinculo->fecha != '') {
-                $a[] = sprintf('          <p class="pull-left autor-fecha">%s</p>', $vinculo->fecha);
+                $a[] = sprintf('          <p class="detallados-autor-fecha">%s</p>', $vinculo->fecha);
             }
             $a[] = '        </div>'; // media-body
             $a[] = '      </div>'; // media breve

@@ -33,7 +33,7 @@ class PlantillaConfig {
     public $sitio_titulo     = 'IMPLAN Torreón';
     public $sitio_url        = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
     public $rss              = 'rss.xml';
-    public $favicon          = 'favicon.ico';
+    public $favicon          = 'imagenes/favicon.png';
     public $propio_css       = 'css/trcimplan.css';
     public $en_raiz          = false; // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
     public $para_compartir   = false; // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook

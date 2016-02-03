@@ -30,29 +30,99 @@ class AutoresConfig {
     public $autores              = array();            // Arreglo asociativo con instancias de \Base\Autor
     public $vinculos_indice      = 'VinculosTarjetas'; // Nombre de la clase para el índice de autores, en autores/index.html
     public $vinculos_individual  = 'VinculosListado';  // Nombre de la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
-    public $mostrar_no_definidos = true;               // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
+    public $mostrar_no_definidos = false;              // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
 
     /**
      * Constructor
      */
     public function __construct() {
         // apodo, titulo, nombre_completo, icono, empresa, cargo, semblanza, email, twitter, estatus
-        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Ángeles Melisa Rodríguez Salas',    'arq-angeles-melisa-rodriguez-salas', '', '', '', '', '');
-        $this->autores[] = new \Base\Autor('', 'Arq.', 'Cecilio Pedro Secunza Schott',      'arq-cecilio-pedro-secunza-schott', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Daniela Patricia Corral Hernández', 'arq-daniela-patricia-corral-hernandez', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Ilse Ávila García',                 'arq-ilse-avila-garcia', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Jair Miramontes Chávez',            'arq-jair-miramontes-chavez', '', '', '', '', '');
-        $this->autores[] = new \Base\Autor('', 'Arq.', 'Susana Montano',                    'arq-susana-montano', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Teresita Benítez Saludado',         'arq-teresita-benitez-saludado', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', '',     'Francisco Valdés Perezgasga',       'francisco-valdes-perezgasga', '', '', '', '', '');
-        $this->autores[] = new \Base\Autor('', 'Ing.', 'Guillermo Valdés Lozano',           'ing-guillermo-valdes-lozano', 'IMPLAN Torreón', 'Programación y Software', '', 'guivaloz@movimientolibre.com', 'guivaloz');
-        //~ $this->autores[] = new \Base\Autor('', 'Ing.', 'Luis Campos Hinojosa',              'ing-luis-campos-hinojosa', '', '', '', '', '');
         //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Adriana Vargas Flores',             'lic-adriana-vargas-flores', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Alfredo Viesca Domínguez',          'lic-alfredo-viesca-dominguez', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Alicia Valdez Ibarra',              'lic-alicia-valdez-ibarra', '', '', '', '', '');
-        //~ $this->autores[] = new \Base\Autor('', 'Lic.', 'Eduardo Holguín Zehfuss',           'lic-eduardo-holguin-zehfuss', '', '', '', '', '');
-        $this->autores[] = new \Base\Autor('', 'Lic.', 'Luis A. Gutiérrez Arizpe',          'lic-luis-a-gutierrez-arizpe', '', '', '', '', '');
-        $this->autores[] = new \Base\Autor('', 'Lic.', 'Rodrigo González Morales',          'lic-rodrigo-gonzalez-morales', '', '', '', '', '');
+        //~ $this->autores[] = new \Base\Autor('', 'Arq.', 'Ángeles Melisa Rodríguez Salas',    'arq-angeles-melisa-rodriguez-salas', '', '', '', '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Alfredo Viesca Domínguez',
+            'lic-alfredo-viesca-dominguez',
+            'IMPLAN Torreón', 'Investigación Cualitativa',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'aviesca@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Alicia Valdez Ibarra',
+            'lic-alicia-valdez-ibarra',
+            'IMPLAN Torreón', 'Indicadores Económicos',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'avaldez@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Cecilio Pedro Secunza Schott',
+            'arq-cecilio-pedro-secunza-schott',
+            'IMPLAN Torreón', 'Regeneración Urbana',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'csecunza@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Daniela Patricia Corral Hernández',
+            'arq-daniela-patricia-corral-hernandez',
+            'IMPLAN Torreón', 'Analista SIG',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'dcorral@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Eduardo Holguín Zehfuss',
+            'lic-eduardo-holguin-zehfuss',
+            'IMPLAN Torreón', 'Director General Ejecutivo',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'eholguin@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', '', 'Francisco Valdés Perezgasga',
+            'francisco-valdes-perezgasga',
+            'Consejero / PRODENAZAS', '',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Ing.', 'Guillermo Valdés Lozano',
+            'ing-guillermo-valdes-lozano',
+            'IMPLAN Torreón', 'Programación y Software',
+            'Desarrolla los sistemas informáticos y es responsable del sitio web; tiene conocimientos en software libre, GNU/Linux y bases de datos. Trabaja en proyectos en pro del gobierno abierto, las libertades digitales y la divulgación del conocimiento.',
+            'gvaldes@trcimplan.gob.mx', 'guivaloz');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Ilse Ávila García',
+            'arq-ilse-avila-garcia',
+            'IMPLAN Torreón', 'Director de Proyectos Estratégicos',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'iavila@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Jair Miramontes Chávez',
+            'arq-jair-miramontes-chavez',
+            'IMPLAN Torreón', 'Sistemas de Información Geográfica',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'jmiramontes@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Luis A. Gutiérrez Arizpe',
+            'lic-luis-a-gutierrez-arizpe',
+            'IMPLAN Torreón', 'Indicadores Sociodemográficos',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'lgutierrez@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Ing.', 'Luis Campos Hinojosa',
+            'ing-luis-campos-hinojosa',
+            'IMPLAN Torreón', 'Director de Planeación Urbana',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'lcampos@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Rodrigo González Morales',
+            'lic-rodrigo-gonzalez-morales',
+            'IMPLAN Torreón', 'Director de Investigación Estratégica',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'rgonzalez@trcimplan.gob.mx',  '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Susana Montano',
+            'arq-susana-montano',
+            'IMPLAN Torreón', 'Integración de Proyectos',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'smontano@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Teresita Benítez Saludado',
+            'arq-teresita-benitez-saludado',
+            'IMPLAN Torreón', 'Estudios Sectoriales',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.',
+            'tsaludado@trcimplan.gob.mx', '');
     } // constructor
 
     /**

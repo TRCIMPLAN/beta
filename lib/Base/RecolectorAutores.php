@@ -64,7 +64,7 @@ class RecolectorAutores extends Recolector {
         }
         // Si no se encontraron autores
         if (count($a) == 0) {
-            throw new \Exception("Error en RecolectorAutores: No se encontraron autores.");
+            throw new RecolectorExceptionVacio("Error en RecolectorAutores: No se encontraron autores.");
         }
         // Ordenar alfabéticamente
         sort($a, SORT_STRING);
@@ -106,7 +106,7 @@ class RecolectorAutores extends Recolector {
         }
         // Si no se encontró ninguna publicación
         if (count($a) == 0) {
-            throw new \Exception("Error en RecolectorAutores: No se encontraron publicaciones con el autor $autor.");
+            throw new RecolectorExceptionVacio("Aviso en RecolectorAutores: No se encontraron publicaciones con el autor $autor.");
         }
         // Redefinir la propiedad publicaciones
         if (is_int($limite) && ($limite > 0)) {

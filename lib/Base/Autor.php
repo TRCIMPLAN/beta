@@ -64,6 +64,7 @@ class Autor {
         $this->cargo           = $cargo;
         $this->semblanza       = $semblanza;
         $this->email           = $email;
+        $this->twitter         = $twitter;
         $this->estatus         = $estatus;
     } // constructor
 
@@ -105,6 +106,45 @@ class Autor {
             return sprintf('../%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->icono);
         }
     } // icono_url
+
+    /**
+     * Elaborar descripción
+     *
+     * @return string Código HTML
+     */
+    public function elaborar_descripcion() {
+        $d = array();
+        if (($this->empresa != '') && ($this->cargo != '')) {
+            $d[] = "    <p class=\"autor-empresa-cargo\">";
+            $d[] = "      <span class=\"autor-empresa\">{$this->empresa}</span><br>";
+            $d[] = "      <span class=\"autor-cargo\">{$this->cargo}</span>";
+            $d[] = "    </p>";
+        } else {
+            if ($this->empresa != '') {
+                $d[] = "    <p class=\"autor-empresa-cargo\"><span class=\"autor-empresa\">{$this->empresa}</span></p>";
+            }
+            if ($this->cargo != '') {
+                $d[] = "    <p class=\"autor-empresa-cargo\"><span class=\"autor-cargo\">{$this->cargo}</span></p>";
+            }
+        }
+        if ($this->semblanza != '') {
+            $d[] = "    <p class=\"autor-semblanza\">{$this->semblanza}</p>";
+        }
+        if (($this->email != '') && ($this->twitter != '')) {
+            $d[] = "<p class=\"autor-email-twitter\">";
+            $d[] = "    e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
+            $d[] = "    twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
+            $d[] = "</p>";
+        } else {
+            if ($this->email != '') {
+                $d[] = "    <p class=\"autor-email-twitter\">e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
+            }
+            if ($this->twitter != '') {
+                $d[] = "    <p class=\"autor-email-twitter\">twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
+            }
+        }
+        return implode("\n", $d);
+    } // elaborar_descripcion
 
 } // Autor
 

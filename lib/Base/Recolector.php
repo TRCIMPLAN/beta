@@ -41,20 +41,20 @@ class Recolector {
     protected function obtener_clases_en($dir) {
         // Validar parámetro
         if (!is_string($dir) || (trim($dir) == '')) {
-            throw new ImprentaExceptionValidacion("Error en Imprenta, recolectar_clases: Parámetro incorrecto.");
+            throw new \Exception("Error en Recolector: Parámetro incorrecto.");
         }
         // Si no existe
         $lib_dir = sprintf('%s/%s', self::LIB_DIR, $dir);
         if (!is_dir($lib_dir)) {
-            throw new ImprentaExceptionValidacion("Error en Imprenta, recolectar_clases: No existe el directorio $lib_dir");
+            throw new \Exception("Error en Recolector: No existe el directorio $lib_dir");
         }
         // Obtener el listado con los archivos PHP
         $archivos = glob("$lib_dir/*.php");
         if ($archivos === false) {
-            throw new ImprentaExceptionFallo("Error en Recolector: Falló la obtención de archivos PHP en el directorio $lib_dir");
+            throw new \Exception("Error en Recolector: Falló la obtención de archivos PHP en el directorio $lib_dir");
         }
         if (count($archivos) == 0) {
-            throw new ImprentaExceptionVacio("Error en Recolector: No hay archivos PHP en el directorio $lib_dir");
+            throw new RecolectorExceptionVacio("Aviso en Recolector: No hay archivos PHP en el directorio $lib_dir");
         }
         // Bucle en los archivos encontrados
         $a = array();
