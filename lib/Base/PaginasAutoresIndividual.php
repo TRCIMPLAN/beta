@@ -67,14 +67,7 @@ class PaginasAutoresIndividual extends Paginas {
             $p->en_raiz = $this->en_raiz;
             $p->en_otro = $this->en_otro;
             // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
-            $vinculo = new Vinculo(
-                $p->nombre,
-                $p->url(),
-                '',
-                $p->imagen_previa_url(),
-                $p->descripcion,
-                $p->autor,
-                $p->fecha_con_formato_humano());
+            $vinculo = new Vinculo($p->nombre, $p->url(), '', $p->imagen_previa_url(), $p->descripcion, $p->autor, $p->fecha_con_formato_humano());
              // Agregar
             $concentrador->agregar($vinculo);
         }

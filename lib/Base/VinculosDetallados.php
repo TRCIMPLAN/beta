@@ -30,6 +30,7 @@ class VinculosDetallados extends Vinculos {
     // public $en_raiz;
     // public $en_otro;
     // protected $vinculos;
+    public $icono_tamano = 128;
 
     /**
      * HTML
@@ -50,13 +51,26 @@ class VinculosDetallados extends Vinculos {
             $vinculo->en_otro = $this->en_otro;
             // Acumular
             $a[] = '      <div class="media breve">';
-            if ($vinculo->imagen_previa != '') {
-                $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->imagen_previa_url());
-            } elseif ($vinculo->icono != '') {
-                $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->icono_url());
+            // Si tiene URL se pondrán vínculos, de lo contrario no
+            if ($vinculo->url() != '') {
+                // Tiene URL
+                if ($vinculo->imagen_previa != '') {
+                    $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->imagen_previa_url());
+                } elseif ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->icono_url($this->icono_tamano));
+                }
+                $a[] = '        <div class="media-body">';
+                $a[] = sprintf('          <h3 class="media-heading"><a href="%s">%s</a></h3>', $vinculo->url(), $vinculo->nombre);
+            } else {
+                // NO tiene URL
+                if ($vinculo->imagen_previa != '') {
+                    $a[] = sprintf('        <img class="media-object pull-left" src="%s">', $vinculo->imagen_previa_url());
+                } elseif ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('        <img class="media-object pull-left" src="%s">', $vinculo->icono_url($this->icono_tamano));
+                }
+                $a[] = '        <div class="media-body">';
+                $a[] = sprintf('          <h3 class="media-heading">%s</h3>', $vinculo->nombre);
             }
-            $a[] = '        <div class="media-body">';
-            $a[] = sprintf('          <h3 class="media-heading"><a href="%s">%s</a></h3>', $vinculo->url(), $vinculo->nombre);
             if ($vinculo->descripcion != '') {
                 $a[] = $vinculo->descripcion;
             }

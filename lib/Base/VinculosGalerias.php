@@ -30,6 +30,7 @@ class VinculosGalerias extends Vinculos {
     // public $en_raiz;
     // public $en_otro;
     // protected $vinculos;
+    public $icono_tamano = 128;
 
     /**
      * HTML
@@ -52,20 +53,38 @@ class VinculosGalerias extends Vinculos {
             // Acumular
             $a[] = '        <div class="col-xs-6 col-md-4 col-lg-3">';
             $a[] = '          <div class="thumbnail galeria-thumbnail">';
-            if ($vinculo->imagen_previa != '') {
-                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
-                    $vinculo->url(),
-                    $vinculo->imagen_previa_url(),
-                    htmlentities($vinculo->nombre));
-            } elseif ($vinculo->icono != '') {
-                $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
-                    $vinculo->url(),
-                    $vinculo->icono_url(128),
-                    htmlentities($vinculo->nombre));
+            // Si tiene URL se pondrán vínculos, de lo contrario no
+            if ($vinculo->url() != '') {
+                // Tiene URL
+                if ($vinculo->imagen_previa != '') {
+                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
+                        $vinculo->url(),
+                        $vinculo->imagen_previa_url(),
+                        $vinculo->nombre);
+                } elseif ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>',
+                        $vinculo->url(),
+                        $vinculo->icono_url($this->icono_tamano),
+                        $vinculo->nombre);
+                }
+                $a[] = '            <div class="caption">';
+                $a[] = sprintf('              <a href="%s">%s</a>', $vinculo->url(), $vinculo->nombre);
+                $a[] = '            </div>';
+            } else {
+                // NO tiene URL
+                if ($vinculo->imagen_previa != '') {
+                    $a[] = sprintf('            <img class="img-thumbnail galeria-imagen" src="%s" alt="%s">',
+                        $vinculo->imagen_previa_url(),
+                        $vinculo->nombre);
+                } elseif ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('            <img class="img-thumbnail galeria-imagen" src="%s" alt="%s">',
+                        $vinculo->icono_url($this->icono_tamano),
+                        $vinculo->nombre);
+                }
+                $a[] = '            <div class="caption">';
+                $a[] = sprintf('              %s', $vinculo->nombre);
+                $a[] = '            </div>';
             }
-            $a[] = '            <div class="caption">';
-            $a[] = sprintf('              <a href="%s">%s</a>', $vinculo->url(), $vinculo->nombre);
-            $a[] = '            </div>';
             $a[] = '          </div>'; // thumbnail galeria-thumbnail
             $a[] = '        </div>'; // col
         }

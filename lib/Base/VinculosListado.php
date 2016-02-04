@@ -30,6 +30,7 @@ class VinculosListado extends Vinculos {
     // public $en_raiz;
     // public $en_otro;
     // protected $vinculos;
+    public $icono_tamano = 64;
 
     /**
      * HTML
@@ -49,11 +50,21 @@ class VinculosListado extends Vinculos {
             // Pasar valores al vínculo
             $vinculo->en_raiz = $this->en_raiz;
             $vinculo->en_otro = $this->en_otro;
-            // Acumular
-            if ($vinculo->icono != '') {
-                $a[] = sprintf('        <li><a href="%s" title="%s"><img src="%s"> %s</a></li>', $vinculo->url(), $vinculo->descripcion, $vinculo->icono_url(), $vinculo->nombre);
+            // Si tiene URL se pondrán vínculos, de lo contrario no
+            if ($vinculo->url() != '') {
+                // Tiene URL
+                if ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('        <li><a href="%s"><img src="%s"> %s</a></li>', $vinculo->url(), $vinculo->icono_url($this->icono_tamano), $vinculo->nombre);
+                } else {
+                    $a[] = sprintf('        <li><a href="%s">%s</a></li>', $vinculo->url(), $vinculo->nombre);
+                }
             } else {
-                $a[] = sprintf('        <li><a href="%s" title="%s">%s</a></li>', $vinculo->url(), $vinculo->descripcion, $vinculo->nombre);
+                // NO tiene URL
+                if ($vinculo->icono_url() != '') {
+                    $a[] = sprintf('        <li><img src="%s"> %s</li>', $vinculo->icono_url($this->icono_tamano), $vinculo->nombre);
+                } else {
+                    $a[] = sprintf('        <li>%s</li>', $vinculo->nombre);
+                }
             }
         }
         $a[] = '      </ul>';

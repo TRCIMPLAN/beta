@@ -156,7 +156,7 @@ class ImprentaPublicaciones extends Imprenta {
         $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
         $this->imprimir_publicaciones();
         $this->imprimir_index();
-        echo sprintf("  fueron %d en %s con %s.\n", $this->contador, $this->publicaciones_directorio, strtolower($this->concentrador));
+        echo sprintf("  %d en %s con %s.\n", $this->contador, $this->publicaciones_directorio, strtolower($this->concentrador));
     } // imprimir
 
 } // Clase ImprentaPublicaciones

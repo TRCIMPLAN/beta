@@ -56,9 +56,10 @@ class PaginasAutoresIndice extends Paginas {
         // Acumular encabezado
         $a[] = $this->encabezado_html();
         // Cargar configuración de los autores
-        $autores_config = new \Configuracion\AutoresConfig();
-        $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
-        $concentrador   = new $clase();
+        $autores_config             = new \Configuracion\AutoresConfig();
+        $clase                      = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
+        $concentrador               = new $clase();
+        $concentrador->icono_tamano = $autores_config->icono_tamano;
         // Si se van a mostrar los autores NO definidos
         if ($autores_config->mostrar_no_definidos) {
             // Bucle por todos los autores encontrados
@@ -74,59 +75,55 @@ class PaginasAutoresIndice extends Paginas {
                 // Si está definido en \Configuracion\AutoresConfig
                 if ($autor instanceof Autor) {
                     // Sí está definido
-                    $autor->en_raiz = false;
-                    $autor->en_otro = false;
-                    $vinculo = new Vinculo(
-                        sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
-                        $autor->url(),
-                        $autor->icono,
-                        '',
-                        $autor->elaborar_descripcion());
-                    $vinculo->boton_etiqueta = "Todas sus publicaciones"; // Si de competir se trata, puede mostrar la cantidad de publicaciones con "$cantidad publicaciones"
+                    $autor->en_raiz = $this->en_raiz;
+                    $autor->en_otro = $this->en_otro;
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, '', $autor->descripcion());
+                    $vinculo->boton_etiqueta = "Todas sus publicaciones";
                     $concentrador->agregar($vinculo);
                 } elseif ($autores_config->mostrar_no_definidos) {
                     // No está definido
-                    $vinculo = new Vinculo(
-                        $nombre,
-                        sprintf('%s.html', Funciones::caracteres_para_web($nombre)),
-                        'unknown'); // Si de competir se trata, puede mostrar la cantidad de publicaciones con sprintf('%s (%d)', $nombre, $cantidad)
+                    $pagina  = sprintf('%s.html', Funciones::caracteres_para_web($nombre));
+                    $vinculo = new Vinculo($nombre, $pagina, 'unknown');
                     $concentrador->agregar($vinculo);
                 }
             }
         } else {
             // Sólo los autores configurados, bucle por ellos
             foreach ($autores_config->autores as $autor) {
-                // Definir titulo nombre completo
-                if ($autor->titulo != '') {
-                    $titulo_nombre_completo = "{$autor->titulo} {$autor->nombre_completo}";
-                } else {
-                    $titulo_nombre_completo = $autor->nombre_completo;
-                }
-                // Recolectar filtrando primero por apodo, luego por titulo nombre completo
-                if ($autor->apodo != '') {
-                    try {
-                        $this->recolector->filtrar_publicaciones_de_autor($autor->apodo);
-                    } catch (\RecolectorExceptionVacio $e) {
-                        $this->recolector->filtrar_publicaciones_de_autor($titulo_nombre_completo);
+                $autor->en_raiz = $this->en_raiz;
+                $autor->en_otro = $this->en_otro;
+                // Fitrar en el recolector, previendo que al no haber publicaciones la cantidad es cero
+                try {
+                    // Recolectar filtrando primero por apodo, luego por 'titulo nombre_completo'
+                    if ($autor->apodo != '') {
+                        try {
+                            $this->recolector->filtrar_publicaciones_de_autor($autor->apodo);
+                        } catch (RecolectorExceptionVacio $e) {
+                            $this->recolector->filtrar_publicaciones_de_autor($autor->titulo_nombre_completo());
+                        }
+                    } else {
+                        $this->recolector->filtrar_publicaciones_de_autor($autor->titulo_nombre_completo());
                     }
-                } else {
-                    $this->recolector->filtrar_publicaciones_de_autor($titulo_nombre_completo);
+                    // Obtener la cantidad de publicaciones de este autor
+                    $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
+                } catch (RecolectorExceptionVacio $e) {
+                    $cantidad = 0;
                 }
-                // Obtener la cantidad de publicaciones de este autor
-                $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
                 // Si tiene publicaciones
                 if ($cantidad > 0) {
-                    $autor->en_raiz = false;
-                    $autor->en_otro = false;
                     $vinculo = new Vinculo(
-                        sprintf('%s %s', $autor->titulo, $autor->nombre_completo),
+                        $autor->titulo_nombre_completo(),
                         $autor->url(),
                         $autor->icono,
                         '',
-                        $autor->elaborar_descripcion());
-                    $vinculo->boton_etiqueta = "Todas sus publicaciones"; // Si de competir se trata, puede mostrar la cantidad de publicaciones con "$cantidad publicaciones"
-                    $concentrador->agregar($vinculo);
+                        $autor->descripcion());
+                    $vinculo->boton_etiqueta = "Todas sus publicaciones";
+                } else {
+                    // No tiene publicaciones, sólo se ponen los datos del autor sin enlace a su página
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), '', $autor->icono, '', $autor->descripcion());
                 }
+                // Agregar vínculo al concentrador
+                $concentrador->agregar($vinculo);
             }
         }
         // Acumular concentrador

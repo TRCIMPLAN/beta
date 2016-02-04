@@ -67,7 +67,7 @@ class Vinculo {
      */
     public function url() {
         if ($this->vinculo == '') {
-            return '#';
+            return '';
         } else {
             return $this->vinculo;
         }
@@ -79,7 +79,10 @@ class Vinculo {
      * @param  string Tamaño del icono, puede ser 64, 128 o 256, por defecto 128
      * @return string URL relativo a la imagen icono
      */
-    public function icono_url($tamano='64') {
+    public function icono_url($tamano=64) {
+        if (($tamano != 256) && ($tamano != 128) && ($tamano != 64)) {
+            throw new \Exception("Error en Vinculo: Tamaño de icono incorrecto.");
+        }
         if ($this->icono == '') {
             $this->icono = 'unknown';
         }

@@ -69,6 +69,24 @@ class Autor {
     } // constructor
 
     /**
+     * Título Nombre Completo
+     *
+     * Entrega un texto 'titulo nombre_completo', cuando el título es vacío sólo es 'nombre-completo'.
+     *
+     * @return string El título y nombre completo juntos
+     */
+    public function titulo_nombre_completo() {
+        if ($this->nombre_completo == '') {
+            throw new \Exception("Error en Autor: El nombre completo es incorrecto.");
+        }
+        if ($this->titulo != '') {
+            return "{$this->titulo} {$this->nombre_completo}";
+        } else {
+            return $this->nombre_completo;
+        }
+    } // titulo_nombre_completo
+
+    /**
      * URL
      *
      * @return string URL relativo para vincular a la página en autores
@@ -76,27 +94,30 @@ class Autor {
     public function url() {
         // Si no hay apodo, el nombre del archivo es el titulo con el nombre completo
         if ($this->apodo == '') {
-            $nombre = Funciones::caracteres_para_web($this->titulo.' '.$this->nombre_completo);
+            $pagina = sprintf('%s.html', Funciones::caracteres_para_web($this->titulo_nombre_completo()));
         } else {
-            $nombre = Funciones::caracteres_para_web($this->apodo);
+            $pagina = sprintf('%s.html', Funciones::caracteres_para_web($this->apodo));
         }
         // Entregar URL
         if ($this->en_raiz) {
-            return sprintf('%s/%s.html', ImprentaAutores::AUTORES_DIR, $nombre);
+            return sprintf('%s/%s', ImprentaAutores::AUTORES_DIR, $pagina);
         } elseif ($this->en_otro) {
-            return sprintf('../%s/%s.html', ImprentaAutores::AUTORES_DIR, $nombre);
+            return sprintf('../%s/%s', ImprentaAutores::AUTORES_DIR, $pagina);
         } else {
-            return sprintf('%s.html', $nombre);
+            return $pagina;
         }
     } // url
 
     /**
      * Icono URL
      *
-     * @param  string Tamaño del icono, puede ser 64, 128 o 256, por defecto 128
-     * @return string URL relativo a la imagen icono
+     * @param  integer Tamaño del icono, puede ser 64, 128 o 256, por defecto 128
+     * @return string  URL relativo a la imagen icono
      */
-    public function icono_url($tamano='64') {
+    public function icono_url($tamano=64) {
+        if (($tamano != 256) && ($tamano != 128) || ($tamano != 64)) {
+            throw new \Exception("Error en Autor: Tamaño de icono incorrecto.");
+        }
         if ($this->icono == '') {
             $this->icono = 'unknown';
         }
@@ -108,39 +129,39 @@ class Autor {
     } // icono_url
 
     /**
-     * Elaborar descripción
+     * Descripción
      *
      * @return string Código HTML
      */
-    public function elaborar_descripcion() {
+    public function descripcion() {
         $d = array();
         if (($this->empresa != '') && ($this->cargo != '')) {
-            $d[] = "    <p class=\"autor-empresa-cargo\">";
-            $d[] = "      <span class=\"autor-empresa\">{$this->empresa}</span><br>";
-            $d[] = "      <span class=\"autor-cargo\">{$this->cargo}</span>";
-            $d[] = "    </p>";
+            $d[] = "              <p class=\"autor-empresa-cargo\">";
+            $d[] = "                <span class=\"autor-empresa\">{$this->empresa}</span><br>";
+            $d[] = "                <span class=\"autor-cargo\">{$this->cargo}</span>";
+            $d[] = "              </p>";
         } else {
             if ($this->empresa != '') {
-                $d[] = "    <p class=\"autor-empresa-cargo\"><span class=\"autor-empresa\">{$this->empresa}</span></p>";
+                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-empresa\">{$this->empresa}</span></p>";
             }
             if ($this->cargo != '') {
-                $d[] = "    <p class=\"autor-empresa-cargo\"><span class=\"autor-cargo\">{$this->cargo}</span></p>";
+                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-cargo\">{$this->cargo}</span></p>";
             }
         }
         if ($this->semblanza != '') {
-            $d[] = "    <p class=\"autor-semblanza\">{$this->semblanza}</p>";
+            $d[] = "              <p class=\"autor-semblanza\">{$this->semblanza}</p>";
         }
         if (($this->email != '') && ($this->twitter != '')) {
-            $d[] = "<p class=\"autor-email-twitter\">";
-            $d[] = "    e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
-            $d[] = "    twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
-            $d[] = "</p>";
+            $d[] = "              <p class=\"autor-email-twitter\">";
+            $d[] = "                e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
+            $d[] = "                twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
+            $d[] = "              </p>";
         } else {
             if ($this->email != '') {
-                $d[] = "    <p class=\"autor-email-twitter\">e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
+                $d[] = "              <p class=\"autor-email-twitter\">e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
             }
             if ($this->twitter != '') {
-                $d[] = "    <p class=\"autor-email-twitter\">twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
+                $d[] = "              <p class=\"autor-email-twitter\">twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
             }
         }
         return implode("\n", $d);
