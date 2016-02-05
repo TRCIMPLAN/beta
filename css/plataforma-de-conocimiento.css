@@ -44,20 +44,33 @@ h5, .h5 { font-size:12px; margin-top:2px;  margin-bottom:2px; }
 h6, .h6 { font-size:10px; margin-top:2px;  margin-bottom:2px; }
 
 /*
+ * Page wrapper
+ */
+#page-wrapper  {
+    padding:0 4px 0 4px;
+}
+.sidebar ul li {
+    border-bottom:1px solid #CCC;
+}
+
+/*
  * Cuerpo
  */
+.cuerpo {
+    padding:8px 16px;
+}
 .encabezado {
-    margin-bottom:20px;
+    margin-bottom:12px;
     padding:0;
-    border-bottom:1px solid #808080;
+    border-bottom:1px solid #888;
 }
 .encabezado-descripcion {
     font-size:14px;
-    color:#404040;
+    color:#444;
 }
 .encabezado-autor-fecha {
     font-size:11px;
-    color:#808080;
+    color:#888;
 }
 .breve {
     padding:8px;
@@ -71,13 +84,13 @@ h6, .h6 { font-size:10px; margin-top:2px;  margin-bottom:2px; }
     font-weight:bold;
 }
 .autor-cargo     {
-    color:#808080;
+    color:#888;
 }
 .autor-semblanza {
     font-size:0.8em;
 }
 .detallados-autor-fecha {
-    color:#808080;
+    color:#888;
     font-size:0.8em;
 }
 .galeria-thumbnail {
@@ -118,25 +131,28 @@ h6, .h6 { font-size:10px; margin-top:2px;  margin-bottom:2px; }
 /*
  * Página inicial
  */
+#organizacion {
+    padding:8px 16px;
+}
 #organizacion .encabezado {
-    color:#000000;
+    color:#000;
     border-bottom:none;
 }
 #organizacion .encabezado-descripcion {
-    color:#404040;
+    color:#444;
 }
 #destacado {
-    padding:8px;
+    padding:8px 16px;
 }
 #ultimas-publicaciones {
-    padding:8px;
+    padding:8px 16px;
 }
 #ultimas-publicaciones .autor-fecha {
-    color:#808080;
-    font-size:10px;
+    color:#888;
+    font-size:0.8em;
 }
 #redes {
-    margin-top:20px;
     padding:8px 16px;
+    margin-top:20px;
 }
 

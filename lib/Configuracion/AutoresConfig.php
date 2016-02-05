@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Autores Config
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -194,6 +194,8 @@ class AutoresConfig {
     public function obtener_con_titulo_nombre_completo($titulo_nombre_completo) {
         foreach ($this->autores as $autor) {
             if ("{$autor->titulo} {$autor->nombre_completo}" == $titulo_nombre_completo) {
+                return $autor;
+            } elseif ($autor->nombre_completo == $titulo_nombre_completo) {
                 return $autor;
             }
         }

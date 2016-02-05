@@ -53,18 +53,10 @@ class VinculosListado extends Vinculos {
             // Si tiene URL se pondrán vínculos, de lo contrario no
             if ($vinculo->url() != '') {
                 // Tiene URL
-                if ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('        <li><a href="%s"><img src="%s"> %s</a></li>', $vinculo->url(), $vinculo->icono_url($this->icono_tamano), $vinculo->nombre);
-                } else {
-                    $a[] = sprintf('        <li><a href="%s">%s</a></li>', $vinculo->url(), $vinculo->nombre);
-                }
+                $a[] = sprintf('        <li><a href="%s">%s</a></li>', $vinculo->url(), $vinculo->nombre);
             } else {
                 // NO tiene URL
-                if ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('        <li><img src="%s"> %s</li>', $vinculo->icono_url($this->icono_tamano), $vinculo->nombre);
-                } else {
-                    $a[] = sprintf('        <li>%s</li>', $vinculo->nombre);
-                }
+                $a[] = sprintf('        <li>%s</li>', $vinculo->nombre);
             }
         }
         $a[] = '      </ul>';

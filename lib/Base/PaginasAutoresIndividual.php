@@ -34,14 +34,17 @@ class PaginasAutoresIndividual extends Paginas {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
+    protected $autor;      // Nombre del autor como se encuentra en la publicación
     protected $recolector; // Instancia de RecolectorAutores
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de RecolectorAutores
+     * @param string Nombre del autor como se encuentra en la publicación
+     * @param mixed  Instancia de RecolectorAutores
      */
-    public function __construct(RecolectorAutores $recolector) {
+    public function __construct($autor, RecolectorAutores $recolector) {
+        $this->autor      = $autor;
         $this->recolector = $recolector;
     } // constructor
 
@@ -51,12 +54,33 @@ class PaginasAutoresIndividual extends Paginas {
      * @return string Código HTML
      */
     public function html() {
+        // Cargar configuración de los autores
+        $autores_config = new \Configuracion\AutoresConfig();
+        // Obtener el autor primero con el apodo, luego con 'titulo nombre_completo'
+        $autor = $autores_config->obtener_con_apodo($this->autor);
+        if ($autor === false) {
+            $autor = $autores_config->obtener_con_titulo_nombre_completo($this->autor);
+        }
+        // Si está definido el autor como instancia
+        if ($autor === false) {
+            // El autor NO está definido
+            $this->titulo      = $this->autor;
+            $this->descripcion = sprintf('Datos y publicaciones de %s.', $this->autor);
+        } else {
+            // El autor está definido
+            $this->titulo      = $autor->titulo_nombre_completo();
+            $this->descripcion = sprintf('Datos y publicaciones de %s.', $autor->titulo_nombre_completo());
+        }
         // Acumularemos la entrega en este arreglo
         $a = array();
         // Acumular encabezado
         $a[] = $this->encabezado_html();
-        // Cargar configuración de los autores
-        $autores_config = new \Configuracion\AutoresConfig();
+        // Si está definido el autor como instancia
+        if ($autor !== false) {
+            // Agregar foto del autor
+            $a[] = sprintf('<div><img src="%s"><br>%s</div>', $autor->icono_url(256), $autor->titulo_nombre_completo());
+        }
+        // Definir concentrador
         $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_individual);
         $concentrador   = new $clase();
         // Bucle por todos los autores

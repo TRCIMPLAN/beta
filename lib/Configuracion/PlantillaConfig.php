@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Plantilla Config
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,19 +17,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace Configuracion;
 
 /**
  * Clase PlantillaConfig
- *
- * Twitter Bootstrap desde http://www.bootstrapcdn.com/
- * Font Awsome desde http://www.bootstrapcdn.com/fontawesome/
- * JQuery desde Google apis segun https://developers.google.com/speed/libraries/
  */
 class PlantillaConfig {
 
+    const  DEPENCENCIAS_EN_INTERNET = false; // Si es verdadero Twitter Bootstrap, Font Awesome, Google Fonts y jQuery se tomarán desde servidores en internet
     public $sitio_titulo     = 'IMPLAN Torreón';
     public $sitio_url        = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
     public $rss              = 'rss.xml';
@@ -43,8 +41,8 @@ class PlantillaConfig {
 
         Instituto Municipal de Planeación y Competitividad de Torreón.
 
-        Este sistema fue elaborado por personal del IMPLAN Torreón.
-        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015.
+        Este sitio web es elaborado con la Plataforma de Conocimiento.
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016.
           Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
         Al usarlo está aceptando los términos de uso de la información y del sitio web:
           http://trcimplan.gob.mx/terminos/terminos-informacion.html
@@ -53,10 +51,11 @@ class PlantillaConfig {
           Twitter Bootstrap    http://getbootstrap.com
           StartBootStrap       http://startbootstrap.com
           Morris.js            https://morrisjs.github.io/morris.js/
-          LeafLet              http://leafletjs.com
           CartoDB              http://cartodb.com
-        Descargue, aprenda y colabore con el software del IMPLAN Torreón por medio de GitHub:
-          GitHub               https://github.com/TRCIMPLAN
+        Descargue, aprenda y colabore con este Software Libre:
+          GitHub desarrollador https://github.com/guivaloz
+          GitHub instituto     https://github.com/TRCIMPLAN
+
      =========================================================================================== -->
 FINAL;
     public $pie;
@@ -71,12 +70,33 @@ FINAL;
   ga('send', 'pageview');
 </script>
 FINAL;
-    protected $google_site_verification;
-    protected $cabecera_bootstrap_css    = '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">';
-    protected $cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">';
-    protected $cabecera_google_fonts_css = '<link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">';
-    protected $scripts_jquery_css        = '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>';
-    protected $scripts_bootstrap_js      = '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>';
+    protected $google_site_verification  = '';
+    protected $cabecera_bootstrap_css    = '';
+    protected $cabecera_font_awesome_css = '';
+    protected $cabecera_google_fonts_css = '';
+    protected $scripts_jquery_css        = '';
+    protected $scripts_bootstrap_js      = '';
+
+    /**
+     * Constructor
+     *
+     * Twitter Bootstrap desde http://www.bootstrapcdn.com/
+     * Font Awsome desde http://www.bootstrapcdn.com/fontawesome/
+     * JQuery desde Google apis segun https://developers.google.com/speed/libraries/
+     */
+    public function __construct() {
+        if (self::DEPENCENCIAS_EN_INTERNET) {
+            // jQuery
+            $this->scripts_jquery_css        = '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>';
+            // Twitter Bootstrap
+            $this->cabecera_bootstrap_css    = '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">';
+            $this->scripts_bootstrap_js      = '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>';
+            // Font Awesome
+            $this->cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">';
+            // Google Fonts
+            $this->cabecera_google_fonts_css = '<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">';
+        }
+    } // constructor
 
 } // Clase PlantillaConfig
 

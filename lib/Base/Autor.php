@@ -115,7 +115,7 @@ class Autor {
      * @return string  URL relativo a la imagen icono
      */
     public function icono_url($tamano=64) {
-        if (($tamano != 256) && ($tamano != 128) || ($tamano != 64)) {
+        if (($tamano != 256) && ($tamano != 128) && ($tamano != 64)) {
             throw new \Exception("Error en Autor: Tamaño de icono incorrecto.");
         }
         if ($this->icono == '') {

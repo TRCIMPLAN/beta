@@ -1,7 +1,7 @@
 /*
  * trcimplan.css
  *
- * Copyright (C) 2014 IMPLAN Torreón
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,11 +18,12 @@
  *
  */
 
-/* Global */
+/*
+ * Global
+ */
 body {
     font-family:'Questrial',Verdana,Helvetica,Arial,sans-serif; font-weight:400;
     font-size:16px;
-    line-height:1.4;
     background-color:#F0F0F0;
 }
 h1, .h1,
@@ -32,21 +33,16 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
     font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
-    line-height:1.2;
 }
-h1, .h1 { font-size:32px; }
-h2, .h2 { font-size:28px; }
-h3, .h3 { font-size:24px; }
-h4, .h4 { font-size:18px; }
-h5, .h5 { font-size:14px; }
-h6, .h6 { font-size:10px; }
 a         { color:#A52100; text-decoration:none; }
 a:link,
 a:visited { color:#A52100; text-decoration:none; }
 a:hover,
 a:active  { color:#FF3300; text-decoration:none; }
 
-/* Menús */
+/*
+ * Menús
+ */
 .navbar-default {
     background-color:#F0F0F0;
     color:#646464;
@@ -54,8 +50,6 @@ a:active  { color:#FF3300; text-decoration:none; }
 .navbar-static-top {
     border-bottom:1px solid #FF3300;
 }
-
-/* Menú principal/izquierdo opción */
 #side-menu {
     font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
     font-size:16px;
@@ -70,17 +64,21 @@ a:active  { color:#FF3300; text-decoration:none; }
     font-size:1.2em;
 }
 
-/* Page Wrapper */
+/*
+ * Page Wrapper
+ */
 #page-wrapper  {
     background-color:#E3E3E3;
-    padding:0 4px 0 4px;
 }
-.sidebar ul li { border-bottom:1px solid #CCC; }
 
-/* Encabezados */
+/*
+ * Cuerpo
+ */
+.cuerpo {
+    background-color:#FFF;
+}
 .encabezado {
     background-color:#646464;
-    margin-bottom:12px;
 }
 .encabezado h1,
 .encabezado h2 {
@@ -108,18 +106,10 @@ a:active  { color:#FF3300; text-decoration:none; }
     line-height:1.2;
     padding:2px 2px 2px 4px;
 }
-
-/* Cuerpo */
-.cuerpo {
-    background-color:#FFF;
-    padding:8px;
-}
 .contenido {
     padding-bottom:12px;
     color:#222;
 }
-
-/* Contenido */
 .contenido-autor-fecha {
     color:#444;
     font-size:0.8em;
@@ -135,8 +125,6 @@ a:active  { color:#FF3300; text-decoration:none; }
     padding:0 24px 12px 0;
     float:left;
 }
-
-/* Contenido más */
 .titulo {
     color:#000;
 }
@@ -186,7 +174,9 @@ a:active  { color:#FF3300; text-decoration:none; }
     border-radius:4px;
 }
 
-/* Contenido videos responsivos */
+/*
+ * Videos responsivos
+ */
 .videowrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -204,7 +194,9 @@ a:active  { color:#FF3300; text-decoration:none; }
     height: 100%;
 }
 
-/* Lengüetas */
+/*
+ * Lengüetas
+ */
 .lenguetas > li > a,
 .lenguetas > li > a:link,
 .lenguetas > li > a:visited {
@@ -241,7 +233,9 @@ a:active  { color:#FF3300; text-decoration:none; }
     padding:4px;
 }
 
-/* Mapa inferior */
+/*
+ * Mapa inferior
+ */
 .mapa-inferior            { background-color:#F0F0F0; }
 .mapa-inferior-logo       { padding:4px; }
 .redes-sociales           { color:#646464; }
@@ -251,15 +245,9 @@ a:active  { color:#FF3300; text-decoration:none; }
 .redes-sociales a:hover,
 .redes-sociales a:active  { color:#FF3300; }
 
-/* Contenido con Índice */
-.indice-icono          { font-size:6em; }
-a.indice-icono         { color:#A52100; }
-a.indice-icono:link,
-a.indice-icono:visited { color:#A52100; }
-a.indice-icono:hover,
-a.indice-icono:active  { color:#FF3300; }
-
-/* Contenido con Galería */
+/*
+ * Galería
+ */
 .galeria-thumbnail {
     background-color:transparent;
     border:none;
@@ -283,7 +271,17 @@ a.galeria-icono:active  { color:#FF3300; }
     font-size:1em;
 }
 
-/* Contenido con SMI Indicadores por Región */
+/*
+ * Tarjetas
+ */
+.tarjetas-thumbnail {
+    background-color:#E8E8E8;
+    min-height:500px;
+}
+
+/*
+ * Indicadores por Región
+ */
 .indicadores-vinculos {
     font-family:'Roboto Condensed',sans-serif; font-weight:400;
     font-size:14px;
@@ -306,13 +304,9 @@ a.galeria-icono:active  { color:#FF3300; }
 .indicadores-vinculos a:hover,
 .indicadores-vinculos a:active  { color:#FF3300; }
 
-/* Contenido Tarjetas */
-.tarjetas-thumbnail {
-    background-color:#E8E8E8;
-    min-height:500px;
-}
-
-/* Página Inicial */
+/*
+ * Página Inicial
+ */
 #organizacion .banner {
     width:100%;
 }
@@ -332,14 +326,9 @@ a.galeria-icono:active  { color:#FF3300; }
     margin-top:2px;
     margin-bottom:4px;
 }
-
 #destacado {
     background-color:#D1D7DC;
     padding:8px;
-}
-.destacado-servicio {
-}
-.destacado-imagen {
 }
 .destacado-titulo {
     line-height:1.2em;
@@ -355,7 +344,9 @@ a.galeria-icono:active  { color:#FF3300; }
     background-color:#F0F0F0;
 }
 
-/* Página Inicial imágenes de tres servicios que cambian al pasar el ratón */
+/*
+ * Página Inicial imágenes de tres servicios que cambian al pasar el ratón
+ */
 #servicio-pem {
     display:block;
     width:200px;
@@ -384,7 +375,9 @@ a.galeria-icono:active  { color:#FF3300; }
     background-position:-200px 0;
 }
 
-/* Página Inicial últimas publicaciones */
+/*
+ * Página Inicial últimas publicaciones
+ */
 #ultimas-publicaciones {
     background-color:#FFF;
 }
@@ -397,7 +390,9 @@ a.galeria-icono:active  { color:#FF3300; }
     padding:8px;
 }
 
-/* Página Inicial mapa del sitio */
+/*
+ * Página Inicial mapa del sitio
+ */
 #mapa,
 #mapa-chico {
     background-color:#D1D7DC;
@@ -434,7 +429,9 @@ a.galeria-icono:active  { color:#FF3300; }
     display:none;
 }
 
-/* Página Inicial redes sociales */
+/*
+ * Página Inicial redes sociales
+ */
 #redes {
     background-color:#ECECEC;
     padding:8px;
@@ -450,7 +447,9 @@ a.galeria-icono:active  { color:#FF3300; }
 #redes a:active  { color:#FF3300; }
 #redes .logotipo { display:inline; }
 
-/* Categorias */
+/*
+ * Categorias
+ */
 #categorias-por-defecto                   { display:block; width:128px; height:128px; background:url("../imagenes/categorias/por-defecto.jpg") no-repeat 0 0; }
 #categorias-por-defecto:hover             { background-position:-128px 0; }
 #categorias-bienestar                     { display:block; width:128px; height:128px; background:url("../imagenes/categorias/bienestar.jpg") no-repeat 0 0; }
@@ -514,7 +513,9 @@ a.galeria-icono:active  { color:#FF3300; }
 #categorias-vivienda                      { display:block; width:128px; height:128px; background:url("../imagenes/categorias/vivienda.jpg") no-repeat 0 0; }
 #categorias-vivienda:hover                { background-position:-128px 0; }
 
-/* Pie */
+/*
+ * Pie
+ */
 #pie {
     background-color:#1b1e25;
     color:#DDD;
@@ -528,7 +529,9 @@ a.galeria-icono:active  { color:#FF3300; }
 #pie a:active  { color:#FFF; }
 #pie p         { margin:4px; }
 
-/* Responsivo */
+/*
+ * Responsivo
+ */
 @media only screen and (max-width: 1200px) {
     #carrusel .carousel-inner > .item > img {
         height:352px;

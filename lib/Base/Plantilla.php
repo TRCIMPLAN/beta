@@ -37,6 +37,13 @@ class Plantilla extends \Configuracion\PlantillaConfig {
     // public $autor;
     // public $mensaje_oculto;
     // public $pie;
+    // protected $google_analytics;
+    // protected $google_site_verification;
+    // protected $cabecera_bootstrap_css;
+    // protected $cabecera_font_awesome_css;
+    // protected $cabecera_google_fonts_css;
+    // protected $scripts_jquery_css;
+    // protected $scripts_bootstrap_js;
     public $titulo;                         // Título de la página
     public $descripcion;                    // Descripción del sitio o la página
     public $claves;                         // Claves que ayuden a los buscadores
@@ -49,7 +56,6 @@ class Plantilla extends \Configuracion\PlantillaConfig {
     public $mapa_inferior;                  // Instancia de \Base\MapaInferior
     public $javascript           = array(); // Arreglo que acumula el código Javascript a poner al final de la página
     public $contenido_en_renglon = true;    // Encierra el contenido en renglón y cuerpo.
-    public $google_site_verification;       // Opcional. Código de verificación de Google; se agregará a header
 
     /**
      * Incorporar Publicacion
@@ -154,10 +160,10 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             $a[] = "  {$this->google_site_verification}";
         }
         $a[] = "  <title>$titulo</title>";
-        if (isset($this->cabecera_bootstrap_css)) {
+        if ($this->cabecera_bootstrap_css != '') {
             $a[] = "  {$this->cabecera_bootstrap_css}";
         }
-        if (isset($this->cabecera_font_awesome_css)) {
+        if ($this->cabecera_font_awesome_css != '') {
             $a[] = "  {$this->cabecera_font_awesome_css}";
         }
         if ($this->en_raiz) {
@@ -167,14 +173,14 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             if ($this->rss != '') {
                 $a[] = "  <link href=\"{$this->rss}\" rel=\"alternate\" type=\"application/rss+xml\" title=\"{$this->sitio_titulo}\">";
             }
-            if (!isset($this->cabecera_bootstrap_css)) {
+            if ($this->cabecera_bootstrap_css == '') {
                 $a[] = '  <link href="css/bootstrap.min.css" rel="stylesheet">';
             }
             $a[] = '  <link href="css/morris.css" rel="stylesheet">';
         //  $a[] = '  <link href="css/leaflet.css" rel="stylesheet">';
             $a[] = '  <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">';
             $a[] = '  <link href="css/sb-admin-2.css" rel="stylesheet">';
-            if (!isset($this->cabecera_font_awesome_css)) {
+            if ($this->cabecera_font_awesome_css == '') {
                 $a[] = '  <link href="css/font-awesome.min.css" rel="stylesheet">';
             }
             $a[] = '  <link href="css/plataforma-de-conocimiento.css" rel="stylesheet">';
@@ -188,14 +194,14 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             if ($this->rss != '') {
                 $a[] = "  <link href=\"../{$this->rss}\" rel=\"alternate\" type=\"application/rss+xml\" title=\"{$this->sitio_titulo}\">";
             }
-            if (!isset($this->cabecera_bootstrap_css)) {
+            if ($this->cabecera_bootstrap_css == '') {
                 $a[] = '  <link href="../css/bootstrap.min.css" rel="stylesheet">';
             }
             $a[] = '  <link href="../css/morris.css" rel="stylesheet">';
         //  $a[] = '  <link href="../css/leaflet.css" rel="stylesheet">';
             $a[] = '  <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">';
             $a[] = '  <link href="../css/sb-admin-2.css" rel="stylesheet">';
-            if (!isset($this->cabecera_font_awesome_css)) {
+            if ($this->cabecera_font_awesome_css == '') {
                 $a[] = '  <link href="../css/font-awesome.min.css" rel="stylesheet">';
             }
             $a[] = '  <link href="../css/plataforma-de-conocimiento.css" rel="stylesheet">';
@@ -203,7 +209,7 @@ class Plantilla extends \Configuracion\PlantillaConfig {
                 $a[] = "  <link href=\"../{$this->propio_css}\" rel=\"stylesheet\">";
             }
         }
-        if (isset($this->cabecera_google_fonts_css)) {
+        if ($this->cabecera_google_fonts_css != '') {
             $a[] = "  {$this->cabecera_google_fonts_css}";
         }
     //  $a[] = '  <!-- SOPORTE PARA IE -->';
@@ -225,17 +231,17 @@ class Plantilla extends \Configuracion\PlantillaConfig {
         // Acumularemos la entrega en este arreglo
         $a = array();
         // Acumular
-        if (isset($this->scripts_jquery_css)) {
+        if ($this->scripts_jquery_css != '') {
             $a[] = $this->scripts_jquery_css;
         }
-        if (isset($this->scripts_bootstrap_js)) {
+        if ($this->scripts_bootstrap_js != '') {
             $a[] = $this->scripts_bootstrap_js;
         }
         if ($this->en_raiz) {
-            if (!isset($this->scripts_jquery_css)) {
+            if ($this->scripts_jquery_css == '') {
                 $a[] = '<script src="js/jquery.min.js"></script>';
             }
-            if (!isset($this->scripts_bootstrap_js)) {
+            if ($this->scripts_bootstrap_js == '') {
                 $a[] = '<script src="js/bootstrap.min.js"></script>';
             }
             $a[] = '<script src="js/raphael-min.js"></script>';
@@ -244,10 +250,10 @@ class Plantilla extends \Configuracion\PlantillaConfig {
             $a[] = '<script src="js/plugins/metisMenu/metisMenu.min.js"></script>';
             $a[] = '<script src="js/sb-admin-2.js"></script>';
         } else {
-            if (!isset($this->scripts_jquery_css)) {
+            if ($this->scripts_jquery_css == '') {
                 $a[] = '<script src="../js/jquery.min.js"></script>';
             }
-            if (!isset($this->scripts_bootstrap_js)) {
+            if ($this->scripts_bootstrap_js == '') {
                 $a[] = '<script src="../js/bootstrap.min.js"></script>';
             }
             $a[] = '<script src="../js/raphael-min.js"></script>';

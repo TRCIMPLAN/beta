@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Pagina Inicial Config
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2015 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace Configuracion;
@@ -36,6 +37,13 @@ class PaginaInicialConfig extends \Base\Plantilla {
     // public $autor;
     // public $mensaje_oculto;
     // public $pie;
+    // protected $google_analytics;
+    // protected $google_site_verification;
+    // protected $cabecera_bootstrap_css;
+    // protected $cabecera_font_awesome_css;
+    // protected $cabecera_google_fonts_css;
+    // protected $scripts_jquery_css;
+    // protected $scripts_bootstrap_js;
     // public $titulo;
     // public $descripcion;
     // public $claves;
@@ -48,8 +56,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     // public $mapa_inferior;
     // public $javascript;
     // public $contenido_en_renglon;
-    // public $google_site_verification;
-    public $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones
+    public $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones, es usado en ultimas_publicaciones
     public $mapa_servicios     = array(
         'Análisis Publicados'               => 'blog/index.html',
         'Indicadores'                       => 'indicadores-categorias/index.html',
@@ -91,9 +98,6 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->imagen_previa_ruta       = 'imagenes/imagen-previa.jpg';
         $this->contenido_en_renglon     = false;
         $this->google_site_verification = '  <meta name="google-site-verification" content="Hz-cnyG17CBaAXopvSHn7J81Za2cmg4dvnRh1VJE7ks">';
-        // Navegación
-        $this->navegacion          = new \Base\Navegacion();
-        $this->navegacion->en_raiz = true;
     } // constructor
 
     /**
@@ -101,13 +105,13 @@ class PaginaInicialConfig extends \Base\Plantilla {
      */
     protected function organizacion() {
         // Encabezado
-        $organizacion              = new \PaginaInicial\Organizacion();
-        $organizacion->name        = 'Instituto Municipal de Planeación y Competitividad de Torreón';
-        $organizacion->description = 'Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón, Coahuila, México.';
-        $organizacion->image       = 'imagenes/implan-logo.png';
-    //~ $organizacion->is_article     = false;
-    //~ $organizacion->big_heading    = true;
-    //~ $organizacion->headline_style = 'organizacion';
+        $organizacion                 = new \PaginaInicial\Organizacion();
+        $organizacion->name           = 'Instituto Municipal de Planeación y Competitividad de Torreón';
+        $organizacion->description    = 'Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón, Coahuila, México.';
+        $organizacion->image          = 'imagenes/implan-logo.png';
+        $organizacion->is_article     = false;
+        $organizacion->big_heading    = true;
+        $organizacion->headline_style = 'organizacion';
         // Acumular
         $this->contenido[] = '  <section id="organizacion">';
     //~ $this->contenido[] = '    <a href="consejo-directivo/convocatoria-2015.html"><img class="banner" src="consejo-directivo/convocatoria-2015/banner.jpg" alt="Banner"></a>';

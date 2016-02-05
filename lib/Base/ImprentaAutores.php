@@ -62,9 +62,9 @@ class ImprentaAutores extends Imprenta {
             // Filtrar
             $this->recolector->filtrar_publicaciones_de_autor($autor);
             // Iniciar PaginasAutoresIndividual
-            $pagina                  = new PaginasAutoresIndividual($this->recolector);
-            $pagina->titulo          = $autor;
-            $pagina->descripcion     = "Publicaciones de $autor.";
+            $pagina                  = new PaginasAutoresIndividual($autor, $this->recolector);
+        //  $pagina->titulo          = $autor;
+        //  $pagina->descripcion     = "Publicaciones de $autor.";
             // Pasar a la plantilla estos valores
             $plantilla->titulo       = $pagina->titulo;
             $plantilla->descripcion  = $pagina->descripcion;
