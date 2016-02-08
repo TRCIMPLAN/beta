@@ -82,14 +82,41 @@ abstract class Paginas {
      *
      * @return string Código HTML
      */
-    abstract function html();
+    public function html() {
+        // Acumularemos el código HTML en este arreglo
+        $a = array();
+        // Si hay título se acumula el encabezado
+        if ($this->titulo != '') {
+            $a[] = $this->encabezado_html();
+        }
+        // Pasar parámetros al concentrador
+        $this->concentrador->en_raiz = $this->en_raiz;
+        $this->concentrador->en_otro = $this->en_otro;
+        // Bucle por las publicaciones, tiene la cantidad límite
+        foreach ($this->recolector->obtener_publicaciones($this->cantidad_maxima) as $publicacion) {
+            // Pasar parámetros a la publicación
+            $publicacion->en_raiz = $this->en_raiz;
+            $publicacion->en_otro = $this->en_otro;
+            // Iniciar vínculo
+            $vinculo = new \Base\Vinculo();
+            $vinculo->agregar_publicacion($publicacion);
+            // Agregar
+            $this->concentrador->agregar($vinculo);
+        }
+        // Acumular
+        $a[] = $this->concentrador->html();
+        // Entregar
+        return implode("\n", $a);
+    } // html
 
     /**
      * Javascript
      *
      * @return string Código Javascript
      */
-    abstract function javascript();
+    public function javascript() {
+        return $this->concentrador->javascript();
+    } // javascript
 
 } // Clase Abstracta Paginas
 

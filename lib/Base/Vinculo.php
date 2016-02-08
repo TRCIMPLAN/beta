@@ -50,7 +50,7 @@ class Vinculo {
      * @param string Autor
      * @param string Fecha
      */
-    public function __construct($nombre, $vinculo='', $icono='', $imagen_previa='', $descripcion='', $autor='', $fecha='') {
+    public function __construct($nombre='', $vinculo='', $icono='', $imagen_previa='', $descripcion='', $autor='', $fecha='') {
         $this->nombre        = $nombre;
         $this->vinculo       = $vinculo;
         $this->icono         = $icono;
@@ -59,6 +59,24 @@ class Vinculo {
         $this->autor         = $autor;
         $this->fecha         = $fecha;
     } // constructor
+
+    /**
+     * Agregar publicacion
+     *
+     * @param mixed Instancia de Publicacion
+     */
+    public function agregar_publicacion(Publicacion $p) {
+        $this->nombre        = $p->nombre;
+        $this->vinculo       = $p->url();
+        if ($p->imagen_previa != '') {
+            $this->imagen_previa = $p->imagen_previa_url();
+        } elseif ($p->icono != '') {
+            $this->icono = $p->icono;
+        }
+        $this->descripcion   = $p->descripcion;
+        $this->autor         = $p->autor;
+        $this->fecha         = $p->fecha_con_formato_humano();
+    } // agregar_publicacion
 
     /**
      * URL

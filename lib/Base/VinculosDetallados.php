@@ -72,7 +72,7 @@ class VinculosDetallados extends Vinculos {
                 $a[] = sprintf('          <h3 class="media-heading">%s</h3>', $vinculo->nombre);
             }
             if ($vinculo->descripcion != '') {
-                $a[] = $vinculo->descripcion;
+                $a[] = sprintf('          <p class="detallados-descripcion">%s</p>', $vinculo->descripcion);
             }
             if (($vinculo->autor != '') && ($vinculo->fecha != '')) {
                 $a[] = sprintf('          <p class="detallados-autor-fecha">Por %s, %s</p>', $vinculo->autor, $vinculo->fecha);

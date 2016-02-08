@@ -78,7 +78,7 @@ class PaginasAutoresIndividual extends Paginas {
         // Si está definido el autor como instancia
         if ($autor !== false) {
             // Agregar foto del autor
-            $a[] = sprintf('<div><img src="%s"><br>%s</div>', $autor->icono_url(256), $autor->titulo_nombre_completo());
+            $a[] = $autor->perfil();
         }
         // Definir concentrador
         $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_individual);

@@ -167,6 +167,17 @@ class Autor {
         return implode("\n", $d);
     } // elaborar_descripcion
 
+    /**
+     * Perfil para página individual
+     *
+     * @return string Código HTML
+     */
+    public function perfil() {
+        $a   = array();
+        $a[] = sprintf('<div><img src="%s"><br>%s</div>', $this->icono_url(256), $this->titulo_nombre_completo());
+        return implode("\n", $a);
+    } // perfil
+
 } // Autor
 
 ?>

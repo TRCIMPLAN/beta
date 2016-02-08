@@ -35,46 +35,18 @@ class PaginasDetallados extends Paginas {
     // public $en_raiz;
     // public $en_otro;
     public $cantidad_maxima; // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
-    protected $recolector;   // Instancia de Recolector
-    protected $breves;       // Instancia de BrevesDetallados
+    protected $recolector;   // Instancia de Recolector ya con las publicaciones
+    protected $concentrador; // Instancia de VinculosDetallados
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de Recolector
+     * @param mixed Instancia de Recolector ya con las publicaciones
      */
     public function __construct(Recolector $recolector) {
-        $this->recolector = $recolector;
-        $this->breves     = new BrevesDetallados($this->recolector);
+        $this->recolector   = $recolector;
+        $this->concentrador = new VinculosDetallados();
     } // constructor
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Pasar variables a breves
-        $this->breves->titulo           = $this->titulo;
-        $this->breves->descripcion      = $this->descripcion;
-        $this->breves->encabezado       = $this->encabezado;
-        $this->breves->encabezado_color = $this->encabezado_color;
-        $this->breves->encabezado_icono = $this->encabezado_icono;
-        $this->breves->en_raiz          = $this->en_raiz;
-        $this->breves->en_otro          = $this->en_otro;
-        $this->breves->cantidad_maxima  = $this->cantidad_maxima;
-        // Entregar
-        return $this->breves->html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        return $this->breves->javascript();
-    } // javascript
 
 } // Clase PaginasDetallados
 

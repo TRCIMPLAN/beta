@@ -87,6 +87,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
      * Constructor
      */
     public function __construct() {
+        parent::__construct();
         // Propiedades para la página inicial
         $this->en_raiz                  = true;
         $this->titulo                   = 'IMPLAN Torreón';
@@ -97,7 +98,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->archivo_ruta             = "index.html";
         $this->imagen_previa_ruta       = 'imagenes/imagen-previa.jpg';
         $this->contenido_en_renglon     = false;
-        $this->google_site_verification = '  <meta name="google-site-verification" content="Hz-cnyG17CBaAXopvSHn7J81Za2cmg4dvnRh1VJE7ks">';
+        $this->google_site_verification = '<meta name="google-site-verification" content="Hz-cnyG17CBaAXopvSHn7J81Za2cmg4dvnRh1VJE7ks">';
     } // constructor
 
     /**
@@ -192,21 +193,29 @@ class PaginaInicialConfig extends \Base\Plantilla {
      * Últimas publicaciones
      */
     protected function ultimas_publicaciones() {
-        // Iniciar Recolector
+        // Iniciar concentrador
+        $concentrador          = new \Base\VinculosDetallados();
+        $concentrador->en_raiz = true;
+        // Iniciar recolector
         $recolector = new \Base\Recolector();
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
-        // Iniciar BrevesIndice
-        $breves                  = new \Base\BrevesDetallados($recolector);
-        $breves->titulo          = 'Últimas publicaciones';
-        $breves->en_raiz         = true;
-        $breves->en_otro         = false;
-        $breves->cantidad_maxima = 5;
+        // Bucle por las publicaciones, tiene la cantidad límite
+        foreach ($recolector->obtener_publicaciones(5) as $publicacion) {
+            // Es para la raíz del sitio web
+            $publicacion->en_raiz = true;
+            // Iniciar vínculo
+            $vinculo = new \Base\Vinculo();
+            $vinculo->agregar_publicacion($publicacion);
+            // Agregar
+            $concentrador->agregar($vinculo);
+        }
         // Acumular Últimas Publicaciones y Twitter Timeline
         $this->contenido[]  = '  <section id="ultimas-publicaciones">';
         $this->contenido[]  = '    <div class="row">';
         $this->contenido[]  = '      <div class="col-md-8">';
-        $this->contenido[]  = '        <div class="analisis-publicados">';
-        $this->contenido[]  = $breves->html();
+        $this->contenido[]  = '        <div class="ultimas">';
+        $this->contenido[]  = '          <h2>Últimas publicaciones</h2>';
+        $this->contenido[]  = $concentrador->html();
         $this->contenido[]  = '          <div class="text-center">';
         $this->contenido[]  = "            <a href=\"blog/index.html\" class=\"btn btn-default\" role=\"button\">Todos los Análisis Publicados</a>";
         $this->contenido[]  = '          </div>';
@@ -216,10 +225,11 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = '        <div class="red-social-twitter">';
         $this->contenido[]  = '          <a class="twitter-timeline" height="720px" href="https://twitter.com/trcimplan" data-chrome="nofooter transparent" data-theme="dark" data-widget-id="455819492145127424">Tweets por @trcimplan</a>';
         $this->contenido[]  = '        </div>';
-        $this->javascript[] = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';
+        // Acumular javascipt del Twitter Timeline
+        $this->javascript[] = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
     } // ultimas_publicaciones
 
     /**

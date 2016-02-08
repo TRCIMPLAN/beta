@@ -34,47 +34,19 @@ class PaginasGalerias extends Paginas {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
-    public $cantidad_maxima;    // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
-    protected $recolector;      // Instancia de Recolector
-    protected $breves_galerias; // Instancia de BrevesGalerias
+    public $cantidad_maxima; // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
+    protected $recolector;   // Instancia de Recolector ya con las publicaciones
+    protected $concentrador; // Instancia de VinculosGalerias
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de Recolector
+     * @param mixed Instancia de Recolector ya con las publicaciones
      */
     public function __construct(Recolector $recolector) {
-        $this->recolector      = $recolector;
-        $this->breves_galerias = new BrevesGalerias($this->recolector);
+        $this->recolector   = $recolector;
+        $this->concentrador = new VinculosGalerias();
     } // constructor
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Pasar variables a Breves Galerías
-        $this->breves_galerias->titulo           = $this->titulo;
-        $this->breves_galerias->descripcion      = $this->descripcion;
-        $this->breves_galerias->encabezado       = $this->encabezado;
-        $this->breves_galerias->encabezado_color = $this->encabezado_color;
-        $this->breves_galerias->encabezado_icono = $this->encabezado_icono;
-        $this->breves_galerias->en_raiz          = $this->en_raiz;
-        $this->breves_galerias->en_otro          = $this->en_otro;
-        $this->breves_galerias->cantidad_maxima  = $this->cantidad_maxima;
-        // Entregar
-        return $this->breves_galerias->html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        return $this->breves_galerias->javascript();
-    } // javascript
 
 } // Clase PaginasGalerias
 

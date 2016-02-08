@@ -307,6 +307,9 @@ a.galeria-icono:active  { color:#FF3300; }
 /*
  * Página Inicial
  */
+#organizacion {
+    padding:0;
+}
 #organizacion .banner {
     width:100%;
 }
@@ -381,8 +384,7 @@ a.galeria-icono:active  { color:#FF3300; }
 #ultimas-publicaciones {
     background-color:#FFF;
 }
-#ultimas-publicaciones .analisis-publicados {
-    background-color:#FFF;
+#ultimas-publicaciones .ultimas {
     padding:8px;
 }
 #ultimas-publicaciones .red-social-twitter {
@@ -397,8 +399,8 @@ a.galeria-icono:active  { color:#FF3300; }
 #mapa-chico {
     background-color:#D1D7DC;
     padding:8px;
-    font-size:12px;
     color:#444;
+    font-size:14px;
 }
 #mapa h4.mapa-encabezado,
 #mapa-chico h4.mapa-encabezado {
@@ -414,9 +416,10 @@ a.galeria-icono:active  { color:#FF3300; }
     padding-left:16px;
     list-style-type:none;
     text-align:left;
+    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
 }
-#mapa a               { color:#646464; padding:2px; font-weight:bold; display:block; }
-#mapa-chico a         { color:#646464; padding:2px; font-weight:bold; }
+#mapa a               { color:#646464; padding:2px; font-weight:400; display:block; }
+#mapa-chico a         { color:#646464; padding:2px; font-weight:400; }
 #mapa a:link,
 #mapa a:visited,
 #mapa-chico a:link,
@@ -425,9 +428,7 @@ a.galeria-icono:active  { color:#FF3300; }
 #mapa a:active,
 #mapa-chico a:hover,
 #mapa-chico a:active  { color:#FF3300; }
-#mapa-chico {
-    display:none;
-}
+#mapa-chico           { display:none; }
 
 /*
  * Página Inicial redes sociales
