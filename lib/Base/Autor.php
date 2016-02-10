@@ -153,15 +153,15 @@ class Autor {
         }
         if (($this->email != '') && ($this->twitter != '')) {
             $d[] = "              <p class=\"autor-email-twitter\">";
-            $d[] = "                e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
-            $d[] = "                twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
+            $d[] = "                <i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
+            $d[] = "                <i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
             $d[] = "              </p>";
         } else {
             if ($this->email != '') {
-                $d[] = "              <p class=\"autor-email-twitter\">e-mail: <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
+                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
             }
             if ($this->twitter != '') {
-                $d[] = "              <p class=\"autor-email-twitter\">twitter: <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
+                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
             }
         }
         return implode("\n", $d);

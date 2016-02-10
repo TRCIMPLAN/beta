@@ -39,7 +39,7 @@ class AutoresConfig {
     public function __construct() {
         // apodo, titulo, nombre_completo, icono, empresa, cargo, semblanza, email, twitter, estatus
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Adriana Vargas Flores', '',
+            '', 'Lic.', 'Adriana Vargas Flores', 'unknown',
             'IMPLAN Torreón', 'Integración de Proyectos',
             '',
             'avargas@trcimplan.gob.mx', '');
@@ -69,10 +69,10 @@ class AutoresConfig {
             '',
             'eholguin@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Felipe de Jesús Medina Delgado', '',
+            '', 'Lic.', 'Felipe de Jesús Medina Delgado', 'unknown',
             'IMPLAN Torreón', 'Asistente de Direcciones',
             '',
-            '@trcimplan.gob.mx', '');
+            'fmedina@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
             '', '', 'Francisco Valdés Perezgasga', 'francisco-valdes-perezgasga',
             'Consejero / PRODENAZAS', '',
@@ -81,35 +81,35 @@ class AutoresConfig {
         $this->autores[] = new \Base\Autor(
             '', 'Ing.', 'Guillermo Valdés Lozano', 'ing-guillermo-valdes-lozano',
             'IMPLAN Torreón', 'Programación y Software',
-            'Desarrolla los sistemas informáticos y es responsable del sitio web; tiene conocimientos en software libre, GNU/Linux y bases de datos. Trabaja en proyectos en pro del gobierno abierto, las libertades digitales y la divulgación del conocimiento.',
+            'Desarrollador de los sistemas informáticos. Responsable del sitio web. Apoya las iniciativas de gobierno abierto y el uso del software libre.',
             'gvaldes@trcimplan.gob.mx', 'guivaloz');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Hugo Elohím Ramírez Martínez', '',
+            '', 'Lic.', 'Hugo E. Ramírez Martínez', 'unknown',
             'IMPLAN Torreón', 'Gestión y Difusión Social',
             '',
-            'kuiny@trcimplan.gob.mx', '');
+            'hramirez@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Israel Sinai Charur Méndez', '',
+            '', 'Lic.', 'Israel Sinai Charur Méndez', 'unknown',
             'IMPLAN Torreón', 'Difusión y Diseño Gráfico',
             '',
-            'sunno@trcimplan.gob.mx', '');
+            'scharur@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Janeth Ramírez Facio', '',
+            '', 'Lic.', 'Janeth Ramírez Facio', 'unknown',
             'IMPLAN Torreón', 'Auxiliar Administrativo',
             '',
-            '@trcimplan.gob.mx', '');
+            'jramirez@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Julia de la Parra de Juambelz', '',
+            '', 'Lic.', 'Julia de la Parra de Juambelz', 'unknown',
             'IMPLAN Torreón', 'Coordinador Jurídico',
             '',
-            '@trcimplan.gob.mx', '');
+            'jdelaparra@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Ilse Ávila García', 'arq-ilse-avila-garcia',
             'IMPLAN Torreón', 'Director de Proyectos Estratégicos',
             '',
             'iavila@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Arq.', 'A. Melisa Rodríguez Salas', '',
+            '', 'Arq.', 'Ángeles Melisa Rodríguez Salas', 'unknown',
             'IMPLAN Torreón', 'Analista de Costos',
             '',
             'mrodriguez@trcimplan.gob.mx', '');
@@ -117,7 +117,7 @@ class AutoresConfig {
             '', 'Arq.', 'Jair Miramontes Chávez', 'arq-jair-miramontes-chavez',
             'IMPLAN Torreón', 'Sistemas de Información Geográfica',
             '',
-            'jmiramontes@trcimplan.gob.mx', '');
+            'jairmiramontes@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Luis A. Gutiérrez Arizpe', 'lic-luis-a-gutierrez-arizpe',
             'IMPLAN Torreón', 'Indicadores Sociodemográficos',
@@ -129,17 +129,17 @@ class AutoresConfig {
             '',
             'lcampos@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Lic.', 'Mariana Segovia Mota', '',
+            '', 'Lic.', 'Mariana Segovia Mota', 'unknown',
             'IMPLAN Torreón', 'Coordinador Administrativo',
             '',
-            '@trcimplan.gob.mx', '');
+            'msegovia@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Ing.', 'Natalia Zavala López', '',
+            '', 'Ing.', 'Natalia Zavala López', 'unknown',
             'IMPLAN Torreón', 'Asistente Presidencia',
             '',
-            '@trcimplan.gob.mx', '');
+            'nzavala@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', '', 'Olga Lidia Delgado Ramírez', '',
+            '', '', 'Olga L. Delgado Ramírez', 'unknown',
             'IMPLAN Torreón', 'Servicios de Limpieza',
             '',
             '', '');
@@ -154,7 +154,7 @@ class AutoresConfig {
             '',
             'smontano@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'C.P.', 'S. Julia Camarillo Aguirre', '',
+            '', 'C.P.', 'S. Julia Camarillo Aguirre', 'unknown',
             'IMPLAN Torreón', 'Contadora',
             '',
             'jcamarillo@trcimplan.gob.mx', '');
@@ -164,7 +164,7 @@ class AutoresConfig {
             '',
             'tsaludado@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Ing.', 'Víctor Manuel Gómez Reynoso', '',
+            '', 'Ing.', 'Víctor M. Gómez Reynoso', 'unknown',
             'IMPLAN Torreón', 'Soporte Técnico',
             '',
             'vgomez@trcimplan.gob.mx', '');
