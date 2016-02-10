@@ -31,7 +31,7 @@ class AutoresConfig {
     public $vinculos_indice      = 'VinculosTarjetas';   // Nombre de la clase para el índice de autores, en autores/index.html
     public $vinculos_individual  = 'VinculosDetallados'; // Nombre de la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
     public $mostrar_no_definidos = false;                // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
-    public $icono_tamano         = 128;                  // Tamaño de los iconos a usar en el índice
+    public $imagen_tamano        = 128;                  // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
 
     /**
      * Constructor

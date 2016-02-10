@@ -33,7 +33,7 @@ abstract class Paginas {
     public $encabezado_color; // Texto, color de fondo del encabezado #nnnnnn
     public $encabezado_icono; // Texto, icono Font Awesome
     public $en_raiz = false;  // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
-    public $en_otro = true;   // Si es verdadero el archivo va a OTRO lugar como al directorio autores, categorias, etc.
+    public $en_otro = false;  // Si es verdadero el archivo va a OTRO lugar como al directorio autores, categorias, etc.
 
     /**
      * Encabezado HTML
@@ -53,7 +53,7 @@ abstract class Paginas {
             $a[] = $this->encabezado;
             // Y el título de la página es invisible
             if ($this->titulo != '') {
-                $a[] = "      <h2 style=\"display:none;\">{$this->titulo}</h2>";
+                $a[] = "      <h1 style=\"display:none;\">{$this->titulo}</h1>";
             }
         } else {
             // No hay código HTML, vamos a construir el encabezado
@@ -67,7 +67,7 @@ abstract class Paginas {
             } else {
                 $enca = $this->titulo;
             }
-            $a[] = "        <span><h2>$enca</h2></span>";
+            $a[] = "        <span><h1>$enca</h1></span>";
             if ($this->descripcion != '') {
                 $a[] = sprintf('        <div class="encabezado-descripcion">%s</div>', $this->descripcion);
             }

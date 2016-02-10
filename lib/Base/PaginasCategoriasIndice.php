@@ -56,9 +56,11 @@ class PaginasCategoriasIndice extends Paginas {
         // Acumular encabezado
         $a[] = $this->encabezado_html();
         // Cargar configuración de las categorías
-        $categorias_config = new \Configuracion\CategoriasConfig();
-        $clase             = sprintf('\\Base\\%s', $categorias_config->vinculos_indice);
-        $concentrador      = new $clase();
+        $categorias_config           = new \Configuracion\CategoriasConfig();
+        // Iniciar concentrador
+        $clase                       = sprintf('\\Base\\%s', $categorias_config->vinculos_indice);
+        $concentrador                = new $clase();
+        $concentrador->imagen_tamano = $categorias_config->imagen_tamano;
         // Bucle por todas las categorias
         foreach ($this->recolector->obtener_categorias() as $nombre) {
             // Obtener la cantidad de publicaciones de esta categoría
@@ -69,21 +71,15 @@ class PaginasCategoriasIndice extends Paginas {
             // Si está definido en \Configuracion\CategoriasConfig
             if ($categoria instanceof Categoria) {
                 // Sí está definido
-                $categoria->en_raiz = false;
-                $categoria->en_otro = false;
-                $vinculo = new Vinculo(
-                    sprintf('%s (%d)', $categoria->nombre, $cantidad),
-                    $categoria->url(),
-                    $categoria->icono,
-                    '',
-                    $categoria->descripcion);
+                $categoria->en_raiz = $this->en_raiz;
+                $categoria->en_otro = $this->en_otro;
+                $etiqueta = sprintf('%s (%d)', $categoria->nombre, $cantidad);
+                $vinculo  = new Vinculo($etiqueta, $categoria->url(), $categoria->icono, ImprentaCategorias::CATEGORIAS_DIR, $categoria->descripcion);
                 $concentrador->agregar($vinculo);
             } elseif ($categorias_config->mostrar_no_definidos) {
                 // No está definido
-                $vinculo = new Vinculo(
-                    sprintf('%s (%d)', $nombre, $cantidad),
-                    sprintf('%s.html', Funciones::caracteres_para_web($nombre)),
-                    'unknown');
+                $etiqueta = sprintf('%s (%d)', $nombre, $cantidad);
+                $vinculo  = new Vinculo($etiqueta, sprintf('%s.html', Funciones::caracteres_para_web($nombre)), 'unknown', ImprentaCategorias::CATEGORIAS_DIR);
                 $concentrador->agregar($vinculo);
             }
         }

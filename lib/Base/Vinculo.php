@@ -29,9 +29,9 @@ class Vinculo {
 
     const ICONOS_DIR = 'imagenes'; // Nombre del directorio donde están los subdirectorios 64, 128 y 256 con los iconos
     public $nombre;                // Nombre
-    public $vinculo;               // Ruta relativa desde la raíz
-    public $icono;                 // Nombre del archivo para el icono, sin extensión
-    public $imagen_previa;         // Ruta relativa desde donde está el archivo HTML de la publicación a la imagen previa
+    public $vinculo;               // Página HTML o URL en internet a donde debe vincularse
+    public $imagen;                // Nombre del archivo para el icono (sin extensión) o ruta relativa al archivo con la imagen
+    public $directorio;            // Nombre del directorio donde se guardará la publicación completa
     public $descripcion;           // Descripción
     public $autor;                 // Autor
     public $fecha;                 // Fecha
@@ -44,17 +44,16 @@ class Vinculo {
      *
      * @param string Nombre
      * @param string Vínculo
-     * @param string Nombre del archivo para el icono, sin extensión
-     * @param string Ruta relativa desde donde está el archivo HTML de la publicación a la imagen previa
+     * @param string Nombre del archivo para el icono (sin extensión) o ruta relativa al archivo con la imagen
      * @param string Descripción
      * @param string Autor
      * @param string Fecha
      */
-    public function __construct($nombre='', $vinculo='', $icono='', $imagen_previa='', $descripcion='', $autor='', $fecha='') {
+    public function __construct($nombre='', $vinculo='', $imagen='', $directorio='', $descripcion='', $autor='', $fecha='') {
         $this->nombre        = $nombre;
         $this->vinculo       = $vinculo;
-        $this->icono         = $icono;
-        $this->imagen_previa = $imagen_previa;
+        $this->imagen        = $imagen;
+        $this->directorio    = $directorio;
         $this->descripcion   = $descripcion;
         $this->autor         = $autor;
         $this->fecha         = $fecha;
@@ -66,16 +65,30 @@ class Vinculo {
      * @param mixed Instancia de Publicacion
      */
     public function agregar_publicacion(Publicacion $p) {
-        $this->nombre        = $p->nombre;
-        $this->vinculo       = $p->url();
+        // Definir parámetros desde la publicación
+        $this->nombre      = $p->nombre;
+        $this->directorio  = $p->directorio;
+        $this->descripcion = $p->descripcion;
+        $this->autor       = $p->autor;
+        $this->fecha       = $p->fecha_con_formato_humano();
+        $this->en_raiz     = $p->en_raiz;
+        $this->en_otro     = $p->en_otro;
+        // La imagen puede ser la imagen_previa o el icono
         if ($p->imagen_previa != '') {
-            $this->imagen_previa = $p->imagen_previa_url();
+            $this->imagen = $p->imagen_previa;
         } elseif ($p->icono != '') {
-            $this->icono = $p->icono;
+            $this->imagen = $p->icono;
+        } else {
+            $this->imagen = '';
         }
-        $this->descripcion   = $p->descripcion;
-        $this->autor         = $p->autor;
-        $this->fecha         = $p->fecha_con_formato_humano();
+        // Definir el vínculo
+        if ($p->archivo != '') {
+            $this->vinculo = "{$p->archivo}.html"; // Es una página
+        } elseif ($p->url != '') {
+            $this->vinculo = $p->url; // Apunta a otra dirección en internet
+        } else {
+            $this->vinculo = '';
+        }
     } // agregar_publicacion
 
     /**
@@ -86,43 +99,54 @@ class Vinculo {
     public function url() {
         if ($this->vinculo == '') {
             return '';
+        } elseif (preg_match('/^(http|https|ftp|ftps):\/\//', $this->vinculo) === 1) {
+            return $this->vinculo;
+        } elseif ($this->en_raiz) {
+            return sprintf('%s/%s', $this->directorio, $this->vinculo);
+        } elseif ($this->en_otro) {
+            return sprintf('../%s/%s', $this->directorio, $this->vinculo);
         } else {
             return $this->vinculo;
         }
     } // url
 
     /**
-     * Icono URL
+     * Imagen URL
      *
-     * @param  string Tamaño del icono, puede ser 64, 128 o 256, por defecto 128
-     * @return string URL relativo a la imagen icono
+     * @param  string Tamaño, funciona solo si es icono, puede ser 64, 128 o 256, por defecto 128
+     * @return string URL relativo a la imagen
      */
-    public function icono_url($tamano=64) {
+    public function imagen_url($tamano=64) {
+        // Si el tamaño es cero, no entrega nada
+        if ($tamano == 0) {
+            return '';
+        }
+        // Si el tamaño es incorrecto, hay error
         if (($tamano != 256) && ($tamano != 128) && ($tamano != 64)) {
             throw new \Exception("Error en Vinculo: Tamaño de icono incorrecto.");
         }
-        if ($this->icono == '') {
-            $this->icono = 'unknown';
-        }
-        if ($this->en_raiz) {
-            return sprintf('%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->icono);
-        } else {
-            return sprintf('../%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->icono);
-        }
-    } // icono_url
-
-    /**
-     * Imagen previa URL
-     *
-     * @return string URL relativo a la imagen previa
-     */
-    public function imagen_previa_url() {
-        if ($this->imagen_previa == '') {
+        // Si es icono solo tiene letras y guiones
+        if (preg_match('/^[a-z-]+$/i', $this->imagen) === 1) {
+            // Es icono
+            if ($this->en_raiz) {
+                return sprintf('%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->imagen);
+            } else {
+                return sprintf('../%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->imagen);
+            }
+        } elseif ($this->imagen == '') {
+            // No hay imagen
             return '';
         } else {
-            return $this->imagen_previa;
+            // Es imagen
+            if ($this->en_raiz) {
+                return sprintf('%s/%s', $this->directorio, $this->imagen);
+            } elseif ($this->en_otro) {
+                return sprintf('../%s/%s', $this->directorio, $this->imagen);
+            } else {
+                return $this->imagen;
+            }
         }
-    } // imagen_previa_url
+    } // imagen_url
 
 } // Clase Vinculo
 

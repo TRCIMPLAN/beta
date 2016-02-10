@@ -27,10 +27,8 @@ namespace Base;
  */
 class VinculosDetallados extends Vinculos {
 
-    // public $en_raiz;
-    // public $en_otro;
     // protected $vinculos;
-    public $icono_tamano = 128;
+    public $imagen_tamano = 128;
 
     /**
      * HTML
@@ -46,27 +44,22 @@ class VinculosDetallados extends Vinculos {
         $a = array();
         // Bucle por los vinculos
         foreach ($this->vinculos as $vinculo) {
-            // Pasar valores al vínculo
-            $vinculo->en_raiz = $this->en_raiz;
-            $vinculo->en_otro = $this->en_otro;
             // Acumular
             $a[] = '      <div class="media breve">';
+            // Determinar el URL a la imagen
+            $imagen_url = $vinculo->imagen_url($this->imagen_tamano);
             // Si tiene URL se pondrán vínculos, de lo contrario no
             if ($vinculo->url() != '') {
                 // Tiene URL
-                if ($vinculo->imagen_previa != '') {
-                    $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->imagen_previa_url());
-                } elseif ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $vinculo->icono_url($this->icono_tamano));
+                if ($imagen_url != '') {
+                    $a[] = sprintf('        <a class="pull-left" href="%s"><img class="media-object" src="%s"></a>', $vinculo->url(), $imagen_url);
                 }
                 $a[] = '        <div class="media-body">';
                 $a[] = sprintf('          <h3 class="media-heading"><a href="%s">%s</a></h3>', $vinculo->url(), $vinculo->nombre);
             } else {
                 // NO tiene URL
-                if ($vinculo->imagen_previa != '') {
-                    $a[] = sprintf('        <img class="media-object pull-left" src="%s">', $vinculo->imagen_previa_url());
-                } elseif ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('        <img class="media-object pull-left" src="%s">', $vinculo->icono_url($this->icono_tamano));
+                if ($imagen_url != '') {
+                    $a[] = sprintf('        <img class="media-object pull-left" src="%s">', $imagen_url);
                 }
                 $a[] = '        <div class="media-body">';
                 $a[] = sprintf('          <h3 class="media-heading">%s</h3>', $vinculo->nombre);

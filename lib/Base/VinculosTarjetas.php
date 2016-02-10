@@ -27,10 +27,8 @@ namespace Base;
  */
 class VinculosTarjetas extends Vinculos {
 
-    // public $en_raiz;
-    // public $en_otro;
     // protected $vinculos;
-    public $icono_tamano = 256;
+    public $imagen_tamano = 256;
 
     /**
      * HTML
@@ -46,25 +44,16 @@ class VinculosTarjetas extends Vinculos {
         $a = array();
         $a[] = '      <div class="row">';
         foreach ($this->vinculos as $vinculo) {
-            // Pasar valores al vínculo
-            $vinculo->en_raiz = $this->en_raiz;
-            $vinculo->en_otro = $this->en_otro;
             // Acumular
             $a[] = '        <div class="col-sm-6 col-md-3">';
             $a[] = '          <div class="thumbnail tarjetas-thumbnail">';
+            // Determinar el URL a la imagen
+            $imagen_url = $vinculo->imagen_url($this->imagen_tamano);
             // Si tiene URL se pondrán vínculos, de lo contrario no
             if ($vinculo->url() != '') {
                 // Tiene URL
-                if ($vinculo->imagen_previa != '') {
-                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
-                        $vinculo->url(),
-                        $vinculo->imagen_previa_url(),
-                        $vinculo->nombre);
-                } elseif ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>',
-                        $vinculo->url(),
-                        $vinculo->icono_url($this->icono_tamano),
-                        $vinculo->nombre);
+                if ($imagen_url != '') {
+                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s"></a>', $vinculo->url(), $imagen_url, $vinculo->nombre);
                 }
                 $a[] = '            <div class="caption">';
                 $a[] = sprintf('              <h4 class="tarjetas-nombre"><a href="%s">%s</a></h4>', $vinculo->url(), $vinculo->nombre);
@@ -76,14 +65,8 @@ class VinculosTarjetas extends Vinculos {
                 }
             } else {
                 // NO tiene URL
-                if ($vinculo->imagen_previa != '') {
-                    $a[] = sprintf('            <img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s">',
-                        $vinculo->imagen_previa_url(),
-                        $vinculo->nombre);
-                } elseif ($vinculo->icono_url() != '') {
-                    $a[] = sprintf('            <img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s">',
-                        $vinculo->icono_url($this->icono_tamano),
-                        $vinculo->nombre);
+                if ($imagen_url != '') {
+                    $a[] = sprintf('            <img class="img-thumbnail tarjetas-imagen" src="%s" alt="%s">', $imagen_url, $vinculo->nombre);
                 }
                 $a[] = '            <div class="caption">';
                 $a[] = sprintf('              <h4 class="tarjetas-nombre">%s</h4>', $vinculo->nombre);

@@ -56,10 +56,11 @@ class PaginasAutoresIndice extends Paginas {
         // Acumular encabezado
         $a[] = $this->encabezado_html();
         // Cargar configuración de los autores
-        $autores_config             = new \Configuracion\AutoresConfig();
-        $clase                      = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
-        $concentrador               = new $clase();
-        $concentrador->icono_tamano = $autores_config->icono_tamano;
+        $autores_config              = new \Configuracion\AutoresConfig();
+        // Iniciar concentrador
+        $clase                       = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
+        $concentrador                = new $clase();
+        $concentrador->imagen_tamano = $autores_config->imagen_tamano;
         // Si se van a mostrar los autores NO definidos
         if ($autores_config->mostrar_no_definidos) {
             // Bucle por todos los autores encontrados
@@ -77,7 +78,7 @@ class PaginasAutoresIndice extends Paginas {
                     // Sí está definido
                     $autor->en_raiz = $this->en_raiz;
                     $autor->en_otro = $this->en_otro;
-                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, '', $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
                     $vinculo->boton_etiqueta = "Todas sus publicaciones";
                     $concentrador->agregar($vinculo);
                 } elseif ($autores_config->mostrar_no_definidos) {
@@ -111,16 +112,11 @@ class PaginasAutoresIndice extends Paginas {
                 }
                 // Si tiene publicaciones
                 if ($cantidad > 0) {
-                    $vinculo = new Vinculo(
-                        $autor->titulo_nombre_completo(),
-                        $autor->url(),
-                        $autor->icono,
-                        '',
-                        $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
                     $vinculo->boton_etiqueta = "Todas sus publicaciones";
                 } else {
                     // No tiene publicaciones, sólo se ponen los datos del autor sin enlace a su página
-                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), '', $autor->icono, '', $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), '', $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
                 }
                 // Agregar vínculo al concentrador
                 $concentrador->agregar($vinculo);

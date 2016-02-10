@@ -27,10 +27,8 @@ namespace Base;
  */
 class VinculosListado extends Vinculos {
 
-    // public $en_raiz;
-    // public $en_otro;
     // protected $vinculos;
-    public $icono_tamano = 64;
+    public $imagen_tamano = 0;
 
     /**
      * HTML
@@ -47,9 +45,6 @@ class VinculosListado extends Vinculos {
         // Bucle por los vinculos
         $a[] = '      <ul>';
         foreach ($this->vinculos as $vinculo) {
-            // Pasar valores al vínculo
-            $vinculo->en_raiz = $this->en_raiz;
-            $vinculo->en_otro = $this->en_otro;
             // Si tiene URL se pondrán vínculos, de lo contrario no
             if ($vinculo->url() != '') {
                 // Tiene URL

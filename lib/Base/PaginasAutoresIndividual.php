@@ -44,8 +44,11 @@ class PaginasAutoresIndividual extends Paginas {
      * @param mixed  Instancia de RecolectorAutores
      */
     public function __construct($autor, RecolectorAutores $recolector) {
+        // Parámetros
         $this->autor      = $autor;
         $this->recolector = $recolector;
+        // Los vínculos apuntan a páginas en otros directorios
+        $this->en_otro = true;
     } // constructor
 
     /**
@@ -85,14 +88,15 @@ class PaginasAutoresIndividual extends Paginas {
         $concentrador   = new $clase();
         // Bucle por todos los autores
         foreach ($this->recolector->obtener_publicaciones() as $p) {
-            // Validar publicacion
+            // Validar publicación
             $p->validar();
             // Pasar valores a la publicación
             $p->en_raiz = $this->en_raiz;
             $p->en_otro = $this->en_otro;
-            // Parámetros para Vinculo: nombre, vinculo, icono, imagen_previa, descripcion, autor, fecha
-            $vinculo = new Vinculo($p->nombre, $p->url(), '', $p->imagen_previa_url(), $p->descripcion, $p->autor, $p->fecha_con_formato_humano());
-             // Agregar
+            // Iniciar vínculo
+            $vinculo = new Vinculo();
+            $vinculo->agregar_publicacion($p);
+             // Agregar vínculo
             $concentrador->agregar($vinculo);
         }
         // Acumular concentrador

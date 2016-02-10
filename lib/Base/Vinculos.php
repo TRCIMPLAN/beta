@@ -27,8 +27,6 @@ namespace Base;
  */
 abstract class Vinculos {
 
-    public $en_raiz = false;       // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
-    public $en_otro = false;       // Si es verdadero el archivo va a OTRO lugar
     protected $vinculos = array(); // Arreglo con instancias de Vinculo
 
     /**

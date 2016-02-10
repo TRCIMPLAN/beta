@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - Breves Galerías
+ * Plataforma de Conocimiento - Páginas Listado
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace Base;
 
 /**
- * Clase BrevesGalerias
+ * Clase PaginasListado
  */
-class BrevesGalerias extends Breves {
+class PaginasListado extends Paginas {
 
     // public $titulo;
     // public $descripcion;
@@ -34,32 +34,20 @@ class BrevesGalerias extends Breves {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
-    // public $cantidad_maxima;
-    // protected $recolector;
+    public $cantidad_maxima; // Entero, cantidad máxima de publicaciones a mostrar, si no está definido usa todas
+    protected $recolector;   // Instancia de Recolector ya con las publicaciones
+    protected $concentrador; // Instancia de VinculosListado
 
     /**
-     * HTML
+     * Constructor
      *
-     * @return string Código HTML
+     * @param mixed Instancia de Recolector ya con las publicaciones
      */
-    public function html() {
-        // Validar recolector
-        if ($this->recolector->obtener_cantidad_de_publicaciones() == 0) {
-            throw new \Exception("Error en BrevesGalerias: El recolector no tiene publicaciones.");
-        }
-        // Acumularemos la entrega en este arreglo
-        $a = array();
-        // Entregar
-        return implode("\n", $a);
-    } // html
+    public function __construct(Recolector $recolector) {
+        $this->recolector   = $recolector;
+        $this->concentrador = new VinculosListado();
+    } // constructor
 
-    /**
-     * Javascript
-     *
-     * @return string No hay código Javascript, entrega un texto vacío
-     */
-    public function javascript() {
-        return '';
-    } // javascript
+} // Clase PaginasListado
 
 ?>
