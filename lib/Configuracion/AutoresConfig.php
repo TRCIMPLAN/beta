@@ -44,6 +44,11 @@ class AutoresConfig {
             '',
             'avargas@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Alejandra Villarreal Meza', 'unknown',
+            'IMPLAN Torreón', 'Secretario Técnico',
+            '',
+            'avillarreal@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Alfredo Viesca Domínguez', 'lic-alfredo-viesca-dominguez',
             'IMPLAN Torreón', 'Investigación Cualitativa',
             '',
