@@ -27,7 +27,8 @@ namespace Base;
  */
 class Autor {
 
-    const ICONOS_DIR = 'imagenes'; // Nombre del directorio donde están los subdirectorios 64, 128 y 256 con los iconos
+    const ICONOS_DIR   = 'imagenes';    // Nombre del directorio donde están los subdirectorios 64, 128 y 256 con los iconos
+    const PERFILES_DIR = 'lib/Autores'; // Ruta al directorio donde buscar archivos Markdown con perfiles
     public $apodo;           // Nickname
     public $titulo;          // Ing., Arq., Lic., etc.
     public $nombre_completo; // Nombres y apellidos
@@ -37,6 +38,7 @@ class Autor {
     public $semblanza;       // Texto que describa al autor
     public $email;           // Correo electrónico
     public $twitter;         // Cuenta de twitter
+    public $perfil_archivo;  // Nombre del archivo con el perfil en Markdown, debe estar en /lib/Autores
     public $estatus = 'A';   // Caracter A es activo, B es baja
     public $en_raiz = false; // Verdadero para un URL que va a la raiz del sitio web
     public $en_otro = true;  // Verdadero para un URL a OTRO directorio distinto
@@ -53,9 +55,10 @@ class Autor {
      * @param string Semblanza
      * @param string e-mail
      * @param string Twitter
+     * @param string Nombre del archivo con el perfil en Markdown
      * @param string Caracter A para activo, B para baja
      */
-    public function __construct($apodo, $titulo, $nombre_completo, $icono='unknown', $empresa='', $cargo='', $semblanza='', $email='', $twitter='', $estatus='A') {
+    public function __construct($apodo, $titulo, $nombre_completo, $icono='', $empresa='', $cargo='', $semblanza='', $email='', $twitter='', $perfil_archivo='', $estatus='A') {
         $this->apodo           = $apodo;
         $this->titulo          = $titulo;
         $this->nombre_completo = $nombre_completo;
@@ -65,6 +68,7 @@ class Autor {
         $this->semblanza       = $semblanza;
         $this->email           = $email;
         $this->twitter         = $twitter;
+        $this->perfil_archivo  = $perfil_archivo;
         $this->estatus         = $estatus;
     } // constructor
 
@@ -92,11 +96,11 @@ class Autor {
      * @return string URL relativo para vincular a la página en autores
      */
     public function url() {
-        // Si no hay apodo, el nombre del archivo es el titulo con el nombre completo
-        if ($this->apodo == '') {
-            $pagina = sprintf('%s.html', Funciones::caracteres_para_web($this->titulo_nombre_completo()));
-        } else {
+        // Si no hay apodo, el nombre del archivo es el nombre completo
+        if ($this->apodo != '') {
             $pagina = sprintf('%s.html', Funciones::caracteres_para_web($this->apodo));
+        } else {
+            $pagina = sprintf('%s.html', Funciones::caracteres_para_web($this->nombre_completo));
         }
         // Entregar URL
         if ($this->en_raiz) {
@@ -127,56 +131,6 @@ class Autor {
             return sprintf('../%s/%s/%s.png', self::ICONOS_DIR, $tamano, $this->icono);
         }
     } // icono_url
-
-    /**
-     * Descripción
-     *
-     * @return string Código HTML
-     */
-    public function descripcion() {
-        $d = array();
-        if (($this->empresa != '') && ($this->cargo != '')) {
-            $d[] = "              <p class=\"autor-empresa-cargo\">";
-            $d[] = "                <span class=\"autor-empresa\">{$this->empresa}</span><br>";
-            $d[] = "                <span class=\"autor-cargo\">{$this->cargo}</span>";
-            $d[] = "              </p>";
-        } else {
-            if ($this->empresa != '') {
-                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-empresa\">{$this->empresa}</span></p>";
-            }
-            if ($this->cargo != '') {
-                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-cargo\">{$this->cargo}</span></p>";
-            }
-        }
-        if ($this->semblanza != '') {
-            $d[] = "              <p class=\"autor-semblanza\">{$this->semblanza}</p>";
-        }
-        if (($this->email != '') && ($this->twitter != '')) {
-            $d[] = "              <p class=\"autor-email-twitter\">";
-            $d[] = "                <i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a><br>";
-            $d[] = "                <i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a>";
-            $d[] = "              </p>";
-        } else {
-            if ($this->email != '') {
-                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->email}\" target=\"_blank\">{$this->email}</a></p>";
-            }
-            if ($this->twitter != '') {
-                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->twitter}\" target=\"_blank\">@{$this->twitter}</a></p>";
-            }
-        }
-        return implode("\n", $d);
-    } // elaborar_descripcion
-
-    /**
-     * Perfil para página individual
-     *
-     * @return string Código HTML
-     */
-    public function perfil() {
-        $a   = array();
-        $a[] = sprintf('<div><img src="%s"><br>%s</div>', $this->icono_url(256), $this->titulo_nombre_completo());
-        return implode("\n", $a);
-    } // perfil
 
 } // Autor
 

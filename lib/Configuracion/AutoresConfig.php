@@ -27,17 +27,17 @@ namespace Configuracion;
  */
 class AutoresConfig {
 
-    public $autores              = array();              // Arreglo asociativo con instancias de \Base\Autor
-    public $vinculos_indice      = 'VinculosTarjetas';   // Nombre de la clase para el índice de autores, en autores/index.html
-    public $vinculos_individual  = 'VinculosDetallados'; // Nombre de la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
-    public $mostrar_no_definidos = false;                // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
-    public $imagen_tamano        = 128;                  // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
+    const VINCULOS_INDICE        = '\Base\VinculosTarjetas';   // Ruta a la clase para el índice de autores, en autores/index.html
+    const VINCULOS_INDIVIDUAL    = '\Base\VinculosDetallados'; // Ruta a la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
+    public $autores              = array();                    // Arreglo asociativo con instancias de \Base\Autor
+    public $mostrar_no_definidos = false;                      // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
+    public $imagen_tamano        = 128;                        // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
 
     /**
      * Constructor
      */
     public function __construct() {
-        // apodo, titulo, nombre_completo, icono, empresa, cargo, semblanza, email, twitter, estatus
+        // Autor constructor parámetros: apodo, titulo, nombre_completo, icono, empresa, cargo, semblanza, email, twitter, perfil_archivo, estatus
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Adriana Vargas Flores', 'unknown',
             'IMPLAN Torreón', 'Integración de Proyectos',
@@ -87,7 +87,7 @@ class AutoresConfig {
             '', 'Ing.', 'Guillermo Valdés Lozano', 'ing-guillermo-valdes-lozano',
             'IMPLAN Torreón', 'Programación y Software',
             'Desarrollador de los sistemas informáticos. Responsable del sitio web. Apoya las iniciativas de gobierno abierto y el uso del software libre.',
-            'gvaldes@trcimplan.gob.mx', 'guivaloz');
+            'gvaldes@trcimplan.gob.mx', 'guivaloz', 'guillermo-valdes-lozano.md');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Hugo E. Ramírez Martínez', 'unknown',
             'IMPLAN Torreón', 'Gestión y Difusión Social',
@@ -176,36 +176,23 @@ class AutoresConfig {
     } // constructor
 
     /**
-     * Obtener con apodo
+     * Obtener
      *
-     * @param  string Apodo del autor a obtener
+     * @param  string Apodo, titulo + nombre completo, nombre completo
      * @return mixed  La instancia de Autor encontrada, falso si no se haya
      */
-    public function obtener_con_apodo($apodo) {
+    public function obtener($texto_a_buscar) {
         foreach ($this->autores as $autor) {
-            if ($autor->apodo == $apodo) {
+            if ($autor->apodo == $texto_a_buscar) {
+                return $autor;
+            } elseif ("{$autor->titulo} {$autor->nombre_completo}" == $texto_a_buscar) {
+                return $autor;
+            } elseif ($autor->nombre_completo == $texto_a_buscar) {
                 return $autor;
             }
         }
         return false;
-    } // obtener_con_apodo
-
-    /**
-     * Obtener con titulo y nombre completo
-     *
-     * @param  string Título y nombre completo del autor a obtener
-     * @return mixed  La instancia de Autor encontrada, falso si no se haya
-     */
-    public function obtener_con_titulo_nombre_completo($titulo_nombre_completo) {
-        foreach ($this->autores as $autor) {
-            if ("{$autor->titulo} {$autor->nombre_completo}" == $titulo_nombre_completo) {
-                return $autor;
-            } elseif ($autor->nombre_completo == $titulo_nombre_completo) {
-                return $autor;
-            }
-        }
-        return false;
-    } // obtener_con_titulo_nombre_completo
+    } // obtener
 
 } // Clase AutoresConfig
 

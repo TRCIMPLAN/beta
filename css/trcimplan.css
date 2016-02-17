@@ -131,7 +131,10 @@ a:active  { color:#FF3300; text-decoration:none; }
 .descripcion {
     font-size:0.8em;
 }
-.autor,
+.autor {
+    background-color:#F0F0F0;
+    font-size:0.8em;
+}
 .autor-fecha {
     color:#888;
     font-size:0.6em;

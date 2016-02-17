@@ -46,7 +46,7 @@ class ImprentaCategorias extends Imprenta {
     /**
      * Imprimir categorías
      *
-     * Crea los archivos para cada autor usando la clase PaginasCategoriasIndividual
+     * Crea los archivos para cada categoría usando la clase PaginasCategoriasIndividual
      */
     protected function imprimir_categorias() {
         // Iniciar la plantilla
@@ -57,19 +57,26 @@ class ImprentaCategorias extends Imprenta {
         $plantilla->navegacion->opcion_activa = self::NAVEGACION_OPCION_ACTIVA;
         // Crear directorio
         $this->crear_directorio($plantilla->directorio);
-        // Bucle por todas las categorias
-        foreach ($this->recolector->obtener_categorias() as $categoria) {
-            // Filtrar
-            $this->recolector->filtrar_publicaciones_de_categoria($categoria);
+        // Bucle por todas las categorías
+        foreach ($this->recolector->obtener_categorias() as $categoria_texto) {
+            // Filtrar por esta categoría
+            $this->recolector->filtrar_publicaciones_de_categoria($categoria_texto);
+            // Definir la ruta del archivo HTML para esta categoría
+            $categorias_config = new \Configuracion\CategoriasConfig();
+            $categoria         = $categorias_config->obtener($categoria_texto);
+            if ($categoria === false) {
+                $categoria = new Categoria($categoria_texto);
+            }
+            $categoria->en_raiz = true;
+            $categoria->en_otro = false;
+            $ruta               = $categoria->url();
             // Iniciar PaginasCategoriasIndividual
-            $pagina                  = new PaginasCategoriasIndividual($this->recolector);
-            $pagina->titulo          = $categoria;
-            $pagina->descripcion     = "Publicaciones con categoría $categoria.";
+            $pagina                  = new PaginasCategoriasIndividual($categoria, $this->recolector);
             // Pasar a la plantilla los valores que cambian en cada página
             $plantilla->titulo       = $pagina->titulo;
             $plantilla->descripcion  = $pagina->descripcion;
-            $plantilla->claves       = "Categoria, $categoria";
-            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, Funciones::caracteres_para_web($categoria));
+            $plantilla->claves       = "Categoria, $categoria_texto";
+            $plantilla->archivo_ruta = $ruta;
             // Pasar a la plantilla el HTML y Javascript
             $plantilla->contenido    = $pagina->html();
             $plantilla->javascript   = $pagina->javascript();

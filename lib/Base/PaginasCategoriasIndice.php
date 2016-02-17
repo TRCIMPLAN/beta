@@ -58,7 +58,7 @@ class PaginasCategoriasIndice extends Paginas {
         // Cargar configuración de las categorías
         $categorias_config           = new \Configuracion\CategoriasConfig();
         // Iniciar concentrador
-        $clase                       = sprintf('\\Base\\%s', $categorias_config->vinculos_indice);
+        $clase                       = \Configuracion\CategoriasConfig::VINCULOS_INDICE;
         $concentrador                = new $clase();
         $concentrador->imagen_tamano = $categorias_config->imagen_tamano;
         // Bucle por todas las categorias
@@ -67,7 +67,7 @@ class PaginasCategoriasIndice extends Paginas {
             $this->recolector->filtrar_publicaciones_de_categoria($nombre);
             $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
             // Obtener instancia de Categoria
-            $categoria = $categorias_config->obtener_con_nombre($nombre);
+            $categoria = $categorias_config->obtener($nombre);
             // Si está definido en \Configuracion\CategoriasConfig
             if ($categoria instanceof Categoria) {
                 // Sí está definido

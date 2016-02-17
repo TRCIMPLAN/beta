@@ -63,7 +63,7 @@ try {
 }
 
 // Mensaje de término
-echo "$soy Terminó\n";
+echo "$soy Terminó con éxito\n";
 exit($EXITO);
 
 ?>

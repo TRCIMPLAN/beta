@@ -58,7 +58,7 @@ class VinculosTarjetas extends Vinculos {
                 $a[] = '            <div class="caption">';
                 $a[] = sprintf('              <h4 class="tarjetas-nombre"><a href="%s">%s</a></h4>', $vinculo->url(), $vinculo->nombre);
                 if ($vinculo->descripcion != '') {
-                    $a[] = $vinculo->descripcion;
+                    $a[] = sprintf('              <p class="tarjetas-descripcion">%s</p>', $vinculo->descripcion);
                 }
                 if ($vinculo->boton_etiqueta != '') {
                     $a[] = sprintf('              <a href="%s" class="btn btn-default" role="button">%s</a>', $vinculo->url(), $vinculo->boton_etiqueta);
@@ -71,7 +71,7 @@ class VinculosTarjetas extends Vinculos {
                 $a[] = '            <div class="caption">';
                 $a[] = sprintf('              <h4 class="tarjetas-nombre">%s</h4>', $vinculo->nombre);
                 if ($vinculo->descripcion != '') {
-                    $a[] = $vinculo->descripcion;
+                    $a[] = sprintf('              <p class="tarjetas-descripcion">%s</p>', $vinculo->descripcion);
                 }
             }
             $a[] = '            </div>'; // caption

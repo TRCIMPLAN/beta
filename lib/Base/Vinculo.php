@@ -31,6 +31,7 @@ class Vinculo {
     public $nombre;                // Nombre
     public $vinculo;               // Página HTML o URL en internet a donde debe vincularse
     public $imagen;                // Nombre del archivo para el icono (sin extensión) o ruta relativa al archivo con la imagen
+    public $imagen_previa;         // Al usar agregar_publicación, aquí se guarda la imagen chica, mientras que en imagen la grande
     public $directorio;            // Nombre del directorio donde se guardará la publicación completa
     public $descripcion;           // Descripción
     public $autor;                 // Autor
@@ -50,13 +51,13 @@ class Vinculo {
      * @param string Fecha
      */
     public function __construct($nombre='', $vinculo='', $imagen='', $directorio='', $descripcion='', $autor='', $fecha='') {
-        $this->nombre        = $nombre;
-        $this->vinculo       = $vinculo;
-        $this->imagen        = $imagen;
-        $this->directorio    = $directorio;
-        $this->descripcion   = $descripcion;
-        $this->autor         = $autor;
-        $this->fecha         = $fecha;
+        $this->nombre      = $nombre;
+        $this->vinculo     = $vinculo;
+        $this->imagen      = $imagen;
+        $this->directorio  = $directorio;
+        $this->descripcion = $descripcion;
+        $this->autor       = $autor;
+        $this->fecha       = $fecha;
     } // constructor
 
     /**
@@ -74,12 +75,21 @@ class Vinculo {
         $this->en_raiz     = $p->en_raiz;
         $this->en_otro     = $p->en_otro;
         // La imagen puede ser la imagen_previa o el icono
-        if ($p->imagen_previa != '') {
-            $this->imagen = $p->imagen_previa;
+        if (($p->imagen != '') && ($p->imagen_previa != '')) {
+            $this->imagen        = $p->imagen;
+            $this->imagen_previa = $p->imagen_previa;
+        } elseif ($p->imagen_previa != '') {
+            $this->imagen        = $p->imagen_previa;
+            $this->imagen_previa = $p->imagen_previa;
+        } elseif ($p->imagen != '') {
+            $this->imagen        = $p->imagen;
+            $this->imagen_previa = $p->imagen;
         } elseif ($p->icono != '') {
-            $this->imagen = $p->icono;
+            $this->imagen        = $p->icono;
+            $this->imagen_previa = '';
         } else {
-            $this->imagen = '';
+            $this->imagen        = '';
+            $this->imagen_previa = '';
         }
         // Definir el vínculo
         if ($p->archivo != '') {
@@ -138,12 +148,24 @@ class Vinculo {
             return '';
         } else {
             // Es imagen
-            if ($this->en_raiz) {
-                return sprintf('%s/%s', $this->directorio, $this->imagen);
-            } elseif ($this->en_otro) {
-                return sprintf('../%s/%s', $this->directorio, $this->imagen);
+            if ($tamano == 256) {
+                // El tamaño es 256, se entrega la imagen grande
+                if ($this->en_raiz) {
+                    return sprintf('%s/%s', $this->directorio, $this->imagen);
+                } elseif ($this->en_otro) {
+                    return sprintf('../%s/%s', $this->directorio, $this->imagen);
+                } else {
+                    return $this->imagen;
+                }
             } else {
-                return $this->imagen;
+                // Se entrega la imagen chica
+                if ($this->en_raiz) {
+                    return sprintf('%s/%s', $this->directorio, $this->imagen_previa);
+                } elseif ($this->en_otro) {
+                    return sprintf('../%s/%s', $this->directorio, $this->imagen_previa);
+                } else {
+                    return $this->imagen_previa;
+                }
             }
         }
     } // imagen_url

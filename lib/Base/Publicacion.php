@@ -326,37 +326,25 @@ class Publicacion extends \Configuracion\PublicacionConfig {
     /**
      * Cargar archivo markdown
      *
-     * Con este método se pueden cargar archivos markdown para que se organize el contenido.
-     * Útil con el uso de Lenguetas.
+     * Se mantiene este método por compatibilidad, muchas publicaciones lo están mandando llamar.
      *
      * @param  string Ruta al archivo markdown desde la raiz del sitio, ejemplo 'lib/Directorio/Archivo.md'
      * @return string Código HTML
      */
     protected function cargar_archivo_markdown($ruta) {
-        $contenido = file_get_contents("$ruta");
-        if ($contenido === false) {
-            throw new \Exception("Error en Publicacion, cargar_archivo_markdown: No se puede leer $ruta");
-        }
-        $html = \Michelf\Markdown::defaultTransform($contenido);
-        return $html;
+        return Funciones::cargar_archivo_markdown($ruta);
     } // cargar_archivo_markdown
 
     /**
      * Cargar archivo markdown extra
      *
-     * Éste tiene la construcción de tablas.
+     * Se mantiene este método por compatibilidad, muchas publicaciones lo están mandando llamar.
      *
      * @param  string Ruta al archivo markdown desde la raiz del sitio, ejemplo 'lib/Directorio/Archivo.md'
      * @return string Código HTML
      */
     protected function cargar_archivo_markdown_extra($ruta) {
-        $contenido = file_get_contents("$ruta");
-        if ($contenido === false) {
-            throw new \Exception("Error en Publicacion, cargar_archivo_markdown_extra: No se puede leer $ruta");
-        }
-        $html    = \Michelf\MarkdownExtra::defaultTransform($contenido);
-        $html_tb = str_replace('<table>', '<table class="table table-hover table-bordered">', $html); // Tablas de Twitter Bootstrap
-        return $html_tb;
+        return Funciones::cargar_archivo_markdown_extra($ruta);
     } // cargar_archivo_markdown_extra
 
     /**

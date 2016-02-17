@@ -27,11 +27,11 @@ namespace Configuracion;
  */
 class CategoriasConfig {
 
-    public $categorias           = array();              // Arreglo asociativo con instancias de \Base\Categoria
-    public $vinculos_indice      = 'VinculosGalerias';   // Nombre de la clase para el índice de categorias, en categorias/index.html
-    public $vinculos_individual  = 'VinculosDetallados'; // Nombre de la clase para listar las publicaciones de cada categoría, a usarse en las páginas de las categorías
-    public $mostrar_no_definidos = false;                // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
-    public $imagen_tamano        = 128;                  // Tamaño del icono a usuarse en \Base\PaginasCategoriasIndice
+    const VINCULOS_INDICE        = '\Base\VinculosGalerias';   // Ruta a la clase para el índice de categorias, en categorias/index.html
+    const VINCULOS_INDIVIDUAL    = '\Base\VinculosDetallados'; // Ruta a la clase para listar las publicaciones de cada categoría, a usarse en las páginas de las categorías
+    public $categorias           = array();                    // Arreglo asociativo con instancias de \Base\Categoria
+    public $mostrar_no_definidos = false;                      // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
+    public $imagen_tamano        = 128;                        // Tamaño del icono a usuarse en \Base\PaginasCategoriasIndice
 
     /**
      * Constructor
@@ -70,19 +70,19 @@ class CategoriasConfig {
     } // constructor
 
     /**
-     * Obtener con nombre
+     * Obtener
      *
      * @param  string Nombre de la categoría a obtener
      * @return mixed  La instancia de Categoria encontrada, falso si no se haya
      */
-    public function obtener_con_nombre($nombre) {
+    public function obtener($texto_a_buscar) {
         foreach ($this->categorias as $categoria) {
-            if ($categoria->nombre == $nombre) {
+            if ($categoria->nombre == $texto_a_buscar) {
                 return $categoria;
             }
         }
         return false;
-    } // obtener_con_nombre
+    } // obtener
 
 } // Clase CategoriasConfig
 

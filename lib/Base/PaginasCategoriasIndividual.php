@@ -34,18 +34,23 @@ class PaginasCategoriasIndividual extends Paginas {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
+    protected $categoria;  // Instancia de Categoria
     protected $recolector; // Instancia de RecolectorCategorias
 
     /**
      * Constructor
      *
+     * @param mixed Instancia de Categoria
      * @param mixed Instancia de RecolectorCategorias
      */
-    public function __construct(RecolectorCategorias $recolector) {
-        // Parámetro
+    public function __construct(Categoria $categoria, RecolectorCategorias $recolector) {
+        // Parámetros
+        $this->categoria  = $categoria;
         $this->recolector = $recolector;
         // Los vínculos apuntan a páginas en otros directorios
-        $this->en_otro = true;
+        $this->en_otro            = true;
+        $this->categoria->en_raiz = $this->en_raiz;
+        $this->categoria->en_otro = $this->en_otro;
     } // constructor
 
     /**
@@ -54,13 +59,15 @@ class PaginasCategoriasIndividual extends Paginas {
      * @return string Código HTML
      */
     public function html() {
+        // Definir el título y la descripción
+        $this->titulo      = $this->categoria->nombre;
+        $this->descripcion = $this->categoria->descripcion;
         // Acumularemos la entrega en este arreglo
         $a = array();
         // Acumular encabezado
         $a[] = $this->encabezado_html();
-        // Cargar configuración de las categorías
-        $categorias_config = new \Configuracion\CategoriasConfig();
-        $clase             = sprintf('\\Base\\%s', $categorias_config->vinculos_individual);
+        // Definir concentrador
+        $clase             = \Configuracion\CategoriasConfig::VINCULOS_INDIVIDUAL;
         $concentrador      = new $clase();
         // Bucle por todos los autores
         foreach ($this->recolector->obtener_publicaciones() as $p) {

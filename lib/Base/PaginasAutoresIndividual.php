@@ -34,22 +34,66 @@ class PaginasAutoresIndividual extends Paginas {
     // public $encabezado_icono;
     // public $en_raiz;
     // public $en_otro;
-    protected $autor;      // Nombre del autor como se encuentra en la publicación
+    protected $autor;      // Instancia de Autor
     protected $recolector; // Instancia de RecolectorAutores
 
     /**
      * Constructor
      *
-     * @param string Nombre del autor como se encuentra en la publicación
-     * @param mixed  Instancia de RecolectorAutores
+     * @param mixed Instancia de Autor
+     * @param mixed Instancia de RecolectorAutores
      */
-    public function __construct($autor, RecolectorAutores $recolector) {
+    public function __construct(Autor $autor, RecolectorAutores $recolector) {
         // Parámetros
         $this->autor      = $autor;
         $this->recolector = $recolector;
         // Los vínculos apuntan a páginas en otros directorios
-        $this->en_otro = true;
+        $this->en_otro        = true;
+        $this->autor->en_raiz = $this->en_raiz;
+        $this->autor->en_otro = $this->en_otro;
     } // constructor
+
+    /**
+     * Autor Perfil HTML
+     *
+     * @return string Código HTML
+     */
+    public function autor_perfil_html() {
+        // Si no tiene perfil no pone nada
+        if ($this->autor->perfil_archivo == '') {
+            return '      <!-- Autor Perfil: Se omite porque no está definido perfil_archivo -->';
+        }
+        // Cargar y convertir el archivo Markdown con el perfil
+        $ruta = sprintf('%s/%s', Autor::PERFILES_DIR, $this->autor->perfil_archivo);
+        try {
+            $perfil_html = Funciones::cargar_archivo_markdown($ruta);
+        } catch (\Exception $e) {
+            return "      <!-- Autor Perfil: ERROR al tratar de cargar $ruta -->";
+        }
+        // Crear código HTML
+        $a   = array();
+        $a[] = '      <!-- Autor Perfil -->';
+        $a[] = '      <div class="media autor">';
+        $a[] = sprintf('        <span class="pull-left"><img class="media-object" src="%s"></span>', $this->autor->icono_url(256));
+        $a[] = '        <div class="media-body">';
+        $a[] = $perfil_html;
+        if (($this->autor->email != '') && ($this->autor->twitter != '')) {
+            $a[] = "              <p class=\"autor-email-twitter\">";
+            $a[] = "                <i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->autor->email}\" target=\"_blank\">{$this->autor->email}</a><br>";
+            $a[] = "                <i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->autor->twitter}\" target=\"_blank\">@{$this->autor->twitter}</a>";
+            $a[] = "              </p>";
+        } else {
+            if ($this->autor->email != '') {
+                $a[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$this->autor->email}\" target=\"_blank\">{$this->autor->email}</a></p>";
+            }
+            if ($this->autor->twitter != '') {
+                $a[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$this->autor->twitter}\" target=\"_blank\">@{$this->autor->twitter}</a></p>";
+            }
+        }
+        $a[] = '        </div>';
+        $a[] = '      </div>';
+        return implode("\n", $a);
+    } // autor_perfil_html
 
     /**
      * HTML
@@ -57,35 +101,18 @@ class PaginasAutoresIndividual extends Paginas {
      * @return string Código HTML
      */
     public function html() {
-        // Cargar configuración de los autores
-        $autores_config = new \Configuracion\AutoresConfig();
-        // Obtener el autor primero con el apodo, luego con 'titulo nombre_completo'
-        $autor = $autores_config->obtener_con_apodo($this->autor);
-        if ($autor === false) {
-            $autor = $autores_config->obtener_con_titulo_nombre_completo($this->autor);
-        }
-        // Si está definido el autor como instancia
-        if ($autor === false) {
-            // El autor NO está definido
-            $this->titulo      = $this->autor;
-            $this->descripcion = sprintf('Datos y publicaciones de %s.', $this->autor);
-        } else {
-            // El autor está definido
-            $this->titulo      = $autor->titulo_nombre_completo();
-            $this->descripcion = sprintf('Datos y publicaciones de %s.', $autor->titulo_nombre_completo());
-        }
+        // Definir el título y la descripción
+        $this->titulo      = $this->autor->titulo_nombre_completo();
+        $this->descripcion = $this->autor->semblanza;
         // Acumularemos la entrega en este arreglo
         $a = array();
         // Acumular encabezado
         $a[] = $this->encabezado_html();
-        // Si está definido el autor como instancia
-        if ($autor !== false) {
-            // Agregar foto del autor
-            $a[] = $autor->perfil();
-        }
+        // Acumular el perfil del autor
+        $a[] = $this->autor_perfil_html();
         // Definir concentrador
-        $clase          = sprintf('\\Base\\%s', $autores_config->vinculos_individual);
-        $concentrador   = new $clase();
+        $clase        = \Configuracion\AutoresConfig::VINCULOS_INDIVIDUAL;
+        $concentrador = new $clase();
         // Bucle por todos los autores
         foreach ($this->recolector->obtener_publicaciones() as $p) {
             // Validar publicación

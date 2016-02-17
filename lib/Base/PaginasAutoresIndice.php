@@ -46,6 +46,46 @@ class PaginasAutoresIndice extends Paginas {
     } // constructor
 
     /**
+     * Autor Descripción HTML
+     *
+     * @param  mixed  Instancia de Autor
+     * @return string Código HTML
+     */
+    public function autor_descripcion_html(Autor $autor) {
+        $d = array();
+        if (($autor->empresa != '') && ($autor->cargo != '')) {
+            $d[] = "              <p class=\"autor-empresa-cargo\">";
+            $d[] = "                <span class=\"autor-empresa\">{$autor->empresa}</span><br>";
+            $d[] = "                <span class=\"autor-cargo\">{$autor->cargo}</span>";
+            $d[] = "              </p>";
+        } else {
+            if ($autor->empresa != '') {
+                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-empresa\">{$autor->empresa}</span></p>";
+            }
+            if ($autor->cargo != '') {
+                $d[] = "              <p class=\"autor-empresa-cargo\"><span class=\"autor-cargo\">{$autor->cargo}</span></p>";
+            }
+        }
+        if ($autor->semblanza != '') {
+            $d[] = "              <p class=\"autor-semblanza\">{$autor->semblanza}</p>";
+        }
+        if (($autor->email != '') && ($autor->twitter != '')) {
+            $d[] = "              <p class=\"autor-email-twitter\">";
+            $d[] = "                <i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$autor->email}\" target=\"_blank\">{$autor->email}</a><br>";
+            $d[] = "                <i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$autor->twitter}\" target=\"_blank\">@{$autor->twitter}</a>";
+            $d[] = "              </p>";
+        } else {
+            if ($autor->email != '') {
+                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-envelope\"></i> <a href=\"mailto:{$autor->email}\" target=\"_blank\">{$autor->email}</a></p>";
+            }
+            if ($autor->twitter != '') {
+                $d[] = "              <p class=\"autor-email-twitter\"><i class=\"fa fa-twitter\"></i> <a href=\"https://twitter.com/{$autor->twitter}\" target=\"_blank\">@{$autor->twitter}</a></p>";
+            }
+        }
+        return implode("\n", $d);
+    } // autor_descripcion_html
+
+    /**
      * HTML
      *
      * @return string Código HTML
@@ -58,7 +98,7 @@ class PaginasAutoresIndice extends Paginas {
         // Cargar configuración de los autores
         $autores_config              = new \Configuracion\AutoresConfig();
         // Iniciar concentrador
-        $clase                       = sprintf('\\Base\\%s', $autores_config->vinculos_indice);
+        $clase                       = \Configuracion\AutoresConfig::VINCULOS_INDICE;
         $concentrador                = new $clase();
         $concentrador->imagen_tamano = $autores_config->imagen_tamano;
         // Si se van a mostrar los autores NO definidos
@@ -69,16 +109,13 @@ class PaginasAutoresIndice extends Paginas {
                 $this->recolector->filtrar_publicaciones_de_autor($nombre);
                 $cantidad = $this->recolector->obtener_cantidad_de_publicaciones();
                 // Obtener instancia de Autor
-                $autor = $autores_config->obtener_con_apodo($nombre);
-                if ($autor === false) {
-                    $autor = $autores_config->obtener_con_titulo_nombre_completo($nombre);
-                }
+                $autor = $autores_config->obtener($nombre);
                 // Si está definido en \Configuracion\AutoresConfig
                 if ($autor instanceof Autor) {
                     // Sí está definido
                     $autor->en_raiz = $this->en_raiz;
                     $autor->en_otro = $this->en_otro;
-                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $this->autor_descripcion_html($autor));
                     $vinculo->boton_etiqueta = "Todas sus publicaciones";
                     $concentrador->agregar($vinculo);
                 } elseif ($autores_config->mostrar_no_definidos) {
@@ -112,11 +149,11 @@ class PaginasAutoresIndice extends Paginas {
                 }
                 // Si tiene publicaciones
                 if ($cantidad > 0) {
-                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), $autor->url(), $autor->icono, ImprentaAutores::AUTORES_DIR, $this->autor_descripcion_html($autor));
                     $vinculo->boton_etiqueta = "Todas sus publicaciones";
                 } else {
                     // No tiene publicaciones, sólo se ponen los datos del autor sin enlace a su página
-                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), '', $autor->icono, ImprentaAutores::AUTORES_DIR, $autor->descripcion());
+                    $vinculo = new Vinculo($autor->titulo_nombre_completo(), '', $autor->icono, ImprentaAutores::AUTORES_DIR, $this->autor_descripcion_html($autor));
                 }
                 // Agregar vínculo al concentrador
                 $concentrador->agregar($vinculo);

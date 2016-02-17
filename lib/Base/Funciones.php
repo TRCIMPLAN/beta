@@ -45,6 +45,39 @@ class Funciones {
         return strtolower($sin_repetir_guiones);
     } // caracteres_para_web
 
+    /**
+     * Cargar archivo markdown
+     *
+     * @param  string Ruta al archivo markdown desde la raiz del sitio, ejemplo 'lib/Directorio/Archivo.md'
+     * @return string Código HTML
+     */
+    public static function cargar_archivo_markdown($ruta) {
+        $contenido = file_get_contents("$ruta");
+        if ($contenido === false) {
+            throw new \Exception("Error en Funciones::cargar_archivo_markdown: No se puede leer $ruta");
+        }
+        $html = \Michelf\Markdown::defaultTransform($contenido);
+        return $html;
+    } // cargar_archivo_markdown
+
+    /**
+     * Cargar archivo markdown extra
+     *
+     * Éste tiene la construcción de tablas.
+     *
+     * @param  string Ruta al archivo markdown desde la raiz del sitio, ejemplo 'lib/Directorio/Archivo.md'
+     * @return string Código HTML
+     */
+    public static function cargar_archivo_markdown_extra($ruta) {
+        $contenido = file_get_contents("$ruta");
+        if ($contenido === false) {
+            throw new \Exception("Error en Funciones::cargar_archivo_markdown_extra: No se puede leer $ruta");
+        }
+        $html    = \Michelf\MarkdownExtra::defaultTransform($contenido);
+        $html_tb = str_replace('<table>', '<table class="table table-hover table-bordered">', $html); // Tablas de Twitter Bootstrap
+        return $html_tb;
+    } // cargar_archivo_markdown_extra
+
 } // Clase Funciones
 
 ?>

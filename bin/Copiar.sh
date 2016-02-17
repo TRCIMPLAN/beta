@@ -52,7 +52,7 @@ rm -rf img
 rm -rf js
 rm -rf less
 rm -rf scss
-for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional plan-estrategico-metropolitano preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional plan-estrategico-metropolitano preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
 done

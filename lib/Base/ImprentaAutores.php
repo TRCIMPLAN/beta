@@ -49,6 +49,8 @@ class ImprentaAutores extends Imprenta {
      * Crea los archivos para cada autor usando la clase PaginasAutoresIndividual
      */
     protected function imprimir_autores() {
+        // Cargar la configuración de autores
+        $autores_config = new \Configuracion\AutoresConfig();
         // Iniciar la plantilla
         $plantilla                            = new Plantilla();
         $plantilla->navegacion                = new Navegacion();
@@ -58,18 +60,24 @@ class ImprentaAutores extends Imprenta {
         // Crear directorio
         $this->crear_directorio($plantilla->directorio);
         // Bucle por todas los autores
-        foreach ($this->recolector->obtener_autores() as $autor) {
-            // Filtrar
-            $this->recolector->filtrar_publicaciones_de_autor($autor);
+        foreach ($this->recolector->obtener_autores() as $autor_texto) {
+            // Filtrar por este autor
+            $this->recolector->filtrar_publicaciones_de_autor($autor_texto);
+            // Definir la ruta del archivo HTML para este autor
+            $autor = $autores_config->obtener($autor_texto);
+            if ($autor === false) {
+                $autor = new Autor('', '', $autor_texto);
+            }
+            $autor->en_raiz = true;
+            $autor->en_otro = false;
+            $ruta           = $autor->url();
             // Iniciar PaginasAutoresIndividual
             $pagina                  = new PaginasAutoresIndividual($autor, $this->recolector);
-        //  $pagina->titulo          = $autor;
-        //  $pagina->descripcion     = "Publicaciones de $autor.";
             // Pasar a la plantilla estos valores
             $plantilla->titulo       = $pagina->titulo;
             $plantilla->descripcion  = $pagina->descripcion;
-            $plantilla->claves       = "Autor, $autor";
-            $plantilla->archivo_ruta = sprintf('%s/%s.html', $plantilla->directorio, Funciones::caracteres_para_web($autor));
+            $plantilla->claves       = "Autor, $autor_texto";
+            $plantilla->archivo_ruta = $ruta;
             // Pasar a la plantilla el HTML y Javascript
             $plantilla->contenido    = $pagina->html();
             $plantilla->javascript   = $pagina->javascript();
