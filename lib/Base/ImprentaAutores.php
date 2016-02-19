@@ -123,7 +123,7 @@ class ImprentaAutores extends Imprenta {
         $this->imprimir_autores();
         $this->imprimir_index();
         // Mensaje
-        echo sprintf("  %d en %s con índice.\n", $this->contador, self::AUTORES_DIR);
+        echo sprintf("  %d en %s\n", $this->contador, self::AUTORES_DIR);
     } // imprimir
 
 } // Clase ImprentaAutores

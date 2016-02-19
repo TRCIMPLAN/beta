@@ -34,6 +34,7 @@ class Publicacion extends \Configuracion\PublicacionConfig {
     // public $para_compartir;
     // public $imagen;
     // public $imagen_previa;
+    // public $imagen_id;
     // public $icono;
     // public $region_nivel;
     // public $estado;

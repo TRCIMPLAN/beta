@@ -33,7 +33,8 @@ class PublicacionConfig {
     public $para_compartir            = true;                             // Si es verdadero pondrá los botones para compartir en Twitter/Facebook
     public $imagen                    = '../imagenes/imagen.jpg';         // Ruta relativa a un archivo de imagen
     public $imagen_previa             = '../imagenes/imagen-previa.jpg';  // Ruta relativa a un archivo de imagen para la vista previa
-    public $icono                     = '';                               // Nombre del icono Font Awsome
+    public $imagen_id;                                                    // Nombre del id que en el CSS hace que la imagen cambie al pasar el ratón, reemplaza las otras imágenes en Vinculos
+    public $icono;                                                        // Nombre del icono Font Awsome
     public $region_nivel              = 0;                                // Nivel de la región. Le sirve a Relacionados para preferir los que sean de la misma región
     public $estado                    = 'publicar';                       // El estado ordena a Imprenta e Índice si debe 'publicar', 'revisar' o 'ignorar'
     public $poner_imagen_en_contenido = false;                            // Si es verdadero pondrá la imagen antes que el contenido

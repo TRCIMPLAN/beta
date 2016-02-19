@@ -25,8 +25,7 @@ namespace Base;
 /**
  * Clase Creador
  *
- * Esta clase coordina los conjuntos de programas que crean el sitio web
- * Se ejecuta con bin/Crear.php
+ * Esta clase coordina los conjuntos de programas que crean el sitio web. Se ejecuta con bin/Crear.php
  */
 class Creador extends \Configuracion\CreadorConfig {
 

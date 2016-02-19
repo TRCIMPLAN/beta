@@ -40,8 +40,8 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->encabezado_color         = '#CA198A';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Indicadores > Indicadores por Región';
-        // El concentrador es el nombre de la clase que concentrará a las publicaciones para hacer el index.html
-        $this->concentrador             = 'Detallados'; // Puede ser Detallados, Galeria o Tarjetas
+        // Ruta a la clase para hacer el index.html
+        $this->concentrador             = '\\Base\\PaginasDetallados'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'indicadores-torreon';
         // Ejecutar constructor en el padre

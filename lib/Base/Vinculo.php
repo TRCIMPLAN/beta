@@ -36,9 +36,10 @@ class Vinculo {
     public $descripcion;           // Descripción
     public $autor;                 // Autor
     public $fecha;                 // Fecha
-    public $boton_etiqueta;        // Etiqueta para usar como texto en un botón en VinculosTarjetas
     public $en_raiz = false;       // Verdadero para un URL que va a la raiz del sitio web
     public $en_otro = true;        // Verdadero para un URL a OTRO directorio distinto
+    public $boton_etiqueta;        // Etiqueta para usar como texto en un botón en VinculosTarjetas
+    public $imagen_id;             // Nombre del ID presente en el CSS para que la imagen cambie al pasar el ratón
 
     /**
      * Constructor
@@ -61,19 +62,23 @@ class Vinculo {
     } // constructor
 
     /**
-     * Agregar publicacion
+     * Definir con publicacion
      *
      * @param mixed Instancia de Publicacion
      */
-    public function agregar_publicacion(Publicacion $p) {
+    public function definir_con_publicacion(Publicacion $p) {
+        // Imponer estas propiedades en la publicación
+        $p->en_raiz = $this->en_raiz;
+        $p->en_otro = $this->en_otro;
+        // Validar publicación
+        $p->validar();
         // Definir parámetros desde la publicación
         $this->nombre      = $p->nombre;
         $this->directorio  = $p->directorio;
         $this->descripcion = $p->descripcion;
         $this->autor       = $p->autor;
         $this->fecha       = $p->fecha_con_formato_humano();
-        $this->en_raiz     = $p->en_raiz;
-        $this->en_otro     = $p->en_otro;
+        $this->imagen_id   = $p->imagen_id;
         // La imagen puede ser la imagen_previa o el icono
         if (($p->imagen != '') && ($p->imagen_previa != '')) {
             $this->imagen        = $p->imagen;
@@ -99,7 +104,7 @@ class Vinculo {
         } else {
             $this->vinculo = '';
         }
-    } // agregar_publicacion
+    } // definir_con_publicacion
 
     /**
      * URL

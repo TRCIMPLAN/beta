@@ -201,11 +201,11 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Bucle por las publicaciones, tiene la cantidad límite
         foreach ($recolector->obtener_publicaciones(5) as $publicacion) {
-            // Es para la raíz del sitio web
-            $publicacion->en_raiz = true;
             // Iniciar vínculo
-            $vinculo = new \Base\Vinculo();
-            $vinculo->agregar_publicacion($publicacion);
+            $vinculo          = new \Base\Vinculo();
+            $vinculo->en_raiz = true;
+            $vinculo->en_otro = false;
+            $vinculo->definir_con_publicacion($publicacion);
             // Agregar
             $concentrador->agregar($vinculo);
         }

@@ -27,19 +27,19 @@ namespace Base;
  */
 class ImprentaPublicaciones extends Imprenta {
 
-    public $directorio;                     // Texto, nombre del directorio en raíz donde se guardará el archivo HTML
-    public $publicaciones_directorio;       // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
-    public $encabezado;                     // Código HTML para usarse como encabezado
-    public $encabezado_color;               // Texto, color de fondo del encabezado #nnnnnn
-    public $encabezado_icono;               // Texto, icono Font Awesome
-    public $claves;                         // Texto, palabras separadas por comas para meta tag
-    public $nombre_menu;                    // Texto, opción del menú activa
-    protected $titulo;                      // Texto, título de la página
-    protected $descripcion;                 // Texto, descripción para meta tag
-    protected $archivo_ruta;                // Texto opcional, ruta al archivo HTML del concentrador
-    protected $concentrador = 'Detallados'; // Texto, nombre de la clase que concentrará este conjunto de publicaciones (Detallados, Galeria, Tarjetas)
-    protected $recolector;                  // Instancia de Recolector
-    protected $contador     = 0;            // Entero, cantidad de publicaciones producidas
+    public $directorio;               // Texto, nombre del directorio en raíz donde se guardará el archivo HTML
+    public $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
+    public $encabezado;               // Código HTML para usarse como encabezado
+    public $encabezado_color;         // Texto, color de fondo del encabezado #nnnnnn
+    public $encabezado_icono;         // Texto, icono Font Awesome
+    public $claves;                   // Texto, palabras separadas por comas para meta tag
+    public $nombre_menu;              // Texto, opción del menú activa
+    protected $titulo;                // Texto, título de la página
+    protected $descripcion;           // Texto, descripción para meta tag
+    protected $archivo_ruta;          // Texto opcional, ruta al archivo HTML del concentrador
+    protected $concentrador;          // Ruta a la clase. Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+    protected $recolector;            // Instancia de Recolector
+    protected $contador = 0;          // Entero, cantidad de publicaciones producidas
 
     /**
      * Constructor
@@ -117,9 +117,8 @@ class ImprentaPublicaciones extends Imprenta {
      * Imprimir index.html
      */
     protected function imprimir_index() {
-        // Iniciar el Concentrador
-        $clase        = sprintf('\\Base\\Paginas%s', $this->concentrador);
-        $concentrador = new $clase($this->recolector);
+        // Iniciar el Concentrador, note que la propiedad concentrador debe tener la ruta completa
+        $concentrador = new $this->concentrador($this->recolector);
         // Iniciar la Plantilla
         $plantilla                = new Plantilla();
         $plantilla->navegacion    = new Navegacion();
@@ -156,7 +155,7 @@ class ImprentaPublicaciones extends Imprenta {
         $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
         $this->imprimir_publicaciones();
         $this->imprimir_index();
-        echo sprintf("  %d en %s con %s.\n", $this->contador, $this->publicaciones_directorio, strtolower($this->concentrador));
+        echo sprintf("  %d en %s\n", $this->contador, $this->publicaciones_directorio);
     } // imprimir
 
 } // Clase ImprentaPublicaciones

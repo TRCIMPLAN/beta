@@ -94,12 +94,11 @@ abstract class Paginas {
         $this->concentrador->en_otro = $this->en_otro;
         // Bucle por las publicaciones, tiene la cantidad límite
         foreach ($this->recolector->obtener_publicaciones($this->cantidad_maxima) as $publicacion) {
-            // Pasar parámetros a la publicación
-            $publicacion->en_raiz = $this->en_raiz;
-            $publicacion->en_otro = $this->en_otro;
-            // Iniciar vínculo
-            $vinculo = new \Base\Vinculo();
-            $vinculo->agregar_publicacion($publicacion);
+            // Definir vínculo
+            $vinculo          = new \Base\Vinculo();
+            $vinculo->en_raiz = $this->en_raiz;
+            $vinculo->en_otro = $this->en_otro;
+            $vinculo->definir_con_publicacion($publicacion);
             // Agregar
             $this->concentrador->agregar($vinculo);
         }

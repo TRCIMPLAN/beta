@@ -25,15 +25,15 @@ namespace Configuracion;
 /**
  * Clase CreadorConfig
  *
- * Defina las rutas a las imprentas que ejecutará bin/Crear.php
+ * Define las rutas a las imprentas que tomará \Base\Creador
  */
 class CreadorConfig {
 
-    // Rutas a las clases de ImprentaPublicaciones SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon
+    // Rutas a las clases de ImprentaPublicaciones
     public $imprentas = array(
         '\\Blog\\Imprenta',
-        '\\Contacto\\Imprenta',
         '\\ConsejoDirectivo\\Imprenta',
+        '\\Contacto\\Imprenta',
         '\\Institucional\\Imprenta',
         '\\PlanEstrategicoMetropolitano\\Imprenta',
         '\\PreguntasFrecuentes\\Imprenta',
@@ -43,7 +43,13 @@ class CreadorConfig {
         '\\SIGMapasTorreon\\Imprenta',
         '\\SIGPlanes\\Imprenta',
         '\\SMI\\Imprenta',
+        '\\SMICategorias\\Imprenta',
         '\\SMIGeorreferenciados\\Imprenta',
+        '\\SMIIndicadoresGomezPalacio\\Imprenta',
+        '\\SMIIndicadoresLaLaguna\\Imprenta',
+        '\\SMIIndicadoresLerdo\\Imprenta',
+        '\\SMIIndicadoresMatamoros\\Imprenta',
+        '\\SMIIndicadoresTorreon\\Imprenta',
         '\\Terminos\\Imprenta');
 
 } // Clase CreadorConfig

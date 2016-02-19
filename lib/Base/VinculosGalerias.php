@@ -53,8 +53,12 @@ class VinculosGalerias extends Vinculos {
             // Si tiene URL se pondrán vínculos, de lo contrario no
             if ($vinculo->url() != '') {
                 // Tiene URL
-                if ($imagen_url != '') {
-                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s" alt="%s"></a>', $vinculo->url(), $imagen_url, $vinculo->nombre);
+                if ($vinculo->imagen_id != '') {
+                    // Vía CSS el vínculo tiene una imagen que puede cambiar cuando pasa el ratón por encima
+                    $a[] = sprintf('            <span class="img-thumbnail galeria-imagen" ><a id="%s" href="%s"></a></span>', $vinculo->imagen_id, $vinculo->url());
+                } elseif ($imagen_url != '') {
+                    // Imagen con vínculo
+                    $a[] = sprintf('            <a href="%s"><img class="img-thumbnail galeria-imagen" src="%s"></a>', $vinculo->url(), $imagen_url);
                 }
                 $a[] = '            <div class="caption">';
                 $a[] = sprintf('              <a href="%s">%s</a>', $vinculo->url(), $vinculo->nombre);

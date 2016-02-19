@@ -122,7 +122,7 @@ class ImprentaCategorias extends Imprenta {
         $this->imprimir_categorias();
         $this->imprimir_index();
         // Mensaje
-        echo sprintf("  %d en %s con índice.\n", $this->contador, self::CATEGORIAS_DIR);
+        echo sprintf("  %d en %s\n", $this->contador, self::CATEGORIAS_DIR);
     } // imprimir
 
 } // Clase ImprentaCategorias

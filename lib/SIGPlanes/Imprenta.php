@@ -40,8 +40,8 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->encabezado_color         = '#008000';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Información Geográfica > Planes';
-        // El concentrador es el nombre de la clase que concentrará a las publicaciones para hacer el index.html
-        $this->concentrador             = 'Tarjetas'; // Puede ser Detallados, Galeria o Tarjetas
+        // Ruta a la clase para hacer el index.html
+        $this->concentrador             = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'sig-planes';
         // Ejecutar constructor en el padre

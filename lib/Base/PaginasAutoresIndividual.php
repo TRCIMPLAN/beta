@@ -114,15 +114,12 @@ class PaginasAutoresIndividual extends Paginas {
         $clase        = \Configuracion\AutoresConfig::VINCULOS_INDIVIDUAL;
         $concentrador = new $clase();
         // Bucle por todos los autores
-        foreach ($this->recolector->obtener_publicaciones() as $p) {
-            // Validar publicación
-            $p->validar();
-            // Pasar valores a la publicación
-            $p->en_raiz = $this->en_raiz;
-            $p->en_otro = $this->en_otro;
-            // Iniciar vínculo
-            $vinculo = new Vinculo();
-            $vinculo->agregar_publicacion($p);
+        foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
+            // Definir vínculo
+            $vinculo          = new \Base\Vinculo();
+            $vinculo->en_raiz = $this->en_raiz;
+            $vinculo->en_otro = $this->en_otro;
+            $vinculo->definir_con_publicacion($publicacion);
              // Agregar vínculo
             $concentrador->agregar($vinculo);
         }
