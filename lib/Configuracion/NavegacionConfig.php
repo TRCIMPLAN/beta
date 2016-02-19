@@ -28,6 +28,16 @@ class NavegacionConfig {
 
     protected $sitio_titulo = 'IMPLAN Torreón';
     protected $logotipo     = 'imagenes/implan-barra-logo-chico-gris.png';
+
+/*
+        'Plan Estratégico Metropolitano' => array(
+            'Plan Estratégico Metropolitano > Conoce el Plan'          => 'plan-estrategico-metropolitano/introduccion.html',
+            'Plan Estratégico Metropolitano > Todas las Mesas'         => 'plan-estrategico-metropolitano/index.html',
+            'Plan Estratégico Metropolitano > Participación Ciudadana' => 'http://trcimplan.mx/plan'),
+        'Proyectos Estratégicos' => array(
+            'Proyectos Estratégicos > Banco de Proyectos'  => 'proyectos/banco-municipal-proyectos-inversion.html',
+            'Proyectos Estratégicos > Todos los Proyectos' => 'proyectos/index.html'),
+ */
     protected $opciones     = array(
         'Categorías'          => 'categorias/index.html',
         'Autores'             => 'autores/index.html',
@@ -44,12 +54,13 @@ class NavegacionConfig {
             'Información Geográfica > S.I.G. de Torreón'       => 'sig-mapas-torreon/index.html',
             'Información Geográfica > Zonificación Secundaria' => 'sig-mapas-torreon/zonificacion-secundaria.html'),
         'Plan Estratégico Metropolitano' => array(
-            'Plan Estratégico Metropolitano > Conoce el Plan'          => 'plan-estrategico-metropolitano/introduccion.html',
-            'Plan Estratégico Metropolitano > Todas las Mesas'         => 'plan-estrategico-metropolitano/index.html',
-            'Plan Estratégico Metropolitano > Participación Ciudadana' => 'http://trcimplan.mx/plan'),
-        'Proyectos Estratégicos' => array(
-            'Proyectos Estratégicos > Banco de Proyectos'  => 'proyectos/banco-municipal-proyectos-inversion.html',
-            'Proyectos Estratégicos > Todos los Proyectos' => 'proyectos/index.html'),
+            'Plan Estratégico Metropolitano > Qué es el P.E.M.'        => 'plan-estrategico-metropolitano/index.html',
+            'Plan Estratégico Metropolitano > Metodología'             => 'plan-estrategico-metropolitano/index.html',
+            'Plan Estratégico Metropolitano > Descripción del proceso' => 'plan-estrategico-metropolitano/index.html'),
+        'Banco de Proyectos' => array(
+            'Banco de Proyectos > Por Ejes'           => 'proyectos/index.html',
+            'Banco de Proyectos > Cartera P.E.M.'     => 'proyectos/index.html',
+            'Banco de Proyectos > Planes y Programas' => 'proyectos/index.html'),
         'Institucional' => array(
             'Institucional > Visión / Misión'        => 'institucional/vision-mision.html',
             'Institucional > Mensaje del Director'   => 'institucional/mensaje-director.html',

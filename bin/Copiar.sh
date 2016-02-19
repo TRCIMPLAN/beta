@@ -52,7 +52,8 @@ rm -rf img
 rm -rf js
 rm -rf less
 rm -rf scss
-for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional plan-estrategico-metropolitano preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+# Por los cambios de Ilse, no se borran plan-estrategico-metropolitano proyectos
+for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
 done
@@ -63,7 +64,8 @@ echo "  Eliminando en /lib..."
 cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
-for DIR in Blog ConsejoDirectivo Contacto Institucional PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+# Por los cambios de Ilse, no se borran PlanEstrategicoMetropolitano Proyectos
+for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes  SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     rm -rf $DIR
 done
@@ -79,7 +81,8 @@ cp -r $SITIO_WEB_DIR/img .
 cp -r $SITIO_WEB_DIR/js .
 cp -r $SITIO_WEB_DIR/less .
 cp -r $SITIO_WEB_DIR/scss .
-for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional plan-estrategico-metropolitano preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+# Por los cambios de Ilse, no se copian plan-estrategico-metropolitano proyectos
+for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     cp -r $SITIO_WEB_DIR/$DIR .
     rm -f $DIR/*.html
@@ -91,7 +94,8 @@ echo "  Copiando a /lib..."
 cd $BETA_DIR/lib
 cp -r $PLATAFORMA_DIR/lib/Base .
 cp -r $PLATAFORMA_DIR/lib/Michelf .
-for DIR in Blog ConsejoDirectivo Contacto Institucional PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+# Por los cambios de Ilse, no se copian PlanEstrategicoMetropolitano Proyectos
+for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     cp -r $SITIO_WEB_DIR/lib/$DIR .
 done
