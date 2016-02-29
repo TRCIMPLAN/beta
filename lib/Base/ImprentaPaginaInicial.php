@@ -44,7 +44,7 @@ class ImprentaPaginaInicial extends Imprenta {
     public function imprimir() {
         echo "ImprentaPaginaInicial: ";
         // Navegación
-        $navegacion          = new \Base\Navegacion();
+        $navegacion          = new Navegacion();
         $navegacion->en_raiz = true;
         // Plantilla, su método html elabora el contenido
         $plantilla             = new \Configuracion\PaginaInicialConfig();

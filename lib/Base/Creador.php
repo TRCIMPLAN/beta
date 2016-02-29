@@ -61,6 +61,10 @@ class Creador extends \Configuracion\CreadorConfig {
         $imprenta_redifusion = new ImprentaRedifusion($this->imprentas);
         $imprenta_redifusion->imprimir();
         unset($imprenta_redifusion);
+        // Imprimir página para los resultados del buscador
+        $imprenta_buscador_resultados = new ImprentaPaginaBuscadorResultados();
+        $imprenta_buscador_resultados->imprimir();
+        unset($imprenta_buscador_resultados);
     } // imprimir
 
 } // Clase Creador
