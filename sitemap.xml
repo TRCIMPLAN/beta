@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-02-29</lastmod>
+    <lastmod>2016-03-01</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -293,6 +293,21 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-12-07-conoce-a-los-consejeros-del-implan-2014-2015.html</loc>
     <lastmod>2015-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/descripcion-del-proceso.html</loc>
+    <lastmod>2015-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/introduccion.html</loc>
+    <lastmod>2015-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/metodologia.html</loc>
+    <lastmod>2015-12-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -6492,11 +6507,6 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/apertura-empresas-2014.html</loc>
-    <lastmod>2014-09-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://www.trcimplan.gob.mx/plan-estrategico-metropolitano/introduccion.html</loc>
     <lastmod>2014-09-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>

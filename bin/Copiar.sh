@@ -52,7 +52,7 @@ rm -rf img
 rm -rf js
 rm -rf less
 rm -rf scss
-# Por los cambios de Ilse, no se borran plan-estrategico-metropolitano proyectos
+# Por los cambios de Ilse, no se borran plan-estrategico-metropolitano, ni proyectos
 for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
@@ -64,7 +64,7 @@ echo "  Eliminando en /lib..."
 cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
-# Por los cambios de Ilse, no se borran PlanEstrategicoMetropolitano Proyectos
+# Por los cambios de Ilse, no se borran PlanEstrategicoMetropolitano, ni Proyectos
 for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes  SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     rm -rf $DIR
@@ -81,7 +81,7 @@ cp -r $SITIO_WEB_DIR/img .
 cp -r $SITIO_WEB_DIR/js .
 cp -r $SITIO_WEB_DIR/less .
 cp -r $SITIO_WEB_DIR/scss .
-# Por los cambios de Ilse, no se copian plan-estrategico-metropolitano proyectos
+# Por los cambios de Ilse, no se copian plan-estrategico-metropolitano, ni proyectos
 for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     cp -r $SITIO_WEB_DIR/$DIR .
@@ -94,7 +94,7 @@ echo "  Copiando a /lib..."
 cd $BETA_DIR/lib
 cp -r $PLATAFORMA_DIR/lib/Base .
 cp -r $PLATAFORMA_DIR/lib/Michelf .
-# Por los cambios de Ilse, no se copian PlanEstrategicoMetropolitano Proyectos
+# Por los cambios de Ilse, no se copian PlanEstrategicoMetropolitano, ni Proyectos
 for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     cp -r $SITIO_WEB_DIR/lib/$DIR .

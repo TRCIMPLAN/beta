@@ -34,22 +34,24 @@ class Introduccion extends \Base\Publicacion {
         // Título, autor y fecha
         $this->nombre          = 'Conoce el Plan Estratégico Metropolitano';
         $this->autor           = 'Dirección de Proyectos Estratégicos';
-        $this->fecha           = '2014-09-24T08:00';
+        $this->fecha           = '2015-12-01T08:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'introduccion';
         $this->imagen          = 'introduccion/imagen.jpg';
         $this->imagen_previa   = 'introduccion/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion     = 'Planeación participativa para atender la necesidad urgente de elevar el nivel de competitividad para el desarrollo económico y social de la Zona Metropolitana de La Laguna.';
-        $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano';
+        $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano, Que es';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Conoce el Plan';
+        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Qué es el P.E.M.';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
         $this->poner_imagen_en_contenido = false;
+        // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
+        $this->para_compartir  = false;
         // El contenido es estructurado en un esquema
         $schema                = new \Base\SchemaArticle();
         $schema->name          = $this->nombre;
