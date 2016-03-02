@@ -22,7 +22,8 @@
  * Global
  */
 body {
-    font-family:'Questrial',Verdana,Helvetica,Arial,sans-serif; font-weight:400;
+    font-family:'Questrial',Verdana,Helvetica,Arial,sans-serif;
+    font-weight:400;
     font-size:16px;
     background-color:#F0F0F0;
 }
@@ -32,9 +33,11 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
+    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif;
+    font-weight:400;
+    line-height:1.2;
 }
-a         { color:#A52100; text-decoration:none; }
+a         { color:#A52100; text-decoration:none; font-weight:400; }
 a:link,
 a:visited { color:#A52100; text-decoration:none; }
 a:hover,
@@ -543,12 +546,18 @@ a.galeria-icono:active  { color:#FF3300; }
 /*
  * Responsivo
  */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1190px) {
     #carrusel .carousel-inner > .item > img {
         height:352px;
     }
 }
 @media only screen and (max-width: 990px) {
+    h1, .h1 { font-size:24px; }
+    h2, .h2 { font-size:20px; }
+    h3, .h3 { font-size:18px; }
+    h4, .h4 { font-size:14px; }
+    h5, .h5 { font-size:12px; }
+    h6, .h6 { font-size:10px; }
     #carrusel .carousel-inner > .item > img {
         height:260px;
     }
@@ -614,12 +623,12 @@ a.galeria-icono:active  { color:#FF3300; }
     }
 }
 @media only screen and (max-width: 580px) {
-    h1, .h1 { font-size:26px; }
-    h2, .h2 { font-size:22px; }
-    h3, .h3 { font-size:18px; }
+    h1, .h1 { font-size:22px; }
+    h2, .h2 { font-size:18px; }
+    h3, .h3 { font-size:16px; }
     h4, .h4 { font-size:14px; }
     h5, .h5 { font-size:12px; }
-    h6, .h6 { font-size:9px; }
+    h6, .h6 { font-size:10px; }
     #carrusel .carousel-inner > .item > img {
         height:190px;
     }
@@ -686,11 +695,11 @@ a.galeria-icono:active  { color:#FF3300; }
     }
 }
 @media only screen and (max-width: 300px) {
-    h1, .h1 { font-size:22px; }
-    h2, .h2 { font-size:18px; }
-    h3, .h3 { font-size:16px; }
+    h1, .h1 { font-size:18px; }
+    h2, .h2 { font-size:16px; }
+    h3, .h3 { font-size:14px; }
     h4, .h4 { font-size:12px; }
-    h5, .h5 { font-size:10px; }
+    h5, .h5 { font-size:11px; }
     h6, .h6 { font-size:9px; }
     #carrusel .carousel-inner > .item > img {
         height:150px;
@@ -757,3 +766,4 @@ a.galeria-icono:active  { color:#FF3300; }
         padding:4px;
     }
 }
+
