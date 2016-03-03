@@ -32,7 +32,7 @@ class MesaMovilidadNoMotorizada extends \Base\Publicacion {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'Mesa de Movilidad No Motorizada';
+        $this->nombre          = 'Taller de Movilidad No Motorizada';
         $this->autor           = 'Dirección de Proyectos Estratégicos';
         $this->fecha           = '2015-08-18T16:15';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
@@ -45,7 +45,7 @@ class MesaMovilidadNoMotorizada extends \Base\Publicacion {
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Todas las Mesas';
+        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Descripción del Proceso';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.

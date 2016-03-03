@@ -37,10 +37,10 @@ class Metodologia extends \Base\Publicacion {
         $this->fecha           = '2015-12-01T08:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'metodologia';
-        $this->imagen          = 'metodologia/imagen.jpg';
-        $this->imagen_previa   = 'metodologia/imagen-previa.jpg';
+        $this->imagen          = 'introduccion/imagen.jpg';
+        $this->imagen_previa   = 'introduccion/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Descripción.';
+        $this->descripcion     = 'Participaron ciudadanos y expertos tanto del sector público, como del privado, representantes de organizaciones civiles, universidades, ambientalistas, empresarios, ONG´s, funcionarios y políticos.';
         $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano, Metodologia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';

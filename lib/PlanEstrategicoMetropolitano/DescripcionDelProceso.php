@@ -37,10 +37,10 @@ class DescripcionDelProceso extends \Base\Publicacion {
         $this->fecha           = '2015-12-01T08:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'descripcion-del-proceso';
-        $this->imagen          = 'descripcion-del-proceso/imagen.jpg';
-        $this->imagen_previa   = 'descripcion-del-proceso/imagen-previa.jpg';
+        $this->imagen          = 'introduccion/imagen.jpg';
+        $this->imagen_previa   = 'introduccion/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Descripción.';
+        $this->descripcion     = 'Cuatro talleres participativos cada uno con seis mesas de trabajo en cada eje.';
         $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano, Descripcion';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';

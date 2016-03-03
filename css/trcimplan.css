@@ -96,6 +96,7 @@ a:active  { color:#FF3300; text-decoration:none; }
 .encabezado-descripcion {
     color:#DCDCDC;
     font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
+    font-size:16px;
     line-height:1.2;
     margin-top:4px;
     margin-bottom:4px;

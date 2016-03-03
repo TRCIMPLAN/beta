@@ -32,7 +32,7 @@ class MesaSaludLaguna extends \Base\Publicacion {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'Mesa Salud Laguna';
+        $this->nombre          = 'Taller Salud Laguna';
         $this->autor           = 'Dirección de Proyectos Estratégicos';
         $this->fecha           = '2015-08-15T11:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
@@ -40,12 +40,12 @@ class MesaSaludLaguna extends \Base\Publicacion {
         $this->imagen          = 'mesa-salud-laguna/imagen.jpg';
         $this->imagen_previa   = 'mesa-salud-laguna/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Mesa lidereada por Salud Laguna donde participaron médicos y directivos de las empresas del sector salud de la ZML.';
+        $this->descripcion     = 'Lidereado por Salud Laguna donde participaron médicos y directivos de las empresas del sector salud de la ZML.';
         $this->claves          = 'IMPLAN, Torreon, Salud, Medicos, Laguna';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Todas las Mesas';
+        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Descripción del Proceso';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.

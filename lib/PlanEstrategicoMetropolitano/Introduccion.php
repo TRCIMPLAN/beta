@@ -40,7 +40,7 @@ class Introduccion extends \Base\Publicacion {
         $this->imagen          = 'introduccion/imagen.jpg';
         $this->imagen_previa   = 'introduccion/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Planeación participativa para atender la necesidad urgente de elevar el nivel de competitividad para el desarrollo económico y social de la Zona Metropolitana de La Laguna.';
+        $this->descripcion     = 'Marca directrices y líneas de acción derivadas de una visión (a 25 años) compartida y construida por y para los ciudadanos.';
         $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano, Que es';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';

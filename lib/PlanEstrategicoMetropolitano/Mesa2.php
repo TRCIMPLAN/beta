@@ -32,7 +32,7 @@ class Mesa2 extends \Base\Publicacion {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'M2 Visión y Objetivos';
+        $this->nombre          = 'Taller 2: Visión y Objetivos';
         $this->autor           = 'Dirección de Proyectos Estratégicos';
         $this->fecha           = '2014-10-30T08:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
@@ -40,12 +40,12 @@ class Mesa2 extends \Base\Publicacion {
         $this->imagen          = 'mesa-2/imagen.jpg';
         $this->imagen_previa   = 'mesa-2/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Segunda mesa del Plan Estratégico Metropolitano.';
+        $this->descripcion     = 'Segundo taller del Plan Estratégico Metropolitano.';
         $this->claves          = 'IMPLAN, Torreon, Gomez Palacio, Lerdo, Matamoros, Plan, Estrategico, Metropolitano';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'plan-estrategico-metropolitano';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Todas las Mesas';
+        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Descripción del Proceso';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
