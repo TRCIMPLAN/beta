@@ -1,8 +1,8 @@
 <?php
 /*
- * TrcIMPLAN - Plan Estratégico Metropolitano Mesa 4 Gestión de Proyectos
+ * TrcIMPLAN Sitio Web - Plan Estratégico Metropolitano Mesa 4 Gestión de Proyectos
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2015 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace PlanEstrategicoMetropolitano;

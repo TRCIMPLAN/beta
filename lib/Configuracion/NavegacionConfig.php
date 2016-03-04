@@ -54,9 +54,9 @@ class NavegacionConfig {
             'Plan Estratégico Metropolitano > Participación Ciudadana' => 'http://trcimplan.mx/plan'),
  */
         'Banco de Proyectos' => array(
-            'Banco de Proyectos > Por Ejes'           => 'proyectos/index.html',
-            'Banco de Proyectos > Cartera P.E.M.'     => 'proyectos/index.html',
-            'Banco de Proyectos > Planes y Programas' => 'proyectos/index.html'),
+            'Banco de Proyectos > Proyectos por Ejes' => 'proyectos/proyectos-por-ejes.html',
+            'Banco de Proyectos > Cartera P.E.M.'     => 'proyectos/cartera-pem.html',
+            'Banco de Proyectos > Planes y Programas' => 'proyectos/planes-y-programas.html'),
 /*      'Proyectos Estratégicos' => array(
             'Proyectos Estratégicos > Banco de Proyectos'  => 'proyectos/banco-municipal-proyectos-inversion.html',
             'Proyectos Estratégicos > Todos los Proyectos' => 'proyectos/index.html'),

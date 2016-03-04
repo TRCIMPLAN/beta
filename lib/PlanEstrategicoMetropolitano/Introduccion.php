@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN - Plan Estratégico Metropolitano Introducción
+ * TrcIMPLAN Sitio Web - Plan Estratégico Metropolitano Introducción
  *
  * Copyright (C) 2014 IMPLAN Torreón
  *
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace PlanEstrategicoMetropolitano;
@@ -50,8 +50,6 @@ class Introduccion extends \Base\Publicacion {
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
         $this->poner_imagen_en_contenido = false;
-        // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
-        $this->para_compartir  = false;
         // El contenido es estructurado en un esquema
         $schema                = new \Base\SchemaArticle();
         $schema->name          = $this->nombre;

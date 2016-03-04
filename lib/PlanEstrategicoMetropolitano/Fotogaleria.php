@@ -1,8 +1,8 @@
 <?php
 /*
- * TrcIMPLAN - Plan Estratégico Metropolitano Fotogalería
+ * TrcIMPLAN Sitio Web - Plan Estratégico Metropolitano Fotogalería
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2015 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace PlanEstrategicoMetropolitano;
@@ -48,10 +48,10 @@ class Fotogaleria extends \Base\Publicacion {
         $this->nombre_menu     = 'Plan Estratégico Metropolitano > Descripción del Proceso';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir  = true;
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
         $this->poner_imagen_en_contenido = false;
+        // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
+        $this->para_compartir  = false;
         // Para el Organizador
         $this->categorias      = array('Bienestar', 'Competitividad', 'Gobierno', 'Infraestructura', 'Movilidad', 'Participación Ciudadana', 'Recursos Naturales', 'Seguridad');
         $this->fuentes         = array();

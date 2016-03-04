@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Beta - Descripción del Proceso
+ * TrcIMPLAN Sitio Web - Descripción del Proceso
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -50,8 +50,6 @@ class DescripcionDelProceso extends \Base\Publicacion {
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
         $this->poner_imagen_en_contenido = false;
-        // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
-        $this->para_compartir  = false;
         // El contenido es estructurado en un esquema
         $schema                = new \Base\SchemaArticle();
         $schema->name          = $this->nombre;

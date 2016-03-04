@@ -45,7 +45,7 @@ class PlanCentroLaguna extends \Base\Publicacion {
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'proyectos';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Proyectos Estratégicos > Todos los Proyectos';
+        $this->nombre_menu     = 'Banco de Proyectos > Proyectos por Ejes';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
         $this->estado          = 'publicar';
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.

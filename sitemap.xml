@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2016-03-04</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -273,6 +273,21 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/balance-2015-repunte-de-la-competitividad-en-la-laguna.html</loc>
     <lastmod>2016-01-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/cartera-pem.html</loc>
+    <lastmod>2016-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/planes-y-programas.html</loc>
+    <lastmod>2016-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/proyectos-por-ejes.html</loc>
+    <lastmod>2016-01-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>

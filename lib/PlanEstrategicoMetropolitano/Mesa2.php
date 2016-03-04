@@ -1,6 +1,6 @@
 <?php
 /*
- * TrcIMPLAN - Plan Estratégico Metropolitano Mesa 2 Visión y Objetivos
+ * TrcIMPLAN Sitio Web - Plan Estratégico Metropolitano Mesa 2 Visión y Objetivos
  *
  * Copyright (C) 2014 IMPLAN Torreón
  *
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace PlanEstrategicoMetropolitano;
