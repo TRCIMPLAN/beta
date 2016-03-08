@@ -27,11 +27,12 @@ namespace Configuracion;
  */
 class AutoresConfig {
 
-    const VINCULOS_INDICE        = '\Base\VinculosTarjetas';   // Ruta a la clase para el índice de autores, en autores/index.html
-    const VINCULOS_INDIVIDUAL    = '\Base\VinculosDetallados'; // Ruta a la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
-    public $autores              = array();                    // Arreglo asociativo con instancias de \Base\Autor
-    public $mostrar_no_definidos = false;                      // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
-    public $imagen_tamano        = 128;                        // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
+    const VINCULOS_INDICE        = '\Base\VinculosTarjetas';           // Ruta a la clase para el índice de autores, en autores/index.html
+    const VINCULOS_INDIVIDUAL    = '\Base\VinculosAcordeonesListados'; // Ruta a la clase para listar las publicaciones de cada autor, a usarse en las páginas de los autores
+    const ORDENAR_POR            = 'dir_nombre_asc';                   // Texto que usa el Recolector para ordenar las publicaciones, puede ser fecha_desc o dir_nombre_asc
+    public $autores              = array();                            // Arreglo asociativo con instancias de \Base\Autor
+    public $mostrar_no_definidos = false;                              // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
+    public $imagen_tamano        = 128;                                // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
 
     /**
      * Constructor
