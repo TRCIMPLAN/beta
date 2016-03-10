@@ -66,17 +66,17 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public $mapa_institucional = array(
         'Visión / Misión'                   => 'institucional/vision-mision.html',
         'Mensaje del Director'              => 'institucional/mensaje-director.html',
-        'Quienes Somos'                     => 'institucional/quienes-somos.html',
+        'Quienes Somos'                     => 'autores/index.html',
         'Estructura Orgánica'               => 'institucional/estructura-organica.html',
         'Reglamentos'                       => 'institucional/reglamentos.html',
         'Información Financiera'            => 'institucional/informacion-financiera.html',
-        'Consejo Directivo'                 => 'consejo-directivo/integrantes.html'); //
+        'Consejo Directivo'                 => 'consejo-directivo/integrantes.html');
     public $mapa_interaccion   = array(
         'Contacto'                          => 'contacto/contacto.html',
         'Preguntas Frecuentes'              => 'preguntas-frecuentes/preguntas-frecuentes.html',
         'Eventos'                           => 'eventos/index.html',
         'Sala de Prensa'                    => 'sala-prensa/index.html',
-        'Quejas y Sugerencias'              => 'http://trcimplan.mx/comentariossugerencias');
+        'Quejas y Sugerencias'              => '#');
     public $mapa_legal         = array(
         'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178',
         'Términos de Uso de la Información' => 'terminos/terminos-informacion.html',
@@ -200,7 +200,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $recolector = new \Base\Recolector();
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Bucle por las publicaciones, tiene la cantidad límite
-        foreach ($recolector->obtener_publicaciones(5) as $publicacion) {
+        foreach ($recolector->obtener_publicaciones(4) as $publicacion) {
             // Iniciar vínculo
             $vinculo          = new \Base\Vinculo();
             $vinculo->en_raiz = true;
@@ -267,6 +267,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         // Poner
         $this->contenido[] = '  <section id="categorias">';
         $this->contenido[] = '    <h2>Categorías</h2>';
+        $this->contenido[] = sprintf('    <p>Explore por medio de las categorías que clasifican las %s publicaciones en este sitio web.</p>', number_format($recolector->obtener_cantidad_de_publicaciones(), 0, ".", ","));
         $this->contenido[] = $concentrador->html();
         $this->contenido[] = '  </section>';
     } // categorias

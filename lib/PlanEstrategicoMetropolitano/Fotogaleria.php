@@ -53,9 +53,9 @@ class Fotogaleria extends \Base\Publicacion {
         // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
         $this->para_compartir  = false;
         // Para el Organizador
-        $this->categorias      = array('Bienestar', 'Competitividad', 'Gobierno', 'Infraestructura', 'Movilidad', 'Participación Ciudadana', 'Recursos Naturales', 'Seguridad');
+        $this->categorias      = array();
         $this->fuentes         = array();
-        $this->regiones        = array('Torreón', 'Gómez Palacio', 'Lerdo', 'Matamoros', 'La Laguna');
+        $this->regiones        = array();
     } // constructor
 
     /**

@@ -29,28 +29,57 @@ namespace Configuracion;
  */
 class CreadorConfig {
 
-    // Rutas a las clases de ImprentaPublicaciones
-    public $imprentas = array(
-        '\\Blog\\Imprenta',
-        '\\ConsejoDirectivo\\Imprenta',
-        '\\Contacto\\Imprenta',
-        '\\Institucional\\Imprenta',
-        '\\PlanEstrategicoMetropolitano\\Imprenta',
-        '\\PreguntasFrecuentes\\Imprenta',
-        '\\Proyectos\\Imprenta',
-        '\\SalaPrensa\\Imprenta',
-        '\\SIG\\Imprenta',
-        '\\SIGMapasTorreon\\Imprenta',
-        '\\SIGPlanes\\Imprenta',
-        '\\SMI\\Imprenta',
-        '\\SMICategorias\\Imprenta',
-        '\\SMIGeorreferenciados\\Imprenta',
-        '\\SMIIndicadoresGomezPalacio\\Imprenta',
-        '\\SMIIndicadoresLaLaguna\\Imprenta',
-        '\\SMIIndicadoresLerdo\\Imprenta',
-        '\\SMIIndicadoresMatamoros\\Imprenta',
-        '\\SMIIndicadoresTorreon\\Imprenta',
-        '\\Terminos\\Imprenta');
+    public $imprentas;                // Arreglo con las rutas a Imprentas para todas las Publicaciones
+    public $imprentas_autores;        // Arreglo con las rutas a Imprentas que estarán en Autores
+    public $imprentas_categorias;     // Arreglo con las rutas a Imprentas que estarán en Categorías
+    public $imprentas_pagina_inicial; // Arreglo con las rutas a Imprentas que serán insumo para la página inicial
+    public $imprentas_mapa_sitio;     // Arreglo con las rutas a Imprentas que se usarán para el mapa del sitio sitemap.xml
+    public $imprentas_redifusion;     // Arreglo con las rutas a Imprentas que se usarán para la redifusión rss.xml
+
+    /**
+     * Constructor
+     */
+    public function __construct() {
+        $this->imprentas                = array(
+            '\\Blog\\Imprenta',
+            '\\ConsejoDirectivo\\Imprenta',
+            '\\Contacto\\Imprenta',
+            '\\Institucional\\Imprenta',
+            '\\PlanEstrategicoMetropolitano\\Imprenta',
+            '\\PreguntasFrecuentes\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
+            '\\SIG\\Imprenta',
+            '\\SIGMapasTorreon\\Imprenta',
+            '\\SIGPlanes\\Imprenta',
+            '\\SMI\\Imprenta',
+            '\\SMICategorias\\Imprenta',
+            '\\SMIGeorreferenciados\\Imprenta',
+            '\\SMIIndicadoresGomezPalacio\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresLerdo\\Imprenta',
+            '\\SMIIndicadoresMatamoros\\Imprenta',
+            '\\SMIIndicadoresTorreon\\Imprenta',
+            '\\Terminos\\Imprenta');
+        $this->imprentas_mapa_sitio     = $this->imprentas;
+        $this->imprentas_autores        = array(
+            '\\Blog\\Imprenta',
+            '\\PlanEstrategicoMetropolitano\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SIG\\Imprenta',
+            '\\SIGMapasTorreon\\Imprenta',
+            '\\SIGPlanes\\Imprenta',
+            '\\SMI\\Imprenta',
+            '\\SMIGeorreferenciados\\Imprenta',
+            '\\SMIIndicadoresGomezPalacio\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresLerdo\\Imprenta',
+            '\\SMIIndicadoresMatamoros\\Imprenta',
+            '\\SMIIndicadoresTorreon\\Imprenta');
+        $this->imprentas_categorias     = $this->imprentas_autores;
+        $this->imprentas_pagina_inicial = $this->imprentas_autores;
+        $this->imprentas_redifusion     = $this->imprentas_autores;
+    } // constructor
 
 } // Clase CreadorConfig
 

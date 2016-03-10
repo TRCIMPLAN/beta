@@ -63,9 +63,9 @@ class Mesa4 extends \Base\Publicacion {
         // Se define una ruta a una archivo HTML para que cuando se ejecute el método HTML se cargue
         $this->contenido_archivo_html = 'lib/PlanEstrategicoMetropolitano/Mesa4.html';
         // Para el Organizador
-        $this->categorias      = array('Bienestar', 'Competitividad', 'Gobierno', 'Infraestructura', 'Movilidad', 'Participación Ciudadana', 'Recursos Naturales', 'Seguridad');
+        $this->categorias      = array();
         $this->fuentes         = array();
-        $this->regiones        = array('Torreón', 'Gómez Palacio', 'Lerdo', 'Matamoros', 'La Laguna');
+        $this->regiones        = array();
     } // constructor
 
     /**

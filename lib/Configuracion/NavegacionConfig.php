@@ -49,16 +49,14 @@ class NavegacionConfig {
 /*      'Plan Estratégico Metropolitano' => array(
             'Plan Estratégico Metropolitano > Conoce el Plan'          => 'plan-estrategico-metropolitano/introduccion.html',
             'Plan Estratégico Metropolitano > Todas las Mesas'         => 'plan-estrategico-metropolitano/index.html',
-            'Plan Estratégico Metropolitano > Participación Ciudadana' => 'http://trcimplan.mx/plan'),
- */
+            'Plan Estratégico Metropolitano > Participación Ciudadana' => 'http://trcimplan.mx/plan'), */
         'Banco de Proyectos' => array(
             'Banco de Proyectos > Proyectos por Ejes' => 'proyectos/proyectos-por-ejes.html',
             'Banco de Proyectos > Cartera P.E.M.'     => 'proyectos/cartera-pem.html',
             'Banco de Proyectos > Planes y Programas' => 'proyectos/planes-y-programas.html'),
 /*      'Proyectos Estratégicos' => array(
             'Proyectos Estratégicos > Banco de Proyectos'  => 'proyectos/banco-municipal-proyectos-inversion.html',
-            'Proyectos Estratégicos > Todos los Proyectos' => 'proyectos/index.html'),
- */
+            'Proyectos Estratégicos > Todos los Proyectos' => 'proyectos/index.html'), */
         'Institucional' => array(
             'Institucional > Visión / Misión'        => 'institucional/vision-mision.html',
             'Institucional > Mensaje del Director'   => 'institucional/mensaje-director.html',
@@ -76,7 +74,7 @@ class NavegacionConfig {
             'Términos de Uso > Aviso de Privacidad' => 'terminos/privacidad.html'),
         'Contacto' => array(
             'Contacto > Medios de contacto'        => 'contacto/contacto.html',
-            'Contacto > Comentarios y Sugerencias' => 'http://trcimplan.mx/comentariossugerencias'));
+            'Contacto > Comentarios y Sugerencias' => '#'));
     static public $iconos = array(
         'Análisis Publicados'             => 'fa fa-lightbulb-o',
         'Indicadores'                     => 'fa fa-area-chart',

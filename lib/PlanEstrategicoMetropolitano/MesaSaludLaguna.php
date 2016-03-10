@@ -64,8 +64,8 @@ class MesaSaludLaguna extends \Base\Publicacion {
         $this->contenido_archivo_html = 'lib/PlanEstrategicoMetropolitano/MesaSaludLaguna.html';
         // Para el Organizador
         $this->categorias      = array('Competitividad', 'Salud');
-        $this->fuentes         = array('IMPLAN', 'INEGI');
-        $this->regiones        = array('Torreón', 'Gómez Palacio', 'Lerdo', 'Matamoros', 'La Laguna');
+        $this->fuentes         = array();
+        $this->regiones        = array();
     } // constructor
 
     /**
