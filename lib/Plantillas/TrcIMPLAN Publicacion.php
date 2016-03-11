@@ -41,7 +41,12 @@ class CLASE extends \Base\Publicacion {
         $this->descripcion = 'Descripción.';
         $this->claves      = 'Clave1, Clave2, Clave3';
         // Para el Organizador
-        $this->categorias  = array('Categoria1', 'Categoria2', 'Categoria3');
+        $this->categorias  = array(); // Arreglo con las categorías
+        $this->fuentes     = array(); // Arreglo con las fuentes
+        $this->regiones    = array(); // Arreglo con las regiones
+        // Banderas que pueden tener un valor por defecto en \Configuracion\PublicacionConfig
+     // $this->poner_imagen_en_contenido = false; // Poner la imagen en la parte superior izquierda
+     // $this->para_compartir            = false; // Poner los botones para compartir en redes sociales
     } // constructor
 
     /**

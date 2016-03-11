@@ -65,7 +65,7 @@ cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
 # Por los cambios de Ilse, no se borran PlanEstrategicoMetropolitano, ni Proyectos
-for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes  SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+for DIR in Blog ConsejoDirectivo Contacto Institucional PreguntasFrecuentes SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     rm -rf $DIR
 done

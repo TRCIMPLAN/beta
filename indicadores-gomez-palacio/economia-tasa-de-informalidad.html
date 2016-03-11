@@ -6,20 +6,19 @@
 
         Instituto Municipal de Planeación y Competitividad de Torreón.
 
-        Este sitio web es elaborado con la Plataforma de Conocimiento.
+        Al usar, estudiar y copiar está aceptando los términos de uso de la información y del sitio web:
+          http://www.trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://www.trcimplan.gob.mx/terminos/terminos-sitio.html
         El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016.
           Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
-        Al usarlo está aceptando los términos de uso de la información y del sitio web:
-          http://trcimplan.gob.mx/terminos/terminos-informacion.html
-          http://trcimplan.gob.mx/terminos/terminos-sitio.html
+          Plataforma de Conocimiento  https://github.com/guivaloz/PlataformaDeConocimiento
         Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
-          Twitter Bootstrap    http://getbootstrap.com
-          StartBootStrap       http://startbootstrap.com
-          Morris.js            https://morrisjs.github.io/morris.js/
-          CartoDB              http://cartodb.com
+          Morris.js              https://morrisjs.github.io/morris.js/
+          PHP                    http://php.net
+          StartBootStrap         http://startbootstrap.com
+          Twitter Bootstrap      http://getbootstrap.com
         Descargue, aprenda y colabore con este Software Libre:
-          GitHub desarrollador https://github.com/guivaloz
-          GitHub instituto     https://github.com/TRCIMPLAN
+          GitHub IMPLAN Torreón  https://github.com/TRCIMPLAN/trcimplan.github.io
 
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -263,6 +262,12 @@
             <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
             <td></td>
           </tr>
+          <tr>
+            <td>31/12/2016</td>
+            <td>44.38 %</td>
+            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
       <p><b>Unidad:</b> Porcentaje.</p>
@@ -403,7 +408,7 @@ $('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function
   if (typeof vargraficaDatos === 'undefined') {
     vargraficaDatos = Morris.Line({
       element: 'graficaDatos',
-      data: [{ fecha: '2011-12-31', dato: 41.0900 },{ fecha: '2012-03-31', dato: 45.8900 },{ fecha: '2012-06-30', dato: 40.7500 },{ fecha: '2012-09-30', dato: 49.4400 },{ fecha: '2012-12-31', dato: 45.4500 },{ fecha: '2013-03-31', dato: 39.5600 },{ fecha: '2013-06-30', dato: 40.2000 },{ fecha: '2013-09-30', dato: 41.2700 },{ fecha: '2013-12-31', dato: 41.5900 },{ fecha: '2014-03-31', dato: 43.2900 },{ fecha: '2014-06-30', dato: 43.5000 },{ fecha: '2014-09-30', dato: 41.0400 },{ fecha: '2014-12-31', dato: 43.6300 },{ fecha: '2015-03-31', dato: 40.9100 },{ fecha: '2015-06-30', dato: 43.9834 },{ fecha: '2015-09-30', dato: 43.3134 }],
+      data: [{ fecha: '2011-12-31', dato: 41.0900 },{ fecha: '2012-03-31', dato: 45.8900 },{ fecha: '2012-06-30', dato: 40.7500 },{ fecha: '2012-09-30', dato: 49.4400 },{ fecha: '2012-12-31', dato: 45.4500 },{ fecha: '2013-03-31', dato: 39.5600 },{ fecha: '2013-06-30', dato: 40.2000 },{ fecha: '2013-09-30', dato: 41.2700 },{ fecha: '2013-12-31', dato: 41.5900 },{ fecha: '2014-03-31', dato: 43.2900 },{ fecha: '2014-06-30', dato: 43.5000 },{ fecha: '2014-09-30', dato: 41.0400 },{ fecha: '2014-12-31', dato: 43.6300 },{ fecha: '2015-03-31', dato: 40.9100 },{ fecha: '2015-06-30', dato: 43.9834 },{ fecha: '2015-09-30', dato: 43.3134 },{ fecha: '2016-12-31', dato: 44.3775 }],
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],

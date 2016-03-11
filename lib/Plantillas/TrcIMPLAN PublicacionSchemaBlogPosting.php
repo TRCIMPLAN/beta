@@ -43,7 +43,9 @@ class CLASE extends \Base\PublicacionSchemaBlogPosting {
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/DIRECTORIO/CLASE.md';
         // Para el Organizador
-        $this->categorias                 = array('Categoria1', 'Categoria2', 'Categoria3');
+        $this->categorias                 = array(); // Arreglo con las categorías
+        $this->fuentes                    = array(); // Arreglo con las fuentes
+        $this->regiones                   = array(); // Arreglo con las regiones
     } // constructor
 
 } // Clase CLASE
