@@ -25,7 +25,7 @@ namespace Blog;
 /**
  * Clase Imprenta
  */
-class Imprenta extends \Base\ImprentaPublicaciones {
+class Imprenta extends \Base\ImprentaPublicacionesClasificadasPorCategorias {
 
     /**
      * Constructor
@@ -40,10 +40,16 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->encabezado_color         = '#800000';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Análisis Publicados';
-        // Ruta a la clase para hacer el index.html
-        $this->concentrador             = '\\Base\\PaginasDetallados'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+        // Ruta a la clase para hacer la página con el índice
+        $this->indices_paginas          = '\\Base\\PaginasDetallados'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'blog';
+        // Pasar a la página índice estos parámetros
+        $this->ultimas_encabezado       = 'Últimos análisis publicados';
+        $this->ultimas_vinculos         = '\\Base\\VinculosDetallados';
+        $this->ultimas_cantidad         = 8;
+        $this->categorias_encabezado    = 'Todos los análisis clasificados por categorías';
+        $this->categorias_vinculos      = '\\Base\\VinculosCompactos';
         // Ejecutar constructor en el padre
         parent::__construct();
     } // constructor

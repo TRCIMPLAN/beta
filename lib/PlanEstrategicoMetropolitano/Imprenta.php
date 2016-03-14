@@ -40,8 +40,8 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->encabezado_color         = '#DF9C0A';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Plan Estratégico Metropolitano';
-        // Ruta a la clase para hacer el index.html
-        $this->concentrador             = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+        // Ruta a la clase para hacer la página con el índice
+        $this->indices_paginas          = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'plan-estrategico-metropolitano';
         // Ejecutar constructor en el padre

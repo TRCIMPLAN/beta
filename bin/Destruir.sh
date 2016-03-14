@@ -1,0 +1,27 @@
+#!/bin/bash
+cd ~/Documentos/TrcIMPLAN/GitHub/beta
+rm autores/*.html
+rm blog/*.html
+rm categorias/*.html
+rm consejo-directivo/*.html
+rm contacto/*.html
+rm indicadores-categorias/*.html
+rm indicadores-gomez-palacio/*.html
+rm indicadores-la-laguna/*.html
+rm indicadores-lerdo/*.html
+rm indicadores-matamoros/*.html
+rm indicadores-torreon/*.html
+rm institucional/*.html
+rm plan-estrategico-metropolitano/*.html
+rm preguntas-frecuentes/*.html
+rm proyectos/*.html
+rm sala-prensa/*.html
+rm sig/*.html
+rm sig-mapas-torreon/*.html
+rm sig-planes/*.html
+rm smi/*.html
+rm smi-georreferenciados/*.html
+rm terminos/*.html
+rm *.html
+rm *.xml
+echo "¡Destruido!"

@@ -40,10 +40,16 @@ class Imprenta extends \Base\ImprentaPublicacionesClasificadasPorCategorias {
         $this->encabezado_color         = '#008000';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Información Geográfica > S.I.G. de Torreón';
-        // Ruta a la clase para hacer el index.html
-        $this->concentrador             = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+        // Ruta a la clase para hacer las páginas con los índices
+        $this->indices_paginas          = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'sig-mapas-torreon';
+        // Pasar a la página índice estos parámetros
+        $this->ultimas_encabezado       = 'Últimos mapas del SIG Torreón';
+        $this->ultimas_vinculos         = '\\Base\\VinculosTarjetas';
+        $this->ultimas_cantidad         = 4;
+        $this->categorias_encabezado    = 'Todos los mapas clasificados por categorías';
+        $this->categorias_vinculos      = '\\Base\\VinculosCompactos';
         // Ejecutar constructor en el padre
         parent::__construct();
     } // constructor

@@ -40,8 +40,8 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->encabezado_color         = '#5A1E81';
         // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Proyectos Estratégicos';
-        // Ruta a la clase para hacer el index.html
-        $this->concentrador             = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+        // Ruta a la clase para hacer la página con el índice
+        $this->indices_paginas          = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'proyectos';
         // Ejecutar constructor en el padre

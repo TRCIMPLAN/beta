@@ -36,9 +36,9 @@ class PaginasCategoriasIndividual extends Paginas {
     // public $en_otro;
     // public $cantidad_maxima;
     // protected $recolector;
-    // protected $concentrador;
+    // protected $vinculos;
     // protected $he_concentrado;
-    protected $categoria;       // Instancia de Categoria
+    protected $categoria; // Instancia de Categoria
 
     /**
      * Constructor
@@ -53,8 +53,7 @@ class PaginasCategoriasIndividual extends Paginas {
         // Definir el título y la descripción
         $this->titulo      = $this->categoria->nombre;
         $this->descripcion = $this->categoria->descripcion;
-        // Los vínculos apuntan a páginas en otros directorios
-        $this->en_otro            = true;
+        // Pasar a categoría
         $this->categoria->en_raiz = $this->en_raiz;
         $this->categoria->en_otro = $this->en_otro;
     } // constructor
@@ -67,10 +66,12 @@ class PaginasCategoriasIndividual extends Paginas {
         if ($this->he_concentrado) {
             return;
         }
-        // Definir concentrador
-        $clase              = \Configuracion\CategoriasConfig::VINCULOS_INDIVIDUAL;
-        $this->concentrador = new $clase();
-        // Bucle por todos los autores
+        // Iniciar vínculos
+        $clase          = \Configuracion\CategoriasConfig::VINCULOS_INDIVIDUAL;
+        $this->vinculos = new $clase();
+        // Ordenar publicaciones por directorio y nombre alfabéticamente
+        $this->recolector->ordenar_por_directorio_nombre_asc();
+        // Bucle por todas las publicaciones
         foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
             // Definir vínculo
             $vinculo          = new \Base\Vinculo();
@@ -78,7 +79,7 @@ class PaginasCategoriasIndividual extends Paginas {
             $vinculo->en_otro = $this->en_otro;
             $vinculo->definir_con_publicacion($publicacion);
              // Agregar vínculo
-            $this->concentrador->agregar($vinculo);
+            $this->vinculos->agregar($vinculo);
         }
         // Levantar la bandera
         $this->he_concentrado = true;

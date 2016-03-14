@@ -36,8 +36,8 @@ class ImprentaPublicaciones extends Imprenta {
     public $nombre_menu;              // Texto, opción del menú activa
     public $titulo;                   // Texto, título de la página
     public $descripcion;              // Texto, descripción para meta tag
-    protected $archivo_ruta;          // Texto opcional, ruta al archivo HTML del concentrador
-    protected $concentrador;          // Ruta a la clase. Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+    protected $archivo_ruta;          // Texto opcional, ruta al archivo index.html
+    protected $indices_paginas;       // Ruta a la clase. Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
     protected $recolector;            // Instancia de Recolector
     protected $contador = 0;          // Entero, cantidad de publicaciones producidas
 
@@ -104,7 +104,6 @@ class ImprentaPublicaciones extends Imprenta {
             // Al incorporar la publicación a la plantilla puede entregar falso cuando no se define el archivo de salida o no tener contenido
             if ($plantilla->incorporar_publicacion($publicacion) == true) {
                 // Escribir el archivo HTML
-                $this->crear_directorio($plantilla->directorio);
                 $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
                 $c++;
             }
@@ -119,32 +118,29 @@ class ImprentaPublicaciones extends Imprenta {
      * Crea el archivo index.html
      */
     protected function imprimir_indice() {
-        // Iniciar el Concentrador, note que la propiedad concentrador debe tener la ruta completa
-        $concentrador = new $this->concentrador($this->recolector);
-        // Iniciar la Plantilla
-        $plantilla                = new Plantilla();
-        $plantilla->navegacion    = new Navegacion();
-        $plantilla->mapa_inferior = new MapaInferior();
-        // Pasar al concentrador estos valores
-        $concentrador->titulo           = $this->titulo;
-        $concentrador->descripcion      = $this->descripcion;
-        $concentrador->encabezado       = $this->encabezado;
-        $concentrador->encabezado_color = $this->encabezado_color;
-        $concentrador->encabezado_icono = $this->encabezado_icono;
-        $concentrador->en_raiz          = false;
-        $concentrador->en_otro          = false;
-        // Pasar a la plantilla estos valores
+        // Iniciar la plantilla
+        $plantilla                            = new Plantilla();
+        $plantilla->navegacion                = new Navegacion();
+        $plantilla->mapa_inferior             = new MapaInferior();
+        $plantilla->directorio                = $this->directorio;
+        $plantilla->navegacion->opcion_activa = $this->nombre_menu;
         $plantilla->titulo                    = $this->titulo;
         $plantilla->descripcion               = $this->descripcion;
         $plantilla->claves                    = $this->claves;
-        $plantilla->directorio                = $this->directorio;
         $plantilla->archivo_ruta              = $this->archivo_ruta;
-        $plantilla->navegacion->opcion_activa = $this->nombre_menu;
-        // Pasar a la plantilla el HTML y Javascript del concentrador
-        $plantilla->contenido    = $concentrador->html();
-        $plantilla->javascript[] = $concentrador->javascript();
-        // Imprimir index.html
-        $this->crear_directorio($plantilla->directorio);
+        // Iniciar la página
+        $pagina                   = new $this->indices_paginas($this->recolector);
+        $pagina->titulo           = $this->titulo;
+        $pagina->descripcion      = $this->descripcion;
+        $pagina->encabezado       = $this->encabezado;
+        $pagina->encabezado_color = $this->encabezado_color;
+        $pagina->encabezado_icono = $this->encabezado_icono;
+        $pagina->en_raiz          = false;
+        $pagina->en_otro          = false;
+        // Pasar a la plantilla el HTML y Javascript de la página
+        $plantilla->contenido    = $pagina->html();
+        $plantilla->javascript[] = $pagina->javascript();
+        // Crear archivo
         $this->crear_archivo($plantilla->archivo_ruta, $plantilla->html());
     } // imprimir_indice
 
@@ -155,9 +151,10 @@ class ImprentaPublicaciones extends Imprenta {
         echo "ImprentaPublicaciones: ";
         $this->validar();
         $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
+        $this->crear_directorio($this->directorio);
         $this->imprimir_publicaciones();
         $this->imprimir_indice();
-        echo sprintf("  %d en %s\n", $this->contador, $this->publicaciones_directorio);
+        echo sprintf(" %d en %s\n", $this->contador, $this->directorio);
     } // imprimir
 
 } // Clase ImprentaPublicaciones
