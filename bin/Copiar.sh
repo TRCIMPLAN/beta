@@ -5,18 +5,30 @@ EXITO=0
 E_FATAL=99
 
 # Constantes
-SITIO_WEB_DIR="$HOME/Documentos/TrcIMPLAN/GitHub/trcimplan.github.io"
-PLATAFORMA_DIR="$HOME/Documentos/MovimientoLibre/GitHub/movimientolibre.github.io"
-BETA_DIR="$HOME/Documentos/TrcIMPLAN/GitHub/beta"
+SITIO_WEB_DIR="$HOME/Documentos/GitHub/TrcIMPLAN/trcimplan.github.io"
+PLATAFORMA_DIR="$HOME/Documentos/GitHub/MovimientoLibre/movimientolibre.github.io"
+BETA_DIR="$HOME/Documentos/GitHub/TrcIMPLAN/beta"
 
 echo "[Copiar] Inicia"
 
 #
 # Verificar
 #
+if [ ! -d $SITIO_WEB_DIR ]; then
+    echo "Error: No se encuentra el directorio $SITIO_WEB_DIR"
+    exit $E_FATAL
+fi
+if [ ! -d $PLATAFORMA_DIR ]; then
+    echo "Error: No se encuentra el directorio $PLATAFORMA_DIR"
+    exit $E_FATAL
+fi
+if [ ! -d $BETA_DIR ]; then
+    echo "Error: No se encuentra el directorio $BETA_DIR"
+    exit $E_FATAL
+fi
 cd $BETA_DIR
 if [ ! -d "lib" ]; then
-    echo "Error: No se encuentra el directorio lib."
+    echo "Error: No se encuentra el directorio $BETA_DIR/lib."
     exit $E_FATAL
 fi
 

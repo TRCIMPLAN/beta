@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Documentos/TrcIMPLAN/GitHub/beta
+cd "$HOME/Documentos/TrcIMPLAN/GitHub/beta"
 rm autores/*.html
 rm blog/*.html
 rm categorias/*.html

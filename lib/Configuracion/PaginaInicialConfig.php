@@ -199,6 +199,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
         // Iniciar recolector
         $recolector = new \Base\Recolector();
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
+        // Ordenar publicaciones por tiempo, de la más nueva a la más antigua
+        $recolector->ordenar_por_tiempo_desc();
         // Bucle por las publicaciones, tiene la cantidad límite
         foreach ($recolector->obtener_publicaciones(4) as $publicacion) {
             // Iniciar vínculo

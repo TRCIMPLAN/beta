@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-03-18</lastmod>
+    <lastmod>2016-03-30</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -451,6 +451,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/blog/normatividad-urbana-el-reto-de-las-ciudades-mexicanas.html</loc>
+    <lastmod>2016-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/nueva-forma-impulsar-desarrollo-torreon-zm.html</loc>
     <lastmod>2014-11-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -521,6 +526,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/blog/por-una-cultura-inclusiva-del-reciclaje.html</loc>
+    <lastmod>2016-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/potencial-economico-del-sector-salud-en-la-laguna.html</loc>
     <lastmod>2015-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -538,6 +548,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/prevencion-delito-seguridad.html</loc>
     <lastmod>2014-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/blog/primer-analisis-de-datos-abiertos-en-seguridad-vial.html</loc>
+    <lastmod>2016-03-29</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
