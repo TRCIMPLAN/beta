@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-03-30</lastmod>
+    <lastmod>2016-04-21</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -226,6 +226,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/blog/evolucion-de-la-economia-de-torreon-durante-2015.html</loc>
+    <lastmod>2016-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/evolucion-del-mercado-hipotecario-en-torreon.html</loc>
     <lastmod>2015-06-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -383,6 +388,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/la-movilidad-urbana-y-laboral-en-la-laguna.html</loc>
     <lastmod>2015-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/blog/la-necesidad-de-una-planeacion-urbana-sustentable.html</loc>
+    <lastmod>2016-04-14</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -796,6 +806,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/institucional/libro-de-proyectos-2016/libro-de-proyectos-2016.pdf</loc>
+    <lastmod>2016-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/institucional/mensaje-director.html</loc>
     <lastmod>2014-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -813,6 +828,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/institucional/vision-mision.html</loc>
     <lastmod>2014-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/investigaciones/cidac-profesionistas-torreon.html</loc>
+    <lastmod>2016-04-21</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -938,6 +958,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/sala-prensa/2015-12-07-conoce-a-los-consejeros-del-implan-2014-2015.html</loc>
     <lastmod>2015-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sala-prensa/2016-04-13-diagnostico-politica-industrial.html</loc>
+    <lastmod>2016-04-13</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -1133,6 +1158,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/sig-planes/plan-director-de-desarrollo-urbano-de-municipio-de-torreon.pdf</loc>
     <lastmod>2015-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/sig-planes/reglamento-de-desarrollo-urbano-zonificacion-uso-de-suelo-y-construccion-del-municipio-de-torreon.pdf</loc>
+    <lastmod>2016-03-30</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>

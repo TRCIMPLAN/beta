@@ -1,27 +1,28 @@
 #!/bin/bash
-cd "$HOME/Documentos/TrcIMPLAN/GitHub/beta"
-rm autores/*.html
-rm blog/*.html
-rm categorias/*.html
-rm consejo-directivo/*.html
-rm contacto/*.html
-rm indicadores-categorias/*.html
-rm indicadores-gomez-palacio/*.html
-rm indicadores-la-laguna/*.html
-rm indicadores-lerdo/*.html
-rm indicadores-matamoros/*.html
-rm indicadores-torreon/*.html
-rm institucional/*.html
-rm plan-estrategico-metropolitano/*.html
-rm preguntas-frecuentes/*.html
-rm proyectos/*.html
-rm sala-prensa/*.html
-rm sig/*.html
-rm sig-mapas-torreon/*.html
-rm sig-planes/*.html
-rm smi/*.html
-rm smi-georreferenciados/*.html
-rm terminos/*.html
-rm *.html
-rm *.xml
+cd "/home/guivaloz/Documentos/GitHub/TrcIMPLAN/beta"
+rm -f autores/*.html
+rm -f blog/*.html
+rm -f categorias/*.html
+rm -f consejo-directivo/*.html
+rm -f contacto/*.html
+rm -f indicadores-categorias/*.html
+rm -f indicadores-gomez-palacio/*.html
+rm -f indicadores-la-laguna/*.html
+rm -f indicadores-lerdo/*.html
+rm -f indicadores-matamoros/*.html
+rm -f indicadores-torreon/*.html
+rm -f institucional/*.html
+rm -f investigaciones/*.html
+rm -f plan-estrategico-metropolitano/*.html
+rm -f preguntas-frecuentes/*.html
+rm -f proyectos/*.html
+rm -f sala-prensa/*.html
+rm -f sig/*.html
+rm -f sig-mapas-torreon/*.html
+rm -f sig-planes/*.html
+rm -f smi/*.html
+rm -f smi-georreferenciados/*.html
+rm -f terminos/*.html
+rm -f *.html
+rm -f *.xml
 echo "¡Destruido!"

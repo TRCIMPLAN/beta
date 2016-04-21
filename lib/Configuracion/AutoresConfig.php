@@ -159,11 +159,11 @@ class AutoresConfig {
             'IMPLAN Torreón', 'Director de Investigación Estratégica',
             '',
             'rgonzalez@trcimplan.gob.mx',  '');
-        $this->autores[] = new \Base\Autor(
+    /*  $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Susana Montano', 'arq-susana-montano',
             'IMPLAN Torreón', 'Integración de Proyectos',
             '',
-            'smontano@trcimplan.gob.mx', '');
+            'smontano@trcimplan.gob.mx', ''); */
         $this->autores[] = new \Base\Autor(
             '', 'C.P.', 'S. Julia Camarillo Aguirre', 'unknown',
             'IMPLAN Torreón', 'Contadora',

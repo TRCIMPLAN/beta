@@ -45,6 +45,7 @@ class CreadorConfig {
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
             '\\Institucional\\Imprenta',
+            '\\Investigaciones\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\PreguntasFrecuentes\\Imprenta',
             '\\Proyectos\\Imprenta',
