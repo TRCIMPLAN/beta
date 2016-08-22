@@ -132,6 +132,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-torreon/economia-sectores-que-han-presentado-alto-crecimiento.html" target="_blank">Sectores que Han Presentado Alto Crecimiento</a></li>
       <li><a href="../indicadores-torreon/economia-sitios-unesco.html" target="_blank">Sitios UNESCO</a></li>
       <li><a href="../indicadores-torreon/economia-tamano-del-mercado-hipotecario.html" target="_blank">Tamaño del Mercado Hipotecario</a></li>
+      <li><a href="../indicadores-torreon/economia-tasa-de-condiciones-criticas-de-ocupacion.html" target="_blank">Tasa de Condiciones Críticas de Ocupación</a></li>
       <li><a href="../indicadores-torreon/economia-tasa-de-desempleo-abierto.html" target="_blank">Tasa de Desempleo Abierto</a></li>
       <li><a href="../indicadores-torreon/economia-tasa-de-informalidad.html" target="_blank">Tasa de Informalidad</a></li>
       <li><a href="../indicadores-torreon/economia-tierra-ejidal.html" target="_blank">Tierra Ejidal</a></li>
@@ -244,6 +245,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-torreon/sociedad-hogares-con-jefatura-femenina.html" target="_blank">Hogares con Jefatura Femenina</a></li>
       <li><a href="../indicadores-torreon/sociedad-indice-de-desarrollo-humano-idh.html" target="_blank">Índice de Desarrollo Humano (IDH)</a></li>
       <li><a href="../indicadores-torreon/sociedad-indice-de-hacinamiento.html" target="_blank">Índice de Hacinamiento</a></li>
+      <li><a href="../indicadores-torreon/sociedad-indice-de-marginacion.html" target="_blank">Índice de Marginación</a></li>
       <li><a href="../indicadores-torreon/sociedad-ingreso-promedio-de-la-mujer.html" target="_blank">Ingreso Promedio de la Mujer</a></li>
       <li><a href="../indicadores-torreon/sociedad-madres-adolescentes.html" target="_blank">Madres Adolescentes</a></li>
       <li><a href="../indicadores-torreon/sociedad-maternidad-adolescente.html" target="_blank">Maternidad Adolescente</a></li>
@@ -318,6 +320,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-torreon/sustentabilidad-pasajeros-aereos-internacionales-mensuales.html" target="_blank">Pasajeros Aéreos Internacionales Mensuales</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-pasajeros-aereos-totales-anual.html" target="_blank">Pasajeros Aéreos Totales Anual</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-pasajeros-aereos-totales-mensuales.html" target="_blank">Pasajeros Aéreos Totales Mensuales</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-red-carretera-avanzada.html" target="_blank">Red Carretera Avanzada</a></li>
@@ -328,6 +331,11 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-torreon/sustentabilidad-sistema-de-transporte-masivo.html" target="_blank">Sistema de Transporte Masivo</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-sobreexplotacion-del-acuifero.html" target="_blank">Sobreexplotación del Acuífero</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-superficie.html" target="_blank">Superficie</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-usuarios-de-automoviles.html" target="_blank">Usuarios de Automóviles</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-usuarios-de-bicicleta.html" target="_blank">Usuarios de Bicicleta</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-usuarios-de-modos-no-motorizados.html" target="_blank">Usuarios de Modos No Motorizados</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-usuarios-de-transporte-colectivo-privado.html" target="_blank">Usuarios de Transporte Colectivo Privado</a></li>
+      <li><a href="../indicadores-torreon/sustentabilidad-usuarios-de-transporte-publico.html" target="_blank">Usuarios de Transporte Público</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-viviendas-deshabitadas.html" target="_blank">Viviendas Deshabitadas</a></li>
       <li><a href="../indicadores-torreon/sustentabilidad-viviendas-ocupadas-temporalmente.html" target="_blank">Viviendas Ocupadas Temporalmente</a></li>
     </ul>
@@ -394,6 +402,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-gomez-palacio/economia-sectores-que-han-presentado-alto-crecimiento.html" target="_blank">Sectores que Han Presentado Alto Crecimiento</a></li>
       <li><a href="../indicadores-gomez-palacio/economia-sitios-unesco.html" target="_blank">Sitios UNESCO</a></li>
       <li><a href="../indicadores-gomez-palacio/economia-tamano-del-mercado-hipotecario.html" target="_blank">Tamaño del Mercado Hipotecario</a></li>
+      <li><a href="../indicadores-gomez-palacio/economia-tasa-de-condiciones-criticas-de-ocupacion.html" target="_blank">Tasa de Condiciones Críticas de Ocupación</a></li>
       <li><a href="../indicadores-gomez-palacio/economia-tasa-de-desempleo-abierto.html" target="_blank">Tasa de Desempleo Abierto</a></li>
       <li><a href="../indicadores-gomez-palacio/economia-tasa-de-informalidad.html" target="_blank">Tasa de Informalidad</a></li>
       <li><a href="../indicadores-gomez-palacio/economia-tierra-ejidal.html" target="_blank">Tierra Ejidal</a></li>
@@ -494,6 +503,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-gomez-palacio/sociedad-hogares-con-jefatura-femenina.html" target="_blank">Hogares con Jefatura Femenina</a></li>
       <li><a href="../indicadores-gomez-palacio/sociedad-indice-de-desarrollo-humano-idh.html" target="_blank">Índice de Desarrollo Humano (IDH)</a></li>
       <li><a href="../indicadores-gomez-palacio/sociedad-indice-de-hacinamiento.html" target="_blank">Índice de Hacinamiento</a></li>
+      <li><a href="../indicadores-gomez-palacio/sociedad-indice-de-marginacion.html" target="_blank">Índice de Marginación</a></li>
       <li><a href="../indicadores-gomez-palacio/sociedad-ingreso-promedio-de-la-mujer.html" target="_blank">Ingreso Promedio de la Mujer</a></li>
       <li><a href="../indicadores-gomez-palacio/sociedad-maternidad-adolescente.html" target="_blank">Maternidad Adolescente</a></li>
       <li><a href="../indicadores-gomez-palacio/sociedad-medicos.html" target="_blank">Médicos</a></li>
@@ -562,6 +572,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-red-carretera-avanzada.html" target="_blank">Red Carretera Avanzada</a></li>
@@ -571,6 +582,11 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-sistema-de-transporte-masivo.html" target="_blank">Sistema de Transporte Masivo</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-sobreexplotacion-del-acuifero.html" target="_blank">Sobreexplotación del Acuífero</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-superficie.html" target="_blank">Superficie</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-usuarios-de-automoviles.html" target="_blank">Usuarios de Automóviles</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-usuarios-de-bicicleta.html" target="_blank">Usuarios de Bicicleta</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-usuarios-de-modos-no-motorizados.html" target="_blank">Usuarios de Modos No Motorizados</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-usuarios-de-transporte-colectivo-privado.html" target="_blank">Usuarios de Transporte Colectivo Privado</a></li>
+      <li><a href="../indicadores-gomez-palacio/sustentabilidad-usuarios-de-transporte-publico.html" target="_blank">Usuarios de Transporte Público</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-viviendas-deshabitadas.html" target="_blank">Viviendas Deshabitadas</a></li>
       <li><a href="../indicadores-gomez-palacio/sustentabilidad-viviendas-ocupadas-temporalmente.html" target="_blank">Viviendas Ocupadas Temporalmente</a></li>
     </ul>
@@ -637,6 +653,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-lerdo/economia-sectores-que-han-presentado-alto-crecimiento.html" target="_blank">Sectores que Han Presentado Alto Crecimiento</a></li>
       <li><a href="../indicadores-lerdo/economia-sitios-unesco.html" target="_blank">Sitios UNESCO</a></li>
       <li><a href="../indicadores-lerdo/economia-tamano-del-mercado-hipotecario.html" target="_blank">Tamaño del Mercado Hipotecario</a></li>
+      <li><a href="../indicadores-lerdo/economia-tasa-de-condiciones-criticas-de-ocupacion.html" target="_blank">Tasa de Condiciones Críticas de Ocupación</a></li>
       <li><a href="../indicadores-lerdo/economia-tasa-de-desempleo-abierto.html" target="_blank">Tasa de Desempleo Abierto</a></li>
       <li><a href="../indicadores-lerdo/economia-tasa-de-informalidad.html" target="_blank">Tasa de Informalidad</a></li>
       <li><a href="../indicadores-lerdo/economia-tierra-ejidal.html" target="_blank">Tierra Ejidal</a></li>
@@ -737,6 +754,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-lerdo/sociedad-hogares-con-jefatura-femenina.html" target="_blank">Hogares con Jefatura Femenina</a></li>
       <li><a href="../indicadores-lerdo/sociedad-indice-de-desarrollo-humano-idh.html" target="_blank">Índice de Desarrollo Humano (IDH)</a></li>
       <li><a href="../indicadores-lerdo/sociedad-indice-de-hacinamiento.html" target="_blank">Índice de Hacinamiento</a></li>
+      <li><a href="../indicadores-lerdo/sociedad-indice-de-marginacion.html" target="_blank">Índice de Marginación</a></li>
       <li><a href="../indicadores-lerdo/sociedad-ingreso-promedio-de-la-mujer.html" target="_blank">Ingreso Promedio de la Mujer</a></li>
       <li><a href="../indicadores-lerdo/sociedad-maternidad-adolescente.html" target="_blank">Maternidad Adolescente</a></li>
       <li><a href="../indicadores-lerdo/sociedad-medicos.html" target="_blank">Médicos</a></li>
@@ -805,6 +823,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-lerdo/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-red-carretera-avanzada.html" target="_blank">Red Carretera Avanzada</a></li>
@@ -814,6 +833,11 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-lerdo/sustentabilidad-sistema-de-transporte-masivo.html" target="_blank">Sistema de Transporte Masivo</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-sobreexplotacion-del-acuifero.html" target="_blank">Sobreexplotación del Acuífero</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-superficie.html" target="_blank">Superficie</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-usuarios-de-automoviles.html" target="_blank">Usuarios de Automóviles</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-usuarios-de-bicicleta.html" target="_blank">Usuarios de Bicicleta</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-usuarios-de-modos-no-motorizados.html" target="_blank">Usuarios de Modos No Motorizados</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-usuarios-de-transporte-colectivo-privado.html" target="_blank">Usuarios de Transporte Colectivo Privado</a></li>
+      <li><a href="../indicadores-lerdo/sustentabilidad-usuarios-de-transporte-publico.html" target="_blank">Usuarios de Transporte Público</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-viviendas-deshabitadas.html" target="_blank">Viviendas Deshabitadas</a></li>
       <li><a href="../indicadores-lerdo/sustentabilidad-viviendas-ocupadas-temporalmente.html" target="_blank">Viviendas Ocupadas Temporalmente</a></li>
     </ul>
@@ -881,6 +905,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-matamoros/economia-sectores-que-han-presentado-alto-crecimiento.html" target="_blank">Sectores que Han Presentado Alto Crecimiento</a></li>
       <li><a href="../indicadores-matamoros/economia-sitios-unesco.html" target="_blank">Sitios UNESCO</a></li>
       <li><a href="../indicadores-matamoros/economia-tamano-del-mercado-hipotecario.html" target="_blank">Tamaño del Mercado Hipotecario</a></li>
+      <li><a href="../indicadores-matamoros/economia-tasa-de-condiciones-criticas-de-ocupacion.html" target="_blank">Tasa de Condiciones Críticas de Ocupación</a></li>
       <li><a href="../indicadores-matamoros/economia-tasa-de-desempleo-abierto.html" target="_blank">Tasa de Desempleo Abierto</a></li>
       <li><a href="../indicadores-matamoros/economia-tasa-de-informalidad.html" target="_blank">Tasa de Informalidad</a></li>
       <li><a href="../indicadores-matamoros/economia-tierra-ejidal.html" target="_blank">Tierra Ejidal</a></li>
@@ -981,6 +1006,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-matamoros/sociedad-hogares-con-jefatura-femenina.html" target="_blank">Hogares con Jefatura Femenina</a></li>
       <li><a href="../indicadores-matamoros/sociedad-indice-de-desarrollo-humano-idh.html" target="_blank">Índice de Desarrollo Humano (IDH)</a></li>
       <li><a href="../indicadores-matamoros/sociedad-indice-de-hacinamiento.html" target="_blank">Índice de Hacinamiento</a></li>
+      <li><a href="../indicadores-matamoros/sociedad-indice-de-marginacion.html" target="_blank">Índice de Marginación</a></li>
       <li><a href="../indicadores-matamoros/sociedad-ingreso-promedio-de-la-mujer.html" target="_blank">Ingreso Promedio de la Mujer</a></li>
       <li><a href="../indicadores-matamoros/sociedad-maternidad-adolescente.html" target="_blank">Maternidad Adolescente</a></li>
       <li><a href="../indicadores-matamoros/sociedad-medicos.html" target="_blank">Médicos</a></li>
@@ -1049,6 +1075,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-matamoros/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-red-carretera-avanzada.html" target="_blank">Red Carretera Avanzada</a></li>
@@ -1058,6 +1085,11 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-matamoros/sustentabilidad-sistema-de-transporte-masivo.html" target="_blank">Sistema de Transporte Masivo</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-sobreexplotacion-del-acuifero.html" target="_blank">Sobreexplotación del Acuífero</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-superficie.html" target="_blank">Superficie</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-usuarios-de-automoviles.html" target="_blank">Usuarios de Automóviles</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-usuarios-de-bicicleta.html" target="_blank">Usuarios de Bicicleta</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-usuarios-de-modos-no-motorizados.html" target="_blank">Usuarios de Modos No Motorizados</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-usuarios-de-transporte-colectivo-privado.html" target="_blank">Usuarios de Transporte Colectivo Privado</a></li>
+      <li><a href="../indicadores-matamoros/sustentabilidad-usuarios-de-transporte-publico.html" target="_blank">Usuarios de Transporte Público</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-viviendas-deshabitadas.html" target="_blank">Viviendas Deshabitadas</a></li>
       <li><a href="../indicadores-matamoros/sustentabilidad-viviendas-ocupadas-temporalmente.html" target="_blank">Viviendas Ocupadas Temporalmente</a></li>
     </ul>
@@ -1124,6 +1156,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-la-laguna/economia-sectores-que-han-presentado-alto-crecimiento.html" target="_blank">Sectores que Han Presentado Alto Crecimiento</a></li>
       <li><a href="../indicadores-la-laguna/economia-sitios-unesco.html" target="_blank">Sitios UNESCO</a></li>
       <li><a href="../indicadores-la-laguna/economia-tamano-del-mercado-hipotecario.html" target="_blank">Tamaño del Mercado Hipotecario</a></li>
+      <li><a href="../indicadores-la-laguna/economia-tasa-de-condiciones-criticas-de-ocupacion.html" target="_blank">Tasa de Condiciones Críticas de Ocupación</a></li>
       <li><a href="../indicadores-la-laguna/economia-tasa-de-desempleo-abierto.html" target="_blank">Tasa de Desempleo Abierto</a></li>
       <li><a href="../indicadores-la-laguna/economia-tasa-de-informalidad.html" target="_blank">Tasa de Informalidad</a></li>
       <li><a href="../indicadores-la-laguna/economia-tierra-ejidal.html" target="_blank">Tierra Ejidal</a></li>
@@ -1281,6 +1314,7 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-la-laguna/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-pasajeros-aereos-totales-anual.html" target="_blank">Pasajeros Aéreos Totales Anual</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-red-carretera-avanzada.html" target="_blank">Red Carretera Avanzada</a></li>
@@ -1291,6 +1325,11 @@ class PorRegiones extends \Base\Publicacion {
       <li><a href="../indicadores-la-laguna/sustentabilidad-uso-de-automovil-particular.html" target="_blank">Uso de Automóvil Particular</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-uso-de-bicicleta.html" target="_blank">Uso de Bicicleta</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-uso-de-transporte-publico.html" target="_blank">Uso de Transporte Público</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-usuarios-de-automoviles.html" target="_blank">Usuarios de Automóviles</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-usuarios-de-bicicleta.html" target="_blank">Usuarios de Bicicleta</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-usuarios-de-modos-no-motorizados.html" target="_blank">Usuarios de Modos No Motorizados</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-usuarios-de-transporte-colectivo-privado.html" target="_blank">Usuarios de Transporte Colectivo Privado</a></li>
+      <li><a href="../indicadores-la-laguna/sustentabilidad-usuarios-de-transporte-publico.html" target="_blank">Usuarios de Transporte Público</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-viviendas-deshabitadas.html" target="_blank">Viviendas Deshabitadas</a></li>
       <li><a href="../indicadores-la-laguna/sustentabilidad-viviendas-ocupadas-temporalmente.html" target="_blank">Viviendas Ocupadas Temporalmente</a></li>
     </ul>

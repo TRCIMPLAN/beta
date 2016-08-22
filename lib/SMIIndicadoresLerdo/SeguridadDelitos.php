@@ -245,6 +245,30 @@ class SeguridadDelitos extends \Base\Publicacion {
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
+          <tr>
+            <td>31/03/2016</td>
+            <td>175</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>30/04/2016</td>
+            <td>214</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>31/05/2016</td>
+            <td>235</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>30/06/2016</td>
+            <td>222</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
       <p><b>Unidad:</b> Cantidad.</p>
@@ -270,36 +294,36 @@ class SeguridadDelitos extends \Base\Publicacion {
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>2016-02-29</td>
-            <td>802</td>
+            <td>2016-06-30</td>
+            <td>1,387</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>2016-02-29</td>
-            <td>649</td>
+            <td>2016-06-30</td>
+            <td>765</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>2016-02-29</td>
-            <td>143</td>
+            <td>2016-06-30</td>
+            <td>222</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>2016-02-29</td>
-            <td>42</td>
+            <td>2016-06-30</td>
+            <td>142</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>2016-02-29</td>
-            <td>1,636</td>
+            <td>2016-06-30</td>
+            <td>2,516</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
@@ -326,7 +350,7 @@ $('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function
   if (typeof vargraficaDatos === 'undefined') {
     vargraficaDatos = Morris.Line({
       element: 'graficaDatos',
-      data: [{ fecha: '2014-01-31', dato: 66 },{ fecha: '2014-02-28', dato: 66 },{ fecha: '2014-03-31', dato: 71 },{ fecha: '2014-04-30', dato: 52 },{ fecha: '2014-05-31', dato: 62 },{ fecha: '2014-06-30', dato: 66 },{ fecha: '2014-07-31', dato: 76 },{ fecha: '2014-10-31', dato: 103 },{ fecha: '2014-11-30', dato: 93 },{ fecha: '2014-12-31', dato: 62 },{ fecha: '2015-01-31', dato: 64 },{ fecha: '2015-02-28', dato: 101 },{ fecha: '2015-03-31', dato: 78 },{ fecha: '2015-04-30', dato: 110 },{ fecha: '2015-05-31', dato: 165 },{ fecha: '2015-06-30', dato: 127 },{ fecha: '2015-07-31', dato: 162 },{ fecha: '2015-08-31', dato: 126 },{ fecha: '2015-09-30', dato: 138 },{ fecha: '2015-10-31', dato: 168 },{ fecha: '2015-11-30', dato: 167 },{ fecha: '2015-12-31', dato: 166 },{ fecha: '2016-01-31', dato: 127 },{ fecha: '2016-02-29', dato: 143 }],
+      data: [{ fecha: '2014-01-31', dato: 66 },{ fecha: '2014-02-28', dato: 66 },{ fecha: '2014-03-31', dato: 71 },{ fecha: '2014-04-30', dato: 52 },{ fecha: '2014-05-31', dato: 62 },{ fecha: '2014-06-30', dato: 66 },{ fecha: '2014-07-31', dato: 76 },{ fecha: '2014-10-31', dato: 103 },{ fecha: '2014-11-30', dato: 93 },{ fecha: '2014-12-31', dato: 62 },{ fecha: '2015-01-31', dato: 64 },{ fecha: '2015-02-28', dato: 101 },{ fecha: '2015-03-31', dato: 78 },{ fecha: '2015-04-30', dato: 110 },{ fecha: '2015-05-31', dato: 165 },{ fecha: '2015-06-30', dato: 127 },{ fecha: '2015-07-31', dato: 162 },{ fecha: '2015-08-31', dato: 126 },{ fecha: '2015-09-30', dato: 138 },{ fecha: '2015-10-31', dato: 168 },{ fecha: '2015-11-30', dato: 167 },{ fecha: '2015-12-31', dato: 166 },{ fecha: '2016-01-31', dato: 127 },{ fecha: '2016-02-29', dato: 143 },{ fecha: '2016-03-31', dato: 175 },{ fecha: '2016-04-30', dato: 214 },{ fecha: '2016-05-31', dato: 235 },{ fecha: '2016-06-30', dato: 222 }],
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
@@ -342,7 +366,7 @@ $('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 802 },{ region: 'Gómez Palacio', dato: 649 },{ region: 'Lerdo', dato: 143 },{ region: 'Matamoros', dato: 42 },{ region: 'La Laguna', dato: 1636 }],
+      data: [{ region: 'Torreón', dato: 1387 },{ region: 'Gómez Palacio', dato: 765 },{ region: 'Lerdo', dato: 222 },{ region: 'Matamoros', dato: 142 },{ region: 'La Laguna', dato: 2516 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],
@@ -522,6 +546,30 @@ FINAL;
           <tr>
             <td>29/02/2016</td>
             <td>143</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>31/03/2016</td>
+            <td>175</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>30/04/2016</td>
+            <td>214</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>31/05/2016</td>
+            <td>235</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>30/06/2016</td>
+            <td>222</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>

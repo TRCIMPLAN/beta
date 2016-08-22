@@ -40,7 +40,8 @@ class SeguridadTasaDeHomicidios extends \Base\Publicacion {
         $this->imagen            = '../smi/introduccion/imagen.jpg';
         $this->imagen_previa     = '../smi/introduccion/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion       = 'Forma parte de subíndice de "Sistema de Derecho Confiable y Objetivo". Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.';
+        $this->descripcion       = 'Forma parte de subíndice de "Sistema de Derecho Confiable y Objetivo". Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.
+Las tasas de elaboración propia consideran las defunciones por homicidio ocurridas en el municipio de acuerdo a los registros administrativos de INEGI.';
         $this->claves            = 'IMPLAN, Gómez Palacio, Seguridad, Delincuencia, Índice de Competitividad Urbana';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio        = 'indicadores-gomez-palacio';
@@ -159,9 +160,9 @@ class SeguridadTasaDeHomicidios extends \Base\Publicacion {
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>2012-12-31</td>
-            <td>109.7160</td>
-            <td>IMCO</td>
+            <td>2015-12-31</td>
+            <td>19.7265</td>
+            <td>Elaboración propia con datos obtenidos del INEGI</td>
             <td></td>
           </tr>
           <tr>
@@ -190,6 +191,13 @@ class SeguridadTasaDeHomicidios extends \Base\Publicacion {
             <td>2012-12-31</td>
             <td>77.5463</td>
             <td>IMCO</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Coahuila</td>
+            <td>2001-12-31</td>
+            <td>10.2293</td>
+            <td>Elaboración propia con datos obtenidos del INEGI</td>
             <td></td>
           </tr>
         </tbody>
@@ -231,7 +239,7 @@ $('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 109.7160 },{ region: 'Gómez Palacio', dato: 43.7146 },{ region: 'Lerdo', dato: 41.8962 },{ region: 'Matamoros', dato: 36.2831 },{ region: 'La Laguna', dato: 77.5463 }],
+      data: [{ region: 'Torreón', dato: 19.7265 },{ region: 'Gómez Palacio', dato: 43.7146 },{ region: 'Lerdo', dato: 41.8962 },{ region: 'Matamoros', dato: 36.2831 },{ region: 'La Laguna', dato: 77.5463 },{ region: 'Coahuila', dato: 10.2293 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],
@@ -257,7 +265,8 @@ FINAL;
         // Para redifusión, se pone el contenido sin lengüetas
         $this->redifusion = <<<FINAL
       <h3>Descripción</h3>
-<p>Forma parte de subíndice de "Sistema de Derecho Confiable y Objetivo". Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.</p>
+<p>Forma parte de subíndice de "Sistema de Derecho Confiable y Objetivo". Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.
+Las tasas de elaboración propia consideran las defunciones por homicidio ocurridas en el municipio de acuerdo a los registros administrativos de INEGI.</p>
 
       <h3>Información recopilada</h3>
       <table class="table table-hover table-bordered matriz">

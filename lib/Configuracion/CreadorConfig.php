@@ -44,6 +44,7 @@ class CreadorConfig {
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
+            '\\IBCTorreon\\Imprenta',
             '\\Institucional\\Imprenta',
             '\\Investigaciones\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
@@ -65,6 +66,7 @@ class CreadorConfig {
         $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
             '\\Blog\\Imprenta',
+            '\\IBCTorreon\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\Proyectos\\Imprenta',
             '\\SIG\\Imprenta',
