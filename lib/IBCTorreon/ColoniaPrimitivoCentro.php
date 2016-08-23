@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase ColoniaPrimitivoCentro
  */
-class ColoniaPrimitivoCentro extends \Base\Publicacion {
+class ColoniaPrimitivoCentro extends \IBCBase\PublicacionSchemaDataset {
 
     /**
      * Constructor
@@ -37,8 +37,8 @@ class ColoniaPrimitivoCentro extends \Base\Publicacion {
         $this->fecha           = '2016-08-22 15:46:47';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'colonia-primitivo-centro';
-    //  $this->imagen          = '';
-    //  $this->imagen_previa   = '';
+        $this->imagen          = '../imagenes/imagen.jpg';
+        $this->imagen_previa   = '../imagenes/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion     = 'Colonia Colonia Primitivo Centro de IBC Torreón.';
         $this->claves          = 'IMPLAN, Torreon, Desagregación';
@@ -71,7 +71,7 @@ class ColoniaPrimitivoCentro extends \Base\Publicacion {
      *
      * @return array Arreglo asociativo
      */
-    protected function datos() {
+    public function datos() {
         return array(
             'Demografía' => array(
                 'Población total' => '1,527',
@@ -122,50 +122,6 @@ class ColoniaPrimitivoCentro extends \Base\Publicacion {
             )
         );
     } // datos
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Definir contenido HTML
-        $lenguetas = new \Base\Lenguetas();
-        $lenguetas->agregar("Demografía", "Demografía", "<p>Población total = 1,527</p><p>Porcentaje de población masculina = 45.32 %</p><p>Porcentaje de población femenina = 54.68 %</p><p>Porcentaje de población de 0 a 14 años = 18.76 %</p><p>Porcentaje de población de 15 a 64 años = 60.71 %</p><p>Porcentaje de población de 65 y más años = 15.41 %</p><p>Porcentaje de población no especificada = 5.12 %</p><p>Fecundidad promedio = 1.9700</p><p>Porcentaje de población nacida en otro estado = 19.54 %</p><p>Porcentaje de población con discapacidad = 8.83 %</p>");
-        $lenguetas->agregar("Educación", "Educación", "<p>Grado Promedio de Escolaridad = 9.9700</p><p>Grado Promedio de Escolaridad masculina = 10.3800</p><p>Grado Promedio de Escolaridad femenina = 9.6700</p>");
-        $lenguetas->agregar("Economía", "Características Económicas", "<p>Población Económicamente Activa = 58.44 %</p><p>Población Económicamente Activa masculina = 55.47 %</p><p>Población Económicamente Activa femenina = 44.53 %</p><p>Población Ocupada = 93.40 %</p><p>Población Ocupada masculina = 54.74 %</p><p>Población Ocupada femenina = 45.26 %</p><p>Población Desocupada = 6.60 %</p><p>Derechohabiencia = 58.61 %</p>");
-        $lenguetas->agregar("Viviendas", "Viviendas", "<p>Hogares Jefatura masculina = 58.57 %</p><p>Hogares Jefatura femenina = 41.43 %</p><p>Ocupación por Vivienda = 3.5300</p><p>Viviendas con Electricidad = 99.94 %</p><p>Viviendas con Agua = 99.69 %</p><p>Viviendas con Drenaje = 99.47 %</p><p>Viviendas con Televisión = 98.45 %</p><p>Viviendas con Automóvil = 40.56 %</p><p>Viviendas con Computadora = 30.60 %</p><p>Viviendas con Celular = 70.80 %</p><p>Viviendas con Internet = 21.97 %</p>");
-        $lenguetas->agregar("U. Económicas", "Unidades Económicas", "<p>Primer actividad = AEComercioMenu 50.29%</p><p>Segunda actividad = AEAlimentos 12.12%</p><p>Tercera actividad = AEOtros 11.51%</p><p>Cuarta actividad = AEComercioMayo 8.15%</p><p>Quinta actividad = AEProfesional 3.6%</p>");
-        $this->contenido->articleBody = $lenguetas->html();
-        // Entregar resultado del padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // Definir código JavaScript
-        $this->javascript[] = <<<FINAL
-FINAL;
-        // Entregar resultado del padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Definir contenido para redifusión
-        $this->redifusion = <<<FINAL
-FINAL;
-        // Entregar resultado del padre
-        return parent::redifusion_html();
-    } // redifusion_html
 
 } // Clase ColoniaPrimitivoCentro
 

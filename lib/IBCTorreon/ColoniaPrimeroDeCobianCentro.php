@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase ColoniaPrimeroDeCobianCentro
  */
-class ColoniaPrimeroDeCobianCentro extends \Base\Publicacion {
+class ColoniaPrimeroDeCobianCentro extends \IBCBase\PublicacionSchemaDataset {
 
     /**
      * Constructor
@@ -37,8 +37,8 @@ class ColoniaPrimeroDeCobianCentro extends \Base\Publicacion {
         $this->fecha           = '2016-08-22 15:46:47';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'colonia-primero-de-cobian-centro';
-    //  $this->imagen          = '';
-    //  $this->imagen_previa   = '';
+        $this->imagen          = '../imagenes/imagen.jpg';
+        $this->imagen_previa   = '../imagenes/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion     = 'Colonia Colonia Primero De Cobian Centro de IBC Torreón.';
         $this->claves          = 'IMPLAN, Torreon, Desagregación';
@@ -71,7 +71,7 @@ class ColoniaPrimeroDeCobianCentro extends \Base\Publicacion {
      *
      * @return array Arreglo asociativo
      */
-    protected function datos() {
+    public function datos() {
         return array(
             'Demografía' => array(
                 'Población total' => '2,513',
@@ -122,50 +122,6 @@ class ColoniaPrimeroDeCobianCentro extends \Base\Publicacion {
             )
         );
     } // datos
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Definir contenido HTML
-        $lenguetas = new \Base\Lenguetas();
-        $lenguetas->agregar("Demografía", "Demografía", "<p>Población total = 2,513</p><p>Porcentaje de población masculina = 46.58 %</p><p>Porcentaje de población femenina = 53.42 %</p><p>Porcentaje de población de 0 a 14 años = 15.46 %</p><p>Porcentaje de población de 15 a 64 años = 64.89 %</p><p>Porcentaje de población de 65 y más años = 17.94 %</p><p>Porcentaje de población no especificada = 1.71 %</p><p>Fecundidad promedio = 1.8200</p><p>Porcentaje de población nacida en otro estado = 19.30 %</p><p>Porcentaje de población con discapacidad = 6.75 %</p>");
-        $lenguetas->agregar("Educación", "Educación", "<p>Grado Promedio de Escolaridad = 11.2900</p><p>Grado Promedio de Escolaridad masculina = 11.7700</p><p>Grado Promedio de Escolaridad femenina = 10.8800</p>");
-        $lenguetas->agregar("Economía", "Características Económicas", "<p>Población Económicamente Activa = 54.77 %</p><p>Población Económicamente Activa masculina = 58.68 %</p><p>Población Económicamente Activa femenina = 41.32 %</p><p>Población Ocupada = 92.46 %</p><p>Población Ocupada masculina = 58.47 %</p><p>Población Ocupada femenina = 41.53 %</p><p>Población Desocupada = 7.54 %</p><p>Derechohabiencia = 66.47 %</p>");
-        $lenguetas->agregar("Viviendas", "Viviendas", "<p>Hogares Jefatura masculina = 60.19 %</p><p>Hogares Jefatura femenina = 39.81 %</p><p>Ocupación por Vivienda = 3.0200</p><p>Viviendas con Electricidad = 99.61 %</p><p>Viviendas con Agua = 99.49 %</p><p>Viviendas con Drenaje = 99.00 %</p><p>Viviendas con Televisión = 98.52 %</p><p>Viviendas con Automóvil = 49.64 %</p><p>Viviendas con Computadora = 45.22 %</p><p>Viviendas con Celular = 74.04 %</p><p>Viviendas con Internet = 35.59 %</p>");
-        $lenguetas->agregar("U. Económicas", "Unidades Económicas", "<p>Primer actividad = AEComercioMenu 22.63%</p><p>Segunda actividad = AEOtros 13.74%</p><p>Tercera actividad = AEProfesional 13.74%</p><p>Cuarta actividad = AEAlimentos 12.22%</p><p>Quinta actividad = AESalud 9.9%</p>");
-        $this->contenido->articleBody = $lenguetas->html();
-        // Entregar resultado del padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // Definir código JavaScript
-        $this->javascript[] = <<<FINAL
-FINAL;
-        // Entregar resultado del padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Definir contenido para redifusión
-        $this->redifusion = <<<FINAL
-FINAL;
-        // Entregar resultado del padre
-        return parent::redifusion_html();
-    } // redifusion_html
 
 } // Clase ColoniaPrimeroDeCobianCentro
 
