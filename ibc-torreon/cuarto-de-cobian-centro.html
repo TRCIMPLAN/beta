@@ -138,22 +138,65 @@
   </nav>
   <div id="page-wrapper">
     <div class="cuerpo">
-<article>
-  <header>
-    <div class="encabezado" style="background-color:#646464;">
-      <span><h1>Cuarto De Cobian Centro</h1></span>
-    </div>
-    <p class="autor-fecha">Por IMPLAN Torreón Staff<br>22/08/2016 15:46</p>
-  </header>
-      <article><div itemscope itemtype="http://schema.org/Thing">
+      <article><div itemscope itemtype="http://schema.org/Dataset">
               <div class="encabezado">
           <h1 itemprop="name">Cuarto De Cobian Centro</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Cuarto De Cobian Centro de IBC Torreón.</div>
+        
         </div>
         <meta itemprop="image" alt="Cuarto De Cobian Centro" src="../imagenes/imagen.jpg">
       
+      
+      
       </div></article>
-</article>
+      <aside>  <ul class="nav nav-tabs lenguetas" id="lenguetasIBC">
+    <li><a href="#demografia" data-toggle="tab">Demografía</a></li>
+    <li><a href="#educacion" data-toggle="tab">Educación</a></li>
+    <li><a href="#caracteristicas-economicas" data-toggle="tab">Características Económicas</a></li>
+    <li><a href="#viviendas" data-toggle="tab">Viviendas</a></li>
+    <li class="active"><a href="#unidades-economicas" data-toggle="tab">Unidades Económicas</a></li>
+  </ul>
+  <div class="tab-content lengueta-contenido">
+    <div class="tab-pane" id="demografia">
+                  <h3>Población total 11116</h3>
+            <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
+    </div>
+    <div class="tab-pane" id="educacion">
+      <p>Grado Promedio de Escolaridad = 11.25</p>
+<p>Grado Promedio de Escolaridad masculina = 11.58</p>
+<p>Grado Promedio de Escolaridad femenina = 10.99</p>
+    </div>
+    <div class="tab-pane" id="caracteristicas-economicas">
+      <p>Población Económicamente Activa = 51.42</p>
+<p>Población Económicamente Activa masculina = 56.63</p>
+<p>Población Económicamente Activa femenina = 43.37</p>
+<p>Población Ocupada = 91.39</p>
+<p>Población Ocupada masculina = 56.21</p>
+<p>Población Ocupada femenina = 43.79</p>
+<p>Población Desocupada = 8.61</p>
+<p>Derechohabiencia = 72.18</p>
+    </div>
+    <div class="tab-pane" id="viviendas">
+      <p>Hogares Jefatura masculina = 62.46</p>
+<p>Hogares Jefatura femenina = 37.54</p>
+<p>Ocupación por Vivienda = 3.29</p>
+<p>Viviendas con Electricidad = 99.49</p>
+<p>Viviendas con Agua = 99.22</p>
+<p>Viviendas con Drenaje = 99.01</p>
+<p>Viviendas con Televisión = 98.03</p>
+<p>Viviendas con Automóvil = 63.02</p>
+<p>Viviendas con Computadora = 46.39</p>
+<p>Viviendas con Celular = 70.35</p>
+<p>Viviendas con Internet = 39.01</p>
+    </div>
+    <div class="tab-pane active" id="unidades-economicas">
+      <p>Primer actividad = AEComercioMenu 26.72%</p>
+<p>Segunda actividad = AEOtros 19.83%</p>
+<p>Tercera actividad = AEAlimentos 13.02%</p>
+<p>Cuarta actividad = AEManufactura 9.87%</p>
+<p>Quinta actividad = AEComercioMayo 7.06%</p>
+    </div>
+  </div></aside>
 <div class="contenido-social">
   <h5>Compartir en Redes Sociales</h5>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
@@ -185,7 +228,19 @@
 <script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
 <script src="../js/sb-admin-2.js"></script>
 <script>
-<!-- Aun sin Javascript -->
+$('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
+    if (typeof vargraficaPoblacionMasculinaFemenina === 'undefined') {
+        vargraficaPoblacionMasculinaFemenina = Morris.Donut({
+            element: 'graficaPoblacionMasculinaFemenina',
+            formatter: function(y){return y + ' %'},
+            data: [
+                {label: "Porcentaje de población masculina", value: "45.86"},
+                {label: "Porcentaje de población femenina", value: "54.14"}
+            ]
+        });
+    }
+});
+$(document).ready(function(){ $('#lenguetasIBC a:first').tab('show') });
 </script>
 <script>
   // Twitter

@@ -138,22 +138,65 @@
   </nav>
   <div id="page-wrapper">
     <div class="cuerpo">
-<article>
-  <header>
-    <div class="encabezado" style="background-color:#646464;">
-      <span><h1>Colonia Primitivo Centro</h1></span>
-    </div>
-    <p class="autor-fecha">Por IMPLAN Torreón Staff<br>22/08/2016 15:46</p>
-  </header>
-      <article><div itemscope itemtype="http://schema.org/Thing">
+      <article><div itemscope itemtype="http://schema.org/Dataset">
               <div class="encabezado">
           <h1 itemprop="name">Colonia Primitivo Centro</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Colonia Primitivo Centro de IBC Torreón.</div>
+        
         </div>
         <meta itemprop="image" alt="Colonia Primitivo Centro" src="../imagenes/imagen.jpg">
       
+      
+      
       </div></article>
-</article>
+      <aside>  <ul class="nav nav-tabs lenguetas" id="lenguetasIBC">
+    <li><a href="#demografia" data-toggle="tab">Demografía</a></li>
+    <li><a href="#educacion" data-toggle="tab">Educación</a></li>
+    <li><a href="#caracteristicas-economicas" data-toggle="tab">Características Económicas</a></li>
+    <li><a href="#viviendas" data-toggle="tab">Viviendas</a></li>
+    <li class="active"><a href="#unidades-economicas" data-toggle="tab">Unidades Económicas</a></li>
+  </ul>
+  <div class="tab-content lengueta-contenido">
+    <div class="tab-pane" id="demografia">
+                  <h3>Población total 1527</h3>
+            <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
+    </div>
+    <div class="tab-pane" id="educacion">
+      <p>Grado Promedio de Escolaridad = 9.97</p>
+<p>Grado Promedio de Escolaridad masculina = 10.38</p>
+<p>Grado Promedio de Escolaridad femenina = 9.67</p>
+    </div>
+    <div class="tab-pane" id="caracteristicas-economicas">
+      <p>Población Económicamente Activa = 58.44</p>
+<p>Población Económicamente Activa masculina = 55.47</p>
+<p>Población Económicamente Activa femenina = 44.53</p>
+<p>Población Ocupada = 93.40</p>
+<p>Población Ocupada masculina = 54.74</p>
+<p>Población Ocupada femenina = 45.26</p>
+<p>Población Desocupada = 6.60</p>
+<p>Derechohabiencia = 58.61</p>
+    </div>
+    <div class="tab-pane" id="viviendas">
+      <p>Hogares Jefatura masculina = 58.57</p>
+<p>Hogares Jefatura femenina = 41.43</p>
+<p>Ocupación por Vivienda = 3.53</p>
+<p>Viviendas con Electricidad = 99.94</p>
+<p>Viviendas con Agua = 99.69</p>
+<p>Viviendas con Drenaje = 99.47</p>
+<p>Viviendas con Televisión = 98.45</p>
+<p>Viviendas con Automóvil = 40.56</p>
+<p>Viviendas con Computadora = 30.60</p>
+<p>Viviendas con Celular = 70.80</p>
+<p>Viviendas con Internet = 21.97</p>
+    </div>
+    <div class="tab-pane active" id="unidades-economicas">
+      <p>Primer actividad = AEComercioMenu 50.29%</p>
+<p>Segunda actividad = AEAlimentos 12.12%</p>
+<p>Tercera actividad = AEOtros 11.51%</p>
+<p>Cuarta actividad = AEComercioMayo 8.15%</p>
+<p>Quinta actividad = AEProfesional 3.6%</p>
+    </div>
+  </div></aside>
 <div class="contenido-social">
   <h5>Compartir en Redes Sociales</h5>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
@@ -185,7 +228,19 @@
 <script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
 <script src="../js/sb-admin-2.js"></script>
 <script>
-<!-- Aun sin Javascript -->
+$('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
+    if (typeof vargraficaPoblacionMasculinaFemenina === 'undefined') {
+        vargraficaPoblacionMasculinaFemenina = Morris.Donut({
+            element: 'graficaPoblacionMasculinaFemenina',
+            formatter: function(y){return y + ' %'},
+            data: [
+                {label: "Porcentaje de población masculina", value: "45.32"},
+                {label: "Porcentaje de población femenina", value: "54.68"}
+            ]
+        });
+    }
+});
+$(document).ready(function(){ $('#lenguetasIBC a:first').tab('show') });
 </script>
 <script>
   // Twitter

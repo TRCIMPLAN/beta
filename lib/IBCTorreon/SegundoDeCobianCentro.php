@@ -46,20 +46,6 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionSchemaDataset {
         $this->directorio      = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu     = 'IBC > IBC Torreón';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado          = 'publicar';
-        // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
-        $this->poner_imagen_en_contenido = false;
-        // El contenido es estructurado en un esquema
-        $schema                = new \Base\SchemaBlogPosting();
-        $schema->name          = $this->nombre;
-        $schema->description   = $this->descripcion;
-        $schema->datePublished = $this->fecha;
-        $schema->image         = $this->imagen;
-        $schema->image_show    = $this->poner_imagen_en_contenido;
-        $schema->author        = $this->autor;
-        // El contenido es una instancia de SchemaBlogPosting
-        $this->contenido       = $schema;
         // Para el Organizador
         $this->categorias      = array();
         $this->fuentes         = array();
@@ -74,44 +60,44 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionSchemaDataset {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '8,015',
-                'Porcentaje de población masculina' => '46.37 %',
-                'Porcentaje de población femenina' => '53.63 %',
-                'Porcentaje de población de 0 a 14 años' => '17.18 %',
-                'Porcentaje de población de 15 a 64 años' => '64.10 %',
-                'Porcentaje de población de 65 y más años' => '16.36 %',
-                'Porcentaje de población no especificada' => '2.36 %',
-                'Fecundidad promedio' => '2.0700',
-                'Porcentaje de población nacida en otro estado' => '18.78 %',
-                'Porcentaje de población con discapacidad' => '9.42 %'
+                'Población total' => '8015',
+                'Porcentaje de población masculina' => '46.37',
+                'Porcentaje de población femenina' => '53.63',
+                'Porcentaje de población de 0 a 14 años' => '17.18',
+                'Porcentaje de población de 15 a 64 años' => '64.10',
+                'Porcentaje de población de 65 y más años' => '16.36',
+                'Porcentaje de población no especificada' => '2.36',
+                'Fecundidad promedio' => '2.07',
+                'Porcentaje de población nacida en otro estado' => '18.78',
+                'Porcentaje de población con discapacidad' => '9.42'
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '11.1200',
-                'Grado Promedio de Escolaridad masculina' => '11.6700',
-                'Grado Promedio de Escolaridad femenina' => '10.6400'
+                'Grado Promedio de Escolaridad' => '11.12',
+                'Grado Promedio de Escolaridad masculina' => '11.67',
+                'Grado Promedio de Escolaridad femenina' => '10.64'
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '54.02 %',
-                'Población Económicamente Activa masculina' => '58.81 %',
-                'Población Económicamente Activa femenina' => '41.19 %',
-                'Población Ocupada' => '93.34 %',
-                'Población Ocupada masculina' => '57.94 %',
-                'Población Ocupada femenina' => '42.06 %',
-                'Población Desocupada' => '6.66 %',
-                'Derechohabiencia' => '67.95 %'
+                'Población Económicamente Activa' => '54.02',
+                'Población Económicamente Activa masculina' => '58.81',
+                'Población Económicamente Activa femenina' => '41.19',
+                'Población Ocupada' => '93.34',
+                'Población Ocupada masculina' => '57.94',
+                'Población Ocupada femenina' => '42.06',
+                'Población Desocupada' => '6.66',
+                'Derechohabiencia' => '67.95'
             ),
             'Viviendas' => array(
-                'Hogares Jefatura masculina' => '60.38 %',
-                'Hogares Jefatura femenina' => '39.62 %',
-                'Ocupación por Vivienda' => '3.1300',
-                'Viviendas con Electricidad' => '99.37 %',
-                'Viviendas con Agua' => '99.13 %',
-                'Viviendas con Drenaje' => '99.01 %',
-                'Viviendas con Televisión' => '97.41 %',
-                'Viviendas con Automóvil' => '53.01 %',
-                'Viviendas con Computadora' => '43.28 %',
-                'Viviendas con Celular' => '67.60 %',
-                'Viviendas con Internet' => '34.25 %'
+                'Hogares Jefatura masculina' => '60.38',
+                'Hogares Jefatura femenina' => '39.62',
+                'Ocupación por Vivienda' => '3.13',
+                'Viviendas con Electricidad' => '99.37',
+                'Viviendas con Agua' => '99.13',
+                'Viviendas con Drenaje' => '99.01',
+                'Viviendas con Televisión' => '97.41',
+                'Viviendas con Automóvil' => '53.01',
+                'Viviendas con Computadora' => '43.28',
+                'Viviendas con Celular' => '67.60',
+                'Viviendas con Internet' => '34.25'
             ),
             'Unidades Económicas' => array(
                 'Primer actividad' => 'AESalud 22.25%',

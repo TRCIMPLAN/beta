@@ -138,22 +138,65 @@
   </nav>
   <div id="page-wrapper">
     <div class="cuerpo">
-<article>
-  <header>
-    <div class="encabezado" style="background-color:#646464;">
-      <span><h1>Colonia Primero De Cobian Centro</h1></span>
-    </div>
-    <p class="autor-fecha">Por IMPLAN Torreón Staff<br>22/08/2016 15:46</p>
-  </header>
-      <article><div itemscope itemtype="http://schema.org/Thing">
+      <article><div itemscope itemtype="http://schema.org/Dataset">
               <div class="encabezado">
           <h1 itemprop="name">Colonia Primero De Cobian Centro</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Colonia Primero De Cobian Centro de IBC Torreón.</div>
+        
         </div>
         <meta itemprop="image" alt="Colonia Primero De Cobian Centro" src="../imagenes/imagen.jpg">
       
+      
+      
       </div></article>
-</article>
+      <aside>  <ul class="nav nav-tabs lenguetas" id="lenguetasIBC">
+    <li><a href="#demografia" data-toggle="tab">Demografía</a></li>
+    <li><a href="#educacion" data-toggle="tab">Educación</a></li>
+    <li><a href="#caracteristicas-economicas" data-toggle="tab">Características Económicas</a></li>
+    <li><a href="#viviendas" data-toggle="tab">Viviendas</a></li>
+    <li class="active"><a href="#unidades-economicas" data-toggle="tab">Unidades Económicas</a></li>
+  </ul>
+  <div class="tab-content lengueta-contenido">
+    <div class="tab-pane" id="demografia">
+                  <h3>Población total 2513</h3>
+            <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
+    </div>
+    <div class="tab-pane" id="educacion">
+      <p>Grado Promedio de Escolaridad = 11.29</p>
+<p>Grado Promedio de Escolaridad masculina = 11.77</p>
+<p>Grado Promedio de Escolaridad femenina = 10.88</p>
+    </div>
+    <div class="tab-pane" id="caracteristicas-economicas">
+      <p>Población Económicamente Activa = 54.77</p>
+<p>Población Económicamente Activa masculina = 58.68</p>
+<p>Población Económicamente Activa femenina = 41.32</p>
+<p>Población Ocupada = 92.46</p>
+<p>Población Ocupada masculina = 58.47</p>
+<p>Población Ocupada femenina = 41.53</p>
+<p>Población Desocupada = 7.54</p>
+<p>Derechohabiencia = 66.47</p>
+    </div>
+    <div class="tab-pane" id="viviendas">
+      <p>Hogares Jefatura masculina = 60.19</p>
+<p>Hogares Jefatura femenina = 39.81</p>
+<p>Ocupación por Vivienda = 3.02</p>
+<p>Viviendas con Electricidad = 99.61</p>
+<p>Viviendas con Agua = 99.49</p>
+<p>Viviendas con Drenaje = 99.00</p>
+<p>Viviendas con Televisión = 98.52</p>
+<p>Viviendas con Automóvil = 49.64</p>
+<p>Viviendas con Computadora = 45.22</p>
+<p>Viviendas con Celular = 74.04</p>
+<p>Viviendas con Internet = 35.59</p>
+    </div>
+    <div class="tab-pane active" id="unidades-economicas">
+      <p>Primer actividad = AEComercioMenu 22.63%</p>
+<p>Segunda actividad = AEOtros 13.74%</p>
+<p>Tercera actividad = AEProfesional 13.74%</p>
+<p>Cuarta actividad = AEAlimentos 12.22%</p>
+<p>Quinta actividad = AESalud 9.9%</p>
+    </div>
+  </div></aside>
 <div class="contenido-social">
   <h5>Compartir en Redes Sociales</h5>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
@@ -185,7 +228,19 @@
 <script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
 <script src="../js/sb-admin-2.js"></script>
 <script>
-<!-- Aun sin Javascript -->
+$('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
+    if (typeof vargraficaPoblacionMasculinaFemenina === 'undefined') {
+        vargraficaPoblacionMasculinaFemenina = Morris.Donut({
+            element: 'graficaPoblacionMasculinaFemenina',
+            formatter: function(y){return y + ' %'},
+            data: [
+                {label: "Porcentaje de población masculina", value: "46.58"},
+                {label: "Porcentaje de población femenina", value: "53.42"}
+            ]
+        });
+    }
+});
+$(document).ready(function(){ $('#lenguetasIBC a:first').tab('show') });
 </script>
 <script>
   // Twitter
