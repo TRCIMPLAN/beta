@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase TerceroDeCobianCentro
  */
-class TerceroDeCobianCentro extends \IBCBase\PublicacionSchemaDataset {
+class TerceroDeCobianCentro extends \IBCBase\PublicacionFicha {
 
     /**
      * Constructor

@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase SegundoDeCobianCentro
  */
-class SegundoDeCobianCentro extends \IBCBase\PublicacionSchemaDataset {
+class SegundoDeCobianCentro extends \IBCBase\PublicacionFicha {
 
     /**
      * Constructor

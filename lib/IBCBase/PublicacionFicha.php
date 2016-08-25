@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - PublicacionSchemaDataset
+ * TrcIMPLAN IBCBase - PublicacionFicha
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase PublicacionSchemaDataset
+ * Clase PublicacionFicha
  */
-abstract class PublicacionSchemaDataset extends \Base\Publicacion {
+abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
 
     // public $sitio_url;
     // public $fecha;
@@ -93,45 +93,18 @@ abstract class PublicacionSchemaDataset extends \Base\Publicacion {
     } // validar
 
     /**
-     * Lengüeta Demografía
-     *
-     * @param  array  Datos
-     * @return string Código HTML
-     */
-    protected function lengueta_demografia($datos) {
-        $lenguetas_id = self::LENGUETAS_ID;
-        $this->javascript[] = <<<CONTENIDO
-$('#$lenguetas_id a[href="#demografia"]').on('shown.bs.tab', function(e){
-    if (typeof vargraficaPoblacionMasculinaFemenina === 'undefined') {
-        vargraficaPoblacionMasculinaFemenina = Morris.Donut({
-            element: 'graficaPoblacionMasculinaFemenina',
-            formatter: function(y){return y + ' %'},
-            data: [
-                {label: "Porcentaje de población masculina", value: "{$datos['Porcentaje de población masculina']}"},
-                {label: "Porcentaje de población femenina", value: "{$datos['Porcentaje de población femenina']}"}
-            ]
-        });
-    }
-});
-CONTENIDO;
-        return <<<CONTENIDO
-            <h3>Población total {$datos['Población total']}</h3>
-            <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
-CONTENIDO;
-    } // lengueta_demografia
-
-    /**
      * HTML
      *
      * @return string Código HTML
      */
     public function html() {
         // Definir
-        $lenguetas = new \Base\Lenguetas(self::LENGUETAS_ID);
+        $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
         foreach ($this->datos() as $eje => $eje_datos) {
             switch ($eje) {
                 case 'Demografía':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $this->lengueta_demografia($eje_datos));
+                    $demografia = new EjeDemografia($this);
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $demografia);
                     break;
                 default:
                     $a = array();
@@ -159,6 +132,6 @@ CONTENIDO;
         return parent::redifusion_html();
     } // redifusion_html
 
-} // Clase Disenador
+} // Clase PublicacionFicha
 
 ?>

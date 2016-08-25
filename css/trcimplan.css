@@ -319,6 +319,11 @@ a.galeria-icono:active  { color:#FF3300; }
 .indicadores-vinculos a:active  { color:#FF3300; }
 
 /*
+ * Grafica
+ */
+.grafica { margin:20px; }
+
+/*
  * Página Inicial
  */
 #organizacion {
@@ -767,4 +772,3 @@ a.galeria-icono:active  { color:#FF3300; }
         padding:4px;
     }
 }
-

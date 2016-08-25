@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase ColoniaPrimitivoCentro
  */
-class ColoniaPrimitivoCentro extends \IBCBase\PublicacionSchemaDataset {
+class ColoniaPrimitivoCentro extends \IBCBase\PublicacionFicha {
 
     /**
      * Constructor
