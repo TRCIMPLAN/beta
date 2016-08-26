@@ -321,7 +321,7 @@ a.galeria-icono:active  { color:#FF3300; }
 /*
  * Grafica
  */
-.grafica { margin:20px; }
+.grafica {  height:240px; margin:20px; }
 
 /*
  * Página Inicial
