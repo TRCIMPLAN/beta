@@ -160,16 +160,16 @@
     <div class="tab-pane" id="demografia">
           <p class="enunciado">Población total <b>11116 habitantes.</b> Porcentajes de población...</p2>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-md-12 col-lg-6">
         <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-md-12 col-lg-6">
         <div id="graficaPoblacionRangos" class="grafica"></div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-md-12 col-lg-6">
         <div id="graficaPoblacionNacidaEnOtroEstado" class="grafica"></div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-md-12 col-lg-6">
         <div id="graficaGraficaPoblacionDiscapacidad" class="grafica"></div>
       </div>
     </div>
@@ -191,17 +191,15 @@
 <p>Derechohabiencia = 72.18</p>
     </div>
     <div class="tab-pane" id="viviendas">
-      <p>Hogares Jefatura masculina = 62.46</p>
-<p>Hogares Jefatura femenina = 37.54</p>
-<p>Ocupación por Vivienda = 3.29</p>
-<p>Viviendas con Electricidad = 99.49</p>
-<p>Viviendas con Agua = 99.22</p>
-<p>Viviendas con Drenaje = 99.01</p>
-<p>Viviendas con Televisión = 98.03</p>
-<p>Viviendas con Automóvil = 63.02</p>
-<p>Viviendas con Computadora = 46.39</p>
-<p>Viviendas con Celular = 70.35</p>
-<p>Viviendas con Internet = 39.01</p>
+          <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <div id="graficaHogaresJefatura" class="grafica"></div>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <div id="graficaViviendasCon" class="grafica"></div>
+      </div>
+    </div>
+    <p class="enunciado">Ocupación por Vivienda <b>3.29 personas</b>.</p>
     </div>
     <div class="tab-pane" id="unidades-economicas">
       <p>Primer actividad = AEComercioMenu 26.72%</p>
@@ -235,63 +233,131 @@
     </div>
   </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="../js/raphael-min.js"></script>
 <script src="../js/morris.min.js"></script>
 <script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
 <script src="../js/sb-admin-2.js"></script>
 <script>
+google.charts.load('current', {'packages':['corechart']});
 // LENGUETA demografia
 $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
-    if (typeof varGraficaPoblacionMasculinaFemenina === 'undefined') {
-        varGraficaPoblacionMasculinaFemenina = Morris.Donut({
-            element: 'graficaPoblacionMasculinaFemenina',
-            formatter: function(y){return y + ' %'},
-            data: [
-                {label: "Masculina", value: "45.86"},
-                {label: "Femenina", value: "54.14"},
-            ],
-            colors: ['#006AC8', '#C80083']
-        });
-    }
-    if (typeof varGraficaPoblacionRangos === 'undefined') {
-        varGraficaPoblacionRangos = Morris.Donut({
-            element: 'graficaPoblacionRangos',
-            formatter: function(y){return y + ' %'},
-            data: [
-                {label: "De 0 a 14 años", value: "17.37"},
-                {label: "De 15 a 64 años", value: "64.34"},
-                {label: "De 65 y más años", value: "15.91"},
-                {label: "No especificada", value: "2.38"},
-            ],
-            colors: ['#89BE85', '#57A550', '#15630E', '#BFBFBF']
-        });
-    }
-    if (typeof varGraficaPoblacionNacidaEnOtroEstado === 'undefined') {
-        varGraficaPoblacionNacidaEnOtroEstado = Morris.Donut({
-            element: 'graficaPoblacionNacidaEnOtroEstado',
-            formatter: function(y){return y + ' %'},
-            data: [
-                {label: "Nacida en OTRO estado", value: "19.09"},
-                {label: "Nacida en este estado", value: "80.91"},
-            ],
-            colors: ['#7E00A8', '#BFBFBF']
-        });
-        varGraficaPoblacionNacidaEnOtroEstado.select(0);
-    }
-    if (typeof varGraficaGraficaPoblacionDiscapacidad === 'undefined') {
-        varGraficaGraficaPoblacionDiscapacidad = Morris.Donut({
-            element: 'graficaGraficaPoblacionDiscapacidad',
-            formatter: function(y){return y + ' %'},
-            data: [
-                {label: "CON discapacidad", value: "5.97"},
-                {label: "Sin discapacidad", value: "94.03"},
-            ],
-            colors: ['#A80021', '#BFBFBF']
-        });
-        varGraficaGraficaPoblacionDiscapacidad.select(0);
-    }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionMasculinaFemenina);
+        function elaborarGraficaPoblacionMasculinaFemenina() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Masculina', 45.86],
+                ['Femenina', 54.14]
+            ]);
+            var options = {
+              title: 'Población por género',
+              width: 400,
+              height: 300,
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#006AC8'}, {color: '#C80083'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionMasculinaFemenina'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionRangos);
+        function elaborarGraficaPoblacionRangos() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['De 0 a 14 años', 17.37],
+                ['De 15 a 64 años', 64.34],
+                ['De 65 y más años', 15.91],
+                ['No especificada', 2.38]
+            ]);
+            var options = {
+              title: 'Población por rangos de edad',
+              width: 400,
+              height: 300,
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionRangos'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionNacidaEnOtroEstado);
+        function elaborarGraficaPoblacionNacidaEnOtroEstado() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Nacida en OTRO estado', 19.09],
+                ['Nacida en este estado', 80.91]
+            ]);
+            var options = {
+              title: 'Nacida en otro estado',
+              width: 400,
+              height: 300,
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionNacidaEnOtroEstado'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaGraficaPoblacionDiscapacidad);
+        function elaborarGraficaGraficaPoblacionDiscapacidad() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['CON discapacidad', 5.97],
+                ['Sin discapacidad', 94.03]
+            ]);
+            var options = {
+              title: 'Con discapacidad',
+              width: 400,
+              height: 300,
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaGraficaPoblacionDiscapacidad'));
+            chart.draw(data, options);
+        }
+});
+// LENGUETA viviendas
+$('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
+        google.charts.setOnLoadCallback(elaborarGraficaHogaresJefatura);
+        function elaborarGraficaHogaresJefatura() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Masculina', 62.46],
+                ['Femenina', 37.54]
+            ]);
+            var options = {
+              title: 'Hogares con jefatura...',
+              width: 400,
+              height: 300,
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#006AC8'}, {color: '#C80083'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresJefatura'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
+        function elaborarGraficaViviendasCon() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
+                ['Electricidad', 99.49, '#FF8080', '99.49 %'],
+                ['Agua', 99.22, '#FF80C0', '99.22 %'],
+                ['Drenaje', 99.01, '#C080FF', '99.01 %'],
+                ['Televisión', 98.03, '#80C0FF', '98.03 %'],
+                ['Automóvil', 63.02, '#59BFC3', '63.02 %'],
+                ['Computadora', 46.39, '#59C38E', '46.39 %'],
+                ['Celular', 70.35, '#8EC359', '70.35 %'],
+                ['Internet', 39.01, '#C38E59', '39.01 %']
+            ]);
+            var options = {
+              title: 'Viviendas con...',
+              width: 400,
+              height: 300,
+              chartArea: { width:'60%' },
+              hAxis: { title:'Porcentaje', minValue:0, maxValue:100 },
+              legend: { position:'none' }
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('graficaViviendasCon'));
+            chart.draw(data, options);
+        }
 });
 // TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES demografia
 $(document).ready(function(){

@@ -106,7 +106,12 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
                     $demografia = new EjeDemografia($this);
                     $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $demografia);
                     break;
+                case 'Viviendas':
+                    $viviendas = new EjeViviendas($this);
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $viviendas);
+                    break;
                 default:
+                    // Poner todos los datos como textos
                     $a = array();
                     foreach ($eje_datos as $etiqueta => $dato) {
                         $a[] = "<p>$etiqueta = $dato</p>";
@@ -115,6 +120,7 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
             }
         }
         $this->contenido->extra = $lenguetas->html();
+        $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();
         // Entregar
         return parent::html();

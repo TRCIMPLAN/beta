@@ -29,10 +29,10 @@ class EjeDemografia implements SalidaWeb {
 
     protected $publicacion_ficha;
     protected $demografia;
-    protected $grafica_poblacion_masculina_femenina;
-    protected $grafica_poblacion_rangos;
-    protected $grafica_poblacion_nacida_otro_estado;
-    protected $grafica_poblacion_discapacidad;
+    protected $graf_pob_mas_fem;
+    protected $graf_pob_rang;
+    protected $graf_pob_nac_otro_edo;
+    protected $graf_pob_disc;
     protected $graficas_preparadas = false;
 
     /**
@@ -60,25 +60,23 @@ class EjeDemografia implements SalidaWeb {
             throw new \Exception("Error: Faltan datos sobre Demografía.");
         }
         // Gráfica Población Masculina Femenina
-        $this->grafica_poblacion_masculina_femenina = new GraficaPay('PoblacionMasculinaFemenina');
-        $this->grafica_poblacion_masculina_femenina->agregar('Masculina', $this->demografia['Porcentaje de población masculina'], '#006AC8');
-        $this->grafica_poblacion_masculina_femenina->agregar('Femenina', $this->demografia['Porcentaje de población femenina'], '#C80083');
+        $this->graf_pob_mas_fem = new GraficaPay('PoblacionMasculinaFemenina', 'Población por género');
+        $this->graf_pob_mas_fem->agregar('Masculina', $this->demografia['Porcentaje de población masculina'], '#006AC8');
+        $this->graf_pob_mas_fem->agregar('Femenina',  $this->demografia['Porcentaje de población femenina'],  '#C80083');
         // Gráfica Población Rangos
-        $this->grafica_poblacion_rangos = new GraficaPay('PoblacionRangos');
-        $this->grafica_poblacion_rangos->agregar('De 0 a 14 años', $this->demografia['Porcentaje de población de 0 a 14 años'], '#89BE85');
-        $this->grafica_poblacion_rangos->agregar('De 15 a 64 años', $this->demografia['Porcentaje de población de 15 a 64 años'], '#57A550');
-        $this->grafica_poblacion_rangos->agregar('De 65 y más años', $this->demografia['Porcentaje de población de 65 y más años'], '#15630E');
-        $this->grafica_poblacion_rangos->agregar('No especificada', $this->demografia['Porcentaje de población no especificada'], '#BFBFBF');
+        $this->graf_pob_rang = new GraficaPay('PoblacionRangos', 'Población por rangos de edad');
+        $this->graf_pob_rang->agregar('De 0 a 14 años',   $this->demografia['Porcentaje de población de 0 a 14 años'],   '#89BE85');
+        $this->graf_pob_rang->agregar('De 15 a 64 años',  $this->demografia['Porcentaje de población de 15 a 64 años'],  '#57A550');
+        $this->graf_pob_rang->agregar('De 65 y más años', $this->demografia['Porcentaje de población de 65 y más años'], '#15630E');
+        $this->graf_pob_rang->agregar('No especificada',  $this->demografia['Porcentaje de población no especificada'],  '#BFBFBF');
         // Gráfica Población Nacida en Otro Estado
-        $this->grafica_poblacion_nacida_otro_estado = new GraficaPay('PoblacionNacidaEnOtroEstado');
-        $this->grafica_poblacion_nacida_otro_estado->agregar('Nacida en OTRO estado', $this->demografia['Porcentaje de población nacida en otro estado'], '#7E00A8');
-        $this->grafica_poblacion_nacida_otro_estado->agregar('Nacida en este estado', 100 - $this->demografia['Porcentaje de población nacida en otro estado'], '#BFBFBF');
-        $this->grafica_poblacion_nacida_otro_estado->resaltar_primer_valor();
+        $this->graf_pob_nac_otro_edo = new GraficaPay('PoblacionNacidaEnOtroEstado', 'Nacida en otro estado');
+        $this->graf_pob_nac_otro_edo->agregar('Nacida en OTRO estado',       $this->demografia['Porcentaje de población nacida en otro estado'], '#7E00A8');
+        $this->graf_pob_nac_otro_edo->agregar('Nacida en este estado', 100 - $this->demografia['Porcentaje de población nacida en otro estado'], '#BFBFBF');
         // Gráfica Población con Discapacidad
-        $this->grafica_poblacion_discapacidad = new GraficaPay('GraficaPoblacionDiscapacidad');
-        $this->grafica_poblacion_discapacidad->agregar('CON discapacidad', $this->demografia['Porcentaje de población con discapacidad'], '#A80021');
-        $this->grafica_poblacion_discapacidad->agregar('Sin discapacidad', 100 - $this->demografia['Porcentaje de población con discapacidad'], '#BFBFBF');
-        $this->grafica_poblacion_discapacidad->resaltar_primer_valor();
+        $this->graf_pob_disc = new GraficaPay('GraficaPoblacionDiscapacidad', 'Con discapacidad');
+        $this->graf_pob_disc->agregar('CON discapacidad',       $this->demografia['Porcentaje de población con discapacidad'], '#A80021');
+        $this->graf_pob_disc->agregar('Sin discapacidad', 100 - $this->demografia['Porcentaje de población con discapacidad'], '#BFBFBF');
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
@@ -94,17 +92,17 @@ class EjeDemografia implements SalidaWeb {
         $a   = array();
         $a[] = "<p class=\"enunciado\">Población total <b>{$this->demografia['Población total']} habitantes.</b> Porcentajes de población...</p2>";
         $a[] = '<div class="row">';
-        $a[] = '  <div class="col-xs-12 col-sm-6 col-lg-3">';
-        $a[] = $this->grafica_poblacion_masculina_femenina->html();
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_pob_mas_fem->html();
         $a[] = '  </div>';
-        $a[] = '  <div class="col-xs-12 col-sm-6 col-lg-3">';
-        $a[] = $this->grafica_poblacion_rangos->html();
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_pob_rang->html();
         $a[] = '  </div>';
-        $a[] = '  <div class="col-xs-12 col-sm-6 col-lg-3">';
-        $a[] = $this->grafica_poblacion_nacida_otro_estado->html();
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_pob_nac_otro_edo->html();
         $a[] = '  </div>';
-        $a[] = '  <div class="col-xs-12 col-sm-6 col-lg-3">';
-        $a[] = $this->grafica_poblacion_discapacidad->html();
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_pob_disc->html();
         $a[] = '  </div>';
         $a[] = '</div>';
         $a[] = "<p class=\"enunciado\">Fecundidad promedio <b>{$this->demografia['Fecundidad promedio']} hijos</b> por pareja.</p>";
@@ -121,10 +119,10 @@ class EjeDemografia implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
-        $a[] = $this->grafica_poblacion_masculina_femenina->javascript();
-        $a[] = $this->grafica_poblacion_rangos->javascript();
-        $a[] = $this->grafica_poblacion_nacida_otro_estado->javascript();
-        $a[] = $this->grafica_poblacion_discapacidad->javascript();
+        $a[] = $this->graf_pob_mas_fem->javascript();
+        $a[] = $this->graf_pob_rang->javascript();
+        $a[] = $this->graf_pob_nac_otro_edo->javascript();
+        $a[] = $this->graf_pob_disc->javascript();
         // Entregar
         return '    '.implode("\n    ", $a);
     } // javascript

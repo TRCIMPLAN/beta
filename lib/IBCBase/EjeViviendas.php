@@ -29,7 +29,8 @@ class EjeViviendas implements SalidaWeb {
 
     protected $publicacion_ficha;
     protected $viviendas;
-    protected $grafica_hogares_jefatura;
+    protected $graf_hog_jef;
+    protected $graf_viv_con;
     protected $graficas_preparadas = false;
 
     /**
@@ -57,9 +58,19 @@ class EjeViviendas implements SalidaWeb {
             throw new \Exception("Error: Faltan datos sobre Viviendas.");
         }
         // Gráfica Hogares Jefatura
-        $this->grafica_hogares_jefatura = new GraficaPay('HogaresJefatura');
-        $this->grafica_hogares_jefatura->agregar('Masculina', $this->viviendas['Hogares Jefatura masculina'], '#006AC8');
-        $this->grafica_hogares_jefatura->agregar('Femenina', $this->viviendas['Hogares Jefatura femenina'], '#C80083');
+        $this->graf_hog_jef = new GraficaPay('HogaresJefatura', 'Hogares con jefatura...');
+        $this->graf_hog_jef->agregar('Masculina', $this->viviendas['Hogares Jefatura masculina'], '#006AC8');
+        $this->graf_hog_jef->agregar('Femenina',  $this->viviendas['Hogares Jefatura femenina'],  '#C80083');
+        // Gráfica Viviendas con...
+        $this->graf_viv_con = new GraficaBarras('ViviendasCon', 'Viviendas con...');
+        $this->graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#FF8080');
+        $this->graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#FF80C0');
+        $this->graf_viv_con->agregar('Drenaje',      $this->viviendas['Viviendas con Drenaje'],      '#C080FF');
+        $this->graf_viv_con->agregar('Televisión',   $this->viviendas['Viviendas con Televisión'],   '#80C0FF');
+        $this->graf_viv_con->agregar('Automóvil',    $this->viviendas['Viviendas con Automóvil'],    '#59BFC3');
+        $this->graf_viv_con->agregar('Computadora',  $this->viviendas['Viviendas con Computadora'],  '#59C38E');
+        $this->graf_viv_con->agregar('Celular',      $this->viviendas['Viviendas con Celular'],      '#8EC359');
+        $this->graf_viv_con->agregar('Internet',     $this->viviendas['Viviendas con Internet'],     '#C38E59');
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
@@ -74,10 +85,14 @@ class EjeViviendas implements SalidaWeb {
         // Acumular
         $a   = array();
         $a[] = '<div class="row">';
-        $a[] = '  <div class="col-xs-12 col-sm-6 col-lg-3">';
-        $a[] = $this->grafica_hogares_jefatura->html();
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_hog_jef->html();
+        $a[] = '  </div>';
+        $a[] = '  <div class="col-md-12 col-lg-6">';
+        $a[] = $this->graf_viv_con->html();
         $a[] = '  </div>';
         $a[] = '</div>';
+        $a[] = "<p class=\"enunciado\">Ocupación por Vivienda <b>{$this->viviendas['Ocupación por Vivienda']} personas</b>.</p>";
         // Entregar
         return '    '.implode("\n    ", $a);
     } // html
@@ -91,7 +106,8 @@ class EjeViviendas implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
-        $a[] = $this->grafica_hogares_jefatura->javascript();
+        $a[] = $this->graf_hog_jef->javascript();
+        $a[] = $this->graf_viv_con->javascript();
         // Entregar
         return '    '.implode("\n    ", $a);
     } // javascript

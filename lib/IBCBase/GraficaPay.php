@@ -27,21 +27,29 @@ namespace IBCBase;
  */
 class GraficaPay implements SalidaWeb {
 
-    protected $identificador           = '';
-    protected $etiquetas_valores       = array();
-    protected $etiquetas_colores       = array();
-    protected $indice_valor_a_resaltar = false;
+    protected $identificador     = '';
+    protected $titulo            = '';
+    protected $etiquetas_valores = array();
+    protected $etiquetas_colores = array();
     const     COLOR_POR_DEFECTO  = '#FF7F37';
 
     /**
      * Constructor
+     *
+     * @param string Identificador, parámetro id que va en el div
+     * @param string Opcional, título
      */
-    public function __construct($in_identificador) {
+    public function __construct($in_identificador, $in_titulo='') {
         $this->identificador = $in_identificador;
+        $this->titulo        = $in_titulo;
     } // constructor
 
     /**
      * Agregar
+     *
+     * @param string Etiqueta
+     * @param string Valor
+     * @param string Opcional, color en hexadecimal como #rrggbb
      */
     public function agregar($etiqueta, $valor, $color=false) {
         $this->etiquetas_valores[$etiqueta] = $valor;
@@ -51,13 +59,6 @@ class GraficaPay implements SalidaWeb {
             $this->etiquetas_colores[$etiqueta] = self::COLOR_POR_DEFECTO;
         }
     } // agregar
-
-    /**
-     * Resaltar primer valor
-     */
-    public function resaltar_primer_valor() {
-        $this->indice_valor_a_resaltar = 0;
-    } // resaltar_primer_valor
 
     /**
      * Validar
@@ -89,7 +90,35 @@ class GraficaPay implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
-        $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
+        // Google Charts
+        $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
+        $a[] = "    function elaborarGrafica{$this->identificador}() {";
+        $a[] = "        var data = google.visualization.arrayToDataTable([";
+        $a[] = "            ['Etiqueta', 'Valor'],";
+        $b   = array();
+        foreach ($this->etiquetas_valores as $etiqueta => $valor) {
+            $b[] = sprintf("            ['%s', %s]", $etiqueta, $valor);
+        }
+        $a[] = implode(",\n    ", $b);
+        $a[] = "        ]);";
+        $a[] = "        var options = {";
+        $c   = array();
+        foreach ($this->etiquetas_colores as $color) {
+            $c[] = "{color: '$color'}";
+        }
+        if ($this->titulo != '') {
+            $a[] = "          title: '{$this->titulo}',";
+        }
+        $a[] = "          width: 400,";
+        $a[] = "          height: 300,";
+        $a[] = "          chartArea: { width:'100%', height:'80%' },";
+        $a[] = sprintf("          slices: [%s]", implode(', ', $c));
+        $a[] = "        };";
+        $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('grafica{$this->identificador}'));";
+        $a[] = "        chart.draw(data, options);";
+        $a[] = "    }";
+        // Morris.js
+    /*  $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
         $a[] = "    varGrafica{$this->identificador} = Morris.Donut({";
         $a[] = "        element: 'grafica{$this->identificador}',";
         $a[] = "        formatter: function(y){return y + ' %'},";
@@ -103,7 +132,8 @@ class GraficaPay implements SalidaWeb {
         if ($this->indice_valor_a_resaltar !== false) {
             $a[] = "    varGrafica{$this->identificador}.select({$this->indice_valor_a_resaltar});";
         }
-        $a[] = '}';
+        $a[] = '}'; */
+        // Entregar
         return implode("\n    ", $a);
     } // javascript
 

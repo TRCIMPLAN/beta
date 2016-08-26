@@ -41,6 +41,17 @@ class CreadorConfig {
      */
     public function __construct() {
         $this->imprentas                = array(
+            '\\IBCTorreon\\Imprenta',
+            '\\Proyectos\\Imprenta');
+        $this->imprentas_mapa_sitio     = $this->imprentas;
+        $this->imprentas_autores        = array(
+            '\\IBCTorreon\\Imprenta',
+            '\\Proyectos\\Imprenta');
+        $this->imprentas_categorias     = $this->imprentas_autores;
+        $this->imprentas_pagina_inicial = $this->imprentas_autores;
+        $this->imprentas_redifusion     = $this->imprentas_autores;
+        // Original
+    /*  $this->imprentas                = array(
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
@@ -81,7 +92,7 @@ class CreadorConfig {
             '\\SMIIndicadoresTorreon\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
         $this->imprentas_pagina_inicial = $this->imprentas_autores;
-        $this->imprentas_redifusion     = $this->imprentas_autores;
+        $this->imprentas_redifusion     = $this->imprentas_autores; */
     } // constructor
 
 } // Clase CreadorConfig
