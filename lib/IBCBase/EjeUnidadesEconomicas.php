@@ -28,6 +28,8 @@ namespace IBCBase;
 class EjeUnidadesEconomicas implements SalidaWeb {
 
     protected $publicacion_ficha;
+    protected $unidades_economicas;
+    protected $graf_uni_eco;
     protected $graficas_preparadas = false;
 
     /**
@@ -47,10 +49,33 @@ class EjeUnidadesEconomicas implements SalidaWeb {
         if ($this->graficas_preparadas) {
             return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Unidades Económicas'])) {
+            $this->unidades_economicas = $datos['Unidades Económicas'];
+        } else {
+            throw new \Exception("Error: Faltan datos sobre Unidades Económicas.");
+        }
+        // Grafica Unidades Economicas
+        $this->graf_uni_eco = new GraficaBarras();
+        $this->graf_uni_eco->definir_titulo('Unidades Económicas');
+        $this->graf_uni_eco->agregar('Primera', $this->unidades_economicas[''], '#80C0FF');
+        $this->graf_uni_eco->agregar('Segunda', $this->unidades_economicas[''], '#59BFC3');
+        $this->graf_uni_eco->agregar('Tercera', $this->unidades_economicas[''], '#59C38E');
+        $this->graf_uni_eco->agregar('Cuarta',  $this->unidades_economicas[''], '#8EC359');
+        $this->graf_uni_eco->agregar('Quinta',  $this->unidades_economicas[''], '#C38E59');
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
-
+/*
+            'Unidades Económicas' => array(
+                'Primer actividad' => 'AEComercioMenu 22.63%',
+                'Segunda actividad' => 'AEOtros 13.74%',
+                'Tercera actividad' => 'AEProfesional 13.74%',
+                'Cuarta actividad' => 'AEAlimentos 12.22%',
+                'Quinta actividad' => 'AESalud 9.9%'
+            )
+ */
     /**
      * HTML
      *

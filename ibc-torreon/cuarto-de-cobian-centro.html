@@ -159,46 +159,25 @@
   <div class="tab-content lengueta-contenido">
     <div class="tab-pane" id="demografia">
           <p class="enunciado">Población total <b>11116 habitantes.</b> Porcentajes de población...</p2>
-    <div class="row">
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaPoblacionMasculinaFemenina" class="grafica"></div>
-      </div>
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaPoblacionRangos" class="grafica"></div>
-      </div>
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaPoblacionNacidaEnOtroEstado" class="grafica"></div>
-      </div>
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaGraficaPoblacionDiscapacidad" class="grafica"></div>
-      </div>
-    </div>
+    <div id="graficaPoblacionPorGenero" class="grafica"></div>
+    <div id="graficaPoblacionPorRangosDeEdad" class="grafica"></div>
+    <div id="graficaNacidaEnOtroEstado" class="grafica"></div>
+    <div id="graficaConDiscapacidad" class="grafica"></div>
     <p class="enunciado">Fecundidad promedio <b>2.21 hijos</b> por pareja.</p>
     </div>
     <div class="tab-pane" id="educacion">
-      <p>Grado Promedio de Escolaridad = 11.25</p>
-<p>Grado Promedio de Escolaridad masculina = 11.58</p>
-<p>Grado Promedio de Escolaridad femenina = 10.99</p>
+          <div id="graficaGradoPromedioDeEscolaridad" class="grafica"></div>
     </div>
     <div class="tab-pane" id="caracteristicas-economicas">
-      <p>Población Económicamente Activa = 51.42</p>
-<p>Población Económicamente Activa masculina = 56.63</p>
-<p>Población Económicamente Activa femenina = 43.37</p>
-<p>Población Ocupada = 91.39</p>
-<p>Población Ocupada masculina = 56.21</p>
-<p>Población Ocupada femenina = 43.79</p>
-<p>Población Desocupada = 8.61</p>
-<p>Derechohabiencia = 72.18</p>
+          <div id="graficaPoblacionEconomicamenteActiva" class="grafica"></div>
+    <div id="graficaPoblacionEconomicamenteActivaPorGenero" class="grafica"></div>
+    <div id="graficaPoblacionOcupada" class="grafica"></div>
+    <div id="graficaPoblacionOcupadaPorGenero" class="grafica"></div>
+    <div id="graficaDerechohabiencia" class="grafica"></div>
     </div>
     <div class="tab-pane" id="viviendas">
-          <div class="row">
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaHogaresJefatura" class="grafica"></div>
-      </div>
-      <div class="col-md-12 col-lg-6">
-        <div id="graficaViviendasCon" class="grafica"></div>
-      </div>
-    </div>
+          <div id="graficaHogaresConJefatura" class="grafica"></div>
+    <div id="graficaViviendasCon" class="grafica"></div>
     <p class="enunciado">Ocupación por Vivienda <b>3.29 personas</b>.</p>
     </div>
     <div class="tab-pane" id="unidades-economicas">
@@ -244,8 +223,8 @@
 google.charts.load('current', {'packages':['corechart']});
 // LENGUETA demografia
 $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
-        google.charts.setOnLoadCallback(elaborarGraficaPoblacionMasculinaFemenina);
-        function elaborarGraficaPoblacionMasculinaFemenina() {
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorGenero);
+        function elaborarGraficaPoblacionPorGenero() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
                 ['Masculina', 45.86],
@@ -253,16 +232,14 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Población por género',
-              width: 400,
-              height: 300,
               chartArea: { width:'100%', height:'80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
-            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionMasculinaFemenina'));
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
             chart.draw(data, options);
         }
-        google.charts.setOnLoadCallback(elaborarGraficaPoblacionRangos);
-        function elaborarGraficaPoblacionRangos() {
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorRangosDeEdad);
+        function elaborarGraficaPoblacionPorRangosDeEdad() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
                 ['De 0 a 14 años', 17.37],
@@ -272,16 +249,14 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Población por rangos de edad',
-              width: 400,
-              height: 300,
               chartArea: { width:'100%', height:'80%' },
               slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
             };
-            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionRangos'));
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
             chart.draw(data, options);
         }
-        google.charts.setOnLoadCallback(elaborarGraficaPoblacionNacidaEnOtroEstado);
-        function elaborarGraficaPoblacionNacidaEnOtroEstado() {
+        google.charts.setOnLoadCallback(elaborarGraficaNacidaEnOtroEstado);
+        function elaborarGraficaNacidaEnOtroEstado() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
                 ['Nacida en OTRO estado', 19.09],
@@ -289,16 +264,14 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Nacida en otro estado',
-              width: 400,
-              height: 300,
               chartArea: { width:'100%', height:'80%' },
               slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
             };
-            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionNacidaEnOtroEstado'));
+            var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
             chart.draw(data, options);
         }
-        google.charts.setOnLoadCallback(elaborarGraficaGraficaPoblacionDiscapacidad);
-        function elaborarGraficaGraficaPoblacionDiscapacidad() {
+        google.charts.setOnLoadCallback(elaborarGraficaConDiscapacidad);
+        function elaborarGraficaConDiscapacidad() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
                 ['CON discapacidad', 5.97],
@@ -306,19 +279,115 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Con discapacidad',
-              width: 400,
-              height: 300,
               chartArea: { width:'100%', height:'80%' },
               slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
             };
-            var chart = new google.visualization.PieChart(document.getElementById('graficaGraficaPoblacionDiscapacidad'));
+            var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
+            chart.draw(data, options);
+        }
+});
+// LENGUETA educacion
+$('#lenguetasIBC a[href="#educacion"]').on('shown.bs.tab', function(e){
+        google.charts.setOnLoadCallback(elaborarGraficaGradoPromedioDeEscolaridad);
+        function elaborarGraficaGradoPromedioDeEscolaridad() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
+                ['Global', 11.25, '#FF7F37', '11.25 años'],
+                ['Masculina', 11.58, '#006AC8', '11.58 años'],
+                ['Femenina', 10.99, '#C80083', '10.99 años']
+            ]);
+            var options = {
+              title: 'Grado Promedio de Escolaridad',
+              chartArea: { width:'60%' },
+              hAxis: { title:'Años', maxValue:'24' },
+              legend: { position:'none' }
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('graficaGradoPromedioDeEscolaridad'));
+            chart.draw(data, options);
+        }
+});
+// LENGUETA caracteristicas-economicas
+$('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', function(e){
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActiva);
+        function elaborarGraficaPoblacionEconomicamenteActiva() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Activa', 51.42],
+                ['NO Activa', 48.58]
+            ]);
+            var options = {
+              title: 'Población Económicamente Activa',
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActiva'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActivaPorGenero);
+        function elaborarGraficaPoblacionEconomicamenteActivaPorGenero() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Masculina', 56.63],
+                ['Femenina', 43.37]
+            ]);
+            var options = {
+              title: 'Población Económicamente Activa por género',
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#006AC8'}, {color: '#C80083'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActivaPorGenero'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupada);
+        function elaborarGraficaPoblacionOcupada() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Ocupada', 91.39],
+                ['Desocupada', 8.61]
+            ]);
+            var options = {
+              title: 'Población Ocupada',
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#A8001E'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupada'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupadaPorGenero);
+        function elaborarGraficaPoblacionOcupadaPorGenero() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Masculina', 56.21],
+                ['Femenina', 43.79]
+            ]);
+            var options = {
+              title: 'Población Ocupada por género',
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#006AC8'}, {color: '#C80083'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupadaPorGenero'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(elaborarGraficaDerechohabiencia);
+        function elaborarGraficaDerechohabiencia() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor'],
+                ['Con Derechohabiencia', 72.18],
+                ['SIN Derechohabiencia', 27.82]
+            ]);
+            var options = {
+              title: 'Derechohabiencia',
+              chartArea: { width:'100%', height:'80%' },
+              slices: [{color: '#00A898'}, {color: '#BFBFBF'}]
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('graficaDerechohabiencia'));
             chart.draw(data, options);
         }
 });
 // LENGUETA viviendas
 $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
-        google.charts.setOnLoadCallback(elaborarGraficaHogaresJefatura);
-        function elaborarGraficaHogaresJefatura() {
+        google.charts.setOnLoadCallback(elaborarGraficaHogaresConJefatura);
+        function elaborarGraficaHogaresConJefatura() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
                 ['Masculina', 62.46],
@@ -326,12 +395,10 @@ $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Hogares con jefatura...',
-              width: 400,
-              height: 300,
               chartArea: { width:'100%', height:'80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
-            var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresJefatura'));
+            var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresConJefatura'));
             chart.draw(data, options);
         }
         google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
@@ -349,10 +416,8 @@ $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Viviendas con...',
-              width: 400,
-              height: 300,
               chartArea: { width:'60%' },
-              hAxis: { title:'Porcentaje', minValue:0, maxValue:100 },
+              hAxis: { title:'Porcentaje', maxValue:'100' },
               legend: { position:'none' }
             };
             var chart = new google.visualization.BarChart(document.getElementById('graficaViviendasCon'));

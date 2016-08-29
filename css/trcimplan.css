@@ -319,9 +319,9 @@ a.galeria-icono:active  { color:#FF3300; }
 .indicadores-vinculos a:active  { color:#FF3300; }
 
 /*
- * Grafica
+ * Graficas
  */
-.grafica { width:400px; height:300px; padding:4px; }
+.grafica { width:100%; height:450px; }
 
 /*
  * Página Inicial

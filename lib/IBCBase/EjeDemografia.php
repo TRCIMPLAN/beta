@@ -60,21 +60,25 @@ class EjeDemografia implements SalidaWeb {
             throw new \Exception("Error: Faltan datos sobre Demografía.");
         }
         // Gráfica Población Masculina Femenina
-        $this->graf_pob_mas_fem = new GraficaPay('PoblacionMasculinaFemenina', 'Población por género');
+        $this->graf_pob_mas_fem = new GraficaPay();
+        $this->graf_pob_mas_fem->definir_titulo('Población por género');
         $this->graf_pob_mas_fem->agregar('Masculina', $this->demografia['Porcentaje de población masculina'], '#006AC8');
         $this->graf_pob_mas_fem->agregar('Femenina',  $this->demografia['Porcentaje de población femenina'],  '#C80083');
         // Gráfica Población Rangos
-        $this->graf_pob_rang = new GraficaPay('PoblacionRangos', 'Población por rangos de edad');
+        $this->graf_pob_rang = new GraficaPay();
+        $this->graf_pob_rang->definir_titulo('Población por rangos de edad');
         $this->graf_pob_rang->agregar('De 0 a 14 años',   $this->demografia['Porcentaje de población de 0 a 14 años'],   '#89BE85');
         $this->graf_pob_rang->agregar('De 15 a 64 años',  $this->demografia['Porcentaje de población de 15 a 64 años'],  '#57A550');
         $this->graf_pob_rang->agregar('De 65 y más años', $this->demografia['Porcentaje de población de 65 y más años'], '#15630E');
         $this->graf_pob_rang->agregar('No especificada',  $this->demografia['Porcentaje de población no especificada'],  '#BFBFBF');
         // Gráfica Población Nacida en Otro Estado
-        $this->graf_pob_nac_otro_edo = new GraficaPay('PoblacionNacidaEnOtroEstado', 'Nacida en otro estado');
+        $this->graf_pob_nac_otro_edo = new GraficaPay();
+        $this->graf_pob_nac_otro_edo->definir_titulo('Nacida en otro estado');
         $this->graf_pob_nac_otro_edo->agregar('Nacida en OTRO estado',       $this->demografia['Porcentaje de población nacida en otro estado'], '#7E00A8');
         $this->graf_pob_nac_otro_edo->agregar('Nacida en este estado', 100 - $this->demografia['Porcentaje de población nacida en otro estado'], '#BFBFBF');
         // Gráfica Población con Discapacidad
-        $this->graf_pob_disc = new GraficaPay('GraficaPoblacionDiscapacidad', 'Con discapacidad');
+        $this->graf_pob_disc = new GraficaPay();
+        $this->graf_pob_disc->definir_titulo('Con discapacidad');
         $this->graf_pob_disc->agregar('CON discapacidad',       $this->demografia['Porcentaje de población con discapacidad'], '#A80021');
         $this->graf_pob_disc->agregar('Sin discapacidad', 100 - $this->demografia['Porcentaje de población con discapacidad'], '#BFBFBF');
         // Levantar bandera
@@ -91,20 +95,10 @@ class EjeDemografia implements SalidaWeb {
         // Acumular
         $a   = array();
         $a[] = "<p class=\"enunciado\">Población total <b>{$this->demografia['Población total']} habitantes.</b> Porcentajes de población...</p2>";
-        $a[] = '<div class="row">';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_pob_mas_fem->html();
-        $a[] = '  </div>';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_pob_rang->html();
-        $a[] = '  </div>';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_pob_nac_otro_edo->html();
-        $a[] = '  </div>';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_pob_disc->html();
-        $a[] = '  </div>';
-        $a[] = '</div>';
         $a[] = "<p class=\"enunciado\">Fecundidad promedio <b>{$this->demografia['Fecundidad promedio']} hijos</b> por pareja.</p>";
         // Entregar
         return '    '.implode("\n    ", $a);

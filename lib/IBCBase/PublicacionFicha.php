@@ -102,13 +102,17 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
         $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
         foreach ($this->datos() as $eje => $eje_datos) {
             switch ($eje) {
+                case 'Características Económicas':
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeCaracteristicasEconomicas($this));
+                    break;
                 case 'Demografía':
-                    $demografia = new EjeDemografia($this);
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $demografia);
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeDemografia($this));
+                    break;
+                case 'Educación':
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeEducacion($this));
                     break;
                 case 'Viviendas':
-                    $viviendas = new EjeViviendas($this);
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, $viviendas);
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeViviendas($this));
                     break;
                 default:
                     // Poner todos los datos como textos

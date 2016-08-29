@@ -58,11 +58,13 @@ class EjeViviendas implements SalidaWeb {
             throw new \Exception("Error: Faltan datos sobre Viviendas.");
         }
         // Gráfica Hogares Jefatura
-        $this->graf_hog_jef = new GraficaPay('HogaresJefatura', 'Hogares con jefatura...');
+        $this->graf_hog_jef = new GraficaPay();
+        $this->graf_hog_jef->definir_titulo('Hogares con jefatura...');
         $this->graf_hog_jef->agregar('Masculina', $this->viviendas['Hogares Jefatura masculina'], '#006AC8');
         $this->graf_hog_jef->agregar('Femenina',  $this->viviendas['Hogares Jefatura femenina'],  '#C80083');
         // Gráfica Viviendas con...
-        $this->graf_viv_con = new GraficaBarras('ViviendasCon', 'Viviendas con...');
+        $this->graf_viv_con = new GraficaBarras();
+        $this->graf_viv_con->definir_titulo('Viviendas con...');
         $this->graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#FF8080');
         $this->graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#FF80C0');
         $this->graf_viv_con->agregar('Drenaje',      $this->viviendas['Viviendas con Drenaje'],      '#C080FF');
@@ -71,6 +73,8 @@ class EjeViviendas implements SalidaWeb {
         $this->graf_viv_con->agregar('Computadora',  $this->viviendas['Viviendas con Computadora'],  '#59C38E');
         $this->graf_viv_con->agregar('Celular',      $this->viviendas['Viviendas con Celular'],      '#8EC359');
         $this->graf_viv_con->agregar('Internet',     $this->viviendas['Viviendas con Internet'],     '#C38E59');
+        $this->graf_viv_con->definir_eje_horizontal('Porcentaje', 0, 100);
+        $this->graf_viv_con->definir_post_nota(' %');
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
@@ -84,14 +88,8 @@ class EjeViviendas implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
-        $a[] = '<div class="row">';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_hog_jef->html();
-        $a[] = '  </div>';
-        $a[] = '  <div class="col-md-12 col-lg-6">';
         $a[] = $this->graf_viv_con->html();
-        $a[] = '  </div>';
-        $a[] = '</div>';
         $a[] = "<p class=\"enunciado\">Ocupación por Vivienda <b>{$this->viviendas['Ocupación por Vivienda']} personas</b>.</p>";
         // Entregar
         return '    '.implode("\n    ", $a);

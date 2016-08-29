@@ -25,62 +25,14 @@ namespace IBCBase;
 /**
  * Clase GraficaPay
  */
-class GraficaPay implements SalidaWeb {
+class GraficaPay extends Grafica implements SalidaWeb {
 
-    protected $identificador     = '';
-    protected $titulo            = '';
-    protected $etiquetas_valores = array();
-    protected $etiquetas_colores = array();
-    const     COLOR_POR_DEFECTO  = '#FF7F37';
-
-    /**
-     * Constructor
-     *
-     * @param string Identificador, parámetro id que va en el div
-     * @param string Opcional, título
-     */
-    public function __construct($in_identificador, $in_titulo='') {
-        $this->identificador = $in_identificador;
-        $this->titulo        = $in_titulo;
-    } // constructor
-
-    /**
-     * Agregar
-     *
-     * @param string Etiqueta
-     * @param string Valor
-     * @param string Opcional, color en hexadecimal como #rrggbb
-     */
-    public function agregar($etiqueta, $valor, $color=false) {
-        $this->etiquetas_valores[$etiqueta] = $valor;
-        if (is_string($color) && ($color != '')) {
-            $this->etiquetas_colores[$etiqueta] = $color;
-        } else {
-            $this->etiquetas_colores[$etiqueta] = self::COLOR_POR_DEFECTO;
-        }
-    } // agregar
-
-    /**
-     * Validar
-     */
-    protected function validar() {
-        if ($this->identificador == '') {
-            throw new \Exception("Error: Falta el identificador.");
-        }
-        if (count($this->etiquetas_valores) == 0) {
-            throw new \Exception("Error: Falta agregar valores.");
-        }
-    } // validar
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        $this->validar();
-        return "    <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
-    } // html
+    // protected $identificador;
+    // protected $titulo;
+    // protected $etiquetas_valores;
+    // protected $etiquetas_colores;
+    // protected $post_nota;
+    // const     COLOR_POR_DEFECTO;
 
     /**
      * Javascript
@@ -109,8 +61,8 @@ class GraficaPay implements SalidaWeb {
         if ($this->titulo != '') {
             $a[] = "          title: '{$this->titulo}',";
         }
-        $a[] = "          width: 400,";
-        $a[] = "          height: 300,";
+    //~ $a[] = "          width: 400,";
+    //~ $a[] = "          height: 300,";
         $a[] = "          chartArea: { width:'100%', height:'80%' },";
         $a[] = sprintf("          slices: [%s]", implode(', ', $c));
         $a[] = "        };";

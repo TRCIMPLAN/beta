@@ -28,6 +28,8 @@ namespace IBCBase;
 class EjeEducacion implements SalidaWeb {
 
     protected $publicacion_ficha;
+    protected $educacion;
+    protected $graf_prom_esc;
     protected $graficas_preparadas = false;
 
     /**
@@ -47,6 +49,21 @@ class EjeEducacion implements SalidaWeb {
         if ($this->graficas_preparadas) {
             return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Educación'])) {
+            $this->educacion = $datos['Educación'];
+        } else {
+            throw new \Exception("Error: Faltan datos sobre Educación.");
+        }
+        // Gráfica Grado Promedio de Escolaridad
+        $this->graf_prom_esc = new GraficaBarras();
+        $this->graf_prom_esc->definir_titulo('Grado Promedio de Escolaridad');
+        $this->graf_prom_esc->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
+        $this->graf_prom_esc->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
+        $this->graf_prom_esc->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
+        $this->graf_prom_esc->definir_eje_horizontal('Años', 0, 24);
+        $this->graf_prom_esc->definir_post_nota(' años');;
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
@@ -60,6 +77,7 @@ class EjeEducacion implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
+        $a[] = $this->graf_prom_esc->html();
         // Entregar
         return '    '.implode("\n    ", $a);
     } // html
@@ -73,6 +91,7 @@ class EjeEducacion implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
+        $a[] = $this->graf_prom_esc->javascript();
         // Entregar
         return '    '.implode("\n    ", $a);
     } // javascript
