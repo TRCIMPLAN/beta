@@ -30,7 +30,7 @@ class LenguetaWeb {
     public $clave;                      // Texto que identifica a la lengüeta
     public $padre_identificador;        // Texto, es el identificador único del juego de lengüetas, desde LenguetasWeb se define
     public $etiqueta;                   // Texto que va a aparecer en la lengüeta
-    public $contenido;                  // Mixto, puede ser texto, un objeto o un arreglo de objetos
+    public $contenido;                  // Instancia con el contenido, puede ser texto, un objeto o un arreglo de objetos
     public $javascript;                 // Texto, Javascript
     public $es_activa        = false;   // Booleano, verdadero si es la lengüeta activa
     protected $digerido_di   = array(); // Si contenido es o son objetos, acumularemos los identificadores
@@ -139,7 +139,7 @@ class LenguetaWeb {
         $a[] = sprintf('    <div class="tab-pane" id="%s">', $this->clave);
         // Si hay contenido digerido, contenido o nada
         if (count($this->digerido_html) > 0) {
-            $a[] = '      '.implode("\n      ", $this->digerido_html);
+            $a[] = implode("\n    ", $this->digerido_html);
         } elseif (is_string($this->contenido) && ($this->contenido != '')) {
             $a[] = $this->contenido;
         } else {

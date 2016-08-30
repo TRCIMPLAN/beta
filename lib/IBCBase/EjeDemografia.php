@@ -25,10 +25,10 @@ namespace IBCBase;
 /**
  * Clase EjeDemografia
  */
-class EjeDemografia implements SalidaWeb {
+class EjeDemografia {
 
-    protected $publicacion_ficha;
-    protected $demografia;
+    protected $publicacion_ficha;     // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $demografia;            // Arreglo asociativo con datos de Demografía
     protected $graf_pob_mas_fem;
     protected $graf_pob_rang;
     protected $graf_pob_nac_otro_edo;
@@ -40,9 +40,26 @@ class EjeDemografia implements SalidaWeb {
      *
      * @param mixed Instancia de PublicacionFicha
      */
-    public function __construct(PublicacionFicha $in_publicacion_ficha) {
-        $this->publicacion_ficha = $in_publicacion_ficha;
+    public function __construct(PublicacionFicha $publicacion_ficha) {
+        $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
+
+    /**
+     * Preparar
+     */
+    protected function prepapar() {
+        if (!$this->preparado) {
+            // Tomar datos
+            $datos = $this->publicacion_ficha->datos();
+            if (isset($datos['Demografía'])) {
+                $this->demografia = $datos['Demografía'];
+            } else {
+                throw new \Exception("Error en Eje: Faltan datos sobre Demografía.");
+            }
+            // Levantar bandera
+            $this->preparado = TRUE;
+        }
+    } // preparar
 
     /**
      * Preparar gráficas
@@ -51,13 +68,6 @@ class EjeDemografia implements SalidaWeb {
         // Si ya fueron preparadas
         if ($this->graficas_preparadas) {
             return;
-        }
-        // Tomar datos
-        $datos = $this->publicacion_ficha->datos();
-        if (isset($datos['Demografía'])) {
-            $this->demografia = $datos['Demografía'];
-        } else {
-            throw new \Exception("Error: Faltan datos sobre Demografía.");
         }
         // Gráfica Población Masculina Femenina
         $this->graf_pob_mas_fem = new GraficaPay();
@@ -94,7 +104,7 @@ class EjeDemografia implements SalidaWeb {
         $this->preparar_graficas();
         // Acumular
         $a   = array();
-        $a[] = "<p class=\"enunciado\">Población total <b>{$this->demografia['Población total']} habitantes.</b> Porcentajes de población...</p2>";
+        $a[] = "<p class=\"enunciado\">Población total <b>{$this->demografia['Población total']} habitantes.</b> Porcentajes de población...</p>";
         $a[] = $this->graf_pob_mas_fem->html();
         $a[] = $this->graf_pob_rang->html();
         $a[] = $this->graf_pob_nac_otro_edo->html();

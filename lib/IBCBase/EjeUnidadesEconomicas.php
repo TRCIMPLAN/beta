@@ -27,8 +27,8 @@ namespace IBCBase;
  */
 class EjeUnidadesEconomicas implements SalidaWeb {
 
-    protected $publicacion_ficha;
-    protected $unidades_economicas;
+    protected $publicacion_ficha;   // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $unidades_economicas; // Arreglo asociativo con datos de Unidades Económicas
     protected $graf_uni_eco;
     protected $graficas_preparadas = false;
 
@@ -37,8 +37,8 @@ class EjeUnidadesEconomicas implements SalidaWeb {
      *
      * @param mixed Instancia de PublicacionFicha
      */
-    public function __construct(PublicacionFicha $in_publicacion_ficha) {
-        $this->publicacion_ficha = $in_publicacion_ficha;
+    public function __construct(PublicacionFicha $publicacion_ficha) {
+        $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
     /**

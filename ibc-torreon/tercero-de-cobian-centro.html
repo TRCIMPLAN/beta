@@ -158,30 +158,57 @@
   </ul>
   <div class="tab-content lengueta-contenido">
     <div class="tab-pane" id="demografia">
-          <p class="enunciado">Población total <b>9277 habitantes.</b> Porcentajes de población...</p2>
-    <div id="graficaPoblacionPorGenero" class="grafica"></div>
-    <div id="graficaPoblacionPorRangosDeEdad" class="grafica"></div>
-    <div id="graficaNacidaEnOtroEstado" class="grafica"></div>
-    <div id="graficaConDiscapacidad" class="grafica"></div>
+    <p class="enunciado">Población total <b>9277 habitantes.</b> Porcentajes de población...</p>
+      <div id="graficaPoblacionPorGenero" class="grafica"></div>
+      <div id="graficaPoblacionPorRangosDeEdad" class="grafica"></div>
+      <div id="graficaNacidaEnOtroEstado" class="grafica"></div>
+      <div id="graficaConDiscapacidad" class="grafica"></div>
     <p class="enunciado">Fecundidad promedio <b>2.19 hijos</b> por pareja.</p>
     </div>
     <div class="tab-pane" id="educacion">
-          <div id="graficaGradoPromedioDeEscolaridad" class="grafica"></div>
+      <div id="graficaGradoPromedioDeEscolaridad" class="grafica"></div>
     </div>
     <div class="tab-pane" id="caracteristicas-economicas">
-          <div id="graficaPoblacionEconomicamenteActiva" class="grafica"></div>
-    <div id="graficaPoblacionEconomicamenteActivaPorGenero" class="grafica"></div>
-    <div id="graficaPoblacionOcupada" class="grafica"></div>
-    <div id="graficaPoblacionOcupadaPorGenero" class="grafica"></div>
-    <div id="graficaDerechohabiencia" class="grafica"></div>
+      <div id="graficaPoblacionEconomicamenteActiva" class="grafica"></div>
+      <div id="graficaPoblacionEconomicamenteActivaPorGenero" class="grafica"></div>
+      <div id="graficaPoblacionOcupada" class="grafica"></div>
+      <div id="graficaPoblacionOcupadaPorGenero" class="grafica"></div>
+      <div id="graficaDerechohabiencia" class="grafica"></div>
     </div>
     <div class="tab-pane" id="viviendas">
-          <div id="graficaHogaresConJefatura" class="grafica"></div>
-    <div id="graficaViviendasCon" class="grafica"></div>
-    <p class="enunciado">Ocupación por Vivienda <b>3.27 personas</b>.</p>
+<div class="panel-group" id="AcordionViviendas" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="cabeceraHogaresConJefatura">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#AcordionViviendas" href="#HogaresConJefatura" aria-expanded="true" aria-controls="HogaresConJefatura">
+          Hogares con Jefatura
+        </a>
+      </h4>
+    </div>
+    <div id="HogaresConJefatura" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraHogaresConJefatura">
+      <div class="panel-body">
+  <div id="graficaHogaresConJefatura" class="grafica"></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="cabeceraServicios">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#AcordionViviendas" href="#Servicios" aria-expanded="true" aria-controls="Servicios">
+          Servicios
+        </a>
+      </h4>
+    </div>
+    <div id="Servicios" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraServicios">
+      <div class="panel-body">
+  <div id="graficaViviendasCon" class="grafica"></div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <div class="tab-pane" id="unidades-economicas">
-          <div id="graficaUnidadesEconomicas" class="grafica"></div>
+      <div id="graficaUnidadesEconomicas" class="grafica"></div>
     </div>
   </div></aside>
 <div class="contenido-social">
@@ -382,7 +409,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
 });
 // LENGUETA viviendas
 $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
-        google.charts.setOnLoadCallback(elaborarGraficaHogaresConJefatura);
+    google.charts.setOnLoadCallback(elaborarGraficaHogaresConJefatura);
         function elaborarGraficaHogaresConJefatura() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor'],
@@ -397,7 +424,7 @@ $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
             var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresConJefatura'));
             chart.draw(data, options);
         }
-        google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
+    google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
         function elaborarGraficaViviendasCon() {
             var data = google.visualization.arrayToDataTable([
                 ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],

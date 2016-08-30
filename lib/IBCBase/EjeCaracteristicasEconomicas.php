@@ -27,8 +27,8 @@ namespace IBCBase;
  */
 class EjeCaracteristicasEconomicas implements SalidaWeb {
 
-    protected $publicacion_ficha;
-    protected $caracteristicas_economicas;
+    protected $publicacion_ficha;          // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $caracteristicas_economicas; // Arreglo asociativo con datos de Carcaterísticas Económicas
     protected $graf_pob_eco_act;
     protected $graf_pob_eco_act_mas_fem;
     protected $graf_pob_ocu;
@@ -41,8 +41,8 @@ class EjeCaracteristicasEconomicas implements SalidaWeb {
      *
      * @param mixed Instancia de PublicacionFicha
      */
-    public function __construct(PublicacionFicha $in_publicacion_ficha) {
-        $this->publicacion_ficha = $in_publicacion_ficha;
+    public function __construct(PublicacionFicha $publicacion_ficha) {
+        $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
     /**

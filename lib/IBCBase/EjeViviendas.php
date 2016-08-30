@@ -27,19 +27,22 @@ namespace IBCBase;
  */
 class EjeViviendas implements SalidaWeb {
 
-    protected $publicacion_ficha;
-    protected $viviendas;
+    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $viviendas;         // Arreglo asociativo con datos de Viviendas
     protected $graf_hog_jef;
     protected $graf_viv_con;
     protected $graficas_preparadas = false;
+    protected $tabla_viv_jef;
+    protected $tabla_viv_ser;
+    protected $acordion;
 
     /**
      * Constructor
      *
      * @param mixed Instancia de PublicacionFicha
      */
-    public function __construct(PublicacionFicha $in_publicacion_ficha) {
-        $this->publicacion_ficha = $in_publicacion_ficha;
+    public function __construct(PublicacionFicha $publicacion_ficha) {
+        $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
     /**
@@ -75,9 +78,61 @@ class EjeViviendas implements SalidaWeb {
         $this->graf_viv_con->agregar('Internet',     $this->viviendas['Viviendas con Internet'],     '#C38E59');
         $this->graf_viv_con->definir_eje_horizontal('Porcentaje', 0, 100);
         $this->graf_viv_con->definir_post_nota(' %');
+        // Acordion
+        $this->acordion = new AcordionesWeb('AcordionViviendas');
+        $this->acordion->agregar('Hogares con Jefatura', $this->graf_hog_jef);
+        $this->acordion->agregar('Servicios',            $this->graf_viv_con);
         // Levantar bandera
         $this->graficas_preparadas = true;
     } // preparar_graficas
+
+    /**
+     * Preparar tablas
+     */
+    protected function preparar_tablas() {
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Viviendas'])) {
+            $this->viviendas = $datos['Viviendas'];
+        } else {
+            throw new \Exception("Error: Faltan datos sobre Viviendas.");
+        }
+        // Tabla Vivendas Jefatura
+        $this->tabla_viv_jef = new TablaWeb();
+        $this->tabla_viv_jef->definir_estructura(
+            array(
+                'nombre'     => array('enca' => 'Hogares con'),
+                'porcentaje' => array('enca' => 'Porcentaje')
+            )
+        );
+        $this->tabla_viv_jef->definir_panal(
+            array(
+                array('nombre' => 'Jefatura masculina', 'porcentaje' => $this->viviendas['Hogares Jefatura masculina']),
+                array('nombre' => 'Jefatura femenina',  'porcentaje' => $this->viviendas['Hogares Jefatura femenina'])
+            )
+        );
+        // Tabla Vivendas Servicios
+        $this->tabla_viv_ser = new TablaWeb();
+        $this->tabla_viv_ser->definir_estructura(
+            array(
+                'nombre'     => array('enca' => 'Servicio'),
+                'porcentaje' => array('enca' => 'Porcentaje')
+            )
+        );
+        $this->tabla_viv_ser->definir_panal(
+            array(
+                array('nombre' => 'Viviendas con Electricidad', 'porcentaje' => $this->viviendas['Viviendas con Electricidad']),
+                array('nombre' => 'Viviendas con Agua',         'porcentaje' => $this->viviendas['Viviendas con Agua']),
+                array('nombre' => 'Viviendas con Drenaje',      'porcentaje' => $this->viviendas['Viviendas con Drenaje']),
+                array('nombre' => 'Viviendas con Televisión',   'porcentaje' => $this->viviendas['Viviendas con Televisión']),
+                array('nombre' => 'Viviendas con Automóvil',    'porcentaje' => $this->viviendas['Viviendas con Automóvil']),
+                array('nombre' => 'Viviendas con Computadora',  'porcentaje' => $this->viviendas['Viviendas con Computadora']),
+                array('nombre' => 'Viviendas con Celular',      'porcentaje' => $this->viviendas['Viviendas con Celular']),
+                array('nombre' => 'Viviendas con Internet',     'porcentaje' => $this->viviendas['Viviendas con Internet']),
+            )
+        );
+        //
+    } // preparar_tablas
 
     /**
      * HTML
@@ -86,13 +141,19 @@ class EjeViviendas implements SalidaWeb {
      */
     public function html() {
         $this->preparar_graficas();
+    //~ $this->preparar_tablas();
+        // Acordion
+        //~ $acordion->agregar('Hogares con Jefatura...', $this->tabla_viv_jef);
+        //~ $acordion->agregar('Servicios',               $this->tabla_viv_ser);
         // Acumular
-        $a   = array();
-        $a[] = $this->graf_hog_jef->html();
-        $a[] = $this->graf_viv_con->html();
-        $a[] = "<p class=\"enunciado\">Ocupación por Vivienda <b>{$this->viviendas['Ocupación por Vivienda']} personas</b>.</p>";
+        //~ $a   = array();
+        //~ $a[] = $this->acordion->html();
+        //~ $a[] = $this->graf_hog_jef->html();
+        //~ $a[] = $this->graf_viv_con->html();
+        //~ $a[] = "<p class=\"enunciado\">Ocupación por Vivienda <b>{$this->viviendas['Ocupación por Vivienda']} personas</b>.</p>";
+        //~ return '    '.implode("\n    ", $a);
         // Entregar
-        return '    '.implode("\n    ", $a);
+        return $this->acordion->html();
     } // html
 
     /**
@@ -102,12 +163,14 @@ class EjeViviendas implements SalidaWeb {
      */
     public function javascript() {
         $this->preparar_graficas();
+    //~ $this->preparar_tablas();
         // Acumular
-        $a   = array();
-        $a[] = $this->graf_hog_jef->javascript();
-        $a[] = $this->graf_viv_con->javascript();
+        //~ $a   = array();
+        //~ $a[] = $this->graf_hog_jef->javascript();
+        //~ $a[] = $this->graf_viv_con->javascript();
+        //~ return '    '.implode("\n    ", $a);
         // Entregar
-        return '    '.implode("\n    ", $a);
+        return $this->acordion->javascript();
     } // javascript
 
 } // Clase EjeViviendas

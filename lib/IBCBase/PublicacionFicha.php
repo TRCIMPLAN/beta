@@ -98,9 +98,13 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        // Definir
+        // Crear lengüetas
         $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-        foreach ($this->datos() as $eje => $eje_datos) {
+        $lenguetas->agregar('Mapas',    'Mapas',    new SeccionMapasWeb($this));
+        $lenguetas->agregar('Datos',    'Datos',    new SeccionDatosWeb($this));
+        $lenguetas->agregar('Graficas', 'Graficas', new SeccionGraficasWeb($this));
+        // Anterior
+    /*  foreach ($this->datos() as $eje => $eje_datos) {
             switch ($eje) {
                 case 'Características Económicas':
                     $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeCaracteristicasEconomicas($this));
@@ -125,7 +129,7 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
                     }
                     $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, implode("\n", $a));
             }
-        }
+        } */
         $this->contenido->extra = $lenguetas->html();
         $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();

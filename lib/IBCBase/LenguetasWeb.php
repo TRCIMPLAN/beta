@@ -161,8 +161,6 @@ class LenguetasWeb implements SalidaWeb {
     /**
      * Javascript
      *
-     * Entregar el javascript. Si no lo hay, entrega falso.
-     *
      * @return string Javascript
      */
     public function javascript() {

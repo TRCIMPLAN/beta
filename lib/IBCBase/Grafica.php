@@ -27,7 +27,7 @@ namespace IBCBase;
  */
 abstract class Grafica {
 
-    protected $identificador;
+    protected $identificador;                 // Texto único que lo identifica
     protected $titulo;
     protected $etiquetas_valores = array();
     protected $etiquetas_colores = array();
@@ -37,9 +37,9 @@ abstract class Grafica {
     /**
      * Constructor
      *
-     * @param string Opcional, parámetro id que va en el div
+     * @param string Opcional, texto único que lo identifica
      */
-    public function __construct($identificador='') {
+    public function __construct($identificador = NULL) {
         $this->identificador = $identificador;
     } // constructor
 
@@ -62,9 +62,9 @@ abstract class Grafica {
      * @param string Valor
      * @param string Opcional, color en hexadecimal como #rrggbb
      */
-    public function agregar($etiqueta, $valor, $color=false) {
+    public function agregar($etiqueta, $valor, $color = NULL) {
         $this->etiquetas_valores[$etiqueta] = $valor;
-        if (is_string($color) && ($color != '')) {
+        if (is_string($color) && ($color != NULL)) {
             $this->etiquetas_colores[$etiqueta] = $color;
         } else {
             $this->etiquetas_colores[$etiqueta] = self::COLOR_POR_DEFECTO;
@@ -84,7 +84,7 @@ abstract class Grafica {
      * Validar
      */
     protected function validar() {
-        if ($this->identificador == '') {
+        if ($this->identificador == NULL) {
             throw new \Exception("Error: Falta el identificador.");
         }
         if (count($this->etiquetas_valores) == 0) {
@@ -99,7 +99,7 @@ abstract class Grafica {
      */
     public function html() {
         $this->validar();
-        return "<div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
+        return "  <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
 } // Clase abstracta Grafica

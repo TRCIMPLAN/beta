@@ -27,8 +27,8 @@ namespace IBCBase;
  */
 class EjeEducacion implements SalidaWeb {
 
-    protected $publicacion_ficha;
-    protected $educacion;
+    protected $publicacion_ficha;  // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $educacion;          // Arreglo asociativo con datos de Educación
     protected $graf_prom_esc;
     protected $graficas_preparadas = false;
 
@@ -37,8 +37,8 @@ class EjeEducacion implements SalidaWeb {
      *
      * @param mixed Instancia de PublicacionFicha
      */
-    public function __construct(PublicacionFicha $in_publicacion_ficha) {
-        $this->publicacion_ficha = $in_publicacion_ficha;
+    public function __construct(PublicacionFicha $publicacion_ficha) {
+        $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
     /**
