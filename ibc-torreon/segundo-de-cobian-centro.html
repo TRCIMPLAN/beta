@@ -181,11 +181,7 @@
     <p class="enunciado">Ocupación por Vivienda <b>3.13 personas</b>.</p>
     </div>
     <div class="tab-pane" id="unidades-economicas">
-      <p>Primer actividad = AESalud 22.25%</p>
-<p>Segunda actividad = AEComercioMenu 18.43%</p>
-<p>Tercera actividad = AEOtros 13.28%</p>
-<p>Cuarta actividad = AEProfesional 10.51%</p>
-<p>Quinta actividad = AEAlimentos 10.13%</p>
+          <div id="graficaUnidadesEconomicas" class="grafica"></div>
     </div>
   </div></aside>
 <div class="contenido-social">
@@ -232,7 +228,7 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Población por género',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
@@ -249,7 +245,7 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Población por rangos de edad',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
@@ -264,7 +260,7 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Nacida en otro estado',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
@@ -279,7 +275,7 @@ $('#lenguetasIBC a[href="#demografia"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Con discapacidad',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
@@ -298,9 +294,9 @@ $('#lenguetasIBC a[href="#educacion"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Grado Promedio de Escolaridad',
-              chartArea: { width:'60%' },
-              hAxis: { title:'Años', maxValue:'24' },
-              legend: { position:'none' }
+              chartArea: { width: '60%' },
+              hAxis: { title: 'Años', minValue: 0, maxValue: 24 },
+              legend: { position: 'none' }
             };
             var chart = new google.visualization.BarChart(document.getElementById('graficaGradoPromedioDeEscolaridad'));
             chart.draw(data, options);
@@ -317,7 +313,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
             ]);
             var options = {
               title: 'Población Económicamente Activa',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActiva'));
@@ -332,7 +328,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
             ]);
             var options = {
               title: 'Población Económicamente Activa por género',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActivaPorGenero'));
@@ -347,7 +343,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
             ]);
             var options = {
               title: 'Población Ocupada',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#A8001E'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupada'));
@@ -362,7 +358,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
             ]);
             var options = {
               title: 'Población Ocupada por género',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupadaPorGenero'));
@@ -377,7 +373,7 @@ $('#lenguetasIBC a[href="#caracteristicas-economicas"]').on('shown.bs.tab', func
             ]);
             var options = {
               title: 'Derechohabiencia',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#00A898'}, {color: '#BFBFBF'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaDerechohabiencia'));
@@ -395,7 +391,7 @@ $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Hogares con jefatura...',
-              chartArea: { width:'100%', height:'80%' },
+              chartArea: { width: '100%', height: '80%' },
               slices: [{color: '#006AC8'}, {color: '#C80083'}]
             };
             var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresConJefatura'));
@@ -416,11 +412,33 @@ $('#lenguetasIBC a[href="#viviendas"]').on('shown.bs.tab', function(e){
             ]);
             var options = {
               title: 'Viviendas con...',
-              chartArea: { width:'60%' },
-              hAxis: { title:'Porcentaje', maxValue:'100' },
-              legend: { position:'none' }
+              chartArea: { width: '60%' },
+              hAxis: { title: 'Porcentaje', minValue: 0, maxValue: 100 },
+              legend: { position: 'none' }
             };
             var chart = new google.visualization.BarChart(document.getElementById('graficaViviendasCon'));
+            chart.draw(data, options);
+        }
+});
+// LENGUETA unidades-economicas
+$('#lenguetasIBC a[href="#unidades-economicas"]').on('shown.bs.tab', function(e){
+        google.charts.setOnLoadCallback(elaborarGraficaUnidadesEconomicas);
+        function elaborarGraficaUnidadesEconomicas() {
+            var data = google.visualization.arrayToDataTable([
+                ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
+                ['1° Salud', 22.25, '#80C0FF', '22.25 %'],
+                ['2° Comercio Menudeo', 18.43, '#59BFC3', '18.43 %'],
+                ['3° Otros servicios, excepto Gobierno', 13.28, '#59C38E', '13.28 %'],
+                ['4° Profesionales, Científicos, Técnicos', 10.51, '#8EC359', '10.51 %'],
+                ['5° Preparación de Alimentos y Bebidas', 10.13, '#C38E59', '10.13 %']
+            ]);
+            var options = {
+              title: 'Unidades Económicas',
+              chartArea: { width: '60%' },
+              hAxis: { title: 'Porcentaje', minValue: 0 },
+              legend: { position: 'none' }
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('graficaUnidadesEconomicas'));
             chart.draw(data, options);
         }
 });

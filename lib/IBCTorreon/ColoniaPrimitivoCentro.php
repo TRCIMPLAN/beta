@@ -34,7 +34,7 @@ class ColoniaPrimitivoCentro extends \IBCBase\PublicacionFicha {
         // Título, autor y fecha
         $this->nombre          = 'Colonia Primitivo Centro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-08-22 15:46:47';
+        $this->fecha           = '2016-08-30 10:50:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'colonia-primitivo-centro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -100,11 +100,16 @@ class ColoniaPrimitivoCentro extends \IBCBase\PublicacionFicha {
                 'Viviendas con Internet' => '21.97'
             ),
             'Unidades Económicas' => array(
-                'Primer actividad' => 'AEComercioMenu 50.29%',
-                'Segunda actividad' => 'AEAlimentos 12.12%',
-                'Tercera actividad' => 'AEOtros 11.51%',
-                'Cuarta actividad' => 'AEComercioMayo 8.15%',
-                'Quinta actividad' => 'AEProfesional 3.6%'
+                'Primer actividad nombre' => 'Comercio Menudeo',
+                'Primer actividad porcentaje' => '50.29',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Segunda actividad porcentaje' => '12.12',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad porcentaje' => '11.51',
+                'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                'Cuarta actividad porcentaje' => '8.15',
+                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad porcentaje' => '3.60'
             )
         );
     } // datos

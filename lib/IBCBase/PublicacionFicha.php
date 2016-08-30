@@ -111,6 +111,9 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
                 case 'Educación':
                     $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeEducacion($this));
                     break;
+                case 'Unidades Económicas':
+                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeUnidadesEconomicas($this));
+                    break;
                 case 'Viviendas':
                     $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeViviendas($this));
                     break;

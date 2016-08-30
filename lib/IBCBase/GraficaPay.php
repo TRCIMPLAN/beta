@@ -58,12 +58,10 @@ class GraficaPay extends Grafica implements SalidaWeb {
         foreach ($this->etiquetas_colores as $color) {
             $c[] = "{color: '$color'}";
         }
-        if ($this->titulo != '') {
-            $a[] = "          title: '{$this->titulo}',";
+        if ($this->titulo !== NULL) {
+            $a[] = sprintf("          title: '%s',", $this->titulo);
         }
-    //~ $a[] = "          width: 400,";
-    //~ $a[] = "          height: 300,";
-        $a[] = "          chartArea: { width:'100%', height:'80%' },";
+        $a[] = "          chartArea: { width: '100%', height: '80%' },";
         $a[] = sprintf("          slices: [%s]", implode(', ', $c));
         $a[] = "        };";
         $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('grafica{$this->identificador}'));";

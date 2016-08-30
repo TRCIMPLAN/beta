@@ -34,7 +34,7 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionFicha {
         // Título, autor y fecha
         $this->nombre          = 'Segundo De Cobian Centro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-08-22 15:46:47';
+        $this->fecha           = '2016-08-30 10:50:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'segundo-de-cobian-centro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -100,11 +100,16 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionFicha {
                 'Viviendas con Internet' => '34.25'
             ),
             'Unidades Económicas' => array(
-                'Primer actividad' => 'AESalud 22.25%',
-                'Segunda actividad' => 'AEComercioMenu 18.43%',
-                'Tercera actividad' => 'AEOtros 13.28%',
-                'Cuarta actividad' => 'AEProfesional 10.51%',
-                'Quinta actividad' => 'AEAlimentos 10.13%'
+                'Primer actividad nombre' => 'Salud',
+                'Primer actividad porcentaje' => '22.25',
+                'Segunda actividad nombre' => 'Comercio Menudeo',
+                'Segunda actividad porcentaje' => '18.43',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad porcentaje' => '13.28',
+                'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Cuarta actividad porcentaje' => '10.51',
+                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Quinta actividad porcentaje' => '10.13'
             )
         );
     } // datos

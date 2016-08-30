@@ -99,7 +99,7 @@ abstract class Grafica {
      */
     public function html() {
         $this->validar();
-        return "<div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>"; // style=\"width:'100%'; height:450px;\"
+        return "<div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
 } // Clase abstracta Grafica

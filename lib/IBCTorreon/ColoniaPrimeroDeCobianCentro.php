@@ -34,7 +34,7 @@ class ColoniaPrimeroDeCobianCentro extends \IBCBase\PublicacionFicha {
         // Título, autor y fecha
         $this->nombre          = 'Colonia Primero De Cobian Centro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-08-22 15:46:47';
+        $this->fecha           = '2016-08-30 10:50:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'colonia-primero-de-cobian-centro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -100,11 +100,16 @@ class ColoniaPrimeroDeCobianCentro extends \IBCBase\PublicacionFicha {
                 'Viviendas con Internet' => '35.59'
             ),
             'Unidades Económicas' => array(
-                'Primer actividad' => 'AEComercioMenu 22.63%',
-                'Segunda actividad' => 'AEOtros 13.74%',
-                'Tercera actividad' => 'AEProfesional 13.74%',
-                'Cuarta actividad' => 'AEAlimentos 12.22%',
-                'Quinta actividad' => 'AESalud 9.9%'
+                'Primer actividad nombre' => 'Comercio Menudeo',
+                'Primer actividad porcentaje' => '22.63',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad porcentaje' => '13.74',
+                'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Tercera actividad porcentaje' => '13.74',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Cuarta actividad porcentaje' => '12.22',
+                'Quinta actividad nombre' => 'Salud',
+                'Quinta actividad porcentaje' => '9.90'
             )
         );
     } // datos

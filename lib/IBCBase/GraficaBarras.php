@@ -42,11 +42,11 @@ class GraficaBarras extends Grafica implements SalidaWeb {
     /**
      * Definir eje horizontal
      *
-     * @param string  Etiqueta para el eje
-     * @param integer Valor mínimo
-     * @param integer Valor máximo
+     * @param string Etiqueta para el eje
+     * @param float  Opcional, valor mínimo
+     * @param float  Opcional, valor máximo
      */
-    public function definir_eje_horizontal($etiqueta, $minimo, $maximo) {
+    public function definir_eje_horizontal($etiqueta, $minimo = NULL, $maximo = NULL) {
         $this->eje_horizontal_etiqueta = $etiqueta;
         $this->eje_horizontal_minimo   = $minimo;
         $this->eje_horizontal_maximo   = $maximo;
@@ -72,24 +72,22 @@ class GraficaBarras extends Grafica implements SalidaWeb {
         $a[] = implode(",\n    ", $b);
         $a[] = "        ]);";
         $a[] = "        var options = {";
-        if ($this->titulo != '') {
-            $a[] = "          title: '{$this->titulo}',";
+        if ($this->titulo !== NULL) {
+            $a[] = sprintf("          title: '%s',", $this->titulo);
         }
-    //~ $a[] = "          width: 400,";
-    //~ $a[] = "          height: 300,";
-        $a[] = "          chartArea: { width:'60%' },";
+        $a[] = "          chartArea: { width: '60%' },";
         $b   = array();
-        if ($this->eje_horizontal_etiqueta != '') {
-            $b[] = "title:'{$this->eje_horizontal_etiqueta}'";
+        if ($this->eje_horizontal_etiqueta !== NULL) {
+            $b[] = sprintf("title: '%s'", $this->eje_horizontal_etiqueta);
         }
-        if ($this->eje_horizontal_minimo != '') {
-            $b[] = "minValue:'{$this->eje_horizontal_minimo}'";
+        if ($this->eje_horizontal_minimo !== NULL) {
+            $b[] = "minValue: {$this->eje_horizontal_minimo}";
         }
-        if ($this->eje_horizontal_maximo != '') {
-            $b[] = "maxValue:'{$this->eje_horizontal_maximo}'";
+        if ($this->eje_horizontal_maximo !== NULL) {
+            $b[] = "maxValue: {$this->eje_horizontal_maximo}";
         }
         $a[] = sprintf("          hAxis: { %s },", implode(', ', $b));
-        $a[] = "          legend: { position:'none' }";
+        $a[] = "          legend: { position: 'none' }";
         $a[] = "        };";
         $a[] = "        var chart = new google.visualization.BarChart(document.getElementById('grafica{$this->identificador}'));";
         $a[] = "        chart.draw(data, options);";
