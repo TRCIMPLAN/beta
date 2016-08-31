@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - AcordionesWeb
+ * TrcIMPLAN IBCBase - AcordeonesWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase AcordionesWeb
+ * Clase AcordeonesWeb
  */
-class AcordionesWeb implements SalidaWeb {
+class AcordeonesWeb implements SalidaWeb {
 
     protected $identificador;           // Texto único que lo identifica
     protected $elementos     = array(); // Arreglo con instancias de AcordeonWeb
@@ -42,11 +42,12 @@ class AcordionesWeb implements SalidaWeb {
     /**
      * Agregar
      *
-     * @param string Texto que va a aparecer en la barra del acordion
-     * @param mixed  Instancia con el contenido, debe implementar SalidaWeb
+     * @param string  Texto que va a aparecer en la barra
+     * @param mixed   Instancia con el contenido, debe implementar SalidaWeb
+     * @param boolean Verdadero si debe estar abierto, falso si no
      */
-    public function agregar($titulo, $contenido) {
-        $this->elementos[] = new AcordionWeb($this->identificador, $titulo, $contenido);
+    public function agregar($titulo, $contenido, $esta_abierto = FALSE) {
+        $this->elementos[] = new AcordeonWeb($this->identificador, $titulo, $contenido, $esta_abierto);
     } // agregar
 
     /**
@@ -54,10 +55,10 @@ class AcordionesWeb implements SalidaWeb {
      */
     protected function validar() {
         if ($this->identificador == NULL) {
-            throw new \Exception("Error en AcordionesWeb: Falta el identificador.");
+            throw new \Exception("Error en AcordeonesWeb: Falta el identificador.");
         }
         if (!is_array($this->elementos) || (count($this->elementos) == 0)) {
-            throw new \Exception("Error en AcordionesWeb: No tiene elementos.");
+            throw new \Exception("Error en AcordeonesWeb: No tiene elementos.");
         }
     } // validar
 
@@ -95,6 +96,6 @@ class AcordionesWeb implements SalidaWeb {
         return implode("\n", $a);
     } // javascript
 
-} // Clase AcordionesWeb
+} // Clase AcordeonesWeb
 
 ?>

@@ -27,16 +27,16 @@ namespace IBCBase;
  */
 class EjeViviendas {
 
-    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
     protected $viviendas;         // Arreglo asociativo con datos de Viviendas
     protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de PublicacionFicha
+     * @param mixed Instancia de PublicacionWeb
      */
-    public function __construct(PublicacionFicha $publicacion_ficha) {
+    public function __construct(PublicacionWeb $publicacion_ficha) {
         $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 

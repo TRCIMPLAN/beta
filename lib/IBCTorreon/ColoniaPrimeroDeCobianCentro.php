@@ -25,7 +25,7 @@ namespace IBCTorreon;
 /**
  * Clase ColoniaPrimeroDeCobianCentro
  */
-class ColoniaPrimeroDeCobianCentro extends \IBCBase\PublicacionFicha {
+class ColoniaPrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
 
     /**
      * Constructor

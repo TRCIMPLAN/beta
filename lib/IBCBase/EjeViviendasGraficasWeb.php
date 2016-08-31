@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - EjeViviendasGraficas
+ * TrcIMPLAN IBCBase - EjeViviendasGraficasWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase EjeViviendasGraficas
+ * Clase EjeViviendasGraficasWeb
  */
-class EjeViviendasGraficas extends EjeViviendas implements SalidaWeb {
+class EjeViviendasGraficasWeb extends EjeViviendas implements SalidaWeb {
 
     // protected $publicacion_ficha;
     // protected $viviendas;
@@ -38,14 +38,14 @@ class EjeViviendasGraficas extends EjeViviendas implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::preparado();
+            parent::prepapar();
             // Gráfica Hogares Jefatura
-            $this->graf_hog_jef = new GraficaPay();
+            $this->graf_hog_jef = new GraficaPayWeb();
             $this->graf_hog_jef->definir_titulo('Hogares con jefatura...');
             $this->graf_hog_jef->agregar('Masculina', $this->viviendas['Hogares Jefatura masculina'], '#006AC8');
             $this->graf_hog_jef->agregar('Femenina',  $this->viviendas['Hogares Jefatura femenina'],  '#C80083');
             // Gráfica Viviendas con...
-            $this->graf_viv_con = new GraficaBarras();
+            $this->graf_viv_con = new GraficaBarrasWeb();
             $this->graf_viv_con->definir_titulo('Viviendas con...');
             $this->graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#FF8080');
             $this->graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#FF80C0');
@@ -72,7 +72,7 @@ class EjeViviendasGraficas extends EjeViviendas implements SalidaWeb {
         $a[] = $this->graf_hog_jef->html();
         $a[] = $this->graf_viv_con->html();
         // Entregar
-        return implode("\n    ", $a);
+        return implode("\n", $a);
     } // html
 
     /**
@@ -87,9 +87,9 @@ class EjeViviendasGraficas extends EjeViviendas implements SalidaWeb {
         $a[] = $this->graf_hog_jef->javascript();
         $a[] = $this->graf_viv_con->javascript();
         // Entregar
-        return implode("\n    ", $a);
+        return implode("\n", $a);
     } // javascript
 
-} // Clase EjeViviendasGraficas
+} // Clase EjeViviendasGraficasWeb
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - GraficaPay
+ * TrcIMPLAN IBCBase - GraficaPayWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase GraficaPay
+ * Clase GraficaPayWeb
  */
-class GraficaPay extends Grafica implements SalidaWeb {
+class GraficaPayWeb extends Grafica implements SalidaWeb {
 
     // protected $identificador;
     // protected $titulo;
@@ -35,6 +35,16 @@ class GraficaPay extends Grafica implements SalidaWeb {
     // const     COLOR_POR_DEFECTO;
 
     /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        $this->validar();
+        return "    <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
+    } // html
+
+    /**
      * Javascript
      *
      * @return string Código Javascript
@@ -42,6 +52,7 @@ class GraficaPay extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
+        $a[] = "  // GraficaPayWeb {$this->identificador}";
         // Google Charts
         $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
         $a[] = "    function elaborarGrafica{$this->identificador}() {";
@@ -51,9 +62,10 @@ class GraficaPay extends Grafica implements SalidaWeb {
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {
             $b[] = sprintf("            ['%s', %s]", $etiqueta, $valor);
         }
-        $a[] = implode(",\n    ", $b);
+        $a[] = implode(",\n", $b);
         $a[] = "        ]);";
         $a[] = "        var options = {";
+        $a[] = "          chartArea: { width: '100%', height: '80%' },";
         $c   = array();
         foreach ($this->etiquetas_colores as $color) {
             $c[] = "{color: '$color'}";
@@ -61,7 +73,6 @@ class GraficaPay extends Grafica implements SalidaWeb {
         if ($this->titulo !== NULL) {
             $a[] = sprintf("          title: '%s',", $this->titulo);
         }
-        $a[] = "          chartArea: { width: '100%', height: '80%' },";
         $a[] = sprintf("          slices: [%s]", implode(', ', $c));
         $a[] = "        };";
         $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('grafica{$this->identificador}'));";
@@ -84,9 +95,9 @@ class GraficaPay extends Grafica implements SalidaWeb {
         }
         $a[] = '}'; */
         // Entregar
-        return implode("\n    ", $a);
+        return implode("\n", $a);
     } // javascript
 
-} // Clase GraficaPay
+} // Clase GraficaPayWeb
 
 ?>

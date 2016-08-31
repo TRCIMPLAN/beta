@@ -92,16 +92,6 @@ abstract class Grafica {
         }
     } // validar
 
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        $this->validar();
-        return "  <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
-    } // html
-
 } // Clase abstracta Grafica
 
 ?>

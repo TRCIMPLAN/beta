@@ -27,16 +27,16 @@ namespace IBCBase;
  */
 class SeccionDatosWeb implements SalidaWeb {
 
-    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
     protected $acordeones;        // Encapsular cada eje en un acordeon
     protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de PublicacionFicha
+     * @param mixed Instancia de PublicacionWeb
      */
-    public function __construct(PublicacionFicha $publicacion_ficha) {
+    public function __construct(PublicacionWeb $publicacion_ficha) {
         $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
@@ -45,12 +45,12 @@ class SeccionDatosWeb implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            $this->acordeones = new AcordionesWeb();
-            $this->acordeones->agregar('Demografía',                 new EjeDemografiaTabla($this->publicacion_ficha));
-            $this->acordeones->agregar('Educación',                  new EjeEducacionTabla($this->publicacion_ficha));
-            $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasTabla($this->publicacion_ficha));
-            $this->acordeones->agregar('Viviendas',                  new EjeViviendasTabla($this->publicacion_ficha));
-            $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasTabla($this->publicacion_ficha));
+            $this->acordeones = new AcordeonesWeb('SeccionDatos');
+            $this->acordeones->agregar('Demografía',                 new EjeDemografiaTablaWeb($this->publicacion_ficha), TRUE);
+            $this->acordeones->agregar('Educación',                  new EjeEducacionTablaWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasTablaWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Viviendas',                  new EjeViviendasTablaWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasTablaWeb($this->publicacion_ficha));
             $this->preparado = TRUE;
         }
     } // preparar

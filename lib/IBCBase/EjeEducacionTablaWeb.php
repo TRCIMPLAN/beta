@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - EjeUnidadesEconomicasTabla
+ * TrcIMPLAN IBCBase - EjeEducacionTablaWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,20 +23,35 @@
 namespace IBCBase;
 
 /**
- * Clase EjeUnidadesEconomicasTabla
+ * Clase EjeEducacionTablaWeb
  */
-class EjeUnidadesEconomicasTabla extends EjeUnidadesEconomicas implements SalidaWeb {
+class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
 
     // protected $publicacion_ficha;
-    // protected $unidades_economicas;
+    // protected $educacion;
     // protected $preparado;
+    protected $tabla;
 
     /**
      * Preparar
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::preparado();
+            parent::prepapar();
+            $this->tabla = new TablaWeb('TablaEducacion');
+            $this->tabla->definir_estructura(
+                array(
+                    'indicador' => array('enca' => 'Indicador'),
+                    'valor'     => array('enca' => 'Valor')
+                )
+            );
+            $this->tabla->definir_panal(
+                array(
+                    array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->educacion['Grado Promedio de Escolaridad']),
+                    array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->educacion['Grado Promedio de Escolaridad masculina']),
+                    array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->educacion['Grado Promedio de Escolaridad femenina'])
+                )
+            );
         }
     } // preparar
 
@@ -47,6 +62,7 @@ class EjeUnidadesEconomicasTabla extends EjeUnidadesEconomicas implements Salida
      */
     public function html() {
         $this->prepapar();
+        return $this->tabla->html();
     } // html
 
     /**
@@ -56,8 +72,9 @@ class EjeUnidadesEconomicasTabla extends EjeUnidadesEconomicas implements Salida
      */
     public function javascript() {
         $this->prepapar();
+        return $this->tabla->javascript();
     } // javascript
 
-} // Clase EjeUnidadesEconomicasTabla
+} // Clase EjeEducacionTablaWeb
 
 ?>

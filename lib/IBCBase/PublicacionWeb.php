@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - PublicacionFicha
+ * TrcIMPLAN IBCBase - PublicacionWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase PublicacionFicha
+ * Clase PublicacionWeb
  */
-abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
+abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
 
     // public $sitio_url;
     // public $fecha;
@@ -74,22 +74,18 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
      * Validar
      */
     public function validar() {
-        // Si ya fue validado, no se hace nada
-        if ($this->validado) {
-            return;
+        if (!$this->validado) {
+            // El contenido es estructurado en un esquema
+            $schema              = new \Base\SchemaDataset();
+            $schema->is_article  = true;
+            $schema->big_heading = true;
+            $schema->name        = $this->nombre;
+            $schema->description = $this->descripcion;
+            $schema->image       = $this->imagen;
+            $schema->image_show  = false;
+            $this->contenido     = $schema;
+            parent::validar();
         }
-        // El contenido es estructurado en un esquema
-        $schema                = new \Base\SchemaDataset();
-        $schema->is_article    = true;
-        $schema->big_heading   = true;
-        $schema->name          = $this->nombre;
-        $schema->description   = $this->descripcion;
-        $schema->image         = $this->imagen;
-        $schema->image_show    = false;
-        // El contenido es una instancia de SchemaBlogPosting
-        $this->contenido       = $schema;
-        // Ejecutar método en el padre
-        parent::validar();
     } // validar
 
     /**
@@ -100,9 +96,9 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
     public function html() {
         // Crear lengüetas
         $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-    //~ $lenguetas->agregar('Mapas',    'Mapas',    new SeccionMapasWeb($this));
-        $lenguetas->agregar('Datos',    'Datos',    new SeccionDatosWeb($this));
-        $lenguetas->agregar('Graficas', 'Graficas', new SeccionGraficasWeb($this));
+    //~ $lenguetas->agregar('LenguetaMapas',    'Mapas',    new SeccionMapasWeb($this));
+        $lenguetas->agregar('LenguetaDatos',    'Datos',    new SeccionDatosWeb($this));
+        $lenguetas->agregar('LenguetaGraficas', 'Graficas', new SeccionGraficasWeb($this));
         $this->contenido->extra = $lenguetas->html();
         $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();
@@ -122,6 +118,6 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
         return parent::redifusion_html();
     } // redifusion_html
 
-} // Clase PublicacionFicha
+} // Clase PublicacionWeb
 
 ?>

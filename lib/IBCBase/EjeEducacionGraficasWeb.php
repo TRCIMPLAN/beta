@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - EjeDemografiaTabla
+ * TrcIMPLAN IBCBase - EjeEducacionGraficasWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,19 +23,29 @@
 namespace IBCBase;
 
 /**
- * Clase EjeDemografiaTabla
+ * Clase EjeEducacionGraficasWeb
  */
-class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
+class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
 
-    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
-    protected $preparado = FALSE; // Bandera
+    // protected $publicacion_ficha;
+    // protected $educacion;
+    // protected $preparado;
+    protected $graf_prom_esc;
 
     /**
      * Preparar
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::preparado();
+            parent::prepapar();
+            // Gráfica Grado Promedio de Escolaridad
+            $this->graf_prom_esc = new GraficaBarrasWeb();
+            $this->graf_prom_esc->definir_titulo('Grado Promedio de Escolaridad');
+            $this->graf_prom_esc->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
+            $this->graf_prom_esc->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
+            $this->graf_prom_esc->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
+            $this->graf_prom_esc->definir_eje_horizontal('Años', 0, 24);
+            $this->graf_prom_esc->definir_post_nota(' años');;
         }
     } // preparar
 
@@ -46,6 +56,7 @@ class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
      */
     public function html() {
         $this->prepapar();
+        return $this->graf_prom_esc->html();
     } // html
 
     /**
@@ -55,8 +66,9 @@ class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
      */
     public function javascript() {
         $this->prepapar();
+        return $this->graf_prom_esc->javascript();
     } // javascript
 
-} // Clase EjeDemografiaTabla
+} // Clase EjeEducacionGraficasWeb
 
 ?>

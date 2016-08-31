@@ -27,16 +27,16 @@ namespace IBCBase;
  */
 class SeccionGraficasWeb implements SalidaWeb {
 
-    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
     protected $acordeones;        // Encapsular cada eje en un acordeon
     protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de PublicacionFicha
+     * @param mixed Instancia de PublicacionWeb
      */
-    public function __construct(PublicacionFicha $publicacion_ficha) {
+    public function __construct(PublicacionWeb $publicacion_ficha) {
         $this->publicacion_ficha = $publicacion_ficha;
     } // constructor
 
@@ -45,12 +45,12 @@ class SeccionGraficasWeb implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            $this->acordeones = new AcordionesWeb();
-            $this->acordeones->agregar('Demografía',                 new EjeDemografiaGraficas($this->publicacion_ficha));
-            $this->acordeones->agregar('Educación',                  new EjeEducacionGraficas($this->publicacion_ficha));
-            $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasGraficas($this->publicacion_ficha));
-            $this->acordeones->agregar('Viviendas',                  new EjeViviendasGraficas($this->publicacion_ficha));
-            $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasGraficas($this->publicacion_ficha));
+            $this->acordeones = new AcordeonesWeb('SeccionGraficas');
+            $this->acordeones->agregar('Demografía',                 new EjeDemografiaGraficasWeb($this->publicacion_ficha), TRUE);
+            $this->acordeones->agregar('Educación',                  new EjeEducacionGraficasWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasGraficasWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Viviendas',                  new EjeViviendasGraficasWeb($this->publicacion_ficha));
+            $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasGraficasWeb($this->publicacion_ficha));
             $this->preparado = TRUE;
         }
     } // preparar

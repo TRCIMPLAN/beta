@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - GraficaBarras
+ * TrcIMPLAN IBCBase - GraficaBarrasWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase GraficaBarras
+ * Clase GraficaBarrasWeb
  */
-class GraficaBarras extends Grafica implements SalidaWeb {
+class GraficaBarrasWeb extends Grafica implements SalidaWeb {
 
     // protected $identificador;
     // protected $titulo;
@@ -53,6 +53,16 @@ class GraficaBarras extends Grafica implements SalidaWeb {
     } // definir_eje_horizontal
 
     /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        $this->validar();
+        return "    <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
+    } // html
+
+    /**
      * Javascript
      *
      * @return string Código Javascript
@@ -60,6 +70,7 @@ class GraficaBarras extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
+        $a[] = "  // GraficaBarrasWeb {$this->identificador}";
         // Google Charts
         $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
         $a[] = "    function elaborarGrafica{$this->identificador}() {";
@@ -69,13 +80,13 @@ class GraficaBarras extends Grafica implements SalidaWeb {
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {
             $b[] = sprintf("            ['%s', %s, '%s', '%s']", $etiqueta, $valor, $this->etiquetas_colores[$etiqueta], $valor.$this->post_nota);
         }
-        $a[] = implode(",\n    ", $b);
+        $a[] = implode(",\n", $b);
         $a[] = "        ]);";
         $a[] = "        var options = {";
+        $a[] = "          chartArea: { width: '60%' },";
         if ($this->titulo !== NULL) {
             $a[] = sprintf("          title: '%s',", $this->titulo);
         }
-        $a[] = "          chartArea: { width: '60%' },";
         $b   = array();
         if ($this->eje_horizontal_etiqueta !== NULL) {
             $b[] = sprintf("title: '%s'", $this->eje_horizontal_etiqueta);
@@ -108,9 +119,9 @@ class GraficaBarras extends Grafica implements SalidaWeb {
         $a[] = "        hideHover: false"; // false para mostrar siempre las leyendas en cada barra, true sólo cuando pasa el puntero
         $a[] = "    });";
         $a[] = "}"; */
-        return implode("\n    ", $a);
+        return implode("\n", $a);
     } // javascript
 
-} // Clase GraficaBarras
+} // Clase GraficaBarrasWeb
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - EjeUnidadesEconomicasGraficas
+ * TrcIMPLAN IBCBase - EjeUnidadesEconomicasGraficasWeb
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -23,9 +23,9 @@
 namespace IBCBase;
 
 /**
- * Clase EjeUnidadesEconomicasGraficas
+ * Clase EjeUnidadesEconomicasGraficasWeb
  */
-class EjeUnidadesEconomicasGraficas extends EjeUnidadesEconomicas implements SalidaWeb {
+class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements SalidaWeb {
 
     // protected $publicacion_ficha;
     // protected $unidades_economicas;
@@ -37,9 +37,9 @@ class EjeUnidadesEconomicasGraficas extends EjeUnidadesEconomicas implements Sal
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::preparado();
+            parent::prepapar();
             // Grafica Unidades Economicas
-            $this->graf_uni_eco = new GraficaBarras();
+            $this->graf_uni_eco = new GraficaBarrasWeb();
             $this->graf_uni_eco->definir_titulo('Unidades Económicas');
             $this->graf_uni_eco->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
             $this->graf_uni_eco->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
@@ -71,6 +71,6 @@ class EjeUnidadesEconomicasGraficas extends EjeUnidadesEconomicas implements Sal
         return $this->graf_uni_eco->javascript();
     } // javascript
 
-} // Clase EjeUnidadesEconomicasGraficas
+} // Clase EjeUnidadesEconomicasGraficasWeb
 
 ?>

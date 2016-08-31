@@ -27,8 +27,18 @@ namespace IBCBase;
  */
 class TablaWeb implements SalidaWeb {
 
-    protected $estructura; // Arreglo asociativo con datos de cada columna
-    protected $panal;      // Arreglo de arreglos asociativos con instancias de CeldaWeb
+    protected $identificador; // Texto único que lo identifica
+    protected $estructura;    // Arreglo asociativo con datos de cada columna
+    protected $panal;         // Arreglo de arreglos asociativos con instancias de CeldaWeb
+
+    /**
+     * Constructor
+     *
+     * @param string Opcional, texto único que lo identifica
+     */
+    public function __construct($identificador = NULL) {
+        $this->identificador = $identificador;
+    } // constructor
 
     /**
      * Definir estructura
@@ -104,7 +114,7 @@ class TablaWeb implements SalidaWeb {
      * @return string Javascript
      */
     public function javascript() {
-        return '';
+        return "  // TablaWeb {$this->identificador} sin javascript";
     } // javascript
 
 } // Clase TablaWeb
