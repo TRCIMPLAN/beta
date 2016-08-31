@@ -164,13 +164,8 @@ class LenguetasWeb implements SalidaWeb {
      * @return string Javascript
      */
     public function javascript() {
-        // Si no hay lengüetas, no entrega nada
-        if (count($this->lenguetas) == 0) {
-            return '';
-        }
-        // En este arreglo juntaremos el javascript
+        // Acumular
         $a = array();
-        // Acumular el Javascript de cada lengüeta
         foreach ($this->lenguetas as $lengueta) {
             $js = $lengueta->javascript();
             if (is_string($js) && (trim($js) != '')) {
@@ -183,21 +178,16 @@ class LenguetasWeb implements SalidaWeb {
                 }
             }
         }
-        // Acumular Javascript de Twitter Bootstrap para que lengüeta activa sea la que aparezca
         if ($this->activa === false) {
-            $a[] = <<<FINAL
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA PRIMER LENGÜETA ES LA ACTIVA
-$(document).ready(function(){
-  $('#{$this->identificador} a:first').tab('show')
-});
-FINAL;
+            $a[] = "// LenguetasWeb {$this->identificador} con la primer lengueta activa";
+            $a[] = "$(document).ready(function(){";
+            $a[] = "  $('#{$this->identificador} a:first').tab('show')";
+            $a[] = "});";
         } else {
-            $a[] = <<<FINAL
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES {$this->activa}
-$(document).ready(function(){
-  $('#{$this->identificador} a[href="#{$this->activa}"]').tab('show')
-});
-FINAL;
+            $a[] = "// LenguetasWeb {$this->identificador} con {$this->activa} activa";
+            $a[] = "$(document).ready(function(){";
+            $a[] = "  $('#{$this->identificador} a[href=\"#{$this->activa}\"]').tab('show')";
+            $a[] = "});";
         }
         // Entregar
         return implode("\n", $a);

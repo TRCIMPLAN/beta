@@ -533,17 +533,34 @@
 <script src="../js/sb-admin-2.js"></script>
 <script>
 google.charts.load('current', {'packages':['corechart']});
-// LENGUETA LenguetaDatos
+// LenguetaWeb LenguetaDatos
 $('#lenguetasIBC a[href="#LenguetaDatos"]').on('shown.bs.tab', function(e){
-  // TablaWeb TablaDemografia sin javascript
-  // TablaWeb TablaEducacion sin javascript
-  // TablaWeb TablaCaracteristicasEconomicas sin javascript
-  // TablaWeb TablaViviendas sin javascript
-  // TablaWeb TablaUnidadesEconomicas sin javascript
+  // AcordeonWeb SeccionDatosDemografia
+    // TablaWeb TablaDemografia sin javascript
+  $('#SeccionDatosDemografia').on('shown.bs.collapse', function () {
+    // TablaWeb TablaDemografia sin javascript
+  })
+  // AcordeonWeb SeccionDatosEducacion
+  $('#SeccionDatosEducacion').on('shown.bs.collapse', function () {
+    // TablaWeb TablaEducacion sin javascript
+  })
+  // AcordeonWeb SeccionDatosCaracteristicasEconomicas
+  $('#SeccionDatosCaracteristicasEconomicas').on('shown.bs.collapse', function () {
+    // TablaWeb TablaCaracteristicasEconomicas sin javascript
+  })
+  // AcordeonWeb SeccionDatosViviendas
+  $('#SeccionDatosViviendas').on('shown.bs.collapse', function () {
+    // TablaWeb TablaViviendas sin javascript
+  })
+  // AcordeonWeb SeccionDatosUnidadesEconomicas
+  $('#SeccionDatosUnidadesEconomicas').on('shown.bs.collapse', function () {
+    // TablaWeb TablaUnidadesEconomicas sin javascript
+  })
 });
-// LENGUETA LenguetaGraficas
+// LenguetaWeb LenguetaGraficas
 $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
-  // GraficaPayWeb PoblacionPorGenero
+  // AcordeonWeb SeccionGraficasDemografia
+    // GraficaPayWeb PoblacionPorGenero
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorGenero);
     function elaborarGraficaPoblacionPorGenero() {
         var data = google.visualization.arrayToDataTable([
@@ -559,7 +576,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb PoblacionPorRangosDeEdad
+    // GraficaPayWeb PoblacionPorRangosDeEdad
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorRangosDeEdad);
     function elaborarGraficaPoblacionPorRangosDeEdad() {
         var data = google.visualization.arrayToDataTable([
@@ -577,7 +594,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb NacidaEnOtroEstado
+    // GraficaPayWeb NacidaEnOtroEstado
     google.charts.setOnLoadCallback(elaborarGraficaNacidaEnOtroEstado);
     function elaborarGraficaNacidaEnOtroEstado() {
         var data = google.visualization.arrayToDataTable([
@@ -593,7 +610,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb ConDiscapacidad
+    // GraficaPayWeb ConDiscapacidad
     google.charts.setOnLoadCallback(elaborarGraficaConDiscapacidad);
     function elaborarGraficaConDiscapacidad() {
         var data = google.visualization.arrayToDataTable([
@@ -609,7 +626,77 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
         chart.draw(data, options);
     }
-  // GraficaBarrasWeb GradoPromedioDeEscolaridad
+  $('#SeccionGraficasDemografia').on('shown.bs.collapse', function () {
+    // GraficaPayWeb PoblacionPorGenero
+    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorGenero);
+    function elaborarGraficaPoblacionPorGenero() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['Masculina', 45.86],
+            ['Femenina', 54.14]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Población por género',
+          slices: [{color: '#006AC8'}, {color: '#C80083'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb PoblacionPorRangosDeEdad
+    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorRangosDeEdad);
+    function elaborarGraficaPoblacionPorRangosDeEdad() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['De 0 a 14 años', 17.37],
+            ['De 15 a 64 años', 64.34],
+            ['De 65 y más años', 15.91],
+            ['No especificada', 2.38]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Población por rangos de edad',
+          slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb NacidaEnOtroEstado
+    google.charts.setOnLoadCallback(elaborarGraficaNacidaEnOtroEstado);
+    function elaborarGraficaNacidaEnOtroEstado() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['Nacida en OTRO estado', 19.09],
+            ['Nacida en este estado', 80.91]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Nacida en otro estado',
+          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb ConDiscapacidad
+    google.charts.setOnLoadCallback(elaborarGraficaConDiscapacidad);
+    function elaborarGraficaConDiscapacidad() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['CON discapacidad', 5.97],
+            ['Sin discapacidad', 94.03]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Con discapacidad',
+          slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
+        chart.draw(data, options);
+    }
+  })
+  // AcordeonWeb SeccionGraficasEducacion
+  $('#SeccionGraficasEducacion').on('shown.bs.collapse', function () {
+    // GraficaBarrasWeb GradoPromedioDeEscolaridad
     google.charts.setOnLoadCallback(elaborarGraficaGradoPromedioDeEscolaridad);
     function elaborarGraficaGradoPromedioDeEscolaridad() {
         var data = google.visualization.arrayToDataTable([
@@ -627,7 +714,10 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.BarChart(document.getElementById('graficaGradoPromedioDeEscolaridad'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb PoblacionEconomicamenteActiva
+  })
+  // AcordeonWeb SeccionGraficasCaracteristicasEconomicas
+  $('#SeccionGraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
+    // GraficaPayWeb PoblacionEconomicamenteActiva
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActiva);
     function elaborarGraficaPoblacionEconomicamenteActiva() {
         var data = google.visualization.arrayToDataTable([
@@ -643,7 +733,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActiva'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb PoblacionEconomicamenteActivaPorGenero
+    // GraficaPayWeb PoblacionEconomicamenteActivaPorGenero
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActivaPorGenero);
     function elaborarGraficaPoblacionEconomicamenteActivaPorGenero() {
         var data = google.visualization.arrayToDataTable([
@@ -659,7 +749,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActivaPorGenero'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb PoblacionOcupada
+    // GraficaPayWeb PoblacionOcupada
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupada);
     function elaborarGraficaPoblacionOcupada() {
         var data = google.visualization.arrayToDataTable([
@@ -675,7 +765,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupada'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb PoblacionOcupadaPorGenero
+    // GraficaPayWeb PoblacionOcupadaPorGenero
     google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupadaPorGenero);
     function elaborarGraficaPoblacionOcupadaPorGenero() {
         var data = google.visualization.arrayToDataTable([
@@ -691,7 +781,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupadaPorGenero'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb Derechohabiencia
+    // GraficaPayWeb Derechohabiencia
     google.charts.setOnLoadCallback(elaborarGraficaDerechohabiencia);
     function elaborarGraficaDerechohabiencia() {
         var data = google.visualization.arrayToDataTable([
@@ -707,7 +797,10 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaDerechohabiencia'));
         chart.draw(data, options);
     }
-  // GraficaPayWeb HogaresConJefatura
+  })
+  // AcordeonWeb SeccionGraficasViviendas
+  $('#SeccionGraficasViviendas').on('shown.bs.collapse', function () {
+    // GraficaPayWeb HogaresConJefatura
     google.charts.setOnLoadCallback(elaborarGraficaHogaresConJefatura);
     function elaborarGraficaHogaresConJefatura() {
         var data = google.visualization.arrayToDataTable([
@@ -723,7 +816,7 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresConJefatura'));
         chart.draw(data, options);
     }
-  // GraficaBarrasWeb ViviendasCon
+    // GraficaBarrasWeb ViviendasCon
     google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
     function elaborarGraficaViviendasCon() {
         var data = google.visualization.arrayToDataTable([
@@ -746,7 +839,10 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.BarChart(document.getElementById('graficaViviendasCon'));
         chart.draw(data, options);
     }
-  // GraficaBarrasWeb UnidadesEconomicas
+  })
+  // AcordeonWeb SeccionGraficasUnidadesEconomicas
+  $('#SeccionGraficasUnidadesEconomicas').on('shown.bs.collapse', function () {
+    // GraficaBarrasWeb UnidadesEconomicas
     google.charts.setOnLoadCallback(elaborarGraficaUnidadesEconomicas);
     function elaborarGraficaUnidadesEconomicas() {
         var data = google.visualization.arrayToDataTable([
@@ -766,8 +862,9 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
         var chart = new google.visualization.BarChart(document.getElementById('graficaUnidadesEconomicas'));
         chart.draw(data, options);
     }
+  })
 });
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES LenguetaDatos
+// LenguetasWeb lenguetasIBC con LenguetaDatos activa
 $(document).ready(function(){
   $('#lenguetasIBC a[href="#LenguetaDatos"]').tab('show')
 });

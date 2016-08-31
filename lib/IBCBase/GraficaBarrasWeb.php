@@ -70,7 +70,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
-        $a[] = "  // GraficaBarrasWeb {$this->identificador}";
+        $a[] = "    // GraficaBarrasWeb {$this->identificador}";
         // Google Charts
         $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
         $a[] = "    function elaborarGrafica{$this->identificador}() {";

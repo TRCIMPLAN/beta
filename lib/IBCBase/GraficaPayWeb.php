@@ -52,7 +52,7 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
-        $a[] = "  // GraficaPayWeb {$this->identificador}";
+        $a[] = "    // GraficaPayWeb {$this->identificador}";
         // Google Charts
         $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
         $a[] = "    function elaborarGrafica{$this->identificador}() {";

@@ -156,30 +156,23 @@ class LenguetaWeb {
      * @return string Javascript
      */
     public function javascript() {
-        // Acumularemos el javascript en este arreglo
-        $a = array();
-        // Si hay Javascript en el arreglo digerido
-        foreach ($this->digerido_js as $js) {
-            if ($js !== false) {
-                $a[] = $js;
+        // Acumular
+        $a   = array();
+        $a[] = "// LenguetaWeb {$this->clave}";
+        $a[] = "$('#{$this->padre_identificador} a[href=\"#{$this->clave}\"]').on('shown.bs.tab', function(e){";
+        if (count($this->digerido_js) > 0) {
+            foreach ($this->digerido_js as $js) {
+                if ($js !== false) {
+                    $a[] = $js;
+                }
             }
         }
-        // Si hay Javascript
         if (is_string($this->javascript) && ($this->javascript != '')) {
             $a[] = $this->javascript;
         }
+        $a[] = "});";
         // Entregar
-        if (count($a) > 0) {
-            $todo = implode("\n", $a);
-            return <<<FINAL
-// LENGUETA {$this->clave}
-$('#{$this->padre_identificador} a[href="#{$this->clave}"]').on('shown.bs.tab', function(e){
-$todo
-});
-FINAL;
-        } else {
-            return '';
-        }
+        return implode("\n", $a);
     } // javascript
 
 } // Clase LenguetaWeb
