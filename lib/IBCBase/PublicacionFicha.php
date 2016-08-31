@@ -100,36 +100,9 @@ abstract class PublicacionFicha extends \Base\Publicacion implements SalidaWeb {
     public function html() {
         // Crear lengüetas
         $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-        $lenguetas->agregar('Mapas',    'Mapas',    new SeccionMapasWeb($this));
+    //~ $lenguetas->agregar('Mapas',    'Mapas',    new SeccionMapasWeb($this));
         $lenguetas->agregar('Datos',    'Datos',    new SeccionDatosWeb($this));
         $lenguetas->agregar('Graficas', 'Graficas', new SeccionGraficasWeb($this));
-        // Anterior
-    /*  foreach ($this->datos() as $eje => $eje_datos) {
-            switch ($eje) {
-                case 'Características Económicas':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeCaracteristicasEconomicas($this));
-                    break;
-                case 'Demografía':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeDemografia($this));
-                    break;
-                case 'Educación':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeEducacion($this));
-                    break;
-                case 'Unidades Económicas':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeUnidadesEconomicas($this));
-                    break;
-                case 'Viviendas':
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, new EjeViviendas($this));
-                    break;
-                default:
-                    // Poner todos los datos como textos
-                    $a = array();
-                    foreach ($eje_datos as $etiqueta => $dato) {
-                        $a[] = "<p>$etiqueta = $dato</p>";
-                    }
-                    $lenguetas->agregar(\Base\Funciones::caracteres_para_web($eje), $eje, implode("\n", $a));
-            }
-        } */
         $this->contenido->extra = $lenguetas->html();
         $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();

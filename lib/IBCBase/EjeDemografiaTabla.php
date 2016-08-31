@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN IBCBase - EjeDemografia
+ * TrcIMPLAN IBCBase - EjeDemografiaTabla
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -31,15 +31,6 @@ class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
     protected $preparado = FALSE; // Bandera
 
     /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionFicha
-     */
-    public function __construct(PublicacionFicha $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
-
-    /**
      * Preparar
      */
     protected function prepapar() {
@@ -54,6 +45,7 @@ class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
+        $this->prepapar();
     } // html
 
     /**
@@ -62,6 +54,7 @@ class EjeDemografiaTabla extends EjeDemografia implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
+        $this->prepapar();
     } // javascript
 
 } // Clase EjeDemografiaTabla

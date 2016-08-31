@@ -25,12 +25,11 @@ namespace IBCBase;
 /**
  * Clase EjeUnidadesEconomicas
  */
-class EjeUnidadesEconomicas implements SalidaWeb {
+class EjeUnidadesEconomicas {
 
     protected $publicacion_ficha;   // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
     protected $unidades_economicas; // Arreglo asociativo con datos de Unidades Económicas
-    protected $graf_uni_eco;
-    protected $graficas_preparadas = false;
+    protected $preparado = FALSE;   // Bandera
 
     /**
      * Constructor
@@ -42,61 +41,21 @@ class EjeUnidadesEconomicas implements SalidaWeb {
     } // constructor
 
     /**
-     * Preparar gráficas
+     * Preparar
      */
-    protected function preparar_graficas() {
-        // Si ya fueron preparadas
-        if ($this->graficas_preparadas) {
-            return;
+    protected function prepapar() {
+        if (!$this->preparado) {
+            // Tomar datos
+            $datos = $this->publicacion_ficha->datos();
+            if (isset($datos['Unidades Económicas'])) {
+                $this->unidades_economicas = $datos['Unidades Económicas'];
+            } else {
+                throw new \Exception("Error: Faltan datos sobre Unidades Económicas.");
+            }
+            // Levantar bandera
+            $this->preparado = TRUE;
         }
-        // Tomar datos
-        $datos = $this->publicacion_ficha->datos();
-        if (isset($datos['Unidades Económicas'])) {
-            $this->unidades_economicas = $datos['Unidades Económicas'];
-        } else {
-            throw new \Exception("Error: Faltan datos sobre Unidades Económicas.");
-        }
-        // Grafica Unidades Economicas
-        $this->graf_uni_eco = new GraficaBarras();
-        $this->graf_uni_eco->definir_titulo('Unidades Económicas');
-        $this->graf_uni_eco->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
-        $this->graf_uni_eco->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
-        $this->graf_uni_eco->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
-        $this->graf_uni_eco->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
-        $this->graf_uni_eco->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
-        $this->graf_uni_eco->definir_eje_horizontal('Porcentaje', 0);
-        $this->graf_uni_eco->definir_post_nota(' %');
-        // Levantar bandera
-        $this->graficas_preparadas = true;
-    } // preparar_graficas
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        $this->preparar_graficas();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_uni_eco->html();
-        // Entregar
-        return '    '.implode("\n    ", $a);
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        $this->preparar_graficas();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_uni_eco->javascript();
-        // Entregar
-        return '    '.implode("\n    ", $a);
-    } // javascript
+    } // preparar
 
 } // Clase EjeUnidadesEconomicas
 

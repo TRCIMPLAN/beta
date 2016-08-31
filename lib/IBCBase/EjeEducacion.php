@@ -25,12 +25,11 @@ namespace IBCBase;
 /**
  * Clase EjeEducacion
  */
-class EjeEducacion implements SalidaWeb {
+class EjeEducacion {
 
-    protected $publicacion_ficha;  // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
-    protected $educacion;          // Arreglo asociativo con datos de Educación
-    protected $graf_prom_esc;
-    protected $graficas_preparadas = false;
+    protected $publicacion_ficha; // Instancia de PublicacionFicha, para accesar al metodo Datos en cada uno
+    protected $educacion;         // Arreglo asociativo con datos de Educación
+    protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
@@ -42,59 +41,21 @@ class EjeEducacion implements SalidaWeb {
     } // constructor
 
     /**
-     * Preparar gráficas
+     * Preparar
      */
-    protected function preparar_graficas() {
-        // Si ya fueron preparadas
-        if ($this->graficas_preparadas) {
-            return;
+    protected function prepapar() {
+        if (!$this->preparado) {
+            // Tomar datos
+            $datos = $this->publicacion_ficha->datos();
+            if (isset($datos['Educación'])) {
+                $this->educacion = $datos['Educación'];
+            } else {
+                throw new \Exception("Error: Faltan datos sobre Educación.");
+            }
+            // Levantar bandera
+            $this->preparado = TRUE;
         }
-        // Tomar datos
-        $datos = $this->publicacion_ficha->datos();
-        if (isset($datos['Educación'])) {
-            $this->educacion = $datos['Educación'];
-        } else {
-            throw new \Exception("Error: Faltan datos sobre Educación.");
-        }
-        // Gráfica Grado Promedio de Escolaridad
-        $this->graf_prom_esc = new GraficaBarras();
-        $this->graf_prom_esc->definir_titulo('Grado Promedio de Escolaridad');
-        $this->graf_prom_esc->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
-        $this->graf_prom_esc->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
-        $this->graf_prom_esc->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
-        $this->graf_prom_esc->definir_eje_horizontal('Años', 0, 24);
-        $this->graf_prom_esc->definir_post_nota(' años');;
-        // Levantar bandera
-        $this->graficas_preparadas = true;
-    } // preparar_graficas
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        $this->preparar_graficas();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_prom_esc->html();
-        // Entregar
-        return '    '.implode("\n    ", $a);
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        $this->preparar_graficas();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_prom_esc->javascript();
-        // Entregar
-        return '    '.implode("\n    ", $a);
-    } // javascript
+    } // preparar
 
 } // Clase EjeEducacion
 
