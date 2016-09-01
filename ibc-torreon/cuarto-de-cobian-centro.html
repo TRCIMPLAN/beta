@@ -151,11 +151,11 @@
       </div></article>
       <aside><div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="Conglomerado">
-    <li role="presentation"><a href="#ConglomeradoDatos" aria-controls="ConglomeradoDatos" role="tab" data-toggle="tab">Datos</a></li>
-    <li role="presentation" class="active"><a href="#ConglomeradoGraficas" aria-controls="ConglomeradoGraficas" role="tab" data-toggle="tab">Graficas</a></li>
+    <li role="presentation" class="active"><a href="#ConglomeradoDatos" aria-controls="ConglomeradoDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#ConglomeradoGraficas" aria-controls="ConglomeradoGraficas" role="tab" data-toggle="tab">Graficas</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-  <div role="tabpanel" class="tab-pane" id="ConglomeradoDatos">
+  <div role="tabpanel" class="tab-pane active" id="ConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosDemografia">
@@ -418,7 +418,7 @@
   </div>
 </div>
   </div>
-  <div role="tabpanel" class="tab-pane active" id="ConglomeradoGraficas">
+  <div role="tabpanel" class="tab-pane" id="ConglomeradoGraficas">
 <div class="panel-group" id="Graficas" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasDemografia">
@@ -535,8 +535,7 @@
 <script src="../js/sb-admin-2.js"></script>
 <script>
 google.charts.load('current', {'packages':['corechart']});
-  // LenguetaWeb ConglomeradoDatos ejecuta lo siguiente al mostrar
-  $('#Conglomerado a[href="#ConglomeradoDatos"]').on('shown.bs.tab', function(e){
+  // LenguetaWeb ConglomeradoDatos
   // AcordeonWeb DatosDemografia 
     // TablaWeb TablaDemografia sin javascript
   // AcordeonWeb DatosEducacion ejecuta lo siguiente al mostrar
@@ -555,8 +554,8 @@ google.charts.load('current', {'packages':['corechart']});
   $('#DatosUnidadesEconomicas').on('shown.bs.collapse', function () {
     // TablaWeb TablaUnidadesEconomicas sin javascript
   })
-  })
-  // LenguetaWeb ConglomeradoGraficas
+  // LenguetaWeb ConglomeradoGraficas ejecuta lo siguiente al mostrar
+  $('#Conglomerado a[href="#ConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 
     // GraficaPayWeb GraficaPobMasFem
     google.charts.setOnLoadCallback(elaborarGraficaPobMasFem);
@@ -793,9 +792,10 @@ google.charts.load('current', {'packages':['corechart']});
         chart.draw(data, options);
     }
   })
-// LenguetasWeb Conglomerado con Graficas activa
+  })
+// LenguetasWeb Conglomerado con Datos activa
 $(document).ready(function(){
-  $('#Conglomerado a[href="#ConglomeradoGraficas"]').tab('show')
+  $('#Conglomerado a[href="#ConglomeradoDatos"]').tab('show')
 });
 </script>
 <script>
