@@ -35,6 +35,11 @@ class EjeCaracteristicasEconomicasGraficasWeb extends EjeCaracteristicasEconomic
     protected $graf_pob_ocu;
     protected $graf_pob_ocu_mas_fem;
     protected $graf_derechohabiencia;
+    const     ID_GRAF_POB_ECO_ACT         = 'GraficaPobEcoAct';
+    const     ID_GRAF_POB_ECO_ACT_MAS_FEM = 'GraficaPobEcoActMasFem';
+    const     ID_GRAF_OCU                 = 'GraficaOcu';
+    const     ID_GRAF_OCU_MAS_FEM         = 'GraficaOcuMasFem';
+    const     ID_GRAF_DERECHOHABIENCIA    = 'GraficaDerechohabiencia';
 
     /**
      * Preparar
@@ -43,27 +48,27 @@ class EjeCaracteristicasEconomicasGraficasWeb extends EjeCaracteristicasEconomic
         if (!$this->preparado) {
             parent::prepapar();
             // Grafica Población Económicamente Activa
-            $this->graf_pob_eco_act = new GraficaPayWeb();
+            $this->graf_pob_eco_act = new GraficaPayWeb(self::ID_GRAF_POB_ECO_ACT);
             $this->graf_pob_eco_act->definir_titulo('Población Económicamente Activa');
             $this->graf_pob_eco_act->agregar('Activa',          $this->caracteristicas_economicas['Población Económicamente Activa'], '#7E00A8');
             $this->graf_pob_eco_act->agregar('NO Activa', 100 - $this->caracteristicas_economicas['Población Económicamente Activa'], '#BFBFBF');
             // Grafica Población Económicamente Activa por género
-            $this->graf_pob_eco_act_mas_fem = new GraficaPayWeb();
+            $this->graf_pob_eco_act_mas_fem = new GraficaPayWeb(self::ID_GRAF_POB_ECO_ACT_MAS_FEM);
             $this->graf_pob_eco_act_mas_fem->definir_titulo('Población Económicamente Activa por género');
             $this->graf_pob_eco_act_mas_fem->agregar('Masculina', $this->caracteristicas_economicas['Población Económicamente Activa masculina'], '#006AC8');
             $this->graf_pob_eco_act_mas_fem->agregar('Femenina',  $this->caracteristicas_economicas['Población Económicamente Activa femenina'],  '#C80083');
             // Grafica Población Ocupada
-            $this->graf_pob_ocu = new GraficaPayWeb();
+            $this->graf_pob_ocu = new GraficaPayWeb(self::ID_GRAF_OCU);
             $this->graf_pob_ocu->definir_titulo('Población Ocupada');
             $this->graf_pob_ocu->agregar('Ocupada',    $this->caracteristicas_economicas['Población Ocupada'],    '#A8001E');
             $this->graf_pob_ocu->agregar('Desocupada', $this->caracteristicas_economicas['Población Desocupada'], '#BFBFBF');
             // Grafica Población Ocupada por género
-            $this->graf_pob_ocu_mas_fem = new GraficaPayWeb();
+            $this->graf_pob_ocu_mas_fem = new GraficaPayWeb(self::ID_GRAF_OCU_MAS_FEM);
             $this->graf_pob_ocu_mas_fem->definir_titulo('Población Ocupada por género');
             $this->graf_pob_ocu_mas_fem->agregar('Masculina', $this->caracteristicas_economicas['Población Ocupada masculina'], '#006AC8');
             $this->graf_pob_ocu_mas_fem->agregar('Femenina',  $this->caracteristicas_economicas['Población Ocupada femenina'],  '#C80083');
             // Grafica Derechohabiencia
-            $this->graf_derechohabiencia = new GraficaPayWeb();
+            $this->graf_derechohabiencia = new GraficaPayWeb(self::ID_GRAF_DERECHOHABIENCIA);
             $this->graf_derechohabiencia->definir_titulo('Derechohabiencia');
             $this->graf_derechohabiencia->agregar('Con Derechohabiencia',       $this->caracteristicas_economicas['Derechohabiencia'], '#00A898');
             $this->graf_derechohabiencia->agregar('SIN Derechohabiencia', 100 - $this->caracteristicas_economicas['Derechohabiencia'], '#BFBFBF');

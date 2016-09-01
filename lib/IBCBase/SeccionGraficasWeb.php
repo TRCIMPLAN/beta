@@ -27,9 +27,10 @@ namespace IBCBase;
  */
 class SeccionGraficasWeb implements SalidaWeb {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
-    protected $acordeones;        // Encapsular cada eje en un acordeon
-    protected $preparado = FALSE; // Bandera
+    protected $publicacion_ficha;    // Instancia de PublicacionWeb, para obtener los datos
+    protected $acordeones;           // Instancia de AcordeonesWeb
+    protected $preparado    = FALSE; // Bandera
+    const     IDENTIFICADOR = 'Graficas';
 
     /**
      * Constructor
@@ -45,7 +46,7 @@ class SeccionGraficasWeb implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            $this->acordeones = new AcordeonesWeb('SeccionGraficas');
+            $this->acordeones = new AcordeonesWeb(self::IDENTIFICADOR);
             $this->acordeones->agregar('Demografía',                 new EjeDemografiaGraficasWeb($this->publicacion_ficha), TRUE);
             $this->acordeones->agregar('Educación',                  new EjeEducacionGraficasWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasGraficasWeb($this->publicacion_ficha));

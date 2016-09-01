@@ -32,6 +32,8 @@ class EjeViviendasGraficasWeb extends EjeViviendas implements SalidaWeb {
     // protected $preparado;
     protected $graf_hog_jef;
     protected $graf_viv_con;
+    const     ID_GRAF_HOG_JEF = 'GraficaHogJef';
+    const     ID_GRAF_VIV_CON = 'GraficaVivCon';
 
     /**
      * Preparar
@@ -40,12 +42,12 @@ class EjeViviendasGraficasWeb extends EjeViviendas implements SalidaWeb {
         if (!$this->preparado) {
             parent::prepapar();
             // Gráfica Hogares Jefatura
-            $this->graf_hog_jef = new GraficaPayWeb();
+            $this->graf_hog_jef = new GraficaPayWeb(self::ID_GRAF_HOG_JEF);
             $this->graf_hog_jef->definir_titulo('Hogares con jefatura...');
             $this->graf_hog_jef->agregar('Masculina', $this->viviendas['Hogares Jefatura masculina'], '#006AC8');
             $this->graf_hog_jef->agregar('Femenina',  $this->viviendas['Hogares Jefatura femenina'],  '#C80083');
             // Gráfica Viviendas con...
-            $this->graf_viv_con = new GraficaBarrasWeb();
+            $this->graf_viv_con = new GraficaBarrasWeb(self::ID_GRAF_VIV_CON);
             $this->graf_viv_con->definir_titulo('Viviendas con...');
             $this->graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#FF8080');
             $this->graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#FF80C0');

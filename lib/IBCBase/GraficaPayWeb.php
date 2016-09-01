@@ -41,7 +41,7 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
      */
     public function html() {
         $this->validar();
-        return "    <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
+        return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
     /**
@@ -54,8 +54,8 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
         $a   = array();
         $a[] = "    // GraficaPayWeb {$this->identificador}";
         // Google Charts
-        $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
-        $a[] = "    function elaborarGrafica{$this->identificador}() {";
+        $a[] = "    google.charts.setOnLoadCallback(elaborar{$this->identificador});";
+        $a[] = "    function elaborar{$this->identificador}() {";
         $a[] = "        var data = google.visualization.arrayToDataTable([";
         $a[] = "            ['Etiqueta', 'Valor'],";
         $b   = array();
@@ -75,13 +75,13 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
         }
         $a[] = sprintf("          slices: [%s]", implode(', ', $c));
         $a[] = "        };";
-        $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('grafica{$this->identificador}'));";
+        $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('{$this->identificador}'));";
         $a[] = "        chart.draw(data, options);";
         $a[] = "    }";
         // Morris.js
     /*  $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
         $a[] = "    varGrafica{$this->identificador} = Morris.Donut({";
-        $a[] = "        element: 'grafica{$this->identificador}',";
+        $a[] = "        element: '{$this->identificador}',";
         $a[] = "        formatter: function(y){return y + ' %'},";
         $a[] = '        data: [';
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {

@@ -27,9 +27,10 @@ namespace IBCBase;
  */
 class SeccionMapasWeb implements SalidaWeb {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
-    protected $acordeones;        // Encapsular cada eje en un acordeon
-    protected $preparado = FALSE; // Bandera
+    protected $publicacion_ficha;    // Instancia de PublicacionWeb, para obtener los datos
+    protected $acordeones;           // Instancia de AcordeonesWeb
+    protected $preparado    = FALSE; // Bandera
+    const     IDENTIFICADOR = 'Mapas';
 
     /**
      * Constructor

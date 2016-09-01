@@ -31,6 +31,7 @@ class EjeDemografiaTablaWeb extends EjeDemografia implements SalidaWeb {
     // protected $demografia;
     // protected $preparado;
     protected $tabla;
+    const     IDENTIFICADOR = 'TablaDemografia';
 
     /**
      * Preparar
@@ -38,7 +39,7 @@ class EjeDemografiaTablaWeb extends EjeDemografia implements SalidaWeb {
     protected function prepapar() {
         if (!$this->preparado) {
             parent::prepapar();
-            $this->tabla = new TablaWeb('TablaDemografia');
+            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
             $this->tabla->definir_estructura(
                 array(
                     'indicador' => array('enca' => 'Indicador'),

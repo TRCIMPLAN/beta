@@ -31,6 +31,7 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
     // protected $educacion;
     // protected $preparado;
     protected $graf_prom_esc;
+    const     ID_GRAF_PROM_ESC = 'GraficaPromEsc';
 
     /**
      * Preparar
@@ -39,7 +40,7 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
         if (!$this->preparado) {
             parent::prepapar();
             // Gráfica Grado Promedio de Escolaridad
-            $this->graf_prom_esc = new GraficaBarrasWeb();
+            $this->graf_prom_esc = new GraficaBarrasWeb(self::ID_GRAF_PROM_ESC);
             $this->graf_prom_esc->definir_titulo('Grado Promedio de Escolaridad');
             $this->graf_prom_esc->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
             $this->graf_prom_esc->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');

@@ -149,22 +149,23 @@
       
       
       </div></article>
-      <aside>  <ul class="nav nav-tabs lenguetas" id="lenguetasIBC">
-    <li><a href="#LenguetaDatos" data-toggle="tab">Datos</a></li>
-    <li><a href="#LenguetaGraficas" data-toggle="tab">Graficas</a></li>
+      <aside><div>
+  <ul class="nav nav-tabs lenguetas" role="tablist" id="Conglomerado">
+    <li role="presentation"><a href="#ConglomeradoDatos" aria-controls="ConglomeradoDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation" class="active"><a href="#ConglomeradoGraficas" aria-controls="ConglomeradoGraficas" role="tab" data-toggle="tab">Graficas</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-    <div class="tab-pane" id="LenguetaDatos">
-<div class="panel-group" id="SeccionDatos" role="tablist" aria-multiselectable="true">
+  <div role="tabpanel" class="tab-pane" id="ConglomeradoDatos">
+<div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionDatosDemografia">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosDemografia">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo" role="button" data-toggle="collapse" data-parent="#SeccionDatos" href="#SeccionDatosDemografia" aria-expanded="true" aria-controls="SeccionDatosDemografia">
+        <a class="acordeon-vinculo" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosDemografia" aria-expanded="true" aria-controls="DatosDemografia">
           Demografía
         </a>
       </h4>
     </div>
-    <div id="SeccionDatosDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraSeccionDatosDemografia">
+    <div id="DatosDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraDatosDemografia">
       <div class="panel-body">
   <table class="table table-hover table-bordered">
     <thead>
@@ -220,14 +221,14 @@
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionDatosEducacion">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosEducacion">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionDatos" href="#SeccionDatosEducacion" aria-expanded="false" aria-controls="SeccionDatosEducacion">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosEducacion" aria-expanded="false" aria-controls="DatosEducacion">
           Educación
         </a>
       </h4>
     </div>
-    <div id="SeccionDatosEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionDatosEducacion">
+    <div id="DatosEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosEducacion">
       <div class="panel-body">
   <table class="table table-hover table-bordered">
     <thead>
@@ -255,14 +256,14 @@
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionDatosCaracteristicasEconomicas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosCaracteristicasEconomicas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionDatos" href="#SeccionDatosCaracteristicasEconomicas" aria-expanded="false" aria-controls="SeccionDatosCaracteristicasEconomicas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosCaracteristicasEconomicas" aria-expanded="false" aria-controls="DatosCaracteristicasEconomicas">
           Características Económicas
         </a>
       </h4>
     </div>
-    <div id="SeccionDatosCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionDatosCaracteristicasEconomicas">
+    <div id="DatosCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosCaracteristicasEconomicas">
       <div class="panel-body">
   <table class="table table-hover table-bordered">
     <thead>
@@ -310,14 +311,14 @@
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionDatosViviendas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosViviendas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionDatos" href="#SeccionDatosViviendas" aria-expanded="false" aria-controls="SeccionDatosViviendas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosViviendas" aria-expanded="false" aria-controls="DatosViviendas">
           Viviendas
         </a>
       </h4>
     </div>
-    <div id="SeccionDatosViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionDatosViviendas">
+    <div id="DatosViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosViviendas">
       <div class="panel-body">
   <table class="table table-hover table-bordered">
     <thead>
@@ -373,14 +374,14 @@
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionDatosUnidadesEconomicas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosUnidadesEconomicas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionDatos" href="#SeccionDatosUnidadesEconomicas" aria-expanded="false" aria-controls="SeccionDatosUnidadesEconomicas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosUnidadesEconomicas" aria-expanded="false" aria-controls="DatosUnidadesEconomicas">
           Unidades Económicas
         </a>
       </h4>
     </div>
-    <div id="SeccionDatosUnidadesEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionDatosUnidadesEconomicas">
+    <div id="DatosUnidadesEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosUnidadesEconomicas">
       <div class="panel-body">
   <table class="table table-hover table-bordered">
     <thead>
@@ -416,90 +417,91 @@
     </div>
   </div>
 </div>
-    </div>
-    <div class="tab-pane" id="LenguetaGraficas">
-<div class="panel-group" id="SeccionGraficas" role="tablist" aria-multiselectable="true">
+  </div>
+  <div role="tabpanel" class="tab-pane active" id="ConglomeradoGraficas">
+<div class="panel-group" id="Graficas" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionGraficasDemografia">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasDemografia">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo" role="button" data-toggle="collapse" data-parent="#SeccionGraficas" href="#SeccionGraficasDemografia" aria-expanded="true" aria-controls="SeccionGraficasDemografia">
+        <a class="acordeon-vinculo" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasDemografia" aria-expanded="true" aria-controls="GraficasDemografia">
           Demografía
         </a>
       </h4>
     </div>
-    <div id="SeccionGraficasDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraSeccionGraficasDemografia">
+    <div id="GraficasDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraGraficasDemografia">
       <div class="panel-body">
-    <div id="graficaPoblacionPorGenero" class="grafica"></div>
-    <div id="graficaPoblacionPorRangosDeEdad" class="grafica"></div>
-    <div id="graficaNacidaEnOtroEstado" class="grafica"></div>
-    <div id="graficaConDiscapacidad" class="grafica"></div>
+    <div id="GraficaPobMasFem" class="grafica"></div>
+    <div id="GraficaPobRango" class="grafica"></div>
+    <div id="GraficaPobNacOtroEdo" class="grafica"></div>
+    <div id="GraficaPobDisc" class="grafica"></div>
       </div>
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionGraficasEducacion">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasEducacion">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionGraficas" href="#SeccionGraficasEducacion" aria-expanded="false" aria-controls="SeccionGraficasEducacion">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasEducacion" aria-expanded="false" aria-controls="GraficasEducacion">
           Educación
         </a>
       </h4>
     </div>
-    <div id="SeccionGraficasEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionGraficasEducacion">
+    <div id="GraficasEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasEducacion">
       <div class="panel-body">
-    <div id="graficaGradoPromedioDeEscolaridad" class="grafica"></div>
+    <div id="GraficaPromEsc" class="grafica"></div>
       </div>
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionGraficasCaracteristicasEconomicas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasCaracteristicasEconomicas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionGraficas" href="#SeccionGraficasCaracteristicasEconomicas" aria-expanded="false" aria-controls="SeccionGraficasCaracteristicasEconomicas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasCaracteristicasEconomicas" aria-expanded="false" aria-controls="GraficasCaracteristicasEconomicas">
           Características Económicas
         </a>
       </h4>
     </div>
-    <div id="SeccionGraficasCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionGraficasCaracteristicasEconomicas">
+    <div id="GraficasCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasCaracteristicasEconomicas">
       <div class="panel-body">
-    <div id="graficaPoblacionEconomicamenteActiva" class="grafica"></div>
-    <div id="graficaPoblacionEconomicamenteActivaPorGenero" class="grafica"></div>
-    <div id="graficaPoblacionOcupada" class="grafica"></div>
-    <div id="graficaPoblacionOcupadaPorGenero" class="grafica"></div>
-    <div id="graficaDerechohabiencia" class="grafica"></div>
+    <div id="GraficaPobEcoAct" class="grafica"></div>
+    <div id="GraficaPobEcoActMasFem" class="grafica"></div>
+    <div id="GraficaOcu" class="grafica"></div>
+    <div id="GraficaOcuMasFem" class="grafica"></div>
+    <div id="GraficaDerechohabiencia" class="grafica"></div>
       </div>
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionGraficasViviendas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasViviendas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionGraficas" href="#SeccionGraficasViviendas" aria-expanded="false" aria-controls="SeccionGraficasViviendas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasViviendas" aria-expanded="false" aria-controls="GraficasViviendas">
           Viviendas
         </a>
       </h4>
     </div>
-    <div id="SeccionGraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionGraficasViviendas">
+    <div id="GraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasViviendas">
       <div class="panel-body">
-    <div id="graficaHogaresConJefatura" class="grafica"></div>
-    <div id="graficaViviendasCon" class="grafica"></div>
+    <div id="GraficaHogJef" class="grafica"></div>
+    <div id="GraficaVivCon" class="grafica"></div>
       </div>
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraSeccionGraficasUnidadesEconomicas">
+    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasUnidadesEconomicas">
       <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#SeccionGraficas" href="#SeccionGraficasUnidadesEconomicas" aria-expanded="false" aria-controls="SeccionGraficasUnidadesEconomicas">
+        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasUnidadesEconomicas" aria-expanded="false" aria-controls="GraficasUnidadesEconomicas">
           Unidades Económicas
         </a>
       </h4>
     </div>
-    <div id="SeccionGraficasUnidadesEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraSeccionGraficasUnidadesEconomicas">
+    <div id="GraficasUnidadesEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasUnidadesEconomicas">
       <div class="panel-body">
-    <div id="graficaUnidadesEconomicas" class="grafica"></div>
+    <div id="GraficaUniEco" class="grafica"></div>
       </div>
     </div>
   </div>
 </div>
-    </div>
-  </div></aside>
+  </div>
+  </div>
+</div></aside>
 <div class="contenido-social">
   <h5>Compartir en Redes Sociales</h5>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
@@ -533,172 +535,100 @@
 <script src="../js/sb-admin-2.js"></script>
 <script>
 google.charts.load('current', {'packages':['corechart']});
-// LenguetaWeb LenguetaDatos
-$('#lenguetasIBC a[href="#LenguetaDatos"]').on('shown.bs.tab', function(e){
-  // AcordeonWeb SeccionDatosDemografia
+  // LenguetaWeb ConglomeradoDatos ejecuta lo siguiente al mostrar
+  $('#Conglomerado a[href="#ConglomeradoDatos"]').on('shown.bs.tab', function(e){
+  // AcordeonWeb DatosDemografia 
     // TablaWeb TablaDemografia sin javascript
-  $('#SeccionDatosDemografia').on('shown.bs.collapse', function () {
-    // TablaWeb TablaDemografia sin javascript
-  })
-  // AcordeonWeb SeccionDatosEducacion
-  $('#SeccionDatosEducacion').on('shown.bs.collapse', function () {
+  // AcordeonWeb DatosEducacion ejecuta lo siguiente al mostrar
+  $('#DatosEducacion').on('shown.bs.collapse', function () {
     // TablaWeb TablaEducacion sin javascript
   })
-  // AcordeonWeb SeccionDatosCaracteristicasEconomicas
-  $('#SeccionDatosCaracteristicasEconomicas').on('shown.bs.collapse', function () {
+  // AcordeonWeb DatosCaracteristicasEconomicas ejecuta lo siguiente al mostrar
+  $('#DatosCaracteristicasEconomicas').on('shown.bs.collapse', function () {
     // TablaWeb TablaCaracteristicasEconomicas sin javascript
   })
-  // AcordeonWeb SeccionDatosViviendas
-  $('#SeccionDatosViviendas').on('shown.bs.collapse', function () {
+  // AcordeonWeb DatosViviendas ejecuta lo siguiente al mostrar
+  $('#DatosViviendas').on('shown.bs.collapse', function () {
     // TablaWeb TablaViviendas sin javascript
   })
-  // AcordeonWeb SeccionDatosUnidadesEconomicas
-  $('#SeccionDatosUnidadesEconomicas').on('shown.bs.collapse', function () {
+  // AcordeonWeb DatosUnidadesEconomicas ejecuta lo siguiente al mostrar
+  $('#DatosUnidadesEconomicas').on('shown.bs.collapse', function () {
     // TablaWeb TablaUnidadesEconomicas sin javascript
   })
-});
-// LenguetaWeb LenguetaGraficas
-$('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
-  // AcordeonWeb SeccionGraficasDemografia
-    // GraficaPayWeb PoblacionPorGenero
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorGenero);
-    function elaborarGraficaPoblacionPorGenero() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['Masculina', 45.86],
-            ['Femenina', 54.14]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población por género',
-          slices: [{color: '#006AC8'}, {color: '#C80083'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb PoblacionPorRangosDeEdad
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorRangosDeEdad);
-    function elaborarGraficaPoblacionPorRangosDeEdad() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['De 0 a 14 años', 17.37],
-            ['De 15 a 64 años', 64.34],
-            ['De 65 y más años', 15.91],
-            ['No especificada', 2.38]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población por rangos de edad',
-          slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb NacidaEnOtroEstado
-    google.charts.setOnLoadCallback(elaborarGraficaNacidaEnOtroEstado);
-    function elaborarGraficaNacidaEnOtroEstado() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['Nacida en OTRO estado', 19.09],
-            ['Nacida en este estado', 80.91]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Nacida en otro estado',
-          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb ConDiscapacidad
-    google.charts.setOnLoadCallback(elaborarGraficaConDiscapacidad);
-    function elaborarGraficaConDiscapacidad() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['CON discapacidad', 5.97],
-            ['Sin discapacidad', 94.03]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Con discapacidad',
-          slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
-        chart.draw(data, options);
-    }
-  $('#SeccionGraficasDemografia').on('shown.bs.collapse', function () {
-    // GraficaPayWeb PoblacionPorGenero
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorGenero);
-    function elaborarGraficaPoblacionPorGenero() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['Masculina', 45.86],
-            ['Femenina', 54.14]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población por género',
-          slices: [{color: '#006AC8'}, {color: '#C80083'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorGenero'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb PoblacionPorRangosDeEdad
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionPorRangosDeEdad);
-    function elaborarGraficaPoblacionPorRangosDeEdad() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['De 0 a 14 años', 17.37],
-            ['De 15 a 64 años', 64.34],
-            ['De 65 y más años', 15.91],
-            ['No especificada', 2.38]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población por rangos de edad',
-          slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionPorRangosDeEdad'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb NacidaEnOtroEstado
-    google.charts.setOnLoadCallback(elaborarGraficaNacidaEnOtroEstado);
-    function elaborarGraficaNacidaEnOtroEstado() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['Nacida en OTRO estado', 19.09],
-            ['Nacida en este estado', 80.91]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Nacida en otro estado',
-          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaNacidaEnOtroEstado'));
-        chart.draw(data, options);
-    }
-    // GraficaPayWeb ConDiscapacidad
-    google.charts.setOnLoadCallback(elaborarGraficaConDiscapacidad);
-    function elaborarGraficaConDiscapacidad() {
-        var data = google.visualization.arrayToDataTable([
-            ['Etiqueta', 'Valor'],
-            ['CON discapacidad', 5.97],
-            ['Sin discapacidad', 94.03]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Con discapacidad',
-          slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaConDiscapacidad'));
-        chart.draw(data, options);
-    }
   })
-  // AcordeonWeb SeccionGraficasEducacion
-  $('#SeccionGraficasEducacion').on('shown.bs.collapse', function () {
-    // GraficaBarrasWeb GradoPromedioDeEscolaridad
-    google.charts.setOnLoadCallback(elaborarGraficaGradoPromedioDeEscolaridad);
-    function elaborarGraficaGradoPromedioDeEscolaridad() {
+  // LenguetaWeb ConglomeradoGraficas
+  // AcordeonWeb GraficasDemografia 
+    // GraficaPayWeb GraficaPobMasFem
+    google.charts.setOnLoadCallback(elaborarGraficaPobMasFem);
+    function elaborarGraficaPobMasFem() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['Masculina', 45.86],
+            ['Femenina', 54.14]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Población por género',
+          slices: [{color: '#006AC8'}, {color: '#C80083'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobMasFem'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb GraficaPobRango
+    google.charts.setOnLoadCallback(elaborarGraficaPobRango);
+    function elaborarGraficaPobRango() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['De 0 a 14 años', 17.37],
+            ['De 15 a 64 años', 64.34],
+            ['De 65 y más años', 15.91],
+            ['No especificada', 2.38]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Población por rangos de edad',
+          slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobRango'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb GraficaPobNacOtroEdo
+    google.charts.setOnLoadCallback(elaborarGraficaPobNacOtroEdo);
+    function elaborarGraficaPobNacOtroEdo() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['Nacida en OTRO estado', 19.09],
+            ['Nacida en este estado', 80.91]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Nacida en otro estado',
+          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobNacOtroEdo'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb GraficaPobDisc
+    google.charts.setOnLoadCallback(elaborarGraficaPobDisc);
+    function elaborarGraficaPobDisc() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['CON discapacidad', 5.97],
+            ['Sin discapacidad', 94.03]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Con discapacidad',
+          slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobDisc'));
+        chart.draw(data, options);
+    }
+  // AcordeonWeb GraficasEducacion ejecuta lo siguiente al mostrar
+  $('#GraficasEducacion').on('shown.bs.collapse', function () {
+    // GraficaBarrasWeb GraficaPromEsc
+    google.charts.setOnLoadCallback(elaborarGraficaPromEsc);
+    function elaborarGraficaPromEsc() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
             ['Global', 11.25, '#FF7F37', '11.25 años'],
@@ -711,15 +641,15 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           hAxis: { title: 'Años', minValue: 0, maxValue: 24 },
           legend: { position: 'none' }
         };
-        var chart = new google.visualization.BarChart(document.getElementById('graficaGradoPromedioDeEscolaridad'));
+        var chart = new google.visualization.BarChart(document.getElementById('GraficaPromEsc'));
         chart.draw(data, options);
     }
   })
-  // AcordeonWeb SeccionGraficasCaracteristicasEconomicas
-  $('#SeccionGraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
-    // GraficaPayWeb PoblacionEconomicamenteActiva
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActiva);
-    function elaborarGraficaPoblacionEconomicamenteActiva() {
+  // AcordeonWeb GraficasCaracteristicasEconomicas ejecuta lo siguiente al mostrar
+  $('#GraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
+    // GraficaPayWeb GraficaPobEcoAct
+    google.charts.setOnLoadCallback(elaborarGraficaPobEcoAct);
+    function elaborarGraficaPobEcoAct() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Activa', 51.42],
@@ -730,12 +660,12 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Población Económicamente Activa',
           slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActiva'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoAct'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb PoblacionEconomicamenteActivaPorGenero
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionEconomicamenteActivaPorGenero);
-    function elaborarGraficaPoblacionEconomicamenteActivaPorGenero() {
+    // GraficaPayWeb GraficaPobEcoActMasFem
+    google.charts.setOnLoadCallback(elaborarGraficaPobEcoActMasFem);
+    function elaborarGraficaPobEcoActMasFem() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Masculina', 56.63],
@@ -746,12 +676,12 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Población Económicamente Activa por género',
           slices: [{color: '#006AC8'}, {color: '#C80083'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionEconomicamenteActivaPorGenero'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoActMasFem'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb PoblacionOcupada
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupada);
-    function elaborarGraficaPoblacionOcupada() {
+    // GraficaPayWeb GraficaOcu
+    google.charts.setOnLoadCallback(elaborarGraficaOcu);
+    function elaborarGraficaOcu() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Ocupada', 91.39],
@@ -762,12 +692,12 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Población Ocupada',
           slices: [{color: '#A8001E'}, {color: '#BFBFBF'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupada'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcu'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb PoblacionOcupadaPorGenero
-    google.charts.setOnLoadCallback(elaborarGraficaPoblacionOcupadaPorGenero);
-    function elaborarGraficaPoblacionOcupadaPorGenero() {
+    // GraficaPayWeb GraficaOcuMasFem
+    google.charts.setOnLoadCallback(elaborarGraficaOcuMasFem);
+    function elaborarGraficaOcuMasFem() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Masculina', 56.21],
@@ -778,10 +708,10 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Población Ocupada por género',
           slices: [{color: '#006AC8'}, {color: '#C80083'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaPoblacionOcupadaPorGenero'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcuMasFem'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb Derechohabiencia
+    // GraficaPayWeb GraficaDerechohabiencia
     google.charts.setOnLoadCallback(elaborarGraficaDerechohabiencia);
     function elaborarGraficaDerechohabiencia() {
         var data = google.visualization.arrayToDataTable([
@@ -794,15 +724,15 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Derechohabiencia',
           slices: [{color: '#00A898'}, {color: '#BFBFBF'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaDerechohabiencia'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaDerechohabiencia'));
         chart.draw(data, options);
     }
   })
-  // AcordeonWeb SeccionGraficasViviendas
-  $('#SeccionGraficasViviendas').on('shown.bs.collapse', function () {
-    // GraficaPayWeb HogaresConJefatura
-    google.charts.setOnLoadCallback(elaborarGraficaHogaresConJefatura);
-    function elaborarGraficaHogaresConJefatura() {
+  // AcordeonWeb GraficasViviendas ejecuta lo siguiente al mostrar
+  $('#GraficasViviendas').on('shown.bs.collapse', function () {
+    // GraficaPayWeb GraficaHogJef
+    google.charts.setOnLoadCallback(elaborarGraficaHogJef);
+    function elaborarGraficaHogJef() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Masculina', 62.46],
@@ -813,12 +743,12 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           title: 'Hogares con jefatura...',
           slices: [{color: '#006AC8'}, {color: '#C80083'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('graficaHogaresConJefatura'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaHogJef'));
         chart.draw(data, options);
     }
-    // GraficaBarrasWeb ViviendasCon
-    google.charts.setOnLoadCallback(elaborarGraficaViviendasCon);
-    function elaborarGraficaViviendasCon() {
+    // GraficaBarrasWeb GraficaVivCon
+    google.charts.setOnLoadCallback(elaborarGraficaVivCon);
+    function elaborarGraficaVivCon() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
             ['Electricidad', 99.49, '#FF8080', '99.49 %'],
@@ -836,15 +766,15 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           hAxis: { title: 'Porcentaje', minValue: 0, maxValue: 100 },
           legend: { position: 'none' }
         };
-        var chart = new google.visualization.BarChart(document.getElementById('graficaViviendasCon'));
+        var chart = new google.visualization.BarChart(document.getElementById('GraficaVivCon'));
         chart.draw(data, options);
     }
   })
-  // AcordeonWeb SeccionGraficasUnidadesEconomicas
-  $('#SeccionGraficasUnidadesEconomicas').on('shown.bs.collapse', function () {
-    // GraficaBarrasWeb UnidadesEconomicas
-    google.charts.setOnLoadCallback(elaborarGraficaUnidadesEconomicas);
-    function elaborarGraficaUnidadesEconomicas() {
+  // AcordeonWeb GraficasUnidadesEconomicas ejecuta lo siguiente al mostrar
+  $('#GraficasUnidadesEconomicas').on('shown.bs.collapse', function () {
+    // GraficaBarrasWeb GraficaUniEco
+    google.charts.setOnLoadCallback(elaborarGraficaUniEco);
+    function elaborarGraficaUniEco() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
             ['1° Comercio Menudeo', 26.72, '#80C0FF', '26.72 %'],
@@ -859,14 +789,13 @@ $('#lenguetasIBC a[href="#LenguetaGraficas"]').on('shown.bs.tab', function(e){
           hAxis: { title: 'Porcentaje', minValue: 0 },
           legend: { position: 'none' }
         };
-        var chart = new google.visualization.BarChart(document.getElementById('graficaUnidadesEconomicas'));
+        var chart = new google.visualization.BarChart(document.getElementById('GraficaUniEco'));
         chart.draw(data, options);
     }
   })
-});
-// LenguetasWeb lenguetasIBC con LenguetaDatos activa
+// LenguetasWeb Conglomerado con Graficas activa
 $(document).ready(function(){
-  $('#lenguetasIBC a[href="#LenguetaDatos"]').tab('show')
+  $('#Conglomerado a[href="#ConglomeradoGraficas"]').tab('show')
 });
 </script>
 <script>

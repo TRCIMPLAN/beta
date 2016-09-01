@@ -50,7 +50,7 @@ abstract class Grafica {
      */
     public function definir_titulo($titulo) {
         $this->titulo = $titulo;
-        if ($this->identificador == '') {
+        if ($this->identificador == NULL) {
             $this->identificador = \Base\Funciones::caracteres_para_clase($this->titulo);
         }
     } // titulo

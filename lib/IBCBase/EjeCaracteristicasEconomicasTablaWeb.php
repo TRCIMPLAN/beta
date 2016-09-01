@@ -31,6 +31,7 @@ class EjeCaracteristicasEconomicasTablaWeb extends EjeCaracteristicasEconomicas 
     // protected $caracteristicas_economicas;
     // protected $preparado;
     protected $tabla;
+    const     IDENTIFICADOR = 'TablaCaracteristicasEconomicas';
 
     /**
      * Preparar
@@ -38,7 +39,7 @@ class EjeCaracteristicasEconomicasTablaWeb extends EjeCaracteristicasEconomicas 
     protected function prepapar() {
         if (!$this->preparado) {
             parent::prepapar();
-            $this->tabla = new TablaWeb('TablaCaracteristicasEconomicas');
+            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
             $this->tabla->definir_estructura(
                 array(
                     'indicador' => array('enca' => 'Indicador'),

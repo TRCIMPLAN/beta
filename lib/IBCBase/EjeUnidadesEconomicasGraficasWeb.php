@@ -31,6 +31,7 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
     // protected $unidades_economicas;
     // protected $preparado;
     protected $graf_uni_eco;
+    const     ID_GRAF_UNI_ECO = 'GraficaUniEco';
 
     /**
      * Preparar
@@ -39,7 +40,7 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
         if (!$this->preparado) {
             parent::prepapar();
             // Grafica Unidades Economicas
-            $this->graf_uni_eco = new GraficaBarrasWeb();
+            $this->graf_uni_eco = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
             $this->graf_uni_eco->definir_titulo('Unidades Económicas');
             $this->graf_uni_eco->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
             $this->graf_uni_eco->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');

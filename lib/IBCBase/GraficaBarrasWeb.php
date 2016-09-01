@@ -59,7 +59,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
      */
     public function html() {
         $this->validar();
-        return "    <div id=\"grafica{$this->identificador}\" class=\"grafica\"></div>";
+        return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
     /**
@@ -72,8 +72,8 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         $a   = array();
         $a[] = "    // GraficaBarrasWeb {$this->identificador}";
         // Google Charts
-        $a[] = "    google.charts.setOnLoadCallback(elaborarGrafica{$this->identificador});";
-        $a[] = "    function elaborarGrafica{$this->identificador}() {";
+        $a[] = "    google.charts.setOnLoadCallback(elaborar{$this->identificador});";
+        $a[] = "    function elaborar{$this->identificador}() {";
         $a[] = "        var data = google.visualization.arrayToDataTable([";
         $a[] = "            ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],";
         $b   = array();
@@ -100,13 +100,13 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         $a[] = sprintf("          hAxis: { %s },", implode(', ', $b));
         $a[] = "          legend: { position: 'none' }";
         $a[] = "        };";
-        $a[] = "        var chart = new google.visualization.BarChart(document.getElementById('grafica{$this->identificador}'));";
+        $a[] = "        var chart = new google.visualization.BarChart(document.getElementById('{$this->identificador}'));";
         $a[] = "        chart.draw(data, options);";
         $a[] = "    }";
         // Morris.js
     /*  $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
         $a[] = "    varGrafica{$this->identificador} = Morris.Bar({";
-        $a[] = "        element: 'grafica{$this->identificador}',";
+        $a[] = "        element: '{$this->identificador}',";
         $a[] = "        data: [";
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {
             $a[] = "            {y: '$etiqueta', a: $valor},";

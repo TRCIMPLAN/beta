@@ -66,7 +66,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
     // protected $javascript;
     // protected $redifusion;
     // protected $validado;
-    const LENGUETAS_ID = 'lenguetasIBC';
+    const IDENTIFICADOR = 'Conglomerado';
 
     abstract public function datos();
 
@@ -95,10 +95,10 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      */
     public function html() {
         // Crear lengüetas
-        $lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-    //~ $lenguetas->agregar('LenguetaMapas',    'Mapas',    new SeccionMapasWeb($this));
-        $lenguetas->agregar('LenguetaDatos',    'Datos',    new SeccionDatosWeb($this));
-        $lenguetas->agregar('LenguetaGraficas', 'Graficas', new SeccionGraficasWeb($this));
+        $lenguetas = new LenguetasWeb(self::IDENTIFICADOR);
+    //~ $lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
+        $lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
+        $lenguetas->agregar('Graficas', new SeccionGraficasWeb($this), TRUE);
         $this->contenido->extra = $lenguetas->html();
         $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();

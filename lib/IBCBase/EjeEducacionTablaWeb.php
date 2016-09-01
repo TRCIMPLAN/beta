@@ -31,6 +31,7 @@ class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
     // protected $educacion;
     // protected $preparado;
     protected $tabla;
+    const     IDENTIFICADOR = 'TablaEducacion';
 
     /**
      * Preparar
@@ -38,7 +39,7 @@ class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
     protected function prepapar() {
         if (!$this->preparado) {
             parent::prepapar();
-            $this->tabla = new TablaWeb('TablaEducacion');
+            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
             $this->tabla->definir_estructura(
                 array(
                     'indicador' => array('enca' => 'Indicador'),

@@ -40,18 +40,8 @@ class CreadorConfig {
      * Constructor
      */
     public function __construct() {
-        $this->imprentas                = array(
-            '\\IBCTorreon\\Imprenta',
-            '\\Proyectos\\Imprenta');
-        $this->imprentas_mapa_sitio     = $this->imprentas;
-        $this->imprentas_autores        = array(
-            '\\IBCTorreon\\Imprenta',
-            '\\Proyectos\\Imprenta');
-        $this->imprentas_categorias     = $this->imprentas_autores;
-        $this->imprentas_pagina_inicial = $this->imprentas_autores;
-        $this->imprentas_redifusion     = $this->imprentas_autores;
         // Original
-    /*  $this->imprentas                = array(
+        $this->imprentas                = array(
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
@@ -80,6 +70,7 @@ class CreadorConfig {
             '\\IBCTorreon\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\Proyectos\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
             '\\SIG\\Imprenta',
             '\\SIGMapasTorreon\\Imprenta',
             '\\SIGPlanes\\Imprenta',
@@ -91,8 +82,14 @@ class CreadorConfig {
             '\\SMIIndicadoresMatamoros\\Imprenta',
             '\\SMIIndicadoresTorreon\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
-        $this->imprentas_pagina_inicial = $this->imprentas_autores;
-        $this->imprentas_redifusion     = $this->imprentas_autores; */
+        $this->imprentas_redifusion     = $this->imprentas_autores;
+        $this->imprentas_pagina_inicial = array(
+            '\\Blog\\Imprenta',
+            '\\PlanEstrategicoMetropolitano\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SIG\\Imprenta',
+            '\\SMI\\Imprenta');
     } // constructor
 
 } // Clase CreadorConfig

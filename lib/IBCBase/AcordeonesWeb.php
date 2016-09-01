@@ -33,9 +33,9 @@ class AcordeonesWeb implements SalidaWeb {
     /**
      * Constructor
      *
-     * @param string Opcional, texto único que lo identifica
+     * @param string Texto único que lo identifica
      */
-    public function __construct($identificador = NULL) {
+    public function __construct($identificador) {
         $this->identificador = $identificador;
     } // constructor
 

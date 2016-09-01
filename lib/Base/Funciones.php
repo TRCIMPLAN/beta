@@ -1,6 +1,6 @@
 <?php
 /**
- * Plataforma de Conocimiento - Creador
+ * Plataforma de Conocimiento - Funciones
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *

@@ -31,24 +31,22 @@ class AcordeonWeb implements SalidaWeb {
     protected $padre_identificador;  // Texto único que identica al padre
     protected $titulo;               // Texto que va a aparecer en la barra
     protected $contenido;            // Instancia con el contenido, debe implementar SalidaWeb
-    protected $esta_abierto = FALSE; // Bandera
+    protected $esta_abierto = FALSE; // Boleano, verdadero para que inicialmente esté abierto
 
     /**
      * Constructor
      *
-     * @param string  Opcional, texto único que identifica al padre
-     * @param string  Opcional, texto que va a aparecer en la barra
+     * @param string  Texto único que identifica al padre
+     * @param string  Texto que va a aparecer en la barra
      * @param mixed   Instancia con el contenido, debe implementar SalidaWeb
-     * @param boolean Verdadero si debe estar abierto, falso si no
+     * @param boolean Boleano, verdadero para que inicialmente esté abierto
      */
-    public function __construct($padre_identificador = NULL, $titulo = NULL, $contenido = NULL, $esta_abierto = FALSE) {
+    public function __construct($padre_identificador, $titulo, $contenido, $esta_abierto = FALSE) {
         $this->padre_identificador = $padre_identificador;
         $this->titulo              = $titulo;
+        $this->identificador       = $this->padre_identificador.\Base\Funciones::caracteres_para_clase($this->titulo);
         $this->contenido           = $contenido;
-        if ($this->titulo !== NULL) {
-            $this->identificador = $this->padre_identificador.\Base\Funciones::caracteres_para_clase($this->titulo);
-        }
-        $this->esta_abierto = $esta_abierto;
+        $this->esta_abierto        = $esta_abierto;
     } // constructor
 
     /**
@@ -70,7 +68,7 @@ class AcordeonWeb implements SalidaWeb {
             throw new \Exception("Error en AcordeonWeb: Contenido no implementa SalidaWeb.");
         }
         if (!is_bool($this->esta_abierto)) {
-            throw new \Exception("Error en AcordeonWeb: Bandera esta_abierto no es boleano.");
+            throw new \Exception("Error en AcordeonWeb: Bandera esta_abierto NO es boleano.");
         }
     } // validar
 
@@ -120,13 +118,15 @@ class AcordeonWeb implements SalidaWeb {
         $this->validar();
         // Acumular
         $a   = array();
-        $a[] = "  // AcordeonWeb {$this->identificador}";
         if ($this->esta_abierto) {
+            $a[] = "  // AcordeonWeb {$this->identificador} ";
             $a[] = $this->contenido->javascript();
+        } else {
+            $a[] = "  // AcordeonWeb {$this->identificador} ejecuta lo siguiente al mostrar";
+            $a[] = "  $('#{$this->identificador}').on('shown.bs.collapse', function () {";
+            $a[] = $this->contenido->javascript();
+            $a[] = "  })";
         }
-        $a[] = "  $('#{$this->identificador}').on('shown.bs.collapse', function () {";
-        $a[] = $this->contenido->javascript();
-        $a[] = "  })";
         // Entregar
         return implode("\n", $a);
     } // javascript

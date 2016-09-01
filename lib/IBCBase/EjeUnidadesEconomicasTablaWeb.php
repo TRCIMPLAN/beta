@@ -31,6 +31,7 @@ class EjeUnidadesEconomicasTablaWeb extends EjeUnidadesEconomicas implements Sal
     // protected $unidades_economicas;
     // protected $preparado;
     protected $tabla;
+    const     IDENTIFICADOR = 'TablaUnidadesEconomicas';
 
     /**
      * Preparar
@@ -38,7 +39,7 @@ class EjeUnidadesEconomicasTablaWeb extends EjeUnidadesEconomicas implements Sal
     protected function prepapar() {
         if (!$this->preparado) {
             parent::prepapar();
-            $this->tabla = new TablaWeb('TablaUnidadesEconomicas');
+            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
             $this->tabla->definir_estructura(
                 array(
                     'indicador' => array('enca' => 'Actividad Económica'),

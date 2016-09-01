@@ -31,6 +31,7 @@ class EjeViviendasTablaWeb extends EjeViviendas implements SalidaWeb {
     // protected $viviendas;
     // protected $preparado;
     protected $tabla;
+    const     IDENTIFICADOR = 'TablaViviendas';
 
     /**
      * Preparar
@@ -38,7 +39,7 @@ class EjeViviendasTablaWeb extends EjeViviendas implements SalidaWeb {
     protected function prepapar() {
         if (!$this->preparado) {
             parent::prepapar();
-            $this->tabla = new TablaWeb('TablaViviendas');
+            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
             $this->tabla->definir_estructura(
                 array(
                     'indicador' => array('enca' => 'Indicador'),
