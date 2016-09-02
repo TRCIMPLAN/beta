@@ -41,7 +41,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Etiqueta de Navegación a poner activa
         $this->nombre_menu              = 'IBC > IBC Torreón';
         // Ruta a la clase para hacer la página con el índice
-        $this->indices_paginas          = '\\Base\\PaginasListadoAlfabetico';
+        $this->indices_paginas          = '\\Base\\PaginasDetallados';
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'ibc-torreon';
         // Ejecutar constructor en el padre
