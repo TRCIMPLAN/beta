@@ -57,6 +57,36 @@ class EjeDemografia {
         }
     } // preparar
 
+    /**
+     * Formatear
+     *
+     * @param  string Nombre del indicador
+     * @return string Valor con formato
+     */
+    protected function formatear($nombre) {
+        $this->prepapar();
+        switch ($nombre) {
+            case 'Población total':
+                return number_format($this->demografia[$nombre], 0, ".", ",");
+                break;
+            case 'Porcentaje de población masculina':
+            case 'Porcentaje de población femenina':
+            case 'Porcentaje de población de 0 a 14 años':
+            case 'Porcentaje de población de 15 a 64 años':
+            case 'Porcentaje de población de 65 y más años':
+            case 'Porcentaje de población no especificada':
+            case 'Porcentaje de población nacida en otro estado':
+            case 'Porcentaje de población con discapacidad':
+                return number_format($this->demografia[$nombre], 2, ".", ",")." %";
+                break;
+            case 'Fecundidad promedio':
+                return number_format($this->demografia[$nombre], 2, ".", ",");
+                break;
+            default:
+                return $this->demografia[$nombre];
+        }
+    } // formatear
+
 } // Clase EjeDemografia
 
 ?>
