@@ -98,8 +98,7 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '89.74',
                 'Viviendas con Celular' => '92.31',
                 'Viviendas con Internet' => '84.62'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

@@ -38,23 +38,28 @@ class EjeUnidadesEconomicasTablaWeb extends EjeUnidadesEconomicas implements Sal
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-            $this->tabla->definir_estructura(
-                array(
-                    'indicador' => array('enca' => 'Actividad Económica'),
-                    'valor'     => array('enca' => 'Porcentaje')
-                )
-            );
-            $this->tabla->definir_panal(
-                array(
-                    array('indicador' => '1° '.$this->unidades_economicas['Primer actividad nombre'], 'valor' => $this->unidades_economicas['Primer actividad porcentaje']),
-                    array('indicador' => '2° '.$this->unidades_economicas['Segunda actividad nombre'], 'valor' => $this->unidades_economicas['Segunda actividad porcentaje']),
-                    array('indicador' => '3° '.$this->unidades_economicas['Tercera actividad nombre'], 'valor' => $this->unidades_economicas['Tercera actividad porcentaje']),
-                    array('indicador' => '4° '.$this->unidades_economicas['Cuarta actividad nombre'], 'valor' => $this->unidades_economicas['Cuarta actividad porcentaje']),
-                    array('indicador' => '5° '.$this->unidades_economicas['Quinta actividad nombre'], 'valor' => $this->unidades_economicas['Quinta actividad porcentaje'])
-                )
-            );
+            try {
+                parent::prepapar();
+                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+                $this->tabla->definir_estructura(
+                    array(
+                        'indicador' => array('enca' => 'Actividad Económica'),
+                        'valor'     => array('enca' => 'Porcentaje')
+                    )
+                );
+                $this->tabla->definir_panal(
+                    array(
+                        array('indicador' => '1° '.$this->unidades_economicas['Primer actividad nombre'], 'valor' => $this->unidades_economicas['Primer actividad porcentaje']),
+                        array('indicador' => '2° '.$this->unidades_economicas['Segunda actividad nombre'], 'valor' => $this->unidades_economicas['Segunda actividad porcentaje']),
+                        array('indicador' => '3° '.$this->unidades_economicas['Tercera actividad nombre'], 'valor' => $this->unidades_economicas['Tercera actividad porcentaje']),
+                        array('indicador' => '4° '.$this->unidades_economicas['Cuarta actividad nombre'], 'valor' => $this->unidades_economicas['Cuarta actividad porcentaje']),
+                        array('indicador' => '5° '.$this->unidades_economicas['Quinta actividad nombre'], 'valor' => $this->unidades_economicas['Quinta actividad porcentaje'])
+                    )
+                );
+            } catch (EjeExceptionSinDatos $e) {
+                $this->tabla = new MensajeWeb();
+                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            }
         }
     } // preparar
 

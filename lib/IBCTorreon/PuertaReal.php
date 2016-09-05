@@ -98,8 +98,7 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '85.40',
                 'Viviendas con Celular' => '99.64',
                 'Viviendas con Internet' => '72.74'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

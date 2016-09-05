@@ -98,8 +98,7 @@ class ResidencialSantaBarbara3aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.00',
                 'Viviendas con Celular' => '99.00',
                 'Viviendas con Internet' => '82.00'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

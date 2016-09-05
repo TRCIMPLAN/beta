@@ -98,8 +98,7 @@ class CerradaLasPalmasIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.86',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '80.95'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

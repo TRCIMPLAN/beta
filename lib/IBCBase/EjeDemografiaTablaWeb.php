@@ -38,28 +38,33 @@ class EjeDemografiaTablaWeb extends EjeDemografia implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-            $this->tabla->definir_estructura(
-                array(
-                    'indicador' => array('enca' => 'Indicador'),
-                    'valor'     => array('enca' => 'Valor')
-                )
-            );
-            $this->tabla->definir_panal(
-                array(
-                    array('indicador' => 'Población total',                               'valor' => $this->demografia['Población total']),
-                    array('indicador' => 'Porcentaje de población masculina',             'valor' => $this->demografia['Porcentaje de población masculina']),
-                    array('indicador' => 'Porcentaje de población femenina',              'valor' => $this->demografia['Porcentaje de población femenina']),
-                    array('indicador' => 'Porcentaje de población de 0 a 14 años',        'valor' => $this->demografia['Porcentaje de población de 0 a 14 años']),
-                    array('indicador' => 'Porcentaje de población de 15 a 64 años',       'valor' => $this->demografia['Porcentaje de población de 15 a 64 años']),
-                    array('indicador' => 'Porcentaje de población de 65 y más años',      'valor' => $this->demografia['Porcentaje de población de 65 y más años']),
-                    array('indicador' => 'Porcentaje de población no especificada',       'valor' => $this->demografia['Porcentaje de población no especificada']),
-                    array('indicador' => 'Fecundidad promedio',                           'valor' => $this->demografia['Fecundidad promedio']),
-                    array('indicador' => 'Porcentaje de población nacida en otro estado', 'valor' => $this->demografia['Porcentaje de población nacida en otro estado']),
-                    array('indicador' => 'Porcentaje de población con discapacidad',      'valor' => $this->demografia['Porcentaje de población con discapacidad'])
-                )
-            );
+            try {
+                parent::prepapar();
+                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+                $this->tabla->definir_estructura(
+                    array(
+                        'indicador' => array('enca' => 'Indicador'),
+                        'valor'     => array('enca' => 'Valor')
+                    )
+                );
+                $this->tabla->definir_panal(
+                    array(
+                        array('indicador' => 'Población total',                               'valor' => $this->demografia['Población total']),
+                        array('indicador' => 'Porcentaje de población masculina',             'valor' => $this->demografia['Porcentaje de población masculina']),
+                        array('indicador' => 'Porcentaje de población femenina',              'valor' => $this->demografia['Porcentaje de población femenina']),
+                        array('indicador' => 'Porcentaje de población de 0 a 14 años',        'valor' => $this->demografia['Porcentaje de población de 0 a 14 años']),
+                        array('indicador' => 'Porcentaje de población de 15 a 64 años',       'valor' => $this->demografia['Porcentaje de población de 15 a 64 años']),
+                        array('indicador' => 'Porcentaje de población de 65 y más años',      'valor' => $this->demografia['Porcentaje de población de 65 y más años']),
+                        array('indicador' => 'Porcentaje de población no especificada',       'valor' => $this->demografia['Porcentaje de población no especificada']),
+                        array('indicador' => 'Fecundidad promedio',                           'valor' => $this->demografia['Fecundidad promedio']),
+                        array('indicador' => 'Porcentaje de población nacida en otro estado', 'valor' => $this->demografia['Porcentaje de población nacida en otro estado']),
+                        array('indicador' => 'Porcentaje de población con discapacidad',      'valor' => $this->demografia['Porcentaje de población con discapacidad'])
+                    )
+                );
+            } catch (EjeExceptionSinDatos $e) {
+                $this->tabla = new MensajeWeb();
+                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            }
         }
     } // preparar
 

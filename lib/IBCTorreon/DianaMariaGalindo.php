@@ -98,8 +98,7 @@ class DianaMariaGalindo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '0.00',
                 'Viviendas con Celular' => '54.55',
                 'Viviendas con Internet' => '0.00'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

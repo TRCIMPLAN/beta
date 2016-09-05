@@ -98,8 +98,7 @@ class ResidencialLasVillas3aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.86',
                 'Viviendas con Celular' => '92.86',
                 'Viviendas con Internet' => '92.86'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

@@ -98,8 +98,7 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.86',
                 'Viviendas con Celular' => '97.62',
                 'Viviendas con Internet' => '88.10'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

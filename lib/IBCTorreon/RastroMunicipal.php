@@ -62,15 +62,6 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
-            ),
-            'Viviendas' => array(
-        
-            ),
             'Unidades Económicas' => array(
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Primer actividad porcentaje' => '50.00',

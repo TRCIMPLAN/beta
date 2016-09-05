@@ -98,8 +98,7 @@ class CerradaLasFlores extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '46.43',
                 'Viviendas con Celular' => '85.71',
                 'Viviendas con Internet' => '32.14'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

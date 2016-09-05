@@ -98,8 +98,7 @@ class ResidencialLasVillas9aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '84.36',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '36.58'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

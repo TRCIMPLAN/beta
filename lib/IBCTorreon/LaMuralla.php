@@ -98,8 +98,7 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '86.08',
                 'Viviendas con Celular' => '98.68',
                 'Viviendas con Internet' => '72.67'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

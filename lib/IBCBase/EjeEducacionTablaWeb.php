@@ -38,21 +38,26 @@ class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-            $this->tabla->definir_estructura(
-                array(
-                    'indicador' => array('enca' => 'Indicador'),
-                    'valor'     => array('enca' => 'Valor')
-                )
-            );
-            $this->tabla->definir_panal(
-                array(
-                    array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->educacion['Grado Promedio de Escolaridad']),
-                    array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->educacion['Grado Promedio de Escolaridad masculina']),
-                    array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->educacion['Grado Promedio de Escolaridad femenina'])
-                )
-            );
+            try {
+                parent::prepapar();
+                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+                $this->tabla->definir_estructura(
+                    array(
+                        'indicador' => array('enca' => 'Indicador'),
+                        'valor'     => array('enca' => 'Valor')
+                    )
+                );
+                $this->tabla->definir_panal(
+                    array(
+                        array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->educacion['Grado Promedio de Escolaridad']),
+                        array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->educacion['Grado Promedio de Escolaridad masculina']),
+                        array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->educacion['Grado Promedio de Escolaridad femenina'])
+                    )
+                );
+            } catch (EjeExceptionSinDatos $e) {
+                $this->tabla = new MensajeWeb();
+                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            }
         }
     } // preparar
 

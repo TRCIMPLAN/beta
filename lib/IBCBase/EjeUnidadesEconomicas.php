@@ -50,7 +50,7 @@ class EjeUnidadesEconomicas {
             if (isset($datos['Unidades Económicas'])) {
                 $this->unidades_economicas = $datos['Unidades Económicas'];
             } else {
-                throw new \Exception("Error: Faltan datos sobre Unidades Económicas.");
+                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Unidades Económicas.");
             }
             // Levantar bandera
             $this->preparado = TRUE;

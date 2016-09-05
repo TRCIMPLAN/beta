@@ -98,8 +98,7 @@ class RinconAurora extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '83.87'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

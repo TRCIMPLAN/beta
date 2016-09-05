@@ -98,8 +98,7 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '82.76',
                 'Viviendas con Celular' => '96.55',
                 'Viviendas con Internet' => '82.76'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

@@ -37,6 +37,7 @@ class NavegacionConfig {
             'Indicadores > Indicadores por Región'    => 'smi/por-region.html',
             'Indicadores > Georreferenciados'         => 'smi-georreferenciados/index.html',
             'Indicadores > Datos Abiertos'            => 'smi/datos-abiertos.html'),
+        'IBC Torreón' => 'ibc-torreon/index.html',
         'Información Geográfica' => array(
             'Información Geográfica > Introducción al S.I.G.'  => 'sig/introduccion.html',
             'Información Geográfica > Planes'                  => 'sig-planes/index.html',
@@ -76,6 +77,7 @@ class NavegacionConfig {
             'Indicadores por Categoría'   => 'fa fa-th-list',
             'Indicadores por Región'      => 'fa fa-table',
             'Georreferenciados'           => 'fa fa-map-marker',
+        'IBC Torreón'                     => 'fa fa-puzzle-piece',
         'Información Geográfica'          => 'fa fa-map-marker',
             'Introducción al S.I.G.'      => 'fa fa-file-text-o',
             'Planes'                      => 'fa fa-server',

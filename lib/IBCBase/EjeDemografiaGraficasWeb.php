@@ -30,44 +30,50 @@ class EjeDemografiaGraficasWeb extends EjeDemografia implements SalidaWeb {
     // protected $publicacion_ficha;
     // protected $demografia;
     // protected $preparado;
-    protected $graf_pob_mas_fem;
-    protected $graf_pob_rang;
-    protected $graf_pob_nac_otro_edo;
-    protected $graf_pob_disc;
+    protected $graficas;
     const     ID_GRAF_POB_MAS_FEM      = 'GraficaPobMasFem';
     const     ID_GRAF_POB_RANG         = 'GraficaPobRango';
     const     ID_GRAF_POB_NAC_OTRO_EDO = 'GraficaPobNacOtroEdo';
     const     ID_GRAF_POB_DISC         = 'GraficaPobDisc';
-
 
     /**
      * Preparar
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            // Gráfica Población Masculina Femenina
-            $this->graf_pob_mas_fem = new GraficaPayWeb(self::ID_GRAF_POB_MAS_FEM);
-            $this->graf_pob_mas_fem->definir_titulo('Población por género');
-            $this->graf_pob_mas_fem->agregar('Masculina', $this->demografia['Porcentaje de población masculina'], '#006AC8');
-            $this->graf_pob_mas_fem->agregar('Femenina',  $this->demografia['Porcentaje de población femenina'],  '#C80083');
-            // Gráfica Población Rangos
-            $this->graf_pob_rang = new GraficaPayWeb(self::ID_GRAF_POB_RANG);
-            $this->graf_pob_rang->definir_titulo('Población por rangos de edad');
-            $this->graf_pob_rang->agregar('De 0 a 14 años',   $this->demografia['Porcentaje de población de 0 a 14 años'],   '#89BE85');
-            $this->graf_pob_rang->agregar('De 15 a 64 años',  $this->demografia['Porcentaje de población de 15 a 64 años'],  '#57A550');
-            $this->graf_pob_rang->agregar('De 65 y más años', $this->demografia['Porcentaje de población de 65 y más años'], '#15630E');
-            $this->graf_pob_rang->agregar('No especificada',  $this->demografia['Porcentaje de población no especificada'],  '#BFBFBF');
-            // Gráfica Población Nacida en Otro Estado
-            $this->graf_pob_nac_otro_edo = new GraficaPayWeb(self::ID_GRAF_POB_NAC_OTRO_EDO);
-            $this->graf_pob_nac_otro_edo->definir_titulo('Nacida en otro estado');
-            $this->graf_pob_nac_otro_edo->agregar('Nacida en OTRO estado',       $this->demografia['Porcentaje de población nacida en otro estado'], '#7E00A8');
-            $this->graf_pob_nac_otro_edo->agregar('Nacida en este estado', 100 - $this->demografia['Porcentaje de población nacida en otro estado'], '#BFBFBF');
-            // Gráfica Población con Discapacidad
-            $this->graf_pob_disc = new GraficaPayWeb(self::ID_GRAF_POB_DISC);
-            $this->graf_pob_disc->definir_titulo('Con discapacidad');
-            $this->graf_pob_disc->agregar('CON discapacidad',       $this->demografia['Porcentaje de población con discapacidad'], '#A80021');
-            $this->graf_pob_disc->agregar('Sin discapacidad', 100 - $this->demografia['Porcentaje de población con discapacidad'], '#BFBFBF');
+            try {
+                parent::prepapar();
+                // Gráfica Población Masculina Femenina
+                $graf_pob_mas_fem = new GraficaPayWeb(self::ID_GRAF_POB_MAS_FEM);
+                $graf_pob_mas_fem->definir_titulo('Población por género');
+                $graf_pob_mas_fem->agregar('Masculina', $this->demografia['Porcentaje de población masculina'], '#006AC8');
+                $graf_pob_mas_fem->agregar('Femenina',  $this->demografia['Porcentaje de población femenina'],  '#C80083');
+                $this->graficas[] = $graf_pob_mas_fem;
+                // Gráfica Población Rangos
+                $graf_pob_rang = new GraficaPayWeb(self::ID_GRAF_POB_RANG);
+                $graf_pob_rang->definir_titulo('Población por rangos de edad');
+                $graf_pob_rang->agregar('De 0 a 14 años',   $this->demografia['Porcentaje de población de 0 a 14 años'],   '#89BE85');
+                $graf_pob_rang->agregar('De 15 a 64 años',  $this->demografia['Porcentaje de población de 15 a 64 años'],  '#57A550');
+                $graf_pob_rang->agregar('De 65 y más años', $this->demografia['Porcentaje de población de 65 y más años'], '#15630E');
+                $graf_pob_rang->agregar('No especificada',  $this->demografia['Porcentaje de población no especificada'],  '#BFBFBF');
+                $this->graficas[] = $graf_pob_rang;
+                // Gráfica Población Nacida en Otro Estado
+                $graf_pob_nac_otro_edo = new GraficaPayWeb(self::ID_GRAF_POB_NAC_OTRO_EDO);
+                $graf_pob_nac_otro_edo->definir_titulo('Nacida en otro estado');
+                $graf_pob_nac_otro_edo->agregar('Nacida en OTRO estado',       $this->demografia['Porcentaje de población nacida en otro estado'], '#7E00A8');
+                $graf_pob_nac_otro_edo->agregar('Nacida en este estado', 100 - $this->demografia['Porcentaje de población nacida en otro estado'], '#BFBFBF');
+                $this->graficas[] = $graf_pob_nac_otro_edo;
+                // Gráfica Población con Discapacidad
+                $graf_pob_disc = new GraficaPayWeb(self::ID_GRAF_POB_DISC);
+                $graf_pob_disc->definir_titulo('Con discapacidad');
+                $graf_pob_disc->agregar('CON discapacidad',       $this->demografia['Porcentaje de población con discapacidad'], '#A80021');
+                $graf_pob_disc->agregar('Sin discapacidad', 100 - $this->demografia['Porcentaje de población con discapacidad'], '#BFBFBF');
+                $this->graficas[] = $graf_pob_disc;
+            } catch (EjeExceptionSinDatos $e) {
+                $mensaje = new MensajeWeb();
+                $mensaje->definir_mensaje_aviso('', $e->getMessage());
+                $this->graficas[] = $mensaje;
+            }
         }
     } // preparar
 
@@ -78,13 +84,10 @@ class EjeDemografiaGraficasWeb extends EjeDemografia implements SalidaWeb {
      */
     public function html() {
         $this->prepapar();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_pob_mas_fem->html();
-        $a[] = $this->graf_pob_rang->html();
-        $a[] = $this->graf_pob_nac_otro_edo->html();
-        $a[] = $this->graf_pob_disc->html();
-        // Entregar
+        $a = array();
+        foreach ($this->graficas as $g) {
+            $a[] = $g->html();
+        }
         return implode("\n", $a);
     } // html
 
@@ -95,13 +98,10 @@ class EjeDemografiaGraficasWeb extends EjeDemografia implements SalidaWeb {
      */
     public function javascript() {
         $this->prepapar();
-        // Acumular
-        $a   = array();
-        $a[] = $this->graf_pob_mas_fem->javascript();
-        $a[] = $this->graf_pob_rang->javascript();
-        $a[] = $this->graf_pob_nac_otro_edo->javascript();
-        $a[] = $this->graf_pob_disc->javascript();
-        // Entregar
+        $a = array();
+        foreach ($this->graficas as $g) {
+            $a[] = $g->javascript();
+        }
         return implode("\n", $a);
     } // javascript
 

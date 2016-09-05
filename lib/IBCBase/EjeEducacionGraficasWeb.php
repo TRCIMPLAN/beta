@@ -30,7 +30,7 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
     // protected $publicacion_ficha;
     // protected $educacion;
     // protected $preparado;
-    protected $graf_prom_esc;
+    protected $grafica;
     const     ID_GRAF_PROM_ESC = 'GraficaPromEsc';
 
     /**
@@ -38,15 +38,20 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            // Gráfica Grado Promedio de Escolaridad
-            $this->graf_prom_esc = new GraficaBarrasWeb(self::ID_GRAF_PROM_ESC);
-            $this->graf_prom_esc->definir_titulo('Grado Promedio de Escolaridad');
-            $this->graf_prom_esc->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
-            $this->graf_prom_esc->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
-            $this->graf_prom_esc->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
-            $this->graf_prom_esc->definir_eje_horizontal('Años', 0, 24);
-            $this->graf_prom_esc->definir_post_nota(' años');;
+            try {
+                parent::prepapar();
+                // Gráfica Grado Promedio de Escolaridad
+                $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_PROM_ESC);
+                $this->grafica->definir_titulo('Grado Promedio de Escolaridad');
+                $this->grafica->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
+                $this->grafica->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
+                $this->grafica->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
+                $this->grafica->definir_eje_horizontal('Años', 0, 24);
+                $this->grafica->definir_post_nota(' años');
+            } catch (EjeExceptionSinDatos $e) {
+                $this->grafica = new MensajeWeb();
+                $this->grafica->definir_mensaje_aviso('', $e->getMessage());
+            }
         }
     } // preparar
 
@@ -57,7 +62,7 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
      */
     public function html() {
         $this->prepapar();
-        return $this->graf_prom_esc->html();
+        return $this->grafica->html();
     } // html
 
     /**
@@ -67,7 +72,7 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
      */
     public function javascript() {
         $this->prepapar();
-        return $this->graf_prom_esc->javascript();
+        return $this->grafica->javascript();
     } // javascript
 
 } // Clase EjeEducacionGraficasWeb

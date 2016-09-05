@@ -50,7 +50,7 @@ class EjeViviendas {
             if (isset($datos['Viviendas'])) {
                 $this->viviendas = $datos['Viviendas'];
             } else {
-                throw new \Exception("Error: Faltan datos sobre Viviendas.");
+                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Viviendas.");
             }
             // Levantar bandera
             $this->preparado = TRUE;

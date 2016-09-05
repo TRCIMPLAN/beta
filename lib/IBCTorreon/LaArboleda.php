@@ -98,8 +98,7 @@ class LaArboleda extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '85.48',
                 'Viviendas con Celular' => '98.39',
                 'Viviendas con Internet' => '70.97'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

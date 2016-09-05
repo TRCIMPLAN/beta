@@ -30,7 +30,7 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
     // protected $publicacion_ficha;
     // protected $unidades_economicas;
     // protected $preparado;
-    protected $graf_uni_eco;
+    protected $grafica;
     const     ID_GRAF_UNI_ECO = 'GraficaUniEco';
 
     /**
@@ -38,17 +38,22 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
      */
     protected function prepapar() {
         if (!$this->preparado) {
-            parent::prepapar();
-            // Grafica Unidades Economicas
-            $this->graf_uni_eco = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
-            $this->graf_uni_eco->definir_titulo('Unidades Económicas');
-            $this->graf_uni_eco->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
-            $this->graf_uni_eco->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
-            $this->graf_uni_eco->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
-            $this->graf_uni_eco->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
-            $this->graf_uni_eco->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
-            $this->graf_uni_eco->definir_eje_horizontal('Porcentaje', 0);
-            $this->graf_uni_eco->definir_post_nota(' %');
+            try {
+                parent::prepapar();
+                // Grafica Unidades Economicas
+                $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
+                $this->grafica->definir_titulo('Unidades Económicas');
+                $this->grafica->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
+                $this->grafica->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
+                $this->grafica->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
+                $this->grafica->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
+                $this->grafica->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
+                $this->grafica->definir_eje_horizontal('Porcentaje', 0);
+                $this->grafica->definir_post_nota(' %');
+            } catch (EjeExceptionSinDatos $e) {
+                $this->grafica = new MensajeWeb();
+                $this->grafica->definir_mensaje_aviso('', $e->getMessage());
+            }
         }
     } // preparar
 
@@ -59,7 +64,7 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
      */
     public function html() {
         $this->prepapar();
-        return $this->graf_uni_eco->html();
+        return $this->grafica->html();
     } // html
 
     /**
@@ -69,7 +74,7 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
      */
     public function javascript() {
         $this->prepapar();
-        return $this->graf_uni_eco->javascript();
+        return $this->grafica->javascript();
     } // javascript
 
 } // Clase EjeUnidadesEconomicasGraficasWeb

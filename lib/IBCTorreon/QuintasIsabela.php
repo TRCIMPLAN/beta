@@ -98,8 +98,7 @@ class QuintasIsabela extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '81.82',
                 'Viviendas con Celular' => '81.82',
                 'Viviendas con Internet' => '81.82'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

@@ -98,8 +98,7 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '95.16',
                 'Viviendas con Celular' => '96.77',
                 'Viviendas con Internet' => '92.81'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

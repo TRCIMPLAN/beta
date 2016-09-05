@@ -98,8 +98,7 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '54.29',
                 'Viviendas con Celular' => '91.25',
                 'Viviendas con Internet' => '33.75'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

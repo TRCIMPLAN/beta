@@ -62,15 +62,6 @@ class Metalurgica extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
-            ),
-            'Viviendas' => array(
-        
-            ),
             'Unidades Económicas' => array(
                 'Primer actividad nombre' => 'Industria Manufacturera',
                 'Primer actividad porcentaje' => '66.67',

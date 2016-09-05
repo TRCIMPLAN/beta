@@ -61,17 +61,7 @@ class ResidencialElFresnoSegundaEtapa extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
-            ),
-            'Viviendas' => array(
-        
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

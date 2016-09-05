@@ -98,8 +98,7 @@ class JesusMariaDelBosque extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '43.66',
                 'Viviendas con Celular' => '91.64',
                 'Viviendas con Internet' => '35.03'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

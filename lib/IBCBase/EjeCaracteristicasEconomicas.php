@@ -50,7 +50,7 @@ class EjeCaracteristicasEconomicas {
             if (isset($datos['Características Económicas'])) {
                 $this->caracteristicas_economicas = $datos['Características Económicas'];
             } else {
-                throw new \Exception("Error: Faltan datos sobre Características Económicas.");
+                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Características Económicas.");
             }
             // Levantar bandera
             $this->preparado = TRUE;

@@ -98,8 +98,7 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '46.86',
                 'Viviendas con Celular' => '85.49',
                 'Viviendas con Internet' => '32.66'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

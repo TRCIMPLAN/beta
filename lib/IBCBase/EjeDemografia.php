@@ -50,7 +50,7 @@ class EjeDemografia {
             if (isset($datos['Demografía'])) {
                 $this->demografia = $datos['Demografía'];
             } else {
-                throw new \Exception("Error en Eje: Faltan datos sobre Demografía.");
+                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Demografía.");
             }
             // Levantar bandera
             $this->preparado = TRUE;

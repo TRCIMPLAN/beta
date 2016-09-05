@@ -86,9 +86,6 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                 'Población Desocupada' => '5.02',
                 'Derechohabiencia' => '80.03'
             ),
-            'Viviendas' => array(
-        
-            ),
             'Unidades Económicas' => array(
                 'Primer actividad nombre' => 'Industria Manufacturera',
                 'Primer actividad porcentaje' => '32.26',

@@ -98,8 +98,7 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '97.92',
                 'Viviendas con Celular' => '91.67',
                 'Viviendas con Internet' => '91.67'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

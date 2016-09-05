@@ -98,8 +98,7 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '99.46',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '98.65'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 

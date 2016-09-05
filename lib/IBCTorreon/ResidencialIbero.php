@@ -98,8 +98,7 @@ class ResidencialIbero extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '81.61',
                 'Viviendas con Celular' => '96.09',
                 'Viviendas con Internet' => '77.29'
-            ),
-            'Unidades Económicas' => array(
+            )
         );
     } // datos
 
