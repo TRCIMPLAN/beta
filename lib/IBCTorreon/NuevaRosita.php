@@ -87,6 +87,7 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.03'
             ),
             'Viviendas' => array(
+                'Hogares' => '591',
                 'Hogares Jefatura masculina' => '66.50',
                 'Hogares Jefatura femenina' => '33.50',
                 'Ocupación por Vivienda' => '3.85',
@@ -100,6 +101,7 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '14.63'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '82',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.68',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

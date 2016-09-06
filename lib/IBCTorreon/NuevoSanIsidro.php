@@ -87,6 +87,7 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.20'
             ),
             'Viviendas' => array(
+                'Hogares' => '283',
                 'Hogares Jefatura masculina' => '73.94',
                 'Hogares Jefatura femenina' => '26.06',
                 'Ocupación por Vivienda' => '3.31',
@@ -100,6 +101,7 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '72.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '40',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '32.50',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

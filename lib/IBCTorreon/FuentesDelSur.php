@@ -87,6 +87,7 @@ class FuentesDelSur extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.58'
             ),
             'Viviendas' => array(
+                'Hogares' => '1237',
                 'Hogares Jefatura masculina' => '69.60',
                 'Hogares Jefatura femenina' => '30.40',
                 'Ocupación por Vivienda' => '3.60',
@@ -100,6 +101,7 @@ class FuentesDelSur extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '43.08'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '67',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.34',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

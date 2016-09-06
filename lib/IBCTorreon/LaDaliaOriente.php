@@ -87,6 +87,7 @@ class LaDaliaOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '943',
                 'Hogares Jefatura masculina' => '74.13',
                 'Hogares Jefatura femenina' => '25.87',
                 'Ocupación por Vivienda' => '4.10',
@@ -100,6 +101,7 @@ class LaDaliaOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '22.54'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '45',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.67',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

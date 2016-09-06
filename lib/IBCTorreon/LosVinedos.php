@@ -87,6 +87,7 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '237',
                 'Hogares Jefatura masculina' => '87.57',
                 'Hogares Jefatura femenina' => '12.43',
                 'Ocupación por Vivienda' => '4.57',
@@ -100,6 +101,7 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '91.13'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '52',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '21.15',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

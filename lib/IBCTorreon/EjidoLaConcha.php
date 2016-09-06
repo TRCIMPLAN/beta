@@ -87,6 +87,7 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.94'
             ),
             'Viviendas' => array(
+                'Hogares' => '844',
                 'Hogares Jefatura masculina' => '81.21',
                 'Hogares Jefatura femenina' => '18.79',
                 'Ocupación por Vivienda' => '4.16',
@@ -100,6 +101,7 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '98',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.94',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

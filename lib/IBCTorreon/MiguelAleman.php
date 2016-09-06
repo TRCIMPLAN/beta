@@ -87,6 +87,7 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.80'
             ),
             'Viviendas' => array(
+                'Hogares' => '199',
                 'Hogares Jefatura masculina' => '68.84',
                 'Hogares Jefatura femenina' => '31.16',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.43'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '52',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '32.69',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

@@ -87,6 +87,7 @@ class FraccionamientoJoyasDelBosque extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.83'
             ),
             'Viviendas' => array(
+                'Hogares' => '221',
                 'Hogares Jefatura masculina' => '82.81',
                 'Hogares Jefatura femenina' => '17.19',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class FraccionamientoJoyasDelBosque extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.21'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '70.59',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

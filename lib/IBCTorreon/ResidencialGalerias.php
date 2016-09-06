@@ -87,6 +87,7 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '93.68'
             ),
             'Viviendas' => array(
+                'Hogares' => '5',
                 'Hogares Jefatura masculina' => '77.88',
                 'Hogares Jefatura femenina' => '22.12',
                 'Ocupación por Vivienda' => '4.20',
@@ -98,6 +99,9 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '99.46',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '98.65'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

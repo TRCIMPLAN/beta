@@ -153,7 +153,7 @@
       <aside><div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="Conglomerado">
     <li role="presentation" class="active"><a href="#ConglomeradoDatos" aria-controls="ConglomeradoDatos" role="tab" data-toggle="tab">Datos</a></li>
-    <li role="presentation"><a href="#ConglomeradoGraficas" aria-controls="ConglomeradoGraficas" role="tab" data-toggle="tab">Graficas</a></li>
+    <li role="presentation"><a href="#ConglomeradoGraficas" aria-controls="ConglomeradoGraficas" role="tab" data-toggle="tab">Gráficas</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="ConglomeradoDatos">
@@ -168,56 +168,9 @@
     </div>
     <div id="DatosDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraDatosDemografia">
       <div class="panel-body">
-  <table class="table table-hover table-bordered">
-    <thead>
-      <tr>
-        <th>Indicador</th>
-        <th>Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Población total</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población masculina</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población femenina</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población de 0 a 14 años</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población de 15 a 64 años</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población de 65 y más años</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población no especificada</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Fecundidad promedio</td>
-        <td>0.00</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población nacida en otro estado</td>
-        <td>0.00 %</td>
-      </tr>
-      <tr>
-        <td>Porcentaje de población con discapacidad</td>
-        <td>0.00 %</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="alert alert-warning">
+La Población Total es cero.
+</div>
       </div>
     </div>
   </div>
@@ -231,9 +184,28 @@
     </div>
     <div id="DatosEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosEducacion">
       <div class="panel-body">
-<div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Educación.
-</div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grado Promedio de Escolaridad</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Grado Promedio de Escolaridad masculina</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Grado Promedio de Escolaridad femenina</td>
+        <td class="derecha">ND</td>
+      </tr>
+    </tbody>
+  </table>
       </div>
     </div>
   </div>
@@ -247,9 +219,48 @@ Residencial Los Cedros sin datos sobre Educación.
     </div>
     <div id="DatosCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosCaracteristicasEconomicas">
       <div class="panel-body">
-<div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Características Económicas.
-</div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Población Económicamente Activa</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Económicamente Activa masculina</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Económicamente Activa femenina</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Ocupada</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Ocupada masculina</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Ocupada femenina</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Población Desocupada</td>
+        <td class="derecha">ND</td>
+      </tr>
+      <tr>
+        <td>Derechohabiencia</td>
+        <td class="derecha">ND</td>
+      </tr>
+    </tbody>
+  </table>
       </div>
     </div>
   </div>
@@ -264,7 +275,7 @@ Residencial Los Cedros sin datos sobre Características Económicas.
     <div id="DatosViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosViviendas">
       <div class="panel-body">
 <div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Viviendas.
+La cantidad de Hogares es cero.
 </div>
       </div>
     </div>
@@ -282,30 +293,34 @@ Residencial Los Cedros sin datos sobre Viviendas.
   <table class="table table-hover table-bordered">
     <thead>
       <tr>
-        <th>Actividad Económica</th>
-        <th>Porcentaje</th>
+        <th>Indicador</th>
+        <th>Valor</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td>Total Actividades Económicas</td>
+        <td class="derecha">5</td>
+      </tr>
+      <tr>
         <td>1° Educativos</td>
-        <td>40.00</td>
+        <td class="derecha">40.00 %</td>
       </tr>
       <tr>
         <td>2° Información Medios Masivos</td>
-        <td>20.00</td>
+        <td class="derecha">20.00 %</td>
       </tr>
       <tr>
         <td>3° Manejo de Residuos</td>
-        <td>20.00</td>
+        <td class="derecha">20.00 %</td>
       </tr>
       <tr>
         <td>4° Financieros y Seguros</td>
-        <td>20.00</td>
+        <td class="derecha">20.00 %</td>
       </tr>
       <tr>
         <td>5° Salud</td>
-        <td>0.00</td>
+        <td class="derecha">0.00 %</td>
       </tr>
     </tbody>
   </table>
@@ -326,10 +341,9 @@ Residencial Los Cedros sin datos sobre Viviendas.
     </div>
     <div id="GraficasDemografia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="cabeceraGraficasDemografia">
       <div class="panel-body">
-    <div id="GraficaPobMasFem" class="grafica"></div>
-    <div id="GraficaPobRango" class="grafica"></div>
-    <div id="GraficaPobNacOtroEdo" class="grafica"></div>
-    <div id="GraficaPobDisc" class="grafica"></div>
+<div class="alert alert-warning">
+La Población Total es cero.
+</div>
       </div>
     </div>
   </div>
@@ -343,9 +357,7 @@ Residencial Los Cedros sin datos sobre Viviendas.
     </div>
     <div id="GraficasEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasEducacion">
       <div class="panel-body">
-<div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Educación.
-</div>
+    <div id="GraficaPromEsc" class="grafica"></div>
       </div>
     </div>
   </div>
@@ -359,9 +371,11 @@ Residencial Los Cedros sin datos sobre Educación.
     </div>
     <div id="GraficasCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasCaracteristicasEconomicas">
       <div class="panel-body">
-<div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Características Económicas.
-</div>
+    <div id="GraficaPobEcoAct" class="grafica"></div>
+    <div id="GraficaPobEcoActMasFem" class="grafica"></div>
+    <div id="GraficaOcu" class="grafica"></div>
+    <div id="GraficaOcuMasFem" class="grafica"></div>
+    <div id="GraficaDerechohabiencia" class="grafica"></div>
       </div>
     </div>
   </div>
@@ -376,7 +390,7 @@ Residencial Los Cedros sin datos sobre Características Económicas.
     <div id="GraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasViviendas">
       <div class="panel-body">
 <div class="alert alert-warning">
-Residencial Los Cedros sin datos sobre Viviendas.
+La cantidad de Hogares es cero.
 </div>
       </div>
     </div>
@@ -434,14 +448,14 @@ Residencial Los Cedros sin datos sobre Viviendas.
 google.charts.load('current', {'packages':['corechart']});
   // LenguetaWeb ConglomeradoDatos
   // AcordeonWeb DatosDemografia 
-    // TablaWeb TablaDemografia sin javascript
+// MensajeWeb sin javascript
   // AcordeonWeb DatosEducacion ejecuta lo siguiente al mostrar
   $('#DatosEducacion').on('shown.bs.collapse', function () {
-// MensajeWeb sin javascript
+    // TablaWeb TablaEducacion sin javascript
   })
   // AcordeonWeb DatosCaracteristicasEconomicas ejecuta lo siguiente al mostrar
   $('#DatosCaracteristicasEconomicas').on('shown.bs.collapse', function () {
-// MensajeWeb sin javascript
+    // TablaWeb TablaCaracteristicasEconomicas sin javascript
   })
   // AcordeonWeb DatosViviendas ejecuta lo siguiente al mostrar
   $('#DatosViviendas').on('shown.bs.collapse', function () {
@@ -454,9 +468,50 @@ google.charts.load('current', {'packages':['corechart']});
   // LenguetaWeb ConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#Conglomerado a[href="#ConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 
-    // GraficaPayWeb GraficaPobMasFem
-    google.charts.setOnLoadCallback(elaborarGraficaPobMasFem);
-    function elaborarGraficaPobMasFem() {
+// MensajeWeb sin javascript
+// MensajeWeb sin javascript
+  // AcordeonWeb GraficasEducacion ejecuta lo siguiente al mostrar
+  $('#GraficasEducacion').on('shown.bs.collapse', function () {
+    // GraficaBarrasWeb GraficaPromEsc
+    google.charts.setOnLoadCallback(elaborarGraficaPromEsc);
+    function elaborarGraficaPromEsc() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
+            ['Global', , '#FF7F37', ' años'],
+            ['Masculina', , '#006AC8', ' años'],
+            ['Femenina', , '#C80083', ' años']
+        ]);
+        var options = {
+          chartArea: { width: '60%' },
+          title: 'Grado Promedio de Escolaridad',
+          hAxis: { title: 'Años', minValue: 0, maxValue: 24 },
+          legend: { position: 'none' }
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('GraficaPromEsc'));
+        chart.draw(data, options);
+    }
+  })
+  // AcordeonWeb GraficasCaracteristicasEconomicas ejecuta lo siguiente al mostrar
+  $('#GraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
+    // GraficaPayWeb GraficaPobEcoAct
+    google.charts.setOnLoadCallback(elaborarGraficaPobEcoAct);
+    function elaborarGraficaPobEcoAct() {
+        var data = google.visualization.arrayToDataTable([
+            ['Etiqueta', 'Valor'],
+            ['Activa', ],
+            ['NO Activa', 100]
+        ]);
+        var options = {
+          chartArea: { width: '100%', height: '80%' },
+          title: 'Población Económicamente Activa',
+          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoAct'));
+        chart.draw(data, options);
+    }
+    // GraficaPayWeb GraficaPobEcoActMasFem
+    google.charts.setOnLoadCallback(elaborarGraficaPobEcoActMasFem);
+    function elaborarGraficaPobEcoActMasFem() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
             ['Masculina', ],
@@ -464,70 +519,60 @@ google.charts.load('current', {'packages':['corechart']});
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
-          title: 'Población por género',
+          title: 'Población Económicamente Activa por género',
           slices: [{color: '#006AC8'}, {color: '#C80083'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobMasFem'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoActMasFem'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb GraficaPobRango
-    google.charts.setOnLoadCallback(elaborarGraficaPobRango);
-    function elaborarGraficaPobRango() {
+    // GraficaPayWeb GraficaOcu
+    google.charts.setOnLoadCallback(elaborarGraficaOcu);
+    function elaborarGraficaOcu() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
-            ['De 0 a 14 años', ],
-            ['De 15 a 64 años', ],
-            ['De 65 y más años', ],
-            ['No especificada', ]
+            ['Ocupada', ],
+            ['Desocupada', ]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
-          title: 'Población por rangos de edad',
-          slices: [{color: '#89BE85'}, {color: '#57A550'}, {color: '#15630E'}, {color: '#BFBFBF'}]
+          title: 'Población Ocupada',
+          slices: [{color: '#A8001E'}, {color: '#BFBFBF'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobRango'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcu'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb GraficaPobNacOtroEdo
-    google.charts.setOnLoadCallback(elaborarGraficaPobNacOtroEdo);
-    function elaborarGraficaPobNacOtroEdo() {
+    // GraficaPayWeb GraficaOcuMasFem
+    google.charts.setOnLoadCallback(elaborarGraficaOcuMasFem);
+    function elaborarGraficaOcuMasFem() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
-            ['Nacida en OTRO estado', ],
-            ['Nacida en este estado', 100]
+            ['Masculina', ],
+            ['Femenina', ]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
-          title: 'Nacida en otro estado',
-          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
+          title: 'Población Ocupada por género',
+          slices: [{color: '#006AC8'}, {color: '#C80083'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobNacOtroEdo'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcuMasFem'));
         chart.draw(data, options);
     }
-    // GraficaPayWeb GraficaPobDisc
-    google.charts.setOnLoadCallback(elaborarGraficaPobDisc);
-    function elaborarGraficaPobDisc() {
+    // GraficaPayWeb GraficaDerechohabiencia
+    google.charts.setOnLoadCallback(elaborarGraficaDerechohabiencia);
+    function elaborarGraficaDerechohabiencia() {
         var data = google.visualization.arrayToDataTable([
             ['Etiqueta', 'Valor'],
-            ['CON discapacidad', ],
-            ['Sin discapacidad', 100]
+            ['Con Derechohabiencia', ],
+            ['SIN Derechohabiencia', 100]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
-          title: 'Con discapacidad',
-          slices: [{color: '#A80021'}, {color: '#BFBFBF'}]
+          title: 'Derechohabiencia',
+          slices: [{color: '#00A898'}, {color: '#BFBFBF'}]
         };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobDisc'));
+        var chart = new google.visualization.PieChart(document.getElementById('GraficaDerechohabiencia'));
         chart.draw(data, options);
     }
-  // AcordeonWeb GraficasEducacion ejecuta lo siguiente al mostrar
-  $('#GraficasEducacion').on('shown.bs.collapse', function () {
-// MensajeWeb sin javascript
-  })
-  // AcordeonWeb GraficasCaracteristicasEconomicas ejecuta lo siguiente al mostrar
-  $('#GraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
-// MensajeWeb sin javascript
-// MensajeWeb sin javascript
   })
   // AcordeonWeb GraficasViviendas ejecuta lo siguiente al mostrar
   $('#GraficasViviendas').on('shown.bs.collapse', function () {
@@ -549,7 +594,7 @@ google.charts.load('current', {'packages':['corechart']});
         ]);
         var options = {
           chartArea: { width: '60%' },
-          title: 'Unidades Económicas',
+          title: '5 Unidades Económicas',
           hAxis: { title: 'Porcentaje', minValue: 0 },
           legend: { position: 'none' }
         };

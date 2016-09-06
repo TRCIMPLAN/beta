@@ -57,6 +57,34 @@ class EjeCaracteristicasEconomicas {
         }
     } // preparar
 
+    /**
+     * Formatear
+     *
+     * @param  string Nombre del indicador
+     * @return string Valor con formato
+     */
+    protected function formatear($nombre) {
+        $this->prepapar();
+        if (isset($this->caracteristicas_economicas[$nombre])) {
+            switch ($nombre) {
+                case 'Población Económicamente Activa':
+                case 'Población Económicamente Activa masculina':
+                case 'Población Económicamente Activa femenina':
+                case 'Población Ocupada':
+                case 'Población Ocupada masculina':
+                case 'Población Ocupada femenina':
+                case 'Población Desocupada':
+                case 'Derechohabiencia':
+                    return number_format($this->caracteristicas_economicas[$nombre], 2, ".", ",")." %"; // Porcentaje
+                    break;
+                default:
+                    return '~ '.$this->caracteristicas_economicas[$nombre]; // Original
+            }
+        } else {
+            return 'ND';
+        }
+    } // formatear
+
 } // Clase EjeCaracteristicasEconomicas
 
 ?>

@@ -87,6 +87,7 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.88'
             ),
             'Viviendas' => array(
+                'Hogares' => '134',
                 'Hogares Jefatura masculina' => '82.84',
                 'Hogares Jefatura femenina' => '17.16',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '82.09'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '30.43',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

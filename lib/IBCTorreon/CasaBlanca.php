@@ -87,6 +87,7 @@ class CasaBlanca extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '204',
                 'Hogares Jefatura masculina' => '79.41',
                 'Hogares Jefatura femenina' => '20.59',
                 'Ocupación por Vivienda' => '3.64',
@@ -100,6 +101,7 @@ class CasaBlanca extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '81.62'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.29',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

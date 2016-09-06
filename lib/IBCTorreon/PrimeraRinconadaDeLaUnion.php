@@ -87,6 +87,7 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.76'
             ),
             'Viviendas' => array(
+                'Hogares' => '230',
                 'Hogares Jefatura masculina' => '69.75',
                 'Hogares Jefatura femenina' => '30.25',
                 'Ocupación por Vivienda' => '3.64',
@@ -100,6 +101,7 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.74'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

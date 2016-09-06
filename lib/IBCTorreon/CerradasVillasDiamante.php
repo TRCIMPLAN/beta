@@ -87,6 +87,7 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.49'
             ),
             'Viviendas' => array(
+                'Hogares' => '29',
                 'Hogares Jefatura masculina' => '93.10',
                 'Hogares Jefatura femenina' => '6.90',
                 'Ocupación por Vivienda' => '3.76',
@@ -98,6 +99,9 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '82.76',
                 'Viviendas con Celular' => '96.55',
                 'Viviendas con Internet' => '82.76'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '597',
                 'Hogares Jefatura masculina' => '86.92',
                 'Hogares Jefatura femenina' => '13.08',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '11.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '55',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.27',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

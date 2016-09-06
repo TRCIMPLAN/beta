@@ -87,6 +87,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '148',
                 'Hogares Jefatura masculina' => '75.00',
                 'Hogares Jefatura femenina' => '25.00',
                 'Ocupación por Vivienda' => '3.51',
@@ -100,6 +101,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '68.92'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '27',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

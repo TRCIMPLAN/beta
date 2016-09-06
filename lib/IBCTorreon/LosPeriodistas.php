@@ -87,6 +87,7 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.21'
             ),
             'Viviendas' => array(
+                'Hogares' => '96',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '3.96',
@@ -100,6 +101,7 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.45',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

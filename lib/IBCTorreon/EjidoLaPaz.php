@@ -87,6 +87,7 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.69'
             ),
             'Viviendas' => array(
+                'Hogares' => '610',
                 'Hogares Jefatura masculina' => '79.31',
                 'Hogares Jefatura femenina' => '20.69',
                 'Ocupación por Vivienda' => '3.99',
@@ -100,6 +101,7 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.27'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '64',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.75',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class ResidencialSaulo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.81'
             ),
             'Viviendas' => array(
+                'Hogares' => '14',
                 'Hogares Jefatura masculina' => '63.69',
                 'Hogares Jefatura femenina' => '36.31',
                 'Ocupación por Vivienda' => '4.93',
@@ -100,6 +101,7 @@ class ResidencialSaulo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '100.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Educativos',

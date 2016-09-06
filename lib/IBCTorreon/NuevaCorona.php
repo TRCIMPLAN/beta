@@ -87,6 +87,7 @@ class NuevaCorona extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.75'
             ),
             'Viviendas' => array(
+                'Hogares' => '53',
                 'Hogares Jefatura masculina' => '71.70',
                 'Hogares Jefatura femenina' => '28.30',
                 'Ocupación por Vivienda' => '4.53',
@@ -100,6 +101,7 @@ class NuevaCorona extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '5.86'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '80.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

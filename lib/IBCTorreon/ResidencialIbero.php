@@ -87,6 +87,7 @@ class ResidencialIbero extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '27',
                 'Hogares Jefatura masculina' => '83.62',
                 'Hogares Jefatura femenina' => '16.38',
                 'Ocupación por Vivienda' => '3.93',
@@ -98,6 +99,9 @@ class ResidencialIbero extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '81.61',
                 'Viviendas con Celular' => '96.09',
                 'Viviendas con Internet' => '77.29'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

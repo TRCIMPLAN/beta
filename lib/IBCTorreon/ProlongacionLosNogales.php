@@ -87,6 +87,7 @@ class ProlongacionLosNogales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '901',
                 'Hogares Jefatura masculina' => '70.81',
                 'Hogares Jefatura femenina' => '29.19',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class ProlongacionLosNogales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '54.05'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '91',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.26',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

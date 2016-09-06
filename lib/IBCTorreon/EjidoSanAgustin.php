@@ -87,6 +87,7 @@ class EjidoSanAgustin extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.17'
             ),
             'Viviendas' => array(
+                'Hogares' => '447',
                 'Hogares Jefatura masculina' => '79.65',
                 'Hogares Jefatura femenina' => '20.35',
                 'Ocupación por Vivienda' => '4.32',
@@ -100,6 +101,7 @@ class EjidoSanAgustin extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '5.77'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '78',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

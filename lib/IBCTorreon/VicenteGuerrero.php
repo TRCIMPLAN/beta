@@ -87,6 +87,7 @@ class VicenteGuerrero extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.76'
             ),
             'Viviendas' => array(
+                'Hogares' => '1488',
                 'Hogares Jefatura masculina' => '67.01',
                 'Hogares Jefatura femenina' => '32.99',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class VicenteGuerrero extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '16.26'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '131',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.27',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

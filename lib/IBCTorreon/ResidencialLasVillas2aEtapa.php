@@ -87,6 +87,7 @@ class ResidencialLasVillas2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '26',
                 'Hogares Jefatura masculina' => '92.00',
                 'Hogares Jefatura femenina' => '8.00',
                 'Ocupación por Vivienda' => '5.04',
@@ -100,6 +101,7 @@ class ResidencialLasVillas2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '94.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Manejo de Residuos',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',

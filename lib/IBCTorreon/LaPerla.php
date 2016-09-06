@@ -87,6 +87,7 @@ class LaPerla extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.44'
             ),
             'Viviendas' => array(
+                'Hogares' => '679',
                 'Hogares Jefatura masculina' => '82.92',
                 'Hogares Jefatura femenina' => '17.08',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class LaPerla extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '87',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.38',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

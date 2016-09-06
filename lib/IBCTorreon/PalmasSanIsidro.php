@@ -87,6 +87,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.20'
             ),
             'Viviendas' => array(
+                'Hogares' => '114',
                 'Hogares Jefatura masculina' => '74.20',
                 'Hogares Jefatura femenina' => '25.80',
                 'Ocupación por Vivienda' => '3.34',
@@ -100,6 +101,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '76.46'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '32',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '28.12',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

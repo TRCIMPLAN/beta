@@ -87,6 +87,7 @@ class CarmenRomano extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.73'
             ),
             'Viviendas' => array(
+                'Hogares' => '876',
                 'Hogares Jefatura masculina' => '74.54',
                 'Hogares Jefatura femenina' => '25.46',
                 'Ocupación por Vivienda' => '3.89',
@@ -100,6 +101,7 @@ class CarmenRomano extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.07'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '99',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.47',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.95'
             ),
             'Viviendas' => array(
+                'Hogares' => '37',
                 'Hogares Jefatura masculina' => '72.97',
                 'Hogares Jefatura femenina' => '27.03',
                 'Ocupación por Vivienda' => '4.11',
@@ -100,6 +101,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '86.49'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '56',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '57.14',
                 'Segunda actividad nombre' => 'Financieros y Seguros',

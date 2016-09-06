@@ -87,6 +87,7 @@ class BellaVista extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.47'
             ),
             'Viviendas' => array(
+                'Hogares' => '190',
                 'Hogares Jefatura masculina' => '73.22',
                 'Hogares Jefatura femenina' => '26.78',
                 'Ocupación por Vivienda' => '3.88',
@@ -100,6 +101,7 @@ class BellaVista extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '11.15'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '18',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class CerradaLasPalmasIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.52'
             ),
             'Viviendas' => array(
+                'Hogares' => '42',
                 'Hogares Jefatura masculina' => '85.71',
                 'Hogares Jefatura femenina' => '14.29',
                 'Ocupación por Vivienda' => '3.69',
@@ -98,6 +99,9 @@ class CerradaLasPalmasIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.86',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '80.95'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

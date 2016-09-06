@@ -87,6 +87,7 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.54'
             ),
             'Viviendas' => array(
+                'Hogares' => '25',
                 'Hogares Jefatura masculina' => '70.86',
                 'Hogares Jefatura femenina' => '29.14',
                 'Ocupación por Vivienda' => '3.44',
@@ -100,6 +101,7 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '14.94'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '54.55',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

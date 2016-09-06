@@ -87,6 +87,7 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.48'
             ),
             'Viviendas' => array(
+                'Hogares' => '683',
                 'Hogares Jefatura masculina' => '80.82',
                 'Hogares Jefatura femenina' => '19.18',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '22.52'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '51.72',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -62,7 +62,17 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

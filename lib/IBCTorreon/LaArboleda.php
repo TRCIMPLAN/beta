@@ -87,6 +87,7 @@ class LaArboleda extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.21'
             ),
             'Viviendas' => array(
+                'Hogares' => '62',
                 'Hogares Jefatura masculina' => '79.03',
                 'Hogares Jefatura femenina' => '20.97',
                 'Ocupación por Vivienda' => '3.06',
@@ -98,6 +99,9 @@ class LaArboleda extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '85.48',
                 'Viviendas con Celular' => '98.39',
                 'Viviendas con Internet' => '70.97'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

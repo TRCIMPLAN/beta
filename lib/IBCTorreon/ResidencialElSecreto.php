@@ -87,6 +87,7 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.04'
             ),
             'Viviendas' => array(
+                'Hogares' => '134',
                 'Hogares Jefatura masculina' => '85.82',
                 'Hogares Jefatura femenina' => '14.18',
                 'Ocupación por Vivienda' => '4.10',
@@ -100,6 +101,7 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '64.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '16.67',
                 'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',

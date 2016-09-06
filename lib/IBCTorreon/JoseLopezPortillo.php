@@ -87,6 +87,7 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '52.26'
             ),
             'Viviendas' => array(
+                'Hogares' => '84',
                 'Hogares Jefatura masculina' => '72.80',
                 'Hogares Jefatura femenina' => '27.20',
                 'Ocupación por Vivienda' => '4.21',
@@ -100,6 +101,7 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.83'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.18',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

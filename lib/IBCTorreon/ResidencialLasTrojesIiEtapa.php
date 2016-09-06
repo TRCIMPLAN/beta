@@ -87,6 +87,7 @@ class ResidencialLasTrojesIiEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '97.60'
             ),
             'Viviendas' => array(
+                'Hogares' => '19',
                 'Hogares Jefatura masculina' => '87.60',
                 'Hogares Jefatura femenina' => '12.40',
                 'Ocupación por Vivienda' => '3.00',
@@ -100,6 +101,7 @@ class ResidencialLasTrojesIiEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '88.35'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

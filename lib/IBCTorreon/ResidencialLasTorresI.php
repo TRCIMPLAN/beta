@@ -87,6 +87,7 @@ class ResidencialLasTorresI extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.52'
             ),
             'Viviendas' => array(
+                'Hogares' => '488',
                 'Hogares Jefatura masculina' => '72.34',
                 'Hogares Jefatura femenina' => '27.66',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class ResidencialLasTorresI extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '48.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '46',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.65',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -62,7 +62,17 @@ class ResidencialLosCedros extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Educativos',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Información Medios Masivos',

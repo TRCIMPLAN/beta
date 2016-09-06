@@ -87,6 +87,7 @@ class LagunaSur extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '61.32'
             ),
             'Viviendas' => array(
+                'Hogares' => '577',
                 'Hogares Jefatura masculina' => '77.63',
                 'Hogares Jefatura femenina' => '22.37',
                 'Ocupación por Vivienda' => '4.09',
@@ -100,6 +101,7 @@ class LagunaSur extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '5.83'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '93',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.56',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

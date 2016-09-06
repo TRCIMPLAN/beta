@@ -87,6 +87,7 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '95.92'
             ),
             'Viviendas' => array(
+                'Hogares' => '3',
                 'Hogares Jefatura masculina' => '91.94',
                 'Hogares Jefatura femenina' => '8.06',
                 'Ocupación por Vivienda' => '16.33',
@@ -100,6 +101,7 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '100.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Salud',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Información Medios Masivos',

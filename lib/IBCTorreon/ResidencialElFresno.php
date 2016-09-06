@@ -87,6 +87,7 @@ class ResidencialElFresno extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '259',
                 'Hogares Jefatura masculina' => '88.10',
                 'Hogares Jefatura femenina' => '11.90',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class ResidencialElFresno extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '88.12'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '127',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.50',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

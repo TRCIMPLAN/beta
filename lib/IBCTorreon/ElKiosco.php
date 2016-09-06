@@ -87,6 +87,7 @@ class ElKiosco extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.67'
             ),
             'Viviendas' => array(
+                'Hogares' => '149',
                 'Hogares Jefatura masculina' => '69.80',
                 'Hogares Jefatura femenina' => '30.20',
                 'Ocupación por Vivienda' => '3.30',
@@ -100,6 +101,7 @@ class ElKiosco extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '47.34'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '42.86',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

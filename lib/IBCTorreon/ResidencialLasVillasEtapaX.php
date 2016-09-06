@@ -85,6 +85,12 @@ class ResidencialLasVillasEtapaX extends \IBCBase\PublicacionWeb {
                 'Población Ocupada femenina' => '39.19',
                 'Población Desocupada' => '5.47',
                 'Derechohabiencia' => '76.75'
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

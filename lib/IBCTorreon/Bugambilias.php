@@ -87,6 +87,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.67'
             ),
             'Viviendas' => array(
+                'Hogares' => '126',
                 'Hogares Jefatura masculina' => '65.87',
                 'Hogares Jefatura femenina' => '34.13',
                 'Ocupación por Vivienda' => '3.57',
@@ -100,6 +101,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '36.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '21.74',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

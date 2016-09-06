@@ -87,6 +87,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.61'
             ),
             'Viviendas' => array(
+                'Hogares' => '658',
                 'Hogares Jefatura masculina' => '68.24',
                 'Hogares Jefatura femenina' => '31.76',
                 'Ocupación por Vivienda' => '3.48',
@@ -100,6 +101,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.93'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '102',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '28.43',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

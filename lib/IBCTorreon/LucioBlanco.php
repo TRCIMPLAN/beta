@@ -87,6 +87,7 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.41'
             ),
             'Viviendas' => array(
+                'Hogares' => '489',
                 'Hogares Jefatura masculina' => '60.53',
                 'Hogares Jefatura femenina' => '39.47',
                 'Ocupación por Vivienda' => '3.53',
@@ -100,6 +101,7 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '29.24'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '77',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '24.68',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

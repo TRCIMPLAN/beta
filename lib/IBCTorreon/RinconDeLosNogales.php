@@ -87,6 +87,7 @@ class RinconDeLosNogales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '495',
                 'Hogares Jefatura masculina' => '81.21',
                 'Hogares Jefatura femenina' => '18.79',
                 'Ocupación por Vivienda' => '4.07',
@@ -100,6 +101,7 @@ class RinconDeLosNogales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '27.06'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '41',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.46',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

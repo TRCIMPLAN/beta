@@ -87,6 +87,7 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.43'
             ),
             'Viviendas' => array(
+                'Hogares' => '64',
                 'Hogares Jefatura masculina' => '79.69',
                 'Hogares Jefatura femenina' => '20.31',
                 'Ocupación por Vivienda' => '3.61',
@@ -100,6 +101,7 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '79.69'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Financieros y Seguros',
                 'Primer actividad porcentaje' => '15.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

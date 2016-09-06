@@ -87,6 +87,7 @@ class Moderna extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.58'
             ),
             'Viviendas' => array(
+                'Hogares' => '600',
                 'Hogares Jefatura masculina' => '66.13',
                 'Hogares Jefatura femenina' => '33.87',
                 'Ocupación por Vivienda' => '3.52',
@@ -100,6 +101,7 @@ class Moderna extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '27.96'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '209',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '29.19',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

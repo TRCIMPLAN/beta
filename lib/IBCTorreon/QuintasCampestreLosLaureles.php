@@ -87,6 +87,7 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '200',
                 'Hogares Jefatura masculina' => '89.95',
                 'Hogares Jefatura femenina' => '10.05',
                 'Ocupación por Vivienda' => '4.60',
@@ -100,6 +101,7 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '88.68'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',

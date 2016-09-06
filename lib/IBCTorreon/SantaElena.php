@@ -87,6 +87,7 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '263',
                 'Hogares Jefatura masculina' => '79.47',
                 'Hogares Jefatura femenina' => '20.53',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '73.38'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '34',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.29',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

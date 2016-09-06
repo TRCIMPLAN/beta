@@ -87,6 +87,7 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.85'
             ),
             'Viviendas' => array(
+                'Hogares' => '639',
                 'Hogares Jefatura masculina' => '66.68',
                 'Hogares Jefatura femenina' => '33.32',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.24'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '62.07',
                 'Segunda actividad nombre' => 'Educativos',

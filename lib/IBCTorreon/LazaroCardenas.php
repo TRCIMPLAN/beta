@@ -87,6 +87,7 @@ class LazaroCardenas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.77'
             ),
             'Viviendas' => array(
+                'Hogares' => '1381',
                 'Hogares Jefatura masculina' => '79.46',
                 'Hogares Jefatura femenina' => '20.54',
                 'Ocupación por Vivienda' => '3.96',
@@ -100,6 +101,7 @@ class LazaroCardenas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '166',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.98',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

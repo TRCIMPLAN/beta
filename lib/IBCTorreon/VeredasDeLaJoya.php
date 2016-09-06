@@ -87,6 +87,7 @@ class VeredasDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '95.45'
             ),
             'Viviendas' => array(
+                'Hogares' => '7',
                 'Hogares Jefatura masculina' => '71.43',
                 'Hogares Jefatura femenina' => '28.57',
                 'Ocupación por Vivienda' => '3.14',
@@ -98,6 +99,9 @@ class VeredasDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '22.42'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

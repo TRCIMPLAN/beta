@@ -87,6 +87,7 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '88.02'
             ),
             'Viviendas' => array(
+                'Hogares' => '28',
                 'Hogares Jefatura masculina' => '72.36',
                 'Hogares Jefatura femenina' => '27.64',
                 'Ocupación por Vivienda' => '3.29',
@@ -100,6 +101,7 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.30'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

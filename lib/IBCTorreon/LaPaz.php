@@ -87,6 +87,7 @@ class LaPaz extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.01'
             ),
             'Viviendas' => array(
+                'Hogares' => '384',
                 'Hogares Jefatura masculina' => '85.60',
                 'Hogares Jefatura femenina' => '14.40',
                 'Ocupación por Vivienda' => '3.90',
@@ -100,6 +101,7 @@ class LaPaz extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.54'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '63.16',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

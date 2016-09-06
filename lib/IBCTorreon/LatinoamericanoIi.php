@@ -87,6 +87,7 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.42'
             ),
             'Viviendas' => array(
+                'Hogares' => '114',
                 'Hogares Jefatura masculina' => '76.16',
                 'Hogares Jefatura femenina' => '23.84',
                 'Ocupación por Vivienda' => '4.02',
@@ -100,6 +101,7 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '38.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

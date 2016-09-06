@@ -87,6 +87,7 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.82'
             ),
             'Viviendas' => array(
+                'Hogares' => '271',
                 'Hogares Jefatura masculina' => '84.50',
                 'Hogares Jefatura femenina' => '15.50',
                 'Ocupación por Vivienda' => '3.59',
@@ -100,6 +101,7 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.59'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '18',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.44',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

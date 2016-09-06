@@ -87,6 +87,7 @@ class SantaBarbara extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.26'
             ),
             'Viviendas' => array(
+                'Hogares' => '91',
                 'Hogares Jefatura masculina' => '71.43',
                 'Hogares Jefatura femenina' => '28.57',
                 'Ocupación por Vivienda' => '3.29',
@@ -100,6 +101,7 @@ class SantaBarbara extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '59.34'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Mayoreo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

@@ -87,6 +87,7 @@ class BuenosAires extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.90'
             ),
             'Viviendas' => array(
+                'Hogares' => '62',
                 'Hogares Jefatura masculina' => '81.59',
                 'Hogares Jefatura femenina' => '18.41',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class BuenosAires extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

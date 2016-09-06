@@ -87,6 +87,7 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.44'
             ),
             'Viviendas' => array(
+                'Hogares' => '753',
                 'Hogares Jefatura masculina' => '78.36',
                 'Hogares Jefatura femenina' => '21.64',
                 'Ocupación por Vivienda' => '4.06',
@@ -100,6 +101,7 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '44.81'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '66',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.48',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

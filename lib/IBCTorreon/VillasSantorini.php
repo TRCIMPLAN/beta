@@ -87,6 +87,7 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.48'
             ),
             'Viviendas' => array(
+                'Hogares' => '245',
                 'Hogares Jefatura masculina' => '76.33',
                 'Hogares Jefatura femenina' => '23.67',
                 'Ocupación por Vivienda' => '3.59',
@@ -100,6 +101,7 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '82.86'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.37',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

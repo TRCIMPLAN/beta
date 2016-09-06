@@ -87,6 +87,7 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.39'
             ),
             'Viviendas' => array(
+                'Hogares' => '840',
                 'Hogares Jefatura masculina' => '80.12',
                 'Hogares Jefatura femenina' => '19.88',
                 'Ocupación por Vivienda' => '3.66',
@@ -100,6 +101,7 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.37'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '70',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.71',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

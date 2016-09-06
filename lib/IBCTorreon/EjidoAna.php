@@ -87,6 +87,7 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.72'
             ),
             'Viviendas' => array(
+                'Hogares' => '625',
                 'Hogares Jefatura masculina' => '77.63',
                 'Hogares Jefatura femenina' => '22.37',
                 'Ocupación por Vivienda' => '4.12',
@@ -100,6 +101,7 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.69'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '98',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.73',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

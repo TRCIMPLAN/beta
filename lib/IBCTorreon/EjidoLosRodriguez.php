@@ -87,6 +87,7 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '40.29'
             ),
             'Viviendas' => array(
+                'Hogares' => '31',
                 'Hogares Jefatura masculina' => '79.92',
                 'Hogares Jefatura femenina' => '20.08',
                 'Ocupación por Vivienda' => '5.19',
@@ -100,6 +101,7 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '36.79'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

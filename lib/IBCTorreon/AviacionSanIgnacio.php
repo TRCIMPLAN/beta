@@ -87,6 +87,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.73'
             ),
             'Viviendas' => array(
+                'Hogares' => '239',
                 'Hogares Jefatura masculina' => '75.28',
                 'Hogares Jefatura femenina' => '24.72',
                 'Ocupación por Vivienda' => '3.72',
@@ -100,6 +101,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '37.97'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

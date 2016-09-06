@@ -87,6 +87,7 @@ class VillasSanAgustin extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.34'
             ),
             'Viviendas' => array(
+                'Hogares' => '278',
                 'Hogares Jefatura masculina' => '82.89',
                 'Hogares Jefatura femenina' => '17.11',
                 'Ocupación por Vivienda' => '3.26',
@@ -100,6 +101,7 @@ class VillasSanAgustin extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.44'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '24',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

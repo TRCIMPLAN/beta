@@ -87,6 +87,7 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '87',
                 'Hogares Jefatura masculina' => '85.06',
                 'Hogares Jefatura femenina' => '14.94',
                 'Ocupación por Vivienda' => '3.21',
@@ -100,6 +101,7 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.12'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

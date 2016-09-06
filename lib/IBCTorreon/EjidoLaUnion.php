@@ -87,6 +87,7 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.20'
             ),
             'Viviendas' => array(
+                'Hogares' => '1156',
                 'Hogares Jefatura masculina' => '78.52',
                 'Hogares Jefatura femenina' => '21.48',
                 'Ocupación por Vivienda' => '4.23',
@@ -100,6 +101,7 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.49'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '140',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.29',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

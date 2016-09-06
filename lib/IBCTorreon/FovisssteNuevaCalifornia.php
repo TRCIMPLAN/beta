@@ -87,6 +87,7 @@ class FovisssteNuevaCalifornia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.77'
             ),
             'Viviendas' => array(
+                'Hogares' => '161',
                 'Hogares Jefatura masculina' => '73.29',
                 'Hogares Jefatura femenina' => '26.71',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class FovisssteNuevaCalifornia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '57.14',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

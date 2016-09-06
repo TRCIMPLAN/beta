@@ -87,6 +87,7 @@ class LaLibertad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '47.58'
             ),
             'Viviendas' => array(
+                'Hogares' => '105',
                 'Hogares Jefatura masculina' => '77.17',
                 'Hogares Jefatura femenina' => '22.83',
                 'Ocupación por Vivienda' => '4.07',
@@ -100,6 +101,7 @@ class LaLibertad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

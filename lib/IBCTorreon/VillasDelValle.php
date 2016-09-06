@@ -87,6 +87,7 @@ class VillasDelValle extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.80'
             ),
             'Viviendas' => array(
+                'Hogares' => '92',
                 'Hogares Jefatura masculina' => '77.17',
                 'Hogares Jefatura femenina' => '22.83',
                 'Ocupación por Vivienda' => '3.29',
@@ -100,6 +101,7 @@ class VillasDelValle extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '48.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

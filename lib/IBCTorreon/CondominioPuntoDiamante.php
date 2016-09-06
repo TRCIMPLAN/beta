@@ -87,6 +87,7 @@ class CondominioPuntoDiamante extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '59',
                 'Hogares Jefatura masculina' => '88.14',
                 'Hogares Jefatura femenina' => '11.86',
                 'Ocupación por Vivienda' => '3.64',
@@ -100,6 +101,7 @@ class CondominioPuntoDiamante extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.93'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '80.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

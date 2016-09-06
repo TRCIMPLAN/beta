@@ -52,10 +52,61 @@ class EjeUnidadesEconomicas {
             } else {
                 throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Unidades Económicas.");
             }
+            // Sin Unidades Económicas
+            if (isset($this->unidades_economicas['Total Actividades Económicas'])) {
+                if ($this->unidades_economicas['Total Actividades Económicas'] == 0) {
+                    throw new EjeExceptionSinDatos("El Total de Actividades Económicas es cero.");
+                }
+            } else {
+                throw new EjeExceptionSinDatos("El Total de Actividades Económicas no está definido.");
+            }
             // Levantar bandera
             $this->preparado = TRUE;
         }
     } // preparar
+
+    /**
+     * Formatear
+     *
+     * @param  string Nombre del indicador
+     * @return string Valor con formato
+     */
+    protected function formatear($nombre) {
+        $this->prepapar();
+        if (isset($this->unidades_economicas[$nombre])) {
+            switch ($nombre) {
+                case 'Total Actividades Económicas':
+                    return number_format($this->unidades_economicas[$nombre], 0, ".", ","); // Cantidad
+                    break;
+                case 'Primer actividad porcentaje':
+                case 'Segunda actividad porcentaje':
+                case 'Tercera actividad porcentaje':
+                case 'Cuarta actividad porcentaje':
+                case 'Quinta actividad porcentaje':
+                    return number_format($this->unidades_economicas[$nombre], 2, ".", ",")." %"; // Porcentaje
+                    break;
+                case 'Primer actividad nombre':
+                    return '1° '.$this->unidades_economicas['Primer actividad nombre'];
+                    break;
+                case 'Segunda actividad nombre':
+                    return '2° '.$this->unidades_economicas['Segunda actividad nombre'];
+                    break;
+                case 'Tercera actividad nombre':
+                    return '3° '.$this->unidades_economicas['Tercera actividad nombre'];
+                    break;
+                case 'Cuarta actividad nombre':
+                    return '4° '.$this->unidades_economicas['Cuarta actividad nombre'];
+                    break;
+                case 'Quinta actividad nombre':
+                    return '5° '.$this->unidades_economicas['Quinta actividad nombre'];
+                    break;
+                default:
+                    return '~ '.$this->unidades_economicas[$nombre]; // Original
+            }
+        } else {
+            return 'ND';
+        }
+    } // formatear
 
 } // Clase EjeUnidadesEconomicas
 

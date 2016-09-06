@@ -87,6 +87,7 @@ class ResidencialLaHacienda extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.82'
             ),
             'Viviendas' => array(
+                'Hogares' => '601',
                 'Hogares Jefatura masculina' => '82.03',
                 'Hogares Jefatura femenina' => '17.97',
                 'Ocupación por Vivienda' => '3.88',
@@ -100,6 +101,7 @@ class ResidencialLaHacienda extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '80.37'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '99',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '32.32',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

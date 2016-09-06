@@ -87,6 +87,7 @@ class LosSauces extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.74'
             ),
             'Viviendas' => array(
+                'Hogares' => '296',
                 'Hogares Jefatura masculina' => '76.01',
                 'Hogares Jefatura femenina' => '23.99',
                 'Ocupación por Vivienda' => '3.97',
@@ -100,6 +101,7 @@ class LosSauces extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '11.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '18',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

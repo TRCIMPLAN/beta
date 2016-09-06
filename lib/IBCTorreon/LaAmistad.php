@@ -87,6 +87,7 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '125',
                 'Hogares Jefatura masculina' => '77.00',
                 'Hogares Jefatura femenina' => '23.00',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.99'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '41',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '36.59',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

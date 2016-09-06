@@ -87,6 +87,7 @@ class VillasSaltillo400 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.24'
             ),
             'Viviendas' => array(
+                'Hogares' => '102',
                 'Hogares Jefatura masculina' => '77.45',
                 'Hogares Jefatura femenina' => '22.55',
                 'Ocupación por Vivienda' => '3.87',
@@ -100,6 +101,7 @@ class VillasSaltillo400 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '63.73'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

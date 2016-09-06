@@ -87,6 +87,7 @@ class AngelesResidencialI extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '82.91'
             ),
             'Viviendas' => array(
+                'Hogares' => '33',
                 'Hogares Jefatura masculina' => '81.82',
                 'Hogares Jefatura femenina' => '18.18',
                 'Ocupación por Vivienda' => '3.55',
@@ -100,6 +101,7 @@ class AngelesResidencialI extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '81.82'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Salud',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Información Medios Masivos',

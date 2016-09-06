@@ -87,6 +87,7 @@ class ElTajito extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.94'
             ),
             'Viviendas' => array(
+                'Hogares' => '748',
                 'Hogares Jefatura masculina' => '72.19',
                 'Hogares Jefatura femenina' => '27.81',
                 'Ocupación por Vivienda' => '3.53',
@@ -100,6 +101,7 @@ class ElTajito extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.35'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '85',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.29',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class NuevoZaragozaIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '7',
                 'Hogares Jefatura masculina' => '100.00',
                 'Hogares Jefatura femenina' => '0.00',
                 'Ocupación por Vivienda' => '3.29',
@@ -100,6 +101,7 @@ class NuevoZaragozaIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

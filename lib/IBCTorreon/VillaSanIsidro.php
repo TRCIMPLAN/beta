@@ -87,6 +87,7 @@ class VillaSanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.69'
             ),
             'Viviendas' => array(
+                'Hogares' => '80',
                 'Hogares Jefatura masculina' => '76.25',
                 'Hogares Jefatura femenina' => '23.75',
                 'Ocupación por Vivienda' => '3.26',
@@ -100,6 +101,7 @@ class VillaSanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '81.25'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '50',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '28.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

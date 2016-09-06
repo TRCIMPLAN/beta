@@ -62,7 +62,17 @@ class CiudadUniversitaria extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '16',
                 'Primer actividad nombre' => 'Educativos',
                 'Primer actividad porcentaje' => '43.75',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

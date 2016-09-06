@@ -87,6 +87,7 @@ class LaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '188',
                 'Hogares Jefatura masculina' => '77.66',
                 'Hogares Jefatura femenina' => '22.34',
                 'Ocupación por Vivienda' => '3.82',
@@ -100,6 +101,7 @@ class LaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.90'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '8',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

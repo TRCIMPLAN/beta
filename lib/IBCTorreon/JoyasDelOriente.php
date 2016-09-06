@@ -87,6 +87,7 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.83'
             ),
             'Viviendas' => array(
+                'Hogares' => '820',
                 'Hogares Jefatura masculina' => '80.61',
                 'Hogares Jefatura femenina' => '19.39',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '23.46'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '59',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.07',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

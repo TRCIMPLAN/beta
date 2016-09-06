@@ -87,6 +87,7 @@ class SateliteDeLaLagunaI extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '117',
                 'Hogares Jefatura masculina' => '64.10',
                 'Hogares Jefatura femenina' => '35.90',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class SateliteDeLaLagunaI extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '33.78'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '63.64',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

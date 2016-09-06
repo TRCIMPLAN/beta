@@ -87,6 +87,7 @@ class LaMina extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.06'
             ),
             'Viviendas' => array(
+                'Hogares' => '438',
                 'Hogares Jefatura masculina' => '79.90',
                 'Hogares Jefatura femenina' => '20.10',
                 'Ocupación por Vivienda' => '4.02',
@@ -100,6 +101,7 @@ class LaMina extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '43.09'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '52',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '32.69',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

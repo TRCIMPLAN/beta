@@ -81,6 +81,7 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '3',
                 'Hogares Jefatura masculina' => '100.00',
                 'Hogares Jefatura femenina' => '0.00',
                 'Ocupación por Vivienda' => '1.67',
@@ -94,6 +95,7 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Industria Manufacturera',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

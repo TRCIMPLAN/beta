@@ -87,6 +87,7 @@ class AmpliacionZaragozaSur extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.81'
             ),
             'Viviendas' => array(
+                'Hogares' => '1859',
                 'Hogares Jefatura masculina' => '77.31',
                 'Hogares Jefatura femenina' => '22.69',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class AmpliacionZaragozaSur extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.85'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '128',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '58.59',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

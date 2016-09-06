@@ -87,6 +87,7 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.78'
             ),
             'Viviendas' => array(
+                'Hogares' => '109',
                 'Hogares Jefatura masculina' => '81.65',
                 'Hogares Jefatura femenina' => '18.35',
                 'Ocupación por Vivienda' => '3.79',
@@ -100,6 +101,7 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '87.16'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Manejo de Residuos',
                 'Primer actividad porcentaje' => '20.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class MonteReal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.47'
             ),
             'Viviendas' => array(
+                'Hogares' => '1973',
                 'Hogares Jefatura masculina' => '84.42',
                 'Hogares Jefatura femenina' => '15.58',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class MonteReal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '27.91'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '177',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '37.85',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

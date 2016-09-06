@@ -87,6 +87,7 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '66.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '351',
                 'Hogares Jefatura masculina' => '81.14',
                 'Hogares Jefatura femenina' => '18.86',
                 'Ocupación por Vivienda' => '4.15',
@@ -100,6 +101,7 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '11.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '86',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '32.56',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

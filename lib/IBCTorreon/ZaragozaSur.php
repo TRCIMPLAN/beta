@@ -87,6 +87,7 @@ class ZaragozaSur extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.47'
             ),
             'Viviendas' => array(
+                'Hogares' => '348',
                 'Hogares Jefatura masculina' => '77.87',
                 'Hogares Jefatura femenina' => '22.13',
                 'Ocupación por Vivienda' => '4.27',
@@ -100,6 +101,7 @@ class ZaragozaSur extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.97'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '87',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.38',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

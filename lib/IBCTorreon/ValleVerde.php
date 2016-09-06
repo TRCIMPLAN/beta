@@ -87,6 +87,7 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '287',
                 'Hogares Jefatura masculina' => '77.47',
                 'Hogares Jefatura femenina' => '22.53',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '39.79'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '21',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '52.38',
                 'Segunda actividad nombre' => 'Educativos',

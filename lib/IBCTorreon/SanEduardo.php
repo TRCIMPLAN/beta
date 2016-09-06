@@ -87,6 +87,7 @@ class SanEduardo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.14'
             ),
             'Viviendas' => array(
+                'Hogares' => '36',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '3.86',
@@ -100,6 +101,7 @@ class SanEduardo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.89'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '14',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '21.43',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

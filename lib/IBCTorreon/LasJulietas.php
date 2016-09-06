@@ -87,6 +87,7 @@ class LasJulietas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '652',
                 'Hogares Jefatura masculina' => '80.02',
                 'Hogares Jefatura femenina' => '19.98',
                 'Ocupación por Vivienda' => '4.32',
@@ -100,6 +101,7 @@ class LasJulietas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.69'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '106',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.34',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

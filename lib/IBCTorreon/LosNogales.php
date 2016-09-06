@@ -87,6 +87,7 @@ class LosNogales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.03'
             ),
             'Viviendas' => array(
+                'Hogares' => '192',
                 'Hogares Jefatura masculina' => '72.12',
                 'Hogares Jefatura femenina' => '27.88',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class LosNogales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '64.03'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Salud',

@@ -87,6 +87,7 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.67'
             ),
             'Viviendas' => array(
+                'Hogares' => '147',
                 'Hogares Jefatura masculina' => '70.75',
                 'Hogares Jefatura femenina' => '29.25',
                 'Ocupación por Vivienda' => '3.55',
@@ -100,6 +101,7 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.61'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '44.83',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

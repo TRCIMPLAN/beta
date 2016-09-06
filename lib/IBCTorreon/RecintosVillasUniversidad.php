@@ -87,6 +87,7 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.90'
             ),
             'Viviendas' => array(
+                'Hogares' => '143',
                 'Hogares Jefatura masculina' => '90.85',
                 'Hogares Jefatura femenina' => '9.15',
                 'Ocupación por Vivienda' => '3.39',
@@ -100,6 +101,7 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '42.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.15',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

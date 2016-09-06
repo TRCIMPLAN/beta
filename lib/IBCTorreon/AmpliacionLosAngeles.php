@@ -87,6 +87,7 @@ class AmpliacionLosAngeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.67'
             ),
             'Viviendas' => array(
+                'Hogares' => '1352',
                 'Hogares Jefatura masculina' => '66.69',
                 'Hogares Jefatura femenina' => '33.31',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class AmpliacionLosAngeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '62.56'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '301',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '20.27',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class TerceroDeCobianCentro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.03'
             ),
             'Viviendas' => array(
+                'Hogares' => '2824',
                 'Hogares Jefatura masculina' => '59.71',
                 'Hogares Jefatura femenina' => '40.29',
                 'Ocupación por Vivienda' => '3.27',
@@ -100,6 +101,7 @@ class TerceroDeCobianCentro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '33.43'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1963',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.57',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

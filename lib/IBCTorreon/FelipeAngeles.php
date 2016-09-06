@@ -87,6 +87,7 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.64'
             ),
             'Viviendas' => array(
+                'Hogares' => '283',
                 'Hogares Jefatura masculina' => '65.97',
                 'Hogares Jefatura femenina' => '34.03',
                 'Ocupación por Vivienda' => '3.61',
@@ -100,6 +101,7 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '34.65'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '90',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '28.89',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

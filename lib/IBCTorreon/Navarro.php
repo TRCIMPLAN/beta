@@ -87,6 +87,7 @@ class Navarro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.82'
             ),
             'Viviendas' => array(
+                'Hogares' => '458',
                 'Hogares Jefatura masculina' => '70.52',
                 'Hogares Jefatura femenina' => '29.48',
                 'Ocupación por Vivienda' => '3.52',
@@ -100,6 +101,7 @@ class Navarro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '69.03'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '251',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.03',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

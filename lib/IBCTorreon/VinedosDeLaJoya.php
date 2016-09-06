@@ -87,6 +87,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.32'
             ),
             'Viviendas' => array(
+                'Hogares' => '118',
                 'Hogares Jefatura masculina' => '88.14',
                 'Hogares Jefatura femenina' => '11.86',
                 'Ocupación por Vivienda' => '3.71',
@@ -100,6 +101,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.98'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '15',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '82.23'
             ),
             'Viviendas' => array(
+                'Hogares' => '70',
                 'Hogares Jefatura masculina' => '67.14',
                 'Hogares Jefatura femenina' => '32.86',
                 'Ocupación por Vivienda' => '3.46',
@@ -100,6 +101,7 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.29'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Comercio Mayoreo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

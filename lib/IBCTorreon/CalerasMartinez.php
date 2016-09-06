@@ -87,6 +87,7 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '57.63'
             ),
             'Viviendas' => array(
+                'Hogares' => '214',
                 'Hogares Jefatura masculina' => '71.96',
                 'Hogares Jefatura femenina' => '28.04',
                 'Ocupación por Vivienda' => '3.93',
@@ -100,6 +101,7 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.74'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '81.82',
                 'Segunda actividad nombre' => 'Educativos',

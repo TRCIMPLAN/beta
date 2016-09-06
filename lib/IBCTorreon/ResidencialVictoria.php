@@ -87,6 +87,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.32'
             ),
             'Viviendas' => array(
+                'Hogares' => '296',
                 'Hogares Jefatura masculina' => '77.70',
                 'Hogares Jefatura femenina' => '22.30',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.26'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '38',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.58',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -57,6 +57,29 @@ class EjeEducacion {
         }
     } // preparar
 
+    /**
+     * Formatear
+     *
+     * @param  string Nombre del indicador
+     * @return string Valor con formato
+     */
+    protected function formatear($nombre) {
+        $this->prepapar();
+        if (isset($this->educacion[$nombre])) {
+            switch ($nombre) {
+                case 'Grado Promedio de Escolaridad':
+                case 'Grado Promedio de Escolaridad masculina':
+                case 'Grado Promedio de Escolaridad femenina':
+                    return number_format($this->educacion[$nombre], 2, ".", ","); // Decimal
+                    break;
+                default:
+                    return '~ '.$this->educacion[$nombre]; // Original
+            }
+        } else {
+            return 'ND';
+        }
+    } // formatear
+
 } // Clase EjeEducacion
 
 ?>

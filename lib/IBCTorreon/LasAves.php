@@ -87,6 +87,7 @@ class LasAves extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.21'
             ),
             'Viviendas' => array(
+                'Hogares' => '63',
                 'Hogares Jefatura masculina' => '79.37',
                 'Hogares Jefatura femenina' => '20.63',
                 'Ocupación por Vivienda' => '3.78',
@@ -100,6 +101,7 @@ class LasAves extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.03'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

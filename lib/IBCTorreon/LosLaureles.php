@@ -87,6 +87,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.98'
             ),
             'Viviendas' => array(
+                'Hogares' => '484',
                 'Hogares Jefatura masculina' => '80.79',
                 'Hogares Jefatura femenina' => '19.21',
                 'Ocupación por Vivienda' => '3.96',
@@ -100,6 +101,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.33'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '31',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '51.61',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

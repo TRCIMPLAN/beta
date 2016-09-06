@@ -87,6 +87,7 @@ class LosAgaves extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.92'
             ),
             'Viviendas' => array(
+                'Hogares' => '12',
                 'Hogares Jefatura masculina' => '91.64',
                 'Hogares Jefatura femenina' => '8.36',
                 'Ocupación por Vivienda' => '3.58',
@@ -100,6 +101,7 @@ class LosAgaves extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '9.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

@@ -87,6 +87,7 @@ class SantaAnita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '82.98'
             ),
             'Viviendas' => array(
+                'Hogares' => '157',
                 'Hogares Jefatura masculina' => '83.19',
                 'Hogares Jefatura femenina' => '16.81',
                 'Ocupación por Vivienda' => '3.59',
@@ -100,6 +101,7 @@ class SantaAnita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '75.73'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '47',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.55',
                 'Segunda actividad nombre' => 'Financieros y Seguros',

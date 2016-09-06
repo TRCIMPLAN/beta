@@ -62,7 +62,17 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Industria Manufacturera',
                 'Primer actividad porcentaje' => '52.17',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

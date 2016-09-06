@@ -62,7 +62,17 @@ class VillaLosPinos extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Inmobiliarios',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

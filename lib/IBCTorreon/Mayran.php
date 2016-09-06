@@ -87,6 +87,7 @@ class Mayran extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.78'
             ),
             'Viviendas' => array(
+                'Hogares' => '350',
                 'Hogares Jefatura masculina' => '86.78',
                 'Hogares Jefatura femenina' => '13.22',
                 'Ocupación por Vivienda' => '3.99',
@@ -100,6 +101,7 @@ class Mayran extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.78'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.83',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

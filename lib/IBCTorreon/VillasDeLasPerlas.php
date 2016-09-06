@@ -87,6 +87,7 @@ class VillasDeLasPerlas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.35'
             ),
             'Viviendas' => array(
+                'Hogares' => '89',
                 'Hogares Jefatura masculina' => '82.02',
                 'Hogares Jefatura femenina' => '17.98',
                 'Ocupación por Vivienda' => '3.52',
@@ -100,6 +101,7 @@ class VillasDeLasPerlas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '65.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

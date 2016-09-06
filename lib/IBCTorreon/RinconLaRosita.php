@@ -87,6 +87,7 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '90.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '129',
                 'Hogares Jefatura masculina' => '68.22',
                 'Hogares Jefatura femenina' => '31.78',
                 'Ocupación por Vivienda' => '3.45',
@@ -100,6 +101,7 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '82.17'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.00',
                 'Segunda actividad nombre' => 'Salud',

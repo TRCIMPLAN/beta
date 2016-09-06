@@ -87,6 +87,7 @@ class ElArenal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.99'
             ),
             'Viviendas' => array(
+                'Hogares' => '370',
                 'Hogares Jefatura masculina' => '71.07',
                 'Hogares Jefatura femenina' => '28.93',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class ElArenal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.09'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

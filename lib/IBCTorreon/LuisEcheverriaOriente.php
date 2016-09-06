@@ -87,6 +87,7 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.07'
             ),
             'Viviendas' => array(
+                'Hogares' => '273',
                 'Hogares Jefatura masculina' => '72.53',
                 'Hogares Jefatura femenina' => '27.47',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '35.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '54',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.48',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

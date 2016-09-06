@@ -87,6 +87,7 @@ class DianaMariaGalindo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '39.39'
             ),
             'Viviendas' => array(
+                'Hogares' => '11',
                 'Hogares Jefatura masculina' => '81.82',
                 'Hogares Jefatura femenina' => '18.18',
                 'Ocupación por Vivienda' => '3.00',
@@ -98,6 +99,9 @@ class DianaMariaGalindo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '0.00',
                 'Viviendas con Celular' => '54.55',
                 'Viviendas con Internet' => '0.00'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class ParaisoDelNazas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.48'
             ),
             'Viviendas' => array(
+                'Hogares' => '154',
                 'Hogares Jefatura masculina' => '39.44',
                 'Hogares Jefatura femenina' => '60.56',
                 'Ocupación por Vivienda' => '4.05',
@@ -100,6 +101,7 @@ class ParaisoDelNazas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '32.64'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '27',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '44.44',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

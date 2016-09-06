@@ -87,6 +87,7 @@ class ExHaciendaLaPerla3raEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.17'
             ),
             'Viviendas' => array(
+                'Hogares' => '215',
                 'Hogares Jefatura masculina' => '88.22',
                 'Hogares Jefatura femenina' => '11.78',
                 'Ocupación por Vivienda' => '3.90',
@@ -100,6 +101,7 @@ class ExHaciendaLaPerla3raEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '27',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '29.63',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

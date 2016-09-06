@@ -87,6 +87,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '66.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '1082',
                 'Hogares Jefatura masculina' => '77.15',
                 'Hogares Jefatura femenina' => '22.85',
                 'Ocupación por Vivienda' => '4.24',
@@ -100,6 +101,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '14.11'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '208',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '37.50',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

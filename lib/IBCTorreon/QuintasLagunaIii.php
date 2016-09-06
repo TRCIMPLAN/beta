@@ -87,6 +87,7 @@ class QuintasLagunaIii extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.60'
             ),
             'Viviendas' => array(
+                'Hogares' => '36',
                 'Hogares Jefatura masculina' => '66.67',
                 'Hogares Jefatura femenina' => '33.33',
                 'Ocupación por Vivienda' => '4.06',
@@ -100,6 +101,7 @@ class QuintasLagunaIii extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '32.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '9',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Salud',

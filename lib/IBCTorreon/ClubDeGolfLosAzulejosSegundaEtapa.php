@@ -87,6 +87,7 @@ class ClubDeGolfLosAzulejosSegundaEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '58.82'
             ),
             'Viviendas' => array(
+                'Hogares' => '8',
                 'Hogares Jefatura masculina' => '100.00',
                 'Hogares Jefatura femenina' => '0.00',
                 'Ocupación por Vivienda' => '4.25',
@@ -100,6 +101,7 @@ class ClubDeGolfLosAzulejosSegundaEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

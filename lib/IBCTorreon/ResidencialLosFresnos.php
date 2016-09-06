@@ -87,6 +87,7 @@ class ResidencialLosFresnos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '88.57'
             ),
             'Viviendas' => array(
+                'Hogares' => '235',
                 'Hogares Jefatura masculina' => '90.64',
                 'Hogares Jefatura femenina' => '9.36',
                 'Ocupación por Vivienda' => '3.98',
@@ -100,6 +101,7 @@ class ResidencialLosFresnos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '92.34'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

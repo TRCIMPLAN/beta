@@ -87,6 +87,7 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.77'
             ),
             'Viviendas' => array(
+                'Hogares' => '3874',
                 'Hogares Jefatura masculina' => '76.91',
                 'Hogares Jefatura femenina' => '23.09',
                 'Ocupación por Vivienda' => '3.94',
@@ -100,6 +101,7 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '35.71'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '428',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.19',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

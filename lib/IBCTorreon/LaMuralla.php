@@ -87,6 +87,7 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.87'
             ),
             'Viviendas' => array(
+                'Hogares' => '33',
                 'Hogares Jefatura masculina' => '93.11',
                 'Hogares Jefatura femenina' => '6.89',
                 'Ocupación por Vivienda' => '3.61',
@@ -98,6 +99,9 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '86.08',
                 'Viviendas con Celular' => '98.68',
                 'Viviendas con Internet' => '72.67'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class InfonavitNuevaCalifornia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.75'
             ),
             'Viviendas' => array(
+                'Hogares' => '766',
                 'Hogares Jefatura masculina' => '78.46',
                 'Hogares Jefatura femenina' => '21.54',
                 'Ocupación por Vivienda' => '3.78',
@@ -100,6 +101,7 @@ class InfonavitNuevaCalifornia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '27.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '47',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.32',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '87.50'
             ),
             'Viviendas' => array(
+                'Hogares' => '37',
                 'Hogares Jefatura masculina' => '75.68',
                 'Hogares Jefatura femenina' => '24.32',
                 'Ocupación por Vivienda' => '4.11',
@@ -100,6 +101,7 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '89.19'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Salud',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Educativos',

@@ -87,6 +87,7 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.64'
             ),
             'Viviendas' => array(
+                'Hogares' => '207',
                 'Hogares Jefatura masculina' => '82.06',
                 'Hogares Jefatura femenina' => '17.94',
                 'Ocupación por Vivienda' => '4.04',
@@ -100,6 +101,7 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.95'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '70.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

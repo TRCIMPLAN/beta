@@ -87,6 +87,7 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '640',
                 'Hogares Jefatura masculina' => '68.24',
                 'Hogares Jefatura femenina' => '31.76',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '68.39'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '146',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '21.92',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

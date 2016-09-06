@@ -87,6 +87,7 @@ class CampinasDeIberia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.28'
             ),
             'Viviendas' => array(
+                'Hogares' => '33',
                 'Hogares Jefatura masculina' => '84.85',
                 'Hogares Jefatura femenina' => '15.15',
                 'Ocupación por Vivienda' => '3.52',
@@ -100,6 +101,7 @@ class CampinasDeIberia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '87.88'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

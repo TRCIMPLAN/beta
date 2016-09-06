@@ -87,6 +87,7 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.90'
             ),
             'Viviendas' => array(
+                'Hogares' => '154',
                 'Hogares Jefatura masculina' => '80.29',
                 'Hogares Jefatura femenina' => '19.71',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '68.86'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '52',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '15.38',
                 'Segunda actividad nombre' => 'Inmobiliarios',

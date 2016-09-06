@@ -87,6 +87,7 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '53.34'
             ),
             'Viviendas' => array(
+                'Hogares' => '219',
                 'Hogares Jefatura masculina' => '62.10',
                 'Hogares Jefatura femenina' => '37.90',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.99'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '92.31',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

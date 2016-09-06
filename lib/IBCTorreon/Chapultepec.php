@@ -87,6 +87,7 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.62'
             ),
             'Viviendas' => array(
+                'Hogares' => '95',
                 'Hogares Jefatura masculina' => '83.58',
                 'Hogares Jefatura femenina' => '16.42',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '60.30'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '27.27',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

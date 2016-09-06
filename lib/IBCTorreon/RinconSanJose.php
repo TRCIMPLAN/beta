@@ -87,6 +87,7 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.07'
             ),
             'Viviendas' => array(
+                'Hogares' => '39',
                 'Hogares Jefatura masculina' => '69.23',
                 'Hogares Jefatura femenina' => '30.77',
                 'Ocupación por Vivienda' => '3.13',
@@ -100,6 +101,7 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '61.54'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Inmobiliarios',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

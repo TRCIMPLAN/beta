@@ -62,7 +62,17 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Comercio Mayoreo',
                 'Primer actividad porcentaje' => '28.57',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

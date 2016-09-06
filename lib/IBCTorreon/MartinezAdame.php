@@ -87,6 +87,7 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '186',
                 'Hogares Jefatura masculina' => '64.72',
                 'Hogares Jefatura femenina' => '35.28',
                 'Ocupación por Vivienda' => '3.43',
@@ -100,6 +101,7 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.83'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '39',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.72'
             ),
             'Viviendas' => array(
+                'Hogares' => '848',
                 'Hogares Jefatura masculina' => '82.36',
                 'Hogares Jefatura femenina' => '17.64',
                 'Ocupación por Vivienda' => '3.97',
@@ -100,6 +101,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '88.65'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '433',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.18',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

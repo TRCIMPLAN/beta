@@ -87,6 +87,7 @@ class AngelesResidencialIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '30',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '3.67',
@@ -100,6 +101,7 @@ class AngelesResidencialIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '76.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

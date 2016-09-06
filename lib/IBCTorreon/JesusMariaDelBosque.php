@@ -87,6 +87,7 @@ class JesusMariaDelBosque extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '4',
                 'Hogares Jefatura masculina' => '70.78',
                 'Hogares Jefatura femenina' => '29.22',
                 'Ocupación por Vivienda' => '4.75',
@@ -98,6 +99,9 @@ class JesusMariaDelBosque extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '43.66',
                 'Viviendas con Celular' => '91.64',
                 'Viviendas con Internet' => '35.03'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

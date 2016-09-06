@@ -87,6 +87,7 @@ class ElOasis extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.43'
             ),
             'Viviendas' => array(
+                'Hogares' => '56',
                 'Hogares Jefatura masculina' => '83.24',
                 'Hogares Jefatura femenina' => '16.76',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class ElOasis extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '67.57'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

@@ -44,14 +44,14 @@ class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
                 $this->tabla->definir_estructura(
                     array(
                         'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor')
+                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
                     )
                 );
                 $this->tabla->definir_panal(
                     array(
-                        array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->educacion['Grado Promedio de Escolaridad']),
-                        array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->educacion['Grado Promedio de Escolaridad masculina']),
-                        array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->educacion['Grado Promedio de Escolaridad femenina'])
+                        array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->formatear('Grado Promedio de Escolaridad')),
+                        array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->formatear('Grado Promedio de Escolaridad masculina')),
+                        array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->formatear('Grado Promedio de Escolaridad femenina'))
                     )
                 );
             } catch (EjeExceptionSinDatos $e) {

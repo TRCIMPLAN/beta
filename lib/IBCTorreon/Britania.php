@@ -87,6 +87,7 @@ class Britania extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.38'
             ),
             'Viviendas' => array(
+                'Hogares' => '117',
                 'Hogares Jefatura masculina' => '76.07',
                 'Hogares Jefatura femenina' => '23.93',
                 'Ocupación por Vivienda' => '3.35',
@@ -100,6 +101,7 @@ class Britania extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '40.17'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Salud',

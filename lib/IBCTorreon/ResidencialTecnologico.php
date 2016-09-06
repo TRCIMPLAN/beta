@@ -87,6 +87,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.78'
             ),
             'Viviendas' => array(
+                'Hogares' => '24',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '3.83',
@@ -100,6 +101,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '83.33'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '102',
                 'Primer actividad nombre' => 'Salud',
                 'Primer actividad porcentaje' => '58.82',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

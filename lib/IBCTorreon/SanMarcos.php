@@ -87,6 +87,7 @@ class SanMarcos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.73'
             ),
             'Viviendas' => array(
+                'Hogares' => '482',
                 'Hogares Jefatura masculina' => '68.05',
                 'Hogares Jefatura femenina' => '31.95',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class SanMarcos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.50'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '74',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.14',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

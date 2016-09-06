@@ -87,6 +87,7 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '61.08'
             ),
             'Viviendas' => array(
+                'Hogares' => '1587',
                 'Hogares Jefatura masculina' => '68.10',
                 'Hogares Jefatura femenina' => '31.90',
                 'Ocupación por Vivienda' => '4.28',
@@ -100,6 +101,7 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.86'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '114',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '53.51',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

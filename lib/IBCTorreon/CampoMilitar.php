@@ -87,6 +87,7 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '95.07'
             ),
             'Viviendas' => array(
+                'Hogares' => '115',
                 'Hogares Jefatura masculina' => '96.52',
                 'Hogares Jefatura femenina' => '3.48',
                 'Ocupación por Vivienda' => '3.53',
@@ -100,6 +101,7 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.84'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Gubernamentales',

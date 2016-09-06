@@ -87,6 +87,7 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '88.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '327',
                 'Hogares Jefatura masculina' => '86.54',
                 'Hogares Jefatura femenina' => '13.46',
                 'Ocupación por Vivienda' => '3.43',
@@ -100,6 +101,7 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.42'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Transportes, Correo, Almacenamiento',

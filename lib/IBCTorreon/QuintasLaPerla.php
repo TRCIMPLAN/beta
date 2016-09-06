@@ -87,6 +87,7 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.66'
             ),
             'Viviendas' => array(
+                'Hogares' => '70',
                 'Hogares Jefatura masculina' => '79.91',
                 'Hogares Jefatura femenina' => '20.09',
                 'Ocupación por Vivienda' => '3.03',
@@ -100,6 +101,7 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '35.35'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

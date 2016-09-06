@@ -87,6 +87,7 @@ class SolDeOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '597',
                 'Hogares Jefatura masculina' => '82.08',
                 'Hogares Jefatura femenina' => '17.92',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class SolDeOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '86',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.05',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

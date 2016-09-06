@@ -87,6 +87,7 @@ class SanJose extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.51'
             ),
             'Viviendas' => array(
+                'Hogares' => '27',
                 'Hogares Jefatura masculina' => '66.67',
                 'Hogares Jefatura femenina' => '33.33',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class SanJose extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '40.74'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

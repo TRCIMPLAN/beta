@@ -87,6 +87,7 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '55.65'
             ),
             'Viviendas' => array(
+                'Hogares' => '1009',
                 'Hogares Jefatura masculina' => '79.27',
                 'Hogares Jefatura femenina' => '20.73',
                 'Ocupación por Vivienda' => '5.02',
@@ -100,6 +101,7 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '22.08'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '122',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.82',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

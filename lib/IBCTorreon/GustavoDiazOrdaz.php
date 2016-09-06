@@ -87,6 +87,7 @@ class GustavoDiazOrdaz extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.26'
             ),
             'Viviendas' => array(
+                'Hogares' => '371',
                 'Hogares Jefatura masculina' => '68.63',
                 'Hogares Jefatura femenina' => '31.37',
                 'Ocupación por Vivienda' => '3.79',
@@ -100,6 +101,7 @@ class GustavoDiazOrdaz extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '30.40'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '122',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.16',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

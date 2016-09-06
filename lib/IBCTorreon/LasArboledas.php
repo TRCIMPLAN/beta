@@ -87,6 +87,7 @@ class LasArboledas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '379',
                 'Hogares Jefatura masculina' => '73.74',
                 'Hogares Jefatura femenina' => '26.26',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class LasArboledas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '44.85'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '21',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

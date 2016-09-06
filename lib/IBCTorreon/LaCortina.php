@@ -87,6 +87,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.43'
             ),
             'Viviendas' => array(
+                'Hogares' => '339',
                 'Hogares Jefatura masculina' => '81.42',
                 'Hogares Jefatura femenina' => '18.58',
                 'Ocupación por Vivienda' => '4.04',
@@ -100,6 +101,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.65'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class Esparza extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.68'
             ),
             'Viviendas' => array(
+                'Hogares' => '319',
                 'Hogares Jefatura masculina' => '67.09',
                 'Hogares Jefatura femenina' => '32.91',
                 'Ocupación por Vivienda' => '3.61',
@@ -100,6 +101,7 @@ class Esparza extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '26.57'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '24',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

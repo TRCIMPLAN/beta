@@ -87,6 +87,7 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.32'
             ),
             'Viviendas' => array(
+                'Hogares' => '218',
                 'Hogares Jefatura masculina' => '64.37',
                 'Hogares Jefatura femenina' => '35.63',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '53.07'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '22',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '22.73',
                 'Segunda actividad nombre' => 'Salud',

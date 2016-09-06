@@ -87,6 +87,7 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.90'
             ),
             'Viviendas' => array(
+                'Hogares' => '194',
                 'Hogares Jefatura masculina' => '61.86',
                 'Hogares Jefatura femenina' => '38.14',
                 'Ocupación por Vivienda' => '3.90',
@@ -100,6 +101,7 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.29'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '31.58',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

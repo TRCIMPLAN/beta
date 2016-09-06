@@ -87,6 +87,7 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.64'
             ),
             'Viviendas' => array(
+                'Hogares' => '722',
                 'Hogares Jefatura masculina' => '73.55',
                 'Hogares Jefatura femenina' => '26.45',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '44.46'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '53',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.51',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

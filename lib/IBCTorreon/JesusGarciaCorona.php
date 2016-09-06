@@ -87,6 +87,7 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '42.29'
             ),
             'Viviendas' => array(
+                'Hogares' => '38',
                 'Hogares Jefatura masculina' => '73.68',
                 'Hogares Jefatura femenina' => '26.32',
                 'Ocupación por Vivienda' => '4.61',
@@ -100,6 +101,7 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.40'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

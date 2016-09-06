@@ -87,6 +87,7 @@ class Carolinas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.52'
             ),
             'Viviendas' => array(
+                'Hogares' => '1520',
                 'Hogares Jefatura masculina' => '71.41',
                 'Hogares Jefatura femenina' => '28.59',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class Carolinas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.90'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '151',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.40',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

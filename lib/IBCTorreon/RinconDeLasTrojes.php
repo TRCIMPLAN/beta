@@ -87,6 +87,7 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '98.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '15',
                 'Hogares Jefatura masculina' => '80.00',
                 'Hogares Jefatura femenina' => '20.00',
                 'Ocupación por Vivienda' => '3.60',
@@ -100,6 +101,7 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '47.06'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '30.00',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

@@ -87,6 +87,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.02'
             ),
             'Viviendas' => array(
+                'Hogares' => '111',
                 'Hogares Jefatura masculina' => '68.47',
                 'Hogares Jefatura femenina' => '31.53',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '23.13'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '23.53',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

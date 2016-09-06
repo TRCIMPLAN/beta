@@ -87,6 +87,7 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.73'
             ),
             'Viviendas' => array(
+                'Hogares' => '98',
                 'Hogares Jefatura masculina' => '77.55',
                 'Hogares Jefatura femenina' => '22.45',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '9.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '61.54',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

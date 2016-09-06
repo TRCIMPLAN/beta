@@ -87,6 +87,7 @@ class CerradaLasFloresIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '122',
                 'Hogares Jefatura masculina' => '81.15',
                 'Hogares Jefatura femenina' => '18.85',
                 'Ocupación por Vivienda' => '3.61',
@@ -100,6 +101,7 @@ class CerradaLasFloresIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '46.72'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

@@ -87,6 +87,7 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '58.44'
             ),
             'Viviendas' => array(
+                'Hogares' => '22',
                 'Hogares Jefatura masculina' => '68.40',
                 'Hogares Jefatura femenina' => '31.60',
                 'Ocupación por Vivienda' => '3.50',
@@ -100,6 +101,7 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '14.44'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

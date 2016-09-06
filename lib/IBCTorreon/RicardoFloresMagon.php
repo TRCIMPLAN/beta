@@ -87,6 +87,7 @@ class RicardoFloresMagon extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '51.25'
             ),
             'Viviendas' => array(
+                'Hogares' => '73',
                 'Hogares Jefatura masculina' => '73.97',
                 'Hogares Jefatura femenina' => '26.03',
                 'Ocupación por Vivienda' => '4.38',
@@ -100,6 +101,7 @@ class RicardoFloresMagon extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '51.47'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

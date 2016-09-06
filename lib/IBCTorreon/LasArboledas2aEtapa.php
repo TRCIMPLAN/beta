@@ -87,6 +87,7 @@ class LasArboledas2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.89'
             ),
             'Viviendas' => array(
+                'Hogares' => '96',
                 'Hogares Jefatura masculina' => '70.83',
                 'Hogares Jefatura femenina' => '29.17',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class LasArboledas2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '56.25'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.36',
                 'Segunda actividad nombre' => 'Manejo de Residuos',

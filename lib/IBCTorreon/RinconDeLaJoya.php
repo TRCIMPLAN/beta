@@ -87,6 +87,7 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '44',
                 'Hogares Jefatura masculina' => '79.57',
                 'Hogares Jefatura femenina' => '20.43',
                 'Ocupación por Vivienda' => '3.48',
@@ -100,6 +101,7 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '4.11'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

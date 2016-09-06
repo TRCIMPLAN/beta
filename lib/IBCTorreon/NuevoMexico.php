@@ -87,6 +87,7 @@ class NuevoMexico extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '86',
                 'Hogares Jefatura masculina' => '77.42',
                 'Hogares Jefatura femenina' => '22.58',
                 'Ocupación por Vivienda' => '3.83',
@@ -100,6 +101,7 @@ class NuevoMexico extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

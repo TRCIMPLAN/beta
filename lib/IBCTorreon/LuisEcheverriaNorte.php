@@ -87,6 +87,7 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.45'
             ),
             'Viviendas' => array(
+                'Hogares' => '731',
                 'Hogares Jefatura masculina' => '68.40',
                 'Hogares Jefatura femenina' => '31.60',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '21.46'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '92',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.70',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

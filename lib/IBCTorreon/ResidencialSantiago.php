@@ -87,6 +87,7 @@ class ResidencialSantiago extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.33'
             ),
             'Viviendas' => array(
+                'Hogares' => '104',
                 'Hogares Jefatura masculina' => '88.46',
                 'Hogares Jefatura femenina' => '11.54',
                 'Ocupación por Vivienda' => '3.35',
@@ -100,6 +101,7 @@ class ResidencialSantiago extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.43'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

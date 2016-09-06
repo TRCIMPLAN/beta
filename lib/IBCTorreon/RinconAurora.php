@@ -87,6 +87,7 @@ class RinconAurora extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.55'
             ),
             'Viviendas' => array(
+                'Hogares' => '31',
                 'Hogares Jefatura masculina' => '77.42',
                 'Hogares Jefatura femenina' => '22.58',
                 'Ocupación por Vivienda' => '3.55',
@@ -98,6 +99,9 @@ class RinconAurora extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '83.87'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

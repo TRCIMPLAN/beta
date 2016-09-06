@@ -87,6 +87,7 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.62'
             ),
             'Viviendas' => array(
+                'Hogares' => '329',
                 'Hogares Jefatura masculina' => '77.51',
                 'Hogares Jefatura femenina' => '22.49',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '28.88'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.36',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

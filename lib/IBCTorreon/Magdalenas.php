@@ -87,6 +87,7 @@ class Magdalenas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '1054',
                 'Hogares Jefatura masculina' => '71.36',
                 'Hogares Jefatura femenina' => '28.64',
                 'Ocupación por Vivienda' => '4.11',
@@ -100,6 +101,7 @@ class Magdalenas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '268',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '29.10',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

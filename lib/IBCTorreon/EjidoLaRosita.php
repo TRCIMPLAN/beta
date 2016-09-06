@@ -87,6 +87,7 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '56.29'
             ),
             'Viviendas' => array(
+                'Hogares' => '140',
                 'Hogares Jefatura masculina' => '81.83',
                 'Hogares Jefatura femenina' => '18.17',
                 'Ocupación por Vivienda' => '4.07',
@@ -100,6 +101,7 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '4.65'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '15',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

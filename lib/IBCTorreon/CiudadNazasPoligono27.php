@@ -87,6 +87,7 @@ class CiudadNazasPoligono27 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '521',
                 'Hogares Jefatura masculina' => '79.27',
                 'Hogares Jefatura femenina' => '20.73',
                 'Ocupación por Vivienda' => '4.00',
@@ -100,6 +101,7 @@ class CiudadNazasPoligono27 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '22.26'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '39',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '30.77',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

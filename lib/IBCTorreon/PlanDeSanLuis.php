@@ -87,6 +87,7 @@ class PlanDeSanLuis extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.66'
             ),
             'Viviendas' => array(
+                'Hogares' => '231',
                 'Hogares Jefatura masculina' => '81.39',
                 'Hogares Jefatura femenina' => '18.61',
                 'Ocupación por Vivienda' => '3.72',
@@ -100,6 +101,7 @@ class PlanDeSanLuis extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '37.59'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '20',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

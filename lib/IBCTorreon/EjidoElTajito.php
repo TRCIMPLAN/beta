@@ -87,6 +87,7 @@ class EjidoElTajito extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.12'
             ),
             'Viviendas' => array(
+                'Hogares' => '491',
                 'Hogares Jefatura masculina' => '78.57',
                 'Hogares Jefatura femenina' => '21.43',
                 'Ocupación por Vivienda' => '4.37',
@@ -100,6 +101,7 @@ class EjidoElTajito extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '9.05'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '109',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.86',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

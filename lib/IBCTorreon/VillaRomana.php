@@ -87,6 +87,7 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.01'
             ),
             'Viviendas' => array(
+                'Hogares' => '39',
                 'Hogares Jefatura masculina' => '69.32',
                 'Hogares Jefatura femenina' => '30.68',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '79.96'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

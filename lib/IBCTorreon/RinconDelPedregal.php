@@ -87,6 +87,7 @@ class RinconDelPedregal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.93'
             ),
             'Viviendas' => array(
+                'Hogares' => '280',
                 'Hogares Jefatura masculina' => '73.57',
                 'Hogares Jefatura femenina' => '26.43',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class RinconDelPedregal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.06'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '18',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '38.89',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

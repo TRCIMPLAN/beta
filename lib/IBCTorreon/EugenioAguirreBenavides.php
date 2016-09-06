@@ -87,6 +87,7 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.35'
             ),
             'Viviendas' => array(
+                'Hogares' => '457',
                 'Hogares Jefatura masculina' => '69.15',
                 'Hogares Jefatura femenina' => '30.85',
                 'Ocupación por Vivienda' => '4.04',
@@ -100,6 +101,7 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.41'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '67',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '34.33',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

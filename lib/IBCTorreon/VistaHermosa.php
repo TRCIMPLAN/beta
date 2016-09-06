@@ -87,6 +87,7 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.95'
             ),
             'Viviendas' => array(
+                'Hogares' => '158',
                 'Hogares Jefatura masculina' => '72.57',
                 'Hogares Jefatura femenina' => '27.43',
                 'Ocupación por Vivienda' => '4.06',
@@ -100,6 +101,7 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.79'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '9',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

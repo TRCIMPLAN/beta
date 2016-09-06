@@ -87,6 +87,7 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '37.50'
             ),
             'Viviendas' => array(
+                'Hogares' => '3',
                 'Hogares Jefatura masculina' => '75.98',
                 'Hogares Jefatura femenina' => '24.02',
                 'Ocupación por Vivienda' => '5.33',
@@ -98,6 +99,9 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '46.86',
                 'Viviendas con Celular' => '85.49',
                 'Viviendas con Internet' => '32.66'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

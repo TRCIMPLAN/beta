@@ -87,6 +87,7 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '52.34'
             ),
             'Viviendas' => array(
+                'Hogares' => '235',
                 'Hogares Jefatura masculina' => '68.09',
                 'Hogares Jefatura femenina' => '31.91',
                 'Ocupación por Vivienda' => '4.18',
@@ -100,6 +101,7 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.13',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

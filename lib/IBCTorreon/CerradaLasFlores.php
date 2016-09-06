@@ -87,6 +87,7 @@ class CerradaLasFlores extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.14'
             ),
             'Viviendas' => array(
+                'Hogares' => '56',
                 'Hogares Jefatura masculina' => '82.14',
                 'Hogares Jefatura femenina' => '17.86',
                 'Ocupación por Vivienda' => '3.95',
@@ -98,6 +99,9 @@ class CerradaLasFlores extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '46.43',
                 'Viviendas con Celular' => '85.71',
                 'Viviendas con Internet' => '32.14'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -52,10 +52,54 @@ class EjeViviendas {
             } else {
                 throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Viviendas.");
             }
+            // Sin Hogares
+            if (isset($this->viviendas['Hogares'])) {
+                if ($this->viviendas['Hogares'] == 0) {
+                    throw new EjeExceptionSinDatos("La cantidad de Hogares es cero.");
+                }
+            } else {
+                throw new EjeExceptionSinDatos("La cantidad de Hogares no está definida.");
+            }
             // Levantar bandera
             $this->preparado = TRUE;
         }
     } // preparar
+
+    /**
+     * Formatear
+     *
+     * @param  string Nombre del indicador
+     * @return string Valor con formato
+     */
+    protected function formatear($nombre) {
+        $this->prepapar();
+        if (isset($this->viviendas[$nombre])) {
+            switch ($nombre) {
+                case 'Hogares':
+                    return number_format($this->viviendas[$nombre], 0, ".", ","); // Cantidad
+                    break;
+                case 'Ocupación por Vivienda':
+                    return number_format($this->viviendas[$nombre], 2, ".", ","); // Decimal
+                    break;
+                case 'Hogares Jefatura masculina':
+                case 'Hogares Jefatura femenina':
+                case 'Viviendas con Electricidad':
+                case 'Viviendas con Agua':
+                case 'Viviendas con Drenaje':
+                case 'Viviendas con Televisión':
+                case 'Viviendas con Automóvil':
+                case 'Viviendas con Computadora':
+                case 'Viviendas con Celular':
+                case 'Viviendas con Internet':
+                    return number_format($this->viviendas[$nombre], 2, ".", ",")." %"; // Porcentaje
+                    break;
+                default:
+                    return '~ '.$this->viviendas[$nombre]; // Original
+            }
+        } else {
+            return 'ND';
+        }
+    } // formatear
 
 } // Clase EjeViviendas
 

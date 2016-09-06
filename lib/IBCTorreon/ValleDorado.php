@@ -87,6 +87,7 @@ class ValleDorado extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.63'
             ),
             'Viviendas' => array(
+                'Hogares' => '954',
                 'Hogares Jefatura masculina' => '69.92',
                 'Hogares Jefatura femenina' => '30.08',
                 'Ocupación por Vivienda' => '3.55',
@@ -100,6 +101,7 @@ class ValleDorado extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '48.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '67',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.33',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

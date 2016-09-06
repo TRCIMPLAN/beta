@@ -87,6 +87,7 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '46.25'
             ),
             'Viviendas' => array(
+                'Hogares' => '653',
                 'Hogares Jefatura masculina' => '83.45',
                 'Hogares Jefatura femenina' => '16.55',
                 'Ocupación por Vivienda' => '3.87',
@@ -100,6 +101,7 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '1.91'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '143',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.16',
                 'Segunda actividad nombre' => 'Inmobiliarios',

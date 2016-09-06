@@ -87,6 +87,7 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.41'
             ),
             'Viviendas' => array(
+                'Hogares' => '120',
                 'Hogares Jefatura masculina' => '78.33',
                 'Hogares Jefatura femenina' => '21.67',
                 'Ocupación por Vivienda' => '3.54',
@@ -100,6 +101,7 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '69.17'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '75.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class ResidencialLindavista extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.25'
             ),
             'Viviendas' => array(
+                'Hogares' => '8',
                 'Hogares Jefatura masculina' => '87.50',
                 'Hogares Jefatura femenina' => '12.50',
                 'Ocupación por Vivienda' => '4.00',
@@ -98,6 +99,9 @@ class ResidencialLindavista extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '75.00'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

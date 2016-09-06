@@ -87,6 +87,7 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.86'
             ),
             'Viviendas' => array(
+                'Hogares' => '242',
                 'Hogares Jefatura masculina' => '77.18',
                 'Hogares Jefatura femenina' => '22.82',
                 'Ocupación por Vivienda' => '4.23',
@@ -100,6 +101,7 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.29'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '75',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

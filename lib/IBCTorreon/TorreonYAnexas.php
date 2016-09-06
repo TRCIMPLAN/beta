@@ -87,6 +87,7 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.01'
             ),
             'Viviendas' => array(
+                'Hogares' => '242',
                 'Hogares Jefatura masculina' => '76.45',
                 'Hogares Jefatura femenina' => '23.55',
                 'Ocupación por Vivienda' => '4.08',
@@ -100,6 +101,7 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.33'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '14',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

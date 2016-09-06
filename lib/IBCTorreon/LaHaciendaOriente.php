@@ -87,6 +87,7 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.50'
             ),
             'Viviendas' => array(
+                'Hogares' => '80',
                 'Hogares Jefatura masculina' => '82.44',
                 'Hogares Jefatura femenina' => '17.56',
                 'Ocupación por Vivienda' => '3.48',
@@ -100,6 +101,7 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '80.24'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '25',
                 'Primer actividad nombre' => 'Salud',
                 'Primer actividad porcentaje' => '44.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

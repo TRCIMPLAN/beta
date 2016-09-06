@@ -87,6 +87,7 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '61.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '497',
                 'Hogares Jefatura masculina' => '79.27',
                 'Hogares Jefatura femenina' => '20.73',
                 'Ocupación por Vivienda' => '4.38',
@@ -100,6 +101,7 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '37',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.65',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

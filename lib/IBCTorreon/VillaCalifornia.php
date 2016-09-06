@@ -87,6 +87,7 @@ class VillaCalifornia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.07'
             ),
             'Viviendas' => array(
+                'Hogares' => '2867',
                 'Hogares Jefatura masculina' => '71.00',
                 'Hogares Jefatura femenina' => '29.00',
                 'Ocupación por Vivienda' => '3.73',
@@ -100,6 +101,7 @@ class VillaCalifornia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '39.74'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '482',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.32',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

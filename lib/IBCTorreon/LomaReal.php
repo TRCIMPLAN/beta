@@ -87,6 +87,7 @@ class LomaReal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '549',
                 'Hogares Jefatura masculina' => '82.12',
                 'Hogares Jefatura femenina' => '17.88',
                 'Ocupación por Vivienda' => '3.79',
@@ -100,6 +101,7 @@ class LomaReal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.26'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '79',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.10',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

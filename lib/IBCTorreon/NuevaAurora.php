@@ -87,6 +87,7 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '61.45'
             ),
             'Viviendas' => array(
+                'Hogares' => '889',
                 'Hogares Jefatura masculina' => '62.08',
                 'Hogares Jefatura femenina' => '37.92',
                 'Ocupación por Vivienda' => '3.66',
@@ -100,6 +101,7 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '16.32'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '125',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.20',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

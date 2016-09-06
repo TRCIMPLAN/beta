@@ -87,6 +87,7 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.99'
             ),
             'Viviendas' => array(
+                'Hogares' => '121',
                 'Hogares Jefatura masculina' => '75.21',
                 'Hogares Jefatura femenina' => '24.79',
                 'Ocupación por Vivienda' => '3.78',
@@ -100,6 +101,7 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '40.50'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Salud',

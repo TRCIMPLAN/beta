@@ -87,6 +87,7 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.81'
             ),
             'Viviendas' => array(
+                'Hogares' => '158',
                 'Hogares Jefatura masculina' => '77.22',
                 'Hogares Jefatura femenina' => '22.78',
                 'Ocupación por Vivienda' => '3.54',
@@ -100,6 +101,7 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '1.90'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '26',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.31',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '45.31'
             ),
             'Viviendas' => array(
+                'Hogares' => '124',
                 'Hogares Jefatura masculina' => '66.38',
                 'Hogares Jefatura femenina' => '33.62',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.05'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '45.45',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

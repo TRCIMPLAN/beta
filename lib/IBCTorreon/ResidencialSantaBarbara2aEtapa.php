@@ -87,6 +87,7 @@ class ResidencialSantaBarbara2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.32'
             ),
             'Viviendas' => array(
+                'Hogares' => '18',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '4.11',
@@ -98,6 +99,9 @@ class ResidencialSantaBarbara2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '88.89',
                 'Viviendas con Celular' => '94.44',
                 'Viviendas con Internet' => '88.89'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

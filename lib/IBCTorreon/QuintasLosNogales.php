@@ -87,6 +87,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '99',
                 'Hogares Jefatura masculina' => '77.61',
                 'Hogares Jefatura femenina' => '22.39',
                 'Ocupación por Vivienda' => '3.23',
@@ -100,6 +101,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.34'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.83',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

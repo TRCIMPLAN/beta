@@ -87,6 +87,7 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '243',
                 'Hogares Jefatura masculina' => '85.19',
                 'Hogares Jefatura femenina' => '14.81',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '85.41'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '27',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.93',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

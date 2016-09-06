@@ -87,6 +87,7 @@ class LasEstrellas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '53.65'
             ),
             'Viviendas' => array(
+                'Hogares' => '90',
                 'Hogares Jefatura masculina' => '78.89',
                 'Hogares Jefatura femenina' => '21.11',
                 'Ocupación por Vivienda' => '4.27',
@@ -100,6 +101,7 @@ class LasEstrellas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

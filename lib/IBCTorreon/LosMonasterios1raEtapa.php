@@ -87,6 +87,7 @@ class LosMonasterios1raEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.78'
             ),
             'Viviendas' => array(
+                'Hogares' => '104',
                 'Hogares Jefatura masculina' => '80.44',
                 'Hogares Jefatura femenina' => '19.56',
                 'Ocupación por Vivienda' => '3.74',
@@ -100,6 +101,7 @@ class LosMonasterios1raEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '4.60'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '18',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '38.89',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class ZaragozaNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.92'
             ),
             'Viviendas' => array(
+                'Hogares' => '31',
                 'Hogares Jefatura masculina' => '76.47',
                 'Hogares Jefatura femenina' => '23.53',
                 'Ocupación por Vivienda' => '4.23',
@@ -100,6 +101,7 @@ class ZaragozaNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

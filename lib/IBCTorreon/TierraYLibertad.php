@@ -87,6 +87,7 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.61'
             ),
             'Viviendas' => array(
+                'Hogares' => '920',
                 'Hogares Jefatura masculina' => '66.75',
                 'Hogares Jefatura femenina' => '33.25',
                 'Ocupación por Vivienda' => '4.14',
@@ -100,6 +101,7 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '115',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.48',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

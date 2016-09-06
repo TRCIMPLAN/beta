@@ -87,6 +87,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '87.47'
             ),
             'Viviendas' => array(
+                'Hogares' => '135',
                 'Hogares Jefatura masculina' => '71.85',
                 'Hogares Jefatura femenina' => '28.15',
                 'Ocupación por Vivienda' => '3.31',
@@ -100,6 +101,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '65.19'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

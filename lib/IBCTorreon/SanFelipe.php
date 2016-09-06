@@ -87,6 +87,7 @@ class SanFelipe extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.12'
             ),
             'Viviendas' => array(
+                'Hogares' => '1094',
                 'Hogares Jefatura masculina' => '75.69',
                 'Hogares Jefatura femenina' => '24.31',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class SanFelipe extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '57.60'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '144',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '31.94',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

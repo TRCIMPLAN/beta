@@ -87,6 +87,7 @@ class SanAgustin2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '55.56'
             ),
             'Viviendas' => array(
+                'Hogares' => '102',
                 'Hogares Jefatura masculina' => '63.73',
                 'Hogares Jefatura femenina' => '36.27',
                 'Ocupación por Vivienda' => '3.44',
@@ -100,6 +101,7 @@ class SanAgustin2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.49'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

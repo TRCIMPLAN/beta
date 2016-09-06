@@ -87,6 +87,7 @@ class Moctezuma extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.12'
             ),
             'Viviendas' => array(
+                'Hogares' => '951',
                 'Hogares Jefatura masculina' => '71.08',
                 'Hogares Jefatura femenina' => '28.92',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class Moctezuma extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '157',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.39',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

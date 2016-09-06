@@ -87,6 +87,7 @@ class RealDelSolIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.30'
             ),
             'Viviendas' => array(
+                'Hogares' => '149',
                 'Hogares Jefatura masculina' => '81.10',
                 'Hogares Jefatura femenina' => '18.90',
                 'Ocupación por Vivienda' => '3.85',
@@ -100,6 +101,7 @@ class RealDelSolIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.15'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

@@ -61,6 +61,18 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 'Población total' => '0'
+            ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -44,19 +44,19 @@ class EjeCaracteristicasEconomicasTablaWeb extends EjeCaracteristicasEconomicas 
                 $this->tabla->definir_estructura(
                     array(
                         'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor')
+                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
                     )
                 );
                 $this->tabla->definir_panal(
                     array(
-                        array('indicador' => 'Población Económicamente Activa',           'valor' => $this->caracteristicas_economicas['Población Económicamente Activa']),
-                        array('indicador' => 'Población Económicamente Activa masculina', 'valor' => $this->caracteristicas_economicas['Población Económicamente Activa masculina']),
-                        array('indicador' => 'Población Económicamente Activa femenina',  'valor' => $this->caracteristicas_economicas['Población Económicamente Activa femenina']),
-                        array('indicador' => 'Población Ocupada',                         'valor' => $this->caracteristicas_economicas['Población Ocupada']),
-                        array('indicador' => 'Población Ocupada masculina',               'valor' => $this->caracteristicas_economicas['Población Ocupada masculina']),
-                        array('indicador' => 'Población Ocupada femenina',                'valor' => $this->caracteristicas_economicas['Población Ocupada femenina']),
-                        array('indicador' => 'Población Desocupada',                      'valor' => $this->caracteristicas_economicas['Población Desocupada']),
-                        array('indicador' => 'Derechohabiencia',                          'valor' => $this->caracteristicas_economicas['Derechohabiencia'])
+                        array('indicador' => 'Población Económicamente Activa',           'valor' => $this->formatear('Población Económicamente Activa')),
+                        array('indicador' => 'Población Económicamente Activa masculina', 'valor' => $this->formatear('Población Económicamente Activa masculina')),
+                        array('indicador' => 'Población Económicamente Activa femenina',  'valor' => $this->formatear('Población Económicamente Activa femenina')),
+                        array('indicador' => 'Población Ocupada',                         'valor' => $this->formatear('Población Ocupada')),
+                        array('indicador' => 'Población Ocupada masculina',               'valor' => $this->formatear('Población Ocupada masculina')),
+                        array('indicador' => 'Población Ocupada femenina',                'valor' => $this->formatear('Población Ocupada femenina')),
+                        array('indicador' => 'Población Desocupada',                      'valor' => $this->formatear('Población Desocupada')),
+                        array('indicador' => 'Derechohabiencia',                          'valor' => $this->formatear('Derechohabiencia'))
                     )
                 );
             } catch (EjeExceptionSinDatos $e) {

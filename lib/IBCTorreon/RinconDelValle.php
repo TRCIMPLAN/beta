@@ -87,6 +87,7 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.37'
             ),
             'Viviendas' => array(
+                'Hogares' => '43',
                 'Hogares Jefatura masculina' => '79.07',
                 'Hogares Jefatura femenina' => '20.93',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '46.51'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

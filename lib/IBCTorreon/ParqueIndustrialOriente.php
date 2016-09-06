@@ -62,7 +62,17 @@ class ParqueIndustrialOriente extends \IBCBase\PublicacionWeb {
             'Demografía' => array(
                 'Población total' => '0'
             ),
+            'Educación' => array(
+        
+            ),
+            'Características Económicas' => array(
+        
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '83',
                 'Primer actividad nombre' => 'Comercio Mayoreo',
                 'Primer actividad porcentaje' => '25.30',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

@@ -87,6 +87,7 @@ class LagunaNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '49.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '720',
                 'Hogares Jefatura masculina' => '80.01',
                 'Hogares Jefatura femenina' => '19.99',
                 'Ocupación por Vivienda' => '4.20',
@@ -100,6 +101,7 @@ class LagunaNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.05'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '187',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.90',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

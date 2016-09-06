@@ -87,6 +87,7 @@ class NuevaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '49.42'
             ),
             'Viviendas' => array(
+                'Hogares' => '352',
                 'Hogares Jefatura masculina' => '82.93',
                 'Hogares Jefatura femenina' => '17.07',
                 'Ocupación por Vivienda' => '4.20',
@@ -100,6 +101,7 @@ class NuevaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '42',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '52.38',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

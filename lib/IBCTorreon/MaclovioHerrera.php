@@ -87,6 +87,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '56.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '168',
                 'Hogares Jefatura masculina' => '66.66',
                 'Hogares Jefatura femenina' => '33.34',
                 'Ocupación por Vivienda' => '3.96',
@@ -100,6 +101,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '9.13'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '52.94',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

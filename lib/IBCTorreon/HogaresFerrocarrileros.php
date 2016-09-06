@@ -87,6 +87,7 @@ class HogaresFerrocarrileros extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.91'
             ),
             'Viviendas' => array(
+                'Hogares' => '458',
                 'Hogares Jefatura masculina' => '70.09',
                 'Hogares Jefatura femenina' => '29.91',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class HogaresFerrocarrileros extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '37.12'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '50',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '38.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '877',
                 'Hogares Jefatura masculina' => '74.00',
                 'Hogares Jefatura femenina' => '26.00',
                 'Ocupación por Vivienda' => '3.84',
@@ -100,6 +101,7 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '25.78'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '55',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.27',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

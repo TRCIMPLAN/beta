@@ -87,6 +87,7 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.91'
             ),
             'Viviendas' => array(
+                'Hogares' => '677',
                 'Hogares Jefatura masculina' => '85.56',
                 'Hogares Jefatura femenina' => '14.44',
                 'Ocupación por Vivienda' => '3.39',
@@ -100,6 +101,7 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '79.83'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '41.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

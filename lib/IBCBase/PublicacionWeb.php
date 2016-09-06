@@ -98,7 +98,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $lenguetas = new LenguetasWeb(self::IDENTIFICADOR);
     //~ $lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
         $lenguetas->agregar('Datos',    new SeccionDatosWeb($this),   TRUE); // Lengüeta activa
-        $lenguetas->agregar('Graficas', new SeccionGraficasWeb($this));
+        $lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
         $this->contenido->extra = $lenguetas->html();
         $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
         $this->javascript[]     = $lenguetas->javascript();

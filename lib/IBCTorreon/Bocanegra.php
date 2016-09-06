@@ -87,6 +87,7 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.93'
             ),
             'Viviendas' => array(
+                'Hogares' => '366',
                 'Hogares Jefatura masculina' => '77.91',
                 'Hogares Jefatura femenina' => '22.09',
                 'Ocupación por Vivienda' => '3.93',
@@ -100,6 +101,7 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.75'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '87',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '35.63',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

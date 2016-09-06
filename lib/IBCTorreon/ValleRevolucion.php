@@ -87,6 +87,7 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.29'
             ),
             'Viviendas' => array(
+                'Hogares' => '678',
                 'Hogares Jefatura masculina' => '75.96',
                 'Hogares Jefatura femenina' => '24.04',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '38.20'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '50',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

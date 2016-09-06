@@ -87,6 +87,7 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.03'
             ),
             'Viviendas' => array(
+                'Hogares' => '579',
                 'Hogares Jefatura masculina' => '67.19',
                 'Hogares Jefatura femenina' => '32.81',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '29.99'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '66',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

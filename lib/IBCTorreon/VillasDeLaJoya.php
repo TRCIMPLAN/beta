@@ -87,6 +87,7 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.42'
             ),
             'Viviendas' => array(
+                'Hogares' => '174',
                 'Hogares Jefatura masculina' => '77.01',
                 'Hogares Jefatura femenina' => '22.99',
                 'Ocupación por Vivienda' => '3.58',
@@ -100,6 +101,7 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.93'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '57.14',
                 'Segunda actividad nombre' => 'Manejo de Residuos',

@@ -87,6 +87,7 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.14'
             ),
             'Viviendas' => array(
+                'Hogares' => '274',
                 'Hogares Jefatura masculina' => '64.06',
                 'Hogares Jefatura femenina' => '35.94',
                 'Ocupación por Vivienda' => '3.21',
@@ -98,6 +99,9 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '85.40',
                 'Viviendas con Celular' => '99.64',
                 'Viviendas con Internet' => '72.74'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

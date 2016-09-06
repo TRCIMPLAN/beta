@@ -87,6 +87,7 @@ class Seccion38 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.36'
             ),
             'Viviendas' => array(
+                'Hogares' => '230',
                 'Hogares Jefatura masculina' => '78.84',
                 'Hogares Jefatura femenina' => '21.16',
                 'Ocupación por Vivienda' => '3.89',
@@ -100,6 +101,7 @@ class Seccion38 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '67.05'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '23',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '39.13',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

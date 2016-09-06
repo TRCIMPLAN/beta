@@ -87,6 +87,7 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.59'
             ),
             'Viviendas' => array(
+                'Hogares' => '391',
                 'Hogares Jefatura masculina' => '73.91',
                 'Hogares Jefatura femenina' => '26.09',
                 'Ocupación por Vivienda' => '3.47',
@@ -100,6 +101,7 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.79'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.37',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

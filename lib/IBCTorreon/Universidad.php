@@ -87,6 +87,7 @@ class Universidad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '55.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '72',
                 'Hogares Jefatura masculina' => '50.00',
                 'Hogares Jefatura femenina' => '50.00',
                 'Ocupación por Vivienda' => '3.99',
@@ -100,6 +101,7 @@ class Universidad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '9.19'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '27.27',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

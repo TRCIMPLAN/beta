@@ -87,6 +87,7 @@ class GranjasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.43'
             ),
             'Viviendas' => array(
+                'Hogares' => '117',
                 'Hogares Jefatura masculina' => '76.01',
                 'Hogares Jefatura femenina' => '23.99',
                 'Ocupación por Vivienda' => '3.94',
@@ -100,6 +101,7 @@ class GranjasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '85.54'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '54',
                 'Primer actividad nombre' => 'Financieros y Seguros',
                 'Primer actividad porcentaje' => '22.22',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

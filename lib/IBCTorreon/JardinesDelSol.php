@@ -87,6 +87,7 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.14'
             ),
             'Viviendas' => array(
+                'Hogares' => '277',
                 'Hogares Jefatura masculina' => '83.03',
                 'Hogares Jefatura femenina' => '16.97',
                 'Ocupación por Vivienda' => '3.57',
@@ -100,6 +101,7 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.94'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '68.97',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

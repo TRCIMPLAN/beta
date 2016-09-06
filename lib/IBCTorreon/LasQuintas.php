@@ -87,6 +87,7 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '124',
                 'Hogares Jefatura masculina' => '83.87',
                 'Hogares Jefatura femenina' => '16.13',
                 'Ocupación por Vivienda' => '4.31',
@@ -98,6 +99,9 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '95.16',
                 'Viviendas con Celular' => '96.77',
                 'Viviendas con Internet' => '92.81'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class Anna extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.97'
             ),
             'Viviendas' => array(
+                'Hogares' => '1205',
                 'Hogares Jefatura masculina' => '84.13',
                 'Hogares Jefatura femenina' => '15.87',
                 'Ocupación por Vivienda' => '3.88',
@@ -100,6 +101,7 @@ class Anna extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.08'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '78',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '51.28',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

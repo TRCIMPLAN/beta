@@ -87,6 +87,7 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.84'
             ),
             'Viviendas' => array(
+                'Hogares' => '3237',
                 'Hogares Jefatura masculina' => '74.51',
                 'Hogares Jefatura femenina' => '25.49',
                 'Ocupación por Vivienda' => '4.02',
@@ -100,6 +101,7 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '18.90'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '444',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.26',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.79'
             ),
             'Viviendas' => array(
+                'Hogares' => '468',
                 'Hogares Jefatura masculina' => '75.82',
                 'Hogares Jefatura femenina' => '24.18',
                 'Ocupación por Vivienda' => '3.79',
@@ -100,6 +101,7 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '30.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '44',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '54.55',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

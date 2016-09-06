@@ -92,11 +92,19 @@ class TablaWeb implements SalidaWeb {
             foreach ($this->estructura as $clave => $parametros) {
                 $celda = $fila[$clave];
                 if (is_object($celda) && ($celda instanceof SalidaWeb)) {
-                    $r[] = sprintf("        %s", $celda->html());
+                    if ($parametros['clase'] != '') {
+                        $r[] = sprintf("        <td class=\"{$parametros['clase']}>%s</td>", $celda->html());
+                    } else {
+                        $r[] = sprintf("        <td>%s</td>", $celda->html());
+                    }
                 } elseif (is_string($celda) && ($celda != '')) {
-                    $r[] = "        <td>{$celda}</td>";
+                    if ($parametros['clase'] != '') {
+                        $r[] = "        <td class=\"{$parametros['clase']}\">{$celda}</td>";
+                    } else {
+                        $r[] = "        <td>{$celda}</td>";
+                    }
                 } else {
-                    $r[] = "        <td>N/D</td>";
+                    $r[] = "        <td class=\"nd\">N/D</td>";
                 }
             }
             $a[] = implode("\n", $r);

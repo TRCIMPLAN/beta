@@ -87,6 +87,7 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '130',
                 'Hogares Jefatura masculina' => '78.46',
                 'Hogares Jefatura femenina' => '21.54',
                 'Ocupación por Vivienda' => '3.50',
@@ -100,6 +101,7 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '55.38'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

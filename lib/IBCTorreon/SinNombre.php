@@ -87,6 +87,7 @@ class SinNombre extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.37'
             ),
             'Viviendas' => array(
+                'Hogares' => '105',
                 'Hogares Jefatura masculina' => '81.96',
                 'Hogares Jefatura femenina' => '18.04',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class SinNombre extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '31.32'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '439',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.46',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

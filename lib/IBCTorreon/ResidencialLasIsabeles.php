@@ -87,6 +87,7 @@ class ResidencialLasIsabeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.30'
             ),
             'Viviendas' => array(
+                'Hogares' => '165',
                 'Hogares Jefatura masculina' => '88.48',
                 'Hogares Jefatura femenina' => '11.52',
                 'Ocupación por Vivienda' => '4.45',
@@ -100,6 +101,7 @@ class ResidencialLasIsabeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '92.73'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '80.00',
                 'Segunda actividad nombre' => 'Educativos',

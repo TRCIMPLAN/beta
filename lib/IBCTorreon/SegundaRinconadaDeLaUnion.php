@@ -87,6 +87,7 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.37'
             ),
             'Viviendas' => array(
+                'Hogares' => '246',
                 'Hogares Jefatura masculina' => '72.71',
                 'Hogares Jefatura femenina' => '27.29',
                 'Ocupación por Vivienda' => '3.91',
@@ -100,6 +101,7 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.37'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

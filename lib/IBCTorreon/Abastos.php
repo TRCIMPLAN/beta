@@ -87,6 +87,7 @@ class Abastos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.46'
             ),
             'Viviendas' => array(
+                'Hogares' => '989',
                 'Hogares Jefatura masculina' => '68.35',
                 'Hogares Jefatura femenina' => '31.65',
                 'Ocupación por Vivienda' => '3.83',
@@ -100,6 +101,7 @@ class Abastos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '16.10'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '159',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.28',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

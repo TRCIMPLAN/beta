@@ -87,6 +87,7 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '58.61'
             ),
             'Viviendas' => array(
+                'Hogares' => '433',
                 'Hogares Jefatura masculina' => '58.57',
                 'Hogares Jefatura femenina' => '41.43',
                 'Ocupación por Vivienda' => '3.53',
@@ -100,6 +101,7 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '21.97'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2442',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.29',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

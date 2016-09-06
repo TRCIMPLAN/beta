@@ -87,6 +87,7 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '90.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '39',
                 'Hogares Jefatura masculina' => '79.49',
                 'Hogares Jefatura femenina' => '20.51',
                 'Ocupación por Vivienda' => '3.59',
@@ -98,6 +99,9 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '89.74',
                 'Viviendas con Celular' => '92.31',
                 'Viviendas con Internet' => '84.62'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

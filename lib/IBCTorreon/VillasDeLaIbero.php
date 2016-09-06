@@ -87,6 +87,7 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.64'
             ),
             'Viviendas' => array(
+                'Hogares' => '202',
                 'Hogares Jefatura masculina' => '90.10',
                 'Hogares Jefatura femenina' => '9.90',
                 'Ocupación por Vivienda' => '3.61',
@@ -100,6 +101,7 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '86.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Educativos',

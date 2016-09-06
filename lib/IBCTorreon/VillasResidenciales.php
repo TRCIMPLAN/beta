@@ -87,6 +87,7 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.81'
             ),
             'Viviendas' => array(
+                'Hogares' => '92',
                 'Hogares Jefatura masculina' => '71.74',
                 'Hogares Jefatura femenina' => '28.26',
                 'Ocupación por Vivienda' => '3.50',
@@ -100,6 +101,7 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '81.52'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Manejo de Residuos',
                 'Primer actividad porcentaje' => '25.00',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

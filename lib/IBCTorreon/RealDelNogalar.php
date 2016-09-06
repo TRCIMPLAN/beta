@@ -85,6 +85,12 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
                 'Población Ocupada femenina' => '37.03',
                 'Población Desocupada' => '4.26',
                 'Derechohabiencia' => '73.41'
+            ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

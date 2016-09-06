@@ -87,6 +87,7 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.59'
             ),
             'Viviendas' => array(
+                'Hogares' => '1363',
                 'Hogares Jefatura masculina' => '75.57',
                 'Hogares Jefatura femenina' => '24.43',
                 'Ocupación por Vivienda' => '3.73',
@@ -100,6 +101,7 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '44.97'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '123',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.72',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

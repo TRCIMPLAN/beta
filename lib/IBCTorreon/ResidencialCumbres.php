@@ -87,6 +87,7 @@ class ResidencialCumbres extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.11'
             ),
             'Viviendas' => array(
+                'Hogares' => '5',
                 'Hogares Jefatura masculina' => '93.58',
                 'Hogares Jefatura femenina' => '6.42',
                 'Ocupación por Vivienda' => '4.20',
@@ -98,6 +99,9 @@ class ResidencialCumbres extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '100.00'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class LaDalia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.52'
             ),
             'Viviendas' => array(
+                'Hogares' => '1087',
                 'Hogares Jefatura masculina' => '76.54',
                 'Hogares Jefatura femenina' => '23.46',
                 'Ocupación por Vivienda' => '4.00',
@@ -100,6 +101,7 @@ class LaDalia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '26.12'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '88',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '51.14',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

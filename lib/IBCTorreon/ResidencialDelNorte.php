@@ -87,6 +87,7 @@ class ResidencialDelNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.46'
             ),
             'Viviendas' => array(
+                'Hogares' => '2179',
                 'Hogares Jefatura masculina' => '78.71',
                 'Hogares Jefatura femenina' => '21.29',
                 'Ocupación por Vivienda' => '3.89',
@@ -100,6 +101,7 @@ class ResidencialDelNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '31.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '134',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.51',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

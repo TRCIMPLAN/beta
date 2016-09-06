@@ -87,6 +87,7 @@ class ResidencialSenderos2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.42'
             ),
             'Viviendas' => array(
+                'Hogares' => '203',
                 'Hogares Jefatura masculina' => '82.51',
                 'Hogares Jefatura femenina' => '17.49',
                 'Ocupación por Vivienda' => '3.50',
@@ -100,6 +101,7 @@ class ResidencialSenderos2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '74.87'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Construcción',

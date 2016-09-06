@@ -87,6 +87,7 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.43'
             ),
             'Viviendas' => array(
+                'Hogares' => '521',
                 'Hogares Jefatura masculina' => '78.89',
                 'Hogares Jefatura femenina' => '21.11',
                 'Ocupación por Vivienda' => '3.67',
@@ -100,6 +101,7 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.45'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '56',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.64',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

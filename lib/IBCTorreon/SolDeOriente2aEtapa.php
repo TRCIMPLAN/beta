@@ -87,6 +87,7 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.98'
             ),
             'Viviendas' => array(
+                'Hogares' => '293',
                 'Hogares Jefatura masculina' => '82.94',
                 'Hogares Jefatura femenina' => '17.06',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '23.93'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '36',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.22',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

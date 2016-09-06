@@ -87,6 +87,7 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.63'
             ),
             'Viviendas' => array(
+                'Hogares' => '582',
                 'Hogares Jefatura masculina' => '71.11',
                 'Hogares Jefatura femenina' => '28.89',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.80'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '59',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.07',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

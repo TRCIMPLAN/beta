@@ -87,6 +87,7 @@ class LosPortales extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '100.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '16',
                 'Hogares Jefatura masculina' => '75.00',
                 'Hogares Jefatura femenina' => '25.00',
                 'Ocupación por Vivienda' => '3.06',
@@ -100,6 +101,7 @@ class LosPortales extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '93.75'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

@@ -87,6 +87,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.36'
             ),
             'Viviendas' => array(
+                'Hogares' => '433',
                 'Hogares Jefatura masculina' => '77.37',
                 'Hogares Jefatura femenina' => '22.63',
                 'Ocupación por Vivienda' => '4.01',
@@ -100,6 +101,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.84'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '53',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.62',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

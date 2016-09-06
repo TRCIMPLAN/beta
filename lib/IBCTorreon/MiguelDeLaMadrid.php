@@ -87,6 +87,7 @@ class MiguelDeLaMadrid extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '67.68'
             ),
             'Viviendas' => array(
+                'Hogares' => '301',
                 'Hogares Jefatura masculina' => '79.73',
                 'Hogares Jefatura femenina' => '20.27',
                 'Ocupación por Vivienda' => '4.38',
@@ -100,6 +101,7 @@ class MiguelDeLaMadrid extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.26'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '68',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.29',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

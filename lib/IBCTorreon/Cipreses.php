@@ -87,6 +87,7 @@ class Cipreses extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '16',
                 'Hogares Jefatura masculina' => '87.50',
                 'Hogares Jefatura femenina' => '12.50',
                 'Ocupación por Vivienda' => '3.81',
@@ -98,6 +99,9 @@ class Cipreses extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '100.00',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '100.00'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

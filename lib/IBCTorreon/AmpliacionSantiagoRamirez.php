@@ -87,6 +87,7 @@ class AmpliacionSantiagoRamirez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '844',
                 'Hogares Jefatura masculina' => '81.74',
                 'Hogares Jefatura femenina' => '18.26',
                 'Ocupación por Vivienda' => '4.16',
@@ -100,6 +101,7 @@ class AmpliacionSantiagoRamirez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '5.69'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '86',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '47.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

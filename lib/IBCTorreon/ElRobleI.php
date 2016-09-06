@@ -87,6 +87,7 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.12'
             ),
             'Viviendas' => array(
+                'Hogares' => '332',
                 'Hogares Jefatura masculina' => '71.99',
                 'Hogares Jefatura femenina' => '28.01',
                 'Ocupación por Vivienda' => '3.73',
@@ -100,6 +101,7 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '33.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class RinconLaMerced extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.68'
             ),
             'Viviendas' => array(
+                'Hogares' => '3946',
                 'Hogares Jefatura masculina' => '79.70',
                 'Hogares Jefatura femenina' => '20.30',
                 'Ocupación por Vivienda' => '3.93',
@@ -100,6 +101,7 @@ class RinconLaMerced extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '29.52'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '309',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.63',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

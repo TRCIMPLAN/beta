@@ -87,6 +87,7 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.65'
             ),
             'Viviendas' => array(
+                'Hogares' => '6',
                 'Hogares Jefatura masculina' => '93.64',
                 'Hogares Jefatura femenina' => '6.36',
                 'Ocupación por Vivienda' => '2.17',
@@ -100,6 +101,7 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.42'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Educativos',

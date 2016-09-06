@@ -87,6 +87,7 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '48',
                 'Hogares Jefatura masculina' => '91.67',
                 'Hogares Jefatura femenina' => '8.33',
                 'Ocupación por Vivienda' => '3.12',
@@ -98,6 +99,9 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '97.92',
                 'Viviendas con Celular' => '91.67',
                 'Viviendas con Internet' => '91.67'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.57'
             ),
             'Viviendas' => array(
+                'Hogares' => '570',
                 'Hogares Jefatura masculina' => '72.63',
                 'Hogares Jefatura femenina' => '27.37',
                 'Ocupación por Vivienda' => '4.32',
@@ -100,6 +101,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '20.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '74',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '52.70',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

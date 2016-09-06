@@ -87,6 +87,7 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.21'
             ),
             'Viviendas' => array(
+                'Hogares' => '901',
                 'Hogares Jefatura masculina' => '80.98',
                 'Hogares Jefatura femenina' => '19.02',
                 'Ocupación por Vivienda' => '4.00',
@@ -100,6 +101,7 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '14.42'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '41',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.90',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

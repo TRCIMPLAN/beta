@@ -87,6 +87,7 @@ class Amistad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.39'
             ),
             'Viviendas' => array(
+                'Hogares' => '1381',
                 'Hogares Jefatura masculina' => '78.07',
                 'Hogares Jefatura femenina' => '21.93',
                 'Ocupación por Vivienda' => '3.54',
@@ -100,6 +101,7 @@ class Amistad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '25.59'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '62',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.39',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

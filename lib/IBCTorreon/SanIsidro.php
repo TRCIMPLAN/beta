@@ -87,6 +87,7 @@ class SanIsidro extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.58'
             ),
             'Viviendas' => array(
+                'Hogares' => '599',
                 'Hogares Jefatura masculina' => '74.71',
                 'Hogares Jefatura femenina' => '25.29',
                 'Ocupación por Vivienda' => '3.59',
@@ -100,6 +101,7 @@ class SanIsidro extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '80.13'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '155',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '28.39',
                 'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',

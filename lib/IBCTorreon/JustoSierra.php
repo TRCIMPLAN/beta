@@ -87,6 +87,7 @@ class JustoSierra extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.09'
             ),
             'Viviendas' => array(
+                'Hogares' => '34',
                 'Hogares Jefatura masculina' => '74.52',
                 'Hogares Jefatura femenina' => '25.48',
                 'Ocupación por Vivienda' => '3.53',
@@ -100,6 +101,7 @@ class JustoSierra extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '5.34'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

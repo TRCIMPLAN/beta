@@ -87,6 +87,7 @@ class Compresora extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '66.33'
             ),
             'Viviendas' => array(
+                'Hogares' => '288',
                 'Hogares Jefatura masculina' => '64.70',
                 'Hogares Jefatura femenina' => '35.30',
                 'Ocupación por Vivienda' => '3.97',
@@ -100,6 +101,7 @@ class Compresora extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.29'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '15',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

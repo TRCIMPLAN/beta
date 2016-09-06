@@ -87,6 +87,7 @@ class TorreonResidencial extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.37'
             ),
             'Viviendas' => array(
+                'Hogares' => '1607',
                 'Hogares Jefatura masculina' => '70.75',
                 'Hogares Jefatura femenina' => '29.25',
                 'Ocupación por Vivienda' => '3.48',
@@ -100,6 +101,7 @@ class TorreonResidencial extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '71.09'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '172',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '23.84',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

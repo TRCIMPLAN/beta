@@ -87,6 +87,7 @@ class LasFloresCooperativaHabitacional extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.70'
             ),
             'Viviendas' => array(
+                'Hogares' => '41',
                 'Hogares Jefatura masculina' => '80.49',
                 'Hogares Jefatura femenina' => '19.51',
                 'Ocupación por Vivienda' => '3.88',
@@ -100,6 +101,7 @@ class LasFloresCooperativaHabitacional extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '58.54'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

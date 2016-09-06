@@ -87,6 +87,7 @@ class SateliteDeLaLagunaIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.70'
             ),
             'Viviendas' => array(
+                'Hogares' => '152',
                 'Hogares Jefatura masculina' => '77.63',
                 'Hogares Jefatura femenina' => '22.37',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class SateliteDeLaLagunaIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '35.53'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '31.58',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

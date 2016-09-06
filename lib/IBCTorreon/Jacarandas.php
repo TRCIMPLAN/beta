@@ -87,6 +87,7 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.96'
             ),
             'Viviendas' => array(
+                'Hogares' => '480',
                 'Hogares Jefatura masculina' => '47.50',
                 'Hogares Jefatura femenina' => '52.50',
                 'Ocupación por Vivienda' => '3.66',
@@ -100,6 +101,7 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '30.09'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '79',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '56.96',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

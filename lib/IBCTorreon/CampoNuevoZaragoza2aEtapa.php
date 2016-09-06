@@ -87,6 +87,7 @@ class CampoNuevoZaragoza2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.20'
             ),
             'Viviendas' => array(
+                'Hogares' => '1060',
                 'Hogares Jefatura masculina' => '84.71',
                 'Hogares Jefatura femenina' => '15.29',
                 'Ocupación por Vivienda' => '3.68',
@@ -100,6 +101,7 @@ class CampoNuevoZaragoza2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '63',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.51',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

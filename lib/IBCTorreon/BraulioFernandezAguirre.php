@@ -87,6 +87,7 @@ class BraulioFernandezAguirre extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '69.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '813',
                 'Hogares Jefatura masculina' => '72.15',
                 'Hogares Jefatura femenina' => '27.85',
                 'Ocupación por Vivienda' => '3.93',
@@ -100,6 +101,7 @@ class BraulioFernandezAguirre extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.11'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '104',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '37.50',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

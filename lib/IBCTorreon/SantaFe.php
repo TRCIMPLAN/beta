@@ -87,6 +87,7 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '85.61'
             ),
             'Viviendas' => array(
+                'Hogares' => '262',
                 'Hogares Jefatura masculina' => '75.19',
                 'Hogares Jefatura femenina' => '24.81',
                 'Ocupación por Vivienda' => '3.13',
@@ -100,6 +101,7 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '49.62'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '16',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.75',
                 'Segunda actividad nombre' => 'Educativos',

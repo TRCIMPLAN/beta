@@ -87,6 +87,7 @@ class Roma extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.39'
             ),
             'Viviendas' => array(
+                'Hogares' => '494',
                 'Hogares Jefatura masculina' => '75.71',
                 'Hogares Jefatura femenina' => '24.29',
                 'Ocupación por Vivienda' => '3.64',
@@ -100,6 +101,7 @@ class Roma extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '68.83'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '63.64',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

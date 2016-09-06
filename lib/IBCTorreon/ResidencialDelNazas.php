@@ -87,6 +87,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.58'
             ),
             'Viviendas' => array(
+                'Hogares' => '329',
                 'Hogares Jefatura masculina' => '78.67',
                 'Hogares Jefatura femenina' => '21.33',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '47.98'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '46',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.13',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

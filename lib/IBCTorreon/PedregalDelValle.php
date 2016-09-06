@@ -87,6 +87,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.19'
             ),
             'Viviendas' => array(
+                'Hogares' => '505',
                 'Hogares Jefatura masculina' => '82.18',
                 'Hogares Jefatura femenina' => '17.82',
                 'Ocupación por Vivienda' => '3.90',
@@ -100,6 +101,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '25.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.48',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

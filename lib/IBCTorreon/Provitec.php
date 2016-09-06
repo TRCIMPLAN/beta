@@ -87,6 +87,7 @@ class Provitec extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '351',
                 'Hogares Jefatura masculina' => '69.80',
                 'Hogares Jefatura femenina' => '30.20',
                 'Ocupación por Vivienda' => '3.54',
@@ -100,6 +101,7 @@ class Provitec extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '52.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '82',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.02',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.23'
             ),
             'Viviendas' => array(
+                'Hogares' => '458',
                 'Hogares Jefatura masculina' => '81.66',
                 'Hogares Jefatura femenina' => '18.34',
                 'Ocupación por Vivienda' => '3.65',
@@ -100,6 +101,7 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '34.28'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '16',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.75',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

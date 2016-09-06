@@ -87,6 +87,7 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.50'
             ),
             'Viviendas' => array(
+                'Hogares' => '158',
                 'Hogares Jefatura masculina' => '72.15',
                 'Hogares Jefatura femenina' => '27.85',
                 'Ocupación por Vivienda' => '3.56',
@@ -100,6 +101,7 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.79'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '29',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.48',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

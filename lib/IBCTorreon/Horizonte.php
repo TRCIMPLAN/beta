@@ -87,6 +87,7 @@ class Horizonte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.87'
             ),
             'Viviendas' => array(
+                'Hogares' => '63',
                 'Hogares Jefatura masculina' => '61.90',
                 'Hogares Jefatura femenina' => '38.10',
                 'Ocupación por Vivienda' => '3.10',
@@ -100,6 +101,7 @@ class Horizonte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '57.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Salud',

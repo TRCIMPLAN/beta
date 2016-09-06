@@ -87,6 +87,7 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.29'
             ),
             'Viviendas' => array(
+                'Hogares' => '484',
                 'Hogares Jefatura masculina' => '69.63',
                 'Hogares Jefatura femenina' => '30.37',
                 'Ocupación por Vivienda' => '3.77',
@@ -100,6 +101,7 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '11.70'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '43',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.19',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

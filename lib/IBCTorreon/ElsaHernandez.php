@@ -87,6 +87,7 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.40'
             ),
             'Viviendas' => array(
+                'Hogares' => '569',
                 'Hogares Jefatura masculina' => '63.98',
                 'Hogares Jefatura femenina' => '36.02',
                 'Ocupación por Vivienda' => '4.22',
@@ -100,6 +101,7 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.77'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '89',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '38.20',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

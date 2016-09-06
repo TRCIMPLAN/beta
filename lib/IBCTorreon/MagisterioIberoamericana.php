@@ -87,6 +87,7 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.18'
             ),
             'Viviendas' => array(
+                'Hogares' => '8',
                 'Hogares Jefatura masculina' => '87.87',
                 'Hogares Jefatura femenina' => '12.13',
                 'Ocupación por Vivienda' => '4.12',
@@ -100,6 +101,7 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '83.12'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

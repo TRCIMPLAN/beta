@@ -87,6 +87,7 @@ class SanJoaquin extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.60'
             ),
             'Viviendas' => array(
+                'Hogares' => '972',
                 'Hogares Jefatura masculina' => '69.16',
                 'Hogares Jefatura femenina' => '30.84',
                 'Ocupación por Vivienda' => '3.75',
@@ -100,6 +101,7 @@ class SanJoaquin extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.40'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '122',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '39.34',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

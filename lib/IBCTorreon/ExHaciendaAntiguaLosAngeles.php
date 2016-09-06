@@ -87,6 +87,7 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '87.31'
             ),
             'Viviendas' => array(
+                'Hogares' => '166',
                 'Hogares Jefatura masculina' => '75.61',
                 'Hogares Jefatura femenina' => '24.39',
                 'Ocupación por Vivienda' => '3.62',
@@ -100,6 +101,7 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '81.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '40',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '27.50',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

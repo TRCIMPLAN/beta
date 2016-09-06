@@ -87,6 +87,7 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.84'
             ),
             'Viviendas' => array(
+                'Hogares' => '527',
                 'Hogares Jefatura masculina' => '70.66',
                 'Hogares Jefatura femenina' => '29.34',
                 'Ocupación por Vivienda' => '3.40',
@@ -100,6 +101,7 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '53.35'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '42.86',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

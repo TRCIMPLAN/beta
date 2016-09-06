@@ -87,6 +87,7 @@ class ParqueIndustrialLaAmistad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '82.61'
             ),
             'Viviendas' => array(
+                'Hogares' => '12',
                 'Hogares Jefatura masculina' => '75.00',
                 'Hogares Jefatura femenina' => '25.00',
                 'Ocupación por Vivienda' => '3.83',
@@ -100,6 +101,7 @@ class ParqueIndustrialLaAmistad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '32.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.00',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

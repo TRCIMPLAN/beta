@@ -87,6 +87,7 @@ class NuevoTorreon extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.49'
             ),
             'Viviendas' => array(
+                'Hogares' => '653',
                 'Hogares Jefatura masculina' => '69.40',
                 'Hogares Jefatura femenina' => '30.60',
                 'Ocupación por Vivienda' => '3.78',
@@ -100,6 +101,7 @@ class NuevoTorreon extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '44.37'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '140',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '28.57',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

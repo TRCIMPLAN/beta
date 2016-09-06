@@ -87,6 +87,7 @@ class EjidoZaragoza extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.45'
             ),
             'Viviendas' => array(
+                'Hogares' => '215',
                 'Hogares Jefatura masculina' => '85.05',
                 'Hogares Jefatura femenina' => '14.95',
                 'Ocupación por Vivienda' => '4.00',
@@ -100,6 +101,7 @@ class EjidoZaragoza extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '40',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.00',
                 'Segunda actividad nombre' => 'Educativos',

@@ -44,7 +44,7 @@ class EjeDemografiaTablaWeb extends EjeDemografia implements SalidaWeb {
                 $this->tabla->definir_estructura(
                     array(
                         'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor')
+                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
                     )
                 );
                 $this->tabla->definir_panal(

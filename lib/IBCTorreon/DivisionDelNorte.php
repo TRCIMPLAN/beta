@@ -87,6 +87,7 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '65.49'
             ),
             'Viviendas' => array(
+                'Hogares' => '1122',
                 'Hogares Jefatura masculina' => '72.74',
                 'Hogares Jefatura femenina' => '27.26',
                 'Ocupación por Vivienda' => '4.25',
@@ -100,6 +101,7 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.62'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '94',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.62',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

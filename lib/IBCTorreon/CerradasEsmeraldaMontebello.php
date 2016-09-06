@@ -87,6 +87,7 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '82.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '42',
                 'Hogares Jefatura masculina' => '83.33',
                 'Hogares Jefatura femenina' => '16.67',
                 'Ocupación por Vivienda' => '3.71',
@@ -98,6 +99,9 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '92.86',
                 'Viviendas con Celular' => '97.62',
                 'Viviendas con Internet' => '88.10'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

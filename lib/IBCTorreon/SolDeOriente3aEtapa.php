@@ -87,6 +87,7 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.89'
             ),
             'Viviendas' => array(
+                'Hogares' => '258',
                 'Hogares Jefatura masculina' => '80.62',
                 'Hogares Jefatura femenina' => '19.38',
                 'Ocupación por Vivienda' => '3.51',
@@ -100,6 +101,7 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '39.15'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '53.85',
                 'Segunda actividad nombre' => 'Financieros y Seguros',

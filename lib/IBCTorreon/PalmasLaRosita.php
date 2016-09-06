@@ -87,6 +87,7 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '89.36'
             ),
             'Viviendas' => array(
+                'Hogares' => '36',
                 'Hogares Jefatura masculina' => '86.11',
                 'Hogares Jefatura femenina' => '13.89',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '97.22'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

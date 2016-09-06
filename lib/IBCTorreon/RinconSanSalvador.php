@@ -87,6 +87,7 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.11'
             ),
             'Viviendas' => array(
+                'Hogares' => '166',
                 'Hogares Jefatura masculina' => '78.31',
                 'Hogares Jefatura femenina' => '21.69',
                 'Ocupación por Vivienda' => '3.67',
@@ -100,6 +101,7 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '42.77'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '75.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

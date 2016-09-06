@@ -87,6 +87,7 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '163',
                 'Hogares Jefatura masculina' => '85.28',
                 'Hogares Jefatura femenina' => '14.72',
                 'Ocupación por Vivienda' => '4.30',
@@ -100,6 +101,7 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '19.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '23.08',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '66.78'
             ),
             'Viviendas' => array(
+                'Hogares' => '598',
                 'Hogares Jefatura masculina' => '72.74',
                 'Hogares Jefatura femenina' => '27.26',
                 'Ocupación por Vivienda' => '4.25',
@@ -100,6 +101,7 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.14'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '85',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

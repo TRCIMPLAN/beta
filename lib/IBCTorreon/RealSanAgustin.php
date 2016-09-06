@@ -87,6 +87,7 @@ class RealSanAgustin extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.34'
             ),
             'Viviendas' => array(
+                'Hogares' => '166',
                 'Hogares Jefatura masculina' => '81.33',
                 'Hogares Jefatura femenina' => '18.67',
                 'Ocupación por Vivienda' => '3.72',
@@ -100,6 +101,7 @@ class RealSanAgustin extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '4.36'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Comercio Menudeo',

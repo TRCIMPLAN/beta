@@ -87,6 +87,7 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '74.17'
             ),
             'Viviendas' => array(
+                'Hogares' => '987',
                 'Hogares Jefatura masculina' => '83.54',
                 'Hogares Jefatura femenina' => '16.46',
                 'Ocupación por Vivienda' => '4.06',
@@ -100,6 +101,7 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '149',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.31',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

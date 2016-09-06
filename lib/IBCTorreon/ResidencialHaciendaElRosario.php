@@ -87,6 +87,7 @@ class ResidencialHaciendaElRosario extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.49'
             ),
             'Viviendas' => array(
+                'Hogares' => '174',
                 'Hogares Jefatura masculina' => '92.53',
                 'Hogares Jefatura femenina' => '7.47',
                 'Ocupación por Vivienda' => '4.23',
@@ -100,6 +101,7 @@ class ResidencialHaciendaElRosario extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '71.84'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

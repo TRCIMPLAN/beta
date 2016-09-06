@@ -87,6 +87,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.75'
             ),
             'Viviendas' => array(
+                'Hogares' => '488',
                 'Hogares Jefatura masculina' => '81.01',
                 'Hogares Jefatura femenina' => '18.99',
                 'Ocupación por Vivienda' => '3.92',
@@ -100,6 +101,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '4.59'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '40',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '52.50',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.15'
             ),
             'Viviendas' => array(
+                'Hogares' => '1725',
                 'Hogares Jefatura masculina' => '82.73',
                 'Hogares Jefatura femenina' => '17.27',
                 'Ocupación por Vivienda' => '3.55',
@@ -100,6 +101,7 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '12.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '127',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.46',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

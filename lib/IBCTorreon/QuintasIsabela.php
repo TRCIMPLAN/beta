@@ -87,6 +87,7 @@ class QuintasIsabela extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '100.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '11',
                 'Hogares Jefatura masculina' => '72.73',
                 'Hogares Jefatura femenina' => '27.27',
                 'Ocupación por Vivienda' => '2.55',
@@ -98,6 +99,9 @@ class QuintasIsabela extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '81.82',
                 'Viviendas con Celular' => '81.82',
                 'Viviendas con Internet' => '81.82'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

@@ -87,6 +87,7 @@ class Duranguena extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '46.93'
             ),
             'Viviendas' => array(
+                'Hogares' => '263',
                 'Hogares Jefatura masculina' => '66.89',
                 'Hogares Jefatura femenina' => '33.11',
                 'Ocupación por Vivienda' => '3.76',
@@ -100,6 +101,7 @@ class Duranguena extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '2.19'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '70.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

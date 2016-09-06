@@ -87,6 +87,7 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.75'
             ),
             'Viviendas' => array(
+                'Hogares' => '108',
                 'Hogares Jefatura masculina' => '86.11',
                 'Hogares Jefatura femenina' => '13.89',
                 'Ocupación por Vivienda' => '4.27',
@@ -100,6 +101,7 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '80.56'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class Alamedas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.68'
             ),
             'Viviendas' => array(
+                'Hogares' => '1920',
                 'Hogares Jefatura masculina' => '71.67',
                 'Hogares Jefatura femenina' => '28.33',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class Alamedas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '32.72'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '136',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.85',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

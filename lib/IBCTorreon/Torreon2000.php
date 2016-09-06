@@ -87,6 +87,7 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '80.48'
             ),
             'Viviendas' => array(
+                'Hogares' => '242',
                 'Hogares Jefatura masculina' => '85.95',
                 'Hogares Jefatura femenina' => '14.05',
                 'Ocupación por Vivienda' => '3.81',
@@ -100,6 +101,7 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '39.67'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '9',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Manejo de Residuos',

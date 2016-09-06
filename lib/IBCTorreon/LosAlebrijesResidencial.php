@@ -87,6 +87,7 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '83.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '66',
                 'Hogares Jefatura masculina' => '72.73',
                 'Hogares Jefatura femenina' => '27.27',
                 'Ocupación por Vivienda' => '3.35',
@@ -100,6 +101,7 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '71.21'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Educativos',

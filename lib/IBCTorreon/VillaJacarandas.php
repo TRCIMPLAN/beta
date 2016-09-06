@@ -87,6 +87,7 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.77'
             ),
             'Viviendas' => array(
+                'Hogares' => '718',
                 'Hogares Jefatura masculina' => '66.43',
                 'Hogares Jefatura femenina' => '33.57',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '28.41'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '71',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '38.03',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.35'
             ),
             'Viviendas' => array(
+                'Hogares' => '440',
                 'Hogares Jefatura masculina' => '84.14',
                 'Hogares Jefatura femenina' => '15.86',
                 'Ocupación por Vivienda' => '3.54',
@@ -100,6 +101,7 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.31'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '9',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '77.78',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

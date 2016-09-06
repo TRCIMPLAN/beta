@@ -87,6 +87,7 @@ class LucioCabanas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '53.63'
             ),
             'Viviendas' => array(
+                'Hogares' => '77',
                 'Hogares Jefatura masculina' => '62.34',
                 'Hogares Jefatura femenina' => '37.66',
                 'Ocupación por Vivienda' => '5.01',
@@ -100,6 +101,7 @@ class LucioCabanas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.07'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '75.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

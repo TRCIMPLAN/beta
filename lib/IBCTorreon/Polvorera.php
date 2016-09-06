@@ -87,6 +87,7 @@ class Polvorera extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.42'
             ),
             'Viviendas' => array(
+                'Hogares' => '324',
                 'Hogares Jefatura masculina' => '75.27',
                 'Hogares Jefatura femenina' => '24.73',
                 'Ocupación por Vivienda' => '3.73',
@@ -100,6 +101,7 @@ class Polvorera extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.97'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '76.47',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

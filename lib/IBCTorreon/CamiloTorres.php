@@ -87,6 +87,7 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.44'
             ),
             'Viviendas' => array(
+                'Hogares' => '227',
                 'Hogares Jefatura masculina' => '79.55',
                 'Hogares Jefatura femenina' => '20.45',
                 'Ocupación por Vivienda' => '3.87',
@@ -100,6 +101,7 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.07'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '21',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

@@ -87,6 +87,7 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.48'
             ),
             'Viviendas' => array(
+                'Hogares' => '80',
                 'Hogares Jefatura masculina' => '80.00',
                 'Hogares Jefatura femenina' => '20.00',
                 'Ocupación por Vivienda' => '3.78',
@@ -98,6 +99,9 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '54.29',
                 'Viviendas con Celular' => '91.25',
                 'Viviendas con Internet' => '33.75'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

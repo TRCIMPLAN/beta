@@ -87,6 +87,7 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '87.89'
             ),
             'Viviendas' => array(
+                'Hogares' => '52',
                 'Hogares Jefatura masculina' => '86.54',
                 'Hogares Jefatura femenina' => '13.46',
                 'Ocupación por Vivienda' => '4.29',
@@ -100,6 +101,7 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '92.31'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '22',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '36.36',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

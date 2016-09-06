@@ -87,6 +87,7 @@ class NuevaCreacion extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.11'
             ),
             'Viviendas' => array(
+                'Hogares' => '79',
                 'Hogares Jefatura masculina' => '84.81',
                 'Hogares Jefatura femenina' => '15.19',
                 'Ocupación por Vivienda' => '4.63',
@@ -100,6 +101,7 @@ class NuevaCreacion extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '0.00'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

@@ -87,6 +87,7 @@ class VillasDeLaHacienda extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.60'
             ),
             'Viviendas' => array(
+                'Hogares' => '498',
                 'Hogares Jefatura masculina' => '78.11',
                 'Hogares Jefatura femenina' => '21.89',
                 'Ocupación por Vivienda' => '3.79',
@@ -100,6 +101,7 @@ class VillasDeLaHacienda extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '74.03'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '31',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.48',
                 'Segunda actividad nombre' => 'Industria Manufacturera',

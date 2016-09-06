@@ -87,6 +87,7 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '63.67'
             ),
             'Viviendas' => array(
+                'Hogares' => '696',
                 'Hogares Jefatura masculina' => '71.07',
                 'Hogares Jefatura femenina' => '28.93',
                 'Ocupación por Vivienda' => '3.97',
@@ -100,6 +101,7 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.57'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '35',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '54.29',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

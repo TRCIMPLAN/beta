@@ -87,6 +87,7 @@ class Constancia extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.33'
             ),
             'Viviendas' => array(
+                'Hogares' => '308',
                 'Hogares Jefatura masculina' => '71.66',
                 'Hogares Jefatura femenina' => '28.34',
                 'Ocupación por Vivienda' => '3.60',
@@ -100,6 +101,7 @@ class Constancia extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '15.77'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '49',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.82',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

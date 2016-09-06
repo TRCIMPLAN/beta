@@ -87,6 +87,7 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.63'
             ),
             'Viviendas' => array(
+                'Hogares' => '231',
                 'Hogares Jefatura masculina' => '77.06',
                 'Hogares Jefatura femenina' => '22.94',
                 'Ocupación por Vivienda' => '3.91',
@@ -100,6 +101,7 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '26.60'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '26.32',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

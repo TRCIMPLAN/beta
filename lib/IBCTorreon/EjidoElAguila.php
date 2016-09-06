@@ -87,6 +87,7 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.94'
             ),
             'Viviendas' => array(
+                'Hogares' => '389',
                 'Hogares Jefatura masculina' => '80.12',
                 'Hogares Jefatura femenina' => '19.88',
                 'Ocupación por Vivienda' => '4.12',
@@ -100,6 +101,7 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.73'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '45',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '37.78',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

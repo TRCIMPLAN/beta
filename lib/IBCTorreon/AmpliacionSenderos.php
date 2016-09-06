@@ -87,6 +87,7 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.46'
             ),
             'Viviendas' => array(
+                'Hogares' => '35',
                 'Hogares Jefatura masculina' => '82.37',
                 'Hogares Jefatura femenina' => '17.63',
                 'Ocupación por Vivienda' => '3.57',
@@ -100,6 +101,7 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '47.01'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Salud',

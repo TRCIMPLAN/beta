@@ -87,6 +87,7 @@ class ResidencialLasVillas9aEtapa extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '88.00'
             ),
             'Viviendas' => array(
+                'Hogares' => '5',
                 'Hogares Jefatura masculina' => '91.94',
                 'Hogares Jefatura femenina' => '8.06',
                 'Ocupación por Vivienda' => '5.00',
@@ -98,6 +99,9 @@ class ResidencialLasVillas9aEtapa extends \IBCBase\PublicacionWeb {
                 'Viviendas con Computadora' => '84.36',
                 'Viviendas con Celular' => '100.00',
                 'Viviendas con Internet' => '36.58'
+            ),
+            'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '0'
             )
         );
     } // datos

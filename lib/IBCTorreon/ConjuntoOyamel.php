@@ -87,6 +87,7 @@ class ConjuntoOyamel extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '60.71'
             ),
             'Viviendas' => array(
+                'Hogares' => '8',
                 'Hogares Jefatura masculina' => '87.50',
                 'Hogares Jefatura femenina' => '12.50',
                 'Ocupación por Vivienda' => '3.50',
@@ -100,6 +101,7 @@ class ConjuntoOyamel extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.24'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '3',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

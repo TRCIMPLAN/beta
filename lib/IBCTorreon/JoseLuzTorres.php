@@ -87,6 +87,7 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.14'
             ),
             'Viviendas' => array(
+                'Hogares' => '875',
                 'Hogares Jefatura masculina' => '84.54',
                 'Hogares Jefatura femenina' => '15.46',
                 'Ocupación por Vivienda' => '4.26',
@@ -100,6 +101,7 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '7.95'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '94',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '41.49',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

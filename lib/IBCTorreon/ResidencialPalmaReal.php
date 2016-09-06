@@ -87,6 +87,7 @@ class ResidencialPalmaReal extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '86.02'
             ),
             'Viviendas' => array(
+                'Hogares' => '411',
                 'Hogares Jefatura masculina' => '86.41',
                 'Hogares Jefatura femenina' => '13.59',
                 'Ocupación por Vivienda' => '3.18',
@@ -100,6 +101,7 @@ class ResidencialPalmaReal extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '74.07'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '4',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Transportes, Correo, Almacenamiento',

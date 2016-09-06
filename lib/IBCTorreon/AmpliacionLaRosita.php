@@ -87,6 +87,7 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.89'
             ),
             'Viviendas' => array(
+                'Hogares' => '933',
                 'Hogares Jefatura masculina' => '78.09',
                 'Hogares Jefatura femenina' => '21.91',
                 'Ocupación por Vivienda' => '3.68',
@@ -100,6 +101,7 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '82.58'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '156',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '32.05',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

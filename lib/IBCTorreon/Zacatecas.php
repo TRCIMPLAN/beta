@@ -87,6 +87,7 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.70'
             ),
             'Viviendas' => array(
+                'Hogares' => '85',
                 'Hogares Jefatura masculina' => '73.92',
                 'Hogares Jefatura femenina' => '26.08',
                 'Ocupación por Vivienda' => '3.66',
@@ -100,6 +101,7 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '1.41'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '6',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

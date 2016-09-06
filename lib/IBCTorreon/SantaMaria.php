@@ -87,6 +87,7 @@ class SantaMaria extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '71.23'
             ),
             'Viviendas' => array(
+                'Hogares' => '363',
                 'Hogares Jefatura masculina' => '69.70',
                 'Hogares Jefatura femenina' => '30.30',
                 'Ocupación por Vivienda' => '3.62',
@@ -100,6 +101,7 @@ class SantaMaria extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '25.65'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '393',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.46',
                 'Segunda actividad nombre' => 'Comercio Mayoreo',

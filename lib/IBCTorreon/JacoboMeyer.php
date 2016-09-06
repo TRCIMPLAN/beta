@@ -87,6 +87,7 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '53.44'
             ),
             'Viviendas' => array(
+                'Hogares' => '229',
                 'Hogares Jefatura masculina' => '79.34',
                 'Hogares Jefatura femenina' => '20.66',
                 'Ocupación por Vivienda' => '3.98',
@@ -100,6 +101,7 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.33'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '15',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.67',
                 'Segunda actividad nombre' => 'Salud',

@@ -87,6 +87,7 @@ class VinedosDeLaVega extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '64.21'
             ),
             'Viviendas' => array(
+                'Hogares' => '81',
                 'Hogares Jefatura masculina' => '85.63',
                 'Hogares Jefatura femenina' => '14.37',
                 'Ocupación por Vivienda' => '3.69',
@@ -100,6 +101,7 @@ class VinedosDeLaVega extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '10.08'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '100.00',
                 'Segunda actividad nombre' => 'Salud',

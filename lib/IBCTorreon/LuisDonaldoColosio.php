@@ -87,6 +87,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.70'
             ),
             'Viviendas' => array(
+                'Hogares' => '481',
                 'Hogares Jefatura masculina' => '73.66',
                 'Hogares Jefatura femenina' => '26.34',
                 'Ocupación por Vivienda' => '3.66',
@@ -100,6 +101,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '3.23'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '49',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '53.06',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

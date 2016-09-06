@@ -87,6 +87,7 @@ class LasAvesIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '76.75'
             ),
             'Viviendas' => array(
+                'Hogares' => '2',
                 'Hogares Jefatura masculina' => '74.78',
                 'Hogares Jefatura femenina' => '25.22',
                 'Ocupación por Vivienda' => '4.00',
@@ -100,6 +101,7 @@ class LasAvesIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '32.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

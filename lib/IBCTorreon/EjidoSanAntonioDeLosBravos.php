@@ -87,6 +87,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '75.70'
             ),
             'Viviendas' => array(
+                'Hogares' => '590',
                 'Hogares Jefatura masculina' => '76.27',
                 'Hogares Jefatura femenina' => '23.73',
                 'Ocupación por Vivienda' => '4.12',
@@ -100,6 +101,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '21.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '31',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '48.39',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

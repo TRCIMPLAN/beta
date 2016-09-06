@@ -87,6 +87,7 @@ class ResidencialLasEtnias extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '81.57'
             ),
             'Viviendas' => array(
+                'Hogares' => '1067',
                 'Hogares Jefatura masculina' => '85.75',
                 'Hogares Jefatura femenina' => '14.25',
                 'Ocupación por Vivienda' => '3.55',
@@ -100,6 +101,7 @@ class ResidencialLasEtnias extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '43.02'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '54',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.59',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

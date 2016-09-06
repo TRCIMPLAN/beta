@@ -52,6 +52,14 @@ class EjeDemografia {
             } else {
                 throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Demografía.");
             }
+            // Sin Población Total
+            if (isset($this->demografia['Población total'])) {
+                if ($this->demografia['Población total'] == 0) {
+                    throw new EjeExceptionSinDatos("La Población Total es cero.");
+                }
+            } else {
+                throw new EjeExceptionSinDatos("La Población Total no está definida.");
+            }
             // Levantar bandera
             $this->preparado = TRUE;
         }
@@ -65,25 +73,29 @@ class EjeDemografia {
      */
     protected function formatear($nombre) {
         $this->prepapar();
-        switch ($nombre) {
-            case 'Población total':
-                return number_format($this->demografia[$nombre], 0, ".", ",");
-                break;
-            case 'Porcentaje de población masculina':
-            case 'Porcentaje de población femenina':
-            case 'Porcentaje de población de 0 a 14 años':
-            case 'Porcentaje de población de 15 a 64 años':
-            case 'Porcentaje de población de 65 y más años':
-            case 'Porcentaje de población no especificada':
-            case 'Porcentaje de población nacida en otro estado':
-            case 'Porcentaje de población con discapacidad':
-                return number_format($this->demografia[$nombre], 2, ".", ",")." %";
-                break;
-            case 'Fecundidad promedio':
-                return number_format($this->demografia[$nombre], 2, ".", ",");
-                break;
-            default:
-                return $this->demografia[$nombre];
+        if (isset($this->demografia[$nombre])) {
+            switch ($nombre) {
+                case 'Población total':
+                    return number_format($this->demografia[$nombre], 0, ".", ","); // Cantidad
+                    break;
+                case 'Porcentaje de población masculina':
+                case 'Porcentaje de población femenina':
+                case 'Porcentaje de población de 0 a 14 años':
+                case 'Porcentaje de población de 15 a 64 años':
+                case 'Porcentaje de población de 65 y más años':
+                case 'Porcentaje de población no especificada':
+                case 'Porcentaje de población nacida en otro estado':
+                case 'Porcentaje de población con discapacidad':
+                    return number_format($this->demografia[$nombre], 2, ".", ",")." %"; // Porcentaje
+                    break;
+                case 'Fecundidad promedio':
+                    return number_format($this->demografia[$nombre], 2, ".", ","); // Decimal
+                    break;
+                default:
+                    return '~ '.$this->demografia[$nombre]; // Original
+            }
+        } else {
+            return 'ND';
         }
     } // formatear
 

@@ -87,6 +87,7 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.35'
             ),
             'Viviendas' => array(
+                'Hogares' => '394',
                 'Hogares Jefatura masculina' => '79.46',
                 'Hogares Jefatura femenina' => '20.54',
                 'Ocupación por Vivienda' => '4.02',
@@ -100,6 +101,7 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '47.57'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '68',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '29.41',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

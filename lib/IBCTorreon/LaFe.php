@@ -87,6 +87,7 @@ class LaFe extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '72.99'
             ),
             'Viviendas' => array(
+                'Hogares' => '166',
                 'Hogares Jefatura masculina' => '70.78',
                 'Hogares Jefatura femenina' => '29.22',
                 'Ocupación por Vivienda' => '3.41',
@@ -100,6 +101,7 @@ class LaFe extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '6.44'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

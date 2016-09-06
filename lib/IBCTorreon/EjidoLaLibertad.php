@@ -87,6 +87,7 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '68.86'
             ),
             'Viviendas' => array(
+                'Hogares' => '62',
                 'Hogares Jefatura masculina' => '79.91',
                 'Hogares Jefatura femenina' => '20.09',
                 'Ocupación por Vivienda' => '4.21',
@@ -100,6 +101,7 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '8.31'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '7',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Primer actividad porcentaje' => '28.57',
                 'Segunda actividad nombre' => 'Educativos',

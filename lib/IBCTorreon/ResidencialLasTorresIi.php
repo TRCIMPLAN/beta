@@ -87,6 +87,7 @@ class ResidencialLasTorresIi extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.05'
             ),
             'Viviendas' => array(
+                'Hogares' => '963',
                 'Hogares Jefatura masculina' => '76.22',
                 'Hogares Jefatura femenina' => '23.78',
                 'Ocupación por Vivienda' => '3.80',
@@ -100,6 +101,7 @@ class ResidencialLasTorresIi extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '56.66'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '73',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.62',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

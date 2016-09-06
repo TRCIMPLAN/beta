@@ -87,6 +87,7 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '59.65'
             ),
             'Viviendas' => array(
+                'Hogares' => '559',
                 'Hogares Jefatura masculina' => '77.30',
                 'Hogares Jefatura femenina' => '22.70',
                 'Ocupación por Vivienda' => '4.11',
@@ -100,6 +101,7 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '17.47'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '55',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '29.09',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class Morelos extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '70.08'
             ),
             'Viviendas' => array(
+                'Hogares' => '353',
                 'Hogares Jefatura masculina' => '75.19',
                 'Hogares Jefatura femenina' => '24.81',
                 'Ocupación por Vivienda' => '3.73',
@@ -100,6 +101,7 @@ class Morelos extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.94'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '39',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.90',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

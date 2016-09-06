@@ -87,6 +87,7 @@ class Aeropuerto extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '77.22'
             ),
             'Viviendas' => array(
+                'Hogares' => '64',
                 'Hogares Jefatura masculina' => '84.38',
                 'Hogares Jefatura femenina' => '15.62',
                 'Ocupación por Vivienda' => '3.70',
@@ -100,6 +101,7 @@ class Aeropuerto extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '40.62'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '2',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',

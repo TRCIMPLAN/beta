@@ -86,7 +86,11 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
                 'Población Desocupada' => '3.83',
                 'Derechohabiencia' => '73.47'
             ),
+            'Viviendas' => array(
+                'Hogares' => '0'
+            ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '36',
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Primer actividad porcentaje' => '27.78',
                 'Segunda actividad nombre' => 'Inmobiliarios',

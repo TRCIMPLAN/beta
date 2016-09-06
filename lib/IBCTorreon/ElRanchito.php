@@ -87,6 +87,7 @@ class ElRanchito extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '49.11'
             ),
             'Viviendas' => array(
+                'Hogares' => '159',
                 'Hogares Jefatura masculina' => '84.44',
                 'Hogares Jefatura femenina' => '15.56',
                 'Ocupación por Vivienda' => '4.20',
@@ -100,6 +101,7 @@ class ElRanchito extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '13.84'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '33.33',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

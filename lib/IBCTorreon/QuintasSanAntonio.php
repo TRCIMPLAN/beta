@@ -87,6 +87,7 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '84.30'
             ),
             'Viviendas' => array(
+                'Hogares' => '164',
                 'Hogares Jefatura masculina' => '44.98',
                 'Hogares Jefatura femenina' => '55.02',
                 'Ocupación por Vivienda' => '3.63',
@@ -100,6 +101,7 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '77.17'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Inmobiliarios',

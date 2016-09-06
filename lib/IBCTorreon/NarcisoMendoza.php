@@ -87,6 +87,7 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '62.01'
             ),
             'Viviendas' => array(
+                'Hogares' => '424',
                 'Hogares Jefatura masculina' => '60.61',
                 'Hogares Jefatura femenina' => '39.39',
                 'Ocupación por Vivienda' => '4.23',
@@ -100,6 +101,7 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '21.22'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '54.55',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

@@ -87,6 +87,7 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '79.82'
             ),
             'Viviendas' => array(
+                'Hogares' => '33',
                 'Hogares Jefatura masculina' => '90.91',
                 'Hogares Jefatura femenina' => '9.09',
                 'Ocupación por Vivienda' => '3.45',
@@ -100,6 +101,7 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '90.91'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '13',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '30.77',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

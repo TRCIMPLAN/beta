@@ -87,6 +87,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '73.38'
             ),
             'Viviendas' => array(
+                'Hogares' => '467',
                 'Hogares Jefatura masculina' => '71.95',
                 'Hogares Jefatura femenina' => '28.05',
                 'Ocupación por Vivienda' => '3.93',
@@ -100,6 +101,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '54.18'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '115',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '35.65',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',

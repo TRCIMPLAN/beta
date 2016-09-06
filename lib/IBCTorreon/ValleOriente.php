@@ -87,6 +87,7 @@ class ValleOriente extends \IBCBase\PublicacionWeb {
                 'Derechohabiencia' => '78.07'
             ),
             'Viviendas' => array(
+                'Hogares' => '1465',
                 'Hogares Jefatura masculina' => '75.90',
                 'Hogares Jefatura femenina' => '24.10',
                 'Ocupación por Vivienda' => '3.85',
@@ -100,6 +101,7 @@ class ValleOriente extends \IBCBase\PublicacionWeb {
                 'Viviendas con Internet' => '24.35'
             ),
             'Unidades Económicas' => array(
+                'Total Actividades Económicas' => '162',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '44.44',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
