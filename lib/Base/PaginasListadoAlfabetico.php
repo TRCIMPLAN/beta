@@ -46,7 +46,7 @@ class PaginasListadoAlfabetico extends Paginas {
      */
     public function __construct(Recolector $recolector) {
         $this->recolector = $recolector;
-        $this->vinculos   = new VinculosListado();
+        $this->vinculos   = new VinculosListadoAlfabetico();
     } // constructor
 
     /**

@@ -331,6 +331,18 @@ a.galeria-icono:active  { color:#FF3300; }
 .acordeon-vinculo  { display:block; padding:8px; }
 
 /*
+ * Listado alfabetico
+ */
+.pagination > li > a         { color:#A52100; text-decoration:none; font-weight:400; }
+.pagination > li > a:link,
+.pagination > li > a:visited { color:#A52100; text-decoration:none; }
+.pagination > li > a:focus,
+.pagination > li > a:active  { color:#FF3300; text-decoration:none; }
+.listado-alfabetico          { list-style:none; }
+.listado-alfabetico-titulo   { font-weight:400; border-bottom:1px solid #AAA; }
+.listado-alfabetico-arriba   { font-size:20px; }
+
+/*
  * Página Inicial
  */
 #organizacion {

@@ -42,6 +42,8 @@ class TablaWeb implements SalidaWeb {
 
     /**
      * Definir estructura
+     *
+     * @param array Arreglo asociativo con la estructura
      */
     public function definir_estructura($estructura) {
         $this->estructura = $estructura;
@@ -49,6 +51,8 @@ class TablaWeb implements SalidaWeb {
 
     /**
      * Definir panal
+     *
+     * @param array Arreglo con arreglos asociativos, con el panal
      */
     public function definir_panal($panal) {
         $this->panal = $panal;
@@ -122,6 +126,7 @@ class TablaWeb implements SalidaWeb {
      * @return string Javascript
      */
     public function javascript() {
+        $this->validar();
         return "    // TablaWeb {$this->identificador} sin javascript";
     } // javascript
 
