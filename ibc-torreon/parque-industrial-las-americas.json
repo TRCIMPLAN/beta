@@ -1,0 +1,21 @@
+[{
+    "Demografía":{
+        "Población total":"0"
+    },
+    "Viviendas":{
+        "Hogares":"0"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"13",
+        "Primer actividad nombre":"Industria Manufacturera",
+        "Primer actividad porcentaje":"46.15",
+        "Segunda actividad nombre":"Salud",
+        "Segunda actividad porcentaje":"7.69",
+        "Tercera actividad nombre":"Información Medios Masivos",
+        "Tercera actividad porcentaje":"7.69",
+        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad porcentaje":"7.69",
+        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Quinta actividad porcentaje":"7.69"
+    }
+}]

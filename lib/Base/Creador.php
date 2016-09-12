@@ -70,6 +70,18 @@ class Creador extends \Configuracion\CreadorConfig {
         $imprenta_buscador_resultados = new ImprentaPaginaBuscadorResultados();
         $imprenta_buscador_resultados->imprimir();
         unset($imprenta_buscador_resultados);
+        // Imprimir archivos JSON
+        foreach ($this->imprentas_json as $imprenta) {
+            $imprenta_json = new $imprenta();
+            $imprenta_json->imprimir();
+            unset($imprenta_json);
+        }
+        // Imprimir archivos CSV
+        foreach ($this->imprentas_csv as $imprenta) {
+            $imprenta_csv = new $imprenta();
+            $imprenta_csv->imprimir();
+            unset($imprenta_csv);
+        }
     } // imprimir
 
 } // Clase Creador

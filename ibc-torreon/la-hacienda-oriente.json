@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"278",
+        "Porcentaje de población masculina":"47.12",
+        "Porcentaje de población femenina":"52.88",
+        "Porcentaje de población de 0 a 14 años":"20.33",
+        "Porcentaje de población de 15 a 64 años":"74.59",
+        "Porcentaje de población de 65 y más años":"5.07",
+        "Porcentaje de población no especificada":"0.01",
+        "Fecundidad promedio":"1.63",
+        "Porcentaje de población nacida en otro estado":"21.72",
+        "Porcentaje de población con discapacidad":"2.52"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"14.65",
+        "Grado Promedio de Escolaridad masculina":"15.06",
+        "Grado Promedio de Escolaridad femenina":"14.30"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"55.41",
+        "Población Económicamente Activa masculina":"52.42",
+        "Población Económicamente Activa femenina":"47.58",
+        "Población Ocupada":"95.07",
+        "Población Ocupada masculina":"52.52",
+        "Población Ocupada femenina":"47.48",
+        "Población Desocupada":"4.93",
+        "Derechohabiencia":"86.50"
+    },
+    "Viviendas":{
+        "Hogares":"80",
+        "Hogares Jefatura masculina":"82.44",
+        "Hogares Jefatura femenina":"17.56",
+        "Ocupación por Vivienda":"3.48",
+        "Viviendas con Electricidad":"100.00",
+        "Viviendas con Agua":"100.00",
+        "Viviendas con Drenaje":"100.00",
+        "Viviendas con Televisión":"100.00",
+        "Viviendas con Automóvil":"95.43",
+        "Viviendas con Computadora":"87.80",
+        "Viviendas con Celular":"96.77",
+        "Viviendas con Internet":"80.24"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"25",
+        "Primer actividad nombre":"Salud",
+        "Primer actividad porcentaje":"44.00",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":"16.00",
+        "Tercera actividad nombre":"Comercio Menudeo",
+        "Tercera actividad porcentaje":"12.00",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad porcentaje":"4.00",
+        "Quinta actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Quinta actividad porcentaje":"4.00"
+    }
+}]

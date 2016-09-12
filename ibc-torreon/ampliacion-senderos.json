@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"125",
+        "Porcentaje de población masculina":"45.46",
+        "Porcentaje de población femenina":"54.54",
+        "Porcentaje de población de 0 a 14 años":"25.70",
+        "Porcentaje de población de 15 a 64 años":"54.19",
+        "Porcentaje de población de 65 y más años":"3.27",
+        "Porcentaje de población no especificada":"16.84",
+        "Fecundidad promedio":"1.60",
+        "Porcentaje de población nacida en otro estado":"22.26",
+        "Porcentaje de población con discapacidad":"1.56"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"15.36",
+        "Grado Promedio de Escolaridad masculina":"15.55",
+        "Grado Promedio de Escolaridad femenina":"15.14"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"72.72",
+        "Población Económicamente Activa masculina":"56.20",
+        "Población Económicamente Activa femenina":"43.80",
+        "Población Ocupada":"99.83",
+        "Población Ocupada masculina":"56.15",
+        "Población Ocupada femenina":"43.85",
+        "Población Desocupada":"0.17",
+        "Derechohabiencia":"70.46"
+    },
+    "Viviendas":{
+        "Hogares":"35",
+        "Hogares Jefatura masculina":"82.37",
+        "Hogares Jefatura femenina":"17.63",
+        "Ocupación por Vivienda":"3.57",
+        "Viviendas con Electricidad":"100.00",
+        "Viviendas con Agua":"100.00",
+        "Viviendas con Drenaje":"100.00",
+        "Viviendas con Televisión":"100.00",
+        "Viviendas con Automóvil":"93.79",
+        "Viviendas con Computadora":"79.00",
+        "Viviendas con Celular":"100.00",
+        "Viviendas con Internet":"47.01"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"5",
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":"40.00",
+        "Segunda actividad nombre":"Salud",
+        "Segunda actividad porcentaje":"20.00",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":"20.00",
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad porcentaje":"20.00",
+        "Quinta actividad nombre":"Información Medios Masivos",
+        "Quinta actividad porcentaje":"0.00"
+    }
+}]

@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"656",
+        "Porcentaje de población masculina":"50.00",
+        "Porcentaje de población femenina":"50.00",
+        "Porcentaje de población de 0 a 14 años":"36.74",
+        "Porcentaje de población de 15 a 64 años":"59.45",
+        "Porcentaje de población de 65 y más años":"0.61",
+        "Porcentaje de población no especificada":"3.20",
+        "Fecundidad promedio":"1.77",
+        "Porcentaje de población nacida en otro estado":"13.57",
+        "Porcentaje de población con discapacidad":"1.39"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"11.12",
+        "Grado Promedio de Escolaridad masculina":"11.24",
+        "Grado Promedio de Escolaridad femenina":"11.01"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"59.30",
+        "Población Económicamente Activa masculina":"64.31",
+        "Población Económicamente Activa femenina":"35.69",
+        "Población Ocupada":"94.21",
+        "Población Ocupada masculina":"63.49",
+        "Población Ocupada femenina":"36.51",
+        "Población Desocupada":"5.79",
+        "Derechohabiencia":"83.54"
+    },
+    "Viviendas":{
+        "Hogares":"171",
+        "Hogares Jefatura masculina":"89.47",
+        "Hogares Jefatura femenina":"10.53",
+        "Ocupación por Vivienda":"3.84",
+        "Viviendas con Electricidad":"100.00",
+        "Viviendas con Agua":"100.00",
+        "Viviendas con Drenaje":"100.00",
+        "Viviendas con Televisión":"99.42",
+        "Viviendas con Automóvil":"61.40",
+        "Viviendas con Computadora":"35.09",
+        "Viviendas con Celular":"88.30",
+        "Viviendas con Internet":"29.36"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"19",
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":"31.58",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":"31.58",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":"10.53",
+        "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Cuarta actividad porcentaje":"10.53",
+        "Quinta actividad nombre":"Inmobiliarios",
+        "Quinta actividad porcentaje":"10.53"
+    }
+}]

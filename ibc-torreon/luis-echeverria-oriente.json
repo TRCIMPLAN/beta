@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"1027",
+        "Porcentaje de población masculina":"47.32",
+        "Porcentaje de población femenina":"52.68",
+        "Porcentaje de población de 0 a 14 años":"21.13",
+        "Porcentaje de población de 15 a 64 años":"68.84",
+        "Porcentaje de población de 65 y más años":"9.74",
+        "Porcentaje de población no especificada":"0.29",
+        "Fecundidad promedio":"2.29",
+        "Porcentaje de población nacida en otro estado":"19.47",
+        "Porcentaje de población con discapacidad":"5.22"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"10.27",
+        "Grado Promedio de Escolaridad masculina":"10.36",
+        "Grado Promedio de Escolaridad femenina":"10.19"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"52.77",
+        "Población Económicamente Activa masculina":"61.16",
+        "Población Económicamente Activa femenina":"38.84",
+        "Población Ocupada":"88.15",
+        "Población Ocupada masculina":"61.00",
+        "Población Ocupada femenina":"39.00",
+        "Población Desocupada":"11.85",
+        "Derechohabiencia":"75.07"
+    },
+    "Viviendas":{
+        "Hogares":"273",
+        "Hogares Jefatura masculina":"72.53",
+        "Hogares Jefatura femenina":"27.47",
+        "Ocupación por Vivienda":"3.76",
+        "Viviendas con Electricidad":"99.27",
+        "Viviendas con Agua":"99.27",
+        "Viviendas con Drenaje":"99.27",
+        "Viviendas con Televisión":"97.07",
+        "Viviendas con Automóvil":"53.11",
+        "Viviendas con Computadora":"41.03",
+        "Viviendas con Celular":"77.29",
+        "Viviendas con Internet":"35.53"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"54",
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":"31.48",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":"14.81",
+        "Tercera actividad nombre":"Educativos",
+        "Tercera actividad porcentaje":"12.96",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad porcentaje":"11.11",
+        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad porcentaje":"11.11"
+    }
+}]

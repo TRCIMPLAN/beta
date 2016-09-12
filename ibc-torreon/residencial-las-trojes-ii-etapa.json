@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"57",
+        "Porcentaje de población masculina":"43.47",
+        "Porcentaje de población femenina":"56.53",
+        "Porcentaje de población de 0 a 14 años":"23.22",
+        "Porcentaje de población de 15 a 64 años":"76.06",
+        "Porcentaje de población de 65 y más años":"0.50",
+        "Porcentaje de población no especificada":"0.22",
+        "Fecundidad promedio":"1.33",
+        "Porcentaje de población nacida en otro estado":"30.45",
+        "Porcentaje de población con discapacidad":"0.70"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"14.42",
+        "Grado Promedio de Escolaridad masculina":"15.12",
+        "Grado Promedio de Escolaridad femenina":"13.83"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"66.04",
+        "Población Económicamente Activa masculina":"59.20",
+        "Población Económicamente Activa femenina":"40.80",
+        "Población Ocupada":"99.64",
+        "Población Ocupada masculina":"59.10",
+        "Población Ocupada femenina":"40.90",
+        "Población Desocupada":"0.36",
+        "Derechohabiencia":"97.60"
+    },
+    "Viviendas":{
+        "Hogares":"19",
+        "Hogares Jefatura masculina":"87.60",
+        "Hogares Jefatura femenina":"12.40",
+        "Ocupación por Vivienda":"3.00",
+        "Viviendas con Electricidad":"100.00",
+        "Viviendas con Agua":"100.00",
+        "Viviendas con Drenaje":"100.00",
+        "Viviendas con Televisión":"100.00",
+        "Viviendas con Automóvil":"97.89",
+        "Viviendas con Computadora":"96.47",
+        "Viviendas con Celular":"99.94",
+        "Viviendas con Internet":"88.35"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"1",
+        "Primer actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Primer actividad porcentaje":"100.00",
+        "Segunda actividad nombre":"Salud",
+        "Segunda actividad porcentaje":"0.00",
+        "Tercera actividad nombre":"Información Medios Masivos",
+        "Tercera actividad porcentaje":"0.00",
+        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad porcentaje":"0.00",
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Quinta actividad porcentaje":"0.00"
+    }
+}]

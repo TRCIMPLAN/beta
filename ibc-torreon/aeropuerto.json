@@ -1,0 +1,56 @@
+[{
+    "Demografía":{
+        "Población total":"237",
+        "Porcentaje de población masculina":"51.05",
+        "Porcentaje de población femenina":"48.95",
+        "Porcentaje de población de 0 a 14 años":"34.60",
+        "Porcentaje de población de 15 a 64 años":"62.45",
+        "Porcentaje de población de 65 y más años":"2.95",
+        "Porcentaje de población no especificada":"0.00",
+        "Fecundidad promedio":"1.38",
+        "Porcentaje de población nacida en otro estado":"13.92",
+        "Porcentaje de población con discapacidad":"0.99"
+    },
+    "Educación":{
+        "Grado Promedio de Escolaridad":"11.75",
+        "Grado Promedio de Escolaridad masculina":"11.88",
+        "Grado Promedio de Escolaridad femenina":"11.61"
+    },
+    "Características Económicas":{
+        "Población Económicamente Activa":"55.81",
+        "Población Económicamente Activa masculina":"62.50",
+        "Población Económicamente Activa femenina":"37.50",
+        "Población Ocupada":"90.98",
+        "Población Ocupada masculina":"59.09",
+        "Población Ocupada femenina":"40.91",
+        "Población Desocupada":"9.02",
+        "Derechohabiencia":"77.22"
+    },
+    "Viviendas":{
+        "Hogares":"64",
+        "Hogares Jefatura masculina":"84.38",
+        "Hogares Jefatura femenina":"15.62",
+        "Ocupación por Vivienda":"3.70",
+        "Viviendas con Electricidad":"100.00",
+        "Viviendas con Agua":"100.00",
+        "Viviendas con Drenaje":"100.00",
+        "Viviendas con Televisión":"98.44",
+        "Viviendas con Automóvil":"68.75",
+        "Viviendas con Computadora":"50.00",
+        "Viviendas con Celular":"92.19",
+        "Viviendas con Internet":"40.62"
+    },
+    "Unidades Económicas":{
+        "Total Actividades Económicas":"2",
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":"50.00",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":"50.00",
+        "Tercera actividad nombre":"Salud",
+        "Tercera actividad porcentaje":"0.00",
+        "Cuarta actividad nombre":"Información Medios Masivos",
+        "Cuarta actividad porcentaje":"0.00",
+        "Quinta actividad nombre":"Manejo de Residuos",
+        "Quinta actividad porcentaje":"0.00"
+    }
+}]
