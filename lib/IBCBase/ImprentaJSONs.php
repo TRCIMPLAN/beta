@@ -32,6 +32,8 @@ class ImprentaJSONs extends \Base\Imprenta {
     protected $archivo_ruta;          // Texto opcional, ruta al archivo index
     protected $recolector;            // Instancia de \Base\Recolector
     protected $contador = 0;          // Entero, cantidad de publicaciones producidas
+    protected $indice   = array();    // Arreglo asociativo con los nombres y rutas
+    const     SITIO_URL = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
 
     /**
      * Constructor
@@ -66,9 +68,9 @@ class ImprentaJSONs extends \Base\Imprenta {
      * Elaborar contenido JSON
      *
      * @param  mixed  Instancia de Publicacion
-     * @return string Texto para ser el contenido del archivo JSON
+     * @return string Código JSON, texto para ser el contenido del archivo
      */
-    protected function json(\Base\Publicacion $publicacion) {
+    protected function elaborar_json(\Base\Publicacion $publicacion) {
         // Debe tener el método datos
         if (method_exists($publicacion, 'datos')) {
             $a = array();
@@ -90,7 +92,7 @@ class ImprentaJSONs extends \Base\Imprenta {
         } else {
             return FALSE;
         }
-    } // json
+    } // elaborar_json
 
     /**
      * Imprimir archivos JSON
@@ -105,23 +107,50 @@ class ImprentaJSONs extends \Base\Imprenta {
         // Bucle en las publicaciones
         foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
             // Determinar la ruta al archivo a crear
-            $archivo_ruta = "{$publicacion->directorio}/{$publicacion->archivo}.json";
+            $archivo_ruta = sprintf('%s/%s.json', $publicacion->directorio, $publicacion->archivo);
             // Elaborar contenido
-            $json = $this->json($publicacion);
+            $json = $this->elaborar_json($publicacion);
             // Si hay contenido se crea el archivo, de lo contrario se elimina
             if (is_string($json)) {
                 $this->crear_archivo($archivo_ruta, $json);
+                $this->indice[$publicacion->nombre] = $archivo_ruta;
                 $this->contador++;
             } else {
                 $this->eliminar_archivo($archivo_ruta);
             }
         }
+        // Poner mensaje
+        echo " {$this->contador} en {$this->directorio} ";
     } // imprimir_archivos
+
+    /**
+     * Elaborar indice JSON
+     *
+     * @return string Código JSON, texto para ser el contenido del archivo
+     */
+    protected function elaborar_indice_json() {
+        if (count($this->indice) > 0) {
+            $a = array();
+            foreach ($this->indice as $nombre => $ruta) {
+                $url = sprintf('%s/%s', self::SITIO_URL, $ruta);
+                $a[] = "    { \"Nombre\":\"$nombre\", \"URL\":\"$url\" }";
+            }
+            return "[\n".implode(",\n", $a)."\n]\n";
+        } else {
+            return FALSE;
+        }
+    } // elaborar_indice_json
 
     /**
      * Imprimir índice JSON
      */
     protected function imprimir_indice() {
+        $archivo_ruta = sprintf('%s/%s.json', $this->directorio, $this->directorio);
+        $json         = $this->elaborar_indice_json();
+        if (is_string($json)) {
+            $this->crear_archivo($archivo_ruta, $json);
+            echo " índice en {$archivo_ruta}";
+        }
     } // imprimir_indice
 
     /**
@@ -133,8 +162,8 @@ class ImprentaJSONs extends \Base\Imprenta {
         $this->recolector->agregar_publicaciones_en($this->publicaciones_directorio, $this);
         $this->crear_directorio($this->directorio);
         $this->imprimir_archivos();
-    //~ $this->imprimir_indice();
-        echo sprintf(" %d en %s\n", $this->contador, $this->directorio);
+        $this->imprimir_indice();
+        echo "\n";
     } // imprimir
 
 } // Clase ImprentaJSONs
