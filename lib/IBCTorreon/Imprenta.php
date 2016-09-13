@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN IBC Torreon - Imprenta
  *
  * Copyright (C) 2016 Guillermo Valdes Lozano
  *
@@ -35,11 +35,11 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->publicaciones_directorio = 'IBCTorreon';
         // Los siguientes parámetros dan datos para el índice/galería que será creado
         $this->titulo                   = 'IBC Torreón';
-        $this->descripcion              = 'Índices Básicos de Colonias en IBC Torreón.';
-        $this->claves                   = 'IMPLAN, Torreon, Desagregacion';
+        $this->descripcion              = 'Indicadores Básicos de Colonias de IBC Torreón.';
+        $this->claves                   = 'IMPLAN, Torreon, Indicadores, Basicos, Colonias';
         $this->encabezado_color         = '#646464';
         // Etiqueta de Navegación a poner activa
-        $this->nombre_menu              = 'IBC > IBC Torreón';
+        $this->nombre_menu              = 'IBC Torreón > Listado de Colonias';
         // Ruta a la clase para hacer la página con el índice
         $this->indices_paginas          = '\\Base\\PaginasListadoAlfabetico';
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas

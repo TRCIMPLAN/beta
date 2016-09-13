@@ -37,7 +37,11 @@ class NavegacionConfig {
             'Indicadores > Indicadores por Región'    => 'smi/por-region.html',
             'Indicadores > Georreferenciados'         => 'smi-georreferenciados/index.html',
             'Indicadores > Datos Abiertos'            => 'smi/datos-abiertos.html'),
-        'IBC Torreón' => 'ibc-torreon/index.html',
+        'IBC Torreón' => array(
+            'IBC Torreón > Introducción'        => '#',
+            'IBC Torreón > Listado de Colonias' => 'ibc-torreon/index.html',
+            'IBC Torreón > Mapa de Colonias'    => '#',
+            'IBC Torreón > Datos Abiertos'      => '#'),
         'Información Geográfica' => array(
             'Información Geográfica > Introducción al S.I.G.'  => 'sig/introduccion.html',
             'Información Geográfica > Planes'                  => 'sig-planes/index.html',
@@ -57,6 +61,7 @@ class NavegacionConfig {
             'Institucional > Mensaje del Director'   => 'institucional/mensaje-director.html',
             'Institucional > Quienes Somos'          => 'autores/index.html',
             'Institucional > Estructura Orgánica'    => 'institucional/estructura-organica.html',
+            'Institucional > Modelo Operativo Univ.' => 'institucional/modelo-operativo-universal.html',
             'Institucional > Reglamentos'            => 'institucional/reglamentos.html',
             'Institucional > Información Financiera' => 'institucional/informacion-financiera.html',
             'Institucional > Transparencia'          => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178'),

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN IBC Torreon - ImprentaJSONs
  *
  * Copyright (C) 2016 Guillermo Valdes Lozano
  *
