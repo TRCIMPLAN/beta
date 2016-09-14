@@ -1,21 +1,24 @@
 [{
+  "Nombre":"Metalurgica",
+  "IBC":{
     "Demografía":{
-        "Población total":"0"
+      "Población total":"0"
     },
     "Viviendas":{
-        "Hogares":"0"
+      "Hogares":"0"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"3",
-        "Primer actividad nombre":"Industria Manufacturera",
-        "Primer actividad porcentaje":"66.67",
-        "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
-        "Segunda actividad porcentaje":"33.33",
-        "Tercera actividad nombre":"Salud",
-        "Tercera actividad porcentaje":"0.00",
-        "Cuarta actividad nombre":"Información Medios Masivos",
-        "Cuarta actividad porcentaje":"0.00",
-        "Quinta actividad nombre":"Manejo de Residuos",
-        "Quinta actividad porcentaje":"0.00"
+      "Total Actividades Económicas":"3",
+      "Primer actividad nombre":"Industria Manufacturera",
+      "Primer actividad porcentaje":"66.67",
+      "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
+      "Segunda actividad porcentaje":"33.33",
+      "Tercera actividad nombre":"Salud",
+      "Tercera actividad porcentaje":"0.00",
+      "Cuarta actividad nombre":"Información Medios Masivos",
+      "Cuarta actividad porcentaje":"0.00",
+      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad porcentaje":"0.00"
     }
+  }
 }]

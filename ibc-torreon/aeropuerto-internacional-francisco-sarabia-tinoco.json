@@ -1,45 +1,48 @@
 [{
+  "Nombre":"Aeropuerto Internacional Francisco Sarabia Tinoco",
+  "IBC":{
     "Demografía":{
-        "Población total":"1",
-        "Porcentaje de población masculina":"47.93",
-        "Porcentaje de población femenina":"52.07",
-        "Porcentaje de población de 0 a 14 años":"29.30",
-        "Porcentaje de población de 15 a 64 años":"67.43",
-        "Porcentaje de población de 65 y más años":"2.65",
-        "Porcentaje de población no especificada":"0.62",
-        "Fecundidad promedio":"1.62",
-        "Porcentaje de población nacida en otro estado":"22.52",
-        "Porcentaje de población con discapacidad":"1.54"
+      "Población total":"1",
+      "Porcentaje de población masculina":"47.93",
+      "Porcentaje de población femenina":"52.07",
+      "Porcentaje de población de 0 a 14 años":"29.30",
+      "Porcentaje de población de 15 a 64 años":"67.43",
+      "Porcentaje de población de 65 y más años":"2.65",
+      "Porcentaje de población no especificada":"0.62",
+      "Fecundidad promedio":"1.62",
+      "Porcentaje de población nacida en otro estado":"22.52",
+      "Porcentaje de población con discapacidad":"1.54"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"13.11",
-        "Grado Promedio de Escolaridad masculina":"13.49",
-        "Grado Promedio de Escolaridad femenina":"12.78"
+      "Grado Promedio de Escolaridad":"13.11",
+      "Grado Promedio de Escolaridad masculina":"13.49",
+      "Grado Promedio de Escolaridad femenina":"12.78"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"52.34",
-        "Población Económicamente Activa masculina":"63.54",
-        "Población Económicamente Activa femenina":"36.46",
-        "Población Ocupada":"96.17",
-        "Población Ocupada masculina":"62.78",
-        "Población Ocupada femenina":"37.22",
-        "Población Desocupada":"3.83",
-        "Derechohabiencia":"73.47"
+      "Población Económicamente Activa":"52.34",
+      "Población Económicamente Activa masculina":"63.54",
+      "Población Económicamente Activa femenina":"36.46",
+      "Población Ocupada":"96.17",
+      "Población Ocupada masculina":"62.78",
+      "Población Ocupada femenina":"37.22",
+      "Población Desocupada":"3.83",
+      "Derechohabiencia":"73.47"
     },
     "Viviendas":{
-        "Hogares":"0"
+      "Hogares":"0"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"36",
-        "Primer actividad nombre":"Transportes, Correo, Almacenamiento",
-        "Primer actividad porcentaje":"27.78",
-        "Segunda actividad nombre":"Inmobiliarios",
-        "Segunda actividad porcentaje":"19.44",
-        "Tercera actividad nombre":"Gubernamentales",
-        "Tercera actividad porcentaje":"13.89",
-        "Cuarta actividad nombre":"Comercio Menudeo",
-        "Cuarta actividad porcentaje":"13.89",
-        "Quinta actividad nombre":"Comercio Mayoreo",
-        "Quinta actividad porcentaje":"8.33"
+      "Total Actividades Económicas":"36",
+      "Primer actividad nombre":"Transportes, Correo, Almacenamiento",
+      "Primer actividad porcentaje":"27.78",
+      "Segunda actividad nombre":"Inmobiliarios",
+      "Segunda actividad porcentaje":"19.44",
+      "Tercera actividad nombre":"Gubernamentales",
+      "Tercera actividad porcentaje":"13.89",
+      "Cuarta actividad nombre":"Comercio Menudeo",
+      "Cuarta actividad porcentaje":"13.89",
+      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad porcentaje":"8.33"
     }
+  }
 }]

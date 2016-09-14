@@ -1,46 +1,49 @@
 [{
+  "Nombre":"Puerta Real",
+  "IBC":{
     "Demografía":{
-        "Población total":"880",
-        "Porcentaje de población masculina":"48.75",
-        "Porcentaje de población femenina":"51.25",
-        "Porcentaje de población de 0 a 14 años":"33.18",
-        "Porcentaje de población de 15 a 64 años":"64.77",
-        "Porcentaje de población de 65 y más años":"1.93",
-        "Porcentaje de población no especificada":"0.12",
-        "Fecundidad promedio":"1.29",
-        "Porcentaje de población nacida en otro estado":"32.16",
-        "Porcentaje de población con discapacidad":"1.06"
+      "Población total":"880",
+      "Porcentaje de población masculina":"48.75",
+      "Porcentaje de población femenina":"51.25",
+      "Porcentaje de población de 0 a 14 años":"33.18",
+      "Porcentaje de población de 15 a 64 años":"64.77",
+      "Porcentaje de población de 65 y más años":"1.93",
+      "Porcentaje de población no especificada":"0.12",
+      "Fecundidad promedio":"1.29",
+      "Porcentaje de población nacida en otro estado":"32.16",
+      "Porcentaje de población con discapacidad":"1.06"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"15.20",
-        "Grado Promedio de Escolaridad masculina":"15.57",
-        "Grado Promedio de Escolaridad femenina":"14.85"
+      "Grado Promedio de Escolaridad":"15.20",
+      "Grado Promedio de Escolaridad masculina":"15.57",
+      "Grado Promedio de Escolaridad femenina":"14.85"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"64.90",
-        "Población Económicamente Activa masculina":"60.37",
-        "Población Económicamente Activa femenina":"39.63",
-        "Población Ocupada":"97.99",
-        "Población Ocupada masculina":"60.81",
-        "Población Ocupada femenina":"39.19",
-        "Población Desocupada":"2.01",
-        "Derechohabiencia":"86.14"
+      "Población Económicamente Activa":"64.90",
+      "Población Económicamente Activa masculina":"60.37",
+      "Población Económicamente Activa femenina":"39.63",
+      "Población Ocupada":"97.99",
+      "Población Ocupada masculina":"60.81",
+      "Población Ocupada femenina":"39.19",
+      "Población Desocupada":"2.01",
+      "Derechohabiencia":"86.14"
     },
     "Viviendas":{
-        "Hogares":"274",
-        "Hogares Jefatura masculina":"64.06",
-        "Hogares Jefatura femenina":"35.94",
-        "Ocupación por Vivienda":"3.21",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"100.00",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"99.64",
-        "Viviendas con Automóvil":"96.35",
-        "Viviendas con Computadora":"85.40",
-        "Viviendas con Celular":"99.64",
-        "Viviendas con Internet":"72.74"
+      "Hogares":"274",
+      "Hogares Jefatura masculina":"64.06",
+      "Hogares Jefatura femenina":"35.94",
+      "Ocupación por Vivienda":"3.21",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"100.00",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"99.64",
+      "Viviendas con Automóvil":"96.35",
+      "Viviendas con Computadora":"85.40",
+      "Viviendas con Celular":"99.64",
+      "Viviendas con Internet":"72.74"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"0"
+      "Total Actividades Económicas":"0"
     }
+  }
 }]

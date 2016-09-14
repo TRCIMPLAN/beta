@@ -1,56 +1,59 @@
 [{
+  "Nombre":"Casa Blanca",
+  "IBC":{
     "Demografía":{
-        "Población total":"742",
-        "Porcentaje de población masculina":"46.50",
-        "Porcentaje de población femenina":"53.50",
-        "Porcentaje de población de 0 a 14 años":"21.97",
-        "Porcentaje de población de 15 a 64 años":"71.83",
-        "Porcentaje de población de 65 y más años":"5.80",
-        "Porcentaje de población no especificada":"0.40",
-        "Fecundidad promedio":"1.59",
-        "Porcentaje de población nacida en otro estado":"20.43",
-        "Porcentaje de población con discapacidad":"1.49"
+      "Población total":"742",
+      "Porcentaje de población masculina":"46.50",
+      "Porcentaje de población femenina":"53.50",
+      "Porcentaje de población de 0 a 14 años":"21.97",
+      "Porcentaje de población de 15 a 64 años":"71.83",
+      "Porcentaje de población de 65 y más años":"5.80",
+      "Porcentaje de población no especificada":"0.40",
+      "Fecundidad promedio":"1.59",
+      "Porcentaje de población nacida en otro estado":"20.43",
+      "Porcentaje de población con discapacidad":"1.49"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"14.00",
-        "Grado Promedio de Escolaridad masculina":"14.48",
-        "Grado Promedio de Escolaridad femenina":"13.59"
+      "Grado Promedio de Escolaridad":"14.00",
+      "Grado Promedio de Escolaridad masculina":"14.48",
+      "Grado Promedio de Escolaridad femenina":"13.59"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"51.22",
-        "Población Económicamente Activa masculina":"58.10",
-        "Población Económicamente Activa femenina":"41.90",
-        "Población Ocupada":"97.40",
-        "Población Ocupada masculina":"57.65",
-        "Población Ocupada femenina":"42.35",
-        "Población Desocupada":"2.60",
-        "Derechohabiencia":"83.15"
+      "Población Económicamente Activa":"51.22",
+      "Población Económicamente Activa masculina":"58.10",
+      "Población Económicamente Activa femenina":"41.90",
+      "Población Ocupada":"97.40",
+      "Población Ocupada masculina":"57.65",
+      "Población Ocupada femenina":"42.35",
+      "Población Desocupada":"2.60",
+      "Derechohabiencia":"83.15"
     },
     "Viviendas":{
-        "Hogares":"204",
-        "Hogares Jefatura masculina":"79.41",
-        "Hogares Jefatura femenina":"20.59",
-        "Ocupación por Vivienda":"3.64",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"100.00",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"100.00",
-        "Viviendas con Automóvil":"93.63",
-        "Viviendas con Computadora":"85.80",
-        "Viviendas con Celular":"94.12",
-        "Viviendas con Internet":"81.62"
+      "Hogares":"204",
+      "Hogares Jefatura masculina":"79.41",
+      "Hogares Jefatura femenina":"20.59",
+      "Ocupación por Vivienda":"3.64",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"100.00",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"100.00",
+      "Viviendas con Automóvil":"93.63",
+      "Viviendas con Computadora":"85.80",
+      "Viviendas con Celular":"94.12",
+      "Viviendas con Internet":"81.62"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"17",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"35.29",
-        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-        "Segunda actividad porcentaje":"17.65",
-        "Tercera actividad nombre":"Salud",
-        "Tercera actividad porcentaje":"11.76",
-        "Cuarta actividad nombre":"Inmobiliarios",
-        "Cuarta actividad porcentaje":"11.76",
-        "Quinta actividad nombre":"Educativos",
-        "Quinta actividad porcentaje":"11.76"
+      "Total Actividades Económicas":"17",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"35.29",
+      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+      "Segunda actividad porcentaje":"17.65",
+      "Tercera actividad nombre":"Salud",
+      "Tercera actividad porcentaje":"11.76",
+      "Cuarta actividad nombre":"Inmobiliarios",
+      "Cuarta actividad porcentaje":"11.76",
+      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad porcentaje":"11.76"
     }
+  }
 }]

@@ -1,11 +1,14 @@
 [{
+  "Nombre":"Cuca Orona",
+  "IBC":{
     "Demografía":{
-        "Población total":"0"
+      "Población total":"0"
     },
     "Viviendas":{
-        "Hogares":"0"
+      "Hogares":"0"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"0"
+      "Total Actividades Económicas":"0"
     }
+  }
 }]

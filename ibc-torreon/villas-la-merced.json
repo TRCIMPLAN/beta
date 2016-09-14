@@ -1,56 +1,59 @@
 [{
+  "Nombre":"Villas La Merced",
+  "IBC":{
     "Demografía":{
-        "Población total":"15270",
-        "Porcentaje de población masculina":"48.79",
-        "Porcentaje de población femenina":"51.21",
-        "Porcentaje de población de 0 a 14 años":"30.29",
-        "Porcentaje de población de 15 a 64 años":"64.47",
-        "Porcentaje de población de 65 y más años":"3.68",
-        "Porcentaje de población no especificada":"1.56",
-        "Fecundidad promedio":"1.94",
-        "Porcentaje de población nacida en otro estado":"14.97",
-        "Porcentaje de población con discapacidad":"2.98"
+      "Población total":"15270",
+      "Porcentaje de población masculina":"48.79",
+      "Porcentaje de población femenina":"51.21",
+      "Porcentaje de población de 0 a 14 años":"30.29",
+      "Porcentaje de población de 15 a 64 años":"64.47",
+      "Porcentaje de población de 65 y más años":"3.68",
+      "Porcentaje de población no especificada":"1.56",
+      "Fecundidad promedio":"1.94",
+      "Porcentaje de población nacida en otro estado":"14.97",
+      "Porcentaje de población con discapacidad":"2.98"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"10.74",
-        "Grado Promedio de Escolaridad masculina":"10.88",
-        "Grado Promedio de Escolaridad femenina":"10.60"
+      "Grado Promedio de Escolaridad":"10.74",
+      "Grado Promedio de Escolaridad masculina":"10.88",
+      "Grado Promedio de Escolaridad femenina":"10.60"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"54.45",
-        "Población Económicamente Activa masculina":"61.52",
-        "Población Económicamente Activa femenina":"38.48",
-        "Población Ocupada":"91.76",
-        "Población Ocupada masculina":"61.05",
-        "Población Ocupada femenina":"38.95",
-        "Población Desocupada":"8.24",
-        "Derechohabiencia":"74.77"
+      "Población Económicamente Activa":"54.45",
+      "Población Económicamente Activa masculina":"61.52",
+      "Población Económicamente Activa femenina":"38.48",
+      "Población Ocupada":"91.76",
+      "Población Ocupada masculina":"61.05",
+      "Población Ocupada femenina":"38.95",
+      "Población Desocupada":"8.24",
+      "Derechohabiencia":"74.77"
     },
     "Viviendas":{
-        "Hogares":"3874",
-        "Hogares Jefatura masculina":"76.91",
-        "Hogares Jefatura femenina":"23.09",
-        "Ocupación por Vivienda":"3.94",
-        "Viviendas con Electricidad":"99.90",
-        "Viviendas con Agua":"99.51",
-        "Viviendas con Drenaje":"99.33",
-        "Viviendas con Televisión":"98.94",
-        "Viviendas con Automóvil":"65.23",
-        "Viviendas con Computadora":"48.37",
-        "Viviendas con Celular":"82.34",
-        "Viviendas con Internet":"35.71"
+      "Hogares":"3874",
+      "Hogares Jefatura masculina":"76.91",
+      "Hogares Jefatura femenina":"23.09",
+      "Ocupación por Vivienda":"3.94",
+      "Viviendas con Electricidad":"99.90",
+      "Viviendas con Agua":"99.51",
+      "Viviendas con Drenaje":"99.33",
+      "Viviendas con Televisión":"98.94",
+      "Viviendas con Automóvil":"65.23",
+      "Viviendas con Computadora":"48.37",
+      "Viviendas con Celular":"82.34",
+      "Viviendas con Internet":"35.71"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"428",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"40.19",
-        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-        "Segunda actividad porcentaje":"17.06",
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-        "Tercera actividad porcentaje":"14.49",
-        "Cuarta actividad nombre":"Industria Manufacturera",
-        "Cuarta actividad porcentaje":"6.07",
-        "Quinta actividad nombre":"Salud",
-        "Quinta actividad porcentaje":"3.04"
+      "Total Actividades Económicas":"428",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"40.19",
+      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+      "Segunda actividad porcentaje":"17.06",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad porcentaje":"14.49",
+      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad porcentaje":"6.07",
+      "Quinta actividad nombre":"Salud",
+      "Quinta actividad porcentaje":"3.04"
     }
+  }
 }]

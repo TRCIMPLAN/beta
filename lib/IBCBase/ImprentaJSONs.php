@@ -33,7 +33,7 @@ class ImprentaJSONs extends \Base\Imprenta {
     protected $recolector;            // Instancia de \Base\Recolector
     protected $contador = 0;          // Entero, cantidad de publicaciones producidas
     protected $indice   = array();    // Arreglo asociativo con los nombres y rutas
-    const     SITIO_URL = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
+    const     SITIO_URL = 'http://www.trcimplan.gob.mx/beta'; // Sin diagonal al final
 
     /**
      * Constructor
@@ -73,19 +73,24 @@ class ImprentaJSONs extends \Base\Imprenta {
     protected function elaborar_json(\Base\Publicacion $publicacion) {
         // Debe tener el método datos
         if (method_exists($publicacion, 'datos')) {
-            $a = array();
+            $e = array();
             // Bucle por los datos
             foreach ($publicacion->datos() as $eje => $indicadores) {
-                $b = array();
+                $i = array();
                 foreach ($indicadores as $indicador => $valor) {
-                    $b[] = "        \"$indicador\":\"$valor\"";
+                    $i[] = sprintf('      "%s":"%s"', $indicador, $valor);
                 }
-                if (count($b) > 0) {
-                    $a[] = "    \"$eje\":{\n".implode(",\n", $b)."\n    }";
+                if (count($i) > 0) {
+                    $e[] = sprintf('    "%s":{%s    }', $eje, "\n".implode(",\n", $i)."\n");
                 }
             }
-            if (count($a) > 0) {
-                return "[{\n".implode(",\n", $a)."\n}]\n";
+            if (count($e) > 0) {
+                $j   = array();
+                $j[] = '[{';
+                $j[] = sprintf('  "Nombre":"%s",', $publicacion->nombre);
+                $j[] = sprintf('  "IBC":{%s  }', "\n".implode(",\n", $e)."\n");
+                $j[] = '}]';
+                return implode("\n", $j)."\n";
             } else {
                 return FALSE;
             }

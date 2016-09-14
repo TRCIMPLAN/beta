@@ -1,46 +1,49 @@
 [{
+  "Nombre":"Perla Del Mar Del Norte",
+  "IBC":{
     "Demografía":{
-        "Población total":"16",
-        "Porcentaje de población masculina":"50.00",
-        "Porcentaje de población femenina":"50.00",
-        "Porcentaje de población de 0 a 14 años":"25.00",
-        "Porcentaje de población de 15 a 64 años":"37.50",
-        "Porcentaje de población de 65 y más años":"0.00",
-        "Porcentaje de población no especificada":"37.50",
-        "Fecundidad promedio":"1.33",
-        "Porcentaje de población nacida en otro estado":"31.25",
-        "Porcentaje de población con discapacidad":"0.00"
+      "Población total":"16",
+      "Porcentaje de población masculina":"50.00",
+      "Porcentaje de población femenina":"50.00",
+      "Porcentaje de población de 0 a 14 años":"25.00",
+      "Porcentaje de población de 15 a 64 años":"37.50",
+      "Porcentaje de población de 65 y más años":"0.00",
+      "Porcentaje de población no especificada":"37.50",
+      "Fecundidad promedio":"1.33",
+      "Porcentaje de población nacida en otro estado":"31.25",
+      "Porcentaje de población con discapacidad":"0.00"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"16.17",
-        "Grado Promedio de Escolaridad masculina":"16.00",
-        "Grado Promedio de Escolaridad femenina":"16.33"
+      "Grado Promedio de Escolaridad":"16.17",
+      "Grado Promedio de Escolaridad masculina":"16.00",
+      "Grado Promedio de Escolaridad femenina":"16.33"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"66.67",
-        "Población Económicamente Activa masculina":"75.00",
-        "Población Económicamente Activa femenina":"25.00",
-        "Población Ocupada":"100.00",
-        "Población Ocupada masculina":"75.00",
-        "Población Ocupada femenina":"25.00",
-        "Población Desocupada":"0.00",
-        "Derechohabiencia":"37.50"
+      "Población Económicamente Activa":"66.67",
+      "Población Económicamente Activa masculina":"75.00",
+      "Población Económicamente Activa femenina":"25.00",
+      "Población Ocupada":"100.00",
+      "Población Ocupada masculina":"75.00",
+      "Población Ocupada femenina":"25.00",
+      "Población Desocupada":"0.00",
+      "Derechohabiencia":"37.50"
     },
     "Viviendas":{
-        "Hogares":"3",
-        "Hogares Jefatura masculina":"75.98",
-        "Hogares Jefatura femenina":"24.02",
-        "Ocupación por Vivienda":"5.33",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"100.00",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"100.00",
-        "Viviendas con Automóvil":"100.00",
-        "Viviendas con Computadora":"46.86",
-        "Viviendas con Celular":"85.49",
-        "Viviendas con Internet":"32.66"
+      "Hogares":"3",
+      "Hogares Jefatura masculina":"75.98",
+      "Hogares Jefatura femenina":"24.02",
+      "Ocupación por Vivienda":"5.33",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"100.00",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"100.00",
+      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Computadora":"46.86",
+      "Viviendas con Celular":"85.49",
+      "Viviendas con Internet":"32.66"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"0"
+      "Total Actividades Económicas":"0"
     }
+  }
 }]

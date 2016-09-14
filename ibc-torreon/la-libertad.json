@@ -1,56 +1,59 @@
 [{
+  "Nombre":"La Libertad",
+  "IBC":{
     "Demografía":{
-        "Población total":"427",
-        "Porcentaje de población masculina":"50.58",
-        "Porcentaje de población femenina":"49.42",
-        "Porcentaje de población de 0 a 14 años":"30.08",
-        "Porcentaje de población de 15 a 64 años":"62.18",
-        "Porcentaje de población de 65 y más años":"7.74",
-        "Porcentaje de población no especificada":"0.00",
-        "Fecundidad promedio":"2.63",
-        "Porcentaje de población nacida en otro estado":"15.00",
-        "Porcentaje de población con discapacidad":"14.80"
+      "Población total":"427",
+      "Porcentaje de población masculina":"50.58",
+      "Porcentaje de población femenina":"49.42",
+      "Porcentaje de población de 0 a 14 años":"30.08",
+      "Porcentaje de población de 15 a 64 años":"62.18",
+      "Porcentaje de población de 65 y más años":"7.74",
+      "Porcentaje de población no especificada":"0.00",
+      "Fecundidad promedio":"2.63",
+      "Porcentaje de población nacida en otro estado":"15.00",
+      "Porcentaje de población con discapacidad":"14.80"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"7.08",
-        "Grado Promedio de Escolaridad masculina":"6.89",
-        "Grado Promedio de Escolaridad femenina":"7.30"
+      "Grado Promedio de Escolaridad":"7.08",
+      "Grado Promedio de Escolaridad masculina":"6.89",
+      "Grado Promedio de Escolaridad femenina":"7.30"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"53.77",
-        "Población Económicamente Activa masculina":"72.44",
-        "Población Económicamente Activa femenina":"27.56",
-        "Población Ocupada":"84.78",
-        "Población Ocupada masculina":"72.69",
-        "Población Ocupada femenina":"27.31",
-        "Población Desocupada":"15.22",
-        "Derechohabiencia":"47.58"
+      "Población Económicamente Activa":"53.77",
+      "Población Económicamente Activa masculina":"72.44",
+      "Población Económicamente Activa femenina":"27.56",
+      "Población Ocupada":"84.78",
+      "Población Ocupada masculina":"72.69",
+      "Población Ocupada femenina":"27.31",
+      "Población Desocupada":"15.22",
+      "Derechohabiencia":"47.58"
     },
     "Viviendas":{
-        "Hogares":"105",
-        "Hogares Jefatura masculina":"77.17",
-        "Hogares Jefatura femenina":"22.83",
-        "Ocupación por Vivienda":"4.07",
-        "Viviendas con Electricidad":"98.58",
-        "Viviendas con Agua":"91.91",
-        "Viviendas con Drenaje":"90.96",
-        "Viviendas con Televisión":"97.62",
-        "Viviendas con Automóvil":"16.95",
-        "Viviendas con Computadora":"12.19",
-        "Viviendas con Celular":"58.16",
-        "Viviendas con Internet":"6.66"
+      "Hogares":"105",
+      "Hogares Jefatura masculina":"77.17",
+      "Hogares Jefatura femenina":"22.83",
+      "Ocupación por Vivienda":"4.07",
+      "Viviendas con Electricidad":"98.58",
+      "Viviendas con Agua":"91.91",
+      "Viviendas con Drenaje":"90.96",
+      "Viviendas con Televisión":"97.62",
+      "Viviendas con Automóvil":"16.95",
+      "Viviendas con Computadora":"12.19",
+      "Viviendas con Celular":"58.16",
+      "Viviendas con Internet":"6.66"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"1",
-        "Primer actividad nombre":"Otros servicios, excepto Gobierno",
-        "Primer actividad porcentaje":"100.00",
-        "Segunda actividad nombre":"Salud",
-        "Segunda actividad porcentaje":"0.00",
-        "Tercera actividad nombre":"Información Medios Masivos",
-        "Tercera actividad porcentaje":"0.00",
-        "Cuarta actividad nombre":"Manejo de Residuos",
-        "Cuarta actividad porcentaje":"0.00",
-        "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
-        "Quinta actividad porcentaje":"0.00"
+      "Total Actividades Económicas":"1",
+      "Primer actividad nombre":"Otros servicios, excepto Gobierno",
+      "Primer actividad porcentaje":"100.00",
+      "Segunda actividad nombre":"Salud",
+      "Segunda actividad porcentaje":"0.00",
+      "Tercera actividad nombre":"Información Medios Masivos",
+      "Tercera actividad porcentaje":"0.00",
+      "Cuarta actividad nombre":"Manejo de Residuos",
+      "Cuarta actividad porcentaje":"0.00",
+      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Quinta actividad porcentaje":"0.00"
     }
+  }
 }]

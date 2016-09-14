@@ -1,56 +1,59 @@
 [{
+  "Nombre":"Miguel De La Madrid",
+  "IBC":{
     "Demografía":{
-        "Población total":"1318",
-        "Porcentaje de población masculina":"50.91",
-        "Porcentaje de población femenina":"49.09",
-        "Porcentaje de población de 0 a 14 años":"27.92",
-        "Porcentaje de población de 15 a 64 años":"67.22",
-        "Porcentaje de población de 65 y más años":"4.63",
-        "Porcentaje de población no especificada":"0.23",
-        "Fecundidad promedio":"2.47",
-        "Porcentaje de población nacida en otro estado":"16.77",
-        "Porcentaje de población con discapacidad":"6.03"
+      "Población total":"1318",
+      "Porcentaje de población masculina":"50.91",
+      "Porcentaje de población femenina":"49.09",
+      "Porcentaje de población de 0 a 14 años":"27.92",
+      "Porcentaje de población de 15 a 64 años":"67.22",
+      "Porcentaje de población de 65 y más años":"4.63",
+      "Porcentaje de población no especificada":"0.23",
+      "Fecundidad promedio":"2.47",
+      "Porcentaje de población nacida en otro estado":"16.77",
+      "Porcentaje de población con discapacidad":"6.03"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"7.86",
-        "Grado Promedio de Escolaridad masculina":"7.84",
-        "Grado Promedio de Escolaridad femenina":"7.89"
+      "Grado Promedio de Escolaridad":"7.86",
+      "Grado Promedio de Escolaridad masculina":"7.84",
+      "Grado Promedio de Escolaridad femenina":"7.89"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"51.02",
-        "Población Económicamente Activa masculina":"74.76",
-        "Población Económicamente Activa femenina":"25.24",
-        "Población Ocupada":"92.86",
-        "Población Ocupada masculina":"74.59",
-        "Población Ocupada femenina":"25.41",
-        "Población Desocupada":"7.14",
-        "Derechohabiencia":"67.68"
+      "Población Económicamente Activa":"51.02",
+      "Población Económicamente Activa masculina":"74.76",
+      "Población Económicamente Activa femenina":"25.24",
+      "Población Ocupada":"92.86",
+      "Población Ocupada masculina":"74.59",
+      "Población Ocupada femenina":"25.41",
+      "Población Desocupada":"7.14",
+      "Derechohabiencia":"67.68"
     },
     "Viviendas":{
-        "Hogares":"301",
-        "Hogares Jefatura masculina":"79.73",
-        "Hogares Jefatura femenina":"20.27",
-        "Ocupación por Vivienda":"4.38",
-        "Viviendas con Electricidad":"99.67",
-        "Viviendas con Agua":"99.67",
-        "Viviendas con Drenaje":"99.34",
-        "Viviendas con Televisión":"98.67",
-        "Viviendas con Automóvil":"41.89",
-        "Viviendas con Computadora":"23.03",
-        "Viviendas con Celular":"67.83",
-        "Viviendas con Internet":"12.26"
+      "Hogares":"301",
+      "Hogares Jefatura masculina":"79.73",
+      "Hogares Jefatura femenina":"20.27",
+      "Ocupación por Vivienda":"4.38",
+      "Viviendas con Electricidad":"99.67",
+      "Viviendas con Agua":"99.67",
+      "Viviendas con Drenaje":"99.34",
+      "Viviendas con Televisión":"98.67",
+      "Viviendas con Automóvil":"41.89",
+      "Viviendas con Computadora":"23.03",
+      "Viviendas con Celular":"67.83",
+      "Viviendas con Internet":"12.26"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"68",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"35.29",
-        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-        "Segunda actividad porcentaje":"25.00",
-        "Tercera actividad nombre":"Industria Manufacturera",
-        "Tercera actividad porcentaje":"14.71",
-        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-        "Cuarta actividad porcentaje":"10.29",
-        "Quinta actividad nombre":"Comercio Mayoreo",
-        "Quinta actividad porcentaje":"5.88"
+      "Total Actividades Económicas":"68",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"35.29",
+      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+      "Segunda actividad porcentaje":"25.00",
+      "Tercera actividad nombre":"Industria Manufacturera",
+      "Tercera actividad porcentaje":"14.71",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Cuarta actividad porcentaje":"10.29",
+      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad porcentaje":"5.88"
     }
+  }
 }]

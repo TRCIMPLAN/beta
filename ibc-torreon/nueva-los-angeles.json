@@ -1,56 +1,59 @@
 [{
+  "Nombre":"Nueva Los Angeles",
+  "IBC":{
     "Demografía":{
-        "Población total":"2337",
-        "Porcentaje de población masculina":"47.36",
-        "Porcentaje de población femenina":"52.64",
-        "Porcentaje de población de 0 a 14 años":"13.61",
-        "Porcentaje de población de 15 a 64 años":"58.09",
-        "Porcentaje de población de 65 y más años":"17.21",
-        "Porcentaje de población no especificada":"11.09",
-        "Fecundidad promedio":"2.05",
-        "Porcentaje de población nacida en otro estado":"22.91",
-        "Porcentaje de población con discapacidad":"6.98"
+      "Población total":"2337",
+      "Porcentaje de población masculina":"47.36",
+      "Porcentaje de población femenina":"52.64",
+      "Porcentaje de población de 0 a 14 años":"13.61",
+      "Porcentaje de población de 15 a 64 años":"58.09",
+      "Porcentaje de población de 65 y más años":"17.21",
+      "Porcentaje de población no especificada":"11.09",
+      "Fecundidad promedio":"2.05",
+      "Porcentaje de población nacida en otro estado":"22.91",
+      "Porcentaje de población con discapacidad":"6.98"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"13.75",
-        "Grado Promedio de Escolaridad masculina":"14.61",
-        "Grado Promedio de Escolaridad femenina":"13.03"
+      "Grado Promedio de Escolaridad":"13.75",
+      "Grado Promedio de Escolaridad masculina":"14.61",
+      "Grado Promedio de Escolaridad femenina":"13.03"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"50.66",
-        "Población Económicamente Activa masculina":"58.98",
-        "Población Económicamente Activa femenina":"41.02",
-        "Población Ocupada":"94.50",
-        "Población Ocupada masculina":"59.24",
-        "Población Ocupada femenina":"40.76",
-        "Población Desocupada":"5.50",
-        "Derechohabiencia":"64.71"
+      "Población Económicamente Activa":"50.66",
+      "Población Económicamente Activa masculina":"58.98",
+      "Población Económicamente Activa femenina":"41.02",
+      "Población Ocupada":"94.50",
+      "Población Ocupada masculina":"59.24",
+      "Población Ocupada femenina":"40.76",
+      "Población Desocupada":"5.50",
+      "Derechohabiencia":"64.71"
     },
     "Viviendas":{
-        "Hogares":"640",
-        "Hogares Jefatura masculina":"68.24",
-        "Hogares Jefatura femenina":"31.76",
-        "Ocupación por Vivienda":"3.65",
-        "Viviendas con Electricidad":"99.36",
-        "Viviendas con Agua":"99.04",
-        "Viviendas con Drenaje":"99.36",
-        "Viviendas con Televisión":"96.90",
-        "Viviendas con Automóvil":"86.78",
-        "Viviendas con Computadora":"72.45",
-        "Viviendas con Celular":"83.47",
-        "Viviendas con Internet":"68.39"
+      "Hogares":"640",
+      "Hogares Jefatura masculina":"68.24",
+      "Hogares Jefatura femenina":"31.76",
+      "Ocupación por Vivienda":"3.65",
+      "Viviendas con Electricidad":"99.36",
+      "Viviendas con Agua":"99.04",
+      "Viviendas con Drenaje":"99.36",
+      "Viviendas con Televisión":"96.90",
+      "Viviendas con Automóvil":"86.78",
+      "Viviendas con Computadora":"72.45",
+      "Viviendas con Celular":"83.47",
+      "Viviendas con Internet":"68.39"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"146",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"21.92",
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-        "Segunda actividad porcentaje":"19.18",
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
-        "Tercera actividad porcentaje":"17.81",
-        "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
-        "Cuarta actividad porcentaje":"6.16",
-        "Quinta actividad nombre":"Salud",
-        "Quinta actividad porcentaje":"5.48"
+      "Total Actividades Económicas":"146",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"21.92",
+      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Segunda actividad porcentaje":"19.18",
+      "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+      "Tercera actividad porcentaje":"17.81",
+      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Cuarta actividad porcentaje":"6.16",
+      "Quinta actividad nombre":"Salud",
+      "Quinta actividad porcentaje":"5.48"
     }
+  }
 }]

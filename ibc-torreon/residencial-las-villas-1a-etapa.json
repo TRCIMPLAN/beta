@@ -1,46 +1,49 @@
 [{
+  "Nombre":"Residencial Las Villas 1A. Etapa",
+  "IBC":{
     "Demografía":{
-        "Población total":"59",
-        "Porcentaje de población masculina":"52.54",
-        "Porcentaje de población femenina":"47.46",
-        "Porcentaje de población de 0 a 14 años":"32.20",
-        "Porcentaje de población de 15 a 64 años":"62.71",
-        "Porcentaje de población de 65 y más años":"5.08",
-        "Porcentaje de población no especificada":"0.01",
-        "Fecundidad promedio":"1.67",
-        "Porcentaje de población nacida en otro estado":"23.73",
-        "Porcentaje de población con discapacidad":"0.00"
+      "Población total":"59",
+      "Porcentaje de población masculina":"52.54",
+      "Porcentaje de población femenina":"47.46",
+      "Porcentaje de población de 0 a 14 años":"32.20",
+      "Porcentaje de población de 15 a 64 años":"62.71",
+      "Porcentaje de población de 65 y más años":"5.08",
+      "Porcentaje de población no especificada":"0.01",
+      "Fecundidad promedio":"1.67",
+      "Porcentaje de población nacida en otro estado":"23.73",
+      "Porcentaje de población con discapacidad":"0.00"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"13.80",
-        "Grado Promedio de Escolaridad masculina":"14.04",
-        "Grado Promedio de Escolaridad femenina":"13.47"
+      "Grado Promedio de Escolaridad":"13.80",
+      "Grado Promedio de Escolaridad masculina":"14.04",
+      "Grado Promedio de Escolaridad femenina":"13.47"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"52.17",
-        "Población Económicamente Activa masculina":"66.67",
-        "Población Económicamente Activa femenina":"33.33",
-        "Población Ocupada":"100.00",
-        "Población Ocupada masculina":"66.67",
-        "Población Ocupada femenina":"33.33",
-        "Población Desocupada":"0.00",
-        "Derechohabiencia":"84.75"
+      "Población Económicamente Activa":"52.17",
+      "Población Económicamente Activa masculina":"66.67",
+      "Población Económicamente Activa femenina":"33.33",
+      "Población Ocupada":"100.00",
+      "Población Ocupada masculina":"66.67",
+      "Población Ocupada femenina":"33.33",
+      "Población Desocupada":"0.00",
+      "Derechohabiencia":"84.75"
     },
     "Viviendas":{
-        "Hogares":"16",
-        "Hogares Jefatura masculina":"87.50",
-        "Hogares Jefatura femenina":"12.50",
-        "Ocupación por Vivienda":"3.69",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"100.00",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"100.00",
-        "Viviendas con Automóvil":"100.00",
-        "Viviendas con Computadora":"100.00",
-        "Viviendas con Celular":"100.00",
-        "Viviendas con Internet":"93.75"
+      "Hogares":"16",
+      "Hogares Jefatura masculina":"87.50",
+      "Hogares Jefatura femenina":"12.50",
+      "Ocupación por Vivienda":"3.69",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"100.00",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"100.00",
+      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Computadora":"100.00",
+      "Viviendas con Celular":"100.00",
+      "Viviendas con Internet":"93.75"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"0"
+      "Total Actividades Económicas":"0"
     }
+  }
 }]

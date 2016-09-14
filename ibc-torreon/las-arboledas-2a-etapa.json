@@ -1,56 +1,59 @@
 [{
+  "Nombre":"Las Arboledas 2A. Etapa",
+  "IBC":{
     "Demografía":{
-        "Población total":"360",
-        "Porcentaje de población masculina":"46.94",
-        "Porcentaje de población femenina":"53.06",
-        "Porcentaje de población de 0 a 14 años":"31.11",
-        "Porcentaje de población de 15 a 64 años":"65.56",
-        "Porcentaje de población de 65 y más años":"3.33",
-        "Porcentaje de población no especificada":"0.00",
-        "Fecundidad promedio":"1.72",
-        "Porcentaje de población nacida en otro estado":"16.11",
-        "Porcentaje de población con discapacidad":"2.57"
+      "Población total":"360",
+      "Porcentaje de población masculina":"46.94",
+      "Porcentaje de población femenina":"53.06",
+      "Porcentaje de población de 0 a 14 años":"31.11",
+      "Porcentaje de población de 15 a 64 años":"65.56",
+      "Porcentaje de población de 65 y más años":"3.33",
+      "Porcentaje de población no especificada":"0.00",
+      "Fecundidad promedio":"1.72",
+      "Porcentaje de población nacida en otro estado":"16.11",
+      "Porcentaje de población con discapacidad":"2.57"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"12.42",
-        "Grado Promedio de Escolaridad masculina":"12.30",
-        "Grado Promedio de Escolaridad femenina":"12.53"
+      "Grado Promedio de Escolaridad":"12.42",
+      "Grado Promedio de Escolaridad masculina":"12.30",
+      "Grado Promedio de Escolaridad femenina":"12.53"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"57.46",
-        "Población Económicamente Activa masculina":"54.55",
-        "Población Económicamente Activa femenina":"45.45",
-        "Población Ocupada":"99.35",
-        "Población Ocupada masculina":"54.25",
-        "Población Ocupada femenina":"45.75",
-        "Población Desocupada":"0.65",
-        "Derechohabiencia":"83.89"
+      "Población Económicamente Activa":"57.46",
+      "Población Económicamente Activa masculina":"54.55",
+      "Población Económicamente Activa femenina":"45.45",
+      "Población Ocupada":"99.35",
+      "Población Ocupada masculina":"54.25",
+      "Población Ocupada femenina":"45.75",
+      "Población Desocupada":"0.65",
+      "Derechohabiencia":"83.89"
     },
     "Viviendas":{
-        "Hogares":"96",
-        "Hogares Jefatura masculina":"70.83",
-        "Hogares Jefatura femenina":"29.17",
-        "Ocupación por Vivienda":"3.75",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"100.00",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"97.92",
-        "Viviendas con Automóvil":"71.88",
-        "Viviendas con Computadora":"62.50",
-        "Viviendas con Celular":"86.46",
-        "Viviendas con Internet":"56.25"
+      "Hogares":"96",
+      "Hogares Jefatura masculina":"70.83",
+      "Hogares Jefatura femenina":"29.17",
+      "Ocupación por Vivienda":"3.75",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"100.00",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"97.92",
+      "Viviendas con Automóvil":"71.88",
+      "Viviendas con Computadora":"62.50",
+      "Viviendas con Celular":"86.46",
+      "Viviendas con Internet":"56.25"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"11",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"36.36",
-        "Segunda actividad nombre":"Manejo de Residuos",
-        "Segunda actividad porcentaje":"27.27",
-        "Tercera actividad nombre":"Salud",
-        "Tercera actividad porcentaje":"9.09",
-        "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
-        "Cuarta actividad porcentaje":"9.09",
-        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
-        "Quinta actividad porcentaje":"9.09"
+      "Total Actividades Económicas":"11",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"36.36",
+      "Segunda actividad nombre":"Manejo de Residuos",
+      "Segunda actividad porcentaje":"27.27",
+      "Tercera actividad nombre":"Salud",
+      "Tercera actividad porcentaje":"9.09",
+      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Cuarta actividad porcentaje":"9.09",
+      "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+      "Quinta actividad porcentaje":"9.09"
     }
+  }
 }]

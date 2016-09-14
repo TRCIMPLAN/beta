@@ -1,56 +1,59 @@
 [{
+  "Nombre":"El Oasis",
+  "IBC":{
     "Demografía":{
-        "Población total":"213",
-        "Porcentaje de población masculina":"51.13",
-        "Porcentaje de población femenina":"48.87",
-        "Porcentaje de población de 0 a 14 años":"28.76",
-        "Porcentaje de población de 15 a 64 años":"69.18",
-        "Porcentaje de población de 65 y más años":"1.99",
-        "Porcentaje de población no especificada":"0.07",
-        "Fecundidad promedio":"1.55",
-        "Porcentaje de población nacida en otro estado":"19.58",
-        "Porcentaje de población con discapacidad":"0.96"
+      "Población total":"213",
+      "Porcentaje de población masculina":"51.13",
+      "Porcentaje de población femenina":"48.87",
+      "Porcentaje de población de 0 a 14 años":"28.76",
+      "Porcentaje de población de 15 a 64 años":"69.18",
+      "Porcentaje de población de 65 y más años":"1.99",
+      "Porcentaje de población no especificada":"0.07",
+      "Fecundidad promedio":"1.55",
+      "Porcentaje de población nacida en otro estado":"19.58",
+      "Porcentaje de población con discapacidad":"0.96"
     },
     "Educación":{
-        "Grado Promedio de Escolaridad":"13.86",
-        "Grado Promedio de Escolaridad masculina":"14.31",
-        "Grado Promedio de Escolaridad femenina":"13.45"
+      "Grado Promedio de Escolaridad":"13.86",
+      "Grado Promedio de Escolaridad masculina":"14.31",
+      "Grado Promedio de Escolaridad femenina":"13.45"
     },
     "Características Económicas":{
-        "Población Económicamente Activa":"51.67",
-        "Población Económicamente Activa masculina":"69.07",
-        "Población Económicamente Activa femenina":"30.93",
-        "Población Ocupada":"99.93",
-        "Población Ocupada masculina":"69.07",
-        "Población Ocupada femenina":"30.93",
-        "Población Desocupada":"0.07",
-        "Derechohabiencia":"81.43"
+      "Población Económicamente Activa":"51.67",
+      "Población Económicamente Activa masculina":"69.07",
+      "Población Económicamente Activa femenina":"30.93",
+      "Población Ocupada":"99.93",
+      "Población Ocupada masculina":"69.07",
+      "Población Ocupada femenina":"30.93",
+      "Población Desocupada":"0.07",
+      "Derechohabiencia":"81.43"
     },
     "Viviendas":{
-        "Hogares":"56",
-        "Hogares Jefatura masculina":"83.24",
-        "Hogares Jefatura femenina":"16.76",
-        "Ocupación por Vivienda":"3.80",
-        "Viviendas con Electricidad":"100.00",
-        "Viviendas con Agua":"98.54",
-        "Viviendas con Drenaje":"100.00",
-        "Viviendas con Televisión":"100.00",
-        "Viviendas con Automóvil":"85.74",
-        "Viviendas con Computadora":"80.67",
-        "Viviendas con Celular":"96.56",
-        "Viviendas con Internet":"67.57"
+      "Hogares":"56",
+      "Hogares Jefatura masculina":"83.24",
+      "Hogares Jefatura femenina":"16.76",
+      "Ocupación por Vivienda":"3.80",
+      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Agua":"98.54",
+      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Televisión":"100.00",
+      "Viviendas con Automóvil":"85.74",
+      "Viviendas con Computadora":"80.67",
+      "Viviendas con Celular":"96.56",
+      "Viviendas con Internet":"67.57"
     },
     "Unidades Económicas":{
-        "Total Actividades Económicas":"1",
-        "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":"100.00",
-        "Segunda actividad nombre":"Salud",
-        "Segunda actividad porcentaje":"0.00",
-        "Tercera actividad nombre":"Información Medios Masivos",
-        "Tercera actividad porcentaje":"0.00",
-        "Cuarta actividad nombre":"Manejo de Residuos",
-        "Cuarta actividad porcentaje":"0.00",
-        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
-        "Quinta actividad porcentaje":"0.00"
+      "Total Actividades Económicas":"1",
+      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad porcentaje":"100.00",
+      "Segunda actividad nombre":"Salud",
+      "Segunda actividad porcentaje":"0.00",
+      "Tercera actividad nombre":"Información Medios Masivos",
+      "Tercera actividad porcentaje":"0.00",
+      "Cuarta actividad nombre":"Manejo de Residuos",
+      "Cuarta actividad porcentaje":"0.00",
+      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+      "Quinta actividad porcentaje":"0.00"
     }
+  }
 }]
