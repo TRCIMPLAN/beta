@@ -34,12 +34,12 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Nombre del directorio dentro de /lib que contiene los archivos con las publicaciones
         $this->publicaciones_directorio = 'IBCTorreon';
         // Los siguientes parámetros dan datos para el índice/galería que será creado
-        $this->titulo                   = 'IBC Torreón';
-        $this->descripcion              = 'Indicadores Básicos de Colonias de IBC Torreón.';
+        $this->titulo                   = 'Colonias de Torreón';
+        $this->descripcion              = 'Indicadores Básicos por Colonias de Torreón, Coahuila de Zaragoza.';
         $this->claves                   = 'IMPLAN, Torreon, Indicadores, Basicos, Colonias';
         $this->encabezado_color         = '#646464';
         // Etiqueta de Navegación a poner activa
-        $this->nombre_menu              = 'IBC Torreón > Listado de Colonias';
+        $this->nombre_menu              = 'Indicadores Básicos por Colonias > Colonias de Torreón';
         // Ruta a la clase para hacer la página con el índice
         $this->indices_paginas          = '\\Base\\PaginasListadoAlfabetico';
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas

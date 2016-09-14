@@ -60,9 +60,10 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public $mapa_servicios     = array(
         'Análisis Publicados'               => 'blog/index.html',
         'Indicadores'                       => 'indicadores-categorias/index.html',
+        'Indicadores Básicos por Colonias'  => 'ibc-torreon/index.html',
         'Información Geográfica'            => 'sig-mapas-torreon/index.html',
         'Plan Estratégico Metropolitano'    => 'plan-estrategico-metropolitano/index.html',
-        'Proyectos Estratégicos'            => 'proyectos/index.html');
+        'Banco de Proyectos'                => 'proyectos/index.html');
     public $mapa_institucional = array(
         'Visión / Misión'                   => 'institucional/vision-mision.html',
         'Mensaje del Director'              => 'institucional/mensaje-director.html',
@@ -74,9 +75,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public $mapa_interaccion   = array(
         'Contacto'                          => 'contacto/contacto.html',
         'Preguntas Frecuentes'              => 'preguntas-frecuentes/preguntas-frecuentes.html',
-        'Eventos'                           => 'eventos/index.html',
         'Sala de Prensa'                    => 'sala-prensa/index.html',
-        'Quejas y Sugerencias'              => '#');
+        'Quejas y Sugerencias'              => 'http://goo.gl/forms/1rdX4X128PpMOif73');
     public $mapa_legal         = array(
         'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178',
         'Términos de Uso de la Información' => 'terminos/terminos-informacion.html',

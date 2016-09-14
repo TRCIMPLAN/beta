@@ -47,7 +47,7 @@ class RealizanMesasDeTrabajoSobreElBosqueVenustianoCarranza extends \Base\Public
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu     = 'Sala de Prensa';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado          = 'ignorar';
+        $this->estado          = 'publicar';
         // Sin imagen en el contenido
         $this->poner_imagen_en_contenido = false;
         // El contenido es estructurado en un esquema

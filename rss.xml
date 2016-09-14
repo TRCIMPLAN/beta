@@ -5,11 +5,21 @@
     <link>http://www.trcimplan.gob.mx</link>
     <description>Últimas publicaciones del Instituto Municipal de Planeación y Competitividad (IMPLAN) de Torreón.</description>
     <language>es-MX</language>
-    <pubDate>Wed, 14 Sep 2016 13:37:50 -0500</pubDate>
+    <pubDate>Wed, 14 Sep 2016 15:01:24 -0500</pubDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Plataforma de Conocimiento v1.0</generator>
     <webMaster>webmaster@trcimplan.mx (Webmaster)</webMaster>
     <atom:link href="http://www.trcimplan.gob.mx/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parques Industriales</title>
+      <link>http://www.trcimplan.gob.mx/sig-mapas-torreon/parques-industriales.html</link>
+      <guid isPermaLink="false">sig-mapas-torreon-parques-industriales</guid>
+      <pubDate>Wed, 14 Sep 2016 09:57:00 -0500</pubDate>
+      <author>Arq. Daniela Patricia Corral Hernández</author>
+      <description><![CDATA[<a href="http://www.trcimplan.gob.mx/sig-mapas-torreon/parques-industriales.html"><img src="http://www.trcimplan.gob.mx/sig-mapas-torreon/parques-industriales/imagen.jpg"><br>
+
+Ubicación de parques industriales en la ciudad de Torreón.</a>]]></description>
+    </item>
     <item>
       <title>Abastos</title>
       <link>http://www.trcimplan.gob.mx/ibc-torreon/abastos.html</link>
@@ -62,14 +72,6 @@
       <title>Ampliacion Fuentes</title>
       <link>http://www.trcimplan.gob.mx/ibc-torreon/ampliacion-fuentes.html</link>
       <guid isPermaLink="false">ibc-torreon-ampliacion-fuentes</guid>
-      <pubDate>Wed, 14 Sep 2016 08:25:00 -0500</pubDate>
-      <author>IMPLAN Torreón Staff</author>
-      <description><![CDATA[Debe haber algo aquí]]></description>
-    </item>
-    <item>
-      <title>Ampliacion La Dalia</title>
-      <link>http://www.trcimplan.gob.mx/ibc-torreon/ampliacion-la-dalia.html</link>
-      <guid isPermaLink="false">ibc-torreon-ampliacion-la-dalia</guid>
       <pubDate>Wed, 14 Sep 2016 08:25:00 -0500</pubDate>
       <author>IMPLAN Torreón Staff</author>
       <description><![CDATA[Debe haber algo aquí]]></description>

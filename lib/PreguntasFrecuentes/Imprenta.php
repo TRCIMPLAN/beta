@@ -39,7 +39,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         $this->claves                   = 'IMPLAN, Torreon, Contacto, Telefono, Direccion, Ubicacion, Oficinas';
         $this->encabezado_color         = '#795100';
         // Opción de Navegación a poner activa
-        $this->nombre_menu              = 'Preguntas Frecuentes';
+        $this->nombre_menu              = 'Contacto > Preguntas Frecuentes';
         // Ruta a la clase para hacer la página con el índice
         $this->indices_paginas          = '\\Base\\PaginasDetallados'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
