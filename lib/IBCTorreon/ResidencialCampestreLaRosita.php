@@ -34,7 +34,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Campestre La Rosita';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-campestre-la-rosita';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '15.70',
                 'Cuarta actividad nombre' => 'Financieros y Seguros',
                 'Cuarta actividad porcentaje' => '5.54',
-                'Quinta actividad nombre' => 'Salud',
+                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Quinta actividad porcentaje' => '4.62'
             )
         );

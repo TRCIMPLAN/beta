@@ -34,7 +34,7 @@ class LasEstrellas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Las Estrellas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'las-estrellas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,14 +104,12 @@ class LasEstrellas extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Industria Manufacturera',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '20.00',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '10.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '10.00'
             )
         );
     } // datos

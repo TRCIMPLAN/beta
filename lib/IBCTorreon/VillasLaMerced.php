@@ -34,7 +34,7 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas La Merced';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-la-merced';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '14.49',
                 'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '6.07',
-                'Quinta actividad nombre' => 'Salud',
+                'Quinta actividad nombre' => 'Manejo de Residuos',
                 'Quinta actividad porcentaje' => '3.04'
             )
         );

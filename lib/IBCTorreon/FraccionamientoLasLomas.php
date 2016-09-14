@@ -34,7 +34,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Fraccionamiento Las Lomas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'fraccionamiento-las-lomas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -107,11 +107,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                 'Segunda actividad nombre' => 'Comercio Menudeo',
                 'Segunda actividad porcentaje' => '25.00',
                 'Tercera actividad nombre' => 'Comercio Mayoreo',
-                'Tercera actividad porcentaje' => '25.00',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad porcentaje' => '25.00'
             )
         );
     } // datos

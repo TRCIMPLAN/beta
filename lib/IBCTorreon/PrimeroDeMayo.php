@@ -34,7 +34,7 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Primero De Mayo';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'primero-de-mayo';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '62.07',
                 'Segunda actividad nombre' => 'Educativos',
                 'Segunda actividad porcentaje' => '13.79',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '6.90',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '6.90',
-                'Quinta actividad nombre' => 'Salud',
+                'Quinta actividad nombre' => 'Manejo de Residuos',
                 'Quinta actividad porcentaje' => '3.45'
             )
         );

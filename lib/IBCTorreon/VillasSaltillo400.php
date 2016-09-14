@@ -34,7 +34,7 @@ class VillasSaltillo400 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas Saltillo 400';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-saltillo-400';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -109,9 +109,7 @@ class VillasSaltillo400 extends \IBCBase\PublicacionWeb {
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '20.00',
                 'Cuarta actividad nombre' => 'Financieros y Seguros',
-                'Cuarta actividad porcentaje' => '10.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '10.00'
             )
         );
     } // datos

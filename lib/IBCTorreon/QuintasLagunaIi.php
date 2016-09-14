@@ -34,7 +34,7 @@ class QuintasLagunaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas Laguna Ii';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-laguna-ii';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class QuintasLagunaIi extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '31.58',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '31.58',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Inmobiliarios',
                 'Tercera actividad porcentaje' => '10.53',
                 'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                 'Cuarta actividad porcentaje' => '10.53',
-                'Quinta actividad nombre' => 'Inmobiliarios',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '10.53'
             )
         );

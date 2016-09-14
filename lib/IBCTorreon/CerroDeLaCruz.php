@@ -34,7 +34,7 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Cerro De La Cruz';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'cerro-de-la-cruz';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '14.29',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '8.57',
-                'Cuarta actividad nombre' => 'Salud',
+                'Cuarta actividad nombre' => 'Manejo de Residuos',
                 'Cuarta actividad porcentaje' => '5.71',
-                'Quinta actividad nombre' => 'Manejo de Residuos',
+                'Quinta actividad nombre' => 'Salud',
                 'Quinta actividad porcentaje' => '5.71'
             )
         );

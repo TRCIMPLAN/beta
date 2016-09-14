@@ -34,7 +34,7 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Jesus Garcia Corona';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'jesus-garcia-corona';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,16 +102,12 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '5',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '40.00',
-                'Segunda actividad nombre' => 'Comercio Menudeo',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '40.00',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad porcentaje' => '20.00'
             )
         );
     } // datos

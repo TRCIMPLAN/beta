@@ -34,7 +34,7 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Chapultepec';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'chapultepec';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,11 +104,11 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '27.27',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Inmobiliarios',
                 'Segunda actividad porcentaje' => '18.18',
                 'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                 'Tercera actividad porcentaje' => '18.18',
-                'Cuarta actividad nombre' => 'Inmobiliarios',
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '18.18',
                 'Quinta actividad nombre' => 'Financieros y Seguros',
                 'Quinta actividad porcentaje' => '9.09'

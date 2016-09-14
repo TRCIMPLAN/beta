@@ -34,7 +34,7 @@ class Alamedas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Alamedas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'alamedas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class Alamedas extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '22.06',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '16.18',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '4.41',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '4.41'
             )
         );

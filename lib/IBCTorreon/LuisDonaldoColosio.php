@@ -34,7 +34,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Luis Donaldo Colosio';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'luis-donaldo-colosio';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '8.16',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '6.12',
-                'Quinta actividad nombre' => 'Comercio Mayoreo',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '4.08'
             )
         );

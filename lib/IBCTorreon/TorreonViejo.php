@@ -34,7 +34,7 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Torreon Viejo';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'torreon-viejo';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,12 +106,10 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '45.45',
                 'Segunda actividad nombre' => 'Comercio Menudeo',
                 'Segunda actividad porcentaje' => '36.36',
-                'Tercera actividad nombre' => 'Inmobiliarios',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '9.09',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
-                'Cuarta actividad porcentaje' => '9.09',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Inmobiliarios',
+                'Cuarta actividad porcentaje' => '9.09'
             )
         );
     } // datos

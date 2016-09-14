@@ -34,7 +34,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas Los Nogales';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-los-nogales';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '13.04',
                 'Cuarta actividad nombre' => 'Manejo de Residuos',
                 'Cuarta actividad porcentaje' => '8.70',
-                'Quinta actividad nombre' => 'Construcción',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '4.35'
             )
         );

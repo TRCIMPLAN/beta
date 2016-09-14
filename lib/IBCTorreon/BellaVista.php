@@ -34,7 +34,7 @@ class BellaVista extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Bella Vista';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'bella-vista';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class BellaVista extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '16.67',
-                'Tercera actividad nombre' => 'Salud',
+                'Tercera actividad nombre' => 'Manejo de Residuos',
                 'Tercera actividad porcentaje' => '5.56',
-                'Cuarta actividad nombre' => 'Manejo de Residuos',
+                'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '5.56',
-                'Quinta actividad nombre' => 'Comercio Mayoreo',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '5.56'
             )
         );

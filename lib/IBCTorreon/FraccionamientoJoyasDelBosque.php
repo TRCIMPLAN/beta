@@ -34,7 +34,7 @@ class FraccionamientoJoyasDelBosque extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Fraccionamiento Joyas Del Bosque';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'fraccionamiento-joyas-del-bosque';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -107,11 +107,7 @@ class FraccionamientoJoyasDelBosque extends \IBCBase\PublicacionWeb {
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '23.53',
                 'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                'Tercera actividad porcentaje' => '5.88',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad porcentaje' => '5.88'
             )
         );
     } // datos

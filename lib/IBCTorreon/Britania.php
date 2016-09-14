@@ -34,7 +34,7 @@ class Britania extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Britania';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'britania';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -105,13 +105,7 @@ class Britania extends \IBCBase\PublicacionWeb {
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Salud',
-                'Segunda actividad porcentaje' => '33.33',
-                'Tercera actividad nombre' => 'Información Medios Masivos',
-                'Tercera actividad porcentaje' => '0.00',
-                'Cuarta actividad nombre' => 'Manejo de Residuos',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Quinta actividad porcentaje' => '0.00'
+                'Segunda actividad porcentaje' => '33.33'
             )
         );
     } // datos

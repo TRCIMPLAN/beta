@@ -34,7 +34,7 @@ class ResidencialLasTorresI extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Las Torres I';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-las-torres-i';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class ResidencialLasTorresI extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '46',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '45.65',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '13.04',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '13.04',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '6.52',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '6.52'
             )
         );

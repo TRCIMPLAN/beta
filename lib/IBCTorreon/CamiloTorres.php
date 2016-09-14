@@ -34,7 +34,7 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Camilo Torres';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'camilo-torres';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -109,9 +109,7 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
                 'Tercera actividad nombre' => 'Gubernamentales',
                 'Tercera actividad porcentaje' => '4.76',
                 'Cuarta actividad nombre' => 'Educativos',
-                'Cuarta actividad porcentaje' => '4.76',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '4.76'
             )
         );
     } // datos

@@ -34,7 +34,7 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Rincon De Las Noas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'rincon-de-las-noas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '26.32',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Comercio Menudeo',
                 'Segunda actividad porcentaje' => '21.05',
-                'Tercera actividad nombre' => 'Comercio Menudeo',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '21.05',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '10.53',

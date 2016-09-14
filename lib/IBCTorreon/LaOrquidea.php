@@ -34,7 +34,7 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Orquidea';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-orquidea';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -103,15 +103,7 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '1',
                 'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Primer actividad porcentaje' => '100.00',
-                'Segunda actividad nombre' => 'Salud',
-                'Segunda actividad porcentaje' => '0.00',
-                'Tercera actividad nombre' => 'Información Medios Masivos',
-                'Tercera actividad porcentaje' => '0.00',
-                'Cuarta actividad nombre' => 'Manejo de Residuos',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Primer actividad porcentaje' => '100.00'
             )
         );
     } // datos

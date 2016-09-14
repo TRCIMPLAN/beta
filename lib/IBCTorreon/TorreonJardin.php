@@ -34,7 +34,7 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Torreon Jardin';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'torreon-jardin';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '14.93',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '11.44',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '10.95',
-                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '10.95'
             )
         );

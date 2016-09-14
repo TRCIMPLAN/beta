@@ -34,7 +34,7 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Rincon San Jose';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'rincon-san-jose';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -105,13 +105,7 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
                 'Primer actividad nombre' => 'Inmobiliarios',
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Comercio Menudeo',
-                'Segunda actividad porcentaje' => '33.33',
-                'Tercera actividad nombre' => 'Salud',
-                'Tercera actividad porcentaje' => '0.00',
-                'Cuarta actividad nombre' => 'Información Medios Masivos',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Manejo de Residuos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Segunda actividad porcentaje' => '33.33'
             )
         );
     } // datos

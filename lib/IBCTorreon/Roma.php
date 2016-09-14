@@ -34,7 +34,7 @@ class Roma extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Roma';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'roma';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class Roma extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '63.64',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Segunda actividad porcentaje' => '9.09',
-                'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '9.09',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '9.09',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '9.09'
             )
         );

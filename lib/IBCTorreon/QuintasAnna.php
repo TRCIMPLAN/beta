@@ -34,7 +34,7 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas Anna';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-anna';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,12 +106,10 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '61.54',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '23.08',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Agricultura',
                 'Tercera actividad porcentaje' => '7.69',
-                'Cuarta actividad nombre' => 'Agricultura',
-                'Cuarta actividad porcentaje' => '7.69',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => '7.69'
             )
         );
     } // datos

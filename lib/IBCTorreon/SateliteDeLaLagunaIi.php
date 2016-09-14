@@ -34,7 +34,7 @@ class SateliteDeLaLagunaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Satelite De La Laguna Ii';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'satelite-de-la-laguna-ii';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class SateliteDeLaLagunaIi extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '19',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '31.58',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '15.79',
                 'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '15.79',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '15.79',
-                'Quinta actividad nombre' => 'Manejo de Residuos',
+                'Quinta actividad nombre' => 'Comercio Menudeo',
                 'Quinta actividad porcentaje' => '10.53'
             )
         );

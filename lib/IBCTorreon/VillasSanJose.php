@@ -34,7 +34,7 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas San Jose';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-san-jose';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,14 +104,10 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '60.00',
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Industria Manufacturera',
-                'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad porcentaje' => '20.00'
             )
         );
     } // datos

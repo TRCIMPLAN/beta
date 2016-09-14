@@ -34,7 +34,7 @@ class Universidad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Universidad';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'universidad';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class Universidad extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '27.27',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '18.18',
-                'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '9.09',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '9.09'
             )
         );

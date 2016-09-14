@@ -45,15 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"1",
       "Primer actividad nombre":"Salud",
-      "Primer actividad porcentaje":"100.00",
-      "Segunda actividad nombre":"Información Medios Masivos",
-      "Segunda actividad porcentaje":"0.00",
-      "Tercera actividad nombre":"Manejo de Residuos",
-      "Tercera actividad porcentaje":"0.00",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"0.00",
-      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Quinta actividad porcentaje":"0.00"
+      "Primer actividad porcentaje":"100.00"
     }
   }
 }]

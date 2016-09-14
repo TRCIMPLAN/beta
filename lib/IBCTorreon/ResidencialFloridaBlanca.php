@@ -34,7 +34,7 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Florida Blanca';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-florida-blanca';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,15 +102,15 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '5',
-                'Primer actividad nombre' => 'Manejo de Residuos',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '20.00',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Manejo de Residuos',
                 'Segunda actividad porcentaje' => '20.00',
                 'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
+                'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '20.00',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '20.00'
             )
         );

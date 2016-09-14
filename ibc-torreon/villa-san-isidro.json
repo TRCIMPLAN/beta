@@ -44,15 +44,15 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"50",
-      "Primer actividad nombre":"Otros servicios, excepto Gobierno",
+      "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"28.00",
-      "Segunda actividad nombre":"Comercio Menudeo",
+      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"28.00",
       "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
       "Tercera actividad porcentaje":"12.00",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"10.00",
-      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"6.00"
     }
   }

@@ -34,7 +34,7 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Segunda Rinconada De La Union';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'segunda-rinconada-de-la-union';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,14 +104,12 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '50.00',
-                'Segunda actividad nombre' => 'Educativos',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '20.00',
                 'Cuarta actividad nombre' => 'Industria Manufacturera',
-                'Cuarta actividad porcentaje' => '10.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '10.00'
             )
         );
     } // datos

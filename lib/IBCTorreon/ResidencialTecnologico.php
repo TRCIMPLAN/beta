@@ -34,7 +34,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Tecnologico';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-tecnologico';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '11.76',
                 'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '1.96',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
+                'Quinta actividad nombre' => 'Manejo de Residuos',
                 'Quinta actividad porcentaje' => '0.98'
             )
         );

@@ -34,7 +34,7 @@ class AmpliacionLaDalia extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ampliacion La Dalia';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ampliacion-la-dalia';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -107,11 +107,7 @@ class AmpliacionLaDalia extends \IBCBase\PublicacionWeb {
                 'Segunda actividad nombre' => 'Financieros y Seguros',
                 'Segunda actividad porcentaje' => '25.00',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Tercera actividad porcentaje' => '25.00',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad porcentaje' => '25.00'
             )
         );
     } // datos

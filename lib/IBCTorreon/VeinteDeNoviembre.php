@@ -34,7 +34,7 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Veinte De Noviembre';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'veinte-de-noviembre';
         $this->imagen          = '../imagenes/imagen.jpg';

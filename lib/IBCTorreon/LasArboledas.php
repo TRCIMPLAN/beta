@@ -34,7 +34,7 @@ class LasArboledas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Las Arboledas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'las-arboledas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class LasArboledas extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '19.05',
                 'Tercera actividad nombre' => 'Salud',
                 'Tercera actividad porcentaje' => '9.52',
-                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad nombre' => 'Gubernamentales',
                 'Cuarta actividad porcentaje' => '9.52',
-                'Quinta actividad nombre' => 'Gubernamentales',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '9.52'
             )
         );

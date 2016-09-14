@@ -34,7 +34,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Maclovio Herrera';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'maclovio-herrera';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,7 +106,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '52.94',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '23.53',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '5.88',
                 'Cuarta actividad nombre' => 'Gubernamentales',
                 'Cuarta actividad porcentaje' => '5.88',

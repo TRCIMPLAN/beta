@@ -34,7 +34,7 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas Del Desierto';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-del-desierto';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -77,11 +77,11 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '28.57',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '28.57',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Tercera actividad porcentaje' => '14.29',
-                'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                'Cuarta actividad nombre' => 'Construcción',
                 'Cuarta actividad porcentaje' => '14.29',
-                'Quinta actividad nombre' => 'Construcción',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '14.29'
             )
         );

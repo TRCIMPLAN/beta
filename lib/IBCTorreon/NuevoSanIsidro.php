@@ -34,7 +34,7 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Nuevo San Isidro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'nuevo-san-isidro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '32.50',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '12.50',
-                'Tercera actividad nombre' => 'Financieros y Seguros',
+                'Tercera actividad nombre' => 'Comercio Mayoreo',
                 'Tercera actividad porcentaje' => '10.00',
-                'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                'Cuarta actividad nombre' => 'Financieros y Seguros',
                 'Cuarta actividad porcentaje' => '10.00',
                 'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Quinta actividad porcentaje' => '10.00'

@@ -34,7 +34,7 @@ class Compresora extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Compresora';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'compresora';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class Compresora extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '60.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                 'Tercera actividad porcentaje' => '6.67',
-                'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '6.67',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '6.67'
             )
         );

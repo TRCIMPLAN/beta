@@ -34,7 +34,7 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Primero De Cobian (Centro)';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'primero-de-cobian-centro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '990',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '22.63',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Segunda actividad porcentaje' => '13.74',
-                'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '13.74',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '12.22',

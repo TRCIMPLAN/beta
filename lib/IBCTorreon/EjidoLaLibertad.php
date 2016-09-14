@@ -34,7 +34,7 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ejido La Libertad';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ejido-la-libertad';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,15 +102,15 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '7',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Educativos',
                 'Primer actividad porcentaje' => '28.57',
-                'Segunda actividad nombre' => 'Educativos',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '28.57',
-                'Tercera actividad nombre' => 'Inmobiliarios',
+                'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '14.29',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '14.29',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Inmobiliarios',
                 'Quinta actividad porcentaje' => '14.29'
             )
         );

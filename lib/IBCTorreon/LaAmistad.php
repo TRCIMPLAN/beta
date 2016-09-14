@@ -34,7 +34,7 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Amistad';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-amistad';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '17.07',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '17.07',
-                'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '7.32',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '7.32'
             )
         );

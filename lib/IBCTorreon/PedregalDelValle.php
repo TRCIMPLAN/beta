@@ -34,7 +34,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Pedregal Del Valle';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'pedregal-del-valle';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '18.18',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '3.03',
-                'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '3.03'
             )
         );

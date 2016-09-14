@@ -34,7 +34,7 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ejido La Partida';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ejido-la-partida';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '149',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '46.31',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '15.44',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '15.44',
                 'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '8.05',

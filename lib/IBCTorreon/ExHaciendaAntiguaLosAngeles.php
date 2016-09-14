@@ -34,7 +34,7 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ex-Hacienda Antigua Los Angeles';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ex-hacienda-antigua-los-angeles';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '25.00',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '10.00',
-                'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '7.50',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '7.50'
             )
         );

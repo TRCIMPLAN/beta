@@ -34,7 +34,7 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Narciso Mendoza';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'narciso-mendoza';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '33',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '54.55',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '15.15',
-                'Tercera actividad nombre' => 'Industria Manufacturera',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '15.15',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '9.09',

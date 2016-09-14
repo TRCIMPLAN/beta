@@ -34,7 +34,7 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'El Roble I';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'el-roble-i';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '66.67',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Comercio Mayoreo',
                 'Segunda actividad porcentaje' => '8.33',
-                'Tercera actividad nombre' => 'Comercio Mayoreo',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '8.33',
                 'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '8.33',
-                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '8.33'
             )
         );

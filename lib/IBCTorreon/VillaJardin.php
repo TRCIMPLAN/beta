@@ -34,7 +34,7 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villa Jardin';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villa-jardin';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '13.46',
                 'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '11.54',
-                'Cuarta actividad nombre' => 'Salud',
+                'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Cuarta actividad porcentaje' => '7.69',
-                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad nombre' => 'Salud',
                 'Quinta actividad porcentaje' => '7.69'
             )
         );

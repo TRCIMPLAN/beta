@@ -34,7 +34,7 @@ class ResidencialLasVillas8aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Las Villas 8A. Etapa';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-las-villas-8a-etapa';
         $this->imagen          = '../imagenes/imagen.jpg';

@@ -34,7 +34,7 @@ class EjidoZaragoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ejido Zaragoza';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ejido-zaragoza';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class EjidoZaragoza extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '40',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '25.00',
-                'Segunda actividad nombre' => 'Educativos',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '20.00',
                 'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '17.50',

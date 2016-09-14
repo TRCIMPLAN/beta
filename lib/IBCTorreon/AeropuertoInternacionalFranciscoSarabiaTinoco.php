@@ -34,7 +34,7 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
         // Título, autor y fecha
         $this->nombre          = 'Aeropuerto Internacional Francisco Sarabia Tinoco';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'aeropuerto-internacional-francisco-sarabia-tinoco';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -95,9 +95,9 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
                 'Primer actividad porcentaje' => '27.78',
                 'Segunda actividad nombre' => 'Inmobiliarios',
                 'Segunda actividad porcentaje' => '19.44',
-                'Tercera actividad nombre' => 'Gubernamentales',
+                'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '13.89',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
+                'Cuarta actividad nombre' => 'Gubernamentales',
                 'Cuarta actividad porcentaje' => '13.89',
                 'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '8.33'

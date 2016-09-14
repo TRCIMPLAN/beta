@@ -34,7 +34,7 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas Universidad Oriente Etapa Ii';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-universidad-oriente-etapa-ii';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,14 +104,10 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '11',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '63.64',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '18.18',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Tercera actividad porcentaje' => '18.18',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad porcentaje' => '18.18'
             )
         );
     } // datos

@@ -34,7 +34,7 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ciudad Nazas Poligono 24A';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ciudad-nazas-poligono-24a';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '50.00',
                 'Segunda actividad nombre' => 'Manejo de Residuos',
                 'Segunda actividad porcentaje' => '12.50',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '12.50',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '12.50',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '12.50'
             )
         );

@@ -34,7 +34,7 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Bocanegra';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'bocanegra';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '35.63',
                 'Segunda actividad nombre' => 'Comercio Menudeo',
                 'Segunda actividad porcentaje' => '22.99',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '12.64',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '12.64',
                 'Quinta actividad nombre' => 'Salud',
                 'Quinta actividad porcentaje' => '3.45'

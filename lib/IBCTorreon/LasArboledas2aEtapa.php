@@ -34,7 +34,7 @@ class LasArboledas2aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Las Arboledas 2A. Etapa';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'las-arboledas-2a-etapa';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class LasArboledas2aEtapa extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '36.36',
                 'Segunda actividad nombre' => 'Manejo de Residuos',
                 'Segunda actividad porcentaje' => '27.27',
-                'Tercera actividad nombre' => 'Salud',
+                'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Tercera actividad porcentaje' => '9.09',
-                'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '9.09',
                 'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                 'Quinta actividad porcentaje' => '9.09'

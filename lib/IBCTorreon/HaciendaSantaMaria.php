@@ -34,7 +34,7 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Hacienda Santa Maria';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'hacienda-santa-maria';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,16 +102,14 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '6',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '33.33',
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '33.33',
-                'Tercera actividad nombre' => 'Salud',
+                'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '16.67',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
-                'Cuarta actividad porcentaje' => '16.67',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Salud',
+                'Cuarta actividad porcentaje' => '16.67'
             )
         );
     } // datos

@@ -34,7 +34,7 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ampliacion Senderos';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ampliacion-senderos';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,12 +106,10 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Salud',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '20.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => '20.00'
             )
         );
     } // datos

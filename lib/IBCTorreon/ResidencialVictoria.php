@@ -34,7 +34,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Victoria';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-victoria';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '10.53',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '5.26',
-                'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '5.26'
             )
         );

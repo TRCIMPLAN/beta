@@ -39,7 +39,7 @@ class Imprenta extends \Base\ImprentaPublicacionesClasificadasPorCategorias {
         $this->claves                   = 'IMPLAN, Torreon, Información, Geográfica, Torreón';
         $this->encabezado_color         = '#008000';
         // Opción de Navegación a poner activa
-        $this->nombre_menu              = 'Información Geográfica > S.I.G. de Torreón';
+        $this->nombre_menu              = 'Información Geográfica > Mapas de Torreón';
         // Ruta a la clase para hacer las páginas con los índices
         $this->indices_paginas          = '\\Base\\PaginasTarjetas'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas

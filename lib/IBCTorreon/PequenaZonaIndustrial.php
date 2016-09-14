@@ -34,7 +34,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Pequeña Zona Industrial';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'pequena-zona-industrial';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -99,7 +99,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '19.35',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '12.90',
-                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Quinta actividad porcentaje' => '6.45'
             )
         );

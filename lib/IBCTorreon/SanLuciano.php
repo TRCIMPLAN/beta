@@ -34,7 +34,7 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'San Luciano';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'san-luciano';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '18.18',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '13.64',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '9.09',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Quinta actividad porcentaje' => '9.09'
             )
         );

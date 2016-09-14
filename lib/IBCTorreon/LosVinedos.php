@@ -34,7 +34,7 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Los Viñedos';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'los-vinedos';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '52',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '21.15',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '19.23',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '19.23',
                 'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '11.54',

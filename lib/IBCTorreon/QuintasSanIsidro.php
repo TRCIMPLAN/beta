@@ -34,7 +34,7 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas San Isidro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-san-isidro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '25.93',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '18.52',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Financieros y Seguros',
                 'Tercera actividad porcentaje' => '11.11',
-                'Cuarta actividad nombre' => 'Financieros y Seguros',
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '11.11',
                 'Quinta actividad nombre' => 'Manejo de Residuos',
                 'Quinta actividad porcentaje' => '7.41'

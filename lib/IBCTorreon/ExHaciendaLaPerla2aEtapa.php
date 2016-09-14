@@ -34,7 +34,7 @@ class ExHaciendaLaPerla2aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ex-Hacienda La Perla 2A. Etapa';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ex-hacienda-la-perla-2a-etapa';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class ExHaciendaLaPerla2aEtapa extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '19.05',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '14.29',
-                'Cuarta actividad nombre' => 'Salud',
+                'Cuarta actividad nombre' => 'Manejo de Residuos',
                 'Cuarta actividad porcentaje' => '4.76',
-                'Quinta actividad nombre' => 'Manejo de Residuos',
+                'Quinta actividad nombre' => 'Salud',
                 'Quinta actividad porcentaje' => '4.76'
             )
         );

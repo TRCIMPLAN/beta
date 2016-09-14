@@ -34,7 +34,7 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ejido La Union';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ejido-la-union';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '17.86',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '15.00',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '7.14',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '7.14'
             )
         );

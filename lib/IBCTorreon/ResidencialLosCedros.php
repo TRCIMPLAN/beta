@@ -34,7 +34,7 @@ class ResidencialLosCedros extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Los Cedros';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-los-cedros';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -75,14 +75,12 @@ class ResidencialLosCedros extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '5',
                 'Primer actividad nombre' => 'Educativos',
                 'Primer actividad porcentaje' => '40.00',
-                'Segunda actividad nombre' => 'Información Medios Masivos',
+                'Segunda actividad nombre' => 'Manejo de Residuos',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Manejo de Residuos',
+                'Tercera actividad nombre' => 'Información Medios Masivos',
                 'Tercera actividad porcentaje' => '20.00',
                 'Cuarta actividad nombre' => 'Financieros y Seguros',
-                'Cuarta actividad porcentaje' => '20.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '20.00'
             )
         );
     } // datos

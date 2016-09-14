@@ -44,15 +44,15 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"5",
-      "Primer actividad nombre":"Manejo de Residuos",
+      "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"20.00",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+      "Segunda actividad nombre":"Manejo de Residuos",
       "Segunda actividad porcentaje":"20.00",
       "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
       "Tercera actividad porcentaje":"20.00",
-      "Cuarta actividad nombre":"Comercio Menudeo",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"20.00",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
       "Quinta actividad porcentaje":"20.00"
     }
   }

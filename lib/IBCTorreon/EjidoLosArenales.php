@@ -34,7 +34,7 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ejido Los Arenales';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ejido-los-arenales';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '75',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '34.67',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '21.33',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '21.33',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '5.33',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '5.33'
             )
         );

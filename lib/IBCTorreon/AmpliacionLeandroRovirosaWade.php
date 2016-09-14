@@ -34,7 +34,7 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ampliacion Leandro Rovirosa Wade';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ampliacion-leandro-rovirosa-wade';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,16 +102,12 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '7',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '42.86',
-                'Segunda actividad nombre' => 'Comercio Menudeo',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '42.86',
                 'Tercera actividad nombre' => 'Manejo de Residuos',
-                'Tercera actividad porcentaje' => '14.29',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Tercera actividad porcentaje' => '14.29'
             )
         );
     } // datos

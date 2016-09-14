@@ -34,7 +34,7 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Jacarandas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'jacarandas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '79',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '56.96',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '12.66',
-                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '12.66',
                 'Cuarta actividad nombre' => 'Manejo de Residuos',
                 'Cuarta actividad porcentaje' => '5.06',

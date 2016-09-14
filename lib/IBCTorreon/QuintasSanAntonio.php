@@ -34,7 +34,7 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Quintas San Antonio';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'quintas-san-antonio';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,7 +106,7 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '40.00',
                 'Segunda actividad nombre' => 'Inmobiliarios',
                 'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '10.00',
                 'Cuarta actividad nombre' => 'Financieros y Seguros',
                 'Cuarta actividad porcentaje' => '10.00',

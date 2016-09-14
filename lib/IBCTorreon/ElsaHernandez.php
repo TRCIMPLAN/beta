@@ -34,7 +34,7 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Elsa Hernandez';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'elsa-hernandez';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '23.60',
                 'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '12.36',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '7.87',
-                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '7.87'
             )
         );

@@ -34,7 +34,7 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial Senderos';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-senderos';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '12',
                 'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Primer actividad porcentaje' => '41.67',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Comercio Menudeo',
                 'Segunda actividad porcentaje' => '16.67',
-                'Tercera actividad nombre' => 'Comercio Menudeo',
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '16.67',
                 'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Cuarta actividad porcentaje' => '8.33',

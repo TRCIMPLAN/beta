@@ -34,7 +34,7 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas Universidad Oriente';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-universidad-oriente';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '68.42',
                 'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '10.53',
-                'Tercera actividad nombre' => 'Salud',
+                'Tercera actividad nombre' => 'Manejo de Residuos',
                 'Tercera actividad porcentaje' => '5.26',
-                'Cuarta actividad nombre' => 'Manejo de Residuos',
+                'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '5.26',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Quinta actividad porcentaje' => '5.26'
             )
         );

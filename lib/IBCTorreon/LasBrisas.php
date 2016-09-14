@@ -34,7 +34,7 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Las Brisas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'las-brisas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,9 +104,9 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '41',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '43.90',
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '14.63',
-                'Tercera actividad nombre' => 'Industria Manufacturera',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '14.63',
                 'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '9.76',

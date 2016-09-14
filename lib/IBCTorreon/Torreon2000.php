@@ -34,7 +34,7 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Torreon 2000';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'torreon-2000';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,12 +106,10 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '66.67',
                 'Segunda actividad nombre' => 'Manejo de Residuos',
                 'Segunda actividad porcentaje' => '11.11',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '11.11',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '11.11',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => '11.11'
             )
         );
     } // datos

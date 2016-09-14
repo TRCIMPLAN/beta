@@ -34,7 +34,7 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial La Rosa';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-la-rosa';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '30.43',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '26.09',
-                'Tercera actividad nombre' => 'Manejo de Residuos',
+                'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '13.04',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
+                'Cuarta actividad nombre' => 'Manejo de Residuos',
                 'Cuarta actividad porcentaje' => '13.04',
                 'Quinta actividad nombre' => 'Salud',
                 'Quinta actividad porcentaje' => '8.70'

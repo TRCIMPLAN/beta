@@ -34,7 +34,7 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Hacienda Oriente';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-hacienda-oriente';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '16.00',
                 'Tercera actividad nombre' => 'Comercio Menudeo',
                 'Tercera actividad porcentaje' => '12.00',
-                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                 'Cuarta actividad porcentaje' => '4.00',
-                'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '4.00'
             )
         );

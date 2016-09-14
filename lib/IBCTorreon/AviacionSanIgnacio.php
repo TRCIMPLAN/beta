@@ -34,7 +34,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Aviacion San Ignacio';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'aviacion-san-ignacio';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '10.00',
                 'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Cuarta actividad porcentaje' => '5.00',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '5.00'
             )
         );

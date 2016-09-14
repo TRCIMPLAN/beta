@@ -34,7 +34,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Rincon De La Hacienda';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'rincon-de-la-hacienda';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,7 +108,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '14.81',
                 'Tercera actividad nombre' => 'Salud',
                 'Tercera actividad porcentaje' => '11.11',
-                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '11.11',
                 'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Quinta actividad porcentaje' => '11.11'

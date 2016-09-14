@@ -34,7 +34,7 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villas Residenciales';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villas-residenciales';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,9 +108,9 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '16.67',
                 'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '16.67',
-                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Cuarta actividad porcentaje' => '8.33',
-                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '8.33'
             )
         );

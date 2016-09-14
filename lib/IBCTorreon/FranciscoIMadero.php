@@ -34,7 +34,7 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Francisco I. Madero';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'francisco-i-madero';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,14 +104,12 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '10',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '70.00',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '10.00',
                 'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '10.00',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
-                'Cuarta actividad porcentaje' => '10.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => '10.00'
             )
         );
     } // datos

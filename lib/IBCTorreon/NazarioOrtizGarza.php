@@ -34,7 +34,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Nazario Ortiz Garza';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'nazario-ortiz-garza';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,15 +102,15 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '17',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '23.53',
-                'Segunda actividad nombre' => 'Comercio Menudeo',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '23.53',
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '17.65',
                 'Cuarta actividad nombre' => 'Salud',
                 'Cuarta actividad porcentaje' => '11.76',
-                'Quinta actividad nombre' => 'Educativos',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '11.76'
             )
         );

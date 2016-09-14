@@ -34,7 +34,7 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Jacobo Meyer';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'jacobo-meyer';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,9 +106,9 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '46.67',
                 'Segunda actividad nombre' => 'Salud',
                 'Segunda actividad porcentaje' => '13.33',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '13.33',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Cuarta actividad porcentaje' => '13.33',
                 'Quinta actividad nombre' => 'Manejo de Residuos',
                 'Quinta actividad porcentaje' => '6.67'

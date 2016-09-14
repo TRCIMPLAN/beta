@@ -34,7 +34,7 @@ class LaPaz extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Paz';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-paz';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,11 +106,11 @@ class LaPaz extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '63.16',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '21.05',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Industria Manufacturera',
                 'Tercera actividad porcentaje' => '5.26',
                 'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '5.26',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '5.26'
             )
         );

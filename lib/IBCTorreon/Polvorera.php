@@ -34,7 +34,7 @@ class Polvorera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Polvorera';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'polvorera';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -104,13 +104,13 @@ class Polvorera extends \IBCBase\PublicacionWeb {
                 'Total Actividades Económicas' => '17',
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '76.47',
-                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad nombre' => 'Industria Manufacturera',
                 'Segunda actividad porcentaje' => '5.88',
-                'Tercera actividad nombre' => 'Educativos',
+                'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Tercera actividad porcentaje' => '5.88',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Cuarta actividad nombre' => 'Educativos',
                 'Cuarta actividad porcentaje' => '5.88',
-                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Quinta actividad porcentaje' => '5.88'
             )
         );

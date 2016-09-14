@@ -34,7 +34,7 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Vista Hermosa';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'vista-hermosa';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -106,12 +106,10 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                 'Primer actividad porcentaje' => '55.56',
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Segunda actividad porcentaje' => '22.22',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad nombre' => 'Gubernamentales',
                 'Tercera actividad porcentaje' => '11.11',
-                'Cuarta actividad nombre' => 'Gubernamentales',
-                'Cuarta actividad porcentaje' => '11.11',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => '11.11'
             )
         );
     } // datos

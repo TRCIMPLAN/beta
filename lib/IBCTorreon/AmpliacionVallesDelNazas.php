@@ -34,7 +34,7 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Ampliacion Valles Del Nazas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'ampliacion-valles-del-nazas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -108,7 +108,7 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
                 'Segunda actividad porcentaje' => '15.91',
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Tercera actividad porcentaje' => '11.36',
-                'Cuarta actividad nombre' => 'Financieros y Seguros',
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '4.55',
                 'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                 'Quinta actividad porcentaje' => '4.55'

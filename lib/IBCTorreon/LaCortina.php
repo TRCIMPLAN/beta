@@ -34,7 +34,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Cortina';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-cortina';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -109,9 +109,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
                 'Tercera actividad nombre' => 'Educativos',
                 'Tercera actividad porcentaje' => '15.00',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '5.00',
-                'Quinta actividad nombre' => 'Salud',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '5.00'
             )
         );
     } // datos

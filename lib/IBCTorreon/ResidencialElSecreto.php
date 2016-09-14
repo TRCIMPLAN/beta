@@ -34,7 +34,7 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Residencial El Secreto';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'residencial-el-secreto';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,13 +102,13 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '6',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '16.67',
                 'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Segunda actividad porcentaje' => '16.67',
                 'Tercera actividad nombre' => 'Construcción',
                 'Tercera actividad porcentaje' => '16.67',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
+                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '16.67',
                 'Quinta actividad nombre' => 'Educativos',
                 'Quinta actividad porcentaje' => '16.67'

@@ -34,7 +34,7 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Rincon San Salvador';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'rincon-san-salvador';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -105,13 +105,7 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
                 'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '75.00',
                 'Segunda actividad nombre' => 'Industria Manufacturera',
-                'Segunda actividad porcentaje' => '25.00',
-                'Tercera actividad nombre' => 'Salud',
-                'Tercera actividad porcentaje' => '0.00',
-                'Cuarta actividad nombre' => 'Información Medios Masivos',
-                'Cuarta actividad porcentaje' => '0.00',
-                'Quinta actividad nombre' => 'Manejo de Residuos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Segunda actividad porcentaje' => '25.00'
             )
         );
     } // datos

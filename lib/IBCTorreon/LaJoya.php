@@ -34,7 +34,7 @@ class LaJoya extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'La Joya';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'la-joya';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -109,9 +109,7 @@ class LaJoya extends \IBCBase\PublicacionWeb {
                 'Tercera actividad nombre' => 'Salud',
                 'Tercera actividad porcentaje' => '12.50',
                 'Cuarta actividad nombre' => 'Inmobiliarios',
-                'Cuarta actividad porcentaje' => '12.50',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '0.00'
+                'Cuarta actividad porcentaje' => '12.50'
             )
         );
     } // datos

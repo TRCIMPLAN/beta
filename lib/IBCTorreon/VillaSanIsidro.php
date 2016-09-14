@@ -34,7 +34,7 @@ class VillaSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Villa San Isidro';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'villa-san-isidro';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -102,15 +102,15 @@ class VillaSanIsidro extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 'Total Actividades Económicas' => '50',
-                'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Primer actividad nombre' => 'Comercio Menudeo',
                 'Primer actividad porcentaje' => '28.00',
-                'Segunda actividad nombre' => 'Comercio Menudeo',
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                 'Segunda actividad porcentaje' => '28.00',
                 'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                 'Tercera actividad porcentaje' => '12.00',
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                 'Cuarta actividad porcentaje' => '10.00',
-                'Quinta actividad nombre' => 'Comercio Mayoreo',
+                'Quinta actividad nombre' => 'Industria Manufacturera',
                 'Quinta actividad porcentaje' => '6.00'
             )
         );

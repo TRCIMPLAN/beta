@@ -34,7 +34,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre          = 'Las Luisas';
         $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-02 12:55:35';
+        $this->fecha           = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo         = 'las-luisas';
         $this->imagen          = '../imagenes/imagen.jpg';
@@ -110,7 +110,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
                 'Tercera actividad porcentaje' => '20.75',
                 'Cuarta actividad nombre' => 'Industria Manufacturera',
                 'Cuarta actividad porcentaje' => '7.55',
-                'Quinta actividad nombre' => 'Financieros y Seguros',
+                'Quinta actividad nombre' => 'Comercio Mayoreo',
                 'Quinta actividad porcentaje' => '1.89'
             )
         );
