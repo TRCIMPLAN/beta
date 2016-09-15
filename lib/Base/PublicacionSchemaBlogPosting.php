@@ -25,7 +25,7 @@ namespace Base;
 /**
  * Clase PublicacionSchemaBlogPosting
  */
-class PublicacionSchemaBlogPosting extends Publicacion {
+class PublicacionSchemaBlogPosting extends PublicacionSchemaArticle {
 
     // public $sitio_url;
     // public $fecha;
@@ -75,49 +75,9 @@ class PublicacionSchemaBlogPosting extends Publicacion {
         if ($this->validado) {
             return;
         }
-        // Validar nombre
-        if (!is_string($this->nombre) || ($this->nombre == '')) {
-            throw new \Exception("Error en PublicacionSchemaBlogPosting, validar: La propiedad nombre no está definida.");
-        }
-        // Validar archivo
-        if (!is_string($this->archivo) || ($this->archivo == '')) {
-            throw new \Exception("Error en PublicacionSchemaBlogPosting, validar: La propiedad archivo no está definida.");
-        }
-        // Validar directorio
-        if (!is_string($this->directorio) || ($this->directorio == '')) {
-            throw new \Exception("Error en PublicacionSchemaBlogPosting, validar: La propiedad directorio no está definida.");
-        }
-        // Validar descripcion
-        if (!is_string($this->descripcion) || ($this->descripcion == '')) {
-            throw new \Exception("Error en PublicacionSchemaBlogPosting, validar: La propiedad descripcion no está definida.");
-        }
-        // Validar autor
-        if (!(is_string($this->autor) && ($this->autor != '')) && !(is_array($this->autor) && (count($this->autor) > 0))) {
-            throw new \Exception("Error en PublicacionSchemaBlogPosting, validar: La propiedad autor no está definida.");
-        }
-        // Si no está definida imagen
-        if ($this->imagen == '') {
-            // Si existe una imagen jpg
-            if (file_exists("{$this->directorio}/{$this->archivo}/imagen.jpg")) {
-                $this->imagen = "{$this->archivo}/imagen.jpg";
-            }
-            // Si existe una imagen png
-            if (file_exists("{$this->directorio}/{$this->archivo}/imagen.png")) {
-                $this->imagen = "{$this->archivo}/imagen.png";
-            }
-        }
-        // Si no está definida imagen previa
-        if ($this->imagen_previa == '') {
-            // Si existe una imagen previa jpg
-            if (file_exists("{$this->directorio}/{$this->archivo}/imagen-previa.jpg")) {
-                $this->imagen_previa = "{$this->archivo}/imagen-previa.jpg";
-            }
-            // Si existe una imagen previapng
-            if (file_exists("{$this->directorio}/{$this->archivo}/imagen-previa.png")) {
-                $this->imagen_previa = "{$this->archivo}/imagen-previa.png";
-            }
-        }
-        // El contenido es estructurado en un esquema
+        // Ejecutar método en el padre
+        parent::validar();
+        // El contenido es estructurado en un esquema SchemaBlogPosting
         $schema                = new SchemaBlogPosting();
         $schema->name          = $this->nombre;
         $schema->description   = $this->descripcion;
@@ -125,10 +85,11 @@ class PublicacionSchemaBlogPosting extends Publicacion {
         $schema->image         = $this->imagen;
         $schema->image_show    = $this->poner_imagen_en_contenido;
         $schema->author        = $this->autor;
+        if (is_array($this->contenido) && (count($this->contenido) > 0)) {
+            $schema->articleBody = implode("\n", $this->contenido);
+        }
         // El contenido es una instancia de SchemaBlogPosting
         $this->contenido       = $schema;
-        // Ejecutar método en el padre
-        parent::validar();
     } // validar
 
 } // Clase PublicacionSchemaBlogPosting

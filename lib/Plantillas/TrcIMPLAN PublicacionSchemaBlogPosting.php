@@ -40,8 +40,15 @@ class CLASE extends \Base\PublicacionSchemaBlogPosting {
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Descripción.';
         $this->claves                     = 'Clave1, Clave2, Clave3';
+        // Opción del menú Navegación a poner como activa cuando vea esta publicación.
+        $this->nombre_menu                = '';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/DIRECTORIO/CLASE.md';
+        // Ruta al archivo HTML con el contenido
+     // $this->contenido_archivo_html     = 'lib/DIRECTORIO/CLASE.md';
+        // Banderas que pueden tener un valor por defecto en \Configuracion\PublicacionConfig
+     // $this->poner_imagen_en_contenido  = false;
+     // $this->para_compartir             = false;
         // Para el Organizador
         $this->categorias                 = array(); // Arreglo con las categorías
         $this->fuentes                    = array(); // Arreglo con las fuentes

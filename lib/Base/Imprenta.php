@@ -94,7 +94,7 @@ abstract class Imprenta {
     /**
      * Crear archivo
      *
-     * Manda una 'a' a la terminal al crear
+     * Manda una '.' a la terminal al crear
      *
      * @param string Ruta al archivo a crear
      * @param mixed  Texto o arreglo con el contenido

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - Introduccion
+ * TrcIMPLAN Sitio Web - IBC Introduccion
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -25,28 +25,28 @@ namespace IBC;
 /**
  * Clase Introduccion
  */
-class Introduccion extends \Base\Publicacion {
+class Introduccion extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Título';
-     // $this->autor       = '';
-        $this->fecha       = '2016-00-00T00:00';
+        $this->nombre                     = 'Introducción a los Indicadores Básicos por Colonias';
+     // $this->autor                      = '';
+        $this->fecha                      = '2016-09-15T10:00';
         // El nombre del archivo a crear
-        $this->archivo     = 'titulo';
+        $this->archivo                    = 'introduccion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Descripción.';
-        $this->claves      = 'Clave1, Clave2, Clave3';
-        // Para el Organizador
-        $this->categorias  = array(); // Arreglo con las categorías
-        $this->fuentes     = array(); // Arreglo con las fuentes
-        $this->regiones    = array(); // Arreglo con las regiones
+        $this->descripcion                = 'Introducción a los Indicadores Básicos por Colonias del IMPLAN Torreón.';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Basicos, Colonias';
+        // Opción del menú Navegación a poner como activa cuando vea esta publicación.
+        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Introducción al IBC';
+        // Ruta al archivo markdown con el contenido
+        $this->contenido_archivo_markdown = 'lib/IBC/Introduccion.md';
         // Banderas que pueden tener un valor por defecto en \Configuracion\PublicacionConfig
-     // $this->poner_imagen_en_contenido = false; // Poner la imagen en la parte superior izquierda
-     // $this->para_compartir            = false; // Poner los botones para compartir en redes sociales
+        $this->poner_imagen_en_contenido  = false;
+        $this->para_compartir             = false;
     } // constructor
 
 } // Clase Introduccion
