@@ -25,7 +25,7 @@ namespace IBCBase;
 /**
  * Clase PublicacionWeb
  */
-abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
+abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements SalidaWeb {
 
     // public $sitio_url;
     // public $fecha;
@@ -66,7 +66,8 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
     // protected $javascript;
     // protected $redifusion;
     // protected $validado;
-    const IDENTIFICADOR = 'Conglomerado';
+    protected $lenguetas;                         // Instancia de LenguetasWeb
+    const LENGUETAS_ID = 'LenguetasConglomerado'; // Texto único que sirve de id para las lengüetas
 
     abstract public function datos();
 
@@ -74,18 +75,17 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * Validar
      */
     public function validar() {
-        if (!$this->validado) {
-            // El contenido es estructurado en un esquema
-            $schema              = new \Base\SchemaDataset();
-            $schema->is_article  = true;
-            $schema->big_heading = true;
-            $schema->name        = $this->nombre;
-            $schema->description = $this->descripcion;
-            $schema->image       = $this->imagen;
-            $schema->image_show  = false;
-            $this->contenido     = $schema;
-            parent::validar();
+        // Si ya fue validado, no se hace nada
+        if ($this->validado) {
+            return;
         }
+        // Ejecutar método en el padre
+        parent::validar();
+        // Elaborar lengüetas
+        $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
+    //~ $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
+        $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this),   TRUE); // Lengüeta activa
+        $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
     } // validar
 
     /**
@@ -94,17 +94,20 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        // Crear lengüetas
-        $lenguetas = new LenguetasWeb(self::IDENTIFICADOR);
-    //~ $lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
-        $lenguetas->agregar('Datos',    new SeccionDatosWeb($this),   TRUE); // Lengüeta activa
-        $lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
-        $this->contenido->extra = $lenguetas->html();
-        $this->javascript[]     = "google.charts.load('current', {'packages':['corechart']});";
-        $this->javascript[]     = $lenguetas->javascript();
-        // Entregar
+        $this->contenido->articleBody = $this->lenguetas->html();
         return parent::html();
     } // html
+
+    /**
+     * Javascript
+     *
+     * @return string Código Javascript
+     */
+    public function javascript() {
+        $this->javascript[] = "google.charts.load('current', {'packages':['corechart']});";
+        $this->javascript[] = $this->lenguetas->javascript();
+        return parent::html();
+    } // javascript
 
     /**
      * Redifusion HTML
@@ -112,9 +115,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Definir
         $this->redifusion = "Debe haber algo aquí";
-        // Entregar
         return parent::redifusion_html();
     } // redifusion_html
 

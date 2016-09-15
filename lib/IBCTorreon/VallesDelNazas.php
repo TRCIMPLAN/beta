@@ -32,24 +32,22 @@ class VallesDelNazas extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'Valles Del Nazas';
-        $this->autor           = 'IMPLAN Torreón Staff';
-        $this->fecha           = '2016-09-14 08:25:21';
+        $this->nombre      = 'Valles Del Nazas';
+        $this->autor       = 'IMPLAN Torreón Staff';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo         = 'valles-del-nazas';
-        $this->imagen          = '../imagenes/imagen.jpg';
-        $this->imagen_previa   = '../imagenes/imagen-previa.jpg';
+        $this->archivo     = 'valles-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Colonia Valles Del Nazas de IBC Torreón.';
-        $this->claves          = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Valles Del Nazas de Torreón.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio      = 'ibc-torreon';
+        $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'IBC > IBC Torreón';
+        $this->nombre_menu = 'Indicadores Básicos por Colonias > Colonias de Torreón';
         // Para el Organizador
-        $this->categorias      = array();
-        $this->fuentes         = array();
-        $this->regiones        = array();
+        $this->categorias  = array();
+        $this->fuentes     = array();
+        $this->regiones    = array('Torreón');
     } // constructor
 
     /**
