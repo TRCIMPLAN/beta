@@ -42,7 +42,6 @@ class CreadorConfig {
      * Constructor
      */
     public function __construct() {
-        // Original
         $this->imprentas                = array(
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
@@ -69,14 +68,10 @@ class CreadorConfig {
         $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
             '\\Blog\\Imprenta',
-            '\\IBCTorreon\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\Proyectos\\Imprenta',
             '\\SalaPrensa\\Imprenta',
-            '\\SIG\\Imprenta',
             '\\SIGMapasTorreon\\Imprenta',
-            '\\SIGPlanes\\Imprenta',
-            '\\SMI\\Imprenta',
             '\\SMIGeorreferenciados\\Imprenta',
             '\\SMIIndicadoresGomezPalacio\\Imprenta',
             '\\SMIIndicadoresLaLaguna\\Imprenta',
