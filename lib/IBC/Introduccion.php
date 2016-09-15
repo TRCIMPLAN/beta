@@ -33,7 +33,7 @@ class Introduccion extends \Base\PublicacionSchemaArticle {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre                     = 'Introducción a los Indicadores Básicos por Colonias';
-     // $this->autor                      = '';
+        $this->autor                      = 'Dirección de Investigación Estratégica';
         $this->fecha                      = '2016-09-15T10:00';
         // El nombre del archivo a crear
         $this->archivo                    = 'introduccion';
