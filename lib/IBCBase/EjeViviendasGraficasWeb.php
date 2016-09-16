@@ -92,9 +92,16 @@ class EjeViviendasGraficasWeb extends EjeViviendas implements SalidaWeb {
         $this->prepapar();
         $a = array();
         foreach ($this->graficas as $g) {
-            $a[] = $g->javascript();
+            $js = $g->javascript();
+            if (is_string($js) && ($js != '')) {
+                $a[] = $js;
+            }
         }
-        return implode("\n", $a);
+        if (count($a) > 0) {
+            return implode("\n", $a);
+        } else {
+            return NULL;
+        }
     } // javascript
 
 } // Clase EjeViviendasGraficasWeb

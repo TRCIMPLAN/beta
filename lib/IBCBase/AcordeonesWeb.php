@@ -90,10 +90,17 @@ class AcordeonesWeb implements SalidaWeb {
         // Acumular
         $a = array();
         foreach ($this->elementos as $elemento) {
-            $a[] = $elemento->javascript();
+            $js = $elemento->javascript();
+            if (is_string($js) && ($js != '')) {
+                $a[] = $js;
+            }
         }
         // Entregar
-        return implode("\n", $a);
+        if (count($a) > 0) {
+            return implode("\n", $a);
+        } else {
+            return NULL;
+        }
     } // javascript
 
 } // Clase AcordeonesWeb

@@ -94,7 +94,11 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
      * @return string Código HTML
      */
     public function html() {
+        // Validar
+        $this->validar();
+        // Elaborar HTML
         $this->contenido->articleBody = $this->lenguetas->html();
+        // Entregar
         return parent::html();
     } // html
 
@@ -104,9 +108,14 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
      * @return string Código Javascript
      */
     public function javascript() {
-        $this->javascript[] = "google.charts.load('current', {'packages':['corechart']});";
+        // Validar
+        $this->validar();
+        // Acumular Javascript propio de Google Charts
+        $this->javascript[] = "  // Google Charts\n  google.charts.load('current', {'packages':['corechart']});";
+        // Acumular Javascript de las lengüetas
         $this->javascript[] = $this->lenguetas->javascript();
-        return parent::html();
+        // Entregar
+        return parent::javascript();
     } // javascript
 
     /**
@@ -115,7 +124,9 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
      * @return string Código HTML
      */
     public function redifusion_html() {
+        // Elaborar redifusión
         $this->redifusion = "Debe haber algo aquí";
+        // Entregar
         return parent::redifusion_html();
     } // redifusion_html
 

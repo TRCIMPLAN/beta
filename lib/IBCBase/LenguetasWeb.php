@@ -117,12 +117,16 @@ class LenguetasWeb implements SalidaWeb {
         // Acumular
         $a = array();
         foreach ($this->elementos as $elemento) {
-            $a[] = $elemento->javascript();
+            $js = $elemento->javascript();
+            if (is_string($js) && ($js != '')) {
+                $a[] = $js;
+            }
         }
-        $a[] = "// LenguetasWeb {$this->identificador} con {$this->elemento_activo} activa";
-        $a[] = "$(document).ready(function(){";
-        $a[] = "  $('#{$this->identificador} a[href=\"#{$identificador}\"]').tab('show')";
-        $a[] = "});";
+        // Acumular javascript propio de Twitter Bootstrap
+        $a[] = "  // LenguetasWeb {$this->identificador} ordenar que {$this->elemento_activo} es la que se mostrará";
+        $a[] = "  $(document).ready(function(){";
+        $a[] = "    $('#{$this->identificador} a[href=\"#{$identificador}\"]').tab('show')";
+        $a[] = "  });";
         // Entregar
         return implode("\n", $a);
     } // javascript

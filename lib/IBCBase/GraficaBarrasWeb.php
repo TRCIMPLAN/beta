@@ -70,22 +70,22 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
-        $a[] = "    // GraficaBarrasWeb {$this->identificador}";
+        $a[] = "      // GraficaBarrasWeb {$this->identificador}";
         // Google Charts
-        $a[] = "    google.charts.setOnLoadCallback(elaborar{$this->identificador});";
-        $a[] = "    function elaborar{$this->identificador}() {";
-        $a[] = "        var data = google.visualization.arrayToDataTable([";
-        $a[] = "            ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],";
+        $a[] = "      google.charts.setOnLoadCallback(elaborar{$this->identificador});";
+        $a[] = "      function elaborar{$this->identificador}() {";
+        $a[] = "          var data = google.visualization.arrayToDataTable([";
+        $a[] = "              ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],";
         $b   = array();
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {
-            $b[] = sprintf("            ['%s', %s, '%s', '%s']", $etiqueta, $valor, $this->etiquetas_colores[$etiqueta], $valor.$this->post_nota);
+            $b[] = sprintf("              ['%s', %s, '%s', '%s']", $etiqueta, $valor, $this->etiquetas_colores[$etiqueta], $valor.$this->post_nota);
         }
         $a[] = implode(",\n", $b);
-        $a[] = "        ]);";
-        $a[] = "        var options = {";
-        $a[] = "          chartArea: { width: '60%' },";
+        $a[] = "          ]);";
+        $a[] = "          var options = {";
+        $a[] = "            chartArea: { width: '60%' },";
         if ($this->titulo !== NULL) {
-            $a[] = sprintf("          title: '%s',", $this->titulo);
+            $a[] = sprintf("            title: '%s',", $this->titulo);
         }
         $b   = array();
         if ($this->eje_horizontal_etiqueta !== NULL) {
@@ -97,12 +97,12 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         if ($this->eje_horizontal_maximo !== NULL) {
             $b[] = "maxValue: {$this->eje_horizontal_maximo}";
         }
-        $a[] = sprintf("          hAxis: { %s },", implode(', ', $b));
-        $a[] = "          legend: { position: 'none' }";
-        $a[] = "        };";
-        $a[] = "        var chart = new google.visualization.BarChart(document.getElementById('{$this->identificador}'));";
-        $a[] = "        chart.draw(data, options);";
-        $a[] = "    }";
+        $a[] = sprintf("            hAxis: { %s },", implode(', ', $b));
+        $a[] = "            legend: { position: 'none' }";
+        $a[] = "          };";
+        $a[] = "          var chart = new google.visualization.BarChart(document.getElementById('{$this->identificador}'));";
+        $a[] = "          chart.draw(data, options);";
+        $a[] = "      }";
         // Morris.js
     /*  $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
         $a[] = "    varGrafica{$this->identificador} = Morris.Bar({";

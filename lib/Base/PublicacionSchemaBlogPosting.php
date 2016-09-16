@@ -75,7 +75,7 @@ class PublicacionSchemaBlogPosting extends PublicacionSchemaArticle {
         if ($this->validado) {
             return;
         }
-        // Ejecutar método en el padre
+        // Ejecutar método en el padre, debe estar antes, porque sobreescribiremos la propiedad contenido
         parent::validar();
         // El contenido es estructurado en un esquema SchemaBlogPosting
         $schema                = new SchemaBlogPosting();

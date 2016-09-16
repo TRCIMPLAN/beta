@@ -52,15 +52,15 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
     public function javascript() {
         $this->validar();
         $a   = array();
-        $a[] = "    // GraficaPayWeb {$this->identificador}";
+        $a[] = "      // GraficaPayWeb {$this->identificador}";
         // Google Charts
-        $a[] = "    google.charts.setOnLoadCallback(elaborar{$this->identificador});";
-        $a[] = "    function elaborar{$this->identificador}() {";
+        $a[] = "      google.charts.setOnLoadCallback(elaborar{$this->identificador});";
+        $a[] = "      function elaborar{$this->identificador}() {";
         $a[] = "        var data = google.visualization.arrayToDataTable([";
-        $a[] = "            ['Etiqueta', 'Valor'],";
+        $a[] = "          ['Etiqueta', 'Valor'],";
         $b   = array();
         foreach ($this->etiquetas_valores as $etiqueta => $valor) {
-            $b[] = sprintf("            ['%s', %s]", $etiqueta, $valor);
+            $b[] = sprintf("              ['%s', %s]", $etiqueta, $valor);
         }
         $a[] = implode(",\n", $b);
         $a[] = "        ]);";
@@ -77,7 +77,7 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
         $a[] = "        };";
         $a[] = "        var chart = new google.visualization.PieChart(document.getElementById('{$this->identificador}'));";
         $a[] = "        chart.draw(data, options);";
-        $a[] = "    }";
+        $a[] = "      }";
         // Morris.js
     /*  $a[] = "if (typeof varGrafica{$this->identificador} === 'undefined') {";
         $a[] = "    varGrafica{$this->identificador} = Morris.Donut({";

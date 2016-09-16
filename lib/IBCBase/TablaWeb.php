@@ -127,7 +127,7 @@ class TablaWeb implements SalidaWeb {
      */
     public function javascript() {
         $this->validar();
-        return "    // TablaWeb {$this->identificador} sin javascript";
+        return NULL;
     } // javascript
 
 } // Clase TablaWeb
