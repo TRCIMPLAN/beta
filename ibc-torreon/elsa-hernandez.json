@@ -6,12 +6,12 @@
       "Porcentaje de población masculina":"48.15",
       "Porcentaje de población femenina":"51.85",
       "Porcentaje de población de 0 a 14 años":"28.49",
-      "Porcentaje de población de 15 a 64 años":"62.10",
+      "Porcentaje de población de 15 a 64 años":"62.1",
       "Porcentaje de población de 65 y más años":"5.41",
-      "Porcentaje de población no especificada":"4.00",
+      "Porcentaje de población no especificada":"4",
       "Fecundidad promedio":"2.59",
       "Porcentaje de población nacida en otro estado":"11.22",
-      "Porcentaje de población con discapacidad":"1.90"
+      "Porcentaje de población con discapacidad":"1.9"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"7.82",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"66.34",
       "Población Ocupada femenina":"33.66",
       "Población Desocupada":"13.11",
-      "Derechohabiencia":"59.40"
+      "Derechohabiencia":"59.4"
     },
     "Viviendas":{
       "Hogares":"569",
@@ -38,21 +38,21 @@
       "Viviendas con Drenaje":"99.25",
       "Viviendas con Televisión":"96.79",
       "Viviendas con Automóvil":"36.36",
-      "Viviendas con Computadora":"16.90",
-      "Viviendas con Celular":"60.90",
+      "Viviendas con Computadora":"16.9",
+      "Viviendas con Celular":"60.9",
       "Viviendas con Internet":"13.77"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"89",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"38.20",
+      "Primer actividad porcentaje":"38.2",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"23.60",
+      "Segunda actividad porcentaje":"23.6",
       "Tercera actividad nombre":"Industria Manufacturera",
       "Tercera actividad porcentaje":"12.36",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"7.87",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Quinta actividad porcentaje":"7.87"
     }
   }

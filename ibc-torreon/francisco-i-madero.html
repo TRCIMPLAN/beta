@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Francisco I. Madero de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Francisco I. Madero" src="../imagenes/imagen.jpg">
@@ -413,15 +413,15 @@
         <td class="derecha">70.00 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Educativos</td>
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
-        <td>3° Educativos</td>
+        <td>3° Otros servicios, excepto Gobierno</td>
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
-        <td>4° Otros servicios, excepto Gobierno</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
@@ -616,7 +616,7 @@
       function elaborarGraficaPobNacOtroEdo() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Nacida en OTRO estado', 19.20],
+              ['Nacida en OTRO estado', 19.2],
               ['Nacida en este estado', 80.8]
         ]);
         var options = {
@@ -652,7 +652,7 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 7.31, '#FF7F37', '7.31 años'],
               ['Masculina', 7.43, '#006AC8', '7.43 años'],
-              ['Femenina', 7.20, '#C80083', '7.20 años']
+              ['Femenina', 7.2, '#C80083', '7.2 años']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,10 +796,10 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 70.00, '#80C0FF', '70.00 %'],
-              ['2° Industria Manufacturera', 10.00, '#59BFC3', '10.00 %'],
-              ['3° Educativos', 10.00, '#59C38E', '10.00 %'],
-              ['4° Otros servicios, excepto Gobierno', 10.00, '#8EC359', '10.00 %'],
+              ['1° Comercio Menudeo', 70, '#80C0FF', '70 %'],
+              ['2° Educativos', 10, '#59BFC3', '10 %'],
+              ['3° Otros servicios, excepto Gobierno', 10, '#59C38E', '10 %'],
+              ['4° Industria Manufacturera', 10, '#8EC359', '10 %'],
               ['5° ', , '#C38E59', ' %']
           ]);
           var options = {

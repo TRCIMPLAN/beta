@@ -14,8 +14,8 @@
       "Porcentaje de población con discapacidad":"5.55"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.90",
-      "Grado Promedio de Escolaridad masculina":"10.10",
+      "Grado Promedio de Escolaridad":"9.9",
+      "Grado Promedio de Escolaridad masculina":"10.1",
       "Grado Promedio de Escolaridad femenina":"9.72"
     },
     "Características Económicas":{
@@ -32,7 +32,7 @@
       "Hogares":"943",
       "Hogares Jefatura masculina":"74.13",
       "Hogares Jefatura femenina":"25.87",
-      "Ocupación por Vivienda":"4.10",
+      "Ocupación por Vivienda":"4.1",
       "Viviendas con Electricidad":"99.58",
       "Viviendas con Agua":"99.58",
       "Viviendas con Drenaje":"98.94",
@@ -47,7 +47,7 @@
       "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"46.67",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"20.00",
+      "Segunda actividad porcentaje":"20",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"15.56",
       "Cuarta actividad nombre":"Manejo de Residuos",

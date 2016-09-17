@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"22.95",
       "Porcentaje de población de 15 a 64 años":"66.37",
       "Porcentaje de población de 65 y más años":"10.68",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"2.35",
       "Porcentaje de población nacida en otro estado":"17.08",
       "Porcentaje de población con discapacidad":"9.28"
@@ -22,11 +22,11 @@
       "Población Económicamente Activa":"51.73",
       "Población Económicamente Activa masculina":"60.67",
       "Población Económicamente Activa femenina":"39.33",
-      "Población Ocupada":"93.80",
+      "Población Ocupada":"93.8",
       "Población Ocupada masculina":"60.44",
       "Población Ocupada femenina":"39.56",
-      "Población Desocupada":"6.20",
-      "Derechohabiencia":"60.50"
+      "Población Desocupada":"6.2",
+      "Derechohabiencia":"60.5"
     },
     "Viviendas":{
       "Hogares":"158",
@@ -36,7 +36,7 @@
       "Viviendas con Electricidad":"99.37",
       "Viviendas con Agua":"99.37",
       "Viviendas con Drenaje":"99.37",
-      "Viviendas con Televisión":"98.10",
+      "Viviendas con Televisión":"98.1",
       "Viviendas con Automóvil":"27.22",
       "Viviendas con Computadora":"19.81",
       "Viviendas con Celular":"68.35",

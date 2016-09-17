@@ -34,7 +34,7 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rastro Municipal';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:01';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rastro-municipal';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,25 +58,19 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '4',
+                'Total Actividades Económicas' => 4,
                 'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Primer actividad porcentaje' => '50.00',
+                'Primer actividad porcentaje' => 50.00,
                 'Segunda actividad nombre' => 'Comercio Menudeo',
-                'Segunda actividad porcentaje' => '25.00',
+                'Segunda actividad porcentaje' => 25.00,
                 'Tercera actividad nombre' => 'Industria Manufacturera',
-                'Tercera actividad porcentaje' => '25.00'
+                'Tercera actividad porcentaje' => 25.00
             )
         );
     } // datos

@@ -11,7 +11,7 @@
       "Porcentaje de población no especificada":"0.03",
       "Fecundidad promedio":"2.58",
       "Porcentaje de población nacida en otro estado":"16.37",
-      "Porcentaje de población con discapacidad":"15.10"
+      "Porcentaje de población con discapacidad":"15.1"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"8.67",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"66.12",
       "Población Ocupada femenina":"33.88",
       "Población Desocupada":"6.65",
-      "Derechohabiencia":"59.60"
+      "Derechohabiencia":"59.6"
     },
     "Viviendas":{
       "Hogares":"972",
@@ -40,7 +40,7 @@
       "Viviendas con Automóvil":"34.94",
       "Viviendas con Computadora":"23.24",
       "Viviendas con Celular":"61.07",
-      "Viviendas con Internet":"15.40"
+      "Viviendas con Internet":"15.4"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"122",
@@ -51,7 +51,7 @@
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"13.11",
       "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"8.20",
+      "Cuarta actividad porcentaje":"8.2",
       "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"6.56"
     }

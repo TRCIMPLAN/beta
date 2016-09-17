@@ -5,10 +5,10 @@
       "Población total":"287",
       "Porcentaje de población masculina":"47.39",
       "Porcentaje de población femenina":"52.61",
-      "Porcentaje de población de 0 a 14 años":"32.40",
+      "Porcentaje de población de 0 a 14 años":"32.4",
       "Porcentaje de población de 15 a 64 años":"63.41",
       "Porcentaje de población de 65 y más años":"2.09",
-      "Porcentaje de población no especificada":"2.10",
+      "Porcentaje de población no especificada":"2.1",
       "Fecundidad promedio":"2.09",
       "Porcentaje de población nacida en otro estado":"17.56",
       "Porcentaje de población con discapacidad":"0.36"
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"46.26",
-      "Población Económicamente Activa masculina":"70.00",
-      "Población Económicamente Activa femenina":"30.00",
+      "Población Económicamente Activa masculina":"70",
+      "Población Económicamente Activa femenina":"30",
       "Población Ocupada":"93.35",
       "Población Ocupada masculina":"68.97",
       "Población Ocupada femenina":"31.03",
@@ -30,10 +30,10 @@
     },
     "Viviendas":{
       "Hogares":"72",
-      "Hogares Jefatura masculina":"50.00",
-      "Hogares Jefatura femenina":"50.00",
+      "Hogares Jefatura masculina":"50",
+      "Hogares Jefatura femenina":"50",
       "Ocupación por Vivienda":"3.99",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"97.22",
       "Viviendas con Drenaje":"95.83",
       "Viviendas con Televisión":"97.22",
@@ -44,15 +44,15 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"11",
-      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
       "Primer actividad porcentaje":"27.27",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Segunda actividad nombre":"Comercio Menudeo",
       "Segunda actividad porcentaje":"27.27",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"18.18",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Comercio Mayoreo",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"9.09"
     }
   }

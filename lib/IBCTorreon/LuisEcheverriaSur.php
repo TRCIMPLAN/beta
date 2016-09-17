@@ -34,7 +34,7 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverria Sur';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-sur';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,44 +58,44 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '5',
-                'Porcentaje de población masculina' => '60.00',
-                'Porcentaje de población femenina' => '40.00',
-                'Porcentaje de población de 0 a 14 años' => '0.00',
-                'Porcentaje de población de 15 a 64 años' => '60.00',
-                'Porcentaje de población de 65 y más años' => '40.00',
-                'Porcentaje de población no especificada' => '0.00',
-                'Fecundidad promedio' => '4.50',
-                'Porcentaje de población nacida en otro estado' => '14.83',
-                'Porcentaje de población con discapacidad' => '7.81'
+                'Población total' => 5,
+                'Porcentaje de población masculina' => 60.00,
+                'Porcentaje de población femenina' => 40.00,
+                'Porcentaje de población de 0 a 14 años' => 0.00,
+                'Porcentaje de población de 15 a 64 años' => 60.00,
+                'Porcentaje de población de 65 y más años' => 40.00,
+                'Porcentaje de población no especificada' => 0.00,
+                'Fecundidad promedio' => 4.50,
+                'Porcentaje de población nacida en otro estado' => 14.83,
+                'Porcentaje de población con discapacidad' => 7.81
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '6.00',
-                'Grado Promedio de Escolaridad masculina' => '8.33',
-                'Grado Promedio de Escolaridad femenina' => '2.50'
+                'Grado Promedio de Escolaridad' => 6.00,
+                'Grado Promedio de Escolaridad masculina' => 8.33,
+                'Grado Promedio de Escolaridad femenina' => 2.50
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '0.00',
-                'Derechohabiencia' => '60.00'
+                'Población Económicamente Activa' => 0.00,
+                'Derechohabiencia' => 60.00
             ),
             'Viviendas' => array(
-                'Hogares' => '3',
-                'Hogares Jefatura masculina' => '100.00',
-                'Hogares Jefatura femenina' => '0.00',
-                'Ocupación por Vivienda' => '1.67',
-                'Viviendas con Electricidad' => '99.50',
-                'Viviendas con Agua' => '99.34',
-                'Viviendas con Drenaje' => '99.17',
-                'Viviendas con Televisión' => '97.52',
-                'Viviendas con Automóvil' => '0.00',
-                'Viviendas con Computadora' => '0.00',
-                'Viviendas con Celular' => '55.63',
-                'Viviendas con Internet' => '0.00'
+                'Hogares' => 3,
+                'Hogares Jefatura masculina' => 100.00,
+                'Hogares Jefatura femenina' => 0.00,
+                'Ocupación por Vivienda' => 1.67,
+                'Viviendas con Electricidad' => 99.50,
+                'Viviendas con Agua' => 99.34,
+                'Viviendas con Drenaje' => 99.17,
+                'Viviendas con Televisión' => 97.52,
+                'Viviendas con Automóvil' => 0.00,
+                'Viviendas con Computadora' => 0.00,
+                'Viviendas con Celular' => 55.63,
+                'Viviendas con Internet' => 0.00
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '1',
+                'Total Actividades Económicas' => 1,
                 'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => '100.00'
+                'Primer actividad porcentaje' => 100.00
             )
         );
     } // datos

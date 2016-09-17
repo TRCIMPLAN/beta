@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"62.14",
-      "Población Económicamente Activa masculina":"70.20",
-      "Población Económicamente Activa femenina":"29.80",
+      "Población Económicamente Activa masculina":"70.2",
+      "Población Económicamente Activa femenina":"29.8",
       "Población Ocupada":"96.58",
       "Población Ocupada masculina":"71.23",
       "Población Ocupada femenina":"28.77",
@@ -34,7 +34,7 @@
       "Hogares Jefatura femenina":"11.54",
       "Ocupación por Vivienda":"3.35",
       "Viviendas con Electricidad":"99.04",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.04",
       "Viviendas con Televisión":"96.15",
       "Viviendas con Automóvil":"50.18",
@@ -44,10 +44,10 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"6",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
-      "Segunda actividad nombre":"Educativos",
-      "Segunda actividad porcentaje":"50.00"
+      "Primer actividad nombre":"Educativos",
+      "Primer actividad porcentaje":"50",
+      "Segunda actividad nombre":"Comercio Menudeo",
+      "Segunda actividad porcentaje":"50"
     }
   }
 }]

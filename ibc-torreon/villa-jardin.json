@@ -5,7 +5,7 @@
       "Población total":"548",
       "Porcentaje de población masculina":"46.41",
       "Porcentaje de población femenina":"53.59",
-      "Porcentaje de población de 0 a 14 años":"11.60",
+      "Porcentaje de población de 0 a 14 años":"11.6",
       "Porcentaje de población de 15 a 64 años":"63.71",
       "Porcentaje de población de 65 y más años":"13.63",
       "Porcentaje de población no especificada":"11.06",
@@ -19,14 +19,14 @@
       "Grado Promedio de Escolaridad femenina":"13.51"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"52.20",
+      "Población Económicamente Activa":"52.2",
       "Población Económicamente Activa masculina":"63.52",
       "Población Económicamente Activa femenina":"36.48",
       "Población Ocupada":"93.39",
       "Población Ocupada masculina":"63.47",
       "Población Ocupada femenina":"36.53",
       "Población Desocupada":"6.61",
-      "Derechohabiencia":"72.90"
+      "Derechohabiencia":"72.9"
     },
     "Viviendas":{
       "Hogares":"154",
@@ -34,12 +34,12 @@
       "Hogares Jefatura femenina":"19.71",
       "Ocupación por Vivienda":"3.56",
       "Viviendas con Electricidad":"99.72",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.72",
       "Viviendas con Televisión":"89.25",
       "Viviendas con Automóvil":"84.62",
       "Viviendas con Computadora":"72.81",
-      "Viviendas con Celular":"82.00",
+      "Viviendas con Celular":"82",
       "Viviendas con Internet":"68.86"
     },
     "Unidades Económicas":{
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"13.46",
       "Tercera actividad nombre":"Comercio Menudeo",
       "Tercera actividad porcentaje":"11.54",
-      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"7.69",
-      "Quinta actividad nombre":"Salud",
+      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Quinta actividad porcentaje":"7.69"
     }
   }

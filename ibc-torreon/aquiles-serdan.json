@@ -9,7 +9,7 @@
       "Porcentaje de población de 15 a 64 años":"63.47",
       "Porcentaje de población de 65 y más años":"8.78",
       "Porcentaje de población no especificada":"0.16",
-      "Fecundidad promedio":"2.50",
+      "Fecundidad promedio":"2.5",
       "Porcentaje de población nacida en otro estado":"18.38",
       "Porcentaje de población con discapacidad":"9.35"
     },
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"52.65",
-      "Población Económicamente Activa masculina":"63.00",
-      "Población Económicamente Activa femenina":"37.00",
+      "Población Económicamente Activa masculina":"63",
+      "Población Económicamente Activa femenina":"37",
       "Población Ocupada":"89.27",
       "Población Ocupada masculina":"60.77",
       "Población Ocupada femenina":"39.23",
@@ -38,9 +38,9 @@
       "Viviendas con Drenaje":"98.76",
       "Viviendas con Televisión":"96.07",
       "Viviendas con Automóvil":"27.17",
-      "Viviendas con Computadora":"20.60",
+      "Viviendas con Computadora":"20.6",
       "Viviendas con Celular":"57.64",
-      "Viviendas con Internet":"11.70"
+      "Viviendas con Internet":"11.7"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"43",
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"13.95",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"11.63",
-      "Quinta actividad nombre":"Salud",
+      "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"4.65"
     }
   }

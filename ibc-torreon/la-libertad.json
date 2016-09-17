@@ -8,15 +8,15 @@
       "Porcentaje de población de 0 a 14 años":"30.08",
       "Porcentaje de población de 15 a 64 años":"62.18",
       "Porcentaje de población de 65 y más años":"7.74",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"2.63",
-      "Porcentaje de población nacida en otro estado":"15.00",
-      "Porcentaje de población con discapacidad":"14.80"
+      "Porcentaje de población nacida en otro estado":"15",
+      "Porcentaje de población con discapacidad":"14.8"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"7.08",
       "Grado Promedio de Escolaridad masculina":"6.89",
-      "Grado Promedio de Escolaridad femenina":"7.30"
+      "Grado Promedio de Escolaridad femenina":"7.3"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"53.77",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"1",
       "Primer actividad nombre":"Otros servicios, excepto Gobierno",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

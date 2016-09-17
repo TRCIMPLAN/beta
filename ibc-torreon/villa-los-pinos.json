@@ -9,10 +9,10 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"2",
-      "Primer actividad nombre":"Inmobiliarios",
-      "Primer actividad porcentaje":"50.00",
-      "Segunda actividad nombre":"Educativos",
-      "Segunda actividad porcentaje":"50.00"
+      "Primer actividad nombre":"Educativos",
+      "Primer actividad porcentaje":"50",
+      "Segunda actividad nombre":"Inmobiliarios",
+      "Segunda actividad porcentaje":"50"
     }
   }
 }]

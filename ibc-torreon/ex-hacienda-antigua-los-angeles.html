@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ex-Hacienda Antigua Los Angeles de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Ex-Hacienda Antigua Los Angeles" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
-        <td>4° Industria Manufacturera</td>
+        <td>4° Comercio Mayoreo</td>
         <td class="derecha">7.50 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">7.50 %</td>
       </tr>
     </tbody>
@@ -671,7 +671,7 @@
       function elaborarGraficaPobEcoAct() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Activa', 58.50],
+              ['Activa', 58.5],
               ['NO Activa', 41.5]
         ]);
         var options = {
@@ -687,8 +687,8 @@
       function elaborarGraficaPobEcoActMasFem() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Masculina', 54.40],
-              ['Femenina', 45.60]
+              ['Masculina', 54.4],
+              ['Femenina', 45.6]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,11 +770,11 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
-              ['Automóvil', 92.80, '#59BFC3', '92.80 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
+              ['Automóvil', 92.8, '#59BFC3', '92.8 %'],
               ['Computadora', 87.29, '#59C38E', '87.29 %'],
               ['Celular', 94.63, '#8EC359', '94.63 %'],
               ['Internet', 81.14, '#C38E59', '81.14 %']
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Preparación de Alimentos y Bebidas', 27.50, '#80C0FF', '27.50 %'],
-              ['2° Comercio Menudeo', 25.00, '#59BFC3', '25.00 %'],
-              ['3° Otros servicios, excepto Gobierno', 10.00, '#59C38E', '10.00 %'],
-              ['4° Industria Manufacturera', 7.50, '#8EC359', '7.50 %'],
-              ['5° Comercio Mayoreo', 7.50, '#C38E59', '7.50 %']
+              ['1° Preparación de Alimentos y Bebidas', 27.5, '#80C0FF', '27.5 %'],
+              ['2° Comercio Menudeo', 25, '#59BFC3', '25 %'],
+              ['3° Otros servicios, excepto Gobierno', 10, '#59C38E', '10 %'],
+              ['4° Comercio Mayoreo', 7.5, '#8EC359', '7.5 %'],
+              ['5° Industria Manufacturera', 7.5, '#C38E59', '7.5 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

@@ -5,12 +5,12 @@
       "Población total":"2463",
       "Porcentaje de población masculina":"49.61",
       "Porcentaje de población femenina":"50.39",
-      "Porcentaje de población de 0 a 14 años":"22.90",
+      "Porcentaje de población de 0 a 14 años":"22.9",
       "Porcentaje de población de 15 a 64 años":"63.03",
       "Porcentaje de población de 65 y más años":"10.01",
       "Porcentaje de población no especificada":"4.06",
       "Fecundidad promedio":"2.46",
-      "Porcentaje de población nacida en otro estado":"12.60",
+      "Porcentaje de población nacida en otro estado":"12.6",
       "Porcentaje de población con discapacidad":"4.11"
     },
     "Educación":{
@@ -36,7 +36,7 @@
       "Viviendas con Electricidad":"99.03",
       "Viviendas con Agua":"98.51",
       "Viviendas con Drenaje":"98.68",
-      "Viviendas con Televisión":"97.80",
+      "Viviendas con Televisión":"97.8",
       "Viviendas con Automóvil":"31.32",
       "Viviendas con Computadora":"25.15",
       "Viviendas con Celular":"59.89",
@@ -45,14 +45,14 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"74",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"52.70",
+      "Primer actividad porcentaje":"52.7",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"13.51",
       "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
       "Tercera actividad porcentaje":"12.16",
       "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"6.76",
-      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"4.05"
     }
   }

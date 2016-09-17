@@ -26,17 +26,17 @@
       "Población Ocupada masculina":"58.84",
       "Población Ocupada femenina":"41.16",
       "Población Desocupada":"4.77",
-      "Derechohabiencia":"88.40"
+      "Derechohabiencia":"88.4"
     },
     "Viviendas":{
       "Hogares":"327",
       "Hogares Jefatura masculina":"86.54",
       "Hogares Jefatura femenina":"13.46",
       "Ocupación por Vivienda":"3.43",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.69",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"95.11",
       "Viviendas con Computadora":"77.98",
       "Viviendas con Celular":"98.17",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"6",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
+      "Primer actividad porcentaje":"50",
       "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
       "Segunda actividad porcentaje":"33.33",
       "Tercera actividad nombre":"Inmobiliarios",

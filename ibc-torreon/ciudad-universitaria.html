@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ciudad Universitaria de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Ciudad Universitaria" src="../imagenes/imagen.jpg">
@@ -192,28 +192,9 @@ La Población Total es cero.
     </div>
     <div id="DatosEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosEducacion">
       <div class="panel-body">
-  <table class="table table-hover table-bordered">
-    <thead>
-      <tr>
-        <th>Indicador</th>
-        <th>Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Grado Promedio de Escolaridad</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Grado Promedio de Escolaridad masculina</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Grado Promedio de Escolaridad femenina</td>
-        <td class="derecha">ND</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="alert alert-warning">
+Ciudad Universitaria sin datos sobre Educación.
+</div>
       </div>
     </div>
   </div>
@@ -227,48 +208,9 @@ La Población Total es cero.
     </div>
     <div id="DatosCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosCaracteristicasEconomicas">
       <div class="panel-body">
-  <table class="table table-hover table-bordered">
-    <thead>
-      <tr>
-        <th>Indicador</th>
-        <th>Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Población Económicamente Activa</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Económicamente Activa masculina</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Económicamente Activa femenina</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Ocupada</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Ocupada masculina</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Ocupada femenina</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Población Desocupada</td>
-        <td class="derecha">ND</td>
-      </tr>
-      <tr>
-        <td>Derechohabiencia</td>
-        <td class="derecha">ND</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="alert alert-warning">
+Ciudad Universitaria sin datos sobre Características Económicas.
+</div>
       </div>
     </div>
   </div>
@@ -323,11 +265,11 @@ La cantidad de Hogares es cero.
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
-        <td>4° Información Medios Masivos</td>
+        <td>4° Gubernamentales</td>
         <td class="derecha">6.25 %</td>
       </tr>
       <tr>
-        <td>5° Gubernamentales</td>
+        <td>5° Información Medios Masivos</td>
         <td class="derecha">6.25 %</td>
       </tr>
     </tbody>
@@ -365,7 +307,9 @@ La Población Total es cero.
     </div>
     <div id="GraficasEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasEducacion">
       <div class="panel-body">
-    <div id="GraficaPromEsc" class="grafica"></div>
+<div class="alert alert-warning">
+Ciudad Universitaria sin datos sobre Educación.
+</div>
       </div>
     </div>
   </div>
@@ -379,11 +323,9 @@ La Población Total es cero.
     </div>
     <div id="GraficasCaracteristicasEconomicas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasCaracteristicasEconomicas">
       <div class="panel-body">
-    <div id="GraficaPobEcoAct" class="grafica"></div>
-    <div id="GraficaPobEcoActMasFem" class="grafica"></div>
-    <div id="GraficaOcu" class="grafica"></div>
-    <div id="GraficaOcuMasFem" class="grafica"></div>
-    <div id="GraficaDerechohabiencia" class="grafica"></div>
+<div class="alert alert-warning">
+Ciudad Universitaria sin datos sobre Características Económicas.
+</div>
       </div>
     </div>
   </div>
@@ -462,11 +404,11 @@ La cantidad de Hogares es cero.
 // MensajeWeb sin javascript
   // AcordeonWeb DatosEducacion ejecuta lo siguiente al mostrar
   $('#DatosEducacion').on('shown.bs.collapse', function () {
-
+// MensajeWeb sin javascript
   })
   // AcordeonWeb DatosCaracteristicasEconomicas ejecuta lo siguiente al mostrar
   $('#DatosCaracteristicasEconomicas').on('shown.bs.collapse', function () {
-
+// MensajeWeb sin javascript
   })
   // AcordeonWeb DatosViviendas ejecuta lo siguiente al mostrar
   $('#DatosViviendas').on('shown.bs.collapse', function () {
@@ -483,107 +425,12 @@ La cantidad de Hogares es cero.
 // MensajeWeb sin javascript
   // AcordeonWeb GraficasEducacion ejecuta lo siguiente al mostrar
   $('#GraficasEducacion').on('shown.bs.collapse', function () {
-      // GraficaBarrasWeb GraficaPromEsc
-      google.charts.setOnLoadCallback(elaborarGraficaPromEsc);
-      function elaborarGraficaPromEsc() {
-          var data = google.visualization.arrayToDataTable([
-              ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Global', , '#FF7F37', ' años'],
-              ['Masculina', , '#006AC8', ' años'],
-              ['Femenina', , '#C80083', ' años']
-          ]);
-          var options = {
-            chartArea: { width: '60%' },
-            title: 'Grado Promedio de Escolaridad',
-            hAxis: { title: 'Años', minValue: 0, maxValue: 24 },
-            legend: { position: 'none' }
-          };
-          var chart = new google.visualization.BarChart(document.getElementById('GraficaPromEsc'));
-          chart.draw(data, options);
-      }
+// MensajeWeb sin javascript
   })
   // AcordeonWeb GraficasCaracteristicasEconomicas ejecuta lo siguiente al mostrar
   $('#GraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
-      // GraficaPayWeb GraficaPobEcoAct
-      google.charts.setOnLoadCallback(elaborarGraficaPobEcoAct);
-      function elaborarGraficaPobEcoAct() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Activa', ],
-              ['NO Activa', 100]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población Económicamente Activa',
-          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoAct'));
-        chart.draw(data, options);
-      }
-      // GraficaPayWeb GraficaPobEcoActMasFem
-      google.charts.setOnLoadCallback(elaborarGraficaPobEcoActMasFem);
-      function elaborarGraficaPobEcoActMasFem() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Masculina', ],
-              ['Femenina', ]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población Económicamente Activa por género',
-          slices: [{color: '#006AC8'}, {color: '#C80083'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobEcoActMasFem'));
-        chart.draw(data, options);
-      }
-      // GraficaPayWeb GraficaOcu
-      google.charts.setOnLoadCallback(elaborarGraficaOcu);
-      function elaborarGraficaOcu() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Ocupada', ],
-              ['Desocupada', ]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población Ocupada',
-          slices: [{color: '#A8001E'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcu'));
-        chart.draw(data, options);
-      }
-      // GraficaPayWeb GraficaOcuMasFem
-      google.charts.setOnLoadCallback(elaborarGraficaOcuMasFem);
-      function elaborarGraficaOcuMasFem() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Masculina', ],
-              ['Femenina', ]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Población Ocupada por género',
-          slices: [{color: '#006AC8'}, {color: '#C80083'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaOcuMasFem'));
-        chart.draw(data, options);
-      }
-      // GraficaPayWeb GraficaDerechohabiencia
-      google.charts.setOnLoadCallback(elaborarGraficaDerechohabiencia);
-      function elaborarGraficaDerechohabiencia() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Con Derechohabiencia', ],
-              ['SIN Derechohabiencia', 100]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Derechohabiencia',
-          slices: [{color: '#00A898'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaDerechohabiencia'));
-        chart.draw(data, options);
-      }
+// MensajeWeb sin javascript
+// MensajeWeb sin javascript
   })
   // AcordeonWeb GraficasViviendas ejecuta lo siguiente al mostrar
   $('#GraficasViviendas').on('shown.bs.collapse', function () {
@@ -599,9 +446,9 @@ La cantidad de Hogares es cero.
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Educativos', 43.75, '#80C0FF', '43.75 %'],
               ['2° Preparación de Alimentos y Bebidas', 31.25, '#59BFC3', '31.25 %'],
-              ['3° Manejo de Residuos', 12.50, '#59C38E', '12.50 %'],
-              ['4° Información Medios Masivos', 6.25, '#8EC359', '6.25 %'],
-              ['5° Gubernamentales', 6.25, '#C38E59', '6.25 %']
+              ['3° Manejo de Residuos', 12.5, '#59C38E', '12.5 %'],
+              ['4° Gubernamentales', 6.25, '#8EC359', '6.25 %'],
+              ['5° Información Medios Masivos', 6.25, '#C38E59', '6.25 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

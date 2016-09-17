@@ -16,7 +16,7 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"14.17",
       "Grado Promedio de Escolaridad masculina":"14.96",
-      "Grado Promedio de Escolaridad femenina":"13.50"
+      "Grado Promedio de Escolaridad femenina":"13.5"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"50.32",
@@ -37,8 +37,8 @@
       "Viviendas con Agua":"99.45",
       "Viviendas con Drenaje":"99.45",
       "Viviendas con Televisión":"96.67",
-      "Viviendas con Automóvil":"93.20",
-      "Viviendas con Computadora":"86.70",
+      "Viviendas con Automóvil":"93.2",
+      "Viviendas con Computadora":"86.7",
       "Viviendas con Celular":"89.45",
       "Viviendas con Internet":"85.05"
     },
@@ -48,9 +48,9 @@
       "Primer actividad porcentaje":"15.71",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"14.29",
-      "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"12.86",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
       "Cuarta actividad porcentaje":"12.86",
       "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"11.43"

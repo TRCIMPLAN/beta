@@ -36,7 +36,7 @@
       "Viviendas con Electricidad":"93.61",
       "Viviendas con Agua":"93.59",
       "Viviendas con Drenaje":"93.53",
-      "Viviendas con Televisión":"93.60",
+      "Viviendas con Televisión":"93.6",
       "Viviendas con Automóvil":"85.42",
       "Viviendas con Computadora":"80.03",
       "Viviendas con Celular":"90.74",
@@ -44,9 +44,9 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"3",
-      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
       "Primer actividad porcentaje":"33.33",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Segunda actividad nombre":"Comercio Menudeo",
       "Segunda actividad porcentaje":"33.33",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"33.33"

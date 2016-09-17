@@ -7,11 +7,11 @@
       "Porcentaje de población femenina":"56.53",
       "Porcentaje de población de 0 a 14 años":"23.22",
       "Porcentaje de población de 15 a 64 años":"76.06",
-      "Porcentaje de población de 65 y más años":"0.50",
+      "Porcentaje de población de 65 y más años":"0.5",
       "Porcentaje de población no especificada":"0.22",
       "Fecundidad promedio":"1.33",
       "Porcentaje de población nacida en otro estado":"30.45",
-      "Porcentaje de población con discapacidad":"0.70"
+      "Porcentaje de población con discapacidad":"0.7"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"14.42",
@@ -20,23 +20,23 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"66.04",
-      "Población Económicamente Activa masculina":"59.20",
-      "Población Económicamente Activa femenina":"40.80",
+      "Población Económicamente Activa masculina":"59.2",
+      "Población Económicamente Activa femenina":"40.8",
       "Población Ocupada":"99.64",
-      "Población Ocupada masculina":"59.10",
-      "Población Ocupada femenina":"40.90",
+      "Población Ocupada masculina":"59.1",
+      "Población Ocupada femenina":"40.9",
       "Población Desocupada":"0.36",
-      "Derechohabiencia":"97.60"
+      "Derechohabiencia":"97.6"
     },
     "Viviendas":{
       "Hogares":"19",
-      "Hogares Jefatura masculina":"87.60",
-      "Hogares Jefatura femenina":"12.40",
-      "Ocupación por Vivienda":"3.00",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Hogares Jefatura masculina":"87.6",
+      "Hogares Jefatura femenina":"12.4",
+      "Ocupación por Vivienda":"3",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"97.89",
       "Viviendas con Computadora":"96.47",
       "Viviendas con Celular":"99.94",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"1",
       "Primer actividad nombre":"Transportes, Correo, Almacenamiento",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

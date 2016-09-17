@@ -11,7 +11,7 @@
       "Porcentaje de población no especificada":"0.01",
       "Fecundidad promedio":"1.99",
       "Porcentaje de población nacida en otro estado":"22.05",
-      "Porcentaje de población con discapacidad":"0.60"
+      "Porcentaje de población con discapacidad":"0.6"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"9.61",
@@ -34,11 +34,11 @@
       "Hogares Jefatura femenina":"22.39",
       "Ocupación por Vivienda":"3.23",
       "Viviendas con Electricidad":"99.67",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"99.65",
       "Viviendas con Automóvil":"44.95",
-      "Viviendas con Computadora":"29.50",
+      "Viviendas con Computadora":"29.5",
       "Viviendas con Celular":"85.81",
       "Viviendas con Internet":"10.34"
     },
@@ -51,7 +51,7 @@
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.04",
       "Cuarta actividad nombre":"Manejo de Residuos",
-      "Cuarta actividad porcentaje":"8.70",
+      "Cuarta actividad porcentaje":"8.7",
       "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"4.35"
     }

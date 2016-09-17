@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"55.99",
-      "Población Económicamente Activa masculina":"58.80",
-      "Población Económicamente Activa femenina":"41.20",
+      "Población Económicamente Activa masculina":"58.8",
+      "Población Económicamente Activa femenina":"41.2",
       "Población Ocupada":"94.32",
       "Población Ocupada masculina":"58.06",
       "Población Ocupada femenina":"41.94",
@@ -39,7 +39,7 @@
       "Viviendas con Televisión":"99.17",
       "Viviendas con Automóvil":"71.88",
       "Viviendas con Computadora":"60.25",
-      "Viviendas con Celular":"83.10",
+      "Viviendas con Celular":"83.1",
       "Viviendas con Internet":"44.46"
     },
     "Unidades Económicas":{
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"24.53",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"20.75",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"3.77",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"3.77"
     }
   }

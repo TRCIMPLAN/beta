@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"3511",
-      "Porcentaje de población masculina":"49.40",
-      "Porcentaje de población femenina":"50.60",
+      "Porcentaje de población masculina":"49.4",
+      "Porcentaje de población femenina":"50.6",
       "Porcentaje de población de 0 a 14 años":"32.93",
       "Porcentaje de población de 15 a 64 años":"62.38",
       "Porcentaje de población de 65 y más años":"4.32",
@@ -35,7 +35,7 @@
       "Ocupación por Vivienda":"4.16",
       "Viviendas con Electricidad":"99.66",
       "Viviendas con Agua":"98.83",
-      "Viviendas con Drenaje":"97.40",
+      "Viviendas con Drenaje":"97.4",
       "Viviendas con Televisión":"98.23",
       "Viviendas con Automóvil":"36.98",
       "Viviendas con Computadora":"14.61",
@@ -49,7 +49,7 @@
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"19.77",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"9.30",
+      "Tercera actividad porcentaje":"9.3",
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"8.14",
       "Quinta actividad nombre":"Salud",

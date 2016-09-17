@@ -19,7 +19,7 @@
       "Grado Promedio de Escolaridad femenina":"9.76"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"54.90",
+      "Población Económicamente Activa":"54.9",
       "Población Económicamente Activa masculina":"73.25",
       "Población Económicamente Activa femenina":"26.75",
       "Población Ocupada":"93.23",
@@ -33,8 +33,8 @@
       "Hogares Jefatura masculina":"88.14",
       "Hogares Jefatura femenina":"11.86",
       "Ocupación por Vivienda":"3.71",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"96.61",
       "Viviendas con Televisión":"99.15",
       "Viviendas con Automóvil":"50.33",
@@ -45,14 +45,14 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"15",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"40.00",
+      "Primer actividad porcentaje":"40",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"26.67",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.33",
-      "Cuarta actividad nombre":"Manejo de Residuos",
+      "Cuarta actividad nombre":"Comercio Mayoreo",
       "Cuarta actividad porcentaje":"6.67",
-      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"6.67"
     }
   }

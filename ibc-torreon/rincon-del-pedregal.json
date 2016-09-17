@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"1064",
-      "Porcentaje de población masculina":"50.00",
-      "Porcentaje de población femenina":"50.00",
+      "Porcentaje de población masculina":"50",
+      "Porcentaje de población femenina":"50",
       "Porcentaje de población de 0 a 14 años":"37.97",
       "Porcentaje de población de 15 a 64 años":"58.55",
       "Porcentaje de población de 65 y más años":"2.35",
@@ -32,7 +32,7 @@
       "Hogares":"280",
       "Hogares Jefatura masculina":"73.57",
       "Hogares Jefatura femenina":"26.43",
-      "Ocupación por Vivienda":"3.80",
+      "Ocupación por Vivienda":"3.8",
       "Viviendas con Electricidad":"99.64",
       "Viviendas con Agua":"99.64",
       "Viviendas con Drenaje":"99.29",

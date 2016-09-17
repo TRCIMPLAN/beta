@@ -6,7 +6,7 @@
       "Porcentaje de población masculina":"50.15",
       "Porcentaje de población femenina":"49.85",
       "Porcentaje de población de 0 a 14 años":"31.16",
-      "Porcentaje de población de 15 a 64 años":"63.40",
+      "Porcentaje de población de 15 a 64 años":"63.4",
       "Porcentaje de población de 65 y más años":"5.18",
       "Porcentaje de población no especificada":"0.26",
       "Fecundidad promedio":"2.47",
@@ -15,7 +15,7 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"7.96",
-      "Grado Promedio de Escolaridad masculina":"8.10",
+      "Grado Promedio de Escolaridad masculina":"8.1",
       "Grado Promedio de Escolaridad femenina":"7.83"
     },
     "Características Económicas":{
@@ -36,7 +36,7 @@
       "Viviendas con Electricidad":"99.77",
       "Viviendas con Agua":"96.63",
       "Viviendas con Drenaje":"95.55",
-      "Viviendas con Televisión":"98.80",
+      "Viviendas con Televisión":"98.8",
       "Viviendas con Automóvil":"48.61",
       "Viviendas con Computadora":"22.13",
       "Viviendas con Celular":"64.23",
@@ -52,8 +52,8 @@
       "Tercera actividad porcentaje":"9.18",
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"7.14",
-      "Quinta actividad nombre":"Inmobiliarios",
-      "Quinta actividad porcentaje":"5.10"
+      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad porcentaje":"5.1"
     }
   }
 }]

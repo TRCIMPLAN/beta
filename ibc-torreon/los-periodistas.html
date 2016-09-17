@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Los Periodistas de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:00">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Los Periodistas" src="../imagenes/imagen.jpg">
@@ -417,11 +417,11 @@
         <td class="derecha">27.27 %</td>
       </tr>
       <tr>
-        <td>3° Manejo de Residuos</td>
+        <td>3° Comercio Mayoreo</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>4° Comercio Mayoreo</td>
+        <td>4° Manejo de Residuos</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 40.79],
               ['De 15 a 64 años', 58.68],
               ['De 65 y más años', 0.53],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -650,9 +650,9 @@
       function elaborarGraficaPromEsc() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Global', 10.00, '#FF7F37', '10.00 años'],
-              ['Masculina', 10.10, '#006AC8', '10.10 años'],
-              ['Femenina', 9.90, '#C80083', '9.90 años']
+              ['Global', 10, '#FF7F37', '10 años'],
+              ['Masculina', 10.1, '#006AC8', '10.1 años'],
+              ['Femenina', 9.9, '#C80083', '9.9 años']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -687,8 +687,8 @@
       function elaborarGraficaPobEcoActMasFem() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Masculina', 75.00],
-              ['Femenina', 25.00]
+              ['Masculina', 75],
+              ['Femenina', 25]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
               ['Agua', 98.96, '#FF80C0', '98.96 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
               ['Televisión', 98.96, '#80C0FF', '98.96 %'],
               ['Automóvil', 50.51, '#59BFC3', '50.51 %'],
               ['Computadora', 30.36, '#59C38E', '30.36 %'],
               ['Celular', 82.29, '#8EC359', '82.29 %'],
-              ['Internet', 18.20, '#C38E59', '18.20 %']
+              ['Internet', 18.2, '#C38E59', '18.2 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -798,8 +798,8 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 45.45, '#80C0FF', '45.45 %'],
               ['2° Otros servicios, excepto Gobierno', 27.27, '#59BFC3', '27.27 %'],
-              ['3° Manejo de Residuos', 9.09, '#59C38E', '9.09 %'],
-              ['4° Comercio Mayoreo', 9.09, '#8EC359', '9.09 %'],
+              ['3° Comercio Mayoreo', 9.09, '#59C38E', '9.09 %'],
+              ['4° Manejo de Residuos', 9.09, '#8EC359', '9.09 %'],
               ['5° Preparación de Alimentos y Bebidas', 9.09, '#C38E59', '9.09 %']
           ]);
           var options = {

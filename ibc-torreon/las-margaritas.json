@@ -14,14 +14,14 @@
       "Porcentaje de población con discapacidad":"4.51"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"14.00",
+      "Grado Promedio de Escolaridad":"14",
       "Grado Promedio de Escolaridad masculina":"14.65",
       "Grado Promedio de Escolaridad femenina":"13.41"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"54.46",
-      "Población Económicamente Activa masculina":"56.30",
-      "Población Económicamente Activa femenina":"43.70",
+      "Población Económicamente Activa masculina":"56.3",
+      "Población Económicamente Activa femenina":"43.7",
       "Población Ocupada":"92.99",
       "Población Ocupada masculina":"56.48",
       "Población Ocupada femenina":"43.52",
@@ -33,11 +33,11 @@
       "Hogares Jefatura masculina":"71.41",
       "Hogares Jefatura femenina":"28.59",
       "Ocupación por Vivienda":"3.75",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"99.50",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"99.5",
       "Viviendas con Televisión":"98.74",
-      "Viviendas con Automóvil":"88.60",
+      "Viviendas con Automóvil":"88.6",
       "Viviendas con Computadora":"76.69",
       "Viviendas con Celular":"88.59",
       "Viviendas con Internet":"71.62"
@@ -50,7 +50,7 @@
       "Segunda actividad porcentaje":"18.52",
       "Tercera actividad nombre":"Educativos",
       "Tercera actividad porcentaje":"9.88",
-      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"7.41",
       "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"7.41"

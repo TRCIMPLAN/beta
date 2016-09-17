@@ -8,9 +8,9 @@
       "Porcentaje de población de 0 a 14 años":"34.35",
       "Porcentaje de población de 15 a 64 años":"63.22",
       "Porcentaje de población de 65 y más años":"2.13",
-      "Porcentaje de población no especificada":"0.30",
+      "Porcentaje de población no especificada":"0.3",
       "Fecundidad promedio":"1.87",
-      "Porcentaje de población nacida en otro estado":"17.00",
+      "Porcentaje de población nacida en otro estado":"17",
       "Porcentaje de población con discapacidad":"1.33"
     },
     "Educación":{
@@ -37,7 +37,7 @@
       "Viviendas con Agua":"99.72",
       "Viviendas con Drenaje":"99.72",
       "Viviendas con Televisión":"97.74",
-      "Viviendas con Automóvil":"38.70",
+      "Viviendas con Automóvil":"38.7",
       "Viviendas con Computadora":"21.55",
       "Viviendas con Celular":"86.47",
       "Viviendas con Internet":"18.39"

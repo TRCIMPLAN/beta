@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Club De Golf Los Azulejos Segunda Etapa de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Club De Golf Los Azulejos Segunda Etapa" src="../imagenes/imagen.jpg">
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 17.65],
               ['De 15 a 64 años', 79.41],
               ['De 65 y más años', 2.94],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -632,7 +632,7 @@
       function elaborarGraficaPobDisc() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['CON discapacidad', 0.00],
+              ['CON discapacidad', 0],
               ['Sin discapacidad', 100]
         ]);
         var options = {
@@ -651,7 +651,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 6.93, '#FF7F37', '6.93 años'],
-              ['Masculina', 6.50, '#006AC8', '6.50 años'],
+              ['Masculina', 6.5, '#006AC8', '6.5 años'],
               ['Femenina', 7.36, '#C80083', '7.36 años']
           ]);
           var options = {
@@ -703,8 +703,8 @@
       function elaborarGraficaOcu() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Ocupada', 100.00],
-              ['Desocupada', 0.00]
+              ['Ocupada', 100],
+              ['Desocupada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -754,8 +754,8 @@
       function elaborarGraficaHogJef() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Masculina', 100.00],
-              ['Femenina', 0.00]
+              ['Masculina', 100],
+              ['Femenina', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
               ['Automóvil', 52.46, '#59BFC3', '52.46 %'],
-              ['Computadora', 0.00, '#59C38E', '0.00 %'],
-              ['Celular', 68.20, '#8EC359', '68.20 %'],
-              ['Internet', 0.00, '#C38E59', '0.00 %']
+              ['Computadora', 0, '#59C38E', '0 %'],
+              ['Celular', 68.2, '#8EC359', '68.2 %'],
+              ['Internet', 0, '#C38E59', '0 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

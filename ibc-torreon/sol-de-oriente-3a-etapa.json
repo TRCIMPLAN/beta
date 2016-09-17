@@ -9,12 +9,12 @@
       "Porcentaje de población de 15 a 64 años":"63.36",
       "Porcentaje de población de 65 y más años":"1.43",
       "Porcentaje de población no especificada":"0.33",
-      "Fecundidad promedio":"1.60",
+      "Fecundidad promedio":"1.6",
       "Porcentaje de población nacida en otro estado":"17.55",
-      "Porcentaje de población con discapacidad":"1.80"
+      "Porcentaje de población con discapacidad":"1.8"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"12.80",
+      "Grado Promedio de Escolaridad":"12.8",
       "Grado Promedio de Escolaridad masculina":"12.93",
       "Grado Promedio de Escolaridad femenina":"12.69"
     },
@@ -23,8 +23,8 @@
       "Población Económicamente Activa masculina":"59.34",
       "Población Económicamente Activa femenina":"40.66",
       "Población Ocupada":"95.74",
-      "Población Ocupada masculina":"60.00",
-      "Población Ocupada femenina":"40.00",
+      "Población Ocupada masculina":"60",
+      "Población Ocupada femenina":"40",
       "Población Desocupada":"4.26",
       "Derechohabiencia":"83.89"
     },
@@ -48,11 +48,11 @@
       "Primer actividad porcentaje":"53.85",
       "Segunda actividad nombre":"Financieros y Seguros",
       "Segunda actividad porcentaje":"23.08",
-      "Tercera actividad nombre":"Salud",
+      "Tercera actividad nombre":"Educativos",
       "Tercera actividad porcentaje":"7.69",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"7.69",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"7.69"
     }
   }

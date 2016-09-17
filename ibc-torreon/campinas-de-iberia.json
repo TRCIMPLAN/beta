@@ -7,11 +7,11 @@
       "Porcentaje de población femenina":"48.28",
       "Porcentaje de población de 0 a 14 años":"37.93",
       "Porcentaje de población de 15 a 64 años":"62.07",
-      "Porcentaje de población de 65 y más años":"0.00",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población de 65 y más años":"0",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.45",
       "Porcentaje de población nacida en otro estado":"29.31",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"14.64",
@@ -33,13 +33,13 @@
       "Hogares Jefatura masculina":"84.85",
       "Hogares Jefatura femenina":"15.15",
       "Ocupación por Vivienda":"3.52",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"96.97",
       "Viviendas con Computadora":"93.94",
-      "Viviendas con Celular":"100.00",
+      "Viviendas con Celular":"100",
       "Viviendas con Internet":"87.88"
     },
     "Unidades Económicas":{
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"12.12",
       "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Salud",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"6.06"
     }
   }

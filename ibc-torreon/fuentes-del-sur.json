@@ -3,19 +3,19 @@
   "IBC":{
     "Demografía":{
       "Población total":"4449",
-      "Porcentaje de población masculina":"47.00",
-      "Porcentaje de población femenina":"53.00",
-      "Porcentaje de población de 0 a 14 años":"20.70",
+      "Porcentaje de población masculina":"47",
+      "Porcentaje de población femenina":"53",
+      "Porcentaje de población de 0 a 14 años":"20.7",
       "Porcentaje de población de 15 a 64 años":"71.34",
       "Porcentaje de población de 65 y más años":"6.74",
       "Porcentaje de población no especificada":"1.22",
       "Fecundidad promedio":"2.01",
       "Porcentaje de población nacida en otro estado":"18.32",
-      "Porcentaje de población con discapacidad":"4.50"
+      "Porcentaje de población con discapacidad":"4.5"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"12.02",
-      "Grado Promedio de Escolaridad masculina":"12.40",
+      "Grado Promedio de Escolaridad masculina":"12.4",
       "Grado Promedio de Escolaridad femenina":"11.68"
     },
     "Características Económicas":{
@@ -30,13 +30,13 @@
     },
     "Viviendas":{
       "Hogares":"1237",
-      "Hogares Jefatura masculina":"69.60",
-      "Hogares Jefatura femenina":"30.40",
-      "Ocupación por Vivienda":"3.60",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"99.60",
+      "Hogares Jefatura masculina":"69.6",
+      "Hogares Jefatura femenina":"30.4",
+      "Ocupación por Vivienda":"3.6",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"99.6",
       "Viviendas con Drenaje":"99.76",
-      "Viviendas con Televisión":"99.60",
+      "Viviendas con Televisión":"99.6",
       "Viviendas con Automóvil":"73.57",
       "Viviendas con Computadora":"57.33",
       "Viviendas con Celular":"83.19",
@@ -47,7 +47,7 @@
       "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"31.34",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"19.40",
+      "Segunda actividad porcentaje":"19.4",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"13.43",
       "Cuarta actividad nombre":"Industria Manufacturera",

@@ -10,13 +10,13 @@
       "Porcentaje de población de 65 y más años":"6.41",
       "Porcentaje de población no especificada":"1.24",
       "Fecundidad promedio":"2.51",
-      "Porcentaje de población nacida en otro estado":"19.20",
+      "Porcentaje de población nacida en otro estado":"19.2",
       "Porcentaje de población con discapacidad":"4.64"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"7.31",
       "Grado Promedio de Escolaridad masculina":"7.43",
-      "Grado Promedio de Escolaridad femenina":"7.20"
+      "Grado Promedio de Escolaridad femenina":"7.2"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"50.48",
@@ -45,13 +45,13 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"10",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"70.00",
-      "Segunda actividad nombre":"Industria Manufacturera",
-      "Segunda actividad porcentaje":"10.00",
-      "Tercera actividad nombre":"Educativos",
-      "Tercera actividad porcentaje":"10.00",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"10.00"
+      "Primer actividad porcentaje":"70",
+      "Segunda actividad nombre":"Educativos",
+      "Segunda actividad porcentaje":"10",
+      "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+      "Tercera actividad porcentaje":"10",
+      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad porcentaje":"10"
     }
   }
 }]

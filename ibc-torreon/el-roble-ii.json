@@ -10,7 +10,7 @@
       "Porcentaje de población de 65 y más años":"7.43",
       "Porcentaje de población no especificada":"5.84",
       "Fecundidad promedio":"1.84",
-      "Porcentaje de población nacida en otro estado":"15.40",
+      "Porcentaje de población nacida en otro estado":"15.4",
       "Porcentaje de población con discapacidad":"3.92"
     },
     "Educación":{
@@ -30,15 +30,15 @@
     },
     "Viviendas":{
       "Hogares":"149",
-      "Hogares Jefatura masculina":"69.80",
-      "Hogares Jefatura femenina":"30.20",
+      "Hogares Jefatura masculina":"69.8",
+      "Hogares Jefatura femenina":"30.2",
       "Ocupación por Vivienda":"3.79",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"97.99",
       "Viviendas con Drenaje":"97.32",
       "Viviendas con Televisión":"97.99",
       "Viviendas con Automóvil":"75.17",
-      "Viviendas con Computadora":"57.30",
+      "Viviendas con Computadora":"57.3",
       "Viviendas con Celular":"78.52",
       "Viviendas con Internet":"40.39"
     },

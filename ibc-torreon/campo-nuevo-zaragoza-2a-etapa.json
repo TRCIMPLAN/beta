@@ -11,12 +11,12 @@
       "Porcentaje de población no especificada":"0.39",
       "Fecundidad promedio":"1.76",
       "Porcentaje de población nacida en otro estado":"14.87",
-      "Porcentaje de población con discapacidad":"2.50"
+      "Porcentaje de población con discapacidad":"2.5"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"10.82",
       "Grado Promedio de Escolaridad masculina":"10.94",
-      "Grado Promedio de Escolaridad femenina":"10.70"
+      "Grado Promedio de Escolaridad femenina":"10.7"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"62.12",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"63.45",
       "Población Ocupada femenina":"36.55",
       "Población Desocupada":"6.15",
-      "Derechohabiencia":"78.20"
+      "Derechohabiencia":"78.2"
     },
     "Viviendas":{
       "Hogares":"1060",
@@ -51,7 +51,7 @@
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"15.87",
       "Cuarta actividad nombre":"Educativos",
-      "Cuarta actividad porcentaje":"12.70",
+      "Cuarta actividad porcentaje":"12.7",
       "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"6.35"
     }

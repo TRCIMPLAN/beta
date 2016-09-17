@@ -10,7 +10,7 @@
       "Porcentaje de población de 65 y más años":"7.69",
       "Porcentaje de población no especificada":"0.32",
       "Fecundidad promedio":"3.02",
-      "Porcentaje de población nacida en otro estado":"21.30",
+      "Porcentaje de población nacida en otro estado":"21.3",
       "Porcentaje de población con discapacidad":"2.44"
     },
     "Educación":{
@@ -19,7 +19,7 @@
       "Grado Promedio de Escolaridad femenina":"6.97"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"47.00",
+      "Población Económicamente Activa":"47",
       "Población Económicamente Activa masculina":"85.05",
       "Población Económicamente Activa femenina":"14.95",
       "Población Ocupada":"97.33",
@@ -33,19 +33,19 @@
       "Hogares Jefatura masculina":"91.64",
       "Hogares Jefatura femenina":"8.36",
       "Ocupación por Vivienda":"3.58",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"91.51",
       "Viviendas con Drenaje":"57.97",
       "Viviendas con Televisión":"99.21",
       "Viviendas con Automóvil":"49.73",
-      "Viviendas con Computadora":"13.50",
+      "Viviendas con Computadora":"13.5",
       "Viviendas con Celular":"76.82",
-      "Viviendas con Internet":"9.20"
+      "Viviendas con Internet":"9.2"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"2",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"3405",
-      "Porcentaje de población masculina":"49.60",
-      "Porcentaje de población femenina":"50.40",
+      "Porcentaje de población masculina":"49.6",
+      "Porcentaje de población femenina":"50.4",
       "Porcentaje de población de 0 a 14 años":"28.19",
       "Porcentaje de población de 15 a 64 años":"66.46",
       "Porcentaje de población de 65 y más años":"4.96",
@@ -15,7 +15,7 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"8.29",
-      "Grado Promedio de Escolaridad masculina":"8.30",
+      "Grado Promedio de Escolaridad masculina":"8.3",
       "Grado Promedio de Escolaridad femenina":"8.28"
     },
     "Características Económicas":{
@@ -23,8 +23,8 @@
       "Población Económicamente Activa masculina":"66.38",
       "Población Económicamente Activa femenina":"33.62",
       "Población Ocupada":"90.72",
-      "Población Ocupada masculina":"65.40",
-      "Población Ocupada femenina":"34.60",
+      "Población Ocupada masculina":"65.4",
+      "Población Ocupada femenina":"34.6",
       "Población Desocupada":"9.28",
       "Derechohabiencia":"63.73"
     },
@@ -34,7 +34,7 @@
       "Hogares Jefatura femenina":"25.46",
       "Ocupación por Vivienda":"3.89",
       "Viviendas con Electricidad":"99.54",
-      "Viviendas con Agua":"99.20",
+      "Viviendas con Agua":"99.2",
       "Viviendas con Drenaje":"98.86",
       "Viviendas con Televisión":"97.49",
       "Viviendas con Automóvil":"37.67",

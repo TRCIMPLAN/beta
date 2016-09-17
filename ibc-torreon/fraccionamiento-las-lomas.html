@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Fraccionamiento Las Lomas de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Fraccionamiento Las Lomas" src="../imagenes/imagen.jpg">
@@ -413,11 +413,11 @@
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Menudeo</td>
+        <td>2° Comercio Mayoreo</td>
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
-        <td>3° Comercio Mayoreo</td>
+        <td>3° Comercio Menudeo</td>
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
@@ -770,13 +770,13 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
-              ['Automóvil', 96.30, '#59BFC3', '96.30 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
+              ['Automóvil', 96.3, '#59BFC3', '96.3 %'],
               ['Computadora', 81.48, '#59C38E', '81.48 %'],
-              ['Celular', 100.00, '#8EC359', '100.00 %'],
+              ['Celular', 100, '#8EC359', '100 %'],
               ['Internet', 65.19, '#C38E59', '65.19 %']
           ]);
           var options = {
@@ -796,9 +796,9 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Otros servicios, excepto Gobierno', 50.00, '#80C0FF', '50.00 %'],
-              ['2° Comercio Menudeo', 25.00, '#59BFC3', '25.00 %'],
-              ['3° Comercio Mayoreo', 25.00, '#59C38E', '25.00 %'],
+              ['1° Otros servicios, excepto Gobierno', 50, '#80C0FF', '50 %'],
+              ['2° Comercio Mayoreo', 25, '#59BFC3', '25 %'],
+              ['3° Comercio Menudeo', 25, '#59C38E', '25 %'],
               ['4° ', , '#8EC359', ' %'],
               ['5° ', , '#C38E59', ' %']
           ]);

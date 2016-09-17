@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia San Eduardo de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="San Eduardo" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
-        <td>4° Profesionales, Científicos, Técnicos</td>
+        <td>4° Esparcimiento, Culturales, Deportivos</td>
         <td class="derecha">7.14 %</td>
       </tr>
       <tr>
-        <td>5° Salud</td>
+        <td>5° Educativos</td>
         <td class="derecha">7.14 %</td>
       </tr>
     </tbody>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 39.57],
               ['De 15 a 64 años', 58.99],
               ['De 65 y más años', 1.44],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -651,7 +651,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 10.92, '#FF7F37', '10.92 años'],
-              ['Masculina', 11.60, '#006AC8', '11.60 años'],
+              ['Masculina', 11.6, '#006AC8', '11.6 años'],
               ['Femenina', 10.18, '#C80083', '10.18 años']
           ]);
           var options = {
@@ -770,10 +770,10 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
               ['Automóvil', 69.44, '#59BFC3', '69.44 %'],
               ['Computadora', 38.89, '#59C38E', '38.89 %'],
               ['Celular', 88.89, '#8EC359', '88.89 %'],
@@ -799,8 +799,8 @@
               ['1° Comercio Menudeo', 21.43, '#80C0FF', '21.43 %'],
               ['2° Comercio Mayoreo', 14.29, '#59BFC3', '14.29 %'],
               ['3° Preparación de Alimentos y Bebidas', 14.29, '#59C38E', '14.29 %'],
-              ['4° Profesionales, Científicos, Técnicos', 7.14, '#8EC359', '7.14 %'],
-              ['5° Salud', 7.14, '#C38E59', '7.14 %']
+              ['4° Esparcimiento, Culturales, Deportivos', 7.14, '#8EC359', '7.14 %'],
+              ['5° Educativos', 7.14, '#C38E59', '7.14 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

@@ -8,14 +8,14 @@
       "Porcentaje de población de 0 a 14 años":"31.11",
       "Porcentaje de población de 15 a 64 años":"65.56",
       "Porcentaje de población de 65 y más años":"3.33",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.72",
       "Porcentaje de población nacida en otro estado":"16.11",
       "Porcentaje de población con discapacidad":"2.57"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"12.42",
-      "Grado Promedio de Escolaridad masculina":"12.30",
+      "Grado Promedio de Escolaridad masculina":"12.3",
       "Grado Promedio de Escolaridad femenina":"12.53"
     },
     "Características Económicas":{
@@ -33,12 +33,12 @@
       "Hogares Jefatura masculina":"70.83",
       "Hogares Jefatura femenina":"29.17",
       "Ocupación por Vivienda":"3.75",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"97.92",
       "Viviendas con Automóvil":"71.88",
-      "Viviendas con Computadora":"62.50",
+      "Viviendas con Computadora":"62.5",
       "Viviendas con Celular":"86.46",
       "Viviendas con Internet":"56.25"
     },
@@ -48,11 +48,11 @@
       "Primer actividad porcentaje":"36.36",
       "Segunda actividad nombre":"Manejo de Residuos",
       "Segunda actividad porcentaje":"27.27",
-      "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
       "Tercera actividad porcentaje":"9.09",
-      "Cuarta actividad nombre":"Salud",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"9.09"
     }
   }

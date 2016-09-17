@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Campiñas De Iberia de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Campiñas De Iberia" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Salud</td>
+        <td>5° Comercio Mayoreo</td>
         <td class="derecha">6.06 %</td>
       </tr>
     </tbody>
@@ -600,8 +600,8 @@
           ['Etiqueta', 'Valor'],
               ['De 0 a 14 años', 37.93],
               ['De 15 a 64 años', 62.07],
-              ['De 65 y más años', 0.00],
-              ['No especificada', 0.00]
+              ['De 65 y más años', 0],
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -632,7 +632,7 @@
       function elaborarGraficaPobDisc() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['CON discapacidad', 0.00],
+              ['CON discapacidad', 0],
               ['Sin discapacidad', 100]
         ]);
         var options = {
@@ -770,13 +770,13 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
               ['Automóvil', 96.97, '#59BFC3', '96.97 %'],
               ['Computadora', 93.94, '#59C38E', '93.94 %'],
-              ['Celular', 100.00, '#8EC359', '100.00 %'],
+              ['Celular', 100, '#8EC359', '100 %'],
               ['Internet', 87.88, '#C38E59', '87.88 %']
           ]);
           var options = {
@@ -800,7 +800,7 @@
               ['2° Comercio Menudeo', 15.15, '#59BFC3', '15.15 %'],
               ['3° Educativos', 12.12, '#59C38E', '12.12 %'],
               ['4° Otros servicios, excepto Gobierno', 9.09, '#8EC359', '9.09 %'],
-              ['5° Salud', 6.06, '#C38E59', '6.06 %']
+              ['5° Comercio Mayoreo', 6.06, '#C38E59', '6.06 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

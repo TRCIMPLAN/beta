@@ -35,12 +35,12 @@
       "Ocupación por Vivienda":"3.48",
       "Viviendas con Electricidad":"99.91",
       "Viviendas con Agua":"99.48",
-      "Viviendas con Drenaje":"99.80",
+      "Viviendas con Drenaje":"99.8",
       "Viviendas con Televisión":"99.37",
       "Viviendas con Automóvil":"92.14",
       "Viviendas con Computadora":"80.39",
-      "Viviendas con Celular":"89.00",
-      "Viviendas con Internet":"74.70"
+      "Viviendas con Celular":"89",
+      "Viviendas con Internet":"74.7"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"151",
@@ -51,7 +51,7 @@
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.91",
       "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Cuarta actividad porcentaje":"10.60",
+      "Cuarta actividad porcentaje":"10.6",
       "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"5.96"
     }

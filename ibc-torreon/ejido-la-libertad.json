@@ -10,7 +10,7 @@
       "Porcentaje de población de 65 y más años":"7.58",
       "Porcentaje de población no especificada":"0.09",
       "Fecundidad promedio":"2.36",
-      "Porcentaje de población nacida en otro estado":"16.60",
+      "Porcentaje de población nacida en otro estado":"16.6",
       "Porcentaje de población con discapacidad":"8.08"
     },
     "Educación":{
@@ -33,7 +33,7 @@
       "Hogares Jefatura masculina":"79.91",
       "Hogares Jefatura femenina":"20.09",
       "Ocupación por Vivienda":"4.21",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"98.05",
       "Viviendas con Drenaje":"99.74",
       "Viviendas con Televisión":"96.44",
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"28.57",
       "Tercera actividad nombre":"Comercio Menudeo",
       "Tercera actividad porcentaje":"14.29",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Inmobiliarios",
       "Cuarta actividad porcentaje":"14.29",
-      "Quinta actividad nombre":"Inmobiliarios",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"14.29"
     }
   }

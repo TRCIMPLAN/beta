@@ -11,7 +11,7 @@
       "Porcentaje de población no especificada":"-0.01",
       "Fecundidad promedio":"1.71",
       "Porcentaje de población nacida en otro estado":"15.14",
-      "Porcentaje de población con discapacidad":"1.30"
+      "Porcentaje de población con discapacidad":"1.3"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"9.99",
@@ -30,12 +30,12 @@
     },
     "Viviendas":{
       "Hogares":"271",
-      "Hogares Jefatura masculina":"84.50",
-      "Hogares Jefatura femenina":"15.50",
+      "Hogares Jefatura masculina":"84.5",
+      "Hogares Jefatura femenina":"15.5",
       "Ocupación por Vivienda":"3.59",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.63",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"98.89",
       "Viviendas con Automóvil":"54.76",
       "Viviendas con Computadora":"25.64",

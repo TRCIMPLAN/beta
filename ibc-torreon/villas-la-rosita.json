@@ -6,7 +6,7 @@
       "Porcentaje de población masculina":"45.45",
       "Porcentaje de población femenina":"54.55",
       "Porcentaje de población de 0 a 14 años":"13.85",
-      "Porcentaje de población de 15 a 64 años":"64.50",
+      "Porcentaje de población de 15 a 64 años":"64.5",
       "Porcentaje de población de 65 y más años":"9.96",
       "Porcentaje de población no especificada":"11.69",
       "Fecundidad promedio":"1.51",
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"54.95",
-      "Población Económicamente Activa masculina":"60.00",
-      "Población Económicamente Activa femenina":"40.00",
+      "Población Económicamente Activa masculina":"60",
+      "Población Económicamente Activa femenina":"40",
       "Población Ocupada":"92.51",
       "Población Ocupada masculina":"60.22",
       "Población Ocupada femenina":"39.78",
@@ -33,9 +33,9 @@
       "Hogares Jefatura masculina":"79.69",
       "Hogares Jefatura femenina":"20.31",
       "Ocupación por Vivienda":"3.61",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"96.88",
       "Viviendas con Automóvil":"93.75",
       "Viviendas con Computadora":"81.25",
@@ -44,16 +44,16 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"20",
-      "Primer actividad nombre":"Financieros y Seguros",
-      "Primer actividad porcentaje":"15.00",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"15.00",
-      "Tercera actividad nombre":"Comercio Menudeo",
-      "Tercera actividad porcentaje":"10.00",
+      "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Primer actividad porcentaje":"15",
+      "Segunda actividad nombre":"Financieros y Seguros",
+      "Segunda actividad porcentaje":"15",
+      "Tercera actividad nombre":"Educativos",
+      "Tercera actividad porcentaje":"10",
       "Cuarta actividad nombre":"Manejo de Residuos",
-      "Cuarta actividad porcentaje":"10.00",
-      "Quinta actividad nombre":"Información Medios Masivos",
-      "Quinta actividad porcentaje":"10.00"
+      "Cuarta actividad porcentaje":"10",
+      "Quinta actividad nombre":"Comercio Menudeo",
+      "Quinta actividad porcentaje":"10"
     }
   }
 }]

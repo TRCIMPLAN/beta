@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Villas Universidad 2A. Etapa de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:03">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Villas Universidad 2A. Etapa" src="../imagenes/imagen.jpg">
@@ -413,11 +413,11 @@
         <td class="derecha">64.29 %</td>
       </tr>
       <tr>
-        <td>2° Salud</td>
+        <td>2° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Salud</td>
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 33.23],
               ['De 15 a 64 años', 64.52],
               ['De 65 y más años', 2.25],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,9 +770,9 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
               ['Televisión', 98.42, '#80C0FF', '98.42 %'],
               ['Automóvil', 80.53, '#59BFC3', '80.53 %'],
               ['Computadora', 52.11, '#59C38E', '52.11 %'],
@@ -797,8 +797,8 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 64.29, '#80C0FF', '64.29 %'],
-              ['2° Salud', 14.29, '#59BFC3', '14.29 %'],
-              ['3° Preparación de Alimentos y Bebidas', 14.29, '#59C38E', '14.29 %'],
+              ['2° Preparación de Alimentos y Bebidas', 14.29, '#59BFC3', '14.29 %'],
+              ['3° Salud', 14.29, '#59C38E', '14.29 %'],
               ['4° Educativos', 7.14, '#8EC359', '7.14 %'],
               ['5° ', , '#C38E59', ' %']
           ]);

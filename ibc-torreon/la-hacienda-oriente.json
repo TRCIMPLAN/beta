@@ -16,7 +16,7 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"14.65",
       "Grado Promedio de Escolaridad masculina":"15.06",
-      "Grado Promedio de Escolaridad femenina":"14.30"
+      "Grado Promedio de Escolaridad femenina":"14.3"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"55.41",
@@ -26,34 +26,34 @@
       "Población Ocupada masculina":"52.52",
       "Población Ocupada femenina":"47.48",
       "Población Desocupada":"4.93",
-      "Derechohabiencia":"86.50"
+      "Derechohabiencia":"86.5"
     },
     "Viviendas":{
       "Hogares":"80",
       "Hogares Jefatura masculina":"82.44",
       "Hogares Jefatura femenina":"17.56",
       "Ocupación por Vivienda":"3.48",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"95.43",
-      "Viviendas con Computadora":"87.80",
+      "Viviendas con Computadora":"87.8",
       "Viviendas con Celular":"96.77",
       "Viviendas con Internet":"80.24"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"25",
       "Primer actividad nombre":"Salud",
-      "Primer actividad porcentaje":"44.00",
+      "Primer actividad porcentaje":"44",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"16.00",
+      "Segunda actividad porcentaje":"16",
       "Tercera actividad nombre":"Comercio Menudeo",
-      "Tercera actividad porcentaje":"12.00",
-      "Cuarta actividad nombre":"Transportes, Correo, Almacenamiento",
-      "Cuarta actividad porcentaje":"4.00",
-      "Quinta actividad nombre":"Comercio Mayoreo",
-      "Quinta actividad porcentaje":"4.00"
+      "Tercera actividad porcentaje":"12",
+      "Cuarta actividad nombre":"Comercio Mayoreo",
+      "Cuarta actividad porcentaje":"4",
+      "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+      "Quinta actividad porcentaje":"4"
     }
   }
 }]

@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"26.95",
       "Porcentaje de población de 15 a 64 años":"67.91",
       "Porcentaje de población de 65 y más años":"5.14",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.59",
       "Porcentaje de población nacida en otro estado":"27.13",
       "Porcentaje de población con discapacidad":"1.85"
@@ -33,11 +33,11 @@
       "Hogares Jefatura masculina":"83.19",
       "Hogares Jefatura femenina":"16.81",
       "Ocupación por Vivienda":"3.59",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"98.50",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"98.5",
       "Viviendas con Drenaje":"99.78",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"97.10",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"97.1",
       "Viviendas con Computadora":"82.89",
       "Viviendas con Celular":"95.23",
       "Viviendas con Internet":"75.73"
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"10.64",
       "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"10.64",
-      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Quinta actividad nombre":"Inmobiliarios",
       "Quinta actividad porcentaje":"4.26"
     }
   }

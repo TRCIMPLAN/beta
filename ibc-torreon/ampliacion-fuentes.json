@@ -30,8 +30,8 @@
     },
     "Viviendas":{
       "Hogares":"559",
-      "Hogares Jefatura masculina":"77.30",
-      "Hogares Jefatura femenina":"22.70",
+      "Hogares Jefatura masculina":"77.3",
+      "Hogares Jefatura femenina":"22.7",
       "Ocupación por Vivienda":"4.11",
       "Viviendas con Electricidad":"99.13",
       "Viviendas con Agua":"99.12",
@@ -47,12 +47,12 @@
       "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"29.09",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"20.00",
+      "Segunda actividad porcentaje":"20",
       "Tercera actividad nombre":"Industria Manufacturera",
       "Tercera actividad porcentaje":"18.18",
-      "Cuarta actividad nombre":"Inmobiliarios",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"10.91",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Quinta actividad nombre":"Inmobiliarios",
       "Quinta actividad porcentaje":"10.91"
     }
   }

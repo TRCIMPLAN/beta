@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"2584",
-      "Porcentaje de población masculina":"48.30",
-      "Porcentaje de población femenina":"51.70",
+      "Porcentaje de población masculina":"48.3",
+      "Porcentaje de población femenina":"51.7",
       "Porcentaje de población de 0 a 14 años":"22.56",
       "Porcentaje de población de 15 a 64 años":"71.21",
       "Porcentaje de población de 65 y más años":"4.02",
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"52.31",
-      "Población Económicamente Activa masculina":"61.20",
-      "Población Económicamente Activa femenina":"38.80",
+      "Población Económicamente Activa masculina":"61.2",
+      "Población Económicamente Activa femenina":"38.8",
       "Población Ocupada":"94.27",
       "Población Ocupada masculina":"60.72",
       "Población Ocupada femenina":"39.28",
@@ -40,20 +40,20 @@
       "Viviendas con Automóvil":"58.85",
       "Viviendas con Computadora":"53.69",
       "Viviendas con Celular":"78.17",
-      "Viviendas con Internet":"38.20"
+      "Viviendas con Internet":"38.2"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"50",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"48.00",
+      "Primer actividad porcentaje":"48",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"16.00",
+      "Segunda actividad porcentaje":"16",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"12.00",
+      "Tercera actividad porcentaje":"12",
       "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"6.00",
-      "Quinta actividad nombre":"Manejo de Residuos",
-      "Quinta actividad porcentaje":"4.00"
+      "Cuarta actividad porcentaje":"6",
+      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad porcentaje":"4"
     }
   }
 }]

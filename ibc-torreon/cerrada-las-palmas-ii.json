@@ -3,15 +3,15 @@
   "IBC":{
     "Demografía":{
       "Población total":"155",
-      "Porcentaje de población masculina":"52.90",
-      "Porcentaje de población femenina":"47.10",
-      "Porcentaje de población de 0 a 14 años":"40.00",
+      "Porcentaje de población masculina":"52.9",
+      "Porcentaje de población femenina":"47.1",
+      "Porcentaje de población de 0 a 14 años":"40",
       "Porcentaje de población de 15 a 64 años":"58.71",
       "Porcentaje de población de 65 y más años":"1.29",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.88",
       "Porcentaje de población nacida en otro estado":"17.42",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"14.36",
@@ -20,12 +20,12 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"67.68",
-      "Población Económicamente Activa masculina":"59.70",
-      "Población Económicamente Activa femenina":"40.30",
-      "Población Ocupada":"100.00",
-      "Población Ocupada masculina":"59.70",
-      "Población Ocupada femenina":"40.30",
-      "Población Desocupada":"0.00",
+      "Población Económicamente Activa masculina":"59.7",
+      "Población Económicamente Activa femenina":"40.3",
+      "Población Ocupada":"100",
+      "Población Ocupada masculina":"59.7",
+      "Población Ocupada femenina":"40.3",
+      "Población Desocupada":"0",
       "Derechohabiencia":"84.52"
     },
     "Viviendas":{
@@ -33,13 +33,13 @@
       "Hogares Jefatura masculina":"85.71",
       "Hogares Jefatura femenina":"14.29",
       "Ocupación por Vivienda":"3.69",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"100",
       "Viviendas con Computadora":"92.86",
-      "Viviendas con Celular":"100.00",
+      "Viviendas con Celular":"100",
       "Viviendas con Internet":"80.95"
     },
     "Unidades Económicas":{

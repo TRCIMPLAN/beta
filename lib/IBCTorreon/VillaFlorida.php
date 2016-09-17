@@ -34,7 +34,7 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Florida';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:03';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-florida';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,58 +58,58 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '2636',
-                'Porcentaje de población masculina' => '49.28',
-                'Porcentaje de población femenina' => '50.72',
-                'Porcentaje de población de 0 a 14 años' => '22.53',
-                'Porcentaje de población de 15 a 64 años' => '71.93',
-                'Porcentaje de población de 65 y más años' => '3.83',
-                'Porcentaje de población no especificada' => '1.71',
-                'Fecundidad promedio' => '1.84',
-                'Porcentaje de población nacida en otro estado' => '19.46',
-                'Porcentaje de población con discapacidad' => '4.44'
+                'Población total' => 2636,
+                'Porcentaje de población masculina' => 49.28,
+                'Porcentaje de población femenina' => 50.72,
+                'Porcentaje de población de 0 a 14 años' => 22.53,
+                'Porcentaje de población de 15 a 64 años' => 71.93,
+                'Porcentaje de población de 65 y más años' => 3.83,
+                'Porcentaje de población no especificada' => 1.71,
+                'Fecundidad promedio' => 1.84,
+                'Porcentaje de población nacida en otro estado' => 19.46,
+                'Porcentaje de población con discapacidad' => 4.44
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '11.83',
-                'Grado Promedio de Escolaridad masculina' => '12.16',
-                'Grado Promedio de Escolaridad femenina' => '11.53'
+                'Grado Promedio de Escolaridad' => 11.83,
+                'Grado Promedio de Escolaridad masculina' => 12.16,
+                'Grado Promedio de Escolaridad femenina' => 11.53
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '55.99',
-                'Población Económicamente Activa masculina' => '58.80',
-                'Población Económicamente Activa femenina' => '41.20',
-                'Población Ocupada' => '94.32',
-                'Población Ocupada masculina' => '58.06',
-                'Población Ocupada femenina' => '41.94',
-                'Población Desocupada' => '5.68',
-                'Derechohabiencia' => '70.64'
+                'Población Económicamente Activa' => 55.99,
+                'Población Económicamente Activa masculina' => 58.80,
+                'Población Económicamente Activa femenina' => 41.20,
+                'Población Ocupada' => 94.32,
+                'Población Ocupada masculina' => 58.06,
+                'Población Ocupada femenina' => 41.94,
+                'Población Desocupada' => 5.68,
+                'Derechohabiencia' => 70.64
             ),
             'Viviendas' => array(
-                'Hogares' => '722',
-                'Hogares Jefatura masculina' => '73.55',
-                'Hogares Jefatura femenina' => '26.45',
-                'Ocupación por Vivienda' => '3.65',
-                'Viviendas con Electricidad' => '99.72',
-                'Viviendas con Agua' => '98.89',
-                'Viviendas con Drenaje' => '98.61',
-                'Viviendas con Televisión' => '99.17',
-                'Viviendas con Automóvil' => '71.88',
-                'Viviendas con Computadora' => '60.25',
-                'Viviendas con Celular' => '83.10',
-                'Viviendas con Internet' => '44.46'
+                'Hogares' => 722,
+                'Hogares Jefatura masculina' => 73.55,
+                'Hogares Jefatura femenina' => 26.45,
+                'Ocupación por Vivienda' => 3.65,
+                'Viviendas con Electricidad' => 99.72,
+                'Viviendas con Agua' => 98.89,
+                'Viviendas con Drenaje' => 98.61,
+                'Viviendas con Televisión' => 99.17,
+                'Viviendas con Automóvil' => 71.88,
+                'Viviendas con Computadora' => 60.25,
+                'Viviendas con Celular' => 83.10,
+                'Viviendas con Internet' => 44.46
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '53',
+                'Total Actividades Económicas' => 53,
                 'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => '41.51',
+                'Primer actividad porcentaje' => 41.51,
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Segunda actividad porcentaje' => '24.53',
+                'Segunda actividad porcentaje' => 24.53,
                 'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Tercera actividad porcentaje' => '20.75',
-                'Cuarta actividad nombre' => 'Industria Manufacturera',
-                'Cuarta actividad porcentaje' => '3.77',
-                'Quinta actividad nombre' => 'Educativos',
-                'Quinta actividad porcentaje' => '3.77'
+                'Tercera actividad porcentaje' => 20.75,
+                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad porcentaje' => 3.77,
+                'Quinta actividad nombre' => 'Industria Manufacturera',
+                'Quinta actividad porcentaje' => 3.77
             )
         );
     } // datos

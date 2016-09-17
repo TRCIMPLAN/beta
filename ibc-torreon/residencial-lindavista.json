@@ -7,11 +7,11 @@
       "Porcentaje de población femenina":"53.12",
       "Porcentaje de población de 0 a 14 años":"21.88",
       "Porcentaje de población de 15 a 64 años":"78.12",
-      "Porcentaje de población de 65 y más años":"0.00",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población de 65 y más años":"0",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.64",
       "Porcentaje de población nacida en otro estado":"18.75",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"13.76",
@@ -19,28 +19,28 @@
       "Grado Promedio de Escolaridad femenina":"13.14"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"50.00",
+      "Población Económicamente Activa":"50",
       "Población Económicamente Activa masculina":"61.54",
       "Población Económicamente Activa femenina":"38.46",
-      "Población Ocupada":"100.00",
+      "Población Ocupada":"100",
       "Población Ocupada masculina":"61.54",
       "Población Ocupada femenina":"38.46",
-      "Población Desocupada":"0.00",
+      "Población Desocupada":"0",
       "Derechohabiencia":"81.25"
     },
     "Viviendas":{
       "Hogares":"8",
-      "Hogares Jefatura masculina":"87.50",
-      "Hogares Jefatura femenina":"12.50",
-      "Ocupación por Vivienda":"4.00",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"100.00",
-      "Viviendas con Computadora":"100.00",
-      "Viviendas con Celular":"100.00",
-      "Viviendas con Internet":"75.00"
+      "Hogares Jefatura masculina":"87.5",
+      "Hogares Jefatura femenina":"12.5",
+      "Ocupación por Vivienda":"4",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"100",
+      "Viviendas con Computadora":"100",
+      "Viviendas con Celular":"100",
+      "Viviendas con Internet":"75"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"0"

@@ -26,14 +26,14 @@
       "Población Ocupada masculina":"54.37",
       "Población Ocupada femenina":"45.63",
       "Población Desocupada":"6.92",
-      "Derechohabiencia":"74.20"
+      "Derechohabiencia":"74.2"
     },
     "Viviendas":{
       "Hogares":"283",
       "Hogares Jefatura masculina":"73.94",
       "Hogares Jefatura femenina":"26.06",
       "Ocupación por Vivienda":"3.31",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.28",
       "Viviendas con Drenaje":"99.64",
       "Viviendas con Televisión":"98.93",
@@ -45,15 +45,15 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"40",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"32.50",
+      "Primer actividad porcentaje":"32.5",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"12.50",
+      "Segunda actividad porcentaje":"12.5",
       "Tercera actividad nombre":"Comercio Mayoreo",
-      "Tercera actividad porcentaje":"10.00",
-      "Cuarta actividad nombre":"Financieros y Seguros",
-      "Cuarta actividad porcentaje":"10.00",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Quinta actividad porcentaje":"10.00"
+      "Tercera actividad porcentaje":"10",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Cuarta actividad porcentaje":"10",
+      "Quinta actividad nombre":"Financieros y Seguros",
+      "Quinta actividad porcentaje":"10"
     }
   }
 }]

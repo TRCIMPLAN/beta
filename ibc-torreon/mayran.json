@@ -35,9 +35,9 @@
       "Ocupación por Vivienda":"3.99",
       "Viviendas con Electricidad":"97.69",
       "Viviendas con Agua":"89.94",
-      "Viviendas con Drenaje":"93.10",
+      "Viviendas con Drenaje":"93.1",
       "Viviendas con Televisión":"95.11",
-      "Viviendas con Automóvil":"49.10",
+      "Viviendas con Automóvil":"49.1",
       "Viviendas con Computadora":"24.98",
       "Viviendas con Celular":"68.97",
       "Viviendas con Internet":"15.78"
@@ -50,10 +50,10 @@
       "Segunda actividad porcentaje":"10.34",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"10.34",
-      "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"6.90",
-      "Quinta actividad nombre":"Inmobiliarios",
-      "Quinta actividad porcentaje":"6.90"
+      "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+      "Cuarta actividad porcentaje":"6.9",
+      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad porcentaje":"6.9"
     }
   }
 }]

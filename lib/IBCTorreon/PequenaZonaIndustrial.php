@@ -34,7 +34,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Pequeña Zona Industrial';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:01';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'pequena-zona-industrial';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,47 +58,47 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '3',
-                'Porcentaje de población masculina' => '47.97',
-                'Porcentaje de población femenina' => '52.03',
-                'Porcentaje de población de 0 a 14 años' => '28.06',
-                'Porcentaje de población de 15 a 64 años' => '67.22',
-                'Porcentaje de población de 65 y más años' => '3.56',
-                'Porcentaje de población no especificada' => '1.16',
-                'Fecundidad promedio' => '1.80',
-                'Porcentaje de población nacida en otro estado' => '16.38',
-                'Porcentaje de población con discapacidad' => '9.19'
+                'Población total' => 3,
+                'Porcentaje de población masculina' => 47.97,
+                'Porcentaje de población femenina' => 52.03,
+                'Porcentaje de población de 0 a 14 años' => 28.06,
+                'Porcentaje de población de 15 a 64 años' => 67.22,
+                'Porcentaje de población de 65 y más años' => 3.56,
+                'Porcentaje de población no especificada' => 1.16,
+                'Fecundidad promedio' => 1.80,
+                'Porcentaje de población nacida en otro estado' => 16.38,
+                'Porcentaje de población con discapacidad' => 9.19
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '11.97',
-                'Grado Promedio de Escolaridad masculina' => '12.17',
-                'Grado Promedio de Escolaridad femenina' => '11.79'
+                'Grado Promedio de Escolaridad' => 11.97,
+                'Grado Promedio de Escolaridad masculina' => 12.17,
+                'Grado Promedio de Escolaridad femenina' => 11.79
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '56.53',
-                'Población Económicamente Activa masculina' => '58.26',
-                'Población Económicamente Activa femenina' => '41.74',
-                'Población Ocupada' => '94.98',
-                'Población Ocupada masculina' => '57.81',
-                'Población Ocupada femenina' => '42.19',
-                'Población Desocupada' => '5.02',
-                'Derechohabiencia' => '80.03'
+                'Población Económicamente Activa' => 56.53,
+                'Población Económicamente Activa masculina' => 58.26,
+                'Población Económicamente Activa femenina' => 41.74,
+                'Población Ocupada' => 94.98,
+                'Población Ocupada masculina' => 57.81,
+                'Población Ocupada femenina' => 42.19,
+                'Población Desocupada' => 5.02,
+                'Derechohabiencia' => 80.03
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '31',
+                'Total Actividades Económicas' => 31,
                 'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => '32.26',
+                'Primer actividad porcentaje' => 32.26,
                 'Segunda actividad nombre' => 'Comercio Mayoreo',
-                'Segunda actividad porcentaje' => '22.58',
+                'Segunda actividad porcentaje' => 22.58,
                 'Tercera actividad nombre' => 'Comercio Menudeo',
-                'Tercera actividad porcentaje' => '19.35',
+                'Tercera actividad porcentaje' => 19.35,
                 'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '12.90',
+                'Cuarta actividad porcentaje' => 12.90,
                 'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Quinta actividad porcentaje' => '6.45'
+                'Quinta actividad porcentaje' => 6.45
             )
         );
     } // datos

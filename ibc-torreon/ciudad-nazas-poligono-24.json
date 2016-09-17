@@ -5,7 +5,7 @@
       "Población total":"2558",
       "Porcentaje de población masculina":"48.94",
       "Porcentaje de población femenina":"51.06",
-      "Porcentaje de población de 0 a 14 años":"37.80",
+      "Porcentaje de población de 0 a 14 años":"37.8",
       "Porcentaje de población de 15 a 64 años":"60.44",
       "Porcentaje de población de 65 y más años":"0.82",
       "Porcentaje de población no especificada":"0.94",
@@ -15,11 +15,11 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"10.86",
-      "Grado Promedio de Escolaridad masculina":"11.10",
+      "Grado Promedio de Escolaridad masculina":"11.1",
       "Grado Promedio de Escolaridad femenina":"10.63"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"58.60",
+      "Población Económicamente Activa":"58.6",
       "Población Económicamente Activa masculina":"64.73",
       "Población Económicamente Activa femenina":"35.27",
       "Población Ocupada":"92.97",
@@ -51,8 +51,8 @@
       "Tercera actividad nombre":"Educativos",
       "Tercera actividad porcentaje":"10.34",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Cuarta actividad porcentaje":"6.90",
-      "Quinta actividad nombre":"Salud",
+      "Cuarta actividad porcentaje":"6.9",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"3.45"
     }
   }

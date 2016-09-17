@@ -33,13 +33,13 @@
       "Hogares Jefatura masculina":"84.14",
       "Hogares Jefatura femenina":"15.86",
       "Ocupación por Vivienda":"3.54",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.86",
       "Viviendas con Televisión":"98.49",
       "Viviendas con Automóvil":"60.96",
       "Viviendas con Computadora":"36.36",
-      "Viviendas con Celular":"94.00",
+      "Viviendas con Celular":"94",
       "Viviendas con Internet":"13.31"
     },
     "Unidades Económicas":{

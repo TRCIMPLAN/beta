@@ -45,15 +45,15 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"10",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
+      "Primer actividad porcentaje":"50",
       "Segunda actividad nombre":"Gubernamentales",
-      "Segunda actividad porcentaje":"20.00",
-      "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
-      "Tercera actividad porcentaje":"10.00",
+      "Segunda actividad porcentaje":"20",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad porcentaje":"10",
       "Cuarta actividad nombre":"Inmobiliarios",
-      "Cuarta actividad porcentaje":"10.00",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Quinta actividad porcentaje":"10.00"
+      "Cuarta actividad porcentaje":"10",
+      "Quinta actividad nombre":"Transportes, Correo, Almacenamiento",
+      "Quinta actividad porcentaje":"10"
     }
   }
 }]

@@ -7,7 +7,7 @@
       "Porcentaje de población femenina":"49.17",
       "Porcentaje de población de 0 a 14 años":"29.01",
       "Porcentaje de población de 15 a 64 años":"63.08",
-      "Porcentaje de población de 65 y más años":"7.90",
+      "Porcentaje de población de 65 y más años":"7.9",
       "Porcentaje de población no especificada":"0.01",
       "Fecundidad promedio":"2.61",
       "Porcentaje de población nacida en otro estado":"19.13",
@@ -48,11 +48,11 @@
       "Primer actividad porcentaje":"52.94",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"23.53",
-      "Tercera actividad nombre":"Industria Manufacturera",
+      "Tercera actividad nombre":"Educativos",
       "Tercera actividad porcentaje":"5.88",
       "Cuarta actividad nombre":"Gubernamentales",
       "Cuarta actividad porcentaje":"5.88",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
       "Quinta actividad porcentaje":"5.88"
     }
   }

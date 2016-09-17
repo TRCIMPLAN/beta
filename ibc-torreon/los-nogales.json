@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"697",
-      "Porcentaje de población masculina":"47.20",
-      "Porcentaje de población femenina":"52.80",
+      "Porcentaje de población masculina":"47.2",
+      "Porcentaje de población femenina":"52.8",
       "Porcentaje de población de 0 a 14 años":"14.35",
       "Porcentaje de población de 15 a 64 años":"58.97",
       "Porcentaje de población de 65 y más años":"15.06",
@@ -33,23 +33,23 @@
       "Hogares Jefatura masculina":"72.12",
       "Hogares Jefatura femenina":"27.88",
       "Ocupación por Vivienda":"3.63",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.92",
       "Viviendas con Drenaje":"99.92",
       "Viviendas con Televisión":"99.91",
       "Viviendas con Automóvil":"87.24",
       "Viviendas con Computadora":"69.85",
-      "Viviendas con Celular":"84.10",
+      "Viviendas con Celular":"84.1",
       "Viviendas con Internet":"64.03"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"5",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"60.00",
-      "Segunda actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Segunda actividad porcentaje":"20.00",
-      "Tercera actividad nombre":"Salud",
-      "Tercera actividad porcentaje":"20.00"
+      "Primer actividad porcentaje":"60",
+      "Segunda actividad nombre":"Salud",
+      "Segunda actividad porcentaje":"20",
+      "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Tercera actividad porcentaje":"20"
     }
   }
 }]

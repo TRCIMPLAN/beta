@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"25.04",
       "Porcentaje de población de 15 a 64 años":"66.24",
       "Porcentaje de población de 65 y más años":"8.62",
-      "Porcentaje de población no especificada":"0.10",
+      "Porcentaje de población no especificada":"0.1",
       "Fecundidad promedio":"2.38",
       "Porcentaje de población nacida en otro estado":"15.85",
       "Porcentaje de población con discapacidad":"5.73"
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"51.59",
-      "Población Económicamente Activa masculina":"65.20",
-      "Población Económicamente Activa femenina":"34.80",
+      "Población Económicamente Activa masculina":"65.2",
+      "Población Económicamente Activa femenina":"34.8",
       "Población Ocupada":"88.82",
       "Población Ocupada masculina":"63.81",
       "Población Ocupada femenina":"36.19",
@@ -30,8 +30,8 @@
     },
     "Viviendas":{
       "Hogares":"731",
-      "Hogares Jefatura masculina":"68.40",
-      "Hogares Jefatura femenina":"31.60",
+      "Hogares Jefatura masculina":"68.4",
+      "Hogares Jefatura femenina":"31.6",
       "Ocupación por Vivienda":"3.92",
       "Viviendas con Electricidad":"99.18",
       "Viviendas con Agua":"98.63",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"92",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"33.70",
+      "Primer actividad porcentaje":"33.7",
       "Segunda actividad nombre":"Gubernamentales",
       "Segunda actividad porcentaje":"13.04",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",

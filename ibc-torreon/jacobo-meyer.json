@@ -6,9 +6,9 @@
       "Porcentaje de población masculina":"49.45",
       "Porcentaje de población femenina":"50.55",
       "Porcentaje de población de 0 a 14 años":"30.24",
-      "Porcentaje de población de 15 a 64 años":"62.70",
+      "Porcentaje de población de 15 a 64 años":"62.7",
       "Porcentaje de población de 65 y más años":"6.96",
-      "Porcentaje de población no especificada":"0.10",
+      "Porcentaje de población no especificada":"0.1",
       "Fecundidad promedio":"2.39",
       "Porcentaje de población nacida en otro estado":"22.89",
       "Porcentaje de población con discapacidad":"12.83"
@@ -16,16 +16,16 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"7.57",
       "Grado Promedio de Escolaridad masculina":"7.44",
-      "Grado Promedio de Escolaridad femenina":"7.70"
+      "Grado Promedio de Escolaridad femenina":"7.7"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"52.52",
       "Población Económicamente Activa masculina":"68.89",
       "Población Económicamente Activa femenina":"31.11",
-      "Población Ocupada":"86.10",
+      "Población Ocupada":"86.1",
       "Población Ocupada masculina":"68.51",
       "Población Ocupada femenina":"31.49",
-      "Población Desocupada":"13.90",
+      "Población Desocupada":"13.9",
       "Derechohabiencia":"53.44"
     },
     "Viviendas":{
@@ -46,9 +46,9 @@
       "Total Actividades Económicas":"15",
       "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"46.67",
-      "Segunda actividad nombre":"Salud",
+      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"13.33",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad nombre":"Salud",
       "Tercera actividad porcentaje":"13.33",
       "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"13.33",

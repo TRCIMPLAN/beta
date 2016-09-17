@@ -38,21 +38,21 @@
       "Viviendas con Drenaje":"99.67",
       "Viviendas con Televisión":"97.91",
       "Viviendas con Automóvil":"43.61",
-      "Viviendas con Computadora":"21.20",
+      "Viviendas con Computadora":"21.2",
       "Viviendas con Celular":"67.37",
       "Viviendas con Internet":"14.11"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"208",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"37.50",
+      "Primer actividad porcentaje":"37.5",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"22.60",
+      "Segunda actividad porcentaje":"22.6",
       "Tercera actividad nombre":"Industria Manufacturera",
       "Tercera actividad porcentaje":"14.42",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"10.58",
-      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"3.85"
     }
   }

@@ -33,23 +33,23 @@
       "Hogares Jefatura masculina":"75.21",
       "Hogares Jefatura femenina":"24.79",
       "Ocupación por Vivienda":"3.78",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.17",
       "Viviendas con Televisión":"98.35",
       "Viviendas con Automóvil":"71.07",
       "Viviendas con Computadora":"49.59",
-      "Viviendas con Celular":"87.60",
-      "Viviendas con Internet":"40.50"
+      "Viviendas con Celular":"87.6",
+      "Viviendas con Internet":"40.5"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"5",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"60.00",
-      "Segunda actividad nombre":"Salud",
-      "Segunda actividad porcentaje":"20.00",
-      "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
-      "Tercera actividad porcentaje":"20.00"
+      "Primer actividad porcentaje":"60",
+      "Segunda actividad nombre":"Esparcimiento, Culturales, Deportivos",
+      "Segunda actividad porcentaje":"20",
+      "Tercera actividad nombre":"Salud",
+      "Tercera actividad porcentaje":"20"
     }
   }
 }]

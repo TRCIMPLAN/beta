@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Las Misiones de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Las Misiones" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">7.14 %</td>
       </tr>
       <tr>
-        <td>5° Profesionales, Científicos, Técnicos</td>
+        <td>5° Esparcimiento, Culturales, Deportivos</td>
         <td class="derecha">1.79 %</td>
       </tr>
     </tbody>
@@ -632,7 +632,7 @@
       function elaborarGraficaPobDisc() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['CON discapacidad', 0.00],
+              ['CON discapacidad', 0],
               ['Sin discapacidad', 100]
         ]);
         var options = {
@@ -651,7 +651,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 14.07, '#FF7F37', '14.07 años'],
-              ['Masculina', 14.50, '#006AC8', '14.50 años'],
+              ['Masculina', 14.5, '#006AC8', '14.5 años'],
               ['Femenina', 13.77, '#C80083', '13.77 años']
           ]);
           var options = {
@@ -770,11 +770,11 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
-              ['Automóvil', 97.30, '#59BFC3', '97.30 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
+              ['Automóvil', 97.3, '#59BFC3', '97.3 %'],
               ['Computadora', 81.08, '#59C38E', '81.08 %'],
               ['Celular', 94.59, '#8EC359', '94.59 %'],
               ['Internet', 86.49, '#C38E59', '86.49 %']
@@ -800,7 +800,7 @@
               ['2° Financieros y Seguros', 14.29, '#59BFC3', '14.29 %'],
               ['3° Preparación de Alimentos y Bebidas', 10.71, '#59C38E', '10.71 %'],
               ['4° Otros servicios, excepto Gobierno', 7.14, '#8EC359', '7.14 %'],
-              ['5° Profesionales, Científicos, Técnicos', 1.79, '#C38E59', '1.79 %']
+              ['5° Esparcimiento, Culturales, Deportivos', 1.79, '#C38E59', '1.79 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

@@ -14,7 +14,7 @@
       "Porcentaje de población con discapacidad":"8.45"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"8.20",
+      "Grado Promedio de Escolaridad":"8.2",
       "Grado Promedio de Escolaridad masculina":"8.19",
       "Grado Promedio de Escolaridad femenina":"8.21"
     },
@@ -32,22 +32,22 @@
       "Hogares":"60",
       "Hogares Jefatura masculina":"68.58",
       "Hogares Jefatura femenina":"31.42",
-      "Ocupación por Vivienda":"3.80",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"87.10",
+      "Ocupación por Vivienda":"3.8",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"87.1",
       "Viviendas con Drenaje":"65.43",
       "Viviendas con Televisión":"95.44",
       "Viviendas con Automóvil":"43.55",
       "Viviendas con Computadora":"25.21",
-      "Viviendas con Celular":"83.00",
+      "Viviendas con Celular":"83",
       "Viviendas con Internet":"1.78"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"2",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
+      "Primer actividad porcentaje":"50",
       "Segunda actividad nombre":"Salud",
-      "Segunda actividad porcentaje":"50.00"
+      "Segunda actividad porcentaje":"50"
     }
   }
 }]

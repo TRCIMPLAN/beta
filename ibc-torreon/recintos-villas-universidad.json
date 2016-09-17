@@ -26,16 +26,16 @@
       "Población Ocupada masculina":"60.01",
       "Población Ocupada femenina":"39.99",
       "Población Desocupada":"3.13",
-      "Derechohabiencia":"85.90"
+      "Derechohabiencia":"85.9"
     },
     "Viviendas":{
       "Hogares":"143",
       "Hogares Jefatura masculina":"90.85",
       "Hogares Jefatura femenina":"9.15",
       "Ocupación por Vivienda":"3.39",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.81",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"99.12",
       "Viviendas con Automóvil":"84.64",
       "Viviendas con Computadora":"58.61",

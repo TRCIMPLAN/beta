@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Nuevo Mexico de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Nuevo Mexico" src="../imagenes/imagen.jpg">
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 26.93],
               ['De 15 a 64 años', 62.91],
               ['De 65 y más años', 10.16],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -616,7 +616,7 @@
       function elaborarGraficaPobNacOtroEdo() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Nacida en OTRO estado', 12.60],
+              ['Nacida en OTRO estado', 12.6],
               ['Nacida en este estado', 87.4]
         ]);
         var options = {
@@ -771,7 +771,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Electricidad', 98.64, '#FF8080', '98.64 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
               ['Drenaje', 99.82, '#C080FF', '99.82 %'],
               ['Televisión', 98.45, '#80C0FF', '98.45 %'],
               ['Automóvil', 9.78, '#59BFC3', '9.78 %'],
@@ -796,7 +796,7 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 100.00, '#80C0FF', '100.00 %'],
+              ['1° Comercio Menudeo', 100, '#80C0FF', '100 %'],
               ['2° ', , '#59BFC3', ' %'],
               ['3° ', , '#59C38E', ' %'],
               ['4° ', , '#8EC359', ' %'],

@@ -3,15 +3,15 @@
   "IBC":{
     "Demografía":{
       "Población total":"92",
-      "Porcentaje de población masculina":"41.30",
-      "Porcentaje de población femenina":"58.70",
-      "Porcentaje de población de 0 a 14 años":"16.30",
+      "Porcentaje de población masculina":"41.3",
+      "Porcentaje de población femenina":"58.7",
+      "Porcentaje de población de 0 a 14 años":"16.3",
       "Porcentaje de población de 15 a 64 años":"81.52",
       "Porcentaje de población de 65 y más años":"2.17",
       "Porcentaje de población no especificada":"0.01",
       "Fecundidad promedio":"1.38",
-      "Porcentaje de población nacida en otro estado":"16.30",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población nacida en otro estado":"16.3",
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"14.14",
@@ -19,13 +19,13 @@
       "Grado Promedio de Escolaridad femenina":"13.22"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"50.00",
-      "Población Económicamente Activa masculina":"56.10",
-      "Población Económicamente Activa femenina":"43.90",
-      "Población Ocupada":"100.00",
-      "Población Ocupada masculina":"56.10",
-      "Población Ocupada femenina":"43.90",
-      "Población Desocupada":"0.00",
+      "Población Económicamente Activa":"50",
+      "Población Económicamente Activa masculina":"56.1",
+      "Población Económicamente Activa femenina":"43.9",
+      "Población Ocupada":"100",
+      "Población Ocupada masculina":"56.1",
+      "Población Ocupada femenina":"43.9",
+      "Población Desocupada":"0",
       "Derechohabiencia":"84.78"
     },
     "Viviendas":{
@@ -33,13 +33,13 @@
       "Hogares Jefatura masculina":"83.33",
       "Hogares Jefatura femenina":"16.67",
       "Ocupación por Vivienda":"3.83",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"95.83",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"100",
       "Viviendas con Computadora":"91.67",
-      "Viviendas con Celular":"100.00",
+      "Viviendas con Celular":"100",
       "Viviendas con Internet":"83.33"
     },
     "Unidades Económicas":{
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"11.76",
       "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"1.96",
-      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
       "Quinta actividad porcentaje":"0.98"
     }
   }

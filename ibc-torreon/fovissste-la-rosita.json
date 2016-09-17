@@ -15,16 +15,16 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"12.49",
-      "Grado Promedio de Escolaridad masculina":"13.10",
+      "Grado Promedio de Escolaridad masculina":"13.1",
       "Grado Promedio de Escolaridad femenina":"11.97"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"52.20",
+      "Población Económicamente Activa":"52.2",
       "Población Económicamente Activa masculina":"55.05",
       "Población Económicamente Activa femenina":"44.95",
       "Población Ocupada":"88.41",
-      "Población Ocupada masculina":"54.50",
-      "Población Ocupada femenina":"45.50",
+      "Población Ocupada masculina":"54.5",
+      "Población Ocupada femenina":"45.5",
       "Población Desocupada":"11.59",
       "Derechohabiencia":"83.88"
     },
@@ -33,11 +33,11 @@
       "Hogares Jefatura masculina":"68.06",
       "Hogares Jefatura femenina":"31.94",
       "Ocupación por Vivienda":"3.47",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.93",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"67.70",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"67.7",
       "Viviendas con Computadora":"65.26",
       "Viviendas con Celular":"83.43",
       "Viviendas con Internet":"56.34"
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"23.53",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.73",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"7.84",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"7.84"
     }
   }

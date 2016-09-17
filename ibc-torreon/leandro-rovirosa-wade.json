@@ -33,9 +33,9 @@
       "Hogares Jefatura masculina":"81.99",
       "Hogares Jefatura femenina":"18.01",
       "Ocupación por Vivienda":"3.72",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"99.80",
-      "Viviendas con Drenaje":"99.80",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"99.8",
+      "Viviendas con Drenaje":"99.8",
       "Viviendas con Televisión":"99.81",
       "Viviendas con Automóvil":"88.91",
       "Viviendas con Computadora":"77.21",
@@ -51,9 +51,9 @@
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"16.67",
       "Cuarta actividad nombre":"Comercio Menudeo",
-      "Cuarta actividad porcentaje":"12.50",
+      "Cuarta actividad porcentaje":"12.5",
       "Quinta actividad nombre":"Construcción",
-      "Quinta actividad porcentaje":"12.50"
+      "Quinta actividad porcentaje":"12.5"
     }
   }
 }]

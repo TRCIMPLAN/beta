@@ -14,7 +14,7 @@
       "Porcentaje de población con discapacidad":"7.89"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"12.30",
+      "Grado Promedio de Escolaridad":"12.3",
       "Grado Promedio de Escolaridad masculina":"12.63",
       "Grado Promedio de Escolaridad femenina":"12.01"
     },
@@ -33,9 +33,9 @@
       "Hogares Jefatura masculina":"68.24",
       "Hogares Jefatura femenina":"31.76",
       "Ocupación por Vivienda":"3.48",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"99.70",
-      "Viviendas con Drenaje":"99.70",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"99.7",
+      "Viviendas con Drenaje":"99.7",
       "Viviendas con Televisión":"99.85",
       "Viviendas con Automóvil":"79.03",
       "Viviendas con Computadora":"63.83",

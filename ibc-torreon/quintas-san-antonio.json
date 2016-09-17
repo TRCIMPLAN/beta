@@ -10,12 +10,12 @@
       "Porcentaje de población de 65 y más años":"2.88",
       "Porcentaje de población no especificada":"0.01",
       "Fecundidad promedio":"1.54",
-      "Porcentaje de población nacida en otro estado":"24.70",
+      "Porcentaje de población nacida en otro estado":"24.7",
       "Porcentaje de población con discapacidad":"1.63"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"14.59",
-      "Grado Promedio de Escolaridad masculina":"14.90",
+      "Grado Promedio de Escolaridad masculina":"14.9",
       "Grado Promedio de Escolaridad femenina":"14.33"
     },
     "Características Económicas":{
@@ -26,34 +26,34 @@
       "Población Ocupada masculina":"56.76",
       "Población Ocupada femenina":"43.24",
       "Población Desocupada":"3.79",
-      "Derechohabiencia":"84.30"
+      "Derechohabiencia":"84.3"
     },
     "Viviendas":{
       "Hogares":"164",
       "Hogares Jefatura masculina":"44.98",
       "Hogares Jefatura femenina":"55.02",
       "Ocupación por Vivienda":"3.63",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"95.13",
       "Viviendas con Computadora":"85.24",
-      "Viviendas con Celular":"95.40",
+      "Viviendas con Celular":"95.4",
       "Viviendas con Internet":"77.17"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"10",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"40.00",
+      "Primer actividad porcentaje":"40",
       "Segunda actividad nombre":"Inmobiliarios",
-      "Segunda actividad porcentaje":"20.00",
-      "Tercera actividad nombre":"Industria Manufacturera",
-      "Tercera actividad porcentaje":"10.00",
+      "Segunda actividad porcentaje":"20",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad porcentaje":"10",
       "Cuarta actividad nombre":"Financieros y Seguros",
-      "Cuarta actividad porcentaje":"10.00",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Quinta actividad porcentaje":"10.00"
+      "Cuarta actividad porcentaje":"10",
+      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+      "Quinta actividad porcentaje":"10"
     }
   }
 }]

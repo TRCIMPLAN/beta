@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"15.84",
       "Porcentaje de población de 15 a 64 años":"83.17",
       "Porcentaje de población de 65 y más años":"0.99",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.45",
       "Porcentaje de población nacida en otro estado":"37.62",
       "Porcentaje de población con discapacidad":"1.48"
@@ -33,19 +33,19 @@
       "Hogares Jefatura masculina":"70.37",
       "Hogares Jefatura femenina":"29.63",
       "Ocupación por Vivienda":"3.74",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"92.59",
-      "Viviendas con Automóvil":"96.30",
+      "Viviendas con Automóvil":"96.3",
       "Viviendas con Computadora":"88.89",
-      "Viviendas con Celular":"100.00",
+      "Viviendas con Celular":"100",
       "Viviendas con Internet":"74.07"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"1",
       "Primer actividad nombre":"Industria Manufacturera",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

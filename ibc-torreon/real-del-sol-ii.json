@@ -11,7 +11,7 @@
       "Porcentaje de población no especificada":"0.01",
       "Fecundidad promedio":"1.94",
       "Porcentaje de población nacida en otro estado":"17.77",
-      "Porcentaje de población con discapacidad":"2.00"
+      "Porcentaje de población con discapacidad":"2"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"8.91",
@@ -20,32 +20,32 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"58.76",
-      "Población Económicamente Activa masculina":"65.60",
-      "Población Económicamente Activa femenina":"34.40",
+      "Población Económicamente Activa masculina":"65.6",
+      "Población Económicamente Activa femenina":"34.4",
       "Población Ocupada":"96.76",
       "Población Ocupada masculina":"64.49",
       "Población Ocupada femenina":"35.51",
       "Población Desocupada":"3.24",
-      "Derechohabiencia":"68.30"
+      "Derechohabiencia":"68.3"
     },
     "Viviendas":{
       "Hogares":"149",
-      "Hogares Jefatura masculina":"81.10",
-      "Hogares Jefatura femenina":"18.90",
+      "Hogares Jefatura masculina":"81.1",
+      "Hogares Jefatura femenina":"18.9",
       "Ocupación por Vivienda":"3.85",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"98.05",
       "Viviendas con Automóvil":"34.64",
-      "Viviendas con Computadora":"14.90",
+      "Viviendas con Computadora":"14.9",
       "Viviendas con Celular":"81.17",
       "Viviendas con Internet":"15.15"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"6",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

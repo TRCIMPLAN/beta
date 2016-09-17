@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Bugambilias de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
         </div>
         </div>
         <meta itemprop="image" alt="Bugambilias" src="../imagenes/imagen.jpg">
@@ -413,19 +413,19 @@
         <td class="derecha">21.74 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">17.39 %</td>
       </tr>
       <tr>
-        <td>3° Otros servicios, excepto Gobierno</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">17.39 %</td>
       </tr>
       <tr>
-        <td>4° Profesionales, Científicos, Técnicos</td>
+        <td>4° Educativos</td>
         <td class="derecha">8.70 %</td>
       </tr>
       <tr>
-        <td>5° Educativos</td>
+        <td>5° Profesionales, Científicos, Técnicos</td>
         <td class="derecha">8.70 %</td>
       </tr>
     </tbody>
@@ -598,10 +598,10 @@
       function elaborarGraficaPobRango() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['De 0 a 14 años', 20.00],
+              ['De 0 a 14 años', 20],
               ['De 15 a 64 años', 68.89],
               ['De 65 y más años', 11.11],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,12 +770,12 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
               ['Agua', 99.21, '#FF80C0', '99.21 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
               ['Televisión', 99.21, '#80C0FF', '99.21 %'],
               ['Automóvil', 55.56, '#59BFC3', '55.56 %'],
-              ['Computadora', 50.00, '#59C38E', '50.00 %'],
+              ['Computadora', 50, '#59C38E', '50 %'],
               ['Celular', 73.81, '#8EC359', '73.81 %'],
               ['Internet', 36.51, '#C38E59', '36.51 %']
           ]);
@@ -797,10 +797,10 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 21.74, '#80C0FF', '21.74 %'],
-              ['2° Industria Manufacturera', 17.39, '#59BFC3', '17.39 %'],
-              ['3° Otros servicios, excepto Gobierno', 17.39, '#59C38E', '17.39 %'],
-              ['4° Profesionales, Científicos, Técnicos', 8.70, '#8EC359', '8.70 %'],
-              ['5° Educativos', 8.70, '#C38E59', '8.70 %']
+              ['2° Otros servicios, excepto Gobierno', 17.39, '#59BFC3', '17.39 %'],
+              ['3° Industria Manufacturera', 17.39, '#59C38E', '17.39 %'],
+              ['4° Educativos', 8.7, '#8EC359', '8.7 %'],
+              ['5° Profesionales, Científicos, Técnicos', 8.7, '#C38E59', '8.7 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

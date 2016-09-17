@@ -30,12 +30,12 @@
     },
     "Viviendas":{
       "Hogares":"296",
-      "Hogares Jefatura masculina":"77.70",
-      "Hogares Jefatura femenina":"22.30",
+      "Hogares Jefatura masculina":"77.7",
+      "Hogares Jefatura femenina":"22.3",
       "Ocupación por Vivienda":"3.75",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"99.66",
       "Viviendas con Automóvil":"51.68",
       "Viviendas con Computadora":"27.42",
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"28.95",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"10.53",
-      "Cuarta actividad nombre":"Salud",
+      "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
       "Cuarta actividad porcentaje":"5.26",
-      "Quinta actividad nombre":"Industria Manufacturera",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"5.26"
     }
   }

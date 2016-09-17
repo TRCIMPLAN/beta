@@ -9,9 +9,9 @@
       "Porcentaje de población de 15 a 64 años":"75.01",
       "Porcentaje de población de 65 y más años":"7.09",
       "Porcentaje de población no especificada":"1.09",
-      "Fecundidad promedio":"1.70",
+      "Fecundidad promedio":"1.7",
       "Porcentaje de población nacida en otro estado":"24.18",
-      "Porcentaje de población con discapacidad":"2.10"
+      "Porcentaje de población con discapacidad":"2.1"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"13.54",
@@ -22,10 +22,10 @@
       "Población Económicamente Activa":"54.93",
       "Población Económicamente Activa masculina":"56.36",
       "Población Económicamente Activa femenina":"43.64",
-      "Población Ocupada":"93.60",
+      "Población Ocupada":"93.6",
       "Población Ocupada masculina":"56.12",
       "Población Ocupada femenina":"43.88",
-      "Población Desocupada":"6.40",
+      "Población Desocupada":"6.4",
       "Derechohabiencia":"76.37"
     },
     "Viviendas":{
@@ -33,8 +33,8 @@
       "Hogares Jefatura masculina":"70.75",
       "Hogares Jefatura femenina":"29.25",
       "Ocupación por Vivienda":"3.48",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.96",
       "Viviendas con Televisión":"99.27",
       "Viviendas con Automóvil":"87.32",
@@ -53,7 +53,7 @@
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"9.88",
       "Quinta actividad nombre":"Salud",
-      "Quinta actividad porcentaje":"9.30"
+      "Quinta actividad porcentaje":"9.3"
     }
   }
 }]

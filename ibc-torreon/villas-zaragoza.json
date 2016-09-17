@@ -5,7 +5,7 @@
       "Población total":"6123",
       "Porcentaje de población masculina":"49.83",
       "Porcentaje de población femenina":"50.17",
-      "Porcentaje de población de 0 a 14 años":"36.00",
+      "Porcentaje de población de 0 a 14 años":"36",
       "Porcentaje de población de 15 a 64 años":"62.17",
       "Porcentaje de población de 65 y más años":"1.56",
       "Porcentaje de población no especificada":"0.27",
@@ -39,8 +39,8 @@
       "Viviendas con Televisión":"97.59",
       "Viviendas con Automóvil":"41.97",
       "Viviendas con Computadora":"28.27",
-      "Viviendas con Celular":"85.40",
-      "Viviendas con Internet":"12.00"
+      "Viviendas con Celular":"85.4",
+      "Viviendas con Internet":"12"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"127",

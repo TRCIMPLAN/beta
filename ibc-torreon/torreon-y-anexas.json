@@ -3,12 +3,12 @@
   "IBC":{
     "Demografía":{
       "Población total":"988",
-      "Porcentaje de población masculina":"50.10",
-      "Porcentaje de población femenina":"49.90",
+      "Porcentaje de población masculina":"50.1",
+      "Porcentaje de población femenina":"49.9",
       "Porcentaje de población de 0 a 14 años":"27.94",
       "Porcentaje de población de 15 a 64 años":"62.04",
       "Porcentaje de población de 65 y más años":"9.72",
-      "Porcentaje de población no especificada":"0.30",
+      "Porcentaje de población no especificada":"0.3",
       "Fecundidad promedio":"2.63",
       "Porcentaje de población nacida en otro estado":"12.74",
       "Porcentaje de población con discapacidad":"4.22"
@@ -45,14 +45,14 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"14",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
+      "Primer actividad porcentaje":"50",
       "Segunda actividad nombre":"Educativos",
       "Segunda actividad porcentaje":"21.43",
       "Tercera actividad nombre":"Manejo de Residuos",
       "Tercera actividad porcentaje":"7.14",
-      "Cuarta actividad nombre":"Salud",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"7.14",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"7.14"
     }
   }

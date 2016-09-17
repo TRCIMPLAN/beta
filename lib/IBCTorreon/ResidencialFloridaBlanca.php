@@ -34,7 +34,7 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Florida Blanca';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:01';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-florida-blanca';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,58 +58,58 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '413',
-                'Porcentaje de población masculina' => '49.88',
-                'Porcentaje de población femenina' => '50.12',
-                'Porcentaje de población de 0 a 14 años' => '23.73',
-                'Porcentaje de población de 15 a 64 años' => '68.77',
-                'Porcentaje de población de 65 y más años' => '5.33',
-                'Porcentaje de población no especificada' => '2.17',
-                'Fecundidad promedio' => '1.50',
-                'Porcentaje de población nacida en otro estado' => '17.43',
-                'Porcentaje de población con discapacidad' => '2.39'
+                'Población total' => 413,
+                'Porcentaje de población masculina' => 49.88,
+                'Porcentaje de población femenina' => 50.12,
+                'Porcentaje de población de 0 a 14 años' => 23.73,
+                'Porcentaje de población de 15 a 64 años' => 68.77,
+                'Porcentaje de población de 65 y más años' => 5.33,
+                'Porcentaje de población no especificada' => 2.17,
+                'Fecundidad promedio' => 1.50,
+                'Porcentaje de población nacida en otro estado' => 17.43,
+                'Porcentaje de población con discapacidad' => 2.39
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '14.11',
-                'Grado Promedio de Escolaridad masculina' => '14.50',
-                'Grado Promedio de Escolaridad femenina' => '13.72'
+                'Grado Promedio de Escolaridad' => 14.11,
+                'Grado Promedio de Escolaridad masculina' => 14.50,
+                'Grado Promedio de Escolaridad femenina' => 13.72
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '48.65',
-                'Población Económicamente Activa masculina' => '59.26',
-                'Población Económicamente Activa femenina' => '40.74',
-                'Población Ocupada' => '92.05',
-                'Población Ocupada masculina' => '59.33',
-                'Población Ocupada femenina' => '40.67',
-                'Población Desocupada' => '7.95',
-                'Derechohabiencia' => '83.78'
+                'Población Económicamente Activa' => 48.65,
+                'Población Económicamente Activa masculina' => 59.26,
+                'Población Económicamente Activa femenina' => 40.74,
+                'Población Ocupada' => 92.05,
+                'Población Ocupada masculina' => 59.33,
+                'Población Ocupada femenina' => 40.67,
+                'Población Desocupada' => 7.95,
+                'Derechohabiencia' => 83.78
             ),
             'Viviendas' => array(
-                'Hogares' => '109',
-                'Hogares Jefatura masculina' => '81.65',
-                'Hogares Jefatura femenina' => '18.35',
-                'Ocupación por Vivienda' => '3.79',
-                'Viviendas con Electricidad' => '100.00',
-                'Viviendas con Agua' => '100.00',
-                'Viviendas con Drenaje' => '100.00',
-                'Viviendas con Televisión' => '100.00',
-                'Viviendas con Automóvil' => '94.50',
-                'Viviendas con Computadora' => '88.99',
-                'Viviendas con Celular' => '94.50',
-                'Viviendas con Internet' => '87.16'
+                'Hogares' => 109,
+                'Hogares Jefatura masculina' => 81.65,
+                'Hogares Jefatura femenina' => 18.35,
+                'Ocupación por Vivienda' => 3.79,
+                'Viviendas con Electricidad' => 100.00,
+                'Viviendas con Agua' => 100.00,
+                'Viviendas con Drenaje' => 100.00,
+                'Viviendas con Televisión' => 100.00,
+                'Viviendas con Automóvil' => 94.50,
+                'Viviendas con Computadora' => 88.99,
+                'Viviendas con Celular' => 94.50,
+                'Viviendas con Internet' => 87.16
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '5',
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => '20.00',
+                'Total Actividades Económicas' => 5,
+                'Primer actividad nombre' => 'Educativos',
+                'Primer actividad porcentaje' => 20.00,
                 'Segunda actividad nombre' => 'Manejo de Residuos',
-                'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Educativos',
-                'Cuarta actividad porcentaje' => '20.00',
-                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Quinta actividad porcentaje' => '20.00'
+                'Segunda actividad porcentaje' => 20.00,
+                'Tercera actividad nombre' => 'Comercio Menudeo',
+                'Tercera actividad porcentaje' => 20.00,
+                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Cuarta actividad porcentaje' => 20.00,
+                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad porcentaje' => 20.00
             )
         );
     } // datos

@@ -9,7 +9,7 @@
       "Porcentaje de población de 15 a 64 años":"60.08",
       "Porcentaje de población de 65 y más años":"1.59",
       "Porcentaje de población no especificada":"1.74",
-      "Fecundidad promedio":"1.90",
+      "Fecundidad promedio":"1.9",
       "Porcentaje de población nacida en otro estado":"15.58",
       "Porcentaje de población con discapacidad":"1.48"
     },
@@ -35,8 +35,8 @@
       "Ocupación por Vivienda":"3.79",
       "Viviendas con Electricidad":"99.92",
       "Viviendas con Agua":"99.92",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"99.20",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"99.2",
       "Viviendas con Automóvil":"44.35",
       "Viviendas con Computadora":"31.41",
       "Viviendas con Celular":"85.31",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"79",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"48.10",
+      "Primer actividad porcentaje":"48.1",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"20.25",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
@@ -53,7 +53,7 @@
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"5.06",
       "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Quinta actividad porcentaje":"3.80"
+      "Quinta actividad porcentaje":"3.8"
     }
   }
 }]

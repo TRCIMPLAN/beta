@@ -3,12 +3,12 @@
   "IBC":{
     "Demografía":{
       "Población total":"7315",
-      "Porcentaje de población masculina":"48.30",
-      "Porcentaje de población femenina":"51.70",
+      "Porcentaje de población masculina":"48.3",
+      "Porcentaje de población femenina":"51.7",
       "Porcentaje de población de 0 a 14 años":"21.62",
       "Porcentaje de población de 15 a 64 años":"69.18",
-      "Porcentaje de población de 65 y más años":"8.70",
-      "Porcentaje de población no especificada":"0.50",
+      "Porcentaje de población de 65 y más años":"8.7",
+      "Porcentaje de población no especificada":"0.5",
       "Fecundidad promedio":"2.36",
       "Porcentaje de población nacida en otro estado":"18.99",
       "Porcentaje de población con discapacidad":"7.67"
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"22.06",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"16.18",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"4.41",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"4.41"
     }
   }

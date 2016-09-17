@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia La Joya de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:00">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="La Joya" src="../imagenes/imagen.jpg">
@@ -417,11 +417,11 @@
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
-        <td>3° Salud</td>
+        <td>3° Inmobiliarios</td>
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
-        <td>4° Inmobiliarios</td>
+        <td>4° Salud</td>
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 37.88],
               ['De 15 a 64 años', 60.17],
               ['De 65 y más años', 1.95],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -651,7 +651,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 8.22, '#FF7F37', '8.22 años'],
-              ['Masculina', 8.60, '#006AC8', '8.60 años'],
+              ['Masculina', 8.6, '#006AC8', '8.6 años'],
               ['Femenina', 7.79, '#C80083', '7.79 años']
           ]);
           var options = {
@@ -773,11 +773,11 @@
               ['Electricidad', 99.47, '#FF8080', '99.47 %'],
               ['Agua', 99.47, '#FF80C0', '99.47 %'],
               ['Drenaje', 99.47, '#C080FF', '99.47 %'],
-              ['Televisión', 98.40, '#80C0FF', '98.40 %'],
+              ['Televisión', 98.4, '#80C0FF', '98.4 %'],
               ['Automóvil', 45.21, '#59BFC3', '45.21 %'],
               ['Computadora', 19.68, '#59C38E', '19.68 %'],
               ['Celular', 81.91, '#8EC359', '81.91 %'],
-              ['Internet', 17.90, '#C38E59', '17.90 %']
+              ['Internet', 17.9, '#C38E59', '17.9 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,10 +796,10 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 50.00, '#80C0FF', '50.00 %'],
-              ['2° Otros servicios, excepto Gobierno', 25.00, '#59BFC3', '25.00 %'],
-              ['3° Salud', 12.50, '#59C38E', '12.50 %'],
-              ['4° Inmobiliarios', 12.50, '#8EC359', '12.50 %'],
+              ['1° Comercio Menudeo', 50, '#80C0FF', '50 %'],
+              ['2° Otros servicios, excepto Gobierno', 25, '#59BFC3', '25 %'],
+              ['3° Inmobiliarios', 12.5, '#59C38E', '12.5 %'],
+              ['4° Salud', 12.5, '#8EC359', '12.5 %'],
               ['5° ', , '#C38E59', ' %']
           ]);
           var options = {

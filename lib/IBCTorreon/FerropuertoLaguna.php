@@ -34,7 +34,7 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ferropuerto Laguna';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:32:59';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ferropuerto-laguna';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,29 +58,23 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '23',
+                'Total Actividades Económicas' => 23,
                 'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => '52.17',
+                'Primer actividad porcentaje' => 52.17,
                 'Segunda actividad nombre' => 'Comercio Mayoreo',
-                'Segunda actividad porcentaje' => '21.74',
+                'Segunda actividad porcentaje' => 21.74,
                 'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Tercera actividad porcentaje' => '13.04',
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
-                'Cuarta actividad porcentaje' => '4.35',
-                'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Quinta actividad porcentaje' => '4.35'
+                'Tercera actividad porcentaje' => 13.04,
+                'Cuarta actividad nombre' => 'Manejo de Residuos',
+                'Cuarta actividad porcentaje' => 4.35,
+                'Quinta actividad nombre' => 'Comercio Menudeo',
+                'Quinta actividad porcentaje' => 4.35
             )
         );
     } // datos

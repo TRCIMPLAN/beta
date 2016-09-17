@@ -34,7 +34,7 @@ class ResidencialLosCedros extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Los Cedros';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:02';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-los-cedros';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,27 +58,21 @@ class ResidencialLosCedros extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '5',
+                'Total Actividades Económicas' => 5,
                 'Primer actividad nombre' => 'Educativos',
-                'Primer actividad porcentaje' => '40.00',
+                'Primer actividad porcentaje' => 40.00,
                 'Segunda actividad nombre' => 'Manejo de Residuos',
-                'Segunda actividad porcentaje' => '20.00',
-                'Tercera actividad nombre' => 'Información Medios Masivos',
-                'Tercera actividad porcentaje' => '20.00',
-                'Cuarta actividad nombre' => 'Financieros y Seguros',
-                'Cuarta actividad porcentaje' => '20.00'
+                'Segunda actividad porcentaje' => 20.00,
+                'Tercera actividad nombre' => 'Financieros y Seguros',
+                'Tercera actividad porcentaje' => 20.00,
+                'Cuarta actividad nombre' => 'Información Medios Masivos',
+                'Cuarta actividad porcentaje' => 20.00
             )
         );
     } // datos

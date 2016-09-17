@@ -7,7 +7,7 @@
       "Porcentaje de población femenina":"52.76",
       "Porcentaje de población de 0 a 14 años":"42.95",
       "Porcentaje de población de 15 a 64 años":"55.32",
-      "Porcentaje de población de 65 y más años":"0.90",
+      "Porcentaje de población de 65 y más años":"0.9",
       "Porcentaje de población no especificada":"0.83",
       "Fecundidad promedio":"2.34",
       "Porcentaje de población nacida en otro estado":"14.94",
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"76.47",
       "Hogares Jefatura femenina":"23.53",
       "Ocupación por Vivienda":"4.23",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"94.03",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"49.33",
       "Viviendas con Computadora":"38.03",
       "Viviendas con Celular":"67.25",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"1",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"100.00"
+      "Primer actividad porcentaje":"100"
     }
   }
 }]

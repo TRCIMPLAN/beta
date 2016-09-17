@@ -3,15 +3,15 @@
   "IBC":{
     "Demografía":{
       "Población total":"1066",
-      "Porcentaje de población masculina":"50.00",
-      "Porcentaje de población femenina":"50.00",
+      "Porcentaje de población masculina":"50",
+      "Porcentaje de población femenina":"50",
       "Porcentaje de población de 0 a 14 años":"38.37",
       "Porcentaje de población de 15 a 64 años":"60.04",
       "Porcentaje de población de 65 y más años":"1.31",
       "Porcentaje de población no especificada":"0.28",
       "Fecundidad promedio":"2.06",
       "Porcentaje de población nacida en otro estado":"15.76",
-      "Porcentaje de población con discapacidad":"2.20"
+      "Porcentaje de población con discapacidad":"2.2"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"8.11",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"69.89",
       "Población Ocupada femenina":"30.11",
       "Población Desocupada":"14.11",
-      "Derechohabiencia":"66.60"
+      "Derechohabiencia":"66.6"
     },
     "Viviendas":{
       "Hogares":"271",
@@ -37,7 +37,7 @@
       "Viviendas con Agua":"98.89",
       "Viviendas con Drenaje":"98.89",
       "Viviendas con Televisión":"98.15",
-      "Viviendas con Automóvil":"33.20",
+      "Viviendas con Automóvil":"33.2",
       "Viviendas con Computadora":"23.67",
       "Viviendas con Celular":"77.49",
       "Viviendas con Internet":"16.15"

@@ -23,8 +23,8 @@
       "Población Económicamente Activa masculina":"66.02",
       "Población Económicamente Activa femenina":"33.98",
       "Población Ocupada":"92.36",
-      "Población Ocupada masculina":"64.80",
-      "Población Ocupada femenina":"35.20",
+      "Población Ocupada masculina":"64.8",
+      "Población Ocupada femenina":"35.2",
       "Población Desocupada":"7.64",
       "Derechohabiencia":"75.79"
     },
@@ -32,14 +32,14 @@
       "Hogares":"521",
       "Hogares Jefatura masculina":"79.27",
       "Hogares Jefatura femenina":"20.73",
-      "Ocupación por Vivienda":"4.00",
-      "Viviendas con Electricidad":"100.00",
+      "Ocupación por Vivienda":"4",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.42",
       "Viviendas con Drenaje":"99.04",
       "Viviendas con Televisión":"99.04",
-      "Viviendas con Automóvil":"54.70",
+      "Viviendas con Automóvil":"54.7",
       "Viviendas con Computadora":"36.47",
-      "Viviendas con Celular":"85.60",
+      "Viviendas con Celular":"85.6",
       "Viviendas con Internet":"22.26"
     },
     "Unidades Económicas":{
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"23.08",
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"7.69",
-      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"2.56"
     }
   }

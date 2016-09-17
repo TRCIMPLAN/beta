@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Villas Del Valle de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:03">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Villas Del Valle" src="../imagenes/imagen.jpg">
@@ -413,15 +413,15 @@
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Comercio Mayoreo</td>
         <td class="derecha">16.67 %</td>
       </tr>
       <tr>
-        <td>3° Comercio Mayoreo</td>
+        <td>3° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">16.67 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">16.67 %</td>
       </tr>
       <tr>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 28.05],
               ['De 15 a 64 años', 67.33],
               ['De 65 y más años', 4.62],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -671,7 +671,7 @@
       function elaborarGraficaPobEcoAct() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Activa', 58.40],
+              ['Activa', 58.4],
               ['NO Activa', 41.6]
         ]);
         var options = {
@@ -735,7 +735,7 @@
       function elaborarGraficaDerechohabiencia() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Con Derechohabiencia', 86.80],
+              ['Con Derechohabiencia', 86.8],
               ['SIN Derechohabiencia', 13.2]
         ]);
         var options = {
@@ -770,10 +770,10 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
               ['Automóvil', 79.35, '#59BFC3', '79.35 %'],
               ['Computadora', 59.92, '#59C38E', '59.92 %'],
               ['Celular', 86.96, '#8EC359', '86.96 %'],
@@ -796,10 +796,10 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 50.00, '#80C0FF', '50.00 %'],
-              ['2° Industria Manufacturera', 16.67, '#59BFC3', '16.67 %'],
-              ['3° Comercio Mayoreo', 16.67, '#59C38E', '16.67 %'],
-              ['4° Preparación de Alimentos y Bebidas', 16.67, '#8EC359', '16.67 %'],
+              ['1° Comercio Menudeo', 50, '#80C0FF', '50 %'],
+              ['2° Comercio Mayoreo', 16.67, '#59BFC3', '16.67 %'],
+              ['3° Preparación de Alimentos y Bebidas', 16.67, '#59C38E', '16.67 %'],
+              ['4° Industria Manufacturera', 16.67, '#8EC359', '16.67 %'],
               ['5° ', , '#C38E59', ' %']
           ]);
           var options = {

@@ -16,7 +16,7 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"8.89",
       "Grado Promedio de Escolaridad masculina":"8.99",
-      "Grado Promedio de Escolaridad femenina":"8.80"
+      "Grado Promedio de Escolaridad femenina":"8.8"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"54.55",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"64.39",
       "Población Ocupada femenina":"35.61",
       "Población Desocupada":"11.47",
-      "Derechohabiencia":"75.70"
+      "Derechohabiencia":"75.7"
     },
     "Viviendas":{
       "Hogares":"590",
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"16.13",
       "Tercera actividad nombre":"Educativos",
       "Tercera actividad porcentaje":"9.68",
-      "Cuarta actividad nombre":"Salud",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"6.45",
-      "Quinta actividad nombre":"Industria Manufacturera",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"6.45"
     }
   }

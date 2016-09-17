@@ -6,7 +6,7 @@
       "Porcentaje de población masculina":"45.54",
       "Porcentaje de población femenina":"54.46",
       "Porcentaje de población de 0 a 14 años":"12.33",
-      "Porcentaje de población de 15 a 64 años":"75.10",
+      "Porcentaje de población de 15 a 64 años":"75.1",
       "Porcentaje de población de 65 y más años":"11.59",
       "Porcentaje de población no especificada":"0.98",
       "Fecundidad promedio":"1.68",
@@ -26,17 +26,17 @@
       "Población Ocupada masculina":"55.15",
       "Población Ocupada femenina":"44.85",
       "Población Desocupada":"2.94",
-      "Derechohabiencia":"80.20"
+      "Derechohabiencia":"80.2"
     },
     "Viviendas":{
       "Hogares":"114",
-      "Hogares Jefatura masculina":"74.20",
-      "Hogares Jefatura femenina":"25.80",
+      "Hogares Jefatura masculina":"74.2",
+      "Hogares Jefatura femenina":"25.8",
       "Ocupación por Vivienda":"3.34",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"87.56",
       "Viviendas con Computadora":"80.96",
       "Viviendas con Celular":"89.79",
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"9.38",
       "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"9.38",
-      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"6.25"
     }
   }

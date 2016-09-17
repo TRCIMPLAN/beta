@@ -34,7 +34,7 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas Del Desierto';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:01';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-del-desierto';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,29 +58,23 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '7',
+                'Total Actividades Económicas' => 7,
                 'Primer actividad nombre' => 'Comercio Mayoreo',
-                'Primer actividad porcentaje' => '28.57',
+                'Primer actividad porcentaje' => 28.57,
                 'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Segunda actividad porcentaje' => '28.57',
-                'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Tercera actividad porcentaje' => '14.29',
-                'Cuarta actividad nombre' => 'Construcción',
-                'Cuarta actividad porcentaje' => '14.29',
+                'Segunda actividad porcentaje' => 28.57,
+                'Tercera actividad nombre' => 'Construcción',
+                'Tercera actividad porcentaje' => 14.29,
+                'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                'Cuarta actividad porcentaje' => 14.29,
                 'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Quinta actividad porcentaje' => '14.29'
+                'Quinta actividad porcentaje' => 14.29
             )
         );
     } // datos

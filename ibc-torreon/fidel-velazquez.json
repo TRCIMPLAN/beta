@@ -16,7 +16,7 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"10.12",
       "Grado Promedio de Escolaridad masculina":"10.44",
-      "Grado Promedio de Escolaridad femenina":"9.80"
+      "Grado Promedio de Escolaridad femenina":"9.8"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"56.48",
@@ -30,8 +30,8 @@
     },
     "Viviendas":{
       "Hogares":"877",
-      "Hogares Jefatura masculina":"74.00",
-      "Hogares Jefatura femenina":"26.00",
+      "Hogares Jefatura masculina":"74",
+      "Hogares Jefatura femenina":"26",
       "Ocupación por Vivienda":"3.84",
       "Viviendas con Electricidad":"99.43",
       "Viviendas con Agua":"99.09",

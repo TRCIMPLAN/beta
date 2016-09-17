@@ -3,15 +3,15 @@
   "IBC":{
     "Demografía":{
       "Población total":"299",
-      "Porcentaje de población masculina":"49.50",
-      "Porcentaje de población femenina":"50.50",
+      "Porcentaje de población masculina":"49.5",
+      "Porcentaje de población femenina":"50.5",
       "Porcentaje de población de 0 a 14 años":"24.08",
       "Porcentaje de población de 15 a 64 años":"73.24",
       "Porcentaje de población de 65 y más años":"1.67",
       "Porcentaje de población no especificada":"1.01",
       "Fecundidad promedio":"1.52",
       "Porcentaje de población nacida en otro estado":"14.38",
-      "Porcentaje de población con discapacidad":"1.00"
+      "Porcentaje de población con discapacidad":"1"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"12.88",
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"58.75",
-      "Población Económicamente Activa masculina":"53.90",
-      "Población Económicamente Activa femenina":"46.10",
+      "Población Económicamente Activa masculina":"53.9",
+      "Población Económicamente Activa femenina":"46.1",
       "Población Ocupada":"95.56",
       "Población Ocupada masculina":"52.59",
       "Población Ocupada femenina":"47.41",
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"71.43",
       "Hogares Jefatura femenina":"28.57",
       "Ocupación por Vivienda":"3.29",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"98.90",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"98.9",
       "Viviendas con Automóvil":"85.71",
       "Viviendas con Computadora":"71.43",
       "Viviendas con Celular":"91.21",

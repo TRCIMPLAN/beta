@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"86",
-      "Porcentaje de población masculina":"42.90",
-      "Porcentaje de población femenina":"57.10",
+      "Porcentaje de población masculina":"42.9",
+      "Porcentaje de población femenina":"57.1",
       "Porcentaje de población de 0 a 14 años":"21.22",
       "Porcentaje de población de 15 a 64 años":"63.19",
       "Porcentaje de población de 65 y más años":"15.58",
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"70.86",
       "Hogares Jefatura femenina":"29.14",
       "Ocupación por Vivienda":"3.44",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"52.72",
       "Viviendas con Computadora":"48.34",
       "Viviendas con Celular":"65.41",
@@ -48,11 +48,11 @@
       "Primer actividad porcentaje":"54.55",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"18.18",
-      "Tercera actividad nombre":"Industria Manufacturera",
+      "Tercera actividad nombre":"Gubernamentales",
       "Tercera actividad porcentaje":"9.09",
-      "Cuarta actividad nombre":"Gubernamentales",
+      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"9.09"
     }
   }

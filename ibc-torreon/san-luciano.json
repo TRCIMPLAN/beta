@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"18.83",
       "Porcentaje de población de 15 a 64 años":"74.89",
       "Porcentaje de población de 65 y más años":"6.28",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.64",
       "Porcentaje de población nacida en otro estado":"21.52",
       "Porcentaje de población con discapacidad":"3.14"
@@ -22,10 +22,10 @@
       "Población Económicamente Activa":"50.78",
       "Población Económicamente Activa masculina":"51.02",
       "Población Económicamente Activa femenina":"48.98",
-      "Población Ocupada":"100.00",
+      "Población Ocupada":"100",
       "Población Ocupada masculina":"51.02",
       "Población Ocupada femenina":"48.98",
-      "Población Desocupada":"0.00",
+      "Población Desocupada":"0",
       "Derechohabiencia":"87.89"
     },
     "Viviendas":{
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"86.54",
       "Hogares Jefatura femenina":"13.46",
       "Ocupación por Vivienda":"4.29",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"98.08",
       "Viviendas con Computadora":"92.31",
       "Viviendas con Celular":"98.08",
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"18.18",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.64",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"9.09"
     }
   }

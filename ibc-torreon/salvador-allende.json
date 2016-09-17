@@ -5,18 +5,18 @@
       "Población total":"2544",
       "Porcentaje de población masculina":"48.07",
       "Porcentaje de población femenina":"51.93",
-      "Porcentaje de población de 0 a 14 años":"29.80",
+      "Porcentaje de población de 0 a 14 años":"29.8",
       "Porcentaje de población de 15 a 64 años":"62.85",
       "Porcentaje de población de 65 y más años":"6.25",
-      "Porcentaje de población no especificada":"1.10",
+      "Porcentaje de población no especificada":"1.1",
       "Fecundidad promedio":"2.62",
-      "Porcentaje de población nacida en otro estado":"17.10",
+      "Porcentaje de población nacida en otro estado":"17.1",
       "Porcentaje de población con discapacidad":"4.01"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"8.10",
-      "Grado Promedio de Escolaridad masculina":"8.10",
-      "Grado Promedio de Escolaridad femenina":"8.10"
+      "Grado Promedio de Escolaridad":"8.1",
+      "Grado Promedio de Escolaridad masculina":"8.1",
+      "Grado Promedio de Escolaridad femenina":"8.1"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"50.32",
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"72.74",
       "Hogares Jefatura femenina":"27.26",
       "Ocupación por Vivienda":"4.25",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.16",
       "Viviendas con Drenaje":"98.83",
-      "Viviendas con Televisión":"99.50",
+      "Viviendas con Televisión":"99.5",
       "Viviendas con Automóvil":"40.13",
       "Viviendas con Computadora":"21.04",
       "Viviendas con Celular":"66.89",
@@ -45,7 +45,7 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"85",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"40.00",
+      "Primer actividad porcentaje":"40",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"22.35",
       "Tercera actividad nombre":"Industria Manufacturera",

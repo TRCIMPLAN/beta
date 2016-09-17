@@ -3,12 +3,12 @@
   "IBC":{
     "Demografía":{
       "Población total":"840",
-      "Porcentaje de población masculina":"50.30",
-      "Porcentaje de población femenina":"49.70",
+      "Porcentaje de población masculina":"50.3",
+      "Porcentaje de población femenina":"49.7",
       "Porcentaje de población de 0 a 14 años":"27.18",
       "Porcentaje de población de 15 a 64 años":"64.48",
       "Porcentaje de población de 65 y más años":"8.34",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"2.68",
       "Porcentaje de población nacida en otro estado":"17.98",
       "Porcentaje de población con discapacidad":"10.33"
@@ -22,10 +22,10 @@
       "Población Económicamente Activa":"47.05",
       "Población Económicamente Activa masculina":"79.41",
       "Población Económicamente Activa femenina":"20.59",
-      "Población Ocupada":"87.10",
+      "Población Ocupada":"87.1",
       "Población Ocupada masculina":"77.45",
       "Población Ocupada femenina":"22.55",
-      "Población Desocupada":"12.90",
+      "Población Desocupada":"12.9",
       "Derechohabiencia":"57.63"
     },
     "Viviendas":{

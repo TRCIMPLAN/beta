@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"711",
-      "Porcentaje de población masculina":"48.80",
-      "Porcentaje de población femenina":"51.20",
+      "Porcentaje de población masculina":"48.8",
+      "Porcentaje de población femenina":"51.2",
       "Porcentaje de población de 0 a 14 años":"27.22",
       "Porcentaje de población de 15 a 64 años":"59.77",
       "Porcentaje de población de 65 y más años":"4.55",
@@ -32,9 +32,9 @@
       "Hogares":"203",
       "Hogares Jefatura masculina":"82.51",
       "Hogares Jefatura femenina":"17.49",
-      "Ocupación por Vivienda":"3.50",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
+      "Ocupación por Vivienda":"3.5",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
       "Viviendas con Drenaje":"99.51",
       "Viviendas con Televisión":"99.51",
       "Viviendas con Automóvil":"99.01",
@@ -45,13 +45,13 @@
     "Unidades Económicas":{
       "Total Actividades Económicas":"5",
       "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"40.00",
+      "Primer actividad porcentaje":"40",
       "Segunda actividad nombre":"Comercio Mayoreo",
-      "Segunda actividad porcentaje":"20.00",
-      "Tercera actividad nombre":"Construcción",
-      "Tercera actividad porcentaje":"20.00",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Cuarta actividad porcentaje":"20.00"
+      "Segunda actividad porcentaje":"20",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad porcentaje":"20",
+      "Cuarta actividad nombre":"Construcción",
+      "Cuarta actividad porcentaje":"20"
     }
   }
 }]

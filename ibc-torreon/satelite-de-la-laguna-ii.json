@@ -3,11 +3,11 @@
   "IBC":{
     "Demografía":{
       "Población total":"563",
-      "Porcentaje de población masculina":"47.60",
-      "Porcentaje de población femenina":"52.40",
+      "Porcentaje de población masculina":"47.6",
+      "Porcentaje de población femenina":"52.4",
       "Porcentaje de población de 0 a 14 años":"29.66",
       "Porcentaje de población de 15 a 64 años":"66.96",
-      "Porcentaje de población de 65 y más años":"3.20",
+      "Porcentaje de población de 65 y más años":"3.2",
       "Porcentaje de población no especificada":"0.18",
       "Fecundidad promedio":"1.74",
       "Porcentaje de población nacida en otro estado":"16.16",
@@ -16,7 +16,7 @@
     "Educación":{
       "Grado Promedio de Escolaridad":"11.48",
       "Grado Promedio de Escolaridad masculina":"11.33",
-      "Grado Promedio de Escolaridad femenina":"11.60"
+      "Grado Promedio de Escolaridad femenina":"11.6"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"56.45",
@@ -26,16 +26,16 @@
       "Población Ocupada masculina":"62.78",
       "Población Ocupada femenina":"37.22",
       "Población Desocupada":"9.78",
-      "Derechohabiencia":"89.70"
+      "Derechohabiencia":"89.7"
     },
     "Viviendas":{
       "Hogares":"152",
       "Hogares Jefatura masculina":"77.63",
       "Hogares Jefatura femenina":"22.37",
-      "Ocupación por Vivienda":"3.70",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Ocupación por Vivienda":"3.7",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"99.34",
       "Viviendas con Automóvil":"59.21",
       "Viviendas con Computadora":"51.32",
@@ -46,13 +46,13 @@
       "Total Actividades Económicas":"19",
       "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
       "Primer actividad porcentaje":"31.58",
-      "Segunda actividad nombre":"Industria Manufacturera",
+      "Segunda actividad nombre":"Educativos",
       "Segunda actividad porcentaje":"15.79",
-      "Tercera actividad nombre":"Educativos",
+      "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"15.79",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+      "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"15.79",
-      "Quinta actividad nombre":"Comercio Menudeo",
+      "Quinta actividad nombre":"Manejo de Residuos",
       "Quinta actividad porcentaje":"10.53"
     }
   }

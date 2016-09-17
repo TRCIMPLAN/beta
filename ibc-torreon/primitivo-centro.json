@@ -22,10 +22,10 @@
       "Población Económicamente Activa":"58.44",
       "Población Económicamente Activa masculina":"55.47",
       "Población Económicamente Activa femenina":"44.53",
-      "Población Ocupada":"93.40",
+      "Población Ocupada":"93.4",
       "Población Ocupada masculina":"54.74",
       "Población Ocupada femenina":"45.26",
-      "Población Desocupada":"6.60",
+      "Población Desocupada":"6.6",
       "Derechohabiencia":"58.61"
     },
     "Viviendas":{
@@ -38,8 +38,8 @@
       "Viviendas con Drenaje":"99.47",
       "Viviendas con Televisión":"98.45",
       "Viviendas con Automóvil":"40.56",
-      "Viviendas con Computadora":"30.60",
-      "Viviendas con Celular":"70.80",
+      "Viviendas con Computadora":"30.6",
+      "Viviendas con Celular":"70.8",
       "Viviendas con Internet":"21.97"
     },
     "Unidades Económicas":{
@@ -53,7 +53,7 @@
       "Cuarta actividad nombre":"Comercio Mayoreo",
       "Cuarta actividad porcentaje":"8.15",
       "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Quinta actividad porcentaje":"3.60"
+      "Quinta actividad porcentaje":"3.6"
     }
   }
 }]

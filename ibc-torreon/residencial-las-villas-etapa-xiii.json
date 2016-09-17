@@ -3,11 +3,11 @@
   "IBC":{
     "Demografía":{
       "Población total":"5",
-      "Porcentaje de población masculina":"40.00",
-      "Porcentaje de población femenina":"60.00",
+      "Porcentaje de población masculina":"40",
+      "Porcentaje de población femenina":"60",
       "Porcentaje de población de 0 a 14 años":"28.26",
       "Porcentaje de población de 15 a 64 años":"68.42",
-      "Porcentaje de población de 65 y más años":"2.20",
+      "Porcentaje de población de 65 y más años":"2.2",
       "Porcentaje de población no especificada":"1.12",
       "Fecundidad promedio":"1.81",
       "Porcentaje de población nacida en otro estado":"15.91",
@@ -15,13 +15,13 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"10.88",
-      "Grado Promedio de Escolaridad masculina":"11.00",
+      "Grado Promedio de Escolaridad masculina":"11",
       "Grado Promedio de Escolaridad femenina":"10.78"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"54.96",
-      "Población Económicamente Activa masculina":"62.20",
-      "Población Económicamente Activa femenina":"37.80",
+      "Población Económicamente Activa masculina":"62.2",
+      "Población Económicamente Activa femenina":"37.8",
       "Población Ocupada":"94.54",
       "Población Ocupada masculina":"60.82",
       "Población Ocupada femenina":"39.18",
@@ -30,9 +30,9 @@
     },
     "Viviendas":{
       "Hogares":"1",
-      "Hogares Jefatura masculina":"100.00",
-      "Hogares Jefatura femenina":"0.00",
-      "Ocupación por Vivienda":"5.00",
+      "Hogares Jefatura masculina":"100",
+      "Hogares Jefatura femenina":"0",
+      "Ocupación por Vivienda":"5",
       "Viviendas con Electricidad":"99.78",
       "Viviendas con Agua":"99.46",
       "Viviendas con Drenaje":"99.37",

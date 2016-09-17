@@ -34,7 +34,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Bugambilias';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:32:58';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bugambilias';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,58 +58,58 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '450',
-                'Porcentaje de población masculina' => '49.78',
-                'Porcentaje de población femenina' => '50.22',
-                'Porcentaje de población de 0 a 14 años' => '20.00',
-                'Porcentaje de población de 15 a 64 años' => '68.89',
-                'Porcentaje de población de 65 y más años' => '11.11',
-                'Porcentaje de población no especificada' => '0.00',
-                'Fecundidad promedio' => '2.46',
-                'Porcentaje de población nacida en otro estado' => '19.78',
-                'Porcentaje de población con discapacidad' => '5.55'
+                'Población total' => 450,
+                'Porcentaje de población masculina' => 49.78,
+                'Porcentaje de población femenina' => 50.22,
+                'Porcentaje de población de 0 a 14 años' => 20.00,
+                'Porcentaje de población de 15 a 64 años' => 68.89,
+                'Porcentaje de población de 65 y más años' => 11.11,
+                'Porcentaje de población no especificada' => 0.00,
+                'Fecundidad promedio' => 2.46,
+                'Porcentaje de población nacida en otro estado' => 19.78,
+                'Porcentaje de población con discapacidad' => 5.55
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '10.31',
-                'Grado Promedio de Escolaridad masculina' => '10.77',
-                'Grado Promedio de Escolaridad femenina' => '9.87'
+                'Grado Promedio de Escolaridad' => 10.31,
+                'Grado Promedio de Escolaridad masculina' => 10.77,
+                'Grado Promedio de Escolaridad femenina' => 9.87
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '54.42',
-                'Población Económicamente Activa masculina' => '60.59',
-                'Población Económicamente Activa femenina' => '39.41',
-                'Población Ocupada' => '85.58',
-                'Población Ocupada masculina' => '57.06',
-                'Población Ocupada femenina' => '42.94',
-                'Población Desocupada' => '14.42',
-                'Derechohabiencia' => '68.67'
+                'Población Económicamente Activa' => 54.42,
+                'Población Económicamente Activa masculina' => 60.59,
+                'Población Económicamente Activa femenina' => 39.41,
+                'Población Ocupada' => 85.58,
+                'Población Ocupada masculina' => 57.06,
+                'Población Ocupada femenina' => 42.94,
+                'Población Desocupada' => 14.42,
+                'Derechohabiencia' => 68.67
             ),
             'Viviendas' => array(
-                'Hogares' => '126',
-                'Hogares Jefatura masculina' => '65.87',
-                'Hogares Jefatura femenina' => '34.13',
-                'Ocupación por Vivienda' => '3.57',
-                'Viviendas con Electricidad' => '100.00',
-                'Viviendas con Agua' => '99.21',
-                'Viviendas con Drenaje' => '100.00',
-                'Viviendas con Televisión' => '99.21',
-                'Viviendas con Automóvil' => '55.56',
-                'Viviendas con Computadora' => '50.00',
-                'Viviendas con Celular' => '73.81',
-                'Viviendas con Internet' => '36.51'
+                'Hogares' => 126,
+                'Hogares Jefatura masculina' => 65.87,
+                'Hogares Jefatura femenina' => 34.13,
+                'Ocupación por Vivienda' => 3.57,
+                'Viviendas con Electricidad' => 100.00,
+                'Viviendas con Agua' => 99.21,
+                'Viviendas con Drenaje' => 100.00,
+                'Viviendas con Televisión' => 99.21,
+                'Viviendas con Automóvil' => 55.56,
+                'Viviendas con Computadora' => 50.00,
+                'Viviendas con Celular' => 73.81,
+                'Viviendas con Internet' => 36.51
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '23',
+                'Total Actividades Económicas' => 23,
                 'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => '21.74',
-                'Segunda actividad nombre' => 'Industria Manufacturera',
-                'Segunda actividad porcentaje' => '17.39',
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Tercera actividad porcentaje' => '17.39',
-                'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                'Cuarta actividad porcentaje' => '8.70',
-                'Quinta actividad nombre' => 'Educativos',
-                'Quinta actividad porcentaje' => '8.70'
+                'Primer actividad porcentaje' => 21.74,
+                'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Segunda actividad porcentaje' => 17.39,
+                'Tercera actividad nombre' => 'Industria Manufacturera',
+                'Tercera actividad porcentaje' => 17.39,
+                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad porcentaje' => 8.70,
+                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad porcentaje' => 8.70
             )
         );
     } // datos

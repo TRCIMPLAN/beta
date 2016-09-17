@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"65.21",
       "Población Ocupada femenina":"34.79",
       "Población Desocupada":"9.79",
-      "Derechohabiencia":"60.20"
+      "Derechohabiencia":"60.2"
     },
     "Viviendas":{
       "Hogares":"1156",
@@ -49,10 +49,10 @@
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"17.86",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
-      "Tercera actividad porcentaje":"15.00",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Tercera actividad porcentaje":"15",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"7.14",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"7.14"
     }
   }

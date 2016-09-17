@@ -34,7 +34,7 @@ class Roma extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Roma';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:02';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'roma';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,58 +58,58 @@ class Roma extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '1800',
-                'Porcentaje de población masculina' => '47.72',
-                'Porcentaje de población femenina' => '52.28',
-                'Porcentaje de población de 0 a 14 años' => '22.39',
-                'Porcentaje de población de 15 a 64 años' => '71.50',
-                'Porcentaje de población de 65 y más años' => '3.78',
-                'Porcentaje de población no especificada' => '2.33',
-                'Fecundidad promedio' => '1.47',
-                'Porcentaje de población nacida en otro estado' => '23.83',
-                'Porcentaje de población con discapacidad' => '2.11'
+                'Población total' => 1800,
+                'Porcentaje de población masculina' => 47.72,
+                'Porcentaje de población femenina' => 52.28,
+                'Porcentaje de población de 0 a 14 años' => 22.39,
+                'Porcentaje de población de 15 a 64 años' => 71.50,
+                'Porcentaje de población de 65 y más años' => 3.78,
+                'Porcentaje de población no especificada' => 2.33,
+                'Fecundidad promedio' => 1.47,
+                'Porcentaje de población nacida en otro estado' => 23.83,
+                'Porcentaje de población con discapacidad' => 2.11
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => '13.44',
-                'Grado Promedio de Escolaridad masculina' => '13.66',
-                'Grado Promedio de Escolaridad femenina' => '13.24'
+                'Grado Promedio de Escolaridad' => 13.44,
+                'Grado Promedio de Escolaridad masculina' => 13.66,
+                'Grado Promedio de Escolaridad femenina' => 13.24
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => '51.39',
-                'Población Económicamente Activa masculina' => '58.42',
-                'Población Económicamente Activa femenina' => '41.58',
-                'Población Ocupada' => '96.18',
-                'Población Ocupada masculina' => '57.51',
-                'Población Ocupada femenina' => '42.49',
-                'Población Desocupada' => '3.82',
-                'Derechohabiencia' => '80.39'
+                'Población Económicamente Activa' => 51.39,
+                'Población Económicamente Activa masculina' => 58.42,
+                'Población Económicamente Activa femenina' => 41.58,
+                'Población Ocupada' => 96.18,
+                'Población Ocupada masculina' => 57.51,
+                'Población Ocupada femenina' => 42.49,
+                'Población Desocupada' => 3.82,
+                'Derechohabiencia' => 80.39
             ),
             'Viviendas' => array(
-                'Hogares' => '494',
-                'Hogares Jefatura masculina' => '75.71',
-                'Hogares Jefatura femenina' => '24.29',
-                'Ocupación por Vivienda' => '3.64',
-                'Viviendas con Electricidad' => '99.60',
-                'Viviendas con Agua' => '99.19',
-                'Viviendas con Drenaje' => '99.60',
-                'Viviendas con Televisión' => '98.38',
-                'Viviendas con Automóvil' => '88.66',
-                'Viviendas con Computadora' => '79.55',
-                'Viviendas con Celular' => '90.28',
-                'Viviendas con Internet' => '68.83'
+                'Hogares' => 494,
+                'Hogares Jefatura masculina' => 75.71,
+                'Hogares Jefatura femenina' => 24.29,
+                'Ocupación por Vivienda' => 3.64,
+                'Viviendas con Electricidad' => 99.60,
+                'Viviendas con Agua' => 99.19,
+                'Viviendas con Drenaje' => 99.60,
+                'Viviendas con Televisión' => 98.38,
+                'Viviendas con Automóvil' => 88.66,
+                'Viviendas con Computadora' => 79.55,
+                'Viviendas con Celular' => 90.28,
+                'Viviendas con Internet' => 68.83
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '11',
+                'Total Actividades Económicas' => 11,
                 'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => '63.64',
-                'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                'Segunda actividad porcentaje' => '9.09',
-                'Tercera actividad nombre' => 'Industria Manufacturera',
-                'Tercera actividad porcentaje' => '9.09',
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => '9.09',
-                'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Quinta actividad porcentaje' => '9.09'
+                'Primer actividad porcentaje' => 63.64,
+                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                'Segunda actividad porcentaje' => 9.09,
+                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                'Tercera actividad porcentaje' => 9.09,
+                'Cuarta actividad nombre' => 'Industria Manufacturera',
+                'Cuarta actividad porcentaje' => 9.09,
+                'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                'Quinta actividad porcentaje' => 9.09
             )
         );
     } // datos

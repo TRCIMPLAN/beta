@@ -5,7 +5,7 @@
       "Población total":"820",
       "Porcentaje de población masculina":"46.83",
       "Porcentaje de población femenina":"53.17",
-      "Porcentaje de población de 0 a 14 años":"27.80",
+      "Porcentaje de población de 0 a 14 años":"27.8",
       "Porcentaje de población de 15 a 64 años":"67.32",
       "Porcentaje de población de 65 y más años":"4.51",
       "Porcentaje de población no especificada":"0.37",
@@ -37,7 +37,7 @@
       "Viviendas con Agua":"99.62",
       "Viviendas con Drenaje":"99.62",
       "Viviendas con Televisión":"99.24",
-      "Viviendas con Automóvil":"77.10",
+      "Viviendas con Automóvil":"77.1",
       "Viviendas con Computadora":"61.83",
       "Viviendas con Celular":"93.51",
       "Viviendas con Internet":"49.62"
@@ -49,10 +49,10 @@
       "Segunda actividad nombre":"Educativos",
       "Segunda actividad porcentaje":"31.25",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
-      "Tercera actividad porcentaje":"12.50",
-      "Cuarta actividad nombre":"Salud",
+      "Tercera actividad porcentaje":"12.5",
+      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Cuarta actividad porcentaje":"6.25",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"6.25"
     }
   }

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Santiago Ramirez de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Santiago Ramirez" src="../imagenes/imagen.jpg">
@@ -417,15 +417,15 @@
         <td class="derecha">16.00 %</td>
       </tr>
       <tr>
-        <td>3° Salud</td>
+        <td>3° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">4.00 %</td>
       </tr>
       <tr>
-        <td>4° Industria Manufacturera</td>
+        <td>4° Salud</td>
         <td class="derecha">4.00 %</td>
       </tr>
       <tr>
-        <td>5° Preparación de Alimentos y Bebidas</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">4.00 %</td>
       </tr>
     </tbody>
@@ -770,12 +770,12 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 98.90, '#FF8080', '98.90 %'],
+              ['Electricidad', 98.9, '#FF8080', '98.9 %'],
               ['Agua', 98.08, '#FF80C0', '98.08 %'],
               ['Drenaje', 98.35, '#C080FF', '98.35 %'],
-              ['Televisión', 95.60, '#80C0FF', '95.60 %'],
+              ['Televisión', 95.6, '#80C0FF', '95.6 %'],
               ['Automóvil', 29.24, '#59BFC3', '29.24 %'],
-              ['Computadora', 10.60, '#59C38E', '10.60 %'],
+              ['Computadora', 10.6, '#59C38E', '10.6 %'],
               ['Celular', 60.06, '#8EC359', '60.06 %'],
               ['Internet', 3.53, '#C38E59', '3.53 %']
           ]);
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 72.00, '#80C0FF', '72.00 %'],
-              ['2° Otros servicios, excepto Gobierno', 16.00, '#59BFC3', '16.00 %'],
-              ['3° Salud', 4.00, '#59C38E', '4.00 %'],
-              ['4° Industria Manufacturera', 4.00, '#8EC359', '4.00 %'],
-              ['5° Preparación de Alimentos y Bebidas', 4.00, '#C38E59', '4.00 %']
+              ['1° Comercio Menudeo', 72, '#80C0FF', '72 %'],
+              ['2° Otros servicios, excepto Gobierno', 16, '#59BFC3', '16 %'],
+              ['3° Preparación de Alimentos y Bebidas', 4, '#59C38E', '4 %'],
+              ['4° Salud', 4, '#8EC359', '4 %'],
+              ['5° Industria Manufacturera', 4, '#C38E59', '4 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

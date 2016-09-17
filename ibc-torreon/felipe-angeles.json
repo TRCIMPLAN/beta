@@ -7,7 +7,7 @@
       "Porcentaje de población femenina":"51.22",
       "Porcentaje de población de 0 a 14 años":"21.11",
       "Porcentaje de población de 15 a 64 años":"68.52",
-      "Porcentaje de población de 65 y más años":"8.90",
+      "Porcentaje de población de 65 y más años":"8.9",
       "Porcentaje de población no especificada":"1.47",
       "Fecundidad promedio":"2.42",
       "Porcentaje de población nacida en otro estado":"21.02",
@@ -37,8 +37,8 @@
       "Viviendas con Agua":"98.94",
       "Viviendas con Drenaje":"98.23",
       "Viviendas con Televisión":"98.94",
-      "Viviendas con Automóvil":"52.30",
-      "Viviendas con Computadora":"44.40",
+      "Viviendas con Automóvil":"52.3",
+      "Viviendas con Computadora":"44.4",
       "Viviendas con Celular":"71.38",
       "Viviendas con Internet":"34.65"
     },
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"26.67",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"8.89",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Comercio Mayoreo",
       "Cuarta actividad porcentaje":"7.78",
-      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"7.78"
     }
   }

@@ -11,12 +11,12 @@
       "Porcentaje de población no especificada":"1.39",
       "Fecundidad promedio":"2.36",
       "Porcentaje de población nacida en otro estado":"17.86",
-      "Porcentaje de población con discapacidad":"6.20"
+      "Porcentaje de población con discapacidad":"6.2"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"9.47",
       "Grado Promedio de Escolaridad masculina":"9.55",
-      "Grado Promedio de Escolaridad femenina":"9.40"
+      "Grado Promedio de Escolaridad femenina":"9.4"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"56.53",
@@ -33,11 +33,11 @@
       "Hogares Jefatura masculina":"67.09",
       "Hogares Jefatura femenina":"32.91",
       "Ocupación por Vivienda":"3.61",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"99.54",
       "Viviendas con Drenaje":"99.23",
       "Viviendas con Televisión":"99.23",
-      "Viviendas con Automóvil":"44.60",
+      "Viviendas con Automóvil":"44.6",
       "Viviendas con Computadora":"34.65",
       "Viviendas con Celular":"65.32",
       "Viviendas con Internet":"26.57"
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"29.17",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"20.83",
-      "Cuarta actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"4.17",
-      "Quinta actividad nombre":"Industria Manufacturera",
+      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
       "Quinta actividad porcentaje":"4.17"
     }
   }

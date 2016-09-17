@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"57.14",
-      "Población Económicamente Activa masculina":"63.70",
-      "Población Económicamente Activa femenina":"36.30",
+      "Población Económicamente Activa masculina":"63.7",
+      "Población Económicamente Activa femenina":"36.3",
       "Población Ocupada":"90.86",
       "Población Ocupada masculina":"63.33",
       "Población Ocupada femenina":"36.67",
@@ -30,8 +30,8 @@
     },
     "Viviendas":{
       "Hogares":"1465",
-      "Hogares Jefatura masculina":"75.90",
-      "Hogares Jefatura femenina":"24.10",
+      "Hogares Jefatura masculina":"75.9",
+      "Hogares Jefatura femenina":"24.1",
       "Ocupación por Vivienda":"3.85",
       "Viviendas con Electricidad":"99.93",
       "Viviendas con Agua":"99.66",
@@ -49,11 +49,11 @@
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"22.22",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"14.20",
+      "Tercera actividad porcentaje":"14.2",
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"5.56",
       "Quinta actividad nombre":"Educativos",
-      "Quinta actividad porcentaje":"3.70"
+      "Quinta actividad porcentaje":"3.7"
     }
   }
 }]

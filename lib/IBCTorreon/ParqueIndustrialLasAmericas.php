@@ -34,7 +34,7 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Las Americas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:01';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'parque-industrial-las-americas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,29 +58,23 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '13',
+                'Total Actividades Económicas' => 13,
                 'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => '46.15',
-                'Segunda actividad nombre' => 'Servicios Generales',
-                'Segunda actividad porcentaje' => '7.69',
-                'Tercera actividad nombre' => 'Manejo de Residuos',
-                'Tercera actividad porcentaje' => '7.69',
-                'Cuarta actividad nombre' => 'Salud',
-                'Cuarta actividad porcentaje' => '7.69',
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => '7.69'
+                'Primer actividad porcentaje' => 46.15,
+                'Segunda actividad nombre' => 'Comercio Mayoreo',
+                'Segunda actividad porcentaje' => 7.69,
+                'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                'Tercera actividad porcentaje' => 7.69,
+                'Cuarta actividad nombre' => 'Educativos',
+                'Cuarta actividad porcentaje' => 7.69,
+                'Quinta actividad nombre' => 'Manejo de Residuos',
+                'Quinta actividad porcentaje' => 7.69
             )
         );
     } // datos

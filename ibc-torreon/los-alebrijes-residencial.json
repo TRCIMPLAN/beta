@@ -11,17 +11,17 @@
       "Porcentaje de población no especificada":"8.15",
       "Fecundidad promedio":"1.47",
       "Porcentaje de población nacida en otro estado":"33.48",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"15.26",
       "Grado Promedio de Escolaridad masculina":"15.56",
-      "Grado Promedio de Escolaridad femenina":"15.00"
+      "Grado Promedio de Escolaridad femenina":"15"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"64.78",
-      "Población Económicamente Activa masculina":"53.40",
-      "Población Económicamente Activa femenina":"46.60",
+      "Población Económicamente Activa masculina":"53.4",
+      "Población Económicamente Activa femenina":"46.6",
       "Población Ocupada":"94.91",
       "Población Ocupada masculina":"53.06",
       "Población Ocupada femenina":"46.94",
@@ -33,10 +33,10 @@
       "Hogares Jefatura masculina":"72.73",
       "Hogares Jefatura femenina":"27.27",
       "Ocupación por Vivienda":"3.35",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"96.97",
       "Viviendas con Computadora":"86.36",
       "Viviendas con Celular":"96.97",
@@ -44,11 +44,11 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"3",
-      "Primer actividad nombre":"Comercio Menudeo",
+      "Primer actividad nombre":"Educativos",
       "Primer actividad porcentaje":"33.33",
       "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
       "Segunda actividad porcentaje":"33.33",
-      "Tercera actividad nombre":"Educativos",
+      "Tercera actividad nombre":"Comercio Menudeo",
       "Tercera actividad porcentaje":"33.33"
     }
   }

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Quintas Laguna Iii de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Quintas Laguna Iii" src="../imagenes/imagen.jpg">
@@ -413,15 +413,15 @@
         <td class="derecha">55.56 %</td>
       </tr>
       <tr>
-        <td>2° Salud</td>
+        <td>2° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>3° Financieros y Seguros</td>
+        <td>3° Salud</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Financieros y Seguros</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
@@ -703,8 +703,8 @@
       function elaborarGraficaOcu() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Ocupada', 100.00],
-              ['Desocupada', 0.00]
+              ['Ocupada', 100],
+              ['Desocupada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -735,7 +735,7 @@
       function elaborarGraficaDerechohabiencia() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Con Derechohabiencia', 72.60],
+              ['Con Derechohabiencia', 72.6],
               ['SIN Derechohabiencia', 27.4]
         ]);
         var options = {
@@ -770,11 +770,11 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
-              ['Automóvil', 50.00, '#59BFC3', '50.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
+              ['Automóvil', 50, '#59BFC3', '50 %'],
               ['Computadora', 20.05, '#59C38E', '20.05 %'],
               ['Celular', 83.33, '#8EC359', '83.33 %'],
               ['Internet', 32.66, '#C38E59', '32.66 %']
@@ -797,9 +797,9 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 55.56, '#80C0FF', '55.56 %'],
-              ['2° Salud', 11.11, '#59BFC3', '11.11 %'],
-              ['3° Financieros y Seguros', 11.11, '#59C38E', '11.11 %'],
-              ['4° Preparación de Alimentos y Bebidas', 11.11, '#8EC359', '11.11 %'],
+              ['2° Preparación de Alimentos y Bebidas', 11.11, '#59BFC3', '11.11 %'],
+              ['3° Salud', 11.11, '#59C38E', '11.11 %'],
+              ['4° Financieros y Seguros', 11.11, '#8EC359', '11.11 %'],
               ['5° Otros servicios, excepto Gobierno', 11.11, '#C38E59', '11.11 %']
           ]);
           var options = {

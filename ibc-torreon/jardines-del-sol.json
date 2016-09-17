@@ -9,8 +9,8 @@
       "Porcentaje de población de 15 a 64 años":"62.25",
       "Porcentaje de población de 65 y más años":"0.85",
       "Porcentaje de población no especificada":"0.66",
-      "Fecundidad promedio":"1.80",
-      "Porcentaje de población nacida en otro estado":"18.40",
+      "Fecundidad promedio":"1.8",
+      "Porcentaje de población nacida en otro estado":"18.4",
       "Porcentaje de población con discapacidad":"1.37"
     },
     "Educación":{
@@ -34,11 +34,11 @@
       "Hogares Jefatura femenina":"16.97",
       "Ocupación por Vivienda":"3.57",
       "Viviendas con Electricidad":"99.97",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
       "Viviendas con Televisión":"98.86",
       "Viviendas con Automóvil":"48.52",
-      "Viviendas con Computadora":"25.90",
+      "Viviendas con Computadora":"25.9",
       "Viviendas con Celular":"87.62",
       "Viviendas con Internet":"3.94"
     },
@@ -48,10 +48,10 @@
       "Primer actividad porcentaje":"68.97",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"13.79",
-      "Tercera actividad nombre":"Industria Manufacturera",
-      "Tercera actividad porcentaje":"6.90",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Cuarta actividad porcentaje":"6.90",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Tercera actividad porcentaje":"6.9",
+      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad porcentaje":"6.9",
       "Quinta actividad nombre":"Manejo de Residuos",
       "Quinta actividad porcentaje":"3.45"
     }

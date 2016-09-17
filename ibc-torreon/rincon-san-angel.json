@@ -9,7 +9,7 @@
       "Porcentaje de población de 15 a 64 años":"57.48",
       "Porcentaje de población de 65 y más años":"4.34",
       "Porcentaje de población no especificada":"6.51",
-      "Fecundidad promedio":"1.80",
+      "Fecundidad promedio":"1.8",
       "Porcentaje de población nacida en otro estado":"26.38",
       "Porcentaje de población con discapacidad":"1.08"
     },
@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"55.48",
-      "Población Económicamente Activa masculina":"65.70",
-      "Población Económicamente Activa femenina":"34.30",
+      "Población Económicamente Activa masculina":"65.7",
+      "Población Económicamente Activa femenina":"34.3",
       "Población Ocupada":"97.01",
       "Población Ocupada masculina":"66.47",
       "Población Ocupada femenina":"33.53",
@@ -44,10 +44,10 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"2",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"50.00"
+      "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Primer actividad porcentaje":"50",
+      "Segunda actividad nombre":"Comercio Menudeo",
+      "Segunda actividad porcentaje":"50"
     }
   }
 }]

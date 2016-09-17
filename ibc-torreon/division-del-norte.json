@@ -20,8 +20,8 @@
     },
     "Características Económicas":{
       "Población Económicamente Activa":"55.99",
-      "Población Económicamente Activa masculina":"69.30",
-      "Población Económicamente Activa femenina":"30.70",
+      "Población Económicamente Activa masculina":"69.3",
+      "Población Económicamente Activa femenina":"30.7",
       "Población Ocupada":"84.36",
       "Población Ocupada masculina":"67.11",
       "Población Ocupada femenina":"32.89",
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"10.64",
       "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"6.38",
-      "Quinta actividad nombre":"Manejo de Residuos",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"1.06"
     }
   }

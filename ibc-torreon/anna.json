@@ -3,15 +3,15 @@
   "IBC":{
     "Demografía":{
       "Población total":"4672",
-      "Porcentaje de población masculina":"48.60",
-      "Porcentaje de población femenina":"51.40",
+      "Porcentaje de población masculina":"48.6",
+      "Porcentaje de población femenina":"51.4",
       "Porcentaje de población de 0 a 14 años":"37.46",
       "Porcentaje de población de 15 a 64 años":"59.09",
       "Porcentaje de población de 65 y más años":"2.21",
       "Porcentaje de población no especificada":"1.24",
       "Fecundidad promedio":"1.85",
       "Porcentaje de población nacida en otro estado":"13.62",
-      "Porcentaje de población con discapacidad":"1.50"
+      "Porcentaje de población con discapacidad":"1.5"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"9.53",
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"10.26",
       "Cuarta actividad nombre":"Salud",
       "Cuarta actividad porcentaje":"8.97",
-      "Quinta actividad nombre":"Industria Manufacturera",
+      "Quinta actividad nombre":"Educativos",
       "Quinta actividad porcentaje":"5.13"
     }
   }

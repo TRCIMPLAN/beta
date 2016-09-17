@@ -19,7 +19,7 @@
       "Grado Promedio de Escolaridad femenina":"8.25"
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"53.70",
+      "Población Económicamente Activa":"53.7",
       "Población Económicamente Activa masculina":"66.47",
       "Población Económicamente Activa femenina":"33.53",
       "Población Ocupada":"92.19",
@@ -40,7 +40,7 @@
       "Viviendas con Automóvil":"29.25",
       "Viviendas con Computadora":"21.41",
       "Viviendas con Celular":"53.19",
-      "Viviendas con Internet":"13.80"
+      "Viviendas con Internet":"13.8"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"59",
@@ -48,9 +48,9 @@
       "Primer actividad porcentaje":"44.07",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"23.73",
-      "Tercera actividad nombre":"Industria Manufacturera",
+      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"10.17",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+      "Cuarta actividad nombre":"Industria Manufacturera",
       "Cuarta actividad porcentaje":"10.17",
       "Quinta actividad nombre":"Salud",
       "Quinta actividad porcentaje":"5.08"

@@ -5,7 +5,7 @@
       "Población total":"1761",
       "Porcentaje de población masculina":"50.38",
       "Porcentaje de población femenina":"49.62",
-      "Porcentaje de población de 0 a 14 años":"39.00",
+      "Porcentaje de población de 0 a 14 años":"39",
       "Porcentaje de población de 15 a 64 años":"58.38",
       "Porcentaje de población de 65 y más años":"2.43",
       "Porcentaje de población no especificada":"0.19",
@@ -15,8 +15,8 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"7.15",
-      "Grado Promedio de Escolaridad masculina":"7.10",
-      "Grado Promedio de Escolaridad femenina":"7.20"
+      "Grado Promedio de Escolaridad masculina":"7.1",
+      "Grado Promedio de Escolaridad femenina":"7.2"
     },
     "Características Económicas":{
       "Población Económicamente Activa":"51.88",
@@ -26,7 +26,7 @@
       "Población Ocupada masculina":"79.29",
       "Población Ocupada femenina":"20.71",
       "Población Desocupada":"15.05",
-      "Derechohabiencia":"62.70"
+      "Derechohabiencia":"62.7"
     },
     "Viviendas":{
       "Hogares":"481",
@@ -35,7 +35,7 @@
       "Ocupación por Vivienda":"3.66",
       "Viviendas con Electricidad":"97.82",
       "Viviendas con Agua":"77.65",
-      "Viviendas con Drenaje":"81.60",
+      "Viviendas con Drenaje":"81.6",
       "Viviendas con Televisión":"94.28",
       "Viviendas con Automóvil":"33.99",
       "Viviendas con Computadora":"20.06",
@@ -52,7 +52,7 @@
       "Tercera actividad porcentaje":"8.16",
       "Cuarta actividad nombre":"Salud",
       "Cuarta actividad porcentaje":"6.12",
-      "Quinta actividad nombre":"Industria Manufacturera",
+      "Quinta actividad nombre":"Comercio Mayoreo",
       "Quinta actividad porcentaje":"4.08"
     }
   }

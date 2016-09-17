@@ -8,7 +8,7 @@
       "Porcentaje de población de 0 a 14 años":"28.06",
       "Porcentaje de población de 15 a 64 años":"67.93",
       "Porcentaje de población de 65 y más años":"4.01",
-      "Porcentaje de población no especificada":"0.00",
+      "Porcentaje de población no especificada":"0",
       "Fecundidad promedio":"1.88",
       "Porcentaje de población nacida en otro estado":"12.92",
       "Porcentaje de población con discapacidad":"1.86"
@@ -26,33 +26,33 @@
       "Población Ocupada masculina":"59.87",
       "Población Ocupada femenina":"40.13",
       "Población Desocupada":"19.12",
-      "Derechohabiencia":"78.40"
+      "Derechohabiencia":"78.4"
     },
     "Viviendas":{
       "Hogares":"117",
-      "Hogares Jefatura masculina":"64.10",
-      "Hogares Jefatura femenina":"35.90",
+      "Hogares Jefatura masculina":"64.1",
+      "Hogares Jefatura femenina":"35.9",
       "Ocupación por Vivienda":"3.84",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
       "Viviendas con Automóvil":"49.55",
       "Viviendas con Computadora":"43.82",
-      "Viviendas con Celular":"81.20",
+      "Viviendas con Celular":"81.2",
       "Viviendas con Internet":"33.78"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"11",
       "Primer actividad nombre":"Comercio Menudeo",
       "Primer actividad porcentaje":"63.64",
-      "Segunda actividad nombre":"Profesionales, Científicos, Técnicos",
+      "Segunda actividad nombre":"Educativos",
       "Segunda actividad porcentaje":"9.09",
       "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
       "Tercera actividad porcentaje":"9.09",
-      "Cuarta actividad nombre":"Educativos",
+      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
       "Cuarta actividad porcentaje":"9.09",
-      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
       "Quinta actividad porcentaje":"9.09"
     }
   }

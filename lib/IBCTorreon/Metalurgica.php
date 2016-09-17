@@ -34,7 +34,7 @@ class Metalurgica extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Metalurgica';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-09-17 15:33:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'metalurgica';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,23 +58,17 @@ class Metalurgica extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => '0'
-            ),
-            'Educación' => array(
-        
-            ),
-            'Características Económicas' => array(
-        
+                'Población total' => 0
             ),
             'Viviendas' => array(
-                'Hogares' => '0'
+                'Hogares' => 0
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => '3',
+                'Total Actividades Económicas' => 3,
                 'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => '66.67',
+                'Primer actividad porcentaje' => 66.67,
                 'Segunda actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Segunda actividad porcentaje' => '33.33'
+                'Segunda actividad porcentaje' => 33.33
             )
         );
     } // datos

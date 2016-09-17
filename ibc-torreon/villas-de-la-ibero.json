@@ -11,10 +11,10 @@
       "Porcentaje de población no especificada":"0.82",
       "Fecundidad promedio":"1.47",
       "Porcentaje de población nacida en otro estado":"25.07",
-      "Porcentaje de población con discapacidad":"1.20"
+      "Porcentaje de población con discapacidad":"1.2"
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"15.00",
+      "Grado Promedio de Escolaridad":"15",
       "Grado Promedio de Escolaridad masculina":"15.36",
       "Grado Promedio de Escolaridad femenina":"14.65"
     },
@@ -30,8 +30,8 @@
     },
     "Viviendas":{
       "Hogares":"202",
-      "Hogares Jefatura masculina":"90.10",
-      "Hogares Jefatura femenina":"9.90",
+      "Hogares Jefatura masculina":"90.1",
+      "Hogares Jefatura femenina":"9.9",
       "Ocupación por Vivienda":"3.61",
       "Viviendas con Electricidad":"99.01",
       "Viviendas con Agua":"99.01",
@@ -44,10 +44,10 @@
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"2",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50.00",
-      "Segunda actividad nombre":"Educativos",
-      "Segunda actividad porcentaje":"50.00"
+      "Primer actividad nombre":"Educativos",
+      "Primer actividad porcentaje":"50",
+      "Segunda actividad nombre":"Comercio Menudeo",
+      "Segunda actividad porcentaje":"50"
     }
   }
 }]

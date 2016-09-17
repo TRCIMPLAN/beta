@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Florida Blanca de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Florida Blanca" src="../imagenes/imagen.jpg">
@@ -409,7 +409,7 @@
         <td class="derecha">5</td>
       </tr>
       <tr>
-        <td>1° Comercio Menudeo</td>
+        <td>1° Educativos</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
@@ -417,15 +417,15 @@
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>3° Profesionales, Científicos, Técnicos</td>
+        <td>3° Comercio Menudeo</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Otros servicios, excepto Gobierno</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>5° Otros servicios, excepto Gobierno</td>
+        <td>5° Profesionales, Científicos, Técnicos</td>
         <td class="derecha">20.00 %</td>
       </tr>
     </tbody>
@@ -651,7 +651,7 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['Global', 14.11, '#FF7F37', '14.11 años'],
-              ['Masculina', 14.50, '#006AC8', '14.50 años'],
+              ['Masculina', 14.5, '#006AC8', '14.5 años'],
               ['Femenina', 13.72, '#C80083', '13.72 años']
           ]);
           var options = {
@@ -770,13 +770,13 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
-              ['Agua', 100.00, '#FF80C0', '100.00 %'],
-              ['Drenaje', 100.00, '#C080FF', '100.00 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
-              ['Automóvil', 94.50, '#59BFC3', '94.50 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
+              ['Agua', 100, '#FF80C0', '100 %'],
+              ['Drenaje', 100, '#C080FF', '100 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
+              ['Automóvil', 94.5, '#59BFC3', '94.5 %'],
               ['Computadora', 88.99, '#59C38E', '88.99 %'],
-              ['Celular', 94.50, '#8EC359', '94.50 %'],
+              ['Celular', 94.5, '#8EC359', '94.5 %'],
               ['Internet', 87.16, '#C38E59', '87.16 %']
           ]);
           var options = {
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 20.00, '#80C0FF', '20.00 %'],
-              ['2° Manejo de Residuos', 20.00, '#59BFC3', '20.00 %'],
-              ['3° Profesionales, Científicos, Técnicos', 20.00, '#59C38E', '20.00 %'],
-              ['4° Educativos', 20.00, '#8EC359', '20.00 %'],
-              ['5° Otros servicios, excepto Gobierno', 20.00, '#C38E59', '20.00 %']
+              ['1° Educativos', 20, '#80C0FF', '20 %'],
+              ['2° Manejo de Residuos', 20, '#59BFC3', '20 %'],
+              ['3° Comercio Menudeo', 20, '#59C38E', '20 %'],
+              ['4° Otros servicios, excepto Gobierno', 20, '#8EC359', '20 %'],
+              ['5° Profesionales, Científicos, Técnicos', 20, '#C38E59', '20 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

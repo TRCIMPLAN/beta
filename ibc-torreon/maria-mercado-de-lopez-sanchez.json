@@ -3,8 +3,8 @@
   "IBC":{
     "Demografía":{
       "Población total":"2527",
-      "Porcentaje de población masculina":"50.80",
-      "Porcentaje de población femenina":"49.20",
+      "Porcentaje de población masculina":"50.8",
+      "Porcentaje de población femenina":"49.2",
       "Porcentaje de población de 0 a 14 años":"36.88",
       "Porcentaje de población de 15 a 64 años":"52.26",
       "Porcentaje de población de 65 y más años":"2.37",
@@ -23,8 +23,8 @@
       "Población Económicamente Activa masculina":"78.35",
       "Población Económicamente Activa femenina":"21.65",
       "Población Ocupada":"91.77",
-      "Población Ocupada masculina":"77.90",
-      "Población Ocupada femenina":"22.10",
+      "Población Ocupada masculina":"77.9",
+      "Población Ocupada femenina":"22.1",
       "Población Desocupada":"8.23",
       "Derechohabiencia":"46.25"
     },
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"18.88",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"13.99",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Comercio Mayoreo",
       "Cuarta actividad porcentaje":"7.69",
-      "Quinta actividad nombre":"Comercio Mayoreo",
+      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
       "Quinta actividad porcentaje":"7.69"
     }
   }

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Polvorera de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
         </div>
         </div>
         <meta itemprop="image" alt="Polvorera" src="../imagenes/imagen.jpg">
@@ -413,7 +413,7 @@
         <td class="derecha">76.47 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Educativos</td>
         <td class="derecha">5.88 %</td>
       </tr>
       <tr>
@@ -421,11 +421,11 @@
         <td class="derecha">5.88 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Otros servicios, excepto Gobierno</td>
         <td class="derecha">5.88 %</td>
       </tr>
       <tr>
-        <td>5° Otros servicios, excepto Gobierno</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">5.88 %</td>
       </tr>
     </tbody>
@@ -601,7 +601,7 @@
               ['De 0 a 14 años', 27.23],
               ['De 15 a 64 años', 65.01],
               ['De 65 y más años', 7.76],
-              ['No especificada', 0.00]
+              ['No especificada', 0]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -687,8 +687,8 @@
       function elaborarGraficaPobEcoActMasFem() {
         var data = google.visualization.arrayToDataTable([
           ['Etiqueta', 'Valor'],
-              ['Masculina', 71.20],
-              ['Femenina', 28.80]
+              ['Masculina', 71.2],
+              ['Femenina', 28.8]
         ]);
         var options = {
           chartArea: { width: '100%', height: '80%' },
@@ -770,10 +770,10 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100.00, '#FF8080', '100.00 %'],
+              ['Electricidad', 100, '#FF8080', '100 %'],
               ['Agua', 98.98, '#FF80C0', '98.98 %'],
               ['Drenaje', 99.91, '#C080FF', '99.91 %'],
-              ['Televisión', 100.00, '#80C0FF', '100.00 %'],
+              ['Televisión', 100, '#80C0FF', '100 %'],
               ['Automóvil', 34.04, '#59BFC3', '34.04 %'],
               ['Computadora', 18.93, '#59C38E', '18.93 %'],
               ['Celular', 62.97, '#8EC359', '62.97 %'],
@@ -797,10 +797,10 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 76.47, '#80C0FF', '76.47 %'],
-              ['2° Industria Manufacturera', 5.88, '#59BFC3', '5.88 %'],
+              ['2° Educativos', 5.88, '#59BFC3', '5.88 %'],
               ['3° Preparación de Alimentos y Bebidas', 5.88, '#59C38E', '5.88 %'],
-              ['4° Educativos', 5.88, '#8EC359', '5.88 %'],
-              ['5° Otros servicios, excepto Gobierno', 5.88, '#C38E59', '5.88 %']
+              ['4° Otros servicios, excepto Gobierno', 5.88, '#8EC359', '5.88 %'],
+              ['5° Industria Manufacturera', 5.88, '#C38E59', '5.88 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

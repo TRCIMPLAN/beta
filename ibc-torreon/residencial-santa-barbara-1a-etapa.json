@@ -8,10 +8,10 @@
       "Porcentaje de población de 0 a 14 años":"35.47",
       "Porcentaje de población de 15 a 64 años":"58.49",
       "Porcentaje de población de 65 y más años":"2.64",
-      "Porcentaje de población no especificada":"3.40",
+      "Porcentaje de población no especificada":"3.4",
       "Fecundidad promedio":"1.67",
       "Porcentaje de población nacida en otro estado":"18.45",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"15.02",
@@ -33,13 +33,13 @@
       "Hogares Jefatura masculina":"87.01",
       "Hogares Jefatura femenina":"12.99",
       "Ocupación por Vivienda":"3.44",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"98.70",
-      "Viviendas con Drenaje":"98.70",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"98.7",
+      "Viviendas con Drenaje":"98.7",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"100",
       "Viviendas con Computadora":"94.81",
-      "Viviendas con Celular":"98.70",
+      "Viviendas con Celular":"98.7",
       "Viviendas con Internet":"88.31"
     },
     "Unidades Económicas":{
@@ -50,9 +50,9 @@
       "Segunda actividad porcentaje":"19.23",
       "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
       "Tercera actividad porcentaje":"15.38",
-      "Cuarta actividad nombre":"Industria Manufacturera",
+      "Cuarta actividad nombre":"Educativos",
       "Cuarta actividad porcentaje":"7.69",
-      "Quinta actividad nombre":"Educativos",
+      "Quinta actividad nombre":"Industria Manufacturera",
       "Quinta actividad porcentaje":"7.69"
     }
   }

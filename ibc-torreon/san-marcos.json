@@ -15,7 +15,7 @@
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"9.31",
-      "Grado Promedio de Escolaridad masculina":"9.50",
+      "Grado Promedio de Escolaridad masculina":"9.5",
       "Grado Promedio de Escolaridad femenina":"9.14"
     },
     "Características Económicas":{
@@ -33,14 +33,14 @@
       "Hogares Jefatura masculina":"68.05",
       "Hogares Jefatura femenina":"31.95",
       "Ocupación por Vivienda":"3.81",
-      "Viviendas con Electricidad":"99.90",
-      "Viviendas con Agua":"99.90",
-      "Viviendas con Drenaje":"99.90",
+      "Viviendas con Electricidad":"99.9",
+      "Viviendas con Agua":"99.9",
+      "Viviendas con Drenaje":"99.9",
       "Viviendas con Televisión":"97.83",
       "Viviendas con Automóvil":"51.23",
       "Viviendas con Computadora":"30.84",
       "Viviendas con Celular":"65.63",
-      "Viviendas con Internet":"20.50"
+      "Viviendas con Internet":"20.5"
     },
     "Unidades Económicas":{
       "Total Actividades Económicas":"74",

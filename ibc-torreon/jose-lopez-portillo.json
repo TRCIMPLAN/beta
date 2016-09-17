@@ -10,7 +10,7 @@
       "Porcentaje de población de 65 y más años":"10.73",
       "Porcentaje de población no especificada":"2.55",
       "Fecundidad promedio":"2.47",
-      "Porcentaje de población nacida en otro estado":"16.10",
+      "Porcentaje de población nacida en otro estado":"16.1",
       "Porcentaje de población con discapacidad":"4.57"
     },
     "Educación":{
@@ -30,10 +30,10 @@
     },
     "Viviendas":{
       "Hogares":"84",
-      "Hogares Jefatura masculina":"72.80",
-      "Hogares Jefatura femenina":"27.20",
+      "Hogares Jefatura masculina":"72.8",
+      "Hogares Jefatura femenina":"27.2",
       "Ocupación por Vivienda":"4.21",
-      "Viviendas con Electricidad":"100.00",
+      "Viviendas con Electricidad":"100",
       "Viviendas con Agua":"98.81",
       "Viviendas con Drenaje":"98.81",
       "Viviendas con Televisión":"98.81",
@@ -48,9 +48,9 @@
       "Primer actividad porcentaje":"41.18",
       "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
       "Segunda actividad porcentaje":"29.41",
-      "Tercera actividad nombre":"Salud",
+      "Tercera actividad nombre":"Gubernamentales",
       "Tercera actividad porcentaje":"11.76",
-      "Cuarta actividad nombre":"Gubernamentales",
+      "Cuarta actividad nombre":"Salud",
       "Cuarta actividad porcentaje":"11.76",
       "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
       "Quinta actividad porcentaje":"5.88"

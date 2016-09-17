@@ -6,12 +6,12 @@
       "Porcentaje de población masculina":"48.65",
       "Porcentaje de población femenina":"51.35",
       "Porcentaje de población de 0 a 14 años":"40.54",
-      "Porcentaje de población de 15 a 64 años":"47.30",
+      "Porcentaje de población de 15 a 64 años":"47.3",
       "Porcentaje de población de 65 y más años":"4.05",
       "Porcentaje de población no especificada":"8.11",
       "Fecundidad promedio":"1.84",
       "Porcentaje de población nacida en otro estado":"10.81",
-      "Porcentaje de población con discapacidad":"0.00"
+      "Porcentaje de población con discapacidad":"0"
     },
     "Educación":{
       "Grado Promedio de Escolaridad":"15.29",
@@ -23,8 +23,8 @@
       "Población Económicamente Activa masculina":"59.26",
       "Población Económicamente Activa femenina":"40.74",
       "Población Ocupada":"92.05",
-      "Población Ocupada masculina":"56.00",
-      "Población Ocupada femenina":"44.00",
+      "Población Ocupada masculina":"56",
+      "Población Ocupada femenina":"44",
       "Población Desocupada":"7.95",
       "Derechohabiencia":"74.32"
     },
@@ -33,11 +33,11 @@
       "Hogares Jefatura masculina":"83.33",
       "Hogares Jefatura femenina":"16.67",
       "Ocupación por Vivienda":"4.11",
-      "Viviendas con Electricidad":"100.00",
-      "Viviendas con Agua":"100.00",
-      "Viviendas con Drenaje":"100.00",
-      "Viviendas con Televisión":"100.00",
-      "Viviendas con Automóvil":"100.00",
+      "Viviendas con Electricidad":"100",
+      "Viviendas con Agua":"100",
+      "Viviendas con Drenaje":"100",
+      "Viviendas con Televisión":"100",
+      "Viviendas con Automóvil":"100",
       "Viviendas con Computadora":"88.89",
       "Viviendas con Celular":"94.44",
       "Viviendas con Internet":"88.89"
