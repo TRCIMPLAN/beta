@@ -2,23 +2,29 @@
   "Nombre":"Ciudad Industrial",
   "IBC":{
     "Demografía":{
-      "Población total":"0"
+      "2010":{
+        "Población total":0
+      }
     },
     "Viviendas":{
-      "Hogares":"0"
+      "2010":{
+        "Hogares":0
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"244",
-      "Primer actividad nombre":"Industria Manufacturera",
-      "Primer actividad porcentaje":"32.79",
-      "Segunda actividad nombre":"Comercio Mayoreo",
-      "Segunda actividad porcentaje":"24.59",
-      "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
-      "Tercera actividad porcentaje":"11.07",
-      "Cuarta actividad nombre":"Comercio Menudeo",
-      "Cuarta actividad porcentaje":"10.66",
-      "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Quinta actividad porcentaje":"7.38"
+      "2010":{
+        "Total Actividades Económicas":244,
+        "Primer actividad nombre":"Industria Manufacturera",
+        "Primer actividad porcentaje":32.79,
+        "Segunda actividad nombre":"Comercio Mayoreo",
+        "Segunda actividad porcentaje":24.59,
+        "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Tercera actividad porcentaje":11.07,
+        "Cuarta actividad nombre":"Comercio Menudeo",
+        "Cuarta actividad porcentaje":10.66,
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Quinta actividad porcentaje":7.38
+      }
     }
   }
 }]

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Sol De Oriente 3A. Etapa de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Sol De Oriente 3A. Etapa" src="../imagenes/imagen.jpg">
@@ -417,7 +417,7 @@
         <td class="derecha">23.08 %</td>
       </tr>
       <tr>
-        <td>3° Educativos</td>
+        <td>3° Salud</td>
         <td class="derecha">7.69 %</td>
       </tr>
       <tr>
@@ -425,7 +425,7 @@
         <td class="derecha">7.69 %</td>
       </tr>
       <tr>
-        <td>5° Salud</td>
+        <td>5° Educativos</td>
         <td class="derecha">7.69 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 98.84, '#FF8080', '98.84 %'],
-              ['Agua', 99.22, '#FF80C0', '99.22 %'],
-              ['Drenaje', 99.22, '#C080FF', '99.22 %'],
-              ['Televisión', 98.45, '#80C0FF', '98.45 %'],
-              ['Automóvil', 75.97, '#59BFC3', '75.97 %'],
-              ['Computadora', 52.33, '#59C38E', '52.33 %'],
-              ['Celular', 92.25, '#8EC359', '92.25 %'],
-              ['Internet', 39.15, '#C38E59', '39.15 %']
+              ['Electricidad', 98.84, '#C080FF', '98.84 %'],
+              ['Agua', 99.22, '#80C0FF', '99.22 %'],
+              ['Drenaje', 99.22, '#59BFC3', '99.22 %'],
+              ['Televisión', 98.45, '#59C38E', '98.45 %'],
+              ['Automóvil', 75.97, '#8EC359', '75.97 %'],
+              ['Computadora', 52.33, '#C38E59', '52.33 %'],
+              ['Celular', 92.25, '#FF8080', '92.25 %'],
+              ['Internet', 39.15, '#FF80C0', '39.15 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 53.85, '#80C0FF', '53.85 %'],
-              ['2° Financieros y Seguros', 23.08, '#59BFC3', '23.08 %'],
-              ['3° Educativos', 7.69, '#59C38E', '7.69 %'],
-              ['4° Preparación de Alimentos y Bebidas', 7.69, '#8EC359', '7.69 %'],
-              ['5° Salud', 7.69, '#C38E59', '7.69 %']
+              ['1° Comercio Menudeo', 53.85, '#59C38E', '53.85 %'],
+              ['2° Financieros y Seguros', 23.08, '#8EC359', '23.08 %'],
+              ['3° Salud', 7.69, '#C38E59', '7.69 %'],
+              ['4° Preparación de Alimentos y Bebidas', 7.69, '#80C0FF', '7.69 %'],
+              ['5° Educativos', 7.69, '#59BFC3', '7.69 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

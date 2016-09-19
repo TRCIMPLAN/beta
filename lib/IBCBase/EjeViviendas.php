@@ -23,46 +23,40 @@
 namespace IBCBase;
 
 /**
- * Clase EjeViviendas
+ * Clase abstract EjeViviendas
  */
-class EjeViviendas {
+abstract class EjeViviendas extends Eje {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    // protected $publicacion_ficha;
+    // const     FECHA;
     protected $viviendas;         // Arreglo asociativo con datos de Viviendas
     protected $preparado = FALSE; // Bandera
-
-    /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionWeb
-     */
-    public function __construct(PublicacionWeb $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
 
     /**
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            // Tomar datos
-            $datos = $this->publicacion_ficha->datos();
-            if (isset($datos['Viviendas'])) {
-                $this->viviendas = $datos['Viviendas'];
-            } else {
-                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Viviendas.");
-            }
-            // Sin Hogares
-            if (isset($this->viviendas['Hogares'])) {
-                if ($this->viviendas['Hogares'] == 0) {
-                    throw new EjeExceptionSinDatos("La cantidad de Hogares es cero.");
-                }
-            } else {
-                throw new EjeExceptionSinDatos("La cantidad de Hogares no está definida.");
-            }
-            // Levantar bandera
-            $this->preparado = TRUE;
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Viviendas'][parent::FECHA])) {
+            $this->viviendas = $datos['Viviendas'][parent::FECHA];
+        } else {
+            throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Viviendas.");
+        }
+        // Sin Hogares
+        if (isset($this->viviendas['Hogares'])) {
+            if ($this->viviendas['Hogares'] == 0) {
+                throw new EjeExceptionSinDatos("La cantidad de Hogares es cero.");
+            }
+        } else {
+            throw new EjeExceptionSinDatos("La cantidad de Hogares no está definida.");
+        }
+        // Levantar bandera
+        $this->preparado = TRUE;
     } // preparar
 
     /**
@@ -101,6 +95,6 @@ class EjeViviendas {
         }
     } // formatear
 
-} // Clase EjeViviendas
+} // Clase abstract EjeViviendas
 
 ?>

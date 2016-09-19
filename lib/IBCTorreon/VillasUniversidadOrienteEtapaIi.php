@@ -34,7 +34,7 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente Etapa Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:03';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-oriente-etapa-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,54 +58,64 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 176,
-                'Porcentaje de población masculina' => 51.14,
-                'Porcentaje de población femenina' => 48.86,
-                'Porcentaje de población de 0 a 14 años' => 32.95,
-                'Porcentaje de población de 15 a 64 años' => 66.48,
-                'Porcentaje de población de 65 y más años' => 0.57,
-                'Porcentaje de población no especificada' => 0.00,
-                'Fecundidad promedio' => 1.71,
-                'Porcentaje de población nacida en otro estado' => 15.91,
-                'Porcentaje de población con discapacidad' => 2.81
+                '2010' => array(
+                    'Población total' => 176,
+                    'Porcentaje de población masculina' => 51.14,
+                    'Porcentaje de población femenina' => 48.86,
+                    'Porcentaje de población de 0 a 14 años' => 32.95,
+                    'Porcentaje de población de 15 a 64 años' => 66.48,
+                    'Porcentaje de población de 65 y más años' => 0.57,
+                    'Porcentaje de población no especificada' => 0.00,
+                    'Fecundidad promedio' => 1.71,
+                    'Porcentaje de población nacida en otro estado' => 15.91,
+                    'Porcentaje de población con discapacidad' => 2.81
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 12.15,
-                'Grado Promedio de Escolaridad masculina' => 12.28,
-                'Grado Promedio de Escolaridad femenina' => 12.02
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 12.15,
+                    'Grado Promedio de Escolaridad masculina' => 12.28,
+                    'Grado Promedio de Escolaridad femenina' => 12.02
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 68.60,
-                'Población Económicamente Activa masculina' => 68.67,
-                'Población Económicamente Activa femenina' => 31.33,
-                'Población Ocupada' => 85.03,
-                'Población Ocupada masculina' => 68.06,
-                'Población Ocupada femenina' => 31.94,
-                'Población Desocupada' => 14.97,
-                'Derechohabiencia' => 90.34
+                '2010' => array(
+                    'Población Económicamente Activa' => 68.60,
+                    'Población Económicamente Activa masculina' => 68.67,
+                    'Población Económicamente Activa femenina' => 31.33,
+                    'Población Ocupada' => 85.03,
+                    'Población Ocupada masculina' => 68.06,
+                    'Población Ocupada femenina' => 31.94,
+                    'Población Desocupada' => 14.97,
+                    'Derechohabiencia' => 90.34
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 53,
-                'Hogares Jefatura masculina' => 88.68,
-                'Hogares Jefatura femenina' => 11.32,
-                'Ocupación por Vivienda' => 3.32,
-                'Viviendas con Electricidad' => 98.11,
-                'Viviendas con Agua' => 98.11,
-                'Viviendas con Drenaje' => 98.11,
-                'Viviendas con Televisión' => 98.11,
-                'Viviendas con Automóvil' => 67.92,
-                'Viviendas con Computadora' => 30.19,
-                'Viviendas con Celular' => 98.11,
-                'Viviendas con Internet' => 27.92
+                '2010' => array(
+                    'Hogares' => 53,
+                    'Hogares Jefatura masculina' => 88.68,
+                    'Hogares Jefatura femenina' => 11.32,
+                    'Ocupación por Vivienda' => 3.32,
+                    'Viviendas con Electricidad' => 98.11,
+                    'Viviendas con Agua' => 98.11,
+                    'Viviendas con Drenaje' => 98.11,
+                    'Viviendas con Televisión' => 98.11,
+                    'Viviendas con Automóvil' => 67.92,
+                    'Viviendas con Computadora' => 30.19,
+                    'Viviendas con Celular' => 98.11,
+                    'Viviendas con Internet' => 27.92
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 11,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 63.64,
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Segunda actividad porcentaje' => 18.18,
-                'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Tercera actividad porcentaje' => 18.18
+                '2010' => array(
+                    'Total Actividades Económicas' => 11,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 63.64,
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad porcentaje' => 18.18,
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad porcentaje' => 18.18
+                )
             )
         );
     } // datos

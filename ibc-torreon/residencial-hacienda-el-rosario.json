@@ -2,54 +2,64 @@
   "Nombre":"Residencial Hacienda El Rosario",
   "IBC":{
     "Demografía":{
-      "Población total":"736",
-      "Porcentaje de población masculina":"49.05",
-      "Porcentaje de población femenina":"50.95",
-      "Porcentaje de población de 0 a 14 años":"29.48",
-      "Porcentaje de población de 15 a 64 años":"64.95",
-      "Porcentaje de población de 65 y más años":"2.72",
-      "Porcentaje de población no especificada":"2.85",
-      "Fecundidad promedio":"1.71",
-      "Porcentaje de población nacida en otro estado":"22.55",
-      "Porcentaje de población con discapacidad":"1.17"
+      "2010":{
+        "Población total":736,
+        "Porcentaje de población masculina":49.05,
+        "Porcentaje de población femenina":50.95,
+        "Porcentaje de población de 0 a 14 años":29.48,
+        "Porcentaje de población de 15 a 64 años":64.95,
+        "Porcentaje de población de 65 y más años":2.72,
+        "Porcentaje de población no especificada":2.85,
+        "Fecundidad promedio":1.71,
+        "Porcentaje de población nacida en otro estado":22.55,
+        "Porcentaje de población con discapacidad":1.17
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"13.21",
-      "Grado Promedio de Escolaridad masculina":"13.46",
-      "Grado Promedio de Escolaridad femenina":"12.95"
+      "2010":{
+        "Grado Promedio de Escolaridad":13.21,
+        "Grado Promedio de Escolaridad masculina":13.46,
+        "Grado Promedio de Escolaridad femenina":12.95
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"55.72",
-      "Población Económicamente Activa masculina":"64.17",
-      "Población Económicamente Activa femenina":"35.83",
-      "Población Ocupada":"96.98",
-      "Población Ocupada masculina":"63.76",
-      "Población Ocupada femenina":"36.24",
-      "Población Desocupada":"3.02",
-      "Derechohabiencia":"76.49"
+      "2010":{
+        "Población Económicamente Activa":55.72,
+        "Población Económicamente Activa masculina":64.17,
+        "Población Económicamente Activa femenina":35.83,
+        "Población Ocupada":96.98,
+        "Población Ocupada masculina":63.76,
+        "Población Ocupada femenina":36.24,
+        "Población Desocupada":3.02,
+        "Derechohabiencia":76.49
+      }
     },
     "Viviendas":{
-      "Hogares":"174",
-      "Hogares Jefatura masculina":"92.53",
-      "Hogares Jefatura femenina":"7.47",
-      "Ocupación por Vivienda":"4.23",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"98.28",
-      "Viviendas con Drenaje":"98.85",
-      "Viviendas con Televisión":"100",
-      "Viviendas con Automóvil":"89.08",
-      "Viviendas con Computadora":"79.89",
-      "Viviendas con Celular":"90.8",
-      "Viviendas con Internet":"71.84"
+      "2010":{
+        "Hogares":174,
+        "Hogares Jefatura masculina":92.53,
+        "Hogares Jefatura femenina":7.47,
+        "Ocupación por Vivienda":4.23,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":98.28,
+        "Viviendas con Drenaje":98.85,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":89.08,
+        "Viviendas con Computadora":79.89,
+        "Viviendas con Celular":90.8,
+        "Viviendas con Internet":71.84
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"12",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"66.67",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"25",
-      "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
-      "Tercera actividad porcentaje":"8.33"
+      "2010":{
+        "Total Actividades Económicas":12,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":66.67,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":25,
+        "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Tercera actividad porcentaje":8.33
+      }
     }
   }
 }]

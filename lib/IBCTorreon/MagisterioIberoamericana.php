@@ -34,7 +34,7 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Magisterio-Iberoamericana';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:00';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'magisterio-iberoamericana';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,56 +58,66 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 33,
-                'Porcentaje de población masculina' => 52.63,
-                'Porcentaje de población femenina' => 47.37,
-                'Porcentaje de población de 0 a 14 años' => 36.63,
-                'Porcentaje de población de 15 a 64 años' => 57.32,
-                'Porcentaje de población de 65 y más años' => 1.30,
-                'Porcentaje de población no especificada' => 4.75,
-                'Fecundidad promedio' => 1.56,
-                'Porcentaje de población nacida en otro estado' => 23.94,
-                'Porcentaje de población con discapacidad' => 1.15
+                '2010' => array(
+                    'Población total' => 33,
+                    'Porcentaje de población masculina' => 52.63,
+                    'Porcentaje de población femenina' => 47.37,
+                    'Porcentaje de población de 0 a 14 años' => 36.63,
+                    'Porcentaje de población de 15 a 64 años' => 57.32,
+                    'Porcentaje de población de 65 y más años' => 1.30,
+                    'Porcentaje de población no especificada' => 4.75,
+                    'Fecundidad promedio' => 1.56,
+                    'Porcentaje de población nacida en otro estado' => 23.94,
+                    'Porcentaje de población con discapacidad' => 1.15
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 14.24,
-                'Grado Promedio de Escolaridad masculina' => 14.33,
-                'Grado Promedio de Escolaridad femenina' => 14.16
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 14.24,
+                    'Grado Promedio de Escolaridad masculina' => 14.33,
+                    'Grado Promedio de Escolaridad femenina' => 14.16
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 62.02,
-                'Población Económicamente Activa masculina' => 63.39,
-                'Población Económicamente Activa femenina' => 36.61,
-                'Población Ocupada' => 97.11,
-                'Población Ocupada masculina' => 62.96,
-                'Población Ocupada femenina' => 37.04,
-                'Población Desocupada' => 2.89,
-                'Derechohabiencia' => 73.18
+                '2010' => array(
+                    'Población Económicamente Activa' => 62.02,
+                    'Población Económicamente Activa masculina' => 63.39,
+                    'Población Económicamente Activa femenina' => 36.61,
+                    'Población Ocupada' => 97.11,
+                    'Población Ocupada masculina' => 62.96,
+                    'Población Ocupada femenina' => 37.04,
+                    'Población Desocupada' => 2.89,
+                    'Derechohabiencia' => 73.18
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 8,
-                'Hogares Jefatura masculina' => 87.87,
-                'Hogares Jefatura femenina' => 12.13,
-                'Ocupación por Vivienda' => 4.12,
-                'Viviendas con Electricidad' => 100.00,
-                'Viviendas con Agua' => 100.00,
-                'Viviendas con Drenaje' => 100.00,
-                'Viviendas con Televisión' => 100.00,
-                'Viviendas con Automóvil' => 94.26,
-                'Viviendas con Computadora' => 86.83,
-                'Viviendas con Celular' => 100.00,
-                'Viviendas con Internet' => 83.12
+                '2010' => array(
+                    'Hogares' => 8,
+                    'Hogares Jefatura masculina' => 87.87,
+                    'Hogares Jefatura femenina' => 12.13,
+                    'Ocupación por Vivienda' => 4.12,
+                    'Viviendas con Electricidad' => 100.00,
+                    'Viviendas con Agua' => 100.00,
+                    'Viviendas con Drenaje' => 100.00,
+                    'Viviendas con Televisión' => 100.00,
+                    'Viviendas con Automóvil' => 94.26,
+                    'Viviendas con Computadora' => 86.83,
+                    'Viviendas con Celular' => 100.00,
+                    'Viviendas con Internet' => 83.12
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 6,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 33.33,
-                'Segunda actividad nombre' => 'Industria Manufacturera',
-                'Segunda actividad porcentaje' => 33.33,
-                'Tercera actividad nombre' => 'Comercio Mayoreo',
-                'Tercera actividad porcentaje' => 16.67,
-                'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Cuarta actividad porcentaje' => 16.67
+                '2010' => array(
+                    'Total Actividades Económicas' => 6,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 33.33,
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad porcentaje' => 33.33,
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad porcentaje' => 16.67,
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad porcentaje' => 16.67
+                )
             )
         );
     } // datos

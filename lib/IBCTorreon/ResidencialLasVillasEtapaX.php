@@ -34,7 +34,7 @@ class ResidencialLasVillasEtapaX extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Villas Etapa X';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:02';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-villas-etapa-x';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,37 +58,47 @@ class ResidencialLasVillasEtapaX extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 1,
-                'Porcentaje de población masculina' => 46.79,
-                'Porcentaje de población femenina' => 53.21,
-                'Porcentaje de población de 0 a 14 años' => 28.26,
-                'Porcentaje de población de 15 a 64 años' => 68.42,
-                'Porcentaje de población de 65 y más años' => 2.20,
-                'Porcentaje de población no especificada' => 1.12,
-                'Fecundidad promedio' => 1.81,
-                'Porcentaje de población nacida en otro estado' => 15.91,
-                'Porcentaje de población con discapacidad' => 1.86
+                '2010' => array(
+                    'Población total' => 1,
+                    'Porcentaje de población masculina' => 46.79,
+                    'Porcentaje de población femenina' => 53.21,
+                    'Porcentaje de población de 0 a 14 años' => 28.26,
+                    'Porcentaje de población de 15 a 64 años' => 68.42,
+                    'Porcentaje de población de 65 y más años' => 2.20,
+                    'Porcentaje de población no especificada' => 1.12,
+                    'Fecundidad promedio' => 1.81,
+                    'Porcentaje de población nacida en otro estado' => 15.91,
+                    'Porcentaje de población con discapacidad' => 1.86
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 10.88,
-                'Grado Promedio de Escolaridad masculina' => 11.00,
-                'Grado Promedio de Escolaridad femenina' => 10.78
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 10.88,
+                    'Grado Promedio de Escolaridad masculina' => 11.00,
+                    'Grado Promedio de Escolaridad femenina' => 10.78
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 54.95,
-                'Población Económicamente Activa masculina' => 62.21,
-                'Población Económicamente Activa femenina' => 37.79,
-                'Población Ocupada' => 94.53,
-                'Población Ocupada masculina' => 60.81,
-                'Población Ocupada femenina' => 39.19,
-                'Población Desocupada' => 5.47,
-                'Derechohabiencia' => 76.75
+                '2010' => array(
+                    'Población Económicamente Activa' => 54.95,
+                    'Población Económicamente Activa masculina' => 62.21,
+                    'Población Económicamente Activa femenina' => 37.79,
+                    'Población Ocupada' => 94.53,
+                    'Población Ocupada masculina' => 60.81,
+                    'Población Ocupada femenina' => 39.19,
+                    'Población Desocupada' => 5.47,
+                    'Derechohabiencia' => 76.75
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 0
+                '2010' => array(
+                    'Total Actividades Económicas' => 0
+                )
             )
         );
     } // datos

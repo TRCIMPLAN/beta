@@ -2,13 +2,19 @@
   "Nombre":"Residencial Las Villas Etapa Xv",
   "IBC":{
     "Demografía":{
-      "Población total":"0"
+      "2010":{
+        "Población total":0
+      }
     },
     "Viviendas":{
-      "Hogares":"0"
+      "2010":{
+        "Hogares":0
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"0"
+      "2010":{
+        "Total Actividades Económicas":0
+      }
     }
   }
 }]

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Casa Blanca de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Casa Blanca" src="../imagenes/imagen.jpg">
@@ -417,7 +417,7 @@
         <td class="derecha">17.65 %</td>
       </tr>
       <tr>
-        <td>3° Educativos</td>
+        <td>3° Salud</td>
         <td class="derecha">11.76 %</td>
       </tr>
       <tr>
@@ -425,7 +425,7 @@
         <td class="derecha">11.76 %</td>
       </tr>
       <tr>
-        <td>5° Salud</td>
+        <td>5° Educativos</td>
         <td class="derecha">11.76 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 93.63, '#59BFC3', '93.63 %'],
-              ['Computadora', 85.8, '#59C38E', '85.8 %'],
-              ['Celular', 94.12, '#8EC359', '94.12 %'],
-              ['Internet', 81.62, '#C38E59', '81.62 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 93.63, '#8EC359', '93.63 %'],
+              ['Computadora', 85.8, '#C38E59', '85.8 %'],
+              ['Celular', 94.12, '#FF8080', '94.12 %'],
+              ['Internet', 81.62, '#FF80C0', '81.62 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 35.29, '#80C0FF', '35.29 %'],
-              ['2° Otros servicios, excepto Gobierno', 17.65, '#59BFC3', '17.65 %'],
-              ['3° Educativos', 11.76, '#59C38E', '11.76 %'],
-              ['4° Inmobiliarios', 11.76, '#8EC359', '11.76 %'],
-              ['5° Salud', 11.76, '#C38E59', '11.76 %']
+              ['1° Comercio Menudeo', 35.29, '#59C38E', '35.29 %'],
+              ['2° Otros servicios, excepto Gobierno', 17.65, '#8EC359', '17.65 %'],
+              ['3° Salud', 11.76, '#C38E59', '11.76 %'],
+              ['4° Inmobiliarios', 11.76, '#80C0FF', '11.76 %'],
+              ['5° Educativos', 11.76, '#59BFC3', '11.76 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

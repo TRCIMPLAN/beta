@@ -34,7 +34,7 @@ class NuevoZaragozaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nuevo Zaragoza Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:01';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nuevo-zaragoza-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,50 +58,60 @@ class NuevoZaragozaIi extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 23,
-                'Porcentaje de población masculina' => 43.48,
-                'Porcentaje de población femenina' => 56.52,
-                'Porcentaje de población de 0 a 14 años' => 39.13,
-                'Porcentaje de población de 15 a 64 años' => 60.87,
-                'Porcentaje de población de 65 y más años' => 0.00,
-                'Porcentaje de población no especificada' => 0.00,
-                'Fecundidad promedio' => 1.13,
-                'Porcentaje de población nacida en otro estado' => 13.04,
-                'Porcentaje de población con discapacidad' => 1.86
+                '2010' => array(
+                    'Población total' => 23,
+                    'Porcentaje de población masculina' => 43.48,
+                    'Porcentaje de población femenina' => 56.52,
+                    'Porcentaje de población de 0 a 14 años' => 39.13,
+                    'Porcentaje de población de 15 a 64 años' => 60.87,
+                    'Porcentaje de población de 65 y más años' => 0.00,
+                    'Porcentaje de población no especificada' => 0.00,
+                    'Fecundidad promedio' => 1.13,
+                    'Porcentaje de población nacida en otro estado' => 13.04,
+                    'Porcentaje de población con discapacidad' => 1.86
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 11.93,
-                'Grado Promedio de Escolaridad masculina' => 13.14,
-                'Grado Promedio de Escolaridad femenina' => 10.71
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 11.93,
+                    'Grado Promedio de Escolaridad masculina' => 13.14,
+                    'Grado Promedio de Escolaridad femenina' => 10.71
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 73.33,
-                'Población Económicamente Activa masculina' => 63.64,
-                'Población Económicamente Activa femenina' => 36.36,
-                'Población Ocupada' => 78.64,
-                'Población Ocupada masculina' => 55.56,
-                'Población Ocupada femenina' => 44.44,
-                'Población Desocupada' => 21.36,
-                'Derechohabiencia' => 86.96
+                '2010' => array(
+                    'Población Económicamente Activa' => 73.33,
+                    'Población Económicamente Activa masculina' => 63.64,
+                    'Población Económicamente Activa femenina' => 36.36,
+                    'Población Ocupada' => 78.64,
+                    'Población Ocupada masculina' => 55.56,
+                    'Población Ocupada femenina' => 44.44,
+                    'Población Desocupada' => 21.36,
+                    'Derechohabiencia' => 86.96
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 7,
-                'Hogares Jefatura masculina' => 100.00,
-                'Hogares Jefatura femenina' => 0.00,
-                'Ocupación por Vivienda' => 3.29,
-                'Viviendas con Electricidad' => 100.00,
-                'Viviendas con Agua' => 100.00,
-                'Viviendas con Drenaje' => 100.00,
-                'Viviendas con Televisión' => 100.00,
-                'Viviendas con Automóvil' => 57.14,
-                'Viviendas con Computadora' => 42.86,
-                'Viviendas con Celular' => 100.00,
-                'Viviendas con Internet' => 0.00
+                '2010' => array(
+                    'Hogares' => 7,
+                    'Hogares Jefatura masculina' => 100.00,
+                    'Hogares Jefatura femenina' => 0.00,
+                    'Ocupación por Vivienda' => 3.29,
+                    'Viviendas con Electricidad' => 100.00,
+                    'Viviendas con Agua' => 100.00,
+                    'Viviendas con Drenaje' => 100.00,
+                    'Viviendas con Televisión' => 100.00,
+                    'Viviendas con Automóvil' => 57.14,
+                    'Viviendas con Computadora' => 42.86,
+                    'Viviendas con Celular' => 100.00,
+                    'Viviendas con Internet' => 0.00
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 1,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 100.00
+                '2010' => array(
+                    'Total Actividades Económicas' => 1,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 100.00
+                )
             )
         );
     } // datos

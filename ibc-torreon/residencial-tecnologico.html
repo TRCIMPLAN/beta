@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Tecnologico de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Tecnologico" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">1.96 %</td>
       </tr>
       <tr>
-        <td>5° Esparcimiento, Culturales, Deportivos</td>
+        <td>5° Manejo de Residuos</td>
         <td class="derecha">0.98 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 95.83, '#FF80C0', '95.83 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 100, '#59BFC3', '100 %'],
-              ['Computadora', 91.67, '#59C38E', '91.67 %'],
-              ['Celular', 100, '#8EC359', '100 %'],
-              ['Internet', 83.33, '#C38E59', '83.33 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 95.83, '#80C0FF', '95.83 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 100, '#8EC359', '100 %'],
+              ['Computadora', 91.67, '#C38E59', '91.67 %'],
+              ['Celular', 100, '#FF8080', '100 %'],
+              ['Internet', 83.33, '#FF80C0', '83.33 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Salud', 58.82, '#80C0FF', '58.82 %'],
-              ['2° Comercio Menudeo', 22.55, '#59BFC3', '22.55 %'],
-              ['3° Preparación de Alimentos y Bebidas', 11.76, '#59C38E', '11.76 %'],
-              ['4° Otros servicios, excepto Gobierno', 1.96, '#8EC359', '1.96 %'],
-              ['5° Esparcimiento, Culturales, Deportivos', 0.98, '#C38E59', '0.98 %']
+              ['1° Salud', 58.82, '#59C38E', '58.82 %'],
+              ['2° Comercio Menudeo', 22.55, '#8EC359', '22.55 %'],
+              ['3° Preparación de Alimentos y Bebidas', 11.76, '#C38E59', '11.76 %'],
+              ['4° Otros servicios, excepto Gobierno', 1.96, '#80C0FF', '1.96 %'],
+              ['5° Manejo de Residuos', 0.98, '#59BFC3', '0.98 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

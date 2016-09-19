@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Fovissste Nueva Los Angeles de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Fovissste Nueva Los Angeles" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">13.64 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Manejo de Residuos</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Manejo de Residuos</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">9.09 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 99.55, '#FF8080', '99.55 %'],
-              ['Agua', 99.08, '#FF80C0', '99.08 %'],
-              ['Drenaje', 99.08, '#C080FF', '99.08 %'],
-              ['Televisión', 97.15, '#80C0FF', '97.15 %'],
-              ['Automóvil', 71.69, '#59BFC3', '71.69 %'],
-              ['Computadora', 64.55, '#59C38E', '64.55 %'],
-              ['Celular', 74.07, '#8EC359', '74.07 %'],
-              ['Internet', 53.07, '#C38E59', '53.07 %']
+              ['Electricidad', 99.55, '#C080FF', '99.55 %'],
+              ['Agua', 99.08, '#80C0FF', '99.08 %'],
+              ['Drenaje', 99.08, '#59BFC3', '99.08 %'],
+              ['Televisión', 97.15, '#59C38E', '97.15 %'],
+              ['Automóvil', 71.69, '#8EC359', '71.69 %'],
+              ['Computadora', 64.55, '#C38E59', '64.55 %'],
+              ['Celular', 74.07, '#FF8080', '74.07 %'],
+              ['Internet', 53.07, '#FF80C0', '53.07 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 22.73, '#80C0FF', '22.73 %'],
-              ['2° Salud', 13.64, '#59BFC3', '13.64 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.64, '#59C38E', '13.64 %'],
-              ['4° Educativos', 9.09, '#8EC359', '9.09 %'],
-              ['5° Manejo de Residuos', 9.09, '#C38E59', '9.09 %']
+              ['1° Comercio Menudeo', 22.73, '#59C38E', '22.73 %'],
+              ['2° Salud', 13.64, '#8EC359', '13.64 %'],
+              ['3° Otros servicios, excepto Gobierno', 13.64, '#C38E59', '13.64 %'],
+              ['4° Manejo de Residuos', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Industria Manufacturera', 9.09, '#59BFC3', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

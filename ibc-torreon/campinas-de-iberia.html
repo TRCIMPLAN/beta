@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Campiñas De Iberia de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Campiñas De Iberia" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Salud</td>
         <td class="derecha">6.06 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 96.97, '#59BFC3', '96.97 %'],
-              ['Computadora', 93.94, '#59C38E', '93.94 %'],
-              ['Celular', 100, '#8EC359', '100 %'],
-              ['Internet', 87.88, '#C38E59', '87.88 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 96.97, '#8EC359', '96.97 %'],
+              ['Computadora', 93.94, '#C38E59', '93.94 %'],
+              ['Celular', 100, '#FF8080', '100 %'],
+              ['Internet', 87.88, '#FF80C0', '87.88 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Preparación de Alimentos y Bebidas', 33.33, '#80C0FF', '33.33 %'],
-              ['2° Comercio Menudeo', 15.15, '#59BFC3', '15.15 %'],
-              ['3° Educativos', 12.12, '#59C38E', '12.12 %'],
-              ['4° Otros servicios, excepto Gobierno', 9.09, '#8EC359', '9.09 %'],
-              ['5° Comercio Mayoreo', 6.06, '#C38E59', '6.06 %']
+              ['1° Preparación de Alimentos y Bebidas', 33.33, '#59C38E', '33.33 %'],
+              ['2° Comercio Menudeo', 15.15, '#8EC359', '15.15 %'],
+              ['3° Educativos', 12.12, '#C38E59', '12.12 %'],
+              ['4° Otros servicios, excepto Gobierno', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Salud', 6.06, '#59BFC3', '6.06 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

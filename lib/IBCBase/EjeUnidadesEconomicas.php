@@ -23,46 +23,40 @@
 namespace IBCBase;
 
 /**
- * Clase EjeUnidadesEconomicas
+ * Clase abstract EjeUnidadesEconomicas
  */
-class EjeUnidadesEconomicas {
+abstract class EjeUnidadesEconomicas extends Eje {
 
-    protected $publicacion_ficha;   // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    // protected $publicacion_ficha;
+    // const     FECHA;
     protected $unidades_economicas; // Arreglo asociativo con datos de Unidades Económicas
     protected $preparado = FALSE;   // Bandera
-
-    /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionWeb
-     */
-    public function __construct(PublicacionWeb $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
 
     /**
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            // Tomar datos
-            $datos = $this->publicacion_ficha->datos();
-            if (isset($datos['Unidades Económicas'])) {
-                $this->unidades_economicas = $datos['Unidades Económicas'];
-            } else {
-                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Unidades Económicas.");
-            }
-            // Sin Unidades Económicas
-            if (isset($this->unidades_economicas['Total Actividades Económicas'])) {
-                if ($this->unidades_economicas['Total Actividades Económicas'] == 0) {
-                    throw new EjeExceptionSinDatos("El Total de Actividades Económicas es cero.");
-                }
-            } else {
-                throw new EjeExceptionSinDatos("El Total de Actividades Económicas no está definido.");
-            }
-            // Levantar bandera
-            $this->preparado = TRUE;
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Unidades Económicas'][parent::FECHA])) {
+            $this->unidades_economicas = $datos['Unidades Económicas'][parent::FECHA];
+        } else {
+            throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Unidades Económicas.");
+        }
+        // Sin Unidades Económicas
+        if (isset($this->unidades_economicas['Total Actividades Económicas'])) {
+            if ($this->unidades_economicas['Total Actividades Económicas'] == 0) {
+                throw new EjeExceptionSinDatos("El Total de Actividades Económicas es cero.");
+            }
+        } else {
+            throw new EjeExceptionSinDatos("El Total de Actividades Económicas no está definido.");
+        }
+        // Levantar bandera
+        $this->preparado = TRUE;
     } // preparar
 
     /**
@@ -108,6 +102,6 @@ class EjeUnidadesEconomicas {
         }
     } // formatear
 
-} // Clase EjeUnidadesEconomicas
+} // Clase abstract EjeUnidadesEconomicas
 
 ?>

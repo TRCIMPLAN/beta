@@ -53,11 +53,11 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
         // Grafica Unidades Economicas
         $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
         $this->grafica->definir_titulo("{$this->unidades_economicas['Total Actividades Económicas']} Unidades Económicas");
-        $this->grafica->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
-        $this->grafica->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
-        $this->grafica->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
-        $this->grafica->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
-        $this->grafica->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
+        $this->grafica->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#59C38E');
+        $this->grafica->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#8EC359');
+        $this->grafica->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#C38E59');
+        $this->grafica->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#80C0FF');
+        $this->grafica->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#59BFC3');
         $this->grafica->definir_eje_horizontal('Porcentaje', 0);
         $this->grafica->definir_post_nota(' %');
     } // preparar

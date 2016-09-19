@@ -23,38 +23,32 @@
 namespace IBCBase;
 
 /**
- * Clase EjeCaracteristicasEconomicas
+ * Clase abstracta EjeCaracteristicasEconomicas
  */
-class EjeCaracteristicasEconomicas {
+abstract class EjeCaracteristicasEconomicas extends Eje {
 
-    protected $publicacion_ficha;          // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    // protected $publicacion_ficha;
+    // const     FECHA;
     protected $caracteristicas_economicas; // Arreglo asociativo con datos de Carcaterísticas Económicas
     protected $preparado = FALSE;          // Bandera
-
-    /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionWeb
-     */
-    public function __construct(PublicacionWeb $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
 
     /**
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            // Tomar datos
-            $datos = $this->publicacion_ficha->datos();
-            if (isset($datos['Características Económicas'])) {
-                $this->caracteristicas_economicas = $datos['Características Económicas'];
-            } else {
-                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Características Económicas.");
-            }
-            // Levantar bandera
-            $this->preparado = TRUE;
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Características Económicas'][parent::FECHA])) {
+            $this->caracteristicas_economicas = $datos['Características Económicas'][parent::FECHA];
+        } else {
+            throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Características Económicas.");
+        }
+        // Levantar bandera
+        $this->preparado = TRUE;
     } // preparar
 
     /**
@@ -85,6 +79,6 @@ class EjeCaracteristicasEconomicas {
         }
     } // formatear
 
-} // Clase EjeCaracteristicasEconomicas
+} // Clase abstracta EjeCaracteristicasEconomicas
 
 ?>

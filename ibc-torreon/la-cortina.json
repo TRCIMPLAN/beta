@@ -2,56 +2,66 @@
   "Nombre":"La Cortina",
   "IBC":{
     "Demografía":{
-      "Población total":"1371",
-      "Porcentaje de población masculina":"47.99",
-      "Porcentaje de población femenina":"52.01",
-      "Porcentaje de población de 0 a 14 años":"35.59",
-      "Porcentaje de población de 15 a 64 años":"60.98",
-      "Porcentaje de población de 65 y más años":"2.12",
-      "Porcentaje de población no especificada":"1.31",
-      "Fecundidad promedio":"1.83",
-      "Porcentaje de población nacida en otro estado":"13.24",
-      "Porcentaje de población con discapacidad":"0.99"
+      "2010":{
+        "Población total":1371,
+        "Porcentaje de población masculina":47.99,
+        "Porcentaje de población femenina":52.01,
+        "Porcentaje de población de 0 a 14 años":35.59,
+        "Porcentaje de población de 15 a 64 años":60.98,
+        "Porcentaje de población de 65 y más años":2.12,
+        "Porcentaje de población no especificada":1.31,
+        "Fecundidad promedio":1.83,
+        "Porcentaje de población nacida en otro estado":13.24,
+        "Porcentaje de población con discapacidad":0.99
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"10.4",
-      "Grado Promedio de Escolaridad masculina":"10.7",
-      "Grado Promedio de Escolaridad femenina":"10.14"
+      "2010":{
+        "Grado Promedio de Escolaridad":10.4,
+        "Grado Promedio de Escolaridad masculina":10.7,
+        "Grado Promedio de Escolaridad femenina":10.14
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"54.74",
-      "Población Económicamente Activa masculina":"63.01",
-      "Población Económicamente Activa femenina":"36.99",
-      "Población Ocupada":"91.25",
-      "Población Ocupada masculina":"63.02",
-      "Población Ocupada femenina":"36.98",
-      "Población Desocupada":"8.75",
-      "Derechohabiencia":"72.43"
+      "2010":{
+        "Población Económicamente Activa":54.74,
+        "Población Económicamente Activa masculina":63.01,
+        "Población Económicamente Activa femenina":36.99,
+        "Población Ocupada":91.25,
+        "Población Ocupada masculina":63.02,
+        "Población Ocupada femenina":36.98,
+        "Población Desocupada":8.75,
+        "Derechohabiencia":72.43
+      }
     },
     "Viviendas":{
-      "Hogares":"339",
-      "Hogares Jefatura masculina":"81.42",
-      "Hogares Jefatura femenina":"18.58",
-      "Ocupación por Vivienda":"4.04",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"99.41",
-      "Viviendas con Televisión":"100",
-      "Viviendas con Automóvil":"55.43",
-      "Viviendas con Computadora":"39.56",
-      "Viviendas con Celular":"87.32",
-      "Viviendas con Internet":"24.65"
+      "2010":{
+        "Hogares":339,
+        "Hogares Jefatura masculina":81.42,
+        "Hogares Jefatura femenina":18.58,
+        "Ocupación por Vivienda":4.04,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":99.41,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":55.43,
+        "Viviendas con Computadora":39.56,
+        "Viviendas con Celular":87.32,
+        "Viviendas con Internet":24.65
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"20",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"60",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Educativos",
-      "Tercera actividad porcentaje":"15",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Cuarta actividad porcentaje":"5"
+      "2010":{
+        "Total Actividades Económicas":20,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":60,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Educativos",
+        "Tercera actividad porcentaje":15,
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad porcentaje":5
+      }
     }
   }
 }]

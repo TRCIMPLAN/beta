@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Villa San Isidro de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:03">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Villa San Isidro" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">6.00 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 95, '#59BFC3', '95 %'],
-              ['Computadora', 83.75, '#59C38E', '83.75 %'],
-              ['Celular', 86.25, '#8EC359', '86.25 %'],
-              ['Internet', 81.25, '#C38E59', '81.25 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 95, '#8EC359', '95 %'],
+              ['Computadora', 83.75, '#C38E59', '83.75 %'],
+              ['Celular', 86.25, '#FF8080', '86.25 %'],
+              ['Internet', 81.25, '#FF80C0', '81.25 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 28, '#80C0FF', '28 %'],
-              ['2° Otros servicios, excepto Gobierno', 28, '#59BFC3', '28 %'],
-              ['3° Profesionales, Científicos, Técnicos', 12, '#59C38E', '12 %'],
-              ['4° Preparación de Alimentos y Bebidas', 10, '#8EC359', '10 %'],
-              ['5° Comercio Mayoreo', 6, '#C38E59', '6 %']
+              ['1° Comercio Menudeo', 28, '#59C38E', '28 %'],
+              ['2° Otros servicios, excepto Gobierno', 28, '#8EC359', '28 %'],
+              ['3° Profesionales, Científicos, Técnicos', 12, '#C38E59', '12 %'],
+              ['4° Preparación de Alimentos y Bebidas', 10, '#80C0FF', '10 %'],
+              ['5° Industria Manufacturera', 6, '#59BFC3', '6 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

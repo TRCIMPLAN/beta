@@ -2,56 +2,66 @@
   "Nombre":"San Agustin 2A. Etapa",
   "IBC":{
     "Demografía":{
-      "Población total":"351",
-      "Porcentaje de población masculina":"50.14",
-      "Porcentaje de población femenina":"49.86",
-      "Porcentaje de población de 0 a 14 años":"35.9",
-      "Porcentaje de población de 15 a 64 años":"61.82",
-      "Porcentaje de población de 65 y más años":"2.28",
-      "Porcentaje de población no especificada":"0",
-      "Fecundidad promedio":"1.98",
-      "Porcentaje de población nacida en otro estado":"20.51",
-      "Porcentaje de población con discapacidad":"7.11"
+      "2010":{
+        "Población total":351,
+        "Porcentaje de población masculina":50.14,
+        "Porcentaje de población femenina":49.86,
+        "Porcentaje de población de 0 a 14 años":35.9,
+        "Porcentaje de población de 15 a 64 años":61.82,
+        "Porcentaje de población de 65 y más años":2.28,
+        "Porcentaje de población no especificada":0,
+        "Fecundidad promedio":1.98,
+        "Porcentaje de población nacida en otro estado":20.51,
+        "Porcentaje de población con discapacidad":7.11
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.28",
-      "Grado Promedio de Escolaridad masculina":"9.39",
-      "Grado Promedio de Escolaridad femenina":"9.16"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.28,
+        "Grado Promedio de Escolaridad masculina":9.39,
+        "Grado Promedio de Escolaridad femenina":9.16
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"64.29",
-      "Población Económicamente Activa masculina":"59.88",
-      "Población Económicamente Activa femenina":"40.12",
-      "Población Ocupada":"88.42",
-      "Población Ocupada masculina":"57.93",
-      "Población Ocupada femenina":"42.07",
-      "Población Desocupada":"11.58",
-      "Derechohabiencia":"55.56"
+      "2010":{
+        "Población Económicamente Activa":64.29,
+        "Población Económicamente Activa masculina":59.88,
+        "Población Económicamente Activa femenina":40.12,
+        "Población Ocupada":88.42,
+        "Población Ocupada masculina":57.93,
+        "Población Ocupada femenina":42.07,
+        "Población Desocupada":11.58,
+        "Derechohabiencia":55.56
+      }
     },
     "Viviendas":{
-      "Hogares":"102",
-      "Hogares Jefatura masculina":"63.73",
-      "Hogares Jefatura femenina":"36.27",
-      "Ocupación por Vivienda":"3.44",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"90.2",
-      "Viviendas con Televisión":"97.06",
-      "Viviendas con Automóvil":"53.88",
-      "Viviendas con Computadora":"25.82",
-      "Viviendas con Celular":"86.27",
-      "Viviendas con Internet":"20.49"
+      "2010":{
+        "Hogares":102,
+        "Hogares Jefatura masculina":63.73,
+        "Hogares Jefatura femenina":36.27,
+        "Ocupación por Vivienda":3.44,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":90.2,
+        "Viviendas con Televisión":97.06,
+        "Viviendas con Automóvil":53.88,
+        "Viviendas con Computadora":25.82,
+        "Viviendas con Celular":86.27,
+        "Viviendas con Internet":20.49
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"6",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"16.67",
-      "Tercera actividad nombre":"Construcción",
-      "Tercera actividad porcentaje":"16.67",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"16.67"
+      "2010":{
+        "Total Actividades Económicas":6,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":50,
+        "Segunda actividad nombre":"Construcción",
+        "Segunda actividad porcentaje":16.67,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":16.67,
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad porcentaje":16.67
+      }
     }
   }
 }]

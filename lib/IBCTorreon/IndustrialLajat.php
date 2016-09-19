@@ -34,7 +34,7 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Industrial Lajat';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:32:59';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'industrial-lajat';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,23 +58,29 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 0
+                '2010' => array(
+                    'Población total' => 0
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 16,
-                'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => 68.75,
-                'Segunda actividad nombre' => 'Comercio Menudeo',
-                'Segunda actividad porcentaje' => 12.50,
-                'Tercera actividad nombre' => 'Manejo de Residuos',
-                'Tercera actividad porcentaje' => 6.25,
-                'Cuarta actividad nombre' => 'Construcción',
-                'Cuarta actividad porcentaje' => 6.25,
-                'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Quinta actividad porcentaje' => 6.25
+                '2010' => array(
+                    'Total Actividades Económicas' => 16,
+                    'Primer actividad nombre' => 'Industria Manufacturera',
+                    'Primer actividad porcentaje' => 68.75,
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad porcentaje' => 12.50,
+                    'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Tercera actividad porcentaje' => 6.25,
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad porcentaje' => 6.25,
+                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad porcentaje' => 6.25
+                )
             )
         );
     } // datos

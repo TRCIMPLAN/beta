@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ampliacion San Ignacio de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Ampliacion San Ignacio" src="../imagenes/imagen.jpg">
@@ -417,15 +417,15 @@
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
-        <td>3° Manejo de Residuos</td>
+        <td>3° Transportes, Correo, Almacenamiento</td>
         <td class="derecha">8.33 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Manejo de Residuos</td>
         <td class="derecha">8.33 %</td>
       </tr>
       <tr>
-        <td>5° Transportes, Correo, Almacenamiento</td>
+        <td>5° Minería</td>
         <td class="derecha">8.33 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 61.43, '#59BFC3', '61.43 %'],
-              ['Computadora', 40, '#59C38E', '40 %'],
-              ['Celular', 87.14, '#8EC359', '87.14 %'],
-              ['Internet', 24.29, '#C38E59', '24.29 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 61.43, '#8EC359', '61.43 %'],
+              ['Computadora', 40, '#C38E59', '40 %'],
+              ['Celular', 87.14, '#FF8080', '87.14 %'],
+              ['Internet', 24.29, '#FF80C0', '24.29 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Mayoreo', 33.33, '#80C0FF', '33.33 %'],
-              ['2° Industria Manufacturera', 25, '#59BFC3', '25 %'],
-              ['3° Manejo de Residuos', 8.33, '#59C38E', '8.33 %'],
-              ['4° Preparación de Alimentos y Bebidas', 8.33, '#8EC359', '8.33 %'],
-              ['5° Transportes, Correo, Almacenamiento', 8.33, '#C38E59', '8.33 %']
+              ['1° Comercio Mayoreo', 33.33, '#59C38E', '33.33 %'],
+              ['2° Industria Manufacturera', 25, '#8EC359', '25 %'],
+              ['3° Transportes, Correo, Almacenamiento', 8.33, '#C38E59', '8.33 %'],
+              ['4° Manejo de Residuos', 8.33, '#80C0FF', '8.33 %'],
+              ['5° Minería', 8.33, '#59BFC3', '8.33 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

@@ -2,58 +2,68 @@
   "Nombre":"Ex-Hacienda La Perla",
   "IBC":{
     "Demografía":{
-      "Población total":"1268",
-      "Porcentaje de población masculina":"51.1",
-      "Porcentaje de población femenina":"48.9",
-      "Porcentaje de población de 0 a 14 años":"40.22",
-      "Porcentaje de población de 15 a 64 años":"57.81",
-      "Porcentaje de población de 65 y más años":"0.32",
-      "Porcentaje de población no especificada":"1.65",
-      "Fecundidad promedio":"1.91",
-      "Porcentaje de población nacida en otro estado":"18.3",
-      "Porcentaje de población con discapacidad":"1.07"
+      "2010":{
+        "Población total":1268,
+        "Porcentaje de población masculina":51.1,
+        "Porcentaje de población femenina":48.9,
+        "Porcentaje de población de 0 a 14 años":40.22,
+        "Porcentaje de población de 15 a 64 años":57.81,
+        "Porcentaje de población de 65 y más años":0.32,
+        "Porcentaje de población no especificada":1.65,
+        "Fecundidad promedio":1.91,
+        "Porcentaje de población nacida en otro estado":18.3,
+        "Porcentaje de población con discapacidad":1.07
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"8.72",
-      "Grado Promedio de Escolaridad masculina":"8.82",
-      "Grado Promedio de Escolaridad femenina":"8.62"
+      "2010":{
+        "Grado Promedio de Escolaridad":8.72,
+        "Grado Promedio de Escolaridad masculina":8.82,
+        "Grado Promedio de Escolaridad femenina":8.62
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"59.34",
-      "Población Económicamente Activa masculina":"70.39",
-      "Población Económicamente Activa femenina":"29.61",
-      "Población Ocupada":"89.33",
-      "Población Ocupada masculina":"70.87",
-      "Población Ocupada femenina":"29.13",
-      "Población Desocupada":"10.67",
-      "Derechohabiencia":"67.11"
+      "2010":{
+        "Población Económicamente Activa":59.34,
+        "Población Económicamente Activa masculina":70.39,
+        "Población Económicamente Activa femenina":29.61,
+        "Población Ocupada":89.33,
+        "Población Ocupada masculina":70.87,
+        "Población Ocupada femenina":29.13,
+        "Población Desocupada":10.67,
+        "Derechohabiencia":67.11
+      }
     },
     "Viviendas":{
-      "Hogares":"329",
-      "Hogares Jefatura masculina":"91.49",
-      "Hogares Jefatura femenina":"8.51",
-      "Ocupación por Vivienda":"3.85",
-      "Viviendas con Electricidad":"99.39",
-      "Viviendas con Agua":"99.39",
-      "Viviendas con Drenaje":"99.7",
-      "Viviendas con Televisión":"99.09",
-      "Viviendas con Automóvil":"40.12",
-      "Viviendas con Computadora":"23.09",
-      "Viviendas con Celular":"85.41",
-      "Viviendas con Internet":"16"
+      "2010":{
+        "Hogares":329,
+        "Hogares Jefatura masculina":91.49,
+        "Hogares Jefatura femenina":8.51,
+        "Ocupación por Vivienda":3.85,
+        "Viviendas con Electricidad":99.39,
+        "Viviendas con Agua":99.39,
+        "Viviendas con Drenaje":99.7,
+        "Viviendas con Televisión":99.09,
+        "Viviendas con Automóvil":40.12,
+        "Viviendas con Computadora":23.09,
+        "Viviendas con Celular":85.41,
+        "Viviendas con Internet":16
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"20",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"55",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"30",
-      "Tercera actividad nombre":"Salud",
-      "Tercera actividad porcentaje":"5",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"5",
-      "Quinta actividad nombre":"Industria Manufacturera",
-      "Quinta actividad porcentaje":"5"
+      "2010":{
+        "Total Actividades Económicas":20,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":55,
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":30,
+        "Tercera actividad nombre":"Salud",
+        "Tercera actividad porcentaje":5,
+        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad porcentaje":5,
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Quinta actividad porcentaje":5
+      }
     }
   }
 }]

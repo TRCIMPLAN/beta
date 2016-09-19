@@ -34,7 +34,7 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Aviacion San Ignacio 2A. Etapa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:32:58';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion-san-ignacio-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,48 +58,58 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 302,
-                'Porcentaje de población masculina' => 52.98,
-                'Porcentaje de población femenina' => 47.02,
-                'Porcentaje de población de 0 a 14 años' => 40.07,
-                'Porcentaje de población de 15 a 64 años' => 58.61,
-                'Porcentaje de población de 65 y más años' => 0.33,
-                'Porcentaje de población no especificada' => 0.99,
-                'Fecundidad promedio' => 1.70,
-                'Porcentaje de población nacida en otro estado' => 13.91,
-                'Porcentaje de población con discapacidad' => 1.30
+                '2010' => array(
+                    'Población total' => 302,
+                    'Porcentaje de población masculina' => 52.98,
+                    'Porcentaje de población femenina' => 47.02,
+                    'Porcentaje de población de 0 a 14 años' => 40.07,
+                    'Porcentaje de población de 15 a 64 años' => 58.61,
+                    'Porcentaje de población de 65 y más años' => 0.33,
+                    'Porcentaje de población no especificada' => 0.99,
+                    'Fecundidad promedio' => 1.70,
+                    'Porcentaje de población nacida en otro estado' => 13.91,
+                    'Porcentaje de población con discapacidad' => 1.30
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 11.72,
-                'Grado Promedio de Escolaridad masculina' => 12.04,
-                'Grado Promedio de Escolaridad femenina' => 11.43
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 11.72,
+                    'Grado Promedio de Escolaridad masculina' => 12.04,
+                    'Grado Promedio de Escolaridad femenina' => 11.43
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 54.04,
-                'Población Económicamente Activa masculina' => 69.16,
-                'Población Económicamente Activa femenina' => 30.84,
-                'Población Ocupada' => 95.11,
-                'Población Ocupada masculina' => 67.65,
-                'Población Ocupada femenina' => 32.35,
-                'Población Desocupada' => 4.89,
-                'Derechohabiencia' => 77.48
+                '2010' => array(
+                    'Población Económicamente Activa' => 54.04,
+                    'Población Económicamente Activa masculina' => 69.16,
+                    'Población Económicamente Activa femenina' => 30.84,
+                    'Población Ocupada' => 95.11,
+                    'Población Ocupada masculina' => 67.65,
+                    'Población Ocupada femenina' => 32.35,
+                    'Población Desocupada' => 4.89,
+                    'Derechohabiencia' => 77.48
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 80,
-                'Hogares Jefatura masculina' => 80.00,
-                'Hogares Jefatura femenina' => 20.00,
-                'Ocupación por Vivienda' => 3.78,
-                'Viviendas con Electricidad' => 100.00,
-                'Viviendas con Agua' => 100.00,
-                'Viviendas con Drenaje' => 100.00,
-                'Viviendas con Televisión' => 100.00,
-                'Viviendas con Automóvil' => 72.50,
-                'Viviendas con Computadora' => 54.29,
-                'Viviendas con Celular' => 91.25,
-                'Viviendas con Internet' => 33.75
+                '2010' => array(
+                    'Hogares' => 80,
+                    'Hogares Jefatura masculina' => 80.00,
+                    'Hogares Jefatura femenina' => 20.00,
+                    'Ocupación por Vivienda' => 3.78,
+                    'Viviendas con Electricidad' => 100.00,
+                    'Viviendas con Agua' => 100.00,
+                    'Viviendas con Drenaje' => 100.00,
+                    'Viviendas con Televisión' => 100.00,
+                    'Viviendas con Automóvil' => 72.50,
+                    'Viviendas con Computadora' => 54.29,
+                    'Viviendas con Celular' => 91.25,
+                    'Viviendas con Internet' => 33.75
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 0
+                '2010' => array(
+                    'Total Actividades Económicas' => 0
+                )
             )
         );
     } // datos

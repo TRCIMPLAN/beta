@@ -34,7 +34,7 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Isidro';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:01';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,58 +58,68 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 887,
-                'Porcentaje de población masculina' => 48.25,
-                'Porcentaje de población femenina' => 51.75,
-                'Porcentaje de población de 0 a 14 años' => 28.48,
-                'Porcentaje de población de 15 a 64 años' => 68.25,
-                'Porcentaje de población de 65 y más años' => 2.94,
-                'Porcentaje de población no especificada' => 0.33,
-                'Fecundidad promedio' => 1.51,
-                'Porcentaje de población nacida en otro estado' => 23.60,
-                'Porcentaje de población con discapacidad' => 1.50
+                '2010' => array(
+                    'Población total' => 887,
+                    'Porcentaje de población masculina' => 48.25,
+                    'Porcentaje de población femenina' => 51.75,
+                    'Porcentaje de población de 0 a 14 años' => 28.48,
+                    'Porcentaje de población de 15 a 64 años' => 68.25,
+                    'Porcentaje de población de 65 y más años' => 2.94,
+                    'Porcentaje de población no especificada' => 0.33,
+                    'Fecundidad promedio' => 1.51,
+                    'Porcentaje de población nacida en otro estado' => 23.60,
+                    'Porcentaje de población con discapacidad' => 1.50
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 14.43,
-                'Grado Promedio de Escolaridad masculina' => 14.91,
-                'Grado Promedio de Escolaridad femenina' => 14.00
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 14.43,
+                    'Grado Promedio de Escolaridad masculina' => 14.91,
+                    'Grado Promedio de Escolaridad femenina' => 14.00
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 53.72,
-                'Población Económicamente Activa masculina' => 61.42,
-                'Población Económicamente Activa femenina' => 38.58,
-                'Población Ocupada' => 97.21,
-                'Población Ocupada masculina' => 60.62,
-                'Población Ocupada femenina' => 39.38,
-                'Población Desocupada' => 2.79,
-                'Derechohabiencia' => 72.09
+                '2010' => array(
+                    'Población Económicamente Activa' => 53.72,
+                    'Población Económicamente Activa masculina' => 61.42,
+                    'Población Económicamente Activa femenina' => 38.58,
+                    'Población Ocupada' => 97.21,
+                    'Población Ocupada masculina' => 60.62,
+                    'Población Ocupada femenina' => 39.38,
+                    'Población Desocupada' => 2.79,
+                    'Derechohabiencia' => 72.09
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 243,
-                'Hogares Jefatura masculina' => 85.19,
-                'Hogares Jefatura femenina' => 14.81,
-                'Ocupación por Vivienda' => 3.65,
-                'Viviendas con Electricidad' => 100.00,
-                'Viviendas con Agua' => 99.39,
-                'Viviendas con Drenaje' => 100.00,
-                'Viviendas con Televisión' => 99.39,
-                'Viviendas con Automóvil' => 99.78,
-                'Viviendas con Computadora' => 89.46,
-                'Viviendas con Celular' => 96.08,
-                'Viviendas con Internet' => 85.41
+                '2010' => array(
+                    'Hogares' => 243,
+                    'Hogares Jefatura masculina' => 85.19,
+                    'Hogares Jefatura femenina' => 14.81,
+                    'Ocupación por Vivienda' => 3.65,
+                    'Viviendas con Electricidad' => 100.00,
+                    'Viviendas con Agua' => 99.39,
+                    'Viviendas con Drenaje' => 100.00,
+                    'Viviendas con Televisión' => 99.39,
+                    'Viviendas con Automóvil' => 99.78,
+                    'Viviendas con Computadora' => 89.46,
+                    'Viviendas con Celular' => 96.08,
+                    'Viviendas con Internet' => 85.41
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 27,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 25.93,
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Segunda actividad porcentaje' => 18.52,
-                'Tercera actividad nombre' => 'Financieros y Seguros',
-                'Tercera actividad porcentaje' => 11.11,
-                'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                'Cuarta actividad porcentaje' => 11.11,
-                'Quinta actividad nombre' => 'Manejo de Residuos',
-                'Quinta actividad porcentaje' => 7.41
+                '2010' => array(
+                    'Total Actividades Económicas' => 27,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 25.93,
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad porcentaje' => 18.52,
+                    'Tercera actividad nombre' => 'Financieros y Seguros',
+                    'Tercera actividad porcentaje' => 11.11,
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad porcentaje' => 11.11,
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad porcentaje' => 7.41
+                )
             )
         );
     } // datos

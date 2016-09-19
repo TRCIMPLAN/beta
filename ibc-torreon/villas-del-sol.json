@@ -2,54 +2,64 @@
   "Nombre":"Villas Del Sol",
   "IBC":{
     "Demografía":{
-      "Población total":"1121",
-      "Porcentaje de población masculina":"49.33",
-      "Porcentaje de población femenina":"50.67",
-      "Porcentaje de población de 0 a 14 años":"29.97",
-      "Porcentaje de población de 15 a 64 años":"66.64",
-      "Porcentaje de población de 65 y más años":"2.05",
-      "Porcentaje de población no especificada":"1.34",
-      "Fecundidad promedio":"1.45",
-      "Porcentaje de población nacida en otro estado":"21.86",
-      "Porcentaje de población con discapacidad":"0.63"
+      "2010":{
+        "Población total":1121,
+        "Porcentaje de población masculina":49.33,
+        "Porcentaje de población femenina":50.67,
+        "Porcentaje de población de 0 a 14 años":29.97,
+        "Porcentaje de población de 15 a 64 años":66.64,
+        "Porcentaje de población de 65 y más años":2.05,
+        "Porcentaje de población no especificada":1.34,
+        "Fecundidad promedio":1.45,
+        "Porcentaje de población nacida en otro estado":21.86,
+        "Porcentaje de población con discapacidad":0.63
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"14.61",
-      "Grado Promedio de Escolaridad masculina":"14.92",
-      "Grado Promedio de Escolaridad femenina":"14.33"
+      "2010":{
+        "Grado Promedio de Escolaridad":14.61,
+        "Grado Promedio de Escolaridad masculina":14.92,
+        "Grado Promedio de Escolaridad femenina":14.33
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"62.61",
-      "Población Económicamente Activa masculina":"58.73",
-      "Población Económicamente Activa femenina":"41.27",
-      "Población Ocupada":"95.23",
-      "Población Ocupada masculina":"58.84",
-      "Población Ocupada femenina":"41.16",
-      "Población Desocupada":"4.77",
-      "Derechohabiencia":"88.4"
+      "2010":{
+        "Población Económicamente Activa":62.61,
+        "Población Económicamente Activa masculina":58.73,
+        "Población Económicamente Activa femenina":41.27,
+        "Población Ocupada":95.23,
+        "Población Ocupada masculina":58.84,
+        "Población Ocupada femenina":41.16,
+        "Población Desocupada":4.77,
+        "Derechohabiencia":88.4
+      }
     },
     "Viviendas":{
-      "Hogares":"327",
-      "Hogares Jefatura masculina":"86.54",
-      "Hogares Jefatura femenina":"13.46",
-      "Ocupación por Vivienda":"3.43",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"99.69",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"100",
-      "Viviendas con Automóvil":"95.11",
-      "Viviendas con Computadora":"77.98",
-      "Viviendas con Celular":"98.17",
-      "Viviendas con Internet":"55.42"
+      "2010":{
+        "Hogares":327,
+        "Hogares Jefatura masculina":86.54,
+        "Hogares Jefatura femenina":13.46,
+        "Ocupación por Vivienda":3.43,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":99.69,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":95.11,
+        "Viviendas con Computadora":77.98,
+        "Viviendas con Celular":98.17,
+        "Viviendas con Internet":55.42
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"6",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"50",
-      "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
-      "Segunda actividad porcentaje":"33.33",
-      "Tercera actividad nombre":"Inmobiliarios",
-      "Tercera actividad porcentaje":"16.67"
+      "2010":{
+        "Total Actividades Económicas":6,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":50,
+        "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Segunda actividad porcentaje":33.33,
+        "Tercera actividad nombre":"Inmobiliarios",
+        "Tercera actividad porcentaje":16.67
+      }
     }
   }
 }]

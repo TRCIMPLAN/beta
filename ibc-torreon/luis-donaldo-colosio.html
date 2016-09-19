@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Luis Donaldo Colosio de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:00">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Luis Donaldo Colosio" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">6.12 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">4.08 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 97.82, '#FF8080', '97.82 %'],
-              ['Agua', 77.65, '#FF80C0', '77.65 %'],
-              ['Drenaje', 81.6, '#C080FF', '81.6 %'],
-              ['Televisión', 94.28, '#80C0FF', '94.28 %'],
-              ['Automóvil', 33.99, '#59BFC3', '33.99 %'],
-              ['Computadora', 20.06, '#59C38E', '20.06 %'],
-              ['Celular', 56.39, '#8EC359', '56.39 %'],
-              ['Internet', 3.23, '#C38E59', '3.23 %']
+              ['Electricidad', 97.82, '#C080FF', '97.82 %'],
+              ['Agua', 77.65, '#80C0FF', '77.65 %'],
+              ['Drenaje', 81.6, '#59BFC3', '81.6 %'],
+              ['Televisión', 94.28, '#59C38E', '94.28 %'],
+              ['Automóvil', 33.99, '#8EC359', '33.99 %'],
+              ['Computadora', 20.06, '#C38E59', '20.06 %'],
+              ['Celular', 56.39, '#FF8080', '56.39 %'],
+              ['Internet', 3.23, '#FF80C0', '3.23 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 53.06, '#80C0FF', '53.06 %'],
-              ['2° Otros servicios, excepto Gobierno', 16.33, '#59BFC3', '16.33 %'],
-              ['3° Preparación de Alimentos y Bebidas', 8.16, '#59C38E', '8.16 %'],
-              ['4° Salud', 6.12, '#8EC359', '6.12 %'],
-              ['5° Comercio Mayoreo', 4.08, '#C38E59', '4.08 %']
+              ['1° Comercio Menudeo', 53.06, '#59C38E', '53.06 %'],
+              ['2° Otros servicios, excepto Gobierno', 16.33, '#8EC359', '16.33 %'],
+              ['3° Preparación de Alimentos y Bebidas', 8.16, '#C38E59', '8.16 %'],
+              ['4° Salud', 6.12, '#80C0FF', '6.12 %'],
+              ['5° Industria Manufacturera', 4.08, '#59BFC3', '4.08 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

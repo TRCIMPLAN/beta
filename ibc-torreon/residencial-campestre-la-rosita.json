@@ -2,58 +2,68 @@
   "Nombre":"Residencial Campestre La Rosita",
   "IBC":{
     "Demografía":{
-      "Población total":"3367",
-      "Porcentaje de población masculina":"48.5",
-      "Porcentaje de población femenina":"51.5",
-      "Porcentaje de población de 0 a 14 años":"15.67",
-      "Porcentaje de población de 15 a 64 años":"66.17",
-      "Porcentaje de población de 65 y más años":"10.05",
-      "Porcentaje de población no especificada":"8.11",
-      "Fecundidad promedio":"1.82",
-      "Porcentaje de población nacida en otro estado":"18.76",
-      "Porcentaje de población con discapacidad":"1.26"
+      "2010":{
+        "Población total":3367,
+        "Porcentaje de población masculina":48.5,
+        "Porcentaje de población femenina":51.5,
+        "Porcentaje de población de 0 a 14 años":15.67,
+        "Porcentaje de población de 15 a 64 años":66.17,
+        "Porcentaje de población de 65 y más años":10.05,
+        "Porcentaje de población no especificada":8.11,
+        "Fecundidad promedio":1.82,
+        "Porcentaje de población nacida en otro estado":18.76,
+        "Porcentaje de población con discapacidad":1.26
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"14.58",
-      "Grado Promedio de Escolaridad masculina":"15.25",
-      "Grado Promedio de Escolaridad femenina":"13.98"
+      "2010":{
+        "Grado Promedio de Escolaridad":14.58,
+        "Grado Promedio de Escolaridad masculina":15.25,
+        "Grado Promedio de Escolaridad femenina":13.98
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"54.36",
-      "Población Económicamente Activa masculina":"61.86",
-      "Población Económicamente Activa femenina":"38.14",
-      "Población Ocupada":"98.4",
-      "Población Ocupada masculina":"61.71",
-      "Población Ocupada femenina":"38.29",
-      "Población Desocupada":"1.6",
-      "Derechohabiencia":"74.72"
+      "2010":{
+        "Población Económicamente Activa":54.36,
+        "Población Económicamente Activa masculina":61.86,
+        "Población Económicamente Activa femenina":38.14,
+        "Población Ocupada":98.4,
+        "Población Ocupada masculina":61.71,
+        "Población Ocupada femenina":38.29,
+        "Población Desocupada":1.6,
+        "Derechohabiencia":74.72
+      }
     },
     "Viviendas":{
-      "Hogares":"848",
-      "Hogares Jefatura masculina":"82.36",
-      "Hogares Jefatura femenina":"17.64",
-      "Ocupación por Vivienda":"3.97",
-      "Viviendas con Electricidad":"99.66",
-      "Viviendas con Agua":"98.4",
-      "Viviendas con Drenaje":"98.65",
-      "Viviendas con Televisión":"97.67",
-      "Viviendas con Automóvil":"95.97",
-      "Viviendas con Computadora":"91.09",
-      "Viviendas con Celular":"95.04",
-      "Viviendas con Internet":"88.65"
+      "2010":{
+        "Hogares":848,
+        "Hogares Jefatura masculina":82.36,
+        "Hogares Jefatura femenina":17.64,
+        "Ocupación por Vivienda":3.97,
+        "Viviendas con Electricidad":99.66,
+        "Viviendas con Agua":98.4,
+        "Viviendas con Drenaje":98.65,
+        "Viviendas con Televisión":97.67,
+        "Viviendas con Automóvil":95.97,
+        "Viviendas con Computadora":91.09,
+        "Viviendas con Celular":95.04,
+        "Viviendas con Internet":88.65
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"433",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"31.18",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"16.4",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"15.7",
-      "Cuarta actividad nombre":"Financieros y Seguros",
-      "Cuarta actividad porcentaje":"5.54",
-      "Quinta actividad nombre":"Salud",
-      "Quinta actividad porcentaje":"4.62"
+      "2010":{
+        "Total Actividades Económicas":433,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":31.18,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":16.4,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":15.7,
+        "Cuarta actividad nombre":"Financieros y Seguros",
+        "Cuarta actividad porcentaje":5.54,
+        "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
+        "Quinta actividad porcentaje":4.62
+      }
     }
   }
 }]

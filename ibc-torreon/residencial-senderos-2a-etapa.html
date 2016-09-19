@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Senderos 2A. Etapa de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Senderos 2A. Etapa" src="../imagenes/imagen.jpg">
@@ -417,11 +417,11 @@
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Construcción</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>4° Construcción</td>
+        <td>4° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 99.51, '#C080FF', '99.51 %'],
-              ['Televisión', 99.51, '#80C0FF', '99.51 %'],
-              ['Automóvil', 99.01, '#59BFC3', '99.01 %'],
-              ['Computadora', 84.93, '#59C38E', '84.93 %'],
-              ['Celular', 98.52, '#8EC359', '98.52 %'],
-              ['Internet', 74.87, '#C38E59', '74.87 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 99.51, '#59BFC3', '99.51 %'],
+              ['Televisión', 99.51, '#59C38E', '99.51 %'],
+              ['Automóvil', 99.01, '#8EC359', '99.01 %'],
+              ['Computadora', 84.93, '#C38E59', '84.93 %'],
+              ['Celular', 98.52, '#FF8080', '98.52 %'],
+              ['Internet', 74.87, '#FF80C0', '74.87 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,10 +796,10 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 40, '#80C0FF', '40 %'],
-              ['2° Comercio Mayoreo', 20, '#59BFC3', '20 %'],
-              ['3° Preparación de Alimentos y Bebidas', 20, '#59C38E', '20 %'],
-              ['4° Construcción', 20, '#8EC359', '20 %']
+              ['1° Comercio Menudeo', 40, '#59C38E', '40 %'],
+              ['2° Comercio Mayoreo', 20, '#8EC359', '20 %'],
+              ['3° Construcción', 20, '#C38E59', '20 %'],
+              ['4° Preparación de Alimentos y Bebidas', 20, '#80C0FF', '20 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

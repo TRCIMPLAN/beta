@@ -2,21 +2,27 @@
   "Nombre":"Residencial Los Cedros",
   "IBC":{
     "Demografía":{
-      "Población total":"0"
+      "2010":{
+        "Población total":0
+      }
     },
     "Viviendas":{
-      "Hogares":"0"
+      "2010":{
+        "Hogares":0
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"5",
-      "Primer actividad nombre":"Educativos",
-      "Primer actividad porcentaje":"40",
-      "Segunda actividad nombre":"Manejo de Residuos",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Financieros y Seguros",
-      "Tercera actividad porcentaje":"20",
-      "Cuarta actividad nombre":"Información Medios Masivos",
-      "Cuarta actividad porcentaje":"20"
+      "2010":{
+        "Total Actividades Económicas":5,
+        "Primer actividad nombre":"Educativos",
+        "Primer actividad porcentaje":40,
+        "Segunda actividad nombre":"Manejo de Residuos",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Información Medios Masivos",
+        "Tercera actividad porcentaje":20,
+        "Cuarta actividad nombre":"Financieros y Seguros",
+        "Cuarta actividad porcentaje":20
+      }
     }
   }
 }]

@@ -2,58 +2,68 @@
   "Nombre":"Compresora",
   "IBC":{
     "Demografía":{
-      "Población total":"1144",
-      "Porcentaje de población masculina":"49.06",
-      "Porcentaje de población femenina":"50.94",
-      "Porcentaje de población de 0 a 14 años":"23.9",
-      "Porcentaje de población de 15 a 64 años":"66.62",
-      "Porcentaje de población de 65 y más años":"9.48",
-      "Porcentaje de población no especificada":"0",
-      "Fecundidad promedio":"2.53",
-      "Porcentaje de población nacida en otro estado":"15.43",
-      "Porcentaje de población con discapacidad":"7.17"
+      "2010":{
+        "Población total":1144,
+        "Porcentaje de población masculina":49.06,
+        "Porcentaje de población femenina":50.94,
+        "Porcentaje de población de 0 a 14 años":23.9,
+        "Porcentaje de población de 15 a 64 años":66.62,
+        "Porcentaje de población de 65 y más años":9.48,
+        "Porcentaje de población no especificada":0,
+        "Fecundidad promedio":2.53,
+        "Porcentaje de población nacida en otro estado":15.43,
+        "Porcentaje de población con discapacidad":7.17
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.07",
-      "Grado Promedio de Escolaridad masculina":"9.34",
-      "Grado Promedio de Escolaridad femenina":"8.81"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.07,
+        "Grado Promedio de Escolaridad masculina":9.34,
+        "Grado Promedio de Escolaridad femenina":8.81
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"50.4",
-      "Población Económicamente Activa masculina":"66.87",
-      "Población Económicamente Activa femenina":"33.13",
-      "Población Ocupada":"89.78",
-      "Población Ocupada masculina":"65.15",
-      "Población Ocupada femenina":"34.85",
-      "Población Desocupada":"10.22",
-      "Derechohabiencia":"66.33"
+      "2010":{
+        "Población Económicamente Activa":50.4,
+        "Población Económicamente Activa masculina":66.87,
+        "Población Económicamente Activa femenina":33.13,
+        "Población Ocupada":89.78,
+        "Población Ocupada masculina":65.15,
+        "Población Ocupada femenina":34.85,
+        "Población Desocupada":10.22,
+        "Derechohabiencia":66.33
+      }
     },
     "Viviendas":{
-      "Hogares":"288",
-      "Hogares Jefatura masculina":"64.7",
-      "Hogares Jefatura femenina":"35.3",
-      "Ocupación por Vivienda":"3.97",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"98.71",
-      "Viviendas con Automóvil":"26.77",
-      "Viviendas con Computadora":"21.2",
-      "Viviendas con Celular":"61.36",
-      "Viviendas con Internet":"12.29"
+      "2010":{
+        "Hogares":288,
+        "Hogares Jefatura masculina":64.7,
+        "Hogares Jefatura femenina":35.3,
+        "Ocupación por Vivienda":3.97,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":98.71,
+        "Viviendas con Automóvil":26.77,
+        "Viviendas con Computadora":21.2,
+        "Viviendas con Celular":61.36,
+        "Viviendas con Internet":12.29
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"15",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"60",
-      "Segunda actividad nombre":"Industria Manufacturera",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
-      "Tercera actividad porcentaje":"6.67",
-      "Cuarta actividad nombre":"Educativos",
-      "Cuarta actividad porcentaje":"6.67",
-      "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Quinta actividad porcentaje":"6.67"
+      "2010":{
+        "Total Actividades Económicas":15,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":60,
+        "Segunda actividad nombre":"Industria Manufacturera",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Tercera actividad porcentaje":6.67,
+        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad porcentaje":6.67,
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Quinta actividad porcentaje":6.67
+      }
     }
   }
 }]

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ciudad Nazas Poligono 27 de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Ciudad Nazas Poligono 27" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">7.69 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Manejo de Residuos</td>
         <td class="derecha">2.56 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 99.42, '#FF80C0', '99.42 %'],
-              ['Drenaje', 99.04, '#C080FF', '99.04 %'],
-              ['Televisión', 99.04, '#80C0FF', '99.04 %'],
-              ['Automóvil', 54.7, '#59BFC3', '54.7 %'],
-              ['Computadora', 36.47, '#59C38E', '36.47 %'],
-              ['Celular', 85.6, '#8EC359', '85.6 %'],
-              ['Internet', 22.26, '#C38E59', '22.26 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 99.42, '#80C0FF', '99.42 %'],
+              ['Drenaje', 99.04, '#59BFC3', '99.04 %'],
+              ['Televisión', 99.04, '#59C38E', '99.04 %'],
+              ['Automóvil', 54.7, '#8EC359', '54.7 %'],
+              ['Computadora', 36.47, '#C38E59', '36.47 %'],
+              ['Celular', 85.6, '#FF8080', '85.6 %'],
+              ['Internet', 22.26, '#FF80C0', '22.26 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Otros servicios, excepto Gobierno', 30.77, '#80C0FF', '30.77 %'],
-              ['2° Comercio Menudeo', 28.21, '#59BFC3', '28.21 %'],
-              ['3° Preparación de Alimentos y Bebidas', 23.08, '#59C38E', '23.08 %'],
-              ['4° Industria Manufacturera', 7.69, '#8EC359', '7.69 %'],
-              ['5° Comercio Mayoreo', 2.56, '#C38E59', '2.56 %']
+              ['1° Otros servicios, excepto Gobierno', 30.77, '#59C38E', '30.77 %'],
+              ['2° Comercio Menudeo', 28.21, '#8EC359', '28.21 %'],
+              ['3° Preparación de Alimentos y Bebidas', 23.08, '#C38E59', '23.08 %'],
+              ['4° Industria Manufacturera', 7.69, '#80C0FF', '7.69 %'],
+              ['5° Manejo de Residuos', 2.56, '#59BFC3', '2.56 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

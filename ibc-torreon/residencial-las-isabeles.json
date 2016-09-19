@@ -2,52 +2,62 @@
   "Nombre":"Residencial Las Isabeles",
   "IBC":{
     "Demografía":{
-      "Población total":"735",
-      "Porcentaje de población masculina":"48.44",
-      "Porcentaje de población femenina":"51.56",
-      "Porcentaje de población de 0 a 14 años":"30.07",
-      "Porcentaje de población de 15 a 64 años":"60.95",
-      "Porcentaje de población de 65 y más años":"1.63",
-      "Porcentaje de población no especificada":"7.35",
-      "Fecundidad promedio":"1.54",
-      "Porcentaje de población nacida en otro estado":"19.2",
-      "Porcentaje de población con discapacidad":"0.84"
+      "2010":{
+        "Población total":735,
+        "Porcentaje de población masculina":48.44,
+        "Porcentaje de población femenina":51.56,
+        "Porcentaje de población de 0 a 14 años":30.07,
+        "Porcentaje de población de 15 a 64 años":60.95,
+        "Porcentaje de población de 65 y más años":1.63,
+        "Porcentaje de población no especificada":7.35,
+        "Fecundidad promedio":1.54,
+        "Porcentaje de población nacida en otro estado":19.2,
+        "Porcentaje de población con discapacidad":0.84
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"14.92",
-      "Grado Promedio de Escolaridad masculina":"15.29",
-      "Grado Promedio de Escolaridad femenina":"14.57"
+      "2010":{
+        "Grado Promedio de Escolaridad":14.92,
+        "Grado Promedio de Escolaridad masculina":15.29,
+        "Grado Promedio de Escolaridad femenina":14.57
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"52.94",
-      "Población Económicamente Activa masculina":"65.56",
-      "Población Económicamente Activa femenina":"34.44",
-      "Población Ocupada":"98.5",
-      "Población Ocupada masculina":"65.04",
-      "Población Ocupada femenina":"34.96",
-      "Población Desocupada":"1.5",
-      "Derechohabiencia":"83.3"
+      "2010":{
+        "Población Económicamente Activa":52.94,
+        "Población Económicamente Activa masculina":65.56,
+        "Población Económicamente Activa femenina":34.44,
+        "Población Ocupada":98.5,
+        "Población Ocupada masculina":65.04,
+        "Población Ocupada femenina":34.96,
+        "Población Desocupada":1.5,
+        "Derechohabiencia":83.3
+      }
     },
     "Viviendas":{
-      "Hogares":"165",
-      "Hogares Jefatura masculina":"88.48",
-      "Hogares Jefatura femenina":"11.52",
-      "Ocupación por Vivienda":"4.45",
-      "Viviendas con Electricidad":"98.79",
-      "Viviendas con Agua":"96.97",
-      "Viviendas con Drenaje":"97.58",
-      "Viviendas con Televisión":"98.79",
-      "Viviendas con Automóvil":"98.18",
-      "Viviendas con Computadora":"95.15",
-      "Viviendas con Celular":"96.36",
-      "Viviendas con Internet":"92.73"
+      "2010":{
+        "Hogares":165,
+        "Hogares Jefatura masculina":88.48,
+        "Hogares Jefatura femenina":11.52,
+        "Ocupación por Vivienda":4.45,
+        "Viviendas con Electricidad":98.79,
+        "Viviendas con Agua":96.97,
+        "Viviendas con Drenaje":97.58,
+        "Viviendas con Televisión":98.79,
+        "Viviendas con Automóvil":98.18,
+        "Viviendas con Computadora":95.15,
+        "Viviendas con Celular":96.36,
+        "Viviendas con Internet":92.73
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"5",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"80",
-      "Segunda actividad nombre":"Educativos",
-      "Segunda actividad porcentaje":"20"
+      "2010":{
+        "Total Actividades Económicas":5,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":80,
+        "Segunda actividad nombre":"Educativos",
+        "Segunda actividad porcentaje":20
+      }
     }
   }
 }]

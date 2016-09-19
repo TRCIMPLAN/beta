@@ -34,7 +34,7 @@ class AntiguaMayran extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Antigua Mayran';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:32:58';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'antigua-mayran';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,15 +58,21 @@ class AntiguaMayran extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 0
+                '2010' => array(
+                    'Población total' => 0
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 1,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 100.00
+                '2010' => array(
+                    'Total Actividades Económicas' => 1,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 100.00
+                )
             )
         );
     } // datos

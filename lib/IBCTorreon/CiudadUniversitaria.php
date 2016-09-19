@@ -34,7 +34,7 @@ class CiudadUniversitaria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Universitaria';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:32:59';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-universitaria';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,23 +58,29 @@ class CiudadUniversitaria extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 0
+                '2010' => array(
+                    'Población total' => 0
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 16,
-                'Primer actividad nombre' => 'Educativos',
-                'Primer actividad porcentaje' => 43.75,
-                'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Segunda actividad porcentaje' => 31.25,
-                'Tercera actividad nombre' => 'Manejo de Residuos',
-                'Tercera actividad porcentaje' => 12.50,
-                'Cuarta actividad nombre' => 'Gubernamentales',
-                'Cuarta actividad porcentaje' => 6.25,
-                'Quinta actividad nombre' => 'Información Medios Masivos',
-                'Quinta actividad porcentaje' => 6.25
+                '2010' => array(
+                    'Total Actividades Económicas' => 16,
+                    'Primer actividad nombre' => 'Educativos',
+                    'Primer actividad porcentaje' => 43.75,
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad porcentaje' => 31.25,
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad porcentaje' => 12.50,
+                    'Cuarta actividad nombre' => 'Información Medios Masivos',
+                    'Cuarta actividad porcentaje' => 6.25,
+                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad porcentaje' => 6.25
+                )
             )
         );
     } // datos

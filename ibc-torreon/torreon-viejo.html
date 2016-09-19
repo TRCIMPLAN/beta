@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Torreon Viejo de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Torreon Viejo" src="../imagenes/imagen.jpg">
@@ -417,11 +417,11 @@
         <td class="derecha">36.36 %</td>
       </tr>
       <tr>
-        <td>3° Inmobiliarios</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>4° Industria Manufacturera</td>
+        <td>4° Inmobiliarios</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 98.07, '#FF8080', '98.07 %'],
-              ['Agua', 98.06, '#FF80C0', '98.06 %'],
-              ['Drenaje', 98.89, '#C080FF', '98.89 %'],
-              ['Televisión', 96.41, '#80C0FF', '96.41 %'],
-              ['Automóvil', 6.87, '#59BFC3', '6.87 %'],
-              ['Computadora', 8.23, '#59C38E', '8.23 %'],
-              ['Celular', 62.59, '#8EC359', '62.59 %'],
-              ['Internet', 8.05, '#C38E59', '8.05 %']
+              ['Electricidad', 98.07, '#C080FF', '98.07 %'],
+              ['Agua', 98.06, '#80C0FF', '98.06 %'],
+              ['Drenaje', 98.89, '#59BFC3', '98.89 %'],
+              ['Televisión', 96.41, '#59C38E', '96.41 %'],
+              ['Automóvil', 6.87, '#8EC359', '6.87 %'],
+              ['Computadora', 8.23, '#C38E59', '8.23 %'],
+              ['Celular', 62.59, '#FF8080', '62.59 %'],
+              ['Internet', 8.05, '#FF80C0', '8.05 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,10 +796,10 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Otros servicios, excepto Gobierno', 45.45, '#80C0FF', '45.45 %'],
-              ['2° Comercio Menudeo', 36.36, '#59BFC3', '36.36 %'],
-              ['3° Inmobiliarios', 9.09, '#59C38E', '9.09 %'],
-              ['4° Industria Manufacturera', 9.09, '#8EC359', '9.09 %']
+              ['1° Otros servicios, excepto Gobierno', 45.45, '#59C38E', '45.45 %'],
+              ['2° Comercio Menudeo', 36.36, '#8EC359', '36.36 %'],
+              ['3° Industria Manufacturera', 9.09, '#C38E59', '9.09 %'],
+              ['4° Inmobiliarios', 9.09, '#80C0FF', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

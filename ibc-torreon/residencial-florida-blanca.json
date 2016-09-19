@@ -2,58 +2,68 @@
   "Nombre":"Residencial Florida Blanca",
   "IBC":{
     "Demografía":{
-      "Población total":"413",
-      "Porcentaje de población masculina":"49.88",
-      "Porcentaje de población femenina":"50.12",
-      "Porcentaje de población de 0 a 14 años":"23.73",
-      "Porcentaje de población de 15 a 64 años":"68.77",
-      "Porcentaje de población de 65 y más años":"5.33",
-      "Porcentaje de población no especificada":"2.17",
-      "Fecundidad promedio":"1.5",
-      "Porcentaje de población nacida en otro estado":"17.43",
-      "Porcentaje de población con discapacidad":"2.39"
+      "2010":{
+        "Población total":413,
+        "Porcentaje de población masculina":49.88,
+        "Porcentaje de población femenina":50.12,
+        "Porcentaje de población de 0 a 14 años":23.73,
+        "Porcentaje de población de 15 a 64 años":68.77,
+        "Porcentaje de población de 65 y más años":5.33,
+        "Porcentaje de población no especificada":2.17,
+        "Fecundidad promedio":1.5,
+        "Porcentaje de población nacida en otro estado":17.43,
+        "Porcentaje de población con discapacidad":2.39
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"14.11",
-      "Grado Promedio de Escolaridad masculina":"14.5",
-      "Grado Promedio de Escolaridad femenina":"13.72"
+      "2010":{
+        "Grado Promedio de Escolaridad":14.11,
+        "Grado Promedio de Escolaridad masculina":14.5,
+        "Grado Promedio de Escolaridad femenina":13.72
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"48.65",
-      "Población Económicamente Activa masculina":"59.26",
-      "Población Económicamente Activa femenina":"40.74",
-      "Población Ocupada":"92.05",
-      "Población Ocupada masculina":"59.33",
-      "Población Ocupada femenina":"40.67",
-      "Población Desocupada":"7.95",
-      "Derechohabiencia":"83.78"
+      "2010":{
+        "Población Económicamente Activa":48.65,
+        "Población Económicamente Activa masculina":59.26,
+        "Población Económicamente Activa femenina":40.74,
+        "Población Ocupada":92.05,
+        "Población Ocupada masculina":59.33,
+        "Población Ocupada femenina":40.67,
+        "Población Desocupada":7.95,
+        "Derechohabiencia":83.78
+      }
     },
     "Viviendas":{
-      "Hogares":"109",
-      "Hogares Jefatura masculina":"81.65",
-      "Hogares Jefatura femenina":"18.35",
-      "Ocupación por Vivienda":"3.79",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"100",
-      "Viviendas con Automóvil":"94.5",
-      "Viviendas con Computadora":"88.99",
-      "Viviendas con Celular":"94.5",
-      "Viviendas con Internet":"87.16"
+      "2010":{
+        "Hogares":109,
+        "Hogares Jefatura masculina":81.65,
+        "Hogares Jefatura femenina":18.35,
+        "Ocupación por Vivienda":3.79,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":94.5,
+        "Viviendas con Computadora":88.99,
+        "Viviendas con Celular":94.5,
+        "Viviendas con Internet":87.16
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"5",
-      "Primer actividad nombre":"Educativos",
-      "Primer actividad porcentaje":"20",
-      "Segunda actividad nombre":"Manejo de Residuos",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Comercio Menudeo",
-      "Tercera actividad porcentaje":"20",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"20",
-      "Quinta actividad nombre":"Profesionales, Científicos, Técnicos",
-      "Quinta actividad porcentaje":"20"
+      "2010":{
+        "Total Actividades Económicas":5,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":20,
+        "Segunda actividad nombre":"Manejo de Residuos",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Profesionales, Científicos, Técnicos",
+        "Tercera actividad porcentaje":20,
+        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad porcentaje":20,
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Quinta actividad porcentaje":20
+      }
     }
   }
 }]

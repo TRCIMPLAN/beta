@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ex-Hacienda La Perla 3Ra. Etapa de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Ex-Hacienda La Perla 3Ra. Etapa" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">18.52 %</td>
       </tr>
       <tr>
-        <td>4° Otros servicios, excepto Gobierno</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">7.41 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Otros servicios, excepto Gobierno</td>
         <td class="derecha">7.41 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 99.53, '#C080FF', '99.53 %'],
-              ['Televisión', 98.6, '#80C0FF', '98.6 %'],
-              ['Automóvil', 24.83, '#59BFC3', '24.83 %'],
-              ['Computadora', 24.98, '#59C38E', '24.98 %'],
-              ['Celular', 85.12, '#8EC359', '85.12 %'],
-              ['Internet', 10.18, '#C38E59', '10.18 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 99.53, '#59BFC3', '99.53 %'],
+              ['Televisión', 98.6, '#59C38E', '98.6 %'],
+              ['Automóvil', 24.83, '#8EC359', '24.83 %'],
+              ['Computadora', 24.98, '#C38E59', '24.98 %'],
+              ['Celular', 85.12, '#FF8080', '85.12 %'],
+              ['Internet', 10.18, '#FF80C0', '10.18 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Preparación de Alimentos y Bebidas', 29.63, '#80C0FF', '29.63 %'],
-              ['2° Comercio Menudeo', 25.93, '#59BFC3', '25.93 %'],
-              ['3° Educativos', 18.52, '#59C38E', '18.52 %'],
-              ['4° Otros servicios, excepto Gobierno', 7.41, '#8EC359', '7.41 %'],
-              ['5° Industria Manufacturera', 7.41, '#C38E59', '7.41 %']
+              ['1° Preparación de Alimentos y Bebidas', 29.63, '#59C38E', '29.63 %'],
+              ['2° Comercio Menudeo', 25.93, '#8EC359', '25.93 %'],
+              ['3° Educativos', 18.52, '#C38E59', '18.52 %'],
+              ['4° Industria Manufacturera', 7.41, '#80C0FF', '7.41 %'],
+              ['5° Otros servicios, excepto Gobierno', 7.41, '#59BFC3', '7.41 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

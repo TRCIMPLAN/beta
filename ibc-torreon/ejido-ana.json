@@ -2,58 +2,68 @@
   "Nombre":"Ejido Ana",
   "IBC":{
     "Demografía":{
-      "Población total":"2572",
-      "Porcentaje de población masculina":"49.51",
-      "Porcentaje de población femenina":"50.49",
-      "Porcentaje de población de 0 a 14 años":"31.52",
-      "Porcentaje de población de 15 a 64 años":"62.94",
-      "Porcentaje de población de 65 y más años":"5.04",
-      "Porcentaje de población no especificada":"0.5",
-      "Fecundidad promedio":"2.44",
-      "Porcentaje de población nacida en otro estado":"13.22",
-      "Porcentaje de población con discapacidad":"4.57"
+      "2010":{
+        "Población total":2572,
+        "Porcentaje de población masculina":49.51,
+        "Porcentaje de población femenina":50.49,
+        "Porcentaje de población de 0 a 14 años":31.52,
+        "Porcentaje de población de 15 a 64 años":62.94,
+        "Porcentaje de población de 65 y más años":5.04,
+        "Porcentaje de población no especificada":0.5,
+        "Fecundidad promedio":2.44,
+        "Porcentaje de población nacida en otro estado":13.22,
+        "Porcentaje de población con discapacidad":4.57
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"7.83",
-      "Grado Promedio de Escolaridad masculina":"7.81",
-      "Grado Promedio de Escolaridad femenina":"7.84"
+      "2010":{
+        "Grado Promedio de Escolaridad":7.83,
+        "Grado Promedio de Escolaridad masculina":7.81,
+        "Grado Promedio de Escolaridad femenina":7.84
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"48.5",
-      "Población Económicamente Activa masculina":"74.88",
-      "Población Económicamente Activa femenina":"25.12",
-      "Población Ocupada":"91.19",
-      "Población Ocupada masculina":"73.14",
-      "Población Ocupada femenina":"26.86",
-      "Población Desocupada":"8.81",
-      "Derechohabiencia":"65.72"
+      "2010":{
+        "Población Económicamente Activa":48.5,
+        "Población Económicamente Activa masculina":74.88,
+        "Población Económicamente Activa femenina":25.12,
+        "Población Ocupada":91.19,
+        "Población Ocupada masculina":73.14,
+        "Población Ocupada femenina":26.86,
+        "Población Desocupada":8.81,
+        "Derechohabiencia":65.72
+      }
     },
     "Viviendas":{
-      "Hogares":"625",
-      "Hogares Jefatura masculina":"77.63",
-      "Hogares Jefatura femenina":"22.37",
-      "Ocupación por Vivienda":"4.12",
-      "Viviendas con Electricidad":"99.46",
-      "Viviendas con Agua":"98.11",
-      "Viviendas con Drenaje":"95.52",
-      "Viviendas con Televisión":"97.71",
-      "Viviendas con Automóvil":"39.5",
-      "Viviendas con Computadora":"15.76",
-      "Viviendas con Celular":"65.61",
-      "Viviendas con Internet":"6.69"
+      "2010":{
+        "Hogares":625,
+        "Hogares Jefatura masculina":77.63,
+        "Hogares Jefatura femenina":22.37,
+        "Ocupación por Vivienda":4.12,
+        "Viviendas con Electricidad":99.46,
+        "Viviendas con Agua":98.11,
+        "Viviendas con Drenaje":95.52,
+        "Viviendas con Televisión":97.71,
+        "Viviendas con Automóvil":39.5,
+        "Viviendas con Computadora":15.76,
+        "Viviendas con Celular":65.61,
+        "Viviendas con Internet":6.69
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"98",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"36.73",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"20.41",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"13.27",
-      "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"9.18",
-      "Quinta actividad nombre":"Educativos",
-      "Quinta actividad porcentaje":"7.14"
+      "2010":{
+        "Total Actividades Económicas":98,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":36.73,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":20.41,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":13.27,
+        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad porcentaje":9.18,
+        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad porcentaje":7.14
+      }
     }
   }
 }]

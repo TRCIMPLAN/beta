@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Santiago de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Santiago" src="../imagenes/imagen.jpg">
@@ -409,11 +409,11 @@
         <td class="derecha">6</td>
       </tr>
       <tr>
-        <td>1° Educativos</td>
+        <td>1° Comercio Menudeo</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Menudeo</td>
+        <td>2° Educativos</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 99.04, '#FF8080', '99.04 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 99.04, '#C080FF', '99.04 %'],
-              ['Televisión', 96.15, '#80C0FF', '96.15 %'],
-              ['Automóvil', 50.18, '#59BFC3', '50.18 %'],
-              ['Computadora', 35.73, '#59C38E', '35.73 %'],
-              ['Celular', 82.69, '#8EC359', '82.69 %'],
-              ['Internet', 17.43, '#C38E59', '17.43 %']
+              ['Electricidad', 99.04, '#C080FF', '99.04 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 99.04, '#59BFC3', '99.04 %'],
+              ['Televisión', 96.15, '#59C38E', '96.15 %'],
+              ['Automóvil', 50.18, '#8EC359', '50.18 %'],
+              ['Computadora', 35.73, '#C38E59', '35.73 %'],
+              ['Celular', 82.69, '#FF8080', '82.69 %'],
+              ['Internet', 17.43, '#FF80C0', '17.43 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,8 +796,8 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Educativos', 50, '#80C0FF', '50 %'],
-              ['2° Comercio Menudeo', 50, '#59BFC3', '50 %']
+              ['1° Comercio Menudeo', 50, '#59C38E', '50 %'],
+              ['2° Educativos', 50, '#8EC359', '50 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

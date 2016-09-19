@@ -2,52 +2,62 @@
   "Nombre":"Los Portales",
   "IBC":{
     "Demografía":{
-      "Población total":"49",
-      "Porcentaje de población masculina":"48.98",
-      "Porcentaje de población femenina":"51.02",
-      "Porcentaje de población de 0 a 14 años":"22.45",
-      "Porcentaje de población de 15 a 64 años":"73.47",
-      "Porcentaje de población de 65 y más años":"4.08",
-      "Porcentaje de población no especificada":"0",
-      "Fecundidad promedio":"1.45",
-      "Porcentaje de población nacida en otro estado":"53.06",
-      "Porcentaje de población con discapacidad":"0"
+      "2010":{
+        "Población total":49,
+        "Porcentaje de población masculina":48.98,
+        "Porcentaje de población femenina":51.02,
+        "Porcentaje de población de 0 a 14 años":22.45,
+        "Porcentaje de población de 15 a 64 años":73.47,
+        "Porcentaje de población de 65 y más años":4.08,
+        "Porcentaje de población no especificada":0,
+        "Fecundidad promedio":1.45,
+        "Porcentaje de población nacida en otro estado":53.06,
+        "Porcentaje de población con discapacidad":0
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"15.87",
-      "Grado Promedio de Escolaridad masculina":"16.72",
-      "Grado Promedio de Escolaridad femenina":"15.1"
+      "2010":{
+        "Grado Promedio de Escolaridad":15.87,
+        "Grado Promedio de Escolaridad masculina":16.72,
+        "Grado Promedio de Escolaridad femenina":15.1
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"65",
-      "Población Económicamente Activa masculina":"53.85",
-      "Población Económicamente Activa femenina":"46.15",
-      "Población Ocupada":"100",
-      "Población Ocupada masculina":"53.85",
-      "Población Ocupada femenina":"46.15",
-      "Población Desocupada":"0",
-      "Derechohabiencia":"100"
+      "2010":{
+        "Población Económicamente Activa":65,
+        "Población Económicamente Activa masculina":53.85,
+        "Población Económicamente Activa femenina":46.15,
+        "Población Ocupada":100,
+        "Población Ocupada masculina":53.85,
+        "Población Ocupada femenina":46.15,
+        "Población Desocupada":0,
+        "Derechohabiencia":100
+      }
     },
     "Viviendas":{
-      "Hogares":"16",
-      "Hogares Jefatura masculina":"75",
-      "Hogares Jefatura femenina":"25",
-      "Ocupación por Vivienda":"3.06",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"93.75",
-      "Viviendas con Automóvil":"100",
-      "Viviendas con Computadora":"100",
-      "Viviendas con Celular":"93.75",
-      "Viviendas con Internet":"93.75"
+      "2010":{
+        "Hogares":16,
+        "Hogares Jefatura masculina":75,
+        "Hogares Jefatura femenina":25,
+        "Ocupación por Vivienda":3.06,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":93.75,
+        "Viviendas con Automóvil":100,
+        "Viviendas con Computadora":100,
+        "Viviendas con Celular":93.75,
+        "Viviendas con Internet":93.75
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"2",
-      "Primer actividad nombre":"Comercio Mayoreo",
-      "Primer actividad porcentaje":"50",
-      "Segunda actividad nombre":"Comercio Menudeo",
-      "Segunda actividad porcentaje":"50"
+      "2010":{
+        "Total Actividades Económicas":2,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":50,
+        "Segunda actividad nombre":"Comercio Mayoreo",
+        "Segunda actividad porcentaje":50
+      }
     }
   }
 }]

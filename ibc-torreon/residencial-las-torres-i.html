@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Las Torres I de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Las Torres I" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">13.04 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">6.52 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Educativos</td>
         <td class="derecha">6.52 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 99.18, '#80C0FF', '99.18 %'],
-              ['Automóvil', 73.77, '#59BFC3', '73.77 %'],
-              ['Computadora', 64.14, '#59C38E', '64.14 %'],
-              ['Celular', 85.04, '#8EC359', '85.04 %'],
-              ['Internet', 48.36, '#C38E59', '48.36 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 99.18, '#59C38E', '99.18 %'],
+              ['Automóvil', 73.77, '#8EC359', '73.77 %'],
+              ['Computadora', 64.14, '#C38E59', '64.14 %'],
+              ['Celular', 85.04, '#FF8080', '85.04 %'],
+              ['Internet', 48.36, '#FF80C0', '48.36 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 45.65, '#80C0FF', '45.65 %'],
-              ['2° Preparación de Alimentos y Bebidas', 13.04, '#59BFC3', '13.04 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.04, '#59C38E', '13.04 %'],
-              ['4° Educativos', 6.52, '#8EC359', '6.52 %'],
-              ['5° Industria Manufacturera', 6.52, '#C38E59', '6.52 %']
+              ['1° Comercio Menudeo', 45.65, '#59C38E', '45.65 %'],
+              ['2° Preparación de Alimentos y Bebidas', 13.04, '#8EC359', '13.04 %'],
+              ['3° Otros servicios, excepto Gobierno', 13.04, '#C38E59', '13.04 %'],
+              ['4° Industria Manufacturera', 6.52, '#80C0FF', '6.52 %'],
+              ['5° Educativos', 6.52, '#59BFC3', '6.52 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

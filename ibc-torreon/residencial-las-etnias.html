@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Las Etnias de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:01">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Las Etnias" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">7.41 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Salud</td>
         <td class="derecha">3.70 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 99.91, '#FF80C0', '99.91 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 99.34, '#80C0FF', '99.34 %'],
-              ['Automóvil', 78.35, '#59BFC3', '78.35 %'],
-              ['Computadora', 57.45, '#59C38E', '57.45 %'],
-              ['Celular', 91.66, '#8EC359', '91.66 %'],
-              ['Internet', 43.02, '#C38E59', '43.02 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 99.91, '#80C0FF', '99.91 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 99.34, '#59C38E', '99.34 %'],
+              ['Automóvil', 78.35, '#8EC359', '78.35 %'],
+              ['Computadora', 57.45, '#C38E59', '57.45 %'],
+              ['Celular', 91.66, '#FF8080', '91.66 %'],
+              ['Internet', 43.02, '#FF80C0', '43.02 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 42.59, '#80C0FF', '42.59 %'],
-              ['2° Preparación de Alimentos y Bebidas', 20.37, '#59BFC3', '20.37 %'],
-              ['3° Otros servicios, excepto Gobierno', 12.96, '#59C38E', '12.96 %'],
-              ['4° Educativos', 7.41, '#8EC359', '7.41 %'],
-              ['5° Comercio Mayoreo', 3.7, '#C38E59', '3.7 %']
+              ['1° Comercio Menudeo', 42.59, '#59C38E', '42.59 %'],
+              ['2° Preparación de Alimentos y Bebidas', 20.37, '#8EC359', '20.37 %'],
+              ['3° Otros servicios, excepto Gobierno', 12.96, '#C38E59', '12.96 %'],
+              ['4° Educativos', 7.41, '#80C0FF', '7.41 %'],
+              ['5° Salud', 3.7, '#59BFC3', '3.7 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

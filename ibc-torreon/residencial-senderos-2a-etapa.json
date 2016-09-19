@@ -2,56 +2,66 @@
   "Nombre":"Residencial Senderos 2A. Etapa",
   "IBC":{
     "Demografía":{
-      "Población total":"711",
-      "Porcentaje de población masculina":"48.8",
-      "Porcentaje de población femenina":"51.2",
-      "Porcentaje de población de 0 a 14 años":"27.22",
-      "Porcentaje de población de 15 a 64 años":"59.77",
-      "Porcentaje de población de 65 y más años":"4.55",
-      "Porcentaje de población no especificada":"8.46",
-      "Fecundidad promedio":"1.29",
-      "Porcentaje de población nacida en otro estado":"29.59",
-      "Porcentaje de población con discapacidad":"0.36"
+      "2010":{
+        "Población total":711,
+        "Porcentaje de población masculina":48.8,
+        "Porcentaje de población femenina":51.2,
+        "Porcentaje de población de 0 a 14 años":27.22,
+        "Porcentaje de población de 15 a 64 años":59.77,
+        "Porcentaje de población de 65 y más años":4.55,
+        "Porcentaje de población no especificada":8.46,
+        "Fecundidad promedio":1.29,
+        "Porcentaje de población nacida en otro estado":29.59,
+        "Porcentaje de población con discapacidad":0.36
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"15.69",
-      "Grado Promedio de Escolaridad masculina":"16.08",
-      "Grado Promedio de Escolaridad femenina":"15.33"
+      "2010":{
+        "Grado Promedio de Escolaridad":15.69,
+        "Grado Promedio de Escolaridad masculina":16.08,
+        "Grado Promedio de Escolaridad femenina":15.33
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"66.67",
-      "Población Económicamente Activa masculina":"60.93",
-      "Población Económicamente Activa femenina":"39.07",
-      "Población Ocupada":"98.32",
-      "Población Ocupada masculina":"60.61",
-      "Población Ocupada femenina":"39.39",
-      "Población Desocupada":"1.68",
-      "Derechohabiencia":"73.42"
+      "2010":{
+        "Población Económicamente Activa":66.67,
+        "Población Económicamente Activa masculina":60.93,
+        "Población Económicamente Activa femenina":39.07,
+        "Población Ocupada":98.32,
+        "Población Ocupada masculina":60.61,
+        "Población Ocupada femenina":39.39,
+        "Población Desocupada":1.68,
+        "Derechohabiencia":73.42
+      }
     },
     "Viviendas":{
-      "Hogares":"203",
-      "Hogares Jefatura masculina":"82.51",
-      "Hogares Jefatura femenina":"17.49",
-      "Ocupación por Vivienda":"3.5",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"99.51",
-      "Viviendas con Televisión":"99.51",
-      "Viviendas con Automóvil":"99.01",
-      "Viviendas con Computadora":"84.93",
-      "Viviendas con Celular":"98.52",
-      "Viviendas con Internet":"74.87"
+      "2010":{
+        "Hogares":203,
+        "Hogares Jefatura masculina":82.51,
+        "Hogares Jefatura femenina":17.49,
+        "Ocupación por Vivienda":3.5,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":99.51,
+        "Viviendas con Televisión":99.51,
+        "Viviendas con Automóvil":99.01,
+        "Viviendas con Computadora":84.93,
+        "Viviendas con Celular":98.52,
+        "Viviendas con Internet":74.87
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"5",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"40",
-      "Segunda actividad nombre":"Comercio Mayoreo",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"20",
-      "Cuarta actividad nombre":"Construcción",
-      "Cuarta actividad porcentaje":"20"
+      "2010":{
+        "Total Actividades Económicas":5,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":40,
+        "Segunda actividad nombre":"Comercio Mayoreo",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Construcción",
+        "Tercera actividad porcentaje":20,
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad porcentaje":20
+      }
     }
   }
 }]

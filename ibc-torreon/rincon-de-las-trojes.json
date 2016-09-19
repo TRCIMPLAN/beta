@@ -2,58 +2,68 @@
   "Nombre":"Rincon De Las Trojes",
   "IBC":{
     "Demografía":{
-      "Población total":"54",
-      "Porcentaje de población masculina":"42.59",
-      "Porcentaje de población femenina":"57.41",
-      "Porcentaje de población de 0 a 14 años":"31.48",
-      "Porcentaje de población de 15 a 64 años":"68.52",
-      "Porcentaje de población de 65 y más años":"0",
-      "Porcentaje de población no especificada":"0",
-      "Fecundidad promedio":"1.57",
-      "Porcentaje de población nacida en otro estado":"20.37",
-      "Porcentaje de población con discapacidad":"10.17"
+      "2010":{
+        "Población total":54,
+        "Porcentaje de población masculina":42.59,
+        "Porcentaje de población femenina":57.41,
+        "Porcentaje de población de 0 a 14 años":31.48,
+        "Porcentaje de población de 15 a 64 años":68.52,
+        "Porcentaje de población de 65 y más años":0,
+        "Porcentaje de población no especificada":0,
+        "Fecundidad promedio":1.57,
+        "Porcentaje de población nacida en otro estado":20.37,
+        "Porcentaje de población con discapacidad":10.17
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"15.4",
-      "Grado Promedio de Escolaridad masculina":"15.88",
-      "Grado Promedio de Escolaridad femenina":"14.88"
+      "2010":{
+        "Grado Promedio de Escolaridad":15.4,
+        "Grado Promedio de Escolaridad masculina":15.88,
+        "Grado Promedio de Escolaridad femenina":14.88
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"57.14",
-      "Población Económicamente Activa masculina":"54.17",
-      "Población Económicamente Activa femenina":"45.83",
-      "Población Ocupada":"100",
-      "Población Ocupada masculina":"54.17",
-      "Población Ocupada femenina":"45.83",
-      "Población Desocupada":"0",
-      "Derechohabiencia":"98.15"
+      "2010":{
+        "Población Económicamente Activa":57.14,
+        "Población Económicamente Activa masculina":54.17,
+        "Población Económicamente Activa femenina":45.83,
+        "Población Ocupada":100,
+        "Población Ocupada masculina":54.17,
+        "Población Ocupada femenina":45.83,
+        "Población Desocupada":0,
+        "Derechohabiencia":98.15
+      }
     },
     "Viviendas":{
-      "Hogares":"15",
-      "Hogares Jefatura masculina":"80",
-      "Hogares Jefatura femenina":"20",
-      "Ocupación por Vivienda":"3.6",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"100",
-      "Viviendas con Automóvil":"100",
-      "Viviendas con Computadora":"86.67",
-      "Viviendas con Celular":"100",
-      "Viviendas con Internet":"47.06"
+      "2010":{
+        "Hogares":15,
+        "Hogares Jefatura masculina":80,
+        "Hogares Jefatura femenina":20,
+        "Ocupación por Vivienda":3.6,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":100,
+        "Viviendas con Computadora":86.67,
+        "Viviendas con Celular":100,
+        "Viviendas con Internet":47.06
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"10",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"30",
-      "Segunda actividad nombre":"Comercio Mayoreo",
-      "Segunda actividad porcentaje":"20",
-      "Tercera actividad nombre":"Industria Manufacturera",
-      "Tercera actividad porcentaje":"20",
-      "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
-      "Cuarta actividad porcentaje":"10",
-      "Quinta actividad nombre":"Manejo de Residuos",
-      "Quinta actividad porcentaje":"10"
+      "2010":{
+        "Total Actividades Económicas":10,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":30,
+        "Segunda actividad nombre":"Industria Manufacturera",
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Comercio Mayoreo",
+        "Tercera actividad porcentaje":20,
+        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad porcentaje":10,
+        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Quinta actividad porcentaje":10
+      }
     }
   }
 }]

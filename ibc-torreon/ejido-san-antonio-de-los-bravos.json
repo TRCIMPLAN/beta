@@ -2,58 +2,68 @@
   "Nombre":"Ejido San Antonio De Los Bravos",
   "IBC":{
     "Demografía":{
-      "Población total":"2428",
-      "Porcentaje de población masculina":"48.64",
-      "Porcentaje de población femenina":"51.36",
-      "Porcentaje de población de 0 a 14 años":"28.28",
-      "Porcentaje de población de 15 a 64 años":"66.23",
-      "Porcentaje de población de 65 y más años":"5.48",
-      "Porcentaje de población no especificada":"0.01",
-      "Fecundidad promedio":"2.37",
-      "Porcentaje de población nacida en otro estado":"8.84",
-      "Porcentaje de población con discapacidad":"7.51"
+      "2010":{
+        "Población total":2428,
+        "Porcentaje de población masculina":48.64,
+        "Porcentaje de población femenina":51.36,
+        "Porcentaje de población de 0 a 14 años":28.28,
+        "Porcentaje de población de 15 a 64 años":66.23,
+        "Porcentaje de población de 65 y más años":5.48,
+        "Porcentaje de población no especificada":0.01,
+        "Fecundidad promedio":2.37,
+        "Porcentaje de población nacida en otro estado":8.84,
+        "Porcentaje de población con discapacidad":7.51
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"8.89",
-      "Grado Promedio de Escolaridad masculina":"8.99",
-      "Grado Promedio de Escolaridad femenina":"8.8"
+      "2010":{
+        "Grado Promedio de Escolaridad":8.89,
+        "Grado Promedio de Escolaridad masculina":8.99,
+        "Grado Promedio de Escolaridad femenina":8.8
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"54.55",
-      "Población Económicamente Activa masculina":"66.81",
-      "Población Económicamente Activa femenina":"33.19",
-      "Población Ocupada":"88.53",
-      "Población Ocupada masculina":"64.39",
-      "Población Ocupada femenina":"35.61",
-      "Población Desocupada":"11.47",
-      "Derechohabiencia":"75.7"
+      "2010":{
+        "Población Económicamente Activa":54.55,
+        "Población Económicamente Activa masculina":66.81,
+        "Población Económicamente Activa femenina":33.19,
+        "Población Ocupada":88.53,
+        "Población Ocupada masculina":64.39,
+        "Población Ocupada femenina":35.61,
+        "Población Desocupada":11.47,
+        "Derechohabiencia":75.7
+      }
     },
     "Viviendas":{
-      "Hogares":"590",
-      "Hogares Jefatura masculina":"76.27",
-      "Hogares Jefatura femenina":"23.73",
-      "Ocupación por Vivienda":"4.12",
-      "Viviendas con Electricidad":"99.55",
-      "Viviendas con Agua":"99.55",
-      "Viviendas con Drenaje":"97.68",
-      "Viviendas con Televisión":"98.69",
-      "Viviendas con Automóvil":"44.13",
-      "Viviendas con Computadora":"31.06",
-      "Viviendas con Celular":"68.18",
-      "Viviendas con Internet":"21.18"
+      "2010":{
+        "Hogares":590,
+        "Hogares Jefatura masculina":76.27,
+        "Hogares Jefatura femenina":23.73,
+        "Ocupación por Vivienda":4.12,
+        "Viviendas con Electricidad":99.55,
+        "Viviendas con Agua":99.55,
+        "Viviendas con Drenaje":97.68,
+        "Viviendas con Televisión":98.69,
+        "Viviendas con Automóvil":44.13,
+        "Viviendas con Computadora":31.06,
+        "Viviendas con Celular":68.18,
+        "Viviendas con Internet":21.18
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"31",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"48.39",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"16.13",
-      "Tercera actividad nombre":"Educativos",
-      "Tercera actividad porcentaje":"9.68",
-      "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Cuarta actividad porcentaje":"6.45",
-      "Quinta actividad nombre":"Salud",
-      "Quinta actividad porcentaje":"6.45"
+      "2010":{
+        "Total Actividades Económicas":31,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":48.39,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":16.13,
+        "Tercera actividad nombre":"Educativos",
+        "Tercera actividad porcentaje":9.68,
+        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad porcentaje":6.45,
+        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad porcentaje":6.45
+      }
     }
   }
 }]

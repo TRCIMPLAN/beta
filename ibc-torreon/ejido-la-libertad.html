@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ejido La Libertad de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:59">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Ejido La Libertad" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
-        <td>4° Inmobiliarios</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Inmobiliarios</td>
         <td class="derecha">14.29 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 98.05, '#FF80C0', '98.05 %'],
-              ['Drenaje', 99.74, '#C080FF', '99.74 %'],
-              ['Televisión', 96.44, '#80C0FF', '96.44 %'],
-              ['Automóvil', 44.74, '#59BFC3', '44.74 %'],
-              ['Computadora', 17.45, '#59C38E', '17.45 %'],
-              ['Celular', 77.28, '#8EC359', '77.28 %'],
-              ['Internet', 8.31, '#C38E59', '8.31 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 98.05, '#80C0FF', '98.05 %'],
+              ['Drenaje', 99.74, '#59BFC3', '99.74 %'],
+              ['Televisión', 96.44, '#59C38E', '96.44 %'],
+              ['Automóvil', 44.74, '#8EC359', '44.74 %'],
+              ['Computadora', 17.45, '#C38E59', '17.45 %'],
+              ['Celular', 77.28, '#FF8080', '77.28 %'],
+              ['Internet', 8.31, '#FF80C0', '8.31 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Educativos', 28.57, '#80C0FF', '28.57 %'],
-              ['2° Otros servicios, excepto Gobierno', 28.57, '#59BFC3', '28.57 %'],
-              ['3° Comercio Menudeo', 14.29, '#59C38E', '14.29 %'],
-              ['4° Inmobiliarios', 14.29, '#8EC359', '14.29 %'],
-              ['5° Industria Manufacturera', 14.29, '#C38E59', '14.29 %']
+              ['1° Educativos', 28.57, '#59C38E', '28.57 %'],
+              ['2° Otros servicios, excepto Gobierno', 28.57, '#8EC359', '28.57 %'],
+              ['3° Comercio Menudeo', 14.29, '#C38E59', '14.29 %'],
+              ['4° Industria Manufacturera', 14.29, '#80C0FF', '14.29 %'],
+              ['5° Inmobiliarios', 14.29, '#59BFC3', '14.29 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

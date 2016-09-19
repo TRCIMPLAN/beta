@@ -23,38 +23,28 @@
 namespace IBCBase;
 
 /**
- * Clase EjeEducacion
+ * Clase abstracta EjeEducacion
  */
-class EjeEducacion {
+abstract class EjeEducacion extends Eje {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    // protected $publicacion_ficha;
+    // const     FECHA;
     protected $educacion;         // Arreglo asociativo con datos de Educación
     protected $preparado = FALSE; // Bandera
-
-    /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionWeb
-     */
-    public function __construct(PublicacionWeb $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
 
     /**
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            // Tomar datos
-            $datos = $this->publicacion_ficha->datos();
-            if (isset($datos['Educación'])) {
-                $this->educacion = $datos['Educación'];
-            } else {
-                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Educación.");
-            }
-            // Levantar bandera
-            $this->preparado = TRUE;
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Educación'][parent::FECHA])) {
+            $this->educacion = $datos['Educación'][parent::FECHA];
+        } else {
+            throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Educación.");
         }
+        // Levantar bandera
+        $this->preparado = TRUE;
     } // preparar
 
     /**
@@ -80,6 +70,6 @@ class EjeEducacion {
         }
     } // formatear
 
-} // Clase EjeEducacion
+} // Clase abstracta EjeEducacion
 
 ?>

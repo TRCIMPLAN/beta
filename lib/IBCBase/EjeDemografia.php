@@ -23,46 +23,40 @@
 namespace IBCBase;
 
 /**
- * Clase EjeDemografia
+ * Clase abstracta EjeDemografia
  */
-class EjeDemografia {
+abstract class EjeDemografia extends Eje {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    // protected $publicacion_ficha;
+    // const     FECHA;
     protected $demografia;        // Arreglo asociativo con datos de Demografía
     protected $preparado = FALSE; // Bandera
-
-    /**
-     * Constructor
-     *
-     * @param mixed Instancia de PublicacionWeb
-     */
-    public function __construct(PublicacionWeb $publicacion_ficha) {
-        $this->publicacion_ficha = $publicacion_ficha;
-    } // constructor
 
     /**
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            // Tomar datos
-            $datos = $this->publicacion_ficha->datos();
-            if (isset($datos['Demografía'])) {
-                $this->demografia = $datos['Demografía'];
-            } else {
-                throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Demografía.");
-            }
-            // Sin Población Total
-            if (isset($this->demografia['Población total'])) {
-                if ($this->demografia['Población total'] == 0) {
-                    throw new EjeExceptionSinDatos("La Población Total es cero.");
-                }
-            } else {
-                throw new EjeExceptionSinDatos("La Población Total no está definida.");
-            }
-            // Levantar bandera
-            $this->preparado = TRUE;
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Tomar datos
+        $datos = $this->publicacion_ficha->datos();
+        if (isset($datos['Demografía'][parent::FECHA])) {
+            $this->demografia = $datos['Demografía'][parent::FECHA];
+        } else {
+            throw new EjeExceptionSinDatos("{$this->publicacion_ficha->nombre} sin datos sobre Demografía.");
+        }
+        // Sin Población Total
+        if (isset($this->demografia['Población total'])) {
+            if ($this->demografia['Población total'] == 0) {
+                throw new EjeExceptionSinDatos("La Población Total es cero.");
+            }
+        } else {
+            throw new EjeExceptionSinDatos("La Población Total no está definida.");
+        }
+        // Levantar bandera
+        $this->preparado = TRUE;
     } // preparar
 
     /**
@@ -99,6 +93,6 @@ class EjeDemografia {
         }
     } // formatear
 
-} // Clase EjeDemografia
+} // Clase abstracta EjeDemografia
 
 ?>

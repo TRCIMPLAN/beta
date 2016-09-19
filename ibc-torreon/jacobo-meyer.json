@@ -2,58 +2,68 @@
   "Nombre":"Jacobo Meyer",
   "IBC":{
     "Demografía":{
-      "Población total":"912",
-      "Porcentaje de población masculina":"49.45",
-      "Porcentaje de población femenina":"50.55",
-      "Porcentaje de población de 0 a 14 años":"30.24",
-      "Porcentaje de población de 15 a 64 años":"62.7",
-      "Porcentaje de población de 65 y más años":"6.96",
-      "Porcentaje de población no especificada":"0.1",
-      "Fecundidad promedio":"2.39",
-      "Porcentaje de población nacida en otro estado":"22.89",
-      "Porcentaje de población con discapacidad":"12.83"
+      "2010":{
+        "Población total":912,
+        "Porcentaje de población masculina":49.45,
+        "Porcentaje de población femenina":50.55,
+        "Porcentaje de población de 0 a 14 años":30.24,
+        "Porcentaje de población de 15 a 64 años":62.7,
+        "Porcentaje de población de 65 y más años":6.96,
+        "Porcentaje de población no especificada":0.1,
+        "Fecundidad promedio":2.39,
+        "Porcentaje de población nacida en otro estado":22.89,
+        "Porcentaje de población con discapacidad":12.83
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"7.57",
-      "Grado Promedio de Escolaridad masculina":"7.44",
-      "Grado Promedio de Escolaridad femenina":"7.7"
+      "2010":{
+        "Grado Promedio de Escolaridad":7.57,
+        "Grado Promedio de Escolaridad masculina":7.44,
+        "Grado Promedio de Escolaridad femenina":7.7
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"52.52",
-      "Población Económicamente Activa masculina":"68.89",
-      "Población Económicamente Activa femenina":"31.11",
-      "Población Ocupada":"86.1",
-      "Población Ocupada masculina":"68.51",
-      "Población Ocupada femenina":"31.49",
-      "Población Desocupada":"13.9",
-      "Derechohabiencia":"53.44"
+      "2010":{
+        "Población Económicamente Activa":52.52,
+        "Población Económicamente Activa masculina":68.89,
+        "Población Económicamente Activa femenina":31.11,
+        "Población Ocupada":86.1,
+        "Población Ocupada masculina":68.51,
+        "Población Ocupada femenina":31.49,
+        "Población Desocupada":13.9,
+        "Derechohabiencia":53.44
+      }
     },
     "Viviendas":{
-      "Hogares":"229",
-      "Hogares Jefatura masculina":"79.34",
-      "Hogares Jefatura femenina":"20.66",
-      "Ocupación por Vivienda":"3.98",
-      "Viviendas con Electricidad":"99.35",
-      "Viviendas con Agua":"96.69",
-      "Viviendas con Drenaje":"98.47",
-      "Viviendas con Televisión":"94.52",
-      "Viviendas con Automóvil":"27.65",
-      "Viviendas con Computadora":"12.09",
-      "Viviendas con Celular":"57.58",
-      "Viviendas con Internet":"6.33"
+      "2010":{
+        "Hogares":229,
+        "Hogares Jefatura masculina":79.34,
+        "Hogares Jefatura femenina":20.66,
+        "Ocupación por Vivienda":3.98,
+        "Viviendas con Electricidad":99.35,
+        "Viviendas con Agua":96.69,
+        "Viviendas con Drenaje":98.47,
+        "Viviendas con Televisión":94.52,
+        "Viviendas con Automóvil":27.65,
+        "Viviendas con Computadora":12.09,
+        "Viviendas con Celular":57.58,
+        "Viviendas con Internet":6.33
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"15",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"46.67",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"13.33",
-      "Tercera actividad nombre":"Salud",
-      "Tercera actividad porcentaje":"13.33",
-      "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
-      "Cuarta actividad porcentaje":"13.33",
-      "Quinta actividad nombre":"Manejo de Residuos",
-      "Quinta actividad porcentaje":"6.67"
+      "2010":{
+        "Total Actividades Económicas":15,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":46.67,
+        "Segunda actividad nombre":"Salud",
+        "Segunda actividad porcentaje":13.33,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":13.33,
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad porcentaje":13.33,
+        "Quinta actividad nombre":"Manejo de Residuos",
+        "Quinta actividad porcentaje":6.67
+      }
     }
   }
 }]

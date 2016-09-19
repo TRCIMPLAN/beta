@@ -2,48 +2,58 @@
   "Nombre":"Residencial Santa Barbara 3A. Etapa",
   "IBC":{
     "Demografía":{
-      "Población total":"314",
-      "Porcentaje de población masculina":"50.32",
-      "Porcentaje de población femenina":"49.68",
-      "Porcentaje de población de 0 a 14 años":"26.11",
-      "Porcentaje de población de 15 a 64 años":"71.66",
-      "Porcentaje de población de 65 y más años":"0.32",
-      "Porcentaje de población no especificada":"1.91",
-      "Fecundidad promedio":"1.22",
-      "Porcentaje de población nacida en otro estado":"32.17",
-      "Porcentaje de población con discapacidad":"0.28"
+      "2010":{
+        "Población total":314,
+        "Porcentaje de población masculina":50.32,
+        "Porcentaje de población femenina":49.68,
+        "Porcentaje de población de 0 a 14 años":26.11,
+        "Porcentaje de población de 15 a 64 años":71.66,
+        "Porcentaje de población de 65 y más años":0.32,
+        "Porcentaje de población no especificada":1.91,
+        "Fecundidad promedio":1.22,
+        "Porcentaje de población nacida en otro estado":32.17,
+        "Porcentaje de población con discapacidad":0.28
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"15.69",
-      "Grado Promedio de Escolaridad masculina":"15.73",
-      "Grado Promedio de Escolaridad femenina":"15.66"
+      "2010":{
+        "Grado Promedio de Escolaridad":15.69,
+        "Grado Promedio de Escolaridad masculina":15.73,
+        "Grado Promedio de Escolaridad femenina":15.66
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"67.66",
-      "Población Económicamente Activa masculina":"59.06",
-      "Población Económicamente Activa femenina":"40.94",
-      "Población Ocupada":"98.73",
-      "Población Ocupada masculina":"59.17",
-      "Población Ocupada femenina":"40.83",
-      "Población Desocupada":"1.27",
-      "Derechohabiencia":"82.8"
+      "2010":{
+        "Población Económicamente Activa":67.66,
+        "Población Económicamente Activa masculina":59.06,
+        "Población Económicamente Activa femenina":40.94,
+        "Población Ocupada":98.73,
+        "Población Ocupada masculina":59.17,
+        "Población Ocupada femenina":40.83,
+        "Población Desocupada":1.27,
+        "Derechohabiencia":82.8
+      }
     },
     "Viviendas":{
-      "Hogares":"100",
-      "Hogares Jefatura masculina":"86.54",
-      "Hogares Jefatura femenina":"13.46",
-      "Ocupación por Vivienda":"3.14",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"99",
-      "Viviendas con Drenaje":"99",
-      "Viviendas con Televisión":"98",
-      "Viviendas con Automóvil":"94",
-      "Viviendas con Computadora":"92",
-      "Viviendas con Celular":"99",
-      "Viviendas con Internet":"82"
+      "2010":{
+        "Hogares":100,
+        "Hogares Jefatura masculina":86.54,
+        "Hogares Jefatura femenina":13.46,
+        "Ocupación por Vivienda":3.14,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":99,
+        "Viviendas con Drenaje":99,
+        "Viviendas con Televisión":98,
+        "Viviendas con Automóvil":94,
+        "Viviendas con Computadora":92,
+        "Viviendas con Celular":99,
+        "Viviendas con Internet":82
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"0"
+      "2010":{
+        "Total Actividades Económicas":0
+      }
     }
   }
 }]

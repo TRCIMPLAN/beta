@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Maria Mercado De Lopez Sanchez de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:00">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Maria Mercado De Lopez Sanchez" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">13.99 %</td>
       </tr>
       <tr>
-        <td>4° Comercio Mayoreo</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">7.69 %</td>
       </tr>
       <tr>
-        <td>5° Preparación de Alimentos y Bebidas</td>
+        <td>5° Comercio Mayoreo</td>
         <td class="derecha">7.69 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 82.57, '#FF8080', '82.57 %'],
-              ['Agua', 33.12, '#FF80C0', '33.12 %'],
-              ['Drenaje', 59.62, '#C080FF', '59.62 %'],
-              ['Televisión', 74.88, '#80C0FF', '74.88 %'],
-              ['Automóvil', 28.23, '#59BFC3', '28.23 %'],
-              ['Computadora', 4.42, '#59C38E', '4.42 %'],
-              ['Celular', 48.19, '#8EC359', '48.19 %'],
-              ['Internet', 1.91, '#C38E59', '1.91 %']
+              ['Electricidad', 82.57, '#C080FF', '82.57 %'],
+              ['Agua', 33.12, '#80C0FF', '33.12 %'],
+              ['Drenaje', 59.62, '#59BFC3', '59.62 %'],
+              ['Televisión', 74.88, '#59C38E', '74.88 %'],
+              ['Automóvil', 28.23, '#8EC359', '28.23 %'],
+              ['Computadora', 4.42, '#C38E59', '4.42 %'],
+              ['Celular', 48.19, '#FF8080', '48.19 %'],
+              ['Internet', 1.91, '#FF80C0', '1.91 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 39.16, '#80C0FF', '39.16 %'],
-              ['2° Inmobiliarios', 18.88, '#59BFC3', '18.88 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.99, '#59C38E', '13.99 %'],
-              ['4° Comercio Mayoreo', 7.69, '#8EC359', '7.69 %'],
-              ['5° Preparación de Alimentos y Bebidas', 7.69, '#C38E59', '7.69 %']
+              ['1° Comercio Menudeo', 39.16, '#59C38E', '39.16 %'],
+              ['2° Inmobiliarios', 18.88, '#8EC359', '18.88 %'],
+              ['3° Otros servicios, excepto Gobierno', 13.99, '#C38E59', '13.99 %'],
+              ['4° Industria Manufacturera', 7.69, '#80C0FF', '7.69 %'],
+              ['5° Comercio Mayoreo', 7.69, '#59BFC3', '7.69 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

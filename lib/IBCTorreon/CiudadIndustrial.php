@@ -34,7 +34,7 @@ class CiudadIndustrial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Industrial';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:32:58';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-industrial';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,23 +58,29 @@ class CiudadIndustrial extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 0
+                '2010' => array(
+                    'Población total' => 0
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 244,
-                'Primer actividad nombre' => 'Industria Manufacturera',
-                'Primer actividad porcentaje' => 32.79,
-                'Segunda actividad nombre' => 'Comercio Mayoreo',
-                'Segunda actividad porcentaje' => 24.59,
-                'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Tercera actividad porcentaje' => 11.07,
-                'Cuarta actividad nombre' => 'Comercio Menudeo',
-                'Cuarta actividad porcentaje' => 10.66,
-                'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                'Quinta actividad porcentaje' => 7.38
+                '2010' => array(
+                    'Total Actividades Económicas' => 244,
+                    'Primer actividad nombre' => 'Industria Manufacturera',
+                    'Primer actividad porcentaje' => 32.79,
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
+                    'Segunda actividad porcentaje' => 24.59,
+                    'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Tercera actividad porcentaje' => 11.07,
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad porcentaje' => 10.66,
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad porcentaje' => 7.38
+                )
             )
         );
     } // datos

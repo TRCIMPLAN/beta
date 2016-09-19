@@ -2,58 +2,68 @@
   "Nombre":"El Tajito",
   "IBC":{
     "Demografía":{
-      "Población total":"2643",
-      "Porcentaje de población masculina":"47.67",
-      "Porcentaje de población femenina":"52.33",
-      "Porcentaje de población de 0 a 14 años":"19.69",
-      "Porcentaje de población de 15 a 64 años":"73.03",
-      "Porcentaje de población de 65 y más años":"6.12",
-      "Porcentaje de población no especificada":"1.16",
-      "Fecundidad promedio":"1.89",
-      "Porcentaje de población nacida en otro estado":"21.64",
-      "Porcentaje de población con discapacidad":"3.99"
+      "2010":{
+        "Población total":2643,
+        "Porcentaje de población masculina":47.67,
+        "Porcentaje de población femenina":52.33,
+        "Porcentaje de población de 0 a 14 años":19.69,
+        "Porcentaje de población de 15 a 64 años":73.03,
+        "Porcentaje de población de 65 y más años":6.12,
+        "Porcentaje de población no especificada":1.16,
+        "Fecundidad promedio":1.89,
+        "Porcentaje de población nacida en otro estado":21.64,
+        "Porcentaje de población con discapacidad":3.99
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"12.71",
-      "Grado Promedio de Escolaridad masculina":"13.36",
-      "Grado Promedio de Escolaridad femenina":"12.13"
+      "2010":{
+        "Grado Promedio de Escolaridad":12.71,
+        "Grado Promedio de Escolaridad masculina":13.36,
+        "Grado Promedio de Escolaridad femenina":12.13
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"57.73",
-      "Población Económicamente Activa masculina":"57.92",
-      "Población Económicamente Activa femenina":"42.08",
-      "Población Ocupada":"95.13",
-      "Población Ocupada masculina":"57.69",
-      "Población Ocupada femenina":"42.31",
-      "Población Desocupada":"4.87",
-      "Derechohabiencia":"77.94"
+      "2010":{
+        "Población Económicamente Activa":57.73,
+        "Población Económicamente Activa masculina":57.92,
+        "Población Económicamente Activa femenina":42.08,
+        "Población Ocupada":95.13,
+        "Población Ocupada masculina":57.69,
+        "Población Ocupada femenina":42.31,
+        "Población Desocupada":4.87,
+        "Derechohabiencia":77.94
+      }
     },
     "Viviendas":{
-      "Hogares":"748",
-      "Hogares Jefatura masculina":"72.19",
-      "Hogares Jefatura femenina":"27.81",
-      "Ocupación por Vivienda":"3.53",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"99.87",
-      "Viviendas con Drenaje":"99.87",
-      "Viviendas con Televisión":"99.6",
-      "Viviendas con Automóvil":"79.28",
-      "Viviendas con Computadora":"65.78",
-      "Viviendas con Celular":"84.76",
-      "Viviendas con Internet":"55.35"
+      "2010":{
+        "Hogares":748,
+        "Hogares Jefatura masculina":72.19,
+        "Hogares Jefatura femenina":27.81,
+        "Ocupación por Vivienda":3.53,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":99.87,
+        "Viviendas con Drenaje":99.87,
+        "Viviendas con Televisión":99.6,
+        "Viviendas con Automóvil":79.28,
+        "Viviendas con Computadora":65.78,
+        "Viviendas con Celular":84.76,
+        "Viviendas con Internet":55.35
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"85",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"35.29",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"22.35",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"9.41",
-      "Cuarta actividad nombre":"Salud",
-      "Cuarta actividad porcentaje":"8.24",
-      "Quinta actividad nombre":"Industria Manufacturera",
-      "Quinta actividad porcentaje":"5.88"
+      "2010":{
+        "Total Actividades Económicas":85,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":35.29,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":22.35,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":9.41,
+        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad porcentaje":8.24,
+        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad porcentaje":5.88
+      }
     }
   }
 }]

@@ -2,56 +2,66 @@
   "Nombre":"Torreon Viejo",
   "IBC":{
     "Demografía":{
-      "Población total":"476",
-      "Porcentaje de población masculina":"47.35",
-      "Porcentaje de población femenina":"52.65",
-      "Porcentaje de población de 0 a 14 años":"32.01",
-      "Porcentaje de población de 15 a 64 años":"59.6",
-      "Porcentaje de población de 65 y más años":"8.39",
-      "Porcentaje de población no especificada":"0",
-      "Fecundidad promedio":"2.42",
-      "Porcentaje de población nacida en otro estado":"23.1",
-      "Porcentaje de población con discapacidad":"11.45"
+      "2010":{
+        "Población total":476,
+        "Porcentaje de población masculina":47.35,
+        "Porcentaje de población femenina":52.65,
+        "Porcentaje de población de 0 a 14 años":32.01,
+        "Porcentaje de población de 15 a 64 años":59.6,
+        "Porcentaje de población de 65 y más años":8.39,
+        "Porcentaje de población no especificada":0,
+        "Fecundidad promedio":2.42,
+        "Porcentaje de población nacida en otro estado":23.1,
+        "Porcentaje de población con discapacidad":11.45
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"7.43",
-      "Grado Promedio de Escolaridad masculina":"7.51",
-      "Grado Promedio de Escolaridad femenina":"7.36"
+      "2010":{
+        "Grado Promedio de Escolaridad":7.43,
+        "Grado Promedio de Escolaridad masculina":7.51,
+        "Grado Promedio de Escolaridad femenina":7.36
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"55.62",
-      "Población Económicamente Activa masculina":"65.97",
-      "Población Económicamente Activa femenina":"34.03",
-      "Población Ocupada":"99.47",
-      "Población Ocupada masculina":"65.79",
-      "Población Ocupada femenina":"34.21",
-      "Población Desocupada":"0.53",
-      "Derechohabiencia":"45.31"
+      "2010":{
+        "Población Económicamente Activa":55.62,
+        "Población Económicamente Activa masculina":65.97,
+        "Población Económicamente Activa femenina":34.03,
+        "Población Ocupada":99.47,
+        "Población Ocupada masculina":65.79,
+        "Población Ocupada femenina":34.21,
+        "Población Desocupada":0.53,
+        "Derechohabiencia":45.31
+      }
     },
     "Viviendas":{
-      "Hogares":"124",
-      "Hogares Jefatura masculina":"66.38",
-      "Hogares Jefatura femenina":"33.62",
-      "Ocupación por Vivienda":"3.84",
-      "Viviendas con Electricidad":"98.07",
-      "Viviendas con Agua":"98.06",
-      "Viviendas con Drenaje":"98.89",
-      "Viviendas con Televisión":"96.41",
-      "Viviendas con Automóvil":"6.87",
-      "Viviendas con Computadora":"8.23",
-      "Viviendas con Celular":"62.59",
-      "Viviendas con Internet":"8.05"
+      "2010":{
+        "Hogares":124,
+        "Hogares Jefatura masculina":66.38,
+        "Hogares Jefatura femenina":33.62,
+        "Ocupación por Vivienda":3.84,
+        "Viviendas con Electricidad":98.07,
+        "Viviendas con Agua":98.06,
+        "Viviendas con Drenaje":98.89,
+        "Viviendas con Televisión":96.41,
+        "Viviendas con Automóvil":6.87,
+        "Viviendas con Computadora":8.23,
+        "Viviendas con Celular":62.59,
+        "Viviendas con Internet":8.05
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"11",
-      "Primer actividad nombre":"Otros servicios, excepto Gobierno",
-      "Primer actividad porcentaje":"45.45",
-      "Segunda actividad nombre":"Comercio Menudeo",
-      "Segunda actividad porcentaje":"36.36",
-      "Tercera actividad nombre":"Inmobiliarios",
-      "Tercera actividad porcentaje":"9.09",
-      "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"9.09"
+      "2010":{
+        "Total Actividades Económicas":11,
+        "Primer actividad nombre":"Otros servicios, excepto Gobierno",
+        "Primer actividad porcentaje":45.45,
+        "Segunda actividad nombre":"Comercio Menudeo",
+        "Segunda actividad porcentaje":36.36,
+        "Tercera actividad nombre":"Industria Manufacturera",
+        "Tercera actividad porcentaje":9.09,
+        "Cuarta actividad nombre":"Inmobiliarios",
+        "Cuarta actividad porcentaje":9.09
+      }
     }
   }
 }]

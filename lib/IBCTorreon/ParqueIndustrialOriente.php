@@ -34,7 +34,7 @@ class ParqueIndustrialOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Oriente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:01';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'parque-industrial-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,23 +58,29 @@ class ParqueIndustrialOriente extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 0
+                '2010' => array(
+                    'Población total' => 0
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 0
+                '2010' => array(
+                    'Hogares' => 0
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 83,
-                'Primer actividad nombre' => 'Comercio Mayoreo',
-                'Primer actividad porcentaje' => 25.30,
-                'Segunda actividad nombre' => 'Industria Manufacturera',
-                'Segunda actividad porcentaje' => 25.30,
-                'Tercera actividad nombre' => 'Comercio Menudeo',
-                'Tercera actividad porcentaje' => 16.87,
-                'Cuarta actividad nombre' => 'Gubernamentales',
-                'Cuarta actividad porcentaje' => 6.02,
-                'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                'Quinta actividad porcentaje' => 6.02
+                '2010' => array(
+                    'Total Actividades Económicas' => 83,
+                    'Primer actividad nombre' => 'Industria Manufacturera',
+                    'Primer actividad porcentaje' => 25.30,
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
+                    'Segunda actividad porcentaje' => 25.30,
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad porcentaje' => 16.87,
+                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Cuarta actividad porcentaje' => 6.02,
+                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad porcentaje' => 6.02
+                )
             )
         );
     } // datos

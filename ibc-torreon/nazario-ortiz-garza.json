@@ -2,58 +2,68 @@
   "Nombre":"Nazario Ortiz Garza",
   "IBC":{
     "Demografía":{
-      "Población total":"411",
-      "Porcentaje de población masculina":"47.2",
-      "Porcentaje de población femenina":"52.8",
-      "Porcentaje de población de 0 a 14 años":"21.9",
-      "Porcentaje de población de 15 a 64 años":"65.69",
-      "Porcentaje de población de 65 y más años":"10.95",
-      "Porcentaje de población no especificada":"1.46",
-      "Fecundidad promedio":"1.82",
-      "Porcentaje de población nacida en otro estado":"18.73",
-      "Porcentaje de población con discapacidad":"4.37"
+      "2010":{
+        "Población total":411,
+        "Porcentaje de población masculina":47.2,
+        "Porcentaje de población femenina":52.8,
+        "Porcentaje de población de 0 a 14 años":21.9,
+        "Porcentaje de población de 15 a 64 años":65.69,
+        "Porcentaje de población de 65 y más años":10.95,
+        "Porcentaje de población no especificada":1.46,
+        "Fecundidad promedio":1.82,
+        "Porcentaje de población nacida en otro estado":18.73,
+        "Porcentaje de población con discapacidad":4.37
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.55",
-      "Grado Promedio de Escolaridad masculina":"9.65",
-      "Grado Promedio de Escolaridad femenina":"9.48"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.55,
+        "Grado Promedio de Escolaridad masculina":9.65,
+        "Grado Promedio de Escolaridad femenina":9.48
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"55.52",
-      "Población Económicamente Activa masculina":"62.43",
-      "Población Económicamente Activa femenina":"37.57",
-      "Población Ocupada":"95.39",
-      "Población Ocupada masculina":"61.27",
-      "Población Ocupada femenina":"38.73",
-      "Población Desocupada":"4.61",
-      "Derechohabiencia":"63.02"
+      "2010":{
+        "Población Económicamente Activa":55.52,
+        "Población Económicamente Activa masculina":62.43,
+        "Población Económicamente Activa femenina":37.57,
+        "Población Ocupada":95.39,
+        "Población Ocupada masculina":61.27,
+        "Población Ocupada femenina":38.73,
+        "Población Desocupada":4.61,
+        "Derechohabiencia":63.02
+      }
     },
     "Viviendas":{
-      "Hogares":"111",
-      "Hogares Jefatura masculina":"68.47",
-      "Hogares Jefatura femenina":"31.53",
-      "Ocupación por Vivienda":"3.7",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"99.1",
-      "Viviendas con Televisión":"98.2",
-      "Viviendas con Automóvil":"47.75",
-      "Viviendas con Computadora":"28.83",
-      "Viviendas con Celular":"60.36",
-      "Viviendas con Internet":"23.13"
+      "2010":{
+        "Hogares":111,
+        "Hogares Jefatura masculina":68.47,
+        "Hogares Jefatura femenina":31.53,
+        "Ocupación por Vivienda":3.7,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":99.1,
+        "Viviendas con Televisión":98.2,
+        "Viviendas con Automóvil":47.75,
+        "Viviendas con Computadora":28.83,
+        "Viviendas con Celular":60.36,
+        "Viviendas con Internet":23.13
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"17",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"23.53",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"23.53",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"17.65",
-      "Cuarta actividad nombre":"Educativos",
-      "Cuarta actividad porcentaje":"11.76",
-      "Quinta actividad nombre":"Salud",
-      "Quinta actividad porcentaje":"11.76"
+      "2010":{
+        "Total Actividades Económicas":17,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":23.53,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":23.53,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":17.65,
+        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad porcentaje":11.76,
+        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad porcentaje":11.76
+      }
     }
   }
 }]

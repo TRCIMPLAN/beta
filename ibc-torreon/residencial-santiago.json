@@ -2,52 +2,62 @@
   "Nombre":"Residencial Santiago",
   "IBC":{
     "Demografía":{
-      "Población total":"348",
-      "Porcentaje de población masculina":"50.57",
-      "Porcentaje de población femenina":"49.43",
-      "Porcentaje de población de 0 a 14 años":"34.77",
-      "Porcentaje de población de 15 a 64 años":"61.78",
-      "Porcentaje de población de 65 y más años":"2.59",
-      "Porcentaje de población no especificada":"0.86",
-      "Fecundidad promedio":"2.08",
-      "Porcentaje de población nacida en otro estado":"16.38",
-      "Porcentaje de población con discapacidad":"2.76"
+      "2010":{
+        "Población total":348,
+        "Porcentaje de población masculina":50.57,
+        "Porcentaje de población femenina":49.43,
+        "Porcentaje de población de 0 a 14 años":34.77,
+        "Porcentaje de población de 15 a 64 años":61.78,
+        "Porcentaje de población de 65 y más años":2.59,
+        "Porcentaje de población no especificada":0.86,
+        "Fecundidad promedio":2.08,
+        "Porcentaje de población nacida en otro estado":16.38,
+        "Porcentaje de población con discapacidad":2.76
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.92",
-      "Grado Promedio de Escolaridad masculina":"10.01",
-      "Grado Promedio de Escolaridad femenina":"9.83"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.92,
+        "Grado Promedio de Escolaridad masculina":10.01,
+        "Grado Promedio de Escolaridad femenina":9.83
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"62.14",
-      "Población Económicamente Activa masculina":"70.2",
-      "Población Económicamente Activa femenina":"29.8",
-      "Población Ocupada":"96.58",
-      "Población Ocupada masculina":"71.23",
-      "Población Ocupada femenina":"28.77",
-      "Población Desocupada":"3.42",
-      "Derechohabiencia":"83.33"
+      "2010":{
+        "Población Económicamente Activa":62.14,
+        "Población Económicamente Activa masculina":70.2,
+        "Población Económicamente Activa femenina":29.8,
+        "Población Ocupada":96.58,
+        "Población Ocupada masculina":71.23,
+        "Población Ocupada femenina":28.77,
+        "Población Desocupada":3.42,
+        "Derechohabiencia":83.33
+      }
     },
     "Viviendas":{
-      "Hogares":"104",
-      "Hogares Jefatura masculina":"88.46",
-      "Hogares Jefatura femenina":"11.54",
-      "Ocupación por Vivienda":"3.35",
-      "Viviendas con Electricidad":"99.04",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"99.04",
-      "Viviendas con Televisión":"96.15",
-      "Viviendas con Automóvil":"50.18",
-      "Viviendas con Computadora":"35.73",
-      "Viviendas con Celular":"82.69",
-      "Viviendas con Internet":"17.43"
+      "2010":{
+        "Hogares":104,
+        "Hogares Jefatura masculina":88.46,
+        "Hogares Jefatura femenina":11.54,
+        "Ocupación por Vivienda":3.35,
+        "Viviendas con Electricidad":99.04,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":99.04,
+        "Viviendas con Televisión":96.15,
+        "Viviendas con Automóvil":50.18,
+        "Viviendas con Computadora":35.73,
+        "Viviendas con Celular":82.69,
+        "Viviendas con Internet":17.43
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"6",
-      "Primer actividad nombre":"Educativos",
-      "Primer actividad porcentaje":"50",
-      "Segunda actividad nombre":"Comercio Menudeo",
-      "Segunda actividad porcentaje":"50"
+      "2010":{
+        "Total Actividades Económicas":6,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":50,
+        "Segunda actividad nombre":"Educativos",
+        "Segunda actividad porcentaje":50
+      }
     }
   }
 }]

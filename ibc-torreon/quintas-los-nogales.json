@@ -2,58 +2,68 @@
   "Nombre":"Quintas Los Nogales",
   "IBC":{
     "Demografía":{
-      "Población total":"320",
-      "Porcentaje de población masculina":"49.69",
-      "Porcentaje de población femenina":"50.31",
-      "Porcentaje de población de 0 a 14 años":"30.99",
-      "Porcentaje de población de 15 a 64 años":"64.92",
-      "Porcentaje de población de 65 y más años":"4.08",
-      "Porcentaje de población no especificada":"0.01",
-      "Fecundidad promedio":"1.99",
-      "Porcentaje de población nacida en otro estado":"22.05",
-      "Porcentaje de población con discapacidad":"0.6"
+      "2010":{
+        "Población total":320,
+        "Porcentaje de población masculina":49.69,
+        "Porcentaje de población femenina":50.31,
+        "Porcentaje de población de 0 a 14 años":30.99,
+        "Porcentaje de población de 15 a 64 años":64.92,
+        "Porcentaje de población de 65 y más años":4.08,
+        "Porcentaje de población no especificada":0.01,
+        "Fecundidad promedio":1.99,
+        "Porcentaje de población nacida en otro estado":22.05,
+        "Porcentaje de población con discapacidad":0.6
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.61",
-      "Grado Promedio de Escolaridad masculina":"9.67",
-      "Grado Promedio de Escolaridad femenina":"9.55"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.61,
+        "Grado Promedio de Escolaridad masculina":9.67,
+        "Grado Promedio de Escolaridad femenina":9.55
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"58.12",
-      "Población Económicamente Activa masculina":"64.66",
-      "Población Económicamente Activa femenina":"35.34",
-      "Población Ocupada":"91.95",
-      "Población Ocupada masculina":"65.03",
-      "Población Ocupada femenina":"34.97",
-      "Población Desocupada":"8.05",
-      "Derechohabiencia":"71.79"
+      "2010":{
+        "Población Económicamente Activa":58.12,
+        "Población Económicamente Activa masculina":64.66,
+        "Población Económicamente Activa femenina":35.34,
+        "Población Ocupada":91.95,
+        "Población Ocupada masculina":65.03,
+        "Población Ocupada femenina":34.97,
+        "Población Desocupada":8.05,
+        "Derechohabiencia":71.79
+      }
     },
     "Viviendas":{
-      "Hogares":"99",
-      "Hogares Jefatura masculina":"77.61",
-      "Hogares Jefatura femenina":"22.39",
-      "Ocupación por Vivienda":"3.23",
-      "Viviendas con Electricidad":"99.67",
-      "Viviendas con Agua":"100",
-      "Viviendas con Drenaje":"100",
-      "Viviendas con Televisión":"99.65",
-      "Viviendas con Automóvil":"44.95",
-      "Viviendas con Computadora":"29.5",
-      "Viviendas con Celular":"85.81",
-      "Viviendas con Internet":"10.34"
+      "2010":{
+        "Hogares":99,
+        "Hogares Jefatura masculina":77.61,
+        "Hogares Jefatura femenina":22.39,
+        "Ocupación por Vivienda":3.23,
+        "Viviendas con Electricidad":99.67,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":99.65,
+        "Viviendas con Automóvil":44.95,
+        "Viviendas con Computadora":29.5,
+        "Viviendas con Celular":85.81,
+        "Viviendas con Internet":10.34
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"23",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"47.83",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"17.39",
-      "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
-      "Tercera actividad porcentaje":"13.04",
-      "Cuarta actividad nombre":"Manejo de Residuos",
-      "Cuarta actividad porcentaje":"8.7",
-      "Quinta actividad nombre":"Comercio Mayoreo",
-      "Quinta actividad porcentaje":"4.35"
+      "2010":{
+        "Total Actividades Económicas":23,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":47.83,
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":17.39,
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":13.04,
+        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad porcentaje":8.7,
+        "Quinta actividad nombre":"Comercio Mayoreo",
+        "Quinta actividad porcentaje":4.35
+      }
     }
   }
 }]

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia San Eduardo de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="San Eduardo" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">14.29 %</td>
       </tr>
       <tr>
-        <td>4° Esparcimiento, Culturales, Deportivos</td>
+        <td>4° Profesionales, Científicos, Técnicos</td>
         <td class="derecha">7.14 %</td>
       </tr>
       <tr>
-        <td>5° Educativos</td>
+        <td>5° Salud</td>
         <td class="derecha">7.14 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 69.44, '#59BFC3', '69.44 %'],
-              ['Computadora', 38.89, '#59C38E', '38.89 %'],
-              ['Celular', 88.89, '#8EC359', '88.89 %'],
-              ['Internet', 13.89, '#C38E59', '13.89 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 69.44, '#8EC359', '69.44 %'],
+              ['Computadora', 38.89, '#C38E59', '38.89 %'],
+              ['Celular', 88.89, '#FF8080', '88.89 %'],
+              ['Internet', 13.89, '#FF80C0', '13.89 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 21.43, '#80C0FF', '21.43 %'],
-              ['2° Comercio Mayoreo', 14.29, '#59BFC3', '14.29 %'],
-              ['3° Preparación de Alimentos y Bebidas', 14.29, '#59C38E', '14.29 %'],
-              ['4° Esparcimiento, Culturales, Deportivos', 7.14, '#8EC359', '7.14 %'],
-              ['5° Educativos', 7.14, '#C38E59', '7.14 %']
+              ['1° Comercio Menudeo', 21.43, '#59C38E', '21.43 %'],
+              ['2° Comercio Mayoreo', 14.29, '#8EC359', '14.29 %'],
+              ['3° Preparación de Alimentos y Bebidas', 14.29, '#C38E59', '14.29 %'],
+              ['4° Profesionales, Científicos, Técnicos', 7.14, '#80C0FF', '7.14 %'],
+              ['5° Salud', 7.14, '#59BFC3', '7.14 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

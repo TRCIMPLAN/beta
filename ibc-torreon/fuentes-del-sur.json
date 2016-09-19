@@ -2,58 +2,68 @@
   "Nombre":"Fuentes Del Sur",
   "IBC":{
     "Demografía":{
-      "Población total":"4449",
-      "Porcentaje de población masculina":"47",
-      "Porcentaje de población femenina":"53",
-      "Porcentaje de población de 0 a 14 años":"20.7",
-      "Porcentaje de población de 15 a 64 años":"71.34",
-      "Porcentaje de población de 65 y más años":"6.74",
-      "Porcentaje de población no especificada":"1.22",
-      "Fecundidad promedio":"2.01",
-      "Porcentaje de población nacida en otro estado":"18.32",
-      "Porcentaje de población con discapacidad":"4.5"
+      "2010":{
+        "Población total":4449,
+        "Porcentaje de población masculina":47,
+        "Porcentaje de población femenina":53,
+        "Porcentaje de población de 0 a 14 años":20.7,
+        "Porcentaje de población de 15 a 64 años":71.34,
+        "Porcentaje de población de 65 y más años":6.74,
+        "Porcentaje de población no especificada":1.22,
+        "Fecundidad promedio":2.01,
+        "Porcentaje de población nacida en otro estado":18.32,
+        "Porcentaje de población con discapacidad":4.5
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"12.02",
-      "Grado Promedio de Escolaridad masculina":"12.4",
-      "Grado Promedio de Escolaridad femenina":"11.68"
+      "2010":{
+        "Grado Promedio de Escolaridad":12.02,
+        "Grado Promedio de Escolaridad masculina":12.4,
+        "Grado Promedio de Escolaridad femenina":11.68
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"54.18",
-      "Población Económicamente Activa masculina":"60.11",
-      "Población Económicamente Activa femenina":"39.89",
-      "Población Ocupada":"88.85",
-      "Población Ocupada masculina":"58.75",
-      "Población Ocupada femenina":"41.25",
-      "Población Desocupada":"11.15",
-      "Derechohabiencia":"76.58"
+      "2010":{
+        "Población Económicamente Activa":54.18,
+        "Población Económicamente Activa masculina":60.11,
+        "Población Económicamente Activa femenina":39.89,
+        "Población Ocupada":88.85,
+        "Población Ocupada masculina":58.75,
+        "Población Ocupada femenina":41.25,
+        "Población Desocupada":11.15,
+        "Derechohabiencia":76.58
+      }
     },
     "Viviendas":{
-      "Hogares":"1237",
-      "Hogares Jefatura masculina":"69.6",
-      "Hogares Jefatura femenina":"30.4",
-      "Ocupación por Vivienda":"3.6",
-      "Viviendas con Electricidad":"100",
-      "Viviendas con Agua":"99.6",
-      "Viviendas con Drenaje":"99.76",
-      "Viviendas con Televisión":"99.6",
-      "Viviendas con Automóvil":"73.57",
-      "Viviendas con Computadora":"57.33",
-      "Viviendas con Celular":"83.19",
-      "Viviendas con Internet":"43.08"
+      "2010":{
+        "Hogares":1237,
+        "Hogares Jefatura masculina":69.6,
+        "Hogares Jefatura femenina":30.4,
+        "Ocupación por Vivienda":3.6,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":99.6,
+        "Viviendas con Drenaje":99.76,
+        "Viviendas con Televisión":99.6,
+        "Viviendas con Automóvil":73.57,
+        "Viviendas con Computadora":57.33,
+        "Viviendas con Celular":83.19,
+        "Viviendas con Internet":43.08
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"67",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"31.34",
-      "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
-      "Segunda actividad porcentaje":"19.4",
-      "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Tercera actividad porcentaje":"13.43",
-      "Cuarta actividad nombre":"Industria Manufacturera",
-      "Cuarta actividad porcentaje":"10.45",
-      "Quinta actividad nombre":"Gubernamentales",
-      "Quinta actividad porcentaje":"8.96"
+      "2010":{
+        "Total Actividades Económicas":67,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":31.34,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":19.4,
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad porcentaje":13.43,
+        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad porcentaje":10.45,
+        "Quinta actividad nombre":"Gubernamentales",
+        "Quinta actividad porcentaje":8.96
+      }
     }
   }
 }]

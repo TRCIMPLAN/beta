@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Santa Anita de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Santa Anita" src="../imagenes/imagen.jpg">
@@ -425,7 +425,7 @@
         <td class="derecha">10.64 %</td>
       </tr>
       <tr>
-        <td>5° Inmobiliarios</td>
+        <td>5° Profesionales, Científicos, Técnicos</td>
         <td class="derecha">4.26 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 98.5, '#FF80C0', '98.5 %'],
-              ['Drenaje', 99.78, '#C080FF', '99.78 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 97.1, '#59BFC3', '97.1 %'],
-              ['Computadora', 82.89, '#59C38E', '82.89 %'],
-              ['Celular', 95.23, '#8EC359', '95.23 %'],
-              ['Internet', 75.73, '#C38E59', '75.73 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 98.5, '#80C0FF', '98.5 %'],
+              ['Drenaje', 99.78, '#59BFC3', '99.78 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 97.1, '#8EC359', '97.1 %'],
+              ['Computadora', 82.89, '#C38E59', '82.89 %'],
+              ['Celular', 95.23, '#FF8080', '95.23 %'],
+              ['Internet', 75.73, '#FF80C0', '75.73 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 42.55, '#80C0FF', '42.55 %'],
-              ['2° Financieros y Seguros', 12.77, '#59BFC3', '12.77 %'],
-              ['3° Preparación de Alimentos y Bebidas', 10.64, '#59C38E', '10.64 %'],
-              ['4° Otros servicios, excepto Gobierno', 10.64, '#8EC359', '10.64 %'],
-              ['5° Inmobiliarios', 4.26, '#C38E59', '4.26 %']
+              ['1° Comercio Menudeo', 42.55, '#59C38E', '42.55 %'],
+              ['2° Financieros y Seguros', 12.77, '#8EC359', '12.77 %'],
+              ['3° Preparación de Alimentos y Bebidas', 10.64, '#C38E59', '10.64 %'],
+              ['4° Otros servicios, excepto Gobierno', 10.64, '#80C0FF', '10.64 %'],
+              ['5° Profesionales, Científicos, Técnicos', 4.26, '#59BFC3', '4.26 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

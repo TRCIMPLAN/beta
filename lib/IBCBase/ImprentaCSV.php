@@ -27,11 +27,11 @@ namespace IBCBase;
  */
 class ImprentaCSV extends \Base\Imprenta {
 
-    public $directorio;               // Texto, nombre del directorio en raíz donde se guardarán los archivos
-    public $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
-    protected $archivo_ruta;          // Texto opcional, ruta al archivo index
-    protected $recolector;            // Instancia de \Base\Recolector
-    protected $contador = 0;          // Entero, cantidad de publicaciones producidas
+    public    $directorio;               // Texto, nombre del directorio en raíz donde se guardarán los archivos
+    public    $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
+    protected $archivo_ruta;             // Texto opcional, ruta al archivo index
+    protected $recolector;               // Instancia de \Base\Recolector
+    protected $contador = 0;             // Entero, cantidad de publicaciones producidas
     protected $columnas = array(
         'Demografía' => array(
             'Población total',
@@ -118,15 +118,12 @@ class ImprentaCSV extends \Base\Imprenta {
      * @return string Texto con los encabezados
      */
     protected function encabezados_csv() {
+        // Primer columna es la colonia
+        $b = array("\"Colonia\"");
         // Bucle por las columnas para crear encabezados
-        $b = array();
         foreach ($this->columnas as $eje => $indicadores) {
             foreach ($indicadores as $indicador) {
-                if (strpos($indicador, ',') === FALSE) {
-                    $b[] = $indicador;
-                } else {
-                    $b[] = '"'.$indicador.'"';
-                }
+                $b[] = "\"$indicador\"";
             }
         }
         // Entregar
@@ -146,17 +143,19 @@ class ImprentaCSV extends \Base\Imprenta {
             // Debe tener el método datos
             if (method_exists($publicacion, 'datos')) {
                 $datos = $publicacion->datos();
+                // Primer columna es el nombre de la colonia
+                $b = array("\"{$publicacion->nombre}\"");
                 // Bucle por las columnas
-                $b = array();
                 foreach ($this->columnas as $eje => $indicadores) {
                     foreach ($indicadores as $indicador) {
                         // Si existe ese dato se pone, de lo contrario va vacio
-                        if (isset($datos[$eje][$indicador])) {
+                        if (isset($datos[$eje][Eje::FECHA][$indicador])) {
                             // Si tiene una coma su pone entre comillas dobles
-                            if (strpos($datos[$eje][$indicador], ',') === FALSE) {
-                                $b[] = $datos[$eje][$indicador];
+                            $dato = $datos[$eje][Eje::FECHA][$indicador];
+                            if (is_int($dato) || is_float($dato)) {
+                                $b[] = $dato;
                             } else {
-                                $b[] = '"'.$datos[$eje][$indicador].'"';
+                                $b[] = "\"$dato\"";
                             }
                         } else {
                             $b[] = '';

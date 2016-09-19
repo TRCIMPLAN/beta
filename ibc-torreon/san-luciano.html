@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia San Luciano de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:33:02">17/09/2016 15:33
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="San Luciano" src="../imagenes/imagen.jpg">
@@ -421,11 +421,11 @@
         <td class="derecha">13.64 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">9.09 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 100, '#FF80C0', '100 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 100, '#80C0FF', '100 %'],
-              ['Automóvil', 98.08, '#59BFC3', '98.08 %'],
-              ['Computadora', 92.31, '#59C38E', '92.31 %'],
-              ['Celular', 98.08, '#8EC359', '98.08 %'],
-              ['Internet', 92.31, '#C38E59', '92.31 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 100, '#80C0FF', '100 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 100, '#59C38E', '100 %'],
+              ['Automóvil', 98.08, '#8EC359', '98.08 %'],
+              ['Computadora', 92.31, '#C38E59', '92.31 %'],
+              ['Celular', 98.08, '#FF8080', '98.08 %'],
+              ['Internet', 92.31, '#FF80C0', '92.31 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 36.36, '#80C0FF', '36.36 %'],
-              ['2° Comercio Mayoreo', 18.18, '#59BFC3', '18.18 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.64, '#59C38E', '13.64 %'],
-              ['4° Preparación de Alimentos y Bebidas', 9.09, '#8EC359', '9.09 %'],
-              ['5° Industria Manufacturera', 9.09, '#C38E59', '9.09 %']
+              ['1° Comercio Menudeo', 36.36, '#59C38E', '36.36 %'],
+              ['2° Comercio Mayoreo', 18.18, '#8EC359', '18.18 %'],
+              ['3° Otros servicios, excepto Gobierno', 13.64, '#C38E59', '13.64 %'],
+              ['4° Industria Manufacturera', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Preparación de Alimentos y Bebidas', 9.09, '#59BFC3', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

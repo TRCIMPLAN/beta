@@ -60,14 +60,14 @@ class EjeViviendasGraficasWeb extends EjeViviendas implements SalidaWeb {
         // Gráfica Viviendas con...
         $graf_viv_con = new GraficaBarrasWeb(self::ID_GRAF_VIV_CON);
         $graf_viv_con->definir_titulo('Viviendas con...');
-        $graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#FF8080');
-        $graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#FF80C0');
-        $graf_viv_con->agregar('Drenaje',      $this->viviendas['Viviendas con Drenaje'],      '#C080FF');
-        $graf_viv_con->agregar('Televisión',   $this->viviendas['Viviendas con Televisión'],   '#80C0FF');
-        $graf_viv_con->agregar('Automóvil',    $this->viviendas['Viviendas con Automóvil'],    '#59BFC3');
-        $graf_viv_con->agregar('Computadora',  $this->viviendas['Viviendas con Computadora'],  '#59C38E');
-        $graf_viv_con->agregar('Celular',      $this->viviendas['Viviendas con Celular'],      '#8EC359');
-        $graf_viv_con->agregar('Internet',     $this->viviendas['Viviendas con Internet'],     '#C38E59');
+        $graf_viv_con->agregar('Electricidad', $this->viviendas['Viviendas con Electricidad'], '#C080FF');
+        $graf_viv_con->agregar('Agua',         $this->viviendas['Viviendas con Agua'],         '#80C0FF');
+        $graf_viv_con->agregar('Drenaje',      $this->viviendas['Viviendas con Drenaje'],      '#59BFC3');
+        $graf_viv_con->agregar('Televisión',   $this->viviendas['Viviendas con Televisión'],   '#59C38E');
+        $graf_viv_con->agregar('Automóvil',    $this->viviendas['Viviendas con Automóvil'],    '#8EC359');
+        $graf_viv_con->agregar('Computadora',  $this->viviendas['Viviendas con Computadora'],  '#C38E59');
+        $graf_viv_con->agregar('Celular',      $this->viviendas['Viviendas con Celular'],      '#FF8080');
+        $graf_viv_con->agregar('Internet',     $this->viviendas['Viviendas con Internet'],     '#FF80C0');
         $graf_viv_con->definir_eje_horizontal('Porcentaje', 0, 100);
         $graf_viv_con->definir_post_nota(' %');
         $this->graficas[] = $graf_viv_con;

@@ -153,7 +153,7 @@
           <div class="encabezado-descripcion" itemprop="description">Colonia Ciudad Nazas Poligono 24A de Torreón.</div>
                 <div class="encabezado-autor-fecha">
           Por <span itemprop="author">IMPLAN Torreón Staff</span>
-          - <meta itemprop="datePublished" content="2016-09-17 15:32:58">17/09/2016 15:32
+          - <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
         </div>
         </div>
         <meta itemprop="image" alt="Ciudad Nazas Poligono 24A" src="../imagenes/imagen.jpg">
@@ -417,15 +417,15 @@
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
-        <td>4° Otros servicios, excepto Gobierno</td>
+        <td>4° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">12.50 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Otros servicios, excepto Gobierno</td>
         <td class="derecha">12.50 %</td>
       </tr>
     </tbody>
@@ -770,14 +770,14 @@
       function elaborarGraficaVivCon() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Electricidad', 100, '#FF8080', '100 %'],
-              ['Agua', 99.38, '#FF80C0', '99.38 %'],
-              ['Drenaje', 100, '#C080FF', '100 %'],
-              ['Televisión', 99.38, '#80C0FF', '99.38 %'],
-              ['Automóvil', 50.62, '#59BFC3', '50.62 %'],
-              ['Computadora', 27.64, '#59C38E', '27.64 %'],
-              ['Celular', 85.19, '#8EC359', '85.19 %'],
-              ['Internet', 13.16, '#C38E59', '13.16 %']
+              ['Electricidad', 100, '#C080FF', '100 %'],
+              ['Agua', 99.38, '#80C0FF', '99.38 %'],
+              ['Drenaje', 100, '#59BFC3', '100 %'],
+              ['Televisión', 99.38, '#59C38E', '99.38 %'],
+              ['Automóvil', 50.62, '#8EC359', '50.62 %'],
+              ['Computadora', 27.64, '#C38E59', '27.64 %'],
+              ['Celular', 85.19, '#FF8080', '85.19 %'],
+              ['Internet', 13.16, '#FF80C0', '13.16 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
@@ -796,11 +796,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 50, '#80C0FF', '50 %'],
-              ['2° Manejo de Residuos', 12.5, '#59BFC3', '12.5 %'],
-              ['3° Preparación de Alimentos y Bebidas', 12.5, '#59C38E', '12.5 %'],
-              ['4° Otros servicios, excepto Gobierno', 12.5, '#8EC359', '12.5 %'],
-              ['5° Industria Manufacturera', 12.5, '#C38E59', '12.5 %']
+              ['1° Comercio Menudeo', 50, '#59C38E', '50 %'],
+              ['2° Manejo de Residuos', 12.5, '#8EC359', '12.5 %'],
+              ['3° Industria Manufacturera', 12.5, '#C38E59', '12.5 %'],
+              ['4° Preparación de Alimentos y Bebidas', 12.5, '#80C0FF', '12.5 %'],
+              ['5° Otros servicios, excepto Gobierno', 12.5, '#59BFC3', '12.5 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

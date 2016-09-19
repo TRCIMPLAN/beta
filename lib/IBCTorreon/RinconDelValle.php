@@ -34,7 +34,7 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon Del Valle';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-17 15:33:02';
+        $this->fecha       = '2016-09-14 08:25:21';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -58,50 +58,60 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
     public function datos() {
         return array(
             'Demografía' => array(
-                'Población total' => 164,
-                'Porcentaje de población masculina' => 44.51,
-                'Porcentaje de población femenina' => 55.49,
-                'Porcentaje de población de 0 a 14 años' => 37.80,
-                'Porcentaje de población de 15 a 64 años' => 62.20,
-                'Porcentaje de población de 65 y más años' => 0.00,
-                'Porcentaje de población no especificada' => 0.00,
-                'Fecundidad promedio' => 1.80,
-                'Porcentaje de población nacida en otro estado' => 17.97,
-                'Porcentaje de población con discapacidad' => 1.83
+                '2010' => array(
+                    'Población total' => 164,
+                    'Porcentaje de población masculina' => 44.51,
+                    'Porcentaje de población femenina' => 55.49,
+                    'Porcentaje de población de 0 a 14 años' => 37.80,
+                    'Porcentaje de población de 15 a 64 años' => 62.20,
+                    'Porcentaje de población de 65 y más años' => 0.00,
+                    'Porcentaje de población no especificada' => 0.00,
+                    'Fecundidad promedio' => 1.80,
+                    'Porcentaje de población nacida en otro estado' => 17.97,
+                    'Porcentaje de población con discapacidad' => 1.83
+                )
             ),
             'Educación' => array(
-                'Grado Promedio de Escolaridad' => 12.80,
-                'Grado Promedio de Escolaridad masculina' => 13.13,
-                'Grado Promedio de Escolaridad femenina' => 12.54
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 12.80,
+                    'Grado Promedio de Escolaridad masculina' => 13.13,
+                    'Grado Promedio de Escolaridad femenina' => 12.54
+                )
             ),
             'Características Económicas' => array(
-                'Población Económicamente Activa' => 61.61,
-                'Población Económicamente Activa masculina' => 62.32,
-                'Población Económicamente Activa femenina' => 37.68,
-                'Población Ocupada' => 95.46,
-                'Población Ocupada masculina' => 62.12,
-                'Población Ocupada femenina' => 37.88,
-                'Población Desocupada' => 4.54,
-                'Derechohabiencia' => 85.37
+                '2010' => array(
+                    'Población Económicamente Activa' => 61.61,
+                    'Población Económicamente Activa masculina' => 62.32,
+                    'Población Económicamente Activa femenina' => 37.68,
+                    'Población Ocupada' => 95.46,
+                    'Población Ocupada masculina' => 62.12,
+                    'Población Ocupada femenina' => 37.88,
+                    'Población Desocupada' => 4.54,
+                    'Derechohabiencia' => 85.37
+                )
             ),
             'Viviendas' => array(
-                'Hogares' => 43,
-                'Hogares Jefatura masculina' => 79.07,
-                'Hogares Jefatura femenina' => 20.93,
-                'Ocupación por Vivienda' => 3.81,
-                'Viviendas con Electricidad' => 100.00,
-                'Viviendas con Agua' => 100.00,
-                'Viviendas con Drenaje' => 100.00,
-                'Viviendas con Televisión' => 100.00,
-                'Viviendas con Automóvil' => 83.72,
-                'Viviendas con Computadora' => 73.79,
-                'Viviendas con Celular' => 86.05,
-                'Viviendas con Internet' => 46.51
+                '2010' => array(
+                    'Hogares' => 43,
+                    'Hogares Jefatura masculina' => 79.07,
+                    'Hogares Jefatura femenina' => 20.93,
+                    'Ocupación por Vivienda' => 3.81,
+                    'Viviendas con Electricidad' => 100.00,
+                    'Viviendas con Agua' => 100.00,
+                    'Viviendas con Drenaje' => 100.00,
+                    'Viviendas con Televisión' => 100.00,
+                    'Viviendas con Automóvil' => 83.72,
+                    'Viviendas con Computadora' => 73.79,
+                    'Viviendas con Celular' => 86.05,
+                    'Viviendas con Internet' => 46.51
+                )
             ),
             'Unidades Económicas' => array(
-                'Total Actividades Económicas' => 1,
-                'Primer actividad nombre' => 'Comercio Menudeo',
-                'Primer actividad porcentaje' => 100.00
+                '2010' => array(
+                    'Total Actividades Económicas' => 1,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 100.00
+                )
             )
         );
     } // datos

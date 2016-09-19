@@ -2,58 +2,68 @@
   "Nombre":"Los Sauces",
   "IBC":{
     "Demografía":{
-      "Población total":"1176",
-      "Porcentaje de población masculina":"49.57",
-      "Porcentaje de población femenina":"50.43",
-      "Porcentaje de población de 0 a 14 años":"40.22",
-      "Porcentaje de población de 15 a 64 años":"57.57",
-      "Porcentaje de población de 65 y más años":"1.19",
-      "Porcentaje de población no especificada":"1.02",
-      "Fecundidad promedio":"1.99",
-      "Porcentaje de población nacida en otro estado":"13.98",
-      "Porcentaje de población con discapacidad":"5.43"
+      "2010":{
+        "Población total":1176,
+        "Porcentaje de población masculina":49.57,
+        "Porcentaje de población femenina":50.43,
+        "Porcentaje de población de 0 a 14 años":40.22,
+        "Porcentaje de población de 15 a 64 años":57.57,
+        "Porcentaje de población de 65 y más años":1.19,
+        "Porcentaje de población no especificada":1.02,
+        "Fecundidad promedio":1.99,
+        "Porcentaje de población nacida en otro estado":13.98,
+        "Porcentaje de población con discapacidad":5.43
+      }
     },
     "Educación":{
-      "Grado Promedio de Escolaridad":"9.72",
-      "Grado Promedio de Escolaridad masculina":"9.84",
-      "Grado Promedio de Escolaridad femenina":"9.62"
+      "2010":{
+        "Grado Promedio de Escolaridad":9.72,
+        "Grado Promedio de Escolaridad masculina":9.84,
+        "Grado Promedio de Escolaridad femenina":9.62
+      }
     },
     "Características Económicas":{
-      "Población Económicamente Activa":"59.95",
-      "Población Económicamente Activa masculina":"63.36",
-      "Población Económicamente Activa femenina":"36.64",
-      "Población Ocupada":"91.64",
-      "Población Ocupada masculina":"62.38",
-      "Población Ocupada femenina":"37.62",
-      "Población Desocupada":"8.36",
-      "Derechohabiencia":"78.74"
+      "2010":{
+        "Población Económicamente Activa":59.95,
+        "Población Económicamente Activa masculina":63.36,
+        "Población Económicamente Activa femenina":36.64,
+        "Población Ocupada":91.64,
+        "Población Ocupada masculina":62.38,
+        "Población Ocupada femenina":37.62,
+        "Población Desocupada":8.36,
+        "Derechohabiencia":78.74
+      }
     },
     "Viviendas":{
-      "Hogares":"296",
-      "Hogares Jefatura masculina":"76.01",
-      "Hogares Jefatura femenina":"23.99",
-      "Ocupación por Vivienda":"3.97",
-      "Viviendas con Electricidad":"99.66",
-      "Viviendas con Agua":"99.32",
-      "Viviendas con Drenaje":"98.99",
-      "Viviendas con Televisión":"98.99",
-      "Viviendas con Automóvil":"49.32",
-      "Viviendas con Computadora":"22.12",
-      "Viviendas con Celular":"84.12",
-      "Viviendas con Internet":"11.23"
+      "2010":{
+        "Hogares":296,
+        "Hogares Jefatura masculina":76.01,
+        "Hogares Jefatura femenina":23.99,
+        "Ocupación por Vivienda":3.97,
+        "Viviendas con Electricidad":99.66,
+        "Viviendas con Agua":99.32,
+        "Viviendas con Drenaje":98.99,
+        "Viviendas con Televisión":98.99,
+        "Viviendas con Automóvil":49.32,
+        "Viviendas con Computadora":22.12,
+        "Viviendas con Celular":84.12,
+        "Viviendas con Internet":11.23
+      }
     },
     "Unidades Económicas":{
-      "Total Actividades Económicas":"18",
-      "Primer actividad nombre":"Comercio Menudeo",
-      "Primer actividad porcentaje":"55.56",
-      "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-      "Segunda actividad porcentaje":"16.67",
-      "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
-      "Tercera actividad porcentaje":"16.67",
-      "Cuarta actividad nombre":"Comercio Mayoreo",
-      "Cuarta actividad porcentaje":"5.56",
-      "Quinta actividad nombre":"Educativos",
-      "Quinta actividad porcentaje":"5.56"
+      "2010":{
+        "Total Actividades Económicas":18,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":55.56,
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad porcentaje":16.67,
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":16.67,
+        "Cuarta actividad nombre":"Comercio Mayoreo",
+        "Cuarta actividad porcentaje":5.56,
+        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad porcentaje":5.56
+      }
     }
   }
 }]

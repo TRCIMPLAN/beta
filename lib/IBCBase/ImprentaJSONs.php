@@ -27,12 +27,12 @@ namespace IBCBase;
  */
 class ImprentaJSONs extends \Base\Imprenta {
 
-    public $directorio;               // Texto, nombre del directorio en raíz donde se guardarán los archivos
-    public $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
-    protected $archivo_ruta;          // Texto opcional, ruta al archivo index
-    protected $recolector;            // Instancia de \Base\Recolector
-    protected $contador = 0;          // Entero, cantidad de publicaciones producidas
-    protected $indice   = array();    // Arreglo asociativo con los nombres y rutas
+    public    $directorio;               // Texto, nombre del directorio en raíz donde se guardarán los archivos
+    public    $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
+    protected $archivo_ruta;             // Texto opcional, ruta al archivo index
+    protected $recolector;               // Instancia de \Base\Recolector
+    protected $contador = 0;             // Entero, cantidad de publicaciones producidas
+    protected $indice   = array();       // Arreglo asociativo con los nombres y rutas
     const     SITIO_URL = 'http://www.trcimplan.gob.mx/beta'; // Sin diagonal al final
 
     /**
@@ -75,13 +75,20 @@ class ImprentaJSONs extends \Base\Imprenta {
         if (method_exists($publicacion, 'datos')) {
             $e = array();
             // Bucle por los datos
-            foreach ($publicacion->datos() as $eje => $indicadores) {
-                $i = array();
+            foreach ($publicacion->datos() as $eje => $fechas) {
+                $fecha       = Eje::FECHA;
+                $indicadores = $fechas[$fecha]; // TODO: Que pueda trabajar con más de una fecha
+                $i           = array();
                 foreach ($indicadores as $indicador => $valor) {
-                    $i[] = sprintf('      "%s":"%s"', $indicador, $valor);
+                    if (is_int($valor) || is_float($valor)) {
+                        $i[] = sprintf('        "%s":%s', $indicador, $valor);
+                    } else {
+                        $i[] = sprintf('        "%s":"%s"', $indicador, $valor);
+                    }
                 }
                 if (count($i) > 0) {
-                    $e[] = sprintf('    "%s":{%s    }', $eje, "\n".implode(",\n", $i)."\n");
+                    $f   = sprintf('      "%s":{%s      }', $fecha, "\n".implode(",\n", $i)."\n");
+                    $e[] = sprintf('    "%s":{%s    }', $eje, "\n$f\n");
                 }
             }
             if (count($e) > 0) {
