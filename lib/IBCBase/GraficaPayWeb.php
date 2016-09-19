@@ -40,7 +40,15 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        $this->validar();
+        // Si al validar no hay valores, pondrá un mensaje
+        try {
+            $this->validar();
+        } catch (GraficaExceptionSinValores $e) {
+            $mensaje = new MensajeWeb();
+            $mensaje->definir_mensaje_aviso('Gráfica de pay', $e->getMessage());
+            return $mensaje->html();
+        }
+        // Entregar
         return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
@@ -50,7 +58,13 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
-        $this->validar();
+        // Si al validar no hay valores, pondrá un mensaje
+        try {
+            $this->validar();
+        } catch (GraficaExceptionSinValores $e) {
+            return "      // GraficaBarrasWeb {$this->identificador} sin valores";
+        }
+        // Acumular
         $a   = array();
         $a[] = "      // GraficaPayWeb {$this->identificador}";
         // Google Charts
@@ -66,12 +80,12 @@ class GraficaPayWeb extends Grafica implements SalidaWeb {
         $a[] = "        ]);";
         $a[] = "        var options = {";
         $a[] = "          chartArea: { width: '100%', height: '80%' },";
+        if ($this->titulo !== NULL) {
+            $a[] = "          title: '{$this->titulo}',";
+        }
         $c   = array();
         foreach ($this->etiquetas_colores as $color) {
             $c[] = "{color: '$color'}";
-        }
-        if ($this->titulo !== NULL) {
-            $a[] = sprintf("          title: '%s',", $this->titulo);
         }
         $a[] = sprintf("          slices: [%s]", implode(', ', $c));
         $a[] = "        };";

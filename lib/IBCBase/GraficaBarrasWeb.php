@@ -58,7 +58,15 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        $this->validar();
+        // Si al validar no hay valores, pondrá un mensaje
+        try {
+            $this->validar();
+        } catch (GraficaExceptionSinValores $e) {
+            $mensaje = new MensajeWeb();
+            $mensaje->definir_mensaje_aviso('Gráfica de barras', $e->getMessage());
+            return $mensaje->html();
+        }
+        // Entregar
         return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
@@ -68,7 +76,13 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
-        $this->validar();
+        // Si al validar no hay valores, pondrá un mensaje
+        try {
+            $this->validar();
+        } catch (GraficaExceptionSinValores $e) {
+            return "      // GraficaBarrasWeb {$this->identificador} sin valores";
+        }
+        // Acumular
         $a   = array();
         $a[] = "      // GraficaBarrasWeb {$this->identificador}";
         // Google Charts
@@ -85,11 +99,11 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         $a[] = "          var options = {";
         $a[] = "            chartArea: { width: '60%' },";
         if ($this->titulo !== NULL) {
-            $a[] = sprintf("            title: '%s',", $this->titulo);
+            $a[] = "            title: '{$this->titulo}',";
         }
         $b   = array();
         if ($this->eje_horizontal_etiqueta !== NULL) {
-            $b[] = sprintf("title: '%s'", $this->eje_horizontal_etiqueta);
+            $b[] = "title: '{$this->eje_horizontal_etiqueta}'";
         }
         if ($this->eje_horizontal_minimo !== NULL) {
             $b[] = "minValue: {$this->eje_horizontal_minimo}";

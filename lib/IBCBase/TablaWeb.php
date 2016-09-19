@@ -76,7 +76,14 @@ class TablaWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        $this->validar();
+        // Si al validar no hay valores, pondrá un mensaje
+        try {
+            $this->validar();
+        } catch (EjeExceptionSinDatos $e) {
+            $mensaje = new MensajeWeb();
+            $mensaje->definir_mensaje_aviso('Tabla', $e->getMessage());
+            return $mensaje;
+        }
         // Acumular
         $a   = array();
         $a[] = "  <table class=\"table table-hover table-bordered\">";

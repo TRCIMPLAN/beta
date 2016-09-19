@@ -37,33 +37,38 @@ class EjeCaracteristicasEconomicasTablaWeb extends EjeCaracteristicasEconomicas 
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-                $this->tabla->definir_estructura(
-                    array(
-                        'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
-                    )
-                );
-                $this->tabla->definir_panal(
-                    array(
-                        array('indicador' => 'Población Económicamente Activa',           'valor' => $this->formatear('Población Económicamente Activa')),
-                        array('indicador' => 'Población Económicamente Activa masculina', 'valor' => $this->formatear('Población Económicamente Activa masculina')),
-                        array('indicador' => 'Población Económicamente Activa femenina',  'valor' => $this->formatear('Población Económicamente Activa femenina')),
-                        array('indicador' => 'Población Ocupada',                         'valor' => $this->formatear('Población Ocupada')),
-                        array('indicador' => 'Población Ocupada masculina',               'valor' => $this->formatear('Población Ocupada masculina')),
-                        array('indicador' => 'Población Ocupada femenina',                'valor' => $this->formatear('Población Ocupada femenina')),
-                        array('indicador' => 'Población Desocupada',                      'valor' => $this->formatear('Población Desocupada')),
-                        array('indicador' => 'Derechohabiencia',                          'valor' => $this->formatear('Derechohabiencia'))
-                    )
-                );
-            } catch (EjeExceptionSinDatos $e) {
-                $this->tabla = new MensajeWeb();
-                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $this->tabla = new MensajeWeb();
+            $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            return;
+        }
+        // Preparar tabla
+        $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+        $this->tabla->definir_estructura(
+            array(
+                'indicador' => array('enca' => 'Indicador'),
+                'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
+            )
+        );
+        $this->tabla->definir_panal(
+            array(
+                array('indicador' => 'Población Económicamente Activa',           'valor' => $this->formatear('Población Económicamente Activa')),
+                array('indicador' => 'Población Económicamente Activa masculina', 'valor' => $this->formatear('Población Económicamente Activa masculina')),
+                array('indicador' => 'Población Económicamente Activa femenina',  'valor' => $this->formatear('Población Económicamente Activa femenina')),
+                array('indicador' => 'Población Ocupada',                         'valor' => $this->formatear('Población Ocupada')),
+                array('indicador' => 'Población Ocupada masculina',               'valor' => $this->formatear('Población Ocupada masculina')),
+                array('indicador' => 'Población Ocupada femenina',                'valor' => $this->formatear('Población Ocupada femenina')),
+                array('indicador' => 'Población Desocupada',                      'valor' => $this->formatear('Población Desocupada')),
+                array('indicador' => 'Derechohabiencia',                          'valor' => $this->formatear('Derechohabiencia'))
+            )
+        );
     } // preparar
 
     /**

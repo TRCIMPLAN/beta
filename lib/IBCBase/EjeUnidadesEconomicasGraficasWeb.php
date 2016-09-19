@@ -37,24 +37,29 @@ class EjeUnidadesEconomicasGraficasWeb extends EjeUnidadesEconomicas implements 
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                // Grafica Unidades Economicas
-                $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
-                $this->grafica->definir_titulo("{$this->unidades_economicas['Total Actividades Económicas']} Unidades Económicas");
-                $this->grafica->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
-                $this->grafica->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
-                $this->grafica->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
-                $this->grafica->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
-                $this->grafica->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
-                $this->grafica->definir_eje_horizontal('Porcentaje', 0);
-                $this->grafica->definir_post_nota(' %');
-            } catch (EjeExceptionSinDatos $e) {
-                $this->grafica = new MensajeWeb();
-                $this->grafica->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $mensaje = new MensajeWeb();
+            $mensaje->definir_mensaje_aviso('', $e->getMessage());
+            $this->grafica = $mensaje;
+            return;
+        }
+        // Grafica Unidades Economicas
+        $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_UNI_ECO);
+        $this->grafica->definir_titulo("{$this->unidades_economicas['Total Actividades Económicas']} Unidades Económicas");
+        $this->grafica->agregar('1° '.$this->unidades_economicas['Primer actividad nombre'],  $this->unidades_economicas['Primer actividad porcentaje'],  '#80C0FF');
+        $this->grafica->agregar('2° '.$this->unidades_economicas['Segunda actividad nombre'], $this->unidades_economicas['Segunda actividad porcentaje'], '#59BFC3');
+        $this->grafica->agregar('3° '.$this->unidades_economicas['Tercera actividad nombre'], $this->unidades_economicas['Tercera actividad porcentaje'], '#59C38E');
+        $this->grafica->agregar('4° '.$this->unidades_economicas['Cuarta actividad nombre'],  $this->unidades_economicas['Cuarta actividad porcentaje'],  '#8EC359');
+        $this->grafica->agregar('5° '.$this->unidades_economicas['Quinta actividad nombre'],  $this->unidades_economicas['Quinta actividad porcentaje'],  '#C38E59');
+        $this->grafica->definir_eje_horizontal('Porcentaje', 0);
+        $this->grafica->definir_post_nota(' %');
     } // preparar
 
     /**

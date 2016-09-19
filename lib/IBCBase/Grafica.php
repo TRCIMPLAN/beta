@@ -37,9 +37,9 @@ abstract class Grafica {
     /**
      * Constructor
      *
-     * @param string Opcional, texto único que lo identifica
+     * @param string Texto único que lo identifica
      */
-    public function __construct($identificador = NULL) {
+    public function __construct($identificador) {
         $this->identificador = $identificador;
     } // constructor
 
@@ -59,15 +59,17 @@ abstract class Grafica {
      * Agregar
      *
      * @param string Etiqueta
-     * @param string Valor
+     * @param string Valor, si es nulo no será agregado
      * @param string Opcional, color en hexadecimal como #rrggbb
      */
     public function agregar($etiqueta, $valor, $color = NULL) {
-        $this->etiquetas_valores[$etiqueta] = $valor;
-        if (is_string($color) && ($color != NULL)) {
-            $this->etiquetas_colores[$etiqueta] = $color;
-        } else {
-            $this->etiquetas_colores[$etiqueta] = self::COLOR_POR_DEFECTO;
+        if ($valor !== NULL) {
+            $this->etiquetas_valores[$etiqueta] = $valor;
+            if (is_string($color) && ($color != NULL)) {
+                $this->etiquetas_colores[$etiqueta] = $color;
+            } else {
+                $this->etiquetas_colores[$etiqueta] = self::COLOR_POR_DEFECTO;
+            }
         }
     } // agregar
 
@@ -84,11 +86,11 @@ abstract class Grafica {
      * Validar
      */
     protected function validar() {
-        if ($this->identificador == NULL) {
+        if (!is_string($this->identificador) || ($this->identificador == '')) {
             throw new \Exception("Error: Falta el identificador.");
         }
         if (count($this->etiquetas_valores) == 0) {
-            throw new \Exception("Error: Falta agregar valores.");
+            throw new GraficaExceptionSinValores("Error: Faltan agregar valores en {$this->identificador}.");
         }
     } // validar
 

@@ -37,22 +37,27 @@ class EjeEducacionGraficasWeb extends EjeEducacion implements SalidaWeb {
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                // Gráfica Grado Promedio de Escolaridad
-                $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_PROM_ESC);
-                $this->grafica->definir_titulo('Grado Promedio de Escolaridad');
-                $this->grafica->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
-                $this->grafica->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
-                $this->grafica->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
-                $this->grafica->definir_eje_horizontal('Años', 0, 24);
-                $this->grafica->definir_post_nota(' años');
-            } catch (EjeExceptionSinDatos $e) {
-                $this->grafica = new MensajeWeb();
-                $this->grafica->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $mensaje = new MensajeWeb();
+            $mensaje->definir_mensaje_aviso('', $e->getMessage());
+            $this->grafica = $mensaje;
+            return;
+        }
+        // Gráfica Grado Promedio de Escolaridad
+        $this->grafica = new GraficaBarrasWeb(self::ID_GRAF_PROM_ESC);
+        $this->grafica->definir_titulo('Grado Promedio de Escolaridad');
+        $this->grafica->agregar('Global', $this->educacion['Grado Promedio de Escolaridad'], '');
+        $this->grafica->agregar('Masculina', $this->educacion['Grado Promedio de Escolaridad masculina'], '#006AC8');
+        $this->grafica->agregar('Femenina', $this->educacion['Grado Promedio de Escolaridad femenina'], '#C80083');
+        $this->grafica->definir_eje_horizontal('Años', 0, 24);
+        $this->grafica->definir_post_nota(' años');
     } // preparar
 
     /**

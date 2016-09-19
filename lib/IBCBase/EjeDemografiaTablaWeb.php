@@ -37,35 +37,40 @@ class EjeDemografiaTablaWeb extends EjeDemografia implements SalidaWeb {
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-                $this->tabla->definir_estructura(
-                    array(
-                        'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
-                    )
-                );
-                $this->tabla->definir_panal(
-                    array(
-                        array('indicador' => 'Población total',                               'valor' => $this->formatear('Población total')),
-                        array('indicador' => 'Porcentaje de población masculina',             'valor' => $this->formatear('Porcentaje de población masculina')),
-                        array('indicador' => 'Porcentaje de población femenina',              'valor' => $this->formatear('Porcentaje de población femenina')),
-                        array('indicador' => 'Porcentaje de población de 0 a 14 años',        'valor' => $this->formatear('Porcentaje de población de 0 a 14 años')),
-                        array('indicador' => 'Porcentaje de población de 15 a 64 años',       'valor' => $this->formatear('Porcentaje de población de 15 a 64 años')),
-                        array('indicador' => 'Porcentaje de población de 65 y más años',      'valor' => $this->formatear('Porcentaje de población de 65 y más años')),
-                        array('indicador' => 'Porcentaje de población no especificada',       'valor' => $this->formatear('Porcentaje de población no especificada')),
-                        array('indicador' => 'Fecundidad promedio',                           'valor' => $this->formatear('Fecundidad promedio')),
-                        array('indicador' => 'Porcentaje de población nacida en otro estado', 'valor' => $this->formatear('Porcentaje de población nacida en otro estado')),
-                        array('indicador' => 'Porcentaje de población con discapacidad',      'valor' => $this->formatear('Porcentaje de población con discapacidad'))
-                    )
-                );
-            } catch (EjeExceptionSinDatos $e) {
-                $this->tabla = new MensajeWeb();
-                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $this->tabla = new MensajeWeb();
+            $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            return;
+        }
+        // Preparar tabla
+        $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+        $this->tabla->definir_estructura(
+            array(
+                'indicador' => array('enca' => 'Indicador'),
+                'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
+            )
+        );
+        $this->tabla->definir_panal(
+            array(
+                array('indicador' => 'Población total',                               'valor' => $this->formatear('Población total')),
+                array('indicador' => 'Porcentaje de población masculina',             'valor' => $this->formatear('Porcentaje de población masculina')),
+                array('indicador' => 'Porcentaje de población femenina',              'valor' => $this->formatear('Porcentaje de población femenina')),
+                array('indicador' => 'Porcentaje de población de 0 a 14 años',        'valor' => $this->formatear('Porcentaje de población de 0 a 14 años')),
+                array('indicador' => 'Porcentaje de población de 15 a 64 años',       'valor' => $this->formatear('Porcentaje de población de 15 a 64 años')),
+                array('indicador' => 'Porcentaje de población de 65 y más años',      'valor' => $this->formatear('Porcentaje de población de 65 y más años')),
+                array('indicador' => 'Porcentaje de población no especificada',       'valor' => $this->formatear('Porcentaje de población no especificada')),
+                array('indicador' => 'Fecundidad promedio',                           'valor' => $this->formatear('Fecundidad promedio')),
+                array('indicador' => 'Porcentaje de población nacida en otro estado', 'valor' => $this->formatear('Porcentaje de población nacida en otro estado')),
+                array('indicador' => 'Porcentaje de población con discapacidad',      'valor' => $this->formatear('Porcentaje de población con discapacidad'))
+            )
+        );
     } // preparar
 
     /**

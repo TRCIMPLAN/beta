@@ -37,28 +37,33 @@ class EjeEducacionTablaWeb extends EjeEducacion implements SalidaWeb {
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-                $this->tabla->definir_estructura(
-                    array(
-                        'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
-                    )
-                );
-                $this->tabla->definir_panal(
-                    array(
-                        array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->formatear('Grado Promedio de Escolaridad')),
-                        array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->formatear('Grado Promedio de Escolaridad masculina')),
-                        array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->formatear('Grado Promedio de Escolaridad femenina'))
-                    )
-                );
-            } catch (EjeExceptionSinDatos $e) {
-                $this->tabla = new MensajeWeb();
-                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $this->tabla = new MensajeWeb();
+            $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            return;
+        }
+        // Preparar tabla
+        $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+        $this->tabla->definir_estructura(
+            array(
+                'indicador' => array('enca' => 'Indicador'),
+                'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
+            )
+        );
+        $this->tabla->definir_panal(
+            array(
+                array('indicador' => 'Grado Promedio de Escolaridad',           'valor' => $this->formatear('Grado Promedio de Escolaridad')),
+                array('indicador' => 'Grado Promedio de Escolaridad masculina', 'valor' => $this->formatear('Grado Promedio de Escolaridad masculina')),
+                array('indicador' => 'Grado Promedio de Escolaridad femenina',  'valor' => $this->formatear('Grado Promedio de Escolaridad femenina'))
+            )
+        );
     } // preparar
 
     /**

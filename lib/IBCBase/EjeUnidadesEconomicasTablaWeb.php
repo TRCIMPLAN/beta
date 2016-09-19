@@ -37,31 +37,36 @@ class EjeUnidadesEconomicasTablaWeb extends EjeUnidadesEconomicas implements Sal
      * Preparar
      */
     protected function prepapar() {
-        if (!$this->preparado) {
-            try {
-                parent::prepapar();
-                $this->tabla = new TablaWeb(self::IDENTIFICADOR);
-                $this->tabla->definir_estructura(
-                    array(
-                        'indicador' => array('enca' => 'Indicador'),
-                        'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
-                    )
-                );
-                $this->tabla->definir_panal(
-                    array(
-                        array('indicador' => 'Total Actividades Económicas',               'valor' => $this->formatear('Total Actividades Económicas')),
-                        array('indicador' => $this->formatear('Primer actividad nombre'),  'valor' => $this->formatear('Primer actividad porcentaje')),
-                        array('indicador' => $this->formatear('Segunda actividad nombre'), 'valor' => $this->formatear('Segunda actividad porcentaje')),
-                        array('indicador' => $this->formatear('Tercera actividad nombre'), 'valor' => $this->formatear('Tercera actividad porcentaje')),
-                        array('indicador' => $this->formatear('Cuarta actividad nombre'),  'valor' => $this->formatear('Cuarta actividad porcentaje')),
-                        array('indicador' => $this->formatear('Quinta actividad nombre'),  'valor' => $this->formatear('Quinta actividad porcentaje'))
-                    )
-                );
-            } catch (EjeExceptionSinDatos $e) {
-                $this->tabla = new MensajeWeb();
-                $this->tabla->definir_mensaje_aviso('', $e->getMessage());
-            }
+        // Si ya está preparado, no hace nada
+        if ($this->preparado) {
+            return;
         }
+        // Ejecutar método en el padre
+        try {
+            parent::prepapar();
+        } catch (EjeExceptionSinDatos $e) {
+            $this->tabla = new MensajeWeb();
+            $this->tabla->definir_mensaje_aviso('', $e->getMessage());
+            return;
+        }
+        // Preparar tabla
+        $this->tabla = new TablaWeb(self::IDENTIFICADOR);
+        $this->tabla->definir_estructura(
+            array(
+                'indicador' => array('enca' => 'Indicador'),
+                'valor'     => array('enca' => 'Valor',    'clase' => 'derecha')
+            )
+        );
+        $this->tabla->definir_panal(
+            array(
+                array('indicador' => 'Total Actividades Económicas',               'valor' => $this->formatear('Total Actividades Económicas')),
+                array('indicador' => $this->formatear('Primer actividad nombre'),  'valor' => $this->formatear('Primer actividad porcentaje')),
+                array('indicador' => $this->formatear('Segunda actividad nombre'), 'valor' => $this->formatear('Segunda actividad porcentaje')),
+                array('indicador' => $this->formatear('Tercera actividad nombre'), 'valor' => $this->formatear('Tercera actividad porcentaje')),
+                array('indicador' => $this->formatear('Cuarta actividad nombre'),  'valor' => $this->formatear('Cuarta actividad porcentaje')),
+                array('indicador' => $this->formatear('Quinta actividad nombre'),  'valor' => $this->formatear('Quinta actividad porcentaje'))
+            )
+        );
     } // preparar
 
     /**
