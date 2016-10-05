@@ -511,8 +511,11 @@ La cantidad de Hogares es cero.
 <script>
   // Google Charts
   google.charts.load('current', {'packages':['corechart']});
+  // Carto mapas
+  var mapa_limites_cargado = false;
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
+    if (mapa_limites_cargado == false) {
       var carto_json = 'https://guivaloz.carto.com/api/v2/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
@@ -529,6 +532,8 @@ La cantidad de Hogares es cero.
       .error(function(err) {
         console.log(err);
       });
+      mapa_limites_cargado = true;
+    }
   })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){

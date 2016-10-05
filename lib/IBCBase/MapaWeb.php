@@ -104,6 +104,7 @@ class MapaWeb implements SalidaWeb {
         }
         // Acumular
         $a   = array();
+        $a[] = "    if (mapa_limites_cargado == false) {";
         $a[] = "      var carto_json = '{$this->carto_json}'";
         $a[] = "      cartodb.createVis('{$this->identificador}', carto_json)";
         $a[] = "      .done(function(vis, layers) {";
@@ -120,6 +121,8 @@ class MapaWeb implements SalidaWeb {
         $a[] = "      .error(function(err) {";
         $a[] = "        console.log(err);";
         $a[] = "      });"; // error
+        $a[] = "      mapa_limites_cargado = true;";
+        $a[] = "    }";
         // Entregar
         return implode("\n", $a);
     } // javascript

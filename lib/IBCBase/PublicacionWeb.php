@@ -112,6 +112,8 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
         $this->validar();
         // Google Charts necesita este activado sólo una vez en la página
         $this->javascript[] = "  // Google Charts\n  google.charts.load('current', {'packages':['corechart']});";
+        // Bandera para evitar que se carguen los mapas más de una vez
+        $this->javascript[] = "  // Carto mapas\n  var mapa_limites_cargado = false;";
         // Acumular Javascript de las lengüetas
         $this->javascript[] = $this->lenguetas->javascript();
         // Entregar
