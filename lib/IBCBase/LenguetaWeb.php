@@ -136,19 +136,22 @@ class LenguetaWeb implements SalidaWeb {
      */
     public function javascript() {
         $this->validar();
-        // Acumular
-        $a   = array();
-        if ($this->es_activa) {
-            $a[] = "  // LenguetaWeb {$this->identificador}";
-            $a[] = $this->contenido->javascript();
+        $js = $this->contenido->javascript();
+        if (is_string($js) && ($js != '')) {
+            $a = array();
+            if ($this->es_activa) {
+                $a[] = "  // LenguetaWeb {$this->identificador}";
+                $a[] = $js;
+            } else {
+                $a[] = "  // LenguetaWeb {$this->identificador} ejecuta lo siguiente al mostrar";
+                $a[] = "  $('#{$this->padre_identificador} a[href=\"#{$this->identificador}\"]').on('shown.bs.tab', function(e){";
+                $a[] = $js;
+                $a[] = "  })";
+            }
+            return implode("\n", $a);
         } else {
-            $a[] = "  // LenguetaWeb {$this->identificador} ejecuta lo siguiente al mostrar";
-            $a[] = "  $('#{$this->padre_identificador} a[href=\"#{$this->identificador}\"]').on('shown.bs.tab', function(e){";
-            $a[] = $this->contenido->javascript();
-            $a[] = "  })";
+            return NULL;
         }
-        // Entregar
-        return implode("\n", $a);
     } // javascript
 
 } // Clase LenguetaWeb

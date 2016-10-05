@@ -124,6 +124,17 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
         );
     } // datos
 
+    /**
+     * Mapas
+     *
+     * @return array Arreglo asociativo
+     */
+    public function mapas() {
+        return array(
+            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
+        );
+    } // mapas
+
 } // Clase FranciscoVilla
 
 ?>

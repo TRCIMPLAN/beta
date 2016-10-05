@@ -110,7 +110,7 @@ class MensajeWeb implements SalidaWeb {
         if (is_object($this->contenido) && ($this->contenido instanceof SalidaWeb)) {
             return $this->contenido->html();
         } else {
-            return '// MensajeWeb sin javascript';
+            return NULL;
         }
     } // javascript
 

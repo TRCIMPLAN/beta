@@ -116,19 +116,22 @@ class AcordeonWeb implements SalidaWeb {
      */
     public function javascript() {
         $this->validar();
-        // Acumular
-        $a   = array();
-        if ($this->esta_abierto) {
-            $a[] = "  // AcordeonWeb {$this->identificador} ";
-            $a[] = $this->contenido->javascript();
+        $js = $this->contenido->javascript();
+        if (is_string($js) && ($js != '')) {
+            $a = array();
+            if ($this->esta_abierto) {
+                $a[] = "  // AcordeonWeb {$this->identificador} ";
+                $a[] = $js;
+            } else {
+                $a[] = "  // AcordeonWeb {$this->identificador} ejecuta lo siguiente al mostrar";
+                $a[] = "  $('#{$this->identificador}').on('shown.bs.collapse', function () {";
+                $a[] = $js;
+                $a[] = "  })";
+            }
+            return implode("\n", $a);
         } else {
-            $a[] = "  // AcordeonWeb {$this->identificador} ejecuta lo siguiente al mostrar";
-            $a[] = "  $('#{$this->identificador}').on('shown.bs.collapse', function () {";
-            $a[] = $this->contenido->javascript();
-            $a[] = "  })";
+            return NULL;
         }
-        // Entregar
-        return implode("\n", $a);
     } // javascript
 
 } // Clase AcordeonWeb

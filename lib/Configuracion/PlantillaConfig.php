@@ -35,7 +35,51 @@ class PlantillaConfig {
     public $en_raiz          = false; // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
     public $para_compartir   = false; // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook
     public $autor            = 'TrcIMPLAN Staff'; // Autor por defecto
-    public $mensaje_oculto   = <<<FINAL
+    public $mensaje_oculto;
+    public $pie;
+    protected $google_analytics;
+    protected $google_site_verification;
+    protected $cabecera_bootstrap_css;
+    protected $cabecera_font_awesome_css;
+    protected $cabecera_externos_css;
+    protected $scripts_jquery_css;
+    protected $scripts_bootstrap_js;
+    protected $scripts_externos_js;
+
+    /**
+     * Constructor
+     *
+     * Twitter Bootstrap desde http://www.bootstrapcdn.com/
+     * Font Awsome desde http://www.bootstrapcdn.com/fontawesome/
+     * JQuery desde Google apis segun https://developers.google.com/speed/libraries/
+     */
+    public function __construct() {
+        // Al usar FLASE las siguientes propiedades apuntarán a archivos locales, así el sitio podrá funcionar en una intranet
+        if (TRUE) {
+            // jQuery según https://developers.google.com/speed/libraries/#jquery
+            $this->scripts_jquery_css        = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>';
+            // Twitter Bootstrap según https://www.bootstrapcdn.com/
+            $this->cabecera_bootstrap_css    = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">';
+            $this->scripts_bootstrap_js      = '<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>';
+            // Font Awesome según https://www.bootstrapcdn.com/
+            $this->cabecera_font_awesome_css = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">';
+        }
+        // CSS Externos
+        // - Google Fonts Questrial y Roboto Condensed
+        // - Carto
+        $this->cabecera_externos_css = array(
+            '<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700">',
+            '<link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">');
+        // Javascript Externos
+        // - Google Charts para las gráficas de IBC
+        // - Carto para los mapas de IBC
+        $this->scripts_externos_js = array(
+            '<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>',
+            '<script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>');
+        // Google Analytics
+    //~ $this->google_analytics;
+        // Algo divertido
+        $this->mensaje_oculto = <<<FINAL
 <!-- ===========================================================================================
 
         Instituto Municipal de Planeación y Competitividad de Torreón.
@@ -56,47 +100,6 @@ class PlantillaConfig {
 
      =========================================================================================== -->
 FINAL;
-    public $pie;
-    protected $google_analytics = <<<FINAL
-<script>
-  // Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-58290501-1', 'auto');
-  ga('send', 'pageview');
-</script>
-FINAL;
-    protected $google_site_verification;
-    protected $cabecera_bootstrap_css;
-    protected $cabecera_font_awesome_css;
-    protected $cabecera_google_fonts_css;
-    protected $scripts_jquery_css;
-    protected $scripts_bootstrap_js;
-
-    /**
-     * Constructor
-     *
-     * Twitter Bootstrap desde http://www.bootstrapcdn.com/
-     * Font Awsome desde http://www.bootstrapcdn.com/fontawesome/
-     * JQuery desde Google apis segun https://developers.google.com/speed/libraries/
-     */
-    public function __construct() {
-        // Si cambia a false entonces NO dependará de Internet
-        if (true) {
-            // jQuery según https://developers.google.com/speed/libraries/#jquery
-            $this->scripts_jquery_css        = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>';
-            // Twitter Bootstrap según https://www.bootstrapcdn.com/
-            $this->cabecera_bootstrap_css    = '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">';
-            $this->scripts_bootstrap_js      = '<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>';
-            // Font Awesome según https://www.bootstrapcdn.com/
-            $this->cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">';
-            // Google Fonts Questrial y Roboto Condensed
-            $this->cabecera_google_fonts_css = '<link href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">';
-            // Google Charts para las gráficas de IBC
-            $this->scripts_google_charts_js  = '<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>';
-        }
     } // constructor
 
 } // Clase PlantillaConfig

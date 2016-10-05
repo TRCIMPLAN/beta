@@ -83,7 +83,7 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
         parent::validar();
         // Elaborar lengüetas
         $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-    //~ $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
+        $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
         $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this),   TRUE); // Lengüeta activa
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
     } // validar
@@ -110,7 +110,7 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
     public function javascript() {
         // Validar
         $this->validar();
-        // Acumular Javascript propio de Google Charts
+        // Google Charts necesita este activado sólo una vez en la página
         $this->javascript[] = "  // Google Charts\n  google.charts.load('current', {'packages':['corechart']});";
         // Acumular Javascript de las lengüetas
         $this->javascript[] = $this->lenguetas->javascript();

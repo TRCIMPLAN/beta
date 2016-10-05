@@ -113,6 +113,17 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
         );
     } // datos
 
+    /**
+     * Mapas
+     *
+     * @return array Arreglo asociativo
+     */
+    public function mapas() {
+        return array(
+            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
+        );
+    } // mapas
+
 } // Clase AeropuertoInternacionalFranciscoSarabiaTinoco
 
 ?>

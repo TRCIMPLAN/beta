@@ -27,7 +27,7 @@ namespace IBCBase;
  */
 abstract class Eje {
 
-    protected $publicacion_ficha; // Instancia de PublicacionWeb, para accesar al metodo Datos en cada uno
+    protected $publicacion_ficha; // Instancia de PublicacionWeb
     const     FECHA = '2010';     // La fecha es fija, en una próxima versión será cambiante
 
     /**

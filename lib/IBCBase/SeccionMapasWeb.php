@@ -28,7 +28,7 @@ namespace IBCBase;
 class SeccionMapasWeb implements SalidaWeb {
 
     protected $publicacion_ficha;    // Instancia de PublicacionWeb, para obtener los datos
-    protected $acordeones;           // Instancia de AcordeonesWeb
+    protected $mapas;                // Instancia de GeoLimitesMapaWeb
     protected $preparado    = FALSE; // Bandera
     const     IDENTIFICADOR = 'Mapas';
 
@@ -46,6 +46,7 @@ class SeccionMapasWeb implements SalidaWeb {
      */
     protected function prepapar() {
         if (!$this->preparado) {
+            $this->mapas     = new GeoLimitesMapaWeb($this->publicacion_ficha);
             $this->preparado = TRUE;
         }
     } // preparar
@@ -57,7 +58,7 @@ class SeccionMapasWeb implements SalidaWeb {
      */
     public function html() {
         $this->prepapar();
-        return '';
+        return $this->mapas->html();
     } // html
 
     /**
@@ -67,7 +68,7 @@ class SeccionMapasWeb implements SalidaWeb {
      */
     public function javascript() {
         $this->prepapar();
-        return '';
+        return $this->mapas->javascript();
     } // javascript
 
 } // Clase SeccionMapasWeb
