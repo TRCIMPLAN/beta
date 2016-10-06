@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
-// Namespace
 namespace SMIIndicadoresGomezPalacio;
 
 /**
@@ -34,7 +34,7 @@ class SeguridadTasaDeSecuestro extends \Base\Publicacion {
         // Título, autor y fecha
         $this->nombre            = 'Tasa de Secuestro en Gómez Palacio';
         $this->autor             = 'Dirección de Investigación Estratégica';
-        $this->fecha             = '2015-04-29T13:58';
+        $this->fecha             = '2015-04-29T13:58:56';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo           = 'seguridad-tasa-de-secuestro';
         $this->imagen            = '../smi/introduccion/imagen.jpg';
@@ -165,14 +165,14 @@ class SeguridadTasaDeSecuestro extends \Base\Publicacion {
           </tr>
           <tr>
             <td>Coahuila</td>
-            <td>2016-07-31</td>
-            <td>0.37 %</td>
+            <td>2016-08-31</td>
+            <td>0.47 %</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Durango</td>
-            <td>2016-07-31</td>
+            <td>2016-08-31</td>
             <td>0.22 %</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
@@ -200,7 +200,7 @@ $('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 0 },{ region: 'Gómez Palacio', dato: 0 },{ region: 'Lerdo', dato: 0 },{ region: 'Matamoros', dato: 0 },{ region: 'La Laguna', dato: 0 },{ region: 'Coahuila', dato: 0.3700 },{ region: 'Durango', dato: 0.2200 }],
+      data: [{ region: 'Torreón', dato: 0 },{ region: 'Gómez Palacio', dato: 0 },{ region: 'Lerdo', dato: 0 },{ region: 'Matamoros', dato: 0 },{ region: 'La Laguna', dato: 0 },{ region: 'Coahuila', dato: 0.4700 },{ region: 'Durango', dato: 0.2200 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],

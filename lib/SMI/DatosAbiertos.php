@@ -46,7 +46,7 @@ class DatosAbiertos extends \Base\PublicacionSchemaArticle {
         $this->contenido_archivo_markdown = 'lib/SMI/DatosAbiertos.md';
         // Banderas que pueden tener un valor por defecto en \Configuracion\PublicacionConfig
         $this->poner_imagen_en_contenido  = false;
-        $this->para_compartir             = false;
+        $this->para_compartir             = true;
     } // constructor
 
 } // Clase DatosAbiertos
