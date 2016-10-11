@@ -1,6 +1,4 @@
 
-# Marco Jurídico
-
 La **Constitución Política de los Estados Unidos Mexicanos** en su artículo 115 fracción V, faculta a los municipios para formular, aprobar y administrar la zonificación y planes de desarrollo municipal y participar en la formulación de planes de desarrollo regional.
 
 Tanto la Constitución Federal en su artículo 115 fracción VI, como la **Constitución Política del Estado de Coahuila de Zaragoza** en su artículo 158-U fracción III numeral 2, establecen que cuando dos o más centros urbanos situados en territorios municipales de dos o más entidades federativas formen o tiendan a formar una continuidad demográfica, la Federación, las entidades federativas y los Municipios respectivos, en el ámbito de sus competencias, planearán y regularán de manera conjunta y coordinada el desarrollo de dichos centros con apego a la ley federal de la materia.
@@ -21,21 +19,21 @@ En atención a lo anterior, el Plan Estratégico Metropolitano es el instrumento
 
 El **Plan Estratégico Metropolitano** es el instrumento que servirá de base para la planeación coordinada entre los municipios que conforman la Zona Metropolitana de la Laguna, el cual se ha realizado en observancia de las disposiciones legales aplicables en la materia tanto a nivel Federal, Estatal y Municipal, entre las cuales destacan las siguientes:
 
-### Federal
+## Federal
 
 * Constitución Política de los Estados Unidos Mexicanos
 * Ley de Planeación
 * Ley General de Asentamientos Humanos
 * Ley General del Equilibrio Ecológico y Protección al Ambiente y su Reglamento
 
-### Estatal
+## Estatal
 
 * Constitución Política del Estado Coahuila de Zaragoza
 * Código Municipal para el Estado de Coahuila de Zaragoza
 * Ley de Asentamientos Humanos y Desarrollo Urbano del Estado de Coahuila de Zaragoza
 * Ley de Planeación para el Desarrollo del Estado de Coahuila de Zaragoza
 
-### Municipal
+## Municipal
 
 * Reglamento Orgánico de la Administración Pública Municipal de Torreón, Coahuila.
 * Ley que crea el Instituto Municipal de Planeación y Competitividad de Torreón
@@ -43,7 +41,7 @@ El **Plan Estratégico Metropolitano** es el instrumento que servirá de base 
 * Reglamento de Desarrollo Urbano, Zonificación, Usos de Suelo y Construcciones del Municipio de Torreón, Coahuila.
 * Manual de organización del IMPLAN
 
-### Antecedentes de planeación institucional
+## Antecedentes de planeación institucional
 
 * Planeación nacional democrática: Plan Nacional de Desarrollo 2012 - 2018.
 * Plan Estatal de Desarrollo de Coahuila.

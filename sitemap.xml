@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-10-06</lastmod>
+    <lastmod>2016-10-11</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -3048,6 +3048,61 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/investigaciones/cidac-profesionistas-torreon.html</loc>
     <lastmod>2016-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/indice.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/introduccion.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/metodologia.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/marco-juridico.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/buen-gobierno.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/desarrollo-economico-innovacion.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/desarrollo-social.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/entorno-urbano.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/movilidad-transporte.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/medio-ambiente-sustentabilidad.html</loc>
+    <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>

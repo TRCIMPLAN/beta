@@ -50,6 +50,7 @@ class CreadorConfig {
             '\\IBCTorreon\\Imprenta',
             '\\Institucional\\Imprenta',
             '\\Investigaciones\\Imprenta',
+            '\\PET\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\PreguntasFrecuentes\\Imprenta',
             '\\Proyectos\\Imprenta',

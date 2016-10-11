@@ -1,6 +1,4 @@
 
-# Buen Gobierno
-
 Como producto de la planeación participativa para la Elaboración del Diagnóstico y Pronóstico, en referencia al eje de **Buen Gobierno y Coordinación Metropolitana** se encontraron como problemas principales los siguientes:
 
 1. Inexistencia de un marco jurídico metropolitano

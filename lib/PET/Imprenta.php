@@ -31,17 +31,17 @@ class Imprenta extends \Base\ImprentaPublicaciones {
      * Constructor
      */
     public function __construct() {
-        // Nombre del directorio dentro de /lib que contiene los archivos con las publicaciones
+        // Nombre del directorio dentro de /lib que contiene las clases con las publicaciones
         $this->publicaciones_directorio = 'PET';
         // Los siguientes parámetros dan datos para el concentrador y las páginas que no los tienen
-        $this->titulo                   = 'Plan Estratégico Torreón';
-        $this->descripcion              = 'Todo el documento en su versión estructurada para su fácil consulta.';
-        $this->claves                   = 'IMPLAN, Torreon';
-        $this->encabezado_color         = '#646464';
-        // Etiqueta de Navegación a poner activa
+        $this->titulo                   = 'Índice Alfabético';
+        $this->descripcion              = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Índice Alfabético.';
+        $this->claves                   = 'Plan, Estratégico, Torreón, 2040, Metropolitano';
+      //$this->encabezado_color         = '#00823B';
+        // Opción de Navegación a poner activa
         $this->nombre_menu              = 'Plan Estratégico Torreón';
         // Ruta a la clase para hacer la página con el índice
-        $this->indices_paginas          = '\\Base\\PaginasDetallados'; // Puede ser \Base\PaginasDetallados, \Base\PaginasGalerias, \Base\PaginasListado o \Base\PaginasTarjetas
+        $this->indices_paginas          = '\\Base\\PaginasListadoAlfabetico'; // \\Base\\PaginasDetallados
         // Directorio en la raíz que será creado para alojar el concentrador y las páginas
         $this->directorio               = 'pet';
         // Ejecutar constructor en el padre

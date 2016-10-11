@@ -1,6 +1,4 @@
 
-# Desarrollo Económico e Innovación
-
 Como uno de los resultados de la planeación participativa metropolitana, al enfocarse en el eje **Desarrollo Económico e Innovación** se detectaron como problemas principales los siguientes:
 
 1. Infraestructura insuficiente para el desarrollo industrial y turístico
@@ -19,7 +17,7 @@ A continuación, se describen las características de cada uno de estos problema
 
 Torreón cuenta con una excelente ubicación respecto a fronteras, puertos marítimos y ciudades estratégicas mexicanas y americanas. Es importante mencionar que la reciente apertura de la conexión carretera hacia el puerto de Mazatlán significa un gran paso en la eficiencia logística de la región.
 
-<img class="img-responsive" src="" alt="">
+<img class="img-responsive" src="desarrollo-economico-innovacion/localizacion-estrategica-de-torreon-y-conectividad.jpg" alt="Localizacion Estrategica de Torreon y Conectividad">
 
 ### Infraestructura
 
@@ -43,7 +41,7 @@ Parque Industrial San Pedro    |      22.50 |       5.90
 Parque Industrial Centenario   |     300.00 |     280.00
 Total                          |     946.45 |     644.01
 
-Fuente: FOMEC, datos 2014-2015.
+**Fuente:** FOMEC, datos 2014-2015.
 
 * La superficie total por los parques industriales en el municipio es de 1,861 hectáreas, incluyendo la zona de Mieleras, que no se presenta en la tabla anterior, ya que está prácticamente ocupada en su totalidad.
 * De acuerdo a los datos que registra FOMEC, existía la disponibilidad de 644 hectáreas (datos 2014 y 2015).
@@ -62,11 +60,11 @@ Reynosa                                                                  |      
 Saltillo (Saltillo y Ramos Arizpe)                                       |      18 |     2,622
 San Luis Potosí                                                          |      12 |     3,650
 
-Fuente: Mexico Industrial Maps, 2015.
+**Fuente:** Mexico Industrial Maps, 2015.
 
 En atención a lo anterior, se puede concluir que aunque existen varias zonas industriales en la Zona Metropolitana de la Laguna con oferta para la instalación de plantas, no hay suficiente disponibilidad de superficie para satisfacer la posible demanda.
 
-<img class="img-responsive" src="" alt="">
+<iframe width="100%" height="520" frameborder="0" src="https://implantorreon.carto.com/u/sigimplan/viz/4544029c-2427-11e5-ac48-0e9d821ea90d/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 ## Cultura de emprendimiento sostenible e incentivos para ésta actividad
 
@@ -118,7 +116,7 @@ Medio Ambiente                                    |   35 |   57 |    -22
 Sociedad                                          |   37 |   59 |    -22
 Derecho                                           |   73 |   73 |      0
 
-Fuente: Instituto Mexicano de Competitividad, 2012 - 2014
+**Fuente:** Instituto Mexicano de Competitividad, 2012 - 2014
 
 ### Especialización Industria comercio y servicios
 
@@ -134,7 +132,7 @@ Primario   |                  3,547 |                     1.30% |               
 Secundario |                 92,663 |                    34.01% |                            $137,542,567 |                                     78.14% |                           $38,996,359 |                                   65.96%
 Terciario  |                176,239 |                    64.69% |                             $36,511,601 |                                     20.74% |                           $19,392,473 |                                   32.80%
 
-Fuente: Elaboración propia, 2015
+**Fuente:** Elaboración propia, 2015
 
 El porcentaje de participación de la industria manufacturera en la producción bruta de La Laguna ha aumentado en los últimos 10 años de 64.93% a 71.11%, mientras a nivel nacional disminuyó 4 puntos porcentuales aproximadamente: de 48.52% a 44.34%.
 
