@@ -15,6 +15,12 @@
 * [Movilidad y Transporte](movilidad-transporte.html)
 * [Medio Ambiente y Sustentabilidad](medio-ambiente-sustentabilidad.html)
 
+## Capítulo 3
+
+* [Síntesis del Diagnóstico](sintesis-diagnostico.html)
+* [Prospectiva y Escenarios](prospectiva-escenarios.html)
+* [Modelo de Desarrollo](modelo-desarrollo.html)
+
 ## Anexos
 
 * [Índice Alfabético](index.html)

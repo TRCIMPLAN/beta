@@ -68,7 +68,7 @@ class PlantillaConfig {
         // - Google Fonts Questrial y Roboto Condensed
         // - Carto
         $this->cabecera_externos_css = array(
-            '<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Questrial|Roboto+Condensed:400,700">',
+            '<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed:400,700">',
             '<link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">');
         // Javascript Externos
         // - Google Charts para las gráficas de IBC
