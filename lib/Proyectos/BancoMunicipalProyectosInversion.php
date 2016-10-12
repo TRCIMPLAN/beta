@@ -47,7 +47,7 @@ class BancoMunicipalProyectosInversion extends \Base\Publicacion {
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu     = 'Banco de Proyectos';
         // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado          = 'publicar';
+        $this->estado          = 'revisar';
         // Poner final los botones de compartir en Twitter y Facebook. Por defecto es verdadero.
         $this->para_compartir  = false;
         // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.

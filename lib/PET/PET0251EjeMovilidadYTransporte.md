@@ -15,15 +15,19 @@ Las estadísticas accesibles por ahora para revisar esta problemática, que de h
 
 Torreón cuenta con un índice de motorización de 217 vehículos registrados por cada mil habitantes, es decir, existe un automóvil para cada 4.6 torreonenses. Mientras que en la Zona Metropolitana de la Laguna se cuentan 260 vehículos registrados por cada mil habitantes, existe un automóvil para cada 3.8 laguneros, sumando un total de 341,421 vehículos registrados para la ZML. (INEGI, 2014)
 
-    ### Gráfica 1. Comparativo regional de nivel de motorización
+### Gráfica 1. Comparativo regional de nivel de motorización
 
-Fuente. INEGI, 2014
+<img class="img-responsive" src="movilidad-transporte/motorizacion.png" alt="Motorizacion">
+
+**Fuente:** INEGI, 2014
 
 De 2000 a 2014 los vehículos motorizados registrados en circulación crecieron más del 100% (gráfica 2)
 
-    ### Gráfica 2. Proyección de vehículos registrados, en circulación en la Laguna, 2000 - 2030
+### Gráfica 2. Proyección de vehículos registrados, en circulación en la Laguna, 2000 - 2030
 
-Fuente: Elaboración propia, 2015
+<img class="img-responsive" src="movilidad-transporte/proyeccion-vehiculos-registrados.png" alt="Proyeccion de vehiculos registrados en la ZML">
+
+**Fuente:** Elaboración propia, 2015
 
 La proyección de habitantes para Torreón se calcula para el año 2030 en aproximadamente 798,014, con una tasa de crecimiento anual de 1.25%, teniendo dentro de 16 años (2030) un acumulado de 24% más de habitantes que los actuales. (CONAPO, 2015)
 
@@ -43,9 +47,11 @@ El centro de la ciudad de Torreón es una zona atractora de viajes de la Comarca
 
 A pesar de que la tasa motorización nos muestra que en Gómez Palacio y Lerdo existen más vehículos registrados por cada mil habitantes que en Torreón, la tasa de accidentes es mayor en Torreón. De cada mil vehículos, 12 sufren algún accidente de tránsito en Torreón contra 10 en Gómez Palacio, 9 en Matamoros y solo 6 en Lerdo. Esto nos pudiera sugerir que los automóviles circulan más tiempo en Torreón que en donde han sido inscritos en el parque vehicular. Ahora, por cada 100 accidentes de tránsito en la Zona Metropolitana de la Laguna, cinco tienen consecuencias mortales.
 
-    ### Gráfica 3. Defunciones de peatones lesionados por incidente vial, 2003 - 2013
+### Gráfica 3. Defunciones de peatones lesionados por incidente vial, 2003 - 2013
 
-Fuente: Sistema Nacional de Información en Salud (SINAIS). Registros administrativos INEGI, 2013.
+<img class="img-responsive" src="movilidad-transporte/defunciones-peatones-lesionados-incidente-vial.png" alt="Defunciones de peatonales lesionados por incidente vial">
+
+**Fuente:** Sistema Nacional de Información en Salud (SINAIS). Registros administrativos INEGI, 2013.
 
 La tasa de defunciones de peatones involucrados en accidentes viales en Torreón pasó de 4.1 en 2010 a 5.9 en 2013, mayor que en el Distrito Federal que fue de 4.3.
 
@@ -59,7 +65,9 @@ Al observar la correlación entre la existencia de pavimento y banquetas, se det
 
 La ciudad de Torreón cuenta con 281 km longitudinales de vialidades principales, secundarias y periféricas y 0.50 km de vialidades peatonales (únicamente dos calles).
 
-    ### Gráfica 4. Disponibilidad de pavimento y banquetas en manzana en Torreón.
+### Gráfica 4. Disponibilidad de pavimento y banquetas en manzana en Torreón.
+
+<img class="img-responsive" src="movilidad-transporte/accesibilidad.jpg" alt="Disponibilidad de pavimento y banquetas en manzanas en Torreon">
 
 Fuente: Elaboración propia, 2015
 
@@ -76,7 +84,7 @@ Colonia         | Porcentaje de población con discapacidad | Porcentaje de manz
 Centro          |                                     5.4% |                             82.5%
 Colonia muestra |                                     2.4% |                              1.8%
 
-Fuente: Elaboración propia, 2015
+**Fuente:** Elaboración propia, 2015
 
 En la zona centro de Torreón existe infraestructura que permite un desplazamiento aceptable dentro del sector. En la colonia Las Carolinas existe sólo una banqueta con rampa.
 
@@ -99,7 +107,7 @@ Gomezpalatinos                      |   45.3% |               |      0.2% |  14.
 Matamorenses                        |   95.5% |          4.2% |           |   0.3% |        10.9%
 Lerdenses                           |   28.1% |         50.6% |      0.4% |        |        20.9%
 
-Fuente: Elaboración propia con datos de INEGI 2010
+**Fuente:** Elaboración propia con datos de INEGI 2010
 
 ### Infraestructura y transporte público
 
@@ -115,11 +123,13 @@ Transporte Público   |        555,982 |        30%
 Bicicleta            |         34,196 |         2%
 Total General        |      1,818,954 |       100%
 
-Fuente: 2011. Logit.
+**Fuente:** 2011. Logit.
 
-    ### Gráfica 5. Reparto modal por tipo de transporte
+### Gráfica 5. Reparto modal por tipo de transporte
 
-Fuente: 2011. Logit.
+<img class="img-responsive" src="movilidad-transporte/reparto-modal.png" alt="Reparto modal por tipo de transporte">
+
+**Fuente:** 2011. Logit.
 
 El tiempo que el pasajero pasa dentro de la unidad es de 45 minutos en promedio, más 10 minutos de espera para el abordaje de la unidad (Transconsult, 2014). Para ilustrar la situación en términos de eficiencia y productividad de los 111,196 usuarios diarios de transporte público y para tener una comparativa, al invertir una hora de tiempo de todos los trabajadores de la región, se dejaría de generar 37 millones de pesos diarios. Si se invierten solamente 25 minutos la cifra disminuye a 15 millones de pesos diarios.
 
@@ -137,7 +147,7 @@ Transporte Público  |                      45
 Taxi                |                      20
 T. de Personal      |                      44
 
-Fuente: Elaboración propia, 2015
+**Fuente:** Elaboración propia, 2015
 
 ## Falta de coordinación intermunicipal significativa
 
@@ -147,6 +157,8 @@ Históricamente ha sido muy difícil una coordinación intermunicipal entre las 
 
 Las estadísticas y descripciones incluidas en las páginas anteriores muestran un desequilibrio significativo en el crecimiento de las ciudades de la Zona Metropolitana de la Laguna, y muestran el desorden con que ha ocurrido el crecimiento y desarrollo de las mismas. Evidentemente ha ocurrido por falta de planeación, articulación de normatividad y reglamentaciones, y fundamentalmente por visiones y voluntades políticas aisladas en sí mismas, que ocurrieron en el pasado.
 
-    ### Ilustración 7 Crecimiento Histórico de la Zona Metropolitana de la Laguna
+### Ilustración 7 Crecimiento Histórico de la Zona Metropolitana de la Laguna
 
-Fuente: Elaboración propia, 2015
+<iframe width='100%' height='520' frameborder='0' src='https://implantorreon.cartodb.com/u/sigimplan/viz/180ab8da-643c-11e4-971a-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+**Fuente:** Elaboración propia, 2015
