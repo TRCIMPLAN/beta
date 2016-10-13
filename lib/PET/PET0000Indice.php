@@ -25,7 +25,7 @@ namespace PET;
 /**
  * Clase PET0000Indice
  */
-class PET0000Indice extends \Base\Publicacion {
+class PET0000Indice extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor

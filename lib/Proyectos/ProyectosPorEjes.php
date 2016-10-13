@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - ProyectosPorEjes
+ * TrcIMPLAN Sitio Web - Proyectos por Ejes
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -25,47 +25,36 @@ namespace Proyectos;
 /**
  * Clase ProyectosPorEjes
  */
-class ProyectosPorEjes extends \Base\Publicacion {
+class ProyectosPorEjes extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'Proyectos por Ejes';
-        $this->autor           = 'Dirección de Proyectos Estratégicos';
-        $this->fecha           = '2016-01-01T08:00';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo         = 'proyectos-por-ejes';
-        $this->imagen          = 'banco-municipal-proyectos-inversion/imagen.png';
-        $this->imagen_previa   = 'banco-municipal-proyectos-inversion/imagen-previa.png';
+        $this->nombre                     = 'Proyectos por Ejes';
+        $this->autor                      = 'Dirección de Proyectos Estratégicos';
+        $this->fecha                      = '2016-01-01T08:00';
+        // El nombre del archivo a crear
+        $this->archivo                    = 'proyectos-por-ejes';
+        $this->imagen                     = 'banco-municipal-proyectos-inversion/imagen.png';
+        $this->imagen_previa              = 'banco-municipal-proyectos-inversion/imagen-previa.png';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Descripción.';
-        $this->claves          = 'IMPLAN, Torreon, Proyectos, Ejes';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio      = 'proyectos';
+        $this->descripcion                = 'Descripción.';
+        $this->claves                     = 'IMPLAN, Torreon, Proyectos, Ejes';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Banco de Proyectos > Proyectos por Ejes';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado          = 'ignorar';
-        // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
-        $this->poner_imagen_en_contenido = false;
-        // El contenido es estructurado en un esquema
-        $schema                = new \Base\SchemaBlogPosting();
-        $schema->name          = $this->nombre;
-        $schema->description   = $this->descripcion;
-        $schema->datePublished = $this->fecha;
-        $schema->image         = $this->imagen;
-        $schema->image_show    = $this->poner_imagen_en_contenido;
-        $schema->author        = $this->autor;
-        // El contenido es una instancia de SchemaBlogPosting
-        $this->contenido       = $schema;
-        // Se define una ruta a una archivo markdown para que cuando se ejecute el método HTML se cargue
+        $this->nombre_menu                = 'Plan Estratégico Torreón > Proyectos';
+        // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Proyectos/ProyectosPorEjes.md';
+        // Banderas
+        $this->poner_imagen_en_contenido  = false;
+        $this->para_compartir             = false;
         // Para el Organizador
-        $this->categorias      = array('Gobierno', 'Gobierno Digital');
-        $this->fuentes         = array();
-        $this->regiones        = array();
+        $this->categorias                 = array('Gobierno', 'Gobierno Digital');
+        $this->fuentes                    = array();
+        $this->regiones                   = array();
+        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
+        $this->estado                     = 'ignorar';
     } // constructor
 
 } // Clase ProyectosPorEjes

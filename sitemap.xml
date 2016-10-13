@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-10-12</lastmod>
+    <lastmod>2016-10-13</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -3176,6 +3176,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/aire-para-todos.html</loc>
+    <lastmod>2016-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/proyectos/calle-completa.html</loc>
     <lastmod>2015-05-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -3186,6 +3191,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/plan-estrategico-drenaje-pluvial-torreon.html</loc>
+    <lastmod>2016-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/proyectos/plata-laguna.html</loc>
     <lastmod>2014-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -3193,6 +3203,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/proyectos/salud-laguna.html</loc>
     <lastmod>2015-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/proyectos/vive-tu-alameda.html</loc>
+    <lastmod>2016-08-11</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>

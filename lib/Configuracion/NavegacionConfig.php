@@ -48,9 +48,9 @@ class NavegacionConfig {
             'Información Geográfica > Zonificación Secundaria'       => 'sig-mapas-torreon/zonificacion-secundaria.html'),
         'Plan Estratégico Torreón' => array(
             'Plan Estratégico Torreón > Índice General'              => 'pet/indice.html',
+            'Plan Estratégico Torreón > Índice Alfabético'           => 'pet/index.html',
             'Plan Estratégico Torreón > Descripción del proceso'     => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
-            'Plan Estratégico Torreón > Proyectos'                   => 'proyectos/index.html',
-            'Plan Estratégico Torreón > Índice Alfabético'           => 'pet/index.html'),
+            'Plan Estratégico Torreón > Proyectos'                   => 'proyectos/index.html'),
         'Investigaciones' => 'investigaciones/index.html',
         'Institucional' => array(
             'Institucional > Visión / Misión'                        => 'institucional/vision-mision.html',
@@ -89,9 +89,9 @@ class NavegacionConfig {
             'Zonificación Secundaria'      => 'fa fa-map-marker',
         'Plan Estratégico Torreón'         => 'fa fa-book',
             'Índice General'               => 'fa fa-list-ul',
+            'Índice Alfabético'            => 'fa fa-font',
             'Descripción del proceso'      => 'fa fa-calendar',
             'Proyectos'                    => 'fa fa-check-square',
-            'Índice Alfabético'            => 'fa fa-font',
         'Investigaciones'                  => 'fa fa-briefcase',
         'Institucional'                    => 'fa fa-building-o',
             'Visión / Misión'              => 'fa fa-trophy',

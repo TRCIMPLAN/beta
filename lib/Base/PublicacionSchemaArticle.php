@@ -126,10 +126,7 @@ class PublicacionSchemaArticle extends Publicacion {
         $schema->datePublished = $this->fecha;
         $schema->image         = $this->imagen;
         $schema->image_show    = $this->poner_imagen_en_contenido;
-        $schema->author        = $this->autor;
-        if (is_array($this->contenido) && (count($this->contenido) > 0)) {
-            $schema->articleBody = implode("\n", $this->contenido);
-        }
+    //  $schema->articleBody   = ; // En el método html de Publicación será procesado
         // El contenido es una instancia de SchemaBlogPosting
         $this->contenido       = $schema;
     } // validar

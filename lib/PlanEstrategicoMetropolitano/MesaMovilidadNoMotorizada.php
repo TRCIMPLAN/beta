@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Mesa Movilidad No Motorizada
  *
- * Copyright (C) 2015 IMPLAN Torreón
+ * Copyright (C) 2016 IMPLAN Torreón
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,47 +25,34 @@ namespace PlanEstrategicoMetropolitano;
 /**
  * Clase MesaMovilidadNoMotorizada
  */
-class MesaMovilidadNoMotorizada extends \Base\Publicacion {
+class MesaMovilidadNoMotorizada extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'Taller de Movilidad No Motorizada';
-        $this->autor           = 'Dirección de Proyectos Estratégicos';
-        $this->fecha           = '2015-08-18T16:15';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo         = 'mesa-movilidad-no-motorizada';
-        $this->imagen          = 'mesa-movilidad-no-motorizada/imagen.jpg';
-        $this->imagen_previa   = 'mesa-movilidad-no-motorizada/imagen-previa.jpg';
+        $this->nombre                     = 'Taller de Movilidad No Motorizada';
+        $this->autor                      = 'Dirección de Proyectos Estratégicos';
+        $this->fecha                      = '2015-08-18T16:15';
+        // El nombre del archivo a crear
+        $this->archivo                    = 'mesa-movilidad-no-motorizada';
+        $this->imagen                     = 'mesa-movilidad-no-motorizada/imagen.jpg';
+        $this->imagen_previa              = 'mesa-movilidad-no-motorizada/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion     = 'Desarrollo de un sistema de movilidad urbana que empodere e integre a los modos NO motorizados de transporte en la movilidad cotidiana.';
-        $this->claves          = 'IMPLAN, Torreon, Movilidad, No Motorizada';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio      = 'plan-estrategico-metropolitano';
+        $this->descripcion                = 'Desarrollo de un sistema de movilidad urbana que empodere e integre a los modos NO motorizados de transporte en la movilidad cotidiana.';
+        $this->claves                     = 'IMPLAN, Torreon, Movilidad, No Motorizada';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu     = 'Plan Estratégico Metropolitano > Descripción del Proceso';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado          = 'publicar';
-        // Indicar que NO se vaya a poner la imagen en la página y en la redifusión. Por defecto es verdadero.
-        $this->poner_imagen_en_contenido = false;
-        // El contenido es estructurado en un esquema
-        $schema                = new \Base\SchemaArticle();
-        $schema->name          = $this->nombre;
-        $schema->description   = $this->descripcion;
-        $schema->datePublished = $this->fecha;
-        $schema->image         = $this->imagen;
-        $schema->image_show    = $this->poner_imagen_en_contenido;
-        $schema->author        = $this->autor;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido       = $schema;
-        // Se define una ruta a una archivo HTML para que cuando se ejecute el método HTML se cargue
-        $this->contenido_archivo_html = 'lib/PlanEstrategicoMetropolitano/MesaMovilidadNoMotorizada.html';
+        $this->nombre_menu                = 'Plan Estratégico Torreón > Descripción del proceso';
+        // Ruta al archivo HTML con el contenido
+        $this->contenido_archivo_html     = 'lib/PlanEstrategicoMetropolitano/MesaMovilidadNoMotorizada.html';
+        // Banderas
+        $this->poner_imagen_en_contenido  = false;
+        $this->para_compartir             = false;
         // Para el Organizador
-        $this->categorias      = array('Infraestructura', 'Movilidad');
-        $this->fuentes         = array();
-        $this->regiones        = array();
+        $this->categorias                 = array('Infraestructura', 'Movilidad');
+        $this->fuentes                    = array();
+        $this->regiones                   = array();
     } // constructor
 
     /**

@@ -75,7 +75,7 @@ class PublicacionSchemaBlogPosting extends PublicacionSchemaArticle {
         if ($this->validado) {
             return;
         }
-        // Ejecutar método en el padre, debe estar antes, porque sobreescribiremos la propiedad contenido
+        // Ejecutar método en el padre
         parent::validar();
         // El contenido es estructurado en un esquema SchemaBlogPosting
         $schema                = new SchemaBlogPosting();
@@ -85,9 +85,7 @@ class PublicacionSchemaBlogPosting extends PublicacionSchemaArticle {
         $schema->image         = $this->imagen;
         $schema->image_show    = $this->poner_imagen_en_contenido;
         $schema->author        = $this->autor;
-        if (is_array($this->contenido) && (count($this->contenido) > 0)) {
-            $schema->articleBody = implode("\n", $this->contenido);
-        }
+    //  $schema->articleBody   = ; // En el método html de Publicación será procesado
         // El contenido es una instancia de SchemaBlogPosting
         $this->contenido       = $schema;
     } // validar
