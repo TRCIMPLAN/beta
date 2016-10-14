@@ -56,32 +56,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
     // public $mapa_inferior;
     // public $javascript;
     // public $contenido_en_renglon;
-    public $imprentas; // Arreglo con rutas a las clases de ImprentaPublicaciones, es usado en ultimas_publicaciones
-    public $mapa_servicios     = array(
-        'Análisis Publicados'               => 'blog/index.html',
-        'Indicadores'                       => 'indicadores-categorias/index.html',
-        'Indicadores Básicos por Colonias'  => 'ibc-torreon/index.html',
-        'Información Geográfica'            => 'sig-mapas-torreon/index.html',
-        'Plan Estratégico Metropolitano'    => 'plan-estrategico-metropolitano/index.html',
-        'Banco de Proyectos'                => 'proyectos/index.html');
-    public $mapa_institucional = array(
-        'Visión / Misión'                   => 'institucional/vision-mision.html',
-        'Mensaje del Director'              => 'institucional/mensaje-director.html',
-        'Quienes Somos'                     => 'autores/index.html',
-        'Estructura Orgánica'               => 'institucional/estructura-organica.html',
-        'Reglamentos'                       => 'institucional/reglamentos.html',
-        'Información Financiera'            => 'institucional/informacion-financiera.html',
-        'Consejo Directivo'                 => 'consejo-directivo/integrantes.html');
-    public $mapa_interaccion   = array(
-        'Contacto'                          => 'contacto/contacto.html',
-        'Preguntas Frecuentes'              => 'preguntas-frecuentes/preguntas-frecuentes.html',
-        'Sala de Prensa'                    => 'sala-prensa/index.html',
-        'Quejas y Sugerencias'              => 'http://goo.gl/forms/1rdX4X128PpMOif73');
-    public $mapa_legal         = array(
-        'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178',
-        'Términos de Uso de la Información' => 'terminos/terminos-informacion.html',
-        'Términos de Uso del Sitio Web'     => 'terminos/terminos-sitio.html',
-        'Aviso de Privacidad'               => 'terminos/privacidad.html');
+    public $imprentas;                        // Arreglo con rutas a las clases de ImprentaPublicaciones, es usado en ultimas_publicaciones
+    const   ULTIMAS_PUBLICACIONES_LIMITE = 6; // Cantidad límite de últimas publicaciones
 
     /**
      * Constructor
@@ -201,8 +177,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
         // Ordenar publicaciones por tiempo, de la más nueva a la más antigua
         $recolector->ordenar_por_tiempo_desc();
-        // Bucle por las publicaciones, tiene la cantidad límite
-        foreach ($recolector->obtener_publicaciones(4) as $publicacion) {
+        // Bucle por las publicaciones
+        foreach ($recolector->obtener_publicaciones(self::ULTIMAS_PUBLICACIONES_LIMITE) as $publicacion) {
             // Iniciar vínculo
             $vinculo          = new \Base\Vinculo();
             $vinculo->en_raiz = true;
@@ -279,10 +255,31 @@ class PaginaInicialConfig extends \Base\Plantilla {
      */
     protected function mapa() {
         // Mapa
-        $servicios         = new \PaginaInicial\Mapa('SERVICIOS',     $this->mapa_servicios);
-        $institucional     = new \PaginaInicial\Mapa('INSTITUCIONAL', $this->mapa_institucional);
-        $interaccion       = new \PaginaInicial\Mapa('INTERACCION',   $this->mapa_interaccion);
-        $legal             = new \PaginaInicial\Mapa('LEGAL',         $this->mapa_legal);
+        $servicios     = new \PaginaInicial\Mapa('SERVICIOS', array(
+            'Análisis Publicados'               => 'blog/index.html',
+            'Indicadores'                       => 'indicadores-categorias/index.html',
+            'Indicadores Básicos por Colonias'  => 'ibc-torreon/index.html',
+            'Información Geográfica'            => 'sig-mapas-torreon/index.html',
+            'Plan Estratégico Metropolitano'    => 'plan-estrategico-metropolitano/index.html',
+            'Banco de Proyectos'                => 'proyectos/index.html'));
+        $institucional = new \PaginaInicial\Mapa('INSTITUCIONAL', array(
+            'Visión / Misión'                   => 'institucional/vision-mision.html',
+            'Mensaje del Director'              => 'institucional/mensaje-director.html',
+            'Quienes Somos'                     => 'autores/index.html',
+            'Estructura Orgánica'               => 'institucional/estructura-organica.html',
+            'Reglamentos'                       => 'institucional/reglamentos.html',
+            'Información Financiera'            => 'institucional/informacion-financiera.html',
+            'Consejo Directivo'                 => 'consejo-directivo/integrantes.html'));
+        $interaccion   = new \PaginaInicial\Mapa('INTERACCION', array(
+            'Contacto'                          => 'contacto/contacto.html',
+            'Preguntas Frecuentes'              => 'preguntas-frecuentes/preguntas-frecuentes.html',
+            'Sala de Prensa'                    => 'sala-prensa/index.html',
+            'Quejas y Sugerencias'              => 'http://goo.gl/forms/1rdX4X128PpMOif73'));
+        $legal         = new \PaginaInicial\Mapa('LEGAL', array(
+            'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178',
+            'Términos de Uso de la Información' => 'terminos/terminos-informacion.html',
+            'Términos de Uso del Sitio Web'     => 'terminos/terminos-sitio.html',
+            'Aviso de Privacidad'               => 'terminos/privacidad.html'));
         // Mapa grande
         $this->contenido[] = '  <section id="mapa">';
         $this->contenido[] = '    <div class="row">';
@@ -340,7 +337,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         // Elaborar secciones
         $this->organizacion();
         $this->destacado();
-        $this->aviso();
+    //  $this->aviso();
         $this->ultimas_publicaciones();
         $this->categorias();
         $this->mapa();

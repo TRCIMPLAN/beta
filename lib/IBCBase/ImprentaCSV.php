@@ -31,7 +31,7 @@ class ImprentaCSV extends \Base\Imprenta {
     public    $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
     protected $archivo_ruta;             // Texto opcional, ruta al archivo index
     protected $recolector;               // Instancia de \Base\Recolector
-    protected $contador = 0;             // Entero, cantidad de publicaciones producidas
+    public    $contador = 0;             // Entero, cantidad de publicaciones producidas
     protected $columnas = array(
         'Demografía' => array(
             'Población total',
@@ -189,6 +189,7 @@ class ImprentaCSV extends \Base\Imprenta {
         $csv = $this->csv();
         if (is_string($csv)) {
             $this->crear_archivo($this->archivo_ruta, $this->encabezados_csv().$csv);
+            $this->contador++;
         } else {
             $this->eliminar_archivo($this->archivo_ruta);
         }

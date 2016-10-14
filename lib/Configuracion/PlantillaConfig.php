@@ -27,14 +27,14 @@ namespace Configuracion;
  */
 class PlantillaConfig {
 
-    public $sitio_titulo     = 'IMPLAN Torreón';
-    public $sitio_url        = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
-    public $rss              = 'rss.xml';
-    public $favicon          = 'imagenes/favicon.png';
-    public $propio_css       = 'css/trcimplan.css';
-    public $en_raiz          = false; // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
-    public $para_compartir   = false; // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook
-    public $autor            = 'TrcIMPLAN Staff'; // Autor por defecto
+    public $sitio_titulo    = 'IMPLAN Torreón';
+    public $sitio_url       = 'http://www.trcimplan.gob.mx'; // Sin diagonal al final
+    public $rss             = 'rss.xml';
+    public $favicon         = 'imagenes/favicon.png';
+    public $propio_css      = 'css/trcimplan.css';
+    public $en_raiz         = FALSE; // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
+    public $para_compartir  = FALSE; // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook
+    public $autor           = 'TrcIMPLAN Staff'; // Autor por defecto
     public $mensaje_oculto;
     public $pie;
     protected $google_analytics;
@@ -42,7 +42,7 @@ class PlantillaConfig {
     protected $cabecera_bootstrap_css;
     protected $cabecera_font_awesome_css;
     protected $cabecera_externos_css;
-    protected $scripts_jquery_css;
+    protected $scripts_jquery_js;
     protected $scripts_bootstrap_js;
     protected $scripts_externos_js;
 
@@ -55,9 +55,9 @@ class PlantillaConfig {
      */
     public function __construct() {
         // Al usar FLASE las siguientes propiedades apuntarán a archivos locales, así el sitio podrá funcionar en una intranet
-        if (TRUE) {
+        if (FALSE) {
             // jQuery según https://developers.google.com/speed/libraries/#jquery
-            $this->scripts_jquery_css        = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>';
+            $this->scripts_jquery_js         = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>';
             // Twitter Bootstrap según https://www.bootstrapcdn.com/
             $this->cabecera_bootstrap_css    = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">';
             $this->scripts_bootstrap_js      = '<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>';

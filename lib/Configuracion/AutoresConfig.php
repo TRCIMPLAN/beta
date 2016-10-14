@@ -36,7 +36,7 @@ class AutoresConfig {
     const INDICE_DESCRIPCION       = 'Quienes son integrantes del IMPLAN Torreón.'; // Descripción para la página índice
     const INDICE_CLAVES            = 'Personal, Personas, Autores';      // Claves para la página índice
     public $autores                = array();                            // Arreglo asociativo con instancias de \Base\Autor
-    public $mostrar_no_definidos   = false;                              // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
+    public $mostrar_no_definidos   = FALSE;                              // Verdadero pone todos los autores encontrados, falso solo los definidos aquí
     public $imagen_tamano          = 128;                                // Tamaño del icono a usuarse en \Base\PaginasAutoresIndice
 
     /**

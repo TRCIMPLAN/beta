@@ -69,28 +69,10 @@ class CreadorConfig {
             '\\Terminos\\Imprenta');
         $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
-            '\\Blog\\Imprenta',
-            '\\IBCTorreon\\Imprenta',
-            '\\Investigaciones\\Imprenta',
-            '\\PlanEstrategicoMetropolitano\\Imprenta',
-            '\\Proyectos\\Imprenta',
-            '\\SalaPrensa\\Imprenta',
-            '\\SIGMapasTorreon\\Imprenta',
-            '\\SMIGeorreferenciados\\Imprenta',
-            '\\SMIIndicadoresGomezPalacio\\Imprenta',
-            '\\SMIIndicadoresLaLaguna\\Imprenta',
-            '\\SMIIndicadoresLerdo\\Imprenta',
-            '\\SMIIndicadoresMatamoros\\Imprenta',
-            '\\SMIIndicadoresTorreon\\Imprenta');
+            '\\Blog\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
         $this->imprentas_redifusion     = $this->imprentas_autores;
-        $this->imprentas_pagina_inicial = array(
-            '\\Blog\\Imprenta',
-            '\\PlanEstrategicoMetropolitano\\Imprenta',
-            '\\SalaPrensa\\Imprenta',
-            '\\Proyectos\\Imprenta',
-            '\\SIG\\Imprenta',
-            '\\SMI\\Imprenta');
+        $this->imprentas_pagina_inicial = $this->imprentas_autores;
         $this->imprentas_json           = array(
             '\\IBCTorreon\\ImprentaJSONs');
         $this->imprentas_csv            = array(

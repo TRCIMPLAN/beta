@@ -31,7 +31,7 @@ class ImprentaJSONs extends \Base\Imprenta {
     public    $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
     protected $archivo_ruta;             // Texto opcional, ruta al archivo index
     protected $recolector;               // Instancia de \Base\Recolector
-    protected $contador = 0;             // Entero, cantidad de publicaciones producidas
+    public    $contador = 0;             // Entero, cantidad de publicaciones producidas
     protected $indice   = array();       // Arreglo asociativo con los nombres y rutas
     const     SITIO_URL = 'http://www.trcimplan.gob.mx/beta'; // Sin diagonal al final
 
