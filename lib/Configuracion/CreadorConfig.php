@@ -69,7 +69,13 @@ class CreadorConfig {
             '\\Terminos\\Imprenta');
         $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
-            '\\Blog\\Imprenta');
+            '\\Blog\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SIGMapasTorreon\\Imprenta',
+            '\\SMIIndicadoresGomezPalacio\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresMatamoros\\Imprenta',
+            '\\SMIIndicadoresTorreon\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
         $this->imprentas_redifusion     = $this->imprentas_autores;
         $this->imprentas_pagina_inicial = $this->imprentas_autores;

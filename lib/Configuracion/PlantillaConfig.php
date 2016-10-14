@@ -55,7 +55,7 @@ class PlantillaConfig {
      */
     public function __construct() {
         // Al usar FLASE las siguientes propiedades apuntarán a archivos locales, así el sitio podrá funcionar en una intranet
-        if (FALSE) {
+        if (TRUE) {
             // jQuery según https://developers.google.com/speed/libraries/#jquery
             $this->scripts_jquery_js         = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>';
             // Twitter Bootstrap según https://www.bootstrapcdn.com/
