@@ -394,13 +394,13 @@ a.galeria-icono:active  { color:#FF3300; }
 /*
  * Página Inicial imágenes de tres servicios que cambian al pasar el ratón
  */
-#servicio-pem {
+#servicio-pet {
     display:block;
     width:200px;
     height:200px;
-    background:url("../imagenes/servicio-pem.png") no-repeat 0 0;
+    background:url("../imagenes/servicio-pet.png") no-repeat 0 0;
 }
-#servicio-pem:hover {
+#servicio-pet:hover {
     background-position:-200px 0;
 }
 #servicio-sig {
