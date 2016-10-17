@@ -384,12 +384,10 @@ a.galeria-icono:active  { color:#FF3300; }
     margin-bottom:4px;
 }
 .destacado-descripcion {
-    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
-    line-height:1.2em;
+    font-size:12px;
     margin-bottom:4px;
 }
 .destacado-boton {
-    font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
     background-color:#F0F0F0;
 }
 

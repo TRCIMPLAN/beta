@@ -147,22 +147,33 @@ class PaginaInicialConfig extends \Base\Plantilla {
     } // destacado
 
     /**
+     * IBC
+     */
+    protected function ibc() {
+        $this->contenido[]  = '  <section id="ibc">';
+        $this->contenido[]  = '    <iframe width="100%" height="400" frameborder="0" src="https://guivaloz.carto.com/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>';
+        $this->contenido[]  = '  </section>';
+    } // ibc
+
+    /**
      * Aviso
      */
     protected function aviso() {
-        $this->contenido[] = '    <div class="panel" style="margin:4px;border:2px solid #FF3300;">';
-        $this->contenido[] = '        <div class="panel-heading" style="background-color:#FFFFFF">';
-        $this->contenido[] = '            <h2>Elección de Consejeros de Representación Sectorial 2015</h2>';
-        $this->contenido[] = '            <div>Resultado del proceso de elección de los ciudadanos que van a formar parte del Consejo Directivo como Consejeros de Representación Sectorial en el IMPLAN Torreón.</div>';
-        $this->contenido[] = '        </div>';
-        $this->contenido[] = '        <a href="consejo-directivo/eleccion-de-consejeros-de-representacion-sectorial-2015.html">';
-        $this->contenido[] = '            <div class="panel-footer" style="background-color:#CACACA">';
-        $this->contenido[] = '                <span class="pull-left">Ir a la página</span>';
-        $this->contenido[] = '                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>';
-        $this->contenido[] = '                <div class="clearfix"></div>';
-        $this->contenido[] = '            </div>';
-        $this->contenido[] = '        </a>';
-        $this->contenido[] = '    </div>';
+        $this->contenido[]  = '  <section id="aviso">';
+        $this->contenido[]  = '    <div class="panel" style="margin:4px;border:2px solid #FF3300;">';
+        $this->contenido[]  = '        <div class="panel-heading" style="background-color:#FFFFFF">';
+        $this->contenido[]  = '            <h2>Elección de Consejeros de Representación Sectorial 2015</h2>';
+        $this->contenido[]  = '            <div>Resultado del proceso de elección de los ciudadanos que van a formar parte del Consejo Directivo como Consejeros de Representación Sectorial en el IMPLAN Torreón.</div>';
+        $this->contenido[]  = '        </div>';
+        $this->contenido[]  = '        <a href="consejo-directivo/eleccion-de-consejeros-de-representacion-sectorial-2015.html">';
+        $this->contenido[]  = '            <div class="panel-footer" style="background-color:#CACACA">';
+        $this->contenido[]  = '                <span class="pull-left">Ir a la página</span>';
+        $this->contenido[]  = '                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>';
+        $this->contenido[]  = '                <div class="clearfix"></div>';
+        $this->contenido[]  = '            </div>';
+        $this->contenido[]  = '        </a>';
+        $this->contenido[]  = '    </div>';
+        $this->contenido[]  = '  </section>';
     } // aviso
 
     /**
@@ -337,6 +348,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         // Elaborar secciones
         $this->organizacion();
         $this->destacado();
+        $this->ibc();
     //  $this->aviso();
         $this->ultimas_publicaciones();
         $this->categorias();
