@@ -57,7 +57,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     // public $javascript;
     // public $contenido_en_renglon;
     public $imprentas;                        // Arreglo con rutas a las clases de ImprentaPublicaciones, es usado en ultimas_publicaciones
-    const   ULTIMAS_PUBLICACIONES_LIMITE = 6; // Cantidad límite de últimas publicaciones
+    const   ULTIMAS_PUBLICACIONES_LIMITE = 4; // Cantidad límite de últimas publicaciones
 
     /**
      * Constructor
