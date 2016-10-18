@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0261EjeMedioAmbienteYSustentabilidad
+ * TrcIMPLAN Sitio Web - PET0621VisionDesarrolloEconomicoInnovacion
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0261EjeMedioAmbienteYSustentabilidad
+ * Clase PET0621VisionDesarrolloEconomicoInnovacion
  */
-class PET0261EjeMedioAmbienteYSustentabilidad extends \Base\PublicacionSchemaArticle {
+class PET0621VisionDesarrolloEconomicoInnovacion extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Medio Ambiente y Sustentabilidad';
+        $this->nombre                     = 'Visión de Desarrollo Económico e Innovación 2040';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T02:55';
+        $this->fecha                      = '2016-10-10T06:21';
         // El nombre del archivo a crear
-        $this->archivo                    = 'medio-ambiente-sustentabilidad';
+        $this->archivo                    = 'vision-desarrollo-economico-innovacion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Medio Ambiente y Sustentabilidad.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Medio Ambiente, Sustentabilidad';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Visión de Desarrollo Económico e Innovación 2040.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Vision, Desarrollo, Economico, Innovacion';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0261EjeMedioAmbienteYSustentabilidad.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0621VisionDesarrolloEconomicoInnovacion.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0261EjeMedioAmbienteYSustentabilidad extends \Base\PublicacionSchemaArt
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0261EjeMedioAmbienteYSustentabilidad
+} // Clase PET0621VisionDesarrolloEconomicoInnovacion
 
 ?>

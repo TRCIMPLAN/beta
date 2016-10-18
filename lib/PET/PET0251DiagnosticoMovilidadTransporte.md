@@ -17,7 +17,7 @@ Torreón cuenta con un índice de motorización de 217 vehículos registrados po
 
 ### Gráfica 1. Comparativo regional de nivel de motorización
 
-<img class="img-responsive" src="movilidad-transporte/motorizacion.png" alt="Motorizacion">
+<img class="img-responsive" src="diagnostico-estrategico-movilidad-transporte/motorizacion.png" alt="Motorizacion">
 
 **Fuente:** INEGI, 2014
 
@@ -25,7 +25,7 @@ De 2000 a 2014 los vehículos motorizados registrados en circulación crecieron 
 
 ### Gráfica 2. Proyección de vehículos registrados, en circulación en la Laguna, 2000 - 2030
 
-<img class="img-responsive" src="movilidad-transporte/proyeccion-vehiculos-registrados.png" alt="Proyeccion de vehiculos registrados en la ZML">
+<img class="img-responsive" src="diagnostico-estrategico-movilidad-transporte/proyeccion-vehiculos-registrados.png" alt="Proyeccion de vehiculos registrados en la ZML">
 
 **Fuente:** Elaboración propia, 2015
 
@@ -49,7 +49,7 @@ A pesar de que la tasa motorización nos muestra que en Gómez Palacio y Lerdo e
 
 ### Gráfica 3. Defunciones de peatones lesionados por incidente vial, 2003 - 2013
 
-<img class="img-responsive" src="movilidad-transporte/defunciones-peatones-lesionados-incidente-vial.png" alt="Defunciones de peatonales lesionados por incidente vial">
+<img class="img-responsive" src="diagnostico-estrategico-movilidad-transporte/defunciones-peatones-lesionados-incidente-vial.png" alt="Defunciones de peatonales lesionados por incidente vial">
 
 **Fuente:** Sistema Nacional de Información en Salud (SINAIS). Registros administrativos INEGI, 2013.
 
@@ -67,7 +67,7 @@ La ciudad de Torreón cuenta con 281 km longitudinales de vialidades principales
 
 ### Gráfica 4. Disponibilidad de pavimento y banquetas en manzana en Torreón.
 
-<img class="img-responsive" src="movilidad-transporte/accesibilidad.jpg" alt="Disponibilidad de pavimento y banquetas en manzanas en Torreon">
+<img class="img-responsive" src="diagnostico-estrategico-movilidad-transporte/accesibilidad.jpg" alt="Disponibilidad de pavimento y banquetas en manzanas en Torreon">
 
 Fuente: Elaboración propia, 2015
 
@@ -127,7 +127,7 @@ Total General        |      1,818,954 |       100%
 
 ### Gráfica 5. Reparto modal por tipo de transporte
 
-<img class="img-responsive" src="movilidad-transporte/reparto-modal.png" alt="Reparto modal por tipo de transporte">
+<img class="img-responsive" src="diagnostico-estrategico-movilidad-transporte/reparto-modal.png" alt="Reparto modal por tipo de transporte">
 
 **Fuente:** 2011. Logit.
 

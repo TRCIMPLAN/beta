@@ -17,7 +17,7 @@ A continuación, se describen las características de cada uno de estos problema
 
 Torreón cuenta con una excelente ubicación respecto a fronteras, puertos marítimos y ciudades estratégicas mexicanas y americanas. Es importante mencionar que la reciente apertura de la conexión carretera hacia el puerto de Mazatlán significa un gran paso en la eficiencia logística de la región.
 
-<img class="img-responsive" src="desarrollo-economico-innovacion/localizacion-estrategica-de-torreon-y-conectividad.jpg" alt="Localizacion Estrategica de Torreon y Conectividad">
+<img class="img-responsive" src="diagnostico-estrategico-desarrollo-economico-innovacion/localizacion-estrategica-de-torreon-y-conectividad.jpg" alt="Localizacion Estrategica de Torreon y Conectividad">
 
 ### Infraestructura
 

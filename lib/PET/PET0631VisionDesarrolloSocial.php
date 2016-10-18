@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0231EjeDesarrolloSocial
+ * TrcIMPLAN Sitio Web - PET0631VisionDesarrolloSocial
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0231EjeDesarrolloSocial
+ * Clase PET0631VisionDesarrolloSocial
  */
-class PET0231EjeDesarrolloSocial extends \Base\PublicacionSchemaArticle {
+class PET0631VisionDesarrolloSocial extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Desarrollo Social';
+        $this->nombre                     = 'Visión de Desarrollo Social 2040';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T02:31';
+        $this->fecha                      = '2016-10-10T06:31';
         // El nombre del archivo a crear
-        $this->archivo                    = 'desarrollo-social';
+        $this->archivo                    = 'vision-desarrollo-social';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Desarrollo Social.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Desarrollo, Social';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Visión de Desarrollo Social 2040.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Vision, Desarrollo, Social';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0231EjeDesarrolloSocial.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0631VisionDesarrolloSocial.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0231EjeDesarrolloSocial extends \Base\PublicacionSchemaArticle {
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0231EjeDesarrolloSocial
+} // Clase PET0631VisionDesarrolloSocial
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0241EjeEntornoUrbano
+ * TrcIMPLAN Sitio Web - PET0231DiagnosticoDesarrolloSocial
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0241EjeEntornoUrbano
+ * Clase PET0231DiagnosticoDesarrolloSocial
  */
-class PET0241EjeEntornoUrbano extends \Base\PublicacionSchemaArticle {
+class PET0231DiagnosticoDesarrolloSocial extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Entorno Urbano';
+        $this->nombre                     = 'Diagnóstico Estratégico: Desarrollo Social';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T02:41';
+        $this->fecha                      = '2016-10-10T02:31';
         // El nombre del archivo a crear
-        $this->archivo                    = 'entorno-urbano';
+        $this->archivo                    = 'diagnostico-estrategico-desarrollo-social';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Entorno Urbano.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Entorno, Urbano';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Diagnóstico Estratégico: Desarrollo Social.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Desarrollo, Social';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0241EjeEntornoUrbano.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0231DiagnosticoDesarrolloSocial.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0241EjeEntornoUrbano extends \Base\PublicacionSchemaArticle {
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0241EjeEntornoUrbano
+} // Clase PET0231DiagnosticoDesarrolloSocial
 
 ?>

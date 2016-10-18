@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-10-17</lastmod>
+    <lastmod>2016-10-18</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -3076,32 +3076,32 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/buen-gobierno.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-buen-gobierno.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/desarrollo-economico-innovacion.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-desarrollo-economico-innovacion.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/desarrollo-social.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-desarrollo-social.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/entorno-urbano.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-entorno-urbano.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/movilidad-transporte.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-movilidad-transporte.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.trcimplan.gob.mx/pet/medio-ambiente-sustentabilidad.html</loc>
+    <loc>http://www.trcimplan.gob.mx/pet/diagnostico-estrategico-medio-ambiente-sustentabilidad.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -3117,6 +3117,36 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/pet/modelo-desarrollo.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-buen-gobierno.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-desarrollo-economico-innovacion.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-desarrollo-social.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-entorno-urbano.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-movilidad-transporte.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/vision-medio-ambiente-sustentabilidad.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>

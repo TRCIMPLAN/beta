@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0221EjeDesarrolloEconomicoEInnovacion
+ * TrcIMPLAN Sitio Web - PET0251DiagnosticoMovilidadTransporte
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0221EjeDesarrolloEconomicoEInnovacion
+ * Clase PET0251DiagnosticoMovilidadTransporte
  */
-class PET0221EjeDesarrolloEconomicoEInnovacion extends \Base\PublicacionSchemaArticle {
+class PET0251DiagnosticoMovilidadTransporte extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Desarrollo Económico e Innovación';
+        $this->nombre                     = 'Diagnóstico Estratégico: Movilidad y Transporte';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T02:21';
+        $this->fecha                      = '2016-10-10T02:51';
         // El nombre del archivo a crear
-        $this->archivo                    = 'desarrollo-economico-innovacion';
+        $this->archivo                    = 'diagnostico-estrategico-movilidad-transporte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Desarrollo Económico e Innovación.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Desarrollo, Economia, Innovacion';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Diagnóstico Estratégico: Movilidad y Transporte.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Movilidad, Transporte';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0221EjeDesarrolloEconomicoEInnovacion.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0251DiagnosticoMovilidadTransporte.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0221EjeDesarrolloEconomicoEInnovacion extends \Base\PublicacionSchemaAr
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0221EjeDesarrolloEconomicoEInnovacion
+} // Clase PET0251DiagnosticoMovilidadTransporte
 
 ?>

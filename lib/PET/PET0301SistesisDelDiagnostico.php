@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0211EjeBuenGobierno
+ * TrcIMPLAN Sitio Web - PET0301SistesisDelDiagnostico
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0211EjeBuenGobierno
+ * Clase PET0301SistesisDelDiagnostico
  */
-class PET0211EjeBuenGobierno extends \Base\PublicacionSchemaArticle {
+class PET0301SistesisDelDiagnostico extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Buen Gobierno';
+        $this->nombre                     = 'Síntesis del Diagnóstico';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T02:11';
+        $this->fecha                      = '2016-10-10T03:01';
         // El nombre del archivo a crear
-        $this->archivo                    = 'buen-gobierno';
+        $this->archivo                    = 'sintesis-diagnostico';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Buen Gobierno.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Buen, Gobierno';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Síntesis del Diagnóstico.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Sintesis, Diagnostico';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0211EjeBuenGobierno.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0301SistesisDelDiagnostico.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0211EjeBuenGobierno extends \Base\PublicacionSchemaArticle {
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0211EjeBuenGobierno
+} // Clase PET0301SistesisDelDiagnostico
 
 ?>

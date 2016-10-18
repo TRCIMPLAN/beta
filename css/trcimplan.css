@@ -38,9 +38,9 @@ h6, .h6 {
     font-weight:400;
     line-height:1.4;
 }
-h1, .h1   { font-size:32px; margin:0 0 16px 0; }
-h2, .h2   { font-size:24px; margin:0 0 12px 0; }
-h3, .h3   { font-size:20px; margin:0 0 10px 0; }
+h1, .h1   { font-size:32px; margin:0 0 16px 0; padding:32px 0 0 0; }
+h2, .h2   { font-size:24px; margin:0 0 12px 0; padding:24px 0 0 0; border-bottom: 2px #DDD solid; }
+h3, .h3   { font-size:20px; margin:0 0 10px 0; padding:20px 0 0 0; border-bottom: 1px #DDD solid; }
 h4, .h4   { font-size:16px; margin:0 0 8px 0; }
 h5, .h5   { font-size:12px; margin:0 0 6px 0; }
 h6, .h6   { font-size:10px; margin:0 0 5px 0; }
@@ -291,7 +291,12 @@ a.galeria-icono:active  { color:#FF3300; }
 }
 
 /*
- * Tarjetas
+ * Vinculos Detallados
+ */
+h3.detallados-encabezado { padding:0; border-bottom:none; }
+
+/*
+ * Vinculos Tarjetas
  */
 .tarjetas-thumbnail {
     background-color:#E8E8E8;
@@ -367,13 +372,16 @@ a.galeria-icono:active  { color:#FF3300; }
     color:#000;
     margin-top:6px;
     margin-bottom:2px;
+    border-bottom:none;
+    padding:0;
+    margin:0 0 2px 0;
 }
 .organizacion-descripcion {
     color:#646464;
     font-family:'Roboto Condensed',Helvetica,Arial,sans-serif,sans-serif; font-weight:400;
     line-height:1.2;
-    margin-top:2px;
-    margin-bottom:4px;
+    padding:0;
+    margin:0 0 2px 0;
 }
 #destacado {
     background-color:#D1D7DC;
@@ -382,6 +390,7 @@ a.galeria-icono:active  { color:#FF3300; }
 .destacado-titulo {
     line-height:1.2em;
     margin-bottom:4px;
+    border-bottom:none;
 }
 .destacado-descripcion {
     font-size:12px;

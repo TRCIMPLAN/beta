@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - PET0301SistesisDelDiagnositco
+ * TrcIMPLAN Sitio Web - PET0661VisionMedioAmbienteSustentabilidad
  *
  * Copyright (C) 2016 IMPLAN Torreón
  *
@@ -23,27 +23,27 @@
 namespace PET;
 
 /**
- * Clase PET0301SistesisDelDiagnositco
+ * Clase PET0661VisionMedioAmbienteSustentabilidad
  */
-class PET0301SistesisDelDiagnositco extends \Base\PublicacionSchemaArticle {
+class PET0661VisionMedioAmbienteSustentabilidad extends \Base\PublicacionSchemaArticle {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre                     = 'Síntesis del Diagnóstico';
+        $this->nombre                     = 'Visión de Medio Ambiente y Sustentabilidad 2040';
      // $this->autor                      = '';
-        $this->fecha                      = '2016-10-10T03:01';
+        $this->fecha                      = '2016-10-10T06:55';
         // El nombre del archivo a crear
-        $this->archivo                    = 'sintesis-diagnostico';
+        $this->archivo                    = 'vision-medio-ambiente-sustentabilidad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Síntesis del Diagnóstico.';
-        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Sintesis, Diagnostico';
+        $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Visión de Medio Ambiente y Sustentabilidad 2040.';
+        $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Vision, Medio, Ambiente, Sustentabilidad';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
         $this->nombre_menu                = 'Plan Estratégico Torreón';
         // Ruta al archivo markdown con el contenido
-        $this->contenido_archivo_markdown = 'lib/PET/PET0301SistesisDelDiagnositco.md';
+        $this->contenido_archivo_markdown = 'lib/PET/PET0661VisionMedioAmbienteSustentabilidad.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
@@ -53,6 +53,6 @@ class PET0301SistesisDelDiagnositco extends \Base\PublicacionSchemaArticle {
         $this->regiones                   = array();
     } // constructor
 
-} // Clase PET0301SistesisDelDiagnositco
+} // Clase PET0661VisionMedioAmbienteSustentabilidad
 
 ?>

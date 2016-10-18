@@ -61,7 +61,7 @@ La tasa de mortalidad infantil también es un indicador muy sensible del estado 
 
 ### Ilustración 2 Distribución de la población infantil de 0 a 14 años en Torreón
 
-<img class="img-responsive" src="desarrollo-social/poblacion-de-0-a-14-anos-en-torreon.jpg" alt="Poblacion de 0 a 14 años en Torreon">
+<img class="img-responsive" src="diagnostico-estrategico-desarrollo-social/poblacion-de-0-a-14-anos-en-torreon.jpg" alt="Poblacion de 0 a 14 años en Torreon">
 
 Fuente: Elaboración propia, 2015
 
@@ -133,7 +133,7 @@ La distribución de la población de más de 65 años en Torreón se refleja en 
 
 ### Ilustración 5 Distribución de la población de 65 años y más en Torreón
 
-<img class="img-responsive" src="desarrollo-social/poblacion-de-65-anos-y-mas-en-torreon.jpg" alt="Poblacion de 65 años y mas en Torreon">
+<img class="img-responsive" src="diagnostico-estrategico-desarrollo-social/poblacion-de-65-anos-y-mas-en-torreon.jpg" alt="Poblacion de 65 años y mas en Torreon">
 
 Fuente: Elaboración propia, 2015
 
