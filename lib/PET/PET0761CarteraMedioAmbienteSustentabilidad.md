@@ -1,255 +1,105 @@
 
 _Tema / Programa /Clave.Proyecto_
 
-Manejo Integral de Residuos Sólidos
-Reciclaje de residuos
-Política de cero residuos con incentivos fiscales y sociales
-243
-
-
-Plan Integral de Manejo de Llantas usadas
-244
-
-
-Estudio de residuos con alto potencial de valoración
-245
-
-
-Rutas de recolección de residuos reciclables
-246
-
-Sistema metropolitano de rellenos sanitarios y disposición de residuos
-Localización y construcción de sitios para disposición de residuos de la construcción en zona metropolitana
-247
-
-
-Reciclaje de residuos de la construcción
-248
-
-
-Rellenos sanitarios metropolitanos
-249
-
-
-Estaciones de transferencia de residuos reciclables en área urbana
-250
-
-
-Recolección y disposición de residuos separados
-250
-
-Educación Ambiental para la separación y recolección de residuos en vinculación con los sectores educativos, económicos y sociales
-Campaña de educación ambiental en escuelas
-251
-
-
-Creación de centros vecinales de acopio
-252
-
-
-Educación ambiental en colonias y barrios
-253
-
-
-Incentivos fiscales para el programa de reciclaje inclusivo separación de origen en escuelas, hogares, comercio e industrial
-254
-
-
-Campaña de educación ambiental sobre reciclaje inclusivo (manejo y reciclaje de residuos) así como su reglamento y políticas de fomento
-255
-
-
-Coordinación entre gobierno e iniciativa privada la recolección, y reciclaje de los residuos
-256
-
-Reglamentos de residuos sólidos
-Adecuación a los Reglamentos municipal y estatal
-257
-
-
-Aplicar el reglamento recién homologado en la región sobre el manejo de los residuos sólidos
-258
-
-
-Campaña de aplicación de nuevos reglamentos
-259
-
-Distinción de residuos peligrosos o especiales
-Plan de manejo de residuos de manejo especial
-260
-Cambio Climático
-Planeación ante el cambio climático
-Realización del plan metropolitano de acción ante el cambio climático
-261
-
-Educación ambiental de medidas contra el cambio climático (en vinculación con sectores educativos, económicos y sociales)
-Elaborar diagnóstico de potencial para el aprovechamiento de los recursos renovables para la generación de electricidad
-262
-
-Desarrollo tecnológico, de talento y cadenas de valor en materia de energía
-Desarrollo de investigaciones científicas y tecnológicas aplicadas en eficiencia energética, fuentes renovables de energía, uso de tecnologías limpias y diversificación de fuentes primarias de energía
-263
-
-Especial para el aprovechamiento de energías renovables
-Programa de distribución de calentadores solares con en gran escala y bajo costo
-264
-
-
-Celdas solares como fuente de energía sustentable
-265
-
-
-Proyectos estratégicos integrales en zonas de alta marginación orientados al desarrollo de productos de la bioeconomía.
-266
-
-
-Producción de insumos bioenergéticos
-267
-
-
-Políticas de fomento y creación de sistemas térmicos solares, fotovoltaicos, de biodigestión y/o motogeneradores
-268
-
-Acción ante el cambio climático
-Implementar acciones de mitigación, adaptación y prevención
-269
-
-
-Identificar principales riesgos en la región y elaborar un Atlas de Riesgo Metropolitano a la par del plan de acción climática
-270
-
-
-Gestionar los recursos para actualizar y llevar a cabo el Programa Metropolitano de acción ante el cambio climático
-271
-
-
-Identificar fuentes de financiamiento y mecanismos para administrar recursos para el desarrollo de acciones de Programa Metropolitano de acción ante el cambio climático
-272
-
-
-Programa intensivo de reforestación urbana
-273
-
-Agenda Regional Contra el Cambio Climático
-Coordinación institucional metropolitana para desarrollar políticas e instrumentos legales para realizar acciones de la Agenda Regional contra el cambio climático
-274
-
-Programa de mejora de la eficiencia energética para cada sector (industrial, residencial, comercial y para edificios de la Administración Pública en los tres niveles de gobierno)
-Inventario de emisiones de gas efecto invernadero
-275
-
-
-Identificar estándares aceptables de contaminantes para cada sector
-276
-
-
-Reglamentar que cada sector se apegue a los estándares indicados en las normas
-277
-
-Sistema de medición y observación de gases efecto invernadero
-Instalar medidores
-278
-
-
-Inventario de áreas verdes y reforestación con árboles nativos con conocida capacidad de captura de carbono
-279
-
-
-Fortalecer y apoyar económicamente las áreas naturales protegidas de la región, Cañón de Fernández y Jimulco, que funcionan como importantes ecosistemas que capturan carbono
-280
-Calidad del aire
-Mejora de la red de monitoreo en tiempo real
-Primera Etapa de la Red de Monitoreo
-281
-
-
-Identificar los puntos más contaminados de la ciudad y proponer estrategias de reducción de emisiones
-282
-
-Plan de comunicación de la calidad del aire a la población
-Actualizar y publicar cada año el inventario de emisiones contaminantes a la atmósfera
-283
-
-
-Reporte de los niveles alcanzados de reducción de las emisiones contaminantes
-284
-
-Regulación de calidad del aire
-Evaluación de impacto de la contaminación atmosférica y pronósticos de la calidad del aire
-285
-
-
-Reglamento de estándares aceptables de contaminantes
-286
-
-Vigilancia epidemiológica que difunda los efectos de la contaminación en la salud de la población
-Realizar proyectos de investigación sobre los efectos en la salud ocasionados por la contaminación atmosférica
-287
-
-
-Crear el Instituto Lagunero de la Calidad del aire que involucre a los tres órdenes de gobierno de los dos estados
-288
-
-Asignación de usos de suelo fundamentados con criterios técnicos que mejoren la calidad del aire
-Integrar recomendaciones de criterios de asignación de usos de suelo a instrumentos de ordenamiento ecológico y urbano
-289
-
-Regional de monitoreo y verificación vehicular
-Sistema Integrado de Transporte (BRT)*
-290
-
-Promoción de modernización del transporte de carga y pasaje
-Mejora de sistema de transporte público en la región
-291
-
-Fomento al transporte público
-Gestión con el gobierno de los estados de Coahuila y Durango para la homologación de reglamentos y la implementación de instrumentos de fomento
-292
-
-Fomento al uso de la bicicleta
-Red Municipal de Ciclovías
-293
-
-Reducción de emisiones provenientes de las centrales de generación de energía eléctrica, la industria y el transporte
-Inventario de establecimientos de las industrias de transformación, metalúrgicas y de extracción de materiales pétreos
-294
-
-
-Normas de niveles máximos permisibles de emisión a la atmósfera
-295
-
-PROAIRE
-Difundir y aplicar las directrices del PROAIRE
-296
-
-
-Gestionar los recursos para actualizar y llevar a cabo el PROAIRE
-297
-
-
-Identificar fuentes de financiamiento y mecanismos para administrar recursos para el desarrollo de acciones de PROAIRE
-298
-
-
-Preparar propuestas de proyectos para acceder a los recursos identificados
-299
-
-
-Coordinación institucional metropolitana para desarrollar políticas e instrumentos legales para realizar acciones del PROAIRE
-300
-Balance hídrico del acuífero
-Cartera prioritaria
-Plan estratégico de manejo sustentable del agua de la región lagunera
-301
-
-Regulación y restricción de usos del agua por sector
-Estudio de volúmenes de agua adecuados por sector
-302
-
-
-Elaboración de normas y políticas públicas que restrinjan el uso del agua por sector en cantidad y calidad según criterios técnicos
-303
-
+## Manejo Integral de Residuos Sólidos
+
+* Reciclaje de residuos
+    243. Política de cero residuos con incentivos fiscales y sociales
+    244. Plan Integral de Manejo de Llantas usadas
+    245. Estudio de residuos con alto potencial de valoración
+    246. Rutas de recolección de residuos reciclables
+* Sistema metropolitano de rellenos sanitarios y disposición de residuos
+    247. Localización y construcción de sitios para disposición de residuos de la construcción en zona metropolitana
+    248. Reciclaje de residuos de la construcción
+    249. Rellenos sanitarios metropolitanos
+    250. Estaciones de transferencia de residuos reciclables en área urbana
+    250. Recolección y disposición de residuos separados
+* Educación Ambiental para la separación y recolección de residuos en vinculación con los sectores educativos, económicos y sociales
+    251. Campaña de educación ambiental en escuelas
+    252. Creación de centros vecinales de acopio
+    253. Educación ambiental en colonias y barrios
+    254. Incentivos fiscales para el programa de reciclaje inclusivo separación de origen en escuelas, hogares, comercio e industrial
+    255. Campaña de educación ambiental sobre reciclaje inclusivo (manejo y reciclaje de residuos) así como su reglamento y políticas de fomento
+    256. Coordinación entre gobierno e iniciativa privada la recolección, y reciclaje de los residuos
+* Reglamentos de residuos sólidos
+    257. Adecuación a los Reglamentos municipal y estatal
+    258. Aplicar el reglamento recién homologado en la región sobre el manejo de los residuos sólidos
+    259. Campaña de aplicación de nuevos reglamentos
+* Distinción de residuos peligrosos o especiales
+    260. Plan de manejo de residuos de manejo especial
+
+## Cambio Climático
+
+* Planeación ante el cambio climático
+    261. Realización del plan metropolitano de acción ante el cambio climático
+* Educación ambiental de medidas contra el cambio climático (en vinculación con sectores educativos, económicos y sociales)
+    262. Elaborar diagnóstico de potencial para el aprovechamiento de los recursos renovables para la generación de electricidad
+* Desarrollo tecnológico, de talento y cadenas de valor en materia de energía
+    263. Desarrollo de investigaciones científicas y tecnológicas aplicadas en eficiencia energética, fuentes renovables de energía, uso de tecnologías limpias y diversificación de fuentes primarias de energía
+* Especial para el aprovechamiento de energías renovables
+    264. Programa de distribución de calentadores solares con en gran escala y bajo costo
+    265. Celdas solares como fuente de energía sustentable
+    266. Proyectos estratégicos integrales en zonas de alta marginación orientados al desarrollo de productos de la bioeconomía.
+    267. Producción de insumos bioenergéticos
+    268. Políticas de fomento y creación de sistemas térmicos solares, fotovoltaicos, de biodigestión y/o motogeneradores
+* Acción ante el cambio climático
+    269. Implementar acciones de mitigación, adaptación y prevención
+    270. Identificar principales riesgos en la región y elaborar un Atlas de Riesgo Metropolitano a la par del plan de acción climática
+    271. Gestionar los recursos para actualizar y llevar a cabo el Programa Metropolitano de acción ante el cambio climático
+    272. Identificar fuentes de financiamiento y mecanismos para administrar recursos para el desarrollo de acciones de Programa Metropolitano de acción ante el cambio climático
+    273. Programa intensivo de reforestación urbana
+* Agenda Regional Contra el Cambio Climático
+    274. Coordinación institucional metropolitana para desarrollar políticas e instrumentos legales para realizar acciones de la Agenda Regional contra el cambio climático
+* Programa de mejora de la eficiencia energética para cada sector (industrial, residencial, comercial y para edificios de la Administración Pública en los tres niveles de gobierno)
+    275. Inventario de emisiones de gas efecto invernadero
+    276. Identificar estándares aceptables de contaminantes para cada sector
+    277. Reglamentar que cada sector se apegue a los estándares indicados en las normas
+* Sistema de medición y observación de gases efecto invernadero
+    278. Instalar medidores
+    279. Inventario de áreas verdes y reforestación con árboles nativos con conocida capacidad de captura de carbono
+    280. Fortalecer y apoyar económicamente las áreas naturales protegidas de la región, Cañón de Fernández y Jimulco, que funcionan como importantes ecosistemas que capturan carbono
+
+## Calidad del aire
+
+* Mejora de la red de monitoreo en tiempo real
+    281. Primera Etapa de la Red de Monitoreo
+    282. Identificar los puntos más contaminados de la ciudad y proponer estrategias de reducción de emisiones
+* Plan de comunicación de la calidad del aire a la población
+    283. Actualizar y publicar cada año el inventario de emisiones contaminantes a la atmósfera
+    284. Reporte de los niveles alcanzados de reducción de las emisiones contaminantes
+* Regulación de calidad del aire
+    285. Evaluación de impacto de la contaminación atmosférica y pronósticos de la calidad del aire
+    286. Reglamento de estándares aceptables de contaminantes
+* Vigilancia epidemiológica que difunda los efectos de la contaminación en la salud de la población
+    287. Realizar proyectos de investigación sobre los efectos en la salud ocasionados por la contaminación atmosférica
+    288. Crear el Instituto Lagunero de la Calidad del aire que involucre a los tres órdenes de gobierno de los dos estados
+* Asignación de usos de suelo fundamentados con criterios técnicos que mejoren la calidad del aire
+    289. Integrar recomendaciones de criterios de asignación de usos de suelo a instrumentos de ordenamiento ecológico y urbano
+* Regional de monitoreo y verificación vehicular
+    290. Sistema Integrado de Transporte (BRT)*
+* Promoción de modernización del transporte de carga y pasaje
+    291. Mejora de sistema de transporte público en la región
+* Fomento al transporte público
+    292. Gestión con el gobierno de los estados de Coahuila y Durango para la homologación de reglamentos y la implementación de instrumentos de fomento
+* Fomento al uso de la bicicleta
+    293. Red Municipal de Ciclovías
+* Reducción de emisiones provenientes de las centrales de generación de energía eléctrica, la industria y el transporte
+    294. Inventario de establecimientos de las industrias de transformación, metalúrgicas y de extracción de materiales pétreos
+    295. Normas de niveles máximos permisibles de emisión a la atmósfera
+* PROAIRE
+    296. Difundir y aplicar las directrices del PROAIRE
+    297. Gestionar los recursos para actualizar y llevar a cabo el PROAIRE
+    298. Identificar fuentes de financiamiento y mecanismos para administrar recursos para el desarrollo de acciones de PROAIRE
+    299. Preparar propuestas de proyectos para acceder a los recursos identificados
+    300. Coordinación institucional metropolitana para desarrollar políticas e instrumentos legales para realizar acciones del PROAIRE
+
+### Balance hídrico del acuífero
+
+* Cartera prioritaria
+    301. Plan estratégico de manejo sustentable del agua de la región lagunera
+* Regulación y restricción de usos del agua por sector
+    302. Estudio de volúmenes de agua adecuados por sector
+    303. Elaboración de normas y políticas públicas que restrinjan el uso del agua por sector en cantidad y calidad según criterios técnicos
 Programa de instalación de equipo de medición y monitoreo de las redes de agua para aumentar su eficiencia
 Establecer una red piezométrica para controlar los niveles del acuífero y determinar el volumen disponible
 304
