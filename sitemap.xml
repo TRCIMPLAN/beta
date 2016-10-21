@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-10-18</lastmod>
+    <lastmod>2016-10-21</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -3147,6 +3147,56 @@
   </url>
   <url>
     <loc>http://www.trcimplan.gob.mx/pet/vision-medio-ambiente-sustentabilidad.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-prioritaria.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-buen-gobierno.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-desarrollo-economico-innovacion.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-desarrollo-social.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-entorno-urbano.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-movilidad-transporte.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/cartera-proyectos-medio-ambiente-sustentabilidad.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/anexos-instituciones-participantes.html</loc>
+    <lastmod>2016-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/pet/anexos-representantes-instituciones.html</loc>
     <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>

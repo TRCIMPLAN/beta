@@ -100,269 +100,92 @@ _Tema / Programa /Clave.Proyecto_
 * Regulación y restricción de usos del agua por sector
     302. Estudio de volúmenes de agua adecuados por sector
     303. Elaboración de normas y políticas públicas que restrinjan el uso del agua por sector en cantidad y calidad según criterios técnicos
-Programa de instalación de equipo de medición y monitoreo de las redes de agua para aumentar su eficiencia
-Establecer una red piezométrica para controlar los niveles del acuífero y determinar el volumen disponible
-304
-
-Mejora continua para la medición confiable y transparente
-Listado de pozos con instalación de medidores telemétricos
-305
-
-
-Instalación de medidores telemétricos en todos los pozos
-306
-
-
-Tener el 100% de los registros de pozos en términos de volúmenes extraídos y concesionados
-307
-
-Modernización y sectorización de la red de agua potable
-Sistema de registro e información
-308
-
-Aumento de eficiencia en las redes de distribución de agua
-Estándares de calidad del agua
-309
-
-Red de monitoreo de consumo y extracciones en tiempo real, transparente y abierta
-Gestión ante la CNA el establecimiento de una red de monitoreo de extracciones en tiempo real, transparente y abierta.
-310
-
-Educación ambiental en vinculación con los sectores educativos económicos y sociales
-Listado de indicadores de efectos en la salud
-311
-
-Tecnificación de los sistemas de riego agrícola
-Módulo piloto de Riego Tecnificado
-312
-
-Distribución eficiente de agua tratada para usos industriales, riego agrícola y urbano
-Sistema de distribución y reutilización de aguas (tratadas, residuales y pluviales)
-313
-
-
-Gestionar ante SAGARPA y CNA la Implementación de una frontera agrícola en base a la disponibilidad de agua, buscando el equilibrio del acuífero.
-314
-
-Sistema municipal de monitoreo de la calidad del agua
-Diagnóstico y seguimiento de la calidad del agua
-315
-
-
-Trabajar de manera vinculante (con acuerdos y compromisos) con la CNA para asegurar agua disponible y libre de tóxicos
-316
-
-
-Instalación de filtros en puntos con mayor concentración de contaminantes.
-317
-
-
-Generar datos y reportes de la medición de la calidad del agua de consumo, extracción y recarga con un sistema
-318
-
-
-
-
-
-
-
-
-
-
-Ordenamiento Ecológico
-
-Programa Irritila
-Restauración y conservación de  suelos
-319
-
-
-Reforestación
-320
-
-
-Gestión y manejo sustentable del recurso hídrico
-321
-
-
-Gestión de fondos para aguas futuras
-322
-
-
-Creación de instrumentos de financiamiento y fomento
-323
-
-Red de agua potable
-Red de Agua Potable en Poniente de Torreón
-324
-
-
-Distribución de agua potable a sectores vulnerables
-325
-
-Sistema Municipal de Tratamiento de Aguas Residuales
-Desalojo confinado de demasías
-326
-
-
-Planta de Tratamiento de Aguas Residuales (por definir)
-327
-
-
-Instalación y operación de plantas de tratamiento e infraestructura de reuso
-328
-
-Sistema de distribución de Agua Tratada
-Primera Etapa de la Red de Agua Tratada para riego agrícola
-329
-
-
-Sistema de riego para áreas verdes públicas (con agua tratada)
-330
-
-
-Plan Estratégico para el Manejo Integral de Aguas Pluviales
-Red Pluvial Colonia Las Fuentes
-331
-
-
-Red Pluvial Colonia Residencial del Norte
-332
-
-
-Red Pluvial Zona Blvd. Independencia - Abastos
-333
-
-
-Drenaje Pluvial del Sistema vial Revolución
-334
-
-
-Estudio de zonas potenciales para captación de aguas pluviales
-335
-
-
-Construcción de infraestructura para captación y almacenamiento de agua pluvial
-336
-
-
-Políticas de fomento para reutilización de aguas pluviales en el sector privado
-337
-
-
-Plan maestro: Diagnóstico y lineamientos
-338
-
-Estructura Ecológica Regional
-Integración de subsistema azul y subsistema verde
-339
-
-Programas de conservación de humedales
-Plan de conservación de humedales para Cañón de Fernández, Tramo Nazas-Rodeo Cuenca Media, Cañones de Realito y la Cabeza
-340
-
-Plan estratégico de manejo sustentable del agua de la Cuenca Principal-Región Lagunera
-Gestión ante CNA para la realización de un plan estratégico de manejo sustentable
-341
-
-Gestión de políticas para la regulación de actividades económicas y restricción de usos del agua
-Plan de manejo sustentable del agua según la disponibilidad
-342
-
-Plan de manejo de aguas de uso agrícola
-Estudio para definición de criterios técnicos y principios de costo – eficiencia para definir prioridades y calidades de uso
-343
-
-
-Aplicación de instrumentos de fomento económico en la gestión del recurso hídrico
-344
-
-Plan de manejo de aguas de uso doméstico
-Campaña de difusión de la noción de límite ecológico para poder concesionar un volumen  y calidad de agua a un uso específico
-345
-
-Análisis de la capacidad de soporte hídrico de las diferentes actividades económicas regionales por unidad hidrológica
-
-346
-
-
-
-
-
-
-
-Ordenamiento Ecológico
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Ordenamiento Ecológico
-
-
-
-Metropolitano de Ordenamiento Ecológico Territorial de la Laguna
-
-Contar con el diagnóstico y pronóstico en Torreón y Matamoros para conjuntarlos con los de Gómez Palacio y Lerdo, para buscar su decreto
-347
-
-
-Integrar los Programas de Ordenamiento Ecológico de Torreón, Gómez, Lerdo y Matamoros en un solo instrumento de planeación del desarrollo (documento)
-348
-
-
-Cálculo de la capacidad de carga del territorio de acuerdo a la disponibilidad natural de los recursos y el consumo per cápita del recurso
-349
-
-Programa de socialización y participación ciudadana para la elaboración del Programa Metropolitano de Ordenamiento Ecológico Territorial de la Laguna
-Coordinarse con la SEMARNAT para aplicar el programa metropolitano de ordenamiento ecológico como instrumento rector
-350
-
-Programa de Gestión de recursos
-Gestionar y regular el uso de suelo de la zona metropolitana mediante  un mecanismo de colaboración intermunicipal e interestatal para aplicar el ordenamiento con carácter legal
-351
-
-Sistema normativo basado en  bio-urbanismo
-Estudio de homologación de normatividad municipal y estatal, con principios de bio-urbanismo
-352
-
-Promoción y fomento de eco-tecnologías en la industria de la construcción
-Políticas de fomento e incentivos para el uso de eco-tecnologías en la construcción
-353
-
-
-Campaña de difusión de los programas de ordenamiento ecológico
-354
-
-
-Campaña de difusión y promoción de uso de eco-tecnologías
-355
-
-Capacitación de autoridades y consultores en planeación y gestión del ordenamiento ecológico-territorial
-Diplomados y cursos de capacitación a funcionarios y consultores sobre ordenamiento ecológico territorial a nivel regional y metropolitano
-356
-
-Educación ambiental en vinculación con los sectores educativos económicos y sociales
-Cursos de Educación Ambiental para los sectores educativo, económico y social
-357
-
-Actualización de los Programas de Manejo de las Áreas Naturales Protegidas
-Crear expedientes para nuevas áreas naturales protegidas
-358
-
-Integral de calidad de vida y desarrollo sustentable
-Jóvenes guardias ambientales
-359
+* Programa de instalación de equipo de medición y monitoreo de las redes de agua para aumentar su eficiencia
+    304. Establecer una red piezométrica para controlar los niveles del acuífero y determinar el volumen disponible
+* Mejora continua para la medición confiable y transparente
+    305. Listado de pozos con instalación de medidores telemétricos
+    306. Instalación de medidores telemétricos en todos los pozos
+    307. Tener el 100% de los registros de pozos en términos de volúmenes extraídos y concesionados
+* Modernización y sectorización de la red de agua potable
+    308. Sistema de registro e información
+* Aumento de eficiencia en las redes de distribución de agua
+    309. Estándares de calidad del agua
+* Red de monitoreo de consumo y extracciones en tiempo real, transparente y abierta
+    310. Gestión ante la CNA el establecimiento de una red de monitoreo de extracciones en tiempo real, transparente y abierta.
+* Educación ambiental en vinculación con los sectores educativos económicos y sociales
+    311. Listado de indicadores de efectos en la salud
+* Tecnificación de los sistemas de riego agrícola
+    312. Módulo piloto de Riego Tecnificado
+* Distribución eficiente de agua tratada para usos industriales, riego agrícola y urbano
+    313. Sistema de distribución y reutilización de aguas (tratadas, residuales y pluviales)
+    314. Gestionar ante SAGARPA y CNA la Implementación de una frontera agrícola en base a la disponibilidad de agua, buscando el equilibrio del acuífero.
+* Sistema municipal de monitoreo de la calidad del agua
+    315. Diagnóstico y seguimiento de la calidad del agua
+    316. Trabajar de manera vinculante (con acuerdos y compromisos) con la CNA para asegurar agua disponible y libre de tóxicos
+    317. Instalación de filtros en puntos con mayor concentración de contaminantes.
+    318. Generar datos y reportes de la medición de la calidad del agua de consumo, extracción y recarga con un sistema
+
+## Ordenamiento Ecológico
+
+* Programa Irritila
+    319. Restauración y conservación de  suelos
+    320. Reforestación
+    321. Gestión y manejo sustentable del recurso hídrico
+    322. Gestión de fondos para aguas futuras
+    323. Creación de instrumentos de financiamiento y fomento
+* Red de agua potable
+    324. Red de Agua Potable en Poniente de Torreón
+    325. Distribución de agua potable a sectores vulnerables
+* Sistema Municipal de Tratamiento de Aguas Residuales
+    326. Desalojo confinado de demasías
+    327. Planta de Tratamiento de Aguas Residuales (por definir)
+    328. Instalación y operación de plantas de tratamiento e infraestructura de reuso
+* Sistema de distribución de Agua Tratada
+    329. Primera Etapa de la Red de Agua Tratada para riego agrícola
+    330. Sistema de riego para áreas verdes públicas (con agua tratada)
+* Plan Estratégico para el Manejo Integral de Aguas Pluviales
+    331. Red Pluvial Colonia Las Fuentes
+    332. Red Pluvial Colonia Residencial del Norte
+    333. Red Pluvial Zona Blvd. Independencia - Abastos
+    334. Drenaje Pluvial del Sistema vial Revolución
+    335. Estudio de zonas potenciales para captación de aguas pluviales
+    336. Construcción de infraestructura para captación y almacenamiento de agua pluvial
+    337. Políticas de fomento para reutilización de aguas pluviales en el sector privado
+    338. Plan maestro: Diagnóstico y lineamientos
+* Estructura Ecológica Regional
+    339. Integración de subsistema azul y subsistema verde
+* Programas de conservación de humedales
+    340. Plan de conservación de humedales para Cañón de Fernández, Tramo Nazas-Rodeo Cuenca Media, Cañones de Realito y la Cabeza
+* Plan estratégico de manejo sustentable del agua de la Cuenca Principal-Región Lagunera
+    341. Gestión ante CNA para la realización de un plan estratégico de manejo sustentable
+* Gestión de políticas para la regulación de actividades económicas y restricción de usos del agua
+    342. Plan de manejo sustentable del agua según la disponibilidad
+* Plan de manejo de aguas de uso agrícola
+    343. Estudio para definición de criterios técnicos y principios de costo – eficiencia para definir prioridades y calidades de uso
+    344. Aplicación de instrumentos de fomento económico en la gestión del recurso hídrico
+* Plan de manejo de aguas de uso doméstico
+    345. Campaña de difusión de la noción de límite ecológico para poder concesionar un volumen  y calidad de agua a un uso específico
+* Análisis de la capacidad de soporte hídrico de las diferentes actividades económicas regionales por unidad hidrológica
+    346. Elaboración de diagnósticos hídricos por actividad económica en la Zona Metropolitana de la Laguna
+* Metropolitano de Ordenamiento Ecológico Territorial de la Laguna
+    347. Contar con el diagnóstico y pronóstico en Torreón y Matamoros para conjuntarlos con los de Gómez Palacio y Lerdo, para buscar su decreto
+    348. Integrar los Programas de Ordenamiento Ecológico de Torreón, Gómez, Lerdo y Matamoros en un solo instrumento de planeación del desarrollo (documento)
+    349. Cálculo de la capacidad de carga del territorio de acuerdo a la disponibilidad natural de los recursos y el consumo per cápita del recurso
+* Programa de socialización y participación ciudadana para la elaboración del Programa Metropolitano de Ordenamiento Ecológico Territorial de la Laguna
+    350. Coordinarse con la SEMARNAT para aplicar el programa metropolitano de ordenamiento ecológico como instrumento rector
+* Programa de Gestión de recursos
+    351.Gestionar y regular el uso de suelo de la zona metropolitana mediante  un mecanismo de colaboración intermunicipal e interestatal para aplicar el ordenamiento con carácter legal
+* Sistema normativo basado en  bio-urbanismo
+    352. Estudio de homologación de normatividad municipal y estatal, con principios de bio-urbanismo
+* Promoción y fomento de eco-tecnologías en la industria de la construcción
+    353. Políticas de fomento e incentivos para el uso de eco-tecnologías en la construcción
+    354. Campaña de difusión de los programas de ordenamiento ecológico
+    355. Campaña de difusión y promoción de uso de eco-tecnologías
+* Capacitación de autoridades y consultores en planeación y gestión del ordenamiento ecológico-territorial
+    356. Diplomados y cursos de capacitación a funcionarios y consultores sobre ordenamiento ecológico territorial a nivel regional y metropolitano
+* Educación ambiental en vinculación con los sectores educativos económicos y sociales
+    357. Cursos de Educación Ambiental para los sectores educativo, económico y social
+* Actualización de los Programas de Manejo de las Áreas Naturales Protegidas
+    358. Crear expedientes para nuevas áreas naturales protegidas
+* Integral de calidad de vida y desarrollo sustentable
+    359. Jóvenes guardias ambientales

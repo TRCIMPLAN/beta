@@ -30,6 +30,18 @@
 * [Movilidad y Transporte](vision-movilidad-transporte.html)
 * [Medio Ambiente y Sustentabilidad](vision-medio-ambiente-sustentabilidad.html)
 
+## [Capítulo 5: Cartera de Proyectos Estratégicos](cartera-proyectos.html)
+
+* [Cartera Prioritaria](cartera-prioritaria.html)
+* [Buen Gobierno](cartera-proyectos-buen-gobierno.html)
+* [Desarrollo Económoico e Innovación](cartera-proyectos-desarrollo-economico-innovación.html)
+* [Desarrollo Social](cartera-proyectos-desarrollo-social.html)
+* [Entorno Urbano](cartera-proyectos-entorno-urbano.html)
+* [Movilidad y Transporte](cartera-proyectos-movilidad-transporte.html)
+* [Medio Ambiente y Sustentabilidad](cartera-proyectos-medio-ambiente-sustentabilidad.html)
+
 ## Anexos
 
+* [Instituciones Participantes](anexos-instituciones-participantes.html)
+* [Representantes por Instituciones](anexos-representantes-instituciones.html)
 * [Índice Alfabético](index.html)
