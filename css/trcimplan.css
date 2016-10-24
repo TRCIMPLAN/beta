@@ -398,6 +398,7 @@ h3.detallados-encabezado { padding:0; border-bottom:none; }
 }
 .destacado-boton {
     background-color:#F0F0F0;
+    font-size:12px;
 }
 
 /*
@@ -611,13 +612,13 @@ h3.detallados-encabezado { padding:0; border-bottom:none; }
     .destacado-boton {
         font-size:10pt;
     }
-    #servicio-pem {
+    #servicio-pet {
         display:block;
         width:128px;
         height:128px;
-        background:url("../imagenes/servicio-pem-128.png") no-repeat 0 0;
+        background:url("../imagenes/servicio-pet-128.png") no-repeat 0 0;
     }
-    #servicio-pem:hover {
+    #servicio-pet:hover {
         background-position:-128px 0;
     }
     #servicio-sig {
@@ -681,15 +682,15 @@ h3.detallados-encabezado { padding:0; border-bottom:none; }
         margin-right:8px;
     }
     .destacado-boton {
-        font-size:10pt;
+        font-size:9pt;
     }
-    #servicio-pem {
+    #servicio-pet {
         display:block;
         width:64px;
         height:64px;
-        background:url("../imagenes/servicio-pem-64.png") no-repeat 0 0;
+        background:url("../imagenes/servicio-pet-64.png") no-repeat 0 0;
     }
-    #servicio-pem:hover {
+    #servicio-pet:hover {
         background-position:-64px 0;
     }
     #servicio-sig {
@@ -754,15 +755,15 @@ h3.detallados-encabezado { padding:0; border-bottom:none; }
         margin-right:8px;
     }
     .destacado-boton {
-        font-size:10pt;
+        font-size:8pt;
     }
-    #servicio-pem {
+    #servicio-pet {
         display:block;
         width:48px;
         height:48px;
-        background:url("../imagenes/servicio-pem-48.png") no-repeat 0 0;
+        background:url("../imagenes/servicio-pet-48.png") no-repeat 0 0;
     }
-    #servicio-pem:hover {
+    #servicio-pet:hover {
         background-position:-48px 0;
     }
     #servicio-sig {

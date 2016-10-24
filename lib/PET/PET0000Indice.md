@@ -33,8 +33,9 @@
 ## [Capítulo 5: Cartera de Proyectos Estratégicos](cartera-proyectos.html)
 
 * [Cartera Prioritaria](cartera-prioritaria.html)
+* [Planos PEM](planos-pem.html)
 * [Buen Gobierno](cartera-proyectos-buen-gobierno.html)
-* [Desarrollo Económoico e Innovación](cartera-proyectos-desarrollo-economico-innovación.html)
+* [Desarrollo Económoico e Innovación](cartera-proyectos-desarrollo-economico-innovacion.html)
 * [Desarrollo Social](cartera-proyectos-desarrollo-social.html)
 * [Entorno Urbano](cartera-proyectos-entorno-urbano.html)
 * [Movilidad y Transporte](cartera-proyectos-movilidad-transporte.html)

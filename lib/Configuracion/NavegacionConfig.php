@@ -47,9 +47,9 @@ class NavegacionConfig {
             'Información Geográfica > Mapas de Torreón'              => 'sig-mapas-torreon/index.html',
             'Información Geográfica > Zonificación Secundaria'       => 'sig-mapas-torreon/zonificacion-secundaria.html'),
         'Plan Estratégico Torreón' => array(
+            'Plan Estratégico Torreón > Descripción del proceso'     => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
             'Plan Estratégico Torreón > Índice General'              => 'pet/indice.html',
             'Plan Estratégico Torreón > Índice Alfabético'           => 'pet/index.html',
-            'Plan Estratégico Torreón > Descripción del proceso'     => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
             'Plan Estratégico Torreón > Proyectos'                   => 'proyectos/index.html'),
         'Investigaciones' => 'investigaciones/index.html',
         'Institucional' => array(
@@ -59,7 +59,6 @@ class NavegacionConfig {
             'Institucional > Estructura Orgánica'                    => 'institucional/estructura-organica.html',
             'Institucional > Modelo Operativo Univ.'                 => 'institucional/modelo-operativo-universal.html',
             'Institucional > Reglamentos'                            => 'institucional/reglamentos.html',
-            'Institucional > Información Financiera'                 => 'institucional/informacion-financiera.html',
             'Institucional > Transparencia'                          => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178'),
         'Consejo Directivo'                                          => 'consejo-directivo/integrantes.html',
         'Sala de Prensa'                                             => 'sala-prensa/index.html',

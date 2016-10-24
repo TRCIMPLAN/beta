@@ -98,9 +98,9 @@ class PaginaInicialConfig extends \Base\Plantilla {
     } // organizacion
 
     /**
-     * Destacado
+     * Servicios
      */
-    protected function destacado() {
+    protected function servicios() {
         // SMI
         $smi              = new \PaginaInicial\Destacado();
         $smi->name        = 'Sistema Metropolitano de Indicadores';
@@ -128,8 +128,9 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $pem->image       = 'servicio-pet';
         $pem->url         = 'pet/indice.html';
         $pem->botones     = array(
-            '<i class="fa fa-file-text-o"></i> Conoce el Plan' => 'plan-estrategico-metropolitano/introduccion.html',
-            '<i class="fa fa-calendar"></i> Todas las Mesas'   => 'plan-estrategico-metropolitano/index.html');
+            '<i class="fa fa-calendar"></i> Descripción del Proceso' => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
+            '<i class="fa fa-list-ul"></i> Índice General'           => 'pet/indice.html',
+            '<i class="fa fa-check-square"></i> Proyectos'           => 'proyectos/index.html');
         // Acumular sección destacado
         $this->contenido[]  = '  <section id="destacado">';
         $this->contenido[]  = '    <div class="row">';
@@ -144,7 +145,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';
-    } // destacado
+    } // servicios
 
     /**
      * IBC
@@ -156,7 +157,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     } // ibc
 
     /**
-     * Aviso
+     * Aviso elección de consejeros 2015
      */
     protected function aviso() {
         $this->contenido[]  = '  <section id="aviso">';
@@ -271,26 +272,26 @@ class PaginaInicialConfig extends \Base\Plantilla {
             'Indicadores'                       => 'indicadores-categorias/index.html',
             'Indicadores Básicos por Colonias'  => 'ibc-torreon/index.html',
             'Información Geográfica'            => 'sig-mapas-torreon/index.html',
-            'Plan Estratégico Metropolitano'    => 'plan-estrategico-metropolitano/index.html',
-            'Banco de Proyectos'                => 'proyectos/index.html'));
+            'Investigaciones'                   => 'investigaciones/index.html',
+            'Plan Estratégico Torreón'          => 'pet/indice.html'));
         $institucional = new \PaginaInicial\Mapa('INSTITUCIONAL', array(
-            'Visión / Misión'                   => 'institucional/vision-mision.html',
-            'Mensaje del Director'              => 'institucional/mensaje-director.html',
-            'Quienes Somos'                     => 'autores/index.html',
+            'Consejo Directivo'                 => 'consejo-directivo/integrantes.html',
             'Estructura Orgánica'               => 'institucional/estructura-organica.html',
+            'Mensaje del Director'              => 'institucional/mensaje-director.html',
+            'Modelo Operativo Universal'        => 'institucional/modelo-operativo-universal.html',
+            'Quienes Somos'                     => 'autores/index.html',
             'Reglamentos'                       => 'institucional/reglamentos.html',
-            'Información Financiera'            => 'institucional/informacion-financiera.html',
-            'Consejo Directivo'                 => 'consejo-directivo/integrantes.html'));
+            'Visión / Misión'                   => 'institucional/vision-mision.html'));
         $interaccion   = new \PaginaInicial\Mapa('INTERACCION', array(
             'Contacto'                          => 'contacto/contacto.html',
             'Preguntas Frecuentes'              => 'preguntas-frecuentes/preguntas-frecuentes.html',
-            'Sala de Prensa'                    => 'sala-prensa/index.html',
-            'Quejas y Sugerencias'              => 'http://goo.gl/forms/1rdX4X128PpMOif73'));
+            'Quejas y Sugerencias'              => 'http://goo.gl/forms/1rdX4X128PpMOif73',
+            'Sala de Prensa'                    => 'sala-prensa/index.html'));
         $legal         = new \PaginaInicial\Mapa('LEGAL', array(
-            'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178',
+            'Aviso de Privacidad'               => 'terminos/privacidad.html',
             'Términos de Uso de la Información' => 'terminos/terminos-informacion.html',
             'Términos de Uso del Sitio Web'     => 'terminos/terminos-sitio.html',
-            'Aviso de Privacidad'               => 'terminos/privacidad.html'));
+            'Transparencia'                     => 'http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178'));
         // Mapa grande
         $this->contenido[] = '  <section id="mapa">';
         $this->contenido[] = '    <div class="row">';
@@ -347,7 +348,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public function html() {
         // Elaborar secciones
         $this->organizacion();
-        $this->destacado();
+        $this->servicios();
         $this->ibc();
     //  $this->aviso();
         $this->ultimas_publicaciones();
