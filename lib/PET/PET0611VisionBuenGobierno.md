@@ -57,3 +57,5 @@ Objetivos Generales / Metas
 * Dar origen a un Instituto Metropolitano de Planeación que se encargue de coordinar los esfuerzos de planeación metropolitana y de evaluación de los resultados. Éste tendrá injerencia en las políticas públicas metropolitanas
     * Instituto Metropolitano de Planeación trabajando al 100% como órgano de referencia en la toma de decisiones
     * IMPLAN ciudadanizado
+
+[Índice](indice.html) | Siguiente: [Desarrollo Económoico e Innovación](vision-desarrollo-economico-innovacion.html)

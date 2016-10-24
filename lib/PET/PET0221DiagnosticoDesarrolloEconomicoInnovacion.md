@@ -145,3 +145,5 @@ A nivel nacional el porcentaje de población ocupada en el sector informal es de
 ## Desarrollo de capacidades educativas de alto valor y vinculación entre academia, empresa y sector gubernamental
 
 Para un mayor desarrollo de las capacidades educativos de alto valor y la vinculación academia – empresa – gobierno, es necesario emprender acciones orientadas a mejorar el nivel educativo de la zona, se requiere la actualización de carreras profesionales que respondan a las necesidades de desarrollo y demandas de la zona, inversión en centros de investigación y una evaluación adecuada de procesos y niveles educativos.
+
+[Índice](indice.html) | Siguiente: [Desarrollo Social](diagnostico-estrategico-desarrollo-social.html)

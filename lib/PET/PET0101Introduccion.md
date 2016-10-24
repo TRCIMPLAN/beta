@@ -24,3 +24,5 @@ El Plan Estratégico implica el reconocimiento de elementos valiosos de anterior
 A partir de este proceso de planeación participativa se construyó una Cartera de Proyectos que facilita y promueve la instrumentación del Plan Estratégico; desde la integración de los contenidos de cada proyecto hasta la gestión, conformación de equipos de trabajo, elaboración de estudios de factibilidad y la gestión integral para su instrumentación.
 
 Finalmente, el alcance del presente Plan Estratégico concluye con la definición y ejecución de mecanismos de monitoreo y evaluación de cada una de las acciones delineadas, así como la comunicación constante con los agentes sociales encargados de realizarlas para que puedan ser mejoradas a partir de los reportes de su instrumentación.
+
+[Índice](indice.html) | Siguiente: [Metodología](metodologia.html)

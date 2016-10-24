@@ -82,3 +82,5 @@ En los barrios de la Zona Metropolitana de la Laguna se vive con sensación de i
 La zona central de la ciudad de Torreón tiene un alto índice de decrecimiento o abandono. Esto ha implicado la pérdida de valor inmobiliario, el decaimiento de la actividad comercial, la destrucción del patrimonio histórico y la pauperización del entorno urbano.
 
 Se necesita mejorar las condiciones de vida en los barrios a través de políticas de mejoramiento, de uso mixto regulado y de desarrollo sustentable de estos espacios. Una mejor regulación de recursos y servicios públicos y un trabajo fuerte en la promoción de la identidad regional que éstos generan.
+
+[Índice](indice.html) | Siguiente: [Movilidad y Transporte](diagnostico-estrategico-movilidad-transporte.html)

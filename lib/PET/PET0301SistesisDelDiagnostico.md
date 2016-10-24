@@ -37,3 +37,5 @@
 * La inseguridad en la región que ha provocado la inevitable caída de inversiones extranjeras, así como de movimiento de personas del extranjero a la región.
 * Ingresos insuficientes en la región dado el ambiente de inequidad, sensación de inestabilidad e incertidumbre para empresarios tanto nacionales como extranjeros.
 * La crisis económica de EE.UU. que ha traído el retorno de población migrante, la caída de las remesas hacia la región y un incremento de población sin empleo.
+
+[Índice](indice.html) | Siguiente: [Prospectiva y Escenarios](prospectiva-escenarios.html)

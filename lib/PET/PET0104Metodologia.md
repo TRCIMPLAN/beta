@@ -20,3 +20,5 @@ A través de talleres de planeación participativa y con el soporte de estudios 
 6. **Medio Ambiente y Sustentabilidad.** En este eje se destacó la relación entre la actividad humana y el medio ambiente, su impacto, su cuidado, mejoramiento y conservación, etc.
 
 En particular el método de consulta varió de un taller a otro ya que se utilizaron diferentes técnicas, formatos e instrumentos para conseguir la finalidad de cada taller, más lo importante fue el respeto absoluto a la participación ciudadana, y a las aportaciones de cada uno de los participantes. Al final se pudo contar con más de 300 personas, líderes en sus campos de acción y representantes además de organizaciones, instituciones y empresas, en los distintos sectores social, gubernamental y académico.
+
+[Índice](indice.html) | Siguiente: [Marco Jurídico](marco-juridico.html)

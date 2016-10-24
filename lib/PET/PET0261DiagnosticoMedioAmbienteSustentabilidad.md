@@ -102,3 +102,5 @@ Y no sólo en problemas de prospectiva sino de uso y gestión. Se han incurrido 
 En buen o mal el manejo de los residuos es a la vez causa y consecuencia del manejo ambiental y de la gestión del desarrollo regional. La cultura endémica de consumo exagerado, provoca una generación irracional de desperdicios. La operación industrial, y la irregular supervisión y control de su operación, es parte de la lógica inmediatista.  Ello no ha permitido planear y manejar la ecología, y la disposición adecuada de los residuos.
 
 Para revertir esta tendencia sistémica, se requiere –también integralmente- la conjunción de varios programas, como la educación ambiental, creación de normatividad conjunta, supervisión y control metropolitano de la producción industrial, y el desarrollo de infraestructura y mobiliario urbano de manejo de residuos –a nivel regional- para no sólo no contaminar, sino aprovechar sustentablemente la vida y desarrollo de la metrópoli.
+
+[Índice](indice.html) | Siguiente: [Síntesis del Diagnóstico](sintesis-diagnostico.html)

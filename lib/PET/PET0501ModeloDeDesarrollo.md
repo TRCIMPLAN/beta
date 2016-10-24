@@ -52,3 +52,5 @@ Más que solo una propuesta de sectores y subsectores económicos, la propuesta 
 ### Notas
 
 1. El _city manager,_ que traducido literalmente al español significa gerente de ciudad, es una figura administrativa independiente del alcalde, sin cargo político, cuya función principal es la de operar la ciudad de manera profesional.
+
+[Índice](indice.html) | Siguiente: [Buen Gobierno](vision-buen-gobierno.html)

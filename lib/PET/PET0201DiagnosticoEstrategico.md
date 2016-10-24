@@ -13,3 +13,5 @@ Situación por eje:
 * [Entorno Urbano](diagnostico-estrategico-entorno-urbano.html)
 * [Movilidad y Transporte](diagnostico-estrategico-movilidad-transporte.html)
 * [Medio Ambiente y Sustentabilidad](diagnostico-estrategico-medio-ambiente-sustentabilidad.html)
+
+[Índice](indice.html) | Siguiente: [Buen Gobierno](diagnostico-estrategico-buen-gobierno.html)

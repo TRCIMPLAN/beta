@@ -50,3 +50,5 @@ Objetivo General / Metas
     * Sistema de semaforización eficiente
     * Visión Cero aplicada de manera transversal (infraestructura, regulación y cultura)
     * Señalización clara y congruente al 70%
+
+[Índice](indice.html) | Siguiente: [Medio Ambiente y Sustentabilidad](vision-medio-ambiente-sustentabilidad.html)

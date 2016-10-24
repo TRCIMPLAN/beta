@@ -148,3 +148,5 @@ Este es un problema que se agrava cada vez más en la Zona Metropolitana de la L
 De enero a junio del presente año, Torreón ocupó el segundo lugar en embarazos adolescentes con 711 que representan el 20% del total de embarazos en menores registrados en el estado. En este mismo período Matamoros registró 139, cabe mencionar que durante 2013 Torreón registro un total de 1,804.
 
 Los cuatro municipios de la Zona Metropolitana de la Laguna se encuentran por encima de la media nacional que fue en 2010 de 12.8 % de las menores de 14 a 19 años con al menos un hijo, mientras Torreón registró 13.9 %, Gómez Palacio 16.3%, Lerdo 17.2% y Matamoros 19.9%.
+
+[Índice](indice.html) | Siguiente: [Entorno Urbano](diagnostico-estrategico-entorno-urbano.html)

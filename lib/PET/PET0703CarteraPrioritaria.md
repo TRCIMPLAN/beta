@@ -45,3 +45,5 @@
 * Plan Estratégico de Manejo Sustentable del Agua de la Región Lagunera
 * Aplicación coordinada con la SEMARNAT del Programa Metropolitano de Ordenamiento Ecológico como instrumento rector
 * Programa intensivo de reforestación urbana
+
+[Índice](indice.html) | Siguiente: [Planos PEM](planos-pem.html)

@@ -92,3 +92,5 @@ Objetivos Generales / Metas
     * Personal de los municipios con conocimiento y aplicación en todos los departamentos
 * Conservar y restauración de la biodiversidad y territorio
     * Zonas protegidas, áreas restauradas y un desarrollo sustentable regional
+
+[Índice](indice.html) | Siguiente: [Cartera de Proyectos Estratégicos](cartera-proyectos.html)

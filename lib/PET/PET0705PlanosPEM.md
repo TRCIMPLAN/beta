@@ -42,3 +42,5 @@
 * Av. Juárez Imagen Urbana
 
 <a href="planos-pem/pem-05.jpg"><img class="img-responsive" src="planos-pem/pem-05-previa.jpg" alt=""></a>
+
+[Índice](indice.html) | Siguiente: [Buen Gobierno](cartera-proyectos-buen-gobierno.html)

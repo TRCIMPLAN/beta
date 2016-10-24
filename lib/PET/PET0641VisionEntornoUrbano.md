@@ -44,3 +44,5 @@ Objetivos Generales / Metas
     * Incremento en la calidad de la imagen urbana en colonias, corredores, centro y barrios tradicionales
     * Rescate y salvaguarda del patrimonio arquitectónico de diferentes épocas o periodos de la ciudad mediante un organismo que fomente su protección y mantenimiento, así como que promueva su conocimiento y preservación entre la comunidad
     * Identidad cultural de centro y zonas tradicionales rescatada.  La gente se identifica por su seguridad, por contar con equipamientos completos y vivienda digna
+
+[Índice](indice.html) | Siguiente: [Movilidad y Transporte](vision-movilidad-transporte.html)

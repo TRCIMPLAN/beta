@@ -61,3 +61,5 @@ Fecha     | Nombre del Plan
 2012      | Plan Rector de la Zona Metropolitana de La Laguna
 
 **Fuente:** Elaboración propia, 2015. Adaptado de Historia y prospectiva de la planeación regional en la Comarca Lagunera, A. Hernández Corichi, COECyT, Coahuila 2006
+
+[Índice](indice.html) | Siguiente: [Diagnóstico Estratégico](diagnostico-estrategico.html)

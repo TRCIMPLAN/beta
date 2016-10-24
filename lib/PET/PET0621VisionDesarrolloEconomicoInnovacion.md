@@ -52,3 +52,5 @@ Objetivo General / Metas
 * Contar con un marco normativo sólido y homologado que regule la acción económica de la zona y garantice su sano desarrollo
     * Creación de un gabinete metropolitano integrado por ciudadanos notables orientado a dar seguimiento a los gabinetes de los gobiernos municipales, evaluarlos y emitir recomendaciones de mejora en su desempeño
     * Poner en funciones un Marco Jurídico Metropolitano
+
+[Índice](indice.html) | Siguiente: [Desarrollo Social](vision-desarrollo-social.html)

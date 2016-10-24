@@ -74,3 +74,5 @@ Objetivos Generales / Metas
 * Elevar la equidad y la igualdad de oportunidades que permita un adecuado desarrollo de la población vulnerable
     * Incremento de los organismos de la sociedad civil, profesionalizados, que brindan atención a grupos vulnerables
     * Incremento en las políticas emitidas en torno al tema de igualdad, inclusión y perspectiva de género
+
+[Índice](indice.html) | Siguiente: [Entorno Urbano](vision-entorno-urbano.html)
