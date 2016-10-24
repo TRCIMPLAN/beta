@@ -48,32 +48,37 @@ class AutoresConfig {
             '', 'Lic.', 'Adriana Vargas Flores', 'unknown',
             'IMPLAN Torreón', 'Integración de Proyectos',
             '',
-            'avargas@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Alejandra Villarreal Meza', 'unknown',
             'IMPLAN Torreón', 'Secretario Técnico',
             '',
-            'avillarreal@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Alfredo Viesca Domínguez', 'lic-alfredo-viesca-dominguez',
             'IMPLAN Torreón', 'Investigación Cualitativa',
             '',
-            'aviesca@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Alicia Valdez Ibarra', 'lic-alicia-valdez-ibarra',
             'IMPLAN Torreón', 'Indicadores Económicos',
             '',
-            'avaldez@trcimplan.gob.mx', '');
+            '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Arq.', 'Ángeles Melisa Rodríguez Salas', 'unknown',
+            'IMPLAN Torreón', 'Analista de Costos',
+            '',
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Cecilio Pedro Secunza Schott', 'arq-cecilio-pedro-secunza-schott',
             'IMPLAN Torreón', 'Regeneración Urbana',
             '',
-            'csecunza@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Daniela Patricia Corral Hernández', 'arq-daniela-patricia-corral-hernandez',
             'IMPLAN Torreón', 'Analista SIG',
             '',
-            'dcorral@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Eduardo Holguín Zehfuss', 'lic-eduardo-holguin-zehfuss',
             'IMPLAN Torreón', 'Director General Ejecutivo',
@@ -83,7 +88,7 @@ class AutoresConfig {
             '', 'Lic.', 'Felipe de Jesús Medina Delgado', 'unknown',
             'IMPLAN Torreón', 'Asistente de Direcciones',
             '',
-            'fmedina@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Ing.', 'Guillermo Valdés Lozano', 'ing-guillermo-valdes-lozano',
             'IMPLAN Torreón', 'Programación y Software',
@@ -93,27 +98,37 @@ class AutoresConfig {
             '', 'Lic.', 'Israel Sinai Charur Méndez', 'unknown',
             'IMPLAN Torreón', 'Difusión y Diseño Gráfico',
             '',
-            'scharur@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Janeth Ramírez Facio', 'unknown',
             'IMPLAN Torreón', 'Auxiliar Administrativo',
             '',
-            'jramirez@trcimplan.gob.mx', '');
+            '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Javier de Jesús Valencia Jiménez', 'unknown',
+            'IMPLAN Torreón', 'Contador',
+            '',
+            '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Jesús Antonio García Aguirre', 'unknown',
+            'IMPLAN Torreón', 'Coordinador Administrativo',
+            '',
+            'jgarcia@trcimplan.gob.mx', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Jesús Javier Morán García', 'unknown',
+            'IMPLAN Torreón', 'Coordinador Jurídico',
+            '',
+            'transparencia@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Ilse Ávila García', 'arq-ilse-avila-garcia',
             'IMPLAN Torreón', 'Director de Proyectos Estratégicos',
             '',
             'iavila@trcimplan.gob.mx', '');
         $this->autores[] = new \Base\Autor(
-            '', 'Arq.', 'Ángeles Melisa Rodríguez Salas', 'unknown',
-            'IMPLAN Torreón', 'Analista de Costos',
-            '',
-            'mrodriguez@trcimplan.gob.mx', '');
-        $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Jair Miramontes Chávez', 'arq-jair-miramontes-chavez',
             'IMPLAN Torreón', 'Sistemas de Información Geográfica',
             '',
-            'jairmiramontes@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Lic.', 'Luis A. Gutiérrez Arizpe', 'lic-luis-a-gutierrez-arizpe',
             'IMPLAN Torreón', 'Indicadores Sociodemográficos',
@@ -128,7 +143,12 @@ class AutoresConfig {
             '', 'Ing.', 'Natalia Zavala López', 'unknown',
             'IMPLAN Torreón', 'Asistente Presidencia',
             '',
-            'nzavala@trcimplan.gob.mx', '');
+            '', '');
+        $this->autores[] = new \Base\Autor(
+            '', 'Lic.', 'Nayeli Alejandra García Aguirre', 'unknown',
+            'IMPLAN Torreón', 'Asistente Presidencia',
+            '',
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', '', 'Olga L. Delgado Ramírez', 'unknown',
             'IMPLAN Torreón', 'Servicios de Limpieza',
@@ -140,20 +160,20 @@ class AutoresConfig {
             '',
             'rgonzalez@trcimplan.gob.mx',  '');
         $this->autores[] = new \Base\Autor(
-            '', 'C.P.', 'S. Julia Camarillo Aguirre', 'unknown',
+            '', 'C.P.', 'Santa Julia Camarillo Aguirre', 'unknown',
             'IMPLAN Torreón', 'Contadora',
             '',
-            'jcamarillo@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Arq.', 'Teresita Benítez Saludado', 'arq-teresita-benitez-saludado',
             'IMPLAN Torreón', 'Estudios Sectoriales',
             '',
-            'tsaludado@trcimplan.gob.mx', '');
+            '', '');
         $this->autores[] = new \Base\Autor(
             '', 'Ing.', 'Víctor M. Gómez Reynoso', 'unknown',
             'IMPLAN Torreón', 'Soporte Técnico',
             '',
-            'vgomez@trcimplan.gob.mx', '');
+            '', '');
     } // constructor
 
     /**
