@@ -1,6 +1,6 @@
 <?php
 /**
- * Sitio Web -
+ * TrcIMPLAN Sitio Web - IMPLAN Torreón presenta resultados de Doing Business y del índice de Competitividad Urbana del IMCO
  *
  * Copyright (C) 2016 Guillermo Valdés Lozano
  *
@@ -32,7 +32,7 @@ class SesionOrdinaria20160930 extends \Base\Publicacion {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre          = 'IMPLAN presenta resultados de Doing Business y del índice de Competitividad Urbana del IMCO';
+        $this->nombre          = 'IMPLAN Torreón presenta resultados de Doing Business y del índice de Competitividad Urbana del IMCO';
     //~ $this->autor           = '';
         $this->fecha           = '2016-09-30T10:00';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes

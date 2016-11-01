@@ -87,7 +87,7 @@ class Recolector {
     public function ordenar_por_directorio_nombre_asc() {
         $temporal = array();
         foreach ($this->publicaciones as $publicacion) {
-            $clave = Funciones::caracteres_para_web(sprintf('%s %s', $publicacion->directorio, $publicacion->nombre));
+            $clave = Funciones::caracteres_para_web(sprintf('%s-%s', $publicacion->directorio, $publicacion->nombre));
             $temporal[$clave] = $publicacion;
         }
         ksort($temporal);
@@ -100,7 +100,7 @@ class Recolector {
     public function ordenar_por_tiempo_desc() {
         $temporal = array();
         foreach ($this->publicaciones as $publicacion) {
-            $clave = Funciones::caracteres_para_web(sprintf('%s %s', $publicacion->tiempo_creado(), $publicacion->nombre));
+            $clave = Funciones::caracteres_para_web(sprintf('%s-%s', $publicacion->tiempo_creado(), $publicacion->nombre));
             $temporal[$clave] = $publicacion;
         }
         ksort($temporal);

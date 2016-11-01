@@ -41,7 +41,7 @@ class GruposVulnerablesElObjetivoDelProyectoCiudadDIF extends \Base\Publicacion 
         $this->imagen_previa   = 'grupos-vulnerables-el-objetivo-del-proyecto-ciudad-dif/imagen-previa.jpg';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion     = 'El actual crecimiento de la ciudad demanda un aumento en la infraestructura que permita la integración social de todos los grupos vulnerables cuya población ha ido creciendo en los últimos años.';
-        $this->claves          = 'IMPLAN, Torreon, ';
+        $this->claves          = 'IMPLAN, Torreon, Grupos Vulnerables, Ciudad DIF, Adutos Mayores, Migrantes';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio      = 'blog';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
