@@ -151,9 +151,33 @@ class PaginaInicialConfig extends \Base\Plantilla {
      * IBC
      */
     protected function ibc() {
+        // Código HTML
         $this->contenido[]  = '  <section id="ibc">';
-        $this->contenido[]  = '    <iframe width="100%" height="400" frameborder="0" src="https://guivaloz.carto.com/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>';
+        $this->contenido[]  = '    <div id="IBCTorreonMapa" class="mapa"></div>';
         $this->contenido[]  = '  </section>';
+        // Código Javascript
+        $this->javascript[] = <<<FINAL
+  // Cargar mapa IBC Torreón cuando esté lista la página
+  $(window).load(function() {
+    cartodb.createVis('IBCTorreonMapa', 'https://guivaloz.carto.com/api/v2/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/viz.json', {
+        shareable: false,
+        title: true,
+        description: true,
+        search: false,
+        scrollwheel: false,
+        infowindow: true,
+        fullscreen: true
+      })
+      .done(function(vis, layers) {
+        // Capa colonias
+        var colonias_capa = layers[1];
+        colonias_capa.setInteraction(true);
+        // Ajustes en el mapa
+        var map = vis.getNativeMap();
+        map.setZoom(12);
+      })
+  });
+FINAL;
     } // ibc
 
     /**
@@ -351,7 +375,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->servicios();
         $this->ibc();
     //  $this->aviso();
-        $this->ultimas_publicaciones();
+    //  $this->ultimas_publicaciones();
         $this->categorias();
         $this->mapa();
         $this->redes();
