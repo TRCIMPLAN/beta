@@ -375,7 +375,7 @@ FINAL;
         $this->servicios();
         $this->ibc();
     //  $this->aviso();
-    //  $this->ultimas_publicaciones();
+        $this->ultimas_publicaciones();
         $this->categorias();
         $this->mapa();
         $this->redes();
