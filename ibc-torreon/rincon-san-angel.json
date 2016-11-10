@@ -12,7 +12,10 @@
         "Porcentaje de población no especificada":6.51,
         "Fecundidad promedio":1.8,
         "Porcentaje de población nacida en otro estado":26.38,
-        "Porcentaje de población con discapacidad":1.08
+        "Porcentaje de población con discapacidad":1.08,
+        "Porcentaje de población de 15 y más analfabeta":0.65,
+        "Porcentaje de población de 18 y más":56.83,
+        "Porcentaje de población de 18 y más postbásicos":51.19
       }
     },
     "Educación":{
@@ -52,11 +55,17 @@
     },
     "Unidades Económicas":{
       "2010":{
-        "Total Actividades Económicas":2,
+        "Total Actividades Económicas":25,
         "Primer actividad nombre":"Comercio Menudeo",
-        "Primer actividad porcentaje":50,
+        "Primer actividad porcentaje":48,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
-        "Segunda actividad porcentaje":50
+        "Segunda actividad porcentaje":20,
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":8,
+        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad porcentaje":8,
+        "Quinta actividad nombre":"Salud",
+        "Quinta actividad porcentaje":4
       }
     }
   }

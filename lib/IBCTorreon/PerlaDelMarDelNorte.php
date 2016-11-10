@@ -34,7 +34,7 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Perla Del Mar Del Norte';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'perla-del-mar-del-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 37.50,
                     'Fecundidad promedio' => 1.33,
                     'Porcentaje de población nacida en otro estado' => 31.25,
-                    'Porcentaje de población con discapacidad' => 0.00
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 37.50,
+                    'Porcentaje de población de 18 y más postbásicos' => 37.50
                 )
             ),
             'Educación' => array(

@@ -34,7 +34,7 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio Iii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-antonio-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.93,
                     'Fecundidad promedio' => 1.77,
                     'Porcentaje de población nacida en otro estado' => 15.79,
-                    'Porcentaje de población con discapacidad' => 3.67
+                    'Porcentaje de población con discapacidad' => 3.67,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 59.29,
+                    'Porcentaje de población de 18 y más postbásicos' => 42.35
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

@@ -34,7 +34,7 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jacarandas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jacarandas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Jacarandas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 5.81,
                     'Fecundidad promedio' => 2.31,
                     'Porcentaje de población nacida en otro estado' => 11.90,
-                    'Porcentaje de población con discapacidad' => 5.13
+                    'Porcentaje de población con discapacidad' => 5.13,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.49,
+                    'Porcentaje de población de 18 y más' => 68.56,
+                    'Porcentaje de población de 18 y más postbásicos' => 32.63
                 )
             ),
             'Educación' => array(

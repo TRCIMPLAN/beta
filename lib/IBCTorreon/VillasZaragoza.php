@@ -34,7 +34,7 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Zaragoza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-zaragoza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.27,
                     'Fecundidad promedio' => 1.82,
                     'Porcentaje de población nacida en otro estado' => 16.14,
-                    'Porcentaje de población con discapacidad' => 2.16
+                    'Porcentaje de población con discapacidad' => 2.16,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.35,
+                    'Porcentaje de población de 18 y más' => 59.18,
+                    'Porcentaje de población de 18 y más postbásicos' => 24.47
                 )
             ),
             'Educación' => array(

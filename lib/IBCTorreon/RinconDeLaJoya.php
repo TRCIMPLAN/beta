@@ -34,7 +34,7 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon De La Joya';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 1.94,
                     'Porcentaje de población nacida en otro estado' => 15.12,
-                    'Porcentaje de población con discapacidad' => 4.60
+                    'Porcentaje de población con discapacidad' => 4.60,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.26,
+                    'Porcentaje de población de 18 y más' => 53.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 13.48
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 30.00,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 10.00
                 )
             )

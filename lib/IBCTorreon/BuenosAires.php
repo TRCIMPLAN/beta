@@ -34,7 +34,7 @@ class BuenosAires extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Buenos Aires';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'buenos-aires';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class BuenosAires extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.12,
                     'Porcentaje de población nacida en otro estado' => 13.36,
-                    'Porcentaje de población con discapacidad' => 1.87
+                    'Porcentaje de población con discapacidad' => 1.87,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.60,
+                    'Porcentaje de población de 18 y más' => 61.45,
+                    'Porcentaje de población de 18 y más postbásicos' => 7.77
                 )
             ),
             'Educación' => array(

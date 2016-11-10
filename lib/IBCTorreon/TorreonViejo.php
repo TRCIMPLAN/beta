@@ -34,7 +34,7 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreon Viejo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-viejo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.42,
                     'Porcentaje de población nacida en otro estado' => 23.10,
-                    'Porcentaje de población con discapacidad' => 11.45
+                    'Porcentaje de población con discapacidad' => 11.45,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.86,
+                    'Porcentaje de población de 18 y más' => 62.41,
+                    'Porcentaje de población de 18 y más postbásicos' => 11.04
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 45.45,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 36.36,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 9.09
                 )
             )

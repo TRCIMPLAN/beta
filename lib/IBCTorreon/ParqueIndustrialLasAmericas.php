@@ -34,7 +34,7 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Las Americas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'parque-industrial-las-americas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -72,11 +72,11 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 13,
                     'Primer actividad nombre' => 'Industria Manufacturera',
                     'Primer actividad porcentaje' => 46.15,
-                    'Segunda actividad nombre' => 'Servicios Generales',
+                    'Segunda actividad nombre' => 'Salud',
                     'Segunda actividad porcentaje' => 7.69,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Cuarta actividad porcentaje' => 7.69,
                     'Quinta actividad nombre' => 'Información Medios Masivos',
                     'Quinta actividad porcentaje' => 7.69

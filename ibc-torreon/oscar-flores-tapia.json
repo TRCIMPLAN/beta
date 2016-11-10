@@ -3,66 +3,69 @@
   "IBC":{
     "Demografía":{
       "2010":{
-        "Población total":522,
-        "Porcentaje de población masculina":47.89,
-        "Porcentaje de población femenina":52.11,
-        "Porcentaje de población de 0 a 14 años":25.32,
-        "Porcentaje de población de 15 a 64 años":68.32,
-        "Porcentaje de población de 65 y más años":6.12,
-        "Porcentaje de población no especificada":0.24,
-        "Fecundidad promedio":2.35,
-        "Porcentaje de población nacida en otro estado":21.89,
-        "Porcentaje de población con discapacidad":10.58
+        "Población total":360,
+        "Porcentaje de población masculina":49.17,
+        "Porcentaje de población femenina":50.83,
+        "Porcentaje de población de 0 a 14 años":25.05,
+        "Porcentaje de población de 15 a 64 años":67.39,
+        "Porcentaje de población de 65 y más años":7.2,
+        "Porcentaje de población no especificada":0.36,
+        "Fecundidad promedio":2.63,
+        "Porcentaje de población nacida en otro estado":23.13,
+        "Porcentaje de población con discapacidad":13.67,
+        "Porcentaje de población de 15 y más analfabeta":1.21,
+        "Porcentaje de población de 18 y más":69.72,
+        "Porcentaje de población de 18 y más postbásicos":31.94
       }
     },
     "Educación":{
       "2010":{
-        "Grado Promedio de Escolaridad":10.43,
-        "Grado Promedio de Escolaridad masculina":10.56,
-        "Grado Promedio de Escolaridad femenina":10.34
+        "Grado Promedio de Escolaridad":9.7,
+        "Grado Promedio de Escolaridad masculina":9.64,
+        "Grado Promedio de Escolaridad femenina":9.76
       }
     },
     "Características Económicas":{
       "2010":{
-        "Población Económicamente Activa":56.73,
-        "Población Económicamente Activa masculina":57.63,
-        "Población Económicamente Activa femenina":42.37,
-        "Población Ocupada":91.31,
-        "Población Ocupada masculina":56.68,
-        "Población Ocupada femenina":43.32,
-        "Población Desocupada":8.69,
-        "Derechohabiencia":75.67
+        "Población Económicamente Activa":53.26,
+        "Población Económicamente Activa masculina":60.65,
+        "Población Económicamente Activa femenina":39.35,
+        "Población Ocupada":89.4,
+        "Población Ocupada masculina":60,
+        "Población Ocupada femenina":40,
+        "Población Desocupada":10.6,
+        "Derechohabiencia":70
       }
     },
     "Viviendas":{
       "2010":{
-        "Hogares":147,
-        "Hogares Jefatura masculina":70.75,
-        "Hogares Jefatura femenina":29.25,
-        "Ocupación por Vivienda":3.55,
+        "Hogares":93,
+        "Hogares Jefatura masculina":76.34,
+        "Hogares Jefatura femenina":23.66,
+        "Ocupación por Vivienda":3.87,
         "Viviendas con Electricidad":100,
-        "Viviendas con Agua":99.32,
-        "Viviendas con Drenaje":98.64,
+        "Viviendas con Agua":98.92,
+        "Viviendas con Drenaje":97.85,
         "Viviendas con Televisión":100,
-        "Viviendas con Automóvil":63.55,
-        "Viviendas con Computadora":39.96,
-        "Viviendas con Celular":83.67,
-        "Viviendas con Internet":19.61
+        "Viviendas con Automóvil":52.06,
+        "Viviendas con Computadora":39.51,
+        "Viviendas con Celular":76.34,
+        "Viviendas con Internet":22.39
       }
     },
     "Unidades Económicas":{
       "2010":{
-        "Total Actividades Económicas":29,
+        "Total Actividades Económicas":27,
         "Primer actividad nombre":"Otros servicios, excepto Gobierno",
-        "Primer actividad porcentaje":44.83,
+        "Primer actividad porcentaje":48.15,
         "Segunda actividad nombre":"Comercio Menudeo",
-        "Segunda actividad porcentaje":27.59,
+        "Segunda actividad porcentaje":25.93,
         "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
-        "Tercera actividad porcentaje":13.79,
+        "Tercera actividad porcentaje":11.11,
         "Cuarta actividad nombre":"Industria Manufacturera",
-        "Cuarta actividad porcentaje":10.34,
+        "Cuarta actividad porcentaje":11.11,
         "Quinta actividad nombre":"Inmobiliarios",
-        "Quinta actividad porcentaje":3.45
+        "Quinta actividad porcentaje":3.7
       }
     }
   }

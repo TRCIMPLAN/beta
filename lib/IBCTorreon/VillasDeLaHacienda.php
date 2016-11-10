@@ -34,7 +34,7 @@ class VillasDeLaHacienda extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas De La Hacienda';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-hacienda';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.86,
                     'Fecundidad promedio' => 1.65,
                     'Porcentaje de población nacida en otro estado' => 23.57,
-                    'Porcentaje de población con discapacidad' => 1.24
+                    'Porcentaje de población con discapacidad' => 1.24,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
+                    'Porcentaje de población de 18 y más' => 67.00,
+                    'Porcentaje de población de 18 y más postbásicos' => 54.29
                 )
             ),
             'Educación' => array(

@@ -34,7 +34,7 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Valle Verde';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'valle-verde';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 9.79,
                     'Fecundidad promedio' => 2.04,
                     'Porcentaje de población nacida en otro estado' => 19.57,
-                    'Porcentaje de población con discapacidad' => 3.96
+                    'Porcentaje de población con discapacidad' => 3.96,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.12,
+                    'Porcentaje de población de 18 y más' => 67.87,
+                    'Porcentaje de población de 18 y más postbásicos' => 42.78
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 21,
+                    'Total Actividades Económicas' => 25,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 52.38,
+                    'Primer actividad porcentaje' => 48.00,
                     'Segunda actividad nombre' => 'Educativos',
-                    'Segunda actividad porcentaje' => 19.05,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
-                    'Tercera actividad porcentaje' => 9.52,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Cuarta actividad porcentaje' => 9.52,
-                    'Quinta actividad nombre' => 'Financieros y Seguros',
-                    'Quinta actividad porcentaje' => 4.76
+                    'Segunda actividad porcentaje' => 16.00,
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad porcentaje' => 8.00,
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad porcentaje' => 8.00,
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad porcentaje' => 4.00
                 )
             )
         );

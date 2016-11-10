@@ -34,7 +34,7 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente Etapa Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-oriente-etapa-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.71,
                     'Porcentaje de población nacida en otro estado' => 15.91,
-                    'Porcentaje de población con discapacidad' => 2.81
+                    'Porcentaje de población con discapacidad' => 2.81,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
+                    'Porcentaje de población de 18 y más' => 62.50,
+                    'Porcentaje de población de 18 y más postbásicos' => 44.89
                 )
             ),
             'Educación' => array(

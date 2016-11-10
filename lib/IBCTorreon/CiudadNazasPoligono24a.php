@@ -34,7 +34,7 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Nazas Poligono 24A';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-nazas-poligono-24a';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.05,
                     'Porcentaje de población nacida en otro estado' => 16.30,
-                    'Porcentaje de población con discapacidad' => 3.75
+                    'Porcentaje de población con discapacidad' => 3.75,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.16,
+                    'Porcentaje de población de 18 y más' => 56.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 25.34
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 8,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 12.50,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 12.50,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 12.50
                 )
             )

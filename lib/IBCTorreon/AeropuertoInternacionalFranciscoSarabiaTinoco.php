@@ -34,7 +34,7 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
         // Título, autor y fecha
         $this->nombre      = 'Aeropuerto Internacional Francisco Sarabia Tinoco';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aeropuerto-internacional-francisco-sarabia-tinoco';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
                     'Porcentaje de población no especificada' => 0.62,
                     'Fecundidad promedio' => 1.62,
                     'Porcentaje de población nacida en otro estado' => 22.52,
-                    'Porcentaje de población con discapacidad' => 1.54
+                    'Porcentaje de población con discapacidad' => 1.54,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.80,
+                    'Porcentaje de población de 18 y más' => 63.66,
+                    'Porcentaje de población de 18 y más postbásicos' => 48.12
                 )
             ),
             'Educación' => array(
@@ -97,32 +100,21 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 36,
+                    'Total Actividades Económicas' => 35,
                     'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                    'Primer actividad porcentaje' => 27.78,
+                    'Primer actividad porcentaje' => 28.57,
                     'Segunda actividad nombre' => 'Inmobiliarios',
-                    'Segunda actividad porcentaje' => 19.44,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
-                    'Tercera actividad porcentaje' => 13.89,
-                    'Cuarta actividad nombre' => 'Gubernamentales',
-                    'Cuarta actividad porcentaje' => 13.89,
+                    'Segunda actividad porcentaje' => 20.00,
+                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad porcentaje' => 14.29,
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad porcentaje' => 14.29,
                     'Quinta actividad nombre' => 'Comercio Mayoreo',
-                    'Quinta actividad porcentaje' => 8.33
+                    'Quinta actividad porcentaje' => 8.57
                 )
             )
         );
     } // datos
-
-    /**
-     * Mapas
-     *
-     * @return array Arreglo asociativo
-     */
-    public function mapas() {
-        return array(
-            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
-        );
-    } // mapas
 
 } // Clase AeropuertoInternacionalFranciscoSarabiaTinoco
 

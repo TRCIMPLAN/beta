@@ -34,7 +34,7 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion San Ignacio';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-san-ignacio';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.87,
                     'Porcentaje de población nacida en otro estado' => 21.07,
-                    'Porcentaje de población con discapacidad' => 1.87
+                    'Porcentaje de población con discapacidad' => 1.87,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 61.98,
+                    'Porcentaje de población de 18 y más postbásicos' => 40.91
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Minería',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Minería',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

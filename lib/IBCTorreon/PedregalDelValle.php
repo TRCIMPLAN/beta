@@ -34,7 +34,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Pedregal Del Valle';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'pedregal-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.62,
                     'Fecundidad promedio' => 1.84,
                     'Porcentaje de población nacida en otro estado' => 15.17,
-                    'Porcentaje de población con discapacidad' => 1.92
+                    'Porcentaje de población con discapacidad' => 1.92,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.36,
+                    'Porcentaje de población de 18 y más' => 56.57,
+                    'Porcentaje de población de 18 y más postbásicos' => 30.54
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class PedregalDelValle extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 18.18,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 3.03,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 3.03
                 )
             )

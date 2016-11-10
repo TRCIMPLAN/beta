@@ -34,7 +34,7 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Perla Del Oriente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'perla-del-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.54,
                     'Fecundidad promedio' => 1.71,
                     'Porcentaje de población nacida en otro estado' => 16.93,
-                    'Porcentaje de población con discapacidad' => 1.82
+                    'Porcentaje de población con discapacidad' => 1.82,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.46,
+                    'Porcentaje de población de 18 y más' => 59.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 26.95
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.08,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 19.23,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

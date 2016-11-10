@@ -34,7 +34,7 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Del Sol';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-del-sol';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,62 +59,65 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 1121,
-                    'Porcentaje de población masculina' => 49.33,
-                    'Porcentaje de población femenina' => 50.67,
-                    'Porcentaje de población de 0 a 14 años' => 29.97,
-                    'Porcentaje de población de 15 a 64 años' => 66.64,
+                    'Población total' => 1315,
+                    'Porcentaje de población masculina' => 49.28,
+                    'Porcentaje de población femenina' => 50.72,
+                    'Porcentaje de población de 0 a 14 años' => 30.57,
+                    'Porcentaje de población de 15 a 64 años' => 66.01,
                     'Porcentaje de población de 65 y más años' => 2.05,
-                    'Porcentaje de población no especificada' => 1.34,
-                    'Fecundidad promedio' => 1.45,
-                    'Porcentaje de población nacida en otro estado' => 21.86,
-                    'Porcentaje de población con discapacidad' => 0.63
+                    'Porcentaje de población no especificada' => 1.37,
+                    'Fecundidad promedio' => 1.44,
+                    'Porcentaje de población nacida en otro estado' => 22.81,
+                    'Porcentaje de población con discapacidad' => 0.80,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 63.88,
+                    'Porcentaje de población de 18 y más postbásicos' => 58.86
                 )
             ),
             'Educación' => array(
                 '2010' => array(
                     'Grado Promedio de Escolaridad' => 14.61,
-                    'Grado Promedio de Escolaridad masculina' => 14.92,
-                    'Grado Promedio de Escolaridad femenina' => 14.33
+                    'Grado Promedio de Escolaridad masculina' => 14.96,
+                    'Grado Promedio de Escolaridad femenina' => 14.29
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 62.61,
-                    'Población Económicamente Activa masculina' => 58.73,
-                    'Población Económicamente Activa femenina' => 41.27,
-                    'Población Ocupada' => 95.23,
-                    'Población Ocupada masculina' => 58.84,
-                    'Población Ocupada femenina' => 41.16,
-                    'Población Desocupada' => 4.77,
-                    'Derechohabiencia' => 88.40
+                    'Población Económicamente Activa' => 64.16,
+                    'Población Económicamente Activa masculina' => 59.23,
+                    'Población Económicamente Activa femenina' => 40.77,
+                    'Población Ocupada' => 95.45,
+                    'Población Ocupada masculina' => 59.12,
+                    'Población Ocupada femenina' => 40.88,
+                    'Población Desocupada' => 4.55,
+                    'Derechohabiencia' => 88.29
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 327,
-                    'Hogares Jefatura masculina' => 86.54,
-                    'Hogares Jefatura femenina' => 13.46,
-                    'Ocupación por Vivienda' => 3.43,
+                    'Hogares' => 384,
+                    'Hogares Jefatura masculina' => 86.72,
+                    'Hogares Jefatura femenina' => 13.28,
+                    'Ocupación por Vivienda' => 3.42,
                     'Viviendas con Electricidad' => 100.00,
-                    'Viviendas con Agua' => 99.69,
+                    'Viviendas con Agua' => 99.74,
                     'Viviendas con Drenaje' => 100.00,
-                    'Viviendas con Televisión' => 100.00,
-                    'Viviendas con Automóvil' => 95.11,
-                    'Viviendas con Computadora' => 77.98,
-                    'Viviendas con Celular' => 98.17,
-                    'Viviendas con Internet' => 55.42
+                    'Viviendas con Televisión' => 99.74,
+                    'Viviendas con Automóvil' => 93.70,
+                    'Viviendas con Computadora' => 75.63,
+                    'Viviendas con Celular' => 98.18,
+                    'Viviendas con Internet' => 53.70
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 6,
+                    'Total Actividades Económicas' => 8,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 50.00,
+                    'Primer actividad porcentaje' => 62.50,
                     'Segunda actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                    'Segunda actividad porcentaje' => 33.33,
+                    'Segunda actividad porcentaje' => 25.00,
                     'Tercera actividad nombre' => 'Inmobiliarios',
-                    'Tercera actividad porcentaje' => 16.67
+                    'Tercera actividad porcentaje' => 12.50
                 )
             )
         );

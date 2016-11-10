@@ -34,7 +34,7 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreon Jardin';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-jardin';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 6.79,
                     'Fecundidad promedio' => 1.97,
                     'Porcentaje de población nacida en otro estado' => 23.50,
-                    'Porcentaje de población con discapacidad' => 4.91
+                    'Porcentaje de población con discapacidad' => 4.91,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
+                    'Porcentaje de población de 18 y más' => 76.88,
+                    'Porcentaje de población de 18 y más postbásicos' => 66.25
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 201,
+                    'Total Actividades Económicas' => 202,
                     'Primer actividad nombre' => 'Salud',
-                    'Primer actividad porcentaje' => 27.36,
+                    'Primer actividad porcentaje' => 27.23,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
-                    'Segunda actividad porcentaje' => 14.93,
+                    'Segunda actividad porcentaje' => 15.35,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Tercera actividad porcentaje' => 11.44,
+                    'Tercera actividad porcentaje' => 11.39,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Cuarta actividad porcentaje' => 10.95,
+                    'Cuarta actividad porcentaje' => 10.89,
                     'Quinta actividad nombre' => 'Educativos',
-                    'Quinta actividad porcentaje' => 10.95
+                    'Quinta actividad porcentaje' => 10.89
                 )
             )
         );

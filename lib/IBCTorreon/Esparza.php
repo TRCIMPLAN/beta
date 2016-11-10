@@ -34,7 +34,7 @@ class Esparza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Esparza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'esparza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Esparza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.39,
                     'Fecundidad promedio' => 2.36,
                     'Porcentaje de población nacida en otro estado' => 17.86,
-                    'Porcentaje de población con discapacidad' => 6.20
+                    'Porcentaje de población con discapacidad' => 6.20,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.42,
+                    'Porcentaje de población de 18 y más' => 70.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 29.97
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class Esparza extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 29.17,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 20.83,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.17,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 4.17
                 )
             )

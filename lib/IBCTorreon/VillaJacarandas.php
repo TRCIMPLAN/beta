@@ -34,7 +34,7 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Jacarandas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-jacarandas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.23,
                     'Fecundidad promedio' => 2.55,
                     'Porcentaje de población nacida en otro estado' => 19.72,
-                    'Porcentaje de población con discapacidad' => 9.72
+                    'Porcentaje de población con discapacidad' => 9.72,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.32,
+                    'Porcentaje de población de 18 y más' => 71.81,
+                    'Porcentaje de población de 18 y más postbásicos' => 32.20
                 )
             ),
             'Educación' => array(

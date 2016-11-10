@@ -34,7 +34,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Antigua Aceitera';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'antigua-aceitera';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 4.06,
                     'Fecundidad promedio' => 2.46,
                     'Porcentaje de población nacida en otro estado' => 12.60,
-                    'Porcentaje de población con discapacidad' => 4.11
+                    'Porcentaje de población con discapacidad' => 4.11,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.22,
+                    'Porcentaje de población de 18 y más' => 67.82,
+                    'Porcentaje de población de 18 y más postbásicos' => 22.39
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.16,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.76,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.05
                 )
             )

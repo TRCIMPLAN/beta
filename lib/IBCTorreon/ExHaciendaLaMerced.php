@@ -34,7 +34,7 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda La Merced';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ex-hacienda-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 3.02,
                     'Porcentaje de población nacida en otro estado' => 21.86,
-                    'Porcentaje de población con discapacidad' => 6.96
+                    'Porcentaje de población con discapacidad' => 6.96,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.08,
+                    'Porcentaje de población de 18 y más' => 69.06,
+                    'Porcentaje de población de 18 y más postbásicos' => 29.03
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 54.55,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Gubernamentales',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Gubernamentales',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

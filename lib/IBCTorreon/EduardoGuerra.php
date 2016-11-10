@@ -34,7 +34,7 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Eduardo Guerra';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'eduardo-guerra';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.66,
                     'Fecundidad promedio' => 2.60,
                     'Porcentaje de población nacida en otro estado' => 19.11,
-                    'Porcentaje de población con discapacidad' => 5.41
+                    'Porcentaje de población con discapacidad' => 5.41,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.74,
+                    'Porcentaje de población de 18 y más' => 65.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 22.00
                 )
             ),
             'Educación' => array(

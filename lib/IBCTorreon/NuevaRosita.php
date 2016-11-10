@@ -34,7 +34,7 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nueva Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.13,
                     'Fecundidad promedio' => 2.39,
                     'Porcentaje de población nacida en otro estado' => 18.87,
-                    'Porcentaje de población con discapacidad' => 14.21
+                    'Porcentaje de población con discapacidad' => 14.21,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.86,
+                    'Porcentaje de población de 18 y más' => 68.63,
+                    'Porcentaje de población de 18 y más postbásicos' => 20.50
                 )
             ),
             'Educación' => array(

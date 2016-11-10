@@ -34,7 +34,7 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas San Jose';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-san-jose';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.22,
                     'Fecundidad promedio' => 1.75,
                     'Porcentaje de población nacida en otro estado' => 21.98,
-                    'Porcentaje de población con discapacidad' => 1.45
+                    'Porcentaje de población con discapacidad' => 1.45,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 58.90,
+                    'Porcentaje de población de 18 y más postbásicos' => 47.91
                 )
             ),
             'Educación' => array(
@@ -111,9 +114,9 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 20.00
                 )
             )

@@ -34,7 +34,7 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion Valles Del Nazas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-valles-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.20,
                     'Fecundidad promedio' => 1.91,
                     'Porcentaje de población nacida en otro estado' => 14.34,
-                    'Porcentaje de población con discapacidad' => 1.70
+                    'Porcentaje de población con discapacidad' => 1.70,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
+                    'Porcentaje de población de 18 y más' => 54.80,
+                    'Porcentaje de población de 18 y más postbásicos' => 31.72
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class AmpliacionVallesDelNazas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.91,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.36,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Cuarta actividad porcentaje' => 4.55,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 4.55
                 )
             )

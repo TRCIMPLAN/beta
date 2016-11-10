@@ -34,7 +34,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Palmas San Isidro';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'palmas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.98,
                     'Fecundidad promedio' => 1.68,
                     'Porcentaje de población nacida en otro estado' => 24.93,
-                    'Porcentaje de población con discapacidad' => 12.42
+                    'Porcentaje de población con discapacidad' => 12.42,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.90,
+                    'Porcentaje de población de 18 y más' => 83.87,
+                    'Porcentaje de población de 18 y más postbásicos' => 70.38
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 28.12,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 21.88,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 9.38,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 9.38,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

@@ -34,7 +34,7 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santiago Ramirez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santiago-ramirez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.79,
                     'Fecundidad promedio' => 2.76,
                     'Porcentaje de población nacida en otro estado' => 17.85,
-                    'Porcentaje de población con discapacidad' => 13.93
+                    'Porcentaje de población con discapacidad' => 13.93,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.68,
+                    'Porcentaje de población de 18 y más' => 61.02,
+                    'Porcentaje de población de 18 y más postbásicos' => 9.40
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.00,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 4.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 4.00,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

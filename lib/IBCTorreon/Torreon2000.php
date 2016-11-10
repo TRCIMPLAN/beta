@@ -34,7 +34,7 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreon 2000';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-2000';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.66,
                     'Fecundidad promedio' => 1.75,
                     'Porcentaje de población nacida en otro estado' => 15.62,
-                    'Porcentaje de población con discapacidad' => 1.22
+                    'Porcentaje de población con discapacidad' => 1.22,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
+                    'Porcentaje de población de 18 y más' => 56.94,
+                    'Porcentaje de población de 18 y más postbásicos' => 40.56
                 )
             ),
             'Educación' => array(
@@ -111,11 +114,11 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 11.11,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 11.11
                 )
             )

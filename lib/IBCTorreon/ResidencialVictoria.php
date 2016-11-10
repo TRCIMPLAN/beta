@@ -34,7 +34,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Victoria';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-victoria';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.62,
                     'Fecundidad promedio' => 1.92,
                     'Porcentaje de población nacida en otro estado' => 13.91,
-                    'Porcentaje de población con discapacidad' => 3.22
+                    'Porcentaje de población con discapacidad' => 3.22,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 56.26,
+                    'Porcentaje de población de 18 y más postbásicos' => 25.65
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.53,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.26,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 5.26
                 )
             )

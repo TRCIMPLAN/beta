@@ -34,7 +34,7 @@ class CiudadNazasPoligono27 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Nazas Poligono 27';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-nazas-poligono-27';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class CiudadNazasPoligono27 extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.43,
                     'Fecundidad promedio' => 1.84,
                     'Porcentaje de población nacida en otro estado' => 13.59,
-                    'Porcentaje de población con discapacidad' => 1.35
+                    'Porcentaje de población con discapacidad' => 1.35,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.08,
+                    'Porcentaje de población de 18 y más' => 56.29,
+                    'Porcentaje de población de 18 y más postbásicos' => 27.86
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class CiudadNazasPoligono27 extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 23.08,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 2.56
                 )
             )

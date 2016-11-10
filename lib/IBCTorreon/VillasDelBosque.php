@@ -34,7 +34,7 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Del Bosque';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.33,
                     'Fecundidad promedio' => 1.82,
                     'Porcentaje de población nacida en otro estado' => 16.97,
-                    'Porcentaje de población con discapacidad' => 2.21
+                    'Porcentaje de población con discapacidad' => 2.21,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.37,
+                    'Porcentaje de población de 18 y más' => 57.91,
+                    'Porcentaje de población de 18 y más postbásicos' => 25.32
                 )
             ),
             'Educación' => array(

@@ -34,7 +34,7 @@ class CiudadUniversitaria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Universitaria';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-universitaria';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -76,9 +76,9 @@ class CiudadUniversitaria extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 31.25,
                     'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Información Medios Masivos',
+                    'Cuarta actividad nombre' => 'Gubernamentales',
                     'Cuarta actividad porcentaje' => 6.25,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Información Medios Masivos',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

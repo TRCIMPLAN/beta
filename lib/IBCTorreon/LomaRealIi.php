@@ -34,7 +34,7 @@ class LomaRealIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Loma Real Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'loma-real-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LomaRealIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.30,
                     'Fecundidad promedio' => 1.87,
                     'Porcentaje de población nacida en otro estado' => 17.00,
-                    'Porcentaje de población con discapacidad' => 1.33
+                    'Porcentaje de población con discapacidad' => 1.33,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.35,
+                    'Porcentaje de población de 18 y más' => 59.41,
+                    'Porcentaje de población de 18 y más postbásicos' => 23.04
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class LomaRealIi extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.73,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 3.92,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 1.96
                 )
             )

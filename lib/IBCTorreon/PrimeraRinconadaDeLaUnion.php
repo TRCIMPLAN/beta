@@ -34,7 +34,7 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Primera Rinconada De La Union';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primera-rinconada-de-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.36,
                     'Porcentaje de población nacida en otro estado' => 8.60,
-                    'Porcentaje de población con discapacidad' => 5.92
+                    'Porcentaje de población con discapacidad' => 5.92,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.71,
+                    'Porcentaje de población de 18 y más' => 67.69,
+                    'Porcentaje de población de 18 y más postbásicos' => 14.41
                 )
             ),
             'Educación' => array(

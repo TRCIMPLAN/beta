@@ -34,7 +34,7 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Real Del Nogalar';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'real-del-nogalar';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 7.13,
                     'Fecundidad promedio' => 1.66,
                     'Porcentaje de población nacida en otro estado' => 22.27,
-                    'Porcentaje de población con discapacidad' => 1.73
+                    'Porcentaje de población con discapacidad' => 1.73,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.54,
+                    'Porcentaje de población de 18 y más' => 56.22,
+                    'Porcentaje de población de 18 y más postbásicos' => 47.03
                 )
             ),
             'Educación' => array(

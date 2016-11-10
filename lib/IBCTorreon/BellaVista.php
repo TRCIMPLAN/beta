@@ -34,7 +34,7 @@ class BellaVista extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Bella Vista';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bella-vista';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class BellaVista extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.81,
                     'Fecundidad promedio' => 2.47,
                     'Porcentaje de población nacida en otro estado' => 23.20,
-                    'Porcentaje de población con discapacidad' => 6.94
+                    'Porcentaje de población con discapacidad' => 6.94,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.31,
+                    'Porcentaje de población de 18 y más' => 64.99,
+                    'Porcentaje de población de 18 y más postbásicos' => 18.29
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class BellaVista extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 55.56,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 5.56,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 5.56,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 5.56
                 )
             )

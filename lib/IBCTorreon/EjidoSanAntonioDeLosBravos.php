@@ -34,7 +34,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido San Antonio De Los Bravos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-san-antonio-de-los-bravos';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 2.37,
                     'Porcentaje de población nacida en otro estado' => 8.84,
-                    'Porcentaje de población con discapacidad' => 7.51
+                    'Porcentaje de población con discapacidad' => 7.51,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.60,
+                    'Porcentaje de población de 18 y más' => 65.40,
+                    'Porcentaje de población de 18 y más postbásicos' => 21.77
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.68,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 6.45,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 6.45
                 )
             )

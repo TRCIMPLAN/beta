@@ -34,7 +34,7 @@ class VillaLosPinos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Los Pinos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-los-pinos';
         // La descripción y claves dan información a los buscadores y redes sociales

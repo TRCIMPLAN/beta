@@ -34,7 +34,7 @@ class SanEduardo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'San Eduardo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-eduardo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SanEduardo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.19,
                     'Porcentaje de población nacida en otro estado' => 15.11,
-                    'Porcentaje de población con discapacidad' => 3.07
+                    'Porcentaje de población con discapacidad' => 3.07,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.46,
+                    'Porcentaje de población de 18 y más' => 56.83,
+                    'Porcentaje de población de 18 y más postbásicos' => 39.57
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class SanEduardo extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.29,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

@@ -34,7 +34,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Aviacion';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.52,
                     'Fecundidad promedio' => 2.56,
                     'Porcentaje de población nacida en otro estado' => 18.23,
-                    'Porcentaje de población con discapacidad' => 4.28
+                    'Porcentaje de población con discapacidad' => 4.28,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.39,
+                    'Porcentaje de población de 18 y más' => 64.53,
+                    'Porcentaje de población de 18 y más postbásicos' => 18.40
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 14.42,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.58,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 3.85
                 )
             )

@@ -34,7 +34,7 @@ class CarmenRomano extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Carmen Romano';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'carmen-romano';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class CarmenRomano extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.39,
                     'Fecundidad promedio' => 2.47,
                     'Porcentaje de población nacida en otro estado' => 22.35,
-                    'Porcentaje de población con discapacidad' => 6.59
+                    'Porcentaje de población con discapacidad' => 6.59,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.83,
+                    'Porcentaje de población de 18 y más' => 65.46,
+                    'Porcentaje de población de 18 y más postbásicos' => 18.88
                 )
             ),
             'Educación' => array(

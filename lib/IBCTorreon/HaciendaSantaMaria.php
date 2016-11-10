@@ -34,7 +34,7 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Hacienda Santa Maria';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'hacienda-santa-maria';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.08,
                     'Fecundidad promedio' => 1.46,
                     'Porcentaje de población nacida en otro estado' => 14.16,
-                    'Porcentaje de población con discapacidad' => 6.44
+                    'Porcentaje de población con discapacidad' => 6.44,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.32,
+                    'Porcentaje de población de 18 y más' => 59.40,
+                    'Porcentaje de población de 18 y más postbásicos' => 44.29
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class HaciendaSantaMaria extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
                     'Cuarta actividad porcentaje' => 16.67
                 )
             )

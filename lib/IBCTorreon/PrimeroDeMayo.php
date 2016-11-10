@@ -34,7 +34,7 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Primero De Mayo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primero-de-mayo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.12,
                     'Fecundidad promedio' => 2.67,
                     'Porcentaje de población nacida en otro estado' => 14.43,
-                    'Porcentaje de población con discapacidad' => 6.66
+                    'Porcentaje de población con discapacidad' => 6.66,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.55,
+                    'Porcentaje de población de 18 y más' => 66.33,
+                    'Porcentaje de población de 18 y más postbásicos' => 17.07
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 62.07,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 13.79,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 6.90,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 6.90,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 3.45
                 )
             )

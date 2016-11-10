@@ -34,7 +34,7 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Periodistas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-periodistas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.91,
                     'Porcentaje de población nacida en otro estado' => 17.32,
-                    'Porcentaje de población con discapacidad' => 5.24
+                    'Porcentaje de población con discapacidad' => 5.24,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.18,
+                    'Porcentaje de población de 18 y más' => 54.21,
+                    'Porcentaje de población de 18 y más postbásicos' => 25.79
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 45.45,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 27.27,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

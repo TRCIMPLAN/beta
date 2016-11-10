@@ -151,7 +151,7 @@
           <h1 itemprop="name">Latinoamericano</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Latinoamericano de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Latinoamericano" src="../imagenes/imagen.jpg">
@@ -410,27 +410,27 @@ Latinoamericano sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">122</td>
+        <td class="derecha">130</td>
       </tr>
       <tr>
         <td>1° Comercio Menudeo</td>
-        <td class="derecha">45.90 %</td>
+        <td class="derecha">43.85 %</td>
       </tr>
       <tr>
         <td>2° Otros servicios, excepto Gobierno</td>
-        <td class="derecha">20.49 %</td>
+        <td class="derecha">19.23 %</td>
       </tr>
       <tr>
         <td>3° Preparación de Alimentos y Bebidas</td>
-        <td class="derecha">14.75 %</td>
+        <td class="derecha">15.38 %</td>
       </tr>
       <tr>
-        <td>4° Industria Manufacturera</td>
-        <td class="derecha">4.92 %</td>
+        <td>4° Educativos</td>
+        <td class="derecha">5.38 %</td>
       </tr>
       <tr>
-        <td>5° Gubernamentales</td>
-        <td class="derecha">4.10 %</td>
+        <td>5° Industria Manufacturera</td>
+        <td class="derecha">4.62 %</td>
       </tr>
     </tbody>
   </table>
@@ -779,15 +779,15 @@ Latinoamericano sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 45.9, '#59C38E', '45.9 %'],
-              ['2° Otros servicios, excepto Gobierno', 20.49, '#8EC359', '20.49 %'],
-              ['3° Preparación de Alimentos y Bebidas', 14.75, '#C38E59', '14.75 %'],
-              ['4° Industria Manufacturera', 4.92, '#80C0FF', '4.92 %'],
-              ['5° Gubernamentales', 4.1, '#59BFC3', '4.1 %']
+              ['1° Comercio Menudeo', 43.85, '#59C38E', '43.85 %'],
+              ['2° Otros servicios, excepto Gobierno', 19.23, '#8EC359', '19.23 %'],
+              ['3° Preparación de Alimentos y Bebidas', 15.38, '#C38E59', '15.38 %'],
+              ['4° Educativos', 5.38, '#80C0FF', '5.38 %'],
+              ['5° Industria Manufacturera', 4.62, '#59BFC3', '4.62 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '122 Unidades Económicas',
+            title: '130 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

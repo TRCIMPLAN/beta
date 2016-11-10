@@ -34,7 +34,7 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreon Y Anexas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-y-anexas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.30,
                     'Fecundidad promedio' => 2.63,
                     'Porcentaje de población nacida en otro estado' => 12.74,
-                    'Porcentaje de población con discapacidad' => 4.22
+                    'Porcentaje de población con discapacidad' => 4.22,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.02,
+                    'Porcentaje de población de 18 y más' => 66.50,
+                    'Porcentaje de población de 18 y más postbásicos' => 16.85
                 )
             ),
             'Educación' => array(
@@ -113,11 +116,11 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 21.43,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 7.14,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

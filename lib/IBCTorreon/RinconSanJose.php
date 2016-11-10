@@ -34,7 +34,7 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon San Jose';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-san-jose';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.46,
                     'Fecundidad promedio' => 1.36,
                     'Porcentaje de población nacida en otro estado' => 20.72,
-                    'Porcentaje de población con discapacidad' => 0.21
+                    'Porcentaje de población con discapacidad' => 0.21,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.07,
+                    'Porcentaje de población de 18 y más' => 59.84,
+                    'Porcentaje de población de 18 y más postbásicos' => 54.92
                 )
             ),
             'Educación' => array(
@@ -108,11 +111,9 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Inmobiliarios',
-                    'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
-                    'Segunda actividad porcentaje' => 33.33
+                    'Total Actividades Económicas' => 1,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 100.00
                 )
             )
         );

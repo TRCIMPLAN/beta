@@ -34,7 +34,7 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon De Las Trojes';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-las-trojes';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.57,
                     'Porcentaje de población nacida en otro estado' => 20.37,
-                    'Porcentaje de población con discapacidad' => 10.17
+                    'Porcentaje de población con discapacidad' => 10.17,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 62.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 61.11
                 )
             ),
             'Educación' => array(
@@ -111,11 +114,11 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 10,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 30.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.00,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 10.00

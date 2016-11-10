@@ -34,7 +34,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jose Ramirez Mijares';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-ramirez-mijares';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.07,
                     'Fecundidad promedio' => 2.32,
                     'Porcentaje de población nacida en otro estado' => 11.99,
-                    'Porcentaje de población con discapacidad' => 6.68
+                    'Porcentaje de población con discapacidad' => 6.68,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.90,
+                    'Porcentaje de población de 18 y más' => 65.70,
+                    'Porcentaje de población de 18 y más postbásicos' => 17.25
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.50,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.00,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.00
                 )
             )

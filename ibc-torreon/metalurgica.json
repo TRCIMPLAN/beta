@@ -13,11 +13,9 @@
     },
     "Unidades Económicas":{
       "2010":{
-        "Total Actividades Económicas":3,
+        "Total Actividades Económicas":2,
         "Primer actividad nombre":"Industria Manufacturera",
-        "Primer actividad porcentaje":66.67,
-        "Segunda actividad nombre":"Transportes, Correo, Almacenamiento",
-        "Segunda actividad porcentaje":33.33
+        "Primer actividad porcentaje":100
       }
     }
   }

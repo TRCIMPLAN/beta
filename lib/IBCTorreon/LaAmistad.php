@@ -34,7 +34,7 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Amistad';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-amistad';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.64,
                     'Fecundidad promedio' => 2.31,
                     'Porcentaje de población nacida en otro estado' => 17.88,
-                    'Porcentaje de población con discapacidad' => 5.70
+                    'Porcentaje de población con discapacidad' => 5.70,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.34,
+                    'Porcentaje de población de 18 y más' => 66.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 24.86
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class LaAmistad extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 41,
                     'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 36.59,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 17.07,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 17.07,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.32,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.32
                 )
             )

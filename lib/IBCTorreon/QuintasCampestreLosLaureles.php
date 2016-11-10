@@ -34,7 +34,7 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas Campestre - Los Laureles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-campestre-los-laureles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 17.62,
                     'Fecundidad promedio' => 1.50,
                     'Porcentaje de población nacida en otro estado' => 26.02,
-                    'Porcentaje de población con discapacidad' => 2.38
+                    'Porcentaje de población con discapacidad' => 2.38,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 46.46,
+                    'Porcentaje de población de 18 y más postbásicos' => 43.62
                 )
             ),
             'Educación' => array(
@@ -111,9 +114,9 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 4,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Inmobiliarios',
+                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 25.00
                 )
             )

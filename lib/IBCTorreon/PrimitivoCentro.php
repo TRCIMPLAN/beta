@@ -34,7 +34,7 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Primitivo (Centro)';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primitivo-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 5.12,
                     'Fecundidad promedio' => 1.97,
                     'Porcentaje de población nacida en otro estado' => 19.54,
-                    'Porcentaje de población con discapacidad' => 8.83
+                    'Porcentaje de población con discapacidad' => 8.83,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.52,
+                    'Porcentaje de población de 18 y más' => 70.19,
+                    'Porcentaje de población de 18 y más postbásicos' => 32.93
                 )
             ),
             'Educación' => array(
@@ -123,17 +126,6 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
-
-    /**
-     * Mapas
-     *
-     * @return array Arreglo asociativo
-     */
-    public function mapas() {
-        return array(
-            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
-        );
-    } // mapas
 
 } // Clase PrimitivoCentro
 

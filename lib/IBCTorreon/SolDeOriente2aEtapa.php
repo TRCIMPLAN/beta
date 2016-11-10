@@ -34,7 +34,7 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Sol De Oriente 2A. Etapa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'sol-de-oriente-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.73,
                     'Porcentaje de población nacida en otro estado' => 15.16,
-                    'Porcentaje de población con discapacidad' => 1.01
+                    'Porcentaje de población con discapacidad' => 1.01,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
+                    'Porcentaje de población de 18 y más' => 58.83,
+                    'Porcentaje de población de 18 y más postbásicos' => 29.56
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.22,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 5.56,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 5.56,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.56
                 )
             )

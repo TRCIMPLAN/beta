@@ -34,7 +34,7 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Elsa Hernandez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'elsa-hernandez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 4.00,
                     'Fecundidad promedio' => 2.59,
                     'Porcentaje de población nacida en otro estado' => 11.22,
-                    'Porcentaje de población con discapacidad' => 1.90
+                    'Porcentaje de población con discapacidad' => 1.90,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.05,
+                    'Porcentaje de población de 18 y más' => 62.06,
+                    'Porcentaje de población de 18 y más postbásicos' => 13.90
                 )
             ),
             'Educación' => array(

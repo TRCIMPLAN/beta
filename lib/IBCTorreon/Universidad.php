@@ -34,7 +34,7 @@ class Universidad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Universidad';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'universidad';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Universidad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.10,
                     'Fecundidad promedio' => 2.09,
                     'Porcentaje de población nacida en otro estado' => 17.56,
-                    'Porcentaje de población con discapacidad' => 0.36
+                    'Porcentaje de población con discapacidad' => 0.36,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.63,
+                    'Porcentaje de población de 18 y más' => 57.84,
+                    'Porcentaje de población de 18 y más postbásicos' => 22.33
                 )
             ),
             'Educación' => array(
@@ -109,15 +112,15 @@ class Universidad extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 11,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 27.27,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 27.27,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 18.18,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

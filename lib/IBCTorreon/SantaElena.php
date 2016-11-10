@@ -34,7 +34,7 @@ class SantaElena extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santa Elena';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-elena';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.92,
                     'Fecundidad promedio' => 1.64,
                     'Porcentaje de población nacida en otro estado' => 19.01,
-                    'Porcentaje de población con discapacidad' => 1.15
+                    'Porcentaje de población con discapacidad' => 1.15,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
+                    'Porcentaje de población de 18 y más' => 62.99,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.61
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 8.82,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

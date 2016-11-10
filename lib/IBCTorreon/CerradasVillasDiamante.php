@@ -34,7 +34,7 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Cerradas Villas Diamante';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cerradas-villas-diamante';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.76,
                     'Fecundidad promedio' => 1.44,
                     'Porcentaje de población nacida en otro estado' => 12.84,
-                    'Porcentaje de población con discapacidad' => 0.00
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 62.39,
+                    'Porcentaje de población de 18 y más postbásicos' => 54.13
                 )
             ),
             'Educación' => array(

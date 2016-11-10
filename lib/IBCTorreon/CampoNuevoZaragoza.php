@@ -34,7 +34,7 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Campo Nuevo Zaragoza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'campo-nuevo-zaragoza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.81,
                     'Porcentaje de población nacida en otro estado' => 15.18,
-                    'Porcentaje de población con discapacidad' => 2.12
+                    'Porcentaje de población con discapacidad' => 2.12,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
+                    'Porcentaje de población de 18 y más' => 54.22,
+                    'Porcentaje de población de 18 y más postbásicos' => 32.61
                 )
             ),
             'Educación' => array(

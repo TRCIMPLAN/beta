@@ -34,7 +34,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Misiones';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-misiones';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 5.92,
                     'Fecundidad promedio' => 1.46,
                     'Porcentaje de población nacida en otro estado' => 32.89,
-                    'Porcentaje de población con discapacidad' => 0.00
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 71.05,
+                    'Porcentaje de población de 18 y más postbásicos' => 65.13
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.71,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 1.79
                 )
             )

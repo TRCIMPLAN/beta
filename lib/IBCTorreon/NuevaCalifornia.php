@@ -34,7 +34,7 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nueva California';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-california';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 2.40,
                     'Porcentaje de población nacida en otro estado' => 12.18,
-                    'Porcentaje de población con discapacidad' => 5.51
+                    'Porcentaje de población con discapacidad' => 5.51,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.23,
+                    'Porcentaje de población de 18 y más' => 63.93,
+                    'Porcentaje de población de 18 y más postbásicos' => 19.76
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.23,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 4.62
                 )
             )

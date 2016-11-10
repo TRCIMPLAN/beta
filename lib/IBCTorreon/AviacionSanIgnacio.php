@@ -34,7 +34,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Aviacion San Ignacio';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion-san-ignacio';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.34,
                     'Fecundidad promedio' => 1.76,
                     'Porcentaje de población nacida en otro estado' => 15.96,
-                    'Porcentaje de población con discapacidad' => 2.22
+                    'Porcentaje de población con discapacidad' => 2.22,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.07,
+                    'Porcentaje de población de 18 y más' => 58.72,
+                    'Porcentaje de población de 18 y más postbásicos' => 36.67
                 )
             ),
             'Educación' => array(
@@ -115,7 +118,7 @@ class AviacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 30.00,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 5.00,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.00

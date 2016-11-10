@@ -34,7 +34,7 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa Poniente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-villa-poniente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.73,
                     'Fecundidad promedio' => 2.28,
                     'Porcentaje de población nacida en otro estado' => 18.24,
-                    'Porcentaje de población con discapacidad' => 8.31
+                    'Porcentaje de población con discapacidad' => 8.31,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.91,
+                    'Porcentaje de población de 18 y más' => 71.94,
+                    'Porcentaje de población de 18 y más postbásicos' => 36.86
                 )
             ),
             'Educación' => array(

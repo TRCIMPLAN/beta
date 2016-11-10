@@ -34,7 +34,7 @@ class TerceroDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Tercero De Cobian (Centro)';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'tercero-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,81 +59,73 @@ class TerceroDeCobianCentro extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 9229,
-                    'Porcentaje de población masculina' => 45.86,
-                    'Porcentaje de población femenina' => 54.14,
-                    'Porcentaje de población de 0 a 14 años' => 17.52,
-                    'Porcentaje de población de 15 a 64 años' => 65.05,
-                    'Porcentaje de población de 65 y más años' => 15.38,
+                    'Población total' => 9277,
+                    'Porcentaje de población masculina' => 45.90,
+                    'Porcentaje de población femenina' => 54.10,
+                    'Porcentaje de población de 0 a 14 años' => 17.51,
+                    'Porcentaje de población de 15 a 64 años' => 65.08,
+                    'Porcentaje de población de 65 y más años' => 15.36,
                     'Porcentaje de población no especificada' => 2.05,
                     'Fecundidad promedio' => 2.19,
-                    'Porcentaje de población nacida en otro estado' => 17.90,
-                    'Porcentaje de población con discapacidad' => 7.41
+                    'Porcentaje de población nacida en otro estado' => 17.86,
+                    'Porcentaje de población con discapacidad' => 7.40,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.78,
+                    'Porcentaje de población de 18 y más' => 75.60,
+                    'Porcentaje de población de 18 y más postbásicos' => 41.99
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.77,
-                    'Grado Promedio de Escolaridad masculina' => 11.10,
+                    'Grado Promedio de Escolaridad' => 10.76,
+                    'Grado Promedio de Escolaridad masculina' => 11.09,
                     'Grado Promedio de Escolaridad femenina' => 10.50
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 52.59,
-                    'Población Económicamente Activa masculina' => 56.92,
-                    'Población Económicamente Activa femenina' => 43.08,
-                    'Población Ocupada' => 92.24,
-                    'Población Ocupada masculina' => 56.36,
-                    'Población Ocupada femenina' => 43.64,
-                    'Población Desocupada' => 7.76,
-                    'Derechohabiencia' => 69.03
+                    'Población Económicamente Activa' => 52.62,
+                    'Población Económicamente Activa masculina' => 56.95,
+                    'Población Económicamente Activa femenina' => 43.05,
+                    'Población Ocupada' => 92.26,
+                    'Población Ocupada masculina' => 56.38,
+                    'Población Ocupada femenina' => 43.62,
+                    'Población Desocupada' => 7.74,
+                    'Derechohabiencia' => 68.92
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 2824,
-                    'Hogares Jefatura masculina' => 59.71,
-                    'Hogares Jefatura femenina' => 40.29,
+                    'Hogares' => 2833,
+                    'Hogares Jefatura masculina' => 59.66,
+                    'Hogares Jefatura femenina' => 40.34,
                     'Ocupación por Vivienda' => 3.27,
                     'Viviendas con Electricidad' => 99.71,
-                    'Viviendas con Agua' => 98.80,
-                    'Viviendas con Drenaje' => 98.65,
-                    'Viviendas con Televisión' => 97.59,
-                    'Viviendas con Automóvil' => 53.04,
-                    'Viviendas con Computadora' => 42.48,
-                    'Viviendas con Celular' => 69.72,
-                    'Viviendas con Internet' => 33.43
+                    'Viviendas con Agua' => 98.81,
+                    'Viviendas con Drenaje' => 98.66,
+                    'Viviendas con Televisión' => 97.60,
+                    'Viviendas con Automóvil' => 53.08,
+                    'Viviendas con Computadora' => 42.49,
+                    'Viviendas con Celular' => 69.64,
+                    'Viviendas con Internet' => 33.47
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 1963,
+                    'Total Actividades Económicas' => 1987,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 25.57,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Segunda actividad porcentaje' => 18.75,
+                    'Segunda actividad porcentaje' => 18.87,
                     'Tercera actividad nombre' => 'Salud',
-                    'Tercera actividad porcentaje' => 12.38,
+                    'Tercera actividad porcentaje' => 12.23,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Cuarta actividad porcentaje' => 10.65,
+                    'Cuarta actividad porcentaje' => 10.62,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
-                    'Quinta actividad porcentaje' => 8.25
+                    'Quinta actividad porcentaje' => 8.40
                 )
             )
         );
     } // datos
-
-    /**
-     * Mapas
-     *
-     * @return array Arreglo asociativo
-     */
-    public function mapas() {
-        return array(
-            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
-        );
-    } // mapas
 
 } // Clase TerceroDeCobianCentro
 

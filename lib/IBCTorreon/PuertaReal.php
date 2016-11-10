@@ -34,7 +34,7 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Puerta Real';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'puerta-real';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,56 +59,63 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 880,
+                    'Población total' => 886,
                     'Porcentaje de población masculina' => 48.75,
                     'Porcentaje de población femenina' => 51.25,
-                    'Porcentaje de población de 0 a 14 años' => 33.18,
-                    'Porcentaje de población de 15 a 64 años' => 64.77,
+                    'Porcentaje de población de 0 a 14 años' => 33.15,
+                    'Porcentaje de población de 15 a 64 años' => 64.80,
                     'Porcentaje de población de 65 y más años' => 1.93,
                     'Porcentaje de población no especificada' => 0.12,
                     'Fecundidad promedio' => 1.29,
-                    'Porcentaje de población nacida en otro estado' => 32.16,
-                    'Porcentaje de población con discapacidad' => 1.06
+                    'Porcentaje de población nacida en otro estado' => 32.05,
+                    'Porcentaje de población con discapacidad' => 1.06,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 62.48,
+                    'Porcentaje de población de 18 y más postbásicos' => 59.58
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.20,
-                    'Grado Promedio de Escolaridad masculina' => 15.57,
-                    'Grado Promedio de Escolaridad femenina' => 14.85
+                    'Grado Promedio de Escolaridad' => 15.16,
+                    'Grado Promedio de Escolaridad masculina' => 15.54,
+                    'Grado Promedio de Escolaridad femenina' => 14.82
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 64.90,
-                    'Población Económicamente Activa masculina' => 60.37,
-                    'Población Económicamente Activa femenina' => 39.63,
-                    'Población Ocupada' => 97.99,
+                    'Población Económicamente Activa' => 64.83,
+                    'Población Económicamente Activa masculina' => 60.38,
+                    'Población Económicamente Activa femenina' => 39.62,
+                    'Población Ocupada' => 97.96,
                     'Población Ocupada masculina' => 60.81,
                     'Población Ocupada femenina' => 39.19,
-                    'Población Desocupada' => 2.01,
-                    'Derechohabiencia' => 86.14
+                    'Población Desocupada' => 2.04,
+                    'Derechohabiencia' => 86.07
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 274,
-                    'Hogares Jefatura masculina' => 64.06,
-                    'Hogares Jefatura femenina' => 35.94,
-                    'Ocupación por Vivienda' => 3.21,
+                    'Hogares' => 275,
+                    'Hogares Jefatura masculina' => 64.05,
+                    'Hogares Jefatura femenina' => 35.95,
+                    'Ocupación por Vivienda' => 3.22,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
-                    'Viviendas con Televisión' => 99.64,
-                    'Viviendas con Automóvil' => 96.35,
-                    'Viviendas con Computadora' => 85.40,
-                    'Viviendas con Celular' => 99.64,
-                    'Viviendas con Internet' => 72.74
+                    'Viviendas con Televisión' => 99.89,
+                    'Viviendas con Automóvil' => 96.37,
+                    'Viviendas con Computadora' => 85.38,
+                    'Viviendas con Celular' => 99.80,
+                    'Viviendas con Internet' => 72.68
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 0
+                    'Total Actividades Económicas' => 4,
+                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad porcentaje' => 75.00,
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad porcentaje' => 25.00
                 )
             )
         );

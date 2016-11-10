@@ -151,7 +151,7 @@
           <h1 itemprop="name">Metalurgica</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Metalurgica de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Metalurgica" src="../imagenes/imagen.jpg">
@@ -254,15 +254,15 @@ La cantidad de Hogares es cero.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">3</td>
+        <td class="derecha">2</td>
       </tr>
       <tr>
         <td>1° Industria Manufacturera</td>
-        <td class="derecha">66.67 %</td>
+        <td class="derecha">100.00 %</td>
       </tr>
       <tr>
-        <td>2° Transportes, Correo, Almacenamiento</td>
-        <td class="derecha">33.33 %</td>
+        <td>ND</td>
+        <td class="derecha">ND</td>
       </tr>
       <tr>
         <td>ND</td>
@@ -410,12 +410,11 @@ La cantidad de Hogares es cero.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Industria Manufacturera', 66.67, '#59C38E', '66.67 %'],
-              ['2° Transportes, Correo, Almacenamiento', 33.33, '#8EC359', '33.33 %']
+              ['1° Industria Manufacturera', 100, '#59C38E', '100 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '3 Unidades Económicas',
+            title: '2 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

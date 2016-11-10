@@ -1,0 +1,70 @@
+[{
+  "Nombre":"Villas Saltillo 400 - Palmas Aeropuerto",
+  "IBC":{
+    "Demografía":{
+      "2010":{
+        "Población total":367,
+        "Porcentaje de población masculina":50.68,
+        "Porcentaje de población femenina":49.32,
+        "Porcentaje de población de 0 a 14 años":25.61,
+        "Porcentaje de población de 15 a 64 años":66.49,
+        "Porcentaje de población de 65 y más años":3,
+        "Porcentaje de población no especificada":4.9,
+        "Fecundidad promedio":1.56,
+        "Porcentaje de población nacida en otro estado":16.62,
+        "Porcentaje de población con discapacidad":1.36,
+        "Porcentaje de población de 15 y más analfabeta":0.82,
+        "Porcentaje de población de 18 y más":60.76,
+        "Porcentaje de población de 18 y más postbásicos":46.32
+      }
+    },
+    "Educación":{
+      "2010":{
+        "Grado Promedio de Escolaridad":12.63,
+        "Grado Promedio de Escolaridad masculina":12.91,
+        "Grado Promedio de Escolaridad femenina":12.37
+      }
+    },
+    "Características Económicas":{
+      "2010":{
+        "Población Económicamente Activa":56.55,
+        "Población Económicamente Activa masculina":60.37,
+        "Población Económicamente Activa femenina":39.63,
+        "Población Ocupada":92.15,
+        "Población Ocupada masculina":60.53,
+        "Población Ocupada femenina":39.47,
+        "Población Desocupada":7.85,
+        "Derechohabiencia":78.47
+      }
+    },
+    "Viviendas":{
+      "2010":{
+        "Hogares":95,
+        "Hogares Jefatura masculina":77.89,
+        "Hogares Jefatura femenina":22.11,
+        "Ocupación por Vivienda":3.86,
+        "Viviendas con Electricidad":98.95,
+        "Viviendas con Agua":98.95,
+        "Viviendas con Drenaje":98.95,
+        "Viviendas con Televisión":98.95,
+        "Viviendas con Automóvil":81.05,
+        "Viviendas con Computadora":72.63,
+        "Viviendas con Celular":90.53,
+        "Viviendas con Internet":63.16
+      }
+    },
+    "Unidades Económicas":{
+      "2010":{
+        "Total Actividades Económicas":10,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":40,
+        "Segunda actividad nombre":"Industria Manufacturera",
+        "Segunda actividad porcentaje":30,
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad porcentaje":20,
+        "Cuarta actividad nombre":"Financieros y Seguros",
+        "Cuarta actividad porcentaje":10
+      }
+    }
+  }
+}]

@@ -34,7 +34,7 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Union';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.62,
                     'Fecundidad promedio' => 2.54,
                     'Porcentaje de población nacida en otro estado' => 13.45,
-                    'Porcentaje de población con discapacidad' => 5.81
+                    'Porcentaje de población con discapacidad' => 5.81,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.38,
+                    'Porcentaje de población de 18 y más' => 61.71,
+                    'Porcentaje de población de 18 y más postbásicos' => 15.16
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.86,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

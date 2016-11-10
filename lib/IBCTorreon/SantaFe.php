@@ -34,7 +34,7 @@ class SantaFe extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santa Fe';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-fe';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.37,
                     'Fecundidad promedio' => 1.67,
                     'Porcentaje de población nacida en otro estado' => 24.02,
-                    'Porcentaje de población con discapacidad' => 21.24
+                    'Porcentaje de población con discapacidad' => 21.24,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.13,
+                    'Porcentaje de población de 18 y más' => 66.95,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.12
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class SantaFe extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 16,
+                    'Total Actividades Económicas' => 21,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 43.75,
+                    'Primer actividad porcentaje' => 42.86,
                     'Segunda actividad nombre' => 'Educativos',
-                    'Segunda actividad porcentaje' => 31.25,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Salud',
-                    'Cuarta actividad porcentaje' => 6.25,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Quinta actividad porcentaje' => 6.25
+                    'Segunda actividad porcentaje' => 33.33,
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad porcentaje' => 9.52,
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad porcentaje' => 9.52,
+                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad porcentaje' => 4.76
                 )
             )
         );

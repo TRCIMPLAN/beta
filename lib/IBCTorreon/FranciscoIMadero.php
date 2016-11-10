@@ -34,7 +34,7 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Francisco I. Madero';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-i-madero';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.24,
                     'Fecundidad promedio' => 2.51,
                     'Porcentaje de población nacida en otro estado' => 19.20,
-                    'Porcentaje de población con discapacidad' => 4.64
+                    'Porcentaje de población con discapacidad' => 4.64,
+                    'Porcentaje de población de 15 y más analfabeta' => 4.67,
+                    'Porcentaje de población de 18 y más' => 65.91,
+                    'Porcentaje de población de 18 y más postbásicos' => 13.78
                 )
             ),
             'Educación' => array(
@@ -108,15 +111,13 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 10,
+                    'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 70.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
-                    'Segunda actividad porcentaje' => 10.00,
-                    'Tercera actividad nombre' => 'Educativos',
-                    'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Cuarta actividad porcentaje' => 10.00
+                    'Primer actividad porcentaje' => 77.78,
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad porcentaje' => 11.11,
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad porcentaje' => 11.11
                 )
             )
         );

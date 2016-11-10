@@ -34,7 +34,7 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Romana';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-romana';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 13.01,
                     'Fecundidad promedio' => 1.47,
                     'Porcentaje de población nacida en otro estado' => 29.77,
-                    'Porcentaje de población con discapacidad' => 1.12
+                    'Porcentaje de población con discapacidad' => 1.12,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
+                    'Porcentaje de población de 18 y más' => 56.25,
+                    'Porcentaje de población de 18 y más postbásicos' => 49.99
                 )
             ),
             'Educación' => array(
@@ -109,9 +112,9 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 33.33,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 33.33

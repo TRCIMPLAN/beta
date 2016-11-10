@@ -34,7 +34,7 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Fraccionamiento La Cienega';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fraccionamiento-la-cienega';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.32,
                     'Porcentaje de población nacida en otro estado' => 37.72,
-                    'Porcentaje de población con discapacidad' => 0.00
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 69.30,
+                    'Porcentaje de población de 18 y más postbásicos' => 64.04
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 13,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 30.77,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 23.08,
+                    'Total Actividades Económicas' => 48,
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad porcentaje' => 33.33,
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad porcentaje' => 22.92,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Tercera actividad porcentaje' => 23.08,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
-                    'Cuarta actividad porcentaje' => 15.38,
-                    'Quinta actividad nombre' => 'Salud',
-                    'Quinta actividad porcentaje' => 7.69
+                    'Tercera actividad porcentaje' => 18.75,
+                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad porcentaje' => 8.33,
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad porcentaje' => 8.33
                 )
             )
         );

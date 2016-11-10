@@ -34,7 +34,7 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Miguel Aleman';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'miguel-aleman';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.41,
                     'Fecundidad promedio' => 2.56,
                     'Porcentaje de población nacida en otro estado' => 22.03,
-                    'Porcentaje de población con discapacidad' => 7.02
+                    'Porcentaje de población con discapacidad' => 7.02,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.44,
+                    'Porcentaje de población de 18 y más' => 67.54,
+                    'Porcentaje de población de 18 y más postbásicos' => 29.02
                 )
             ),
             'Educación' => array(

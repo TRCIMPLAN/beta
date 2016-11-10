@@ -34,7 +34,7 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nueva Los Angeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 11.09,
                     'Fecundidad promedio' => 2.05,
                     'Porcentaje de población nacida en otro estado' => 22.91,
-                    'Porcentaje de población con discapacidad' => 6.98
+                    'Porcentaje de población con discapacidad' => 6.98,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
+                    'Porcentaje de población de 18 y más' => 70.83,
+                    'Porcentaje de población de 18 y más postbásicos' => 57.92
                 )
             ),
             'Educación' => array(

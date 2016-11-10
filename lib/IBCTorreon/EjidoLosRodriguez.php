@@ -34,7 +34,7 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Los Rodriguez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-los-rodriguez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 4.08,
                     'Fecundidad promedio' => 2.42,
                     'Porcentaje de población nacida en otro estado' => 19.49,
-                    'Porcentaje de población con discapacidad' => 2.87
+                    'Porcentaje de población con discapacidad' => 2.87,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.11,
+                    'Porcentaje de población de 18 y más' => 50.00,
+                    'Porcentaje de población de 18 y más postbásicos' => 12.27
                 )
             ),
             'Educación' => array(

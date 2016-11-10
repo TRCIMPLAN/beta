@@ -34,7 +34,7 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.51,
                     'Porcentaje de población nacida en otro estado' => 21.57,
-                    'Porcentaje de población con discapacidad' => 2.78
+                    'Porcentaje de población con discapacidad' => 2.78,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
+                    'Porcentaje de población de 18 y más' => 72.36,
+                    'Porcentaje de población de 18 y más postbásicos' => 68.09
                 )
             ),
             'Educación' => array(
@@ -115,7 +118,7 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.00,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.00,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.00,
                     'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 10.00

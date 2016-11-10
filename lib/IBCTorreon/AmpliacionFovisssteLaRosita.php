@@ -34,7 +34,7 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion Fovissste La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-fovissste-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.80,
                     'Porcentaje de población nacida en otro estado' => 24.44,
-                    'Porcentaje de población con discapacidad' => 3.32
+                    'Porcentaje de población con discapacidad' => 3.32,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
+                    'Porcentaje de población de 18 y más' => 74.87,
+                    'Porcentaje de población de 18 y más postbásicos' => 59.81
                 )
             ),
             'Educación' => array(
@@ -109,9 +112,9 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 5,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 40.00,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.00

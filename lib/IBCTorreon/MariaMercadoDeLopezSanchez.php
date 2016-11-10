@@ -34,7 +34,7 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Maria Mercado De Lopez Sanchez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'maria-mercado-de-lopez-sanchez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 8.49,
                     'Fecundidad promedio' => 2.49,
                     'Porcentaje de población nacida en otro estado' => 17.02,
-                    'Porcentaje de población con discapacidad' => 2.92
+                    'Porcentaje de población con discapacidad' => 2.92,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.30,
+                    'Porcentaje de población de 18 y más' => 49.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 5.95
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 18.88,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.99,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

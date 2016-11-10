@@ -1,0 +1,62 @@
+[{
+  "Nombre":"Residencial Frondoso",
+  "IBC":{
+    "Demografía":{
+      "2010":{
+        "Población total":271,
+        "Porcentaje de población masculina":48.71,
+        "Porcentaje de población femenina":51.29,
+        "Porcentaje de población de 0 a 14 años":26.94,
+        "Porcentaje de población de 15 a 64 años":62.36,
+        "Porcentaje de población de 65 y más años":4.06,
+        "Porcentaje de población no especificada":6.64,
+        "Fecundidad promedio":1.49,
+        "Porcentaje de población nacida en otro estado":19.56,
+        "Porcentaje de población con discapacidad":1.48,
+        "Porcentaje de población de 15 y más analfabeta":0,
+        "Porcentaje de población de 18 y más":59.41,
+        "Porcentaje de población de 18 y más postbásicos":57.2
+      }
+    },
+    "Educación":{
+      "2010":{
+        "Grado Promedio de Escolaridad":14.86,
+        "Grado Promedio de Escolaridad masculina":15.06,
+        "Grado Promedio de Escolaridad femenina":14.66
+      }
+    },
+    "Características Económicas":{
+      "2010":{
+        "Población Económicamente Activa":54.04,
+        "Población Económicamente Activa masculina":60.75,
+        "Población Económicamente Activa femenina":39.25,
+        "Población Ocupada":99.06,
+        "Población Ocupada masculina":60.38,
+        "Población Ocupada femenina":39.62,
+        "Población Desocupada":0.94,
+        "Derechohabiencia":82.29
+      }
+    },
+    "Viviendas":{
+      "2010":{
+        "Hogares":65,
+        "Hogares Jefatura masculina":87.69,
+        "Hogares Jefatura femenina":12.31,
+        "Ocupación por Vivienda":4.17,
+        "Viviendas con Electricidad":98.46,
+        "Viviendas con Agua":96.92,
+        "Viviendas con Drenaje":96.92,
+        "Viviendas con Televisión":98.46,
+        "Viviendas con Automóvil":96.92,
+        "Viviendas con Computadora":90.77,
+        "Viviendas con Celular":95.38,
+        "Viviendas con Internet":87.69
+      }
+    },
+    "Unidades Económicas":{
+      "2010":{
+        "Total Actividades Económicas":0
+      }
+    }
+  }
+}]

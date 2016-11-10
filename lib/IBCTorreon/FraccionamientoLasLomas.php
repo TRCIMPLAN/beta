@@ -34,7 +34,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Fraccionamiento Las Lomas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fraccionamiento-las-lomas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.69,
                     'Fecundidad promedio' => 1.39,
                     'Porcentaje de población nacida en otro estado' => 26.42,
-                    'Porcentaje de población con discapacidad' => 1.58
+                    'Porcentaje de población con discapacidad' => 1.58,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 63.09,
+                    'Porcentaje de población de 18 y más postbásicos' => 57.27
                 )
             ),
             'Educación' => array(
@@ -111,9 +114,9 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 4,
                     'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 25.00
                 )
             )

@@ -34,7 +34,7 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Veintiocho De Abril';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'veintiocho-de-abril';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.77,
                     'Fecundidad promedio' => 2.15,
                     'Porcentaje de población nacida en otro estado' => 13.08,
-                    'Porcentaje de población con discapacidad' => 6.53
+                    'Porcentaje de población con discapacidad' => 6.53,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.94,
+                    'Porcentaje de población de 18 y más' => 68.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 28.40
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.32,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 21.05,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 10.53,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 10.53
                 )
             )

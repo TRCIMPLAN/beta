@@ -34,7 +34,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Campestre La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-campestre-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 8.11,
                     'Fecundidad promedio' => 1.82,
                     'Porcentaje de población nacida en otro estado' => 18.76,
-                    'Porcentaje de población con discapacidad' => 1.26
+                    'Porcentaje de población con discapacidad' => 1.26,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
+                    'Porcentaje de población de 18 y más' => 70.04,
+                    'Porcentaje de población de 18 y más postbásicos' => 63.71
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.70,
                     'Cuarta actividad nombre' => 'Financieros y Seguros',
                     'Cuarta actividad porcentaje' => 5.54,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.62
                 )
             )

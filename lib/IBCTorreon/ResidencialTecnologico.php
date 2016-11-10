@@ -34,7 +34,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Tecnologico';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-tecnologico';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.38,
                     'Porcentaje de población nacida en otro estado' => 16.30,
-                    'Porcentaje de población con discapacidad' => 0.00
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 73.91,
+                    'Porcentaje de población de 18 y más postbásicos' => 71.74
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 11.76,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 1.96,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 0.98
                 )
             )

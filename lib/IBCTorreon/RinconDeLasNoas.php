@@ -34,7 +34,7 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon De Las Noas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-las-noas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.80,
                     'Porcentaje de población nacida en otro estado' => 13.84,
-                    'Porcentaje de población con discapacidad' => 2.07
+                    'Porcentaje de población con discapacidad' => 2.07,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.38,
+                    'Porcentaje de población de 18 y más' => 55.37,
+                    'Porcentaje de población de 18 y más postbásicos' => 28.57
                 )
             ),
             'Educación' => array(

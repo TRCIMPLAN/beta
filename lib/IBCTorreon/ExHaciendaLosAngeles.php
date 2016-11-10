@@ -34,7 +34,7 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda Los Angeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ex-hacienda-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.84,
                     'Porcentaje de población nacida en otro estado' => 19.84,
-                    'Porcentaje de población con discapacidad' => 1.52
+                    'Porcentaje de población con discapacidad' => 1.52,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 72.00,
+                    'Porcentaje de población de 18 y más postbásicos' => 62.96
                 )
             ),
             'Educación' => array(

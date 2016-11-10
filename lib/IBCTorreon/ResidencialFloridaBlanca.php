@@ -34,7 +34,7 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Florida Blanca';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-florida-blanca';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.17,
                     'Fecundidad promedio' => 1.50,
                     'Porcentaje de población nacida en otro estado' => 17.43,
-                    'Porcentaje de población con discapacidad' => 2.39
+                    'Porcentaje de población con discapacidad' => 2.39,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.17,
+                    'Porcentaje de población de 18 y más' => 63.44,
+                    'Porcentaje de población de 18 y más postbásicos' => 57.38
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class ResidencialFloridaBlanca extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 20.00,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 20.00,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 20.00
                 )
             )

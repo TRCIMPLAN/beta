@@ -34,7 +34,7 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Ignacio Allende';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-ignacio-allende';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.52,
                     'Fecundidad promedio' => 2.52,
                     'Porcentaje de población nacida en otro estado' => 15.07,
-                    'Porcentaje de población con discapacidad' => 2.91
+                    'Porcentaje de población con discapacidad' => 2.91,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.41,
+                    'Porcentaje de población de 18 y más' => 64.63,
+                    'Porcentaje de población de 18 y más postbásicos' => 16.01
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 68,
+                    'Total Actividades Económicas' => 70,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 29.41,
+                    'Primer actividad porcentaje' => 28.57,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 19.12,
+                    'Segunda actividad porcentaje' => 18.57,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Tercera actividad porcentaje' => 16.18,
+                    'Tercera actividad porcentaje' => 15.71,
                     'Cuarta actividad nombre' => 'Inmobiliarios',
-                    'Cuarta actividad porcentaje' => 10.29,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
-                    'Quinta actividad porcentaje' => 7.35
+                    'Cuarta actividad porcentaje' => 12.86,
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad porcentaje' => 7.14
                 )
             )
         );

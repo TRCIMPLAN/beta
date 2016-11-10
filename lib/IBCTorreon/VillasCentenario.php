@@ -34,7 +34,7 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Centenario';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-centenario';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 1.66,
                     'Porcentaje de población nacida en otro estado' => 19.66,
-                    'Porcentaje de población con discapacidad' => 1.78
+                    'Porcentaje de población con discapacidad' => 1.78,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 62.68,
+                    'Porcentaje de población de 18 y más postbásicos' => 32.25
                 )
             ),
             'Educación' => array(
@@ -108,15 +111,15 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 10,
+                    'Total Actividades Económicas' => 13,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
-                    'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Cuarta actividad porcentaje' => 10.00
+                    'Primer actividad porcentaje' => 61.54,
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad porcentaje' => 15.38,
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad porcentaje' => 15.38,
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad porcentaje' => 7.69
                 )
             )
         );

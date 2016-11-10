@@ -12,7 +12,10 @@
         "Porcentaje de población no especificada":0.82,
         "Fecundidad promedio":2.72,
         "Porcentaje de población nacida en otro estado":16.6,
-        "Porcentaje de población con discapacidad":8.48
+        "Porcentaje de población con discapacidad":8.48,
+        "Porcentaje de población de 15 y más analfabeta":2.24,
+        "Porcentaje de población de 18 y más":68.94,
+        "Porcentaje de población de 18 y más postbásicos":21.64
       }
     },
     "Educación":{

@@ -34,7 +34,7 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Santorini';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-santorini';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 4.43,
                     'Fecundidad promedio' => 1.49,
                     'Porcentaje de población nacida en otro estado' => 26.59,
-                    'Porcentaje de población con discapacidad' => 1.26
+                    'Porcentaje de población con discapacidad' => 1.26,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.69,
+                    'Porcentaje de población de 18 y más' => 57.27,
+                    'Porcentaje de población de 18 y más postbásicos' => 54.32
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 19,
+                    'Total Actividades Económicas' => 12,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 47.37,
-                    'Segunda actividad nombre' => 'Comercio Mayoreo',
-                    'Segunda actividad porcentaje' => 10.53,
+                    'Primer actividad porcentaje' => 50.00,
+                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Tercera actividad porcentaje' => 10.53,
-                    'Cuarta actividad nombre' => 'Educativos',
-                    'Cuarta actividad porcentaje' => 10.53,
+                    'Tercera actividad porcentaje' => 8.33,
+                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad porcentaje' => 8.33,
                     'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Quinta actividad porcentaje' => 10.53
+                    'Quinta actividad porcentaje' => 8.33
                 )
             )
         );

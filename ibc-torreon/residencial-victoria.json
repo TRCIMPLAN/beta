@@ -12,7 +12,10 @@
         "Porcentaje de población no especificada":1.62,
         "Fecundidad promedio":1.92,
         "Porcentaje de población nacida en otro estado":13.91,
-        "Porcentaje de población con discapacidad":3.22
+        "Porcentaje de población con discapacidad":3.22,
+        "Porcentaje de población de 15 y más analfabeta":0,
+        "Porcentaje de población de 18 y más":56.26,
+        "Porcentaje de población de 18 y más postbásicos":25.65
       }
     },
     "Educación":{
@@ -61,7 +64,7 @@
         "Tercera actividad porcentaje":10.53,
         "Cuarta actividad nombre":"Salud",
         "Cuarta actividad porcentaje":5.26,
-        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
         "Quinta actividad porcentaje":5.26
       }
     }

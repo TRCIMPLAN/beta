@@ -34,7 +34,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Cortina';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-cortina';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,64 +59,67 @@ class LaCortina extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 1371,
-                    'Porcentaje de población masculina' => 47.99,
-                    'Porcentaje de población femenina' => 52.01,
-                    'Porcentaje de población de 0 a 14 años' => 35.59,
-                    'Porcentaje de población de 15 a 64 años' => 60.98,
-                    'Porcentaje de población de 65 y más años' => 2.12,
-                    'Porcentaje de población no especificada' => 1.31,
+                    'Población total' => 1787,
+                    'Porcentaje de población masculina' => 48.13,
+                    'Porcentaje de población femenina' => 51.87,
+                    'Porcentaje de población de 0 a 14 años' => 34.64,
+                    'Porcentaje de población de 15 a 64 años' => 61.67,
+                    'Porcentaje de población de 65 y más años' => 2.01,
+                    'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.83,
-                    'Porcentaje de población nacida en otro estado' => 13.24,
-                    'Porcentaje de población con discapacidad' => 0.99
+                    'Porcentaje de población nacida en otro estado' => 14.13,
+                    'Porcentaje de población con discapacidad' => 0.92,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.24,
+                    'Porcentaje de población de 18 y más' => 55.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 27.31
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.40,
-                    'Grado Promedio de Escolaridad masculina' => 10.70,
-                    'Grado Promedio de Escolaridad femenina' => 10.14
+                    'Grado Promedio de Escolaridad' => 10.30,
+                    'Grado Promedio de Escolaridad masculina' => 10.60,
+                    'Grado Promedio de Escolaridad femenina' => 10.03
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 54.74,
-                    'Población Económicamente Activa masculina' => 63.01,
-                    'Población Económicamente Activa femenina' => 36.99,
-                    'Población Ocupada' => 91.25,
-                    'Población Ocupada masculina' => 63.02,
-                    'Población Ocupada femenina' => 36.98,
-                    'Población Desocupada' => 8.75,
-                    'Derechohabiencia' => 72.43
+                    'Población Económicamente Activa' => 54.55,
+                    'Población Económicamente Activa masculina' => 62.93,
+                    'Población Económicamente Activa femenina' => 37.07,
+                    'Población Ocupada' => 92.55,
+                    'Población Ocupada masculina' => 63.27,
+                    'Población Ocupada femenina' => 36.73,
+                    'Población Desocupada' => 7.45,
+                    'Derechohabiencia' => 73.42
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 339,
-                    'Hogares Jefatura masculina' => 81.42,
-                    'Hogares Jefatura femenina' => 18.58,
-                    'Ocupación por Vivienda' => 4.04,
-                    'Viviendas con Electricidad' => 100.00,
-                    'Viviendas con Agua' => 100.00,
-                    'Viviendas con Drenaje' => 99.41,
-                    'Viviendas con Televisión' => 100.00,
-                    'Viviendas con Automóvil' => 55.43,
-                    'Viviendas con Computadora' => 39.56,
-                    'Viviendas con Celular' => 87.32,
-                    'Viviendas con Internet' => 24.65
+                    'Hogares' => 452,
+                    'Hogares Jefatura masculina' => 79.20,
+                    'Hogares Jefatura femenina' => 20.80,
+                    'Ocupación por Vivienda' => 3.95,
+                    'Viviendas con Electricidad' => 99.78,
+                    'Viviendas con Agua' => 99.78,
+                    'Viviendas con Drenaje' => 99.34,
+                    'Viviendas con Televisión' => 99.34,
+                    'Viviendas con Automóvil' => 53.96,
+                    'Viviendas con Computadora' => 36.97,
+                    'Viviendas con Celular' => 88.05,
+                    'Viviendas con Internet' => 22.47
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 20,
+                    'Total Actividades Económicas' => 25,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 60.00,
+                    'Primer actividad porcentaje' => 52.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Segunda actividad porcentaje' => 20.00,
+                    'Segunda actividad porcentaje' => 28.00,
                     'Tercera actividad nombre' => 'Educativos',
-                    'Tercera actividad porcentaje' => 15.00,
+                    'Tercera actividad porcentaje' => 12.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Cuarta actividad porcentaje' => 5.00
+                    'Cuarta actividad porcentaje' => 8.00
                 )
             )
         );

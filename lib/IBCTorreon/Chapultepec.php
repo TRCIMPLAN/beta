@@ -34,7 +34,7 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Chapultepec';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'chapultepec';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.88,
                     'Fecundidad promedio' => 1.45,
                     'Porcentaje de población nacida en otro estado' => 20.33,
-                    'Porcentaje de población con discapacidad' => 1.69
+                    'Porcentaje de población con discapacidad' => 1.69,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 59.76,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.03
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 27.27,
-                    'Segunda actividad nombre' => 'Inmobiliarios',
+                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 18.18,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 18.18,
-                    'Quinta actividad nombre' => 'Financieros y Seguros',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

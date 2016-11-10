@@ -34,7 +34,7 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Leandro Rovirosa Wade';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'leandro-rovirosa-wade';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.46,
                     'Fecundidad promedio' => 1.77,
                     'Porcentaje de población nacida en otro estado' => 22.37,
-                    'Porcentaje de población con discapacidad' => 5.91
+                    'Porcentaje de población con discapacidad' => 5.91,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.04,
+                    'Porcentaje de población de 18 y más' => 69.00,
+                    'Porcentaje de población de 18 y más postbásicos' => 53.34
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 12.50,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 12.50
                 )
             )

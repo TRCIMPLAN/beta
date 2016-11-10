@@ -34,7 +34,7 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Muralla';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-muralla';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.79,
                     'Porcentaje de población nacida en otro estado' => 28.80,
-                    'Porcentaje de población con discapacidad' => 1.74
+                    'Porcentaje de población con discapacidad' => 1.74,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.90,
+                    'Porcentaje de población de 18 y más' => 57.14,
+                    'Porcentaje de población de 18 y más postbásicos' => 53.78
                 )
             ),
             'Educación' => array(

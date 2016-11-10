@@ -151,7 +151,7 @@
           <h1 itemprop="name">Rincon San Angel</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Rincon San Angel de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:30">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Rincon San Angel" src="../imagenes/imagen.jpg">
@@ -410,27 +410,27 @@ Rincon San Angel sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">2</td>
+        <td class="derecha">25</td>
       </tr>
       <tr>
         <td>1° Comercio Menudeo</td>
-        <td class="derecha">50.00 %</td>
+        <td class="derecha">48.00 %</td>
       </tr>
       <tr>
         <td>2° Preparación de Alimentos y Bebidas</td>
-        <td class="derecha">50.00 %</td>
+        <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>ND</td>
-        <td class="derecha">ND</td>
+        <td>3° Otros servicios, excepto Gobierno</td>
+        <td class="derecha">8.00 %</td>
       </tr>
       <tr>
-        <td>ND</td>
-        <td class="derecha">ND</td>
+        <td>4° Industria Manufacturera</td>
+        <td class="derecha">8.00 %</td>
       </tr>
       <tr>
-        <td>ND</td>
-        <td class="derecha">ND</td>
+        <td>5° Salud</td>
+        <td class="derecha">4.00 %</td>
       </tr>
     </tbody>
   </table>
@@ -779,12 +779,15 @@ Rincon San Angel sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 50, '#59C38E', '50 %'],
-              ['2° Preparación de Alimentos y Bebidas', 50, '#8EC359', '50 %']
+              ['1° Comercio Menudeo', 48, '#59C38E', '48 %'],
+              ['2° Preparación de Alimentos y Bebidas', 20, '#8EC359', '20 %'],
+              ['3° Otros servicios, excepto Gobierno', 8, '#C38E59', '8 %'],
+              ['4° Industria Manufacturera', 8, '#80C0FF', '8 %'],
+              ['5° Salud', 4, '#59BFC3', '4 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '2 Unidades Económicas',
+            title: '25 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

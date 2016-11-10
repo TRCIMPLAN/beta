@@ -151,7 +151,7 @@
           <h1 itemprop="name">Valle Verde</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Valle Verde de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:30">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Valle Verde" src="../imagenes/imagen.jpg">
@@ -410,27 +410,27 @@ Valle Verde sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">21</td>
+        <td class="derecha">25</td>
       </tr>
       <tr>
         <td>1° Comercio Menudeo</td>
-        <td class="derecha">52.38 %</td>
+        <td class="derecha">48.00 %</td>
       </tr>
       <tr>
         <td>2° Educativos</td>
-        <td class="derecha">19.05 %</td>
+        <td class="derecha">16.00 %</td>
       </tr>
       <tr>
-        <td>3° Industria Manufacturera</td>
-        <td class="derecha">9.52 %</td>
+        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td class="derecha">8.00 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
-        <td class="derecha">9.52 %</td>
+        <td>4° Industria Manufacturera</td>
+        <td class="derecha">8.00 %</td>
       </tr>
       <tr>
-        <td>5° Financieros y Seguros</td>
-        <td class="derecha">4.76 %</td>
+        <td>5° Comercio Mayoreo</td>
+        <td class="derecha">4.00 %</td>
       </tr>
     </tbody>
   </table>
@@ -779,15 +779,15 @@ Valle Verde sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 52.38, '#59C38E', '52.38 %'],
-              ['2° Educativos', 19.05, '#8EC359', '19.05 %'],
-              ['3° Industria Manufacturera', 9.52, '#C38E59', '9.52 %'],
-              ['4° Preparación de Alimentos y Bebidas', 9.52, '#80C0FF', '9.52 %'],
-              ['5° Financieros y Seguros', 4.76, '#59BFC3', '4.76 %']
+              ['1° Comercio Menudeo', 48, '#59C38E', '48 %'],
+              ['2° Educativos', 16, '#8EC359', '16 %'],
+              ['3° Preparación de Alimentos y Bebidas', 8, '#C38E59', '8 %'],
+              ['4° Industria Manufacturera', 8, '#80C0FF', '8 %'],
+              ['5° Comercio Mayoreo', 4, '#59BFC3', '4 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '21 Unidades Económicas',
+            title: '25 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

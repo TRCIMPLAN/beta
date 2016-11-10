@@ -34,7 +34,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Del Nazas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.18,
                     'Fecundidad promedio' => 1.90,
                     'Porcentaje de población nacida en otro estado' => 17.44,
-                    'Porcentaje de población con discapacidad' => 2.48
+                    'Porcentaje de población con discapacidad' => 2.48,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.33,
+                    'Porcentaje de población de 18 y más' => 58.46,
+                    'Porcentaje de población de 18 y más postbásicos' => 40.45
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.22,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.04,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 2.17
                 )
             )

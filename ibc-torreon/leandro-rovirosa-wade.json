@@ -12,7 +12,10 @@
         "Porcentaje de población no especificada":1.46,
         "Fecundidad promedio":1.77,
         "Porcentaje de población nacida en otro estado":22.37,
-        "Porcentaje de población con discapacidad":5.91
+        "Porcentaje de población con discapacidad":5.91,
+        "Porcentaje de población de 15 y más analfabeta":0.04,
+        "Porcentaje de población de 18 y más":69,
+        "Porcentaje de población de 18 y más postbásicos":53.34
       }
     },
     "Educación":{
@@ -59,9 +62,9 @@
         "Segunda actividad porcentaje":16.67,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":16.67,
-        "Cuarta actividad nombre":"Comercio Menudeo",
+        "Cuarta actividad nombre":"Construcción",
         "Cuarta actividad porcentaje":12.5,
-        "Quinta actividad nombre":"Construcción",
+        "Quinta actividad nombre":"Comercio Menudeo",
         "Quinta actividad porcentaje":12.5
       }
     }

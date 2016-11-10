@@ -34,7 +34,7 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon San Angel';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-san-angel';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 6.51,
                     'Fecundidad promedio' => 1.80,
                     'Porcentaje de población nacida en otro estado' => 26.38,
-                    'Porcentaje de población con discapacidad' => 1.08
+                    'Porcentaje de población con discapacidad' => 1.08,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.65,
+                    'Porcentaje de población de 18 y más' => 56.83,
+                    'Porcentaje de población de 18 y más postbásicos' => 51.19
                 )
             ),
             'Educación' => array(
@@ -108,11 +111,17 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 2,
+                    'Total Actividades Económicas' => 25,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 50.00,
+                    'Primer actividad porcentaje' => 48.00,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 50.00
+                    'Segunda actividad porcentaje' => 20.00,
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad porcentaje' => 8.00,
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad porcentaje' => 8.00,
+                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad porcentaje' => 4.00
                 )
             )
         );

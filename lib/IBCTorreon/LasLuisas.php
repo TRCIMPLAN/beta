@@ -34,7 +34,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Las Luisas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-luisas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 2.50,
                     'Porcentaje de población nacida en otro estado' => 22.44,
-                    'Porcentaje de población con discapacidad' => 12.46
+                    'Porcentaje de población con discapacidad' => 12.46,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.71,
+                    'Porcentaje de población de 18 y más' => 61.16,
+                    'Porcentaje de población de 18 y más postbásicos' => 15.99
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class LasLuisas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 20.75,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.55,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 1.89
                 )
             )

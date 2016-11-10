@@ -34,7 +34,7 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Aquiles Serdan';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aquiles-serdan';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.16,
                     'Fecundidad promedio' => 2.50,
                     'Porcentaje de población nacida en otro estado' => 18.38,
-                    'Porcentaje de población con discapacidad' => 9.35
+                    'Porcentaje de población con discapacidad' => 9.35,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.08,
+                    'Porcentaje de población de 18 y más' => 66.81,
+                    'Porcentaje de población de 18 y más postbásicos' => 17.35
                 )
             ),
             'Educación' => array(

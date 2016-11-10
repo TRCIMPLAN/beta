@@ -34,7 +34,7 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion Fuentes';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-fuentes';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.55,
                     'Fecundidad promedio' => 2.25,
                     'Porcentaje de población nacida en otro estado' => 16.06,
-                    'Porcentaje de población con discapacidad' => 4.32
+                    'Porcentaje de población con discapacidad' => 4.32,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.57,
+                    'Porcentaje de población de 18 y más' => 61.11,
+                    'Porcentaje de población de 18 y más postbásicos' => 21.51
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 20.00,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 18.18,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.91,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Inmobiliarios',
                     'Quinta actividad porcentaje' => 10.91
                 )
             )

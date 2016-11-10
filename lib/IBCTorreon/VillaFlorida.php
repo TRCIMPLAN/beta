@@ -34,7 +34,7 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Florida';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-florida';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.71,
                     'Fecundidad promedio' => 1.84,
                     'Porcentaje de población nacida en otro estado' => 19.46,
-                    'Porcentaje de población con discapacidad' => 4.44
+                    'Porcentaje de población con discapacidad' => 4.44,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
+                    'Porcentaje de población de 18 y más' => 69.80,
+                    'Porcentaje de población de 18 y más postbásicos' => 48.63
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class VillaFlorida extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 24.53,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.75,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 3.77,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 3.77
                 )
             )

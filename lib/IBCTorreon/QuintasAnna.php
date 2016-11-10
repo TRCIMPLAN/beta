@@ -34,7 +34,7 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas Anna';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-anna';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,64 +59,65 @@ class QuintasAnna extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 372,
-                    'Porcentaje de población masculina' => 47.31,
-                    'Porcentaje de población femenina' => 52.69,
-                    'Porcentaje de población de 0 a 14 años' => 34.14,
-                    'Porcentaje de población de 15 a 64 años' => 58.33,
-                    'Porcentaje de población de 65 y más años' => 1.08,
-                    'Porcentaje de población no especificada' => 6.45,
-                    'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 9.68,
-                    'Porcentaje de población con discapacidad' => 2.10
+                    'Población total' => 167,
+                    'Porcentaje de población masculina' => 49.10,
+                    'Porcentaje de población femenina' => 50.90,
+                    'Porcentaje de población de 0 a 14 años' => 33.53,
+                    'Porcentaje de población de 15 a 64 años' => 53.29,
+                    'Porcentaje de población de 65 y más años' => 2.40,
+                    'Porcentaje de población no especificada' => 10.78,
+                    'Fecundidad promedio' => 2.00,
+                    'Porcentaje de población nacida en otro estado' => 11.98,
+                    'Porcentaje de población con discapacidad' => 2.40,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.59,
+                    'Porcentaje de población de 18 y más' => 52.69,
+                    'Porcentaje de población de 18 y más postbásicos' => 20.96
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.95,
-                    'Grado Promedio de Escolaridad masculina' => 8.98,
-                    'Grado Promedio de Escolaridad femenina' => 8.93
+                    'Grado Promedio de Escolaridad' => 9.62,
+                    'Grado Promedio de Escolaridad masculina' => 9.30,
+                    'Grado Promedio de Escolaridad femenina' => 9.93
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 63.07,
-                    'Población Económicamente Activa masculina' => 67.11,
-                    'Población Económicamente Activa femenina' => 32.89,
-                    'Población Ocupada' => 96.60,
-                    'Población Ocupada masculina' => 67.35,
-                    'Población Ocupada femenina' => 32.65,
-                    'Población Desocupada' => 3.40,
-                    'Derechohabiencia' => 74.73
+                    'Población Económicamente Activa' => 61.54,
+                    'Población Económicamente Activa masculina' => 68.75,
+                    'Población Económicamente Activa femenina' => 31.25,
+                    'Población Ocupada' => 95.09,
+                    'Población Ocupada masculina' => 68.85,
+                    'Población Ocupada femenina' => 31.15,
+                    'Población Desocupada' => 4.91,
+                    'Derechohabiencia' => 72.46
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 98,
-                    'Hogares Jefatura masculina' => 77.55,
-                    'Hogares Jefatura femenina' => 22.45,
-                    'Ocupación por Vivienda' => 3.80,
+                    'Hogares' => 41,
+                    'Hogares Jefatura masculina' => 75.61,
+                    'Hogares Jefatura femenina' => 24.39,
+                    'Ocupación por Vivienda' => 4.07,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
-                    'Viviendas con Televisión' => 97.96,
-                    'Viviendas con Automóvil' => 42.86,
-                    'Viviendas con Computadora' => 22.45,
-                    'Viviendas con Celular' => 85.71,
-                    'Viviendas con Internet' => 9.18
+                    'Viviendas con Televisión' => 97.56,
+                    'Viviendas con Automóvil' => 46.34,
+                    'Viviendas con Computadora' => 29.27,
+                    'Viviendas con Celular' => 82.93,
+                    'Viviendas con Internet' => 14.63
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 13,
+                    'Total Actividades Económicas' => 8,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 61.54,
+                    'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 23.08,
+                    'Segunda actividad porcentaje' => 37.50,
                     'Tercera actividad nombre' => 'Agricultura',
-                    'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Cuarta actividad porcentaje' => 7.69
+                    'Tercera actividad porcentaje' => 12.50
                 )
             )
         );

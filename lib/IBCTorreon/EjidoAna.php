@@ -34,7 +34,7 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Ana';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-ana';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.50,
                     'Fecundidad promedio' => 2.44,
                     'Porcentaje de población nacida en otro estado' => 13.22,
-                    'Porcentaje de población con discapacidad' => 4.57
+                    'Porcentaje de población con discapacidad' => 4.57,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.20,
+                    'Porcentaje de población de 18 y más' => 60.45,
+                    'Porcentaje de población de 18 y más postbásicos' => 13.49
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 98,
+                    'Total Actividades Económicas' => 101,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 36.73,
+                    'Primer actividad porcentaje' => 36.63,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Segunda actividad porcentaje' => 20.41,
+                    'Segunda actividad porcentaje' => 19.80,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Tercera actividad porcentaje' => 13.27,
+                    'Tercera actividad porcentaje' => 13.86,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
-                    'Cuarta actividad porcentaje' => 9.18,
+                    'Cuarta actividad porcentaje' => 8.91,
                     'Quinta actividad nombre' => 'Educativos',
-                    'Quinta actividad porcentaje' => 7.14
+                    'Quinta actividad porcentaje' => 7.92
                 )
             )
         );

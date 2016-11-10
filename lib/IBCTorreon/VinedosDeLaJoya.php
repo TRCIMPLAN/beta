@@ -34,7 +34,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Viñedos De La Joya';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vinedos-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.05,
                     'Fecundidad promedio' => 1.69,
                     'Porcentaje de población nacida en otro estado' => 13.22,
-                    'Porcentaje de población con discapacidad' => 0.52
+                    'Porcentaje de población con discapacidad' => 0.52,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 56.62,
+                    'Porcentaje de población de 18 y más postbásicos' => 23.79
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.67,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.33,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 6.67,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )

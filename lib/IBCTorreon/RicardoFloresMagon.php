@@ -34,7 +34,7 @@ class RicardoFloresMagon extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ricardo Flores Magon';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ricardo-flores-magon';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RicardoFloresMagon extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.82,
                     'Fecundidad promedio' => 2.40,
                     'Porcentaje de población nacida en otro estado' => 7.78,
-                    'Porcentaje de población con discapacidad' => 0.41
+                    'Porcentaje de población con discapacidad' => 0.41,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.95,
+                    'Porcentaje de población de 18 y más' => 61.56,
+                    'Porcentaje de población de 18 y más postbásicos' => 8.44
                 )
             ),
             'Educación' => array(

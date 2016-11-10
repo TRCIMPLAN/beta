@@ -34,7 +34,7 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Recintos Villas Universidad';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'recintos-villas-universidad';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.27,
                     'Porcentaje de población nacida en otro estado' => 17.31,
-                    'Porcentaje de población con discapacidad' => 2.52
+                    'Porcentaje de población con discapacidad' => 2.52,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
+                    'Porcentaje de población de 18 y más' => 62.00,
+                    'Porcentaje de población de 18 y más postbásicos' => 50.69
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.08,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.38,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

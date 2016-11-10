@@ -34,7 +34,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nazario Ortiz Garza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nazario-ortiz-garza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.46,
                     'Fecundidad promedio' => 1.82,
                     'Porcentaje de población nacida en otro estado' => 18.73,
-                    'Porcentaje de población con discapacidad' => 4.37
+                    'Porcentaje de población con discapacidad' => 4.37,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.92,
+                    'Porcentaje de población de 18 y más' => 70.80,
+                    'Porcentaje de población de 18 y más postbásicos' => 30.41
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 17.65,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 11.76,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 11.76
                 )
             )

@@ -34,7 +34,7 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,66 +59,69 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 3429,
+                    'Población total' => 3434,
                     'Porcentaje de población masculina' => 48.22,
                     'Porcentaje de población femenina' => 51.78,
                     'Porcentaje de población de 0 a 14 años' => 14.53,
                     'Porcentaje de población de 15 a 64 años' => 76.93,
-                    'Porcentaje de población de 65 y más años' => 6.10,
-                    'Porcentaje de población no especificada' => 2.44,
+                    'Porcentaje de población de 65 y más años' => 6.09,
+                    'Porcentaje de población no especificada' => 2.45,
                     'Fecundidad promedio' => 1.67,
-                    'Porcentaje de población nacida en otro estado' => 27.93,
-                    'Porcentaje de población con discapacidad' => 2.45
+                    'Porcentaje de población nacida en otro estado' => 27.92,
+                    'Porcentaje de población con discapacidad' => 2.45,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
+                    'Porcentaje de población de 18 y más' => 78.14,
+                    'Porcentaje de población de 18 y más postbásicos' => 70.41
                 )
             ),
             'Educación' => array(
                 '2010' => array(
                     'Grado Promedio de Escolaridad' => 14.37,
                     'Grado Promedio de Escolaridad masculina' => 14.96,
-                    'Grado Promedio de Escolaridad femenina' => 13.83
+                    'Grado Promedio de Escolaridad femenina' => 13.82
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
                     'Población Económicamente Activa' => 55.96,
-                    'Población Económicamente Activa masculina' => 59.23,
-                    'Población Económicamente Activa femenina' => 40.77,
+                    'Población Económicamente Activa masculina' => 59.22,
+                    'Población Económicamente Activa femenina' => 40.78,
                     'Población Ocupada' => 94.68,
-                    'Población Ocupada masculina' => 58.96,
-                    'Población Ocupada femenina' => 41.04,
+                    'Población Ocupada masculina' => 58.95,
+                    'Población Ocupada femenina' => 41.05,
                     'Población Desocupada' => 5.32,
-                    'Derechohabiencia' => 77.89
+                    'Derechohabiencia' => 77.88
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 933,
-                    'Hogares Jefatura masculina' => 78.09,
-                    'Hogares Jefatura femenina' => 21.91,
+                    'Hogares' => 934,
+                    'Hogares Jefatura masculina' => 78.07,
+                    'Hogares Jefatura femenina' => 21.93,
                     'Ocupación por Vivienda' => 3.68,
-                    'Viviendas con Electricidad' => 99.92,
-                    'Viviendas con Agua' => 99.50,
-                    'Viviendas con Drenaje' => 99.60,
-                    'Viviendas con Televisión' => 99.60,
-                    'Viviendas con Automóvil' => 95.38,
-                    'Viviendas con Computadora' => 86.89,
-                    'Viviendas con Celular' => 94.46,
-                    'Viviendas con Internet' => 82.58
+                    'Viviendas con Electricidad' => 99.97,
+                    'Viviendas con Agua' => 99.54,
+                    'Viviendas con Drenaje' => 99.65,
+                    'Viviendas con Televisión' => 99.65,
+                    'Viviendas con Automóvil' => 95.42,
+                    'Viviendas con Computadora' => 86.92,
+                    'Viviendas con Celular' => 94.50,
+                    'Viviendas con Internet' => 82.60
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 156,
+                    'Total Actividades Económicas' => 163,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 32.05,
+                    'Primer actividad porcentaje' => 30.67,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 14.10,
+                    'Segunda actividad porcentaje' => 14.11,
                     'Tercera actividad nombre' => 'Educativos',
-                    'Tercera actividad porcentaje' => 10.90,
+                    'Tercera actividad porcentaje' => 11.66,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Cuarta actividad porcentaje' => 10.90,
+                    'Cuarta actividad porcentaje' => 11.66,
                     'Quinta actividad nombre' => 'Salud',
-                    'Quinta actividad porcentaje' => 7.69
+                    'Quinta actividad porcentaje' => 7.36
                 )
             )
         );

@@ -34,7 +34,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Donaldo Colosio';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-donaldo-colosio';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.19,
                     'Fecundidad promedio' => 2.54,
                     'Porcentaje de población nacida en otro estado' => 18.74,
-                    'Porcentaje de población con discapacidad' => 3.91
+                    'Porcentaje de población con discapacidad' => 3.91,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.28,
+                    'Porcentaje de población de 18 y más' => 56.03,
+                    'Porcentaje de población de 18 y más postbásicos' => 7.27
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 8.16,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 6.12,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.08
                 )
             )

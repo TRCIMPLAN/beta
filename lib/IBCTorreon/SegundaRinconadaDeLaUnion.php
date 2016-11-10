@@ -34,7 +34,7 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Segunda Rinconada De La Union';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'segunda-rinconada-de-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 2.60,
                     'Porcentaje de población nacida en otro estado' => 13.25,
-                    'Porcentaje de población con discapacidad' => 6.52
+                    'Porcentaje de población con discapacidad' => 6.52,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.41,
+                    'Porcentaje de población de 18 y más' => 61.63,
+                    'Porcentaje de población de 18 y más postbásicos' => 15.26
                 )
             ),
             'Educación' => array(

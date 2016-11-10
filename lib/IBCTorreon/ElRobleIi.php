@@ -34,7 +34,7 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'El Roble Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-roble-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 5.84,
                     'Fecundidad promedio' => 1.84,
                     'Porcentaje de población nacida en otro estado' => 15.40,
-                    'Porcentaje de población con discapacidad' => 3.92
+                    'Porcentaje de población con discapacidad' => 3.92,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 66.55,
+                    'Porcentaje de población de 18 y más postbásicos' => 48.50
                 )
             ),
             'Educación' => array(
@@ -108,15 +111,17 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 7,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Primer actividad porcentaje' => 42.86,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
-                    'Segunda actividad porcentaje' => 28.57,
-                    'Tercera actividad nombre' => 'Educativos',
-                    'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Cuarta actividad porcentaje' => 14.29
+                    'Total Actividades Económicas' => 28,
+                    'Primer actividad nombre' => 'Gubernamentales',
+                    'Primer actividad porcentaje' => 53.57,
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad porcentaje' => 17.86,
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad porcentaje' => 10.71,
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad porcentaje' => 7.14,
+                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad porcentaje' => 7.14
                 )
             )
         );

@@ -34,7 +34,7 @@ class SantaBarbara extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santa Barbara';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-barbara';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SantaBarbara extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.01,
                     'Fecundidad promedio' => 1.52,
                     'Porcentaje de población nacida en otro estado' => 14.38,
-                    'Porcentaje de población con discapacidad' => 1.00
+                    'Porcentaje de población con discapacidad' => 1.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.04,
+                    'Porcentaje de población de 18 y más' => 68.23,
+                    'Porcentaje de población de 18 y más postbásicos' => 57.53
                 )
             ),
             'Educación' => array(

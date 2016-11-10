@@ -34,7 +34,7 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Narciso Mendoza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'narciso-mendoza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.33,
                     'Fecundidad promedio' => 2.70,
                     'Porcentaje de población nacida en otro estado' => 19.61,
-                    'Porcentaje de población con discapacidad' => 1.34
+                    'Porcentaje de población con discapacidad' => 1.34,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.71,
+                    'Porcentaje de población de 18 y más' => 64.07,
+                    'Porcentaje de población de 18 y más postbásicos' => 17.21
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 33,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 54.55,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.15,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 15.15,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 3.03
                 )
             )

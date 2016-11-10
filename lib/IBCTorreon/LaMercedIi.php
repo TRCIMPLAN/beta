@@ -34,7 +34,7 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Merced Ii';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-merced-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.36,
                     'Fecundidad promedio' => 1.83,
                     'Porcentaje de población nacida en otro estado' => 19.93,
-                    'Porcentaje de población con discapacidad' => 3.89
+                    'Porcentaje de población con discapacidad' => 3.89,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
+                    'Porcentaje de población de 18 y más' => 69.22,
+                    'Porcentaje de población de 18 y más postbásicos' => 47.50
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.26,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.45,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.88,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 4.88
                 )
             )

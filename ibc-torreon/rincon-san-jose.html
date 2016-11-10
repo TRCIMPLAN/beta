@@ -151,7 +151,7 @@
           <h1 itemprop="name">Rincon San Jose</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Rincon San Jose de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:30">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Rincon San Jose" src="../imagenes/imagen.jpg">
@@ -410,15 +410,15 @@ Rincon San Jose sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">3</td>
+        <td class="derecha">1</td>
       </tr>
       <tr>
-        <td>1° Inmobiliarios</td>
-        <td class="derecha">66.67 %</td>
+        <td>1° Comercio Menudeo</td>
+        <td class="derecha">100.00 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Menudeo</td>
-        <td class="derecha">33.33 %</td>
+        <td>ND</td>
+        <td class="derecha">ND</td>
       </tr>
       <tr>
         <td>ND</td>
@@ -779,12 +779,11 @@ Rincon San Jose sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Inmobiliarios', 66.67, '#59C38E', '66.67 %'],
-              ['2° Comercio Menudeo', 33.33, '#8EC359', '33.33 %']
+              ['1° Comercio Menudeo', 100, '#59C38E', '100 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '3 Unidades Económicas',
+            title: '1 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

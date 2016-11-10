@@ -34,7 +34,7 @@ class VillasDelValle extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Del Valle';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,51 +59,54 @@ class VillasDelValle extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 303,
-                    'Porcentaje de población masculina' => 50.17,
-                    'Porcentaje de población femenina' => 49.83,
-                    'Porcentaje de población de 0 a 14 años' => 28.05,
-                    'Porcentaje de población de 15 a 64 años' => 67.33,
-                    'Porcentaje de población de 65 y más años' => 4.62,
+                    'Población total' => 383,
+                    'Porcentaje de población masculina' => 49.61,
+                    'Porcentaje de población femenina' => 50.39,
+                    'Porcentaje de población de 0 a 14 años' => 26.11,
+                    'Porcentaje de población de 15 a 64 años' => 68.67,
+                    'Porcentaje de población de 65 y más años' => 5.22,
                     'Porcentaje de población no especificada' => 0.00,
-                    'Fecundidad promedio' => 1.38,
-                    'Porcentaje de población nacida en otro estado' => 17.16,
-                    'Porcentaje de población con discapacidad' => 5.39
+                    'Fecundidad promedio' => 1.34,
+                    'Porcentaje de población nacida en otro estado' => 18.28,
+                    'Porcentaje de población con discapacidad' => 6.53,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.14,
+                    'Porcentaje de población de 18 y más' => 66.84,
+                    'Porcentaje de población de 18 y más postbásicos' => 52.48
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.07,
-                    'Grado Promedio de Escolaridad masculina' => 13.43,
-                    'Grado Promedio de Escolaridad femenina' => 12.75
+                    'Grado Promedio de Escolaridad' => 12.80,
+                    'Grado Promedio de Escolaridad masculina' => 13.21,
+                    'Grado Promedio de Escolaridad femenina' => 12.41
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 58.40,
-                    'Población Económicamente Activa masculina' => 56.12,
-                    'Población Económicamente Activa femenina' => 43.88,
-                    'Población Ocupada' => 96.27,
-                    'Población Ocupada masculina' => 55.97,
-                    'Población Ocupada femenina' => 44.03,
-                    'Población Desocupada' => 3.73,
-                    'Derechohabiencia' => 86.80
+                    'Población Económicamente Activa' => 56.41,
+                    'Población Económicamente Activa masculina' => 56.82,
+                    'Población Económicamente Activa femenina' => 43.18,
+                    'Población Ocupada' => 96.47,
+                    'Población Ocupada masculina' => 56.47,
+                    'Población Ocupada femenina' => 43.53,
+                    'Población Desocupada' => 3.53,
+                    'Derechohabiencia' => 87.47
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 92,
-                    'Hogares Jefatura masculina' => 77.17,
-                    'Hogares Jefatura femenina' => 22.83,
-                    'Ocupación por Vivienda' => 3.29,
+                    'Hogares' => 116,
+                    'Hogares Jefatura masculina' => 79.31,
+                    'Hogares Jefatura femenina' => 20.69,
+                    'Ocupación por Vivienda' => 3.30,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
-                    'Viviendas con Automóvil' => 79.35,
-                    'Viviendas con Computadora' => 59.92,
-                    'Viviendas con Celular' => 86.96,
-                    'Viviendas con Internet' => 48.36
+                    'Viviendas con Automóvil' => 81.90,
+                    'Viviendas con Computadora' => 63.90,
+                    'Viviendas con Celular' => 85.34,
+                    'Viviendas con Internet' => 52.15
                 )
             ),
             'Unidades Económicas' => array(
@@ -111,11 +114,11 @@ class VillasDelValle extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 16.67
                 )
             )

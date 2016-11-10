@@ -151,7 +151,7 @@
           <h1 itemprop="name">Estrella</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Estrella de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:28">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Estrella" src="../imagenes/imagen.jpg">
@@ -164,7 +164,9 @@
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
-    <div id="MapaLimites" class="mapa"></div>
+<div class="alert alert-warning">
+Estrella sin mapas.
+</div>
   </div>
   <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
@@ -555,28 +557,6 @@
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
-  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
-  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
-    if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/viz.json'
-      cartodb.createVis('MapaLimites', carto_json)
-      .done(function(vis, layers) {
-        // Capa colonias
-        var capa_colonias = layers[1];
-        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
-        // Cambiar la consulta en la subcapa
-        var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM muestra_colonias_torreon WHERE colonia = 'Estrella'");
-        // Ajustar el zoom
-        var map = vis.getNativeMap();
-        map.setZoom(14);
-      })
-      .error(function(err) {
-        console.log(err);
-      });
-      mapa_limites_cargado = true;
-    }
-  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 

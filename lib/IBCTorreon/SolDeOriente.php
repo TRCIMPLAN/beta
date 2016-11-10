@@ -34,7 +34,7 @@ class SolDeOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Sol De Oriente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'sol-de-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class SolDeOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.69,
                     'Fecundidad promedio' => 1.92,
                     'Porcentaje de población nacida en otro estado' => 16.41,
-                    'Porcentaje de población con discapacidad' => 2.79
+                    'Porcentaje de población con discapacidad' => 2.79,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.13,
+                    'Porcentaje de población de 18 y más' => 58.52,
+                    'Porcentaje de población de 18 y más postbásicos' => 31.67
                 )
             ),
             'Educación' => array(
@@ -115,7 +118,7 @@ class SolDeOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.09,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 18.60,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 4.65,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 4.65

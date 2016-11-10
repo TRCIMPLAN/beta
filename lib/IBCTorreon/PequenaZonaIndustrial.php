@@ -34,7 +34,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Pequeña Zona Industrial';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'pequena-zona-industrial';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.16,
                     'Fecundidad promedio' => 1.80,
                     'Porcentaje de población nacida en otro estado' => 16.38,
-                    'Porcentaje de población con discapacidad' => 9.19
+                    'Porcentaje de población con discapacidad' => 9.19,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.28,
+                    'Porcentaje de población de 18 y más' => 64.56,
+                    'Porcentaje de población de 18 y más postbásicos' => 44.69
                 )
             ),
             'Educación' => array(
@@ -106,7 +109,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 19.35,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.90,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 6.45
                 )
             )

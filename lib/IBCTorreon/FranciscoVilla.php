@@ -34,7 +34,7 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-villa';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.06,
                     'Fecundidad promedio' => 2.63,
                     'Porcentaje de población nacida en otro estado' => 14.97,
-                    'Porcentaje de población con discapacidad' => 4.88
+                    'Porcentaje de población con discapacidad' => 4.88,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.19,
+                    'Porcentaje de población de 18 y más' => 63.48,
+                    'Porcentaje de población de 18 y más postbásicos' => 11.42
                 )
             ),
             'Educación' => array(
@@ -123,17 +126,6 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
-
-    /**
-     * Mapas
-     *
-     * @return array Arreglo asociativo
-     */
-    public function mapas() {
-        return array(
-            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
-        );
-    } // mapas
 
 } // Clase FranciscoVilla
 

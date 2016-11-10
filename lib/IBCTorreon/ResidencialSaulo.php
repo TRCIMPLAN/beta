@@ -34,7 +34,7 @@ class ResidencialSaulo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Saulo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-saulo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,43 +59,46 @@ class ResidencialSaulo extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 69,
-                    'Porcentaje de población masculina' => 49.77,
-                    'Porcentaje de población femenina' => 50.23,
-                    'Porcentaje de población de 0 a 14 años' => 32.96,
-                    'Porcentaje de población de 15 a 64 años' => 66.20,
-                    'Porcentaje de población de 65 y más años' => 0.37,
-                    'Porcentaje de población no especificada' => 0.47,
-                    'Fecundidad promedio' => 1.09,
-                    'Porcentaje de población nacida en otro estado' => 30.96,
-                    'Porcentaje de población con discapacidad' => 0.19
+                    'Población total' => 64,
+                    'Porcentaje de población masculina' => 50.00,
+                    'Porcentaje de población femenina' => 50.00,
+                    'Porcentaje de población de 0 a 14 años' => 34.38,
+                    'Porcentaje de población de 15 a 64 años' => 65.62,
+                    'Porcentaje de población de 65 y más años' => 0.00,
+                    'Porcentaje de población no especificada' => 0.00,
+                    'Fecundidad promedio' => 1.04,
+                    'Porcentaje de población nacida en otro estado' => 31.33,
+                    'Porcentaje de población con discapacidad' => 0.00,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 57.81,
+                    'Porcentaje de población de 18 y más postbásicos' => 56.25
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.80,
-                    'Grado Promedio de Escolaridad masculina' => 15.78,
-                    'Grado Promedio de Escolaridad femenina' => 13.98
+                    'Grado Promedio de Escolaridad' => 14.89,
+                    'Grado Promedio de Escolaridad masculina' => 15.89,
+                    'Grado Promedio de Escolaridad femenina' => 14.04
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 52.64,
-                    'Población Económicamente Activa masculina' => 53.50,
-                    'Población Económicamente Activa femenina' => 46.50,
-                    'Población Ocupada' => 99.71,
-                    'Población Ocupada masculina' => 53.31,
-                    'Población Ocupada femenina' => 46.69,
-                    'Población Desocupada' => 0.29,
-                    'Derechohabiencia' => 67.81
+                    'Población Económicamente Activa' => 52.38,
+                    'Población Económicamente Activa masculina' => 53.18,
+                    'Población Económicamente Activa femenina' => 46.82,
+                    'Población Ocupada' => 100.00,
+                    'Población Ocupada masculina' => 53.06,
+                    'Población Ocupada femenina' => 46.94,
+                    'Población Desocupada' => 0.00,
+                    'Derechohabiencia' => 67.19
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 14,
-                    'Hogares Jefatura masculina' => 63.69,
-                    'Hogares Jefatura femenina' => 36.31,
-                    'Ocupación por Vivienda' => 4.93,
+                    'Hogares' => 13,
+                    'Hogares Jefatura masculina' => 63.00,
+                    'Hogares Jefatura femenina' => 37.00,
+                    'Ocupación por Vivienda' => 4.92,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
@@ -108,15 +111,7 @@ class ResidencialSaulo extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 5,
-                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
-                    'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Educativos',
-                    'Cuarta actividad porcentaje' => 20.00
+                    'Total Actividades Económicas' => 0
                 )
             )
         );

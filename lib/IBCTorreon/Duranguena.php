@@ -34,7 +34,7 @@ class Duranguena extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Durangueña';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'duranguena';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,23 +59,26 @@ class Duranguena extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 989,
-                    'Porcentaje de población masculina' => 48.52,
-                    'Porcentaje de población femenina' => 51.48,
+                    'Población total' => 996,
+                    'Porcentaje de población masculina' => 48.48,
+                    'Porcentaje de población femenina' => 51.52,
                     'Porcentaje de población de 0 a 14 años' => 27.66,
                     'Porcentaje de población de 15 a 64 años' => 62.70,
                     'Porcentaje de población de 65 y más años' => 9.64,
                     'Porcentaje de población no especificada' => 0.00,
-                    'Fecundidad promedio' => 2.53,
-                    'Porcentaje de población nacida en otro estado' => 14.19,
-                    'Porcentaje de población con discapacidad' => 8.54
+                    'Fecundidad promedio' => 2.55,
+                    'Porcentaje de población nacida en otro estado' => 14.09,
+                    'Porcentaje de población con discapacidad' => 8.88,
+                    'Porcentaje de población de 15 y más analfabeta' => 4.29,
+                    'Porcentaje de población de 18 y más' => 66.64,
+                    'Porcentaje de población de 18 y más postbásicos' => 11.12
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.15,
-                    'Grado Promedio de Escolaridad masculina' => 7.00,
-                    'Grado Promedio de Escolaridad femenina' => 7.29
+                    'Grado Promedio de Escolaridad' => 7.13,
+                    'Grado Promedio de Escolaridad masculina' => 6.97,
+                    'Grado Promedio de Escolaridad femenina' => 7.28
                 )
             ),
             'Características Económicas' => array(
@@ -83,27 +86,27 @@ class Duranguena extends \IBCBase\PublicacionWeb {
                     'Población Económicamente Activa' => 48.95,
                     'Población Económicamente Activa masculina' => 70.54,
                     'Población Económicamente Activa femenina' => 29.46,
-                    'Población Ocupada' => 94.68,
-                    'Población Ocupada masculina' => 69.01,
-                    'Población Ocupada femenina' => 30.99,
-                    'Población Desocupada' => 5.32,
-                    'Derechohabiencia' => 46.93
+                    'Población Ocupada' => 94.67,
+                    'Población Ocupada masculina' => 69.25,
+                    'Población Ocupada femenina' => 30.75,
+                    'Población Desocupada' => 5.33,
+                    'Derechohabiencia' => 46.92
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 263,
-                    'Hogares Jefatura masculina' => 66.89,
-                    'Hogares Jefatura femenina' => 33.11,
-                    'Ocupación por Vivienda' => 3.76,
-                    'Viviendas con Electricidad' => 97.68,
-                    'Viviendas con Agua' => 94.37,
-                    'Viviendas con Drenaje' => 98.87,
-                    'Viviendas con Televisión' => 94.42,
-                    'Viviendas con Automóvil' => 12.46,
-                    'Viviendas con Computadora' => 5.86,
-                    'Viviendas con Celular' => 52.85,
-                    'Viviendas con Internet' => 2.19
+                    'Hogares' => 266,
+                    'Hogares Jefatura masculina' => 66.86,
+                    'Hogares Jefatura femenina' => 33.14,
+                    'Ocupación por Vivienda' => 3.74,
+                    'Viviendas con Electricidad' => 97.71,
+                    'Viviendas con Agua' => 93.31,
+                    'Viviendas con Drenaje' => 98.88,
+                    'Viviendas con Televisión' => 94.49,
+                    'Viviendas con Automóvil' => 12.32,
+                    'Viviendas con Computadora' => 5.80,
+                    'Viviendas con Celular' => 52.25,
+                    'Viviendas con Internet' => 2.17
                 )
             ),
             'Unidades Económicas' => array(

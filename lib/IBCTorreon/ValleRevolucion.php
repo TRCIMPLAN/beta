@@ -34,7 +34,7 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Valle Revolucion';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'valle-revolucion';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.21,
                     'Fecundidad promedio' => 1.95,
                     'Porcentaje de población nacida en otro estado' => 22.37,
-                    'Porcentaje de población con discapacidad' => 2.25
+                    'Porcentaje de población con discapacidad' => 2.25,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.15,
+                    'Porcentaje de población de 18 y más' => 69.58,
+                    'Porcentaje de población de 18 y más postbásicos' => 42.07
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.00,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 6.00,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

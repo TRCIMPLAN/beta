@@ -34,7 +34,7 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Vista Hermosa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vista-hermosa';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.79,
                     'Porcentaje de población nacida en otro estado' => 2.59,
-                    'Porcentaje de población con discapacidad' => 5.95
+                    'Porcentaje de población con discapacidad' => 5.95,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.09,
+                    'Porcentaje de población de 18 y más' => 62.48,
+                    'Porcentaje de población de 18 y más postbásicos' => 8.87
                 )
             ),
             'Educación' => array(

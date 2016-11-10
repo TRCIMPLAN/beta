@@ -34,7 +34,7 @@ class LaFuente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Fuente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-fuente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LaFuente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.73,
                     'Fecundidad promedio' => 1.87,
                     'Porcentaje de población nacida en otro estado' => 16.43,
-                    'Porcentaje de población con discapacidad' => 3.37
+                    'Porcentaje de población con discapacidad' => 3.37,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
+                    'Porcentaje de población de 18 y más' => 75.05,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.45
                 )
             ),
             'Educación' => array(
@@ -115,7 +118,7 @@ class LaFuente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.77,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.57,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 3.59,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 3.59

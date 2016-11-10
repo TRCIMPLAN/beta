@@ -34,7 +34,7 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverria Oriente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.29,
                     'Fecundidad promedio' => 2.29,
                     'Porcentaje de población nacida en otro estado' => 19.47,
-                    'Porcentaje de población con discapacidad' => 5.22
+                    'Porcentaje de población con discapacidad' => 5.22,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.49,
+                    'Porcentaje de población de 18 y más' => 73.71,
+                    'Porcentaje de población de 18 y más postbásicos' => 39.34
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.81,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 12.96,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )

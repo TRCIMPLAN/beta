@@ -34,7 +34,7 @@ class ResidencialCumbres extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Cumbres';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-cumbres';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class ResidencialCumbres extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.62,
                     'Fecundidad promedio' => 1.55,
                     'Porcentaje de población nacida en otro estado' => 11.79,
-                    'Porcentaje de población con discapacidad' => 0.81
+                    'Porcentaje de población con discapacidad' => 0.81,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.42,
+                    'Porcentaje de población de 18 y más' => 71.44,
+                    'Porcentaje de población de 18 y más postbásicos' => 63.30
                 )
             ),
             'Educación' => array(

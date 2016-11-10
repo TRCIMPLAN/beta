@@ -34,7 +34,7 @@ class LosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Angeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 6.11,
                     'Fecundidad promedio' => 2.13,
                     'Porcentaje de población nacida en otro estado' => 16.87,
-                    'Porcentaje de población con discapacidad' => 5.15
+                    'Porcentaje de población con discapacidad' => 5.15,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.09,
+                    'Porcentaje de población de 18 y más' => 71.39,
+                    'Porcentaje de población de 18 y más postbásicos' => 63.55
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class LosAngeles extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 15.71,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.29,
-                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.86,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 12.86,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 11.43

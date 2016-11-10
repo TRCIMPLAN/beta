@@ -34,7 +34,7 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Hacienda Oriente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-hacienda-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.63,
                     'Porcentaje de población nacida en otro estado' => 21.72,
-                    'Porcentaje de población con discapacidad' => 2.52
+                    'Porcentaje de población con discapacidad' => 2.52,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
+                    'Porcentaje de población de 18 y más' => 73.86,
+                    'Porcentaje de población de 18 y más postbásicos' => 67.90
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class LaHaciendaOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.00,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 12.00,
-                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 4.00,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

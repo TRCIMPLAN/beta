@@ -34,7 +34,7 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas De La Ibero';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-ibero';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.82,
                     'Fecundidad promedio' => 1.47,
                     'Porcentaje de población nacida en otro estado' => 25.07,
-                    'Porcentaje de población con discapacidad' => 1.20
+                    'Porcentaje de población con discapacidad' => 1.20,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 58.08,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.89
                 )
             ),
             'Educación' => array(
@@ -108,11 +111,13 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 2,
+                    'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Educativos',
-                    'Segunda actividad porcentaje' => 50.00
+                    'Primer actividad porcentaje' => 66.67,
+                    'Segunda actividad nombre' => 'Gubernamentales',
+                    'Segunda actividad porcentaje' => 16.67,
+                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad porcentaje' => 16.67
                 )
             )
         );

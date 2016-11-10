@@ -12,7 +12,10 @@
         "Porcentaje de población no especificada":2.05,
         "Fecundidad promedio":1.69,
         "Porcentaje de población nacida en otro estado":13.22,
-        "Porcentaje de población con discapacidad":0.52
+        "Porcentaje de población con discapacidad":0.52,
+        "Porcentaje de población de 15 y más analfabeta":0,
+        "Porcentaje de población de 18 y más":56.62,
+        "Porcentaje de población de 18 y más postbásicos":23.79
       }
     },
     "Educación":{
@@ -59,9 +62,9 @@
         "Segunda actividad porcentaje":26.67,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":13.33,
-        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad nombre":"Comercio Mayoreo",
         "Cuarta actividad porcentaje":6.67,
-        "Quinta actividad nombre":"Comercio Mayoreo",
+        "Quinta actividad nombre":"Educativos",
         "Quinta actividad porcentaje":6.67
       }
     }

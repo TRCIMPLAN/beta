@@ -34,7 +34,7 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Las Margaritas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.97,
                     'Porcentaje de población nacida en otro estado' => 40.82,
-                    'Porcentaje de población con discapacidad' => 38.78
+                    'Porcentaje de población con discapacidad' => 38.78,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.37,
+                    'Porcentaje de población de 18 y más' => 89.80,
+                    'Porcentaje de población de 18 y más postbásicos' => 59.18
                 )
             ),
             'Educación' => array(

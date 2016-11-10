@@ -34,7 +34,7 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Division Del Norte';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'division-del-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.06,
                     'Fecundidad promedio' => 2.64,
                     'Porcentaje de población nacida en otro estado' => 19.46,
-                    'Porcentaje de población con discapacidad' => 6.21
+                    'Porcentaje de población con discapacidad' => 6.21,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.20,
+                    'Porcentaje de población de 18 y más' => 62.26,
+                    'Porcentaje de población de 18 y más postbásicos' => 13.95
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 94,
+                    'Total Actividades Económicas' => 110,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 43.62,
+                    'Primer actividad porcentaje' => 40.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Segunda actividad porcentaje' => 32.98,
+                    'Segunda actividad porcentaje' => 29.09,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Tercera actividad porcentaje' => 10.64,
+                    'Tercera actividad porcentaje' => 10.91,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
-                    'Cuarta actividad porcentaje' => 6.38,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
-                    'Quinta actividad porcentaje' => 1.06
+                    'Cuarta actividad porcentaje' => 5.45,
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
+                    'Quinta actividad porcentaje' => 3.64
                 )
             )
         );

@@ -34,7 +34,7 @@ class Navarro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Navarro';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'navarro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Navarro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 3.60,
                     'Fecundidad promedio' => 1.92,
                     'Porcentaje de población nacida en otro estado' => 24.87,
-                    'Porcentaje de población con discapacidad' => 3.31
+                    'Porcentaje de población con discapacidad' => 3.31,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.07,
+                    'Porcentaje de población de 18 y más' => 79.84,
+                    'Porcentaje de población de 18 y más postbásicos' => 65.99
                 )
             ),
             'Educación' => array(
@@ -123,17 +126,6 @@ class Navarro extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
-
-    /**
-     * Mapas
-     *
-     * @return array Arreglo asociativo
-     */
-    public function mapas() {
-        return array(
-            'Límites' => \Configuracion\IBCTorreonConfig::LIMITES
-        );
-    } // mapas
 
 } // Clase Navarro
 

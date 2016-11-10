@@ -151,7 +151,7 @@
           <h1 itemprop="name">Francisco I. Madero</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Francisco I. Madero de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Francisco I. Madero" src="../imagenes/imagen.jpg">
@@ -410,23 +410,23 @@ Francisco I. Madero sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">10</td>
+        <td class="derecha">9</td>
       </tr>
       <tr>
         <td>1° Comercio Menudeo</td>
-        <td class="derecha">70.00 %</td>
+        <td class="derecha">77.78 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
-        <td class="derecha">10.00 %</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
+        <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>3° Educativos</td>
-        <td class="derecha">10.00 %</td>
+        <td>3° Industria Manufacturera</td>
+        <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>4° Otros servicios, excepto Gobierno</td>
-        <td class="derecha">10.00 %</td>
+        <td>ND</td>
+        <td class="derecha">ND</td>
       </tr>
       <tr>
         <td>ND</td>
@@ -779,14 +779,13 @@ Francisco I. Madero sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 70, '#59C38E', '70 %'],
-              ['2° Industria Manufacturera', 10, '#8EC359', '10 %'],
-              ['3° Educativos', 10, '#C38E59', '10 %'],
-              ['4° Otros servicios, excepto Gobierno', 10, '#80C0FF', '10 %']
+              ['1° Comercio Menudeo', 77.78, '#59C38E', '77.78 %'],
+              ['2° Otros servicios, excepto Gobierno', 11.11, '#8EC359', '11.11 %'],
+              ['3° Industria Manufacturera', 11.11, '#C38E59', '11.11 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '10 Unidades Económicas',
+            title: '9 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

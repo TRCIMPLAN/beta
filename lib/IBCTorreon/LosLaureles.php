@@ -34,7 +34,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Laureles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-laureles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 7.23,
                     'Fecundidad promedio' => 1.96,
                     'Porcentaje de población nacida en otro estado' => 15.84,
-                    'Porcentaje de población con discapacidad' => 1.41
+                    'Porcentaje de población con discapacidad' => 1.41,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.59,
+                    'Porcentaje de población de 18 y más' => 52.84,
+                    'Porcentaje de población de 18 y más postbásicos' => 18.03
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 16.13,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 6.45,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 3.23
                 )
             )

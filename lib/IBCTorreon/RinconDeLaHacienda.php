@@ -34,7 +34,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon De La Hacienda';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-la-hacienda';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.89,
                     'Fecundidad promedio' => 1.59,
                     'Porcentaje de población nacida en otro estado' => 29.42,
-                    'Porcentaje de población con discapacidad' => 1.78
+                    'Porcentaje de población con discapacidad' => 1.78,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 70.96,
+                    'Porcentaje de población de 18 y más postbásicos' => 58.65
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.81,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )

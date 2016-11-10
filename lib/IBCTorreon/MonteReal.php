@@ -34,7 +34,7 @@ class MonteReal extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Monte Real';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'monte-real';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class MonteReal extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.73,
                     'Fecundidad promedio' => 1.77,
                     'Porcentaje de población nacida en otro estado' => 14.49,
-                    'Porcentaje de población con discapacidad' => 1.73
+                    'Porcentaje de población con discapacidad' => 1.73,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.19,
+                    'Porcentaje de población de 18 y más' => 56.39,
+                    'Porcentaje de población de 18 y más postbásicos' => 30.22
                 )
             ),
             'Educación' => array(
@@ -108,17 +111,17 @@ class MonteReal extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 177,
+                    'Total Actividades Económicas' => 187,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 37.85,
+                    'Primer actividad porcentaje' => 39.57,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 22.60,
+                    'Segunda actividad porcentaje' => 21.39,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
-                    'Tercera actividad porcentaje' => 20.90,
+                    'Tercera actividad porcentaje' => 19.79,
                     'Cuarta actividad nombre' => 'Educativos',
-                    'Cuarta actividad porcentaje' => 5.65,
+                    'Cuarta actividad porcentaje' => 5.35,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
-                    'Quinta actividad porcentaje' => 3.95
+                    'Quinta actividad porcentaje' => 3.74
                 )
             )
         );

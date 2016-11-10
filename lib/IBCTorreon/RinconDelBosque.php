@@ -34,7 +34,7 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon Del Bosque';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 1.74,
                     'Fecundidad promedio' => 2.49,
                     'Porcentaje de población nacida en otro estado' => 18.32,
-                    'Porcentaje de población con discapacidad' => 5.15
+                    'Porcentaje de población con discapacidad' => 5.15,
+                    'Porcentaje de población de 15 y más analfabeta' => 1.50,
+                    'Porcentaje de población de 18 y más' => 60.23,
+                    'Porcentaje de población de 18 y más postbásicos' => 18.17
                 )
             ),
             'Educación' => array(

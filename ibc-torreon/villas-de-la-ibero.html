@@ -151,7 +151,7 @@
           <h1 itemprop="name">Villas De La Ibero</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Villas De La Ibero de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-09-14 08:25:21">14/09/2016 08:25
+          <meta itemprop="datePublished" content="2016-11-10 11:03:30">10/11/2016 11:03
         </div>
         </div>
         <meta itemprop="image" alt="Villas De La Ibero" src="../imagenes/imagen.jpg">
@@ -410,19 +410,19 @@ Villas De La Ibero sin mapas.
     <tbody>
       <tr>
         <td>Total Actividades Económicas</td>
-        <td class="derecha">2</td>
+        <td class="derecha">6</td>
       </tr>
       <tr>
         <td>1° Comercio Menudeo</td>
-        <td class="derecha">50.00 %</td>
+        <td class="derecha">66.67 %</td>
       </tr>
       <tr>
-        <td>2° Educativos</td>
-        <td class="derecha">50.00 %</td>
+        <td>2° Gubernamentales</td>
+        <td class="derecha">16.67 %</td>
       </tr>
       <tr>
-        <td>ND</td>
-        <td class="derecha">ND</td>
+        <td>3° Educativos</td>
+        <td class="derecha">16.67 %</td>
       </tr>
       <tr>
         <td>ND</td>
@@ -779,12 +779,13 @@ Villas De La Ibero sin mapas.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Comercio Menudeo', 50, '#59C38E', '50 %'],
-              ['2° Educativos', 50, '#8EC359', '50 %']
+              ['1° Comercio Menudeo', 66.67, '#59C38E', '66.67 %'],
+              ['2° Gubernamentales', 16.67, '#8EC359', '16.67 %'],
+              ['3° Educativos', 16.67, '#C38E59', '16.67 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
-            title: '2 Unidades Económicas',
+            title: '6 Unidades Económicas',
             hAxis: { title: 'Porcentaje', minValue: 0 },
             legend: { position: 'none' }
           };

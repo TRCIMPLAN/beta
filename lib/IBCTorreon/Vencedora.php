@@ -34,7 +34,7 @@ class Vencedora extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Vencedora';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vencedora';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.46,
                     'Fecundidad promedio' => 2.58,
                     'Porcentaje de población nacida en otro estado' => 14.26,
-                    'Porcentaje de población con discapacidad' => 4.44
+                    'Porcentaje de población con discapacidad' => 4.44,
+                    'Porcentaje de población de 15 y más analfabeta' => 2.57,
+                    'Porcentaje de población de 18 y más' => 69.69,
+                    'Porcentaje de población de 18 y más postbásicos' => 21.12
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 44.07,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 23.73,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 10.17,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 10.17,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.08

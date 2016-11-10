@@ -34,7 +34,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion Las Margaritas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 8.19,
                     'Fecundidad promedio' => 1.87,
                     'Porcentaje de población nacida en otro estado' => 20.43,
-                    'Porcentaje de población con discapacidad' => 6.84
+                    'Porcentaje de población con discapacidad' => 6.84,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
+                    'Porcentaje de población de 18 y más' => 71.52,
+                    'Porcentaje de población de 18 y más postbásicos' => 54.23
                 )
             ),
             'Educación' => array(
@@ -117,7 +120,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.57,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.22,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 3.48
                 )
             )

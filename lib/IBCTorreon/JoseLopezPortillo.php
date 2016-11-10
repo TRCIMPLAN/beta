@@ -34,7 +34,7 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jose Lopez Portillo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-lopez-portillo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.55,
                     'Fecundidad promedio' => 2.47,
                     'Porcentaje de población nacida en otro estado' => 16.10,
-                    'Porcentaje de población con discapacidad' => 4.57
+                    'Porcentaje de población con discapacidad' => 4.57,
+                    'Porcentaje de población de 15 y más analfabeta' => 3.45,
+                    'Porcentaje de población de 18 y más' => 66.67,
+                    'Porcentaje de población de 18 y más postbásicos' => 16.04
                 )
             ),
             'Educación' => array(
@@ -113,9 +116,9 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 41.18,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 29.41,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Gubernamentales',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Gubernamentales',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 11.76,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 5.88

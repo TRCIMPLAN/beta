@@ -34,7 +34,7 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Del Valle';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,60 +59,69 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 425,
-                    'Porcentaje de población masculina' => 46.12,
-                    'Porcentaje de población femenina' => 53.88,
-                    'Porcentaje de población de 0 a 14 años' => 22.82,
-                    'Porcentaje de población de 15 a 64 años' => 72.94,
-                    'Porcentaje de población de 65 y más años' => 4.24,
+                    'Población total' => 345,
+                    'Porcentaje de población masculina' => 45.80,
+                    'Porcentaje de población femenina' => 54.20,
+                    'Porcentaje de población de 0 a 14 años' => 23.77,
+                    'Porcentaje de población de 15 a 64 años' => 72.75,
+                    'Porcentaje de población de 65 y más años' => 3.48,
                     'Porcentaje de población no especificada' => 0.00,
-                    'Fecundidad promedio' => 1.56,
-                    'Porcentaje de población nacida en otro estado' => 25.18,
-                    'Porcentaje de población con discapacidad' => 5.28
+                    'Fecundidad promedio' => 1.65,
+                    'Porcentaje de población nacida en otro estado' => 25.80,
+                    'Porcentaje de población con discapacidad' => 3.99,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.90,
+                    'Porcentaje de población de 18 y más' => 69.28,
+                    'Porcentaje de población de 18 y más postbásicos' => 63.19
                 )
             ),
             'Educación' => array(
                 '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.41,
-                    'Grado Promedio de Escolaridad masculina' => 13.90,
-                    'Grado Promedio de Escolaridad femenina' => 12.98
+                    'Grado Promedio de Escolaridad' => 13.79,
+                    'Grado Promedio de Escolaridad masculina' => 14.26,
+                    'Grado Promedio de Escolaridad femenina' => 13.38
                 )
             ),
             'Características Económicas' => array(
                 '2010' => array(
-                    'Población Económicamente Activa' => 51.12,
-                    'Población Económicamente Activa masculina' => 59.02,
-                    'Población Económicamente Activa femenina' => 40.98,
-                    'Población Ocupada' => 95.44,
-                    'Población Ocupada masculina' => 58.29,
-                    'Población Ocupada femenina' => 41.71,
-                    'Población Desocupada' => 4.56,
-                    'Derechohabiencia' => 85.41
+                    'Población Económicamente Activa' => 51.41,
+                    'Población Económicamente Activa masculina' => 58.90,
+                    'Población Económicamente Activa femenina' => 41.10,
+                    'Población Ocupada' => 94.98,
+                    'Población Ocupada masculina' => 58.27,
+                    'Población Ocupada femenina' => 41.73,
+                    'Población Desocupada' => 5.02,
+                    'Derechohabiencia' => 84.35
                 )
             ),
             'Viviendas' => array(
                 '2010' => array(
-                    'Hogares' => 120,
-                    'Hogares Jefatura masculina' => 78.33,
-                    'Hogares Jefatura femenina' => 21.67,
-                    'Ocupación por Vivienda' => 3.54,
+                    'Hogares' => 96,
+                    'Hogares Jefatura masculina' => 76.04,
+                    'Hogares Jefatura femenina' => 23.96,
+                    'Ocupación por Vivienda' => 3.59,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
-                    'Viviendas con Televisión' => 99.17,
-                    'Viviendas con Automóvil' => 88.33,
+                    'Viviendas con Televisión' => 98.96,
+                    'Viviendas con Automóvil' => 87.50,
                     'Viviendas con Computadora' => 79.17,
-                    'Viviendas con Celular' => 92.50,
-                    'Viviendas con Internet' => 69.17
+                    'Viviendas con Celular' => 95.83,
+                    'Viviendas con Internet' => 69.79
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 4,
+                    'Total Actividades Económicas' => 20,
                     'Primer actividad nombre' => 'Comercio Menudeo',
-                    'Primer actividad porcentaje' => 75.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Segunda actividad porcentaje' => 25.00
+                    'Primer actividad porcentaje' => 35.00,
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad porcentaje' => 15.00,
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad porcentaje' => 15.00,
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad porcentaje' => 10.00,
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad porcentaje' => 10.00
                 )
             )
         );

@@ -34,7 +34,7 @@ class CiudadIndustrial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Industrial';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-industrial';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -59,7 +59,38 @@ class CiudadIndustrial extends \IBCBase\PublicacionWeb {
         return array(
             'Demografía' => array(
                 '2010' => array(
-                    'Población total' => 0
+                    'Población total' => 2,
+                    'Porcentaje de población masculina' => 42.38,
+                    'Porcentaje de población femenina' => 57.62,
+                    'Porcentaje de población de 0 a 14 años' => 27.34,
+                    'Porcentaje de población de 15 a 64 años' => 64.45,
+                    'Porcentaje de población de 65 y más años' => 5.78,
+                    'Porcentaje de población no especificada' => 2.43,
+                    'Fecundidad promedio' => 1.67,
+                    'Porcentaje de población nacida en otro estado' => 18.64,
+                    'Porcentaje de población con discapacidad' => 10.17,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
+                    'Porcentaje de población de 18 y más' => 66.10,
+                    'Porcentaje de población de 18 y más postbásicos' => 55.93
+                )
+            ),
+            'Educación' => array(
+                '2010' => array(
+                    'Grado Promedio de Escolaridad' => 13.90,
+                    'Grado Promedio de Escolaridad masculina' => 14.58,
+                    'Grado Promedio de Escolaridad femenina' => 13.25
+                )
+            ),
+            'Características Económicas' => array(
+                '2010' => array(
+                    'Población Económicamente Activa' => 59.58,
+                    'Población Económicamente Activa masculina' => 53.57,
+                    'Población Económicamente Activa femenina' => 46.43,
+                    'Población Ocupada' => 100.00,
+                    'Población Ocupada masculina' => 53.57,
+                    'Población Ocupada femenina' => 46.43,
+                    'Población Desocupada' => 0.00,
+                    'Derechohabiencia' => 93.22
                 )
             ),
             'Viviendas' => array(
@@ -69,17 +100,17 @@ class CiudadIndustrial extends \IBCBase\PublicacionWeb {
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
-                    'Total Actividades Económicas' => 244,
+                    'Total Actividades Económicas' => 266,
                     'Primer actividad nombre' => 'Industria Manufacturera',
-                    'Primer actividad porcentaje' => 32.79,
+                    'Primer actividad porcentaje' => 30.45,
                     'Segunda actividad nombre' => 'Comercio Mayoreo',
-                    'Segunda actividad porcentaje' => 24.59,
+                    'Segunda actividad porcentaje' => 26.32,
                     'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
-                    'Tercera actividad porcentaje' => 11.07,
+                    'Tercera actividad porcentaje' => 11.28,
                     'Cuarta actividad nombre' => 'Comercio Menudeo',
-                    'Cuarta actividad porcentaje' => 10.66,
+                    'Cuarta actividad porcentaje' => 10.53,
                     'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
-                    'Quinta actividad porcentaje' => 7.38
+                    'Quinta actividad porcentaje' => 7.89
                 )
             )
         );

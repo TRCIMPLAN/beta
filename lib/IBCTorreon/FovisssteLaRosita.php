@@ -34,7 +34,7 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Fovissste La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fovissste-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.26,
                     'Fecundidad promedio' => 2.13,
                     'Porcentaje de población nacida en otro estado' => 21.73,
-                    'Porcentaje de población con discapacidad' => 4.61
+                    'Porcentaje de población con discapacidad' => 4.61,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
+                    'Porcentaje de población de 18 y más' => 76.28,
+                    'Porcentaje de población de 18 y más postbásicos' => 56.23
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.73,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.84,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.84
                 )
             )

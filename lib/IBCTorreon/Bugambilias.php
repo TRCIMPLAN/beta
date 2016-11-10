@@ -34,7 +34,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Bugambilias';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bugambilias';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.46,
                     'Porcentaje de población nacida en otro estado' => 19.78,
-                    'Porcentaje de población con discapacidad' => 5.55
+                    'Porcentaje de población con discapacidad' => 5.55,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.74,
+                    'Porcentaje de población de 18 y más' => 75.56,
+                    'Porcentaje de población de 18 y más postbásicos' => 37.33
                 )
             ),
             'Educación' => array(
@@ -111,13 +114,13 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 23,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 21.74,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 17.39,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 17.39,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 8.70
                 )
             )

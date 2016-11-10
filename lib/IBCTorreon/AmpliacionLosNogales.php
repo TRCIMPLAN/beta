@@ -34,7 +34,7 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliacion Los Nogales';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-09-14 08:25:21';
+        $this->fecha       = '2016-11-10 11:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -68,7 +68,10 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población no especificada' => 2.88,
                     'Fecundidad promedio' => 1.95,
                     'Porcentaje de población nacida en otro estado' => 20.41,
-                    'Porcentaje de población con discapacidad' => 12.12
+                    'Porcentaje de población con discapacidad' => 12.12,
+                    'Porcentaje de población de 15 y más analfabeta' => 0.14,
+                    'Porcentaje de población de 18 y más' => 72.74,
+                    'Porcentaje de población de 18 y más postbásicos' => 53.42
                 )
             ),
             'Educación' => array(
@@ -115,9 +118,9 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.65,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.82,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.82
                 )
             )
