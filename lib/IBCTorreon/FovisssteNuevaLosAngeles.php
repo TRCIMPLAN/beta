@@ -32,13 +32,13 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Fovissste Nueva Los Angeles';
+        $this->nombre      = 'Fovissste Nueva Los Ángeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:29';
+        $this->fecha       = '2016-11-14 14:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fovissste-nueva-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fovissste Nueva Los Angeles de Torreón.';
+        $this->descripcion = 'Colonia Fovissste Nueva Los Ángeles de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -114,18 +114,27 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 22,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 22.73,
-                    'Segunda actividad nombre' => 'Salud',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.64,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 13.64,
-                    'Cuarta actividad nombre' => 'Construcción',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase FovisssteNuevaLosAngeles
 

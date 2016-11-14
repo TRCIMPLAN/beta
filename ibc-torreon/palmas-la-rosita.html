@@ -151,7 +151,7 @@
           <h1 itemprop="name">Palmas La Rosita</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Palmas La Rosita de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
+          <meta itemprop="datePublished" content="2016-11-14 14:03:30">14/11/2016 14:03
         </div>
         </div>
         <meta itemprop="image" alt="Palmas La Rosita" src="../imagenes/imagen.jpg">
@@ -164,9 +164,7 @@
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
-<div class="alert alert-warning">
-Palmas La Rosita sin mapas.
-</div>
+    <div id="MapaLimites" class="mapa"></div>
   </div>
   <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
@@ -557,6 +555,28 @@ Palmas La Rosita sin mapas.
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
+  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
+  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
+    if (mapa_limites_cargado == false) {
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      cartodb.createVis('MapaLimites', carto_json)
+      .done(function(vis, layers) {
+        // Capa colonias
+        var capa_colonias = layers[1];
+        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
+        // Cambiar la consulta en la subcapa
+        var sub_capa = capa_colonias.getSubLayer(0);
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Palmas La Rosita'");
+        // Ajustar el zoom
+        var map = vis.getNativeMap();
+        map.setZoom(14);
+      })
+      .error(function(err) {
+        console.log(err);
+      });
+      mapa_limites_cargado = true;
+    }
+  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 

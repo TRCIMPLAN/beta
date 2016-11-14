@@ -34,7 +34,7 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
         // Título, autor y fecha
         $this->nombre      = 'Aeropuerto Internacional Francisco Sarabia Tinoco';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:27';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aeropuerto-internacional-francisco-sarabia-tinoco';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -115,6 +115,15 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase AeropuertoInternacionalFranciscoSarabiaTinoco
 

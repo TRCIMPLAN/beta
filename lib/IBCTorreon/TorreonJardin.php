@@ -32,13 +32,13 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Torreon Jardin';
+        $this->nombre      = 'Torreón Jardín';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:30';
+        $this->fecha       = '2016-11-14 14:03:32';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-jardin';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Torreon Jardin de Torreón.';
+        $this->descripcion = 'Colonia Torreón Jardín de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -118,14 +118,23 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.35,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.39,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 10.89,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.89
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase TorreonJardin
 

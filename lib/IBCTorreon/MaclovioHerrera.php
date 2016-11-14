@@ -34,7 +34,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Maclovio Herrera';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:29';
+        $this->fecha       = '2016-11-14 14:03:30';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'maclovio-herrera';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,16 +116,25 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 52.94,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 5.88,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase MaclovioHerrera
 

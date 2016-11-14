@@ -32,13 +32,13 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Elsa Hernandez';
+        $this->nombre      = 'Elsa Hernández';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:29';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'elsa-hernandez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Elsa Hernandez de Torreón.';
+        $this->descripcion = 'Colonia Elsa Hernández de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -118,14 +118,23 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.60,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 12.36,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.87,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.87
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase ElsaHernandez
 

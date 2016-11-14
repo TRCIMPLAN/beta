@@ -32,13 +32,13 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Caleras Martinez';
+        $this->nombre      = 'Caleras Martínez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'caleras-martinez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Caleras Martinez de Torreón.';
+        $this->descripcion = 'Colonia Caleras Martínez de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -120,6 +120,15 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase CalerasMartinez
 

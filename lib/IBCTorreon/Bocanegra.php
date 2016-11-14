@@ -34,7 +34,7 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Bocanegra';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bocanegra';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,16 +116,25 @@ class Bocanegra extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 35.63,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 22.99,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 12.64,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.64,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 3.45
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase Bocanegra
 

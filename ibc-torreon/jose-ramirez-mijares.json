@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Jose Ramirez Mijares",
+  "Nombre":"José Ramírez Mijares",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":15,
         "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":12.5,
-        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad nombre":"Educativos",
         "Cuarta actividad porcentaje":5,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":5
       }
     }

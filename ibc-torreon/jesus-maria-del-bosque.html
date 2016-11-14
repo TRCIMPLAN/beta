@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Jesus Maria Del Bosque de Torreón.">
+  <meta name="description" content="Colonia Jesús Maria del Bosque de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Jesus Maria Del Bosque - IMPLAN Torreón</title>
+  <title>Jesús Maria del Bosque - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Jesus Maria Del Bosque</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Jesus Maria Del Bosque de Torreón.</div>
+          <h1 itemprop="name">Jesús Maria del Bosque</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Jesús Maria del Bosque de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
+          <meta itemprop="datePublished" content="2016-11-14 14:03:29">14/11/2016 14:03
         </div>
         </div>
-        <meta itemprop="image" alt="Jesus Maria Del Bosque" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="Jesús Maria del Bosque" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -164,9 +164,7 @@
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
-<div class="alert alert-warning">
-Jesus Maria Del Bosque sin mapas.
-</div>
+    <div id="MapaLimites" class="mapa"></div>
   </div>
   <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
@@ -528,6 +526,28 @@ El Total de Actividades Económicas es cero.
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
+  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
+  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
+    if (mapa_limites_cargado == false) {
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      cartodb.createVis('MapaLimites', carto_json)
+      .done(function(vis, layers) {
+        // Capa colonias
+        var capa_colonias = layers[1];
+        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
+        // Cambiar la consulta en la subcapa
+        var sub_capa = capa_colonias.getSubLayer(0);
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Jesús Maria del Bosque'");
+        // Ajustar el zoom
+        var map = vis.getNativeMap();
+        map.setZoom(14);
+      })
+      .error(function(err) {
+        console.log(err);
+      });
+      mapa_limites_cargado = true;
+    }
+  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 

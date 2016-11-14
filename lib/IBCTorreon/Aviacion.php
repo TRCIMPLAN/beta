@@ -32,13 +32,13 @@ class Aviacion extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Aviacion';
+        $this->nombre      = 'Aviación';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aviacion de Torreón.';
+        $this->descripcion = 'Colonia Aviación de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -120,12 +120,21 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 14.42,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.58,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 3.85
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase Aviacion
 

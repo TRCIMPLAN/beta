@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Torreon Jardin",
+  "Nombre":"Torreón Jardín",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":15.35,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":11.39,
-        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad nombre":"Educativos",
         "Cuarta actividad porcentaje":10.89,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Quinta actividad porcentaje":10.89
       }
     }

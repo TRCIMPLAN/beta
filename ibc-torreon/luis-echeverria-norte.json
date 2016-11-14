@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Luis Echeverria Norte",
+  "Nombre":"Luis Echeverría Norte",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,9 +58,9 @@
         "Total Actividades Económicas":92,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":33.7,
-        "Segunda actividad nombre":"Gubernamentales",
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":13.04,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Gubernamentales",
         "Tercera actividad porcentaje":13.04,
         "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":11.96,

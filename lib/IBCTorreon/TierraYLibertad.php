@@ -32,13 +32,13 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Tierra Y Libertad';
+        $this->nombre      = 'Tierra y Libertad';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:30';
+        $this->fecha       = '2016-11-14 14:03:32';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'tierra-y-libertad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Tierra Y Libertad de Torreón.';
+        $this->descripcion = 'Colonia Tierra y Libertad de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -120,12 +120,21 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.04,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.17,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 5.22
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase TierraYLibertad
 

@@ -156,28 +156,28 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = '    <div id="IBCTorreonMapa" class="mapa"></div>';
         $this->contenido[]  = '  </section>';
         // Código Javascript
-        $this->javascript[] = <<<FINAL
-  // Cargar mapa IBC Torreón cuando esté lista la página
-  $(window).load(function() {
-    cartodb.createVis('IBCTorreonMapa', 'https://guivaloz.carto.com/api/v2/viz/df93b7d2-8a76-11e6-a971-0e233c30368f/viz.json', {
-        shareable: false,
-        title: true,
-        description: true,
-        search: false,
-        scrollwheel: false,
-        infowindow: true,
-        fullscreen: true
-      })
-      .done(function(vis, layers) {
-        // Capa colonias
-        var colonias_capa = layers[1];
-        colonias_capa.setInteraction(true);
-        // Ajustes en el mapa
-        var map = vis.getNativeMap();
-        map.setZoom(12);
-      })
-  });
-FINAL;
+        $js   = array();
+        $js[] = '  // Cargar mapa IBC Torreón cuando esté lista la página';
+        $js[] = '  $(window).load(function() {';
+        $js[] = sprintf('    cartodb.createVis(\'IBCTorreonMapa\', \'%s\', {', IBCTorreonConfig::LIMITES);
+        $js[] = '        shareable: false,';
+        $js[] = '        title: true,';
+        $js[] = '        description: true,';
+        $js[] = '        search: false,';
+        $js[] = '        scrollwheel: false,';
+        $js[] = '        infowindow: true,';
+        $js[] = '        fullscreen: true';
+        $js[] = '      })';
+        $js[] = '      .done(function(vis, layers) {';
+        $js[] = '        // Capa colonias';
+        $js[] = '        var colonias_capa = layers[1];';
+        $js[] = '        colonias_capa.setInteraction(true);';
+        $js[] = '        // Ajustes en el mapa';
+        $js[] = '        var map = vis.getNativeMap();';
+        $js[] = '        map.setZoom(14);';
+        $js[] = '      })';
+        $js[] = '  });';
+        $this->javascript[] = implode("\n", $js);
     } // ibc
 
     /**

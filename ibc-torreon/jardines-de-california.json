@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Jardines De California",
+  "Nombre":"Jardines de California",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -64,7 +64,7 @@
         "Tercera actividad porcentaje":13.73,
         "Cuarta actividad nombre":"Educativos",
         "Cuarta actividad porcentaje":6.86,
-        "Quinta actividad nombre":"Salud",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":5.88
       }
     }

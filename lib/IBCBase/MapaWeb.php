@@ -113,7 +113,7 @@ class MapaWeb implements SalidaWeb {
         $a[] = "        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia";
         $a[] = "        // Cambiar la consulta en la subcapa";
         $a[] = "        var sub_capa = capa_colonias.getSubLayer(0);";
-        $a[] = "        sub_capa.setSQL(\"SELECT * FROM muestra_colonias_torreon WHERE colonia = '{$this->nombre}'\");";
+        $a[] = sprintf("        sub_capa.setSQL(\"SELECT * FROM %s WHERE nombre = '%s'\");", \Configuracion\IBCTorreonConfig::LIMITES_TABLA, $this->nombre);
         $a[] = "        // Ajustar el zoom";
         $a[] = "        var map = vis.getNativeMap();";
         $a[] = "        map.setZoom(14);";

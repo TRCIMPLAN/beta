@@ -151,7 +151,7 @@
           <h1 itemprop="name">Jacobo Meyer</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Jacobo Meyer de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
+          <meta itemprop="datePublished" content="2016-11-14 14:03:29">14/11/2016 14:03
         </div>
         </div>
         <meta itemprop="image" alt="Jacobo Meyer" src="../imagenes/imagen.jpg">
@@ -164,9 +164,7 @@
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
-<div class="alert alert-warning">
-Jacobo Meyer sin mapas.
-</div>
+    <div id="MapaLimites" class="mapa"></div>
   </div>
   <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
@@ -417,19 +415,19 @@ Jacobo Meyer sin mapas.
         <td class="derecha">46.67 %</td>
       </tr>
       <tr>
-        <td>2° Salud</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">13.33 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Salud</td>
         <td class="derecha">13.33 %</td>
       </tr>
       <tr>
-        <td>4° Otros servicios, excepto Gobierno</td>
+        <td>4° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">13.33 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Manejo de Residuos</td>
         <td class="derecha">6.67 %</td>
       </tr>
     </tbody>
@@ -557,6 +555,28 @@ Jacobo Meyer sin mapas.
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
+  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
+  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
+    if (mapa_limites_cargado == false) {
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      cartodb.createVis('MapaLimites', carto_json)
+      .done(function(vis, layers) {
+        // Capa colonias
+        var capa_colonias = layers[1];
+        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
+        // Cambiar la consulta en la subcapa
+        var sub_capa = capa_colonias.getSubLayer(0);
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Jacobo Meyer'");
+        // Ajustar el zoom
+        var map = vis.getNativeMap();
+        map.setZoom(14);
+      })
+      .error(function(err) {
+        console.log(err);
+      });
+      mapa_limites_cargado = true;
+    }
+  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 
@@ -780,10 +800,10 @@ Jacobo Meyer sin mapas.
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 46.67, '#59C38E', '46.67 %'],
-              ['2° Salud', 13.33, '#8EC359', '13.33 %'],
-              ['3° Preparación de Alimentos y Bebidas', 13.33, '#C38E59', '13.33 %'],
-              ['4° Otros servicios, excepto Gobierno', 13.33, '#80C0FF', '13.33 %'],
-              ['5° Industria Manufacturera', 6.67, '#59BFC3', '6.67 %']
+              ['2° Otros servicios, excepto Gobierno', 13.33, '#8EC359', '13.33 %'],
+              ['3° Salud', 13.33, '#C38E59', '13.33 %'],
+              ['4° Preparación de Alimentos y Bebidas', 13.33, '#80C0FF', '13.33 %'],
+              ['5° Manejo de Residuos', 6.67, '#59BFC3', '6.67 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

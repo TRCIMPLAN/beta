@@ -32,13 +32,13 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Ampliacion Leandro Rovirosa Wade';
+        $this->nombre      = 'Ampliación Leandro Rovirosa Wade';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:27';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-leandro-rovirosa-wade';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliacion Leandro Rovirosa Wade de Torreón.';
+        $this->descripcion = 'Colonia Ampliación Leandro Rovirosa Wade de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -112,9 +112,9 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 7,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 42.86,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 42.86,
                     'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 14.29
@@ -122,6 +122,15 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase AmpliacionLeandroRovirosaWade
 

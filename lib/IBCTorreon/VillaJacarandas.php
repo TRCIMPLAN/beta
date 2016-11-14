@@ -34,7 +34,7 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Jacarandas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:30';
+        $this->fecha       = '2016-11-14 14:03:32';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-jacarandas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,12 +120,21 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 16.90,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 8.45,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.23
                 )
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase VillaJacarandas
 

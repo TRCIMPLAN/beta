@@ -34,7 +34,7 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Caleras Solares';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-10 11:03:28';
+        $this->fecha       = '2016-11-14 14:03:28';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'caleras-solares';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,6 +120,15 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
             )
         );
     } // datos
+
+    /**
+     * Mapas
+     *
+     * @return string
+     */
+    public function mapas() {
+        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+    } // mapas
 
 } // Clase CalerasSolares
 

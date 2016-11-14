@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Fovissste Nueva Los Angeles de Torreón.">
+  <meta name="description" content="Colonia Fovissste Nueva Los Ángeles de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Fovissste Nueva Los Angeles - IMPLAN Torreón</title>
+  <title>Fovissste Nueva Los Ángeles - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Fovissste Nueva Los Angeles</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Fovissste Nueva Los Angeles de Torreón.</div>
+          <h1 itemprop="name">Fovissste Nueva Los Ángeles</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Fovissste Nueva Los Ángeles de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-10 11:03:29">10/11/2016 11:03
+          <meta itemprop="datePublished" content="2016-11-14 14:03:29">14/11/2016 14:03
         </div>
         </div>
-        <meta itemprop="image" alt="Fovissste Nueva Los Angeles" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="Fovissste Nueva Los Ángeles" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -164,9 +164,7 @@
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
-<div class="alert alert-warning">
-Fovissste Nueva Los Angeles sin mapas.
-</div>
+    <div id="MapaLimites" class="mapa"></div>
   </div>
   <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoDatos">
 <div class="panel-group" id="Datos" role="tablist" aria-multiselectable="true">
@@ -417,19 +415,19 @@ Fovissste Nueva Los Angeles sin mapas.
         <td class="derecha">22.73 %</td>
       </tr>
       <tr>
-        <td>2° Salud</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">13.64 %</td>
       </tr>
       <tr>
-        <td>3° Otros servicios, excepto Gobierno</td>
+        <td>3° Salud</td>
         <td class="derecha">13.64 %</td>
       </tr>
       <tr>
-        <td>4° Construcción</td>
+        <td>4° Educativos</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Educativos</td>
+        <td>5° Manejo de Residuos</td>
         <td class="derecha">9.09 %</td>
       </tr>
     </tbody>
@@ -557,6 +555,28 @@ Fovissste Nueva Los Angeles sin mapas.
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
+  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
+  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
+    if (mapa_limites_cargado == false) {
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      cartodb.createVis('MapaLimites', carto_json)
+      .done(function(vis, layers) {
+        // Capa colonias
+        var capa_colonias = layers[1];
+        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
+        // Cambiar la consulta en la subcapa
+        var sub_capa = capa_colonias.getSubLayer(0);
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Fovissste Nueva Los Ángeles'");
+        // Ajustar el zoom
+        var map = vis.getNativeMap();
+        map.setZoom(14);
+      })
+      .error(function(err) {
+        console.log(err);
+      });
+      mapa_limites_cargado = true;
+    }
+  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasDemografia 
@@ -780,10 +800,10 @@ Fovissste Nueva Los Angeles sin mapas.
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 22.73, '#59C38E', '22.73 %'],
-              ['2° Salud', 13.64, '#8EC359', '13.64 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.64, '#C38E59', '13.64 %'],
-              ['4° Construcción', 9.09, '#80C0FF', '9.09 %'],
-              ['5° Educativos', 9.09, '#59BFC3', '9.09 %']
+              ['2° Otros servicios, excepto Gobierno', 13.64, '#8EC359', '13.64 %'],
+              ['3° Salud', 13.64, '#C38E59', '13.64 %'],
+              ['4° Educativos', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Manejo de Residuos', 9.09, '#59BFC3', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },
