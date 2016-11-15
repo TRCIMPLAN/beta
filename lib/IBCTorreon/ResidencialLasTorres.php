@@ -34,7 +34,7 @@ class ResidencialLasTorres extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Torres';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:31';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-torres';
         // La descripción y claves dan información a los buscadores y redes sociales

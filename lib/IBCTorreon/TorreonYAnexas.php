@@ -34,7 +34,7 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreón y Anexas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:32';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-y-anexas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,7 +116,7 @@ class TorreonYAnexas extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 21.43,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 7.14,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 7.14,

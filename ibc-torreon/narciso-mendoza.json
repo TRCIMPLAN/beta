@@ -1,0 +1,72 @@
+[{
+  "Nombre":"Narciso Mendoza",
+  "IBC":{
+    "Demografía":{
+      "2010":{
+        "Población total":1795,
+        "Porcentaje de población masculina":48.25,
+        "Porcentaje de población femenina":51.75,
+        "Porcentaje de población de 0 a 14 años":29.03,
+        "Porcentaje de población de 15 a 64 años":62.56,
+        "Porcentaje de población de 65 y más años":7.08,
+        "Porcentaje de población no especificada":1.33,
+        "Fecundidad promedio":2.7,
+        "Porcentaje de población nacida en otro estado":19.61,
+        "Porcentaje de población con discapacidad":1.34,
+        "Porcentaje de población de 15 y más analfabeta":2.71,
+        "Porcentaje de población de 18 y más":64.07,
+        "Porcentaje de población de 18 y más postbásicos":17.21
+      }
+    },
+    "Educación":{
+      "2010":{
+        "Grado Promedio de Escolaridad":7.95,
+        "Grado Promedio de Escolaridad masculina":8.13,
+        "Grado Promedio de Escolaridad femenina":7.79
+      }
+    },
+    "Características Económicas":{
+      "2010":{
+        "Población Económicamente Activa":53.93,
+        "Población Económicamente Activa masculina":63.96,
+        "Población Económicamente Activa femenina":36.04,
+        "Población Ocupada":91.87,
+        "Población Ocupada masculina":62.2,
+        "Población Ocupada femenina":37.8,
+        "Población Desocupada":8.13,
+        "Derechohabiencia":62.01
+      }
+    },
+    "Viviendas":{
+      "2010":{
+        "Hogares":424,
+        "Hogares Jefatura masculina":60.61,
+        "Hogares Jefatura femenina":39.39,
+        "Ocupación por Vivienda":4.23,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":99.76,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":96.46,
+        "Viviendas con Automóvil":40.67,
+        "Viviendas con Computadora":28.29,
+        "Viviendas con Celular":67.45,
+        "Viviendas con Internet":21.22
+      }
+    },
+    "Unidades Económicas":{
+      "2010":{
+        "Total Actividades Económicas":33,
+        "Primer actividad nombre":"Comercio Menudeo",
+        "Primer actividad porcentaje":54.55,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":15.15,
+        "Tercera actividad nombre":"Industria Manufacturera",
+        "Tercera actividad porcentaje":15.15,
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad porcentaje":9.09,
+        "Quinta actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Quinta actividad porcentaje":3.03
+      }
+    }
+  }
+}]

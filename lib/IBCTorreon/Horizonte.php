@@ -34,7 +34,7 @@ class Horizonte extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Horizonte';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:29';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'horizonte';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -114,13 +114,13 @@ class Horizonte extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 16.67,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 16.67,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 16.67
                 )
             )

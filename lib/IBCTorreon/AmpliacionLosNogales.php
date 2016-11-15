@@ -34,7 +34,7 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Los Nogales';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:27';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.65,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.82,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.82
                 )
             )

@@ -34,7 +34,7 @@ class ElTajito extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'El Tajito';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:29';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-tajito';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class ElTajito extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 35.35,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 25.25,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 8.08,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.08,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.07

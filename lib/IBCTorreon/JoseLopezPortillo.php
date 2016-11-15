@@ -34,7 +34,7 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'José López Portillo';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:29';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-lopez-portillo';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 41.18,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 29.41,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Gubernamentales',
                     'Cuarta actividad porcentaje' => 11.76,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 5.88

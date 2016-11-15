@@ -34,7 +34,7 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Las Margaritas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:30';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 18.52,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 9.88,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 7.41,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 7.41
                 )
             )

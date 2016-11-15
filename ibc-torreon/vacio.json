@@ -1,0 +1,72 @@
+[{
+  "Nombre":"Vacio",
+  "IBC":{
+    "Demografía":{
+      "2010":{
+        "Población total":9,
+        "Porcentaje de población masculina":48.68,
+        "Porcentaje de población femenina":51.32,
+        "Porcentaje de población de 0 a 14 años":25.56,
+        "Porcentaje de población de 15 a 64 años":71.71,
+        "Porcentaje de población de 65 y más años":2.15,
+        "Porcentaje de población no especificada":0.58,
+        "Fecundidad promedio":2.21,
+        "Porcentaje de población nacida en otro estado":14.24,
+        "Porcentaje de población con discapacidad":6.16,
+        "Porcentaje de población de 15 y más analfabeta":1.09,
+        "Porcentaje de población de 18 y más":56.23,
+        "Porcentaje de población de 18 y más postbásicos":26.02
+      }
+    },
+    "Educación":{
+      "2010":{
+        "Grado Promedio de Escolaridad":8.26,
+        "Grado Promedio de Escolaridad masculina":8.03,
+        "Grado Promedio de Escolaridad femenina":8.67
+      }
+    },
+    "Características Económicas":{
+      "2010":{
+        "Población Económicamente Activa":34.96,
+        "Población Económicamente Activa masculina":68.42,
+        "Población Económicamente Activa femenina":31.58,
+        "Población Ocupada":89.4,
+        "Población Ocupada masculina":66.58,
+        "Población Ocupada femenina":33.42,
+        "Población Desocupada":10.6,
+        "Derechohabiencia":52.82
+      }
+    },
+    "Viviendas":{
+      "2010":{
+        "Hogares":2,
+        "Hogares Jefatura masculina":44.69,
+        "Hogares Jefatura femenina":55.31,
+        "Ocupación por Vivienda":4.5,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":54.52,
+        "Viviendas con Computadora":24.64,
+        "Viviendas con Celular":86.89,
+        "Viviendas con Internet":14.2
+      }
+    },
+    "Unidades Económicas":{
+      "2010":{
+        "Total Actividades Económicas":10,
+        "Primer actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Primer actividad porcentaje":30,
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad porcentaje":10,
+        "Tercera actividad nombre":"Comercio Mayoreo",
+        "Tercera actividad porcentaje":10,
+        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad porcentaje":10,
+        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad porcentaje":10
+      }
+    }
+  }
+}]

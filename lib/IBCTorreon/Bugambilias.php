@@ -34,7 +34,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Bugambilias';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:28';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bugambilias';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.39,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 17.39,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 8.70
                 )
             )

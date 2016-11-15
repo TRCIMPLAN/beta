@@ -34,7 +34,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Palmas San Isidro';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:30';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'palmas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,11 +116,11 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 28.12,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 21.88,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 9.38,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 9.38,
-                    'Quinta actividad nombre' => 'Financieros y Seguros',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

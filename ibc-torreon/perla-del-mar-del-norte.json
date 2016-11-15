@@ -1,0 +1,62 @@
+[{
+  "Nombre":"Perla Del Mar Del Norte",
+  "IBC":{
+    "Demografía":{
+      "2010":{
+        "Población total":16,
+        "Porcentaje de población masculina":50,
+        "Porcentaje de población femenina":50,
+        "Porcentaje de población de 0 a 14 años":25,
+        "Porcentaje de población de 15 a 64 años":37.5,
+        "Porcentaje de población de 65 y más años":0,
+        "Porcentaje de población no especificada":37.5,
+        "Fecundidad promedio":1.33,
+        "Porcentaje de población nacida en otro estado":31.25,
+        "Porcentaje de población con discapacidad":0,
+        "Porcentaje de población de 15 y más analfabeta":0,
+        "Porcentaje de población de 18 y más":37.5,
+        "Porcentaje de población de 18 y más postbásicos":37.5
+      }
+    },
+    "Educación":{
+      "2010":{
+        "Grado Promedio de Escolaridad":16.17,
+        "Grado Promedio de Escolaridad masculina":16,
+        "Grado Promedio de Escolaridad femenina":16.33
+      }
+    },
+    "Características Económicas":{
+      "2010":{
+        "Población Económicamente Activa":66.67,
+        "Población Económicamente Activa masculina":75,
+        "Población Económicamente Activa femenina":25,
+        "Población Ocupada":100,
+        "Población Ocupada masculina":75,
+        "Población Ocupada femenina":25,
+        "Población Desocupada":0,
+        "Derechohabiencia":37.5
+      }
+    },
+    "Viviendas":{
+      "2010":{
+        "Hogares":3,
+        "Hogares Jefatura masculina":75.98,
+        "Hogares Jefatura femenina":24.02,
+        "Ocupación por Vivienda":5.33,
+        "Viviendas con Electricidad":100,
+        "Viviendas con Agua":100,
+        "Viviendas con Drenaje":100,
+        "Viviendas con Televisión":100,
+        "Viviendas con Automóvil":100,
+        "Viviendas con Computadora":46.86,
+        "Viviendas con Celular":85.49,
+        "Viviendas con Internet":32.66
+      }
+    },
+    "Unidades Económicas":{
+      "2010":{
+        "Total Actividades Económicas":0
+      }
+    }
+  }
+}]

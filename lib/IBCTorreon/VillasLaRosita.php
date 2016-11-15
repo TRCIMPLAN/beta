@@ -34,7 +34,7 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:33';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -112,9 +112,9 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 20,
-                    'Primer actividad nombre' => 'Financieros y Seguros',
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 15.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Financieros y Seguros',
                     'Segunda actividad porcentaje' => 15.00,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 10.00,

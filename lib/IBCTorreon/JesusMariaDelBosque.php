@@ -34,7 +34,7 @@ class JesusMariaDelBosque extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jesús Maria del Bosque';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:29';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jesus-maria-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales

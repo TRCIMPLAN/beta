@@ -34,7 +34,7 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa Poniente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:29';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-villa-poniente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.73,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.12,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.58,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.58
                 )
             )

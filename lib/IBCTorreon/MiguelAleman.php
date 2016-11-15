@@ -34,7 +34,7 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Miguel Alemán';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-14 14:03:30';
+        $this->fecha       = '2016-11-15 07:55:31';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'miguel-aleman';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class MiguelAleman extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.38,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.62,
-                    'Quinta actividad nombre' => 'Inmobiliarios',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.77
                 )
             )
