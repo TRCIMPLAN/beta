@@ -110,7 +110,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $smi->botones     = array(
             '<i class="fa fa-th-list"></i> Por Categoría'        => 'indicadores-categorias/index.html',
             '<i class="fa fa-table"></i> Por Región'             => 'smi/por-region.html',
-            '<i class="fa fa-map-marker"></i> Georreferenciados' => 'smi-georreferenciados/index.html');
+            '<i class="fa fa-map-marker"></i> Georreferenciados' => 'smi-georreferenciados/index.html',
+            '<i class="fa fa-puzzle-piece"></i> IBCTorreón'      => 'https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map');
         // SIG
         $sig              = new \PaginaInicial\Destacado();
         $sig->name        = 'Sistema de Información Geográfica';
