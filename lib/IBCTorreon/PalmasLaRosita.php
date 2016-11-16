@@ -34,7 +34,7 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Palmas La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 07:55:31';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'palmas-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -112,9 +112,9 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 5,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 40.00,
                     'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Tercera actividad porcentaje' => 20.00

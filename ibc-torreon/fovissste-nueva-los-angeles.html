@@ -151,7 +151,7 @@
           <h1 itemprop="name">Fovissste Nueva Los Ángeles</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Fovissste Nueva Los Ángeles de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 07:55:31">15/11/2016 07:55
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
         <meta itemprop="image" alt="Fovissste Nueva Los Ángeles" src="../imagenes/imagen.jpg">
@@ -423,11 +423,11 @@
         <td class="derecha">13.64 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Manejo de Residuos</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Manejo de Residuos</td>
+        <td>5° Construcción</td>
         <td class="derecha">9.09 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Fovissste Nueva Los Ángeles'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Fovissste Nueva Los Ángeles'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -802,8 +802,8 @@
               ['1° Comercio Menudeo', 22.73, '#59C38E', '22.73 %'],
               ['2° Otros servicios, excepto Gobierno', 13.64, '#8EC359', '13.64 %'],
               ['3° Salud', 13.64, '#C38E59', '13.64 %'],
-              ['4° Educativos', 9.09, '#80C0FF', '9.09 %'],
-              ['5° Manejo de Residuos', 9.09, '#59BFC3', '9.09 %']
+              ['4° Manejo de Residuos', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Construcción', 9.09, '#59BFC3', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

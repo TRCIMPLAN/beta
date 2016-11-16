@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Maria Mercado De Lopez Sanchez",
+  "Nombre":"María Mercado de López Sánchez",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":18.62,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":13.79,
-        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad nombre":"Comercio Mayoreo",
         "Cuarta actividad porcentaje":7.59,
-        "Quinta actividad nombre":"Comercio Mayoreo",
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Quinta actividad porcentaje":7.59
       }
     }

@@ -32,13 +32,13 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Ejido San Antonio De Los Bravos';
+        $this->nombre      = 'Ejido San Antonio de Los Bravos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-san-antonio-de-los-bravos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido San Antonio De Los Bravos de Torreón.';
+        $this->descripcion = 'Colonia Ejido San Antonio de Los Bravos de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -120,7 +120,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.68,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 6.45,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.45
                 )
             )

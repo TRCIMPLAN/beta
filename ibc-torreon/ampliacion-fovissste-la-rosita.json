@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Ampliacion Fovissste La Rosita",
+  "Nombre":"Ampliación Fovissste La Rosita",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -56,9 +56,9 @@
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":5,
-        "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":40,
-        "Segunda actividad nombre":"Comercio Menudeo",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":40,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":20

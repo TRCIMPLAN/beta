@@ -32,13 +32,13 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Ampliacion Senderos';
+        $this->nombre      = 'Ampliación Senderos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-senderos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliacion Senderos de Torreón.';
+        $this->descripcion = 'Colonia Ampliación Senderos de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';

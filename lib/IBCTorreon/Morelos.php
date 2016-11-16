@@ -34,7 +34,7 @@ class Morelos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Morelos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 07:55:31';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'morelos';
         // La descripción y claves dan información a los buscadores y redes sociales

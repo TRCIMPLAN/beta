@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Angeles Residencial - Rincon Aurora",
+  "Nombre":"Angeles Residencial - Rincón Aurora",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -56,11 +56,11 @@
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":3,
-        "Primer actividad nombre":"Salud",
+        "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":33.33,
         "Segunda actividad nombre":"Industria Manufacturera",
         "Segunda actividad porcentaje":33.33,
-        "Tercera actividad nombre":"Comercio Menudeo",
+        "Tercera actividad nombre":"Salud",
         "Tercera actividad porcentaje":33.33
       }
     }

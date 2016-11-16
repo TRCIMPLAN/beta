@@ -34,7 +34,7 @@ class SanMarcos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'San Marcos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 07:55:31';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-marcos';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class SanMarcos extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 17.57,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.11,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.05
                 )
             )

@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Cerro de la Cruz",
+  "Nombre":"Cerro de La Cruz",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":14.29,
         "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":8.57,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":5.71,
-        "Quinta actividad nombre":"Salud",
+        "Quinta actividad nombre":"Educativos",
         "Quinta actividad porcentaje":5.71
       }
     }

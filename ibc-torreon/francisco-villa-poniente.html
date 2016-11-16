@@ -151,7 +151,7 @@
           <h1 itemprop="name">Francisco Villa Poniente</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Francisco Villa Poniente de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 07:55:31">15/11/2016 07:55
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
         <meta itemprop="image" alt="Francisco Villa Poniente" src="../imagenes/imagen.jpg">
@@ -423,11 +423,11 @@
         <td class="derecha">12.12 %</td>
       </tr>
       <tr>
-        <td>4° Salud</td>
+        <td>4° Industria Manufacturera</td>
         <td class="derecha">7.58 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Salud</td>
         <td class="derecha">7.58 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Francisco Villa Poniente'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Francisco Villa Poniente'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -802,8 +802,8 @@
               ['1° Comercio Menudeo', 33.33, '#59C38E', '33.33 %'],
               ['2° Otros servicios, excepto Gobierno', 22.73, '#8EC359', '22.73 %'],
               ['3° Preparación de Alimentos y Bebidas', 12.12, '#C38E59', '12.12 %'],
-              ['4° Salud', 7.58, '#80C0FF', '7.58 %'],
-              ['5° Industria Manufacturera', 7.58, '#59BFC3', '7.58 %']
+              ['4° Industria Manufacturera', 7.58, '#80C0FF', '7.58 %'],
+              ['5° Salud', 7.58, '#59BFC3', '7.58 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

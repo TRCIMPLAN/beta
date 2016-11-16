@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Maria Mercado De Lopez Sanchez de Torreón.">
+  <meta name="description" content="Colonia María Mercado de López Sánchez de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Maria Mercado De Lopez Sanchez - IMPLAN Torreón</title>
+  <title>María Mercado de López Sánchez - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Maria Mercado De Lopez Sanchez</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Maria Mercado De Lopez Sanchez de Torreón.</div>
+          <h1 itemprop="name">María Mercado de López Sánchez</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia María Mercado de López Sánchez de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
-        <meta itemprop="image" alt="Maria Mercado De Lopez Sanchez" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="María Mercado de López Sánchez" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -423,11 +423,11 @@
         <td class="derecha">13.79 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Comercio Mayoreo</td>
         <td class="derecha">7.59 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">7.59 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Maria Mercado De Lopez Sanchez'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'María Mercado de López Sánchez'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -802,8 +802,8 @@
               ['1° Comercio Menudeo', 40, '#59C38E', '40 %'],
               ['2° Inmobiliarios', 18.62, '#8EC359', '18.62 %'],
               ['3° Otros servicios, excepto Gobierno', 13.79, '#C38E59', '13.79 %'],
-              ['4° Preparación de Alimentos y Bebidas', 7.59, '#80C0FF', '7.59 %'],
-              ['5° Comercio Mayoreo', 7.59, '#59BFC3', '7.59 %']
+              ['4° Comercio Mayoreo', 7.59, '#80C0FF', '7.59 %'],
+              ['5° Preparación de Alimentos y Bebidas', 7.59, '#59BFC3', '7.59 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

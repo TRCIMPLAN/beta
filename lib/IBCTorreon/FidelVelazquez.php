@@ -32,13 +32,13 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Fidel Velazquez';
+        $this->nombre      = 'Fidel Velázquez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fidel-velazquez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fidel Velazquez de Torreón.';
+        $this->descripcion = 'Colonia Fidel Velázquez de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -116,9 +116,9 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 47.27,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 7.27,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.27,
                     'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 5.45

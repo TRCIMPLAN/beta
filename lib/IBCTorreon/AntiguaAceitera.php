@@ -34,7 +34,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Antigua Aceitera';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'antigua-aceitera';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.16,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.76,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 4.05
                 )
             )

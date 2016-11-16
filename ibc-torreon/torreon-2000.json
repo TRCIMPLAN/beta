@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Torreon 2000",
+  "Nombre":"Torreón 2000",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,11 +58,11 @@
         "Total Actividades Económicas":9,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":66.67,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Manejo de Residuos",
         "Segunda actividad porcentaje":11.11,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":11.11,
-        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":11.11
       }
     }

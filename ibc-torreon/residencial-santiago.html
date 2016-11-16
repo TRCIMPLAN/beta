@@ -151,7 +151,7 @@
           <h1 itemprop="name">Residencial Santiago</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Santiago de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
         <meta itemprop="image" alt="Residencial Santiago" src="../imagenes/imagen.jpg">
@@ -411,11 +411,11 @@
         <td class="derecha">6</td>
       </tr>
       <tr>
-        <td>1° Educativos</td>
+        <td>1° Comercio Menudeo</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Menudeo</td>
+        <td>2° Educativos</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Residencial Santiago'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Residencial Santiago'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -799,8 +799,8 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Educativos', 50, '#59C38E', '50 %'],
-              ['2° Comercio Menudeo', 50, '#8EC359', '50 %']
+              ['1° Comercio Menudeo', 50, '#59C38E', '50 %'],
+              ['2° Educativos', 50, '#8EC359', '50 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

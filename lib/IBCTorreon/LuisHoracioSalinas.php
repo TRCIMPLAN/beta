@@ -34,7 +34,7 @@ class LuisHoracioSalinas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Horacio Salinas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-horacio-salinas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -78,7 +78,7 @@ class LuisHoracioSalinas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.91,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Financieros y Seguros',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 4.55
                 )
             )

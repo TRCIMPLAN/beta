@@ -32,13 +32,13 @@ class AngelesResidencialRinconAurora extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Angeles Residencial - Rincon Aurora';
+        $this->nombre      = 'Angeles Residencial - Rincón Aurora';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'angeles-residencial-rincon-aurora';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Angeles Residencial - Rincon Aurora de Torreón.';
+        $this->descripcion = 'Colonia Angeles Residencial - Rincón Aurora de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -112,11 +112,11 @@ class AngelesResidencialRinconAurora extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Salud',
+                    'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 33.33
                 )
             )

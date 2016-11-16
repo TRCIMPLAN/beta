@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Residencial Tecnologico de Torreón.">
+  <meta name="description" content="Colonia Residencial Tecnológico de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Residencial Tecnologico - IMPLAN Torreón</title>
+  <title>Residencial Tecnológico - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Residencial Tecnologico</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Tecnologico de Torreón.</div>
+          <h1 itemprop="name">Residencial Tecnológico</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Residencial Tecnológico de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
-        <meta itemprop="image" alt="Residencial Tecnologico" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="Residencial Tecnológico" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Residencial Tecnologico'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Residencial Tecnológico'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);

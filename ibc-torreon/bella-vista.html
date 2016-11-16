@@ -151,7 +151,7 @@
           <h1 itemprop="name">Bella Vista</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Bella Vista de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
         <meta itemprop="image" alt="Bella Vista" src="../imagenes/imagen.jpg">
@@ -419,15 +419,15 @@
         <td class="derecha">16.67 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Comercio Mayoreo</td>
         <td class="derecha">5.56 %</td>
       </tr>
       <tr>
-        <td>4° Comercio Mayoreo</td>
+        <td>4° Manejo de Residuos</td>
         <td class="derecha">5.56 %</td>
       </tr>
       <tr>
-        <td>5° Salud</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">5.56 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Bella Vista'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Bella Vista'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -801,9 +801,9 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 55.56, '#59C38E', '55.56 %'],
               ['2° Otros servicios, excepto Gobierno', 16.67, '#8EC359', '16.67 %'],
-              ['3° Preparación de Alimentos y Bebidas', 5.56, '#C38E59', '5.56 %'],
-              ['4° Comercio Mayoreo', 5.56, '#80C0FF', '5.56 %'],
-              ['5° Salud', 5.56, '#59BFC3', '5.56 %']
+              ['3° Comercio Mayoreo', 5.56, '#C38E59', '5.56 %'],
+              ['4° Manejo de Residuos', 5.56, '#80C0FF', '5.56 %'],
+              ['5° Preparación de Alimentos y Bebidas', 5.56, '#59BFC3', '5.56 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

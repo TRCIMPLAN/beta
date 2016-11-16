@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Ampliacion Las Julietas de Torreón.">
+  <meta name="description" content="Colonia Ampliación Las Julietas de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Ampliacion Las Julietas - IMPLAN Torreón</title>
+  <title>Ampliación Las Julietas - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Ampliacion Las Julietas</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Ampliacion Las Julietas de Torreón.</div>
+          <h1 itemprop="name">Ampliación Las Julietas</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Ampliación Las Julietas de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
         </div>
         </div>
-        <meta itemprop="image" alt="Ampliacion Las Julietas" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="Ampliación Las Julietas" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -411,11 +411,11 @@
         <td class="derecha">18</td>
       </tr>
       <tr>
-        <td>1° Otros servicios, excepto Gobierno</td>
+        <td>1° Comercio Menudeo</td>
         <td class="derecha">27.78 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Menudeo</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">27.78 %</td>
       </tr>
       <tr>
@@ -427,7 +427,7 @@
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>5° Esparcimiento, Culturales, Deportivos</td>
+        <td>5° Comercio Mayoreo</td>
         <td class="derecha">5.56 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Ampliacion Las Julietas'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Ampliación Las Julietas'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -799,11 +799,11 @@
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Otros servicios, excepto Gobierno', 27.78, '#59C38E', '27.78 %'],
-              ['2° Comercio Menudeo', 27.78, '#8EC359', '27.78 %'],
+              ['1° Comercio Menudeo', 27.78, '#59C38E', '27.78 %'],
+              ['2° Otros servicios, excepto Gobierno', 27.78, '#8EC359', '27.78 %'],
               ['3° Preparación de Alimentos y Bebidas', 16.67, '#C38E59', '16.67 %'],
               ['4° Industria Manufacturera', 11.11, '#80C0FF', '11.11 %'],
-              ['5° Esparcimiento, Culturales, Deportivos', 5.56, '#59BFC3', '5.56 %']
+              ['5° Comercio Mayoreo', 5.56, '#59BFC3', '5.56 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

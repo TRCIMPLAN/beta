@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Ampliacion San Ignacio",
+  "Nombre":"Ampliación San Ignacio",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -60,11 +60,11 @@
         "Primer actividad porcentaje":33.33,
         "Segunda actividad nombre":"Industria Manufacturera",
         "Segunda actividad porcentaje":25,
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
         "Tercera actividad porcentaje":8.33,
-        "Cuarta actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":8.33,
-        "Quinta actividad nombre":"Minería",
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Quinta actividad porcentaje":8.33
       }
     }

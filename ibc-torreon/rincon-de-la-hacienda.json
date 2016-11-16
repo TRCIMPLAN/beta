@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Rincon De La Hacienda",
+  "Nombre":"Rincon de la Hacienda",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -64,7 +64,7 @@
         "Tercera actividad porcentaje":11.11,
         "Cuarta actividad nombre":"Educativos",
         "Cuarta actividad porcentaje":11.11,
-        "Quinta actividad nombre":"Salud",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":11.11
       }
     }

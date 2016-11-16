@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Quintas San Antonio Iii",
+  "Nombre":"Quintas San Antonio III",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":20,
         "Tercera actividad nombre":"Comercio Mayoreo",
         "Tercera actividad porcentaje":10,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Comercio Menudeo",
         "Cuarta actividad porcentaje":10,
-        "Quinta actividad nombre":"Salud",
+        "Quinta actividad nombre":"Manejo de Residuos",
         "Quinta actividad porcentaje":10
       }
     }

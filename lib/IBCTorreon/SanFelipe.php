@@ -34,7 +34,7 @@ class SanFelipe extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'San Felipe';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-felipe';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class SanFelipe extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 11.11,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Quinta actividad porcentaje' => 6.94
                 )
             )

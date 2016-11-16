@@ -32,13 +32,13 @@ class PanteonTorreon extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Panteon Torreon';
+        $this->nombre      = 'Panteón Torreón';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'panteon-torreon';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Panteon Torreon de Torreón.';
+        $this->descripcion = 'Colonia Panteón Torreón de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';

@@ -32,13 +32,13 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Aviacion San Ignacio 2A. Etapa';
+        $this->nombre      = 'Aviación San Ignacio 2a. Etapa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion-san-ignacio-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aviacion San Ignacio 2A. Etapa de Torreón.';
+        $this->descripcion = 'Colonia Aviación San Ignacio 2a. Etapa de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';

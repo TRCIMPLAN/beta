@@ -23,22 +23,22 @@
 namespace IBCTorreon;
 
 /**
- * Clase AmpliacionZaragozaSur
+ * Clase AmpliacionZarazogaSur
  */
-class AmpliacionZaragozaSur extends \IBCBase\PublicacionWeb {
+class AmpliacionZarazogaSur extends \IBCBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Ampliacion Zaragoza Sur';
+        $this->nombre      = 'Ampliación Zarazoga Sur';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo     = 'ampliacion-zaragoza-sur';
+        $this->archivo     = 'ampliacion-zarazoga-sur';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliacion Zaragoza Sur de Torreón.';
+        $this->descripcion = 'Colonia Ampliación Zarazoga Sur de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -136,6 +136,6 @@ class AmpliacionZaragozaSur extends \IBCBase\PublicacionWeb {
         return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
     } // mapas
 
-} // Clase AmpliacionZaragozaSur
+} // Clase AmpliacionZarazogaSur
 
 ?>

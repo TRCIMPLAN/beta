@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Villas Del Valle",
+  "Nombre":"Villas del Valle",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,9 +58,9 @@
         "Total Actividades Económicas":6,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":50,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Comercio Mayoreo",
         "Segunda actividad porcentaje":16.67,
-        "Tercera actividad nombre":"Comercio Mayoreo",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":16.67,
         "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":16.67

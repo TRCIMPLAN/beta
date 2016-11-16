@@ -32,13 +32,13 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Veintiocho De Abril';
+        $this->nombre      = 'Veintiocho de Abril';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-15 08:36:35';
+        $this->fecha       = '2016-11-16 15:38:41';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'veintiocho-de-abril';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Veintiocho De Abril de Torreón.';
+        $this->descripcion = 'Colonia Veintiocho de Abril de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -118,9 +118,9 @@ class VeintiochoDeAbril extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.32,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 21.05,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 10.53,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 10.53
                 )
             )

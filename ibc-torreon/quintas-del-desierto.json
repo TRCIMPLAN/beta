@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Quintas Del Desierto",
+  "Nombre":"Quintas del Desierto",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -14,15 +14,15 @@
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":7,
-        "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Primer actividad nombre":"Comercio Mayoreo",
         "Primer actividad porcentaje":28.57,
-        "Segunda actividad nombre":"Comercio Mayoreo",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":28.57,
         "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
         "Tercera actividad porcentaje":14.29,
-        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad nombre":"Construcción",
         "Cuarta actividad porcentaje":14.29,
-        "Quinta actividad nombre":"Construcción",
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
         "Quinta actividad porcentaje":14.29
       }
     }
