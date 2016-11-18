@@ -34,7 +34,7 @@ class Anna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Anna';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'anna';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class Anna extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.64,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 8.43,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 4.82
                 )
             )

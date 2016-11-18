@@ -34,7 +34,7 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio III';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-antonio-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,11 +116,11 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 10.00,
                     'Cuarta actividad nombre' => 'Comercio Menudeo',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

@@ -34,7 +34,7 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación San Ignacio';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-san-ignacio';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,11 +116,11 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

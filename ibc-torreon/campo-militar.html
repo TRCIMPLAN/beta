@@ -151,7 +151,7 @@
           <h1 itemprop="name">Campo Militar</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Campo Militar de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-18 13:33:45">18/11/2016 13:33
         </div>
         </div>
         <meta itemprop="image" alt="Campo Militar" src="../imagenes/imagen.jpg">
@@ -419,15 +419,15 @@
         <td class="derecha">22.22 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Transportes, Correo, Almacenamiento</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>4° Transportes, Correo, Almacenamiento</td>
+        <td>4° Inmobiliarios</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>5° Inmobiliarios</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">11.11 %</td>
       </tr>
     </tbody>
@@ -558,7 +558,7 @@
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Campo Militar'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Campo Militar'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -801,9 +801,9 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 44.44, '#59C38E', '44.44 %'],
               ['2° Gubernamentales', 22.22, '#8EC359', '22.22 %'],
-              ['3° Preparación de Alimentos y Bebidas', 11.11, '#C38E59', '11.11 %'],
-              ['4° Transportes, Correo, Almacenamiento', 11.11, '#80C0FF', '11.11 %'],
-              ['5° Inmobiliarios', 11.11, '#59BFC3', '11.11 %']
+              ['3° Transportes, Correo, Almacenamiento', 11.11, '#C38E59', '11.11 %'],
+              ['4° Inmobiliarios', 11.11, '#80C0FF', '11.11 %'],
+              ['5° Preparación de Alimentos y Bebidas', 11.11, '#59BFC3', '11.11 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

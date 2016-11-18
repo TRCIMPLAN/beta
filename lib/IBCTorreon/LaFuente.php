@@ -34,7 +34,7 @@ class LaFuente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'La Fuente';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-fuente';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class LaFuente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.77,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.57,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 3.59,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 3.59
                 )
             )

@@ -34,7 +34,7 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'María Mercado de López Sánchez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'maria-mercado-de-lopez-sanchez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 18.62,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.79,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.59,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 7.59
                 )
             )

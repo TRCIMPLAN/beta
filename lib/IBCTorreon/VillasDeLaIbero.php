@@ -34,7 +34,7 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas de La Ibero';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-ibero';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -114,9 +114,9 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Gubernamentales',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 16.67
                 )
             )

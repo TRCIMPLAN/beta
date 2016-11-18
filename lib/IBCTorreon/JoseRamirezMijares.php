@@ -34,7 +34,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'José Ramírez Mijares';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-ramirez-mijares';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.00,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.00,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.00
                 )
             )

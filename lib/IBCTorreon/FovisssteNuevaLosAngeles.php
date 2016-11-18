@@ -34,7 +34,7 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Fovissste Nueva Los Ángeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fovissste-nueva-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 13.64,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 13.64,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

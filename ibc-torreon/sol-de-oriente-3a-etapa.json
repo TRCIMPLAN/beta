@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Sol De Oriente 3A. Etapa",
+  "Nombre":"Sol de Oriente 3a. Etapa",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -60,11 +60,11 @@
         "Primer actividad porcentaje":53.85,
         "Segunda actividad nombre":"Financieros y Seguros",
         "Segunda actividad porcentaje":23.08,
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad nombre":"Salud",
         "Tercera actividad porcentaje":7.69,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":7.69,
-        "Quinta actividad nombre":"Salud",
+        "Quinta actividad nombre":"Educativos",
         "Quinta actividad porcentaje":7.69
       }
     }

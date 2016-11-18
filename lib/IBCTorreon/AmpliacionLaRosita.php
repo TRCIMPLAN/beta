@@ -34,7 +34,7 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación La Rosita';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class AmpliacionLaRosita extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.67,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 14.11,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.66,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 11.66,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.36

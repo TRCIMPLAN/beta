@@ -34,7 +34,7 @@ class SantaFe extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santa Fe';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-fe';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 42.86,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 9.52,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.52,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.76

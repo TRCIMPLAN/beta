@@ -34,7 +34,7 @@ class ResidencialElFresno extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial El Fresno';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-el-fresno';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class ResidencialElFresno extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 6.93,
                     'Cuarta actividad nombre' => 'Financieros y Seguros',
                     'Cuarta actividad porcentaje' => 5.61,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 2.97
                 )
             )

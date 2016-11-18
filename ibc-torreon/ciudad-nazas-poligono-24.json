@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Ciudad Nazas Poligono 24",
+  "Nombre":"Ciudad Nazas Polígono 24",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -64,7 +64,7 @@
         "Tercera actividad porcentaje":10.34,
         "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":6.9,
-        "Quinta actividad nombre":"Comercio Mayoreo",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":3.45
       }
     }

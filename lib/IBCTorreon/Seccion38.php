@@ -34,7 +34,7 @@ class Seccion38 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Sección 38';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'seccion-38';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class Seccion38 extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 30.43,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 13.04,
-                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.35,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.35
                 )
             )

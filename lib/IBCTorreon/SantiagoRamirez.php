@@ -34,7 +34,7 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santiago Ramírez';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santiago-ramirez';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,11 +116,11 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 72.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 4.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 4.00,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

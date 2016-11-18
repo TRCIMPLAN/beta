@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Residencial las Misiones",
+  "Nombre":"Residencial Las Misiones",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -64,7 +64,7 @@
         "Tercera actividad porcentaje":10.71,
         "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":7.14,
-        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Quinta actividad nombre":"Gubernamentales",
         "Quinta actividad porcentaje":1.79
       }
     }

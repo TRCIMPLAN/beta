@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Residencial Del Nazas",
+  "Nombre":"Residencial del Nazas",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -64,7 +64,7 @@
         "Tercera actividad porcentaje":15.22,
         "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":13.04,
-        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Quinta actividad nombre":"Financieros y Seguros",
         "Quinta actividad porcentaje":2.17
       }
     }

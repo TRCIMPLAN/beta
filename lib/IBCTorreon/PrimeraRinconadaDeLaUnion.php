@@ -32,13 +32,13 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Primera Rinconada de la Unión';
+        $this->nombre      = 'Primera Rinconada de La Unión';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primera-rinconada-de-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Primera Rinconada de la Unión de Torreón.';
+        $this->descripcion = 'Colonia Primera Rinconada de La Unión de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';

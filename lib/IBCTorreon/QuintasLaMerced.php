@@ -32,13 +32,13 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Quintas la Merced';
+        $this->nombre      = 'Quintas La Merced';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas la Merced de Torreón.';
+        $this->descripcion = 'Colonia Quintas La Merced de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -114,9 +114,9 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Segunda actividad nombre' => 'Salud',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Tercera actividad porcentaje' => 20.00
                 )
             )

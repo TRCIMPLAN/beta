@@ -34,7 +34,7 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Plan de Ayala';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'plan-de-ayala';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 8.70,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 4.35
                 )
             )

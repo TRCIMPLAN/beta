@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Parque Industrial Las Americas",
+  "Nombre":"Parque Industrial Las Américas",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -16,13 +16,13 @@
         "Total Actividades Económicas":13,
         "Primer actividad nombre":"Industria Manufacturera",
         "Primer actividad porcentaje":46.15,
-        "Segunda actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Segunda actividad nombre":"Manejo de Residuos",
         "Segunda actividad porcentaje":7.69,
-        "Tercera actividad nombre":"Servicios Generales",
+        "Tercera actividad nombre":"Comercio Mayoreo",
         "Tercera actividad porcentaje":7.69,
-        "Cuarta actividad nombre":"Comercio Mayoreo",
+        "Cuarta actividad nombre":"Servicios Generales",
         "Cuarta actividad porcentaje":7.69,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Salud",
         "Quinta actividad porcentaje":7.69
       }
     }

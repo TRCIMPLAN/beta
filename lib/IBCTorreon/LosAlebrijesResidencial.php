@@ -34,7 +34,7 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Alebrijes Residencial';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-alebrijes-residencial';
         // La descripción y claves dan información a los buscadores y redes sociales

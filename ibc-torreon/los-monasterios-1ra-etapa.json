@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Los Monasterios 1Ra. Etapa",
+  "Nombre":"Los Monasterios 1ra. Etapa",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,9 +58,9 @@
         "Total Actividades Económicas":18,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":38.89,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":22.22,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":22.22,
         "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":11.11,

@@ -34,7 +34,7 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Sección 38';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-seccion-38';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -112,9 +112,9 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 5,
-                    'Primer actividad nombre' => 'Educativos',
+                    'Primer actividad nombre' => 'Salud',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Salud',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 40.00,
                     'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 20.00

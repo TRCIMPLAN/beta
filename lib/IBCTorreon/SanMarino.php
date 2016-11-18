@@ -34,7 +34,7 @@ class SanMarino extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'San Marino';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-marino';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -74,9 +74,9 @@ class SanMarino extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 42.86,
                     'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 28.57,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 14.29
                 )
             )

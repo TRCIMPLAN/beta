@@ -34,7 +34,7 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nueva Los Ángeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class NuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 17.81,
                     'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 6.16,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.48
                 )
             )

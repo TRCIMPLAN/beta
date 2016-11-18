@@ -34,7 +34,7 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Magisterio - Iberoamericana';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'magisterio-iberoamericana';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -112,9 +112,9 @@ class MagisterioIberoamericana extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 6,
-                    'Primer actividad nombre' => 'Comercio Menudeo',
+                    'Primer actividad nombre' => 'Industria Manufacturera',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 33.33,
                     'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 16.67,

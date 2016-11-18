@@ -151,7 +151,7 @@
           <h1 itemprop="name">Villa Los Pinos</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Villa Los Pinos de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-15 08:36:35">15/11/2016 08:36
+          <meta itemprop="datePublished" content="2016-11-18 13:33:45">18/11/2016 13:33
         </div>
         </div>
         <meta itemprop="image" alt="Villa Los Pinos" src="../imagenes/imagen.jpg">
@@ -255,11 +255,11 @@ La cantidad de Hogares es cero.
         <td class="derecha">2</td>
       </tr>
       <tr>
-        <td>1° Educativos</td>
+        <td>1° Inmobiliarios</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Inmobiliarios</td>
+        <td>2° Educativos</td>
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
@@ -402,7 +402,7 @@ La cantidad de Hogares es cero.
   // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
-      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/96d89446-aaaa-11e6-9825-0e8c56e2ffdb/viz.json'
+      var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json)
       .done(function(vis, layers) {
         // Capa colonias
@@ -410,7 +410,7 @@ La cantidad de Hogares es cero.
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_10 WHERE nombre = 'Villa Los Pinos'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Villa Los Pinos'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -430,8 +430,8 @@ La cantidad de Hogares es cero.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Educativos', 50, '#59C38E', '50 %'],
-              ['2° Inmobiliarios', 50, '#8EC359', '50 %']
+              ['1° Inmobiliarios', 50, '#59C38E', '50 %'],
+              ['2° Educativos', 50, '#8EC359', '50 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

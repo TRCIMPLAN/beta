@@ -34,7 +34,7 @@ class CampinasDeIberia extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Campiñas de Iberia';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'campinas-de-iberia';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class CampinasDeIberia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.12,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.06
                 )
             )

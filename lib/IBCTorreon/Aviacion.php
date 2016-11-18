@@ -34,7 +34,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Aviación';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 14.42,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.58,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 3.85
                 )
             )

@@ -34,7 +34,7 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Club Campestre Montebello';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'club-campestre-montebello';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -112,11 +112,11 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Primer actividad nombre' => 'Inmobiliarios',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Inmobiliarios',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Tercera actividad porcentaje' => 33.33
                 )
             )

@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Quintas la Merced",
+  "Nombre":"Quintas La Merced",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,9 +58,9 @@
         "Total Actividades Económicas":5,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":60,
-        "Segunda actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Segunda actividad nombre":"Salud",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Salud",
+        "Tercera actividad nombre":"Esparcimiento, Culturales, Deportivos",
         "Tercera actividad porcentaje":20
       }
     }

@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Ampliacion Valles Del Nazas",
+  "Nombre":"Ampliación Valles del Nazas",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":15.91,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":11.36,
-        "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Cuarta actividad nombre":"Financieros y Seguros",
         "Cuarta actividad porcentaje":4.55,
-        "Quinta actividad nombre":"Financieros y Seguros",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":4.55
       }
     }

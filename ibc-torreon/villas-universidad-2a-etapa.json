@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Villas Universidad 2A. Etapa",
+  "Nombre":"Villas Universidad 2a. Etapa",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -58,9 +58,9 @@
         "Total Actividades Económicas":14,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":64.29,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Salud",
         "Segunda actividad porcentaje":14.29,
-        "Tercera actividad nombre":"Salud",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":14.29,
         "Cuarta actividad nombre":"Educativos",
         "Cuarta actividad porcentaje":7.14

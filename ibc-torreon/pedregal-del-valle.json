@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Pedregal Del Valle",
+  "Nombre":"Pedregal del Valle",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":21.21,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":18.18,
-        "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":3.03,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Salud",
         "Quinta actividad porcentaje":3.03
       }
     }

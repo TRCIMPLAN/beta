@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Viñedos De La Joya",
+  "Nombre":"Viñedos de La Joya",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -62,9 +62,9 @@
         "Segunda actividad porcentaje":26.67,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":13.33,
-        "Cuarta actividad nombre":"Comercio Mayoreo",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":6.67,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Comercio Mayoreo",
         "Quinta actividad porcentaje":6.67
       }
     }

@@ -22,10 +22,10 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Rincon de la Hacienda de Torreón.">
+  <meta name="description" content="Colonia Rincon de La Hacienda de Torreón.">
   <meta name="author" content="IMPLAN Torreón Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
-  <title>Rincon de la Hacienda - IMPLAN Torreón</title>
+  <title>Rincon de La Hacienda - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
@@ -148,13 +148,13 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
               <div class="encabezado">
-          <h1 itemprop="name">Rincon de la Hacienda</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Rincon de la Hacienda de Torreón.</div>
+          <h1 itemprop="name">Rincon de La Hacienda</h1>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Rincon de La Hacienda de Torreón.</div>
                 <div class="encabezado-autor-fecha">
-          <meta itemprop="datePublished" content="2016-11-16 15:38:41">16/11/2016 15:38
+          <meta itemprop="datePublished" content="2016-11-18 13:33:45">18/11/2016 13:33
         </div>
         </div>
-        <meta itemprop="image" alt="Rincon de la Hacienda" src="../imagenes/imagen.jpg">
+        <meta itemprop="image" alt="Rincon de La Hacienda" src="../imagenes/imagen.jpg">
               <div itemprop="articleBody">
         <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
@@ -419,15 +419,15 @@
         <td class="derecha">14.81 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Salud</td>
         <td class="derecha">11.11 %</td>
       </tr>
       <tr>
-        <td>5° Industria Manufacturera</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">11.11 %</td>
       </tr>
     </tbody>
@@ -566,7 +566,7 @@
         capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Rincon de la Hacienda'");
+        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_14 WHERE nombre = 'Rincon de La Hacienda'");
         // Ajustar el zoom
         var map = vis.getNativeMap();
         map.setZoom(14);
@@ -801,9 +801,9 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 33.33, '#59C38E', '33.33 %'],
               ['2° Otros servicios, excepto Gobierno', 14.81, '#8EC359', '14.81 %'],
-              ['3° Preparación de Alimentos y Bebidas', 11.11, '#C38E59', '11.11 %'],
-              ['4° Educativos', 11.11, '#80C0FF', '11.11 %'],
-              ['5° Industria Manufacturera', 11.11, '#59BFC3', '11.11 %']
+              ['3° Industria Manufacturera', 11.11, '#C38E59', '11.11 %'],
+              ['4° Salud', 11.11, '#80C0FF', '11.11 %'],
+              ['5° Preparación de Alimentos y Bebidas', 11.11, '#59BFC3', '11.11 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

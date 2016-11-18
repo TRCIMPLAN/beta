@@ -1,5 +1,5 @@
 [{
-  "Nombre":"Sol De Oriente 2A. Etapa",
+  "Nombre":"Sol de Oriente 2a. Etapa",
   "IBC":{
     "Demografía":{
       "2010":{
@@ -60,11 +60,11 @@
         "Primer actividad porcentaje":47.22,
         "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":22.22,
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":5.56,
         "Cuarta actividad nombre":"Salud",
         "Cuarta actividad porcentaje":5.56,
-        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Quinta actividad porcentaje":5.56
       }
     }

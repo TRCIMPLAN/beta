@@ -34,7 +34,7 @@ class GustavoDiazOrdaz extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Gustavo Díaz Ordaz';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-16 15:38:41';
+        $this->fecha       = '2016-11-18 13:33:45';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'gustavo-diaz-ordaz';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class GustavoDiazOrdaz extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 27.00,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.00,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 5.00,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 5.00
                 )
             )
