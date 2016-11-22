@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===========================================================================================
+
+        Instituto Municipal de Planeación y Competitividad de Torreón.
+
+        Al usar, estudiar y copiar está aceptando los términos de uso de la información y del sitio web:
+          http://www.trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://www.trcimplan.gob.mx/terminos/terminos-sitio.html
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016.
+        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          Morris.js              https://morrisjs.github.io/morris.js/
+          PHP                    http://php.net
+          StartBootStrap         http://startbootstrap.com
+          Twitter Bootstrap      http://getbootstrap.com
+        El hospedaje gratuito es cortesía de GitHub. Descargue, aprenda y colabore:
+          IMPLAN Torreón         https://github.com/TRCIMPLAN
+
+     =========================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Durante los primeros tres trimestres de 2016 se han registrado 1,735 empresas en la ventanilla universal del Municipio de Torreón, con una inversión estimada de más de 500 millones de pesos y más de 10,000 empleos. El sector terciario fue el principal receptor de inversión en el tercer trimestre.">
+  <meta name="author" content="Lic. Alicia Valdez Ibarra">
+  <meta name="keywords" content="IMPLAN, Torreon, Comercio, Servicios, Economia">
+  <title>Comercio y Servicios: fuerte impulso a la economía en Torreón - IMPLAN Torreón</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="icon" href="../imagenes/icon-hires.png" sizes="192x192">
+  <link rel="icon" href="../imagenes/icon-normal.png" sizes="128x128">
+  <link rel="alternate" type="application/rss+xml" href="../rss.xml" title="IMPLAN Torreón">
+  <link rel="stylesheet" type="text/css" href="../css/morris.css">
+  <link rel="stylesheet" type="text/css" href="../css/plugins/metisMenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/sb-admin-2.css">
+  <link rel="stylesheet" type="text/css" href="../css/plataforma-de-conocimiento.css">
+  <link rel="stylesheet" type="text/css" href="../css/trcimplan.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed:400,700">
+  <link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al SMI</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
+            <li><a href="../ibc-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al SIG</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-file-pdf-o"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Mapas de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-book"></i></span> Plan Estratégico Torreón<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../plan-estrategico-metropolitano/descripcion-del-proceso.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Descripción del proceso</a></li>
+            <li><a href="../pet/indice.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Índice General</a></li>
+            <li><a href="../pet/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Índice Alfabético</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos</a></li>
+          </ul>
+        </li>
+        <li><a href="../investigaciones/index.html"><span class="navegacion-icono"><i class="fa fa-briefcase"></i></span> Investigaciones</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-trophy"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-comment"></i></span> Mensaje del Director</a></li>
+            <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-sitemap"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/modelo-operativo-universal.html"><span class="navegacion-icono"><i class="fa fa-slideshare"></i></span> Modelo Operativo Univ.</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-gavel"></i></span> Reglamentos</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-newspaper-o"></i></span> Sala de Prensa</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-share-alt"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-cubes"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-globe"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-lock"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+            <li><a href="http://goo.gl/forms/1rdX4X128PpMOif73" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+      <article><div itemscope itemtype="http://schema.org/Article">
+              <div class="encabezado">
+          <h1 itemprop="name">Comercio y Servicios: fuerte impulso a la economía en Torreón</h1>
+          <div class="encabezado-descripcion" itemprop="description">Durante los primeros tres trimestres de 2016 se han registrado 1,735 empresas en la ventanilla universal del Municipio de Torreón, con una inversión estimada de más de 500 millones de pesos y más de 10,000 empleos. El sector terciario fue el principal receptor de inversión en el tercer trimestre.</div>
+                <div class="encabezado-autor-fecha">
+          <meta itemprop="datePublished" content="2016-11-22T12:15">22/11/2016 12:15
+        </div>
+        </div>
+        <meta itemprop="image" alt="Comercio y Servicios: fuerte impulso a la economía en Torreón" src="comercio-y-servicios-fuerte-impulso-a-la-economia-en-torreon/imagen.jpg">
+              <div itemprop="articleBody">
+        <p>Con una inversión estimada de <strong>110 millones de pesos, 514 empresas</strong> se registraron durante el <strong>tercer trimestre de 2016</strong> en el municipio de <strong>Torreón, Coahuila.</strong> El personal ocupado por dichas empresas es de <strong>más de 1,600</strong> de acuerdo a datos de la Ventanilla Universal de la Dirección de Desarrollo Económico del municipio.</p>
+
+<p><strong>El sector terciario fue el principal receptor  de la  inversión privada durante el tercer trimestre:</strong> 48% de los establecimientos registrados pertenecen al sector servicios, mientras 42% se dedican al comercio. Juntos sumaron 75% de la inversión estimada del periodo.</p>
+
+<p>30% de los establecimientos dedicados al comercio fueron misceláneas, minisúper y tiendas de conveniencia; mientras las farmacias y el comercio de artículos para el cuidado personal aportaron alrededor de 5%. Otros comercios registrados en los últimos tres meses fueron: tortillerías, panaderías, venta de agua purificada, carnicerías y comercio de calzado.</p>
+
+<p><img class="img-responsive" src="comercio-y-servicios-fuerte-impulso-a-la-economia-en-torreon/registro-empresas-torreon-2016.png" alt="Registro empresas en Torreon 2016"></p>
+
+<p><strong>En el sector servicios, 46% de los establecimientos se dedican a la preparación de alimentos o a la venta de bebidas alcohólicas.</strong>  Las oficinas administrativas, los servicios financieros y las agencias de publicidad y recursos humanos, representaron en su conjunto 10% de las nuevas empresas.  Otros servicios ofrecidos por los nuevos establecimientos fueron consultorios médicos, salones de belleza, salones para fiestas y almacenes.</p>
+
+<p>La producción de estructuras metálicas y maquinaria para industria, la fundición de piezas de hierro y acero, así como los talleres automotrices, también recibieron inversión en el tercer trimestre, mas su participación en el total fue pequeña. Sin embargo, la producción de muebles de madera y similares aportó 22% de la inversión total del trimestre,  mientras la fundición y moldeo de piezas de hierro y acero dio empleo a 650 personas.</p>
+
+<p><strong>La inversión en el tercer trimestre fue menor en 14 millones de pesos a la del segundo trimestre, y cerca de 100 millones menor a la del primero.</strong> En otras palabras, las empresas establecidas en el último periodo fueron en su mayoría microempresas con requerimientos mínimos de capital. <strong>Esto se debe a que mientras en el primer semestre del año llegaron grandes empresas manufactureras al municipio, durante el tercer trimestre las inversiones más fuertes del periodo fueron en los giros de restaurantes, tiendas de conveniencia y acondicionamiento físico.</strong></p>
+
+<p><img class="img-responsive" src="comercio-y-servicios-fuerte-impulso-a-la-economia-en-torreon/registro-empresas-enero-septiembre-2016.png" alt="Registro empresas enero a septiembre 2016"></p>
+
+<p>Las <em>Mipymes</em> mostraron una vez más ser el motor de la economía local, impulsando la generación de empleos y manteniendo la tendencia positiva en el registro de empresas. <strong>Los años 2014, 2015 y 2016 han registrado el mayor número de registros desde 2009, ya sean nuevas empresas o  establecimientos existentes que decidieron entrar al mercado formal.</strong></p>
+
+<p>De hecho, <strong>los empleos formales aumentaron en 6.4% durante el año,</strong> con un incremento de más de 11,000 asegurados en los primeros 9 meses del año. Al mes de septiembre, <strong>Torreón</strong> cuenta con <strong>187,057 trabajadores registrados en el seguro social,</strong> cifra que representa al 65% de los asegurados en la zona metropolitana de La Laguna y 25% de los asegurados del Estado de Coahuila. Siguiendo la tendencia de la apertura de empresas, el segundo trimestre fue el de mayor generación de empleos con 4,220 nuevos asegurados.</p>
+
+<p>Otro indicador congruente a la apertura de empresas y generación de empleos es la inflación, la cual ha aumentado con respecto al año pasado, provocada por factores externos y como reacción natural a los nuevos empleos y salarios en la ciudad. En el mes de septiembre, la inflación anual  en Torreón fue de 2.97%, igual a la inflación nacional para el mismo periodo. Sin embargo, la inflación acumulada hasta el tercer trimestre fue de 1.21%, menor a la nacional de 1.47%.</p>
+
+<p><img class="img-responsive" src="comercio-y-servicios-fuerte-impulso-a-la-economia-en-torreon/aumento-asegurados-torreon.png" alt="Aumento asegurados en Torreon"></p>
+
+        </div>
+      </div></article>
+    </div>
+    <div class="mapa-inferior">
+      <div class="row">
+        <div class="col-md-8">
+            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
+        </div>
+        <div class="col-md-4">
+          <div class="pull-right redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../js/raphael-min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="../js/sb-admin-2.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script>
+
+</script>
+</body>
+</html>

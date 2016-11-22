@@ -84,7 +84,7 @@ rm -rf js
 rm -rf less
 rm -rf scss
 # Por los cambios de Ilse, no se borran plan-estrategico-metropolitano, ni proyectos
-for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-torreon preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
 done
@@ -113,7 +113,7 @@ cp -r $SITIO_WEB_DIR/js .
 cp -r $SITIO_WEB_DIR/less .
 cp -r $SITIO_WEB_DIR/scss .
 # Por los cambios de Ilse, no se copian plan-estrategico-metropolitano, ni proyectos
-for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-torreon preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     cp -r $SITIO_WEB_DIR/$DIR .
     rm -f $DIR/*.html

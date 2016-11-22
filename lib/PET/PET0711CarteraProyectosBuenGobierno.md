@@ -1,5 +1,5 @@
 
-_Tema / Programa / Clave.Proyecto_
+_Nota: Cada proyecto tiene un número como clave, los programas están como puntos y los temas como encabezados._
 
 ## Marco Jurídico Metropolitano
 

@@ -1,5 +1,5 @@
 
-_Tema / Programa / Clave.Proyecto_
+_Nota: Cada proyecto tiene un número como clave, los programas están como puntos y los temas como encabezados._
 
 ## Vocación Regional
 
@@ -11,7 +11,7 @@ _Tema / Programa / Clave.Proyecto_
     36. Diagnóstico, estrategias y metas del Sector industrial
     37. Desarrollo de competencias profesionales de acuerdo a vocación económica
 
-## Emprendedurismo sostenible e Innovación
+## Emprendedurismo Sostenible e Innovación
 
 * Gestión del Consejo Metropolitano de Emprendedurismo y la Innovación
     38. Observatorio de oportunidades empresariales
@@ -28,9 +28,10 @@ _Tema / Programa / Clave.Proyecto_
 
 ## Formación de Clústers
 
-* Incentivo para la atracción de inversión y fondos para la capacitación y desarrollo de las empresas de metalmecánica
+* Cartera prioritaria
     46. Identificación de Clústers
-    47. Formación del la Asociación Civil constituida como clúster con los directivos de las principales empresas del sector de metalmecánica en La Laguna como miembros
+* Incentivo para la atracción de inversión y fondos para la capacitación y desarrollo de las empresas de metalmecánica
+    47. Formación de la Asociación Civil constituida como clúster con los directivos de las principales empresas del sector de metalmecánica en La Laguna como miembros
     48. Formación de la Asociación Civil constituida como clúster con los directivos de las principales empresas del sector de autopartes en La Laguna como miembros
 * Financiamiento e incentivos para el sector salud
     49. Inclusión en las agendas de los gobiernos estatales y municipales
@@ -67,21 +68,22 @@ _Tema / Programa / Clave.Proyecto_
     70. Certificación internacional
     71. Centro Regional de innovación y competitividad empresarial
     72. Centro de conectividad y logística
+    73. Impulso a la tecnología verde y negocios verdes
 * Turismo de negocios
-    73. Centros de convenciones y exposiciones industriales
-    74. Posicionamiento de la zona para turismo de negocios
+    74. Centros de convenciones y exposiciones industriales
+    75. Posicionamiento de la zona para turismo de negocios
 * Turismo alternativo
-    75. Posicionamiento de la zona para turismo alternativo, ecológico y accesible
+    76. Posicionamiento de la zona para turismo alternativo, ecológico y accesible
 * Turismo Religioso
-    76. Teleférico Torreón*
+    77. Teleférico Torreón*
 
 ## Marco normativo para el desarrollo económico
 
 * Gabinete Metropolitano para la gestión normativa
-    77. Homologación de los reglamentos de desarrollo económico existentes en la Zona Metropolitana
-    78. Posicionamiento en el IMCO
-    79. Lugar en el ranking de "transparencia México"
+    78. Homologación de los reglamentos de desarrollo económico existentes en la Zona Metropolitana
+    79. Posicionamiento en el IMCO
+    80. Lugar en el ranking de "transparencia México"
 * Marco Jurídico Metropolitano
-    80. Diseño, difusión y operación del Marco Jurídico Metropolitano
+    81. Diseño, difusión y operación del Marco Jurídico Metropolitano
 
 [Índice](indice.html) | Siguiente: [Desarrollo Social](cartera-proyectos-desarrollo-social.html)

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.trcimplan.gob.mx/index.html</loc>
-    <lastmod>2016-11-18</lastmod>
+    <lastmod>2016-11-22</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -113,6 +113,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/comercio-electronico-oportunidad-de-crecimiento.html</loc>
     <lastmod>2016-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/blog/comercio-y-servicios-fuerte-impulso-a-la-economia-en-torreon.html</loc>
+    <lastmod>2016-11-22</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -496,6 +501,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://www.trcimplan.gob.mx/blog/los-beneficios-en-el-uso-de-la-infraestructura-verde-en-torreon.html</loc>
+    <lastmod>2016-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://www.trcimplan.gob.mx/blog/los-derechos-del-policia.html</loc>
     <lastmod>2015-08-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -798,6 +808,11 @@
   <url>
     <loc>http://www.trcimplan.gob.mx/blog/terrazas-verdes-sostenibilidad-para-todos.html</loc>
     <lastmod>2016-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.trcimplan.gob.mx/blog/torreon-aumenta-su-competitividad-aerea.html</loc>
+    <lastmod>2016-11-22</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
