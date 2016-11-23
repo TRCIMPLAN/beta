@@ -58,13 +58,13 @@
         "Total Actividades Económicas":24,
         "Primer actividad nombre":"Otros servicios, excepto Gobierno",
         "Primer actividad porcentaje":16.67,
-        "Segunda actividad nombre":"Comercio Mayoreo",
+        "Segunda actividad nombre":"Inmobiliarios",
         "Segunda actividad porcentaje":16.67,
-        "Tercera actividad nombre":"Inmobiliarios",
+        "Tercera actividad nombre":"Comercio Mayoreo",
         "Tercera actividad porcentaje":16.67,
-        "Cuarta actividad nombre":"Comercio Menudeo",
+        "Cuarta actividad nombre":"Construcción",
         "Cuarta actividad porcentaje":12.5,
-        "Quinta actividad nombre":"Construcción",
+        "Quinta actividad nombre":"Comercio Menudeo",
         "Quinta actividad porcentaje":12.5
       }
     }

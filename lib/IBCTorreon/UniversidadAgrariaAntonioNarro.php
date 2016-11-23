@@ -34,7 +34,7 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Universidad Agraria Antonio Narro';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:12';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'universidad-agraria-antonio-narro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -103,13 +103,13 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 63.64,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Segunda actividad porcentaje' => 9.09,
-                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )
@@ -122,7 +122,10 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase UniversidadAgrariaAntonioNarro

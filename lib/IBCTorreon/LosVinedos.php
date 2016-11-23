@@ -34,7 +34,7 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Viñedos';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:09';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-vinedos';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -114,13 +114,13 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 52,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 21.15,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 19.23,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 19.23,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 11.54,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )
@@ -133,7 +133,10 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase LosVinedos

@@ -34,7 +34,7 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Periodistas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:09';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-periodistas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 27.27,
                     'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )
@@ -133,7 +133,10 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase LosPeriodistas

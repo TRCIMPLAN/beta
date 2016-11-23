@@ -34,7 +34,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon de La Hacienda';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:11';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-la-hacienda';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,11 +116,11 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.81,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 11.11,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )
@@ -133,7 +133,10 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase RinconDeLaHacienda

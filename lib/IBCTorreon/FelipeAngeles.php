@@ -34,7 +34,7 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Felipe Ángeles';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'felipe-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.67,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 8.89,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.78,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.78
                 )
             )
@@ -133,7 +133,10 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase FelipeAngeles

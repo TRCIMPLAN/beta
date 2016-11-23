@@ -34,7 +34,7 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Campo Militar';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:07';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'campo-militar';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.22,
                     'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Inmobiliarios',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )
@@ -133,7 +133,10 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase CampoMilitar

@@ -34,7 +34,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jardines de California';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:09';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jardines-de-california';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.73,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 6.86,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )
@@ -133,7 +133,10 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase JardinesDeCalifornia

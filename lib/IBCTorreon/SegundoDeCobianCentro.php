@@ -23,22 +23,22 @@
 namespace IBCTorreon;
 
 /**
- * Clase SeguntoDeCobianCentro
+ * Clase SegundoDeCobianCentro
  */
-class SeguntoDeCobianCentro extends \IBCBase\PublicacionWeb {
+class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre      = 'Segunto de Cobián (Centro)';
+        $this->nombre      = 'Segundo de Cobián (Centro)';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:11';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo     = 'segunto-de-cobian-centro';
+        $this->archivo     = 'segundo-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Segunto de Cobián (Centro) de Torreón.';
+        $this->descripcion = 'Colonia Segundo de Cobián (Centro) de Torreón.';
         $this->claves      = 'IMPLAN, Torreon, Desagregación';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
@@ -133,9 +133,12 @@ class SeguntoDeCobianCentro extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
-} // Clase SeguntoDeCobianCentro
+} // Clase SegundoDeCobianCentro
 
 ?>

@@ -34,7 +34,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Nazario Ortiz Garza';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:10';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nazario-ortiz-garza';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 17.65,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 11.76,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 11.76
                 )
             )
@@ -133,7 +133,10 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase NazarioOrtizGarza

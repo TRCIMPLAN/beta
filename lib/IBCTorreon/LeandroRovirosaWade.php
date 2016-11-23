@@ -34,7 +34,7 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Leandro Rovirosa Wade';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:09';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'leandro-rovirosa-wade';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -114,13 +114,13 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 24,
                     'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 16.67,
-                    'Segunda actividad nombre' => 'Comercio Mayoreo',
+                    'Segunda actividad nombre' => 'Inmobiliarios',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Inmobiliarios',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 12.50,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 12.50
                 )
             )
@@ -133,7 +133,10 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase LeandroRovirosaWade

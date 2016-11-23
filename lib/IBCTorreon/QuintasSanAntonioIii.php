@@ -34,7 +34,7 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio III';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:10';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-antonio-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 20.00,
                     'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )
@@ -133,7 +133,10 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase QuintasSanAntonioIii

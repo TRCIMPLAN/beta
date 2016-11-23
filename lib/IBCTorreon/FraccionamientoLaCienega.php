@@ -34,7 +34,7 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Fraccionamiento La Ciénega';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fraccionamiento-la-cienega';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.92,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 18.75,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )
@@ -133,7 +133,10 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase FraccionamientoLaCienega

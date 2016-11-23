@@ -34,7 +34,7 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'El Roble II';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-roble-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.86,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 10.71,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )
@@ -133,7 +133,10 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase ElRobleIi

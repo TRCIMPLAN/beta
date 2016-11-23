@@ -34,7 +34,7 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Cerro de La Cruz';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cerro-de-la-cruz';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.29,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 8.57,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 5.71,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.71
                 )
             )
@@ -133,7 +133,10 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase CerroDeLaCruz

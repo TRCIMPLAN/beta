@@ -34,7 +34,7 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverría Norte';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:09';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -114,9 +114,9 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 92,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.70,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Gubernamentales',
                     'Segunda actividad porcentaje' => 13.04,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.04,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.96,
@@ -133,7 +133,10 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase LuisEcheverriaNorte

@@ -34,7 +34,7 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Recintos Villas Universidad';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:10';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'recintos-villas-universidad';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -118,9 +118,9 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.08,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.38,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )
@@ -133,7 +133,10 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase RecintosVillasUniversidad

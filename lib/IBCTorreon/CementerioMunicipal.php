@@ -34,7 +34,7 @@ class CementerioMunicipal extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Cementerio Municipal';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:07';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cementerio-municipal';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -83,7 +83,10 @@ class CementerioMunicipal extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase CementerioMunicipal

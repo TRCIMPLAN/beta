@@ -34,7 +34,7 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Cerradas Villas Diamante';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:08';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cerradas-villas-diamante';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -123,7 +123,10 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase CerradasVillasDiamante

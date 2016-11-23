@@ -34,7 +34,7 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Sol de Oriente 3a. Etapa';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:11';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'sol-de-oriente-3a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 53.85,
                     'Segunda actividad nombre' => 'Financieros y Seguros',
                     'Segunda actividad porcentaje' => 23.08,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.69,
                     'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 7.69
@@ -133,7 +133,10 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase SolDeOriente3aEtapa

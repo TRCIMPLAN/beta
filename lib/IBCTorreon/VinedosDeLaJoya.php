@@ -34,7 +34,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Viñedos de La Joya';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:12';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vinedos-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.33,
                     'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 6.67,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )
@@ -133,7 +133,10 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase VinedosDeLaJoya

@@ -34,7 +34,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Las Margaritas';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:07';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.57,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.22,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 3.48
                 )
             )
@@ -133,7 +133,10 @@ class AmpliacionLasMargaritas extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase AmpliacionLasMargaritas

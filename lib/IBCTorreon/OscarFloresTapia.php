@@ -34,7 +34,7 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Oscar Flores Tapia';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:10';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'oscar-flores-tapia';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -116,9 +116,9 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.15,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 25.93,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 11.11,
                     'Quinta actividad nombre' => 'Inmobiliarios',
                     'Quinta actividad porcentaje' => 3.70
@@ -133,7 +133,10 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase OscarFloresTapia

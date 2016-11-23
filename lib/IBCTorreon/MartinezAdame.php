@@ -34,7 +34,7 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Martínez Adame';
         $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-18 13:33:45';
+        $this->fecha       = '2016-11-23 16:15:10';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'martinez-adame';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -120,7 +120,7 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.26,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 10.26,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.13
                 )
             )
@@ -133,7 +133,10 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function mapas() {
-        return array('Límites' => \Configuracion\IBCTorreonConfig::LIMITES);
+        return array(
+            'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
+            'Centro latitud'  => 25.0,
+            'Centro longitud' => -103.5);
     } // mapas
 
 } // Clase MartinezAdame
