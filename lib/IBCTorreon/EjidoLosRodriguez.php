@@ -129,8 +129,9 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5982217542634,
+            'Centro longitud' => -103.393362551843
+        );
     } // mapas
 
 } // Clase EjidoLosRodriguez

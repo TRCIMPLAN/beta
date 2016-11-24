@@ -135,8 +135,9 @@ class SantaElena extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.513447608679,
+            'Centro longitud' => -103.391617566984
+        );
     } // mapas
 
 } // Clase SantaElena

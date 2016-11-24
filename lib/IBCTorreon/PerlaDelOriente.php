@@ -135,8 +135,9 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5057679445146,
+            'Centro longitud' => -103.348375226845
+        );
     } // mapas
 
 } // Clase PerlaDelOriente

@@ -567,9 +567,10 @@
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Torreón 2000'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.57035522661, -103.39243206398]);
       })
       .error(function(err) {
         console.log(err);

@@ -135,8 +135,9 @@ class LosMonasterios1raEtapa extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4975034668072,
+            'Centro longitud' => -103.361976784569
+        );
     } // mapas
 
 } // Clase LosMonasterios1raEtapa

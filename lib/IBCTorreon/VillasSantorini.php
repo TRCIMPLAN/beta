@@ -135,8 +135,9 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.589096799599,
+            'Centro longitud' => -103.415894194045
+        );
     } // mapas
 
 } // Clase VillasSantorini

@@ -135,8 +135,9 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.6166916793802,
+            'Centro longitud' => -103.382038326233
+        );
     } // mapas
 
 } // Clase ResidencialSenderos

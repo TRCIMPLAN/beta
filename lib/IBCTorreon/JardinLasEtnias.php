@@ -125,8 +125,9 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5457313109197,
+            'Centro longitud' => -103.387176905396
+        );
     } // mapas
 
 } // Clase JardinLasEtnias

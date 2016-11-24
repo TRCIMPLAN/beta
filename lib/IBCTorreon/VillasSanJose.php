@@ -131,8 +131,9 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5613236889676,
+            'Centro longitud' => -103.39286290982
+        );
     } // mapas
 
 } // Clase VillasSanJose

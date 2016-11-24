@@ -135,8 +135,9 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4888441746162,
+            'Centro longitud' => -103.359668470761
+        );
     } // mapas
 
 } // Clase SantaSofia

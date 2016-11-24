@@ -135,8 +135,9 @@ class RecintosVillasUniversidad extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5362645958143,
+            'Centro longitud' => -103.320322014101
+        );
     } // mapas
 
 } // Clase RecintosVillasUniversidad

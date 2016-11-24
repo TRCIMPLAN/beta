@@ -131,8 +131,9 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5311546458007,
+            'Centro longitud' => -103.316881728516
+        );
     } // mapas
 
 } // Clase VillasDelSol

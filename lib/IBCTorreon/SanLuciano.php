@@ -135,8 +135,9 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5801168829069,
+            'Centro longitud' => -103.414876122188
+        );
     } // mapas
 
 } // Clase SanLuciano

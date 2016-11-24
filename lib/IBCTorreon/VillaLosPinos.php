@@ -87,8 +87,9 @@ class VillaLosPinos extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5667625741376,
+            'Centro longitud' => -103.381846944609
+        );
     } // mapas
 
 } // Clase VillaLosPinos

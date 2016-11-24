@@ -135,8 +135,9 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4936791631133,
+            'Centro longitud' => -103.36468892864
+        );
     } // mapas
 
 } // Clase EjidoLosArenales

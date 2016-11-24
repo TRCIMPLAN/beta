@@ -135,8 +135,9 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.590942163644,
+            'Centro longitud' => -103.303392702091
+        );
     } // mapas
 
 } // Clase EjidoLaPartida

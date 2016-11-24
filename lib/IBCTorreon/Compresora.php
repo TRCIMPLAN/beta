@@ -135,8 +135,9 @@ class Compresora extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.532346464606,
+            'Centro longitud' => -103.462385904881
+        );
     } // mapas
 
 } // Clase Compresora

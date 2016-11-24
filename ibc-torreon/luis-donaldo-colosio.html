@@ -567,9 +567,10 @@
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Luis Donaldo Colosio'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.493165571286, -103.38657078674]);
       })
       .error(function(err) {
         console.log(err);

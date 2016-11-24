@@ -135,8 +135,9 @@ class Constancia extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5341708323324,
+            'Centro longitud' => -103.472227640382
+        );
     } // mapas
 
 } // Clase Constancia

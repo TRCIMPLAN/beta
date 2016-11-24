@@ -127,8 +127,9 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5254206393336,
+            'Centro longitud' => -103.377511045102
+        );
     } // mapas
 
 } // Clase LaOrquidea

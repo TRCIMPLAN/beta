@@ -127,8 +127,9 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5022985749197,
+            'Centro longitud' => -103.352956064736
+        );
     } // mapas
 
 } // Clase QuintasLaPerla

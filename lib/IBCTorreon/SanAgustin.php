@@ -135,8 +135,9 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5821939218164,
+            'Centro longitud' => -103.367314395466
+        );
     } // mapas
 
 } // Clase SanAgustin

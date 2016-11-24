@@ -127,8 +127,9 @@ class RinconSanJose extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5672642532018,
+            'Centro longitud' => -103.391527455613
+        );
     } // mapas
 
 } // Clase RinconSanJose

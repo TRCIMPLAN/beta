@@ -538,9 +538,10 @@ El Total de Actividades Económicas es cero.
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Residencial Cumbres'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.572499110278, -103.39660009486]);
       })
       .error(function(err) {
         console.log(err);

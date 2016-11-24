@@ -131,8 +131,9 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5210209405098,
+            'Centro longitud' => -103.38458241031
+        );
     } // mapas
 
 } // Clase AmpliacionSeccion38

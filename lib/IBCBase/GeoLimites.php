@@ -30,6 +30,8 @@ abstract class GeoLimites extends Geo {
     // protected $publicacion_ficha;
     protected $nombre;
     protected $limites;
+    protected $centro_longitud;
+    protected $centro_latitud;
     protected $preparado = FALSE;    // Bandera
 
     /**
@@ -45,9 +47,16 @@ abstract class GeoLimites extends Geo {
         // Que tenga el método mapas
         if (method_exists($this->publicacion_ficha, 'mapas')) {
             $mapas = $this->publicacion_ficha->mapas();
-            // Que en el arreglo asociativo tenga Límites
+            // Es necesario que tenga Límites
             if (isset($mapas['Límites'])) {
                 $this->limites = $mapas['Límites'];
+                // Opcionales
+                if (isset($mapas['Centro longitud'])) {
+                    $this->centro_longitud = $mapas['Centro longitud'];
+                }
+                if (isset($mapas['Centro latitud'])) {
+                    $this->centro_latitud = $mapas['Centro latitud'];
+                }
             } else {
                 throw new GeoExceptionSinDatos("{$this->publicacion_ficha->nombre} sin mapa de límites.");
             }

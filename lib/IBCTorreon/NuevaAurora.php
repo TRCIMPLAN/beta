@@ -135,8 +135,9 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5334257107792,
+            'Centro longitud' => -103.451148185473
+        );
     } // mapas
 
 } // Clase NuevaAurora

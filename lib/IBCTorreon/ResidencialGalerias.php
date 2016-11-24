@@ -125,8 +125,9 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5741325726781,
+            'Centro longitud' => -103.396167851828
+        );
     } // mapas
 
 } // Clase ResidencialGalerias

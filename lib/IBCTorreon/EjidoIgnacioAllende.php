@@ -135,8 +135,9 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5741520745785,
+            'Centro longitud' => -103.395427292457
+        );
     } // mapas
 
 } // Clase EjidoIgnacioAllende

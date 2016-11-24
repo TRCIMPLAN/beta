@@ -135,8 +135,9 @@ class AmpliacionZarazogaSur extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4915515813706,
+            'Centro longitud' => -103.376593585686
+        );
     } // mapas
 
 } // Clase AmpliacionZarazogaSur

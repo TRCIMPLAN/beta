@@ -125,8 +125,9 @@ class LaMuralla extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.6030986794158,
+            'Centro longitud' => -103.417834499638
+        );
     } // mapas
 
 } // Clase LaMuralla

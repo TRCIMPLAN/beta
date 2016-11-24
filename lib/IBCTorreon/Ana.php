@@ -135,8 +135,9 @@ class Ana extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5427362559505,
+            'Centro longitud' => -103.464861358489
+        );
     } // mapas
 
 } // Clase Ana

@@ -133,8 +133,9 @@ class SendasDelBosque extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.633102830649,
+            'Centro longitud' => -103.382311784198
+        );
     } // mapas
 
 } // Clase SendasDelBosque

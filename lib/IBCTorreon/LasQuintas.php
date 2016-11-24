@@ -125,8 +125,9 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.593656294103,
+            'Centro longitud' => -103.409991252014
+        );
     } // mapas
 
 } // Clase LasQuintas

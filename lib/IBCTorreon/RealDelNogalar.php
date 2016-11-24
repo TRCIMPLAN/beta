@@ -114,8 +114,9 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.6018915071148,
+            'Centro longitud' => -103.392569636667
+        );
     } // mapas
 
 } // Clase RealDelNogalar

@@ -135,8 +135,9 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4931655712864,
+            'Centro longitud' => -103.38657078674
+        );
     } // mapas
 
 } // Clase LuisDonaldoColosio

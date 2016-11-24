@@ -131,8 +131,9 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5300215225869,
+            'Centro longitud' => -103.384458603629
+        );
     } // mapas
 
 } // Clase JesusGarciaCorona

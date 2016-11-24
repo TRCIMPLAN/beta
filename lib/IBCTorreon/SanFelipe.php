@@ -135,8 +135,9 @@ class SanFelipe extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5400071413994,
+            'Centro longitud' => -103.380870033296
+        );
     } // mapas
 
 } // Clase SanFelipe

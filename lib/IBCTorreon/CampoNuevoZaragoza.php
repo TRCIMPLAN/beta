@@ -135,8 +135,9 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5201862036696,
+            'Centro longitud' => -103.35323272263
+        );
     } // mapas
 
 } // Clase CampoNuevoZaragoza

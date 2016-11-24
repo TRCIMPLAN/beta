@@ -135,8 +135,9 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5415365946156,
+            'Centro longitud' => -103.320592315368
+        );
     } // mapas
 
 } // Clase VillasUniversidad1aEtapa

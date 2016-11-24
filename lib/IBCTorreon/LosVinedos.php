@@ -135,8 +135,9 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5769716452441,
+            'Centro longitud' => -103.384213296435
+        );
     } // mapas
 
 } // Clase LosVinedos

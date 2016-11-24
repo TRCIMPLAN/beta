@@ -135,8 +135,9 @@ class Victoria extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5374594874405,
+            'Centro longitud' => -103.480075684154
+        );
     } // mapas
 
 } // Clase Victoria

@@ -135,8 +135,9 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5344778652951,
+            'Centro longitud' => -103.4601706237
+        );
     } // mapas
 
 } // Clase AntiguaAceitera

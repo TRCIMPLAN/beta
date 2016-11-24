@@ -135,8 +135,9 @@ class JoseLopezPortillo extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5347858083694,
+            'Centro longitud' => -103.456439696227
+        );
     } // mapas
 
 } // Clase JoseLopezPortillo

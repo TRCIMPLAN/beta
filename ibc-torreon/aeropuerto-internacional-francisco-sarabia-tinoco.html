@@ -517,9 +517,10 @@ La cantidad de Hogares es cero.
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Aeropuerto Internacional Francisco Sarabia Tinoco'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.563797068358, -103.40501897344]);
       })
       .error(function(err) {
         console.log(err);

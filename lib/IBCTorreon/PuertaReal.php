@@ -129,8 +129,9 @@ class PuertaReal extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5623382762711,
+            'Centro longitud' => -103.386762636685
+        );
     } // mapas
 
 } // Clase PuertaReal

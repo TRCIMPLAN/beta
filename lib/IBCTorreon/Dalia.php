@@ -131,8 +131,9 @@ class Dalia extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4936730970941,
+            'Centro longitud' => -103.406261727172
+        );
     } // mapas
 
 } // Clase Dalia

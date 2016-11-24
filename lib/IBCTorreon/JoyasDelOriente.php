@@ -135,8 +135,9 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5458067132118,
+            'Centro longitud' => -103.328463170428
+        );
     } // mapas
 
 } // Clase JoyasDelOriente

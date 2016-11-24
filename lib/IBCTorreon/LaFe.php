@@ -131,8 +131,9 @@ class LaFe extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5309703803775,
+            'Centro longitud' => -103.465891517695
+        );
     } // mapas
 
 } // Clase LaFe

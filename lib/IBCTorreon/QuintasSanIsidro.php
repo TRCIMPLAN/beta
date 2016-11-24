@@ -125,8 +125,9 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.573733666729,
+            'Centro longitud' => -103.410579897665
+        );
     } // mapas
 
 } // Clase QuintasSanIsidro

@@ -133,8 +133,9 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5406909451365,
+            'Centro longitud' => -103.483033523336
+        );
     } // mapas
 
 } // Clase VistaHermosa

@@ -125,8 +125,9 @@ class ResidencialFrondoso extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5917803713986,
+            'Centro longitud' => -103.411755041511
+        );
     } // mapas
 
 } // Clase ResidencialFrondoso

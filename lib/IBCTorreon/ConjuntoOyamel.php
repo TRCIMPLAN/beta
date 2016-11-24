@@ -85,8 +85,9 @@ class ConjuntoOyamel extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5684424820624,
+            'Centro longitud' => -103.374052684314
+        );
     } // mapas
 
 } // Clase ConjuntoOyamel

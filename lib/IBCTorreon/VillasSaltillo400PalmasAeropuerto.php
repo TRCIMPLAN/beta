@@ -133,8 +133,9 @@ class VillasSaltillo400PalmasAeropuerto extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5493966284435,
+            'Centro longitud' => -103.40486159434
+        );
     } // mapas
 
 } // Clase VillasSaltillo400PalmasAeropuerto

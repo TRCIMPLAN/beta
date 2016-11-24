@@ -25,6 +25,9 @@ rm -f blog/*.html
 rm -f categorias/*.html
 rm -f consejo-directivo/*.html
 rm -f contacto/*.html
+rm -f ibc/*.html
+rm -f ibc-torreon/*.html
+rm -f ibc-torreon/*.json
 rm -f indicadores-categorias/*.html
 rm -f indicadores-gomez-palacio/*.html
 rm -f indicadores-la-laguna/*.html
@@ -33,6 +36,7 @@ rm -f indicadores-matamoros/*.html
 rm -f indicadores-torreon/*.html
 rm -f institucional/*.html
 rm -f investigaciones/*.html
+rm -f pet/*.html
 rm -f plan-estrategico-metropolitano/*.html
 rm -f plan-estrategico-torreon/*.html
 rm -f preguntas-frecuentes/*.html

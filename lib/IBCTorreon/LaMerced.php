@@ -135,8 +135,9 @@ class LaMerced extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5094478713484,
+            'Centro longitud' => -103.406189296811
+        );
     } // mapas
 
 } // Clase LaMerced

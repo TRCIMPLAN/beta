@@ -125,8 +125,9 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5641368160378,
+            'Centro longitud' => -103.390990311822
+        );
     } // mapas
 
 } // Clase AviacionSanIgnacio2aEtapa

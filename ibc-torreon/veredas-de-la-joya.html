@@ -538,9 +538,10 @@ El Total de Actividades Económicas es cero.
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Veredas de La Joya'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.540005365974, -103.33269799849]);
       })
       .error(function(err) {
         console.log(err);

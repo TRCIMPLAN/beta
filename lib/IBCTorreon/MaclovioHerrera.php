@@ -135,8 +135,9 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5427688377538,
+            'Centro longitud' => -103.472566828535
+        );
     } // mapas
 
 } // Clase MaclovioHerrera

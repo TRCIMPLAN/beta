@@ -135,8 +135,9 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.540816127134,
+            'Centro longitud' => -103.328197548375
+        );
     } // mapas
 
 } // Clase SolDeOriente2aEtapa

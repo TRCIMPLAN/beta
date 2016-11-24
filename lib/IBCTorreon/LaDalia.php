@@ -135,8 +135,9 @@ class LaDalia extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4965882597912,
+            'Centro longitud' => -103.406821577019
+        );
     } // mapas
 
 } // Clase LaDalia

@@ -135,8 +135,9 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5936097666057,
+            'Centro longitud' => -103.357791969329
+        );
     } // mapas
 
 } // Clase EjidoLaPaz

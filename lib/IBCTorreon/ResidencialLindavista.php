@@ -125,8 +125,9 @@ class ResidencialLindavista extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5214247285112,
+            'Centro longitud' => -103.379108277052
+        );
     } // mapas
 
 } // Clase ResidencialLindavista

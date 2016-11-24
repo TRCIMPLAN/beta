@@ -135,8 +135,9 @@ class TerceroDeCobianCentro extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.546123758825,
+            'Centro longitud' => -103.432883091682
+        );
     } // mapas
 
 } // Clase TerceroDeCobianCentro

@@ -129,8 +129,9 @@ class Britania extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5281228493496,
+            'Centro longitud' => -103.384491786979
+        );
     } // mapas
 
 } // Clase Britania

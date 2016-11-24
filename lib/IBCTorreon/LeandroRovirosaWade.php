@@ -135,8 +135,9 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5706722258635,
+            'Centro longitud' => -103.447825677144
+        );
     } // mapas
 
 } // Clase LeandroRovirosaWade

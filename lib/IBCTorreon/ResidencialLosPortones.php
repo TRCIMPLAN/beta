@@ -135,8 +135,9 @@ class ResidencialLosPortones extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5492635278735,
+            'Centro longitud' => -103.386483125574
+        );
     } // mapas
 
 } // Clase ResidencialLosPortones

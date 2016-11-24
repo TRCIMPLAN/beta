@@ -135,8 +135,9 @@ class SanJoaquin extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5324115709015,
+            'Centro longitud' => -103.477280517044
+        );
     } // mapas
 
 } // Clase SanJoaquin

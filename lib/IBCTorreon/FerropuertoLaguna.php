@@ -93,8 +93,9 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.4751210881043,
+            'Centro longitud' => -103.363444216999
+        );
     } // mapas
 
 } // Clase FerropuertoLaguna

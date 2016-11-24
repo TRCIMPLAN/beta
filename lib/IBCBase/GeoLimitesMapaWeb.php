@@ -30,6 +30,8 @@ class GeoLimitesMapaWeb extends GeoLimites implements SalidaWeb {
     // protected $publicacion_ficha;
     // protected $nombre;
     // protected $limites;
+    // protected $centro_longitud;
+    // protected $centro_latitud;
     // protected $preparado;
     protected $salida;
     const     ID_MAPA_LIMITES = 'MapaLimites';
@@ -55,6 +57,7 @@ class GeoLimitesMapaWeb extends GeoLimites implements SalidaWeb {
         $this->salida = new MapaWeb(self::ID_MAPA_LIMITES);
         $this->salida->definir_carto_json($this->limites);
         $this->salida->definir_nombre($this->nombre);
+        $this->salida->definir_centro($this->centro_longitud, $this->centro_latitud);
     } // preparar
 
     /**

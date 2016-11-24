@@ -124,8 +124,9 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5559549674044,
+            'Centro longitud' => -103.371351853293
+        );
     } // mapas
 
 } // Clase UniversidadAgrariaAntonioNarro

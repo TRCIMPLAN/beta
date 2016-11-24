@@ -538,9 +538,10 @@ El Total de Actividades Económicas es cero.
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Residencial Frondoso'");
-        // Ajustar el zoom
+        // Ajustar
         var map = vis.getNativeMap();
         map.setZoom(14);
+        map.panTo([25.591780371399, -103.41175504151]);
       })
       .error(function(err) {
         console.log(err);

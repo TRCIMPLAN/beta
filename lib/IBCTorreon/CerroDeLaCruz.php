@@ -135,8 +135,9 @@ class CerroDeLaCruz extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5378472705986,
+            'Centro longitud' => -103.472300461259
+        );
     } // mapas
 
 } // Clase CerroDeLaCruz

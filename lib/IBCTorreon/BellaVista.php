@@ -135,8 +135,9 @@ class BellaVista extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5026873823463,
+            'Centro longitud' => -103.407942586188
+        );
     } // mapas
 
 } // Clase BellaVista

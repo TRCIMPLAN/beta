@@ -135,8 +135,9 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5328067299543,
+            'Centro longitud' => -103.401246209066
+        );
     } // mapas
 
 } // Clase ExHaciendaAntiguaLosAngeles

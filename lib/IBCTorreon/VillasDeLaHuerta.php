@@ -133,8 +133,9 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5534194240208,
+            'Centro longitud' => -103.328528400351
+        );
     } // mapas
 
 } // Clase VillasDeLaHuerta

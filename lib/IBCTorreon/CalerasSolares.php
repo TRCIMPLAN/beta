@@ -129,8 +129,9 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5302541607869,
+            'Centro longitud' => -103.474566475797
+        );
     } // mapas
 
 } // Clase CalerasSolares

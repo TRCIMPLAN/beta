@@ -135,8 +135,9 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.55884560079,
+            'Centro longitud' => -103.353903507257
+        );
     } // mapas
 
 } // Clase CiudadNazasPoligono24a

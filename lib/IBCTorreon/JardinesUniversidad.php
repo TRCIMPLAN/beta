@@ -135,8 +135,9 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5278032852834,
+            'Centro longitud' => -103.322997716226
+        );
     } // mapas
 
 } // Clase JardinesUniversidad

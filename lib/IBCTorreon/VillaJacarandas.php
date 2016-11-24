@@ -135,8 +135,9 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5683221806077,
+            'Centro longitud' => -103.442462102928
+        );
     } // mapas
 
 } // Clase VillaJacarandas

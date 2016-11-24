@@ -135,8 +135,9 @@ class AmpliacionFuentes extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5059034800596,
+            'Centro longitud' => -103.408304693763
+        );
     } // mapas
 
 } // Clase AmpliacionFuentes

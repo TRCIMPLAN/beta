@@ -135,8 +135,9 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5291463608231,
+            'Centro longitud' => -103.439873935976
+        );
     } // mapas
 
 } // Clase LuisEcheverriaOriente

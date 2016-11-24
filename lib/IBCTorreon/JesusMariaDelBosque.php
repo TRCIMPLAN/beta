@@ -125,8 +125,9 @@ class JesusMariaDelBosque extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5214940200081,
+            'Centro longitud' => -103.439409966681
+        );
     } // mapas
 
 } // Clase JesusMariaDelBosque

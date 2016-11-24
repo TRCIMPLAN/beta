@@ -93,8 +93,9 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5238800768891,
+            'Centro longitud' => -103.372012213983
+        );
     } // mapas
 
 } // Clase IndustrialLajat

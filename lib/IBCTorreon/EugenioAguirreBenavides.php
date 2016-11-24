@@ -135,8 +135,9 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5516630267943,
+            'Centro longitud' => -103.458480314356
+        );
     } // mapas
 
 } // Clase EugenioAguirreBenavides

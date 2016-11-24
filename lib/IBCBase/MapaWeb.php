@@ -27,9 +27,12 @@ namespace IBCBase;
  */
 class MapaWeb implements SalidaWeb {
 
-    protected $identificador; // Texto único que lo identifica
-    protected $carto_json;    // URL al archivo JSON del mapa en Carto
-    protected $nombre;        // Nombre de la colonia
+    protected $identificador;   // Texto único que lo identifica
+    protected $nombre;          // Nombre de la colonia
+    protected $carto_json;      // URL al archivo JSON del mapa en Carto
+    protected $zoom = 14;       // Zoom
+    protected $centro_latitud;  // Opcional, latitud del centro
+    protected $centro_longitud; // Opcional, longitud del centro
 
     /**
      * Constructor
@@ -41,6 +44,15 @@ class MapaWeb implements SalidaWeb {
     } // constructor
 
     /**
+     * Definir Nombre
+     *
+     * @param string Nombre de la colonia
+     */
+    public function definir_nombre($nombre) {
+        $this->nombre = $nombre;
+    } // definir_nombre
+
+    /**
      * Definir Carto JSON
      *
      * @param string URL al archivo JSON del mapa en Carto
@@ -50,13 +62,26 @@ class MapaWeb implements SalidaWeb {
     } // definir_carto_json
 
     /**
-     * Definir Nombre
+     * Definir Zoom
      *
-     * @param string Nombre de la colonia
+     * @param integer Zoom
      */
-    public function definir_nombre($nombre) {
-        $this->nombre = $nombre;
-    } // definir_carto_json
+    public function definir_zoom($zoom) {
+        if (is_int($zoom) && ($zoom > 1)) {
+            $this->zoom = $zoom;
+        }
+    } // definir_zoom
+
+    /**
+     * Definir Centro
+     *
+     * @param integer Centro Longitud
+     * @param integer Centro Latitud
+     */
+    public function definir_centro($longitud, $latitud) {
+        $this->centro_longitud = $longitud;
+        $this->centro_latitud  = $latitud;
+    } // definir_centro
 
     /**
      * Validar
@@ -114,9 +139,14 @@ class MapaWeb implements SalidaWeb {
         $a[] = "        // Cambiar la consulta en la subcapa";
         $a[] = "        var sub_capa = capa_colonias.getSubLayer(0);";
         $a[] = sprintf("        sub_capa.setSQL(\"SELECT * FROM %s WHERE nombre = '%s'\");", \Configuracion\IBCTorreonConfig::LIMITES_TABLA, $this->nombre);
-        $a[] = "        // Ajustar el zoom";
+        $a[] = "        // Ajustar";
         $a[] = "        var map = vis.getNativeMap();";
-        $a[] = "        map.setZoom(14);";
+        if (isset($this->zoom)) {
+            $a[] = sprintf("        map.setZoom(%d);", $this->zoom);
+        }
+        if (isset($this->centro_longitud) && isset($this->centro_latitud)) {
+            $a[] = sprintf("        map.panTo([%s, %s]);", $this->centro_latitud, $this->centro_longitud);
+        }
         $a[] = "      })"; // done
         $a[] = "      .error(function(err) {";
         $a[] = "        console.log(err);";

@@ -135,8 +135,9 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5317500204445,
+            'Centro longitud' => -103.433847358042
+        );
     } // mapas
 
 } // Clase LucioBlanco

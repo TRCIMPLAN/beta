@@ -135,8 +135,9 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5774929382194,
+            'Centro longitud' => -103.436009088225
+        );
     } // mapas
 
 } // Clase ElRobleI

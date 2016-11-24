@@ -135,8 +135,9 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5395857078446,
+            'Centro longitud' => -103.470400074174
+        );
     } // mapas
 
 } // Clase VeinteDeNoviembre

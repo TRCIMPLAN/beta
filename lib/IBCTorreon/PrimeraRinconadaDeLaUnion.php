@@ -131,8 +131,9 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5282285021809,
+            'Centro longitud' => -103.46180301521
+        );
     } // mapas
 
 } // Clase PrimeraRinconadaDeLaUnion

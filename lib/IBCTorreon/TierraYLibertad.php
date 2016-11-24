@@ -135,8 +135,9 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5535280288997,
+            'Centro longitud' => -103.413611832349
+        );
     } // mapas
 
 } // Clase TierraYLibertad

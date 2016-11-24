@@ -135,8 +135,9 @@ class EjidoSanAgustin extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.0,
-            'Centro longitud' => -103.5);
+            'Centro latitud'  => 25.5857734347098,
+            'Centro longitud' => -103.3756276317
+        );
     } // mapas
 
 } // Clase EjidoSanAgustin
