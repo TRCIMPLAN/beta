@@ -83,8 +83,8 @@ abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements 
         parent::validar();
         // Elaborar lengüetas
         $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-        $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this));
-        $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this),   TRUE); // Lengüeta activa
+        $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this), TRUE); // Lengüeta activa
+        $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
     } // validar
 
