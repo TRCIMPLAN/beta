@@ -558,18 +558,17 @@
   // LenguetaWeb LenguetasConglomeradoMapas
     if (mapa_limites_cargado == false) {
       var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
-      cartodb.createVis('MapaLimites', carto_json)
+      cartodb.createVis('MapaLimites', carto_json, {
+        center_lat: 25.528228502181,
+        center_lon: -103.46180301521,
+        zoom: 14
+      })
       .done(function(vis, layers) {
         // Capa colonias
         var capa_colonias = layers[1];
-        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
         sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'Primera Rinconada de La Unión'");
-        // Ajustar
-        var map = vis.getNativeMap();
-        map.setZoom(14);
-        map.panTo([25.528228502181, -103.46180301521]);
       })
       .error(function(err) {
         console.log(err);

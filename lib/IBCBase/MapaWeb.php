@@ -131,22 +131,28 @@ class MapaWeb implements SalidaWeb {
         $a   = array();
         $a[] = "    if (mapa_limites_cargado == false) {";
         $a[] = "      var carto_json = '{$this->carto_json}'";
-        $a[] = "      cartodb.createVis('{$this->identificador}', carto_json)";
+        $a[] = "      cartodb.createVis('{$this->identificador}', carto_json, {";
+        if (isset($this->centro_longitud) && isset($this->centro_latitud)) {
+            $a[] = sprintf("        center_lat: %s,", $this->centro_latitud);
+            $a[] = sprintf("        center_lon: %s,", $this->centro_longitud);
+        }
+        $a[] = sprintf("        zoom: %d", $this->zoom);
+        $a[] = "      })";
         $a[] = "      .done(function(vis, layers) {";
         $a[] = "        // Capa colonias";
         $a[] = "        var capa_colonias = layers[1];";
-        $a[] = "        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia";
+    //  $a[] = "        capa_colonias.setInteraction(true); // Habilita mostrar información al dar clic en la colonia";
         $a[] = "        // Cambiar la consulta en la subcapa";
         $a[] = "        var sub_capa = capa_colonias.getSubLayer(0);";
         $a[] = sprintf("        sub_capa.setSQL(\"SELECT * FROM %s WHERE nombre = '%s'\");", \Configuracion\IBCTorreonConfig::LIMITES_TABLA, $this->nombre);
-        $a[] = "        // Ajustar";
-        $a[] = "        var map = vis.getNativeMap();";
-        if (isset($this->zoom)) {
-            $a[] = sprintf("        map.setZoom(%d);", $this->zoom);
-        }
-        if (isset($this->centro_longitud) && isset($this->centro_latitud)) {
-            $a[] = sprintf("        map.panTo([%s, %s]);", $this->centro_latitud, $this->centro_longitud);
-        }
+    //  $a[] = "        // Ajustar";
+    //  $a[] = "        var map = vis.getNativeMap();";
+    //  if (isset($this->zoom)) {
+    //      $a[] = sprintf("        map.setZoom(%d);", $this->zoom);
+    //  }
+    //  if (isset($this->centro_longitud) && isset($this->centro_latitud)) {
+    //      $a[] = sprintf("        map.panTo([%s, %s]);", $this->centro_latitud, $this->centro_longitud);
+    //  }
         $a[] = "      })"; // done
         $a[] = "      .error(function(err) {";
         $a[] = "        console.log(err);";
