@@ -44,9 +44,9 @@ class Introduccion extends \Base\PublicacionSchemaArticle {
         $this->nombre_menu                = 'Indicadores Básicos por Colonias > Introducción al IBC';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/IBC/Introduccion.md';
-        // Banderas que pueden tener un valor por defecto en \Configuracion\PublicacionConfig
-        $this->poner_imagen_en_contenido  = false;
-        $this->para_compartir             = false;
+        // Banderas
+        $this->poner_imagen_en_contenido  = FALSE;
+        $this->para_compartir             = FALSE;
     } // constructor
 
 } // Clase Introduccion
