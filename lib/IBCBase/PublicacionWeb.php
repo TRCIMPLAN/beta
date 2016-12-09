@@ -25,7 +25,7 @@ namespace IBCBase;
 /**
  * Clase PublicacionWeb
  */
-abstract class PublicacionWeb extends \Base\PublicacionSchemaArticle implements SalidaWeb {
+abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
 
     // public $sitio_url;
     // public $fecha;

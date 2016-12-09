@@ -62,7 +62,27 @@ class SeccionDatosWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
+        // Preparar
         $this->prepapar();
+        // Consultar mapas
+        $mapas = $this->publicacion_ficha->mapas();
+        // Crear esquema GeoCoordinates
+        $s_geo                    = \Base\SchemaGeoCoordinates();
+        $s_geo->latitude          = $mapas['Centro latitud'];
+        $s_geo->longitude         = $mapas['Centro longitud'];
+        // Crear esquema Place
+        $s_place                  = \Base\SchemaPlace();
+        $s_place->description     = $this->publicacion_ficha->descripcion;
+        $s_place->name            = $this->publicacion_ficha->nombre;
+        $s_place->geo             = $s_geo;
+        // Crear esquema Dataset
+        $s_dataset                = \Base\SchemaDataset();
+        $s_dataset->big_heading   = FALSE;
+        $s_dataset->author        = $this->publicacion_ficha->autor;
+        $s_dataset->spatial       = $s_place;
+        $s_dataset->datePublished = '2010-01-01';
+    //  $s_dataset->distribution  = ; // URL a JOSN con http://schema.org/DataDownload
+        // Entregar
         return $this->acordeones->html();
     } // html
 
