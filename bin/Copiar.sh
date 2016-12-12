@@ -52,26 +52,6 @@ if [ ! -d "lib" ]; then
 fi
 
 #
-# Respaldar Imprentas
-#
-#~ echo "  Respaldando Imprentas..."
-#~ cd $BETA_DIR/lib
-#~ for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
-#~ do
-    #~ if [ -e $DIR/Imprenta.php ]; then
-        #~ mv $DIR/Imprenta.php "${DIR}Imprenta.php"
-    #~ fi
-#~ done
-#~ echo "  Respaldando Iconos..."
-#~ cd $BETA_DIR/imagenes
-#~ for DIR in 64 128 256
-#~ do
-    #~ if [ -d $DIR ]; then
-        #~ mv $DIR "../imagenes${DIR}"
-    #~ fi
-#~ done
-
-#
 # Eliminar
 #
 echo "  Eliminando en la raíz..."
@@ -129,27 +109,6 @@ done
 echo "  Copiando a /css..."
 cd $BETA_DIR/css
 cp $PLATAFORMA_DIR/css/plataforma-de-conocimiento.css .
-
-#
-# Restaurando Imprentas
-#
-#~ echo "  Restaurando Imprentas..."
-#~ cd $BETA_DIR/lib
-#~ for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
-#~ do
-    #~ if [ -e "${DIR}Imprenta.php" ]; then
-        #~ rm -f $DIR/Imprenta.php
-        #~ mv "${DIR}Imprenta.php" $DIR/Imprenta.php
-    #~ fi
-#~ done
-#~ echo "  Restaurando Iconos..."
-#~ cd $BETA_DIR
-#~ for DIR in 64 128 256
-#~ do
-    #~ if [ -d "imagenes${DIR}" ]; then
-        #~ mv "imagenes${DIR}" imagenes/$DIR
-    #~ fi
-#~ done
 
 echo "[Copiar] Terminó con éxito."
 exit $EXITO

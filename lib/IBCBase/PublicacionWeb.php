@@ -91,13 +91,45 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
     /**
      * HTML
      *
+     * El contenido es un SchemaDataset, complementado con un SchemaPlace y SchemaGeoCoordinates
+     *
      * @return string Código HTML
      */
     public function html() {
         // Validar
         $this->validar();
-        // Elaborar HTML
-        $this->contenido->articleBody = $this->lenguetas->html();
+        // Consultar mapas
+        if (method_exists($this, 'mapas')) {
+            $mapas = $this->mapas();
+            // Si hay coordenadas
+            if (isset($mapas['Centro latitud']) && isset($mapas['Centro longitud'])) {
+                // Crear esquema GeoCoordinates
+                $s_geo            = new \Base\SchemaGeoCoordinates();
+                $s_geo->latitude  = $mapas['Centro latitud'];
+                $s_geo->longitude = $mapas['Centro longitud'];
+            } else {
+                $s_geo = NULL;
+            }
+        } else {
+            $s_geo = NULL;
+        }
+        // Crear esquema Place
+        $s_place                  = new \Base\SchemaPlace();
+        $s_place->description     = $this->descripcion;
+        $s_place->name            = $this->nombre;
+        $s_place->geo             = $s_geo;
+        // Crear esquema DataDownload
+    //  $s_datadownload           = ;
+        // Crear esquema Dataset
+        $s_dataset                = new \Base\SchemaDataset();
+        $s_dataset->big_heading   = TRUE;
+        $s_dataset->author        = $this->autor;
+        $s_dataset->spatial       = $s_place;
+        $s_dataset->datePublished = '2010-01-01';
+    //  $s_dataset->distribution  = ; // URL a JSON con http://schema.org/DataDownload
+        $s_dataset->extra         = $this->lenguetas->html();
+        // El contenido es este esquema
+        $this->contenido          = $s_dataset;
         // Entregar
         return parent::html();
     } // html

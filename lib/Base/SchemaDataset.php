@@ -34,6 +34,7 @@ class SchemaDataset extends SchemaCreativeWork {
     // public $identation;          // Integer. Level of identation (beautiful code).
     // public $id_property;         // Text. id property for article/div tag. Use to aply a unique CSS style.
     // public $class_property;      // Text. class property for div tag. Use to aply a general CSS style.
+    // public $is_article;          // Boolean. Use true for enclose with <article>
     // public $big_heading;         // Boolean. Use true to use a big heading for the web page.
     // public $extra;               // Text. Additional HTML to put inside.
     // public $description;         // Text. A short description of the item.
@@ -53,32 +54,6 @@ class SchemaDataset extends SchemaCreativeWork {
     public $distribution;           // DataDownload. A downloadable form of this dataset, at a specific location, in a specific format.
     public $spatial;                // Instance of SchemaPlace. The range of spatial applicability of a dataset, e.g. for a dataset of New York weather, the state of New York.
     public $temporal;               // DateTime. The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
-
-    /**
-     * Catalog HTML
-     *
-     * @return string Código HTML
-     */
-    protected function catalog_html() {
-        if ($this->catalog != '') {
-            return "  <div class=\"catalogo\" itemprop=\"catalog\">{$this->catalog}</div>";
-        } else {
-            return '';
-        }
-    } // catalog_html
-
-    /**
-     * Distribution HTML
-     *
-     * @return string Código HTML
-     */
-    protected function distribution_html() {
-        if ($this->distribution != '') {
-            return "  <div class=\"distribucion\" itemprop=\"distribution\">{$this->distribution}</div>";
-        } else {
-            return '';
-        }
-    } // distribution_html
 
     /**
      * Temporal HTML
@@ -110,14 +85,25 @@ class SchemaDataset extends SchemaCreativeWork {
             $a[] = $this->description_html();
         }
         $a[] = $this->image_html();
+        if (is_object($this->catalog) && ($this->catalog instanceof SchemaDataCatalog)) {
+            $this->catalog->onTypeProperty = 'catalog';
+            $this->catalog->identation     = $this->identation + 1;
+            $this->catalog->is_article     = FALSE;
+            $a[] = $this->catalog->html();
+        }
+        if (is_object($this->distribution) && ($this->distribution instanceof SchemaDataDownload)) {
+            $this->distribution->onTypeProperty = 'distribution';
+            $this->distribution->identation     = $this->identation + 1;
+            $this->distribution->is_article     = FALSE;
+            $a[] = $this->distribution->html();
+        }
         if (is_object($this->spatial) && ($this->spatial instanceof SchemaPlace)) {
             $this->spatial->onTypeProperty = 'spatial';
             $this->spatial->identation     = $this->identation + 1;
+            $this->spatial->is_article     = FALSE;
             $a[] = $this->spatial->html();
         }
-        $a[] = $this->catalog_html();
         $a[] = $this->temporal_html();
-        $a[] = $this->distribution_html();
         $a[] = $this->itemscope_end();
         if ($this->extra != '') {
             $a[] = "<aside>{$this->extra}</aside>";
