@@ -120,16 +120,14 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $s_place->geo             = $s_geo;
         // Crear esquema DataDownload
     //  $s_datadownload           = ;
-        // Crear esquema Dataset
-        $s_dataset                = new \Base\SchemaDataset();
-        $s_dataset->big_heading   = TRUE;
-        $s_dataset->author        = $this->autor;
-        $s_dataset->spatial       = $s_place;
-        $s_dataset->datePublished = '2010-01-01';
-    //  $s_dataset->distribution  = ; // URL a JSON con http://schema.org/DataDownload
-        $s_dataset->extra         = $this->lenguetas->html();
-        // El contenido es este esquema
-        $this->contenido          = $s_dataset;
+        // En el constructor se definió que el contenido es esquema Dataset
+        $this->contenido                = new \Base\SchemaDataset();
+        $this->contenido->big_heading   = TRUE;
+        $this->contenido->author        = $this->autor;
+        $this->contenido->spatial       = $s_place;
+        $this->contenido->datePublished = '2010-01-01';
+    //  $this->contenido->distribution  = ; // URL a JSON con http://schema.org/DataDownload
+        $this->contenido->content       = $this->lenguetas->html();
         // Entregar
         return parent::html();
     } // html
