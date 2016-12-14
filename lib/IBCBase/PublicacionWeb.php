@@ -86,6 +86,8 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this), TRUE); // Lengüeta activa
         $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
+        // Crear contenido con una instancia de SchemaDataset
+        $this->contenido = new \Base\SchemaDataset();
     } // validar
 
     /**
@@ -115,14 +117,15 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         }
         // Crear esquema Place
         $s_place                  = new \Base\SchemaPlace();
-        $s_place->description     = $this->descripcion;
         $s_place->name            = $this->nombre;
+        $s_place->description     = $this->descripcion;
         $s_place->geo             = $s_geo;
         // Crear esquema DataDownload
     //  $s_datadownload           = ;
-        // En el constructor se definió que el contenido es esquema Dataset
-        $this->contenido                = new \Base\SchemaDataset();
+        // Definir propiedades de SchemaDataset, previamente iniciado en validar
         $this->contenido->big_heading   = TRUE;
+        $this->contenido->headline      = $this->nombre;
+        $this->contenido->description   = $this->descripcion;
         $this->contenido->author        = $this->autor;
         $this->contenido->spatial       = $s_place;
         $this->contenido->datePublished = '2010-01-01';
