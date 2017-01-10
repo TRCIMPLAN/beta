@@ -11,16 +11,7 @@ Porcentaje de población de 15 a 64 años       | Porcentaje de residentes de 15
 Porcentaje de población de 65 y más años      | Porcentaje de residentes de 65 a 130 años de edad.
 Porcentaje de población no especificada       | Porcentaje de residentes que no especificó su edad.
 Fecundidad promedio                           | Total de hijos nacidos vivos, divididos entre la población femenina de 12 y más años.
-Porcentaje de población nacida en otro estado | Porcentaje de residentes que nacieron en otro estado.
 Porcentaje de población con discapacidad      | Porcentaje de residentes que tienen dificultad para el desempeño y/o realización de tareas cotidianas.
-
-### Educación
-
-Concepto                                | Descripción
-----------------------------------------|------------------------------------------------------------------------------
-Grado Promedio de Escolaridad           | Años promedio que cursaron los residentes mayores de 15 años de edad.
-Grado Promedio de Escolaridad masculina | Años promedio que cursaron los hombres residentes mayores de 15 años de edad.
-Grado Promedio de Escolaridad femenina  | Años promedio que cursaron las mujeres residentes mayores de 15 años de edad.
 
 ### Características Económicas
 
@@ -40,16 +31,12 @@ Derechohabiencia                          | Porcentaje de residentes que tienen 
 Concepto                       | Descripción
 -------------------------------|--------------------------------------------------------------------------------------------------------------
 Hogares                        | Total de hogares en viviendas.
-Hogares con jefatura masculina | Porcentaje de hogares en donde el jefe es hombre.
-Hogares con jefatura femenina  | Porcentaje de hogares en donde el jefe es mujer.
 Viviendas con Electricidad     | Porcentaje de viviendas que tienen luz eléctrica.
 Viviendas con Agua             | Porcentaje de viviendas que tienen agua dentro de la vivienda o fuera de la vivienda pero dentro del terreno.
 Viviendas con Drenaje          | Porcentaje de viviendas que tienen drenaje.
 Viviendas con Televisión       | Porcentaje de viviendas que tienen televisor.
 Viviendas con Automóvil        | Porcentaje de viviendas que tienen automóvil o camioneta.
 Viviendas con Computadora      | Porcentaje de viviendas que tienen computadora.
-Viviendas con Celular          | Porcentaje de viviendas que tienen teléfono celular.
-Viviendas con Internet         | Porcentaje de viviendas que tienen servicio de internet.
 
 ### Unidades Económicas
 
