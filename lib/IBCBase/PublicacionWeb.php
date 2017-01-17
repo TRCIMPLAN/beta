@@ -120,6 +120,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $s_place->name            = $this->nombre;
         $s_place->description     = $this->descripcion;
         $s_place->geo             = $s_geo;
+        $s_place->is_visible      = FALSE;
         // Crear esquema DataDownload
     //  $s_datadownload           = ;
         // Definir propiedades de SchemaDataset, previamente iniciado en validar
