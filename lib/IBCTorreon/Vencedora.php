@@ -33,13 +33,13 @@ class Vencedora extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Vencedora';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vencedora';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Vencedora de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Vencedora en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.84,
                     'Porcentaje de población no especificada' => 0.46,
                     'Fecundidad promedio' => 2.58,
-                    'Porcentaje de población nacida en otro estado' => 14.26,
-                    'Porcentaje de población con discapacidad' => 4.44,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.57,
-                    'Porcentaje de población de 18 y más' => 69.69,
-                    'Porcentaje de población de 18 y más postbásicos' => 21.12
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.49,
-                    'Grado Promedio de Escolaridad masculina' => 8.74,
-                    'Grado Promedio de Escolaridad femenina' => 8.25
+                    'Porcentaje de población con discapacidad' => 4.44
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Vencedora extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 582,
-                    'Hogares Jefatura masculina' => 71.11,
-                    'Hogares Jefatura femenina' => 28.89,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 99.25,
                     'Viviendas con Agua' => 98.56,
                     'Viviendas con Drenaje' => 98.91,
                     'Viviendas con Televisión' => 96.45,
                     'Viviendas con Automóvil' => 29.25,
-                    'Viviendas con Computadora' => 21.41,
-                    'Viviendas con Celular' => 53.19,
-                    'Viviendas con Internet' => 13.80
+                    'Viviendas con Computadora' => 21.41
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class Vencedora extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 44.07,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 23.73,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 10.17,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.17,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.08

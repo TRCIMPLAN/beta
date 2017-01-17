@@ -33,13 +33,13 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'División del Norte';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'division-del-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia División del Norte de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia División del Norte en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.91,
                     'Porcentaje de población no especificada' => 0.06,
                     'Fecundidad promedio' => 2.64,
-                    'Porcentaje de población nacida en otro estado' => 19.46,
-                    'Porcentaje de población con discapacidad' => 6.21,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.20,
-                    'Porcentaje de población de 18 y más' => 62.26,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.95
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.72,
-                    'Grado Promedio de Escolaridad masculina' => 7.82,
-                    'Grado Promedio de Escolaridad femenina' => 7.62
+                    'Porcentaje de población con discapacidad' => 6.21
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class DivisionDelNorte extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1122,
-                    'Hogares Jefatura masculina' => 72.74,
-                    'Hogares Jefatura femenina' => 27.26,
                     'Ocupación por Vivienda' => 4.25,
                     'Viviendas con Electricidad' => 99.73,
                     'Viviendas con Agua' => 99.28,
                     'Viviendas con Drenaje' => 98.57,
                     'Viviendas con Televisión' => 97.77,
                     'Viviendas con Automóvil' => 37.91,
-                    'Viviendas con Computadora' => 20.37,
-                    'Viviendas con Celular' => 63.57,
-                    'Viviendas con Internet' => 13.62
+                    'Viviendas con Computadora' => 20.37
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio III';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-antonio-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas San Antonio III de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas San Antonio III en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.18,
                     'Porcentaje de población no especificada' => 0.93,
                     'Fecundidad promedio' => 1.77,
-                    'Porcentaje de población nacida en otro estado' => 15.79,
-                    'Porcentaje de población con discapacidad' => 3.67,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 59.29,
-                    'Porcentaje de población de 18 y más postbásicos' => 42.35
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.40,
-                    'Grado Promedio de Escolaridad masculina' => 12.72,
-                    'Grado Promedio de Escolaridad femenina' => 12.11
+                    'Porcentaje de población con discapacidad' => 3.67
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 116,
-                    'Hogares Jefatura masculina' => 83.62,
-                    'Hogares Jefatura femenina' => 16.38,
                     'Ocupación por Vivienda' => 3.66,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 79.31,
-                    'Viviendas con Computadora' => 61.46,
-                    'Viviendas con Celular' => 85.34,
-                    'Viviendas con Internet' => 44.71
+                    'Viviendas con Computadora' => 61.46
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class QuintasSanAntonioIii extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

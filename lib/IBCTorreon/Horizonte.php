@@ -33,13 +33,13 @@ class Horizonte extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Horizonte';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'horizonte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Horizonte de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Horizonte en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Horizonte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.02,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.79,
-                    'Porcentaje de población nacida en otro estado' => 19.48,
-                    'Porcentaje de población con discapacidad' => 2.87,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.42,
-                    'Porcentaje de población de 18 y más' => 67.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 49.40
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.42,
-                    'Grado Promedio de Escolaridad masculina' => 12.53,
-                    'Grado Promedio de Escolaridad femenina' => 12.32
+                    'Porcentaje de población con discapacidad' => 2.87
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Horizonte extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 79,
-                    'Hogares Jefatura masculina' => 64.56,
-                    'Hogares Jefatura femenina' => 35.44,
                     'Ocupación por Vivienda' => 3.15,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.47,
                     'Viviendas con Automóvil' => 75.95,
-                    'Viviendas con Computadora' => 68.35,
-                    'Viviendas con Celular' => 87.34,
-                    'Viviendas con Internet' => 55.70
+                    'Viviendas con Computadora' => 68.35
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Horizonte extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 16.67,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 16.67
                 )
             )

@@ -33,13 +33,13 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas del Desierto';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-del-desierto';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas del Desierto de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas del Desierto en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -70,15 +70,15 @@ class QuintasDelDesierto extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 7,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad nombre' => 'Comercio Mayoreo',
                     'Primer actividad porcentaje' => 28.57,
-                    'Segunda actividad nombre' => 'Comercio Mayoreo',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 28.57,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 14.29,
                     'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Cuarta actividad porcentaje' => 14.29,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 14.29
                 )
             )

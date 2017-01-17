@@ -33,13 +33,13 @@ class LaMina extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'La Mina';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-mina';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia La Mina de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia La Mina en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LaMina extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.52,
                     'Porcentaje de población no especificada' => 5.02,
                     'Fecundidad promedio' => 2.03,
-                    'Porcentaje de población nacida en otro estado' => 19.53,
-                    'Porcentaje de población con discapacidad' => 4.61,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
-                    'Porcentaje de población de 18 y más' => 69.36,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.46
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.09,
-                    'Grado Promedio de Escolaridad masculina' => 11.53,
-                    'Grado Promedio de Escolaridad femenina' => 10.64
+                    'Porcentaje de población con discapacidad' => 4.61
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LaMina extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 439,
-                    'Hogares Jefatura masculina' => 79.90,
-                    'Hogares Jefatura femenina' => 20.10,
                     'Ocupación por Vivienda' => 4.01,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.18,
                     'Viviendas con Automóvil' => 63.72,
-                    'Viviendas con Computadora' => 55.63,
-                    'Viviendas con Celular' => 79.73,
-                    'Viviendas con Internet' => 43.12
+                    'Viviendas con Computadora' => 55.63
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class LaMina extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 40.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 8.00,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.00,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 8.00
                 )
             )

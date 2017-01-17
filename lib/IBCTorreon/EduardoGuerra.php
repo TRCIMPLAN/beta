@@ -33,13 +33,13 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Eduardo Guerra';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'eduardo-guerra';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Eduardo Guerra de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Eduardo Guerra en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.98,
                     'Porcentaje de población no especificada' => 1.66,
                     'Fecundidad promedio' => 2.60,
-                    'Porcentaje de población nacida en otro estado' => 19.11,
-                    'Porcentaje de población con discapacidad' => 5.41,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.74,
-                    'Porcentaje de población de 18 y más' => 65.96,
-                    'Porcentaje de población de 18 y más postbásicos' => 22.00
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.69,
-                    'Grado Promedio de Escolaridad masculina' => 8.78,
-                    'Grado Promedio de Escolaridad femenina' => 8.61
+                    'Porcentaje de población con discapacidad' => 5.41
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EduardoGuerra extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3237,
-                    'Hogares Jefatura masculina' => 74.51,
-                    'Hogares Jefatura femenina' => 25.49,
                     'Ocupación por Vivienda' => 4.02,
                     'Viviendas con Electricidad' => 99.81,
                     'Viviendas con Agua' => 99.60,
                     'Viviendas con Drenaje' => 99.63,
                     'Viviendas con Televisión' => 98.61,
                     'Viviendas con Automóvil' => 44.31,
-                    'Viviendas con Computadora' => 27.34,
-                    'Viviendas con Celular' => 64.86,
-                    'Viviendas con Internet' => 18.90
+                    'Viviendas con Computadora' => 27.34
                 )
             ),
             'Unidades Económicas' => array(

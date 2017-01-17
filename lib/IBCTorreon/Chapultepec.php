@@ -33,13 +33,13 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Chapultepec';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'chapultepec';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Chapultepec de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Chapultepec en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.48,
                     'Porcentaje de población no especificada' => 0.88,
                     'Fecundidad promedio' => 1.45,
-                    'Porcentaje de población nacida en otro estado' => 20.33,
-                    'Porcentaje de población con discapacidad' => 1.69,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 59.76,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.03
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.50,
-                    'Grado Promedio de Escolaridad masculina' => 15.06,
-                    'Grado Promedio de Escolaridad femenina' => 14.02
+                    'Porcentaje de población con discapacidad' => 1.69
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 95,
-                    'Hogares Jefatura masculina' => 83.58,
-                    'Hogares Jefatura femenina' => 16.42,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 95.79,
-                    'Viviendas con Computadora' => 78.19,
-                    'Viviendas con Celular' => 96.84,
-                    'Viviendas con Internet' => 60.30
+                    'Viviendas con Computadora' => 78.19
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Chapultepec extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 27.27,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Inmobiliarios',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Inmobiliarios',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 18.18,
                     'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Cuarta actividad porcentaje' => 18.18,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

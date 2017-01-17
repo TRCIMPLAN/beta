@@ -33,13 +33,13 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Aquiles Serdán';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aquiles-serdan';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aquiles Serdán de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Aquiles Serdán en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.78,
                     'Porcentaje de población no especificada' => 0.16,
                     'Fecundidad promedio' => 2.50,
-                    'Porcentaje de población nacida en otro estado' => 18.38,
-                    'Porcentaje de población con discapacidad' => 9.35,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.08,
-                    'Porcentaje de población de 18 y más' => 66.81,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.35
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.03,
-                    'Grado Promedio de Escolaridad masculina' => 8.16,
-                    'Grado Promedio de Escolaridad femenina' => 7.91
+                    'Porcentaje de población con discapacidad' => 9.35
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 484,
-                    'Hogares Jefatura masculina' => 69.63,
-                    'Hogares Jefatura femenina' => 30.37,
                     'Ocupación por Vivienda' => 3.77,
                     'Viviendas con Electricidad' => 99.59,
                     'Viviendas con Agua' => 98.35,
                     'Viviendas con Drenaje' => 98.76,
                     'Viviendas con Televisión' => 96.07,
                     'Viviendas con Automóvil' => 27.17,
-                    'Viviendas con Computadora' => 20.60,
-                    'Viviendas con Celular' => 57.64,
-                    'Viviendas con Internet' => 11.70
+                    'Viviendas con Computadora' => 20.60
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class AquilesSerdan extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.95,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.63,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.65
                 )
             )

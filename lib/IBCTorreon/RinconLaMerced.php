@@ -33,13 +33,13 @@ class RinconLaMerced extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón La Merced';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón La Merced de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón La Merced en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconLaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.90,
                     'Porcentaje de población no especificada' => 1.04,
                     'Fecundidad promedio' => 1.84,
-                    'Porcentaje de población nacida en otro estado' => 12.56,
-                    'Porcentaje de población con discapacidad' => 2.39,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
-                    'Porcentaje de población de 18 y más' => 56.99,
-                    'Porcentaje de población de 18 y más postbásicos' => 30.11
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.44,
-                    'Grado Promedio de Escolaridad masculina' => 10.69,
-                    'Grado Promedio de Escolaridad femenina' => 10.19
+                    'Porcentaje de población con discapacidad' => 2.39
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconLaMerced extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3946,
-                    'Hogares Jefatura masculina' => 79.70,
-                    'Hogares Jefatura femenina' => 20.30,
                     'Ocupación por Vivienda' => 3.93,
                     'Viviendas con Electricidad' => 99.79,
                     'Viviendas con Agua' => 99.46,
                     'Viviendas con Drenaje' => 99.33,
                     'Viviendas con Televisión' => 98.90,
                     'Viviendas con Automóvil' => 56.62,
-                    'Viviendas con Computadora' => 40.73,
-                    'Viviendas con Celular' => 85.28,
-                    'Viviendas con Internet' => 29.52
+                    'Viviendas con Computadora' => 40.73
                 )
             ),
             'Unidades Económicas' => array(

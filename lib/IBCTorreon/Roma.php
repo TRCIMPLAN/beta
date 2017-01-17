@@ -33,13 +33,13 @@ class Roma extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Roma';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'roma';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Roma de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Roma en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Roma extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.78,
                     'Porcentaje de población no especificada' => 2.33,
                     'Fecundidad promedio' => 1.47,
-                    'Porcentaje de población nacida en otro estado' => 23.83,
-                    'Porcentaje de población con discapacidad' => 2.11,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.11,
-                    'Porcentaje de población de 18 y más' => 66.17,
-                    'Porcentaje de población de 18 y más postbásicos' => 57.06
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.44,
-                    'Grado Promedio de Escolaridad masculina' => 13.66,
-                    'Grado Promedio de Escolaridad femenina' => 13.24
+                    'Porcentaje de población con discapacidad' => 2.11
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Roma extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 494,
-                    'Hogares Jefatura masculina' => 75.71,
-                    'Hogares Jefatura femenina' => 24.29,
                     'Ocupación por Vivienda' => 3.64,
                     'Viviendas con Electricidad' => 99.60,
                     'Viviendas con Agua' => 99.19,
                     'Viviendas con Drenaje' => 99.60,
                     'Viviendas con Televisión' => 98.38,
                     'Viviendas con Automóvil' => 88.66,
-                    'Viviendas con Computadora' => 79.55,
-                    'Viviendas con Celular' => 90.28,
-                    'Viviendas con Internet' => 68.83
+                    'Viviendas con Computadora' => 79.55
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Roma extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 63.64,
-                    'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 9.09,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Tercera actividad porcentaje' => 9.09,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

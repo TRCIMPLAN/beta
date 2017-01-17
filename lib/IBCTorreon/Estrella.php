@@ -33,13 +33,13 @@ class Estrella extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Estrella';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'estrella';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Estrella de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Estrella en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Estrella extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 12.41,
                     'Porcentaje de población no especificada' => 3.79,
                     'Fecundidad promedio' => 1.84,
-                    'Porcentaje de población nacida en otro estado' => 24.28,
-                    'Porcentaje de población con discapacidad' => 2.34,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.36,
-                    'Porcentaje de población de 18 y más' => 77.22,
-                    'Porcentaje de población de 18 y más postbásicos' => 63.10
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.56,
-                    'Grado Promedio de Escolaridad masculina' => 14.12,
-                    'Grado Promedio de Escolaridad femenina' => 13.11
+                    'Porcentaje de población con discapacidad' => 2.34
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Estrella extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 923,
-                    'Hogares Jefatura masculina' => 69.29,
-                    'Hogares Jefatura femenina' => 30.71,
                     'Ocupación por Vivienda' => 3.48,
                     'Viviendas con Electricidad' => 99.91,
                     'Viviendas con Agua' => 99.48,
                     'Viviendas con Drenaje' => 99.80,
                     'Viviendas con Televisión' => 99.37,
                     'Viviendas con Automóvil' => 92.14,
-                    'Viviendas con Computadora' => 80.39,
-                    'Viviendas con Celular' => 89.00,
-                    'Viviendas con Internet' => 74.70
+                    'Viviendas con Computadora' => 80.39
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class Estrella extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 151,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 27.81,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.91,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 13.91,
                     'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 10.60,

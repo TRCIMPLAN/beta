@@ -33,13 +33,13 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Unión';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Unión de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Unión en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.66,
                     'Porcentaje de población no especificada' => 1.62,
                     'Fecundidad promedio' => 2.54,
-                    'Porcentaje de población nacida en otro estado' => 13.45,
-                    'Porcentaje de población con discapacidad' => 5.81,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.38,
-                    'Porcentaje de población de 18 y más' => 61.71,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.16
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.72,
-                    'Grado Promedio de Escolaridad masculina' => 7.76,
-                    'Grado Promedio de Escolaridad femenina' => 7.68
+                    'Porcentaje de población con discapacidad' => 5.81
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaUnion extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1156,
-                    'Hogares Jefatura masculina' => 78.52,
-                    'Hogares Jefatura femenina' => 21.48,
                     'Ocupación por Vivienda' => 4.23,
                     'Viviendas con Electricidad' => 99.44,
                     'Viviendas con Agua' => 98.14,
                     'Viviendas con Drenaje' => 94.23,
                     'Viviendas con Televisión' => 96.93,
                     'Viviendas con Automóvil' => 44.88,
-                    'Viviendas con Computadora' => 27.87,
-                    'Viviendas con Celular' => 63.83,
-                    'Viviendas con Internet' => 20.49
+                    'Viviendas con Computadora' => 27.87
                 )
             ),
             'Unidades Económicas' => array(

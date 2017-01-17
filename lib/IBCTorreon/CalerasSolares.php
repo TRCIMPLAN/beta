@@ -33,13 +33,13 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Caleras Solares';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'caleras-solares';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Caleras Solares de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Caleras Solares en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.48,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.95,
-                    'Porcentaje de población nacida en otro estado' => 17.43,
-                    'Porcentaje de población con discapacidad' => 14.36,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.94,
-                    'Porcentaje de población de 18 y más' => 66.83,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.07
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.48,
-                    'Grado Promedio de Escolaridad masculina' => 7.51,
-                    'Grado Promedio de Escolaridad femenina' => 7.45
+                    'Porcentaje de población con discapacidad' => 14.36
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CalerasSolares extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 219,
-                    'Hogares Jefatura masculina' => 62.10,
-                    'Hogares Jefatura femenina' => 37.90,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 99.54,
                     'Viviendas con Agua' => 94.98,
                     'Viviendas con Drenaje' => 99.09,
                     'Viviendas con Televisión' => 96.35,
                     'Viviendas con Automóvil' => 20.37,
-                    'Viviendas con Computadora' => 9.45,
-                    'Viviendas con Celular' => 51.17,
-                    'Viviendas con Internet' => 2.99
+                    'Viviendas con Computadora' => 9.45
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Los Arenales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-los-arenales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido Los Arenales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido Los Arenales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.27,
                     'Porcentaje de población no especificada' => 0.33,
                     'Fecundidad promedio' => 2.81,
-                    'Porcentaje de población nacida en otro estado' => 11.95,
-                    'Porcentaje de población con discapacidad' => 1.94,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.82,
-                    'Porcentaje de población de 18 y más' => 60.78,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.43
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.26,
-                    'Grado Promedio de Escolaridad masculina' => 7.28,
-                    'Grado Promedio de Escolaridad femenina' => 7.25
+                    'Porcentaje de población con discapacidad' => 1.94
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 248,
-                    'Hogares Jefatura masculina' => 77.62,
-                    'Hogares Jefatura femenina' => 22.38,
                     'Ocupación por Vivienda' => 4.23,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 96.62,
                     'Viviendas con Drenaje' => 98.63,
                     'Viviendas con Televisión' => 98.63,
                     'Viviendas con Automóvil' => 36.34,
-                    'Viviendas con Computadora' => 31.25,
-                    'Viviendas con Celular' => 60.76,
-                    'Viviendas con Internet' => 13.81
+                    'Viviendas con Computadora' => 31.25
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class EjidoLosArenales extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.71
                 )
             )

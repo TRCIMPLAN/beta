@@ -33,13 +33,13 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Torreón 2000';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-2000';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Torreón 2000 de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Torreón 2000 en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.06,
                     'Porcentaje de población no especificada' => 0.66,
                     'Fecundidad promedio' => 1.75,
-                    'Porcentaje de población nacida en otro estado' => 15.62,
-                    'Porcentaje de población con discapacidad' => 1.22,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
-                    'Porcentaje de población de 18 y más' => 56.94,
-                    'Porcentaje de población de 18 y más postbásicos' => 40.56
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.08,
-                    'Grado Promedio de Escolaridad masculina' => 12.33,
-                    'Grado Promedio de Escolaridad femenina' => 11.83
+                    'Porcentaje de población con discapacidad' => 1.22
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 242,
-                    'Hogares Jefatura masculina' => 85.95,
-                    'Hogares Jefatura femenina' => 14.05,
                     'Ocupación por Vivienda' => 3.81,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.59,
                     'Viviendas con Automóvil' => 76.45,
-                    'Viviendas con Computadora' => 55.37,
-                    'Viviendas con Celular' => 93.80,
-                    'Viviendas con Internet' => 39.67
+                    'Viviendas con Computadora' => 55.37
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,11 +99,11 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 11.11,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11
                 )
             )

@@ -33,13 +33,13 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Joyas de Torreón';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'joyas-de-torreon';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Joyas de Torreón de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Joyas de Torreón en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.25,
                     'Porcentaje de población no especificada' => 0.63,
                     'Fecundidad promedio' => 1.91,
-                    'Porcentaje de población nacida en otro estado' => 17.12,
-                    'Porcentaje de población con discapacidad' => 1.08,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
-                    'Porcentaje de población de 18 y más' => 57.40,
-                    'Porcentaje de población de 18 y más postbásicos' => 26.87
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.35,
-                    'Grado Promedio de Escolaridad masculina' => 10.37,
-                    'Grado Promedio de Escolaridad femenina' => 10.32
+                    'Porcentaje de población con discapacidad' => 1.08
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 521,
-                    'Hogares Jefatura masculina' => 78.89,
-                    'Hogares Jefatura femenina' => 21.11,
                     'Ocupación por Vivienda' => 3.67,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.85,
                     'Viviendas con Automóvil' => 51.74,
-                    'Viviendas con Computadora' => 26.76,
-                    'Viviendas con Celular' => 84.84,
-                    'Viviendas con Internet' => 15.45
+                    'Viviendas con Computadora' => 26.76
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class JoyasDeTorreon extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.71,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 5.36
                 )
             )

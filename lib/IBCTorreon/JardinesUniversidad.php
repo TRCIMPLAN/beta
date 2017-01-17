@@ -33,13 +33,13 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jardines Universidad';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jardines-universidad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jardines Universidad de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jardines Universidad en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 12.45,
                     'Porcentaje de población no especificada' => 17.35,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 14.27,
-                    'Porcentaje de población con discapacidad' => 1.44,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
-                    'Porcentaje de población de 18 y más' => 41.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 19.65
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.29,
-                    'Grado Promedio de Escolaridad masculina' => 10.41,
-                    'Grado Promedio de Escolaridad femenina' => 10.18
+                    'Porcentaje de población con discapacidad' => 1.44
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JardinesUniversidad extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 952,
-                    'Hogares Jefatura masculina' => 78.76,
-                    'Hogares Jefatura femenina' => 21.24,
                     'Ocupación por Vivienda' => 5.11,
                     'Viviendas con Electricidad' => 99.15,
                     'Viviendas con Agua' => 98.94,
                     'Viviendas con Drenaje' => 99.04,
                     'Viviendas con Televisión' => 98.10,
                     'Viviendas con Automóvil' => 52.23,
-                    'Viviendas con Computadora' => 32.35,
-                    'Viviendas con Celular' => 86.24,
-                    'Viviendas con Internet' => 20.77
+                    'Viviendas con Computadora' => 32.35
                 )
             ),
             'Unidades Económicas' => array(

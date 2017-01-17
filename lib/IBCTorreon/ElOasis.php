@@ -33,13 +33,13 @@ class ElOasis extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Oasis';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-oasis';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Oasis de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Oasis en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElOasis extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.99,
                     'Porcentaje de población no especificada' => 0.07,
                     'Fecundidad promedio' => 1.55,
-                    'Porcentaje de población nacida en otro estado' => 19.58,
-                    'Porcentaje de población con discapacidad' => 0.96,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 65.79,
-                    'Porcentaje de población de 18 y más postbásicos' => 56.98
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.86,
-                    'Grado Promedio de Escolaridad masculina' => 14.31,
-                    'Grado Promedio de Escolaridad femenina' => 13.45
+                    'Porcentaje de población con discapacidad' => 0.96
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElOasis extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 56,
-                    'Hogares Jefatura masculina' => 83.24,
-                    'Hogares Jefatura femenina' => 16.76,
                     'Ocupación por Vivienda' => 3.80,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.54,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 85.74,
-                    'Viviendas con Computadora' => 80.67,
-                    'Viviendas con Celular' => 96.56,
-                    'Viviendas con Internet' => 67.57
+                    'Viviendas con Computadora' => 80.67
                 )
             ),
             'Unidades Económicas' => array(

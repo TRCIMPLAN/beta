@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":15.58,
         "Porcentaje de población no especificada":0.01,
         "Fecundidad promedio":3.02,
-        "Porcentaje de población nacida en otro estado":21.86,
-        "Porcentaje de población con discapacidad":6.96,
-        "Porcentaje de población de 15 y más analfabeta":0.08,
-        "Porcentaje de población de 18 y más":69.06,
-        "Porcentaje de población de 18 y más postbásicos":29.03
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":8.92,
-        "Grado Promedio de Escolaridad masculina":9.82,
-        "Grado Promedio de Escolaridad femenina":8.22
+        "Porcentaje de población con discapacidad":6.96
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":25,
-        "Hogares Jefatura masculina":70.86,
-        "Hogares Jefatura femenina":29.14,
         "Ocupación por Vivienda":3.44,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":100,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":100,
         "Viviendas con Automóvil":52.72,
-        "Viviendas con Computadora":48.34,
-        "Viviendas con Celular":65.41,
-        "Viviendas con Internet":14.94
+        "Viviendas con Computadora":48.34
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":54.55,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":18.18,
-        "Tercera actividad nombre":"Gubernamentales",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":9.09,
         "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":9.09,
-        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad nombre":"Gubernamentales",
         "Quinta actividad porcentaje":9.09
       }
     }

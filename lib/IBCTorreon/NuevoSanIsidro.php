@@ -33,13 +33,13 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nuevo San Isidro';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nuevo-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nuevo San Isidro de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nuevo San Isidro en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.97,
                     'Porcentaje de población no especificada' => 2.59,
                     'Fecundidad promedio' => 1.69,
-                    'Porcentaje de población nacida en otro estado' => 26.03,
-                    'Porcentaje de población con discapacidad' => 4.07,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 79.42,
-                    'Porcentaje de población de 18 y más postbásicos' => 69.62
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.33,
-                    'Grado Promedio de Escolaridad masculina' => 14.89,
-                    'Grado Promedio de Escolaridad femenina' => 13.84
+                    'Porcentaje de población con discapacidad' => 4.07
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 283,
-                    'Hogares Jefatura masculina' => 73.94,
-                    'Hogares Jefatura femenina' => 26.06,
                     'Ocupación por Vivienda' => 3.31,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.28,
                     'Viviendas con Drenaje' => 99.64,
                     'Viviendas con Televisión' => 98.93,
                     'Viviendas con Automóvil' => 93.59,
-                    'Viviendas con Computadora' => 78.97,
-                    'Viviendas con Celular' => 92.13,
-                    'Viviendas con Internet' => 72.67
+                    'Viviendas con Computadora' => 78.97
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class NuevoSanIsidro extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 32.50,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 12.50,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 10.00,
                     'Cuarta actividad nombre' => 'Financieros y Seguros',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

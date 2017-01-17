@@ -33,13 +33,13 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Sol de Oriente 3a. Etapa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'sol-de-oriente-3a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Sol de Oriente 3a. Etapa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Sol de Oriente 3a. Etapa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.43,
                     'Porcentaje de población no especificada' => 0.33,
                     'Fecundidad promedio' => 1.60,
-                    'Porcentaje de población nacida en otro estado' => 17.55,
-                    'Porcentaje de población con discapacidad' => 1.80,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 60.26,
-                    'Porcentaje de población de 18 y más postbásicos' => 46.14
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.80,
-                    'Grado Promedio de Escolaridad masculina' => 12.93,
-                    'Grado Promedio de Escolaridad femenina' => 12.69
+                    'Porcentaje de población con discapacidad' => 1.80
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 258,
-                    'Hogares Jefatura masculina' => 80.62,
-                    'Hogares Jefatura femenina' => 19.38,
                     'Ocupación por Vivienda' => 3.51,
                     'Viviendas con Electricidad' => 98.84,
                     'Viviendas con Agua' => 99.22,
                     'Viviendas con Drenaje' => 99.22,
                     'Viviendas con Televisión' => 98.45,
                     'Viviendas con Automóvil' => 75.97,
-                    'Viviendas con Computadora' => 52.33,
-                    'Viviendas con Celular' => 92.25,
-                    'Viviendas con Internet' => 39.15
+                    'Viviendas con Computadora' => 52.33
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class SolDeOriente3aEtapa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 53.85,
                     'Segunda actividad nombre' => 'Financieros y Seguros',
                     'Segunda actividad porcentaje' => 23.08,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 7.69,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

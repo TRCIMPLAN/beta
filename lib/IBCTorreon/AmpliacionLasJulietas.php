@@ -33,13 +33,13 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Las Julietas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-las-julietas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Las Julietas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Las Julietas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.03,
                     'Porcentaje de población no especificada' => 1.77,
                     'Fecundidad promedio' => 2.32,
-                    'Porcentaje de población nacida en otro estado' => 19.37,
-                    'Porcentaje de población con discapacidad' => 2.16,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.68,
-                    'Porcentaje de población de 18 y más' => 58.21,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.95
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.26,
-                    'Grado Promedio de Escolaridad masculina' => 8.03,
-                    'Grado Promedio de Escolaridad femenina' => 8.50
+                    'Porcentaje de población con discapacidad' => 2.16
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 250,
-                    'Hogares Jefatura masculina' => 82.00,
-                    'Hogares Jefatura femenina' => 18.00,
                     'Ocupación por Vivienda' => 4.07,
                     'Viviendas con Electricidad' => 99.20,
                     'Viviendas con Agua' => 98.40,
                     'Viviendas con Drenaje' => 96.80,
                     'Viviendas con Televisión' => 98.00,
                     'Viviendas con Automóvil' => 53.60,
-                    'Viviendas con Computadora' => 27.86,
-                    'Viviendas con Celular' => 74.40,
-                    'Viviendas con Internet' => 17.82
+                    'Viviendas con Computadora' => 27.86
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class AmpliacionLasJulietas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 16.67,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 5.56
                 )
             )

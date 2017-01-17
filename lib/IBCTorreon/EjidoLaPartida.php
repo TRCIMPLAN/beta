@@ -33,13 +33,13 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Partida';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-partida';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Partida de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Partida en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.23,
                     'Porcentaje de población no especificada' => 0.19,
                     'Fecundidad promedio' => 2.45,
-                    'Porcentaje de población nacida en otro estado' => 9.62,
-                    'Porcentaje de población con discapacidad' => 4.02,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.28,
-                    'Porcentaje de población de 18 y más' => 63.59,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.72
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.82,
-                    'Grado Promedio de Escolaridad masculina' => 8.02,
-                    'Grado Promedio de Escolaridad femenina' => 7.63
+                    'Porcentaje de población con discapacidad' => 4.02
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 987,
-                    'Hogares Jefatura masculina' => 83.54,
-                    'Hogares Jefatura femenina' => 16.46,
                     'Ocupación por Vivienda' => 4.06,
                     'Viviendas con Electricidad' => 99.36,
                     'Viviendas con Agua' => 98.34,
                     'Viviendas con Drenaje' => 94.89,
                     'Viviendas con Televisión' => 98.72,
                     'Viviendas con Automóvil' => 49.57,
-                    'Viviendas con Computadora' => 28.62,
-                    'Viviendas con Celular' => 62.06,
-                    'Viviendas con Internet' => 17.67
+                    'Viviendas con Computadora' => 28.62
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class EjidoLaPartida extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 149,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 46.31,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.44,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.44,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.05,

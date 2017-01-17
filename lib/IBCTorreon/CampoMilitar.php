@@ -33,13 +33,13 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Campo Militar';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'campo-militar';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Campo Militar de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Campo Militar en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.31,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.69,
-                    'Porcentaje de población nacida en otro estado' => 84.88,
-                    'Porcentaje de población con discapacidad' => 0.93,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.29,
-                    'Porcentaje de población de 18 y más' => 59.26,
-                    'Porcentaje de población de 18 y más postbásicos' => 38.89
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.15,
-                    'Grado Promedio de Escolaridad masculina' => 9.89,
-                    'Grado Promedio de Escolaridad femenina' => 8.59
+                    'Porcentaje de población con discapacidad' => 0.93
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 96,
-                    'Hogares Jefatura masculina' => 97.92,
-                    'Hogares Jefatura femenina' => 2.08,
                     'Ocupación por Vivienda' => 3.38,
                     'Viviendas con Electricidad' => 97.92,
                     'Viviendas con Agua' => 97.92,
                     'Viviendas con Drenaje' => 97.92,
                     'Viviendas con Televisión' => 97.92,
                     'Viviendas con Automóvil' => 63.54,
-                    'Viviendas con Computadora' => 53.12,
-                    'Viviendas con Celular' => 85.42,
-                    'Viviendas con Internet' => 19.79
+                    'Viviendas con Computadora' => 53.12
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class CampoMilitar extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 44.44,
                     'Segunda actividad nombre' => 'Gubernamentales',
                     'Segunda actividad porcentaje' => 22.22,
-                    'Tercera actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 11.11,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Inmobiliarios',
+                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )

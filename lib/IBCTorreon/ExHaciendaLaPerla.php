@@ -33,13 +33,13 @@ class ExHaciendaLaPerla extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda La Perla';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ex-hacienda-la-perla';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ex-Hacienda La Perla de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ex-Hacienda La Perla en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ExHaciendaLaPerla extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.07,
                     'Porcentaje de población no especificada' => 0.85,
                     'Fecundidad promedio' => 2.01,
-                    'Porcentaje de población nacida en otro estado' => 16.98,
-                    'Porcentaje de población con discapacidad' => 1.89,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.28,
-                    'Porcentaje de población de 18 y más' => 54.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.96
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.35,
-                    'Grado Promedio de Escolaridad masculina' => 8.31,
-                    'Grado Promedio de Escolaridad femenina' => 8.39
+                    'Porcentaje de población con discapacidad' => 1.89
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ExHaciendaLaPerla extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 815,
-                    'Hogares Jefatura masculina' => 89.41,
-                    'Hogares Jefatura femenina' => 10.59,
                     'Ocupación por Vivienda' => 3.89,
                     'Viviendas con Electricidad' => 99.63,
                     'Viviendas con Agua' => 99.39,
                     'Viviendas con Drenaje' => 99.39,
                     'Viviendas con Televisión' => 98.65,
                     'Viviendas con Automóvil' => 33.79,
-                    'Viviendas con Computadora' => 23.78,
-                    'Viviendas con Celular' => 82.70,
-                    'Viviendas con Internet' => 14.51
+                    'Viviendas con Computadora' => 23.78
                 )
             ),
             'Unidades Económicas' => array(

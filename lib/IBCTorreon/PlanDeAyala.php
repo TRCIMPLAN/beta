@@ -33,13 +33,13 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Plan de Ayala';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'plan-de-ayala';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Plan de Ayala de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Plan de Ayala en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.13,
                     'Porcentaje de población no especificada' => 1.32,
                     'Fecundidad promedio' => 2.83,
-                    'Porcentaje de población nacida en otro estado' => 16.55,
-                    'Porcentaje de población con discapacidad' => 9.53,
-                    'Porcentaje de población de 15 y más analfabeta' => 5.58,
-                    'Porcentaje de población de 18 y más' => 61.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.11
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.58,
-                    'Grado Promedio de Escolaridad masculina' => 6.69,
-                    'Grado Promedio de Escolaridad femenina' => 6.47
+                    'Porcentaje de población con discapacidad' => 9.53
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 235,
-                    'Hogares Jefatura masculina' => 68.09,
-                    'Hogares Jefatura femenina' => 31.91,
                     'Ocupación por Vivienda' => 4.18,
                     'Viviendas con Electricidad' => 97.87,
                     'Viviendas con Agua' => 95.74,
                     'Viviendas con Drenaje' => 91.91,
                     'Viviendas con Televisión' => 93.62,
                     'Viviendas con Automóvil' => 22.34,
-                    'Viviendas con Computadora' => 10.57,
-                    'Viviendas con Celular' => 52.77,
-                    'Viviendas con Internet' => 7.53
+                    'Viviendas con Computadora' => 10.57
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class PlanDeAyala extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 39.13,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 34.78,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 8.70,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 4.35
                 )
             )

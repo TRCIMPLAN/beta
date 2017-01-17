@@ -33,13 +33,13 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas San José';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-san-jose';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas San José de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas San José en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.98,
                     'Porcentaje de población no especificada' => 0.22,
                     'Fecundidad promedio' => 1.75,
-                    'Porcentaje de población nacida en otro estado' => 21.98,
-                    'Porcentaje de población con discapacidad' => 1.45,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 58.90,
-                    'Porcentaje de población de 18 y más postbásicos' => 47.91
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.87,
-                    'Grado Promedio de Escolaridad masculina' => 13.04,
-                    'Grado Promedio de Escolaridad femenina' => 12.71
+                    'Porcentaje de población con discapacidad' => 1.45
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 130,
-                    'Hogares Jefatura masculina' => 78.46,
-                    'Hogares Jefatura femenina' => 21.54,
                     'Ocupación por Vivienda' => 3.50,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 85.38,
-                    'Viviendas con Computadora' => 69.23,
-                    'Viviendas con Celular' => 88.46,
-                    'Viviendas con Internet' => 55.38
+                    'Viviendas con Computadora' => 69.23
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class VillasSanJose extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 20.00
                 )
             )

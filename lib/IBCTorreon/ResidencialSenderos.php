@@ -33,13 +33,13 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Senderos';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-senderos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Senderos de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Senderos en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.86,
                     'Porcentaje de población no especificada' => 3.44,
                     'Fecundidad promedio' => 1.30,
-                    'Porcentaje de población nacida en otro estado' => 30.70,
-                    'Porcentaje de población con discapacidad' => 0.98,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 61.86,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.52
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.38,
-                    'Grado Promedio de Escolaridad masculina' => 15.68,
-                    'Grado Promedio de Escolaridad femenina' => 15.09
+                    'Porcentaje de población con discapacidad' => 0.98
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 911,
-                    'Hogares Jefatura masculina' => 84.93,
-                    'Hogares Jefatura femenina' => 15.07,
                     'Ocupación por Vivienda' => 3.40,
                     'Viviendas con Electricidad' => 99.95,
                     'Viviendas con Agua' => 99.51,
                     'Viviendas con Drenaje' => 99.73,
                     'Viviendas con Televisión' => 99.29,
                     'Viviendas con Automóvil' => 98.19,
-                    'Viviendas con Computadora' => 89.68,
-                    'Viviendas con Celular' => 98.48,
-                    'Viviendas con Internet' => 78.09
+                    'Viviendas con Computadora' => 89.68
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 35.29,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 11.76,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

@@ -33,13 +33,13 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Martínez Adame';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'martinez-adame';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Martínez Adame de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Martínez Adame en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 14.19,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.21,
-                    'Porcentaje de población nacida en otro estado' => 21.63,
-                    'Porcentaje de población con discapacidad' => 11.53,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.97,
-                    'Porcentaje de población de 18 y más' => 73.17,
-                    'Porcentaje de población de 18 y más postbásicos' => 27.89
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.10,
-                    'Grado Promedio de Escolaridad masculina' => 9.37,
-                    'Grado Promedio de Escolaridad femenina' => 8.85
+                    'Porcentaje de población con discapacidad' => 11.53
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 186,
-                    'Hogares Jefatura masculina' => 64.72,
-                    'Hogares Jefatura femenina' => 35.28,
                     'Ocupación por Vivienda' => 3.43,
                     'Viviendas con Electricidad' => 99.53,
                     'Viviendas con Agua' => 92.52,
                     'Viviendas con Drenaje' => 99.53,
                     'Viviendas con Televisión' => 96.30,
                     'Viviendas con Automóvil' => 32.29,
-                    'Viviendas con Computadora' => 25.56,
-                    'Viviendas con Celular' => 67.08,
-                    'Viviendas con Internet' => 19.83
+                    'Viviendas con Computadora' => 25.56
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 28.21,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 10.26,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 10.26,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.13
                 )
             )

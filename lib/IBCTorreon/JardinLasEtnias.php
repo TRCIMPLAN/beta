@@ -33,13 +33,13 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jardín Las Etnias';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jardin-las-etnias';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jardín Las Etnias de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jardín Las Etnias en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.00,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.20,
-                    'Porcentaje de población nacida en otro estado' => 23.83,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 69.33,
-                    'Porcentaje de población de 18 y más postbásicos' => 62.67
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.56,
-                    'Grado Promedio de Escolaridad masculina' => 15.41,
-                    'Grado Promedio de Escolaridad femenina' => 13.88
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JardinLasEtnias extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 48,
-                    'Hogares Jefatura masculina' => 91.67,
-                    'Hogares Jefatura femenina' => 8.33,
                     'Ocupación por Vivienda' => 3.12,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 97.92,
-                    'Viviendas con Celular' => 91.67,
-                    'Viviendas con Internet' => 91.67
+                    'Viviendas con Computadora' => 97.92
                 )
             ),
             'Unidades Económicas' => array(

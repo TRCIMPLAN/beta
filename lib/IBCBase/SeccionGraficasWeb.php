@@ -48,7 +48,7 @@ class SeccionGraficasWeb implements SalidaWeb {
         if (!$this->preparado) {
             $this->acordeones = new AcordeonesWeb(self::IDENTIFICADOR);
             $this->acordeones->agregar('Demografía',                 new EjeDemografiaGraficasWeb($this->publicacion_ficha), TRUE); // Acordeon abierto
-            $this->acordeones->agregar('Educación',                  new EjeEducacionGraficasWeb($this->publicacion_ficha));
+        //  $this->acordeones->agregar('Educación',                  new EjeEducacionGraficasWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasGraficasWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Viviendas',                  new EjeViviendasGraficasWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasGraficasWeb($this->publicacion_ficha));

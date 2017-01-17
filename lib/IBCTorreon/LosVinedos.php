@@ -33,13 +33,13 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Los Viñedos';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-vinedos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Los Viñedos de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Los Viñedos en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.34,
                     'Porcentaje de población no especificada' => 10.08,
                     'Fecundidad promedio' => 1.57,
-                    'Porcentaje de población nacida en otro estado' => 30.46,
-                    'Porcentaje de población con discapacidad' => 2.11,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.04,
-                    'Porcentaje de población de 18 y más' => 52.22,
-                    'Porcentaje de población de 18 y más postbásicos' => 48.11
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.94,
-                    'Grado Promedio de Escolaridad masculina' => 15.44,
-                    'Grado Promedio de Escolaridad femenina' => 14.50
+                    'Porcentaje de población con discapacidad' => 2.11
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 237,
-                    'Hogares Jefatura masculina' => 87.57,
-                    'Hogares Jefatura femenina' => 12.43,
                     'Ocupación por Vivienda' => 4.57,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.84,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.84,
                     'Viviendas con Automóvil' => 99.03,
-                    'Viviendas con Computadora' => 92.12,
-                    'Viviendas con Celular' => 96.73,
-                    'Viviendas con Internet' => 91.13
+                    'Viviendas con Computadora' => 92.12
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 52,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 21.15,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 19.23,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 19.23,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 11.54,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

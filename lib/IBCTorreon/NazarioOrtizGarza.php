@@ -33,13 +33,13 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nazario Ortiz Garza';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nazario-ortiz-garza';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nazario Ortiz Garza de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nazario Ortiz Garza en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.95,
                     'Porcentaje de población no especificada' => 1.46,
                     'Fecundidad promedio' => 1.82,
-                    'Porcentaje de población nacida en otro estado' => 18.73,
-                    'Porcentaje de población con discapacidad' => 4.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.92,
-                    'Porcentaje de población de 18 y más' => 70.80,
-                    'Porcentaje de población de 18 y más postbásicos' => 30.41
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.55,
-                    'Grado Promedio de Escolaridad masculina' => 9.65,
-                    'Grado Promedio de Escolaridad femenina' => 9.48
+                    'Porcentaje de población con discapacidad' => 4.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 111,
-                    'Hogares Jefatura masculina' => 68.47,
-                    'Hogares Jefatura femenina' => 31.53,
                     'Ocupación por Vivienda' => 3.70,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.10,
                     'Viviendas con Televisión' => 98.20,
                     'Viviendas con Automóvil' => 47.75,
-                    'Viviendas con Computadora' => 28.83,
-                    'Viviendas con Celular' => 60.36,
-                    'Viviendas con Internet' => 23.13
+                    'Viviendas con Computadora' => 28.83
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class NazarioOrtizGarza extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 17.65,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 11.76,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 11.76
                 )
             )

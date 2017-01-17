@@ -33,13 +33,13 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Cerradas Villas Diamante';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cerradas-villas-diamante';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Cerradas Villas Diamante de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Cerradas Villas Diamante en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.00,
                     'Porcentaje de población no especificada' => 2.76,
                     'Fecundidad promedio' => 1.44,
-                    'Porcentaje de población nacida en otro estado' => 12.84,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.39,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.13
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.54,
-                    'Grado Promedio de Escolaridad masculina' => 13.89,
-                    'Grado Promedio de Escolaridad femenina' => 13.12
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CerradasVillasDiamante extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 29,
-                    'Hogares Jefatura masculina' => 93.10,
-                    'Hogares Jefatura femenina' => 6.90,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 96.55,
                     'Viviendas con Agua' => 96.55,
                     'Viviendas con Drenaje' => 96.55,
                     'Viviendas con Televisión' => 96.55,
                     'Viviendas con Automóvil' => 86.21,
-                    'Viviendas con Computadora' => 82.76,
-                    'Viviendas con Celular' => 96.55,
-                    'Viviendas con Internet' => 82.76
+                    'Viviendas con Computadora' => 82.76
                 )
             ),
             'Unidades Económicas' => array(

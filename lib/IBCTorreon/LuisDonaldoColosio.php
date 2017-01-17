@@ -33,13 +33,13 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Luis Donaldo Colosio';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-donaldo-colosio';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Luis Donaldo Colosio de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Luis Donaldo Colosio en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.43,
                     'Porcentaje de población no especificada' => 0.19,
                     'Fecundidad promedio' => 2.54,
-                    'Porcentaje de población nacida en otro estado' => 18.74,
-                    'Porcentaje de población con discapacidad' => 3.91,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.28,
-                    'Porcentaje de población de 18 y más' => 56.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 7.27
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.15,
-                    'Grado Promedio de Escolaridad masculina' => 7.10,
-                    'Grado Promedio de Escolaridad femenina' => 7.20
+                    'Porcentaje de población con discapacidad' => 3.91
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 481,
-                    'Hogares Jefatura masculina' => 73.66,
-                    'Hogares Jefatura femenina' => 26.34,
                     'Ocupación por Vivienda' => 3.66,
                     'Viviendas con Electricidad' => 97.82,
                     'Viviendas con Agua' => 77.65,
                     'Viviendas con Drenaje' => 81.60,
                     'Viviendas con Televisión' => 94.28,
                     'Viviendas con Automóvil' => 33.99,
-                    'Viviendas con Computadora' => 20.06,
-                    'Viviendas con Celular' => 56.39,
-                    'Viviendas con Internet' => 3.23
+                    'Viviendas con Computadora' => 20.06
                 )
             ),
             'Unidades Económicas' => array(

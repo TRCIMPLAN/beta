@@ -33,13 +33,13 @@ class ElTajito extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Tajito';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-tajito';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Tajito de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Tajito en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElTajito extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.44,
                     'Porcentaje de población no especificada' => 1.09,
                     'Fecundidad promedio' => 1.93,
-                    'Porcentaje de población nacida en otro estado' => 21.93,
-                    'Porcentaje de población con discapacidad' => 4.62,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.13,
-                    'Porcentaje de población de 18 y más' => 74.16,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.36
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.50,
-                    'Grado Promedio de Escolaridad masculina' => 13.12,
-                    'Grado Promedio de Escolaridad femenina' => 11.96
+                    'Porcentaje de población con discapacidad' => 4.62
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElTajito extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 818,
-                    'Hogares Jefatura masculina' => 73.11,
-                    'Hogares Jefatura femenina' => 26.89,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.88,
                     'Viviendas con Drenaje' => 99.88,
                     'Viviendas con Televisión' => 99.63,
                     'Viviendas con Automóvil' => 78.61,
-                    'Viviendas con Computadora' => 64.55,
-                    'Viviendas con Celular' => 83.37,
-                    'Viviendas con Internet' => 54.28
+                    'Viviendas con Computadora' => 64.55
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class ElTajito extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 35.35,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 25.25,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 8.08,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.08,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.07

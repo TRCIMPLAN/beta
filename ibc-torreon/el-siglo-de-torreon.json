@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":2.68,
         "Porcentaje de población no especificada":0.06,
         "Fecundidad promedio":2.8,
-        "Porcentaje de población nacida en otro estado":12.29,
-        "Porcentaje de población con discapacidad":8.39,
-        "Porcentaje de población de 15 y más analfabeta":3.08,
-        "Porcentaje de población de 18 y más":51.76,
-        "Porcentaje de población de 18 y más postbásicos":23.87
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":6.61,
-        "Grado Promedio de Escolaridad masculina":6.49,
-        "Grado Promedio de Escolaridad femenina":6.74
+        "Porcentaje de población con discapacidad":8.39
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":51,
-        "Hogares Jefatura masculina":91.72,
-        "Hogares Jefatura femenina":8.28,
         "Ocupación por Vivienda":4.59,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":98.81,
         "Viviendas con Drenaje":85.07,
         "Viviendas con Televisión":98.76,
         "Viviendas con Automóvil":59.94,
-        "Viviendas con Computadora":12.32,
-        "Viviendas con Celular":80.16,
-        "Viviendas con Internet":4.74
+        "Viviendas con Computadora":12.32
       }
     },
     "Unidades Económicas":{

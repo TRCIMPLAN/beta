@@ -33,13 +33,13 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincon de La Hacienda';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-la-hacienda';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincon de La Hacienda de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincon de La Hacienda en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.31,
                     'Porcentaje de población no especificada' => 2.89,
                     'Fecundidad promedio' => 1.59,
-                    'Porcentaje de población nacida en otro estado' => 29.42,
-                    'Porcentaje de población con discapacidad' => 1.78,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 70.96,
-                    'Porcentaje de población de 18 y más postbásicos' => 58.65
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.08,
-                    'Grado Promedio de Escolaridad masculina' => 13.72,
-                    'Grado Promedio de Escolaridad femenina' => 12.54
+                    'Porcentaje de población con discapacidad' => 1.78
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 148,
-                    'Hogares Jefatura masculina' => 75.00,
-                    'Hogares Jefatura femenina' => 25.00,
                     'Ocupación por Vivienda' => 3.51,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.32,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.32,
                     'Viviendas con Automóvil' => 82.43,
-                    'Viviendas con Computadora' => 75.00,
-                    'Viviendas con Celular' => 91.22,
-                    'Viviendas con Internet' => 68.92
+                    'Viviendas con Computadora' => 75.00
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class RinconDeLaHacienda extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.81,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )

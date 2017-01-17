@@ -33,13 +33,13 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Universidad Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Universidad Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.01,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.09,
-                    'Porcentaje de población nacida en otro estado' => 15.43,
-                    'Porcentaje de población con discapacidad' => 1.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.41,
-                    'Porcentaje de población de 18 y más' => 60.55,
-                    'Porcentaje de población de 18 y más postbásicos' => 19.27
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.29,
-                    'Grado Promedio de Escolaridad masculina' => 9.39,
-                    'Grado Promedio de Escolaridad femenina' => 9.19
+                    'Porcentaje de población con discapacidad' => 1.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 326,
-                    'Hogares Jefatura masculina' => 82.82,
-                    'Hogares Jefatura femenina' => 17.18,
                     'Ocupación por Vivienda' => 3.36,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.85,
                     'Viviendas con Automóvil' => 38.04,
-                    'Viviendas con Computadora' => 16.19,
-                    'Viviendas con Celular' => 82.52,
-                    'Viviendas con Internet' => 16.06
+                    'Viviendas con Computadora' => 16.19
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class VillasUniversidadOriente extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 68.42,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 10.53,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 5.26,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 5.26,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.26

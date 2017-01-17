@@ -33,13 +33,13 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Vista Hermosa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vista-hermosa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Vista Hermosa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Vista Hermosa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.31,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.79,
-                    'Porcentaje de población nacida en otro estado' => 2.59,
-                    'Porcentaje de población con discapacidad' => 5.95,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.09,
-                    'Porcentaje de población de 18 y más' => 62.48,
-                    'Porcentaje de población de 18 y más postbásicos' => 8.87
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.97,
-                    'Grado Promedio de Escolaridad masculina' => 7.02,
-                    'Grado Promedio de Escolaridad femenina' => 6.93
+                    'Porcentaje de población con discapacidad' => 5.95
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 158,
-                    'Hogares Jefatura masculina' => 72.57,
-                    'Hogares Jefatura femenina' => 27.43,
                     'Ocupación por Vivienda' => 4.06,
                     'Viviendas con Electricidad' => 99.83,
                     'Viviendas con Agua' => 94.71,
                     'Viviendas con Drenaje' => 94.08,
                     'Viviendas con Televisión' => 97.91,
                     'Viviendas con Automóvil' => 20.77,
-                    'Viviendas con Computadora' => 10.86,
-                    'Viviendas con Celular' => 54.79,
-                    'Viviendas con Internet' => 3.79
+                    'Viviendas con Computadora' => 10.86
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class VistaHermosa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 55.56,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 22.22,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Gubernamentales',
                     'Cuarta actividad porcentaje' => 11.11
                 )
             )

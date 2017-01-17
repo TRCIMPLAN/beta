@@ -33,13 +33,13 @@ class AmpliacionSantiagoRamirez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Santiago Ramírez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-santiago-ramirez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Santiago Ramírez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Santiago Ramírez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionSantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.32,
                     'Porcentaje de población no especificada' => 0.37,
                     'Fecundidad promedio' => 2.51,
-                    'Porcentaje de población nacida en otro estado' => 21.06,
-                    'Porcentaje de población con discapacidad' => 10.83,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.71,
-                    'Porcentaje de población de 18 y más' => 60.44,
-                    'Porcentaje de población de 18 y más postbásicos' => 11.01
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.36,
-                    'Grado Promedio de Escolaridad masculina' => 7.37,
-                    'Grado Promedio de Escolaridad femenina' => 7.36
+                    'Porcentaje de población con discapacidad' => 10.83
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionSantiagoRamirez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 844,
-                    'Hogares Jefatura masculina' => 81.74,
-                    'Hogares Jefatura femenina' => 18.26,
                     'Ocupación por Vivienda' => 4.16,
                     'Viviendas con Electricidad' => 99.66,
                     'Viviendas con Agua' => 98.83,
                     'Viviendas con Drenaje' => 97.40,
                     'Viviendas con Televisión' => 98.23,
                     'Viviendas con Automóvil' => 36.98,
-                    'Viviendas con Computadora' => 14.61,
-                    'Viviendas con Celular' => 61.21,
-                    'Viviendas con Internet' => 5.69
+                    'Viviendas con Computadora' => 14.61
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class RealSanAgustin extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Real San Agustín';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'real-san-agustin';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Real San Agustín de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Real San Agustín en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RealSanAgustin extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.84,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 17.53,
-                    'Porcentaje de población con discapacidad' => 3.91,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.74,
-                    'Porcentaje de población de 18 y más' => 55.09,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.19
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.73,
-                    'Grado Promedio de Escolaridad masculina' => 8.75,
-                    'Grado Promedio de Escolaridad femenina' => 8.70
+                    'Porcentaje de población con discapacidad' => 3.91
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RealSanAgustin extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 161,
-                    'Hogares Jefatura masculina' => 82.61,
-                    'Hogares Jefatura femenina' => 17.39,
                     'Ocupación por Vivienda' => 3.72,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.76,
                     'Viviendas con Drenaje' => 98.14,
                     'Viviendas con Televisión' => 98.76,
                     'Viviendas con Automóvil' => 37.87,
-                    'Viviendas con Computadora' => 16.79,
-                    'Viviendas con Celular' => 76.40,
-                    'Viviendas con Internet' => 4.35
+                    'Viviendas con Computadora' => 16.79
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Antigua Aceitera';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'antigua-aceitera';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Antigua Aceitera de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Antigua Aceitera en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.01,
                     'Porcentaje de población no especificada' => 4.06,
                     'Fecundidad promedio' => 2.46,
-                    'Porcentaje de población nacida en otro estado' => 12.60,
-                    'Porcentaje de población con discapacidad' => 4.11,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.22,
-                    'Porcentaje de población de 18 y más' => 67.82,
-                    'Porcentaje de población de 18 y más postbásicos' => 22.39
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.67,
-                    'Grado Promedio de Escolaridad masculina' => 8.94,
-                    'Grado Promedio de Escolaridad femenina' => 8.42
+                    'Porcentaje de población con discapacidad' => 4.11
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 570,
-                    'Hogares Jefatura masculina' => 72.63,
-                    'Hogares Jefatura femenina' => 27.37,
                     'Ocupación por Vivienda' => 4.32,
                     'Viviendas con Electricidad' => 99.03,
                     'Viviendas con Agua' => 98.51,
                     'Viviendas con Drenaje' => 98.68,
                     'Viviendas con Televisión' => 97.80,
                     'Viviendas con Automóvil' => 31.32,
-                    'Viviendas con Computadora' => 25.15,
-                    'Viviendas con Celular' => 59.89,
-                    'Viviendas con Internet' => 20.53
+                    'Viviendas con Computadora' => 25.15
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.16,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.76,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.05
                 )
             )

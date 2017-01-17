@@ -33,13 +33,13 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Villas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-villas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Las Villas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Las Villas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.07,
                     'Porcentaje de población no especificada' => 5.51,
                     'Fecundidad promedio' => 1.69,
-                    'Porcentaje de población nacida en otro estado' => 20.21,
-                    'Porcentaje de población con discapacidad' => 0.54,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
-                    'Porcentaje de población de 18 y más' => 52.23,
-                    'Porcentaje de población de 18 y más postbásicos' => 47.89
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.36,
-                    'Grado Promedio de Escolaridad masculina' => 14.97,
-                    'Grado Promedio de Escolaridad femenina' => 13.86
+                    'Porcentaje de población con discapacidad' => 0.54
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 133,
-                    'Hogares Jefatura masculina' => 91.13,
-                    'Hogares Jefatura femenina' => 8.87,
                     'Ocupación por Vivienda' => 4.54,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 97.74,
-                    'Viviendas con Computadora' => 93.17,
-                    'Viviendas con Celular' => 97.86,
-                    'Viviendas con Internet' => 90.76
+                    'Viviendas con Computadora' => 93.17
                 )
             ),
             'Unidades Económicas' => array(

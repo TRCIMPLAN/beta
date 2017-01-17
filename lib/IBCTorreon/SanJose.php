@@ -33,13 +33,13 @@ class SanJose extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'San José';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-jose';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia San José de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia San José en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SanJose extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.10,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.63,
-                    'Porcentaje de población nacida en otro estado' => 25.51,
-                    'Porcentaje de población con discapacidad' => 6.15,
-                    'Porcentaje de población de 15 y más analfabeta' => 4.08,
-                    'Porcentaje de población de 18 y más' => 63.27,
-                    'Porcentaje de población de 18 y más postbásicos' => 35.71
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.46,
-                    'Grado Promedio de Escolaridad masculina' => 10.30,
-                    'Grado Promedio de Escolaridad femenina' => 10.57
+                    'Porcentaje de población con discapacidad' => 6.15
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SanJose extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 27,
-                    'Hogares Jefatura masculina' => 66.67,
-                    'Hogares Jefatura femenina' => 33.33,
                     'Ocupación por Vivienda' => 3.63,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 96.30,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 66.67,
-                    'Viviendas con Computadora' => 55.56,
-                    'Viviendas con Celular' => 88.89,
-                    'Viviendas con Internet' => 40.74
+                    'Viviendas con Computadora' => 55.56
                 )
             ),
             'Unidades Económicas' => array(

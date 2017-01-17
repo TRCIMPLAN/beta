@@ -33,13 +33,13 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial del Nazas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial del Nazas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial del Nazas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.82,
                     'Porcentaje de población no especificada' => 2.18,
                     'Fecundidad promedio' => 1.90,
-                    'Porcentaje de población nacida en otro estado' => 17.44,
-                    'Porcentaje de población con discapacidad' => 2.48,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.33,
-                    'Porcentaje de población de 18 y más' => 58.46,
-                    'Porcentaje de población de 18 y más postbásicos' => 40.45
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.99,
-                    'Grado Promedio de Escolaridad masculina' => 12.19,
-                    'Grado Promedio de Escolaridad femenina' => 11.80
+                    'Porcentaje de población con discapacidad' => 2.48
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 329,
-                    'Hogares Jefatura masculina' => 78.67,
-                    'Hogares Jefatura femenina' => 21.33,
                     'Ocupación por Vivienda' => 3.92,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.48,
                     'Viviendas con Drenaje' => 99.78,
                     'Viviendas con Televisión' => 99.16,
                     'Viviendas con Automóvil' => 71.41,
-                    'Viviendas con Computadora' => 56.77,
-                    'Viviendas con Celular' => 93.04,
-                    'Viviendas con Internet' => 47.98
+                    'Viviendas con Computadora' => 56.77
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class ResidencialDelNazas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.22,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.04,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 2.17
                 )
             )

@@ -33,13 +33,13 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Fraccionamiento La Ciénega';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fraccionamiento-la-cienega';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fraccionamiento La Ciénega de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Fraccionamiento La Ciénega en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.88,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.32,
-                    'Porcentaje de población nacida en otro estado' => 37.72,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 69.30,
-                    'Porcentaje de población de 18 y más postbásicos' => 64.04
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.13,
-                    'Grado Promedio de Escolaridad masculina' => 14.86,
-                    'Grado Promedio de Escolaridad femenina' => 15.40
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 33,
-                    'Hogares Jefatura masculina' => 90.91,
-                    'Hogares Jefatura femenina' => 9.09,
                     'Ocupación por Vivienda' => 3.45,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 96.97,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 90.91
+                    'Viviendas con Computadora' => 96.97
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class FraccionamientoLaCienega extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.92,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 18.75,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

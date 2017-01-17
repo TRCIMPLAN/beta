@@ -33,13 +33,13 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Primera Rinconada de La Unión';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primera-rinconada-de-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Primera Rinconada de La Unión de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Primera Rinconada de La Unión en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.95,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.36,
-                    'Porcentaje de población nacida en otro estado' => 8.60,
-                    'Porcentaje de población con discapacidad' => 5.92,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.71,
-                    'Porcentaje de población de 18 y más' => 67.69,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.41
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.59,
-                    'Grado Promedio de Escolaridad masculina' => 7.52,
-                    'Grado Promedio de Escolaridad femenina' => 7.65
+                    'Porcentaje de población con discapacidad' => 5.92
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PrimeraRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 230,
-                    'Hogares Jefatura masculina' => 69.75,
-                    'Hogares Jefatura femenina' => 30.25,
                     'Ocupación por Vivienda' => 3.64,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.96,
                     'Viviendas con Drenaje' => 99.97,
                     'Viviendas con Televisión' => 98.19,
                     'Viviendas con Automóvil' => 17.72,
-                    'Viviendas con Computadora' => 16.22,
-                    'Viviendas con Celular' => 58.05,
-                    'Viviendas con Internet' => 6.74
+                    'Viviendas con Computadora' => 16.22
                 )
             ),
             'Unidades Económicas' => array(

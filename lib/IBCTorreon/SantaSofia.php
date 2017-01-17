@@ -33,13 +33,13 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Santa Sofía';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-sofia';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Santa Sofía de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Santa Sofía en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.02,
                     'Porcentaje de población no especificada' => 1.38,
                     'Fecundidad promedio' => 2.05,
-                    'Porcentaje de población nacida en otro estado' => 14.15,
-                    'Porcentaje de población con discapacidad' => 2.23,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.68,
-                    'Porcentaje de población de 18 y más' => 55.99,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.73
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.90,
-                    'Grado Promedio de Escolaridad masculina' => 8.79,
-                    'Grado Promedio de Escolaridad femenina' => 9.01
+                    'Porcentaje de población con discapacidad' => 2.23
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 590,
-                    'Hogares Jefatura masculina' => 86.84,
-                    'Hogares Jefatura femenina' => 13.16,
                     'Ocupación por Vivienda' => 3.69,
                     'Viviendas con Electricidad' => 95.21,
                     'Viviendas con Agua' => 98.09,
                     'Viviendas con Drenaje' => 96.73,
                     'Viviendas con Televisión' => 94.85,
                     'Viviendas con Automóvil' => 38.79,
-                    'Viviendas con Computadora' => 23.58,
-                    'Viviendas con Celular' => 78.58,
-                    'Viviendas con Internet' => 11.01
+                    'Viviendas con Computadora' => 23.58
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class SantaSofia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 17.78,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.44,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 2.22
                 )
             )

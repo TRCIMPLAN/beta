@@ -33,13 +33,13 @@ class SantaElena extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Santa Elena';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-elena';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Santa Elena de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Santa Elena en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.74,
                     'Porcentaje de población no especificada' => 1.92,
                     'Fecundidad promedio' => 1.64,
-                    'Porcentaje de población nacida en otro estado' => 19.01,
-                    'Porcentaje de población con discapacidad' => 1.15,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
-                    'Porcentaje de población de 18 y más' => 62.99,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.61
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.66,
-                    'Grado Promedio de Escolaridad masculina' => 13.86,
-                    'Grado Promedio de Escolaridad femenina' => 13.47
+                    'Porcentaje de población con discapacidad' => 1.15
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SantaElena extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 263,
-                    'Hogares Jefatura masculina' => 79.47,
-                    'Hogares Jefatura femenina' => 20.53,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.62,
                     'Viviendas con Automóvil' => 91.63,
-                    'Viviendas con Computadora' => 82.51,
-                    'Viviendas con Celular' => 92.78,
-                    'Viviendas con Internet' => 73.38
+                    'Viviendas con Computadora' => 82.51
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,7 +103,7 @@ class SantaElena extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 8.82,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.88,
                     'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 5.88

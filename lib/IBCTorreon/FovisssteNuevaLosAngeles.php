@@ -33,13 +33,13 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Fovissste Nueva Los Ángeles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fovissste-nueva-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fovissste Nueva Los Ángeles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Fovissste Nueva Los Ángeles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 16.78,
                     'Porcentaje de población no especificada' => 7.56,
                     'Fecundidad promedio' => 2.34,
-                    'Porcentaje de población nacida en otro estado' => 21.59,
-                    'Porcentaje de población con discapacidad' => 7.05,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.17,
-                    'Porcentaje de población de 18 y más' => 72.68,
-                    'Porcentaje de población de 18 y más postbásicos' => 52.35
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.73,
-                    'Grado Promedio de Escolaridad masculina' => 13.36,
-                    'Grado Promedio de Escolaridad femenina' => 12.17
+                    'Porcentaje de población con discapacidad' => 7.05
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 218,
-                    'Hogares Jefatura masculina' => 64.37,
-                    'Hogares Jefatura femenina' => 35.63,
                     'Ocupación por Vivienda' => 3.70,
                     'Viviendas con Electricidad' => 99.55,
                     'Viviendas con Agua' => 99.08,
                     'Viviendas con Drenaje' => 99.08,
                     'Viviendas con Televisión' => 97.15,
                     'Viviendas con Automóvil' => 71.69,
-                    'Viviendas con Computadora' => 64.55,
-                    'Viviendas con Celular' => 74.07,
-                    'Viviendas con Internet' => 53.07
+                    'Viviendas con Computadora' => 64.55
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class FovisssteNuevaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 13.64,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 13.64,
-                    'Cuarta actividad nombre' => 'Construcción',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

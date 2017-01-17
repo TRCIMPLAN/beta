@@ -33,13 +33,13 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Las Margaritas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Las Margaritas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Las Margaritas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 14.34,
                     'Porcentaje de población no especificada' => 10.41,
                     'Fecundidad promedio' => 1.94,
-                    'Porcentaje de población nacida en otro estado' => 22.74,
-                    'Porcentaje de población con discapacidad' => 4.51,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 69.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 58.37
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.00,
-                    'Grado Promedio de Escolaridad masculina' => 14.65,
-                    'Grado Promedio de Escolaridad femenina' => 13.41
+                    'Porcentaje de población con discapacidad' => 4.51
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 398,
-                    'Hogares Jefatura masculina' => 71.41,
-                    'Hogares Jefatura femenina' => 28.59,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.50,
                     'Viviendas con Televisión' => 98.74,
                     'Viviendas con Automóvil' => 88.60,
-                    'Viviendas con Computadora' => 76.69,
-                    'Viviendas con Celular' => 88.59,
-                    'Viviendas con Internet' => 71.62
+                    'Viviendas con Computadora' => 76.69
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class LasMargaritas extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.88,
                     'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 7.41,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.41
                 )
             )

@@ -33,13 +33,13 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Santorini';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-santorini';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Santorini de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Santorini en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.18,
                     'Porcentaje de población no especificada' => 4.43,
                     'Fecundidad promedio' => 1.49,
-                    'Porcentaje de población nacida en otro estado' => 26.59,
-                    'Porcentaje de población con discapacidad' => 1.26,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.69,
-                    'Porcentaje de población de 18 y más' => 57.27,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.32
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.29,
-                    'Grado Promedio de Escolaridad masculina' => 15.50,
-                    'Grado Promedio de Escolaridad femenina' => 15.08
+                    'Porcentaje de población con discapacidad' => 1.26
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 245,
-                    'Hogares Jefatura masculina' => 76.33,
-                    'Hogares Jefatura femenina' => 23.67,
                     'Ocupación por Vivienda' => 3.59,
                     'Viviendas con Electricidad' => 99.59,
                     'Viviendas con Agua' => 98.37,
                     'Viviendas con Drenaje' => 98.78,
                     'Viviendas con Televisión' => 99.59,
                     'Viviendas con Automóvil' => 98.37,
-                    'Viviendas con Computadora' => 90.61,
-                    'Viviendas con Celular' => 97.55,
-                    'Viviendas con Internet' => 82.86
+                    'Viviendas con Computadora' => 90.61
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class VillasSantorini extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Inmobiliarios',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Inmobiliarios',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

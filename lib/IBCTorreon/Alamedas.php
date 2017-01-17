@@ -33,13 +33,13 @@ class Alamedas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Alamedas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'alamedas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Alamedas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Alamedas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Alamedas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.66,
                     'Porcentaje de población no especificada' => 0.52,
                     'Fecundidad promedio' => 2.37,
-                    'Porcentaje de población nacida en otro estado' => 18.77,
-                    'Porcentaje de población con discapacidad' => 7.55,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.61,
-                    'Porcentaje de población de 18 y más' => 73.45,
-                    'Porcentaje de población de 18 y más postbásicos' => 35.92
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.14,
-                    'Grado Promedio de Escolaridad masculina' => 10.40,
-                    'Grado Promedio de Escolaridad femenina' => 9.91
+                    'Porcentaje de población con discapacidad' => 7.55
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Alamedas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1850,
-                    'Hogares Jefatura masculina' => 71.24,
-                    'Hogares Jefatura femenina' => 28.76,
                     'Ocupación por Vivienda' => 3.81,
                     'Viviendas con Electricidad' => 99.84,
                     'Viviendas con Agua' => 99.35,
                     'Viviendas con Drenaje' => 99.68,
                     'Viviendas con Televisión' => 99.62,
                     'Viviendas con Automóvil' => 57.98,
-                    'Viviendas con Computadora' => 41.97,
-                    'Viviendas con Celular' => 73.09,
-                    'Viviendas con Internet' => 32.34
+                    'Viviendas con Computadora' => 41.97
                 )
             ),
             'Unidades Económicas' => array(

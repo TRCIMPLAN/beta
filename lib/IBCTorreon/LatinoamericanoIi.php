@@ -33,13 +33,13 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Latinoamericano II';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'latinoamericano-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Latinoamericano II de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Latinoamericano II en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.87,
                     'Porcentaje de población no especificada' => 0.66,
                     'Fecundidad promedio' => 1.87,
-                    'Porcentaje de población nacida en otro estado' => 19.86,
-                    'Porcentaje de población con discapacidad' => 3.63,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.21,
-                    'Porcentaje de población de 18 y más' => 62.09,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.43
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.57,
-                    'Grado Promedio de Escolaridad masculina' => 11.82,
-                    'Grado Promedio de Escolaridad femenina' => 11.34
+                    'Porcentaje de población con discapacidad' => 3.63
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 114,
-                    'Hogares Jefatura masculina' => 76.16,
-                    'Hogares Jefatura femenina' => 23.84,
                     'Ocupación por Vivienda' => 4.02,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.64,
                     'Viviendas con Automóvil' => 66.63,
-                    'Viviendas con Computadora' => 55.92,
-                    'Viviendas con Celular' => 89.80,
-                    'Viviendas con Internet' => 38.18
+                    'Viviendas con Computadora' => 55.92
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class LatinoamericanoIi extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 30.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.00
                 )
             )

@@ -33,13 +33,13 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Victoria';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-victoria';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Victoria de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Victoria en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.07,
                     'Porcentaje de población no especificada' => 1.62,
                     'Fecundidad promedio' => 1.92,
-                    'Porcentaje de población nacida en otro estado' => 13.91,
-                    'Porcentaje de población con discapacidad' => 3.22,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 56.26,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.65
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.53,
-                    'Grado Promedio de Escolaridad masculina' => 9.67,
-                    'Grado Promedio de Escolaridad femenina' => 9.32
+                    'Porcentaje de población con discapacidad' => 3.22
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 296,
-                    'Hogares Jefatura masculina' => 77.70,
-                    'Hogares Jefatura femenina' => 22.30,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.66,
                     'Viviendas con Automóvil' => 51.68,
-                    'Viviendas con Computadora' => 27.42,
-                    'Viviendas con Celular' => 85.81,
-                    'Viviendas con Internet' => 18.26
+                    'Viviendas con Computadora' => 27.42
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,7 +103,7 @@ class ResidencialVictoria extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 28.95,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 10.53,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.26,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 5.26

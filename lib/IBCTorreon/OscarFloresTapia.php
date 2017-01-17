@@ -33,13 +33,13 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Oscar Flores Tapia';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'oscar-flores-tapia';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Oscar Flores Tapia de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Oscar Flores Tapia en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.20,
                     'Porcentaje de población no especificada' => 0.36,
                     'Fecundidad promedio' => 2.63,
-                    'Porcentaje de población nacida en otro estado' => 23.13,
-                    'Porcentaje de población con discapacidad' => 13.67,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.21,
-                    'Porcentaje de población de 18 y más' => 69.72,
-                    'Porcentaje de población de 18 y más postbásicos' => 31.94
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.70,
-                    'Grado Promedio de Escolaridad masculina' => 9.64,
-                    'Grado Promedio de Escolaridad femenina' => 9.76
+                    'Porcentaje de población con discapacidad' => 13.67
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 93,
-                    'Hogares Jefatura masculina' => 76.34,
-                    'Hogares Jefatura femenina' => 23.66,
                     'Ocupación por Vivienda' => 3.87,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.92,
                     'Viviendas con Drenaje' => 97.85,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 52.06,
-                    'Viviendas con Computadora' => 39.51,
-                    'Viviendas con Celular' => 76.34,
-                    'Viviendas con Internet' => 22.39
+                    'Viviendas con Computadora' => 39.51
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class OscarFloresTapia extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.15,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 25.93,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11,
                     'Quinta actividad nombre' => 'Inmobiliarios',
                     'Quinta actividad porcentaje' => 3.70

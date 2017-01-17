@@ -33,13 +33,13 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente Etapa II';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-oriente-etapa-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Universidad Oriente Etapa II de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Universidad Oriente Etapa II en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.57,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.71,
-                    'Porcentaje de población nacida en otro estado' => 15.91,
-                    'Porcentaje de población con discapacidad' => 2.81,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
-                    'Porcentaje de población de 18 y más' => 62.50,
-                    'Porcentaje de población de 18 y más postbásicos' => 44.89
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.15,
-                    'Grado Promedio de Escolaridad masculina' => 12.28,
-                    'Grado Promedio de Escolaridad femenina' => 12.02
+                    'Porcentaje de población con discapacidad' => 2.81
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 53,
-                    'Hogares Jefatura masculina' => 88.68,
-                    'Hogares Jefatura femenina' => 11.32,
                     'Ocupación por Vivienda' => 3.32,
                     'Viviendas con Electricidad' => 98.11,
                     'Viviendas con Agua' => 98.11,
                     'Viviendas con Drenaje' => 98.11,
                     'Viviendas con Televisión' => 98.11,
                     'Viviendas con Automóvil' => 67.92,
-                    'Viviendas con Computadora' => 30.19,
-                    'Viviendas con Celular' => 98.11,
-                    'Viviendas con Internet' => 27.92
+                    'Viviendas con Computadora' => 30.19
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 63.64,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 18.18
                 )
             )

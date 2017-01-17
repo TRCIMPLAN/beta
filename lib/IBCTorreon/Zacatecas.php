@@ -33,13 +33,13 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Zacatecas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'zacatecas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Zacatecas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Zacatecas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.29,
                     'Porcentaje de población no especificada' => 1.03,
                     'Fecundidad promedio' => 2.62,
-                    'Porcentaje de población nacida en otro estado' => 15.77,
-                    'Porcentaje de población con discapacidad' => 3.68,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.26,
-                    'Porcentaje de población de 18 y más' => 68.49,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.97
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.12,
-                    'Grado Promedio de Escolaridad masculina' => 8.44,
-                    'Grado Promedio de Escolaridad femenina' => 7.85
+                    'Porcentaje de población con discapacidad' => 3.68
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 85,
-                    'Hogares Jefatura masculina' => 73.92,
-                    'Hogares Jefatura femenina' => 26.08,
                     'Ocupación por Vivienda' => 3.66,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 98.82,
                     'Viviendas con Televisión' => 98.82,
                     'Viviendas con Automóvil' => 19.82,
-                    'Viviendas con Computadora' => 11.06,
-                    'Viviendas con Celular' => 52.16,
-                    'Viviendas con Internet' => 1.41
+                    'Viviendas con Computadora' => 11.06
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class Zacatecas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 16.67
                 )
             )

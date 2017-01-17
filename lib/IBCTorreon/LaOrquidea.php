@@ -33,13 +33,13 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'La Orquídea';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-orquidea';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia La Orquídea de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia La Orquídea en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.47,
                     'Porcentaje de población no especificada' => 0.03,
                     'Fecundidad promedio' => 3.03,
-                    'Porcentaje de población nacida en otro estado' => 24.66,
-                    'Porcentaje de población con discapacidad' => 19.54,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.33,
-                    'Porcentaje de población de 18 y más' => 66.24,
-                    'Porcentaje de población de 18 y más postbásicos' => 19.62
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.33,
-                    'Grado Promedio de Escolaridad masculina' => 8.61,
-                    'Grado Promedio de Escolaridad femenina' => 8.04
+                    'Porcentaje de población con discapacidad' => 19.54
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LaOrquidea extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 22,
-                    'Hogares Jefatura masculina' => 68.40,
-                    'Hogares Jefatura femenina' => 31.60,
                     'Ocupación por Vivienda' => 3.50,
                     'Viviendas con Electricidad' => 99.53,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 94.93,
                     'Viviendas con Automóvil' => 72.47,
-                    'Viviendas con Computadora' => 17.97,
-                    'Viviendas con Celular' => 83.20,
-                    'Viviendas con Internet' => 14.44
+                    'Viviendas con Computadora' => 17.97
                 )
             ),
             'Unidades Económicas' => array(

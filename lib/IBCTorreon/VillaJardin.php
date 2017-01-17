@@ -33,13 +33,13 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villa Jardín';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-jardin';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villa Jardín de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villa Jardín en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 13.63,
                     'Porcentaje de población no especificada' => 11.06,
                     'Fecundidad promedio' => 1.93,
-                    'Porcentaje de población nacida en otro estado' => 24.29,
-                    'Porcentaje de población con discapacidad' => 4.61,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 73.47,
-                    'Porcentaje de población de 18 y más postbásicos' => 62.23
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.01,
-                    'Grado Promedio de Escolaridad masculina' => 14.57,
-                    'Grado Promedio de Escolaridad femenina' => 13.51
+                    'Porcentaje de población con discapacidad' => 4.61
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 154,
-                    'Hogares Jefatura masculina' => 80.29,
-                    'Hogares Jefatura femenina' => 19.71,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 99.72,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.72,
                     'Viviendas con Televisión' => 89.25,
                     'Viviendas con Automóvil' => 84.62,
-                    'Viviendas con Computadora' => 72.81,
-                    'Viviendas con Celular' => 82.00,
-                    'Viviendas con Internet' => 68.86
+                    'Viviendas con Computadora' => 72.81
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class VillaJardin extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 13.46,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 11.54,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

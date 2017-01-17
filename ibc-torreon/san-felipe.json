@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":4.11,
         "Porcentaje de población no especificada":0.91,
         "Fecundidad promedio":1.75,
-        "Porcentaje de población nacida en otro estado":14.87,
-        "Porcentaje de población con discapacidad":9.09,
-        "Porcentaje de población de 15 y más analfabeta":0.08,
-        "Porcentaje de población de 18 y más":64.69,
-        "Porcentaje de población de 18 y más postbásicos":48.54
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":12.45,
-        "Grado Promedio de Escolaridad masculina":12.65,
-        "Grado Promedio de Escolaridad femenina":12.27
+        "Porcentaje de población con discapacidad":9.09
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":1027,
-        "Hogares Jefatura masculina":74.59,
-        "Hogares Jefatura femenina":25.41,
         "Ocupación por Vivienda":3.67,
         "Viviendas con Electricidad":99.83,
         "Viviendas con Agua":98.86,
         "Viviendas con Drenaje":99.83,
         "Viviendas con Televisión":99.25,
         "Viviendas con Automóvil":80.06,
-        "Viviendas con Computadora":66.62,
-        "Viviendas con Celular":89.51,
-        "Viviendas con Internet":52.63
+        "Viviendas con Computadora":66.62
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":31.94,
         "Segunda actividad nombre":"Comercio Mayoreo",
         "Segunda actividad porcentaje":14.58,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":11.11,
-        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":11.11,
-        "Quinta actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Quinta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Quinta actividad porcentaje":6.94
       }
     }

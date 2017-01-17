@@ -33,13 +33,13 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Torreón Viejo';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-viejo';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Torreón Viejo de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Torreón Viejo en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.39,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.42,
-                    'Porcentaje de población nacida en otro estado' => 23.10,
-                    'Porcentaje de población con discapacidad' => 11.45,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.86,
-                    'Porcentaje de población de 18 y más' => 62.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 11.04
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.43,
-                    'Grado Promedio de Escolaridad masculina' => 7.51,
-                    'Grado Promedio de Escolaridad femenina' => 7.36
+                    'Porcentaje de población con discapacidad' => 11.45
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 124,
-                    'Hogares Jefatura masculina' => 66.38,
-                    'Hogares Jefatura femenina' => 33.62,
                     'Ocupación por Vivienda' => 3.84,
                     'Viviendas con Electricidad' => 98.07,
                     'Viviendas con Agua' => 98.06,
                     'Viviendas con Drenaje' => 98.89,
                     'Viviendas con Televisión' => 96.41,
                     'Viviendas con Automóvil' => 6.87,
-                    'Viviendas con Computadora' => 8.23,
-                    'Viviendas con Celular' => 62.59,
-                    'Viviendas con Internet' => 8.05
+                    'Viviendas con Computadora' => 8.23
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 45.45,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 36.36,
-                    'Tercera actividad nombre' => 'Inmobiliarios',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Inmobiliarios',
                     'Cuarta actividad porcentaje' => 9.09
                 )
             )

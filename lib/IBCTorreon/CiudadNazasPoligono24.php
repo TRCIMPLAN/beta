@@ -33,13 +33,13 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Nazas Polígono 24';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-nazas-poligono-24';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ciudad Nazas Polígono 24 de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ciudad Nazas Polígono 24 en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.82,
                     'Porcentaje de población no especificada' => 0.94,
                     'Fecundidad promedio' => 1.81,
-                    'Porcentaje de población nacida en otro estado' => 13.72,
-                    'Porcentaje de población con discapacidad' => 1.53,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
-                    'Porcentaje de población de 18 y más' => 55.59,
-                    'Porcentaje de población de 18 y más postbásicos' => 31.70
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.86,
-                    'Grado Promedio de Escolaridad masculina' => 11.10,
-                    'Grado Promedio de Escolaridad femenina' => 10.63
+                    'Porcentaje de población con discapacidad' => 1.53
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 683,
-                    'Hogares Jefatura masculina' => 80.82,
-                    'Hogares Jefatura femenina' => 19.18,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 99.71,
                     'Viviendas con Agua' => 99.71,
                     'Viviendas con Drenaje' => 99.71,
                     'Viviendas con Televisión' => 98.68,
                     'Viviendas con Automóvil' => 58.57,
-                    'Viviendas con Computadora' => 36.16,
-                    'Viviendas con Celular' => 86.09,
-                    'Viviendas con Internet' => 22.52
+                    'Viviendas con Computadora' => 36.16
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class CiudadNazasPoligono24 extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.34,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 6.90,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 3.45
                 )
             )

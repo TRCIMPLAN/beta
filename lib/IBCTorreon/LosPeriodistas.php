@@ -33,13 +33,13 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Los Periodistas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-periodistas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Los Periodistas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Los Periodistas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.53,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.91,
-                    'Porcentaje de población nacida en otro estado' => 17.32,
-                    'Porcentaje de población con discapacidad' => 5.24,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.18,
-                    'Porcentaje de población de 18 y más' => 54.21,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.79
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.00,
-                    'Grado Promedio de Escolaridad masculina' => 10.10,
-                    'Grado Promedio de Escolaridad femenina' => 9.90
+                    'Porcentaje de población con discapacidad' => 5.24
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 96,
-                    'Hogares Jefatura masculina' => 83.33,
-                    'Hogares Jefatura femenina' => 16.67,
                     'Ocupación por Vivienda' => 3.96,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.96,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.96,
                     'Viviendas con Automóvil' => 50.51,
-                    'Viviendas con Computadora' => 30.36,
-                    'Viviendas con Celular' => 82.29,
-                    'Viviendas con Internet' => 18.20
+                    'Viviendas con Computadora' => 30.36
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class LosPeriodistas extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 45.45,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 27.27,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

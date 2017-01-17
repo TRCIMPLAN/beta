@@ -33,13 +33,13 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nueva Aurora';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-aurora';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nueva Aurora de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nueva Aurora en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 11.11,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.63,
-                    'Porcentaje de población nacida en otro estado' => 14.26,
-                    'Porcentaje de población con discapacidad' => 7.49,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.53,
-                    'Porcentaje de población de 18 y más' => 72.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 21.18
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.36,
-                    'Grado Promedio de Escolaridad masculina' => 8.55,
-                    'Grado Promedio de Escolaridad femenina' => 8.17
+                    'Porcentaje de población con discapacidad' => 7.49
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NuevaAurora extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 889,
-                    'Hogares Jefatura masculina' => 62.08,
-                    'Hogares Jefatura femenina' => 37.92,
                     'Ocupación por Vivienda' => 3.66,
                     'Viviendas con Electricidad' => 99.58,
                     'Viviendas con Agua' => 99.35,
                     'Viviendas con Drenaje' => 99.01,
                     'Viviendas con Televisión' => 97.21,
                     'Viviendas con Automóvil' => 30.95,
-                    'Viviendas con Computadora' => 22.96,
-                    'Viviendas con Celular' => 56.57,
-                    'Viviendas con Internet' => 16.32
+                    'Viviendas con Computadora' => 22.96
                 )
             ),
             'Unidades Económicas' => array(

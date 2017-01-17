@@ -33,13 +33,13 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Senderos';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-senderos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Senderos de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Senderos en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.27,
                     'Porcentaje de población no especificada' => 16.84,
                     'Fecundidad promedio' => 1.60,
-                    'Porcentaje de población nacida en otro estado' => 22.26,
-                    'Porcentaje de población con discapacidad' => 1.56,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 53.72,
-                    'Porcentaje de población de 18 y más postbásicos' => 52.06
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.36,
-                    'Grado Promedio de Escolaridad masculina' => 15.55,
-                    'Grado Promedio de Escolaridad femenina' => 15.14
+                    'Porcentaje de población con discapacidad' => 1.56
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 35,
-                    'Hogares Jefatura masculina' => 82.37,
-                    'Hogares Jefatura femenina' => 17.63,
                     'Ocupación por Vivienda' => 3.57,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 93.79,
-                    'Viviendas con Computadora' => 79.00,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 47.01
+                    'Viviendas con Computadora' => 79.00
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,11 +99,11 @@ class AmpliacionSenderos extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 20.00
                 )
             )

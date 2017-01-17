@@ -33,13 +33,13 @@ class ResidencialPalmaReal extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Palma Real';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-palma-real';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Palma Real de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Palma Real en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialPalmaReal extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.73,
                     'Porcentaje de población no especificada' => 0.82,
                     'Fecundidad promedio' => 1.39,
-                    'Porcentaje de población nacida en otro estado' => 26.12,
-                    'Porcentaje de población con discapacidad' => 0.46,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
-                    'Porcentaje de población de 18 y más' => 63.22,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.63
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.16,
-                    'Grado Promedio de Escolaridad masculina' => 15.44,
-                    'Grado Promedio de Escolaridad femenina' => 14.89
+                    'Porcentaje de población con discapacidad' => 0.46
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialPalmaReal extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 451,
-                    'Hogares Jefatura masculina' => 86.37,
-                    'Hogares Jefatura femenina' => 13.63,
                     'Ocupación por Vivienda' => 3.22,
                     'Viviendas con Electricidad' => 99.26,
                     'Viviendas con Agua' => 98.82,
                     'Viviendas con Drenaje' => 97.93,
                     'Viviendas con Televisión' => 98.37,
                     'Viviendas con Automóvil' => 97.21,
-                    'Viviendas con Computadora' => 85.30,
-                    'Viviendas con Celular' => 96.80,
-                    'Viviendas con Internet' => 75.04
+                    'Viviendas con Computadora' => 85.30
                 )
             ),
             'Unidades Económicas' => array(

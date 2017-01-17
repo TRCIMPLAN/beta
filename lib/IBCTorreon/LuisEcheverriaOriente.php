@@ -33,13 +33,13 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverría Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Luis Echeverría Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Luis Echeverría Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.74,
                     'Porcentaje de población no especificada' => 0.29,
                     'Fecundidad promedio' => 2.29,
-                    'Porcentaje de población nacida en otro estado' => 19.47,
-                    'Porcentaje de población con discapacidad' => 5.22,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.49,
-                    'Porcentaje de población de 18 y más' => 73.71,
-                    'Porcentaje de población de 18 y más postbásicos' => 39.34
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.27,
-                    'Grado Promedio de Escolaridad masculina' => 10.36,
-                    'Grado Promedio de Escolaridad femenina' => 10.19
+                    'Porcentaje de población con discapacidad' => 5.22
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 273,
-                    'Hogares Jefatura masculina' => 72.53,
-                    'Hogares Jefatura femenina' => 27.47,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 99.27,
                     'Viviendas con Agua' => 99.27,
                     'Viviendas con Drenaje' => 99.27,
                     'Viviendas con Televisión' => 97.07,
                     'Viviendas con Automóvil' => 53.11,
-                    'Viviendas con Computadora' => 41.03,
-                    'Viviendas con Celular' => 77.29,
-                    'Viviendas con Internet' => 35.53
+                    'Viviendas con Computadora' => 41.03
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.81,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 12.96,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )

@@ -33,13 +33,13 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Las Quintas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-quintas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Las Quintas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Las Quintas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.68,
                     'Porcentaje de población no especificada' => 3.93,
                     'Fecundidad promedio' => 1.49,
-                    'Porcentaje de población nacida en otro estado' => 22.15,
-                    'Porcentaje de población con discapacidad' => 0.99,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.62,
-                    'Porcentaje de población de 18 y más' => 60.75,
-                    'Porcentaje de población de 18 y más postbásicos' => 56.45
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.58,
-                    'Grado Promedio de Escolaridad masculina' => 15.19,
-                    'Grado Promedio de Escolaridad femenina' => 14.06
+                    'Porcentaje de población con discapacidad' => 0.99
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LasQuintas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 124,
-                    'Hogares Jefatura masculina' => 83.87,
-                    'Hogares Jefatura femenina' => 16.13,
                     'Ocupación por Vivienda' => 4.31,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.19,
                     'Viviendas con Drenaje' => 97.58,
                     'Viviendas con Televisión' => 98.39,
                     'Viviendas con Automóvil' => 97.58,
-                    'Viviendas con Computadora' => 95.16,
-                    'Viviendas con Celular' => 96.77,
-                    'Viviendas con Internet' => 92.81
+                    'Viviendas con Computadora' => 95.16
                 )
             ),
             'Unidades Económicas' => array(

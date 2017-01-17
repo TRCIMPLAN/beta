@@ -33,13 +33,13 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Las Margaritas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-las-margaritas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Las Margaritas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Las Margaritas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 59.18,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 40.82,
-                    'Porcentaje de población con discapacidad' => 38.78,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.37,
-                    'Porcentaje de población de 18 y más' => 89.80,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.18
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.40,
-                    'Grado Promedio de Escolaridad masculina' => 13.13,
-                    'Grado Promedio de Escolaridad femenina' => 11.03
+                    'Porcentaje de población con discapacidad' => 38.78
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasLasMargaritas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3,
-                    'Hogares Jefatura masculina' => 91.94,
-                    'Hogares Jefatura femenina' => 8.06,
                     'Ocupación por Vivienda' => 16.33,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 100.00,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 100.00
+                    'Viviendas con Computadora' => 100.00
                 )
             ),
             'Unidades Económicas' => array(

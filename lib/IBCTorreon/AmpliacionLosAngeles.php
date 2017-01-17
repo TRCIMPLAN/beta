@@ -33,13 +33,13 @@ class AmpliacionLosAngeles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Los Ángeles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Los Ángeles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Los Ángeles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionLosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 18.29,
                     'Porcentaje de población no especificada' => 9.59,
                     'Fecundidad promedio' => 2.04,
-                    'Porcentaje de población nacida en otro estado' => 19.60,
-                    'Porcentaje de población con discapacidad' => 7.90,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
-                    'Porcentaje de población de 18 y más' => 73.11,
-                    'Porcentaje de población de 18 y más postbásicos' => 57.59
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.23,
-                    'Grado Promedio de Escolaridad masculina' => 13.94,
-                    'Grado Promedio de Escolaridad femenina' => 12.65
+                    'Porcentaje de población con discapacidad' => 7.90
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionLosAngeles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1352,
-                    'Hogares Jefatura masculina' => 66.69,
-                    'Hogares Jefatura femenina' => 33.31,
                     'Ocupación por Vivienda' => 3.63,
                     'Viviendas con Electricidad' => 99.87,
                     'Viviendas con Agua' => 99.35,
                     'Viviendas con Drenaje' => 99.87,
                     'Viviendas con Televisión' => 99.35,
                     'Viviendas con Automóvil' => 85.85,
-                    'Viviendas con Computadora' => 69.97,
-                    'Viviendas con Celular' => 85.18,
-                    'Viviendas con Internet' => 62.56
+                    'Viviendas con Computadora' => 69.97
                 )
             ),
             'Unidades Económicas' => array(

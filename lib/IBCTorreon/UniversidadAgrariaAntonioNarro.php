@@ -33,13 +33,13 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Universidad Agraria Antonio Narro';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'universidad-agraria-antonio-narro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Universidad Agraria Antonio Narro de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Universidad Agraria Antonio Narro en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.40,
                     'Porcentaje de población no especificada' => 0.77,
                     'Fecundidad promedio' => 2.41,
-                    'Porcentaje de población nacida en otro estado' => 13.57,
-                    'Porcentaje de población con discapacidad' => 6.23,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.56,
-                    'Porcentaje de población de 18 y más' => 65.44,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.15
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.25,
-                    'Grado Promedio de Escolaridad masculina' => 8.37,
-                    'Grado Promedio de Escolaridad femenina' => 8.14
+                    'Porcentaje de población con discapacidad' => 6.23
                 )
             ),
             'Características Económicas' => array(
@@ -103,13 +92,13 @@ class UniversidadAgrariaAntonioNarro extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 63.64,
-                    'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 9.09,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

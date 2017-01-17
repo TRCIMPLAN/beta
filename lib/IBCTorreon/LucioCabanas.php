@@ -33,13 +33,13 @@ class LucioCabanas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Lucio Cabañas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'lucio-cabanas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Lucio Cabañas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Lucio Cabañas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LucioCabanas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.33,
                     'Porcentaje de población no especificada' => 0.78,
                     'Fecundidad promedio' => 2.43,
-                    'Porcentaje de población nacida en otro estado' => 13.21,
-                    'Porcentaje de población con discapacidad' => 5.60,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.76,
-                    'Porcentaje de población de 18 y más' => 57.77,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.61
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.07,
-                    'Grado Promedio de Escolaridad masculina' => 7.47,
-                    'Grado Promedio de Escolaridad femenina' => 6.61
+                    'Porcentaje de población con discapacidad' => 5.60
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LucioCabanas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 77,
-                    'Hogares Jefatura masculina' => 62.34,
-                    'Hogares Jefatura femenina' => 37.66,
                     'Ocupación por Vivienda' => 5.01,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 96.10,
                     'Viviendas con Automóvil' => 21.75,
-                    'Viviendas con Computadora' => 15.26,
-                    'Viviendas con Celular' => 51.95,
-                    'Viviendas con Internet' => 8.07
+                    'Viviendas con Computadora' => 15.26
                 )
             ),
             'Unidades Económicas' => array(

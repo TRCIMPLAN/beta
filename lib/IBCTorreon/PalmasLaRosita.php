@@ -33,13 +33,13 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Palmas La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'palmas-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Palmas La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Palmas La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.67,
                     'Porcentaje de población no especificada' => 6.38,
                     'Fecundidad promedio' => 1.98,
-                    'Porcentaje de población nacida en otro estado' => 7.09,
-                    'Porcentaje de población con discapacidad' => 1.31,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 58.16
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.15,
-                    'Grado Promedio de Escolaridad masculina' => 15.71,
-                    'Grado Promedio de Escolaridad femenina' => 14.56
+                    'Porcentaje de población con discapacidad' => 1.31
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PalmasLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 36,
-                    'Hogares Jefatura masculina' => 86.11,
-                    'Hogares Jefatura femenina' => 13.89,
                     'Ocupación por Vivienda' => 3.92,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 100.00,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 97.22
+                    'Viviendas con Computadora' => 100.00
                 )
             ),
             'Unidades Económicas' => array(

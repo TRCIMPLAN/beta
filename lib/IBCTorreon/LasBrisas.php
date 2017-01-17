@@ -33,13 +33,13 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Las Brisas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-brisas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Las Brisas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Las Brisas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.26,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 2.07,
-                    'Porcentaje de población nacida en otro estado' => 16.00,
-                    'Porcentaje de población con discapacidad' => 9.81,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.30,
-                    'Porcentaje de población de 18 y más' => 58.75,
-                    'Porcentaje de población de 18 y más postbásicos' => 19.26
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.89,
-                    'Grado Promedio de Escolaridad masculina' => 8.93,
-                    'Grado Promedio de Escolaridad femenina' => 8.84
+                    'Porcentaje de población con discapacidad' => 9.81
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 901,
-                    'Hogares Jefatura masculina' => 80.98,
-                    'Hogares Jefatura femenina' => 19.02,
                     'Ocupación por Vivienda' => 4.00,
                     'Viviendas con Electricidad' => 99.89,
                     'Viviendas con Agua' => 98.55,
                     'Viviendas con Drenaje' => 99.00,
                     'Viviendas con Televisión' => 97.66,
                     'Viviendas con Automóvil' => 43.49,
-                    'Viviendas con Computadora' => 25.18,
-                    'Viviendas con Celular' => 73.71,
-                    'Viviendas con Internet' => 14.42
+                    'Viviendas con Computadora' => 25.18
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class LasBrisas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 41,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 43.90,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 14.63,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 14.63,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 9.76,

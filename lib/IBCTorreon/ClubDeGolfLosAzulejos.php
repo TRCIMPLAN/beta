@@ -33,13 +33,13 @@ class ClubDeGolfLosAzulejos extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Club de Golf Los Azulejos';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'club-de-golf-los-azulejos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Club de Golf Los Azulejos de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Club de Golf Los Azulejos en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ClubDeGolfLosAzulejos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.94,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.69,
-                    'Porcentaje de población nacida en otro estado' => 11.25,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.55,
-                    'Porcentaje de población de 18 y más' => 64.71,
-                    'Porcentaje de población de 18 y más postbásicos' => 11.76
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.93,
-                    'Grado Promedio de Escolaridad masculina' => 6.50,
-                    'Grado Promedio de Escolaridad femenina' => 7.36
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ClubDeGolfLosAzulejos extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 8,
-                    'Hogares Jefatura masculina' => 100.00,
-                    'Hogares Jefatura femenina' => 0.00,
                     'Ocupación por Vivienda' => 4.25,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 52.46,
-                    'Viviendas con Computadora' => 0.00,
-                    'Viviendas con Celular' => 68.20,
-                    'Viviendas con Internet' => 0.00
+                    'Viviendas con Computadora' => 0.00
                 )
             ),
             'Unidades Económicas' => array(

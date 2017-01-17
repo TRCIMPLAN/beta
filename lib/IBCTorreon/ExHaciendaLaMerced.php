@@ -33,13 +33,13 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda La Merced';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ex-hacienda-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ex-Hacienda La Merced de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ex-Hacienda La Merced en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.58,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 3.02,
-                    'Porcentaje de población nacida en otro estado' => 21.86,
-                    'Porcentaje de población con discapacidad' => 6.96,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.08,
-                    'Porcentaje de población de 18 y más' => 69.06,
-                    'Porcentaje de población de 18 y más postbásicos' => 29.03
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.92,
-                    'Grado Promedio de Escolaridad masculina' => 9.82,
-                    'Grado Promedio de Escolaridad femenina' => 8.22
+                    'Porcentaje de población con discapacidad' => 6.96
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 25,
-                    'Hogares Jefatura masculina' => 70.86,
-                    'Hogares Jefatura femenina' => 29.14,
                     'Ocupación por Vivienda' => 3.44,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 52.72,
-                    'Viviendas con Computadora' => 48.34,
-                    'Viviendas con Celular' => 65.41,
-                    'Viviendas con Internet' => 14.94
+                    'Viviendas con Computadora' => 48.34
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 54.55,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 9.09,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

@@ -33,13 +33,13 @@ class PolongacionLosNogales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Polongación Los Nogales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'polongacion-los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Polongación Los Nogales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Polongación Los Nogales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PolongacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.74,
                     'Porcentaje de población no especificada' => 1.59,
                     'Fecundidad promedio' => 1.99,
-                    'Porcentaje de población nacida en otro estado' => 25.19,
-                    'Porcentaje de población con discapacidad' => 5.61,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.12,
-                    'Porcentaje de población de 18 y más' => 74.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 58.36
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.07,
-                    'Grado Promedio de Escolaridad masculina' => 13.57,
-                    'Grado Promedio de Escolaridad femenina' => 12.67
+                    'Porcentaje de población con discapacidad' => 5.61
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PolongacionLosNogales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 901,
-                    'Hogares Jefatura masculina' => 70.81,
-                    'Hogares Jefatura femenina' => 29.19,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.89,
                     'Viviendas con Drenaje' => 99.89,
                     'Viviendas con Televisión' => 99.56,
                     'Viviendas con Automóvil' => 79.69,
-                    'Viviendas con Computadora' => 64.82,
-                    'Viviendas con Celular' => 81.35,
-                    'Viviendas con Internet' => 54.05
+                    'Viviendas con Computadora' => 64.82
                 )
             ),
             'Unidades Económicas' => array(

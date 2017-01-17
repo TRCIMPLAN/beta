@@ -33,13 +33,13 @@ class LagunaNorte extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Laguna Norte';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'laguna-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Laguna Norte de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Laguna Norte en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LagunaNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.44,
                     'Porcentaje de población no especificada' => 0.34,
                     'Fecundidad promedio' => 2.45,
-                    'Porcentaje de población nacida en otro estado' => 19.33,
-                    'Porcentaje de población con discapacidad' => 3.40,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.35,
-                    'Porcentaje de población de 18 y más' => 55.36,
-                    'Porcentaje de población de 18 y más postbásicos' => 10.48
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.61,
-                    'Grado Promedio de Escolaridad masculina' => 7.47,
-                    'Grado Promedio de Escolaridad femenina' => 7.77
+                    'Porcentaje de población con discapacidad' => 3.40
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LagunaNorte extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 708,
-                    'Hogares Jefatura masculina' => 79.82,
-                    'Hogares Jefatura femenina' => 20.18,
                     'Ocupación por Vivienda' => 4.20,
                     'Viviendas con Electricidad' => 99.15,
                     'Viviendas con Agua' => 96.52,
                     'Viviendas con Drenaje' => 81.36,
                     'Viviendas con Televisión' => 94.56,
                     'Viviendas con Automóvil' => 38.83,
-                    'Viviendas con Computadora' => 12.08,
-                    'Viviendas con Celular' => 70.29,
-                    'Viviendas con Internet' => 3.10
+                    'Viviendas con Computadora' => 12.08
                 )
             ),
             'Unidades Económicas' => array(

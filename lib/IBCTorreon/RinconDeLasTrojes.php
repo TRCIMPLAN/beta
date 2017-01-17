@@ -33,13 +33,13 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincon de Las Trojes';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-las-trojes';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincon de Las Trojes de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincon de Las Trojes en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.00,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.57,
-                    'Porcentaje de población nacida en otro estado' => 20.37,
-                    'Porcentaje de población con discapacidad' => 10.17,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.96,
-                    'Porcentaje de población de 18 y más postbásicos' => 61.11
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.40,
-                    'Grado Promedio de Escolaridad masculina' => 15.88,
-                    'Grado Promedio de Escolaridad femenina' => 14.88
+                    'Porcentaje de población con discapacidad' => 10.17
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 15,
-                    'Hogares Jefatura masculina' => 80.00,
-                    'Hogares Jefatura femenina' => 20.00,
                     'Ocupación por Vivienda' => 3.60,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 86.67,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 47.06
+                    'Viviendas con Computadora' => 86.67
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 20.00,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

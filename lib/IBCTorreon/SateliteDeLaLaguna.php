@@ -33,13 +33,13 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Satélite de La Laguna';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'satelite-de-la-laguna';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Satélite de La Laguna de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Satélite de La Laguna en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.56,
                     'Porcentaje de población no especificada' => 0.10,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 14.72,
-                    'Porcentaje de población con discapacidad' => 2.09,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
-                    'Porcentaje de población de 18 y más' => 62.15,
-                    'Porcentaje de población de 18 y más postbásicos' => 37.06
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.15,
-                    'Grado Promedio de Escolaridad masculina' => 11.13,
-                    'Grado Promedio de Escolaridad femenina' => 11.17
+                    'Porcentaje de población con discapacidad' => 2.09
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 269,
-                    'Hogares Jefatura masculina' => 71.75,
-                    'Hogares Jefatura femenina' => 28.25,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.63,
                     'Viviendas con Automóvil' => 55.01,
-                    'Viviendas con Computadora' => 48.05,
-                    'Viviendas con Celular' => 86.62,
-                    'Viviendas con Internet' => 34.77
+                    'Viviendas con Computadora' => 48.05
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 32.35,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 11.76,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.82

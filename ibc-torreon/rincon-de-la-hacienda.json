@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":7.31,
         "Porcentaje de población no especificada":2.89,
         "Fecundidad promedio":1.59,
-        "Porcentaje de población nacida en otro estado":29.42,
-        "Porcentaje de población con discapacidad":1.78,
-        "Porcentaje de población de 15 y más analfabeta":0,
-        "Porcentaje de población de 18 y más":70.96,
-        "Porcentaje de población de 18 y más postbásicos":58.65
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":13.08,
-        "Grado Promedio de Escolaridad masculina":13.72,
-        "Grado Promedio de Escolaridad femenina":12.54
+        "Porcentaje de población con discapacidad":1.78
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":148,
-        "Hogares Jefatura masculina":75,
-        "Hogares Jefatura femenina":25,
         "Ocupación por Vivienda":3.51,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":99.32,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":99.32,
         "Viviendas con Automóvil":82.43,
-        "Viviendas con Computadora":75,
-        "Viviendas con Celular":91.22,
-        "Viviendas con Internet":68.92
+        "Viviendas con Computadora":75
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":33.33,
         "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":14.81,
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad nombre":"Educativos",
         "Tercera actividad porcentaje":11.11,
-        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":11.11,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Salud",
         "Quinta actividad porcentaje":11.11
       }
     }

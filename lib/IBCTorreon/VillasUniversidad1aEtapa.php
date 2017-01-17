@@ -33,13 +33,13 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad 1a. Etapa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-1a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Universidad 1a. Etapa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Universidad 1a. Etapa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.55,
                     'Porcentaje de población no especificada' => 0.22,
                     'Fecundidad promedio' => 1.78,
-                    'Porcentaje de población nacida en otro estado' => 17.16,
-                    'Porcentaje de población con discapacidad' => 1.66,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.38,
-                    'Porcentaje de población de 18 y más' => 57.37,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.07
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.11,
-                    'Grado Promedio de Escolaridad masculina' => 10.28,
-                    'Grado Promedio de Escolaridad femenina' => 9.95
+                    'Porcentaje de población con discapacidad' => 1.66
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 391,
-                    'Hogares Jefatura masculina' => 73.91,
-                    'Hogares Jefatura femenina' => 26.09,
                     'Ocupación por Vivienda' => 3.47,
                     'Viviendas con Electricidad' => 99.23,
                     'Viviendas con Agua' => 99.23,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.21,
                     'Viviendas con Automóvil' => 44.75,
-                    'Viviendas con Computadora' => 24.13,
-                    'Viviendas con Celular' => 80.82,
-                    'Viviendas con Internet' => 12.79
+                    'Viviendas con Computadora' => 24.13
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class VillasUniversidad1aEtapa extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 19,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 47.37,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.79,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.79,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 5.26,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 5.26
                 )
             )

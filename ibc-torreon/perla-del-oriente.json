@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":0.89,
         "Porcentaje de población no especificada":0.54,
         "Fecundidad promedio":1.71,
-        "Porcentaje de población nacida en otro estado":16.93,
-        "Porcentaje de población con discapacidad":1.82,
-        "Porcentaje de población de 15 y más analfabeta":0.46,
-        "Porcentaje de población de 18 y más":59.03,
-        "Porcentaje de población de 18 y más postbásicos":26.95
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":9.95,
-        "Grado Promedio de Escolaridad masculina":10.09,
-        "Grado Promedio de Escolaridad femenina":9.81
+        "Porcentaje de población con discapacidad":1.82
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":158,
-        "Hogares Jefatura masculina":77.22,
-        "Hogares Jefatura femenina":22.78,
         "Ocupación por Vivienda":3.54,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":99.37,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":96.84,
         "Viviendas con Automóvil":48.21,
-        "Viviendas con Computadora":29.78,
-        "Viviendas con Celular":91.14,
-        "Viviendas con Internet":1.9
+        "Viviendas con Computadora":29.78
       }
     },
     "Unidades Económicas":{
@@ -62,9 +47,9 @@
         "Segunda actividad porcentaje":23.08,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":19.23,
-        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":7.69,
-        "Quinta actividad nombre":"Industria Manufacturera",
+        "Quinta actividad nombre":"Manejo de Residuos",
         "Quinta actividad porcentaje":7.69
       }
     }

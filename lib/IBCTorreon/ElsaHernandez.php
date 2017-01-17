@@ -33,13 +33,13 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Elsa Hernández';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'elsa-hernandez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Elsa Hernández de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Elsa Hernández en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.41,
                     'Porcentaje de población no especificada' => 4.00,
                     'Fecundidad promedio' => 2.59,
-                    'Porcentaje de población nacida en otro estado' => 11.22,
-                    'Porcentaje de población con discapacidad' => 1.90,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.05,
-                    'Porcentaje de población de 18 y más' => 62.06,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.90
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.82,
-                    'Grado Promedio de Escolaridad masculina' => 7.89,
-                    'Grado Promedio de Escolaridad femenina' => 7.77
+                    'Porcentaje de población con discapacidad' => 1.90
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 569,
-                    'Hogares Jefatura masculina' => 63.98,
-                    'Hogares Jefatura femenina' => 36.02,
                     'Ocupación por Vivienda' => 4.22,
                     'Viviendas con Electricidad' => 99.95,
                     'Viviendas con Agua' => 99.78,
                     'Viviendas con Drenaje' => 99.25,
                     'Viviendas con Televisión' => 96.79,
                     'Viviendas con Automóvil' => 36.36,
-                    'Viviendas con Computadora' => 16.90,
-                    'Viviendas con Celular' => 60.90,
-                    'Viviendas con Internet' => 13.77
+                    'Viviendas con Computadora' => 16.90
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class ElsaHernandez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.60,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 12.36,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.87,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.87
                 )
             )

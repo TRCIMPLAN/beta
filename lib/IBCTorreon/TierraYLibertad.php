@@ -33,13 +33,13 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Tierra y Libertad';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'tierra-y-libertad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Tierra y Libertad de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Tierra y Libertad en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.96,
                     'Porcentaje de población no especificada' => 1.42,
                     'Fecundidad promedio' => 2.90,
-                    'Porcentaje de población nacida en otro estado' => 14.16,
-                    'Porcentaje de población con discapacidad' => 8.96,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.78,
-                    'Porcentaje de población de 18 y más' => 64.90,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.58
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.84,
-                    'Grado Promedio de Escolaridad masculina' => 7.94,
-                    'Grado Promedio de Escolaridad femenina' => 7.74
+                    'Porcentaje de población con discapacidad' => 8.96
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 920,
-                    'Hogares Jefatura masculina' => 66.75,
-                    'Hogares Jefatura femenina' => 33.25,
                     'Ocupación por Vivienda' => 4.14,
                     'Viviendas con Electricidad' => 99.67,
                     'Viviendas con Agua' => 99.57,
                     'Viviendas con Drenaje' => 99.57,
                     'Viviendas con Televisión' => 98.48,
                     'Viviendas con Automóvil' => 34.31,
-                    'Viviendas con Computadora' => 18.95,
-                    'Viviendas con Celular' => 58.63,
-                    'Viviendas con Internet' => 12.51
+                    'Viviendas con Computadora' => 18.95
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class TierraYLibertad extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.04,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.17,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 5.22
                 )
             )

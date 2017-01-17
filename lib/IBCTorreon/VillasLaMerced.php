@@ -33,13 +33,13 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas La Merced';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas La Merced de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas La Merced en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.61,
                     'Porcentaje de población no especificada' => 1.48,
                     'Fecundidad promedio' => 1.93,
-                    'Porcentaje de población nacida en otro estado' => 15.05,
-                    'Porcentaje de población con discapacidad' => 2.99,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.57,
-                    'Porcentaje de población de 18 y más' => 60.16,
-                    'Porcentaje de población de 18 y más postbásicos' => 34.58
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.80,
-                    'Grado Promedio de Escolaridad masculina' => 10.94,
-                    'Grado Promedio de Escolaridad femenina' => 10.66
+                    'Porcentaje de población con discapacidad' => 2.99
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasLaMerced extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3837,
-                    'Hogares Jefatura masculina' => 77.00,
-                    'Hogares Jefatura femenina' => 23.00,
                     'Ocupación por Vivienda' => 3.95,
                     'Viviendas con Electricidad' => 99.90,
                     'Viviendas con Agua' => 99.53,
                     'Viviendas con Drenaje' => 99.35,
                     'Viviendas con Televisión' => 99.01,
                     'Viviendas con Automóvil' => 65.39,
-                    'Viviendas con Computadora' => 48.99,
-                    'Viviendas con Celular' => 82.51,
-                    'Viviendas con Internet' => 36.40
+                    'Viviendas con Computadora' => 48.99
                 )
             ),
             'Unidades Económicas' => array(

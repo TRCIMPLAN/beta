@@ -33,13 +33,13 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial del Valle';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial del Valle de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial del Valle en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.48,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.65,
-                    'Porcentaje de población nacida en otro estado' => 25.80,
-                    'Porcentaje de población con discapacidad' => 3.99,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.90,
-                    'Porcentaje de población de 18 y más' => 69.28,
-                    'Porcentaje de población de 18 y más postbásicos' => 63.19
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.79,
-                    'Grado Promedio de Escolaridad masculina' => 14.26,
-                    'Grado Promedio de Escolaridad femenina' => 13.38
+                    'Porcentaje de población con discapacidad' => 3.99
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 96,
-                    'Hogares Jefatura masculina' => 76.04,
-                    'Hogares Jefatura femenina' => 23.96,
                     'Ocupación por Vivienda' => 3.59,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.96,
                     'Viviendas con Automóvil' => 87.50,
-                    'Viviendas con Computadora' => 79.17,
-                    'Viviendas con Celular' => 95.83,
-                    'Viviendas con Internet' => 69.79
+                    'Viviendas con Computadora' => 79.17
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class ResidencialDelValle extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 20,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 35.00,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 15.00,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 15.00,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

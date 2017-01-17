@@ -33,13 +33,13 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Isidro';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas San Isidro de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas San Isidro en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.99,
                     'Porcentaje de población no especificada' => 0.38,
                     'Fecundidad promedio' => 1.49,
-                    'Porcentaje de población nacida en otro estado' => 23.42,
-                    'Porcentaje de población con discapacidad' => 1.28,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.14,
-                    'Porcentaje de población de 18 y más' => 66.08,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.82
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.50,
-                    'Grado Promedio de Escolaridad masculina' => 14.91,
-                    'Grado Promedio de Escolaridad femenina' => 14.12
+                    'Porcentaje de población con discapacidad' => 1.28
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasSanIsidro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 220,
-                    'Hogares Jefatura masculina' => 85.91,
-                    'Hogares Jefatura femenina' => 14.09,
                     'Ocupación por Vivienda' => 3.65,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.32,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.32,
                     'Viviendas con Automóvil' => 99.75,
-                    'Viviendas con Computadora' => 89.72,
-                    'Viviendas con Celular' => 96.58,
-                    'Viviendas con Internet' => 87.06
+                    'Viviendas con Computadora' => 89.72
                 )
             ),
             'Unidades Económicas' => array(

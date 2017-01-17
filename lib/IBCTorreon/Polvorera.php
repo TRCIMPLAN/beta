@@ -33,13 +33,13 @@ class Polvorera extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Polvorera';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'polvorera';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Polvorera de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Polvorera en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Polvorera extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.76,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.23,
-                    'Porcentaje de población nacida en otro estado' => 2.63,
-                    'Porcentaje de población con discapacidad' => 3.78,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.87,
-                    'Porcentaje de población de 18 y más' => 67.43,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.47
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.85,
-                    'Grado Promedio de Escolaridad masculina' => 8.02,
-                    'Grado Promedio de Escolaridad femenina' => 7.69
+                    'Porcentaje de población con discapacidad' => 3.78
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Polvorera extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 324,
-                    'Hogares Jefatura masculina' => 75.27,
-                    'Hogares Jefatura femenina' => 24.73,
                     'Ocupación por Vivienda' => 3.73,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.98,
                     'Viviendas con Drenaje' => 99.91,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 34.04,
-                    'Viviendas con Computadora' => 18.93,
-                    'Viviendas con Celular' => 62.97,
-                    'Viviendas con Internet' => 8.97
+                    'Viviendas con Computadora' => 18.93
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Polvorera extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 17,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 76.47,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 5.88,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 5.88,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

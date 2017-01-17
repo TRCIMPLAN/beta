@@ -33,13 +33,13 @@ class MiguelDeLaMadrid extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Miguel De La Madrid';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'miguel-de-la-madrid';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Miguel De La Madrid de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Miguel De La Madrid en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MiguelDeLaMadrid extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.63,
                     'Porcentaje de población no especificada' => 0.23,
                     'Fecundidad promedio' => 2.47,
-                    'Porcentaje de población nacida en otro estado' => 16.77,
-                    'Porcentaje de población con discapacidad' => 6.03,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.42,
-                    'Porcentaje de población de 18 y más' => 63.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.86,
-                    'Grado Promedio de Escolaridad masculina' => 7.84,
-                    'Grado Promedio de Escolaridad femenina' => 7.89
+                    'Porcentaje de población con discapacidad' => 6.03
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MiguelDeLaMadrid extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 301,
-                    'Hogares Jefatura masculina' => 79.73,
-                    'Hogares Jefatura femenina' => 20.27,
                     'Ocupación por Vivienda' => 4.38,
                     'Viviendas con Electricidad' => 99.67,
                     'Viviendas con Agua' => 99.67,
                     'Viviendas con Drenaje' => 99.34,
                     'Viviendas con Televisión' => 98.67,
                     'Viviendas con Automóvil' => 41.89,
-                    'Viviendas con Computadora' => 23.03,
-                    'Viviendas con Celular' => 67.83,
-                    'Viviendas con Internet' => 12.26
+                    'Viviendas con Computadora' => 23.03
                 )
             ),
             'Unidades Económicas' => array(

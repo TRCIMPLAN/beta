@@ -33,13 +33,13 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Sección 38';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-seccion-38';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Sección 38 de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Sección 38 en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.61,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.88,
-                    'Porcentaje de población nacida en otro estado' => 21.71,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.08,
-                    'Porcentaje de población de 18 y más' => 57.89,
-                    'Porcentaje de población de 18 y más postbásicos' => 51.97
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.74,
-                    'Grado Promedio de Escolaridad masculina' => 14.81,
-                    'Grado Promedio de Escolaridad femenina' => 12.82
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,25 +85,21 @@ class AmpliacionSeccion38 extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 37,
-                    'Hogares Jefatura masculina' => 75.68,
-                    'Hogares Jefatura femenina' => 24.32,
                     'Ocupación por Vivienda' => 4.11,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 97.30,
-                    'Viviendas con Computadora' => 91.89,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 89.19
+                    'Viviendas con Computadora' => 91.89
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 5,
-                    'Primer actividad nombre' => 'Salud',
+                    'Primer actividad nombre' => 'Educativos',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Salud',
                     'Segunda actividad porcentaje' => 40.00,
                     'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 20.00

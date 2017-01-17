@@ -33,13 +33,13 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón del Bosque';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón del Bosque de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón del Bosque en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.51,
                     'Porcentaje de población no especificada' => 1.74,
                     'Fecundidad promedio' => 2.49,
-                    'Porcentaje de población nacida en otro estado' => 18.32,
-                    'Porcentaje de población con discapacidad' => 5.15,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.50,
-                    'Porcentaje de población de 18 y más' => 60.23,
-                    'Porcentaje de población de 18 y más postbásicos' => 18.17
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.29,
-                    'Grado Promedio de Escolaridad masculina' => 8.61,
-                    'Grado Promedio de Escolaridad femenina' => 7.98
+                    'Porcentaje de población con discapacidad' => 5.15
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 249,
-                    'Hogares Jefatura masculina' => 84.11,
-                    'Hogares Jefatura femenina' => 15.89,
                     'Ocupación por Vivienda' => 4.18,
                     'Viviendas con Electricidad' => 99.60,
                     'Viviendas con Agua' => 99.60,
                     'Viviendas con Drenaje' => 99.60,
                     'Viviendas con Televisión' => 98.39,
                     'Viviendas con Automóvil' => 50.48,
-                    'Viviendas con Computadora' => 31.30,
-                    'Viviendas con Celular' => 77.39,
-                    'Viviendas con Internet' => 13.59
+                    'Viviendas con Computadora' => 31.30
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 36.36,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 30.30,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.06

@@ -33,13 +33,13 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Campo Nuevo Zaragoza';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'campo-nuevo-zaragoza';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Campo Nuevo Zaragoza de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Campo Nuevo Zaragoza en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.78,
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.81,
-                    'Porcentaje de población nacida en otro estado' => 15.18,
-                    'Porcentaje de población con discapacidad' => 2.12,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
-                    'Porcentaje de población de 18 y más' => 54.22,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.61
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.21,
-                    'Grado Promedio de Escolaridad masculina' => 11.43,
-                    'Grado Promedio de Escolaridad femenina' => 10.99
+                    'Porcentaje de población con discapacidad' => 2.12
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CampoNuevoZaragoza extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1013,
-                    'Hogares Jefatura masculina' => 85.88,
-                    'Hogares Jefatura femenina' => 14.12,
                     'Ocupación por Vivienda' => 3.88,
                     'Viviendas con Electricidad' => 99.90,
                     'Viviendas con Agua' => 99.51,
                     'Viviendas con Drenaje' => 99.80,
                     'Viviendas con Televisión' => 99.11,
                     'Viviendas con Automóvil' => 65.35,
-                    'Viviendas con Computadora' => 42.48,
-                    'Viviendas con Celular' => 88.35,
-                    'Viviendas con Internet' => 28.58
+                    'Viviendas con Computadora' => 42.48
                 )
             ),
             'Unidades Económicas' => array(

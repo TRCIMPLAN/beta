@@ -33,13 +33,13 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Real Del Nogalar';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'real-del-nogalar';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Real Del Nogalar de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Real Del Nogalar en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RealDelNogalar extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.95,
                     'Porcentaje de población no especificada' => 7.13,
                     'Fecundidad promedio' => 1.66,
-                    'Porcentaje de población nacida en otro estado' => 22.27,
-                    'Porcentaje de población con discapacidad' => 1.73,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.54,
-                    'Porcentaje de población de 18 y más' => 56.22,
-                    'Porcentaje de población de 18 y más postbásicos' => 47.03
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.68,
-                    'Grado Promedio de Escolaridad masculina' => 13.88,
-                    'Grado Promedio de Escolaridad femenina' => 13.47
+                    'Porcentaje de población con discapacidad' => 1.73
                 )
             ),
             'Características Económicas' => array(

@@ -33,13 +33,13 @@ class Ana extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ana';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ana';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ana de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ana en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Ana extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 13.58,
                     'Porcentaje de población no especificada' => 7.87,
                     'Fecundidad promedio' => 2.34,
-                    'Porcentaje de población nacida en otro estado' => 14.43,
-                    'Porcentaje de población con discapacidad' => 7.95,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.25,
-                    'Porcentaje de población de 18 y más' => 70.11,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.29
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.89,
-                    'Grado Promedio de Escolaridad masculina' => 10.20,
-                    'Grado Promedio de Escolaridad femenina' => 9.62
+                    'Porcentaje de población con discapacidad' => 7.95
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Ana extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 467,
-                    'Hogares Jefatura masculina' => 63.17,
-                    'Hogares Jefatura femenina' => 36.83,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 99.57,
                     'Viviendas con Agua' => 99.57,
                     'Viviendas con Drenaje' => 99.57,
                     'Viviendas con Televisión' => 98.07,
                     'Viviendas con Automóvil' => 38.97,
-                    'Viviendas con Computadora' => 34.05,
-                    'Viviendas con Celular' => 62.96,
-                    'Viviendas con Internet' => 25.33
+                    'Viviendas con Computadora' => 34.05
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class VallesDelNazas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Valles del Nazas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'valles-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Valles del Nazas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Valles del Nazas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VallesDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.94,
                     'Porcentaje de población no especificada' => 1.54,
                     'Fecundidad promedio' => 1.72,
-                    'Porcentaje de población nacida en otro estado' => 14.32,
-                    'Porcentaje de población con discapacidad' => 1.98,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.13,
-                    'Porcentaje de población de 18 y más' => 56.93,
-                    'Porcentaje de población de 18 y más postbásicos' => 39.77
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.83,
-                    'Grado Promedio de Escolaridad masculina' => 11.97,
-                    'Grado Promedio de Escolaridad femenina' => 11.70
+                    'Porcentaje de población con discapacidad' => 1.98
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VallesDelNazas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 497,
-                    'Hogares Jefatura masculina' => 77.26,
-                    'Hogares Jefatura femenina' => 22.74,
                     'Ocupación por Vivienda' => 3.91,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.59,
                     'Viviendas con Automóvil' => 68.01,
-                    'Viviendas con Computadora' => 55.94,
-                    'Viviendas con Celular' => 89.34,
-                    'Viviendas con Internet' => 40.24
+                    'Viviendas con Computadora' => 55.94
                 )
             ),
             'Unidades Económicas' => array(

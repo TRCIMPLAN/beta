@@ -33,13 +33,13 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'San Agustín';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-agustin';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia San Agustín de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia San Agustín en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.31,
                     'Porcentaje de población no especificada' => 1.05,
                     'Fecundidad promedio' => 2.04,
-                    'Porcentaje de población nacida en otro estado' => 20.77,
-                    'Porcentaje de población con discapacidad' => 7.51,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.40,
-                    'Porcentaje de población de 18 y más' => 57.27,
-                    'Porcentaje de población de 18 y más postbásicos' => 18.69
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.95,
-                    'Grado Promedio de Escolaridad masculina' => 9.07,
-                    'Grado Promedio de Escolaridad femenina' => 8.83
+                    'Porcentaje de población con discapacidad' => 7.51
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 258,
-                    'Hogares Jefatura masculina' => 68.20,
-                    'Hogares Jefatura femenina' => 31.80,
                     'Ocupación por Vivienda' => 3.50,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 97.20,
                     'Viviendas con Drenaje' => 88.28,
                     'Viviendas con Televisión' => 97.58,
                     'Viviendas con Automóvil' => 49.61,
-                    'Viviendas con Computadora' => 25.31,
-                    'Viviendas con Celular' => 81.82,
-                    'Viviendas con Internet' => 18.58
+                    'Viviendas con Computadora' => 25.31
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 57.14,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.29,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 7.14,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

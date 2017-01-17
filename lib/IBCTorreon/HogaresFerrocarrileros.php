@@ -33,13 +33,13 @@ class HogaresFerrocarrileros extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Hogares Ferrocarrileros';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'hogares-ferrocarrileros';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Hogares Ferrocarrileros de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Hogares Ferrocarrileros en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class HogaresFerrocarrileros extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 11.11,
                     'Porcentaje de población no especificada' => 1.63,
                     'Fecundidad promedio' => 2.23,
-                    'Porcentaje de población nacida en otro estado' => 19.22,
-                    'Porcentaje de población con discapacidad' => 4.47,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.28,
-                    'Porcentaje de población de 18 y más' => 71.61,
-                    'Porcentaje de población de 18 y más postbásicos' => 40.43
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.81,
-                    'Grado Promedio de Escolaridad masculina' => 11.03,
-                    'Grado Promedio de Escolaridad femenina' => 10.62
+                    'Porcentaje de población con discapacidad' => 4.47
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class HogaresFerrocarrileros extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 458,
-                    'Hogares Jefatura masculina' => 70.09,
-                    'Hogares Jefatura femenina' => 29.91,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 99.56,
                     'Viviendas con Agua' => 99.13,
                     'Viviendas con Drenaje' => 99.78,
                     'Viviendas con Televisión' => 97.82,
                     'Viviendas con Automóvil' => 52.93,
-                    'Viviendas con Computadora' => 48.47,
-                    'Viviendas con Celular' => 73.36,
-                    'Viviendas con Internet' => 37.12
+                    'Viviendas con Computadora' => 48.47
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Los Laureles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-laureles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Los Laureles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Los Laureles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.63,
                     'Porcentaje de población no especificada' => 7.23,
                     'Fecundidad promedio' => 1.96,
-                    'Porcentaje de población nacida en otro estado' => 15.84,
-                    'Porcentaje de población con discapacidad' => 1.41,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.59,
-                    'Porcentaje de población de 18 y más' => 52.84,
-                    'Porcentaje de población de 18 y más postbásicos' => 18.03
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.47,
-                    'Grado Promedio de Escolaridad masculina' => 9.46,
-                    'Grado Promedio de Escolaridad femenina' => 9.48
+                    'Porcentaje de población con discapacidad' => 1.41
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 484,
-                    'Hogares Jefatura masculina' => 80.79,
-                    'Hogares Jefatura femenina' => 19.21,
                     'Ocupación por Vivienda' => 3.96,
                     'Viviendas con Electricidad' => 98.97,
                     'Viviendas con Agua' => 98.97,
                     'Viviendas con Drenaje' => 98.76,
                     'Viviendas con Televisión' => 98.14,
                     'Viviendas con Automóvil' => 37.19,
-                    'Viviendas con Computadora' => 19.83,
-                    'Viviendas con Celular' => 83.26,
-                    'Viviendas con Internet' => 10.33
+                    'Viviendas con Computadora' => 19.83
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class LosLaureles extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 16.13,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 6.45,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 3.23
                 )
             )

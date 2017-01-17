@@ -33,13 +33,13 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación San Ignacio';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-san-ignacio';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación San Ignacio de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación San Ignacio en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.48,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.87,
-                    'Porcentaje de población nacida en otro estado' => 21.07,
-                    'Porcentaje de población con discapacidad' => 1.87,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 61.98,
-                    'Porcentaje de población de 18 y más postbásicos' => 40.91
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.05,
-                    'Grado Promedio de Escolaridad masculina' => 12.73,
-                    'Grado Promedio de Escolaridad femenina' => 11.42
+                    'Porcentaje de población con discapacidad' => 1.87
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 70,
-                    'Hogares Jefatura masculina' => 67.14,
-                    'Hogares Jefatura femenina' => 32.86,
                     'Ocupación por Vivienda' => 3.46,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 61.43,
-                    'Viviendas con Computadora' => 40.00,
-                    'Viviendas con Celular' => 87.14,
-                    'Viviendas con Internet' => 24.29
+                    'Viviendas con Computadora' => 40.00
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class AmpliacionSanIgnacio extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Minería',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

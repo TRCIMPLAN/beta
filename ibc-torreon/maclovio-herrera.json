@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":7.9,
         "Porcentaje de población no especificada":0.01,
         "Fecundidad promedio":2.61,
-        "Porcentaje de población nacida en otro estado":19.13,
-        "Porcentaje de población con discapacidad":11.87,
-        "Porcentaje de población de 15 y más analfabeta":4.59,
-        "Porcentaje de población de 18 y más":65.56,
-        "Porcentaje de población de 18 y más postbásicos":15.94
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":7.58,
-        "Grado Promedio de Escolaridad masculina":8.08,
-        "Grado Promedio de Escolaridad femenina":7.09
+        "Porcentaje de población con discapacidad":11.87
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":168,
-        "Hogares Jefatura masculina":66.66,
-        "Hogares Jefatura femenina":33.34,
         "Ocupación por Vivienda":3.96,
         "Viviendas con Electricidad":98.21,
         "Viviendas con Agua":91.07,
         "Viviendas con Drenaje":98.21,
         "Viviendas con Televisión":93.97,
         "Viviendas con Automóvil":21.29,
-        "Viviendas con Computadora":15.79,
-        "Viviendas con Celular":48.21,
-        "Viviendas con Internet":9.13
+        "Viviendas con Computadora":15.79
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":52.94,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":23.53,
-        "Tercera actividad nombre":"Gubernamentales",
+        "Tercera actividad nombre":"Educativos",
         "Tercera actividad porcentaje":5.88,
-        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":5.88,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
         "Quinta actividad porcentaje":5.88
       }
     }

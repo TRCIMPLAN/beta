@@ -33,13 +33,13 @@ class SantaFe extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Santa Fe';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-fe';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Santa Fe de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Santa Fe en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.51,
                     'Porcentaje de población no especificada' => 0.37,
                     'Fecundidad promedio' => 1.67,
-                    'Porcentaje de población nacida en otro estado' => 24.02,
-                    'Porcentaje de población con discapacidad' => 21.24,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.13,
-                    'Porcentaje de población de 18 y más' => 66.95,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.12
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.46,
-                    'Grado Promedio de Escolaridad masculina' => 13.81,
-                    'Grado Promedio de Escolaridad femenina' => 13.16
+                    'Porcentaje de población con discapacidad' => 21.24
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SantaFe extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 262,
-                    'Hogares Jefatura masculina' => 75.19,
-                    'Hogares Jefatura femenina' => 24.81,
                     'Ocupación por Vivienda' => 3.13,
                     'Viviendas con Electricidad' => 99.62,
                     'Viviendas con Agua' => 99.62,
                     'Viviendas con Drenaje' => 99.62,
                     'Viviendas con Televisión' => 99.24,
                     'Viviendas con Automóvil' => 77.10,
-                    'Viviendas con Computadora' => 61.83,
-                    'Viviendas con Celular' => 93.51,
-                    'Viviendas con Internet' => 49.62
+                    'Viviendas con Computadora' => 61.83
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 42.86,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 9.52,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.52,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.76

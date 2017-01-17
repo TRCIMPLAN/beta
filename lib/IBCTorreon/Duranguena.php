@@ -33,13 +33,13 @@ class Duranguena extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Durangueña';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'duranguena';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Durangueña de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Durangueña en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Duranguena extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.64,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.55,
-                    'Porcentaje de población nacida en otro estado' => 14.09,
-                    'Porcentaje de población con discapacidad' => 8.88,
-                    'Porcentaje de población de 15 y más analfabeta' => 4.29,
-                    'Porcentaje de población de 18 y más' => 66.64,
-                    'Porcentaje de población de 18 y más postbásicos' => 11.12
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.13,
-                    'Grado Promedio de Escolaridad masculina' => 6.97,
-                    'Grado Promedio de Escolaridad femenina' => 7.28
+                    'Porcentaje de población con discapacidad' => 8.88
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Duranguena extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 266,
-                    'Hogares Jefatura masculina' => 66.86,
-                    'Hogares Jefatura femenina' => 33.14,
                     'Ocupación por Vivienda' => 3.74,
                     'Viviendas con Electricidad' => 97.71,
                     'Viviendas con Agua' => 93.31,
                     'Viviendas con Drenaje' => 98.88,
                     'Viviendas con Televisión' => 94.49,
                     'Viviendas con Automóvil' => 12.32,
-                    'Viviendas con Computadora' => 5.80,
-                    'Viviendas con Celular' => 52.25,
-                    'Viviendas con Internet' => 2.17
+                    'Viviendas con Computadora' => 5.80
                 )
             ),
             'Unidades Económicas' => array(

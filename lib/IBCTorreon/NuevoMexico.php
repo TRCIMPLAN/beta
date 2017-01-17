@@ -33,13 +33,13 @@ class NuevoMexico extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nuevo México';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nuevo-mexico';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nuevo México de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nuevo México en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NuevoMexico extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.16,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.64,
-                    'Porcentaje de población nacida en otro estado' => 12.60,
-                    'Porcentaje de población con discapacidad' => 5.13,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.26,
-                    'Porcentaje de población de 18 y más' => 67.80,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.56
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.49,
-                    'Grado Promedio de Escolaridad masculina' => 7.35,
-                    'Grado Promedio de Escolaridad femenina' => 7.63
+                    'Porcentaje de población con discapacidad' => 5.13
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NuevoMexico extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 86,
-                    'Hogares Jefatura masculina' => 77.42,
-                    'Hogares Jefatura femenina' => 22.58,
                     'Ocupación por Vivienda' => 3.83,
                     'Viviendas con Electricidad' => 98.64,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.82,
                     'Viviendas con Televisión' => 98.45,
                     'Viviendas con Automóvil' => 9.78,
-                    'Viviendas con Computadora' => 10.96,
-                    'Viviendas con Celular' => 51.04,
-                    'Viviendas con Internet' => 2.23
+                    'Viviendas con Computadora' => 10.96
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Leandro Rovirosa Wade';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-leandro-rovirosa-wade';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Leandro Rovirosa Wade de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Leandro Rovirosa Wade en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.07,
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.51,
-                    'Porcentaje de población nacida en otro estado' => 21.97,
-                    'Porcentaje de población con discapacidad' => 5.36,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
-                    'Porcentaje de población de 18 y más' => 60.49,
-                    'Porcentaje de población de 18 y más postbásicos' => 48.83
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.21,
-                    'Grado Promedio de Escolaridad masculina' => 13.48,
-                    'Grado Promedio de Escolaridad femenina' => 12.99
+                    'Porcentaje de población con discapacidad' => 5.36
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionLeandroRovirosaWade extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 527,
-                    'Hogares Jefatura masculina' => 70.66,
-                    'Hogares Jefatura femenina' => 29.34,
                     'Ocupación por Vivienda' => 3.40,
                     'Viviendas con Electricidad' => 99.81,
                     'Viviendas con Agua' => 98.86,
                     'Viviendas con Drenaje' => 98.67,
                     'Viviendas con Televisión' => 99.24,
                     'Viviendas con Automóvil' => 81.05,
-                    'Viviendas con Computadora' => 68.65,
-                    'Viviendas con Celular' => 94.07,
-                    'Viviendas con Internet' => 53.35
+                    'Viviendas con Computadora' => 68.65
                 )
             ),
             'Unidades Económicas' => array(

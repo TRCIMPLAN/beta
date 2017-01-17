@@ -33,13 +33,13 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jacobo Meyer';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jacobo-meyer';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jacobo Meyer de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jacobo Meyer en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.96,
                     'Porcentaje de población no especificada' => 0.10,
                     'Fecundidad promedio' => 2.39,
-                    'Porcentaje de población nacida en otro estado' => 22.89,
-                    'Porcentaje de población con discapacidad' => 12.83,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.15,
-                    'Porcentaje de población de 18 y más' => 62.93,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.72
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.57,
-                    'Grado Promedio de Escolaridad masculina' => 7.44,
-                    'Grado Promedio de Escolaridad femenina' => 7.70
+                    'Porcentaje de población con discapacidad' => 12.83
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 229,
-                    'Hogares Jefatura masculina' => 79.34,
-                    'Hogares Jefatura femenina' => 20.66,
                     'Ocupación por Vivienda' => 3.98,
                     'Viviendas con Electricidad' => 99.35,
                     'Viviendas con Agua' => 96.69,
                     'Viviendas con Drenaje' => 98.47,
                     'Viviendas con Televisión' => 94.52,
                     'Viviendas con Automóvil' => 27.65,
-                    'Viviendas con Computadora' => 12.09,
-                    'Viviendas con Celular' => 57.58,
-                    'Viviendas con Internet' => 6.33
+                    'Viviendas con Computadora' => 12.09
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 15,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 46.67,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.33,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 13.33,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.33,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )

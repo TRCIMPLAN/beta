@@ -33,13 +33,13 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Fidel Velázquez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fidel-velazquez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fidel Velázquez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Fidel Velázquez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.63,
                     'Porcentaje de población no especificada' => 0.18,
                     'Fecundidad promedio' => 2.27,
-                    'Porcentaje de población nacida en otro estado' => 20.29,
-                    'Porcentaje de población con discapacidad' => 4.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.87,
-                    'Porcentaje de población de 18 y más' => 72.53,
-                    'Porcentaje de población de 18 y más postbásicos' => 33.80
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.12,
-                    'Grado Promedio de Escolaridad masculina' => 10.44,
-                    'Grado Promedio de Escolaridad femenina' => 9.80
+                    'Porcentaje de población con discapacidad' => 4.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 877,
-                    'Hogares Jefatura masculina' => 74.00,
-                    'Hogares Jefatura femenina' => 26.00,
                     'Ocupación por Vivienda' => 3.84,
                     'Viviendas con Electricidad' => 99.43,
                     'Viviendas con Agua' => 99.09,
                     'Viviendas con Drenaje' => 98.63,
                     'Viviendas con Televisión' => 98.75,
                     'Viviendas con Automóvil' => 52.68,
-                    'Viviendas con Computadora' => 40.89,
-                    'Viviendas con Celular' => 75.14,
-                    'Viviendas con Internet' => 25.78
+                    'Viviendas con Computadora' => 40.89
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class FidelVelazquez extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 47.27,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 7.27,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.27,
                     'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 5.45

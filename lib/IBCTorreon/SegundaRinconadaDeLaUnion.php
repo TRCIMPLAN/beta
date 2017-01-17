@@ -33,13 +33,13 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Segunda Rinconada de La Unión';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'segunda-rinconada-de-la-union';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Segunda Rinconada de La Unión de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Segunda Rinconada de La Unión en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.02,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 2.60,
-                    'Porcentaje de población nacida en otro estado' => 13.25,
-                    'Porcentaje de población con discapacidad' => 6.52,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.41,
-                    'Porcentaje de población de 18 y más' => 61.63,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.26
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.86,
-                    'Grado Promedio de Escolaridad masculina' => 8.18,
-                    'Grado Promedio de Escolaridad femenina' => 7.56
+                    'Porcentaje de población con discapacidad' => 6.52
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 246,
-                    'Hogares Jefatura masculina' => 72.71,
-                    'Hogares Jefatura femenina' => 27.29,
                     'Ocupación por Vivienda' => 3.91,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 96.15,
                     'Viviendas con Drenaje' => 99.88,
                     'Viviendas con Televisión' => 98.14,
                     'Viviendas con Automóvil' => 23.16,
-                    'Viviendas con Computadora' => 12.23,
-                    'Viviendas con Celular' => 59.85,
-                    'Viviendas con Internet' => 3.37
+                    'Viviendas con Computadora' => 12.23
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class SegundaRinconadaDeLaUnion extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 10,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 10.00

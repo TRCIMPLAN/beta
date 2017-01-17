@@ -33,13 +33,13 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'José Ramírez Mijares';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-ramirez-mijares';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia José Ramírez Mijares de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia José Ramírez Mijares en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.80,
                     'Porcentaje de población no especificada' => 0.07,
                     'Fecundidad promedio' => 2.32,
-                    'Porcentaje de población nacida en otro estado' => 11.99,
-                    'Porcentaje de población con discapacidad' => 6.68,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.90,
-                    'Porcentaje de población de 18 y más' => 65.70,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.25
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.17,
-                    'Grado Promedio de Escolaridad masculina' => 8.28,
-                    'Grado Promedio de Escolaridad femenina' => 8.08
+                    'Porcentaje de población con discapacidad' => 6.68
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 488,
-                    'Hogares Jefatura masculina' => 81.01,
-                    'Hogares Jefatura femenina' => 18.99,
                     'Ocupación por Vivienda' => 3.92,
                     'Viviendas con Electricidad' => 97.71,
                     'Viviendas con Agua' => 95.85,
                     'Viviendas con Drenaje' => 96.26,
                     'Viviendas con Televisión' => 95.83,
                     'Viviendas con Automóvil' => 32.82,
-                    'Viviendas con Computadora' => 15.15,
-                    'Viviendas con Celular' => 47.80,
-                    'Viviendas con Internet' => 4.59
+                    'Viviendas con Computadora' => 15.15
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class JoseRamirezMijares extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.00,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 5.00,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.00
                 )
             )

@@ -33,13 +33,13 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Perla del Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'perla-del-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Perla del Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Perla del Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.89,
                     'Porcentaje de población no especificada' => 0.54,
                     'Fecundidad promedio' => 1.71,
-                    'Porcentaje de población nacida en otro estado' => 16.93,
-                    'Porcentaje de población con discapacidad' => 1.82,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.46,
-                    'Porcentaje de población de 18 y más' => 59.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 26.95
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.95,
-                    'Grado Promedio de Escolaridad masculina' => 10.09,
-                    'Grado Promedio de Escolaridad femenina' => 9.81
+                    'Porcentaje de población con discapacidad' => 1.82
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 158,
-                    'Hogares Jefatura masculina' => 77.22,
-                    'Hogares Jefatura femenina' => 22.78,
                     'Ocupación por Vivienda' => 3.54,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.37,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 96.84,
                     'Viviendas con Automóvil' => 48.21,
-                    'Viviendas con Computadora' => 29.78,
-                    'Viviendas con Celular' => 91.14,
-                    'Viviendas con Internet' => 1.90
+                    'Viviendas con Computadora' => 29.78
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class PerlaDelOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.08,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 19.23,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

@@ -33,13 +33,13 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Santiago Ramírez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santiago-ramirez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Santiago Ramírez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Santiago Ramírez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.36,
                     'Porcentaje de población no especificada' => 0.79,
                     'Fecundidad promedio' => 2.76,
-                    'Porcentaje de población nacida en otro estado' => 17.85,
-                    'Porcentaje de población con discapacidad' => 13.93,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.68,
-                    'Porcentaje de población de 18 y más' => 61.02,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.40
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.92,
-                    'Grado Promedio de Escolaridad masculina' => 6.78,
-                    'Grado Promedio de Escolaridad femenina' => 7.06
+                    'Porcentaje de población con discapacidad' => 13.93
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 364,
-                    'Hogares Jefatura masculina' => 79.67,
-                    'Hogares Jefatura femenina' => 20.33,
                     'Ocupación por Vivienda' => 4.19,
                     'Viviendas con Electricidad' => 98.90,
                     'Viviendas con Agua' => 98.08,
                     'Viviendas con Drenaje' => 98.35,
                     'Viviendas con Televisión' => 95.60,
                     'Viviendas con Automóvil' => 29.24,
-                    'Viviendas con Computadora' => 10.60,
-                    'Viviendas con Celular' => 60.06,
-                    'Viviendas con Internet' => 3.53
+                    'Viviendas con Computadora' => 10.60
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 72.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 4.00,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 4.00,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

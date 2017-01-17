@@ -33,13 +33,13 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón San Salvador';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-san-salvador';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón San Salvador de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón San Salvador en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.48,
                     'Porcentaje de población no especificada' => 1.47,
                     'Fecundidad promedio' => 1.72,
-                    'Porcentaje de población nacida en otro estado' => 20.66,
-                    'Porcentaje de población con discapacidad' => 5.13,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 55.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 43.44
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.92,
-                    'Grado Promedio de Escolaridad masculina' => 13.18,
-                    'Grado Promedio de Escolaridad femenina' => 12.67
+                    'Porcentaje de población con discapacidad' => 5.13
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconSanSalvador extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 166,
-                    'Hogares Jefatura masculina' => 78.31,
-                    'Hogares Jefatura femenina' => 21.69,
                     'Ocupación por Vivienda' => 3.67,
                     'Viviendas con Electricidad' => 99.40,
                     'Viviendas con Agua' => 99.40,
                     'Viviendas con Drenaje' => 99.40,
                     'Viviendas con Televisión' => 98.80,
                     'Viviendas con Automóvil' => 82.53,
-                    'Viviendas con Computadora' => 53.01,
-                    'Viviendas con Celular' => 92.77,
-                    'Viviendas con Internet' => 42.77
+                    'Viviendas con Computadora' => 53.01
                 )
             ),
             'Unidades Económicas' => array(

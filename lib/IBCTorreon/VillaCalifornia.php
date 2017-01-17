@@ -33,13 +33,13 @@ class VillaCalifornia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villa California';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-california';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villa California de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villa California en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillaCalifornia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.78,
                     'Porcentaje de población no especificada' => 1.60,
                     'Fecundidad promedio' => 1.93,
-                    'Porcentaje de población nacida en otro estado' => 16.34,
-                    'Porcentaje de población con discapacidad' => 2.98,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.37,
-                    'Porcentaje de población de 18 y más' => 66.61,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.60
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.20,
-                    'Grado Promedio de Escolaridad masculina' => 11.31,
-                    'Grado Promedio de Escolaridad femenina' => 11.09
+                    'Porcentaje de población con discapacidad' => 2.98
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillaCalifornia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 2867,
-                    'Hogares Jefatura masculina' => 71.00,
-                    'Hogares Jefatura femenina' => 29.00,
                     'Ocupación por Vivienda' => 3.73,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.77,
                     'Viviendas con Drenaje' => 99.70,
                     'Viviendas con Televisión' => 99.11,
                     'Viviendas con Automóvil' => 64.96,
-                    'Viviendas con Computadora' => 53.13,
-                    'Viviendas con Celular' => 79.34,
-                    'Viviendas con Internet' => 39.74
+                    'Viviendas con Computadora' => 53.13
                 )
             ),
             'Unidades Económicas' => array(

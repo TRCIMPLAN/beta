@@ -33,13 +33,13 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa Poniente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-villa-poniente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Francisco Villa Poniente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Francisco Villa Poniente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 12.41,
                     'Porcentaje de población no especificada' => 1.73,
                     'Fecundidad promedio' => 2.28,
-                    'Porcentaje de población nacida en otro estado' => 18.24,
-                    'Porcentaje de población con discapacidad' => 8.31,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.91,
-                    'Porcentaje de población de 18 y más' => 71.94,
-                    'Porcentaje de población de 18 y más postbásicos' => 36.86
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.39,
-                    'Grado Promedio de Escolaridad masculina' => 10.73,
-                    'Grado Promedio de Escolaridad femenina' => 10.08
+                    'Porcentaje de población con discapacidad' => 8.31
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 579,
-                    'Hogares Jefatura masculina' => 67.19,
-                    'Hogares Jefatura femenina' => 32.81,
                     'Ocupación por Vivienda' => 3.63,
                     'Viviendas con Electricidad' => 99.75,
                     'Viviendas con Agua' => 99.40,
                     'Viviendas con Drenaje' => 99.23,
                     'Viviendas con Televisión' => 98.88,
                     'Viviendas con Automóvil' => 55.71,
-                    'Viviendas con Computadora' => 39.05,
-                    'Viviendas con Celular' => 73.12,
-                    'Viviendas con Internet' => 29.99
+                    'Viviendas con Computadora' => 39.05
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.73,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.12,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.58,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.58
                 )
             )

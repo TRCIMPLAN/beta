@@ -22,9 +22,9 @@
      =========================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colonia Ciudad Industrial de Torreón.">
-  <meta name="author" content="IMPLAN Torreón Staff">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación">
+  <meta name="description" content="Colonia Ciudad Industrial en Torreón, Coahuila de Zaragoza, México.">
+  <meta name="author" content="Dirección de Investigación Estratégica">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
   <title>Ciudad Industrial - IMPLAN Torreón</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -157,15 +157,15 @@
       <article><div itemscope itemtype="http://schema.org/Dataset">
         <div class="encabezado">
           <h1 itemprop="name">Ciudad Industrial</h1>
-          <div class="encabezado-descripcion" itemprop="description">Colonia Ciudad Industrial de Torreón.</div>
+          <div class="encabezado-descripcion" itemprop="description">Colonia Ciudad Industrial en Torreón, Coahuila de Zaragoza, México.</div>
           <div class="encabezado-autor-fecha">
-            Por <span itemprop="author">IMPLAN Torreón Staff</span> -
+            Por <span itemprop="author">Dirección de Investigación Estratégica</span> -
             <meta itemprop="datePublished" content="2010-01-01">01/01/2010
           </div>
         </div>
               <div itemprop="spatial" itemscope itemtype="http://schema.org/Place">
           <h3 class="titulo" itemprop="name">Ciudad Industrial</h3>
-          <div class="descripcion" itemprop="description">Colonia Ciudad Industrial de Torreón.</div>
+          <div class="descripcion" itemprop="description">Colonia Ciudad Industrial en Torreón, Coahuila de Zaragoza, México.</div>
                   <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
             Latitud: <meta itemprop="latitude" content="25.589291681376">25.589291681376
             Longitud: <meta itemprop="longitude" content="-103.39471880928">-103.39471880928
@@ -235,47 +235,8 @@
         <td class="derecha">1.67</td>
       </tr>
       <tr>
-        <td>Porcentaje de población nacida en otro estado</td>
-        <td class="derecha">18.64 %</td>
-      </tr>
-      <tr>
         <td>Porcentaje de población con discapacidad</td>
         <td class="derecha">10.17 %</td>
-      </tr>
-    </tbody>
-  </table>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraDatosEducacion">
-      <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Datos" href="#DatosEducacion" aria-expanded="false" aria-controls="DatosEducacion">
-          Educación
-        </a>
-      </h4>
-    </div>
-    <div id="DatosEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraDatosEducacion">
-      <div class="panel-body">
-  <table class="table table-hover table-bordered">
-    <thead>
-      <tr>
-        <th>Indicador</th>
-        <th>Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Grado Promedio de Escolaridad</td>
-        <td class="derecha">13.90</td>
-      </tr>
-      <tr>
-        <td>Grado Promedio de Escolaridad masculina</td>
-        <td class="derecha">14.58</td>
-      </tr>
-      <tr>
-        <td>Grado Promedio de Escolaridad femenina</td>
-        <td class="derecha">13.25</td>
       </tr>
     </tbody>
   </table>
@@ -416,22 +377,7 @@ La cantidad de Hogares es cero.
       <div class="panel-body">
     <div id="GraficaPobMasFem" class="grafica"></div>
     <div id="GraficaPobRango" class="grafica"></div>
-    <div id="GraficaPobNacOtroEdo" class="grafica"></div>
     <div id="GraficaPobDisc" class="grafica"></div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading acordeon-cabecera" role="tab" id="cabeceraGraficasEducacion">
-      <h4 class="panel-title acordeon-titulo">
-        <a class="acordeon-vinculo collapsed" role="button" data-toggle="collapse" data-parent="#Graficas" href="#GraficasEducacion" aria-expanded="false" aria-controls="GraficasEducacion">
-          Educación
-        </a>
-      </h4>
-    </div>
-    <div id="GraficasEducacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasEducacion">
-      <div class="panel-body">
-    <div id="GraficaPromEsc" class="grafica"></div>
       </div>
     </div>
   </div>
@@ -580,22 +526,6 @@ La cantidad de Hogares es cero.
         var chart = new google.visualization.PieChart(document.getElementById('GraficaPobRango'));
         chart.draw(data, options);
       }
-      // GraficaPayWeb GraficaPobNacOtroEdo
-      google.charts.setOnLoadCallback(elaborarGraficaPobNacOtroEdo);
-      function elaborarGraficaPobNacOtroEdo() {
-        var data = google.visualization.arrayToDataTable([
-          ['Etiqueta', 'Valor'],
-              ['Nacida en OTRO estado', 18.64],
-              ['Nacida en este estado', 81.36]
-        ]);
-        var options = {
-          chartArea: { width: '100%', height: '80%' },
-          title: 'Nacida en otro estado',
-          slices: [{color: '#7E00A8'}, {color: '#BFBFBF'}]
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('GraficaPobNacOtroEdo'));
-        chart.draw(data, options);
-      }
       // GraficaPayWeb GraficaPobDisc
       google.charts.setOnLoadCallback(elaborarGraficaPobDisc);
       function elaborarGraficaPobDisc() {
@@ -612,27 +542,6 @@ La cantidad de Hogares es cero.
         var chart = new google.visualization.PieChart(document.getElementById('GraficaPobDisc'));
         chart.draw(data, options);
       }
-  // AcordeonWeb GraficasEducacion ejecuta lo siguiente al mostrar
-  $('#GraficasEducacion').on('shown.bs.collapse', function () {
-      // GraficaBarrasWeb GraficaPromEsc
-      google.charts.setOnLoadCallback(elaborarGraficaPromEsc);
-      function elaborarGraficaPromEsc() {
-          var data = google.visualization.arrayToDataTable([
-              ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['Global', 13.9, '#FF7F37', '13.9 años'],
-              ['Masculina', 14.58, '#006AC8', '14.58 años'],
-              ['Femenina', 13.25, '#C80083', '13.25 años']
-          ]);
-          var options = {
-            chartArea: { width: '60%' },
-            title: 'Grado Promedio de Escolaridad',
-            hAxis: { title: 'Años', minValue: 0, maxValue: 24 },
-            legend: { position: 'none' }
-          };
-          var chart = new google.visualization.BarChart(document.getElementById('GraficaPromEsc'));
-          chart.draw(data, options);
-      }
-  })
   // AcordeonWeb GraficasCaracteristicasEconomicas ejecuta lo siguiente al mostrar
   $('#GraficasCaracteristicasEconomicas').on('shown.bs.collapse', function () {
       // GraficaPayWeb GraficaPobEcoAct

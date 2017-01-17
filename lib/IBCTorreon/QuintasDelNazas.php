@@ -33,13 +33,13 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas del Nazas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas del Nazas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas del Nazas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.08,
                     'Porcentaje de población no especificada' => 1.98,
                     'Fecundidad promedio' => 1.72,
-                    'Porcentaje de población nacida en otro estado' => 18.25,
-                    'Porcentaje de población con discapacidad' => 2.06,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.09,
-                    'Porcentaje de población de 18 y más' => 57.33,
-                    'Porcentaje de población de 18 y más postbásicos' => 38.78
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.35,
-                    'Grado Promedio de Escolaridad masculina' => 12.54,
-                    'Grado Promedio de Escolaridad femenina' => 12.16
+                    'Porcentaje de población con discapacidad' => 2.06
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 458,
-                    'Hogares Jefatura masculina' => 81.66,
-                    'Hogares Jefatura femenina' => 18.34,
                     'Ocupación por Vivienda' => 3.65,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.78,
                     'Viviendas con Drenaje' => 99.78,
                     'Viviendas con Televisión' => 99.56,
                     'Viviendas con Automóvil' => 72.49,
-                    'Viviendas con Computadora' => 53.71,
-                    'Viviendas con Celular' => 91.05,
-                    'Viviendas con Internet' => 34.28
+                    'Viviendas con Computadora' => 53.71
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class QuintasDelNazas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 25.00,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 18.75,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.25,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

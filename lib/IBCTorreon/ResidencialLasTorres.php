@@ -33,13 +33,13 @@ class ResidencialLasTorres extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Torres';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-torres';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Las Torres de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Las Torres en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLasTorres extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.80,
                     'Porcentaje de población no especificada' => 1.99,
                     'Fecundidad promedio' => 1.89,
-                    'Porcentaje de población nacida en otro estado' => 17.90,
-                    'Porcentaje de población con discapacidad' => 2.99,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.46,
-                    'Porcentaje de población de 18 y más' => 69.39,
-                    'Porcentaje de población de 18 y más postbásicos' => 51.70
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.42,
-                    'Grado Promedio de Escolaridad masculina' => 12.82,
-                    'Grado Promedio de Escolaridad femenina' => 12.06
+                    'Porcentaje de población con discapacidad' => 2.99
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLasTorres extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1615,
-                    'Hogares Jefatura masculina' => 74.61,
-                    'Hogares Jefatura femenina' => 25.39,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 99.88,
                     'Viviendas con Agua' => 99.75,
                     'Viviendas con Drenaje' => 99.75,
                     'Viviendas con Televisión' => 99.32,
                     'Viviendas con Automóvil' => 75.42,
-                    'Viviendas con Computadora' => 64.67,
-                    'Viviendas con Celular' => 85.33,
-                    'Viviendas con Internet' => 51.68
+                    'Viviendas con Computadora' => 64.67
                 )
             ),
             'Unidades Económicas' => array(

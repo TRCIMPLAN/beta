@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":8.39,
         "Porcentaje de población no especificada":0,
         "Fecundidad promedio":2.42,
-        "Porcentaje de población nacida en otro estado":23.1,
-        "Porcentaje de población con discapacidad":11.45,
-        "Porcentaje de población de 15 y más analfabeta":1.86,
-        "Porcentaje de población de 18 y más":62.41,
-        "Porcentaje de población de 18 y más postbásicos":11.04
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":7.43,
-        "Grado Promedio de Escolaridad masculina":7.51,
-        "Grado Promedio de Escolaridad femenina":7.36
+        "Porcentaje de población con discapacidad":11.45
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":124,
-        "Hogares Jefatura masculina":66.38,
-        "Hogares Jefatura femenina":33.62,
         "Ocupación por Vivienda":3.84,
         "Viviendas con Electricidad":98.07,
         "Viviendas con Agua":98.06,
         "Viviendas con Drenaje":98.89,
         "Viviendas con Televisión":96.41,
         "Viviendas con Automóvil":6.87,
-        "Viviendas con Computadora":8.23,
-        "Viviendas con Celular":62.59,
-        "Viviendas con Internet":8.05
+        "Viviendas con Computadora":8.23
       }
     },
     "Unidades Económicas":{
@@ -60,9 +45,9 @@
         "Primer actividad porcentaje":45.45,
         "Segunda actividad nombre":"Comercio Menudeo",
         "Segunda actividad porcentaje":36.36,
-        "Tercera actividad nombre":"Inmobiliarios",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":9.09,
-        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad nombre":"Inmobiliarios",
         "Cuarta actividad porcentaje":9.09
       }
     }

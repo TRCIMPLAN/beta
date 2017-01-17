@@ -33,13 +33,13 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón de Las Noas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-las-noas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón de Las Noas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón de Las Noas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.54,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 13.84,
-                    'Porcentaje de población con discapacidad' => 2.07,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.38,
-                    'Porcentaje de población de 18 y más' => 55.37,
-                    'Porcentaje de población de 18 y más postbásicos' => 28.57
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.41,
-                    'Grado Promedio de Escolaridad masculina' => 10.41,
-                    'Grado Promedio de Escolaridad femenina' => 10.40
+                    'Porcentaje de población con discapacidad' => 2.07
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 231,
-                    'Hogares Jefatura masculina' => 77.06,
-                    'Hogares Jefatura femenina' => 22.94,
                     'Ocupación por Vivienda' => 3.91,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.70,
                     'Viviendas con Automóvil' => 61.46,
-                    'Viviendas con Computadora' => 36.81,
-                    'Viviendas con Celular' => 87.88,
-                    'Viviendas con Internet' => 26.60
+                    'Viviendas con Computadora' => 36.81
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class RinconDeLasNoas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 21.05,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 21.05,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 10.53,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 10.53
                 )
             )

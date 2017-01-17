@@ -33,13 +33,13 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Francisco I. Madero';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-i-madero';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Francisco I. Madero de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Francisco I. Madero en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.41,
                     'Porcentaje de población no especificada' => 1.24,
                     'Fecundidad promedio' => 2.51,
-                    'Porcentaje de población nacida en otro estado' => 19.20,
-                    'Porcentaje de población con discapacidad' => 4.64,
-                    'Porcentaje de población de 15 y más analfabeta' => 4.67,
-                    'Porcentaje de población de 18 y más' => 65.91,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.78
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.31,
-                    'Grado Promedio de Escolaridad masculina' => 7.43,
-                    'Grado Promedio de Escolaridad femenina' => 7.20
+                    'Porcentaje de población con discapacidad' => 4.64
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 207,
-                    'Hogares Jefatura masculina' => 82.06,
-                    'Hogares Jefatura femenina' => 17.94,
                     'Ocupación por Vivienda' => 4.04,
                     'Viviendas con Electricidad' => 99.29,
                     'Viviendas con Agua' => 99.29,
                     'Viviendas con Drenaje' => 98.31,
                     'Viviendas con Televisión' => 97.82,
                     'Viviendas con Automóvil' => 23.71,
-                    'Viviendas con Computadora' => 8.04,
-                    'Viviendas con Celular' => 58.59,
-                    'Viviendas con Internet' => 0.95
+                    'Viviendas con Computadora' => 8.04
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class FranciscoIMadero extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 77.78,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 11.11,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11
                 )
             )

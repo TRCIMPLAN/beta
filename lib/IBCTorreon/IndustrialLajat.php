@@ -33,13 +33,13 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Industrial Lajat';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'industrial-lajat';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Industrial Lajat de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Industrial Lajat en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -74,11 +74,11 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 68.75,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 12.50,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 6.25,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Cuarta actividad porcentaje' => 6.25,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

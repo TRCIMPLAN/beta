@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":9.72,
         "Porcentaje de población no especificada":0.3,
         "Fecundidad promedio":2.63,
-        "Porcentaje de población nacida en otro estado":12.74,
-        "Porcentaje de población con discapacidad":4.22,
-        "Porcentaje de población de 15 y más analfabeta":1.02,
-        "Porcentaje de población de 18 y más":66.5,
-        "Porcentaje de población de 18 y más postbásicos":16.85
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":7.97,
-        "Grado Promedio de Escolaridad masculina":8.03,
-        "Grado Promedio de Escolaridad femenina":7.91
+        "Porcentaje de población con discapacidad":4.22
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":242,
-        "Hogares Jefatura masculina":76.45,
-        "Hogares Jefatura femenina":23.55,
         "Ocupación por Vivienda":4.08,
         "Viviendas con Electricidad":99.17,
         "Viviendas con Agua":98.35,
         "Viviendas con Drenaje":99.17,
         "Viviendas con Televisión":96.69,
         "Viviendas con Automóvil":15.59,
-        "Viviendas con Computadora":15.86,
-        "Viviendas con Celular":59.53,
-        "Viviendas con Internet":7.33
+        "Viviendas con Computadora":15.86
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":50,
         "Segunda actividad nombre":"Educativos",
         "Segunda actividad porcentaje":21.43,
-        "Tercera actividad nombre":"Manejo de Residuos",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":7.14,
-        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":7.14,
-        "Quinta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Quinta actividad nombre":"Salud",
         "Quinta actividad porcentaje":7.14
       }
     }

@@ -33,13 +33,13 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Los Nogales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Los Nogales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Los Nogales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 11.16,
                     'Porcentaje de población no especificada' => 2.88,
                     'Fecundidad promedio' => 1.95,
-                    'Porcentaje de población nacida en otro estado' => 20.41,
-                    'Porcentaje de población con discapacidad' => 12.12,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.14,
-                    'Porcentaje de población de 18 y más' => 72.74,
-                    'Porcentaje de población de 18 y más postbásicos' => 53.42
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.21,
-                    'Grado Promedio de Escolaridad masculina' => 12.76,
-                    'Grado Promedio de Escolaridad femenina' => 11.72
+                    'Porcentaje de población con discapacidad' => 12.12
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 450,
-                    'Hogares Jefatura masculina' => 65.33,
-                    'Hogares Jefatura femenina' => 34.67,
                     'Ocupación por Vivienda' => 3.24,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.44,
                     'Viviendas con Drenaje' => 98.89,
                     'Viviendas con Televisión' => 99.33,
                     'Viviendas con Automóvil' => 83.11,
-                    'Viviendas con Computadora' => 58.89,
-                    'Viviendas con Celular' => 81.33,
-                    'Viviendas con Internet' => 51.78
+                    'Viviendas con Computadora' => 58.89
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class AmpliacionLosNogales extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.65,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.82,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 8.82
                 )
             )

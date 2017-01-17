@@ -33,13 +33,13 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Centenario';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-centenario';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Centenario de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Centenario en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.53,
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 1.66,
-                    'Porcentaje de población nacida en otro estado' => 19.66,
-                    'Porcentaje de población con discapacidad' => 1.78,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.68,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.25
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.62,
-                    'Grado Promedio de Escolaridad masculina' => 10.66,
-                    'Grado Promedio de Escolaridad femenina' => 10.59
+                    'Porcentaje de población con discapacidad' => 1.78
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 87,
-                    'Hogares Jefatura masculina' => 85.06,
-                    'Hogares Jefatura femenina' => 14.94,
                     'Ocupación por Vivienda' => 3.21,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.94,
                     'Viviendas con Automóvil' => 53.01,
-                    'Viviendas con Computadora' => 44.32,
-                    'Viviendas con Celular' => 90.59,
-                    'Viviendas con Internet' => 10.12
+                    'Viviendas con Computadora' => 44.32
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class VillasCentenario extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 13,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 61.54,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.38,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 15.38,
                     'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 7.69

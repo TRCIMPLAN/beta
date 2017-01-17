@@ -33,13 +33,13 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'María Mercado de López Sánchez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'maria-mercado-de-lopez-sanchez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia María Mercado de López Sánchez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia María Mercado de López Sánchez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.37,
                     'Porcentaje de población no especificada' => 8.49,
                     'Fecundidad promedio' => 2.49,
-                    'Porcentaje de población nacida en otro estado' => 17.02,
-                    'Porcentaje de población con discapacidad' => 2.92,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.30,
-                    'Porcentaje de población de 18 y más' => 49.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 5.95
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.08,
-                    'Grado Promedio de Escolaridad masculina' => 6.95,
-                    'Grado Promedio de Escolaridad femenina' => 7.21
+                    'Porcentaje de población con discapacidad' => 2.92
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 653,
-                    'Hogares Jefatura masculina' => 83.45,
-                    'Hogares Jefatura femenina' => 16.55,
                     'Ocupación por Vivienda' => 3.87,
                     'Viviendas con Electricidad' => 82.57,
                     'Viviendas con Agua' => 33.12,
                     'Viviendas con Drenaje' => 59.62,
                     'Viviendas con Televisión' => 74.88,
                     'Viviendas con Automóvil' => 28.23,
-                    'Viviendas con Computadora' => 4.42,
-                    'Viviendas con Celular' => 48.19,
-                    'Viviendas con Internet' => 1.91
+                    'Viviendas con Computadora' => 4.42
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class MariaMercadoDeLopezSanchez extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 18.62,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.79,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.59,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.59
                 )
             )

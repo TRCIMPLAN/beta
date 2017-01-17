@@ -33,13 +33,13 @@ class Carolinas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Carolinas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'carolinas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Carolinas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Carolinas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Carolinas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.06,
                     'Porcentaje de población no especificada' => 2.16,
                     'Fecundidad promedio' => 2.57,
-                    'Porcentaje de población nacida en otro estado' => 15.54,
-                    'Porcentaje de población con discapacidad' => 3.16,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.50,
-                    'Porcentaje de población de 18 y más' => 68.50,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.73
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.14,
-                    'Grado Promedio de Escolaridad masculina' => 9.21,
-                    'Grado Promedio de Escolaridad femenina' => 9.08
+                    'Porcentaje de población con discapacidad' => 3.16
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Carolinas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1520,
-                    'Hogares Jefatura masculina' => 71.41,
-                    'Hogares Jefatura femenina' => 28.59,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 99.94,
                     'Viviendas con Agua' => 99.75,
                     'Viviendas con Drenaje' => 99.55,
                     'Viviendas con Televisión' => 98.56,
                     'Viviendas con Automóvil' => 44.27,
-                    'Viviendas con Computadora' => 29.12,
-                    'Viviendas con Celular' => 58.24,
-                    'Viviendas con Internet' => 19.90
+                    'Viviendas con Computadora' => 29.12
                 )
             ),
             'Unidades Económicas' => array(

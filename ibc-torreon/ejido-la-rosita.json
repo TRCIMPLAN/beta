@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":5.88,
         "Porcentaje de población no especificada":0.02,
         "Fecundidad promedio":2.46,
-        "Porcentaje de población nacida en otro estado":13.62,
-        "Porcentaje de población con discapacidad":6.02,
-        "Porcentaje de población de 15 y más analfabeta":4.3,
-        "Porcentaje de población de 18 y más":59.6,
-        "Porcentaje de población de 18 y más postbásicos":9.83
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":6.61,
-        "Grado Promedio de Escolaridad masculina":6.43,
-        "Grado Promedio de Escolaridad femenina":6.8
+        "Porcentaje de población con discapacidad":6.02
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":149,
-        "Hogares Jefatura masculina":82.77,
-        "Hogares Jefatura femenina":17.23,
         "Ocupación por Vivienda":4.05,
         "Viviendas con Electricidad":99.35,
         "Viviendas con Agua":92.61,
         "Viviendas con Drenaje":85.85,
         "Viviendas con Televisión":94.5,
         "Viviendas con Automóvil":34.39,
-        "Viviendas con Computadora":15.08,
-        "Viviendas con Celular":59.84,
-        "Viviendas con Internet":4.45
+        "Viviendas con Computadora":15.08
       }
     },
     "Unidades Económicas":{
@@ -58,13 +43,13 @@
         "Total Actividades Económicas":15,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":33.33,
-        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
+        "Segunda actividad nombre":"Educativos",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Educativos",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":20,
         "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":13.33,
-        "Quinta actividad nombre":"Gubernamentales",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":6.67
       }
     }

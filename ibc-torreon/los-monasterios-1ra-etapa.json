@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":1.08,
         "Porcentaje de población no especificada":0.03,
         "Fecundidad promedio":2.11,
-        "Porcentaje de población nacida en otro estado":12.96,
-        "Porcentaje de población con discapacidad":1.59,
-        "Porcentaje de población de 15 y más analfabeta":1.05,
-        "Porcentaje de población de 18 y más":56.29,
-        "Porcentaje de población de 18 y más postbásicos":15.81
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":8.59,
-        "Grado Promedio de Escolaridad masculina":8.51,
-        "Grado Promedio de Escolaridad femenina":8.65
+        "Porcentaje de población con discapacidad":1.59
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":104,
-        "Hogares Jefatura masculina":80.44,
-        "Hogares Jefatura femenina":19.56,
         "Ocupación por Vivienda":3.74,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":99.4,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":99.4,
         "Viviendas con Automóvil":40.79,
-        "Viviendas con Computadora":20.99,
-        "Viviendas con Celular":78.89,
-        "Viviendas con Internet":4.6
+        "Viviendas con Computadora":20.99
       }
     },
     "Unidades Económicas":{
@@ -58,9 +43,9 @@
         "Total Actividades Económicas":18,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":38.89,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":22.22,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":22.22,
         "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":11.11,

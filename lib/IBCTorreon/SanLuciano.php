@@ -33,13 +33,13 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'San Luciano';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'san-luciano';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia San Luciano de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia San Luciano en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.28,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.64,
-                    'Porcentaje de población nacida en otro estado' => 21.52,
-                    'Porcentaje de población con discapacidad' => 3.14,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 73.09,
-                    'Porcentaje de población de 18 y más postbásicos' => 61.43
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.53,
-                    'Grado Promedio de Escolaridad masculina' => 14.32,
-                    'Grado Promedio de Escolaridad femenina' => 12.94
+                    'Porcentaje de población con discapacidad' => 3.14
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 52,
-                    'Hogares Jefatura masculina' => 86.54,
-                    'Hogares Jefatura femenina' => 13.46,
                     'Ocupación por Vivienda' => 4.29,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 98.08,
-                    'Viviendas con Computadora' => 92.31,
-                    'Viviendas con Celular' => 98.08,
-                    'Viviendas con Internet' => 92.31
+                    'Viviendas con Computadora' => 92.31
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class SanLuciano extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 18.18,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.64,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

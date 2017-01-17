@@ -33,13 +33,13 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villa Jacarandas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-jacarandas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villa Jacarandas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villa Jacarandas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 14.98,
                     'Porcentaje de población no especificada' => 2.23,
                     'Fecundidad promedio' => 2.55,
-                    'Porcentaje de población nacida en otro estado' => 19.72,
-                    'Porcentaje de población con discapacidad' => 9.72,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.32,
-                    'Porcentaje de población de 18 y más' => 71.81,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.20
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.70,
-                    'Grado Promedio de Escolaridad masculina' => 9.77,
-                    'Grado Promedio de Escolaridad femenina' => 9.64
+                    'Porcentaje de población con discapacidad' => 9.72
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillaJacarandas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 718,
-                    'Hogares Jefatura masculina' => 66.43,
-                    'Hogares Jefatura femenina' => 33.57,
                     'Ocupación por Vivienda' => 3.63,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.15,
                     'Viviendas con Drenaje' => 99.43,
                     'Viviendas con Televisión' => 99.57,
                     'Viviendas con Automóvil' => 49.56,
-                    'Viviendas con Computadora' => 36.67,
-                    'Viviendas con Celular' => 68.22,
-                    'Viviendas con Internet' => 28.41
+                    'Viviendas con Computadora' => 36.67
                 )
             ),
             'Unidades Económicas' => array(

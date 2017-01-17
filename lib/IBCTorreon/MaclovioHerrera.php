@@ -33,13 +33,13 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Maclovio Herrera';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'maclovio-herrera';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Maclovio Herrera de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Maclovio Herrera en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.90,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 2.61,
-                    'Porcentaje de población nacida en otro estado' => 19.13,
-                    'Porcentaje de población con discapacidad' => 11.87,
-                    'Porcentaje de población de 15 y más analfabeta' => 4.59,
-                    'Porcentaje de población de 18 y más' => 65.56,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.94
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.58,
-                    'Grado Promedio de Escolaridad masculina' => 8.08,
-                    'Grado Promedio de Escolaridad femenina' => 7.09
+                    'Porcentaje de población con discapacidad' => 11.87
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 168,
-                    'Hogares Jefatura masculina' => 66.66,
-                    'Hogares Jefatura femenina' => 33.34,
                     'Ocupación por Vivienda' => 3.96,
                     'Viviendas con Electricidad' => 98.21,
                     'Viviendas con Agua' => 91.07,
                     'Viviendas con Drenaje' => 98.21,
                     'Viviendas con Televisión' => 93.97,
                     'Viviendas con Automóvil' => 21.29,
-                    'Viviendas con Computadora' => 15.79,
-                    'Viviendas con Celular' => 48.21,
-                    'Viviendas con Internet' => 9.13
+                    'Viviendas con Computadora' => 15.79
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 52.94,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 5.88,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

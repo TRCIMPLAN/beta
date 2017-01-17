@@ -33,13 +33,13 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Segundo de Cobián (Centro)';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'segundo-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Segundo de Cobián (Centro) de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Segundo de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 16.36,
                     'Porcentaje de población no especificada' => 2.36,
                     'Fecundidad promedio' => 2.07,
-                    'Porcentaje de población nacida en otro estado' => 18.78,
-                    'Porcentaje de población con discapacidad' => 9.42,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.43,
-                    'Porcentaje de población de 18 y más' => 76.35,
-                    'Porcentaje de población de 18 y más postbásicos' => 44.31
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.12,
-                    'Grado Promedio de Escolaridad masculina' => 11.67,
-                    'Grado Promedio de Escolaridad femenina' => 10.64
+                    'Porcentaje de población con discapacidad' => 9.42
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 2560,
-                    'Hogares Jefatura masculina' => 60.38,
-                    'Hogares Jefatura femenina' => 39.62,
                     'Ocupación por Vivienda' => 3.13,
                     'Viviendas con Electricidad' => 99.37,
                     'Viviendas con Agua' => 99.13,
                     'Viviendas con Drenaje' => 99.01,
                     'Viviendas con Televisión' => 97.41,
                     'Viviendas con Automóvil' => 53.01,
-                    'Viviendas con Computadora' => 43.28,
-                    'Viviendas con Celular' => 67.60,
-                    'Viviendas con Internet' => 34.25
+                    'Viviendas con Computadora' => 43.28
                 )
             ),
             'Unidades Económicas' => array(

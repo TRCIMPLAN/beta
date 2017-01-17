@@ -33,13 +33,13 @@ class VillasSaltillo400PalmasAeropuerto extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Saltillo 400 - Palmas Aeropuerto';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-saltillo-400-palmas-aeropuerto';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Saltillo 400 - Palmas Aeropuerto de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Saltillo 400 - Palmas Aeropuerto en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasSaltillo400PalmasAeropuerto extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.78,
                     'Porcentaje de población no especificada' => 5.32,
                     'Fecundidad promedio' => 1.57,
-                    'Porcentaje de población nacida en otro estado' => 16.20,
-                    'Porcentaje de población con discapacidad' => 1.27,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.76,
-                    'Porcentaje de población de 18 y más' => 61.01,
-                    'Porcentaje de población de 18 y más postbásicos' => 46.84
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.64,
-                    'Grado Promedio de Escolaridad masculina' => 12.95,
-                    'Grado Promedio de Escolaridad femenina' => 12.36
+                    'Porcentaje de población con discapacidad' => 1.27
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasSaltillo400PalmasAeropuerto extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 102,
-                    'Hogares Jefatura masculina' => 77.45,
-                    'Hogares Jefatura femenina' => 22.55,
                     'Ocupación por Vivienda' => 3.87,
                     'Viviendas con Electricidad' => 99.02,
                     'Viviendas con Agua' => 99.02,
                     'Viviendas con Drenaje' => 99.02,
                     'Viviendas con Televisión' => 99.02,
                     'Viviendas con Automóvil' => 82.35,
-                    'Viviendas con Computadora' => 73.53,
-                    'Viviendas con Celular' => 90.20,
-                    'Viviendas con Internet' => 63.73
+                    'Viviendas con Computadora' => 73.53
                 )
             ),
             'Unidades Económicas' => array(

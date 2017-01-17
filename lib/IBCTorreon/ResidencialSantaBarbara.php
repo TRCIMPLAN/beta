@@ -33,13 +33,13 @@ class ResidencialSantaBarbara extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Santa Bárbara';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-santa-barbara';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Santa Bárbara de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Santa Bárbara en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialSantaBarbara extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.68,
                     'Porcentaje de población no especificada' => 3.22,
                     'Fecundidad promedio' => 1.46,
-                    'Porcentaje de población nacida en otro estado' => 24.18,
-                    'Porcentaje de población con discapacidad' => 0.13,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.25,
-                    'Porcentaje de población de 18 y más' => 62.17,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.72
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.40,
-                    'Grado Promedio de Escolaridad masculina' => 15.78,
-                    'Grado Promedio de Escolaridad femenina' => 15.03
+                    'Porcentaje de población con discapacidad' => 0.13
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialSantaBarbara extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 195,
-                    'Hogares Jefatura masculina' => 86.43,
-                    'Hogares Jefatura femenina' => 13.57,
                     'Ocupación por Vivienda' => 3.35,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.97,
                     'Viviendas con Drenaje' => 98.97,
                     'Viviendas con Televisión' => 98.97,
                     'Viviendas con Automóvil' => 96.92,
-                    'Viviendas con Computadora' => 92.82,
-                    'Viviendas con Celular' => 98.46,
-                    'Viviendas con Internet' => 85.13
+                    'Viviendas con Computadora' => 92.82
                 )
             ),
             'Unidades Económicas' => array(

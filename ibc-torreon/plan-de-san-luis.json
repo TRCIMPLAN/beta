@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":3.14,
         "Porcentaje de población no especificada":0.35,
         "Fecundidad promedio":1.84,
-        "Porcentaje de población nacida en otro estado":19.03,
-        "Porcentaje de población con discapacidad":3.93,
-        "Porcentaje de población de 15 y más analfabeta":0.1,
-        "Porcentaje de población de 18 y más":68.8,
-        "Porcentaje de población de 18 y más postbásicos":40.16
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":11.07,
-        "Grado Promedio de Escolaridad masculina":11.25,
-        "Grado Promedio de Escolaridad femenina":10.88
+        "Porcentaje de población con discapacidad":3.93
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":231,
-        "Hogares Jefatura masculina":81.39,
-        "Hogares Jefatura femenina":18.61,
         "Ocupación por Vivienda":3.72,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":100,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":98.7,
         "Viviendas con Automóvil":60.61,
-        "Viviendas con Computadora":48.24,
-        "Viviendas con Celular":80.95,
-        "Viviendas con Internet":37.59
+        "Viviendas con Computadora":48.24
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":40,
         "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Tercera actividad nombre":"Educativos",
         "Tercera actividad porcentaje":10,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Comercio Mayoreo",
         "Cuarta actividad porcentaje":10,
-        "Quinta actividad nombre":"Comercio Mayoreo",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":10
       }
     }

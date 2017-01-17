@@ -33,13 +33,13 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Misiones';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-misiones';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Las Misiones de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Las Misiones en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.61,
                     'Porcentaje de población no especificada' => 5.92,
                     'Fecundidad promedio' => 1.46,
-                    'Porcentaje de población nacida en otro estado' => 32.89,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 71.05,
-                    'Porcentaje de población de 18 y más postbásicos' => 65.13
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.07,
-                    'Grado Promedio de Escolaridad masculina' => 14.50,
-                    'Grado Promedio de Escolaridad femenina' => 13.77
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 37,
-                    'Hogares Jefatura masculina' => 72.97,
-                    'Hogares Jefatura femenina' => 27.03,
                     'Ocupación por Vivienda' => 4.11,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 97.30,
-                    'Viviendas con Computadora' => 81.08,
-                    'Viviendas con Celular' => 94.59,
-                    'Viviendas con Internet' => 86.49
+                    'Viviendas con Computadora' => 81.08
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class ResidencialLasMisiones extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 10.71,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 1.79
                 )
             )

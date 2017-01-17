@@ -33,13 +33,13 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Residenciales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-residenciales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Residenciales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Residenciales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.35,
                     'Porcentaje de población no especificada' => 0.93,
                     'Fecundidad promedio' => 1.53,
-                    'Porcentaje de población nacida en otro estado' => 26.09,
-                    'Porcentaje de población con discapacidad' => 0.93,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.29,
-                    'Porcentaje de población de 18 y más' => 75.16,
-                    'Porcentaje de población de 18 y más postbásicos' => 69.25
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.84,
-                    'Grado Promedio de Escolaridad masculina' => 15.36,
-                    'Grado Promedio de Escolaridad femenina' => 14.39
+                    'Porcentaje de población con discapacidad' => 0.93
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 92,
-                    'Hogares Jefatura masculina' => 71.74,
-                    'Hogares Jefatura femenina' => 28.26,
                     'Ocupación por Vivienda' => 3.50,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.91,
                     'Viviendas con Automóvil' => 90.22,
-                    'Viviendas con Computadora' => 88.04,
-                    'Viviendas con Celular' => 95.65,
-                    'Viviendas con Internet' => 81.52
+                    'Viviendas con Computadora' => 88.04
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

@@ -33,13 +33,13 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Palmas San Isidro';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'palmas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Palmas San Isidro de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Palmas San Isidro en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 11.59,
                     'Porcentaje de población no especificada' => 0.98,
                     'Fecundidad promedio' => 1.68,
-                    'Porcentaje de población nacida en otro estado' => 24.93,
-                    'Porcentaje de población con discapacidad' => 12.42,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.90,
-                    'Porcentaje de población de 18 y más' => 83.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 70.38
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.51,
-                    'Grado Promedio de Escolaridad masculina' => 14.02,
-                    'Grado Promedio de Escolaridad femenina' => 13.13
+                    'Porcentaje de población con discapacidad' => 12.42
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 114,
-                    'Hogares Jefatura masculina' => 74.20,
-                    'Hogares Jefatura femenina' => 25.80,
                     'Ocupación por Vivienda' => 3.34,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 87.56,
-                    'Viviendas con Computadora' => 80.96,
-                    'Viviendas con Celular' => 89.79,
-                    'Viviendas con Internet' => 76.46
+                    'Viviendas con Computadora' => 80.96
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.38,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.38,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

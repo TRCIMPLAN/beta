@@ -33,13 +33,13 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Paz';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-paz';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Paz de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Paz en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.82,
                     'Porcentaje de población no especificada' => 0.40,
                     'Fecundidad promedio' => 2.45,
-                    'Porcentaje de población nacida en otro estado' => 5.80,
-                    'Porcentaje de población con discapacidad' => 6.95,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.46,
-                    'Porcentaje de población de 18 y más' => 63.93,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.66
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.77,
-                    'Grado Promedio de Escolaridad masculina' => 7.81,
-                    'Grado Promedio de Escolaridad femenina' => 7.73
+                    'Porcentaje de población con discapacidad' => 6.95
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 623,
-                    'Hogares Jefatura masculina' => 79.56,
-                    'Hogares Jefatura femenina' => 20.44,
                     'Ocupación por Vivienda' => 3.99,
                     'Viviendas con Electricidad' => 99.24,
                     'Viviendas con Agua' => 97.78,
                     'Viviendas con Drenaje' => 96.01,
                     'Viviendas con Televisión' => 98.75,
                     'Viviendas con Automóvil' => 42.16,
-                    'Viviendas con Computadora' => 21.62,
-                    'Viviendas con Celular' => 58.49,
-                    'Viviendas con Internet' => 6.20
+                    'Viviendas con Computadora' => 21.62
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class EjidoLaPaz extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.85,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.62
                 )
             )

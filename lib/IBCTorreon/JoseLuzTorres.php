@@ -33,13 +33,13 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'José Luz Torres';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-luz-torres';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia José Luz Torres de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia José Luz Torres en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.40,
                     'Porcentaje de población no especificada' => 0.19,
                     'Fecundidad promedio' => 2.43,
-                    'Porcentaje de población nacida en otro estado' => 20.26,
-                    'Porcentaje de población con discapacidad' => 6.29,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.94,
-                    'Porcentaje de población de 18 y más' => 53.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.38
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.42,
-                    'Grado Promedio de Escolaridad masculina' => 7.34,
-                    'Grado Promedio de Escolaridad femenina' => 7.51
+                    'Porcentaje de población con discapacidad' => 6.29
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 875,
-                    'Hogares Jefatura masculina' => 84.54,
-                    'Hogares Jefatura femenina' => 15.46,
                     'Ocupación por Vivienda' => 4.26,
                     'Viviendas con Electricidad' => 99.34,
                     'Viviendas con Agua' => 98.08,
                     'Viviendas con Drenaje' => 95.90,
                     'Viviendas con Televisión' => 96.58,
                     'Viviendas con Automóvil' => 38.04,
-                    'Viviendas con Computadora' => 16.86,
-                    'Viviendas con Celular' => 63.13,
-                    'Viviendas con Internet' => 7.95
+                    'Viviendas con Computadora' => 16.86
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class JoseLuzTorres extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 41.49,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.21,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 12.77,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.77,
                     'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.26

@@ -33,13 +33,13 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Los Alebrijes Residencial';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-alebrijes-residencial';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Los Alebrijes Residencial de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Los Alebrijes Residencial en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.81,
                     'Porcentaje de población no especificada' => 8.15,
                     'Fecundidad promedio' => 1.47,
-                    'Porcentaje de población nacida en otro estado' => 33.48,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 65.16,
-                    'Porcentaje de población de 18 y más postbásicos' => 63.35
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.26,
-                    'Grado Promedio de Escolaridad masculina' => 15.56,
-                    'Grado Promedio de Escolaridad femenina' => 15.00
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LosAlebrijesResidencial extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 66,
-                    'Hogares Jefatura masculina' => 72.73,
-                    'Hogares Jefatura femenina' => 27.27,
                     'Ocupación por Vivienda' => 3.35,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 96.97,
-                    'Viviendas con Computadora' => 86.36,
-                    'Viviendas con Celular' => 96.97,
-                    'Viviendas con Internet' => 71.21
+                    'Viviendas con Computadora' => 86.36
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Narciso Mendoza';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'narciso-mendoza';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Narciso Mendoza de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Narciso Mendoza en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.08,
                     'Porcentaje de población no especificada' => 1.33,
                     'Fecundidad promedio' => 2.70,
-                    'Porcentaje de población nacida en otro estado' => 19.61,
-                    'Porcentaje de población con discapacidad' => 1.34,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.71,
-                    'Porcentaje de población de 18 y más' => 64.07,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.21
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.95,
-                    'Grado Promedio de Escolaridad masculina' => 8.13,
-                    'Grado Promedio de Escolaridad femenina' => 7.79
+                    'Porcentaje de población con discapacidad' => 1.34
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 424,
-                    'Hogares Jefatura masculina' => 60.61,
-                    'Hogares Jefatura femenina' => 39.39,
                     'Ocupación por Vivienda' => 4.23,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.76,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 96.46,
                     'Viviendas con Automóvil' => 40.67,
-                    'Viviendas con Computadora' => 28.29,
-                    'Viviendas con Celular' => 67.45,
-                    'Viviendas con Internet' => 21.22
+                    'Viviendas con Computadora' => 28.29
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 33,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 54.55,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 15.15,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.15,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 3.03
                 )
             )

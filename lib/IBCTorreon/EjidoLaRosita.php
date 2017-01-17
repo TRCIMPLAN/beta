@@ -33,13 +33,13 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.88,
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 2.46,
-                    'Porcentaje de población nacida en otro estado' => 13.62,
-                    'Porcentaje de población con discapacidad' => 6.02,
-                    'Porcentaje de población de 15 y más analfabeta' => 4.30,
-                    'Porcentaje de población de 18 y más' => 59.60,
-                    'Porcentaje de población de 18 y más postbásicos' => 9.83
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.61,
-                    'Grado Promedio de Escolaridad masculina' => 6.43,
-                    'Grado Promedio de Escolaridad femenina' => 6.80
+                    'Porcentaje de población con discapacidad' => 6.02
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 149,
-                    'Hogares Jefatura masculina' => 82.77,
-                    'Hogares Jefatura femenina' => 17.23,
                     'Ocupación por Vivienda' => 4.05,
                     'Viviendas con Electricidad' => 99.35,
                     'Viviendas con Agua' => 92.61,
                     'Viviendas con Drenaje' => 85.85,
                     'Viviendas con Televisión' => 94.50,
                     'Viviendas con Automóvil' => 34.39,
-                    'Viviendas con Computadora' => 15.08,
-                    'Viviendas con Celular' => 59.84,
-                    'Viviendas con Internet' => 4.45
+                    'Viviendas con Computadora' => 15.08
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 15,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.33,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )

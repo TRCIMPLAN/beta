@@ -33,13 +33,13 @@ class LagunaSur extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Laguna Sur';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'laguna-sur';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Laguna Sur de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Laguna Sur en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LagunaSur extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.56,
                     'Porcentaje de población no especificada' => 0.65,
                     'Fecundidad promedio' => 2.29,
-                    'Porcentaje de población nacida en otro estado' => 15.12,
-                    'Porcentaje de población con discapacidad' => 3.21,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.00,
-                    'Porcentaje de población de 18 y más' => 56.62,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.52
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.83,
-                    'Grado Promedio de Escolaridad masculina' => 7.74,
-                    'Grado Promedio de Escolaridad femenina' => 7.92
+                    'Porcentaje de población con discapacidad' => 3.21
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LagunaSur extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 577,
-                    'Hogares Jefatura masculina' => 77.63,
-                    'Hogares Jefatura femenina' => 22.37,
                     'Ocupación por Vivienda' => 4.09,
                     'Viviendas con Electricidad' => 99.44,
                     'Viviendas con Agua' => 98.71,
                     'Viviendas con Drenaje' => 97.80,
                     'Viviendas con Televisión' => 96.97,
                     'Viviendas con Automóvil' => 40.21,
-                    'Viviendas con Computadora' => 17.56,
-                    'Viviendas con Celular' => 64.75,
-                    'Viviendas con Internet' => 5.83
+                    'Viviendas con Computadora' => 17.56
                 )
             ),
             'Unidades Económicas' => array(

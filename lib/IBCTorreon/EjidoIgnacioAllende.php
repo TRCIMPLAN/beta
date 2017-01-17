@@ -33,13 +33,13 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Ignacio Allende';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-ignacio-allende';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido Ignacio Allende de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido Ignacio Allende en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.53,
                     'Porcentaje de población no especificada' => 0.52,
                     'Fecundidad promedio' => 2.52,
-                    'Porcentaje de población nacida en otro estado' => 15.07,
-                    'Porcentaje de población con discapacidad' => 2.91,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.41,
-                    'Porcentaje de población de 18 y más' => 64.63,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.01
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.89,
-                    'Grado Promedio de Escolaridad masculina' => 7.81,
-                    'Grado Promedio de Escolaridad femenina' => 7.98
+                    'Porcentaje de población con discapacidad' => 2.91
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 394,
-                    'Hogares Jefatura masculina' => 79.46,
-                    'Hogares Jefatura femenina' => 20.54,
                     'Ocupación por Vivienda' => 4.02,
                     'Viviendas con Electricidad' => 99.01,
                     'Viviendas con Agua' => 98.75,
                     'Viviendas con Drenaje' => 95.70,
                     'Viviendas con Televisión' => 96.97,
                     'Viviendas con Automóvil' => 49.00,
-                    'Viviendas con Computadora' => 38.96,
-                    'Viviendas con Celular' => 64.58,
-                    'Viviendas con Internet' => 47.57
+                    'Viviendas con Computadora' => 38.96
                 )
             ),
             'Unidades Económicas' => array(

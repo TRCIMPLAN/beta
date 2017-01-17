@@ -33,13 +33,13 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Ana';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-ana';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido Ana de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido Ana en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.04,
                     'Porcentaje de población no especificada' => 0.50,
                     'Fecundidad promedio' => 2.44,
-                    'Porcentaje de población nacida en otro estado' => 13.22,
-                    'Porcentaje de población con discapacidad' => 4.57,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.20,
-                    'Porcentaje de población de 18 y más' => 60.45,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.49
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.83,
-                    'Grado Promedio de Escolaridad masculina' => 7.81,
-                    'Grado Promedio de Escolaridad femenina' => 7.84
+                    'Porcentaje de población con discapacidad' => 4.57
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoAna extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 625,
-                    'Hogares Jefatura masculina' => 77.63,
-                    'Hogares Jefatura femenina' => 22.37,
                     'Ocupación por Vivienda' => 4.12,
                     'Viviendas con Electricidad' => 99.46,
                     'Viviendas con Agua' => 98.11,
                     'Viviendas con Drenaje' => 95.52,
                     'Viviendas con Televisión' => 97.71,
                     'Viviendas con Automóvil' => 39.50,
-                    'Viviendas con Computadora' => 15.76,
-                    'Viviendas con Celular' => 65.61,
-                    'Viviendas con Internet' => 6.69
+                    'Viviendas con Computadora' => 15.76
                 )
             ),
             'Unidades Económicas' => array(

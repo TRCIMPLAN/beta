@@ -33,13 +33,13 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Pequeña Zona Industrial';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'pequena-zona-industrial';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Pequeña Zona Industrial de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Pequeña Zona Industrial en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.56,
                     'Porcentaje de población no especificada' => 1.16,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 16.38,
-                    'Porcentaje de población con discapacidad' => 9.19,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.28,
-                    'Porcentaje de población de 18 y más' => 64.56,
-                    'Porcentaje de población de 18 y más postbásicos' => 44.69
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.97,
-                    'Grado Promedio de Escolaridad masculina' => 12.17,
-                    'Grado Promedio de Escolaridad femenina' => 11.79
+                    'Porcentaje de población con discapacidad' => 9.19
                 )
             ),
             'Características Económicas' => array(
@@ -109,7 +98,7 @@ class PequenaZonaIndustrial extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 19.35,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.90,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 6.45
                 )
             )

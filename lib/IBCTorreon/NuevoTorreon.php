@@ -33,13 +33,13 @@ class NuevoTorreon extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nuevo Torreón';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nuevo-torreon';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nuevo Torreón de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nuevo Torreón en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NuevoTorreon extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.99,
                     'Porcentaje de población no especificada' => 4.58,
                     'Fecundidad promedio' => 2.16,
-                    'Porcentaje de población nacida en otro estado' => 17.90,
-                    'Porcentaje de población con discapacidad' => 3.29,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.18,
-                    'Porcentaje de población de 18 y más' => 69.74,
-                    'Porcentaje de población de 18 y más postbásicos' => 43.90
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.34,
-                    'Grado Promedio de Escolaridad masculina' => 11.55,
-                    'Grado Promedio de Escolaridad femenina' => 11.16
+                    'Porcentaje de población con discapacidad' => 3.29
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NuevoTorreon extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 653,
-                    'Hogares Jefatura masculina' => 69.40,
-                    'Hogares Jefatura femenina' => 30.60,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 99.85,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.38,
                     'Viviendas con Televisión' => 98.77,
                     'Viviendas con Automóvil' => 72.15,
-                    'Viviendas con Computadora' => 54.91,
-                    'Viviendas con Celular' => 78.07,
-                    'Viviendas con Internet' => 44.37
+                    'Viviendas con Computadora' => 54.91
                 )
             ),
             'Unidades Económicas' => array(

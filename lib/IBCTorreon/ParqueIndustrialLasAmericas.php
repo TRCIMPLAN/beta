@@ -33,13 +33,13 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Las Américas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'parque-industrial-las-americas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Parque Industrial Las Américas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Parque Industrial Las Américas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -72,11 +72,11 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 13,
                     'Primer actividad nombre' => 'Industria Manufacturera',
                     'Primer actividad porcentaje' => 46.15,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 7.69,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Cuarta actividad porcentaje' => 7.69,
                     'Quinta actividad nombre' => 'Información Medios Masivos',
                     'Quinta actividad porcentaje' => 7.69

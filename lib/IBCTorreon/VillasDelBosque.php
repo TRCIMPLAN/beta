@@ -33,13 +33,13 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas del Bosque';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas del Bosque de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas del Bosque en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.91,
                     'Porcentaje de población no especificada' => 0.33,
                     'Fecundidad promedio' => 1.82,
-                    'Porcentaje de población nacida en otro estado' => 16.97,
-                    'Porcentaje de población con discapacidad' => 2.21,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.37,
-                    'Porcentaje de población de 18 y más' => 57.91,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.32
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.82,
-                    'Grado Promedio de Escolaridad masculina' => 9.87,
-                    'Grado Promedio de Escolaridad femenina' => 9.77
+                    'Porcentaje de población con discapacidad' => 2.21
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 840,
-                    'Hogares Jefatura masculina' => 80.12,
-                    'Hogares Jefatura femenina' => 19.88,
                     'Ocupación por Vivienda' => 3.66,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.64,
                     'Viviendas con Drenaje' => 99.88,
                     'Viviendas con Televisión' => 97.98,
                     'Viviendas con Automóvil' => 41.71,
-                    'Viviendas con Computadora' => 22.60,
-                    'Viviendas con Celular' => 88.57,
-                    'Viviendas con Internet' => 10.37
+                    'Viviendas con Computadora' => 22.60
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class VillasDelBosque extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 70,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 55.71,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 17.14,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 17.14,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.29,

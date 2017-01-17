@@ -33,13 +33,13 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón del Valle';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-del-valle';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón del Valle de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón del Valle en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.00,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 17.97,
-                    'Porcentaje de población con discapacidad' => 1.83,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.15,
-                    'Porcentaje de población de 18 y más' => 56.10,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.46
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.80,
-                    'Grado Promedio de Escolaridad masculina' => 13.13,
-                    'Grado Promedio de Escolaridad femenina' => 12.54
+                    'Porcentaje de población con discapacidad' => 1.83
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDelValle extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 43,
-                    'Hogares Jefatura masculina' => 79.07,
-                    'Hogares Jefatura femenina' => 20.93,
                     'Ocupación por Vivienda' => 3.81,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 83.72,
-                    'Viviendas con Computadora' => 73.79,
-                    'Viviendas con Celular' => 86.05,
-                    'Viviendas con Internet' => 46.51
+                    'Viviendas con Computadora' => 73.79
                 )
             ),
             'Unidades Económicas' => array(

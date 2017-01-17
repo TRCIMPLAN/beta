@@ -33,13 +33,13 @@ class VillaDeLasPerlas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villa de Las Perlas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villa-de-las-perlas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villa de Las Perlas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villa de Las Perlas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillaDeLasPerlas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.56,
                     'Porcentaje de población no especificada' => 0.95,
                     'Fecundidad promedio' => 1.55,
-                    'Porcentaje de población nacida en otro estado' => 27.80,
-                    'Porcentaje de población con discapacidad' => 2.66,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 64.54,
-                    'Porcentaje de población de 18 y más postbásicos' => 60.70
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.18,
-                    'Grado Promedio de Escolaridad masculina' => 14.50,
-                    'Grado Promedio de Escolaridad femenina' => 13.85
+                    'Porcentaje de población con discapacidad' => 2.66
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillaDeLasPerlas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 89,
-                    'Hogares Jefatura masculina' => 82.02,
-                    'Hogares Jefatura femenina' => 17.98,
                     'Ocupación por Vivienda' => 3.52,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.88,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 97.75,
-                    'Viviendas con Computadora' => 79.78,
-                    'Viviendas con Celular' => 97.75,
-                    'Viviendas con Internet' => 65.51
+                    'Viviendas con Computadora' => 79.78
                 )
             ),
             'Unidades Económicas' => array(

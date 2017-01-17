@@ -33,13 +33,13 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Pedregal';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-pedregal';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Pedregal de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Pedregal en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.52,
                     'Porcentaje de población no especificada' => 2.15,
                     'Fecundidad promedio' => 1.84,
-                    'Porcentaje de población nacida en otro estado' => 17.07,
-                    'Porcentaje de población con discapacidad' => 1.22,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.20,
-                    'Porcentaje de población de 18 y más' => 57.50,
-                    'Porcentaje de población de 18 y más postbásicos' => 31.98
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.13,
-                    'Grado Promedio de Escolaridad masculina' => 11.27,
-                    'Grado Promedio de Escolaridad femenina' => 10.99
+                    'Porcentaje de población con discapacidad' => 1.22
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 329,
-                    'Hogares Jefatura masculina' => 77.51,
-                    'Hogares Jefatura femenina' => 22.49,
                     'Ocupación por Vivienda' => 3.81,
                     'Viviendas con Electricidad' => 99.70,
                     'Viviendas con Agua' => 99.70,
                     'Viviendas con Drenaje' => 99.39,
                     'Viviendas con Televisión' => 98.18,
                     'Viviendas con Automóvil' => 57.75,
-                    'Viviendas con Computadora' => 41.34,
-                    'Viviendas con Celular' => 79.03,
-                    'Viviendas con Internet' => 28.88
+                    'Viviendas con Computadora' => 41.34
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class ElPedregal extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 33,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 36.36,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 21.21,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 21.21,
                     'Cuarta actividad nombre' => 'Financieros y Seguros',
                     'Cuarta actividad porcentaje' => 6.06,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 3.03
                 )
             )

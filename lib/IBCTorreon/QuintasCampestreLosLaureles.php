@@ -33,13 +33,13 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas Campestre - Los Laureles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-campestre-los-laureles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas Campestre - Los Laureles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas Campestre - Los Laureles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.95,
                     'Porcentaje de población no especificada' => 17.62,
                     'Fecundidad promedio' => 1.50,
-                    'Porcentaje de población nacida en otro estado' => 26.02,
-                    'Porcentaje de población con discapacidad' => 2.38,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 46.46,
-                    'Porcentaje de población de 18 y más postbásicos' => 43.62
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.85,
-                    'Grado Promedio de Escolaridad masculina' => 15.48,
-                    'Grado Promedio de Escolaridad femenina' => 14.28
+                    'Porcentaje de población con discapacidad' => 2.38
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasCampestreLosLaureles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 200,
-                    'Hogares Jefatura masculina' => 89.95,
-                    'Hogares Jefatura femenina' => 10.05,
                     'Ocupación por Vivienda' => 4.60,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.54,
                     'Viviendas con Automóvil' => 98.33,
-                    'Viviendas con Computadora' => 94.76,
-                    'Viviendas con Celular' => 96.97,
-                    'Viviendas con Internet' => 88.68
+                    'Viviendas con Computadora' => 94.76
                 )
             ),
             'Unidades Económicas' => array(

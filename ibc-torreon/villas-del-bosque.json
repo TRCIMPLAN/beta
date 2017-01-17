@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":0.91,
         "Porcentaje de población no especificada":0.33,
         "Fecundidad promedio":1.82,
-        "Porcentaje de población nacida en otro estado":16.97,
-        "Porcentaje de población con discapacidad":2.21,
-        "Porcentaje de población de 15 y más analfabeta":0.37,
-        "Porcentaje de población de 18 y más":57.91,
-        "Porcentaje de población de 18 y más postbásicos":25.32
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":9.82,
-        "Grado Promedio de Escolaridad masculina":9.87,
-        "Grado Promedio de Escolaridad femenina":9.77
+        "Porcentaje de población con discapacidad":2.21
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":840,
-        "Hogares Jefatura masculina":80.12,
-        "Hogares Jefatura femenina":19.88,
         "Ocupación por Vivienda":3.66,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":99.64,
         "Viviendas con Drenaje":99.88,
         "Viviendas con Televisión":97.98,
         "Viviendas con Automóvil":41.71,
-        "Viviendas con Computadora":22.6,
-        "Viviendas con Celular":88.57,
-        "Viviendas con Internet":10.37
+        "Viviendas con Computadora":22.6
       }
     },
     "Unidades Económicas":{
@@ -58,9 +43,9 @@
         "Total Actividades Económicas":70,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":55.71,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":17.14,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Preparación de Alimentos y Bebidas",
         "Tercera actividad porcentaje":17.14,
         "Cuarta actividad nombre":"Industria Manufacturera",
         "Cuarta actividad porcentaje":4.29,

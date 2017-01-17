@@ -194,47 +194,47 @@ class Empleo extends \Base\Publicacion {
   <tr>
     <td class="subindice color1">Economía</td>
     <td class="indicador color1">Salario Promedio Mensual para Trabajadores de Tiempo Completo</td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 6,934.83</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 5,893.86</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 6,147.00</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 4,722.96</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 6,470.65</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 6,282.40</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 5,698.27</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 5,896.23</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 4,872.94</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-salario-promedio-mensual-para-trabajadores-de-tiempo-completo.html" data-toggle="tooltip" title="Pesos, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">$ 5,896.38</a></td>
   </tr>
   <tr>
     <td class="subindice color1">Economía</td>
     <td class="indicador color1">Tasa de Condiciones Críticas de Ocupación</td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 31/03/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">8.77 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 31/03/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">11.40 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 31/03/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">8.89 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 31/03/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">18.45 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 31/03/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">10.50 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">11.59 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">12.45 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">9.21 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">16.67 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-condiciones-criticas-de-ocupacion.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">12.42 %</a></td>
   </tr>
   <tr>
     <td class="subindice color1">Economía</td>
     <td class="indicador color1">Tasa de Desempleo Abierto</td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">5.78 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">5.36 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">11.54 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">4.09 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">5.64 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">5.69 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">6.88 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">7.32 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">2.17 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-desempleo-abierto.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">5.75 %</a></td>
   </tr>
   <tr>
     <td class="subindice color1">Economía</td>
     <td class="indicador color1">Tasa de Informalidad</td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">41.41 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">41.93 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">50.00 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">51.22 %</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/06/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">41.96 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">44.51 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">44.73 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">42.11 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">51.67 %</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-tasa-de-informalidad.html" data-toggle="tooltip" title="Porcentaje, 30/09/2016, Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos">45.39 %</a></td>
   </tr>
   <tr>
     <td class="subindice color1">Economía</td>
     <td class="indicador color1">Trabajadores Asegurados</td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/04/2016, Instituto Mexicano del Seguro Social (IMSS)">180,602</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/04/2016, Instituto Mexicano del Seguro Social (IMSS)">75,604</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/04/2016, Instituto Mexicano del Seguro Social (IMSS)">14,414</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/04/2016, Instituto Mexicano del Seguro Social (IMSS)">8,387</a></td>
-    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/04/2016, Instituto Mexicano del Seguro Social (IMSS)">279,007</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-torreon/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/09/2016, Instituto Mexicano del Seguro Social (IMSS)">187,057</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-gomez-palacio/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/09/2016, Instituto Mexicano del Seguro Social (IMSS)">76,824</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-lerdo/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/09/2016, Instituto Mexicano del Seguro Social (IMSS)">14,257</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-matamoros/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/09/2016, Instituto Mexicano del Seguro Social (IMSS)">8,669</a></td>
+    <td class="derecha color1"><a class="vinculo" href="../indicadores-la-laguna/economia-trabajadores-asegurados.html" data-toggle="tooltip" title="Personas, 30/09/2016, Instituto Mexicano del Seguro Social (IMSS)">286,807</a></td>
   </tr>
   <tr>
     <td class="subindice color1">Economía</td>

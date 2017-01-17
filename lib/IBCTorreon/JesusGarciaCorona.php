@@ -33,13 +33,13 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jesús García Corona';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jesus-garcia-corona';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jesús García Corona de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jesús García Corona en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.43,
                     'Porcentaje de población no especificada' => 1.71,
                     'Fecundidad promedio' => 2.86,
-                    'Porcentaje de población nacida en otro estado' => 20.57,
-                    'Porcentaje de población con discapacidad' => 6.29,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.40,
-                    'Porcentaje de población de 18 y más' => 60.57,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.57
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.52,
-                    'Grado Promedio de Escolaridad masculina' => 8.11,
-                    'Grado Promedio de Escolaridad femenina' => 6.90
+                    'Porcentaje de población con discapacidad' => 6.29
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JesusGarciaCorona extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 38,
-                    'Hogares Jefatura masculina' => 73.68,
-                    'Hogares Jefatura femenina' => 26.32,
                     'Ocupación por Vivienda' => 4.61,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 89.47,
                     'Viviendas con Automóvil' => 31.58,
-                    'Viviendas con Computadora' => 22.43,
-                    'Viviendas con Celular' => 57.89,
-                    'Viviendas con Internet' => 7.40
+                    'Viviendas con Computadora' => 22.43
                 )
             ),
             'Unidades Económicas' => array(

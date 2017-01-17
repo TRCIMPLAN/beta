@@ -33,13 +33,13 @@ class SantaMaria extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Santa María';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'santa-maria';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Santa María de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Santa María en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SantaMaria extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.79,
                     'Porcentaje de población no especificada' => 0.08,
                     'Fecundidad promedio' => 2.40,
-                    'Porcentaje de población nacida en otro estado' => 20.70,
-                    'Porcentaje de población con discapacidad' => 9.23,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.70,
-                    'Porcentaje de población de 18 y más' => 70.09,
-                    'Porcentaje de población de 18 y más postbásicos' => 28.77
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.42,
-                    'Grado Promedio de Escolaridad masculina' => 9.62,
-                    'Grado Promedio de Escolaridad femenina' => 9.26
+                    'Porcentaje de población con discapacidad' => 9.23
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SantaMaria extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 363,
-                    'Hogares Jefatura masculina' => 69.70,
-                    'Hogares Jefatura femenina' => 30.30,
                     'Ocupación por Vivienda' => 3.62,
                     'Viviendas con Electricidad' => 99.17,
                     'Viviendas con Agua' => 98.90,
                     'Viviendas con Drenaje' => 99.45,
                     'Viviendas con Televisión' => 99.17,
                     'Viviendas con Automóvil' => 48.08,
-                    'Viviendas con Computadora' => 33.02,
-                    'Viviendas con Celular' => 68.87,
-                    'Viviendas con Internet' => 25.65
+                    'Viviendas con Computadora' => 33.02
                 )
             ),
             'Unidades Económicas' => array(

@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":4.34,
         "Porcentaje de población no especificada":6.51,
         "Fecundidad promedio":1.8,
-        "Porcentaje de población nacida en otro estado":26.38,
-        "Porcentaje de población con discapacidad":1.08,
-        "Porcentaje de población de 15 y más analfabeta":0.65,
-        "Porcentaje de población de 18 y más":56.83,
-        "Porcentaje de población de 18 y más postbásicos":51.19
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":14.26,
-        "Grado Promedio de Escolaridad masculina":14.66,
-        "Grado Promedio de Escolaridad femenina":13.87
+        "Porcentaje de población con discapacidad":1.08
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":108,
-        "Hogares Jefatura masculina":86.11,
-        "Hogares Jefatura femenina":13.89,
         "Ocupación por Vivienda":4.27,
         "Viviendas con Electricidad":99.07,
         "Viviendas con Agua":98.15,
         "Viviendas con Drenaje":97.22,
         "Viviendas con Televisión":93.52,
         "Viviendas con Automóvil":90.68,
-        "Viviendas con Computadora":82.41,
-        "Viviendas con Celular":90.74,
-        "Viviendas con Internet":80.56
+        "Viviendas con Computadora":82.41
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":48,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":8,
-        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":8,
-        "Quinta actividad nombre":"Manejo de Residuos",
+        "Quinta actividad nombre":"Financieros y Seguros",
         "Quinta actividad porcentaje":4
       }
     }

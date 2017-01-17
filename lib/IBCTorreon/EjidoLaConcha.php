@@ -33,13 +33,13 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Concha';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-concha';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Concha de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Concha en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.89,
                     'Porcentaje de población no especificada' => 0.26,
                     'Fecundidad promedio' => 2.44,
-                    'Porcentaje de población nacida en otro estado' => 9.98,
-                    'Porcentaje de población con discapacidad' => 4.92,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.44,
-                    'Porcentaje de población de 18 y más' => 60.82,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.46
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.01,
-                    'Grado Promedio de Escolaridad masculina' => 8.14,
-                    'Grado Promedio de Escolaridad femenina' => 7.89
+                    'Porcentaje de población con discapacidad' => 4.92
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 852,
-                    'Hogares Jefatura masculina' => 81.60,
-                    'Hogares Jefatura femenina' => 18.40,
                     'Ocupación por Vivienda' => 4.21,
                     'Viviendas con Electricidad' => 99.79,
                     'Viviendas con Agua' => 96.55,
                     'Viviendas con Drenaje' => 94.88,
                     'Viviendas con Televisión' => 98.83,
                     'Viviendas con Automóvil' => 48.17,
-                    'Viviendas con Computadora' => 22.15,
-                    'Viviendas con Celular' => 64.08,
-                    'Viviendas con Internet' => 12.34
+                    'Viviendas con Computadora' => 22.15
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.31,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.61,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 7.87,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 7.87,
                     'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.62

@@ -33,13 +33,13 @@ class ResidencialSantiago extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Santiago';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-santiago';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Santiago de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Santiago en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialSantiago extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.59,
                     'Porcentaje de población no especificada' => 0.86,
                     'Fecundidad promedio' => 2.08,
-                    'Porcentaje de población nacida en otro estado' => 16.38,
-                    'Porcentaje de población con discapacidad' => 2.76,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.32,
-                    'Porcentaje de población de 18 y más' => 61.21,
-                    'Porcentaje de población de 18 y más postbásicos' => 26.72
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.92,
-                    'Grado Promedio de Escolaridad masculina' => 10.01,
-                    'Grado Promedio de Escolaridad femenina' => 9.83
+                    'Porcentaje de población con discapacidad' => 2.76
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialSantiago extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 104,
-                    'Hogares Jefatura masculina' => 88.46,
-                    'Hogares Jefatura femenina' => 11.54,
                     'Ocupación por Vivienda' => 3.35,
                     'Viviendas con Electricidad' => 99.04,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.04,
                     'Viviendas con Televisión' => 96.15,
                     'Viviendas con Automóvil' => 50.18,
-                    'Viviendas con Computadora' => 35.73,
-                    'Viviendas con Celular' => 82.69,
-                    'Viviendas con Internet' => 17.43
+                    'Viviendas con Computadora' => 35.73
                 )
             ),
             'Unidades Económicas' => array(

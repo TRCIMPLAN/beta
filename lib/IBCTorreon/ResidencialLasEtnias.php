@@ -33,13 +33,13 @@ class ResidencialLasEtnias extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Etnias';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-etnias';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Las Etnias de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Las Etnias en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLasEtnias extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.59,
                     'Porcentaje de población no especificada' => 1.98,
                     'Fecundidad promedio' => 1.62,
-                    'Porcentaje de población nacida en otro estado' => 17.14,
-                    'Porcentaje de población con discapacidad' => 1.13,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.03,
-                    'Porcentaje de población de 18 y más' => 58.17,
-                    'Porcentaje de población de 18 y más postbásicos' => 44.84
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.85,
-                    'Grado Promedio de Escolaridad masculina' => 13.22,
-                    'Grado Promedio de Escolaridad femenina' => 12.52
+                    'Porcentaje de población con discapacidad' => 1.13
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLasEtnias extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1067,
-                    'Hogares Jefatura masculina' => 85.75,
-                    'Hogares Jefatura femenina' => 14.25,
                     'Ocupación por Vivienda' => 3.55,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.91,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.34,
                     'Viviendas con Automóvil' => 78.35,
-                    'Viviendas con Computadora' => 57.45,
-                    'Viviendas con Celular' => 91.66,
-                    'Viviendas con Internet' => 43.02
+                    'Viviendas con Computadora' => 57.45
                 )
             ),
             'Unidades Económicas' => array(

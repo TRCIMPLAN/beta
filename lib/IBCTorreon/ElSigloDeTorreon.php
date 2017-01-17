@@ -33,13 +33,13 @@ class ElSigloDeTorreon extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Siglo De Torreón';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-siglo-de-torreon';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Siglo De Torreón de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Siglo De Torreón en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElSigloDeTorreon extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.68,
                     'Porcentaje de población no especificada' => 0.06,
                     'Fecundidad promedio' => 2.80,
-                    'Porcentaje de población nacida en otro estado' => 12.29,
-                    'Porcentaje de población con discapacidad' => 8.39,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.08,
-                    'Porcentaje de población de 18 y más' => 51.76,
-                    'Porcentaje de población de 18 y más postbásicos' => 23.87
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.61,
-                    'Grado Promedio de Escolaridad masculina' => 6.49,
-                    'Grado Promedio de Escolaridad femenina' => 6.74
+                    'Porcentaje de población con discapacidad' => 8.39
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElSigloDeTorreon extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 51,
-                    'Hogares Jefatura masculina' => 91.72,
-                    'Hogares Jefatura femenina' => 8.28,
                     'Ocupación por Vivienda' => 4.59,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.81,
                     'Viviendas con Drenaje' => 85.07,
                     'Viviendas con Televisión' => 98.76,
                     'Viviendas con Automóvil' => 59.94,
-                    'Viviendas con Computadora' => 12.32,
-                    'Viviendas con Celular' => 80.16,
-                    'Viviendas con Internet' => 4.74
+                    'Viviendas con Computadora' => 12.32
                 )
             ),
             'Unidades Económicas' => array(

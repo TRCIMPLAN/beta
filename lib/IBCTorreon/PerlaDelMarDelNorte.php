@@ -33,13 +33,13 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Perla del Mar del Norte';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'perla-del-mar-del-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Perla del Mar del Norte de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Perla del Mar del Norte en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.00,
                     'Porcentaje de población no especificada' => 37.50,
                     'Fecundidad promedio' => 1.33,
-                    'Porcentaje de población nacida en otro estado' => 31.25,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 37.50,
-                    'Porcentaje de población de 18 y más postbásicos' => 37.50
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 16.17,
-                    'Grado Promedio de Escolaridad masculina' => 16.00,
-                    'Grado Promedio de Escolaridad femenina' => 16.33
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PerlaDelMarDelNorte extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3,
-                    'Hogares Jefatura masculina' => 75.98,
-                    'Hogares Jefatura femenina' => 24.02,
                     'Ocupación por Vivienda' => 5.33,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 46.86,
-                    'Viviendas con Celular' => 85.49,
-                    'Viviendas con Internet' => 32.66
+                    'Viviendas con Computadora' => 46.86
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Bugambilias';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'bugambilias';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Bugambilias de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Bugambilias en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 11.11,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.46,
-                    'Porcentaje de población nacida en otro estado' => 19.78,
-                    'Porcentaje de población con discapacidad' => 5.55,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.74,
-                    'Porcentaje de población de 18 y más' => 75.56,
-                    'Porcentaje de población de 18 y más postbásicos' => 37.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.31,
-                    'Grado Promedio de Escolaridad masculina' => 10.77,
-                    'Grado Promedio de Escolaridad femenina' => 9.87
+                    'Porcentaje de población con discapacidad' => 5.55
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 126,
-                    'Hogares Jefatura masculina' => 65.87,
-                    'Hogares Jefatura femenina' => 34.13,
                     'Ocupación por Vivienda' => 3.57,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.21,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.21,
                     'Viviendas con Automóvil' => 55.56,
-                    'Viviendas con Computadora' => 50.00,
-                    'Viviendas con Celular' => 73.81,
-                    'Viviendas con Internet' => 36.51
+                    'Viviendas con Computadora' => 50.00
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Bugambilias extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 23,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 21.74,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 17.39,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 17.39,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 8.70
                 )
             )

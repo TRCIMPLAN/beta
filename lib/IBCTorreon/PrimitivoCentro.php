@@ -33,13 +33,13 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Primitivo (Centro)';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'primitivo-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Primitivo (Centro) de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Primitivo (Centro) en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.41,
                     'Porcentaje de población no especificada' => 5.12,
                     'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 19.54,
-                    'Porcentaje de población con discapacidad' => 8.83,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.52,
-                    'Porcentaje de población de 18 y más' => 70.19,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.93
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.97,
-                    'Grado Promedio de Escolaridad masculina' => 10.38,
-                    'Grado Promedio de Escolaridad femenina' => 9.67
+                    'Porcentaje de población con discapacidad' => 8.83
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class PrimitivoCentro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 433,
-                    'Hogares Jefatura masculina' => 58.57,
-                    'Hogares Jefatura femenina' => 41.43,
                     'Ocupación por Vivienda' => 3.53,
                     'Viviendas con Electricidad' => 99.94,
                     'Viviendas con Agua' => 99.69,
                     'Viviendas con Drenaje' => 99.47,
                     'Viviendas con Televisión' => 98.45,
                     'Viviendas con Automóvil' => 40.56,
-                    'Viviendas con Computadora' => 30.60,
-                    'Viviendas con Celular' => 70.80,
-                    'Viviendas con Internet' => 21.97
+                    'Viviendas con Computadora' => 30.60
                 )
             ),
             'Unidades Económicas' => array(

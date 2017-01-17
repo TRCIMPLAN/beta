@@ -33,13 +33,13 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón de La Joya';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón de La Joya de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón de La Joya en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.68,
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 1.94,
-                    'Porcentaje de población nacida en otro estado' => 15.12,
-                    'Porcentaje de población con discapacidad' => 4.60,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.26,
-                    'Porcentaje de población de 18 y más' => 53.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 13.48
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.11,
-                    'Grado Promedio de Escolaridad masculina' => 9.01,
-                    'Grado Promedio de Escolaridad femenina' => 9.21
+                    'Porcentaje de población con discapacidad' => 4.60
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 44,
-                    'Hogares Jefatura masculina' => 79.57,
-                    'Hogares Jefatura femenina' => 20.43,
                     'Ocupación por Vivienda' => 3.48,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 34.33,
-                    'Viviendas con Computadora' => 30.39,
-                    'Viviendas con Celular' => 78.33,
-                    'Viviendas con Internet' => 4.11
+                    'Viviendas con Computadora' => 30.39
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class RinconDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 30.00,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 10.00
                 )
             )

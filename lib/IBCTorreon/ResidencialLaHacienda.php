@@ -33,13 +33,13 @@ class ResidencialLaHacienda extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial la Hacienda';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-la-hacienda';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial la Hacienda de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial la Hacienda en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLaHacienda extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.89,
                     'Porcentaje de población no especificada' => 3.67,
                     'Fecundidad promedio' => 1.62,
-                    'Porcentaje de población nacida en otro estado' => 22.54,
-                    'Porcentaje de población con discapacidad' => 1.64,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
-                    'Porcentaje de población de 18 y más' => 69.41,
-                    'Porcentaje de población de 18 y más postbásicos' => 61.95
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.12,
-                    'Grado Promedio de Escolaridad masculina' => 14.49,
-                    'Grado Promedio de Escolaridad femenina' => 13.78
+                    'Porcentaje de población con discapacidad' => 1.64
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLaHacienda extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 601,
-                    'Hogares Jefatura masculina' => 82.03,
-                    'Hogares Jefatura femenina' => 17.97,
                     'Ocupación por Vivienda' => 3.88,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.83,
                     'Viviendas con Televisión' => 99.50,
                     'Viviendas con Automóvil' => 93.51,
-                    'Viviendas con Computadora' => 88.35,
-                    'Viviendas con Celular' => 94.51,
-                    'Viviendas con Internet' => 80.37
+                    'Viviendas con Computadora' => 88.35
                 )
             ),
             'Unidades Económicas' => array(

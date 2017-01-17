@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":6.96,
         "Porcentaje de población no especificada":0.1,
         "Fecundidad promedio":2.39,
-        "Porcentaje de población nacida en otro estado":22.89,
-        "Porcentaje de población con discapacidad":12.83,
-        "Porcentaje de población de 15 y más analfabeta":3.15,
-        "Porcentaje de población de 18 y más":62.93,
-        "Porcentaje de población de 18 y más postbásicos":13.72
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":7.57,
-        "Grado Promedio de Escolaridad masculina":7.44,
-        "Grado Promedio de Escolaridad femenina":7.7
+        "Porcentaje de población con discapacidad":12.83
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":229,
-        "Hogares Jefatura masculina":79.34,
-        "Hogares Jefatura femenina":20.66,
         "Ocupación por Vivienda":3.98,
         "Viviendas con Electricidad":99.35,
         "Viviendas con Agua":96.69,
         "Viviendas con Drenaje":98.47,
         "Viviendas con Televisión":94.52,
         "Viviendas con Automóvil":27.65,
-        "Viviendas con Computadora":12.09,
-        "Viviendas con Celular":57.58,
-        "Viviendas con Internet":6.33
+        "Viviendas con Computadora":12.09
       }
     },
     "Unidades Económicas":{
@@ -58,13 +43,13 @@
         "Total Actividades Económicas":15,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":46.67,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Otros servicios, excepto Gobierno",
         "Segunda actividad porcentaje":13.33,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Salud",
         "Tercera actividad porcentaje":13.33,
-        "Cuarta actividad nombre":"Salud",
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":13.33,
-        "Quinta actividad nombre":"Manejo de Residuos",
+        "Quinta actividad nombre":"Industria Manufacturera",
         "Quinta actividad porcentaje":6.67
       }
     }

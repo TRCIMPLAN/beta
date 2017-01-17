@@ -33,13 +33,13 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Valle Verde';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'valle-verde';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Valle Verde de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Valle Verde en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.00,
                     'Porcentaje de población no especificada' => 9.79,
                     'Fecundidad promedio' => 2.04,
-                    'Porcentaje de población nacida en otro estado' => 19.57,
-                    'Porcentaje de población con discapacidad' => 3.96,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.12,
-                    'Porcentaje de población de 18 y más' => 67.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 42.78
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.48,
-                    'Grado Promedio de Escolaridad masculina' => 11.73,
-                    'Grado Promedio de Escolaridad femenina' => 11.24
+                    'Porcentaje de población con discapacidad' => 3.96
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 287,
-                    'Hogares Jefatura masculina' => 77.47,
-                    'Hogares Jefatura femenina' => 22.53,
                     'Ocupación por Vivienda' => 3.76,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.30,
                     'Viviendas con Automóvil' => 64.75,
-                    'Viviendas con Computadora' => 50.37,
-                    'Viviendas con Celular' => 82.02,
-                    'Viviendas con Internet' => 39.79
+                    'Viviendas con Computadora' => 50.37
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class ValleVerde extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.00,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 8.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.00,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

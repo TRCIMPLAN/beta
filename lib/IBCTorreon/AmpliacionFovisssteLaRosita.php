@@ -33,13 +33,13 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Fovissste La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-fovissste-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Fovissste La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Fovissste La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.41,
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 24.44,
-                    'Porcentaje de población con discapacidad' => 3.32,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.06,
-                    'Porcentaje de población de 18 y más' => 74.87,
-                    'Porcentaje de población de 18 y más postbásicos' => 59.81
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.67,
-                    'Grado Promedio de Escolaridad masculina' => 13.23,
-                    'Grado Promedio de Escolaridad femenina' => 12.19
+                    'Porcentaje de población con discapacidad' => 3.32
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionFovisssteLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 160,
-                    'Hogares Jefatura masculina' => 68.63,
-                    'Hogares Jefatura femenina' => 31.37,
                     'Ocupación por Vivienda' => 3.38,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.13,
                     'Viviendas con Automóvil' => 70.17,
-                    'Viviendas con Computadora' => 68.23,
-                    'Viviendas con Celular' => 93.34,
-                    'Viviendas con Internet' => 48.78
+                    'Viviendas con Computadora' => 68.23
                 )
             ),
             'Unidades Económicas' => array(

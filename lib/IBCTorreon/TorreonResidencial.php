@@ -33,13 +33,13 @@ class TorreonResidencial extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Torreón Residencial';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-residencial';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Torreón Residencial de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Torreón Residencial en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class TorreonResidencial extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.09,
                     'Porcentaje de población no especificada' => 1.09,
                     'Fecundidad promedio' => 1.70,
-                    'Porcentaje de población nacida en otro estado' => 24.18,
-                    'Porcentaje de población con discapacidad' => 2.10,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.12,
-                    'Porcentaje de población de 18 y más' => 76.06,
-                    'Porcentaje de población de 18 y más postbásicos' => 64.54
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.54,
-                    'Grado Promedio de Escolaridad masculina' => 14.04,
-                    'Grado Promedio de Escolaridad femenina' => 13.09
+                    'Porcentaje de población con discapacidad' => 2.10
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class TorreonResidencial extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1607,
-                    'Hogares Jefatura masculina' => 70.75,
-                    'Hogares Jefatura femenina' => 29.25,
                     'Ocupación por Vivienda' => 3.48,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.96,
                     'Viviendas con Televisión' => 99.27,
                     'Viviendas con Automóvil' => 87.32,
-                    'Viviendas con Computadora' => 77.88,
-                    'Viviendas con Celular' => 88.86,
-                    'Viviendas con Internet' => 71.09
+                    'Viviendas con Computadora' => 77.88
                 )
             ),
             'Unidades Económicas' => array(

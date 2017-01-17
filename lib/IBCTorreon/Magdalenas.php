@@ -33,13 +33,13 @@ class Magdalenas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Magdalenas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'magdalenas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Magdalenas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Magdalenas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Magdalenas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.05,
                     'Porcentaje de población no especificada' => 1.82,
                     'Fecundidad promedio' => 2.60,
-                    'Porcentaje de población nacida en otro estado' => 13.90,
-                    'Porcentaje de población con discapacidad' => 3.22,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.21,
-                    'Porcentaje de población de 18 y más' => 66.72,
-                    'Porcentaje de población de 18 y más postbásicos' => 21.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.55,
-                    'Grado Promedio de Escolaridad masculina' => 8.71,
-                    'Grado Promedio de Escolaridad femenina' => 8.39
+                    'Porcentaje de población con discapacidad' => 3.22
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Magdalenas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1054,
-                    'Hogares Jefatura masculina' => 71.36,
-                    'Hogares Jefatura femenina' => 28.64,
                     'Ocupación por Vivienda' => 4.11,
                     'Viviendas con Electricidad' => 99.86,
                     'Viviendas con Agua' => 99.57,
                     'Viviendas con Drenaje' => 99.48,
                     'Viviendas con Televisión' => 98.43,
                     'Viviendas con Automóvil' => 46.00,
-                    'Viviendas con Computadora' => 28.83,
-                    'Viviendas con Celular' => 65.91,
-                    'Viviendas con Internet' => 20.20
+                    'Viviendas con Computadora' => 28.83
                 )
             ),
             'Unidades Económicas' => array(

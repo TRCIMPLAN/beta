@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":0.31,
         "Porcentaje de población no especificada":0,
         "Fecundidad promedio":1.69,
-        "Porcentaje de población nacida en otro estado":84.88,
-        "Porcentaje de población con discapacidad":0.93,
-        "Porcentaje de población de 15 y más analfabeta":0.29,
-        "Porcentaje de población de 18 y más":59.26,
-        "Porcentaje de población de 18 y más postbásicos":38.89
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":9.15,
-        "Grado Promedio de Escolaridad masculina":9.89,
-        "Grado Promedio de Escolaridad femenina":8.59
+        "Porcentaje de población con discapacidad":0.93
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":96,
-        "Hogares Jefatura masculina":97.92,
-        "Hogares Jefatura femenina":2.08,
         "Ocupación por Vivienda":3.38,
         "Viviendas con Electricidad":97.92,
         "Viviendas con Agua":97.92,
         "Viviendas con Drenaje":97.92,
         "Viviendas con Televisión":97.92,
         "Viviendas con Automóvil":63.54,
-        "Viviendas con Computadora":53.12,
-        "Viviendas con Celular":85.42,
-        "Viviendas con Internet":19.79
+        "Viviendas con Computadora":53.12
       }
     },
     "Unidades Económicas":{
@@ -60,11 +45,11 @@
         "Primer actividad porcentaje":44.44,
         "Segunda actividad nombre":"Gubernamentales",
         "Segunda actividad porcentaje":22.22,
-        "Tercera actividad nombre":"Transportes, Correo, Almacenamiento",
+        "Tercera actividad nombre":"Inmobiliarios",
         "Tercera actividad porcentaje":11.11,
         "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":11.11,
-        "Quinta actividad nombre":"Inmobiliarios",
+        "Quinta actividad nombre":"Transportes, Correo, Almacenamiento",
         "Quinta actividad porcentaje":11.11
       }
     }

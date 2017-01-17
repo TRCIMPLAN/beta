@@ -33,13 +33,13 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido San Antonio de Los Bravos';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-san-antonio-de-los-bravos';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido San Antonio de Los Bravos de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido San Antonio de Los Bravos en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.48,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 2.37,
-                    'Porcentaje de población nacida en otro estado' => 8.84,
-                    'Porcentaje de población con discapacidad' => 7.51,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.60,
-                    'Porcentaje de población de 18 y más' => 65.40,
-                    'Porcentaje de población de 18 y más postbásicos' => 21.77
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.89,
-                    'Grado Promedio de Escolaridad masculina' => 8.99,
-                    'Grado Promedio de Escolaridad femenina' => 8.80
+                    'Porcentaje de población con discapacidad' => 7.51
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 590,
-                    'Hogares Jefatura masculina' => 76.27,
-                    'Hogares Jefatura femenina' => 23.73,
                     'Ocupación por Vivienda' => 4.12,
                     'Viviendas con Electricidad' => 99.55,
                     'Viviendas con Agua' => 99.55,
                     'Viviendas con Drenaje' => 97.68,
                     'Viviendas con Televisión' => 98.69,
                     'Viviendas con Automóvil' => 44.13,
-                    'Viviendas con Computadora' => 31.06,
-                    'Viviendas con Celular' => 68.18,
-                    'Viviendas con Internet' => 21.18
+                    'Viviendas con Computadora' => 31.06
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,7 +103,7 @@ class EjidoSanAntonioDeLosBravos extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.13,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 9.68,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 6.45,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 6.45

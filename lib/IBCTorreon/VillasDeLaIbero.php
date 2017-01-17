@@ -33,13 +33,13 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas de La Ibero';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-ibero';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas de La Ibero de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas de La Ibero en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.84,
                     'Porcentaje de población no especificada' => 0.82,
                     'Fecundidad promedio' => 1.47,
-                    'Porcentaje de población nacida en otro estado' => 25.07,
-                    'Porcentaje de población con discapacidad' => 1.20,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 58.08,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.89
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.00,
-                    'Grado Promedio de Escolaridad masculina' => 15.36,
-                    'Grado Promedio de Escolaridad femenina' => 14.65
+                    'Porcentaje de población con discapacidad' => 1.20
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 202,
-                    'Hogares Jefatura masculina' => 90.10,
-                    'Hogares Jefatura femenina' => 9.90,
                     'Ocupación por Vivienda' => 3.61,
                     'Viviendas con Electricidad' => 99.01,
                     'Viviendas con Agua' => 99.01,
                     'Viviendas con Drenaje' => 99.01,
                     'Viviendas con Televisión' => 96.53,
                     'Viviendas con Automóvil' => 93.56,
-                    'Viviendas con Computadora' => 88.61,
-                    'Viviendas con Celular' => 94.55,
-                    'Viviendas con Internet' => 86.14
+                    'Viviendas con Computadora' => 88.61
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class VillasDeLaIbero extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Gubernamentales',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Gubernamentales',
                     'Tercera actividad porcentaje' => 16.67
                 )
             )

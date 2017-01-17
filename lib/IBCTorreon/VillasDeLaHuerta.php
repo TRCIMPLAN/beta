@@ -33,13 +33,13 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas de La Huerta';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-huerta';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas de La Huerta de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas de La Huerta en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.03,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 1.71,
-                    'Porcentaje de población nacida en otro estado' => 15.14,
-                    'Porcentaje de población con discapacidad' => 1.30,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.45,
-                    'Porcentaje de población de 18 y más' => 56.89,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.31
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.99,
-                    'Grado Promedio de Escolaridad masculina' => 9.98,
-                    'Grado Promedio de Escolaridad femenina' => 10.01
+                    'Porcentaje de población con discapacidad' => 1.30
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDeLaHuerta extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 271,
-                    'Hogares Jefatura masculina' => 84.50,
-                    'Hogares Jefatura femenina' => 15.50,
                     'Ocupación por Vivienda' => 3.59,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.63,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.89,
                     'Viviendas con Automóvil' => 54.76,
-                    'Viviendas con Computadora' => 25.64,
-                    'Viviendas con Celular' => 84.87,
-                    'Viviendas con Internet' => 17.59
+                    'Viviendas con Computadora' => 25.64
                 )
             ),
             'Unidades Económicas' => array(

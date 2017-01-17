@@ -33,13 +33,13 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-san-antonio';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas San Antonio de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas San Antonio en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.89,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.54,
-                    'Porcentaje de población nacida en otro estado' => 24.79,
-                    'Porcentaje de población con discapacidad' => 1.63,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 58.91,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.64,
-                    'Grado Promedio de Escolaridad masculina' => 14.95,
-                    'Grado Promedio de Escolaridad femenina' => 14.37
+                    'Porcentaje de población con discapacidad' => 1.63
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 163,
-                    'Hogares Jefatura masculina' => 44.79,
-                    'Hogares Jefatura femenina' => 55.21,
                     'Ocupación por Vivienda' => 3.61,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 95.09,
-                    'Viviendas con Computadora' => 85.28,
-                    'Viviendas con Celular' => 95.09,
-                    'Viviendas con Internet' => 77.30
+                    'Viviendas con Computadora' => 85.28
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,11 +99,11 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Inmobiliarios',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Financieros y Seguros',
                     'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Financieros y Seguros',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 16.67,
                     'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 16.67

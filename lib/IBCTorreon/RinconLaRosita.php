@@ -33,13 +33,13 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Rincón La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'rincon-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Rincón La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Rincón La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.10,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.51,
-                    'Porcentaje de población nacida en otro estado' => 21.57,
-                    'Porcentaje de población con discapacidad' => 2.78,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
-                    'Porcentaje de población de 18 y más' => 72.36,
-                    'Porcentaje de población de 18 y más postbásicos' => 68.09
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.66,
-                    'Grado Promedio de Escolaridad masculina' => 15.06,
-                    'Grado Promedio de Escolaridad femenina' => 14.32
+                    'Porcentaje de población con discapacidad' => 2.78
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 129,
-                    'Hogares Jefatura masculina' => 68.22,
-                    'Hogares Jefatura femenina' => 31.78,
                     'Ocupación por Vivienda' => 3.45,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 97.67,
-                    'Viviendas con Computadora' => 85.27,
-                    'Viviendas con Celular' => 97.67,
-                    'Viviendas con Internet' => 82.17
+                    'Viviendas con Computadora' => 85.27
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class RinconLaRosita extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.00,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 15.00,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Financieros y Seguros',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

@@ -33,13 +33,13 @@ class Aviacion extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Aviación';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aviación de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Aviación en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.44,
                     'Porcentaje de población no especificada' => 0.52,
                     'Fecundidad promedio' => 2.56,
-                    'Porcentaje de población nacida en otro estado' => 18.23,
-                    'Porcentaje de población con discapacidad' => 4.28,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.39,
-                    'Porcentaje de población de 18 y más' => 64.53,
-                    'Porcentaje de población de 18 y más postbásicos' => 18.40
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.26,
-                    'Grado Promedio de Escolaridad masculina' => 8.19,
-                    'Grado Promedio de Escolaridad femenina' => 8.33
+                    'Porcentaje de población con discapacidad' => 4.28
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Aviacion extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1082,
-                    'Hogares Jefatura masculina' => 77.15,
-                    'Hogares Jefatura femenina' => 22.85,
                     'Ocupación por Vivienda' => 4.24,
                     'Viviendas con Electricidad' => 99.85,
                     'Viviendas con Agua' => 99.02,
                     'Viviendas con Drenaje' => 99.67,
                     'Viviendas con Televisión' => 97.91,
                     'Viviendas con Automóvil' => 43.61,
-                    'Viviendas con Computadora' => 21.20,
-                    'Viviendas con Celular' => 67.37,
-                    'Viviendas con Internet' => 14.11
+                    'Viviendas con Computadora' => 21.20
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class Aviacion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 14.42,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.58,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 3.85
                 )
             )

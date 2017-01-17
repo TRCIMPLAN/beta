@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":1.15,
         "Porcentaje de población no especificada":1.09,
         "Fecundidad promedio":1.88,
-        "Porcentaje de población nacida en otro estado":15.57,
-        "Porcentaje de población con discapacidad":2.2,
-        "Porcentaje de población de 15 y más analfabeta":0.61,
-        "Porcentaje de población de 18 y más":58.39,
-        "Porcentaje de población de 18 y más postbásicos":29.42
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":10.56,
-        "Grado Promedio de Escolaridad masculina":10.67,
-        "Grado Promedio de Escolaridad femenina":10.46
+        "Porcentaje de población con discapacidad":2.2
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":820,
-        "Hogares Jefatura masculina":80.61,
-        "Hogares Jefatura femenina":19.39,
         "Ocupación por Vivienda":3.7,
         "Viviendas con Electricidad":99.95,
         "Viviendas con Agua":99.82,
         "Viviendas con Drenaje":99.58,
         "Viviendas con Televisión":99.09,
         "Viviendas con Automóvil":54.31,
-        "Viviendas con Computadora":31.45,
-        "Viviendas con Celular":86.28,
-        "Viviendas con Internet":23.46
+        "Viviendas con Computadora":31.45
       }
     },
     "Unidades Económicas":{
@@ -60,9 +45,9 @@
         "Primer actividad porcentaje":44.07,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":18.64,
-        "Tercera actividad nombre":"Manejo de Residuos",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":8.47,
-        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":8.47,
         "Quinta actividad nombre":"Educativos",
         "Quinta actividad porcentaje":6.78

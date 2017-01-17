@@ -33,13 +33,13 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Viñedos de La Joya';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'vinedos-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Viñedos de La Joya de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Viñedos de La Joya en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.14,
                     'Porcentaje de población no especificada' => 2.05,
                     'Fecundidad promedio' => 1.69,
-                    'Porcentaje de población nacida en otro estado' => 13.22,
-                    'Porcentaje de población con discapacidad' => 0.52,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 56.62,
-                    'Porcentaje de población de 18 y más postbásicos' => 23.79
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.85,
-                    'Grado Promedio de Escolaridad masculina' => 9.93,
-                    'Grado Promedio de Escolaridad femenina' => 9.76
+                    'Porcentaje de población con discapacidad' => 0.52
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 118,
-                    'Hogares Jefatura masculina' => 88.14,
-                    'Hogares Jefatura femenina' => 11.86,
                     'Ocupación por Vivienda' => 3.71,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 96.61,
                     'Viviendas con Televisión' => 99.15,
                     'Viviendas con Automóvil' => 50.33,
-                    'Viviendas con Computadora' => 25.84,
-                    'Viviendas con Celular' => 94.07,
-                    'Viviendas con Internet' => 19.98
+                    'Viviendas con Computadora' => 25.84
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class VinedosDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.67,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.33,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 6.67,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )

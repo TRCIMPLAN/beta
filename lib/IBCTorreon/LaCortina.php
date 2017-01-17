@@ -33,13 +33,13 @@ class LaCortina extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'La Cortina';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-cortina';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia La Cortina de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia La Cortina en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LaCortina extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.01,
                     'Porcentaje de población no especificada' => 1.68,
                     'Fecundidad promedio' => 1.83,
-                    'Porcentaje de población nacida en otro estado' => 14.13,
-                    'Porcentaje de población con discapacidad' => 0.92,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.24,
-                    'Porcentaje de población de 18 y más' => 55.96,
-                    'Porcentaje de población de 18 y más postbásicos' => 27.31
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.30,
-                    'Grado Promedio de Escolaridad masculina' => 10.60,
-                    'Grado Promedio de Escolaridad femenina' => 10.03
+                    'Porcentaje de población con discapacidad' => 0.92
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LaCortina extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 452,
-                    'Hogares Jefatura masculina' => 79.20,
-                    'Hogares Jefatura femenina' => 20.80,
                     'Ocupación por Vivienda' => 3.95,
                     'Viviendas con Electricidad' => 99.78,
                     'Viviendas con Agua' => 99.78,
                     'Viviendas con Drenaje' => 99.34,
                     'Viviendas con Televisión' => 99.34,
                     'Viviendas con Automóvil' => 53.96,
-                    'Viviendas con Computadora' => 36.97,
-                    'Viviendas con Celular' => 88.05,
-                    'Viviendas con Internet' => 22.47
+                    'Viviendas con Computadora' => 36.97
                 )
             ),
             'Unidades Económicas' => array(

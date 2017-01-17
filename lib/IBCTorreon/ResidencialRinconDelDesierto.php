@@ -33,13 +33,13 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Rincón del Desierto';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-rincon-del-desierto';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Rincón del Desierto de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Rincón del Desierto en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.86,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 1.50,
-                    'Porcentaje de población nacida en otro estado' => 25.58,
-                    'Porcentaje de población con discapacidad' => 3.42,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 65.71,
-                    'Porcentaje de población de 18 y más postbásicos' => 52.14
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.19,
-                    'Grado Promedio de Escolaridad masculina' => 13.62,
-                    'Grado Promedio de Escolaridad femenina' => 12.77
+                    'Porcentaje de población con discapacidad' => 3.42
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialRinconDelDesierto extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 39,
-                    'Hogares Jefatura masculina' => 79.49,
-                    'Hogares Jefatura femenina' => 20.51,
                     'Ocupación por Vivienda' => 3.59,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 97.44,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 87.18,
-                    'Viviendas con Computadora' => 89.74,
-                    'Viviendas con Celular' => 92.31,
-                    'Viviendas con Internet' => 84.62
+                    'Viviendas con Computadora' => 89.74
                 )
             ),
             'Unidades Económicas' => array(

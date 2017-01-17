@@ -33,13 +33,13 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda Los Ángeles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ex-hacienda-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ex-Hacienda Los Ángeles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ex-Hacienda Los Ángeles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.65,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.84,
-                    'Porcentaje de población nacida en otro estado' => 19.84,
-                    'Porcentaje de población con discapacidad' => 1.52,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 72.00,
-                    'Porcentaje de población de 18 y más postbásicos' => 62.96
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.57,
-                    'Grado Promedio de Escolaridad masculina' => 13.99,
-                    'Grado Promedio de Escolaridad femenina' => 13.16
+                    'Porcentaje de población con discapacidad' => 1.52
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 94,
-                    'Hogares Jefatura masculina' => 67.37,
-                    'Hogares Jefatura femenina' => 32.63,
                     'Ocupación por Vivienda' => 3.68,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.83,
                     'Viviendas con Automóvil' => 85.92,
-                    'Viviendas con Computadora' => 82.16,
-                    'Viviendas con Celular' => 87.83,
-                    'Viviendas con Internet' => 70.10
+                    'Viviendas con Computadora' => 82.16
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido San Luis';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-san-luis';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido San Luis de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido San Luis en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.03,
                     'Porcentaje de población no especificada' => 0.51,
                     'Fecundidad promedio' => 2.47,
-                    'Porcentaje de población nacida en otro estado' => 15.05,
-                    'Porcentaje de población con discapacidad' => 6.65,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.95,
-                    'Porcentaje de población de 18 y más' => 65.19,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.81
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.17,
-                    'Grado Promedio de Escolaridad masculina' => 8.27,
-                    'Grado Promedio de Escolaridad femenina' => 8.09
+                    'Porcentaje de población con discapacidad' => 6.65
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 300,
-                    'Hogares Jefatura masculina' => 79.33,
-                    'Hogares Jefatura femenina' => 20.67,
                     'Ocupación por Vivienda' => 4.07,
                     'Viviendas con Electricidad' => 99.71,
                     'Viviendas con Agua' => 97.93,
                     'Viviendas con Drenaje' => 97.97,
                     'Viviendas con Televisión' => 97.86,
                     'Viviendas con Automóvil' => 44.50,
-                    'Viviendas con Computadora' => 23.20,
-                    'Viviendas con Celular' => 67.75,
-                    'Viviendas con Internet' => 12.66
+                    'Viviendas con Computadora' => 23.20
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class EjidoSanLuis extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 31.76,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 24.71,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.41,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.41,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.06

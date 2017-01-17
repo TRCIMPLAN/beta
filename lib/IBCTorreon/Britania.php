@@ -33,13 +33,13 @@ class Britania extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Britania';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'britania';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Britania de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Britania en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Britania extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.34,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.86,
-                    'Porcentaje de población nacida en otro estado' => 20.15,
-                    'Porcentaje de población con discapacidad' => 5.40,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 68.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.61
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.60,
-                    'Grado Promedio de Escolaridad masculina' => 12.73,
-                    'Grado Promedio de Escolaridad femenina' => 12.48
+                    'Porcentaje de población con discapacidad' => 5.40
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Britania extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 117,
-                    'Hogares Jefatura masculina' => 76.07,
-                    'Hogares Jefatura femenina' => 23.93,
                     'Ocupación por Vivienda' => 3.35,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.29,
                     'Viviendas con Automóvil' => 71.79,
-                    'Viviendas con Computadora' => 52.99,
-                    'Viviendas con Celular' => 88.03,
-                    'Viviendas con Internet' => 40.17
+                    'Viviendas con Computadora' => 52.99
                 )
             ),
             'Unidades Económicas' => array(

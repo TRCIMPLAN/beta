@@ -33,13 +33,13 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Veinte de Noviembre';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'veinte-de-noviembre';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Veinte de Noviembre de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Veinte de Noviembre en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.68,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.35,
-                    'Porcentaje de población nacida en otro estado' => 17.08,
-                    'Porcentaje de población con discapacidad' => 9.28,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.90,
-                    'Porcentaje de población de 18 y más' => 70.28,
-                    'Porcentaje de población de 18 y más postbásicos' => 22.42
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.66,
-                    'Grado Promedio de Escolaridad masculina' => 8.97,
-                    'Grado Promedio de Escolaridad femenina' => 8.39
+                    'Porcentaje de población con discapacidad' => 9.28
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VeinteDeNoviembre extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 158,
-                    'Hogares Jefatura masculina' => 72.15,
-                    'Hogares Jefatura femenina' => 27.85,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 99.37,
                     'Viviendas con Agua' => 99.37,
                     'Viviendas con Drenaje' => 99.37,
                     'Viviendas con Televisión' => 98.10,
                     'Viviendas con Automóvil' => 27.22,
-                    'Viviendas con Computadora' => 19.81,
-                    'Viviendas con Celular' => 68.35,
-                    'Viviendas con Internet' => 15.79
+                    'Viviendas con Computadora' => 19.81
                 )
             ),
             'Unidades Económicas' => array(

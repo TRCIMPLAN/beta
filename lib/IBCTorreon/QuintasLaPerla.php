@@ -33,13 +33,13 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas La Perla';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-la-perla';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas La Perla de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas La Perla en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.51,
                     'Porcentaje de población no especificada' => 0.49,
                     'Fecundidad promedio' => 1.22,
-                    'Porcentaje de población nacida en otro estado' => 8.63,
-                    'Porcentaje de población con discapacidad' => 1.45,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 50.50
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.03,
-                    'Grado Promedio de Escolaridad masculina' => 13.67,
-                    'Grado Promedio de Escolaridad femenina' => 14.34
+                    'Porcentaje de población con discapacidad' => 1.45
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasLaPerla extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 70,
-                    'Hogares Jefatura masculina' => 79.91,
-                    'Hogares Jefatura femenina' => 20.09,
                     'Ocupación por Vivienda' => 3.03,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 93.33,
                     'Viviendas con Automóvil' => 84.00,
-                    'Viviendas con Computadora' => 53.57,
-                    'Viviendas con Celular' => 85.92,
-                    'Viviendas con Internet' => 35.35
+                    'Viviendas con Computadora' => 53.57
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class InfonavitNuevaCalifornia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Infonavit Nueva California';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'infonavit-nueva-california';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Infonavit Nueva California de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Infonavit Nueva California en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class InfonavitNuevaCalifornia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.53,
                     'Porcentaje de población no especificada' => 0.84,
                     'Fecundidad promedio' => 1.98,
-                    'Porcentaje de población nacida en otro estado' => 14.22,
-                    'Porcentaje de población con discapacidad' => 7.71,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.41,
-                    'Porcentaje de población de 18 y más' => 71.47,
-                    'Porcentaje de población de 18 y más postbásicos' => 34.38
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.95,
-                    'Grado Promedio de Escolaridad masculina' => 10.14,
-                    'Grado Promedio de Escolaridad femenina' => 9.77
+                    'Porcentaje de población con discapacidad' => 7.71
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class InfonavitNuevaCalifornia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 766,
-                    'Hogares Jefatura masculina' => 78.46,
-                    'Hogares Jefatura femenina' => 21.54,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 99.61,
                     'Viviendas con Agua' => 99.35,
                     'Viviendas con Drenaje' => 99.74,
                     'Viviendas con Televisión' => 99.09,
                     'Viviendas con Automóvil' => 50.53,
-                    'Viviendas con Computadora' => 40.73,
-                    'Viviendas con Celular' => 80.16,
-                    'Viviendas con Internet' => 27.20
+                    'Viviendas con Computadora' => 40.73
                 )
             ),
             'Unidades Económicas' => array(

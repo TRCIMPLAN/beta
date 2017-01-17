@@ -33,13 +33,13 @@ class AmpliacionZarazogaSur extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Zarazoga Sur';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-zarazoga-sur';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Zarazoga Sur de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Zarazoga Sur en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionZarazogaSur extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.42,
                     'Porcentaje de población no especificada' => 0.37,
                     'Fecundidad promedio' => 2.48,
-                    'Porcentaje de población nacida en otro estado' => 18.95,
-                    'Porcentaje de población con discapacidad' => 2.90,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.92,
-                    'Porcentaje de población de 18 y más' => 53.46,
-                    'Porcentaje de población de 18 y más postbásicos' => 5.42
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.97,
-                    'Grado Promedio de Escolaridad masculina' => 6.88,
-                    'Grado Promedio de Escolaridad femenina' => 7.06
+                    'Porcentaje de población con discapacidad' => 2.90
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionZarazogaSur extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1859,
-                    'Hogares Jefatura masculina' => 77.31,
-                    'Hogares Jefatura femenina' => 22.69,
                     'Ocupación por Vivienda' => 3.80,
                     'Viviendas con Electricidad' => 99.37,
                     'Viviendas con Agua' => 41.97,
                     'Viviendas con Drenaje' => 78.39,
                     'Viviendas con Televisión' => 92.96,
                     'Viviendas con Automóvil' => 34.95,
-                    'Viviendas con Computadora' => 13.80,
-                    'Viviendas con Celular' => 58.90,
-                    'Viviendas con Internet' => 3.85
+                    'Viviendas con Computadora' => 13.80
                 )
             ),
             'Unidades Económicas' => array(

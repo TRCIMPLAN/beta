@@ -33,13 +33,13 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Zaragoza';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-zaragoza';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Zaragoza de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Zaragoza en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.56,
                     'Porcentaje de población no especificada' => 0.27,
                     'Fecundidad promedio' => 1.82,
-                    'Porcentaje de población nacida en otro estado' => 16.14,
-                    'Porcentaje de población con discapacidad' => 2.16,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.35,
-                    'Porcentaje de población de 18 y más' => 59.18,
-                    'Porcentaje de población de 18 y más postbásicos' => 24.47
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.72,
-                    'Grado Promedio de Escolaridad masculina' => 9.81,
-                    'Grado Promedio de Escolaridad femenina' => 9.64
+                    'Porcentaje de población con discapacidad' => 2.16
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasZaragoza extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1725,
-                    'Hogares Jefatura masculina' => 82.73,
-                    'Hogares Jefatura femenina' => 17.27,
                     'Ocupación por Vivienda' => 3.55,
                     'Viviendas con Electricidad' => 99.68,
                     'Viviendas con Agua' => 99.79,
                     'Viviendas con Drenaje' => 99.68,
                     'Viviendas con Televisión' => 97.59,
                     'Viviendas con Automóvil' => 41.97,
-                    'Viviendas con Computadora' => 28.27,
-                    'Viviendas con Celular' => 85.40,
-                    'Viviendas con Internet' => 12.00
+                    'Viviendas con Computadora' => 28.27
                 )
             ),
             'Unidades Económicas' => array(

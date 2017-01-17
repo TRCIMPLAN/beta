@@ -33,13 +33,13 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverría Sur';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-sur';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Luis Echeverría Sur de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Luis Echeverría Sur en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 40.00,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 4.50,
-                    'Porcentaje de población nacida en otro estado' => 14.83,
-                    'Porcentaje de población con discapacidad' => 7.81,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.93,
-                    'Porcentaje de población de 18 y más' => 100.00,
-                    'Porcentaje de población de 18 y más postbásicos' => 26.24
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.00,
-                    'Grado Promedio de Escolaridad masculina' => 8.33,
-                    'Grado Promedio de Escolaridad femenina' => 2.50
+                    'Porcentaje de población con discapacidad' => 7.81
                 )
             ),
             'Características Económicas' => array(
@@ -90,17 +79,13 @@ class LuisEcheverriaSur extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 3,
-                    'Hogares Jefatura masculina' => 100.00,
-                    'Hogares Jefatura femenina' => 0.00,
                     'Ocupación por Vivienda' => 1.67,
                     'Viviendas con Electricidad' => 99.50,
                     'Viviendas con Agua' => 99.34,
                     'Viviendas con Drenaje' => 99.17,
                     'Viviendas con Televisión' => 97.52,
                     'Viviendas con Automóvil' => 0.00,
-                    'Viviendas con Computadora' => 0.00,
-                    'Viviendas con Celular' => 55.63,
-                    'Viviendas con Internet' => 0.00
+                    'Viviendas con Computadora' => 0.00
                 )
             ),
             'Unidades Económicas' => array(

@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":5.22,
         "Porcentaje de población no especificada":0,
         "Fecundidad promedio":1.34,
-        "Porcentaje de población nacida en otro estado":18.28,
-        "Porcentaje de población con discapacidad":6.53,
-        "Porcentaje de población de 15 y más analfabeta":0.14,
-        "Porcentaje de población de 18 y más":66.84,
-        "Porcentaje de población de 18 y más postbásicos":52.48
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":12.8,
-        "Grado Promedio de Escolaridad masculina":13.21,
-        "Grado Promedio de Escolaridad femenina":12.41
+        "Porcentaje de población con discapacidad":6.53
       }
     },
     "Características Económicas":{
@@ -40,17 +29,13 @@
     "Viviendas":{
       "2010":{
         "Hogares":116,
-        "Hogares Jefatura masculina":79.31,
-        "Hogares Jefatura femenina":20.69,
         "Ocupación por Vivienda":3.3,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":100,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":100,
         "Viviendas con Automóvil":81.9,
-        "Viviendas con Computadora":63.9,
-        "Viviendas con Celular":85.34,
-        "Viviendas con Internet":52.15
+        "Viviendas con Computadora":63.9
       }
     },
     "Unidades Económicas":{
@@ -58,11 +43,11 @@
         "Total Actividades Económicas":6,
         "Primer actividad nombre":"Comercio Menudeo",
         "Primer actividad porcentaje":50,
-        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Segunda actividad nombre":"Comercio Mayoreo",
         "Segunda actividad porcentaje":16.67,
-        "Tercera actividad nombre":"Comercio Mayoreo",
+        "Tercera actividad nombre":"Industria Manufacturera",
         "Tercera actividad porcentaje":16.67,
-        "Cuarta actividad nombre":"Industria Manufacturera",
+        "Cuarta actividad nombre":"Preparación de Alimentos y Bebidas",
         "Cuarta actividad porcentaje":16.67
       }
     }

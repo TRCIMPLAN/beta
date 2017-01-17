@@ -33,13 +33,13 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'La Merced II';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'la-merced-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia La Merced II de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia La Merced II en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.67,
                     'Porcentaje de población no especificada' => 1.35,
                     'Fecundidad promedio' => 1.83,
-                    'Porcentaje de población nacida en otro estado' => 19.91,
-                    'Porcentaje de población con discapacidad' => 3.88,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
-                    'Porcentaje de población de 18 y más' => 69.18,
-                    'Porcentaje de población de 18 y más postbásicos' => 47.52
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.75,
-                    'Grado Promedio de Escolaridad masculina' => 12.06,
-                    'Grado Promedio de Escolaridad femenina' => 11.48
+                    'Porcentaje de población con discapacidad' => 3.88
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1368,
-                    'Hogares Jefatura masculina' => 75.66,
-                    'Hogares Jefatura femenina' => 24.34,
                     'Ocupación por Vivienda' => 3.73,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.85,
                     'Viviendas con Drenaje' => 99.93,
                     'Viviendas con Televisión' => 99.63,
                     'Viviendas con Automóvil' => 65.94,
-                    'Viviendas con Computadora' => 56.96,
-                    'Viviendas con Celular' => 83.41,
-                    'Viviendas con Internet' => 44.94
+                    'Viviendas con Computadora' => 56.96
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class LaMercedIi extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 16.28,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.50,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 4.65,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 4.65
                 )
             )

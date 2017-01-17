@@ -33,13 +33,13 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Aeropuerto Internacional Francisco Sarabia Tinoco';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aeropuerto-internacional-francisco-sarabia-tinoco';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aeropuerto Internacional Francisco Sarabia Tinoco de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Aeropuerto Internacional Francisco Sarabia Tinoco en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
                     'Porcentaje de población de 65 y más años' => 2.65,
                     'Porcentaje de población no especificada' => 0.62,
                     'Fecundidad promedio' => 1.62,
-                    'Porcentaje de población nacida en otro estado' => 22.52,
-                    'Porcentaje de población con discapacidad' => 1.54,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.80,
-                    'Porcentaje de población de 18 y más' => 63.66,
-                    'Porcentaje de población de 18 y más postbásicos' => 48.12
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.11,
-                    'Grado Promedio de Escolaridad masculina' => 13.49,
-                    'Grado Promedio de Escolaridad femenina' => 12.78
+                    'Porcentaje de población con discapacidad' => 1.54
                 )
             ),
             'Características Económicas' => array(
@@ -105,9 +94,9 @@ class AeropuertoInternacionalFranciscoSarabiaTinoco extends \IBCBase\Publicacion
                     'Primer actividad porcentaje' => 28.57,
                     'Segunda actividad nombre' => 'Inmobiliarios',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Gubernamentales',
                     'Cuarta actividad porcentaje' => 14.29,
                     'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 8.57

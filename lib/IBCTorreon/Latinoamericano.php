@@ -33,13 +33,13 @@ class Latinoamericano extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Latinoamericano';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'latinoamericano';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Latinoamericano de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Latinoamericano en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Latinoamericano extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.74,
                     'Porcentaje de población no especificada' => 0.42,
                     'Fecundidad promedio' => 1.98,
-                    'Porcentaje de población nacida en otro estado' => 17.34,
-                    'Porcentaje de población con discapacidad' => 7.79,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.60,
-                    'Porcentaje de población de 18 y más' => 65.19,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.47
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.17,
-                    'Grado Promedio de Escolaridad masculina' => 10.14,
-                    'Grado Promedio de Escolaridad femenina' => 10.19
+                    'Porcentaje de población con discapacidad' => 7.79
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Latinoamericano extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1534,
-                    'Hogares Jefatura masculina' => 75.72,
-                    'Hogares Jefatura femenina' => 24.28,
                     'Ocupación por Vivienda' => 3.90,
                     'Viviendas con Electricidad' => 99.85,
                     'Viviendas con Agua' => 99.53,
                     'Viviendas con Drenaje' => 99.22,
                     'Viviendas con Televisión' => 98.98,
                     'Viviendas con Automóvil' => 58.09,
-                    'Viviendas con Computadora' => 40.00,
-                    'Viviendas con Celular' => 80.83,
-                    'Viviendas con Internet' => 28.47
+                    'Viviendas con Computadora' => 40.00
                 )
             ),
             'Unidades Económicas' => array(

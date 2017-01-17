@@ -33,13 +33,13 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Libertad';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-libertad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Libertad de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Libertad en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.19,
                     'Porcentaje de población no especificada' => 0.08,
                     'Fecundidad promedio' => 2.50,
-                    'Porcentaje de población nacida en otro estado' => 16.38,
-                    'Porcentaje de población con discapacidad' => 7.90,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.47,
-                    'Porcentaje de población de 18 y más' => 65.86,
-                    'Porcentaje de población de 18 y más postbásicos' => 17.54
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.13,
-                    'Grado Promedio de Escolaridad masculina' => 8.28,
-                    'Grado Promedio de Escolaridad femenina' => 7.99
+                    'Porcentaje de población con discapacidad' => 7.90
                 )
             ),
             'Características Económicas' => array(
@@ -96,31 +85,27 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 70,
-                    'Hogares Jefatura masculina' => 80.77,
-                    'Hogares Jefatura femenina' => 19.23,
                     'Ocupación por Vivienda' => 4.13,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.28,
                     'Viviendas con Drenaje' => 99.77,
                     'Viviendas con Televisión' => 96.85,
                     'Viviendas con Automóvil' => 48.20,
-                    'Viviendas con Computadora' => 17.89,
-                    'Viviendas con Celular' => 77.02,
-                    'Viviendas con Internet' => 8.87
+                    'Viviendas con Computadora' => 17.89
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 7,
-                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Primer actividad nombre' => 'Educativos',
                     'Primer actividad porcentaje' => 28.57,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 28.57,
-                    'Tercera actividad nombre' => 'Inmobiliarios',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Inmobiliarios',
                     'Cuarta actividad porcentaje' => 14.29,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 14.29
                 )
             )

@@ -33,13 +33,13 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Las Estrellas - El Pensador';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-estrellas-el-pensador';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Las Estrellas - El Pensador de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Las Estrellas - El Pensador en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.17,
                     'Porcentaje de población no especificada' => -0.01,
                     'Fecundidad promedio' => 3.01,
-                    'Porcentaje de población nacida en otro estado' => 21.35,
-                    'Porcentaje de población con discapacidad' => 6.25,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.91,
-                    'Porcentaje de población de 18 y más' => 57.55,
-                    'Porcentaje de población de 18 y más postbásicos' => 4.43
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.15,
-                    'Grado Promedio de Escolaridad masculina' => 6.35,
-                    'Grado Promedio de Escolaridad femenina' => 5.90
+                    'Porcentaje de población con discapacidad' => 6.25
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 90,
-                    'Hogares Jefatura masculina' => 78.89,
-                    'Hogares Jefatura femenina' => 21.11,
                     'Ocupación por Vivienda' => 4.27,
                     'Viviendas con Electricidad' => 97.78,
                     'Viviendas con Agua' => 96.67,
                     'Viviendas con Drenaje' => 93.33,
                     'Viviendas con Televisión' => 91.11,
                     'Viviendas con Automóvil' => 34.44,
-                    'Viviendas con Computadora' => 0.00,
-                    'Viviendas con Celular' => 62.22,
-                    'Viviendas con Internet' => 0.00
+                    'Viviendas con Computadora' => 0.00
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 10,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.00

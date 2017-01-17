@@ -33,13 +33,13 @@ class VillasDeSanAngel extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas de San Ángel';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-san-angel';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas de San Ángel de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas de San Ángel en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDeSanAngel extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.05,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.95,
-                    'Porcentaje de población nacida en otro estado' => 16.41,
-                    'Porcentaje de población con discapacidad' => 1.86,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.05,
-                    'Porcentaje de población de 18 y más' => 57.95,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.41
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 6.41,
-                    'Grado Promedio de Escolaridad masculina' => 6.23,
-                    'Grado Promedio de Escolaridad femenina' => 6.61
+                    'Porcentaje de población con discapacidad' => 1.86
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDeSanAngel extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 51,
-                    'Hogares Jefatura masculina' => 78.43,
-                    'Hogares Jefatura femenina' => 21.57,
                     'Ocupación por Vivienda' => 3.82,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.04,
                     'Viviendas con Drenaje' => 98.04,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 33.33,
-                    'Viviendas con Computadora' => 9.80,
-                    'Viviendas con Celular' => 76.47,
-                    'Viviendas con Internet' => 32.66
+                    'Viviendas con Computadora' => 9.80
                 )
             ),
             'Unidades Económicas' => array(

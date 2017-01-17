@@ -33,13 +33,13 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Roble II';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-roble-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Roble II de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Roble II en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.43,
                     'Porcentaje de población no especificada' => 5.84,
                     'Fecundidad promedio' => 1.84,
-                    'Porcentaje de población nacida en otro estado' => 15.40,
-                    'Porcentaje de población con discapacidad' => 3.92,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 66.55,
-                    'Porcentaje de población de 18 y más postbásicos' => 48.50
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.12,
-                    'Grado Promedio de Escolaridad masculina' => 12.32,
-                    'Grado Promedio de Escolaridad femenina' => 11.97
+                    'Porcentaje de población con discapacidad' => 3.92
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 149,
-                    'Hogares Jefatura masculina' => 69.80,
-                    'Hogares Jefatura femenina' => 30.20,
                     'Ocupación por Vivienda' => 3.79,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 97.99,
                     'Viviendas con Drenaje' => 97.32,
                     'Viviendas con Televisión' => 97.99,
                     'Viviendas con Automóvil' => 75.17,
-                    'Viviendas con Computadora' => 57.30,
-                    'Viviendas con Celular' => 78.52,
-                    'Viviendas con Internet' => 40.39
+                    'Viviendas con Computadora' => 57.30
                 )
             ),
             'Unidades Económicas' => array(

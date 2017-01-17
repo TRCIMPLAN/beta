@@ -33,13 +33,13 @@ class LasAves extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Las Aves';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'las-aves';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Las Aves de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Las Aves en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LasAves extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.48,
                     'Porcentaje de población no especificada' => 1.25,
                     'Fecundidad promedio' => 2.10,
-                    'Porcentaje de población nacida en otro estado' => 14.36,
-                    'Porcentaje de población con discapacidad' => 0.60,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 56.10,
-                    'Porcentaje de población de 18 y más postbásicos' => 24.80
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.78,
-                    'Grado Promedio de Escolaridad masculina' => 10.13,
-                    'Grado Promedio de Escolaridad femenina' => 9.47
+                    'Porcentaje de población con discapacidad' => 0.60
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LasAves extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 65,
-                    'Hogares Jefatura masculina' => 79.22,
-                    'Hogares Jefatura femenina' => 20.78,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 99.99,
                     'Viviendas con Agua' => 99.98,
                     'Viviendas con Drenaje' => 99.98,
                     'Viviendas con Televisión' => 99.98,
                     'Viviendas con Automóvil' => 41.84,
-                    'Viviendas con Computadora' => 36.39,
-                    'Viviendas con Celular' => 87.25,
-                    'Viviendas con Internet' => 15.58
+                    'Viviendas con Computadora' => 36.39
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ciudad Nazas Polígono 24A';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ciudad-nazas-poligono-24a';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ciudad Nazas Polígono 24A de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ciudad Nazas Polígono 24A en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.53,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.05,
-                    'Porcentaje de población nacida en otro estado' => 16.30,
-                    'Porcentaje de población con discapacidad' => 3.75,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.16,
-                    'Porcentaje de población de 18 y más' => 56.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.34
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.87,
-                    'Grado Promedio de Escolaridad masculina' => 10.06,
-                    'Grado Promedio de Escolaridad femenina' => 9.71
+                    'Porcentaje de población con discapacidad' => 3.75
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 162,
-                    'Hogares Jefatura masculina' => 83.33,
-                    'Hogares Jefatura femenina' => 16.67,
                     'Ocupación por Vivienda' => 4.04,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.38,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.38,
                     'Viviendas con Automóvil' => 50.62,
-                    'Viviendas con Computadora' => 27.64,
-                    'Viviendas con Celular' => 85.19,
-                    'Viviendas con Internet' => 13.16
+                    'Viviendas con Computadora' => 27.64
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class CiudadNazasPoligono24a extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 8,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Manejo de Residuos',
+                    'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 12.50,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 12.50,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 12.50,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 12.50
                 )
             )

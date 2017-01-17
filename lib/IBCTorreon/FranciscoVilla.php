@@ -33,13 +33,13 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'francisco-villa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Francisco Villa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Francisco Villa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.69,
                     'Porcentaje de población no especificada' => 1.06,
                     'Fecundidad promedio' => 2.63,
-                    'Porcentaje de población nacida en otro estado' => 14.97,
-                    'Porcentaje de población con discapacidad' => 4.88,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.19,
-                    'Porcentaje de población de 18 y más' => 63.48,
-                    'Porcentaje de población de 18 y más postbásicos' => 11.42
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.44,
-                    'Grado Promedio de Escolaridad masculina' => 7.47,
-                    'Grado Promedio de Escolaridad femenina' => 7.41
+                    'Porcentaje de población con discapacidad' => 4.88
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FranciscoVilla extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1587,
-                    'Hogares Jefatura masculina' => 68.10,
-                    'Hogares Jefatura femenina' => 31.90,
                     'Ocupación por Vivienda' => 4.28,
                     'Viviendas con Electricidad' => 99.87,
                     'Viviendas con Agua' => 99.81,
                     'Viviendas con Drenaje' => 99.87,
                     'Viviendas con Televisión' => 98.61,
                     'Viviendas con Automóvil' => 34.00,
-                    'Viviendas con Computadora' => 15.95,
-                    'Viviendas con Celular' => 59.54,
-                    'Viviendas con Internet' => 8.86
+                    'Viviendas con Computadora' => 15.95
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Campestre La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-campestre-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Campestre La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Campestre La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 10.05,
                     'Porcentaje de población no especificada' => 8.11,
                     'Fecundidad promedio' => 1.82,
-                    'Porcentaje de población nacida en otro estado' => 18.76,
-                    'Porcentaje de población con discapacidad' => 1.26,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
-                    'Porcentaje de población de 18 y más' => 70.04,
-                    'Porcentaje de población de 18 y más postbásicos' => 63.71
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.58,
-                    'Grado Promedio de Escolaridad masculina' => 15.25,
-                    'Grado Promedio de Escolaridad femenina' => 13.98
+                    'Porcentaje de población con discapacidad' => 1.26
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialCampestreLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 848,
-                    'Hogares Jefatura masculina' => 82.36,
-                    'Hogares Jefatura femenina' => 17.64,
                     'Ocupación por Vivienda' => 3.97,
                     'Viviendas con Electricidad' => 99.66,
                     'Viviendas con Agua' => 98.40,
                     'Viviendas con Drenaje' => 98.65,
                     'Viviendas con Televisión' => 97.67,
                     'Viviendas con Automóvil' => 95.97,
-                    'Viviendas con Computadora' => 91.09,
-                    'Viviendas con Celular' => 95.04,
-                    'Viviendas con Internet' => 88.65
+                    'Viviendas con Computadora' => 91.09
                 )
             ),
             'Unidades Económicas' => array(

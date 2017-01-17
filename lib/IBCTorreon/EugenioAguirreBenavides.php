@@ -33,13 +33,13 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Eugenio Aguirre Benavides';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'eugenio-aguirre-benavides';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Eugenio Aguirre Benavides de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Eugenio Aguirre Benavides en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.43,
                     'Porcentaje de población no especificada' => 4.71,
                     'Fecundidad promedio' => 2.26,
-                    'Porcentaje de población nacida en otro estado' => 19.17,
-                    'Porcentaje de población con discapacidad' => 4.24,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.51,
-                    'Porcentaje de población de 18 y más' => 66.14,
-                    'Porcentaje de población de 18 y más postbásicos' => 29.69
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.68,
-                    'Grado Promedio de Escolaridad masculina' => 9.88,
-                    'Grado Promedio de Escolaridad femenina' => 9.51
+                    'Porcentaje de población con discapacidad' => 4.24
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EugenioAguirreBenavides extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 457,
-                    'Hogares Jefatura masculina' => 69.15,
-                    'Hogares Jefatura femenina' => 30.85,
                     'Ocupación por Vivienda' => 4.04,
                     'Viviendas con Electricidad' => 99.78,
                     'Viviendas con Agua' => 99.56,
                     'Viviendas con Drenaje' => 99.12,
                     'Viviendas con Televisión' => 99.56,
                     'Viviendas con Automóvil' => 48.16,
-                    'Viviendas con Computadora' => 33.05,
-                    'Viviendas con Celular' => 72.43,
-                    'Viviendas con Internet' => 24.41
+                    'Viviendas con Computadora' => 33.05
                 )
             ),
             'Unidades Económicas' => array(

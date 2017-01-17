@@ -33,13 +33,13 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Felipe Ángeles';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'felipe-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Felipe Ángeles de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Felipe Ángeles en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.90,
                     'Porcentaje de población no especificada' => 1.47,
                     'Fecundidad promedio' => 2.42,
-                    'Porcentaje de población nacida en otro estado' => 21.02,
-                    'Porcentaje de población con discapacidad' => 5.81,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.14,
-                    'Porcentaje de población de 18 y más' => 71.85,
-                    'Porcentaje de población de 18 y más postbásicos' => 35.29
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.95,
-                    'Grado Promedio de Escolaridad masculina' => 10.07,
-                    'Grado Promedio de Escolaridad femenina' => 9.84
+                    'Porcentaje de población con discapacidad' => 5.81
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FelipeAngeles extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 283,
-                    'Hogares Jefatura masculina' => 65.97,
-                    'Hogares Jefatura femenina' => 34.03,
                     'Ocupación por Vivienda' => 3.61,
                     'Viviendas con Electricidad' => 99.65,
                     'Viviendas con Agua' => 98.94,
                     'Viviendas con Drenaje' => 98.23,
                     'Viviendas con Televisión' => 98.94,
                     'Viviendas con Automóvil' => 52.30,
-                    'Viviendas con Computadora' => 44.40,
-                    'Viviendas con Celular' => 71.38,
-                    'Viviendas con Internet' => 34.65
+                    'Viviendas con Computadora' => 44.40
                 )
             ),
             'Unidades Económicas' => array(

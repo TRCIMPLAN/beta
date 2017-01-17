@@ -33,13 +33,13 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Nueva California';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'nueva-california';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Nueva California de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Nueva California en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.64,
                     'Porcentaje de población no especificada' => 0.02,
                     'Fecundidad promedio' => 2.40,
-                    'Porcentaje de población nacida en otro estado' => 12.18,
-                    'Porcentaje de población con discapacidad' => 5.51,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.23,
-                    'Porcentaje de población de 18 y más' => 63.93,
-                    'Porcentaje de población de 18 y más postbásicos' => 19.76
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.41,
-                    'Grado Promedio de Escolaridad masculina' => 8.60,
-                    'Grado Promedio de Escolaridad femenina' => 8.24
+                    'Porcentaje de población con discapacidad' => 5.51
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 186,
-                    'Hogares Jefatura masculina' => 74.17,
-                    'Hogares Jefatura femenina' => 25.83,
                     'Ocupación por Vivienda' => 4.39,
                     'Viviendas con Electricidad' => 99.60,
                     'Viviendas con Agua' => 99.06,
                     'Viviendas con Drenaje' => 98.52,
                     'Viviendas con Televisión' => 99.06,
                     'Viviendas con Automóvil' => 44.01,
-                    'Viviendas con Computadora' => 35.81,
-                    'Viviendas con Celular' => 68.09,
-                    'Viviendas con Internet' => 24.05
+                    'Viviendas con Computadora' => 35.81
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class NuevaCalifornia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 9.23,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.62
                 )
             )

@@ -33,13 +33,13 @@ class ParqueIndustrialOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'parque-industrial-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Parque Industrial Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Parque Industrial Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -76,9 +76,9 @@ class ParqueIndustrialOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 25.30,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 16.87,
-                    'Cuarta actividad nombre' => 'Gubernamentales',
+                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Cuarta actividad porcentaje' => 6.02,
-                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 6.02
                 )
             )

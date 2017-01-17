@@ -33,13 +33,13 @@ class MiguelHidalgo extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Miguel Hidalgo';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'miguel-hidalgo';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Miguel Hidalgo de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Miguel Hidalgo en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MiguelHidalgo extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 12.00,
                     'Porcentaje de población no especificada' => 0.30,
                     'Fecundidad promedio' => 2.81,
-                    'Porcentaje de población nacida en otro estado' => 18.40,
-                    'Porcentaje de población con discapacidad' => 10.96,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.60,
-                    'Porcentaje de población de 18 y más' => 69.10,
-                    'Porcentaje de población de 18 y más postbásicos' => 15.59
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.51,
-                    'Grado Promedio de Escolaridad masculina' => 7.70,
-                    'Grado Promedio de Escolaridad femenina' => 7.33
+                    'Porcentaje de población con discapacidad' => 10.96
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MiguelHidalgo extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 239,
-                    'Hogares Jefatura masculina' => 67.63,
-                    'Hogares Jefatura femenina' => 32.37,
                     'Ocupación por Vivienda' => 4.18,
                     'Viviendas con Electricidad' => 97.91,
                     'Viviendas con Agua' => 96.65,
                     'Viviendas con Drenaje' => 98.74,
                     'Viviendas con Televisión' => 94.98,
                     'Viviendas con Automóvil' => 19.25,
-                    'Viviendas con Computadora' => 13.74,
-                    'Viviendas con Celular' => 54.68,
-                    'Viviendas con Internet' => 9.07
+                    'Viviendas con Computadora' => 13.74
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class MiguelHidalgo extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 25.00,
                     'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

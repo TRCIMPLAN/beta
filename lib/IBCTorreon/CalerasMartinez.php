@@ -33,13 +33,13 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Caleras Martínez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'caleras-martinez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Caleras Martínez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Caleras Martínez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.34,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.68,
-                    'Porcentaje de población nacida en otro estado' => 17.98,
-                    'Porcentaje de población con discapacidad' => 10.33,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.23,
-                    'Porcentaje de población de 18 y más' => 65.91,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.52
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.28,
-                    'Grado Promedio de Escolaridad masculina' => 7.39,
-                    'Grado Promedio de Escolaridad femenina' => 7.15
+                    'Porcentaje de población con discapacidad' => 10.33
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CalerasMartinez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 214,
-                    'Hogares Jefatura masculina' => 71.96,
-                    'Hogares Jefatura femenina' => 28.04,
                     'Ocupación por Vivienda' => 3.93,
                     'Viviendas con Electricidad' => 99.18,
                     'Viviendas con Agua' => 91.23,
                     'Viviendas con Drenaje' => 99.18,
                     'Viviendas con Televisión' => 96.84,
                     'Viviendas con Automóvil' => 28.28,
-                    'Viviendas con Computadora' => 13.36,
-                    'Viviendas con Celular' => 59.13,
-                    'Viviendas con Internet' => 3.74
+                    'Viviendas con Computadora' => 13.36
                 )
             ),
             'Unidades Económicas' => array(

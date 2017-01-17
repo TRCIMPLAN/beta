@@ -33,13 +33,13 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas del Sol';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-del-sol';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas del Sol de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas del Sol en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.05,
                     'Porcentaje de población no especificada' => 1.37,
                     'Fecundidad promedio' => 1.44,
-                    'Porcentaje de población nacida en otro estado' => 22.81,
-                    'Porcentaje de población con discapacidad' => 0.80,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 63.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 58.86
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.61,
-                    'Grado Promedio de Escolaridad masculina' => 14.96,
-                    'Grado Promedio de Escolaridad femenina' => 14.29
+                    'Porcentaje de población con discapacidad' => 0.80
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDelSol extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 384,
-                    'Hogares Jefatura masculina' => 86.72,
-                    'Hogares Jefatura femenina' => 13.28,
                     'Ocupación por Vivienda' => 3.42,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.74,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.74,
                     'Viviendas con Automóvil' => 93.70,
-                    'Viviendas con Computadora' => 75.63,
-                    'Viviendas con Celular' => 98.18,
-                    'Viviendas con Internet' => 53.70
+                    'Viviendas con Computadora' => 75.63
                 )
             ),
             'Unidades Económicas' => array(

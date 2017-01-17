@@ -33,13 +33,13 @@ class Amistad extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Amistad';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'amistad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Amistad de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Amistad en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Amistad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.39,
                     'Porcentaje de población no especificada' => 1.67,
                     'Fecundidad promedio' => 1.68,
-                    'Porcentaje de población nacida en otro estado' => 18.08,
-                    'Porcentaje de población con discapacidad' => 3.80,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.22,
-                    'Porcentaje de población de 18 y más' => 59.54,
-                    'Porcentaje de población de 18 y más postbásicos' => 36.79
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.47,
-                    'Grado Promedio de Escolaridad masculina' => 11.66,
-                    'Grado Promedio de Escolaridad femenina' => 11.30
+                    'Porcentaje de población con discapacidad' => 3.80
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Amistad extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1268,
-                    'Hogares Jefatura masculina' => 78.56,
-                    'Hogares Jefatura femenina' => 21.44,
                     'Ocupación por Vivienda' => 3.52,
                     'Viviendas con Electricidad' => 99.87,
                     'Viviendas con Agua' => 99.87,
                     'Viviendas con Drenaje' => 99.95,
                     'Viviendas con Televisión' => 99.48,
                     'Viviendas con Automóvil' => 57.38,
-                    'Viviendas con Computadora' => 40.94,
-                    'Viviendas con Celular' => 89.02,
-                    'Viviendas con Internet' => 26.45
+                    'Viviendas con Computadora' => 40.94
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class Amistad extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 57,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.88,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.04,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 14.04,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.26,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 3.51
                 )
             )

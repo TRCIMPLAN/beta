@@ -48,7 +48,7 @@ class SeccionDatosWeb implements SalidaWeb {
         if (!$this->preparado) {
             $this->acordeones = new AcordeonesWeb(self::IDENTIFICADOR);
             $this->acordeones->agregar('Demografía',                 new EjeDemografiaTablaWeb($this->publicacion_ficha), TRUE); // Acordeon abierto
-            $this->acordeones->agregar('Educación',                  new EjeEducacionTablaWeb($this->publicacion_ficha));
+        //  $this->acordeones->agregar('Educación',                  new EjeEducacionTablaWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Características Económicas', new EjeCaracteristicasEconomicasTablaWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Viviendas',                  new EjeViviendasTablaWeb($this->publicacion_ficha));
             $this->acordeones->agregar('Unidades Económicas',        new EjeUnidadesEconomicasTablaWeb($this->publicacion_ficha));

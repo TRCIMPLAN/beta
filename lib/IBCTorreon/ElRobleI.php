@@ -33,13 +33,13 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'El Roble I';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'el-roble-i';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia El Roble I de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia El Roble I en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 7.51,
                     'Porcentaje de población no especificada' => 1.05,
                     'Fecundidad promedio' => 2.24,
-                    'Porcentaje de población nacida en otro estado' => 16.64,
-                    'Porcentaje de población con discapacidad' => 6.93,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.04,
-                    'Porcentaje de población de 18 y más' => 72.62,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.44
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.76,
-                    'Grado Promedio de Escolaridad masculina' => 11.08,
-                    'Grado Promedio de Escolaridad femenina' => 10.47
+                    'Porcentaje de población con discapacidad' => 6.93
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 332,
-                    'Hogares Jefatura masculina' => 71.99,
-                    'Hogares Jefatura femenina' => 28.01,
                     'Ocupación por Vivienda' => 3.73,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.40,
                     'Viviendas con Automóvil' => 63.25,
-                    'Viviendas con Computadora' => 44.87,
-                    'Viviendas con Celular' => 80.42,
-                    'Viviendas con Internet' => 33.66
+                    'Viviendas con Computadora' => 44.87
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 12,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 8.33,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

@@ -33,13 +33,13 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jardines Del Sol';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jardines-del-sol';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jardines Del Sol de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jardines Del Sol en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.85,
                     'Porcentaje de población no especificada' => 0.66,
                     'Fecundidad promedio' => 1.80,
-                    'Porcentaje de población nacida en otro estado' => 18.40,
-                    'Porcentaje de población con discapacidad' => 1.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.45,
-                    'Porcentaje de población de 18 y más' => 58.03,
-                    'Porcentaje de población de 18 y más postbásicos' => 21.61
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.46,
-                    'Grado Promedio de Escolaridad masculina' => 9.51,
-                    'Grado Promedio de Escolaridad femenina' => 9.41
+                    'Porcentaje de población con discapacidad' => 1.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 277,
-                    'Hogares Jefatura masculina' => 83.03,
-                    'Hogares Jefatura femenina' => 16.97,
                     'Ocupación por Vivienda' => 3.57,
                     'Viviendas con Electricidad' => 99.97,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.86,
                     'Viviendas con Automóvil' => 48.52,
-                    'Viviendas con Computadora' => 25.90,
-                    'Viviendas con Celular' => 87.62,
-                    'Viviendas con Internet' => 3.94
+                    'Viviendas con Computadora' => 25.90
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class JardinesDelSol extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 68.97,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.79,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 6.90,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 6.90,
                     'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 3.45

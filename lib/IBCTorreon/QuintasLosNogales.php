@@ -33,13 +33,13 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas Los Nogales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas Los Nogales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas Los Nogales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.96,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.96,
-                    'Porcentaje de población nacida en otro estado' => 21.87,
-                    'Porcentaje de población con discapacidad' => 0.58,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
-                    'Porcentaje de población de 18 y más' => 64.40,
-                    'Porcentaje de población de 18 y más postbásicos' => 25.73
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.59,
-                    'Grado Promedio de Escolaridad masculina' => 9.68,
-                    'Grado Promedio de Escolaridad femenina' => 9.51
+                    'Porcentaje de población con discapacidad' => 0.58
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 104,
-                    'Hogares Jefatura masculina' => 78.68,
-                    'Hogares Jefatura femenina' => 21.32,
                     'Ocupación por Vivienda' => 3.17,
                     'Viviendas con Electricidad' => 99.68,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 99.67,
                     'Viviendas con Automóvil' => 45.46,
-                    'Viviendas con Computadora' => 28.08,
-                    'Viviendas con Celular' => 85.53,
-                    'Viviendas con Internet' => 9.85
+                    'Viviendas con Computadora' => 28.08
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class QuintasLosNogales extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 14.29,
                     'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 9.52,
-                    'Quinta actividad nombre' => 'Construcción',
+                    'Quinta actividad nombre' => 'Inmobiliarios',
                     'Quinta actividad porcentaje' => 4.76
                 )
             )

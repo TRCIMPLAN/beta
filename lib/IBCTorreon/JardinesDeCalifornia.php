@@ -33,13 +33,13 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Jardines de California';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jardines-de-california';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Jardines de California de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Jardines de California en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.27,
                     'Porcentaje de población no especificada' => 5.11,
                     'Fecundidad promedio' => 2.14,
-                    'Porcentaje de población nacida en otro estado' => 20.38,
-                    'Porcentaje de población con discapacidad' => 7.89,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
-                    'Porcentaje de población de 18 y más' => 77.27,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.98
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 12.30,
-                    'Grado Promedio de Escolaridad masculina' => 12.63,
-                    'Grado Promedio de Escolaridad femenina' => 12.01
+                    'Porcentaje de población con discapacidad' => 7.89
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 658,
-                    'Hogares Jefatura masculina' => 68.24,
-                    'Hogares Jefatura femenina' => 31.76,
                     'Ocupación por Vivienda' => 3.48,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.70,
                     'Viviendas con Drenaje' => 99.70,
                     'Viviendas con Televisión' => 99.85,
                     'Viviendas con Automóvil' => 79.03,
-                    'Viviendas con Computadora' => 63.83,
-                    'Viviendas con Celular' => 83.59,
-                    'Viviendas con Internet' => 55.93
+                    'Viviendas con Computadora' => 63.83
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class JardinesDeCalifornia extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 13.73,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 6.86,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

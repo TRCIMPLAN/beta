@@ -33,13 +33,13 @@ class EjidoElTajito extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido El Tajito';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-el-tajito';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido El Tajito de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido El Tajito en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoElTajito extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.17,
                     'Porcentaje de población no especificada' => 0.54,
                     'Fecundidad promedio' => 2.37,
-                    'Porcentaje de población nacida en otro estado' => 11.23,
-                    'Porcentaje de población con discapacidad' => 3.49,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.89,
-                    'Porcentaje de población de 18 y más' => 62.61,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.97
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.91,
-                    'Grado Promedio de Escolaridad masculina' => 7.98,
-                    'Grado Promedio de Escolaridad femenina' => 7.85
+                    'Porcentaje de población con discapacidad' => 3.49
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoElTajito extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 522,
-                    'Hogares Jefatura masculina' => 75.64,
-                    'Hogares Jefatura femenina' => 24.36,
                     'Ocupación por Vivienda' => 4.31,
                     'Viviendas con Electricidad' => 99.78,
                     'Viviendas con Agua' => 99.59,
                     'Viviendas con Drenaje' => 99.01,
                     'Viviendas con Televisión' => 99.01,
                     'Viviendas con Automóvil' => 42.89,
-                    'Viviendas con Computadora' => 18.91,
-                    'Viviendas con Celular' => 65.37,
-                    'Viviendas con Internet' => 11.00
+                    'Viviendas con Computadora' => 18.91
                 )
             ),
             'Unidades Económicas' => array(

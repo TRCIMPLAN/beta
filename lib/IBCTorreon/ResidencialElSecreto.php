@@ -33,13 +33,13 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial El Secreto';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-el-secreto';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial El Secreto de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial El Secreto en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.91,
                     'Porcentaje de población no especificada' => 2.74,
                     'Fecundidad promedio' => 1.53,
-                    'Porcentaje de población nacida en otro estado' => 20.29,
-                    'Porcentaje de población con discapacidad' => 0.93,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 57.92,
-                    'Porcentaje de población de 18 y más postbásicos' => 46.81
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.95,
-                    'Grado Promedio de Escolaridad masculina' => 14.73,
-                    'Grado Promedio de Escolaridad femenina' => 13.29
+                    'Porcentaje de población con discapacidad' => 0.93
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 134,
-                    'Hogares Jefatura masculina' => 85.82,
-                    'Hogares Jefatura femenina' => 14.18,
                     'Ocupación por Vivienda' => 4.10,
                     'Viviendas con Electricidad' => 98.51,
                     'Viviendas con Agua' => 98.51,
                     'Viviendas con Drenaje' => 98.51,
                     'Viviendas con Televisión' => 98.51,
                     'Viviendas con Automóvil' => 94.78,
-                    'Viviendas con Computadora' => 85.82,
-                    'Viviendas con Celular' => 93.28,
-                    'Viviendas con Internet' => 64.18
+                    'Viviendas con Computadora' => 85.82
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class ResidencialElSecreto extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

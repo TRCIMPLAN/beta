@@ -33,13 +33,13 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas La Rosita';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas La Rosita de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas La Rosita en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.75,
                     'Porcentaje de población no especificada' => 7.50,
                     'Fecundidad promedio' => 1.51,
-                    'Porcentaje de población nacida en otro estado' => 21.46,
-                    'Porcentaje de población con discapacidad' => 3.39,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 74.79,
-                    'Porcentaje de población de 18 y más postbásicos' => 68.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.71,
-                    'Grado Promedio de Escolaridad masculina' => 15.47,
-                    'Grado Promedio de Escolaridad femenina' => 14.07
+                    'Porcentaje de población con discapacidad' => 3.39
                 )
             ),
             'Características Económicas' => array(
@@ -96,31 +85,27 @@ class VillasLaRosita extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 128,
-                    'Hogares Jefatura masculina' => 82.03,
-                    'Hogares Jefatura femenina' => 17.97,
                     'Ocupación por Vivienda' => 3.75,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.66,
                     'Viviendas con Automóvil' => 96.09,
-                    'Viviendas con Computadora' => 88.28,
-                    'Viviendas con Celular' => 96.09,
-                    'Viviendas con Internet' => 86.72
+                    'Viviendas con Computadora' => 88.28
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 20,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad nombre' => 'Financieros y Seguros',
                     'Primer actividad porcentaje' => 15.00,
-                    'Segunda actividad nombre' => 'Financieros y Seguros',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 15.00,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Información Medios Masivos',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Información Medios Masivos',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )

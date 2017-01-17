@@ -33,13 +33,13 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Salvador Allende';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'salvador-allende';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Salvador Allende de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Salvador Allende en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.25,
                     'Porcentaje de población no especificada' => 1.10,
                     'Fecundidad promedio' => 2.62,
-                    'Porcentaje de población nacida en otro estado' => 17.10,
-                    'Porcentaje de población con discapacidad' => 4.01,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.45,
-                    'Porcentaje de población de 18 y más' => 63.60,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.23
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.10,
-                    'Grado Promedio de Escolaridad masculina' => 8.10,
-                    'Grado Promedio de Escolaridad femenina' => 8.10
+                    'Porcentaje de población con discapacidad' => 4.01
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 598,
-                    'Hogares Jefatura masculina' => 72.74,
-                    'Hogares Jefatura femenina' => 27.26,
                     'Ocupación por Vivienda' => 4.25,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.16,
                     'Viviendas con Drenaje' => 98.83,
                     'Viviendas con Televisión' => 99.50,
                     'Viviendas con Automóvil' => 40.13,
-                    'Viviendas con Computadora' => 21.04,
-                    'Viviendas con Celular' => 66.89,
-                    'Viviendas con Internet' => 13.14
+                    'Viviendas con Computadora' => 21.04
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.35,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 14.12,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.06,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.06
                 )
             )

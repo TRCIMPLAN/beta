@@ -33,13 +33,13 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente Etapa III';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-universidad-oriente-etapa-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas Universidad Oriente Etapa III de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas Universidad Oriente Etapa III en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.41,
                     'Porcentaje de población no especificada' => 1.01,
                     'Fecundidad promedio' => 2.02,
-                    'Porcentaje de población nacida en otro estado' => 18.40,
-                    'Porcentaje de población con discapacidad' => 3.11,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.48,
-                    'Porcentaje de población de 18 y más' => 55.74,
-                    'Porcentaje de población de 18 y más postbásicos' => 20.73
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.64,
-                    'Grado Promedio de Escolaridad masculina' => 9.74,
-                    'Grado Promedio de Escolaridad femenina' => 9.56
+                    'Porcentaje de población con discapacidad' => 3.11
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 82,
-                    'Hogares Jefatura masculina' => 78.60,
-                    'Hogares Jefatura femenina' => 21.40,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 97.85,
                     'Viviendas con Automóvil' => 45.74,
-                    'Viviendas con Computadora' => 28.11,
-                    'Viviendas con Celular' => 89.44,
-                    'Viviendas con Internet' => 19.22
+                    'Viviendas con Computadora' => 28.11
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,13 +99,13 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 25,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.00,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 8.00
                 )
             )

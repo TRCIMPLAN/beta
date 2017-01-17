@@ -33,13 +33,13 @@ class BraulioFernandezAguirre extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Braulio Fernández Aguirre';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'braulio-fernandez-aguirre';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Braulio Fernández Aguirre de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Braulio Fernández Aguirre en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class BraulioFernandezAguirre extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.13,
                     'Porcentaje de población no especificada' => 0.40,
                     'Fecundidad promedio' => 2.82,
-                    'Porcentaje de población nacida en otro estado' => 18.12,
-                    'Porcentaje de población con discapacidad' => 13.15,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.57,
-                    'Porcentaje de población de 18 y más' => 65.49,
-                    'Porcentaje de población de 18 y más postbásicos' => 16.19
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.82,
-                    'Grado Promedio de Escolaridad masculina' => 7.97,
-                    'Grado Promedio de Escolaridad femenina' => 7.67
+                    'Porcentaje de población con discapacidad' => 13.15
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class BraulioFernandezAguirre extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 813,
-                    'Hogares Jefatura masculina' => 72.15,
-                    'Hogares Jefatura femenina' => 27.85,
                     'Ocupación por Vivienda' => 3.93,
                     'Viviendas con Electricidad' => 99.97,
                     'Viviendas con Agua' => 99.60,
                     'Viviendas con Drenaje' => 99.73,
                     'Viviendas con Televisión' => 97.38,
                     'Viviendas con Automóvil' => 37.63,
-                    'Viviendas con Computadora' => 19.02,
-                    'Viviendas con Celular' => 59.84,
-                    'Viviendas con Internet' => 8.11
+                    'Viviendas con Computadora' => 19.02
                 )
             ),
             'Unidades Económicas' => array(

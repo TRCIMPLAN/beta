@@ -33,13 +33,13 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'José de Las Fuentes';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'jose-de-las-fuentes';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia José de Las Fuentes de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia José de Las Fuentes en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.64,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.82,
-                    'Porcentaje de población nacida en otro estado' => 19.39,
-                    'Porcentaje de población con discapacidad' => 3.64,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 67.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 49.70
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.95,
-                    'Grado Promedio de Escolaridad masculina' => 12.60,
-                    'Grado Promedio de Escolaridad femenina' => 11.49
+                    'Porcentaje de población con discapacidad' => 3.64
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1,
-                    'Hogares Jefatura masculina' => 61.82,
-                    'Hogares Jefatura femenina' => 38.18,
                     'Ocupación por Vivienda' => 3.00,
                     'Viviendas con Electricidad' => 98.18,
                     'Viviendas con Agua' => 98.18,
                     'Viviendas con Drenaje' => 98.18,
                     'Viviendas con Televisión' => 98.18,
                     'Viviendas con Automóvil' => 81.82,
-                    'Viviendas con Computadora' => 40.00,
-                    'Viviendas con Celular' => 94.55,
-                    'Viviendas con Internet' => 14.55
+                    'Viviendas con Computadora' => 40.00
                 )
             ),
             'Unidades Económicas' => array(

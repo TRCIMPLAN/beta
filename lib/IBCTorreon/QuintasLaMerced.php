@@ -33,13 +33,13 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Quintas La Merced';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'quintas-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Quintas La Merced de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Quintas La Merced en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.31,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.63,
-                    'Porcentaje de población nacida en otro estado' => 12.91,
-                    'Porcentaje de población con discapacidad' => 3.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.61,
-                    'Porcentaje de población de 18 y más' => 59.30,
-                    'Porcentaje de población de 18 y más postbásicos' => 41.36
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.84,
-                    'Grado Promedio de Escolaridad masculina' => 12.11,
-                    'Grado Promedio de Escolaridad femenina' => 11.62
+                    'Porcentaje de población con discapacidad' => 3.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 121,
-                    'Hogares Jefatura masculina' => 75.21,
-                    'Hogares Jefatura femenina' => 24.79,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.17,
                     'Viviendas con Televisión' => 98.35,
                     'Viviendas con Automóvil' => 71.07,
-                    'Viviendas con Computadora' => 49.59,
-                    'Viviendas con Celular' => 87.60,
-                    'Viviendas con Internet' => 40.50
+                    'Viviendas con Computadora' => 49.59
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Salud',
+                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 20.00
                 )
             )

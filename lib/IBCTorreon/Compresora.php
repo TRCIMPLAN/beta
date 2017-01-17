@@ -33,13 +33,13 @@ class Compresora extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Compresora';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'compresora';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Compresora de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Compresora en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Compresora extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.48,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.53,
-                    'Porcentaje de población nacida en otro estado' => 15.43,
-                    'Porcentaje de población con discapacidad' => 7.17,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.50,
-                    'Porcentaje de población de 18 y más' => 70.42,
-                    'Porcentaje de población de 18 y más postbásicos' => 23.84
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.07,
-                    'Grado Promedio de Escolaridad masculina' => 9.34,
-                    'Grado Promedio de Escolaridad femenina' => 8.81
+                    'Porcentaje de población con discapacidad' => 7.17
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Compresora extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 288,
-                    'Hogares Jefatura masculina' => 64.70,
-                    'Hogares Jefatura femenina' => 35.30,
                     'Ocupación por Vivienda' => 3.97,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.71,
                     'Viviendas con Automóvil' => 26.77,
-                    'Viviendas con Computadora' => 21.20,
-                    'Viviendas con Celular' => 61.36,
-                    'Viviendas con Internet' => 12.29
+                    'Viviendas con Computadora' => 21.20
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class Compresora extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 60.00,
                     'Segunda actividad nombre' => 'Industria Manufacturera',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 6.67,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.67,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 6.67

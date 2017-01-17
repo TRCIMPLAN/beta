@@ -33,13 +33,13 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Tecnológico';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-tecnologico';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Tecnológico de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Tecnológico en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.17,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 1.38,
-                    'Porcentaje de población nacida en otro estado' => 16.30,
-                    'Porcentaje de población con discapacidad' => 0.00,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 73.91,
-                    'Porcentaje de población de 18 y más postbásicos' => 71.74
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.14,
-                    'Grado Promedio de Escolaridad masculina' => 15.27,
-                    'Grado Promedio de Escolaridad femenina' => 13.22
+                    'Porcentaje de población con discapacidad' => 0.00
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 24,
-                    'Hogares Jefatura masculina' => 83.33,
-                    'Hogares Jefatura femenina' => 16.67,
                     'Ocupación por Vivienda' => 3.83,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 95.83,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 91.67,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 83.33
+                    'Viviendas con Computadora' => 91.67
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class ResidencialTecnologico extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 11.76,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 1.96,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 0.98
                 )
             )

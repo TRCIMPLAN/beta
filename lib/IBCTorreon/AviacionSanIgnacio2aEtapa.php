@@ -33,13 +33,13 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Aviación San Ignacio 2a. Etapa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'aviacion-san-ignacio-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Aviación San Ignacio 2a. Etapa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Aviación San Ignacio 2a. Etapa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.33,
                     'Porcentaje de población no especificada' => 0.99,
                     'Fecundidad promedio' => 1.70,
-                    'Porcentaje de población nacida en otro estado' => 13.91,
-                    'Porcentaje de población con discapacidad' => 1.30,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 50.99,
-                    'Porcentaje de población de 18 y más postbásicos' => 36.75
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.72,
-                    'Grado Promedio de Escolaridad masculina' => 12.04,
-                    'Grado Promedio de Escolaridad femenina' => 11.43
+                    'Porcentaje de población con discapacidad' => 1.30
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AviacionSanIgnacio2aEtapa extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 80,
-                    'Hogares Jefatura masculina' => 80.00,
-                    'Hogares Jefatura femenina' => 20.00,
                     'Ocupación por Vivienda' => 3.78,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 72.50,
-                    'Viviendas con Computadora' => 54.29,
-                    'Viviendas con Celular' => 91.25,
-                    'Viviendas con Internet' => 33.75
+                    'Viviendas con Computadora' => 54.29
                 )
             ),
             'Unidades Económicas' => array(

@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":8.75,
         "Porcentaje de población no especificada":7.5,
         "Fecundidad promedio":1.51,
-        "Porcentaje de población nacida en otro estado":21.46,
-        "Porcentaje de población con discapacidad":3.39,
-        "Porcentaje de población de 15 y más analfabeta":0,
-        "Porcentaje de población de 18 y más":74.79,
-        "Porcentaje de población de 18 y más postbásicos":68.33
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":14.71,
-        "Grado Promedio de Escolaridad masculina":15.47,
-        "Grado Promedio de Escolaridad femenina":14.07
+        "Porcentaje de población con discapacidad":3.39
       }
     },
     "Características Económicas":{
@@ -40,31 +29,27 @@
     "Viviendas":{
       "2010":{
         "Hogares":128,
-        "Hogares Jefatura masculina":82.03,
-        "Hogares Jefatura femenina":17.97,
         "Ocupación por Vivienda":3.75,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":100,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":97.66,
         "Viviendas con Automóvil":96.09,
-        "Viviendas con Computadora":88.28,
-        "Viviendas con Celular":96.09,
-        "Viviendas con Internet":86.72
+        "Viviendas con Computadora":88.28
       }
     },
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":20,
-        "Primer actividad nombre":"Preparación de Alimentos y Bebidas",
+        "Primer actividad nombre":"Financieros y Seguros",
         "Primer actividad porcentaje":15,
-        "Segunda actividad nombre":"Financieros y Seguros",
+        "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":15,
-        "Tercera actividad nombre":"Manejo de Residuos",
+        "Tercera actividad nombre":"Educativos",
         "Tercera actividad porcentaje":10,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Información Medios Masivos",
         "Cuarta actividad porcentaje":10,
-        "Quinta actividad nombre":"Información Medios Masivos",
+        "Quinta actividad nombre":"Manejo de Residuos",
         "Quinta actividad porcentaje":10
       }
     }

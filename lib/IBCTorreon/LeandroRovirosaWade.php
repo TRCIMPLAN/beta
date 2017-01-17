@@ -33,13 +33,13 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Leandro Rovirosa Wade';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'leandro-rovirosa-wade';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Leandro Rovirosa Wade de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Leandro Rovirosa Wade en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.76,
                     'Porcentaje de población no especificada' => 1.46,
                     'Fecundidad promedio' => 1.77,
-                    'Porcentaje de población nacida en otro estado' => 22.37,
-                    'Porcentaje de población con discapacidad' => 5.91,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.04,
-                    'Porcentaje de población de 18 y más' => 69.00,
-                    'Porcentaje de población de 18 y más postbásicos' => 53.34
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.15,
-                    'Grado Promedio de Escolaridad masculina' => 13.53,
-                    'Grado Promedio de Escolaridad femenina' => 12.79
+                    'Porcentaje de población con discapacidad' => 5.91
                 )
             ),
             'Características Económicas' => array(
@@ -96,31 +85,27 @@ class LeandroRovirosaWade extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 113,
-                    'Hogares Jefatura masculina' => 81.99,
-                    'Hogares Jefatura femenina' => 18.01,
                     'Ocupación por Vivienda' => 3.72,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.80,
                     'Viviendas con Drenaje' => 99.80,
                     'Viviendas con Televisión' => 99.81,
                     'Viviendas con Automóvil' => 88.91,
-                    'Viviendas con Computadora' => 77.21,
-                    'Viviendas con Celular' => 92.61,
-                    'Viviendas con Internet' => 64.58
+                    'Viviendas con Computadora' => 77.21
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 24,
-                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Primer actividad nombre' => 'Comercio Mayoreo',
                     'Primer actividad porcentaje' => 16.67,
                     'Segunda actividad nombre' => 'Inmobiliarios',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Construcción',
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
                     'Cuarta actividad porcentaje' => 12.50,
-                    'Quinta actividad nombre' => 'Comercio Menudeo',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 12.50
                 )
             )

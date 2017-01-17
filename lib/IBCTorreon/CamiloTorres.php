@@ -33,13 +33,13 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Camilo Torres';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'camilo-torres';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Camilo Torres de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Camilo Torres en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.21,
                     'Porcentaje de población no especificada' => 0.01,
                     'Fecundidad promedio' => 2.42,
-                    'Porcentaje de población nacida en otro estado' => 15.82,
-                    'Porcentaje de población con discapacidad' => 3.03,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.87,
-                    'Porcentaje de población de 18 y más' => 63.24,
-                    'Porcentaje de población de 18 y más postbásicos' => 8.50
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.47,
-                    'Grado Promedio de Escolaridad masculina' => 7.62,
-                    'Grado Promedio de Escolaridad femenina' => 7.33
+                    'Porcentaje de población con discapacidad' => 3.03
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 227,
-                    'Hogares Jefatura masculina' => 79.55,
-                    'Hogares Jefatura femenina' => 20.45,
                     'Ocupación por Vivienda' => 3.87,
                     'Viviendas con Electricidad' => 99.86,
                     'Viviendas con Agua' => 94.44,
                     'Viviendas con Drenaje' => 97.13,
                     'Viviendas con Televisión' => 98.96,
                     'Viviendas con Automóvil' => 20.38,
-                    'Viviendas con Computadora' => 2.56,
-                    'Viviendas con Celular' => 37.49,
-                    'Viviendas con Internet' => 0.07
+                    'Viviendas con Computadora' => 2.56
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class CamiloTorres extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 66.67,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.81,
-                    'Tercera actividad nombre' => 'Gubernamentales',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 4.76,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Gubernamentales',
                     'Cuarta actividad porcentaje' => 4.76
                 )
             )

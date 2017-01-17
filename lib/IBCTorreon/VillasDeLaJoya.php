@@ -33,13 +33,13 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Villas de La Joya';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'villas-de-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Villas de La Joya de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Villas de La Joya en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.31,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.90,
-                    'Porcentaje de población nacida en otro estado' => 15.45,
-                    'Porcentaje de población con discapacidad' => 2.19,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.23,
-                    'Porcentaje de población de 18 y más' => 58.12,
-                    'Porcentaje de población de 18 y más postbásicos' => 24.08
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.04,
-                    'Grado Promedio de Escolaridad masculina' => 9.15,
-                    'Grado Promedio de Escolaridad femenina' => 8.61
+                    'Porcentaje de población con discapacidad' => 2.19
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 311,
-                    'Hogares Jefatura masculina' => 77.17,
-                    'Hogares Jefatura femenina' => 22.83,
                     'Ocupación por Vivienda' => 3.68,
                     'Viviendas con Electricidad' => 99.36,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 98.39,
                     'Viviendas con Automóvil' => 54.34,
-                    'Viviendas con Computadora' => 30.05,
-                    'Viviendas con Celular' => 82.32,
-                    'Viviendas con Internet' => 16.62
+                    'Viviendas con Computadora' => 30.05
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class VillasDeLaJoya extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 57.14,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.29,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 7.14,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Inmobiliarios',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Inmobiliarios',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

@@ -33,13 +33,13 @@ class Moderna extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Moderna';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'moderna';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Moderna de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Moderna en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Moderna extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 12.90,
                     'Porcentaje de población no especificada' => 2.42,
                     'Fecundidad promedio' => 2.18,
-                    'Porcentaje de población nacida en otro estado' => 17.63,
-                    'Porcentaje de población con discapacidad' => 9.95,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.42,
-                    'Porcentaje de población de 18 y más' => 72.70,
-                    'Porcentaje de población de 18 y más postbásicos' => 36.82
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.22,
-                    'Grado Promedio de Escolaridad masculina' => 10.52,
-                    'Grado Promedio de Escolaridad femenina' => 9.97
+                    'Porcentaje de población con discapacidad' => 9.95
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Moderna extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 600,
-                    'Hogares Jefatura masculina' => 66.13,
-                    'Hogares Jefatura femenina' => 33.87,
                     'Ocupación por Vivienda' => 3.52,
                     'Viviendas con Electricidad' => 99.21,
                     'Viviendas con Agua' => 99.21,
                     'Viviendas con Drenaje' => 98.88,
                     'Viviendas con Televisión' => 98.03,
                     'Viviendas con Automóvil' => 46.97,
-                    'Viviendas con Computadora' => 38.32,
-                    'Viviendas con Celular' => 68.77,
-                    'Viviendas con Internet' => 27.96
+                    'Viviendas con Computadora' => 38.32
                 )
             ),
             'Unidades Económicas' => array(

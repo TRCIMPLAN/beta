@@ -33,13 +33,13 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Torreón Jardín';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'torreon-jardin';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Torreón Jardín de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Torreón Jardín en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.79,
                     'Porcentaje de población no especificada' => 6.79,
                     'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 23.50,
-                    'Porcentaje de población con discapacidad' => 4.91,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.05,
-                    'Porcentaje de población de 18 y más' => 76.88,
-                    'Porcentaje de población de 18 y más postbásicos' => 66.25
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.16,
-                    'Grado Promedio de Escolaridad masculina' => 14.98,
-                    'Grado Promedio de Escolaridad femenina' => 13.47
+                    'Porcentaje de población con discapacidad' => 4.91
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1988,
-                    'Hogares Jefatura masculina' => 70.93,
-                    'Hogares Jefatura femenina' => 29.07,
                     'Ocupación por Vivienda' => 3.41,
                     'Viviendas con Electricidad' => 99.58,
                     'Viviendas con Agua' => 99.43,
                     'Viviendas con Drenaje' => 99.27,
                     'Viviendas con Televisión' => 98.81,
                     'Viviendas con Automóvil' => 92.54,
-                    'Viviendas con Computadora' => 82.53,
-                    'Viviendas con Celular' => 91.24,
-                    'Viviendas con Internet' => 78.44
+                    'Viviendas con Computadora' => 82.53
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,9 +103,9 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.35,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.39,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 10.89,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.89
                 )
             )

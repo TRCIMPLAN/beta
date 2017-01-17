@@ -33,13 +33,13 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Sol de Oriente 2a. Etapa';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'sol-de-oriente-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Sol de Oriente 2a. Etapa de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Sol de Oriente 2a. Etapa en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.38,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 1.73,
-                    'Porcentaje de población nacida en otro estado' => 15.16,
-                    'Porcentaje de población con discapacidad' => 1.01,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.01,
-                    'Porcentaje de población de 18 y más' => 58.83,
-                    'Porcentaje de población de 18 y más postbásicos' => 29.56
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.81,
-                    'Grado Promedio de Escolaridad masculina' => 10.85,
-                    'Grado Promedio de Escolaridad femenina' => 10.78
+                    'Porcentaje de población con discapacidad' => 1.01
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 293,
-                    'Hogares Jefatura masculina' => 82.94,
-                    'Hogares Jefatura femenina' => 17.06,
                     'Ocupación por Vivienda' => 3.56,
                     'Viviendas con Electricidad' => 99.66,
                     'Viviendas con Agua' => 99.66,
                     'Viviendas con Drenaje' => 99.66,
                     'Viviendas con Televisión' => 97.95,
                     'Viviendas con Automóvil' => 53.24,
-                    'Viviendas con Computadora' => 35.39,
-                    'Viviendas con Celular' => 87.03,
-                    'Viviendas con Internet' => 23.93
+                    'Viviendas con Computadora' => 35.39
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,11 +101,11 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 47.22,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 22.22,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 5.56,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.56,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 5.56
                 )
             )

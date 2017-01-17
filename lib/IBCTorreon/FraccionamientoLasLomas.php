@@ -33,13 +33,13 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Fraccionamiento Las Lomas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'fraccionamiento-las-lomas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Fraccionamiento Las Lomas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Fraccionamiento Las Lomas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.34,
                     'Porcentaje de población no especificada' => 2.69,
                     'Fecundidad promedio' => 1.39,
-                    'Porcentaje de población nacida en otro estado' => 26.42,
-                    'Porcentaje de población con discapacidad' => 1.58,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 63.09,
-                    'Porcentaje de población de 18 y más postbásicos' => 57.27
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.81,
-                    'Grado Promedio de Escolaridad masculina' => 15.24,
-                    'Grado Promedio de Escolaridad femenina' => 14.46
+                    'Porcentaje de población con discapacidad' => 1.58
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class FraccionamientoLasLomas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 135,
-                    'Hogares Jefatura masculina' => 71.85,
-                    'Hogares Jefatura femenina' => 28.15,
                     'Ocupación por Vivienda' => 3.31,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 96.30,
-                    'Viviendas con Computadora' => 81.48,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 65.19
+                    'Viviendas con Computadora' => 81.48
                 )
             ),
             'Unidades Económicas' => array(

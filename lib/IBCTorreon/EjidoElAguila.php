@@ -33,13 +33,13 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido El Águila';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-el-aguila';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido El Águila de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido El Águila en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.09,
                     'Porcentaje de población no especificada' => 1.24,
                     'Fecundidad promedio' => 2.61,
-                    'Porcentaje de población nacida en otro estado' => 17.41,
-                    'Porcentaje de población con discapacidad' => 9.70,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.16,
-                    'Porcentaje de población de 18 y más' => 58.05,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.58
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.59,
-                    'Grado Promedio de Escolaridad masculina' => 7.76,
-                    'Grado Promedio de Escolaridad femenina' => 7.41
+                    'Porcentaje de población con discapacidad' => 9.70
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 408,
-                    'Hogares Jefatura masculina' => 80.55,
-                    'Hogares Jefatura femenina' => 19.45,
                     'Ocupación por Vivienda' => 4.13,
                     'Viviendas con Electricidad' => 99.71,
                     'Viviendas con Agua' => 96.43,
                     'Viviendas con Drenaje' => 96.93,
                     'Viviendas con Televisión' => 98.41,
                     'Viviendas con Automóvil' => 34.96,
-                    'Viviendas con Computadora' => 10.33,
-                    'Viviendas con Celular' => 68.75,
-                    'Viviendas con Internet' => 3.92
+                    'Viviendas con Computadora' => 10.33
                 )
             ),
             'Unidades Económicas' => array(
@@ -120,7 +105,7 @@ class EjidoElAguila extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.22,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 8.70,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.35
                 )
             )

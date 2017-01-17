@@ -33,13 +33,13 @@ class ResidencialLasTrojes extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Trojes';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:11';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-las-trojes';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Las Trojes de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Las Trojes en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialLasTrojes extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.96,
                     'Porcentaje de población no especificada' => 0.09,
                     'Fecundidad promedio' => 1.33,
-                    'Porcentaje de población nacida en otro estado' => 24.89,
-                    'Porcentaje de población con discapacidad' => 0.30,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.02,
-                    'Porcentaje de población de 18 y más' => 66.98,
-                    'Porcentaje de población de 18 y más postbásicos' => 63.06
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.21,
-                    'Grado Promedio de Escolaridad masculina' => 16.04,
-                    'Grado Promedio de Escolaridad femenina' => 14.51
+                    'Porcentaje de población con discapacidad' => 0.30
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialLasTrojes extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 42,
-                    'Hogares Jefatura masculina' => 89.62,
-                    'Hogares Jefatura femenina' => 10.38,
                     'Ocupación por Vivienda' => 3.19,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 99.05,
-                    'Viviendas con Computadora' => 96.02,
-                    'Viviendas con Celular' => 99.98,
-                    'Viviendas con Internet' => 92.35
+                    'Viviendas con Computadora' => 96.02
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Los Rodríguez';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-los-rodriguez';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido Los Rodríguez de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido Los Rodríguez en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 18.73,
                     'Porcentaje de población no especificada' => 4.08,
                     'Fecundidad promedio' => 2.42,
-                    'Porcentaje de población nacida en otro estado' => 19.49,
-                    'Porcentaje de población con discapacidad' => 2.87,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.11,
-                    'Porcentaje de población de 18 y más' => 50.00,
-                    'Porcentaje de población de 18 y más postbásicos' => 12.27
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.01,
-                    'Grado Promedio de Escolaridad masculina' => 7.80,
-                    'Grado Promedio de Escolaridad femenina' => 8.26
+                    'Porcentaje de población con discapacidad' => 2.87
                 )
             ),
             'Características Económicas' => array(
@@ -96,25 +85,21 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 31,
-                    'Hogares Jefatura masculina' => 79.92,
-                    'Hogares Jefatura femenina' => 20.08,
                     'Ocupación por Vivienda' => 5.19,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 94.16,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 39.65,
-                    'Viviendas con Computadora' => 68.72,
-                    'Viviendas con Celular' => 74.30,
-                    'Viviendas con Internet' => 36.79
+                    'Viviendas con Computadora' => 68.72
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 2,
-                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Primer actividad nombre' => 'Educativos',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 50.00
                 )
             )

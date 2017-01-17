@@ -33,13 +33,13 @@ class LosNogales extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Los Nogales';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'los-nogales';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Los Nogales de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Los Nogales en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LosNogales extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.06,
                     'Porcentaje de población no especificada' => 11.62,
                     'Fecundidad promedio' => 2.12,
-                    'Porcentaje de población nacida en otro estado' => 20.66,
-                    'Porcentaje de población con discapacidad' => 4.68,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.27,
-                    'Porcentaje de población de 18 y más' => 72.60,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.81
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.22,
-                    'Grado Promedio de Escolaridad masculina' => 13.96,
-                    'Grado Promedio de Escolaridad femenina' => 12.57
+                    'Porcentaje de población con discapacidad' => 4.68
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LosNogales extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 192,
-                    'Hogares Jefatura masculina' => 72.12,
-                    'Hogares Jefatura femenina' => 27.88,
                     'Ocupación por Vivienda' => 3.63,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 99.92,
                     'Viviendas con Drenaje' => 99.92,
                     'Viviendas con Televisión' => 99.91,
                     'Viviendas con Automóvil' => 87.24,
-                    'Viviendas con Computadora' => 69.85,
-                    'Viviendas con Celular' => 84.10,
-                    'Viviendas con Internet' => 64.03
+                    'Viviendas con Computadora' => 69.85
                 )
             ),
             'Unidades Económicas' => array(

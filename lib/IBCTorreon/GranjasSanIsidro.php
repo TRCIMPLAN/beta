@@ -33,13 +33,13 @@ class GranjasSanIsidro extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Granjas San Isidro';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'granjas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Granjas San Isidro de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Granjas San Isidro en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class GranjasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 15.86,
                     'Porcentaje de población no especificada' => 12.25,
                     'Fecundidad promedio' => 2.01,
-                    'Porcentaje de población nacida en otro estado' => 16.67,
-                    'Porcentaje de población con discapacidad' => 3.57,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 64.72,
-                    'Porcentaje de población de 18 y más postbásicos' => 55.24
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 13.95,
-                    'Grado Promedio de Escolaridad masculina' => 15.02,
-                    'Grado Promedio de Escolaridad femenina' => 12.92
+                    'Porcentaje de población con discapacidad' => 3.57
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class GranjasSanIsidro extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 117,
-                    'Hogares Jefatura masculina' => 76.01,
-                    'Hogares Jefatura femenina' => 23.99,
                     'Ocupación por Vivienda' => 3.94,
                     'Viviendas con Electricidad' => 98.66,
                     'Viviendas con Agua' => 98.60,
                     'Viviendas con Drenaje' => 99.52,
                     'Viviendas con Televisión' => 96.13,
                     'Viviendas con Automóvil' => 93.89,
-                    'Viviendas con Computadora' => 84.61,
-                    'Viviendas con Celular' => 90.59,
-                    'Viviendas con Internet' => 85.54
+                    'Viviendas con Computadora' => 84.61
                 )
             ),
             'Unidades Económicas' => array(

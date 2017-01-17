@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":5.76,
         "Porcentaje de población no especificada":1.46,
         "Fecundidad promedio":1.77,
-        "Porcentaje de población nacida en otro estado":22.37,
-        "Porcentaje de población con discapacidad":5.91,
-        "Porcentaje de población de 15 y más analfabeta":0.04,
-        "Porcentaje de población de 18 y más":69,
-        "Porcentaje de población de 18 y más postbásicos":53.34
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":13.15,
-        "Grado Promedio de Escolaridad masculina":13.53,
-        "Grado Promedio de Escolaridad femenina":12.79
+        "Porcentaje de población con discapacidad":5.91
       }
     },
     "Características Económicas":{
@@ -40,31 +29,27 @@
     "Viviendas":{
       "2010":{
         "Hogares":113,
-        "Hogares Jefatura masculina":81.99,
-        "Hogares Jefatura femenina":18.01,
         "Ocupación por Vivienda":3.72,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":99.8,
         "Viviendas con Drenaje":99.8,
         "Viviendas con Televisión":99.81,
         "Viviendas con Automóvil":88.91,
-        "Viviendas con Computadora":77.21,
-        "Viviendas con Celular":92.61,
-        "Viviendas con Internet":64.58
+        "Viviendas con Computadora":77.21
       }
     },
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":24,
-        "Primer actividad nombre":"Otros servicios, excepto Gobierno",
+        "Primer actividad nombre":"Comercio Mayoreo",
         "Primer actividad porcentaje":16.67,
         "Segunda actividad nombre":"Inmobiliarios",
         "Segunda actividad porcentaje":16.67,
-        "Tercera actividad nombre":"Comercio Mayoreo",
+        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":16.67,
-        "Cuarta actividad nombre":"Construcción",
+        "Cuarta actividad nombre":"Comercio Menudeo",
         "Cuarta actividad porcentaje":12.5,
-        "Quinta actividad nombre":"Comercio Menudeo",
+        "Quinta actividad nombre":"Construcción",
         "Quinta actividad porcentaje":12.5
       }
     }

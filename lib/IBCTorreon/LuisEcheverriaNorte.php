@@ -33,13 +33,13 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverría Norte';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'luis-echeverria-norte';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Luis Echeverría Norte de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Luis Echeverría Norte en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 8.62,
                     'Porcentaje de población no especificada' => 0.10,
                     'Fecundidad promedio' => 2.38,
-                    'Porcentaje de población nacida en otro estado' => 15.85,
-                    'Porcentaje de población con discapacidad' => 5.73,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.18,
-                    'Porcentaje de población de 18 y más' => 70.18,
-                    'Porcentaje de población de 18 y más postbásicos' => 28.92
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.42,
-                    'Grado Promedio de Escolaridad masculina' => 9.53,
-                    'Grado Promedio de Escolaridad femenina' => 9.32
+                    'Porcentaje de población con discapacidad' => 5.73
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 731,
-                    'Hogares Jefatura masculina' => 68.40,
-                    'Hogares Jefatura femenina' => 31.60,
                     'Ocupación por Vivienda' => 3.92,
                     'Viviendas con Electricidad' => 99.18,
                     'Viviendas con Agua' => 98.63,
                     'Viviendas con Drenaje' => 98.63,
                     'Viviendas con Televisión' => 98.63,
                     'Viviendas con Automóvil' => 44.05,
-                    'Viviendas con Computadora' => 30.92,
-                    'Viviendas con Celular' => 67.72,
-                    'Viviendas con Internet' => 21.46
+                    'Viviendas con Computadora' => 30.92
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class LuisEcheverriaNorte extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 92,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.70,
-                    'Segunda actividad nombre' => 'Gubernamentales',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.04,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Gubernamentales',
                     'Tercera actividad porcentaje' => 13.04,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.96,

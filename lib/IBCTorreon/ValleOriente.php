@@ -33,13 +33,13 @@ class ValleOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Valle Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'valle-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Valle Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Valle Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ValleOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 4.61,
                     'Porcentaje de población no especificada' => 1.06,
                     'Fecundidad promedio' => 2.21,
-                    'Porcentaje de población nacida en otro estado' => 14.77,
-                    'Porcentaje de población con discapacidad' => 8.43,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.16,
-                    'Porcentaje de población de 18 y más' => 70.73,
-                    'Porcentaje de población de 18 y más postbásicos' => 31.38
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.86,
-                    'Grado Promedio de Escolaridad masculina' => 10.11,
-                    'Grado Promedio de Escolaridad femenina' => 9.62
+                    'Porcentaje de población con discapacidad' => 8.43
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ValleOriente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1465,
-                    'Hogares Jefatura masculina' => 75.90,
-                    'Hogares Jefatura femenina' => 24.10,
                     'Ocupación por Vivienda' => 3.85,
                     'Viviendas con Electricidad' => 99.93,
                     'Viviendas con Agua' => 99.66,
                     'Viviendas con Drenaje' => 99.59,
                     'Viviendas con Televisión' => 99.52,
                     'Viviendas con Automóvil' => 52.22,
-                    'Viviendas con Computadora' => 37.75,
-                    'Viviendas con Celular' => 80.96,
-                    'Viviendas con Internet' => 24.35
+                    'Viviendas con Computadora' => 37.75
                 )
             ),
             'Unidades Económicas' => array(

@@ -33,13 +33,13 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Joyas del Desierto';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'joyas-del-desierto';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Joyas del Desierto de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Joyas del Desierto en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.73,
                     'Porcentaje de población no especificada' => 0.28,
                     'Fecundidad promedio' => 1.75,
-                    'Porcentaje de población nacida en otro estado' => 18.41,
-                    'Porcentaje de población con discapacidad' => 2.68,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.31,
-                    'Porcentaje de población de 18 y más' => 59.73,
-                    'Porcentaje de población de 18 y más postbásicos' => 35.65
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 11.11,
-                    'Grado Promedio de Escolaridad masculina' => 11.38,
-                    'Grado Promedio de Escolaridad femenina' => 10.85
+                    'Porcentaje de población con discapacidad' => 2.68
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 440,
-                    'Hogares Jefatura masculina' => 84.14,
-                    'Hogares Jefatura femenina' => 15.86,
                     'Ocupación por Vivienda' => 3.54,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.86,
                     'Viviendas con Televisión' => 98.49,
                     'Viviendas con Automóvil' => 60.96,
-                    'Viviendas con Computadora' => 36.36,
-                    'Viviendas con Celular' => 94.00,
-                    'Viviendas con Internet' => 13.31
+                    'Viviendas con Computadora' => 36.36
                 )
             ),
             'Unidades Económicas' => array(
@@ -114,9 +99,9 @@ class JoyasDelDesierto extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 77.78,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 11.11,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11
                 )
             )

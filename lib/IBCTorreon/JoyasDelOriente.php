@@ -33,13 +33,13 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Joyas del Oriente';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'joyas-del-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Joyas del Oriente de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Joyas del Oriente en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.15,
                     'Porcentaje de población no especificada' => 1.09,
                     'Fecundidad promedio' => 1.88,
-                    'Porcentaje de población nacida en otro estado' => 15.57,
-                    'Porcentaje de población con discapacidad' => 2.20,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.61,
-                    'Porcentaje de población de 18 y más' => 58.39,
-                    'Porcentaje de población de 18 y más postbásicos' => 29.42
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.56,
-                    'Grado Promedio de Escolaridad masculina' => 10.67,
-                    'Grado Promedio de Escolaridad femenina' => 10.46
+                    'Porcentaje de población con discapacidad' => 2.20
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 820,
-                    'Hogares Jefatura masculina' => 80.61,
-                    'Hogares Jefatura femenina' => 19.39,
                     'Ocupación por Vivienda' => 3.70,
                     'Viviendas con Electricidad' => 99.95,
                     'Viviendas con Agua' => 99.82,
                     'Viviendas con Drenaje' => 99.58,
                     'Viviendas con Televisión' => 99.09,
                     'Viviendas con Automóvil' => 54.31,
-                    'Viviendas con Computadora' => 31.45,
-                    'Viviendas con Celular' => 86.28,
-                    'Viviendas con Internet' => 23.46
+                    'Viviendas con Computadora' => 31.45
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class JoyasDelOriente extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 44.07,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 18.64,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 8.47,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 8.47,
                     'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 6.78

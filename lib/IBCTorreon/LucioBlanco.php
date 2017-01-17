@@ -33,13 +33,13 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Lucio Blanco';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:09';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'lucio-blanco';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Lucio Blanco de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Lucio Blanco en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 14.82,
                     'Porcentaje de población no especificada' => 0.00,
                     'Fecundidad promedio' => 2.70,
-                    'Porcentaje de población nacida en otro estado' => 16.16,
-                    'Porcentaje de población con discapacidad' => 8.52,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.19,
-                    'Porcentaje de población de 18 y más' => 75.04,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.08
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 9.27,
-                    'Grado Promedio de Escolaridad masculina' => 9.63,
-                    'Grado Promedio de Escolaridad femenina' => 8.97
+                    'Porcentaje de población con discapacidad' => 8.52
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class LucioBlanco extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 489,
-                    'Hogares Jefatura masculina' => 60.53,
-                    'Hogares Jefatura femenina' => 39.47,
                     'Ocupación por Vivienda' => 3.53,
                     'Viviendas con Electricidad' => 99.80,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 99.80,
                     'Viviendas con Televisión' => 98.16,
                     'Viviendas con Automóvil' => 44.83,
-                    'Viviendas con Computadora' => 36.27,
-                    'Viviendas con Celular' => 65.44,
-                    'Viviendas con Internet' => 29.24
+                    'Viviendas con Computadora' => 36.27
                 )
             ),
             'Unidades Económicas' => array(

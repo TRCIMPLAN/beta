@@ -33,13 +33,13 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Cerradas Esmeralda - Montebello';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'cerradas-esmeralda-montebello';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Cerradas Esmeralda - Montebello de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Cerradas Esmeralda - Montebello en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.55,
                     'Porcentaje de población no especificada' => 0.14,
                     'Fecundidad promedio' => 1.63,
-                    'Porcentaje de población nacida en otro estado' => 33.33,
-                    'Porcentaje de población con discapacidad' => 0.63,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 62.18,
-                    'Porcentaje de población de 18 y más postbásicos' => 57.05
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.15,
-                    'Grado Promedio de Escolaridad masculina' => 14.88,
-                    'Grado Promedio de Escolaridad femenina' => 13.53
+                    'Porcentaje de población con discapacidad' => 0.63
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class CerradasEsmeraldaMontebello extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 42,
-                    'Hogares Jefatura masculina' => 83.33,
-                    'Hogares Jefatura femenina' => 16.67,
                     'Ocupación por Vivienda' => 3.71,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 92.86,
-                    'Viviendas con Celular' => 97.62,
-                    'Viviendas con Internet' => 88.10
+                    'Viviendas con Computadora' => 92.86
                 )
             ),
             'Unidades Económicas' => array(

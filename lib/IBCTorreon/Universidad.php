@@ -33,13 +33,13 @@ class Universidad extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Universidad';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:12';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'universidad';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Universidad de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Universidad en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Universidad extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 2.09,
                     'Porcentaje de población no especificada' => 2.10,
                     'Fecundidad promedio' => 2.09,
-                    'Porcentaje de población nacida en otro estado' => 17.56,
-                    'Porcentaje de población con discapacidad' => 0.36,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.63,
-                    'Porcentaje de población de 18 y más' => 57.84,
-                    'Porcentaje de población de 18 y más postbásicos' => 22.33
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.94,
-                    'Grado Promedio de Escolaridad masculina' => 9.08,
-                    'Grado Promedio de Escolaridad femenina' => 8.84
+                    'Porcentaje de población con discapacidad' => 0.36
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Universidad extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 72,
-                    'Hogares Jefatura masculina' => 50.00,
-                    'Hogares Jefatura femenina' => 50.00,
                     'Ocupación por Vivienda' => 3.99,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 97.22,
                     'Viviendas con Drenaje' => 95.83,
                     'Viviendas con Televisión' => 97.22,
                     'Viviendas con Automóvil' => 48.09,
-                    'Viviendas con Computadora' => 17.82,
-                    'Viviendas con Celular' => 68.58,
-                    'Viviendas con Internet' => 9.19
+                    'Viviendas con Computadora' => 17.82
                 )
             ),
             'Unidades Económicas' => array(

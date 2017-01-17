@@ -33,13 +33,13 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Club Campestre Montebello';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'club-campestre-montebello';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Club Campestre Montebello de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Club Campestre Montebello en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.83,
                     'Porcentaje de población no especificada' => 5.49,
                     'Fecundidad promedio' => 1.74,
-                    'Porcentaje de población nacida en otro estado' => 26.22,
-                    'Porcentaje de población con discapacidad' => 4.42,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.00,
-                    'Porcentaje de población de 18 y más' => 64.02,
-                    'Porcentaje de población de 18 y más postbásicos' => 56.71
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 14.13,
-                    'Grado Promedio de Escolaridad masculina' => 14.82,
-                    'Grado Promedio de Escolaridad femenina' => 13.57
+                    'Porcentaje de población con discapacidad' => 4.42
                 )
             ),
             'Características Económicas' => array(
@@ -96,27 +85,23 @@ class ClubCampestreMontebello extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 36,
-                    'Hogares Jefatura masculina' => 88.89,
-                    'Hogares Jefatura femenina' => 11.11,
                     'Ocupación por Vivienda' => 4.56,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 97.22,
                     'Viviendas con Drenaje' => 97.22,
                     'Viviendas con Televisión' => 97.22,
                     'Viviendas con Automóvil' => 97.22,
-                    'Viviendas con Computadora' => 94.44,
-                    'Viviendas con Celular' => 94.44,
-                    'Viviendas con Internet' => 88.89
+                    'Viviendas con Computadora' => 94.44
                 )
             ),
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad nombre' => 'Inmobiliarios',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Inmobiliarios',
+                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 33.33
                 )
             )

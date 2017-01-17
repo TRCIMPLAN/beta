@@ -33,13 +33,13 @@ class Moctezuma extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Moctezuma';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'moctezuma';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Moctezuma de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Moctezuma en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class Moctezuma extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 9.98,
                     'Porcentaje de población no especificada' => 0.98,
                     'Fecundidad promedio' => 2.44,
-                    'Porcentaje de población nacida en otro estado' => 17.83,
-                    'Porcentaje de población con discapacidad' => 11.17,
-                    'Porcentaje de población de 15 y más analfabeta' => 2.37,
-                    'Porcentaje de población de 18 y más' => 68.55,
-                    'Porcentaje de población de 18 y más postbásicos' => 24.84
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 8.89,
-                    'Grado Promedio de Escolaridad masculina' => 8.97,
-                    'Grado Promedio de Escolaridad femenina' => 8.82
+                    'Porcentaje de población con discapacidad' => 11.17
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class Moctezuma extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 951,
-                    'Hogares Jefatura masculina' => 71.08,
-                    'Hogares Jefatura femenina' => 28.92,
                     'Ocupación por Vivienda' => 3.81,
                     'Viviendas con Electricidad' => 99.89,
                     'Viviendas con Agua' => 99.79,
                     'Viviendas con Drenaje' => 99.58,
                     'Viviendas con Televisión' => 98.95,
                     'Viviendas con Automóvil' => 47.32,
-                    'Viviendas con Computadora' => 28.25,
-                    'Viviendas con Celular' => 65.62,
-                    'Viviendas con Internet' => 18.28
+                    'Viviendas con Computadora' => 28.25
                 )
             ),
             'Unidades Económicas' => array(

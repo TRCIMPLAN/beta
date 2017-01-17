@@ -33,13 +33,13 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Joya';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:08';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ejido-la-joya';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ejido La Joya de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ejido La Joya en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 6.41,
                     'Porcentaje de población no especificada' => 0.15,
                     'Fecundidad promedio' => 2.61,
-                    'Porcentaje de población nacida en otro estado' => 12.64,
-                    'Porcentaje de población con discapacidad' => 4.40,
-                    'Porcentaje de población de 15 y más analfabeta' => 3.35,
-                    'Porcentaje de población de 18 y más' => 62.28,
-                    'Porcentaje de población de 18 y más postbásicos' => 14.57
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.83,
-                    'Grado Promedio de Escolaridad masculina' => 7.88,
-                    'Grado Promedio de Escolaridad femenina' => 7.79
+                    'Porcentaje de población con discapacidad' => 4.40
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 753,
-                    'Hogares Jefatura masculina' => 78.36,
-                    'Hogares Jefatura femenina' => 21.64,
                     'Ocupación por Vivienda' => 4.06,
                     'Viviendas con Electricidad' => 98.71,
                     'Viviendas con Agua' => 97.25,
                     'Viviendas con Drenaje' => 96.81,
                     'Viviendas con Televisión' => 95.93,
                     'Viviendas con Automóvil' => 47.95,
-                    'Viviendas con Computadora' => 48.63,
-                    'Viviendas con Celular' => 63.76,
-                    'Viviendas con Internet' => 44.81
+                    'Viviendas con Computadora' => 48.63
                 )
             ),
             'Unidades Económicas' => array(
@@ -116,9 +101,9 @@ class EjidoLaJoya extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.48,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.15,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 10.61,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.61,
                     'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 6.06

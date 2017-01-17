@@ -33,13 +33,13 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Galerías';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'residencial-galerias';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Residencial Galerías de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Residencial Galerías en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 0.63,
                     'Porcentaje de población no especificada' => 0.15,
                     'Fecundidad promedio' => 1.53,
-                    'Porcentaje de población nacida en otro estado' => 22.52,
-                    'Porcentaje de población con discapacidad' => 0.37,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.19,
-                    'Porcentaje de población de 18 y más' => 58.02,
-                    'Porcentaje de población de 18 y más postbásicos' => 54.31
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 15.19,
-                    'Grado Promedio de Escolaridad masculina' => 15.12,
-                    'Grado Promedio de Escolaridad femenina' => 15.23
+                    'Porcentaje de población con discapacidad' => 0.37
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ResidencialGalerias extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 5,
-                    'Hogares Jefatura masculina' => 77.88,
-                    'Hogares Jefatura femenina' => 22.12,
                     'Ocupación por Vivienda' => 4.20,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 100.00,
                     'Viviendas con Drenaje' => 100.00,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 100.00,
-                    'Viviendas con Computadora' => 99.46,
-                    'Viviendas con Celular' => 100.00,
-                    'Viviendas con Internet' => 98.65
+                    'Viviendas con Computadora' => 99.46
                 )
             ),
             'Unidades Económicas' => array(

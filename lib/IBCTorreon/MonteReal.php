@@ -33,13 +33,13 @@ class MonteReal extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Monte Real';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'monte-real';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Monte Real de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Monte Real en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class MonteReal extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 1.43,
                     'Porcentaje de población no especificada' => 0.73,
                     'Fecundidad promedio' => 1.77,
-                    'Porcentaje de población nacida en otro estado' => 14.49,
-                    'Porcentaje de población con discapacidad' => 1.73,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.19,
-                    'Porcentaje de población de 18 y más' => 56.39,
-                    'Porcentaje de población de 18 y más postbásicos' => 30.22
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.88,
-                    'Grado Promedio de Escolaridad masculina' => 11.09,
-                    'Grado Promedio de Escolaridad femenina' => 10.69
+                    'Porcentaje de población con discapacidad' => 1.73
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class MonteReal extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 1973,
-                    'Hogares Jefatura masculina' => 84.42,
-                    'Hogares Jefatura femenina' => 15.58,
                     'Ocupación por Vivienda' => 3.70,
                     'Viviendas con Electricidad' => 99.80,
                     'Viviendas con Agua' => 99.54,
                     'Viviendas con Drenaje' => 99.65,
                     'Viviendas con Televisión' => 99.54,
                     'Viviendas con Automóvil' => 59.76,
-                    'Viviendas con Computadora' => 33.85,
-                    'Viviendas con Celular' => 88.70,
-                    'Viviendas con Internet' => 27.91
+                    'Viviendas con Computadora' => 33.85
                 )
             ),
             'Unidades Económicas' => array(

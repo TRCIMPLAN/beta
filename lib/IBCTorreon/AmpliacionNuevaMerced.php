@@ -33,13 +33,13 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Ampliación Nueva Merced';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:07';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'ampliacion-nueva-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Ampliación Nueva Merced de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Ampliación Nueva Merced en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 3.34,
                     'Porcentaje de población no especificada' => 0.84,
                     'Fecundidad promedio' => 2.39,
-                    'Porcentaje de población nacida en otro estado' => 20.18,
-                    'Porcentaje de población con discapacidad' => 4.84,
-                    'Porcentaje de población de 15 y más analfabeta' => 1.44,
-                    'Porcentaje de población de 18 y más' => 57.49,
-                    'Porcentaje de población de 18 y más postbásicos' => 8.85
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 7.36,
-                    'Grado Promedio de Escolaridad masculina' => 7.37,
-                    'Grado Promedio de Escolaridad femenina' => 7.35
+                    'Porcentaje de población con discapacidad' => 4.84
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 497,
-                    'Hogares Jefatura masculina' => 79.27,
-                    'Hogares Jefatura femenina' => 20.73,
                     'Ocupación por Vivienda' => 4.38,
                     'Viviendas con Electricidad' => 98.89,
                     'Viviendas con Agua' => 97.87,
                     'Viviendas con Drenaje' => 95.02,
                     'Viviendas con Televisión' => 95.43,
                     'Viviendas con Automóvil' => 34.73,
-                    'Viviendas con Computadora' => 13.02,
-                    'Viviendas con Celular' => 61.90,
-                    'Viviendas con Internet' => 2.66
+                    'Viviendas con Computadora' => 13.02
                 )
             ),
             'Unidades Económicas' => array(
@@ -118,7 +103,7 @@ class AmpliacionNuevaMerced extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 24.32,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 8.11,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 5.41,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.41

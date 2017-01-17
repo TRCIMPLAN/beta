@@ -33,13 +33,13 @@ class ParaisoDelNazas extends \IBCBase\PublicacionWeb {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre      = 'Paraíso del Nazas';
-        $this->autor       = 'IMPLAN Torreón Staff';
-        $this->fecha       = '2016-11-23 16:15:10';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2017-01-17 13:11:23';
         // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
         $this->archivo     = 'paraiso-del-nazas';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion = 'Colonia Paraíso del Nazas de Torreón.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación';
+        $this->descripcion = 'Colonia Paraíso del Nazas en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -67,18 +67,7 @@ class ParaisoDelNazas extends \IBCBase\PublicacionWeb {
                     'Porcentaje de población de 65 y más años' => 5.51,
                     'Porcentaje de población no especificada' => 5.85,
                     'Fecundidad promedio' => 1.97,
-                    'Porcentaje de población nacida en otro estado' => 17.80,
-                    'Porcentaje de población con discapacidad' => 2.79,
-                    'Porcentaje de población de 15 y más analfabeta' => 0.19,
-                    'Porcentaje de población de 18 y más' => 55.75,
-                    'Porcentaje de población de 18 y más postbásicos' => 32.19
-                )
-            ),
-            'Educación' => array(
-                '2010' => array(
-                    'Grado Promedio de Escolaridad' => 10.68,
-                    'Grado Promedio de Escolaridad masculina' => 10.67,
-                    'Grado Promedio de Escolaridad femenina' => 10.73
+                    'Porcentaje de población con discapacidad' => 2.79
                 )
             ),
             'Características Económicas' => array(
@@ -96,17 +85,13 @@ class ParaisoDelNazas extends \IBCBase\PublicacionWeb {
             'Viviendas' => array(
                 '2010' => array(
                     'Hogares' => 123,
-                    'Hogares Jefatura masculina' => 42.05,
-                    'Hogares Jefatura femenina' => 57.95,
                     'Ocupación por Vivienda' => 4.19,
                     'Viviendas con Electricidad' => 100.00,
                     'Viviendas con Agua' => 98.86,
                     'Viviendas con Drenaje' => 94.72,
                     'Viviendas con Televisión' => 100.00,
                     'Viviendas con Automóvil' => 73.27,
-                    'Viviendas con Computadora' => 44.23,
-                    'Viviendas con Celular' => 82.94,
-                    'Viviendas con Internet' => 30.30
+                    'Viviendas con Computadora' => 44.23
                 )
             ),
             'Unidades Económicas' => array(

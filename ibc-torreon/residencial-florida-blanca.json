@@ -11,18 +11,7 @@
         "Porcentaje de población de 65 y más años":5.33,
         "Porcentaje de población no especificada":2.17,
         "Fecundidad promedio":1.5,
-        "Porcentaje de población nacida en otro estado":17.43,
-        "Porcentaje de población con discapacidad":2.39,
-        "Porcentaje de población de 15 y más analfabeta":0.17,
-        "Porcentaje de población de 18 y más":63.44,
-        "Porcentaje de población de 18 y más postbásicos":57.38
-      }
-    },
-    "Educación":{
-      "2010":{
-        "Grado Promedio de Escolaridad":14.11,
-        "Grado Promedio de Escolaridad masculina":14.5,
-        "Grado Promedio de Escolaridad femenina":13.72
+        "Porcentaje de población con discapacidad":2.39
       }
     },
     "Características Económicas":{
@@ -40,29 +29,25 @@
     "Viviendas":{
       "2010":{
         "Hogares":109,
-        "Hogares Jefatura masculina":81.65,
-        "Hogares Jefatura femenina":18.35,
         "Ocupación por Vivienda":3.79,
         "Viviendas con Electricidad":100,
         "Viviendas con Agua":100,
         "Viviendas con Drenaje":100,
         "Viviendas con Televisión":100,
         "Viviendas con Automóvil":94.5,
-        "Viviendas con Computadora":88.99,
-        "Viviendas con Celular":94.5,
-        "Viviendas con Internet":87.16
+        "Viviendas con Computadora":88.99
       }
     },
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":5,
-        "Primer actividad nombre":"Manejo de Residuos",
+        "Primer actividad nombre":"Educativos",
         "Primer actividad porcentaje":20,
         "Segunda actividad nombre":"Profesionales, Científicos, Técnicos",
         "Segunda actividad porcentaje":20,
         "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
         "Tercera actividad porcentaje":20,
-        "Cuarta actividad nombre":"Educativos",
+        "Cuarta actividad nombre":"Manejo de Residuos",
         "Cuarta actividad porcentaje":20,
         "Quinta actividad nombre":"Comercio Menudeo",
         "Quinta actividad porcentaje":20
