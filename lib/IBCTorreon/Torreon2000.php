@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN Sitio Web - IBC Torreón Torreón 2000
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -34,8 +34,8 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreón 2000';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-17 13:11:23';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
+        $this->fecha       = '2017-01-18 14:53:48';
+        // El nombre del archivo a crear
         $this->archivo     = 'torreon-2000';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Torreón 2000 en Torreón, Coahuila de Zaragoza, México.';
@@ -99,11 +99,11 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 11.11,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 11.11
                 )
             )

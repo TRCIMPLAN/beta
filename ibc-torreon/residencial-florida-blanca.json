@@ -41,15 +41,15 @@
     "Unidades Económicas":{
       "2010":{
         "Total Actividades Económicas":5,
-        "Primer actividad nombre":"Educativos",
+        "Primer actividad nombre":"Profesionales, Científicos, Técnicos",
         "Primer actividad porcentaje":20,
-        "Segunda actividad nombre":"Profesionales, Científicos, Técnicos",
+        "Segunda actividad nombre":"Educativos",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Comercio Menudeo",
         "Tercera actividad porcentaje":20,
-        "Cuarta actividad nombre":"Manejo de Residuos",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":20,
-        "Quinta actividad nombre":"Comercio Menudeo",
+        "Quinta actividad nombre":"Manejo de Residuos",
         "Quinta actividad porcentaje":20
       }
     }

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN Sitio Web - IBC Torreón Palmas San Isidro
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -34,8 +34,8 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Palmas San Isidro';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-17 13:11:23';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
+        $this->fecha       = '2017-01-18 14:53:48';
+        // El nombre del archivo a crear
         $this->archivo     = 'palmas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Palmas San Isidro en Torreón, Coahuila de Zaragoza, México.';
@@ -101,11 +101,11 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 28.12,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 21.88,
-                    'Tercera actividad nombre' => 'Manejo de Residuos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 9.38,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 9.38,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )

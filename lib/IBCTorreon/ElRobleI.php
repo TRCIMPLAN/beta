@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN Sitio Web - IBC Torreón El Roble I
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -34,8 +34,8 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'El Roble I';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-17 13:11:23';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
+        $this->fecha       = '2017-01-18 14:53:48';
+        // El nombre del archivo a crear
         $this->archivo     = 'el-roble-i';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia El Roble I en Torreón, Coahuila de Zaragoza, México.';
@@ -101,11 +101,11 @@ class ElRobleI extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 66.67,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 8.33,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 8.33,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )

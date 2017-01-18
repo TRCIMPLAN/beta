@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN Sitio Web - IBC Torreón Villa Romana
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -34,8 +34,8 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Romana';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-17 13:11:23';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
+        $this->fecha       = '2017-01-18 14:53:48';
+        // El nombre del archivo a crear
         $this->archivo     = 'villa-romana';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Villa Romana en Torreón, Coahuila de Zaragoza, México.';
@@ -97,11 +97,11 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 33.33
                 )
             )

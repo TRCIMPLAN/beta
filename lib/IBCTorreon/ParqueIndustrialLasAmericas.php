@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Índice Básico de Colonias
+ * TrcIMPLAN Sitio Web - IBC Torreón Parque Industrial Las Américas
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -34,8 +34,8 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Las Américas';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-17 13:11:23';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
+        $this->fecha       = '2017-01-18 14:53:48';
+        // El nombre del archivo a crear
         $this->archivo     = 'parque-industrial-las-americas';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Parque Industrial Las Américas en Torreón, Coahuila de Zaragoza, México.';
@@ -76,9 +76,9 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 7.69,
                     'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Cuarta actividad nombre' => 'Información Medios Masivos',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Información Medios Masivos',
+                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

@@ -43,9 +43,9 @@
         "Total Actividades Económicas":3,
         "Primer actividad nombre":"Industria Manufacturera",
         "Primer actividad porcentaje":33.33,
-        "Segunda actividad nombre":"Salud",
+        "Segunda actividad nombre":"Comercio Menudeo",
         "Segunda actividad porcentaje":33.33,
-        "Tercera actividad nombre":"Comercio Menudeo",
+        "Tercera actividad nombre":"Salud",
         "Tercera actividad porcentaje":33.33
       }
     }

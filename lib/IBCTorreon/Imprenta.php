@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN IBC Torreon - Imprenta
+ * TrcIMPLAN Sitio Web - IBC Imprenta
  *
- * Copyright (C) 2016 Guillermo Valdes Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package TrcIMPLAN
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCTorreon;
@@ -36,7 +36,7 @@ class Imprenta extends \Base\ImprentaPublicaciones {
         // Los siguientes parámetros dan datos para el índice/galería que será creado
         $this->titulo                   = 'Colonias de Torreón';
         $this->descripcion              = 'Indicadores Básicos por Colonias de Torreón, Coahuila de Zaragoza.';
-        $this->claves                   = 'IMPLAN, Torreon, Indicadores, Basicos, Colonias';
+        $this->claves                   = 'IMPLAN, Torreon, Indicadores, Colonia, IBC Torreón';
         $this->encabezado_color         = '#646464';
         // Etiqueta de Navegación a poner activa
         $this->nombre_menu              = 'Indicadores Básicos por Colonias > Colonias de Torreón';
