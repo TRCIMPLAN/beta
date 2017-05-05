@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Publicacion Config
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,6 +40,22 @@ class PublicacionConfig {
     public $estado                    = 'publicar';                    // El estado ordena a Imprenta e Índice si debe 'publicar', 'revisar' o 'ignorar'
     public $poner_imagen_en_contenido = FALSE;                         // Si es verdadero pondrá la imagen antes que el contenido
     public $include_extra_directorio  = 'include/extra';               // Ruta donde habrá archivos HTML para cargar como el extra de SchemaThing, por ejemplo include/extra
+    public $publisher;                                                 // Instancia de SchemaOrganization
+
+    /**
+     * Constructor
+     */
+    public function __construct() {
+        // Definir publisher para las publicaciones que hereden SchemaBlogPosting
+        $this->publisher                 = new \Base\SchemaOrganization();
+        $this->publisher->name           = 'Instituto Municipal de Planeación y Competitividad de Torreón';
+        $this->publisher->description    = 'Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón, Coahuila, México.';
+        $this->publisher->image          = '../imagenes/implan-logo.png';
+        $this->publisher->big_heading    = FALSE;
+        $this->publisher->image_show     = TRUE;
+        $this->publisher->is_article     = FALSE;
+        $this->publisher->class_property = 'publicador'; // Estilo CSS
+    } // constructor
 
 } // Clase PublicacionConfig
 

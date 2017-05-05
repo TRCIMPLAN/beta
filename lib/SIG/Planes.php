@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - DESCRIPCION
+ * TrcIMPLAN Sitio Web - Planes
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
-// Namespace
 namespace SIG;
 
 /**
@@ -33,33 +33,27 @@ class Planes extends \Base\Publicacion {
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
-        $this->nombre         = 'Planes';
-     // $this->autor          = 'Autor';
-        $this->fecha          = '2015-01-01T08:00';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes. Use minúsculas, números y/o guiones medios
-        $this->archivo        = ''; // No hay archivo HTML a crear
-        $this->imagen         = 'introduccion/imagen.jpg';
-        $this->imagen_previa  = 'introduccion/imagen-previa.jpg';
-        // La descripción y claves dan información a los buscadores y redes sociales. Las categorías son de uso interno
-        $this->descripcion    = 'Documentos oficiales que tienen que ver con desarrollo urbano.';
-        $this->claves         = 'IMPLAN, Torreon, Planes, Documentos, Reglamentos';
-        $this->categorias     = array('Gobierno');
-        // El estado puede ser 'publicar' (lo usa), 'revisar' o 'ignorar' (lo omite)
-        $this->estado         = 'publicar';
+        $this->nombre                     = 'Planes';
+    //~ $this->autor                      = '';
+        $this->fecha                      = '2015-01-01T08:00';
+        // El nombre del archivo a crear
+        $this->archivo                    = ''; // No hay archivo HTML a crear
+        // Imágenes
+        $this->imagen                     = 'introduccion/imagen.jpg';
+        $this->imagen_previa              = 'introduccion/imagen-previa.jpg';
+        // La descripción y claves dan información a los buscadores y redes sociales
+        $this->descripcion                = 'Documentos oficiales que tienen que ver con desarrollo urbano.';
+        $this->claves                     = 'IMPLAN, Torreon, Planes, Documentos, Reglamentos';
+        // Banderas
+        $this->poner_imagen_en_contenido  = FALSE;
+        $this->para_compartir             = FALSE;
+        // El estado puede ser 'publicar', 'revisar' o 'ignorar'
+        $this->estado                     = 'publicar';
         // URL de destino
-        $this->url            = '../sig-planes/index.html';
-     // $this->url_etiqueta   = '';
-        // Sin contenido
-        $this->contenido      = '';
-        // Sin JavaScript
-        $this->javascript     = '';
-        // Para redifusión, si tiene una imagen se usa y después la descripción
-        if ($this->imagen != '') {
-            $this->redifusion = sprintf("<a href=\"%s\"><img src=\"%s\"><br>\n\n%s</a>", $this->url, $this->imagen, $this->descripcion);
-        } else {
-            $this->redifusion = sprintf('<a href="%s">%s</a>', $this->url, $this->descripcion);
-        }
+        $this->url                        = '../sig-planes/index.html';
     } // constructor
 
 } // Clase Planes

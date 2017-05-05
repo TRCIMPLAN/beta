@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Creador Config
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -51,6 +51,7 @@ class CreadorConfig {
             '\\Institucional\\Imprenta',
             '\\Investigaciones\\Imprenta',
             '\\PET\\Imprenta',
+            '\\PETDocumento\\Imprenta',
             '\\PlanEstrategicoMetropolitano\\Imprenta',
             '\\PreguntasFrecuentes\\Imprenta',
             '\\Proyectos\\Imprenta',
@@ -70,19 +71,32 @@ class CreadorConfig {
         $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
             '\\Blog\\Imprenta',
+            '\\PET\\Imprenta',
             '\\Proyectos\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
             '\\SIGMapasTorreon\\Imprenta',
             '\\SMIIndicadoresGomezPalacio\\Imprenta',
             '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresLerdo\\Imprenta',
             '\\SMIIndicadoresMatamoros\\Imprenta',
             '\\SMIIndicadoresTorreon\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
         $this->imprentas_redifusion     = $this->imprentas_autores;
         $this->imprentas_pagina_inicial = $this->imprentas_autores;
-        $this->imprentas_json           = array(
-            '\\IBCTorreon\\ImprentaJSONs');
-        $this->imprentas_csv            = array(
-            '\\IBCTorreon\\ImprentaCSV');
+        /*
+         * Había retirado los indicadores para que no aparecieran en Últimas Publicaciones
+         * Pero la cantidad de publicaciones salía mucho menos :-(
+        $this->imprentas_pagina_inicial = array(
+            '\\Blog\\Imprenta',
+            '\\PET\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
+            '\\SIGMapasTorreon\\Imprenta');
+        */
+    //  $this->imprentas_json           = array(
+    //      '\\IBCTorreon\\ImprentaJSONs');
+    //  $this->imprentas_csv            = array(
+    //      '\\IBCTorreon\\ImprentaCSV');
     } // constructor
 
 } // Clase CreadorConfig

@@ -41,16 +41,16 @@ class PET0241DiagnosticoEntornoUrbano extends \Base\PublicacionSchemaArticle {
         $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Diagnóstico Estratégico: Entorno Urbano.';
         $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Entorno, Urbano';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Plan Estratégico Torreón';
+        $this->nombre_menu                = 'Plan Estratégico Torreón 2040';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/PET/PET0241DiagnosticoEntornoUrbano.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
         // Para el Organizador
-        $this->categorias                 = array();
+        $this->categorias                 = array('Infraestructura', 'Recursos Naturales', 'Servicios Públicos', 'Transporte', 'Vivienda');
         $this->fuentes                    = array();
-        $this->regiones                   = array();
+        $this->regiones                   = array('Torreón', 'La Laguna');
     } // constructor
 
 } // Clase PET0241DiagnosticoEntornoUrbano

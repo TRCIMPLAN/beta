@@ -2,33 +2,48 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-<!-- ===========================================================================================
+<!-- ===================================================================================================
 
-        Instituto Municipal de Planeación y Competitividad de Torreón.
+        Instituto Municipal de Planeación y Competitividad (IMPLAN) de Torreón.
+
+        3er. generación de la Plataforma del Conocimiento
+        Desarrollado por Ing. Guillermo Valdés Lozano <guivaloz en movimientolibre.com>
+
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016, 2017.
+        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
 
         Al usar, estudiar y copiar está aceptando los términos de uso de la información y del sitio web:
           http://www.trcimplan.gob.mx/terminos/terminos-informacion.html
           http://www.trcimplan.gob.mx/terminos/terminos-sitio.html
-        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016.
-        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
-        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
-          Morris.js              https://morrisjs.github.io/morris.js/
-          PHP                    http://php.net
-          StartBootStrap         http://startbootstrap.com
-          Twitter Bootstrap      http://getbootstrap.com
-        El hospedaje gratuito es cortesía de GitHub. Descargue, aprenda y colabore:
-          IMPLAN Torreón         https://github.com/TRCIMPLAN
 
-     =========================================================================================== -->
+        Descargue, estudie y colabore bajando todo este sitio web:
+          IMPLAN Torreón     https://github.com/TRCIMPLAN/trcimplan.github.io
+
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          PHP                http://php.net
+          Twitter Bootstrap  http://getbootstrap.com
+          StartBootStrap     http://startbootstrap.com
+          Morris.js          https://morrisjs.github.io/morris.js/
+          Font Awesome       http://fontawesome.io
+          DataTables         https://www.datatables.net
+          Carto              https://carto.com
+          GitHub             https://github.com
+
+     =================================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Comunicados de Prensa del IMPLAN Torreón.">
   <meta name="author" content="TrcIMPLAN Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Comunicados, Prensa, Sala">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sala de Prensa - IMPLAN Torreón">
+  <meta name="twitter:description" content="Comunicados de Prensa del IMPLAN Torreón.">
+  <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/sala-prensa/index.html">
+  <meta name="og:title" content="Sala de Prensa - IMPLAN Torreón">
+  <meta name="og:description" content="Comunicados de Prensa del IMPLAN Torreón.">
+  <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/sala-prensa/index.html">
   <title>Sala de Prensa - IMPLAN Torreón</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-76x76.png" sizes="76x76">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-120x120.png" sizes="120x120">
@@ -37,13 +52,16 @@
   <link rel="icon" href="../imagenes/icon-hires.png" sizes="192x192">
   <link rel="icon" href="../imagenes/icon-normal.png" sizes="128x128">
   <link rel="alternate" type="application/rss+xml" href="../rss.xml" title="IMPLAN Torreón">
-  <link rel="stylesheet" type="text/css" href="../css/morris.css">
-  <link rel="stylesheet" type="text/css" href="../css/plugins/metisMenu/metisMenu.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/sb-admin-2.css">
-  <link rel="stylesheet" type="text/css" href="../css/plataforma-de-conocimiento.css">
-  <link rel="stylesheet" type="text/css" href="../css/trcimplan.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/metisMenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/datatables-plugins/dataTables.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/morrisjs/morris.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/sb-admin-2.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/plataforma-de-conocimiento.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed:400,700">
   <link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/trcimplan.css">
   <!-- SOPORTE PARA IE -->
   <!--[if lt IE 9]>
   <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -159,6 +177,54 @@
         <div class="encabezado-descripcion">Comunicados de Prensa del IMPLAN Torreón.</div>
       </div>
       <div class="media breve">
+        <a class="pull-left" href="firman-la-convenio-facultad-de-ingenieria-civil-de-la-uac-y-el-implan-torreon.html"><img class="media-object" src="firman-la-convenio-facultad-de-ingenieria-civil-de-la-uac-y-el-implan-torreon/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="firman-la-convenio-facultad-de-ingenieria-civil-de-la-uac-y-el-implan-torreon.html">Firman la Convenio Facultad de Ingeniería Civil de la UAC y el IMPLAN Torreón</a></h3>
+          <p class="detallados-descripcion">La Facultad de Ingeniería Civil de la Universidad Autónoma de Coahuila y el IMPLAN Torreón firmaron un convenio de colaboración para que estudiantes realicen prácticas profesionales.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 27/03/2017 14:22</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="2017-03-07-taller-anticipacion-estrategica-para-la-planeacion-urbana.html"><img class="media-object" src="2017-03-07-taller-anticipacion-estrategica-para-la-planeacion-urbana/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="2017-03-07-taller-anticipacion-estrategica-para-la-planeacion-urbana.html">IMPLAN asiste al taller Anticipación Estratégica para la Planeación Urbana</a></h3>
+          <p class="detallados-descripcion">En León, Guanajuato; los expertos en prospectiva e inteligencia estratégica nos mostraron cómo analizar el futuro de las ciudades para poder modificarlo en el presente.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 07/03/2017 12:16</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="2017-02-21-implan-inicia-transmisiones-en-vivo.html"><img class="media-object" src="2017-02-21-implan-inicia-transmisiones-en-vivo/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="2017-02-21-implan-inicia-transmisiones-en-vivo.html">IMPLAN inicia transmisiones en vivo con temas de interés ciudadano</a></h3>
+          <p class="detallados-descripcion">Con el fin de dar difusión a los temas que involucran el futuro de la ciudad, el IMPLAN ha iniciado una serie de transmisiones en vivo a través de su página de Facebook.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 21/02/2017 14:40</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="2017-02-09-piden-georreferenciar-avance-y-desarrollo-de-obra-publica.html"><img class="media-object" src="2017-02-09-piden-georreferenciar-avance-y-desarrollo-de-obra-publica/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="2017-02-09-piden-georreferenciar-avance-y-desarrollo-de-obra-publica.html">Piden georreferenciar avance y desarrollo de obra pública</a></h3>
+          <p class="detallados-descripcion">Para enriquecer aún más la Plataforma del Conocimiento los regidores y síndicas que participan dentro de las comisiones de Planeación y Metropolitana del Cabildo de Torreón propusieron agregar una línea que permita georreferenciar el desarrollo de obras públicas.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 09/02/2017 13:00</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="2017-01-26-sesion-ordinaria.html"><img class="media-object" src="2017-01-26-sesion-ordinaria/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="2017-01-26-sesion-ordinaria.html">Presentan la Plataforma del Conocimiento trcimplan.gob.mx</a></h3>
+          <p class="detallados-descripcion">El IMPLAN Torreón llevó a cabo su primera sesión de Consejo Directivo de 2017, con el fin de presentar a los consejeros y asistentes cómo pueden utilizar la Plataforma del Conocimiento.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 26/01/2017 11:30</p>
+        </div>
+      </div>
+      <div class="media breve">
+        <a class="pull-left" href="2017-01-19-proyectos-para-tener-un-torreon-atractivo-para-la-inversion.html"><img class="media-object" src="2017-01-19-proyectos-para-tener-un-torreon-atractivo-para-la-inversion/imagen-previa.jpg"></a>
+        <div class="media-body">
+          <h3 class="media-heading detallados-encabezado"><a href="2017-01-19-proyectos-para-tener-un-torreon-atractivo-para-la-inversion.html">Proyectos para tener un Torreón atractivo para la inversión</a></h3>
+          <p class="detallados-descripcion">El IMPLAN Torreón presentó ante el Cabildo los avances en los distintos ejes en los que ha trabajado el Instituto.</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 19/01/2017 11:00</p>
+        </div>
+      </div>
+      <div class="media breve">
         <a class="pull-left" href="2016-12-15-firma-convenio-colaboracion-uadec.html"><img class="media-object" src="2016-12-15-firma-convenio-colaboracion-uadec/imagen-previa.jpg"></a>
         <div class="media-body">
           <h3 class="media-heading detallados-encabezado"><a href="2016-12-15-firma-convenio-colaboracion-uadec.html">El IMPLAN y la Escuela de Arquitectura de la UAC firman convenio de colaboración</a></h3>
@@ -251,7 +317,7 @@
         <div class="media-body">
           <h3 class="media-heading detallados-encabezado"><a href="2016-04-13-diagnostico-politica-industrial.html">IMPLAN desarrollará Diagnóstico de Política Industrial</a></h3>
           <p class="detallados-descripcion">Alicia Valdez Ibarra, encargada de indicadores económicos del IMPLAN, dio a conocer ante el Cabildo de Torreón el avance de este proyecto, que consiste en su primera etapa en la elaboración de un diagnóstico para conocer las características de cada industria.</p>
-          <p class="detallados-autor-fecha">Por Lic. Adriana Vargas Flores, 13/04/2016 13:10</p>
+          <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 13/04/2016 13:10</p>
         </div>
       </div>
       <div class="media breve">
@@ -306,7 +372,7 @@
         <a class="pull-left" href="2015-11-10-plataforma-trcimplangobmx-premio-iclei.html"><img class="media-object" src="2015-11-10-plataforma-trcimplangobmx-premio-iclei/imagen-previa.jpg"></a>
         <div class="media-body">
           <h3 class="media-heading detallados-encabezado"><a href="2015-11-10-plataforma-trcimplangobmx-premio-iclei.html">Plataforma trcimplan.gob.mx Premio ICLEI</a></h3>
-          <p class="detallados-descripcion">La organización internacional Gobiernos Locales por la Sustentabilidad, ICLEI por sus siglas en inglés, reconoció al sitio web como una herramienta para la planeación metropolitana.</p>
+          <p class="detallados-descripcion">El ICLEI reconoció al sitio web como una herramienta para la planeación metropolitana.</p>
           <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 10/11/2015 16:20</p>
         </div>
       </div>
@@ -369,7 +435,7 @@
       <div class="media breve">
         <a class="pull-left" href="2015-05-13-financial-times-american-cities-future-2015-2016.html"><img class="media-object" src="2015-05-13-financial-times-american-cities-future-2015-2016/imagen-previa.png"></a>
         <div class="media-body">
-          <h3 class="media-heading detallados-encabezado"><a href="2015-05-13-financial-times-american-cities-future-2015-2016.html">Torreón 4to lugar en Costo Beneficio de inversión en Ranking del Financial Times 'American Cities of the Future 2015-2016'</a></h3>
+          <h3 class="media-heading detallados-encabezado"><a href="2015-05-13-financial-times-american-cities-future-2015-2016.html">Torreón 4to lugar en Costo Beneficio de inversión en Ranking del Financial Times - American Cities of the Future 2015-2016</a></h3>
           <p class="detallados-descripcion">Torreón es la cuarta ciudad de América y la primera de México en mejor costo-beneficio al invertir.</p>
           <p class="detallados-autor-fecha">Por TrcIMPLAN Staff, 14/05/2015 10:00</p>
         </div>
@@ -408,11 +474,6 @@
       </div>
     </div>
     <div class="mapa-inferior">
-      <div class="row">
-        <div class="col-md-8">
-            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
-        </div>
-        <div class="col-md-4">
           <div class="pull-right redes-sociales">
             <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
             <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
@@ -420,19 +481,27 @@
             <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
             <a class="fa fa-rss-square" href="../rss.xml"></a>
           </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
-<!-- Javascript común -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/raphael-min.js"></script>
-<script type="text/javascript" src="../js/morris.min.js"></script>
-<script type="text/javascript" src="../js/plugins/metisMenu/metisMenu.min.js"></script>
-<script type="text/javascript" src="../js/sb-admin-2.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Javascript global inicia -->
+<script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/metisMenu/metisMenu.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+<script type="text/javascript" src="../vendor/raphael/raphael.min.js"></script>
+<script type="text/javascript" src="../vendor/morrisjs/morris.min.js"></script>
+<script type="text/javascript" src="../dist/js/sb-admin-2.min.js"></script>
 <script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<!-- Javascript global termina -->
+<!-- Javascript inicia -->
+<!-- Javascript termina -->
+<!-- Javascript Google Analytics -->
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-58290501-1', 'auto');ga('send', 'pageview');
+</script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Mapa Sitio Config
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,10 +27,10 @@ namespace Configuracion;
  */
 class MapaSitioConfig {
 
-    public $xml_encoding  = 'UTF-8';                          // Character encoding to use in output XML
-    public $max_urls      = 50000;                            // Maximum number of URLs that can be specified
-    public $base_url      = 'http://www.trcimplan.gob.mx'; // The base URL for added URLs (Sin diagonal al final)
-    public $priority_min  = 0.0;                              // The range of values priority can be
+    public $xml_encoding  = 'UTF-8';                            // Character encoding to use in output XML
+    public $max_urls      = 50000;                              // Maximum number of URLs that can be specified
+    public $base_url      = 'http://www.trcimplan.gob.mx/beta'; // The base URL for added URLs (Sin diagonal al final)
+    public $priority_min  = 0.0;                                // The range of values priority can be
     public $priority_max  = 1.0;
     public $priority_step = 0.1;
     public $archivo       = 'sitemap.xml';

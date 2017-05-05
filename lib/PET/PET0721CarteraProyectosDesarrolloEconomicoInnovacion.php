@@ -41,16 +41,16 @@ class PET0721CarteraProyectosDesarrolloEconomicoInnovacion extends \Base\Publica
         $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Cartera de Proyectos: Desarrollo Económico e Innovación.';
         $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, ';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Plan Estratégico Torreón';
+        $this->nombre_menu                = 'Plan Estratégico Torreón 2040';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/PET/PET0721CarteraProyectosDesarrolloEconomicoInnovacion.md';
         // Banderas
         $this->poner_imagen_en_contenido  = false;
         $this->para_compartir             = false;
         // Para el Organizador
-        $this->categorias                 = array();
+        $this->categorias                 = array('Competitividad', 'Empleo', 'Empresas', 'Infraestructura', 'Innovación');
         $this->fuentes                    = array();
-        $this->regiones                   = array();
+        $this->regiones                   = array('Torreón', 'La Laguna');
     } // constructor
 
 } // Clase PET0721CarteraProyectosDesarrolloEconomicoInnovacion

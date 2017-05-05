@@ -93,7 +93,7 @@ _Nota: Cada proyecto tiene un número como clave, los programas están como punt
     304. Preparar propuestas de proyectos para acceder a los recursos identificados
     305. Coordinación institucional metropolitana para desarrollar políticas e instrumentos legales para realizar acciones del PROAIRE
 
-### Balance hídrico del acuífero
+## Balance hídrico del acuífero
 
 * Cartera prioritaria
     306. Plan estratégico de manejo sustentable del agua de la región lagunera
@@ -190,4 +190,4 @@ _Nota: Cada proyecto tiene un número como clave, los programas están como punt
 * Integral de calidad de vida y desarrollo sustentable
     364. Jóvenes guardias ambientales
 
-[Índice](indice.html) | Siguiente: [Instituciones Participantes](anexos-instituciones-participantes.html)
+[Índice](indice.html) | Siguiente: [Anexos: Agradecimientos](anexos-agradecimientos.html)

@@ -56,13 +56,8 @@ fi
 #
 echo "  Eliminando en la raíz..."
 cd $BETA_DIR
-rm -f css/plataforma-de-conocimiento.css
-rm -rf fonts
-rm -rf imagenes
-rm -rf img
-rm -rf js
-rm -rf less
-rm -rf scss
+rm -rf dist
+rm -rf vendor
 for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
@@ -74,7 +69,7 @@ echo "  Eliminando en /lib..."
 cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
-for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     rm -rf $DIR
 done
@@ -82,33 +77,34 @@ done
 #
 # Copiar
 #
-echo "  Copiando a la raíz..."
+echo "  Copiando del Sitio Web a la raíz..."
 cd $BETA_DIR
-cp -r $SITIO_WEB_DIR/fonts .
-cp -r $SITIO_WEB_DIR/imagenes .
-cp -r $SITIO_WEB_DIR/img .
-cp -r $SITIO_WEB_DIR/js .
-cp -r $SITIO_WEB_DIR/less .
-cp -r $SITIO_WEB_DIR/scss .
+echo "    dist"
+cp -r $SITIO_WEB_DIR/dist .
+echo "    vendor"
+cp -r $SITIO_WEB_DIR/vendor .
 for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
+    echo "    ${DIR}"
     cp -r $SITIO_WEB_DIR/$DIR .
     rm -f $DIR/*.html
 done
-echo "  Copiando a /bin..."
+echo "  Copiando del Sitio Web a /bin..."
 cd $BETA_DIR/bin
-cp $PLATAFORMA_DIR/bin/Crear.php .
-echo "  Copiando a /lib..."
+echo "    bin/Crear.php"
+cp $SITIO_WEB_DIR/bin/Crear.php .
+echo "  Copiando de la Plataforma del Conocimiento a /lib..."
 cd $BETA_DIR/lib
+echo "    lib/Base"
 cp -r $PLATAFORMA_DIR/lib/Base .
+echo "    lib/Michelf"
 cp -r $PLATAFORMA_DIR/lib/Michelf .
-for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+echo "  Copiando del Sitio Web a /lib..."
+for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
+    echo "    lib/$DIR"
     cp -r $SITIO_WEB_DIR/lib/$DIR .
 done
-echo "  Copiando a /css..."
-cd $BETA_DIR/css
-cp $PLATAFORMA_DIR/css/plataforma-de-conocimiento.css .
 
 echo "[Copiar] Terminó con éxito."
 exit $EXITO

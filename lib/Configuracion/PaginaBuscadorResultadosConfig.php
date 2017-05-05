@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Pagina Buscador Resultados Config
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,36 +27,6 @@ namespace Configuracion;
  */
 class PaginaBuscadorResultadosConfig extends \Base\Plantilla {
 
-    // public $sitio_titulo;
-    // public $sitio_url;
-    // public $rss;
-    // public $favicon;
-    // public $propio_css;
-    // public $en_raiz;
-    // public $para_compartir;
-    // public $autor;
-    // public $mensaje_oculto;
-    // public $pie;
-    // protected $google_analytics;
-    // protected $google_site_verification;
-    // protected $cabecera_bootstrap_css;
-    // protected $cabecera_font_awesome_css;
-    // protected $cabecera_google_fonts_css;
-    // protected $scripts_jquery_css;
-    // protected $scripts_bootstrap_js;
-    // public $titulo;
-    // public $descripcion;
-    // public $claves;
-    // public $directorio;
-    // public $archivo_ruta;
-    // public $imagen_previa_ruta;
-    // public $icono;
-    // public $navegacion;
-    // public $contenido;
-    // public $mapa_inferior;
-    // public $javascript;
-    // public $contenido_en_renglon;
-
     /**
      * Constructor
      */
@@ -64,7 +34,7 @@ class PaginaBuscadorResultadosConfig extends \Base\Plantilla {
         // Ejecutar constructor del padre
         parent::__construct();
         // Definir propiedades
-        $this->en_raiz      = true;
+        $this->en_raiz      = TRUE;
         $this->titulo       = 'Resultados de la búsqueda en Google';
         $this->descripcion  = 'Resultados de la búsqueda en Google.';
         $this->claves       = 'Resultados, Buscador';
@@ -79,7 +49,7 @@ class PaginaBuscadorResultadosConfig extends \Base\Plantilla {
      */
     public function html() {
         // Indicar al padre que no queremos encerrar el contenido con row y cuerpo
-        $this->contenido_en_renglon = false;
+        $this->contenido_en_renglon = FALSE;
         // Navegacion
         $this->navegacion          = new \Base\Navegacion();
         $this->navegacion->en_raiz = $this->en_raiz;

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - SMI Indicadores La Laguna Sociedad Organizaciones de la Sociedad Civil (Creado por Central:SmiLanzadera)
+ * TrcIMPLAN Sitio Web - SMIIndicadoresLaLaguna SociedadOrganizacionesDeLaSociedadCivil
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,142 +25,148 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase SociedadOrganizacionesDeLaSociedadCivil
  */
-class SociedadOrganizacionesDeLaSociedadCivil extends \Base\Publicacion {
+class SociedadOrganizacionesDeLaSociedadCivil extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
-        $this->nombre            = 'Organizaciones de la Sociedad Civil en La Laguna';
-        $this->autor             = 'Dirección de Investigación Estratégica';
-        $this->fecha             = '2014-10-21T16:19:49';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo           = 'sociedad-organizaciones-de-la-sociedad-civil';
-        $this->imagen            = '../smi/introduccion/imagen.jpg';
-        $this->imagen_previa     = '../smi/introduccion/imagen-previa.jpg';
+        $this->nombre      = 'Organizaciones de la Sociedad Civil en La Laguna';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2014-10-21T16:19:49';
+        // El nombre del archivo a crear
+        $this->archivo     = 'sociedad-organizaciones-de-la-sociedad-civil';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion       = 'Dentro del Índice de Competitividad Urbana del IMCO forma parte de subíndice de "Sistema Político Estable y Funcional". Este indicador busca captar la capacidad de la sociedad para organizarse y ejercer presión social sobre las autoridades. Se incluyen iglesias y organizaciones religiosas.';
-        $this->claves            = 'IMPLAN, La Laguna, Participación Ciudadana, Gobierno, Índice de Competitividad Urbana';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio        = 'indicadores-la-laguna';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu       = 'Indicadores';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado            = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir    = true;
-        // Instancia de SchemaPostalAddress que tiene la localidad, municipio y país
-        $region                  = new \Base\SchemaPostalAddress();
-        $region->addressCountry  = 'MX';
-        $region->addressRegion   = '';
-        $region->addressLocality = '';
-        // Instancia de SchemaPlace agrupa la región y el mapa
-        $lugar                   = new \Base\SchemaPlace();
-        $lugar->address          = $region;
-        // El contenido es estructurado en un esquema
-        $schema                  = new \Base\SchemaArticle();
-        $schema->name            = $this->nombre;
-        $schema->description     = $this->descripcion;
-        $schema->datePublished   = $this->fecha;
-        $schema->image           = $this->imagen;
-        $schema->image_show      = false;
-        $schema->author          = $this->autor;
-        $schema->contentLocation = $lugar;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido         = $schema;
+        $this->descripcion = 'Dentro del Índice de Competitividad Urbana del IMCO forma parte de subíndice de "Sistema Político Estable y Funcional". Este indicador busca captar la capacidad de la sociedad para organizarse y ejercer presión social sobre las autoridades. Se incluyen iglesias y organizaciones religiosas.';
+        $this->claves      = 'IMPLAN, La Laguna, Participación Ciudadana, Gobierno, Índice de Competitividad Urbana';
         // Para el Organizador
-        $this->categorias        = array('Participación Ciudadana', 'Gobierno', 'Índice de Competitividad Urbana');
-        $this->fuentes           = array('IMCO', 'RFOSC');
-        $this->regiones          = 'La Laguna';
+        $this->categorias  = array('Participación Ciudadana', 'Gobierno', 'Índice de Competitividad Urbana');
+        $this->fuentes     = array('IMCO', 'RFOSC');
+        $this->regiones    = array('La Laguna');
     } // constructor
 
     /**
-     * HTML
+     * Sección Datos HTML
      *
      * @return string Código HTML
      */
-    public function html() {
-        // Cargar en el Schema el HTML de las lengüetas
-        $this->contenido->articleBody = <<<FINAL
-  <ul class="nav nav-tabs lenguetas" id="smi-indicador">
-    <li><a href="#smi-indicador-datos" data-toggle="tab">Datos</a></li>
-    <li><a href="#smi-indicador-grafica-1" data-toggle="tab">Gráfica 1</a></li>
-    <li><a href="#smi-indicador-grafica-2" data-toggle="tab">Gráfica 2</a></li>
-    <li><a href="#smi-indicador-otras_regiones" data-toggle="tab">Otras regiones</a></li>
-  </ul>
-  <div class="tab-content lengueta-contenido">
-    <div class="tab-pane" id="smi-indicador-datos">
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2008</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2009</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2010</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2011</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2012</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2014</td>
-            <td>41.2200</td>
-            <td>RFOSC</td>
-            <td>Consulta de [Base de Datos](http://www.corresponsabilidad.gob.mx/?p=f8e8b1feff822753a39b21de69259fd6&)</td>
-          </tr>
-          <tr>
-            <td>25/11/2016</td>
-            <td>49.1400</td>
-            <td>RFOSC</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+    protected function seccion_datos_html() {
+        $this->datos_tabla->definir_estructura(array(
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
+        $this->datos_tabla->definir_panal(array(
+            array('fecha' => '2008-12-31', 'valor' => '6.3110', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2009-12-31', 'valor' => '6.3110', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2010-12-31', 'valor' => '6.3110', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2011-12-31', 'valor' => '6.3110', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2012-12-31', 'valor' => '6.3110', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2014-03-31', 'valor' => '41.2200', 'fuente_nombre' => 'RFOSC', 'notas' => 'Consulta de [Base de Datos](http://www.corresponsabilidad.gob.mx/?p=f8e8b1feff822753a39b21de69259fd6&)'),
+            array('fecha' => '2016-11-25', 'valor' => '49.1400', 'fuente_nombre' => 'RFOSC', 'notas' => '')));
+        // Entregar
+        return $this->datos_tabla->html();
+    } // seccion_datos_html
+
+    /**
+     * Sección Datos JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_datos_javascript() {
+        return $this->datos_tabla->javascript();
+    } // seccion_datos_javascript
+
+    /**
+     * Sección Gráfica 1 HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_grafica_1_html() {
+        return <<<FINAL
+      <h3>Gráfica de Organizaciones de la Sociedad Civil en La Laguna con fuente IMCO</h3>
+      <div id="graficaDatosImco" class="grafica"></div>
       <p><b>Unidad:</b> Por cada 100 mil.</p>
       <h3>Observaciones</h3>
 <p>Unidades: Organizaciones por cada 100 mil habitantes. Fuente: Secretaría de Gobernación (SEGOB), 2013. 
 Registro Federal de Organizaciones de la Sociedad Civil. Consulta <a href="http://www.corresponsabilidad.gob.mx/">Base de Datos</a></p>
 
-    </div>
-    <div class="tab-pane" id="smi-indicador-grafica-1">
-      <h3>Gráfica de Organizaciones de la Sociedad Civil en La Laguna con fuente IMCO</h3>
-      <div id="graficaDatosImco" class="grafica"></div>
-    </div>
-    <div class="tab-pane" id="smi-indicador-grafica-2">
+FINAL;
+    } // seccion_grafica_html
+
+    /**
+     * Sección Gráfica 1 JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_grafica_1_javascript() {
+        return <<<FINAL
+  // Gráfica
+  if (typeof vargraficaDatosImco === 'undefined') {
+    vargraficaDatosImco = Morris.Line({
+      element: 'graficaDatosImco',
+      data: [{ fecha: '2008-12-31', dato: 6.3110 },{ fecha: '2009-12-31', dato: 6.3110 },{ fecha: '2010-12-31', dato: 6.3110 },{ fecha: '2011-12-31', dato: 6.3110 },{ fecha: '2012-12-31', dato: 6.3110 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+FINAL;
+    } // seccion_grafica_javascript
+
+    /**
+     * Sección Gráfica 2 HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_grafica_2_html() {
+        return <<<FINAL
       <h3>Gráfica de Organizaciones de la Sociedad Civil en La Laguna con fuente RFOSC</h3>
       <div id="graficaDatosRfosc" class="grafica"></div>
-    </div>
-    <div class="tab-pane" id="smi-indicador-otras_regiones">
+      <p><b>Unidad:</b> Por cada 100 mil.</p>
+      <h3>Observaciones</h3>
+<p>Unidades: Organizaciones por cada 100 mil habitantes. Fuente: Secretaría de Gobernación (SEGOB), 2013. 
+Registro Federal de Organizaciones de la Sociedad Civil. Consulta <a href="http://www.corresponsabilidad.gob.mx/">Base de Datos</a></p>
+
+FINAL;
+    } // seccion_grafica_html
+
+    /**
+     * Sección Gráfica 2 JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_grafica_2_javascript() {
+        return <<<FINAL
+  // Gráfica
+  if (typeof vargraficaDatosRfosc === 'undefined') {
+    vargraficaDatosRfosc = Morris.Line({
+      element: 'graficaDatosRfosc',
+      data: [{ fecha: '2014-03-31', dato: 41.2200 },{ fecha: '2016-11-25', dato: 49.1400 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+FINAL;
+    } // seccion_grafica_javascript
+
+    /**
+     * Sección Otras Regiones HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_otras_regiones_html() {
+        return <<<FINAL
       <h3>Gráfica con los últimos datos de Organizaciones de la Sociedad Civil</h3>
       <div id="graficaOtrasRegiones" class="grafica"></div>
       <h3>Últimos datos de Organizaciones de la Sociedad Civil</h3>
@@ -177,111 +183,77 @@ Registro Federal de Organizaciones de la Sociedad Civil. Consulta <a href="http:
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>55.0500</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>57.5500</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>31.3000</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>11.0100</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>49.1400</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Coahuila</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>26.4300</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Durango</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>143.3800</td>
             <td>RFOSC</td>
             <td></td>
           </tr>
           <tr>
             <td>Nacional</td>
-            <td>2016-11-25</td>
+            <td>25/11/2016</td>
             <td>28.8400</td>
             <td>RFOSC</td>
             <td>http://www.corresponsabilidad.gob.mx/ http://166.78.45.36/portal/</td>
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
+      <p><b>Unidad:</b> Por cada 100 mil.</p>
+      <h3>Observaciones</h3>
+<p>Unidades: Organizaciones por cada 100 mil habitantes. Fuente: Secretaría de Gobernación (SEGOB), 2013. 
+Registro Federal de Organizaciones de la Sociedad Civil. Consulta <a href="http://www.corresponsabilidad.gob.mx/">Base de Datos</a></p>
+
 FINAL;
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
+    } // seccion_otras_regiones_html
 
     /**
-     * Javascript
+     * Sección Otras Regiones JavaScript
      *
-     * @return string No hay código Javascript, entrega un texto vacío
+     * @return string Código JavaScript
      */
-    public function javascript() {
-        // JavaScript
-        $this->javascript[] = <<<FINAL
-// LENGUETA smi-indicador-grafica-1
-$('#smi-indicador a[href="#smi-indicador-grafica-1"]').on('shown.bs.tab', function(e){
-  // Gráfica
-  if (typeof vargraficaDatosImco === 'undefined') {
-    vargraficaDatosImco = Morris.Line({
-      element: 'graficaDatosImco',
-      data: [{ fecha: '2008-12-31', dato: 6.3110 },{ fecha: '2009-12-31', dato: 6.3110 },{ fecha: '2010-12-31', dato: 6.3110 },{ fecha: '2011-12-31', dato: 6.3110 },{ fecha: '2012-12-31', dato: 6.3110 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-});
-// LENGUETA smi-indicador-grafica-2
-$('#smi-indicador a[href="#smi-indicador-grafica-2"]').on('shown.bs.tab', function(e){
-  // Gráfica
-  if (typeof vargraficaDatosRfosc === 'undefined') {
-    vargraficaDatosRfosc = Morris.Line({
-      element: 'graficaDatosRfosc',
-      data: [{ fecha: '2014-03-31', dato: 41.2200 },{ fecha: '2016-11-25', dato: 49.1400 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-});
-// LENGUETA smi-indicador-otras_regiones
-$('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', function(e){
+    protected function seccion_otras_regiones_javascript() {
+        return <<<FINAL
   // Gráfica
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
@@ -293,12 +265,40 @@ $('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', f
       barColors: ['#FF5B02']
     });
   }
-});
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES smi-indicador-datos
-$(document).ready(function(){
-  $('#smi-indicador a[href="#smi-indicador-datos"]').tab('show')
-});
 FINAL;
+    } // seccion_otras_regiones_javascript
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        // Ejecutar los métodos que alimentan cada lengüeta
+        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
+        $this->lenguetas->agregar('smi-indicador-grafica-1', 'Gráfica 1', $this->seccion_grafica_1_html());
+        $this->lenguetas->agregar_javascript($this->seccion_grafica_1_javascript());
+        $this->lenguetas->agregar('smi-indicador-grafica-2', 'Gráfica 2', $this->seccion_grafica_2_html());
+        $this->lenguetas->agregar_javascript($this->seccion_grafica_2_javascript());
+        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
+        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
+        $this->lenguetas->definir_activa(); // Primer lengüeta activa
+        // Definir el contenido de esta publicación que es un SchemaArticle
+        $this->contenido->articleBody = $this->lenguetas->html();
+        // Ejecutar este método en el padre
+        return parent::html();
+    } // html
+
+    /**
+     * Javascript
+     *
+     * @return string Código Javascript
+     */
+    public function javascript() {
+        // JavaScript de las lengüetas, es el de las gráficas
+        $this->javascript[] = $this->lenguetas->javascript();
+        // JavaScript para la carga completa del documento, es el de la tabla con los datos
+        $this->javascript[] = $this->datos_tabla->javascript();
         // Ejecutar este método en el padre
         return parent::javascript();
     } // javascript
@@ -309,72 +309,8 @@ FINAL;
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Para redifusión, se pone el contenido sin lengüetas
-        $this->redifusion = <<<FINAL
-      <h3>Descripción</h3>
-<p>Dentro del Índice de Competitividad Urbana del IMCO forma parte de subíndice de "Sistema Político Estable y Funcional". Este indicador busca captar la capacidad de la sociedad para organizarse y ejercer presión social sobre las autoridades. Se incluyen iglesias y organizaciones religiosas.</p>
-
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2008</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2009</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2010</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2011</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2012</td>
-            <td>6.3110</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2014</td>
-            <td>41.2200</td>
-            <td>RFOSC</td>
-            <td>Consulta de [Base de Datos](http://www.corresponsabilidad.gob.mx/?p=f8e8b1feff822753a39b21de69259fd6&)</td>
-          </tr>
-          <tr>
-            <td>25/11/2016</td>
-            <td>49.1400</td>
-            <td>RFOSC</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Por cada 100 mil.</p>
-      <h3>Observaciones</h3>
-<p>Unidades: Organizaciones por cada 100 mil habitantes. Fuente: Secretaría de Gobernación (SEGOB), 2013. 
-Registro Federal de Organizaciones de la Sociedad Civil. Consulta <a href="http://www.corresponsabilidad.gob.mx/">Base de Datos</a></p>
-
-FINAL;
+        // Código HTML para redifusión
+        $this->redifusion = $this->descripcion;
         // Ejecutar este método en el padre
         return parent::redifusion_html();
     } // redifusion_html

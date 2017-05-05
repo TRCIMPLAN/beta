@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - SMI Categorías Grupos Vulnerables (Creado por Central:SmiLanzadera)
+ * TrcIMPLAN Sitio Web - SMICategorias GruposVulnerables
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,50 +17,54 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * @package TrcIMPLANSitioWeb
  */
 
-// Namespace
 namespace SMICategorias;
 
 /**
  * Clase GruposVulnerables
  */
-class GruposVulnerables extends \Base\Publicacion {
+class GruposVulnerables extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
         // Título, autor y fecha
-        $this->nombre           = 'Grupos Vulnerables';
-     // $this->autor            = '';
-        $this->fecha            = '2015-01-01T08:00'; // Fecha fija
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes. Use minúsculas, números y/o guiones medios
-        $this->archivo          = 'grupos-vulnerables';
-        $this->imagen           = '../imagenes/categorias/grupos-vulnerables.jpg';
-        $this->imagen_previa    = '../imagenes/categorias/grupos-vulnerables.jpg';
-        $this->imagen_id        = 'categorias-grupos-vulnerables';
-        // La descripción y claves dan información a los buscadores y redes sociales. Las categorías son de uso interno
-        $this->descripcion      = 'Sistema Metropolitano de Indicadores - Categoría ';
-        $this->claves           = 'IMPLAN, Indicadores, Categoría, Grupos Vulnerables';
-        $this->categorias       = array();
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio       = 'indicadores-categorias';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu      = 'Indicadores > Indicadores por Categoría';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado           = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir   = true;
-        // El contenido es estructurado en un esquema
-        $schema                 = new \Base\SchemaArticle();
-        $schema->name           = $this->nombre;
-        $schema->description    = $this->descripcion;
-        $schema->datePublished  = $this->fecha;
-        $schema->image          = $this->imagen;
-        $schema->image_show     = false;
-        $schema->author         = $this->autor;
-        $schema->articleBody    = <<<FINAL
+        $this->nombre                    = 'Grupos Vulnerables';
+        $this->autor                     = 'Dirección de Investigación Estratégica';
+        $this->fecha                     = '2015-01-01T08:00'; // Fecha fija
+        // El nombre del archivo a crear
+        $this->archivo                   = 'grupos-vulnerables';
+        // La descripción y claves dan información a los buscadores y redes sociales
+        $this->descripcion               = 'Sistema Metropolitano de Indicadores - Categoría Grupos Vulnerables';
+        $this->claves                    = 'IMPLAN, Indicadores, Categoría, Grupos Vulnerables';
+        // Opción de navegación a poner como activa
+        $this->nombre_menu               = 'Indicadores > Indicadores por Categoría';
+        // Banderas
+        $this->poner_imagen_en_contenido = FALSE;
+        $this->para_compartir            = FALSE;
+        // El estado puede ser 'publicar', 'revisar' o 'ignorar'
+        $this->estado                    = 'publicar';
+        // Para el Organizador
+        $this->categorias                = array();
+        $this->fuentes                   = array();
+        $this->regiones                  = array();
+        // Rutas relativas a las imágenes, apuntan a íconos interactivos para cada categoría
+        $this->imagen                    = '../imagenes/categorias/grupos-vulnerables.jpg';
+        $this->imagen_previa             = '../imagenes/categorias/grupos-vulnerables.jpg';
+        $this->imagen_id                 = 'categorias-grupos-vulnerables';
+    } // constructor
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        // Definir contenido HTML en el esquema
+        $this->contenido->articleBody = <<<FINAL
 <table class="table table-hover table-bordered matriz">
 <thead>
   <tr>
@@ -77,29 +81,29 @@ class GruposVulnerables extends \Base\Publicacion {
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Adultos Mayores</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">49,020</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">21,943</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">10,152</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">7,999</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">89,114</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">49020</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">21943</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">10152</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">7999</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">89114</a></td>
   </tr>
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Adultos Mayores Femenino</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">27,426</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">11,784</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">5,325</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">3,975</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">48,510</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">27426</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">11784</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">5325</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">3975</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores-femenino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">48510</a></td>
   </tr>
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Adultos Mayores Masculino</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">21,594</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">10,158</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">4,827</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">4,024</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">40,603</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">21594</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">10158</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">4827</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">4024</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-adultos-mayores-masculino.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">40603</a></td>
   </tr>
   <tr>
     <td class="subindice color4">Sociedad</td>
@@ -113,7 +117,7 @@ class GruposVulnerables extends \Base\Publicacion {
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Estimación de Menores Huérfanos por Agresiones</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-estimacion-de-menores-huerfanos-por-agresiones.html" data-toggle="tooltip" title="Cantidad, 31/12/2012, IMPLAN">1,253</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-estimacion-de-menores-huerfanos-por-agresiones.html" data-toggle="tooltip" title="Cantidad, 31/12/2012, IMPLAN">1253</a></td>
     <td class="nd">ND</td>
     <td class="nd">ND</td>
     <td class="nd">ND</td>
@@ -131,7 +135,7 @@ class GruposVulnerables extends \Base\Publicacion {
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Madres Adolescentes</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-madres-adolescentes.html" data-toggle="tooltip" title="Cantidad, 31/12/2013, SINAIS (SSA)">1,778</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-madres-adolescentes.html" data-toggle="tooltip" title="Cantidad, 31/12/2013, SINAIS (SSA)">1778</a></td>
     <td class="nd">ND</td>
     <td class="nd">ND</td>
     <td class="nd">ND</td>
@@ -168,15 +172,9 @@ class GruposVulnerables extends \Base\Publicacion {
 </table>
 <p class="instrucciones">Instrucciones: Mantenga el ratón sobre un dato por unos segundos para mostrar la unidad, fecha y fuente. De clic para ir a la página con más información.</p>
 FINAL;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido        = $schema;
-        // Sin JavaScript
-        $this->javascript       = '';
-        // Para redifusión, se pone el contenido sin lengüetas
-        $this->redifusion       = <<<FINAL
-
-FINAL;
-    } // constructor
+        // Ejecutar este método en el padre
+        return parent::html();
+    } // html
 
 } // Clase GruposVulnerables
 

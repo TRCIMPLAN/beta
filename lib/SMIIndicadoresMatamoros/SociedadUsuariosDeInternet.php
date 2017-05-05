@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - SMI Indicadores Matamoros Sociedad Usuarios de Internet (Creado por Central:SmiLanzadera)
+ * TrcIMPLAN Sitio Web - SMIIndicadoresMatamoros SociedadUsuariosDeInternet
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,95 +25,62 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase SociedadUsuariosDeInternet
  */
-class SociedadUsuariosDeInternet extends \Base\Publicacion {
+class SociedadUsuariosDeInternet extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
-        $this->nombre            = 'Usuarios de Internet en Matamoros';
-        $this->autor             = 'Dirección de Investigación Estratégica';
-        $this->fecha             = '2015-01-14T14:50:08';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo           = 'sociedad-usuarios-de-internet';
-        $this->imagen            = '../smi/introduccion/imagen.jpg';
-        $this->imagen_previa     = '../smi/introduccion/imagen-previa.jpg';
+        $this->nombre      = 'Usuarios de Internet en Matamoros';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2015-01-14T14:50:08';
+        // El nombre del archivo a crear
+        $this->archivo     = 'sociedad-usuarios-de-internet';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion       = 'Porcentaje de la población que usa internet.';
-        $this->claves            = 'IMPLAN, Matamoros, Innovación, Competitividad, Objetivos del Milenio';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio        = 'indicadores-matamoros';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu       = 'Indicadores';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado            = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir    = true;
-        // Instancia de SchemaPostalAddress que tiene la localidad, municipio y país
-        $region                  = new \Base\SchemaPostalAddress();
-        $region->addressCountry  = 'MX';
-        $region->addressRegion   = 'Coahuila de Zaragoza';
-        $region->addressLocality = 'Matamoros';
-        // Instancia de SchemaPlace agrupa la región y el mapa
-        $lugar                   = new \Base\SchemaPlace();
-        $lugar->address          = $region;
-        // El contenido es estructurado en un esquema
-        $schema                  = new \Base\SchemaArticle();
-        $schema->name            = $this->nombre;
-        $schema->description     = $this->descripcion;
-        $schema->datePublished   = $this->fecha;
-        $schema->image           = $this->imagen;
-        $schema->image_show      = false;
-        $schema->author          = $this->autor;
-        $schema->contentLocation = $lugar;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido         = $schema;
+        $this->descripcion = 'Porcentaje de la población que usa internet.';
+        $this->claves      = 'IMPLAN, Matamoros, Innovación, Competitividad, Objetivos del Milenio';
         // Para el Organizador
-        $this->categorias        = array('Innovación', 'Competitividad', 'Objetivos del Milenio');
-        $this->fuentes           = array('INEGI');
-        $this->regiones          = 'Matamoros';
+        $this->categorias  = array('Innovación', 'Competitividad', 'Objetivos del Milenio');
+        $this->fuentes     = array('INEGI');
+        $this->regiones    = array('Matamoros');
     } // constructor
 
     /**
-     * HTML
+     * Sección Datos HTML
      *
      * @return string Código HTML
      */
-    public function html() {
-        // Cargar en el Schema el HTML de las lengüetas
-        $this->contenido->articleBody = <<<FINAL
-  <ul class="nav nav-tabs lenguetas" id="smi-indicador">
-    <li><a href="#smi-indicador-datos" data-toggle="tab">Datos</a></li>
-    <li><a href="#smi-indicador-otras_regiones" data-toggle="tab">Otras regiones</a></li>
-  </ul>
-  <div class="tab-content lengueta-contenido">
-    <div class="tab-pane" id="smi-indicador-datos">
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2013</td>
-            <td>No tiene</td>
-            <td>INEGI</td>
-            <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Cálculo realizado con datos de MODUTIH y CONAPO. Se considera a todos los segmentos etarios de la población estimada para 2013.</p>
+    protected function seccion_datos_html() {
+        $this->datos_tabla->definir_estructura(array(
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'caracter'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
+        $this->datos_tabla->definir_panal(array(
+            array('fecha' => '2013-12-31', 'valor' => 'X', 'fuente_nombre' => 'INEGI', 'notas' => 'El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.')));
+        // Entregar
+        return $this->datos_tabla->html();
+    } // seccion_datos_html
 
-    </div>
-    <div class="tab-pane" id="smi-indicador-otras_regiones">
+    /**
+     * Sección Datos JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_datos_javascript() {
+        return $this->datos_tabla->javascript();
+    } // seccion_datos_javascript
+
+    /**
+     * Sección Otras Regiones HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_otras_regiones_html() {
+        return <<<FINAL
       <h3>Gráfica con los últimos datos de Usuarios de Internet</h3>
       <div id="graficaOtrasRegiones" class="grafica"></div>
       <h3>Últimos datos de Usuarios de Internet</h3>
@@ -130,79 +97,76 @@ class SociedadUsuariosDeInternet extends \Base\Publicacion {
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>No tiene</td>
             <td>INEGI</td>
             <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>No tiene</td>
             <td>INEGI</td>
             <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>No tiene</td>
             <td>INEGI</td>
             <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>No tiene</td>
             <td>INEGI</td>
             <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>No tiene</td>
             <td>INEGI</td>
             <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
           </tr>
           <tr>
             <td>Coahuila</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>44.00 %</td>
             <td>INEGI</td>
             <td>Consulta la [Base deDatos](http://www3.inegi.org.mx/sistemas/sisept/default.aspx?t=tinf255&s=est&c=28978)</td>
           </tr>
           <tr>
             <td>Durango</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>34.00 %</td>
             <td>INEGI</td>
             <td>Consulta la [Base de Datos](http://www3.inegi.org.mx/sistemas/sisept/default.aspx?t=tinf255&s=est&c=28978)</td>
           </tr>
           <tr>
             <td>Nacional</td>
-            <td>2013-12-31</td>
+            <td>31/12/2013</td>
             <td>40.00 %</td>
             <td>INEGI</td>
             <td>Consulta la [Base de Datos](http://www3.inegi.org.mx/sistemas/sisept/default.aspx?t=tinf255&s=est&c=28978)</td>
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
+      <p><b>Unidad:</b> Porcentaje.</p>
+      <h3>Observaciones</h3>
+<p>Cálculo realizado con datos de MODUTIH y CONAPO. Se considera a todos los segmentos etarios de la población estimada para 2013.</p>
+
 FINAL;
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
+    } // seccion_otras_regiones_html
 
     /**
-     * Javascript
+     * Sección Otras Regiones JavaScript
      *
-     * @return string No hay código Javascript, entrega un texto vacío
+     * @return string Código JavaScript
      */
-    public function javascript() {
-        // JavaScript
-        $this->javascript[] = <<<FINAL
-// LENGUETA smi-indicador-otras_regiones
-$('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', function(e){
+    protected function seccion_otras_regiones_javascript() {
+        return <<<FINAL
   // Gráfica
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
@@ -214,12 +178,36 @@ $('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', f
       barColors: ['#FF5B02']
     });
   }
-});
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES smi-indicador-datos
-$(document).ready(function(){
-  $('#smi-indicador a[href="#smi-indicador-datos"]').tab('show')
-});
 FINAL;
+    } // seccion_otras_regiones_javascript
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        // Ejecutar los métodos que alimentan cada lengüeta
+        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
+        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
+        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
+        $this->lenguetas->definir_activa(); // Primer lengüeta activa
+        // Definir el contenido de esta publicación que es un SchemaArticle
+        $this->contenido->articleBody = $this->lenguetas->html();
+        // Ejecutar este método en el padre
+        return parent::html();
+    } // html
+
+    /**
+     * Javascript
+     *
+     * @return string Código Javascript
+     */
+    public function javascript() {
+        // JavaScript de las lengüetas, es el de las gráficas
+        $this->javascript[] = $this->lenguetas->javascript();
+        // JavaScript para la carga completa del documento, es el de la tabla con los datos
+        $this->javascript[] = $this->datos_tabla->javascript();
         // Ejecutar este método en el padre
         return parent::javascript();
     } // javascript
@@ -230,35 +218,8 @@ FINAL;
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Para redifusión, se pone el contenido sin lengüetas
-        $this->redifusion = <<<FINAL
-      <h3>Descripción</h3>
-<p>Porcentaje de la población que usa internet.</p>
-
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2013</td>
-            <td>No tiene</td>
-            <td>INEGI</td>
-            <td>El dato disponible es estatal, aunque la metodología de MODUTIH considera la cifra representativa para los municipios.</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Cálculo realizado con datos de MODUTIH y CONAPO. Se considera a todos los segmentos etarios de la población estimada para 2013.</p>
-
-FINAL;
+        // Código HTML para redifusión
+        $this->redifusion = $this->descripcion;
         // Ejecutar este método en el padre
         return parent::redifusion_html();
     } // redifusion_html

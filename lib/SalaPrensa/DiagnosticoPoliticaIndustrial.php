@@ -31,9 +31,11 @@ class DiagnosticoPoliticaIndustrial extends \Base\PublicacionSchemaBlogPosting {
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
         $this->nombre                     = 'IMPLAN desarrollará Diagnóstico de Política Industrial';
-        $this->autor                      = 'Lic. Adriana Vargas Flores';
+    //  $this->autor                      = '';
         $this->fecha                      = '2016-04-13T13:10';
         // El nombre del archivo a crear
         $this->archivo                    = '2016-04-13-diagnostico-politica-industrial';
@@ -48,9 +50,9 @@ class DiagnosticoPoliticaIndustrial extends \Base\PublicacionSchemaBlogPosting {
         $this->poner_imagen_en_contenido  = TRUE;
         $this->para_compartir             = TRUE;
         // Para el Organizador
-        $this->categorias                 = array();
+        $this->categorias                 = array('Empresas', 'Gobierno');
         $this->fuentes                    = array();
-        $this->regiones                   = array();
+        $this->regiones                   = array('Torreón');
     } // constructor
 
 } // Clase DiagnosticoPoliticaIndustrial

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - SMI Indicadores La Laguna Seguridad Robos a Casa Habitación (Creado por Central:SmiLanzadera)
+ * TrcIMPLAN Sitio Web - SMIIndicadoresLaLaguna SeguridadRobosACasaHabitacion
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,307 +25,136 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase SeguridadRobosACasaHabitacion
  */
-class SeguridadRobosACasaHabitacion extends \Base\Publicacion {
+class SeguridadRobosACasaHabitacion extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
-        $this->nombre            = 'Robos a Casa Habitación en La Laguna';
-        $this->autor             = 'Dirección de Investigación Estratégica';
-        $this->fecha             = '2014-10-21T16:19:49';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo           = 'seguridad-robos-a-casa-habitacion';
-        $this->imagen            = '../smi/introduccion/imagen.jpg';
-        $this->imagen_previa     = '../smi/introduccion/imagen-previa.jpg';
+        $this->nombre      = 'Robos a Casa Habitación en La Laguna';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2014-10-21T16:19:49';
+        // El nombre del archivo a crear
+        $this->archivo     = 'seguridad-robos-a-casa-habitacion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion       = 'Robos totales por mes a casa habitación.';
-        $this->claves            = 'IMPLAN, La Laguna, Seguridad, Delincuencia';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio        = 'indicadores-la-laguna';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu       = 'Indicadores';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado            = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir    = true;
-        // Instancia de SchemaPostalAddress que tiene la localidad, municipio y país
-        $region                  = new \Base\SchemaPostalAddress();
-        $region->addressCountry  = 'MX';
-        $region->addressRegion   = '';
-        $region->addressLocality = '';
-        // Instancia de SchemaPlace agrupa la región y el mapa
-        $lugar                   = new \Base\SchemaPlace();
-        $lugar->address          = $region;
-        // El contenido es estructurado en un esquema
-        $schema                  = new \Base\SchemaArticle();
-        $schema->name            = $this->nombre;
-        $schema->description     = $this->descripcion;
-        $schema->datePublished   = $this->fecha;
-        $schema->image           = $this->imagen;
-        $schema->image_show      = false;
-        $schema->author          = $this->autor;
-        $schema->contentLocation = $lugar;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido         = $schema;
+        $this->descripcion = 'Robos totales por mes a casa habitación.';
+        $this->claves      = 'IMPLAN, La Laguna, Seguridad, Delincuencia';
         // Para el Organizador
-        $this->categorias        = array('Seguridad', 'Delincuencia');
-        $this->fuentes           = array('Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'Programa de Naciones Unidas para el Desarrollo (PNUD)');
-        $this->regiones          = 'La Laguna';
+        $this->categorias  = array('Seguridad', 'Delincuencia');
+        $this->fuentes     = array('Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'Programa de Naciones Unidas para el Desarrollo (PNUD)');
+        $this->regiones    = array('La Laguna');
     } // constructor
 
     /**
-     * HTML
+     * Sección Datos HTML
      *
      * @return string Código HTML
      */
-    public function html() {
-        // Cargar en el Schema el HTML de las lengüetas
-        $this->contenido->articleBody = <<<FINAL
-  <ul class="nav nav-tabs lenguetas" id="smi-indicador">
-    <li><a href="#smi-indicador-datos" data-toggle="tab">Datos</a></li>
-    <li><a href="#smi-indicador-grafica-1" data-toggle="tab">Gráfica 1</a></li>
-    <li><a href="#smi-indicador-otras_regiones" data-toggle="tab">Otras regiones</a></li>
-  </ul>
-  <div class="tab-content lengueta-contenido">
-    <div class="tab-pane" id="smi-indicador-datos">
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/01/2014</td>
-            <td>115</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>28/02/2014</td>
-            <td>115</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2014</td>
-            <td>123</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2014</td>
-            <td>102</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2014</td>
-            <td>155</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2014</td>
-            <td>83</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/07/2014</td>
-            <td>101</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2014</td>
-            <td>124</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2014</td>
-            <td>128</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2014</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2014</td>
-            <td>92</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2014</td>
-            <td>71</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/01/2015</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>28/02/2015</td>
-            <td>118</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2015</td>
-            <td>79</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2015</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2015</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2015</td>
-            <td>106</td>
-            <td>Programa de Naciones Unidas para el Desarrollo (PNUD)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/07/2015</td>
-            <td>116</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2015</td>
-            <td>105</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2015</td>
-            <td>101</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2015</td>
-            <td>125</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2015</td>
-            <td>87</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2015</td>
-            <td>84</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/01/2016</td>
-            <td>93</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>29/02/2016</td>
-            <td>80</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2016</td>
-            <td>126</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2016</td>
-            <td>85</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2016</td>
-            <td>112</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2016</td>
-            <td>91</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2016</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2016</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2016</td>
-            <td>124</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2016</td>
-            <td>99</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2016</td>
-            <td>79</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2016</td>
-            <td>127</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Cantidad.</p>
-    </div>
-    <div class="tab-pane" id="smi-indicador-grafica-1">
+    protected function seccion_datos_html() {
+        $this->datos_tabla->definir_estructura(array(
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
+        $this->datos_tabla->definir_panal(array(
+            array('fecha' => '2014-01-31', 'valor' => '115', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-02-28', 'valor' => '115', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-03-31', 'valor' => '123', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-04-30', 'valor' => '102', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-05-31', 'valor' => '155', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-06-30', 'valor' => '83', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-07-31', 'valor' => '101', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-08-31', 'valor' => '124', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-09-30', 'valor' => '128', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-10-31', 'valor' => '110', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-11-30', 'valor' => '92', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2014-12-31', 'valor' => '71', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-01-31', 'valor' => '110', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-02-28', 'valor' => '118', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-03-31', 'valor' => '79', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-04-30', 'valor' => '110', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-05-31', 'valor' => '104', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-06-30', 'valor' => '106', 'fuente_nombre' => 'Programa de Naciones Unidas para el Desarrollo (PNUD)', 'notas' => ''),
+            array('fecha' => '2015-07-31', 'valor' => '116', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-08-31', 'valor' => '105', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-09-30', 'valor' => '101', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-10-31', 'valor' => '125', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-11-30', 'valor' => '87', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2015-12-31', 'valor' => '84', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-01-31', 'valor' => '93', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-02-29', 'valor' => '80', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-03-31', 'valor' => '126', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-04-30', 'valor' => '85', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-05-31', 'valor' => '112', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-06-30', 'valor' => '91', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-08-31', 'valor' => '104', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-08-31', 'valor' => '104', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-09-30', 'valor' => '124', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-10-31', 'valor' => '99', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-11-30', 'valor' => '79', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2016-12-31', 'valor' => '127', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2017-01-31', 'valor' => '109', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2017-02-28', 'valor' => '113', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => ''),
+            array('fecha' => '2017-03-31', 'valor' => '156', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => '')));
+        // Entregar
+        return $this->datos_tabla->html();
+    } // seccion_datos_html
+
+    /**
+     * Sección Datos JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_datos_javascript() {
+        return $this->datos_tabla->javascript();
+    } // seccion_datos_javascript
+
+    /**
+     * Sección Gráfica 1 HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_grafica_1_html() {
+        return <<<FINAL
       <h3>Gráfica de Robos a Casa Habitación en La Laguna con fuente Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</h3>
       <div id="graficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica" class="grafica"></div>
-    </div>
-    <div class="tab-pane" id="smi-indicador-otras_regiones">
+      <p><b>Unidad:</b> Cantidad.</p>
+FINAL;
+    } // seccion_grafica_html
+
+    /**
+     * Sección Gráfica 1 JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_grafica_1_javascript() {
+        return <<<FINAL
+  // Gráfica
+  if (typeof vargraficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica === 'undefined') {
+    vargraficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica = Morris.Line({
+      element: 'graficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica',
+      data: [{ fecha: '2014-01-31', dato: 115 },{ fecha: '2014-02-28', dato: 115 },{ fecha: '2014-03-31', dato: 123 },{ fecha: '2014-04-30', dato: 102 },{ fecha: '2014-05-31', dato: 155 },{ fecha: '2014-06-30', dato: 83 },{ fecha: '2014-07-31', dato: 101 },{ fecha: '2014-08-31', dato: 124 },{ fecha: '2014-09-30', dato: 128 },{ fecha: '2014-10-31', dato: 110 },{ fecha: '2014-11-30', dato: 92 },{ fecha: '2014-12-31', dato: 71 },{ fecha: '2015-01-31', dato: 110 },{ fecha: '2015-02-28', dato: 118 },{ fecha: '2015-03-31', dato: 79 },{ fecha: '2015-04-30', dato: 110 },{ fecha: '2015-05-31', dato: 104 },{ fecha: '2015-07-31', dato: 116 },{ fecha: '2015-08-31', dato: 105 },{ fecha: '2015-09-30', dato: 101 },{ fecha: '2015-10-31', dato: 125 },{ fecha: '2015-11-30', dato: 87 },{ fecha: '2015-12-31', dato: 84 },{ fecha: '2016-01-31', dato: 93 },{ fecha: '2016-02-29', dato: 80 },{ fecha: '2016-03-31', dato: 126 },{ fecha: '2016-04-30', dato: 85 },{ fecha: '2016-05-31', dato: 112 },{ fecha: '2016-06-30', dato: 91 },{ fecha: '2016-08-31', dato: 104 },{ fecha: '2016-09-30', dato: 124 },{ fecha: '2016-10-31', dato: 99 },{ fecha: '2016-11-30', dato: 79 },{ fecha: '2016-12-31', dato: 127 },{ fecha: '2017-01-31', dato: 109 },{ fecha: '2017-02-28', dato: 113 },{ fecha: '2017-03-31', dato: 156 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+FINAL;
+    } // seccion_grafica_javascript
+
+    /**
+     * Sección Otras Regiones HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_otras_regiones_html() {
+        return <<<FINAL
       <h3>Gráfica con los últimos datos de Robos a Casa Habitación</h3>
       <div id="graficaOtrasRegiones" class="grafica"></div>
       <h3>Últimos datos de Robos a Casa Habitación</h3>
@@ -342,51 +171,88 @@ class SeguridadRobosACasaHabitacion extends \Base\Publicacion {
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>2016-12-31</td>
-            <td>48</td>
+            <td>31/03/2017</td>
+            <td>85</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>2016-12-31</td>
-            <td>36</td>
+            <td>31/03/2017</td>
+            <td>33</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>2016-12-31</td>
-            <td>30</td>
+            <td>31/03/2017</td>
+            <td>26</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>2016-12-31</td>
-            <td>13</td>
+            <td>31/03/2017</td>
+            <td>12</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>2016-12-31</td>
-            <td>127</td>
+            <td>31/03/2017</td>
+            <td>156</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Coahuila</td>
-            <td>2016-07-31</td>
+            <td>31/07/2016</td>
             <td>86</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
+      <p><b>Unidad:</b> Cantidad.</p>
 FINAL;
+    } // seccion_otras_regiones_html
+
+    /**
+     * Sección Otras Regiones JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_otras_regiones_javascript() {
+        return <<<FINAL
+  // Gráfica
+  if (typeof vargraficaOtrasRegiones === 'undefined') {
+    vargraficaOtrasRegiones = Morris.Bar({
+      element: 'graficaOtrasRegiones',
+      data: [{ region: 'Torreón', dato: 85 },{ region: 'Gómez Palacio', dato: 33 },{ region: 'Lerdo', dato: 26 },{ region: 'Matamoros', dato: 12 },{ region: 'La Laguna', dato: 156 },{ region: 'Coahuila', dato: 86 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
+    });
+  }
+FINAL;
+    } // seccion_otras_regiones_javascript
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        // Ejecutar los métodos que alimentan cada lengüeta
+        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
+        $this->lenguetas->agregar('smi-indicador-grafica-1', 'Gráfica 1', $this->seccion_grafica_1_html());
+        $this->lenguetas->agregar_javascript($this->seccion_grafica_1_javascript());
+        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
+        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
+        $this->lenguetas->definir_activa(); // Primer lengüeta activa
+        // Definir el contenido de esta publicación que es un SchemaArticle
+        $this->contenido->articleBody = $this->lenguetas->html();
         // Ejecutar este método en el padre
         return parent::html();
     } // html
@@ -394,46 +260,13 @@ FINAL;
     /**
      * Javascript
      *
-     * @return string No hay código Javascript, entrega un texto vacío
+     * @return string Código Javascript
      */
     public function javascript() {
-        // JavaScript
-        $this->javascript[] = <<<FINAL
-// LENGUETA smi-indicador-grafica-1
-$('#smi-indicador a[href="#smi-indicador-grafica-1"]').on('shown.bs.tab', function(e){
-  // Gráfica
-  if (typeof vargraficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica === 'undefined') {
-    vargraficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica = Morris.Line({
-      element: 'graficaDatosSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica',
-      data: [{ fecha: '2014-01-31', dato: 115 },{ fecha: '2014-02-28', dato: 115 },{ fecha: '2014-03-31', dato: 123 },{ fecha: '2014-04-30', dato: 102 },{ fecha: '2014-05-31', dato: 155 },{ fecha: '2014-06-30', dato: 83 },{ fecha: '2014-07-31', dato: 101 },{ fecha: '2014-08-31', dato: 124 },{ fecha: '2014-09-30', dato: 128 },{ fecha: '2014-10-31', dato: 110 },{ fecha: '2014-11-30', dato: 92 },{ fecha: '2014-12-31', dato: 71 },{ fecha: '2015-01-31', dato: 110 },{ fecha: '2015-02-28', dato: 118 },{ fecha: '2015-03-31', dato: 79 },{ fecha: '2015-04-30', dato: 110 },{ fecha: '2015-05-31', dato: 104 },{ fecha: '2015-07-31', dato: 116 },{ fecha: '2015-08-31', dato: 105 },{ fecha: '2015-09-30', dato: 101 },{ fecha: '2015-10-31', dato: 125 },{ fecha: '2015-11-30', dato: 87 },{ fecha: '2015-12-31', dato: 84 },{ fecha: '2016-01-31', dato: 93 },{ fecha: '2016-02-29', dato: 80 },{ fecha: '2016-03-31', dato: 126 },{ fecha: '2016-04-30', dato: 85 },{ fecha: '2016-05-31', dato: 112 },{ fecha: '2016-06-30', dato: 91 },{ fecha: '2016-08-31', dato: 104 },{ fecha: '2016-09-30', dato: 124 },{ fecha: '2016-10-31', dato: 99 },{ fecha: '2016-11-30', dato: 79 },{ fecha: '2016-12-31', dato: 127 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-});
-// LENGUETA smi-indicador-otras_regiones
-$('#smi-indicador a[href="#smi-indicador-otras_regiones"]').on('shown.bs.tab', function(e){
-  // Gráfica
-  if (typeof vargraficaOtrasRegiones === 'undefined') {
-    vargraficaOtrasRegiones = Morris.Bar({
-      element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 48 },{ region: 'Gómez Palacio', dato: 36 },{ region: 'Lerdo', dato: 30 },{ region: 'Matamoros', dato: 13 },{ region: 'La Laguna', dato: 127 },{ region: 'Coahuila', dato: 86 }],
-      xkey: 'region',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      barColors: ['#FF5B02']
-    });
-  }
-});
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES smi-indicador-datos
-$(document).ready(function(){
-  $('#smi-indicador a[href="#smi-indicador-datos"]').tab('show')
-});
-FINAL;
+        // JavaScript de las lengüetas, es el de las gráficas
+        $this->javascript[] = $this->lenguetas->javascript();
+        // JavaScript para la carga completa del documento, es el de la tabla con los datos
+        $this->javascript[] = $this->datos_tabla->javascript();
         // Ejecutar este método en el padre
         return parent::javascript();
     } // javascript
@@ -444,242 +277,8 @@ FINAL;
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Para redifusión, se pone el contenido sin lengüetas
-        $this->redifusion = <<<FINAL
-      <h3>Descripción</h3>
-<p>Robos totales por mes a casa habitación.</p>
-
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/01/2014</td>
-            <td>115</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>28/02/2014</td>
-            <td>115</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2014</td>
-            <td>123</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2014</td>
-            <td>102</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2014</td>
-            <td>155</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2014</td>
-            <td>83</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/07/2014</td>
-            <td>101</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2014</td>
-            <td>124</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2014</td>
-            <td>128</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2014</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2014</td>
-            <td>92</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2014</td>
-            <td>71</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/01/2015</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>28/02/2015</td>
-            <td>118</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2015</td>
-            <td>79</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2015</td>
-            <td>110</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2015</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2015</td>
-            <td>106</td>
-            <td>Programa de Naciones Unidas para el Desarrollo (PNUD)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/07/2015</td>
-            <td>116</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2015</td>
-            <td>105</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2015</td>
-            <td>101</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2015</td>
-            <td>125</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2015</td>
-            <td>87</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2015</td>
-            <td>84</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/01/2016</td>
-            <td>93</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>29/02/2016</td>
-            <td>80</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/03/2016</td>
-            <td>126</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/04/2016</td>
-            <td>85</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/05/2016</td>
-            <td>112</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/06/2016</td>
-            <td>91</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2016</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/08/2016</td>
-            <td>104</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/09/2016</td>
-            <td>124</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/10/2016</td>
-            <td>99</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>30/11/2016</td>
-            <td>79</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2016</td>
-            <td>127</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Cantidad.</p>
-FINAL;
+        // Código HTML para redifusión
+        $this->redifusion = $this->descripcion;
         // Ejecutar este método en el padre
         return parent::redifusion_html();
     } // redifusion_html

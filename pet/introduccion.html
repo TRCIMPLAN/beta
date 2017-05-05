@@ -2,33 +2,48 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-<!-- ===========================================================================================
+<!-- ===================================================================================================
 
-        Instituto Municipal de Planeación y Competitividad de Torreón.
+        Instituto Municipal de Planeación y Competitividad (IMPLAN) de Torreón.
+
+        3er. generación de la Plataforma del Conocimiento
+        Desarrollado por Ing. Guillermo Valdés Lozano <guivaloz en movimientolibre.com>
+
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016, 2017.
+        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
 
         Al usar, estudiar y copiar está aceptando los términos de uso de la información y del sitio web:
           http://www.trcimplan.gob.mx/terminos/terminos-informacion.html
           http://www.trcimplan.gob.mx/terminos/terminos-sitio.html
-        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016.
-        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
-        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
-          Morris.js              https://morrisjs.github.io/morris.js/
-          PHP                    http://php.net
-          StartBootStrap         http://startbootstrap.com
-          Twitter Bootstrap      http://getbootstrap.com
-        El hospedaje gratuito es cortesía de GitHub. Descargue, aprenda y colabore:
-          IMPLAN Torreón         https://github.com/TRCIMPLAN
 
-     =========================================================================================== -->
+        Descargue, estudie y colabore bajando todo este sitio web:
+          IMPLAN Torreón     https://github.com/TRCIMPLAN/trcimplan.github.io
+
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          PHP                http://php.net
+          Twitter Bootstrap  http://getbootstrap.com
+          StartBootStrap     http://startbootstrap.com
+          Morris.js          https://morrisjs.github.io/morris.js/
+          Font Awesome       http://fontawesome.io
+          DataTables         https://www.datatables.net
+          Carto              https://carto.com
+          GitHub             https://github.com
+
+     =================================================================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Introducción.">
   <meta name="author" content="TrcIMPLAN Staff">
   <meta name="keywords" content="Plan, Estrategico, Torreón, 2040, Metropolitano, Introduccion">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Introducción - IMPLAN Torreón">
+  <meta name="twitter:description" content="Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Introducción.">
+  <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/pet/introduccion.html">
+  <meta name="og:title" content="Introducción - IMPLAN Torreón">
+  <meta name="og:description" content="Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Introducción.">
+  <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/pet/introduccion.html">
   <title>Introducción - IMPLAN Torreón</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-76x76.png" sizes="76x76">
   <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-120x120.png" sizes="120x120">
@@ -37,13 +52,16 @@
   <link rel="icon" href="../imagenes/icon-hires.png" sizes="192x192">
   <link rel="icon" href="../imagenes/icon-normal.png" sizes="128x128">
   <link rel="alternate" type="application/rss+xml" href="../rss.xml" title="IMPLAN Torreón">
-  <link rel="stylesheet" type="text/css" href="../css/morris.css">
-  <link rel="stylesheet" type="text/css" href="../css/plugins/metisMenu/metisMenu.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/sb-admin-2.css">
-  <link rel="stylesheet" type="text/css" href="../css/plataforma-de-conocimiento.css">
-  <link rel="stylesheet" type="text/css" href="../css/trcimplan.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/metisMenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/datatables-plugins/dataTables.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/morrisjs/morris.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/sb-admin-2.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/plataforma-de-conocimiento.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed:400,700">
   <link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/trcimplan.css">
   <!-- SOPORTE PARA IE -->
   <!--[if lt IE 9]>
   <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -106,7 +124,7 @@
             <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
           </ul>
         </li>
-        <li>
+        <li class="active">
           <a href="#"><span class="navegacion-icono"><i class="fa fa-book"></i></span> Plan Estratégico Torreón 2040<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../pet/indice.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Índice General</a></li>
@@ -156,52 +174,216 @@
     <div class="cuerpo">
       <article><div itemscope itemtype="http://schema.org/Article">
         <div class="encabezado">
-          <h1 itemprop="name">Introducción</h1>
+          <h1 itemprop="headline">Introducción</h1>
           <div class="encabezado-descripcion" itemprop="description">Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Introducción.</div>
           <div class="encabezado-autor-fecha">
-            <meta itemprop="datePublished" content="2016-10-10T01:01">10/10/2016 01:01
+            <meta itemprop="datePublished" content="2016-12-05T12:00">05/12/2016 12:00
           </div>
         </div>
         <div itemprop="articleBody">
 <!-- Contenido: Inicia  -->
-<h1>Presentación</h1>
 
-<p>El presente documento contiene el Plan Estratégico para Torreón con enfoque Metropolitano 2040; es el fruto del trabajo coordinado por el Instituto Municipal de Planeación y Competitividad de Torreón (IMPLAN), en el cual participaron de manera activa las instituciones gubernamentales, empresarios, organismos de la sociedad civil y ciudadanos comprometidos con el desarrollo de esta importante zona del país.</p>
+<!-- Visión General -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/trc2040-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Visión General</h3>
+    <p class="detallados-descripcion">Que Torreón y la Zona Metropolitana de La Laguna transiten a una ciudad y a una región vanguardistas, globalmente competitivas y que sus habitantes logren una vida sana, segura, productiva, en armonía con sus tradiciones, valores culturales y espirituales; es decir, un equilibrio entre el desarrollo urbano, los derechos humanos, la prosperidad económica, individual, colectiva y el respeto de los ecosistemas.</p>
+  </div>
+</div>
 
-<p>La Zona Metropolitana de La Laguna abarca los territorios de cuatro municipios en dos estados de la república mexicana: Torreón y Matamoros en Coahuila; Gómez Palacio y Lerdo en Durango. Ésta zona se ha conurbado paulatinamente y complementa múltiples funciones y actividades en aspectos económicos, ambientales, sociales y culturales.</p>
+<!-- Buen Gobierno -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-buen-gobierno-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Buen Gobierno</h3>
+    <p class="detallados-descripcion">La Laguna cuenta con un sistema de planeación metropolitano que incentiva la participación ciudadana (gobierno abierto), en la toma de decisiones públicas. Este sistema de planeación en gobernanza opera gracias a un cabildo metropolitano, asesorado por un IMPLAN metro.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>Inexistencia de un marco jurídico metropolitano.</li>
+      <li>Falta de planeación a largo plazo.</li>
+      <li>Ausencia de mecanismos de participación ciudadana.</li>
+      <li>Necesidad de un servicio civil de carrera para la administración pública.</li>
+      <li>Mayor eficiencia en materia de transparencia y rendición de cuentas.</li>
+      <li><a href="diagnostico-estrategico-buen-gobierno.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Elección ciudadana de cabildos con representación territorial.</li>
+      <li>Creación del Instituto Metropolitano de Planeación y Competitividad.</li>
+      <li>Conformación del cabildo metropolitano.</li>
+      <li>Creación de observatorios ciudadanos.</li>
+      <li>Elaboración de un Plan Estratégico Metropolitano por el IMPLAN metro.</li>
+      <li>Sistema Metropolitano de Indicadores.</li>
+      <li>Reglamento de Participación Ciudadana.</li>
+      <li><a href="cartera-proyectos-buen-gobierno.html">Y 47 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<h1>Antecedentes</h1>
+<!-- Desarrollo Económico -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-desarrollo-economico-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Desarrollo Económico</h3>
+    <p class="detallados-descripcion">Que La Laguna sea una zona metropolitana globalmente competitiva y sustentable, donde sus habitantes emprendan, laboren y desarrollen sus capacidades productivas gracias a los esfuerzos coordinados de sociedad, universidad y gobierno; y donde las empresas locales, nacionales e internacionales encuentren el entorno y la infraestructura necesaria para llevar a cabo sus inversiones.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>Infraestructura insuficiente para el desarrollo industrial, logístico y turístico.</li>
+      <li>Incipiente cultura de emprendimiento sostenible y de incentivos para esta actividad.</li>
+      <li>Necesidad de mayor voluntad del sector público a favor del Estado de Derecho y de la mejora regulatoria.</li>
+      <li>Falta de una política pública industrial que facilite la toma de decisiones en materia de fomento y la unidireccionalidad de esfuerzos a favor de la vocación regional con mayores ventajas competitivas locales.</li>
+      <li>Alta brecha de competencias laborales (principalmente en materia de competencias blandas) y deficiente vinculación entre academia, empresa y sector gubernamental.</li>
+      <li><a href="diagnostico-estrategico-desarrollo-economico-innovacion.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Plan de política industrial.</li>
+      <li>Reducción de la brecha de competencias laborales.</li>
+      <li>Formación de clústers del sector automotriz, metalmecánico, turismo y salud.</li>
+      <li>Centro regional de innovación y competitividad empresarial.</li>
+      <li>Homologación de los reglamentos de desarrollo económico en la Zona Metropolitana.</li>
+      <li><a href="cartera-proyectos-desarrollo-economico-innovacion.html">Y 43 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<p>El presente Plan Estratégico surge a partir de diversas iniciativas y procesos de planeación que se han realizado desde hace aproximadamente 20 años y que han significado esfuerzos de colaboración y coordinación entre las autoridades y los organismos empresariales y sociales, de tal forma que tanto Torreón como la Zona Metropolitana de La Laguna, han contado con importantes documentos de planeación con el fin de dar un rumbo estratégico, integral y de largo plazo al desarrollo económico y social.</p>
+<!-- Desarrollo Social -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-desarrollo-social-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Desarrollo Social</h3>
+    <p class="detallados-descripcion">Un Torreón y una Zona Metropolitana seguras, equitativas e incluyentes, gracias a acciones de gobernanza y de planeación estratégica en materia de género, de salud, de educación, de seguridad, de cultura y de atención a grupos vulnerables.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>Necesidad de reforzamiento de los esquemas de seguridad pública para evitar el regreso de altos indicadores de actos delictivos.</li>
+      <li>Necesidad de construir indicadores congruentes con las tendencias mundiales de salud pública.</li>
+      <li>Una mayor inversión para mejorar a la infraestructura del sector salud.</li>
+      <li>Necesidad de un mayor compromiso social de las instituciones de educación superior y una mayor vinculación con el sector productivo, social y gubernamental.</li>
+      <li>Rezago en la infraestructura cultural.</li>
+      <li>Necsidad de mayor atención a los grupos vulnerables.</li>
+      <li><a href="diagnostico-estrategico-desarrollo-social.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Ciudad Judicial.</li>
+      <li>Ciudad DIF. Albergues de adultos mayores, migrantes y grupos vulnerables.</li>
+      <li>Acciones tendientes a mejorar la capacidad y pertinencia de los museos de la ciudad y de la Zona Metropolitana.</li>
+      <li>Apoyo al proyecto ONU Mujeres. Ciudades Seguras para Mujeres y Niñas.</li>
+      <li>Acciones tendientes a resolver la grave problemática de obesidad y sobre peso.</li>
+      <li>Campaña de prevención de adicciones y violencia.</li>
+      <li>Diseño y puesta en marcha de políticas públicas a favor de las personas con discapacidad.</li>
+      <li>Proyecto de Convivencia Social Moreleando.</li>
+      <li>Distrito Colón.</li>
+      <li>Complejo Cultural y Deportivo La Jabonera.</li>
+      <li>Centro Comunitario Compresora.</li>
+      <li><a href="cartera-proyectos-desarrollo-social.html">Y 62 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<h1>Objetivos</h1>
+<!-- Entorno Urbano -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-entorno-urbano-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Entorno Urbano</h3>
+    <p class="detallados-descripcion">Una ciudad de Torreón y una Zona Metropolitana con altos índices de calidad de vida y de prosperidad urbana, cuyo desarrollo es normado y regido por planes, programas y reglamentos citadinos y metropolitanos, diseñados y puestos en marcha bajo el sistema de gobierno abierto. Una ciudad de Torreón y una metrópoli que cuenta con una positiva imagen urbana y con una infraestructura logística, de movilidad, industrial, de comunicaciones y de servicios, competitiva.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>Insuficiencia de planes y obsolescencia de reglamentos que normen el desarrollo urbano.</li>
+      <li>Crecimiento amorfo de la ciudad de Torreón y de la Zona Metropolitana de La Laguna y baja densidad urbana.</li>
+      <li>Escasez de espacios públicos, principalmente en las zonas marginadas.</li>
+      <li>Descuido de los barrios tradicionales de Torreón, lo cual repercute en pérdida de identidad, insegurdad y merma de potencial económico.</li>
+      <li>Amurallamiento de la ciudad debido a la construcción de conglomerados habitacionales cerrados y semi-cerrados, mismos que confinan áreas verdes y espacios públicos para el goce y disfrute de unos cuantos.</li>
+      <li>Falta de drenaje pluvial necesario y suficiente. Falta de mantenimiento y de planeación de largo plazo en la materia.</li>
+      <li>Falta de Altas de Riesgo.</li>
+      <li><a href="diagnostico-estrategico-entorno-urbano.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Reglamento de Desarrollo Urbano, Zonificación, Uso de Suelo y Construcción.</li>
+      <li>Plan Director de Desarrollo Urbano que rija el futuro de la obra pública y de las acciones urbanas.</li>
+      <li>Red de parques de la ciudad y la metrópoli.</li>
+      <li>Plan Maestro del Centro Histórico.</li>
+      <li>Elaboración de Atlas de Riesgo.</li>
+      <li>Plan de Resiliencia Urbana.</li>
+      <li>Paseo Morelos.</li>
+      <li>Desagregación de información urbana.</li>
+      <li>Sistema de Información Geográfica (SIG).</li>
+      <li>Plan Estratégico para el Manejo Integral del Drenaje Pluvial.</li>
+      <li><a href="cartera-proyectos-entorno-urbano.html">Y 41 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<p>El Plan Estratégico tiene como principales objetivos los siguientes:</p>
+<!-- Movilidad y Transporte -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-movilidad-transporte-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Movilidad y Transporte</h3>
+    <p class="detallados-descripcion">Una ciudad de Torreón y una Zona Metropolitana con un modelo de movilidad equilibrado, equitativo y sustentable. Con un sistema de transporte público inter municipal incluyente, accesible, económico, cómodo y atractivo para el usuario. Un esquema de movilidad y transporte con una infraestructura vial que facilite la densificación y el crecimiento equilibrado de Torreón y de la Zona Metropolitana. Infraestructura que privilegie al peatón y al ciclista, incluya a las personas con discapacidad, a grupos vulnerables e incorpore el concepto de calles completas.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>La infraestructura de movilidad no es incluyente, equitativa y sustentable.</li>
+      <li>Cultura vial arcaica en discordancia con las tendencias urbanísticas del Siglo XXI.</li>
+      <li>Falta de un sistema de transporte multimodal metropolitano.</li>
+      <li>Escasa coordinación intermunicipal en materia de movilidad entre Torreón, Matamoros, Gómez Palacio y Lerdo.</li>
+      <li>Crecimiento desmedido del parque vehicular con las siguientes consecuencias: contaminación ambiental, invasión de banquetas y de espacios públicos, chatarrización y congestionamiento vehicular.</li>
+      <li>Alto índice de accidentes viales.</li>
+      <li><a href="diagnostico-estrategico-movilidad-transporte.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Plan de Movilidad No Motorizada.</li>
+      <li>Sistema Integral de Transporte BRT.</li>
+      <li>Red de infraestructura peatonal y ciclista.</li>
+      <li>Programa de bicicleta pública y de bici estacionamientos.</li>
+      <li>Programa de Calle Completa.</li>
+      <li>Estudio de Impacto Vial.</li>
+      <li>Incorporación del concepto “Visión Cero” en la planeación de la movilidad urbana.</li>
+      <li>Proyectos de pacificación del tránsito: Zona 30.</li>
+      <li>Estudio de Instrumentos para la Gestión del Suelo en torno al Metrobús, en colaboración con Centro Mario Molina.</li>
+      <li><a href="cartera-proyectos-movilidad-transporte.html">Y 36 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<p>Definir un conjunto priorizado de estrategias, acciones y proyectos para lograr una visión consensuada del desarrollo de Torreón y la Zona Metropolitana de La Laguna a mediano y largo plazo, específicamente para el periodo comprendido entre los años 2015 a 2040. En una primera etapa estos elementos están definidos para el Municipio de Torreón contando con un enfoque metropolitano.</p>
+<!-- Medio Ambiente y Sustentabilidad -->
+<div class="media breve">
+  <span class="pull-left"><img class="media-object" src="imagenes/eje-medio-ambiente-sustentabilidad-previa.jpg"></span>
+  <div class="media-body">
+    <h3 class="media-heading detallados-encabezado">Medio Ambiente y Sustentabilidad</h3>
+    <p class="detallados-descripcion">Una ciudad de Torreón y una Zona Metropolitana, ejemplos globales en materia de sustentabilidad y ordenamiento ecológico territorial, lo que supone: un modelo de desarrollo comercial, logístico e industrial acorde al ecosistema del semidesierto; manejo integral y sustentable del recurso agua. Integración de los sistemas municipales de agua con un organismo ciudadanizado co responsable de su funcionamiento. Manejo integral y sustentable de residuos y fomento a la cultura de reciclaje. Una ciudad y una Zona Metropolitana que fomenta e incentiva el uso de energías renovables y la construcción verde.</p>
+    <h4 class="media-heading detallados-encabezado">Retos 20-40</h4>
+    <ul class="detallados-descripcion">
+      <li>Falta de prevención ante posibles contingencias derivadas del cambio climático.</li>
+      <li>Sobreexplotación de los mantos acuíferos y presencia de metales pesados.</li>
+      <li>Contaminación del aire principalmente por el parque vehicular.</li>
+      <li>Falta de un manejo integral y sustentable del recurso agua.</li>
+      <li>Escasez de áreas verdes e inadecuada distribución de las mismas.</li>
+      <li>Inexistancia de un Plan de Ordenamiento Ecológico Territorial de Torreón.</li>
+      <li>Inadecuado manejo de los residuos sólidos en la ciudad de Torreón y en la Zona Metropolitana.</li>
+      <li><a href="diagnostico-estrategico-medio-ambiente-sustentabilidad.html">Ir al diagnóstico estratégico...</a></li>
+    </ul>
+    <h4 class="media-heading detallados-encabezado">Proyectos destacables</h4>
+    <ul class="detallados-descripcion">
+      <li>Plan de Ordenamiento Ecológico y Territorial de la ciudad de Torreón.</li>
+      <li>Plan Municipal y Metropolitano de Acción del Cambio Climático.</li>
+      <li>Plan Integral de Manejo Sustentable del Agua.</li>
+      <li>Plan Integral de Manejo de Residuos.</li>
+      <li>Plan de Infraestructura Verde.</li>
+      <li><a href="cartera-proyectos-medio-ambiente-sustentabilidad.html">Y 69 proyectos más...</a></li>
+    </ul>
+  </div>
+</div>
 
-<p>Incorporar en su proceso de elaboración, instrumentación, evaluación y retroalimentación, al conjunto de agentes sociales, que a partir de metas y valores comunes, puedan asegurar el cambio en el rumbo del desarrollo de La Laguna</p>
-
-<h1>Alcances</h1>
-
-<p>El Plan Estratégico implica el reconocimiento de elementos valiosos de anteriores procesos de planeación y la incorporación de nuevas ideas y conceptos que surgen a partir de sesiones de trabajo realizadas en colaboración con los agentes sociales organizados en torno a los temas más significativos: desarrollo económico y competitividad, desarrollo social, sustentabilidad, movilidad urbana, desarrollo urbano e infraestructura, desarrollo institucional y participación ciudadana.</p>
-
-<p>A partir de este proceso de planeación participativa se construyó una Cartera de Proyectos que facilita y promueve la instrumentación del Plan Estratégico; desde la integración de los contenidos de cada proyecto hasta la gestión, conformación de equipos de trabajo, elaboración de estudios de factibilidad y la gestión integral para su instrumentación.</p>
-
-<p>Finalmente, el alcance del presente Plan Estratégico concluye con la definición y ejecución de mecanismos de monitoreo y evaluación de cada una de las acciones delineadas, así como la comunicación constante con los agentes sociales encargados de realizarlas para que puedan ser mejoradas a partir de los reportes de su instrumentación.</p>
-
-<p><a href="indice.html">Índice</a> | Siguiente: <a href="metodologia.html">Metodología</a></p>
+<a href="indice.html">Índice</a> | Siguiente: <a href="presentacion.html">Presentación</a>
 
 <!-- Contenido: Termina -->
         </div>
       </div></article>
     </div>
     <div class="mapa-inferior">
-      <div class="row">
-        <div class="col-md-8">
-            <a href="../index.html"><img class="img-responsive mapa-inferior-logo" src="../imagenes/implan-transparente-gris.png" alt="IMPLAN Torreón"></a>
-        </div>
-        <div class="col-md-4">
           <div class="pull-right redes-sociales">
             <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
             <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
@@ -209,19 +391,27 @@
             <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
             <a class="fa fa-rss-square" href="../rss.xml"></a>
           </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
-<!-- Javascript común -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/raphael-min.js"></script>
-<script type="text/javascript" src="../js/morris.min.js"></script>
-<script type="text/javascript" src="../js/plugins/metisMenu/metisMenu.min.js"></script>
-<script type="text/javascript" src="../js/sb-admin-2.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Javascript global inicia -->
+<script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/metisMenu/metisMenu.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+<script type="text/javascript" src="../vendor/raphael/raphael.min.js"></script>
+<script type="text/javascript" src="../vendor/morrisjs/morris.min.js"></script>
+<script type="text/javascript" src="../dist/js/sb-admin-2.min.js"></script>
 <script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<!-- Javascript global termina -->
+<!-- Javascript inicia -->
+<!-- Javascript termina -->
+<!-- Javascript Google Analytics -->
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-58290501-1', 'auto');ga('send', 'pageview');
+</script>
 </body>
 </html>

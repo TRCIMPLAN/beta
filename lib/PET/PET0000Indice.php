@@ -33,7 +33,7 @@ class PET0000Indice extends \Base\PublicacionSchemaArticle {
     public function __construct() {
         // Título, autor y fecha
         $this->nombre                     = 'Índice General';
-     // $this->autor                      = '';
+    //  $this->autor                      = '';
         $this->fecha                      = '2016-10-10T00:00';
         // El nombre del archivo a crear
         $this->archivo                    = 'indice';
@@ -41,12 +41,12 @@ class PET0000Indice extends \Base\PublicacionSchemaArticle {
         $this->descripcion                = 'Plan Estratégico para Torreón con enfoque Metropolitano 2040 - Índice General.';
         $this->claves                     = 'Plan, Estrategico, Torreón, 2040, Metropolitano, Indice';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Plan Estratégico Torreón > Índice General';
+        $this->nombre_menu                = 'Plan Estratégico Torreón 2040 > Índice General';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/PET/PET0000Indice.md';
         // Banderas
-        $this->poner_imagen_en_contenido  = false;
-        $this->para_compartir             = false;
+        $this->poner_imagen_en_contenido  = FALSE;
+        $this->para_compartir             = FALSE;
         // Para el Organizador
         $this->categorias                 = array();
         $this->fuentes                    = array();

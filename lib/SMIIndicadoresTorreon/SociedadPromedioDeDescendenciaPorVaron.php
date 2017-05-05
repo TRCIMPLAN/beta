@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN - SMI Indicadores Torreón Sociedad Promedio de Descendencia por Varón (Creado por Central:SmiLanzadera)
+ * TrcIMPLAN Sitio Web - SMIIndicadoresTorreon SociedadPromedioDeDescendenciaPorVaron
  *
- * Copyright (C) 2015 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,138 +25,82 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SociedadPromedioDeDescendenciaPorVaron
  */
-class SociedadPromedioDeDescendenciaPorVaron extends \Base\Publicacion {
+class SociedadPromedioDeDescendenciaPorVaron extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
-        $this->nombre            = 'Promedio de Descendencia por Varón en Torreón';
-        $this->autor             = 'Dirección de Investigación Estratégica';
-        $this->fecha             = '2014-10-21T16:19:49';
-        // El nombre del archivo a crear (obligatorio) y rutas relativas a las imágenes
-        $this->archivo           = 'sociedad-promedio-de-descendencia-por-varon';
-        $this->imagen            = '../smi/introduccion/imagen.jpg';
-        $this->imagen_previa     = '../smi/introduccion/imagen-previa.jpg';
+        $this->nombre      = 'Promedio de Descendencia por Varón en Torreón';
+        $this->autor       = 'Dirección de Investigación Estratégica';
+        $this->fecha       = '2014-10-21T16:19:49';
+        // El nombre del archivo a crear
+        $this->archivo     = 'sociedad-promedio-de-descendencia-por-varon';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion       = 'Calcula el promedio estimado de hijos por cada varón.';
-        $this->claves            = 'IMPLAN, Torreón, Población';
-        // El directorio en la raíz donde se guardará el archivo HTML
-        $this->directorio        = 'indicadores-torreon';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu       = 'Indicadores';
-        // El estado puede ser 'publicar' (crear HTML y agregarlo a índices/galerías), 'revisar' (sólo crear HTML y accesar por URL) o 'ignorar'
-        $this->estado            = 'publicar';
-        // Si para compartir es verdadero, aparecerán al final los botones de compartir en Twitter y Facebook
-        $this->para_compartir    = true;
-        // Instancia de SchemaPostalAddress que tiene la localidad, municipio y país
-        $region                  = new \Base\SchemaPostalAddress();
-        $region->addressCountry  = 'MX';
-        $region->addressRegion   = 'Coahuila de Zaragoza';
-        $region->addressLocality = 'Torreón';
-        // Instancia de SchemaPlace agrupa la región y el mapa
-        $lugar                   = new \Base\SchemaPlace();
-        $lugar->address          = $region;
-        // El contenido es estructurado en un esquema
-        $schema                  = new \Base\SchemaArticle();
-        $schema->name            = $this->nombre;
-        $schema->description     = $this->descripcion;
-        $schema->datePublished   = $this->fecha;
-        $schema->image           = $this->imagen;
-        $schema->image_show      = false;
-        $schema->author          = $this->autor;
-        $schema->contentLocation = $lugar;
-        // El contenido es una instancia de SchemaArticle
-        $this->contenido         = $schema;
+        $this->descripcion = 'Calcula el promedio estimado de hijos por cada varón.';
+        $this->claves      = 'IMPLAN, Torreón, Población';
         // Para el Organizador
-        $this->categorias        = array('Población');
-        $this->fuentes           = array('IMPLAN');
-        $this->regiones          = 'Torreón';
+        $this->categorias  = array('Población');
+        $this->fuentes     = array('IMPLAN');
+        $this->regiones    = array('Torreón');
     } // constructor
 
     /**
-     * HTML
+     * Sección Datos HTML
      *
      * @return string Código HTML
      */
-    public function html() {
-        // Cargar en el Schema el HTML de las lengüetas
-        $this->contenido->articleBody = <<<FINAL
-  <ul class="nav nav-tabs lenguetas" id="smi-indicador">
-    <li><a href="#smi-indicador-datos" data-toggle="tab">Datos</a></li>
-    <li><a href="#smi-indicador-grafica" data-toggle="tab">Gráfica</a></li>
-  </ul>
-  <div class="tab-content lengueta-contenido">
-    <div class="tab-pane" id="smi-indicador-datos">
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2008</td>
-            <td>1.8100</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2009</td>
-            <td>1.7700</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2010</td>
-            <td>1.7200</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2011</td>
-            <td>1.6900</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2012</td>
-            <td>1.6600</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+    protected function seccion_datos_html() {
+        $this->datos_tabla->definir_estructura(array(
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
+        $this->datos_tabla->definir_panal(array(
+            array('fecha' => '2008-12-31', 'valor' => '1.8100', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
+            array('fecha' => '2009-12-31', 'valor' => '1.7700', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
+            array('fecha' => '2010-12-31', 'valor' => '1.7200', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
+            array('fecha' => '2011-12-31', 'valor' => '1.6900', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
+            array('fecha' => '2012-12-31', 'valor' => '1.6600', 'fuente_nombre' => 'IMPLAN', 'notas' => '')));
+        // Entregar
+        return $this->datos_tabla->html();
+    } // seccion_datos_html
+
+    /**
+     * Sección Datos JavaScript
+     *
+     * @return string Código JavaScript
+     */
+    protected function seccion_datos_javascript() {
+        return $this->datos_tabla->javascript();
+    } // seccion_datos_javascript
+
+    /**
+     * Sección Gráfica HTML
+     *
+     * @return string Código HTML
+     */
+    protected function seccion_grafica_html() {
+        return <<<FINAL
+      <h3>Gráfica de Promedio de Descendencia por Varón en Torreón</h3>
+      <div id="graficaDatos" class="grafica"></div>
       <p><b>Unidad:</b> Cantidad.</p>
       <h3>Observaciones</h3>
 <p>Estimación propia en base al dato de Ocupación por Vivienda</p>
 
-    </div>
-    <div class="tab-pane" id="smi-indicador-grafica">
-      <h3>Gráfica de Promedio de Descendencia por Varón en Torreón</h3>
-      <div id="graficaDatos" class="grafica"></div>
-    </div>
-  </div>
 FINAL;
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
+    } // seccion_grafica_html
 
     /**
-     * Javascript
+     * Sección Gráfica JavaScript
      *
-     * @return string No hay código Javascript, entrega un texto vacío
+     * @return string Código JavaScript
      */
-    public function javascript() {
-        // JavaScript
-        $this->javascript[] = <<<FINAL
-// LENGUETA smi-indicador-grafica
-$('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function(e){
+    protected function seccion_grafica_javascript() {
+        return <<<FINAL
   // Gráfica
   if (typeof vargraficaDatos === 'undefined') {
     vargraficaDatos = Morris.Line({
@@ -170,12 +114,36 @@ $('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
-});
-// TWITTER BOOTSTRAP TABS, ESTABLECER QUE LA LENGÜETA ACTIVA ES smi-indicador-datos
-$(document).ready(function(){
-  $('#smi-indicador a[href="#smi-indicador-datos"]').tab('show')
-});
 FINAL;
+    } // seccion_grafica_javascript
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        // Ejecutar los métodos que alimentan cada lengüeta
+        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
+        $this->lenguetas->agregar('smi-indicador-grafica', 'Gráfica', $this->seccion_grafica_html());
+        $this->lenguetas->agregar_javascript($this->seccion_grafica_javascript());
+        $this->lenguetas->definir_activa(); // Primer lengüeta activa
+        // Definir el contenido de esta publicación que es un SchemaArticle
+        $this->contenido->articleBody = $this->lenguetas->html();
+        // Ejecutar este método en el padre
+        return parent::html();
+    } // html
+
+    /**
+     * Javascript
+     *
+     * @return string Código Javascript
+     */
+    public function javascript() {
+        // JavaScript de las lengüetas, es el de las gráficas
+        $this->javascript[] = $this->lenguetas->javascript();
+        // JavaScript para la carga completa del documento, es el de la tabla con los datos
+        $this->javascript[] = $this->datos_tabla->javascript();
         // Ejecutar este método en el padre
         return parent::javascript();
     } // javascript
@@ -186,59 +154,8 @@ FINAL;
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Para redifusión, se pone el contenido sin lengüetas
-        $this->redifusion = <<<FINAL
-      <h3>Descripción</h3>
-<p>Calcula el promedio estimado de hijos por cada varón.</p>
-
-      <h3>Información recopilada</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>31/12/2008</td>
-            <td>1.8100</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2009</td>
-            <td>1.7700</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2010</td>
-            <td>1.7200</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2011</td>
-            <td>1.6900</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>31/12/2012</td>
-            <td>1.6600</td>
-            <td>IMPLAN</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Cantidad.</p>
-      <h3>Observaciones</h3>
-<p>Estimación propia en base al dato de Ocupación por Vivienda</p>
-
-FINAL;
+        // Código HTML para redifusión
+        $this->redifusion = $this->descripcion;
         // Ejecutar este método en el padre
         return parent::redifusion_html();
     } // redifusion_html

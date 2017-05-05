@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN Sitio Web - Pagina Inicial Config
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,35 +27,6 @@ namespace Configuracion;
  */
 class PaginaInicialConfig extends \Base\Plantilla {
 
-    // public $sitio_titulo;
-    // public $sitio_url;
-    // public $rss;
-    // public $favicon;
-    // public $propio_css;
-    // public $en_raiz;
-    // public $para_compartir;
-    // public $autor;
-    // public $mensaje_oculto;
-    // public $pie;
-    // protected $google_analytics;
-    // protected $google_site_verification;
-    // protected $cabecera_bootstrap_css;
-    // protected $cabecera_font_awesome_css;
-    // protected $cabecera_google_fonts_css;
-    // protected $scripts_jquery_css;
-    // protected $scripts_bootstrap_js;
-    // public $titulo;
-    // public $descripcion;
-    // public $claves;
-    // public $directorio;
-    // public $archivo_ruta;
-    // public $imagen_previa_ruta;
-    // public $icono;
-    // public $navegacion;
-    // public $contenido;
-    // public $mapa_inferior;
-    // public $javascript;
-    // public $contenido_en_renglon;
     public $imprentas;                        // Arreglo con rutas a las clases de ImprentaPublicaciones, es usado en ultimas_publicaciones
     const   ULTIMAS_PUBLICACIONES_LIMITE = 4; // Cantidad límite de últimas publicaciones
 
@@ -65,7 +36,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public function __construct() {
         parent::__construct();
         // Propiedades para la página inicial
-        $this->en_raiz                  = true;
+        $this->en_raiz                  = TRUE;
         $this->titulo                   = 'IMPLAN Torreón';
         $this->autor                    = 'IMPLAN Torreón';
         $this->descripcion              = 'Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón cuyas propuestas de política tienen una orientación territorial.';
@@ -73,7 +44,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->directorio               = '.';
         $this->archivo_ruta             = "index.html";
         $this->imagen_previa_ruta       = 'imagenes/imagen-previa.jpg';
-        $this->contenido_en_renglon     = false;
+        $this->contenido_en_renglon     = FALSE;
         $this->google_site_verification = '<meta name="google-site-verification" content="Hz-cnyG17CBaAXopvSHn7J81Za2cmg4dvnRh1VJE7ks">';
     } // constructor
 
@@ -86,8 +57,8 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $organizacion->name           = 'Instituto Municipal de Planeación y Competitividad de Torreón';
         $organizacion->description    = 'Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón, Coahuila, México.';
         $organizacion->image          = 'imagenes/implan-logo.png';
-        $organizacion->is_article     = false;
-        $organizacion->big_heading    = true;
+        $organizacion->is_article     = FALSE;
+        $organizacion->big_heading    = TRUE;
         $organizacion->headline_style = 'organizacion';
         // Acumular
         $this->contenido[] = '  <section id="organizacion">';
@@ -157,47 +128,51 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = '    <div id="IBCTorreonMapa" class="mapa"></div>';
         $this->contenido[]  = '  </section>';
         // Código Javascript
-        $js   = array();
-        $js[] = '  // Cargar mapa IBC Torreón cuando esté lista la página';
-        $js[] = '  $(window).load(function() {';
-        $js[] = sprintf('    cartodb.createVis(\'IBCTorreonMapa\', \'%s\', {', IBCTorreonConfig::LIMITES);
-        $js[] = '        shareable: false,';
-        $js[] = '        title: true,';
-        $js[] = '        description: true,';
-        $js[] = '        search: false,';
-        $js[] = '        scrollwheel: false,';
-        $js[] = '        infowindow: true,';
-        $js[] = '        fullscreen: true';
-        $js[] = '      })';
-        $js[] = '      .done(function(vis, layers) {';
-        $js[] = '        // Capa colonias';
-        $js[] = '        var colonias_capa = layers[1];';
-        $js[] = '        colonias_capa.setInteraction(true);';
-        $js[] = '        // Ajustes en el mapa';
-        $js[] = '        var map = vis.getNativeMap();';
-        $js[] = '        map.setZoom(14);';
-        $js[] = '      })';
-        $js[] = '  });';
-        $this->javascript[] = implode("\n", $js);
+    //~ $js   = array();
+    //~ $js[] = '  // Cargar mapa IBC Torreón cuando esté lista la página';
+    //~ $js[] = '  $(window).load(function() {';
+    //~ $js[] = sprintf('    cartodb.createVis(\'IBCTorreonMapa\', \'%s\', {', IBCTorreonConfig::LIMITES);
+    //~ $js[] = '        shareable: FALSE,';
+    //~ $js[] = '        title: TRUE,';
+    //~ $js[] = '        description: TRUE,';
+    //~ $js[] = '        search: FALSE,';
+    //~ $js[] = '        scrollwheel: FALSE,';
+    //~ $js[] = '        infowindow: TRUE,';
+    //~ $js[] = '        fullscreen: TRUE';
+    //~ $js[] = '      })';
+    //~ $js[] = '      .done(function(vis, layers) {';
+    //~ $js[] = '        // Capa colonias';
+    //~ $js[] = '        var colonias_capa = layers[1];';
+    //~ $js[] = '        colonias_capa.setInteraction(TRUE);';
+    //~ $js[] = '        // Ajustes en el mapa';
+    //~ $js[] = '        var map = vis.getNativeMap();';
+    //~ $js[] = '        map.setZoom(14);';
+    //~ $js[] = '      })';
+    //~ $js[] = '  });';
+    //~ $this->javascript[] = implode("\n", $js);
     } // ibc
 
     /**
-     * Aviso elección de consejeros 2015
+     * Aviso
      */
     protected function aviso() {
         $this->contenido[]  = '  <section id="aviso">';
-        $this->contenido[]  = '    <div class="panel" style="margin:4px;border:2px solid #FF3300;">';
-        $this->contenido[]  = '        <div class="panel-heading" style="background-color:#FFFFFF">';
-        $this->contenido[]  = '            <h2>Elección de Consejeros de Representación Sectorial 2015</h2>';
-        $this->contenido[]  = '            <div>Resultado del proceso de elección de los ciudadanos que van a formar parte del Consejo Directivo como Consejeros de Representación Sectorial en el IMPLAN Torreón.</div>';
+        $this->contenido[]  = '    <div class="panel panel-default">';
+        $this->contenido[]  = '        <div class="panel-heading" style="background-color:#CACACA;padding:0px 15px;">';
+        $this->contenido[]  = '            <h2 style="border-bottom:none">Suspensión de difusión y propaganda por periodo electoral</h2>';
         $this->contenido[]  = '        </div>';
-        $this->contenido[]  = '        <a href="consejo-directivo/eleccion-de-consejeros-de-representacion-sectorial-2015.html">';
-        $this->contenido[]  = '            <div class="panel-footer" style="background-color:#CACACA">';
-        $this->contenido[]  = '                <span class="pull-left">Ir a la página</span>';
-        $this->contenido[]  = '                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>';
-        $this->contenido[]  = '                <div class="clearfix"></div>';
-        $this->contenido[]  = '            </div>';
-        $this->contenido[]  = '        </a>';
+        $this->contenido[]  = '        <div class="panel-body">';
+        $this->contenido[]  = '            <p>A partir del primer minuto de este domingo 2 de abril y hasta las 24:00 horas del día 4 de junio, el Ayuntamiento de Torreón suspenderá toda su difusión promocional en todos los medios de comunicación en cumplimiento a las disposiciones del acuerdo emitido por el Consejo General del Instituto Nacional Electoral.</p>';
+        $this->contenido[]  = '            <p>El IMPLAN Torreón acatará las disposiciones de este órgano federal electoral en cuanto a sus normas reglamentarias sobre la propaganda gubernamental para los procesos electorales 2016-2017 respecto al artículo 41, base III, apartado C de la Constitución Política de los Estados Unidos Mexicanos.</p>';
+        $this->contenido[]  = '            <p>Ante estas disposiciones, se dejarán de emitir boletines de prensa y el Sistema Metropolitano de Indicadores (SMI) así como el Sistema de Información Geográfica (SIG) recibirán información que no sea considerada como propaganda gubernamental.</p>';
+        $this->contenido[]  = '        </div>';
+    //~ $this->contenido[]  = '        <a href="consejo-directivo/eleccion-de-consejeros-de-representacion-sectorial-2015.html">';
+    //~ $this->contenido[]  = '            <div class="panel-footer" style="background-color:#CACACA">';
+    //~ $this->contenido[]  = '                <span class="pull-left">Ir a la página</span>';
+    //~ $this->contenido[]  = '                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>';
+    //~ $this->contenido[]  = '                <div class="clearfix"></div>';
+    //~ $this->contenido[]  = '            </div>';
+    //~ $this->contenido[]  = '        </a>';
         $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';
     } // aviso
@@ -208,7 +183,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
     protected function ultimas_publicaciones() {
         // Iniciar concentrador
         $concentrador          = new \Base\VinculosDetallados();
-        $concentrador->en_raiz = true;
+        $concentrador->en_raiz = TRUE;
         // Iniciar recolector
         $recolector = new \Base\Recolector();
         $recolector->agregar_publicaciones_de_imprentas($this->imprentas);
@@ -218,16 +193,16 @@ class PaginaInicialConfig extends \Base\Plantilla {
         foreach ($recolector->obtener_publicaciones(self::ULTIMAS_PUBLICACIONES_LIMITE) as $publicacion) {
             // Iniciar vínculo
             $vinculo          = new \Base\Vinculo();
-            $vinculo->en_raiz = true;
-            $vinculo->en_otro = false;
+            $vinculo->en_raiz = TRUE;
+            $vinculo->en_otro = FALSE;
             $vinculo->definir_con_publicacion($publicacion);
             // Agregar
             $concentrador->agregar($vinculo);
         }
         // Acumular Últimas Publicaciones y Twitter Timeline
         $this->contenido[]  = '  <section id="ultimas-publicaciones">';
-        $this->contenido[]  = '    <div class="row">';
-        $this->contenido[]  = '      <div class="col-md-8">';
+    //~ $this->contenido[]  = '    <div class="row">';
+    //~ $this->contenido[]  = '      <div class="col-md-8">';
         $this->contenido[]  = '        <div class="ultimas">';
         $this->contenido[]  = '          <h2>Últimas publicaciones</h2>';
         $this->contenido[]  = $concentrador->html();
@@ -235,16 +210,19 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = "            <a href=\"blog/index.html\" class=\"btn btn-default\" role=\"button\">Todos los Análisis Publicados</a>";
         $this->contenido[]  = '          </div>';
         $this->contenido[]  = '        </div>';
-        $this->contenido[]  = '      </div>';
-        $this->contenido[]  = '      <div class="col-md-4">';
-        $this->contenido[]  = '        <div class="red-social-twitter">';
-        $this->contenido[]  = '          <a class="twitter-timeline" height="720px" href="https://twitter.com/trcimplan" data-chrome="nofooter transparent" data-theme="dark" data-widget-id="455819492145127424">Tweets por @trcimplan</a>';
-        $this->contenido[]  = '        </div>';
-        $this->contenido[]  = '      </div>';
-        $this->contenido[]  = '    </div>';
+    //~ $this->contenido[]  = '      </div>';
+    //~ $this->contenido[]  = '      <div class="col-md-4">';
+    //~ $this->contenido[]  = '        <div class="red-social-twitter">';
+    //~ $this->contenido[]  = '          <a class="twitter-timeline" height="720px" href="https://twitter.com/trcimplan" data-chrome="nofooter transparent" data-theme="dark" data-widget-id="455819492145127424">Tweets por @trcimplan</a>';
+    //~ $this->contenido[]  = '        </div>';
+    //~ $this->contenido[]  = '      </div>';
+    //~ $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';
         // Acumular javascipt del Twitter Timeline
-        $this->javascript[] = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
+    /*  $this->javascript[] = <<<FINAL
+  // Twitter timeline
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+FINAL; */
     } // ultimas_publicaciones
 
     /**
@@ -265,17 +243,17 @@ class PaginaInicialConfig extends \Base\Plantilla {
             // Si está definido en \Configuracion\CategoriasConfig
             if ($categoria instanceof \Base\Categoria) {
                 // Sí está definido
-                $categoria->en_raiz = true;
-                $categoria->en_otro = false;
+                $categoria->en_raiz = TRUE;
+                $categoria->en_otro = FALSE;
                 $vinculo            = new \Base\Vinculo($categoria->nombre, $categoria->url(), $categoria->icono, '', $categoria->descripcion);
-                $vinculo->en_raiz   = true;
-                $vinculo->en_otro   = false;
+                $vinculo->en_raiz   = TRUE;
+                $vinculo->en_otro   = FALSE;
                 $concentrador->agregar($vinculo);
             } elseif ($categorias_config->mostrar_no_definidos) {
                 // No está definido
                 $vinculo          = new \Base\Vinculo($nombre, sprintf('%s.html', \Base\Funciones::caracteres_para_web($nombre)), 'unknown', \Base\ImprentaCategorias::CATEGORIAS_DIR);
-                $vinculo->en_raiz = true;
-                $vinculo->en_otro = false;
+                $vinculo->en_raiz = TRUE;
+                $vinculo->en_otro = FALSE;
                 $concentrador->agregar($vinculo);
             }
         }
@@ -373,9 +351,9 @@ class PaginaInicialConfig extends \Base\Plantilla {
     public function html() {
         // Elaborar secciones
         $this->organizacion();
+        $this->aviso();
         $this->servicios();
         $this->ibc();
-    //  $this->aviso();
         $this->ultimas_publicaciones();
         $this->categorias();
         $this->mapa();

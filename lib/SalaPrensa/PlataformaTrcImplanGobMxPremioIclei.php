@@ -31,6 +31,8 @@ class PlataformaTrcImplanGobMxPremioIclei extends \Base\PublicacionSchemaBlogPos
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
         $this->nombre                     = 'Plataforma trcimplan.gob.mx Premio ICLEI';
     //  $this->autor                      = '';
@@ -38,7 +40,7 @@ class PlataformaTrcImplanGobMxPremioIclei extends \Base\PublicacionSchemaBlogPos
         // El nombre del archivo a crear
         $this->archivo                    = '2015-11-10-plataforma-trcimplangobmx-premio-iclei';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'La organización internacional Gobiernos Locales por la Sustentabilidad, ICLEI por sus siglas en inglés, reconoció al sitio web como una herramienta para la planeación metropolitana.';
+        $this->descripcion                = 'El ICLEI reconoció al sitio web como una herramienta para la planeación metropolitana.';
         $this->claves                     = 'IMPLAN, Torreon, Plataforma, ICLEI';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación.
         $this->nombre_menu                = 'Sala de Prensa';
@@ -50,7 +52,7 @@ class PlataformaTrcImplanGobMxPremioIclei extends \Base\PublicacionSchemaBlogPos
         // Para el Organizador
         $this->categorias                 = array();
         $this->fuentes                    = array();
-        $this->regiones                   = array();
+        $this->regiones                   = array('Torreón');
     } // constructor
 
 } // Clase PlataformaTrcImplanGobMxPremioIclei
