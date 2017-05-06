@@ -55,7 +55,7 @@
   <link rel="icon" href="imagenes/icon-hires.png" sizes="192x192">
   <link rel="icon" href="imagenes/icon-normal.png" sizes="128x128">
   <link rel="alternate" type="application/rss+xml" href="rss.xml" title="IMPLAN Torreón">
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/metisMenu/metisMenu.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/datatables-plugins/dataTables.bootstrap.css">
   <link rel="stylesheet" type="text/css" href="vendor/morrisjs/morris.css">
@@ -651,8 +651,8 @@
   </div>
 </div>
 <!-- Javascript global inicia -->
-<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="vendor/metisMenu/metisMenu.min.js"></script>
 <script type="text/javascript" src="vendor/datatables/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
@@ -661,13 +661,31 @@
 <script type="text/javascript" src="vendor/morrisjs/morris.min.js"></script>
 <script type="text/javascript" src="dist/js/sb-admin-2.min.js"></script>
 <script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
-<!-- Javascript termina -->
-<!-- Javascript Google Analytics -->
 <script>
-  // Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-58290501-1', 'auto');ga('send', 'pageview');
+  // Cargar mapa IBC Torreón cuando esté lista la página
+  $(window).load(function() {
+    cartodb.createVis('IBCTorreonMapa', 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json', {
+        shareable: false,
+        title: true,
+        description: true,
+        search: false,
+        scrollwheel: false,
+        infowindow: true,
+        fullscreen: true
+      })
+      .done(function(vis, layers) {
+        // Capa colonias
+        var colonias_capa = layers[1];
+        colonias_capa.setInteraction(true);
+        // Ajustes en el mapa
+        var map = vis.getNativeMap();
+        map.setZoom(14);
+      })
+  });
 </script>
+<!-- Javascript termina -->
 </body>
 </html>

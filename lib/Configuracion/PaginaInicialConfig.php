@@ -128,28 +128,28 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = '    <div id="IBCTorreonMapa" class="mapa"></div>';
         $this->contenido[]  = '  </section>';
         // Código Javascript
-    //~ $js   = array();
-    //~ $js[] = '  // Cargar mapa IBC Torreón cuando esté lista la página';
-    //~ $js[] = '  $(window).load(function() {';
-    //~ $js[] = sprintf('    cartodb.createVis(\'IBCTorreonMapa\', \'%s\', {', IBCTorreonConfig::LIMITES);
-    //~ $js[] = '        shareable: FALSE,';
-    //~ $js[] = '        title: TRUE,';
-    //~ $js[] = '        description: TRUE,';
-    //~ $js[] = '        search: FALSE,';
-    //~ $js[] = '        scrollwheel: FALSE,';
-    //~ $js[] = '        infowindow: TRUE,';
-    //~ $js[] = '        fullscreen: TRUE';
-    //~ $js[] = '      })';
-    //~ $js[] = '      .done(function(vis, layers) {';
-    //~ $js[] = '        // Capa colonias';
-    //~ $js[] = '        var colonias_capa = layers[1];';
-    //~ $js[] = '        colonias_capa.setInteraction(TRUE);';
-    //~ $js[] = '        // Ajustes en el mapa';
-    //~ $js[] = '        var map = vis.getNativeMap();';
-    //~ $js[] = '        map.setZoom(14);';
-    //~ $js[] = '      })';
-    //~ $js[] = '  });';
-    //~ $this->javascript[] = implode("\n", $js);
+        $js   = array();
+        $js[] = '  // Cargar mapa IBC Torreón cuando esté lista la página';
+        $js[] = '  $(window).load(function() {';
+        $js[] = sprintf('    cartodb.createVis(\'IBCTorreonMapa\', \'%s\', {', IBCTorreonConfig::LIMITES);
+        $js[] = '        shareable: false,';
+        $js[] = '        title: true,';
+        $js[] = '        description: true,';
+        $js[] = '        search: false,';
+        $js[] = '        scrollwheel: false,';
+        $js[] = '        infowindow: true,';
+        $js[] = '        fullscreen: true';
+        $js[] = '      })';
+        $js[] = '      .done(function(vis, layers) {';
+        $js[] = '        // Capa colonias';
+        $js[] = '        var colonias_capa = layers[1];';
+        $js[] = '        colonias_capa.setInteraction(true);';
+        $js[] = '        // Ajustes en el mapa';
+        $js[] = '        var map = vis.getNativeMap();';
+        $js[] = '        map.setZoom(14);';
+        $js[] = '      })';
+        $js[] = '  });';
+        $this->javascript[] = implode("\n", $js);
     } // ibc
 
     /**
