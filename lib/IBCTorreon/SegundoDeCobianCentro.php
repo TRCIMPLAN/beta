@@ -34,7 +34,7 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Segundo de Cobián (Centro)';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-19T11:04:26';
+        $this->fecha       = '2017-05-10T11:56:51';
         // El nombre del archivo a crear
         $this->archivo     = 'segundo-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -131,7 +131,17 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function resena() {
-        return '';
+        return <<<FINAL
+![Fuente El Pensador](segundo-de-cobian-centro/fuente-el-pensador-800x450.jpg) 
+
+### Historia 
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. 
+
+### Características
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+FINAL;
     } // resena
 
 } // Clase SegundoDeCobianCentro

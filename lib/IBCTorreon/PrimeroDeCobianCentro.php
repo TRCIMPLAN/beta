@@ -34,7 +34,7 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Primero de Cobián (Centro)';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-05-10T09:37:40';
+        $this->fecha       = '2017-05-10T11:52:13';
         // El nombre del archivo a crear
         $this->archivo     = 'primero-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
@@ -132,15 +132,15 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
      */
     public function resena() {
         return <<<FINAL
+![Plaza Mayor](primero-de-cobian-centro/plaza-mayor-800x450.jpg)
+
 ### Historia
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
-
-### Carcaterísticas
+### Características
 
 Corresponde a las manzanas colindantes a la **Plaza de Armas**, originalmente llamada "Plaza del 2 de Abril". Esta zona se ha desempeñado como el centro financiero, comercial y de servicios [más importante de la ciudad](http://www.torreon.gob.mx/).
 
