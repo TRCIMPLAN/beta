@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Sol de Oriente 2a. Etapa
+ * TrcIMPLAN Sitio Web - IBCTorreon SolDeOriente2aEtapa
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Sol de Oriente 2a. Etapa';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'sol-de-oriente-2a-etapa';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Sol de Oriente 2a. Etapa en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 47.22,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 22.22,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 5.56,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 5.56,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 5.56
                 )
             )
@@ -124,6 +124,15 @@ class SolDeOriente2aEtapa extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.328197548375
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase SolDeOriente2aEtapa
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Martínez Adame
+ * TrcIMPLAN Sitio Web - IBCTorreon MartinezAdame
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Martínez Adame';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'martinez-adame';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Martínez Adame en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 28.21,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 10.26,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 10.26,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 5.13
                 )
             )
@@ -124,6 +124,15 @@ class MartinezAdame extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.469651484883
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase MartinezAdame
 

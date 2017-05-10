@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN IBCBase - SeccionDatosWeb
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,10 +27,10 @@ namespace IBCBase;
  */
 class SeccionDatosWeb implements SalidaWeb {
 
-    protected $publicacion_ficha;    // Instancia de PublicacionWeb, para obtener los datos
-    protected $acordeones;           // Instancia de AcordeonesWeb
-    protected $preparado    = FALSE; // Bandera
-    const     IDENTIFICADOR = 'Datos';
+    protected $publicacion_ficha;           // Instancia de PublicacionWeb
+    protected $acordeones;                  // Instancia de AcordeonesWeb
+    protected $preparado         = FALSE;   // Bandera
+    const     IDENTIFICADOR      = 'Datos'; // ID único en la página web
 
     /**
      * Constructor

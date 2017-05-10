@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón José de Las Fuentes
+ * TrcIMPLAN Sitio Web - IBCTorreon JoseDeLasFuentes
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'José de Las Fuentes';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'jose-de-las-fuentes';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia José de Las Fuentes en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,11 +99,11 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 20.00
                 )
             )
@@ -122,6 +122,15 @@ class JoseDeLasFuentes extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.334033443204
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase JoseDeLasFuentes
 

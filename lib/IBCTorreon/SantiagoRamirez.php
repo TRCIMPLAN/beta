@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Santiago Ramírez
+ * TrcIMPLAN Sitio Web - IBCTorreon SantiagoRamirez
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santiago Ramírez';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'santiago-ramirez';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Santiago Ramírez en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 72.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 4.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 4.00,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )
@@ -124,6 +124,15 @@ class SantiagoRamirez extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.419825436139
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase SantiagoRamirez
 

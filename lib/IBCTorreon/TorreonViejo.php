@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Torreón Viejo
+ * TrcIMPLAN Sitio Web - IBCTorreon TorreonViejo
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreón Viejo';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'torreon-viejo';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Torreón Viejo en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 45.45,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 36.36,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 9.09
                 )
             )
@@ -122,6 +122,15 @@ class TorreonViejo extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.469789470687
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase TorreonViejo
 

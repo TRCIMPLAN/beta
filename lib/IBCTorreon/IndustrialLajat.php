@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Industrial Lajat
+ * TrcIMPLAN Sitio Web - IBCTorreon IndustrialLajat
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Industrial Lajat';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'industrial-lajat';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Industrial Lajat en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -76,9 +76,9 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 12.50,
                     'Tercera actividad nombre' => 'Construcción',
                     'Tercera actividad porcentaje' => 6.25,
-                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 6.25,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )
@@ -97,6 +97,15 @@ class IndustrialLajat extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.372012213983
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase IndustrialLajat
 

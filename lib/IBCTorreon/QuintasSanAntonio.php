@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Quintas San Antonio
+ * TrcIMPLAN Sitio Web - IBCTorreon QuintasSanAntonio
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas San Antonio';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'quintas-san-antonio';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Quintas San Antonio en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 33.33,
                     'Segunda actividad nombre' => 'Financieros y Seguros',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Comercio Menudeo',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 16.67,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 16.67
                 )
             )
@@ -124,6 +124,15 @@ class QuintasSanAntonio extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.386050621325
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase QuintasSanAntonio
 

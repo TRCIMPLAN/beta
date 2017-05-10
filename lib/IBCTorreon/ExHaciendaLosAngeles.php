@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ex-Hacienda Los Ángeles
+ * TrcIMPLAN Sitio Web - IBCTorreon ExHaciendaLosAngeles
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda Los Ángeles';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ex-hacienda-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ex-Hacienda Los Ángeles en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -122,6 +122,15 @@ class ExHaciendaLosAngeles extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.396804493662
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ExHaciendaLosAngeles
 

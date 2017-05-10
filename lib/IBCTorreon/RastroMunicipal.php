@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Rastro Municipal
+ * TrcIMPLAN Sitio Web - IBCTorreon RastroMunicipal
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rastro Municipal';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'rastro-municipal';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Rastro Municipal en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -72,9 +72,9 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 4,
                     'Primer actividad nombre' => 'Transportes, Correo, Almacenamiento',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 25.00
                 )
             )
@@ -93,6 +93,15 @@ class RastroMunicipal extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.351120049857
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase RastroMunicipal
 

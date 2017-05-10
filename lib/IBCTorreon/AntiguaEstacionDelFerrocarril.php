@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Antigua Estación del Ferrocarril
+ * TrcIMPLAN Sitio Web - IBCTorreon AntiguaEstacionDelFerrocarril
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class AntiguaEstacionDelFerrocarril extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Antigua Estación del Ferrocarril';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'antigua-estacion-del-ferrocarril';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Antigua Estación del Ferrocarril en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -97,9 +97,9 @@ class AntiguaEstacionDelFerrocarril extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 2,
-                    'Primer actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Primer actividad nombre' => 'Salud',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Salud',
+                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Segunda actividad porcentaje' => 50.00
                 )
             )
@@ -118,6 +118,15 @@ class AntiguaEstacionDelFerrocarril extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.45439299349
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase AntiguaEstacionDelFerrocarril
 

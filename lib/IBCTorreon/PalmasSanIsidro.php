@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Palmas San Isidro
+ * TrcIMPLAN Sitio Web - IBCTorreon PalmasSanIsidro
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Palmas San Isidro';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'palmas-san-isidro';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Palmas San Isidro en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 28.12,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 21.88,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 9.38,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.38,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 6.25
                 )
             )
@@ -124,6 +124,15 @@ class PalmasSanIsidro extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.425931527831
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase PalmasSanIsidro
 

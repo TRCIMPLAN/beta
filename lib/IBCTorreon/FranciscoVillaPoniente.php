@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Francisco Villa Poniente
+ * TrcIMPLAN Sitio Web - IBCTorreon FranciscoVillaPoniente
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Francisco Villa Poniente';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'francisco-villa-poniente';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Francisco Villa Poniente en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -103,9 +103,9 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.73,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 12.12,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 7.58,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.58
                 )
             )
@@ -124,6 +124,15 @@ class FranciscoVillaPoniente extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.461224830764
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase FranciscoVillaPoniente
 

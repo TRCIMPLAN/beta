@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ex-Hacienda La Merced
+ * TrcIMPLAN Sitio Web - IBCTorreon ExHaciendaLaMerced
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda La Merced';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ex-hacienda-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ex-Hacienda La Merced en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 54.55,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 9.09,
                     'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 9.09
@@ -124,6 +124,15 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.385025713579
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ExHaciendaLaMerced
 

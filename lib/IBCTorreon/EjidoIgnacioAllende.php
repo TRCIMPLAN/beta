@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ejido Ignacio Allende
+ * TrcIMPLAN Sitio Web - IBCTorreon EjidoIgnacioAllende
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Ignacio Allende';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ejido-ignacio-allende';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ejido Ignacio Allende en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -105,7 +105,7 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 15.71,
                     'Cuarta actividad nombre' => 'Inmobiliarios',
                     'Cuarta actividad porcentaje' => 12.86,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )
@@ -124,6 +124,15 @@ class EjidoIgnacioAllende extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.395427292457
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase EjidoIgnacioAllende
 

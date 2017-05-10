@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ejido La Libertad
+ * TrcIMPLAN Sitio Web - IBCTorreon EjidoLaLibertad
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Libertad';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ejido-la-libertad';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ejido La Libertad en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -97,15 +97,15 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 7,
-                    'Primer actividad nombre' => 'Educativos',
+                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 28.57,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 28.57,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Inmobiliarios',
                     'Tercera actividad porcentaje' => 14.29,
-                    'Cuarta actividad nombre' => 'Inmobiliarios',
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
                     'Cuarta actividad porcentaje' => 14.29,
-                    'Quinta actividad nombre' => 'Comercio Menudeo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 14.29
                 )
             )
@@ -124,6 +124,15 @@ class EjidoLaLibertad extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.377425276621
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase EjidoLaLibertad
 

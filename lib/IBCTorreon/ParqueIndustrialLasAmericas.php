@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Parque Industrial Las Américas
+ * TrcIMPLAN Sitio Web - IBCTorreon ParqueIndustrialLasAmericas
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial Las Américas';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'parque-industrial-las-americas';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Parque Industrial Las Américas en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -72,13 +72,13 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 13,
                     'Primer actividad nombre' => 'Industria Manufacturera',
                     'Primer actividad porcentaje' => 46.15,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Manejo de Residuos',
                     'Segunda actividad porcentaje' => 7.69,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Información Medios Masivos',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Información Medios Masivos',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )
@@ -97,6 +97,15 @@ class ParqueIndustrialLasAmericas extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.363801610891
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ParqueIndustrialLasAmericas
 

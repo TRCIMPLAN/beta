@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Maclovio Herrera
+ * TrcIMPLAN Sitio Web - IBCTorreon MaclovioHerrera
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Maclovio Herrera';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'maclovio-herrera';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Maclovio Herrera en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 52.94,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 5.88,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 5.88,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )
@@ -124,6 +124,15 @@ class MaclovioHerrera extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.472566828535
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase MaclovioHerrera
 

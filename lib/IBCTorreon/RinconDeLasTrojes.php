@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Rincon de Las Trojes
+ * TrcIMPLAN Sitio Web - IBCTorreon RinconDeLasTrojes
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincon de Las Trojes';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'rincon-de-las-trojes';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Rincon de Las Trojes en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,13 +99,13 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 10,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 30.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Comercio Mayoreo',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 20.00,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 10.00,
-                    'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.00
                 )
             )
@@ -124,6 +124,15 @@ class RinconDeLasTrojes extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.380676017176
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase RinconDeLasTrojes
 

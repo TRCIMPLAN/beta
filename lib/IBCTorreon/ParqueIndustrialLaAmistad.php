@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Parque Industrial La Amistad
+ * TrcIMPLAN Sitio Web - IBCTorreon ParqueIndustrialLaAmistad
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ParqueIndustrialLaAmistad extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Parque Industrial La Amistad';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'parque-industrial-la-amistad';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Parque Industrial La Amistad en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,11 +99,11 @@ class ParqueIndustrialLaAmistad extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 6,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Comercio Mayoreo',
                     'Segunda actividad porcentaje' => 16.67,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 16.67,
                     'Quinta actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Quinta actividad porcentaje' => 16.67
@@ -124,6 +124,15 @@ class ParqueIndustrialLaAmistad extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.369040172128
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ParqueIndustrialLaAmistad
 

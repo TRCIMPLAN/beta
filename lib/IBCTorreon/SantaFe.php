@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Santa Fe
+ * TrcIMPLAN Sitio Web - IBCTorreon SantaFe
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class SantaFe extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Santa Fe';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'santa-fe';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Santa Fe en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class SantaFe extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 42.86,
                     'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 9.52,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.52,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.76
@@ -124,6 +124,15 @@ class SantaFe extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.378763715864
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase SantaFe
 

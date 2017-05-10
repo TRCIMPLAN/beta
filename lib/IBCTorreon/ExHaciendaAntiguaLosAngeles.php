@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ex-Hacienda Antigua Los Ángeles
+ * TrcIMPLAN Sitio Web - IBCTorreon ExHaciendaAntiguaLosAngeles
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ex-Hacienda Antigua Los Ángeles';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ex-hacienda-antigua-los-angeles';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ex-Hacienda Antigua Los Ángeles en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -103,9 +103,9 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 25.00,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 10.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.50,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.50
                 )
             )
@@ -124,6 +124,15 @@ class ExHaciendaAntiguaLosAngeles extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.401246209066
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ExHaciendaAntiguaLosAngeles
 

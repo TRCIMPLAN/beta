@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Jacobo Meyer
+ * TrcIMPLAN Sitio Web - IBCTorreon JacoboMeyer
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Jacobo Meyer';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'jacobo-meyer';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Jacobo Meyer en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,13 +99,13 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 15,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 46.67,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Salud',
                     'Segunda actividad porcentaje' => 13.33,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.33,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.33,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Manejo de Residuos',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )
@@ -124,6 +124,15 @@ class JacoboMeyer extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.482082455014
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase JacoboMeyer
 

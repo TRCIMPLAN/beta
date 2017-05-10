@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Los Viñedos
+ * TrcIMPLAN Sitio Web - IBCTorreon LosVinedos
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Los Viñedos';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'los-vinedos';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Los Viñedos en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,13 +99,13 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 52,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 21.15,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 19.23,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 19.23,
                     'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 11.54,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )
@@ -124,6 +124,15 @@ class LosVinedos extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.384213296435
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase LosVinedos
 

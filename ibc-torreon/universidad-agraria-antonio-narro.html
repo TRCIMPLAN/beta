@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Universidad Agraria Antonio Narro en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Universidad Agraria Antonio Narro - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Universidad Agraria Antonio Narro en Torreón, Coahuila de Zaragoza, México.">
@@ -363,15 +363,15 @@ La cantidad de Hogares es cero.
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>3° Educativos</td>
+        <td>3° Comercio Mayoreo</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>4° Comercio Mayoreo</td>
+        <td>4° Otros servicios, excepto Gobierno</td>
         <td class="derecha">9.09 %</td>
       </tr>
       <tr>
-        <td>5° Otros servicios, excepto Gobierno</td>
+        <td>5° Educativos</td>
         <td class="derecha">9.09 %</td>
       </tr>
     </tbody>
@@ -427,6 +427,9 @@ La cantidad de Hogares es cero.
     </div>
     <div id="GraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasViviendas">
       <div class="panel-body">
+<div class="alert alert-warning">
+La cantidad de Hogares es cero.
+</div>
 <div class="alert alert-warning">
 La cantidad de Hogares es cero.
 </div>
@@ -649,9 +652,9 @@ La cantidad de Hogares es cero.
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Preparación de Alimentos y Bebidas', 63.64, '#59C38E', '63.64 %'],
               ['2° Profesionales, Científicos, Técnicos', 9.09, '#8EC359', '9.09 %'],
-              ['3° Educativos', 9.09, '#C38E59', '9.09 %'],
-              ['4° Comercio Mayoreo', 9.09, '#80C0FF', '9.09 %'],
-              ['5° Otros servicios, excepto Gobierno', 9.09, '#59BFC3', '9.09 %']
+              ['3° Comercio Mayoreo', 9.09, '#C38E59', '9.09 %'],
+              ['4° Otros servicios, excepto Gobierno', 9.09, '#80C0FF', '9.09 %'],
+              ['5° Educativos', 9.09, '#59BFC3', '9.09 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

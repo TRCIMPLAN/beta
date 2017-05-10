@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN IBCBase - PublicacionWeb
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -86,6 +86,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this), TRUE); // Lengüeta activa
         $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
+        $this->lenguetas->agregar('Resena',   new SeccionResenaWeb($this));
         // Crear contenido con una instancia de SchemaDataset
         $this->contenido = new \Base\SchemaDataset();
     } // validar

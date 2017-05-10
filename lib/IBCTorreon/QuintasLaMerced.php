@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Quintas La Merced
+ * TrcIMPLAN Sitio Web - IBCTorreon QuintasLaMerced
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Quintas La Merced';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'quintas-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Quintas La Merced en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,9 +99,9 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 5,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 60.00,
-                    'Segunda actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
+                    'Segunda actividad nombre' => 'Salud',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Salud',
+                    'Tercera actividad nombre' => 'Esparcimiento, Culturales, Deportivos',
                     'Tercera actividad porcentaje' => 20.00
                 )
             )
@@ -120,6 +120,15 @@ class QuintasLaMerced extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.38829586262
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase QuintasLaMerced
 

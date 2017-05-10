@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Rastro Municipal en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Rastro Municipal - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Rastro Municipal en Torreón, Coahuila de Zaragoza, México.">
@@ -277,11 +277,11 @@ La cantidad de Hogares es cero.
         <td class="derecha">50.00 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Comercio Menudeo</td>
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
-        <td>3° Comercio Menudeo</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">25.00 %</td>
       </tr>
       <tr>
@@ -314,6 +314,9 @@ La cantidad de Hogares es cero.
 <div class="alert alert-warning">
 La Población Total es cero.
 </div>
+<div class="alert alert-warning">
+La Población Total es cero.
+</div>
       </div>
     </div>
   </div>
@@ -330,6 +333,9 @@ La Población Total es cero.
 <div class="alert alert-warning">
 Rastro Municipal sin datos sobre Características Económicas.
 </div>
+<div class="alert alert-warning">
+Rastro Municipal sin datos sobre Características Económicas.
+</div>
       </div>
     </div>
   </div>
@@ -343,6 +349,9 @@ Rastro Municipal sin datos sobre Características Económicas.
     </div>
     <div id="GraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasViviendas">
       <div class="panel-body">
+<div class="alert alert-warning">
+La cantidad de Hogares es cero.
+</div>
 <div class="alert alert-warning">
 La cantidad de Hogares es cero.
 </div>
@@ -430,8 +439,8 @@ La cantidad de Hogares es cero.
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Transportes, Correo, Almacenamiento', 50, '#59C38E', '50 %'],
-              ['2° Industria Manufacturera', 25, '#8EC359', '25 %'],
-              ['3° Comercio Menudeo', 25, '#C38E59', '25 %']
+              ['2° Comercio Menudeo', 25, '#8EC359', '25 %'],
+              ['3° Industria Manufacturera', 25, '#C38E59', '25 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

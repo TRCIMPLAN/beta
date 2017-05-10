@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Las Estrellas - El Pensador
+ * TrcIMPLAN Sitio Web - IBCTorreon LasEstrellasElPensador
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Las Estrellas - El Pensador';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'las-estrellas-el-pensador';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Las Estrellas - El Pensador en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,9 +99,9 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 10,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 10.00
@@ -122,6 +122,15 @@ class LasEstrellasElPensador extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.379066988253
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase LasEstrellasElPensador
 

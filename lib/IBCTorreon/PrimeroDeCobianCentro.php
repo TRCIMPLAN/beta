@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Primero de Cobián (Centro)
+ * TrcIMPLAN Sitio Web - IBCTorreon PrimeroDeCobianCentro
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Primero de Cobián (Centro)';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-05-10T09:37:40';
         // El nombre del archivo a crear
         $this->archivo     = 'primero-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Primero de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -124,6 +124,29 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.452499528712
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return <<<FINAL
+### Historia
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+
+### Carcaterísticas
+
+Corresponde a las manzanas colindantes a la **Plaza de Armas**, originalmente llamada "Plaza del 2 de Abril". Esta zona se ha desempeñado como el centro financiero, comercial y de servicios [más importante de la ciudad](http://www.torreon.gob.mx/).
+
+Actualmente, conserva edificios con valor histórico-patrimonial de distintas épocas. A su vez, sufrió la demolición de edificios como el Cine Princesa (actual estacionamiento).
+FINAL;
+    } // resena
 
 } // Clase PrimeroDeCobianCentro
 

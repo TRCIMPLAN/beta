@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Villas Centenario en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Villas Centenario - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Villas Centenario en Torreón, Coahuila de Zaragoza, México.">
@@ -394,11 +394,11 @@
         <td class="derecha">61.54 %</td>
       </tr>
       <tr>
-        <td>2° Preparación de Alimentos y Bebidas</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">15.38 %</td>
       </tr>
       <tr>
-        <td>3° Otros servicios, excepto Gobierno</td>
+        <td>3° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">15.38 %</td>
       </tr>
       <tr>
@@ -705,8 +705,8 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 61.54, '#59C38E', '61.54 %'],
-              ['2° Preparación de Alimentos y Bebidas', 15.38, '#8EC359', '15.38 %'],
-              ['3° Otros servicios, excepto Gobierno', 15.38, '#C38E59', '15.38 %'],
+              ['2° Otros servicios, excepto Gobierno', 15.38, '#8EC359', '15.38 %'],
+              ['3° Preparación de Alimentos y Bebidas', 15.38, '#C38E59', '15.38 %'],
               ['4° Profesionales, Científicos, Técnicos', 7.69, '#80C0FF', '7.69 %']
           ]);
           var options = {

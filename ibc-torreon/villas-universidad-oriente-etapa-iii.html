@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Villas Universidad Oriente Etapa III en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Villas Universidad Oriente Etapa III - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Villas Universidad Oriente Etapa III en Torreón, Coahuila de Zaragoza, México.">
@@ -394,19 +394,19 @@
         <td class="derecha">40.00 %</td>
       </tr>
       <tr>
-        <td>2° Educativos</td>
+        <td>2° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>3° Preparación de Alimentos y Bebidas</td>
+        <td>3° Educativos</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>4° Industria Manufacturera</td>
+        <td>4° Otros servicios, excepto Gobierno</td>
         <td class="derecha">8.00 %</td>
       </tr>
       <tr>
-        <td>5° Otros servicios, excepto Gobierno</td>
+        <td>5° Industria Manufacturera</td>
         <td class="derecha">8.00 %</td>
       </tr>
     </tbody>
@@ -705,10 +705,10 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 40, '#59C38E', '40 %'],
-              ['2° Educativos', 20, '#8EC359', '20 %'],
-              ['3° Preparación de Alimentos y Bebidas', 20, '#C38E59', '20 %'],
-              ['4° Industria Manufacturera', 8, '#80C0FF', '8 %'],
-              ['5° Otros servicios, excepto Gobierno', 8, '#59BFC3', '8 %']
+              ['2° Preparación de Alimentos y Bebidas', 20, '#8EC359', '20 %'],
+              ['3° Educativos', 20, '#C38E59', '20 %'],
+              ['4° Otros servicios, excepto Gobierno', 8, '#80C0FF', '8 %'],
+              ['5° Industria Manufacturera', 8, '#59BFC3', '8 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

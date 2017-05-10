@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Residencial Florida Blanca en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Residencial Florida Blanca - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Residencial Florida Blanca en Torreón, Coahuila de Zaragoza, México.">
@@ -394,7 +394,7 @@
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>2° Educativos</td>
+        <td>2° Manejo de Residuos</td>
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
@@ -406,7 +406,7 @@
         <td class="derecha">20.00 %</td>
       </tr>
       <tr>
-        <td>5° Manejo de Residuos</td>
+        <td>5° Educativos</td>
         <td class="derecha">20.00 %</td>
       </tr>
     </tbody>
@@ -705,10 +705,10 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Profesionales, Científicos, Técnicos', 20, '#59C38E', '20 %'],
-              ['2° Educativos', 20, '#8EC359', '20 %'],
+              ['2° Manejo de Residuos', 20, '#8EC359', '20 %'],
               ['3° Comercio Menudeo', 20, '#C38E59', '20 %'],
               ['4° Otros servicios, excepto Gobierno', 20, '#80C0FF', '20 %'],
-              ['5° Manejo de Residuos', 20, '#59BFC3', '20 %']
+              ['5° Educativos', 20, '#59BFC3', '20 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

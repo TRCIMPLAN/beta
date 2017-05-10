@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Villas Universidad Oriente Etapa II
+ * TrcIMPLAN Sitio Web - IBCTorreon VillasUniversidadOrienteEtapaIi
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Universidad Oriente Etapa II';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'villas-universidad-oriente-etapa-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Villas Universidad Oriente Etapa II en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,9 +99,9 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 11,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 63.64,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 18.18
                 )
             )
@@ -120,6 +120,15 @@ class VillasUniversidadOrienteEtapaIi extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.317769477547
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase VillasUniversidadOrienteEtapaIi
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón El Roble II
+ * TrcIMPLAN Sitio Web - IBCTorreon ElRobleIi
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'El Roble II';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'el-roble-ii';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia El Roble II en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -103,9 +103,9 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 17.86,
                     'Tercera actividad nombre' => 'Comercio Menudeo',
                     'Tercera actividad porcentaje' => 10.71,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )
@@ -124,6 +124,15 @@ class ElRobleIi extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.445058598754
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ElRobleIi
 

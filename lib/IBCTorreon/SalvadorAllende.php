@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Salvador Allende
+ * TrcIMPLAN Sitio Web - IBCTorreon SalvadorAllende
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Salvador Allende';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'salvador-allende';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Salvador Allende en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -103,9 +103,9 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 22.35,
                     'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 14.12,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
                     'Cuarta actividad porcentaje' => 7.06,
-                    'Quinta actividad nombre' => 'Comercio Mayoreo',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 7.06
                 )
             )
@@ -124,6 +124,15 @@ class SalvadorAllende extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.400593501967
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase SalvadorAllende
 

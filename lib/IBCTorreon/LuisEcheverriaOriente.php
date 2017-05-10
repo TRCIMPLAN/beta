@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Luis Echeverría Oriente
+ * TrcIMPLAN Sitio Web - IBCTorreon LuisEcheverriaOriente
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Echeverría Oriente';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'luis-echeverria-oriente';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Luis Echeverría Oriente en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -103,9 +103,9 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 14.81,
                     'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 12.96,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 11.11,
-                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 11.11
                 )
             )
@@ -124,6 +124,15 @@ class LuisEcheverriaOriente extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.439873935976
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase LuisEcheverriaOriente
 

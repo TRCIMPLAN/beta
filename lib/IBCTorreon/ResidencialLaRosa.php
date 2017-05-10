@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Residencial La Rosa
+ * TrcIMPLAN Sitio Web - IBCTorreon ResidencialLaRosa
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial La Rosa';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'residencial-la-rosa';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Residencial La Rosa en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 30.43,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 26.09,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Manejo de Residuos',
                     'Tercera actividad porcentaje' => 13.04,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Comercio Menudeo',
                     'Cuarta actividad porcentaje' => 13.04,
                     'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 8.70
@@ -124,6 +124,15 @@ class ResidencialLaRosa extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.397317116101
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ResidencialLaRosa
 

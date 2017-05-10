@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Torreón 2000
+ * TrcIMPLAN Sitio Web - IBCTorreon Torreon2000
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Torreón 2000';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'torreon-2000';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Torreón 2000 en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,11 +99,11 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 9,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 66.67,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Manejo de Residuos',
                     'Segunda actividad porcentaje' => 11.11,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.11,
-                    'Cuarta actividad nombre' => 'Manejo de Residuos',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 11.11
                 )
             )
@@ -122,6 +122,15 @@ class Torreon2000 extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.392432063985
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase Torreon2000
 

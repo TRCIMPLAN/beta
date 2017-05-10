@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Residencial del Valle en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Residencial del Valle - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Residencial del Valle en Torreón, Coahuila de Zaragoza, México.">
@@ -394,19 +394,19 @@
         <td class="derecha">35.00 %</td>
       </tr>
       <tr>
-        <td>2° Industria Manufacturera</td>
+        <td>2° Manejo de Residuos</td>
         <td class="derecha">15.00 %</td>
       </tr>
       <tr>
-        <td>3° Manejo de Residuos</td>
+        <td>3° Industria Manufacturera</td>
         <td class="derecha">15.00 %</td>
       </tr>
       <tr>
-        <td>4° Preparación de Alimentos y Bebidas</td>
+        <td>4° Comercio Mayoreo</td>
         <td class="derecha">10.00 %</td>
       </tr>
       <tr>
-        <td>5° Comercio Mayoreo</td>
+        <td>5° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">10.00 %</td>
       </tr>
     </tbody>
@@ -705,10 +705,10 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 35, '#59C38E', '35 %'],
-              ['2° Industria Manufacturera', 15, '#8EC359', '15 %'],
-              ['3° Manejo de Residuos', 15, '#C38E59', '15 %'],
-              ['4° Preparación de Alimentos y Bebidas', 10, '#80C0FF', '10 %'],
-              ['5° Comercio Mayoreo', 10, '#59BFC3', '10 %']
+              ['2° Manejo de Residuos', 15, '#8EC359', '15 %'],
+              ['3° Industria Manufacturera', 15, '#C38E59', '15 %'],
+              ['4° Comercio Mayoreo', 10, '#80C0FF', '10 %'],
+              ['5° Preparación de Alimentos y Bebidas', 10, '#59BFC3', '10 %']
           ]);
           var options = {
             chartArea: { width: '60%' },

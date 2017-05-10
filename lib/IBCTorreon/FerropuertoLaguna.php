@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ferropuerto Laguna
+ * TrcIMPLAN Sitio Web - IBCTorreon FerropuertoLaguna
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ferropuerto Laguna';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ferropuerto-laguna';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ferropuerto Laguna en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -76,7 +76,7 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 21.74,
                     'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 13.04,
-                    'Cuarta actividad nombre' => 'Transportes, Correo, Almacenamiento',
+                    'Cuarta actividad nombre' => 'Manejo de Residuos',
                     'Cuarta actividad porcentaje' => 4.35,
                     'Quinta actividad nombre' => 'Comercio Menudeo',
                     'Quinta actividad porcentaje' => 4.35
@@ -97,6 +97,15 @@ class FerropuertoLaguna extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.363444216999
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase FerropuertoLaguna
 

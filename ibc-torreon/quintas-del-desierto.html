@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Quintas del Desierto en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia">
+  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Quintas del Desierto - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Quintas del Desierto en Torreón, Coahuila de Zaragoza, México.">
@@ -273,11 +273,11 @@ La cantidad de Hogares es cero.
         <td class="derecha">7</td>
       </tr>
       <tr>
-        <td>1° Preparación de Alimentos y Bebidas</td>
+        <td>1° Comercio Mayoreo</td>
         <td class="derecha">28.57 %</td>
       </tr>
       <tr>
-        <td>2° Comercio Mayoreo</td>
+        <td>2° Preparación de Alimentos y Bebidas</td>
         <td class="derecha">28.57 %</td>
       </tr>
       <tr>
@@ -314,6 +314,9 @@ La cantidad de Hogares es cero.
 <div class="alert alert-warning">
 La Población Total es cero.
 </div>
+<div class="alert alert-warning">
+La Población Total es cero.
+</div>
       </div>
     </div>
   </div>
@@ -330,6 +333,9 @@ La Población Total es cero.
 <div class="alert alert-warning">
 Quintas del Desierto sin datos sobre Características Económicas.
 </div>
+<div class="alert alert-warning">
+Quintas del Desierto sin datos sobre Características Económicas.
+</div>
       </div>
     </div>
   </div>
@@ -343,6 +349,9 @@ Quintas del Desierto sin datos sobre Características Económicas.
     </div>
     <div id="GraficasViviendas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cabeceraGraficasViviendas">
       <div class="panel-body">
+<div class="alert alert-warning">
+La cantidad de Hogares es cero.
+</div>
 <div class="alert alert-warning">
 La cantidad de Hogares es cero.
 </div>
@@ -429,8 +438,8 @@ La cantidad de Hogares es cero.
       function elaborarGraficaUniEco() {
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
-              ['1° Preparación de Alimentos y Bebidas', 28.57, '#59C38E', '28.57 %'],
-              ['2° Comercio Mayoreo', 28.57, '#8EC359', '28.57 %'],
+              ['1° Comercio Mayoreo', 28.57, '#59C38E', '28.57 %'],
+              ['2° Preparación de Alimentos y Bebidas', 28.57, '#8EC359', '28.57 %'],
               ['3° Construcción', 14.29, '#C38E59', '14.29 %'],
               ['4° Transportes, Correo, Almacenamiento', 14.29, '#80C0FF', '14.29 %'],
               ['5° Otros servicios, excepto Gobierno', 14.29, '#59BFC3', '14.29 %']

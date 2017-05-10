@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Rincón San Ángel
+ * TrcIMPLAN Sitio Web - IBCTorreon RinconSanAngel
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincón San Ángel';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'rincon-san-angel';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Rincón San Ángel en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,11 +101,11 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.00,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 8.00,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 8.00,
-                    'Quinta actividad nombre' => 'Inmobiliarios',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )
@@ -124,6 +124,15 @@ class RinconSanAngel extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.404965483009
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase RinconSanAngel
 

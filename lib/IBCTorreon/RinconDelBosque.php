@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Rincón del Bosque
+ * TrcIMPLAN Sitio Web - IBCTorreon RinconDelBosque
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Rincón del Bosque';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'rincon-del-bosque';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Rincón del Bosque en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 36.36,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 30.30,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Comercio Mayoreo',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Comercio Mayoreo',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 6.06
@@ -124,6 +124,15 @@ class RinconDelBosque extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.361662726939
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase RinconDelBosque
 

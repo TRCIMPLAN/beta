@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Narciso Mendoza
+ * TrcIMPLAN Sitio Web - IBCTorreon NarcisoMendoza
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Narciso Mendoza';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'narciso-mendoza';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Narciso Mendoza en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,9 +99,9 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 33,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 54.55,
-                    'Segunda actividad nombre' => 'Industria Manufacturera',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 15.15,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Industria Manufacturera',
                     'Tercera actividad porcentaje' => 15.15,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 9.09,
@@ -124,6 +124,15 @@ class NarcisoMendoza extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.427286016373
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase NarcisoMendoza
 

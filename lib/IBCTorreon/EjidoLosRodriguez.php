@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ejido Los Rodríguez
+ * TrcIMPLAN Sitio Web - IBCTorreon EjidoLosRodriguez
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido Los Rodríguez';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ejido-los-rodriguez';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ejido Los Rodríguez en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -97,9 +97,9 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 2,
-                    'Primer actividad nombre' => 'Educativos',
+                    'Primer actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 50.00
                 )
             )
@@ -118,6 +118,15 @@ class EjidoLosRodriguez extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.393362551843
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase EjidoLosRodriguez
 

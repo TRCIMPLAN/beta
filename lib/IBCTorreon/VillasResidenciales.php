@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Villas Residenciales
+ * TrcIMPLAN Sitio Web - IBCTorreon VillasResidenciales
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villas Residenciales';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'villas-residenciales';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Villas Residenciales en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,13 +99,13 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 12,
                     'Primer actividad nombre' => 'Manejo de Residuos',
                     'Primer actividad porcentaje' => 25.00,
-                    'Segunda actividad nombre' => 'Educativos',
+                    'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 16.67,
-                    'Tercera actividad nombre' => 'Comercio Menudeo',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 16.67,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Cuarta actividad porcentaje' => 8.33,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Quinta actividad porcentaje' => 8.33
                 )
             )
@@ -124,6 +124,15 @@ class VillasResidenciales extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.397605346064
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase VillasResidenciales
 

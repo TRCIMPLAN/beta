@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Luis Donaldo Colosio
+ * TrcIMPLAN Sitio Web - IBCTorreon LuisDonaldoColosio
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Luis Donaldo Colosio';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'luis-donaldo-colosio';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Luis Donaldo Colosio en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -105,7 +105,7 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 8.16,
                     'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 6.12,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Comercio Mayoreo',
                     'Quinta actividad porcentaje' => 4.08
                 )
             )
@@ -124,6 +124,15 @@ class LuisDonaldoColosio extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.38657078674
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase LuisDonaldoColosio
 

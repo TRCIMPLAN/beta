@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN IBCBase - LenguetasWeb
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,9 +48,12 @@ class LenguetasWeb implements SalidaWeb {
      * @param boolean Verdadero si es la pestaña activa, falso si no
      */
     public function agregar($etiqueta, $contenido, $es_activa = FALSE) {
-        $this->elementos[$etiqueta] = new LenguetaWeb($this->identificador, $etiqueta, $contenido);
-        if ($es_activa) {
-            $this->elemento_activo = $etiqueta; // Conserva sólo la última lengüeta agregada como activa
+        // Sólo si SÍ tiene contenido se agrega, por ejemplo, para que no ponga la reseña si no la hay
+        if ($contenido->html() != '') {
+            $this->elementos[$etiqueta] = new LenguetaWeb($this->identificador, $etiqueta, $contenido);
+            if ($es_activa) {
+                $this->elemento_activo = $etiqueta;
+            }
         }
     } // agregar
 

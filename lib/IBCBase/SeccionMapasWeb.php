@@ -2,7 +2,7 @@
 /**
  * TrcIMPLAN IBCBase - SeccionMapasWeb
  *
- * Copyright (C) 2016 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,10 +27,10 @@ namespace IBCBase;
  */
 class SeccionMapasWeb implements SalidaWeb {
 
-    protected $publicacion_ficha;    // Instancia de PublicacionWeb, para obtener los datos
-    protected $mapas;                // Instancia de GeoLimitesMapaWeb
-    protected $preparado    = FALSE; // Bandera
-    const     IDENTIFICADOR = 'Mapas';
+    protected $publicacion_ficha;           // Instancia de PublicacionWeb
+    protected $mapas;                       // Instancia de GeoLimitesMapaWeb
+    protected $preparado         = FALSE;   // Bandera
+    const     IDENTIFICADOR      = 'Mapas'; // ID único en la página web
 
     /**
      * Constructor

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Residencial Las Villas
+ * TrcIMPLAN Sitio Web - IBCTorreon ResidencialLasVillas
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Residencial Las Villas';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'residencial-las-villas';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Residencial Las Villas en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -99,9 +99,9 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 4,
                     'Primer actividad nombre' => 'Manejo de Residuos',
                     'Primer actividad porcentaje' => 50.00,
-                    'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Segunda actividad nombre' => 'Inmobiliarios',
                     'Segunda actividad porcentaje' => 25.00,
-                    'Tercera actividad nombre' => 'Inmobiliarios',
+                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Tercera actividad porcentaje' => 25.00
                 )
             )
@@ -120,6 +120,15 @@ class ResidencialLasVillas extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.405552943669
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase ResidencialLasVillas
 

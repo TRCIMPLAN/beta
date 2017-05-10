@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Villa Romana
+ * TrcIMPLAN Sitio Web - IBCTorreon VillaRomana
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Villa Romana';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'villa-romana';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Villa Romana en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -97,11 +97,11 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
             'Unidades Económicas' => array(
                 '2010' => array(
                     'Total Actividades Económicas' => 3,
-                    'Primer actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Comercio Menudeo',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 33.33,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 33.33
                 )
             )
@@ -120,6 +120,15 @@ class VillaRomana extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.417100990332
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase VillaRomana
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - IBC Torreón Ejido La Concha
+ * TrcIMPLAN Sitio Web - IBCTorreon EjidoLaConcha
  *
- * Copyright (C) 2017 Guillermo Valdés Lozano
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,12 +34,12 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre      = 'Ejido La Concha';
         $this->autor       = 'Dirección de Investigación Estratégica';
-        $this->fecha       = '2017-01-18 14:53:48';
+        $this->fecha       = '2017-01-19T11:04:26';
         // El nombre del archivo a crear
         $this->archivo     = 'ejido-la-concha';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion = 'Colonia Ejido La Concha en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia';
+        $this->claves      = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
         // El directorio en la raíz donde se guardará el archivo HTML
         $this->directorio  = 'ibc-torreon';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
@@ -101,9 +101,9 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 48.31,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.61,
-                    'Tercera actividad nombre' => 'Industria Manufacturera',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 7.87,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 7.87,
                     'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.62
@@ -124,6 +124,15 @@ class EjidoLaConcha extends \IBCBase\PublicacionWeb {
             'Centro longitud' => -103.377356881204
         );
     } // mapas
+
+    /**
+     * Reseña
+     *
+     * @return string
+     */
+    public function resena() {
+        return '';
+    } // resena
 
 } // Clase EjidoLaConcha
 
