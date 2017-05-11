@@ -39,7 +39,7 @@ class NavegacionConfig {
             'Indicadores > Datos Abiertos'                             => 'smi/datos-abiertos.html'),
         'Indicadores Básicos por Colonias' => array(
             'Indicadores Básicos por Colonias > Introducción al IBC'   => 'ibc/introduccion.html',
-            'Indicadores Básicos por Colonias > Colonias de Torreón'   => 'ibc-torreon/index.html',
+            'Indicadores Básicos por Colonias > Colonias de Torreón'   => 'ibc-colonias-torreon/index.html',
             'Indicadores Básicos por Colonias > Catálogo de Conceptos' => 'ibc/catalogo-conceptos.html',
             'Indicadores Básicos por Colonias > Datos Abiertos'        => 'ibc/datos-abiertos.html'),
         'Información Geográfica' => array(

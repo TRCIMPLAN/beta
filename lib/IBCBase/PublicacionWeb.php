@@ -86,7 +86,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this), TRUE); // Lengüeta activa
         $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
-        $this->lenguetas->agregar('Resena',   new SeccionResenaWeb($this));
+        $this->lenguetas->agregar('Reseña',   new SeccionResenaWeb($this));
         // Crear contenido con una instancia de SchemaDataset
         $this->contenido = new \Base\SchemaDataset();
     } // validar

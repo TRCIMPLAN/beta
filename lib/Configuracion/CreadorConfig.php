@@ -47,7 +47,7 @@ class CreadorConfig {
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
             '\\IBC\\Imprenta',
-            '\\IBCTorreon\\Imprenta',
+            '\\IBCColoniasTorreon\\Imprenta',
             '\\Institucional\\Imprenta',
             '\\Investigaciones\\Imprenta',
             '\\PET\\Imprenta',
