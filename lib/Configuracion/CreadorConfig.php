@@ -93,10 +93,10 @@ class CreadorConfig {
             '\\SalaPrensa\\Imprenta',
             '\\SIGMapasTorreon\\Imprenta');
         */
-    //  $this->imprentas_json           = array(
-    //      '\\IBCTorreon\\ImprentaJSONs');
-    //  $this->imprentas_csv            = array(
-    //      '\\IBCTorreon\\ImprentaCSV');
+        $this->imprentas_json           = array(
+            '\\IBCColoniasTorreon\\ImprentaJSONs');
+        $this->imprentas_csv            = array(
+            '\\IBCColoniasTorreon\\ImprentaCSV');
     } // constructor
 
 } // Clase CreadorConfig
