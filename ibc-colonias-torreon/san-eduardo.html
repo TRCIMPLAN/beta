@@ -530,7 +530,7 @@
         var capa_colonias = layers[1];
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibctorreon_limites_2016_11_23b WHERE nombre = 'San Eduardo'");
+        sub_capa.setSQL("SELECT * FROM ibccoloniastorreon20170515 WHERE nombre = 'San Eduardo'");
       })
       .error(function(err) {
         console.log(err);
