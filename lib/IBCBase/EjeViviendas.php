@@ -75,16 +75,12 @@ abstract class EjeViviendas extends Eje {
                 case 'Ocupación por Vivienda':
                     return number_format($this->viviendas[$nombre], 2, ".", ","); // Decimal
                     break;
-                case 'Hogares Jefatura masculina':
-                case 'Hogares Jefatura femenina':
                 case 'Viviendas con Electricidad':
                 case 'Viviendas con Agua':
                 case 'Viviendas con Drenaje':
                 case 'Viviendas con Televisión':
                 case 'Viviendas con Automóvil':
                 case 'Viviendas con Computadora':
-                case 'Viviendas con Celular':
-                case 'Viviendas con Internet':
                     return number_format($this->viviendas[$nombre], 2, ".", ",")." %"; // Porcentaje
                     break;
                 default:

@@ -49,9 +49,12 @@ class SeccionResenaWeb implements SalidaWeb {
             if ($this->publicacion_ficha->resena() == '') {
                 $this->resena_html = '';
             } else {
-                $this->resena_html = \Michelf\MarkdownExtra::defaultTransform($this->publicacion_ficha->resena());
+                // Convertir markdown a HTML, poner clases en tablas y poner clases en imágenes
+                $primero           = \Michelf\MarkdownExtra::defaultTransform($this->publicacion_ficha->resena());
+                $segundo           = str_replace('<table>', '<table class="table table-hover table-bordered">', $primero);
+                $this->resena_html = str_replace('<img src="', '<img class="img-responsive" src="', $segundo);
             }
-            $this->preparado   = TRUE;
+            $this->preparado = TRUE;
         }
     } // preparar
 

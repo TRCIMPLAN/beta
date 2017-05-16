@@ -27,12 +27,12 @@ namespace IBCBase;
  */
 class ImprentaJSONs extends \Base\Imprenta {
 
-    public    $directorio;               // Texto, nombre del directorio en raíz donde se guardarán los archivos
-    public    $publicaciones_directorio; // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
-    protected $archivo_ruta;             // Texto opcional, ruta al archivo index
-    protected $recolector;               // Instancia de \Base\Recolector
-    public    $contador = 0;             // Entero, cantidad de publicaciones producidas
-    protected $indice   = array();       // Arreglo asociativo con los nombres y rutas
+    public    $directorio;                                    // Texto, nombre del directorio en raíz donde se guardarán los archivos
+    public    $publicaciones_directorio;                      // Texto, nombre del directorio dentro de lib que contiene los archivos con las publicaciones
+    protected $archivo_ruta;                                  // Texto opcional, ruta al archivo index
+    protected $recolector;                                    // Instancia de \Base\Recolector
+    public    $contador = 0;                                  // Entero, cantidad de publicaciones producidas
+    protected $indice   = array();                            // Arreglo asociativo con los nombres y rutas
     const     SITIO_URL = 'http://www.trcimplan.gob.mx/beta'; // Sin diagonal al final
 
     /**
@@ -119,7 +119,15 @@ class ImprentaJSONs extends \Base\Imprenta {
         // Bucle en las publicaciones
         foreach ($this->recolector->obtener_publicaciones() as $publicacion) {
             // Determinar la ruta al archivo a crear
-            $archivo_ruta = sprintf('%s/%s.json', $publicacion->directorio, $publicacion->archivo);
+            if ($publicacion->directorio != '') {
+                $dir = $publicacion->directorio;
+            } else {
+                $dir = $this->directorio;
+            }
+            if (!is_dir($dir)) {
+                throw new \Exception("Error en ImprentaJSONs: No existe el directorio de destino $dir");
+            }
+            $archivo_ruta = sprintf('%s/%s.json', $dir, $publicacion->archivo);
             // Elaborar contenido
             $json = $this->elaborar_json($publicacion);
             // Si hay contenido se crea el archivo, de lo contrario se elimina

@@ -42,12 +42,7 @@ class ImprentaCSV extends \Base\Imprenta {
             'Porcentaje de población de 65 y más años',
             'Porcentaje de población no especificada',
             'Fecundidad promedio',
-            'Porcentaje de población nacida en otro estado',
             'Porcentaje de población con discapacidad'),
-        'Educación' => array(
-            'Grado Promedio de Escolaridad',
-            'Grado Promedio de Escolaridad masculina',
-            'Grado Promedio de Escolaridad femenina'),
         'Características Económicas' => array(
             'Población Económicamente Activa',
             'Población Económicamente Activa masculina',
@@ -59,17 +54,13 @@ class ImprentaCSV extends \Base\Imprenta {
             'Derechohabiencia'),
         'Viviendas' => array(
             'Hogares',
-            'Hogares Jefatura masculina',
-            'Hogares Jefatura femenina',
             'Ocupación por Vivienda',
             'Viviendas con Electricidad',
             'Viviendas con Agua',
             'Viviendas con Drenaje',
             'Viviendas con Televisión',
             'Viviendas con Automóvil',
-            'Viviendas con Computadora',
-            'Viviendas con Celular',
-            'Viviendas con Internet'),
+            'Viviendas con Computadora'),
         'Unidades Económicas' => array(
             'Total Actividades Económicas',
             'Primer actividad nombre',
