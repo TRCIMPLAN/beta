@@ -70,8 +70,8 @@ class PlantillaConfig {
         // Vínculos Javascript a archivos locales o URLs remotas
         $this->vinculos_js    = array();
     //~ $this->vinculos_js[]  = 'vendor/jquery/jquery.min.js';                                               // jQuery
-        $this->vinculos_js[]  = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js';          // jQuery externo
     //~ $this->vinculos_js[]  = 'vendor/bootstrap/js/bootstrap.min.js';                                      // Bootstrap
+        $this->vinculos_js[]  = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js';          // jQuery externo
         $this->vinculos_js[]  = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';       // Bootstrap externo
         $this->vinculos_js[]  = 'vendor/metisMenu/metisMenu.min.js';                                         // Metis menu
         $this->vinculos_js[]  = 'vendor/datatables/js/jquery.dataTables.min.js';                             // DataTables
@@ -114,7 +114,7 @@ class PlantillaConfig {
      =================================================================================================== -->
 FINAL;
         // Google Analytics
-        //~ $this->google_analytics = '';
+    //~ $this->google_analytics = '';
     } // constructor
 
 } // Clase PlantillaConfig
