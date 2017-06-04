@@ -36,14 +36,14 @@ class LaMina extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'La Mina';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'la-mina';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia La Mina en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, La Mina';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,11 +100,11 @@ class LaMina extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 40.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 16.00,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 8.00,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 8.00,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.00
                 )
             )

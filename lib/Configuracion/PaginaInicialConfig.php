@@ -81,8 +81,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $smi->botones     = array(
             '<i class="fa fa-th-list"></i> Por Categoría'        => 'indicadores-categorias/index.html',
             '<i class="fa fa-table"></i> Por Región'             => 'smi/por-region.html',
-            '<i class="fa fa-map-marker"></i> Georreferenciados' => 'smi-georreferenciados/index.html',
-            '<i class="fa fa-puzzle-piece"></i> IBCTorreón'      => 'https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map');
+            '<i class="fa fa-map-marker"></i> Georreferenciados' => 'smi-georreferenciados/index.html');
         // SIG
         $sig              = new \PaginaInicial\Destacado();
         $sig->name        = 'Sistema de Información Geográfica';
@@ -93,15 +92,17 @@ class PaginaInicialConfig extends \Base\Plantilla {
             '<i class="fa fa-server"></i> Planes'                      => 'sig-planes/index.html',
             '<i class="fa fa-map-marker"></i> S.I.G. de Torreón'       => 'sig-mapas-torreon/index.html',
             '<i class="fa fa-map-marker"></i> Zonificación Secundaria' => 'sig-mapas-torreon/zonificacion-secundaria.html');
-        // PEM
-        $pem              = new \PaginaInicial\Destacado();
-        $pem->name        = 'Plan Estratégico Torreón';
-        $pem->description = 'Súmate al esfuerzo de planeación participativa para atender la necesidad urgente de elevar el nivel de competitividad de La Laguna.';
-        $pem->image       = 'servicio-pet';
-        $pem->url         = 'pet/indice.html';
-        $pem->botones     = array(
-            '<i class="fa fa-calendar"></i> Descripción del Proceso' => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
+        // PET
+        $pet              = new \PaginaInicial\Destacado();
+        $pet->name        = 'Plan Estratégico Torreón';
+        $pet->description = 'Súmate al esfuerzo de planeación participativa para atender la necesidad urgente de elevar el nivel de competitividad de La Laguna.';
+        $pet->image       = 'servicio-pet';
+        $pet->url         = 'pet/indice.html';
+        $pet->botones     = array(
             '<i class="fa fa-list-ul"></i> Índice General'           => 'pet/indice.html',
+            '<i class="fa fa fa-font"></i> Índice Alfabético'        => 'pet/index.html',
+            '<i class="fa fa-download"></i> Descargar'               => 'plan-estrategico-torreon-enfoque-metropolitano-2040/index.html',
+            '<i class="fa fa-calendar"></i> Descripción del Proceso' => 'plan-estrategico-metropolitano/descripcion-del-proceso.html',
             '<i class="fa fa-check-square"></i> Proyectos'           => 'proyectos/index.html');
         // Acumular sección destacado
         $this->contenido[]  = '  <section id="destacado">';
@@ -113,7 +114,7 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[]  = $sig->html();
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '      <div class="col-sm-6 col-md-4">';
-        $this->contenido[]  = $pem->html();
+        $this->contenido[]  = $pet->html();
         $this->contenido[]  = '      </div>';
         $this->contenido[]  = '    </div>';
         $this->contenido[]  = '  </section>';
@@ -274,7 +275,7 @@ FINAL; */
         $servicios     = new \PaginaInicial\Mapa('SERVICIOS', array(
             'Análisis Publicados'               => 'blog/index.html',
             'Indicadores'                       => 'indicadores-categorias/index.html',
-            'Indicadores Básicos por Colonias'  => 'ibc-torreon/index.html',
+            'Indicadores Básicos de Colonias'   => 'ibc/index.html',
             'Información Geográfica'            => 'sig-mapas-torreon/index.html',
             'Investigaciones'                   => 'investigaciones/index.html',
             'Plan Estratégico Torreón'          => 'pet/indice.html'));

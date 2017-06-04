@@ -36,14 +36,14 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Segundo de Cobián (Centro)';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-05-10T11:56:51';
+        $this->fecha                      = '2017-05-29T20:55:12';
         // El nombre del archivo a crear
         $this->archivo                    = 'segundo-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Segundo de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Segundo de Cobián (Centro)';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -131,15 +131,15 @@ class SegundoDeCobianCentro extends \IBCBase\PublicacionWeb {
      */
     public function resena() {
         return <<<FINAL
-![Fuente El Pensador](segundo-de-cobian-centro/fuente-el-pensador-800x450.jpg) 
+![Fuente El Pensador](segundo-de-cobian-centro/fuente-el-pensador-800x450.jpg)
 
-### Historia 
+### Historia
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. 
+El 10 de Marzo de 1898, la Hacienda de Torreón fue adquirida por Don Feliciano Cobián, quien fue destinando nuevas extensiones de la Hacienda, trazadas al Oriente de Primitivo, para los fraccionamientos, primero, segundo, tercero, cuarto y quinto que llevan su nombre.
 
-### Características
+### Fuente
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+* [Historia de Torreón](http://www.torreonhistoria.galeon.com/aficiones1001256.html)
 FINAL;
     } // resena
 

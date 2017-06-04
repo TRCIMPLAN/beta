@@ -36,14 +36,14 @@ class QuintasLaguna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Quintas Laguna';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'quintas-laguna';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Quintas Laguna en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Quintas Laguna';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -102,9 +102,9 @@ class QuintasLaguna extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 26.32,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 15.79,
-                    'Cuarta actividad nombre' => 'Financieros y Seguros',
+                    'Cuarta actividad nombre' => 'Salud',
                     'Cuarta actividad porcentaje' => 5.26,
-                    'Quinta actividad nombre' => 'Salud',
+                    'Quinta actividad nombre' => 'Financieros y Seguros',
                     'Quinta actividad porcentaje' => 5.26
                 )
             )

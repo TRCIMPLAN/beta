@@ -36,14 +36,14 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Nueva Rosita';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'nueva-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Nueva Rosita en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Nueva Rosita';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -119,8 +119,8 @@ class NuevaRosita extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.5416784864172,
-            'Centro longitud' => -103.473490663773
+            'Centro latitud'  => 25.5416850167135,
+            'Centro longitud' => -103.473477697155
         );
     } // mapas
 

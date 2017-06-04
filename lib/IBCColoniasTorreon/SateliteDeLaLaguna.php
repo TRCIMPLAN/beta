@@ -36,14 +36,14 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Satélite de La Laguna';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'satelite-de-la-laguna';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Satélite de La Laguna en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Satélite de La Laguna';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,9 +100,9 @@ class SateliteDeLaLaguna extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 32.35,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Educativos',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 11.76,
                     'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 8.82

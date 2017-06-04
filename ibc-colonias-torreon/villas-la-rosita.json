@@ -45,11 +45,11 @@
         "Primer actividad porcentaje":15,
         "Segunda actividad nombre":"Preparación de Alimentos y Bebidas",
         "Segunda actividad porcentaje":15,
-        "Tercera actividad nombre":"Manejo de Residuos",
+        "Tercera actividad nombre":"Información Medios Masivos",
         "Tercera actividad porcentaje":10,
-        "Cuarta actividad nombre":"Información Medios Masivos",
+        "Cuarta actividad nombre":"Comercio Menudeo",
         "Cuarta actividad porcentaje":10,
-        "Quinta actividad nombre":"Comercio Menudeo",
+        "Quinta actividad nombre":"Educativos",
         "Quinta actividad porcentaje":10
       }
     }

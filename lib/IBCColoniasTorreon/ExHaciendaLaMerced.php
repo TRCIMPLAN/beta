@@ -36,14 +36,14 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Ex-Hacienda La Merced';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'ex-hacienda-la-merced';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Ex-Hacienda La Merced en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Ex-Hacienda La Merced';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,11 +100,11 @@ class ExHaciendaLaMerced extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 54.55,
                     'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Segunda actividad porcentaje' => 18.18,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Gubernamentales',
                     'Tercera actividad porcentaje' => 9.09,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 9.09,
-                    'Quinta actividad nombre' => 'Gubernamentales',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 9.09
                 )
             )

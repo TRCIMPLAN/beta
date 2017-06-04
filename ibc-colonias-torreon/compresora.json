@@ -45,11 +45,11 @@
         "Primer actividad porcentaje":60,
         "Segunda actividad nombre":"Industria Manufacturera",
         "Segunda actividad porcentaje":20,
-        "Tercera actividad nombre":"Otros servicios, excepto Gobierno",
+        "Tercera actividad nombre":"Educativos",
         "Tercera actividad porcentaje":6.67,
-        "Cuarta actividad nombre":"Esparcimiento, Culturales, Deportivos",
+        "Cuarta actividad nombre":"Otros servicios, excepto Gobierno",
         "Cuarta actividad porcentaje":6.67,
-        "Quinta actividad nombre":"Educativos",
+        "Quinta actividad nombre":"Esparcimiento, Culturales, Deportivos",
         "Quinta actividad porcentaje":6.67
       }
     }

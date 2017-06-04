@@ -36,14 +36,14 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Torreón Jardín';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'torreon-jardin';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Torreón Jardín en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Torreón Jardín';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -102,9 +102,9 @@ class TorreonJardin extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 15.35,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.39,
-                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 10.89,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Quinta actividad porcentaje' => 10.89
                 )
             )

@@ -36,14 +36,14 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Valle Revolución';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'valle-revolucion';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Valle Revolución en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Valle Revolución';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -104,7 +104,7 @@ class ValleRevolucion extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.00,
                     'Cuarta actividad nombre' => 'Industria Manufacturera',
                     'Cuarta actividad porcentaje' => 6.00,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Salud',
                     'Quinta actividad porcentaje' => 4.00
                 )
             )

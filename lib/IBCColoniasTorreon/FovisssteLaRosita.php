@@ -36,14 +36,14 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Fovissste La Rosita';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'fovissste-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Fovissste La Rosita en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Fovissste La Rosita';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -102,9 +102,9 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
                     'Segunda actividad porcentaje' => 23.53,
                     'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 13.73,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Educativos',
                     'Cuarta actividad porcentaje' => 7.84,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.84
                 )
             )
@@ -119,8 +119,8 @@ class FovisssteLaRosita extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.5270181187252,
-            'Centro longitud' => -103.404506382858
+            'Centro latitud'  => 25.5270180006417,
+            'Centro longitud' => -103.40450652547
         );
     } // mapas
 

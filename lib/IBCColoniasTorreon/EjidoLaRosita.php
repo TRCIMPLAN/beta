@@ -36,14 +36,14 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Ejido La Rosita';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'ejido-la-rosita';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Ejido La Rosita en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Ejido La Rosita';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -98,13 +98,13 @@ class EjidoLaRosita extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 15,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 33.33,
-                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 13.33,
-                    'Quinta actividad nombre' => 'Industria Manufacturera',
+                    'Quinta actividad nombre' => 'Gubernamentales',
                     'Quinta actividad porcentaje' => 6.67
                 )
             )

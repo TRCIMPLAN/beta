@@ -87,6 +87,15 @@ class CreadorConfig {
             '\\IBCColoniasTorreon\\ImprentaJSONs');
         $this->imprentas_csv            = array(
             '\\IBCColoniasTorreon\\ImprentaCSV');
+        /* Había retirado los indicadores para que no aparecieran en Últimas Publicaciones
+         * Pero la cantidad de publicaciones salía mucho menos :-(
+        $this->imprentas_pagina_inicial = array(
+            '\\Blog\\Imprenta',
+            '\\PET\\Imprenta',
+            '\\Proyectos\\Imprenta',
+            '\\SalaPrensa\\Imprenta',
+            '\\SIGMapasTorreon\\Imprenta');
+        */
     } // constructor
 
 } // Clase CreadorConfig

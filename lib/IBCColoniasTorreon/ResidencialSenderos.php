@@ -36,14 +36,14 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Residencial Senderos';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'residencial-senderos';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Residencial Senderos en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Residencial Senderos';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,11 +100,11 @@ class ResidencialSenderos extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 35.29,
                     'Segunda actividad nombre' => 'Comercio Menudeo',
                     'Segunda actividad porcentaje' => 23.53,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Tercera actividad porcentaje' => 11.76,
-                    'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Cuarta actividad nombre' => 'Construcción',
                     'Cuarta actividad porcentaje' => 11.76,
-                    'Quinta actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 5.88
                 )
             )

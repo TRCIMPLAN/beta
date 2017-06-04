@@ -26,8 +26,9 @@ rm -f categorias/*.html
 rm -f consejo-directivo/*.html
 rm -f contacto/*.html
 rm -f ibc/*.html
-rm -f ibc-torreon/*.html
-rm -f ibc-torreon/*.json
+rm -f ibc-colonias-torreon/*.html
+rm -f ibc-colonias-torreon/*.json
+rm -f ibc-colonias-torreon/*.csv
 rm -f indicadores-categorias/*.html
 rm -f indicadores-gomez-palacio/*.html
 rm -f indicadores-la-laguna/*.html

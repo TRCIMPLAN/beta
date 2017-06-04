@@ -36,14 +36,14 @@ class Mayran extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Mayrán';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'mayran';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Mayrán en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Mayrán';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,11 +100,11 @@ class Mayran extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 50.00,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 11.54,
-                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Tercera actividad nombre' => 'Educativos',
                     'Tercera actividad porcentaje' => 7.69,
-                    'Cuarta actividad nombre' => 'Industria Manufacturera',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 7.69,
-                    'Quinta actividad nombre' => 'Educativos',
+                    'Quinta actividad nombre' => 'Industria Manufacturera',
                     'Quinta actividad porcentaje' => 7.69
                 )
             )

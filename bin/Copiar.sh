@@ -58,7 +58,7 @@ echo "  Eliminando en la raíz..."
 cd $BETA_DIR
 rm -rf dist
 rm -rf vendor
-for DIR in autores blog categorias consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+for DIR in autores blog categorias consejo-directivo contacto ibc ibc-colonias-torreon indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     rm -rf $DIR
 done
@@ -69,7 +69,7 @@ echo "  Eliminando en /lib..."
 cd $BETA_DIR/lib
 rm -rf Base
 rm -rf Michelf
-for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+for DIR in Blog ConsejoDirectivo Contacto IBC IBCColoniasTorreon Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     rm -rf $DIR
 done
@@ -83,11 +83,13 @@ echo "    dist"
 cp -r $SITIO_WEB_DIR/dist .
 echo "    vendor"
 cp -r $SITIO_WEB_DIR/vendor .
-for DIR in blog consejo-directivo contacto indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
+for DIR in blog consejo-directivo contacto ibc ibc-colonias-torreon indicadores-categorias indicadores-gomez-palacio indicadores-la-laguna indicadores-lerdo indicadores-matamoros indicadores-torreon institucional investigaciones plan-estrategico-metropolitano plan-estrategico-torreon-enfoque-metropolitano-2040 preguntas-frecuentes proyectos sala-prensa sig sig-mapas-torreon sig-planes smi smi-georreferenciados terminos
 do
     echo "    ${DIR}"
     cp -r $SITIO_WEB_DIR/$DIR .
     rm -f $DIR/*.html
+    rm -f $DIR/*.json
+    rm -f $DIR/*.csv
 done
 echo "  Copiando del Sitio Web a /bin..."
 cd $BETA_DIR/bin
@@ -100,7 +102,7 @@ cp -r $PLATAFORMA_DIR/lib/Base .
 echo "    lib/Michelf"
 cp -r $PLATAFORMA_DIR/lib/Michelf .
 echo "  Copiando del Sitio Web a /lib..."
-for DIR in Blog ConsejoDirectivo Contacto Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
+for DIR in Blog ConsejoDirectivo Contacto IBC IBCColoniasTorreon Institucional Investigaciones PET PETDocumento PlanEstrategicoMetropolitano PreguntasFrecuentes Proyectos SalaPrensa SIG SIGMapasTorreon SIGPlanes SMI SMICategorias SMIGeorreferenciados SMIIndicadoresGomezPalacio SMIIndicadoresLaLaguna SMIIndicadoresLerdo SMIIndicadoresMatamoros SMIIndicadoresTorreon Terminos
 do
     echo "    lib/$DIR"
     cp -r $SITIO_WEB_DIR/lib/$DIR .

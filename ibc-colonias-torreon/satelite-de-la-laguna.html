@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Satélite de La Laguna en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
+  <meta name="keywords" content="IMPLAN, Torreon, Indicadores, Colonia, Satélite de La Laguna">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Satélite de La Laguna - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Satélite de La Laguna en Torreón, Coahuila de Zaragoza, México.">
@@ -107,12 +107,13 @@
           </ul>
         </li>
         <li class="active">
-          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
-            <li class="active"><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
-            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Catálogo de Conceptos</a></li>
+            <li class="active"><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
             <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
           </ul>
         </li>
         <li>
@@ -398,11 +399,11 @@
         <td class="derecha">23.53 %</td>
       </tr>
       <tr>
-        <td>3° Otros servicios, excepto Gobierno</td>
+        <td>3° Educativos</td>
         <td class="derecha">11.76 %</td>
       </tr>
       <tr>
-        <td>4° Educativos</td>
+        <td>4° Otros servicios, excepto Gobierno</td>
         <td class="derecha">11.76 %</td>
       </tr>
       <tr>
@@ -530,7 +531,7 @@
         var capa_colonias = layers[1];
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibccoloniastorreon20170515 WHERE nombre = 'Satélite de La Laguna'");
+        sub_capa.setSQL("SELECT * FROM ibccoloniastorreon20170524b WHERE nombre = 'Satélite de La Laguna'");
       })
       .error(function(err) {
         console.log(err);
@@ -706,8 +707,8 @@
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 32.35, '#59C38E', '32.35 %'],
               ['2° Preparación de Alimentos y Bebidas', 23.53, '#8EC359', '23.53 %'],
-              ['3° Otros servicios, excepto Gobierno', 11.76, '#C38E59', '11.76 %'],
-              ['4° Educativos', 11.76, '#80C0FF', '11.76 %'],
+              ['3° Educativos', 11.76, '#C38E59', '11.76 %'],
+              ['4° Otros servicios, excepto Gobierno', 11.76, '#80C0FF', '11.76 %'],
               ['5° Industria Manufacturera', 8.82, '#59BFC3', '8.82 %']
           ]);
           var options = {

@@ -36,14 +36,14 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Villas Universidad Oriente Etapa III';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'villas-universidad-oriente-etapa-iii';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Villas Universidad Oriente Etapa III en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Villas Universidad Oriente Etapa III';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -98,9 +98,9 @@ class VillasUniversidadOrienteEtapaIii extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 25,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 40.00,
-                    'Segunda actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Segunda actividad nombre' => 'Educativos',
                     'Segunda actividad porcentaje' => 20.00,
-                    'Tercera actividad nombre' => 'Educativos',
+                    'Tercera actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Tercera actividad porcentaje' => 20.00,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 8.00,

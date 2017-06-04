@@ -109,12 +109,13 @@
           </ul>
         </li>
         <li>
-          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
-            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
-            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Catálogo de Conceptos</a></li>
+            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
             <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
           </ul>
         </li>
         <li>
@@ -412,6 +413,42 @@
         <td>Instituto Mexicano del Seguro Social (IMSS)</td>
         <td class="nd">N/D</td>
       </tr>
+      <tr>
+        <td>2016-10-31</td>
+        <td>187365</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2016-11-30</td>
+        <td>187176</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2016-12-31</td>
+        <td>183240</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2017-01-31</td>
+        <td>183426</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2017-02-28</td>
+        <td>185458</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2017-03-31</td>
+        <td>186824</td>
+        <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+        <td class="nd">N/D</td>
+      </tr>
     </tbody>
   </table>
     </div>
@@ -440,36 +477,50 @@
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>30/09/2016</td>
-            <td>187057</td>
+            <td>31/03/2017</td>
+            <td>186824</td>
             <td>Instituto Mexicano del Seguro Social (IMSS)</td>
             <td></td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>30/09/2016</td>
-            <td>76824</td>
+            <td>31/03/2017</td>
+            <td>76145</td>
             <td>Instituto Mexicano del Seguro Social (IMSS)</td>
             <td></td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>30/09/2016</td>
-            <td>14257</td>
+            <td>31/03/2017</td>
+            <td>15139</td>
             <td>Instituto Mexicano del Seguro Social (IMSS)</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>30/09/2016</td>
-            <td>8669</td>
+            <td>31/03/2017</td>
+            <td>8415</td>
             <td>Instituto Mexicano del Seguro Social (IMSS)</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>30/09/2016</td>
-            <td>286807</td>
+            <td>31/03/2017</td>
+            <td>286523</td>
+            <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Coahuila</td>
+            <td>31/03/2017</td>
+            <td>734936</td>
+            <td>Instituto Mexicano del Seguro Social (IMSS)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Durango</td>
+            <td>31/03/2017</td>
+            <td>235926</td>
             <td>Instituto Mexicano del Seguro Social (IMSS)</td>
             <td></td>
           </tr>
@@ -520,7 +571,7 @@ $('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function
   if (typeof vargraficaDatos === 'undefined') {
     vargraficaDatos = Morris.Line({
       element: 'graficaDatos',
-      data: [{ fecha: '2013-11-30', dato: 162744 },{ fecha: '2013-12-31', dato: 161591 },{ fecha: '2014-01-31', dato: 161679 },{ fecha: '2014-02-28', dato: 162541 },{ fecha: '2014-03-31', dato: 163726 },{ fecha: '2014-04-30', dato: 164698 },{ fecha: '2014-05-31', dato: 165762 },{ fecha: '2014-06-30', dato: 166473 },{ fecha: '2014-07-31', dato: 167134 },{ fecha: '2014-08-31', dato: 169162 },{ fecha: '2014-09-30', dato: 170628 },{ fecha: '2014-10-31', dato: 171233 },{ fecha: '2014-11-30', dato: 171804 },{ fecha: '2014-12-31', dato: 169066 },{ fecha: '2015-01-31', dato: 169434 },{ fecha: '2015-02-28', dato: 171485 },{ fecha: '2015-03-31', dato: 172263 },{ fecha: '2015-04-30', dato: 172563 },{ fecha: '2015-05-31', dato: 173179 },{ fecha: '2015-06-30', dato: 174252 },{ fecha: '2015-07-31', dato: 174614 },{ fecha: '2015-08-31', dato: 176500 },{ fecha: '2015-09-30', dato: 175798 },{ fecha: '2015-10-31', dato: 177681 },{ fecha: '2015-11-30', dato: 178305 },{ fecha: '2015-12-31', dato: 175813 },{ fecha: '2016-01-31', dato: 177367 },{ fecha: '2016-02-29', dato: 179103 },{ fecha: '2016-03-31', dato: 179362 },{ fecha: '2016-04-30', dato: 180602 },{ fecha: '2016-05-31', dato: 181231 },{ fecha: '2016-06-30', dato: 183582 },{ fecha: '2016-07-31', dato: 183430 },{ fecha: '2016-08-31', dato: 185952 },{ fecha: '2016-09-30', dato: 187057 }],
+      data: [{ fecha: '2013-11-30', dato: 162744 },{ fecha: '2013-12-31', dato: 161591 },{ fecha: '2014-01-31', dato: 161679 },{ fecha: '2014-02-28', dato: 162541 },{ fecha: '2014-03-31', dato: 163726 },{ fecha: '2014-04-30', dato: 164698 },{ fecha: '2014-05-31', dato: 165762 },{ fecha: '2014-06-30', dato: 166473 },{ fecha: '2014-07-31', dato: 167134 },{ fecha: '2014-08-31', dato: 169162 },{ fecha: '2014-09-30', dato: 170628 },{ fecha: '2014-10-31', dato: 171233 },{ fecha: '2014-11-30', dato: 171804 },{ fecha: '2014-12-31', dato: 169066 },{ fecha: '2015-01-31', dato: 169434 },{ fecha: '2015-02-28', dato: 171485 },{ fecha: '2015-03-31', dato: 172263 },{ fecha: '2015-04-30', dato: 172563 },{ fecha: '2015-05-31', dato: 173179 },{ fecha: '2015-06-30', dato: 174252 },{ fecha: '2015-07-31', dato: 174614 },{ fecha: '2015-08-31', dato: 176500 },{ fecha: '2015-09-30', dato: 175798 },{ fecha: '2015-10-31', dato: 177681 },{ fecha: '2015-11-30', dato: 178305 },{ fecha: '2015-12-31', dato: 175813 },{ fecha: '2016-01-31', dato: 177367 },{ fecha: '2016-02-29', dato: 179103 },{ fecha: '2016-03-31', dato: 179362 },{ fecha: '2016-04-30', dato: 180602 },{ fecha: '2016-05-31', dato: 181231 },{ fecha: '2016-06-30', dato: 183582 },{ fecha: '2016-07-31', dato: 183430 },{ fecha: '2016-08-31', dato: 185952 },{ fecha: '2016-09-30', dato: 187057 },{ fecha: '2016-10-31', dato: 187365 },{ fecha: '2016-11-30', dato: 187176 },{ fecha: '2016-12-31', dato: 183240 },{ fecha: '2017-01-31', dato: 183426 },{ fecha: '2017-02-28', dato: 185458 },{ fecha: '2017-03-31', dato: 186824 }],
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
@@ -533,7 +584,7 @@ $('#smi-indicador a[href="#smi-indicador-otras-regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 187057 },{ region: 'Gómez Palacio', dato: 76824 },{ region: 'Lerdo', dato: 14257 },{ region: 'Matamoros', dato: 8669 },{ region: 'La Laguna', dato: 286807 }],
+      data: [{ region: 'Torreón', dato: 186824 },{ region: 'Gómez Palacio', dato: 76145 },{ region: 'Lerdo', dato: 15139 },{ region: 'Matamoros', dato: 8415 },{ region: 'La Laguna', dato: 286523 },{ region: 'Coahuila', dato: 734936 },{ region: 'Durango', dato: 235926 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],

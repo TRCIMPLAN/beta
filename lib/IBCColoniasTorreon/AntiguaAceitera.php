@@ -36,14 +36,14 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Antigua Aceitera';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'antigua-aceitera';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Antigua Aceitera en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Antigua Aceitera';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -104,7 +104,7 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
                     'Tercera actividad porcentaje' => 12.16,
                     'Cuarta actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Cuarta actividad porcentaje' => 6.76,
-                    'Quinta actividad nombre' => 'Manejo de Residuos',
+                    'Quinta actividad nombre' => 'Educativos',
                     'Quinta actividad porcentaje' => 4.05
                 )
             )
@@ -119,8 +119,8 @@ class AntiguaAceitera extends \IBCBase\PublicacionWeb {
     public function mapas() {
         return array(
             'Límites'         => \Configuracion\IBCTorreonConfig::LIMITES,
-            'Centro latitud'  => 25.5344778652951,
-            'Centro longitud' => -103.4601706237
+            'Centro latitud'  => 25.5344808806467,
+            'Centro longitud' => -103.460170836634
         );
     } // mapas
 

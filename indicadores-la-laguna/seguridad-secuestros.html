@@ -109,12 +109,13 @@
           </ul>
         </li>
         <li>
-          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
-            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
-            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Catálogo de Conceptos</a></li>
+            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
             <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
           </ul>
         </li>
         <li>
@@ -423,6 +424,12 @@
         <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
         <td class="nd">N/D</td>
       </tr>
+      <tr>
+        <td>2017-04-30</td>
+        <td>2</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
     </tbody>
   </table>
     </div>
@@ -443,36 +450,36 @@
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>31/03/2017</td>
-            <td>1</td>
-            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Gómez Palacio</td>
-            <td>31/03/2017</td>
+            <td>30/04/2017</td>
             <td>0</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
+            <td>Gómez Palacio</td>
+            <td>30/04/2017</td>
+            <td>2</td>
+            <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+            <td></td>
+          </tr>
+          <tr>
             <td>Lerdo</td>
-            <td>31/03/2017</td>
+            <td>30/04/2017</td>
             <td>0</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>31/03/2017</td>
+            <td>30/04/2017</td>
             <td>0</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>31/03/2017</td>
-            <td>1</td>
+            <td>30/04/2017</td>
+            <td>2</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
@@ -520,7 +527,7 @@ $('#smi-indicador a[href="#smi-indicador-otras-regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 1 },{ region: 'Gómez Palacio', dato: 0 },{ region: 'Lerdo', dato: 0 },{ region: 'Matamoros', dato: 0 },{ region: 'La Laguna', dato: 1 }],
+      data: [{ region: 'Torreón', dato: 0 },{ region: 'Gómez Palacio', dato: 2 },{ region: 'Lerdo', dato: 0 },{ region: 'Matamoros', dato: 0 },{ region: 'La Laguna', dato: 2 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],

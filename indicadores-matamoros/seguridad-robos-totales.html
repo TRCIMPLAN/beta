@@ -109,12 +109,13 @@
           </ul>
         </li>
         <li>
-          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
-            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
-            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Catálogo de Conceptos</a></li>
+            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
             <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
           </ul>
         </li>
         <li>
@@ -436,6 +437,12 @@
         <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
         <td class="nd">N/D</td>
       </tr>
+      <tr>
+        <td>2017-04-30</td>
+        <td>18</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
     </tbody>
   </table>
     </div>
@@ -461,36 +468,36 @@
         <tbody>
           <tr>
             <td>Torreón</td>
-            <td>31/03/2017</td>
-            <td>402</td>
+            <td>30/04/2017</td>
+            <td>251</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Gómez Palacio</td>
-            <td>31/03/2017</td>
-            <td>145</td>
+            <td>30/04/2017</td>
+            <td>166</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Lerdo</td>
-            <td>31/03/2017</td>
-            <td>62</td>
+            <td>30/04/2017</td>
+            <td>58</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>Matamoros</td>
-            <td>31/03/2017</td>
-            <td>26</td>
+            <td>30/04/2017</td>
+            <td>18</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
           <tr>
             <td>La Laguna</td>
-            <td>31/03/2017</td>
-            <td>635</td>
+            <td>30/04/2017</td>
+            <td>493</td>
             <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
             <td></td>
           </tr>
@@ -538,7 +545,7 @@ $('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function
   if (typeof vargraficaDatos === 'undefined') {
     vargraficaDatos = Morris.Line({
       element: 'graficaDatos',
-      data: [{ fecha: '2014-01-31', dato: 27 },{ fecha: '2014-02-28', dato: 32 },{ fecha: '2014-03-31', dato: 31 },{ fecha: '2014-04-30', dato: 26 },{ fecha: '2014-05-31', dato: 32 },{ fecha: '2014-06-30', dato: 20 },{ fecha: '2014-07-31', dato: 35 },{ fecha: '2014-08-31', dato: 33 },{ fecha: '2014-09-30', dato: 26 },{ fecha: '2014-10-31', dato: 35 },{ fecha: '2014-11-30', dato: 31 },{ fecha: '2014-12-31', dato: 25 },{ fecha: '2015-01-31', dato: 22 },{ fecha: '2015-02-28', dato: 26 },{ fecha: '2015-03-31', dato: 25 },{ fecha: '2015-04-30', dato: 27 },{ fecha: '2015-05-31', dato: 24 },{ fecha: '2015-06-30', dato: 13 },{ fecha: '2015-07-31', dato: 18 },{ fecha: '2015-08-31', dato: 13 },{ fecha: '2015-09-30', dato: 20 },{ fecha: '2015-10-31', dato: 13 },{ fecha: '2015-11-30', dato: 0 },{ fecha: '2015-12-31', dato: 3 },{ fecha: '2016-01-31', dato: 0 },{ fecha: '2016-02-29', dato: 2 },{ fecha: '2016-03-31', dato: 5 },{ fecha: '2016-04-30', dato: 16 },{ fecha: '2016-05-31', dato: 8 },{ fecha: '2016-06-30', dato: 13 },{ fecha: '2016-07-31', dato: 15 },{ fecha: '2016-08-31', dato: 23 },{ fecha: '2016-09-30', dato: 24 },{ fecha: '2016-10-31', dato: 30 },{ fecha: '2016-11-30', dato: 23 },{ fecha: '2016-12-31', dato: 27 },{ fecha: '2017-01-31', dato: 29 },{ fecha: '2017-02-28', dato: 16 },{ fecha: '2017-03-31', dato: 26 }],
+      data: [{ fecha: '2014-01-31', dato: 27 },{ fecha: '2014-02-28', dato: 32 },{ fecha: '2014-03-31', dato: 31 },{ fecha: '2014-04-30', dato: 26 },{ fecha: '2014-05-31', dato: 32 },{ fecha: '2014-06-30', dato: 20 },{ fecha: '2014-07-31', dato: 35 },{ fecha: '2014-08-31', dato: 33 },{ fecha: '2014-09-30', dato: 26 },{ fecha: '2014-10-31', dato: 35 },{ fecha: '2014-11-30', dato: 31 },{ fecha: '2014-12-31', dato: 25 },{ fecha: '2015-01-31', dato: 22 },{ fecha: '2015-02-28', dato: 26 },{ fecha: '2015-03-31', dato: 25 },{ fecha: '2015-04-30', dato: 27 },{ fecha: '2015-05-31', dato: 24 },{ fecha: '2015-06-30', dato: 13 },{ fecha: '2015-07-31', dato: 18 },{ fecha: '2015-08-31', dato: 13 },{ fecha: '2015-09-30', dato: 20 },{ fecha: '2015-10-31', dato: 13 },{ fecha: '2015-11-30', dato: 0 },{ fecha: '2015-12-31', dato: 3 },{ fecha: '2016-01-31', dato: 0 },{ fecha: '2016-02-29', dato: 2 },{ fecha: '2016-03-31', dato: 5 },{ fecha: '2016-04-30', dato: 16 },{ fecha: '2016-05-31', dato: 8 },{ fecha: '2016-06-30', dato: 13 },{ fecha: '2016-07-31', dato: 15 },{ fecha: '2016-08-31', dato: 23 },{ fecha: '2016-09-30', dato: 24 },{ fecha: '2016-10-31', dato: 30 },{ fecha: '2016-11-30', dato: 23 },{ fecha: '2016-12-31', dato: 27 },{ fecha: '2017-01-31', dato: 29 },{ fecha: '2017-02-28', dato: 16 },{ fecha: '2017-03-31', dato: 26 },{ fecha: '2017-04-30', dato: 18 }],
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
@@ -551,7 +558,7 @@ $('#smi-indicador a[href="#smi-indicador-otras-regiones"]').on('shown.bs.tab', f
   if (typeof vargraficaOtrasRegiones === 'undefined') {
     vargraficaOtrasRegiones = Morris.Bar({
       element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 402 },{ region: 'Gómez Palacio', dato: 145 },{ region: 'Lerdo', dato: 62 },{ region: 'Matamoros', dato: 26 },{ region: 'La Laguna', dato: 635 }],
+      data: [{ region: 'Torreón', dato: 251 },{ region: 'Gómez Palacio', dato: 166 },{ region: 'Lerdo', dato: 58 },{ region: 'Matamoros', dato: 18 },{ region: 'La Laguna', dato: 493 }],
       xkey: 'region',
       ykeys: ['dato'],
       labels: ['Dato'],

@@ -36,14 +36,14 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'Primero de Cobián (Centro)';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-05-10T11:52:13';
+        $this->fecha                      = '2017-05-29T21:23:42';
         // El nombre del archivo a crear
         $this->archivo                    = 'primero-de-cobian-centro';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia Primero de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Primero de Cobián (Centro)';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -98,9 +98,9 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
                     'Total Actividades Económicas' => 990,
                     'Primer actividad nombre' => 'Comercio Menudeo',
                     'Primer actividad porcentaje' => 22.63,
-                    'Segunda actividad nombre' => 'Profesionales, Científicos, Técnicos',
+                    'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 13.74,
-                    'Tercera actividad nombre' => 'Otros servicios, excepto Gobierno',
+                    'Tercera actividad nombre' => 'Profesionales, Científicos, Técnicos',
                     'Tercera actividad porcentaje' => 13.74,
                     'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 12.22,
@@ -135,15 +135,13 @@ class PrimeroDeCobianCentro extends \IBCBase\PublicacionWeb {
 
 ### Historia
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+El Coronel Don Carlos González, al vender la Hacienda del Torreón y anexas (1898), mandó fraccionar cuatro líneas de manzanas a partir de la última línea de manzanas trazadas en el Plano Primitivo (que reservó para él).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+Las cuales abarcaban desde las calles Ramón Corona, Galeana, Jiménez, y Javier Mina, así como la conocida Calzada Colón.
 
-### Características
+### Fuente
 
-Corresponde a las manzanas colindantes a la **Plaza de Armas**, originalmente llamada "Plaza del 2 de Abril". Esta zona se ha desempeñado como el centro financiero, comercial y de servicios [más importante de la ciudad](http://www.torreon.gob.mx/).
-
-Actualmente, conserva edificios con valor histórico-patrimonial de distintas épocas. A su vez, sufrió la demolición de edificios como el Cine Princesa (actual estacionamiento).
+* [Historia de Torreón](http://www.torreonhistoria.galeon.com/aficiones1001256.html)
 FINAL;
     } // resena
 

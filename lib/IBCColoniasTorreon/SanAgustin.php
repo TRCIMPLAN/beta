@@ -36,14 +36,14 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
         // Título, autor y fecha
         $this->nombre                     = 'San Agustín';
         $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-01-19T11:04:26';
+        $this->fecha                      = '2017-05-29T20:31:44';
         // El nombre del archivo a crear
         $this->archivo                    = 'san-agustin';
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Colonia San Agustín en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}';
+        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, San Agustín';
         // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos por Colonias > Colonias de Torreón';
+        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
         $this->para_compartir             = FALSE;
@@ -100,11 +100,11 @@ class SanAgustin extends \IBCBase\PublicacionWeb {
                     'Primer actividad porcentaje' => 57.14,
                     'Segunda actividad nombre' => 'Otros servicios, excepto Gobierno',
                     'Segunda actividad porcentaje' => 14.29,
-                    'Tercera actividad nombre' => 'Construcción',
+                    'Tercera actividad nombre' => 'Salud',
                     'Tercera actividad porcentaje' => 7.14,
-                    'Cuarta actividad nombre' => 'Salud',
+                    'Cuarta actividad nombre' => 'Preparación de Alimentos y Bebidas',
                     'Cuarta actividad porcentaje' => 7.14,
-                    'Quinta actividad nombre' => 'Preparación de Alimentos y Bebidas',
+                    'Quinta actividad nombre' => 'Construcción',
                     'Quinta actividad porcentaje' => 7.14
                 )
             )

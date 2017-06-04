@@ -34,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Primero de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.">
   <meta name="author" content="Dirección de Investigación Estratégica">
-  <meta name="keywords" content="IMPLAN, Torreon, Desagregación, Colonia, {$this->conglomerado->nombre}">
+  <meta name="keywords" content="IMPLAN, Torreon, Indicadores, Colonia, Primero de Cobián (Centro)">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Primero de Cobián (Centro) - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Primero de Cobián (Centro) en Torreón, Coahuila de Zaragoza, México.">
@@ -107,12 +107,13 @@
           </ul>
         </li>
         <li class="active">
-          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos por Colonias<span class="fa arrow"></span></a>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
             <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
-            <li class="active"><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Colonias de Torreón</a></li>
-            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Catálogo de Conceptos</a></li>
+            <li class="active"><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
             <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
           </ul>
         </li>
         <li>
@@ -395,11 +396,11 @@
         <td class="derecha">22.63 %</td>
       </tr>
       <tr>
-        <td>2° Profesionales, Científicos, Técnicos</td>
+        <td>2° Otros servicios, excepto Gobierno</td>
         <td class="derecha">13.74 %</td>
       </tr>
       <tr>
-        <td>3° Otros servicios, excepto Gobierno</td>
+        <td>3° Profesionales, Científicos, Técnicos</td>
         <td class="derecha">13.74 %</td>
       </tr>
       <tr>
@@ -488,15 +489,15 @@
 
 <h3>Historia</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+<p>El Coronel Don Carlos González, al vender la Hacienda del Torreón y anexas (1898), mandó fraccionar cuatro líneas de manzanas a partir de la última línea de manzanas trazadas en el Plano Primitivo (que reservó para él).</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+<p>Las cuales abarcaban desde las calles Ramón Corona, Galeana, Jiménez, y Javier Mina, así como la conocida Calzada Colón.</p>
 
-<h3>Características</h3>
+<h3>Fuente</h3>
 
-<p>Corresponde a las manzanas colindantes a la <strong>Plaza de Armas</strong>, originalmente llamada "Plaza del 2 de Abril". Esta zona se ha desempeñado como el centro financiero, comercial y de servicios <a href="http://www.torreon.gob.mx/">más importante de la ciudad</a>.</p>
-
-<p>Actualmente, conserva edificios con valor histórico-patrimonial de distintas épocas. A su vez, sufrió la demolición de edificios como el Cine Princesa (actual estacionamiento).</p>
+<ul>
+<li><a href="http://www.torreonhistoria.galeon.com/aficiones1001256.html">Historia de Torreón</a></li>
+</ul>
 
   </div>
   </div>
@@ -547,7 +548,7 @@
         var capa_colonias = layers[1];
         // Cambiar la consulta en la subcapa
         var sub_capa = capa_colonias.getSubLayer(0);
-        sub_capa.setSQL("SELECT * FROM ibccoloniastorreon20170515 WHERE nombre = 'Primero de Cobián (Centro)'");
+        sub_capa.setSQL("SELECT * FROM ibccoloniastorreon20170524b WHERE nombre = 'Primero de Cobián (Centro)'");
       })
       .error(function(err) {
         console.log(err);
@@ -722,8 +723,8 @@
           var data = google.visualization.arrayToDataTable([
               ['Etiqueta', 'Valor', { role: 'style' }, { role: 'annotation' }],
               ['1° Comercio Menudeo', 22.63, '#59C38E', '22.63 %'],
-              ['2° Profesionales, Científicos, Técnicos', 13.74, '#8EC359', '13.74 %'],
-              ['3° Otros servicios, excepto Gobierno', 13.74, '#C38E59', '13.74 %'],
+              ['2° Otros servicios, excepto Gobierno', 13.74, '#8EC359', '13.74 %'],
+              ['3° Profesionales, Científicos, Técnicos', 13.74, '#C38E59', '13.74 %'],
               ['4° Preparación de Alimentos y Bebidas', 12.22, '#80C0FF', '12.22 %'],
               ['5° Salud', 9.9, '#59BFC3', '9.9 %']
           ]);
