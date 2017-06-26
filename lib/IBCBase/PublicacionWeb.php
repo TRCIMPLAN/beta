@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package PlataformaDeConocimiento
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCBase;
@@ -83,10 +83,14 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         parent::validar();
         // Elaborar lengüetas
         $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-        $this->lenguetas->agregar('Mapas',    new SeccionMapasWeb($this), TRUE); // Lengüeta activa
+        if (method_exists($this, 'resena')) {
+            $this->lenguetas->agregar('Reseña', new SeccionResenaWeb($this));
+        }
+        if (method_exists($this, 'mapas')) {
+            $this->lenguetas->agregar('Mapas', new SeccionMapasWeb($this));
+        }
         $this->lenguetas->agregar('Datos',    new SeccionDatosWeb($this));
         $this->lenguetas->agregar('Gráficas', new SeccionGraficasWeb($this));
-        $this->lenguetas->agregar('Reseña',   new SeccionResenaWeb($this));
         // Crear contenido con una instancia de SchemaDataset
         $this->contenido = new \Base\SchemaDataset();
     } // validar
@@ -130,7 +134,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         $this->contenido->description   = $this->descripcion;
         $this->contenido->author        = $this->autor;
         $this->contenido->spatial       = $s_place;
-        $this->contenido->datePublished = '2010-01-01';
+        $this->contenido->datePublished = $this->fecha;
     //  $this->contenido->distribution  = ; // URL a JSON con http://schema.org/DataDownload
         $this->contenido->content       = $this->lenguetas->html();
         // Entregar

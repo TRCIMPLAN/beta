@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package PlataformaDeConocimiento
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCBase;
@@ -44,7 +44,7 @@ class SeccionResenaWeb implements SalidaWeb {
     /**
      * Preparar
      */
-    protected function prepapar() {
+    private function preparar() {
         if (!$this->preparado) {
             if ($this->publicacion_ficha->resena() == '') {
                 $this->resena_html = '';
@@ -64,7 +64,7 @@ class SeccionResenaWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        $this->prepapar();
+        $this->preparar();
         return $this->resena_html;
     } // html
 

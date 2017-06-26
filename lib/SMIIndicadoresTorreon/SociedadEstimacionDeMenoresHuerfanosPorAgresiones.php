@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SociedadEstimacionDeMenoresHuerfanosPorAgresiones
  */
-class SociedadEstimacionDeMenoresHuerfanosPorAgresiones extends \SMIBase\PublicacionWeb {
+class SociedadEstimacionDeMenoresHuerfanosPorAgresiones extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class SociedadEstimacionDeMenoresHuerfanosPorAgresiones extends \SMIBase\Publica
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Estimación de Menores Huérfanos por Agresiones en Torreón';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2014-10-21T16:19:49';
         // El nombre del archivo a crear
         $this->archivo     = 'sociedad-estimacion-de-menores-huerfanos-por-agresiones';
@@ -49,116 +48,31 @@ class SociedadEstimacionDeMenoresHuerfanosPorAgresiones extends \SMIBase\Publica
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
+
+    /**
+     * Datos
+     *
+     * @return array Arreglo asociativo
+     */
+    public function datos() {
+        return array(
             array('fecha' => '2008-12-31', 'valor' => '544', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
             array('fecha' => '2009-12-31', 'valor' => '597', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
             array('fecha' => '2010-12-31', 'valor' => '753', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
             array('fecha' => '2011-12-31', 'valor' => '858', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '1253', 'fuente_nombre' => 'IMPLAN', 'notas' => '')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
-
-    /**
-     * Sección Datos JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * Sección Gráfica HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_grafica_html() {
-        return <<<FINAL
-      <h3>Gráfica de Estimación de Menores Huérfanos por Agresiones en Torreón</h3>
-      <div id="graficaDatos" class="grafica"></div>
-      <p><b>Unidad:</b> Cantidad.</p>
-      <h3>Observaciones</h3>
-<p>Elaboración propia en base a las defunciones registradas en <a href="http://www.sinais.salud.gob.mx">SINAIS</a></p>
-
-FINAL;
-    } // seccion_grafica_html
-
-    /**
-     * Sección Gráfica JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_grafica_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaDatos === 'undefined') {
-    vargraficaDatos = Morris.Line({
-      element: 'graficaDatos',
-      data: [{ fecha: '2008-12-31', dato: 544 },{ fecha: '2009-12-31', dato: 597 },{ fecha: '2010-12-31', dato: 753 },{ fecha: '2011-12-31', dato: 858 },{ fecha: '2012-12-31', dato: 1253 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-FINAL;
-    } // seccion_grafica_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->agregar('smi-indicador-grafica', 'Gráfica', $this->seccion_grafica_html());
-        $this->lenguetas->agregar_javascript($this->seccion_grafica_javascript());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+            array('fecha' => '2012-12-31', 'valor' => '1253', 'fuente_nombre' => 'IMPLAN', 'notas' => ''));
+    } // datos
 
 } // Clase SociedadEstimacionDeMenoresHuerfanosPorAgresiones
 

@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package PlataformaDeConocimiento
+ * @package TrcIMPLANSitioWeb
  */
 
 namespace IBCBase;
@@ -44,7 +44,7 @@ class SeccionGraficasWeb implements SalidaWeb {
     /**
      * Preparar
      */
-    protected function prepapar() {
+    private function preparar() {
         if (!$this->preparado) {
             $this->acordeones = new AcordeonesWeb(self::IDENTIFICADOR);
             $this->acordeones->agregar('Demografía',                 new EjeDemografiaGraficasWeb($this->publicacion_ficha), TRUE); // Acordeon abierto
@@ -62,7 +62,7 @@ class SeccionGraficasWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        $this->prepapar();
+        $this->preparar();
         return $this->acordeones->html();
     } // html
 
@@ -72,7 +72,7 @@ class SeccionGraficasWeb implements SalidaWeb {
      * @return string Javascript
      */
     public function javascript() {
-        $this->prepapar();
+        $this->preparar();
         return $this->acordeones->javascript();
     } // javascript
 

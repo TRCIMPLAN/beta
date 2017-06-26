@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase EconomiaObtencionDeCreditoCreacionDeGarantias
  */
-class EconomiaObtencionDeCreditoCreacionDeGarantias extends \SMIBase\PublicacionWeb {
+class EconomiaObtencionDeCreditoCreacionDeGarantias extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class EconomiaObtencionDeCreditoCreacionDeGarantias extends \SMIBase\Publicacion
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Obtención de Crédito - Creación de Garantías en Torreón';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2014-10-21T16:19:49';
         // El nombre del archivo a crear
         $this->archivo     = 'economia-obtencion-de-credito-creacion-de-garantias';
@@ -49,74 +48,30 @@ class EconomiaObtencionDeCreditoCreacionDeGarantias extends \SMIBase\Publicacion
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
+
+    /**
+     * Datos
+     *
+     * @return array Arreglo asociativo
+     */
+    public function datos() {
+        return array(
             array('fecha' => '2007-12-31', 'valor' => '13', 'fuente_nombre' => 'Doing Business', 'notas' => 'En el tema de apertura de negocio Doing Business califica otros dos aspectos. Los resultados de 2007 para Torreón son:
 
 - Costo (% del valor del préstamo): 1.29 
-- Ranking en crear una garantía: 6')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
-
-    /**
-     * Sección Datos JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+- Ranking en crear una garantía: 6'));
+    } // datos
 
 } // Clase EconomiaObtencionDeCreditoCreacionDeGarantias
 

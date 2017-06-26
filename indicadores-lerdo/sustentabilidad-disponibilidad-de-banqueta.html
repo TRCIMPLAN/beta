@@ -33,16 +33,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Porcentaje de manzanas que cuentan con banquetas en todas o en alguna de sus vialidades.">
-  <meta name="author" content="Dirección de Investigación Estratégica">
+  <meta name="author" content="TrcIMPLAN Staff">
   <meta name="keywords" content="IMPLAN, Lerdo, Movilidad, Vialidad, Infraestructura">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Disponibilidad de Banqueta en Lerdo - IMPLAN Torreón">
   <meta name="twitter:description" content="Porcentaje de manzanas que cuentan con banquetas en todas o en alguna de sus vialidades.">
-  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/../smi/introduccion/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/sustentabilidad-disponibilidad-de-banqueta.html">
   <meta name="og:title" content="Disponibilidad de Banqueta en Lerdo - IMPLAN Torreón">
   <meta name="og:description" content="Porcentaje de manzanas que cuentan con banquetas en todas o en alguna de sus vialidades.">
-  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/../smi/introduccion/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/sustentabilidad-disponibilidad-de-banqueta.html">
   <title>Disponibilidad de Banqueta en Lerdo - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -103,7 +101,7 @@
           <ul class="nav nav-second-level">
             <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al SMI</a></li>
             <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
-            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li class="active"><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
             <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
             <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
           </ul>
@@ -180,20 +178,19 @@
           <h1 itemprop="headline">Disponibilidad de Banqueta en Lerdo</h1>
           <div class="encabezado-descripcion" itemprop="description">Porcentaje de manzanas que cuentan con banquetas en todas o en alguna de sus vialidades.</div>
           <div class="encabezado-autor-fecha">
-            Por <span itemprop="author">Dirección de Investigación Estratégica</span> -
+            Por <span itemprop="author">TrcIMPLAN Staff</span> -
             <meta itemprop="datePublished" content="2014-11-24T15:58:10">24/11/2014 15:58
           </div>
         </div>
         <div itemprop="articleBody">
 <!-- Contenido: Inicia  -->
-  <ul class="nav nav-tabs lenguetas" id="smi-indicador">
-    <li class="active"><a href="#smi-indicador-datos" data-toggle="tab">Datos</a></li>
-    <li><a href="#smi-indicador-grafica" data-toggle="tab">Gráfica</a></li>
-    <li><a href="#smi-indicador-otras-regiones" data-toggle="tab">Otras regiones</a></li>
+<div>
+  <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
+    <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-    <div class="tab-pane active" id="smi-indicador-datos">
-        <table id="smi-indicador-datos-tabla" class="table table-hover table-bordered">
+  <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
+  <table id="DatosIndicador" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -217,104 +214,12 @@
       </tr>
     </tbody>
   </table>
-    </div>
-    <div class="tab-pane" id="smi-indicador-grafica">
-            <h3>Gráfica de Disponibilidad de Banqueta en Lerdo</h3>
-      <div id="graficaDatos" class="grafica"></div>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Datos 2010: Consulta la <a href="http://www.inegi.org.mx/est/contenidos/proyectos/ccpv/cpv2010/tabulados_urbano.aspx">Base de Datos</a>
-Datos 2014: Consulta la <a href="http://www.inegi.org.mx/est/contenidos/proyectos/encuestas/hogares/especiales/ei2015/default.aspx">Base de Datos</a></p>
-
-    </div>
-    <div class="tab-pane" id="smi-indicador-otras-regiones">
-            <h3>Gráfica con los últimos datos de Disponibilidad de Banqueta</h3>
-      <div id="graficaOtrasRegiones" class="grafica"></div>
-      <h3>Últimos datos de Disponibilidad de Banqueta</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Región</th>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Torreón</td>
-            <td>31/12/2014</td>
-            <td>86.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Gómez Palacio</td>
-            <td>31/12/2014</td>
-            <td>83.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Lerdo</td>
-            <td>31/12/2014</td>
-            <td>66.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Matamoros</td>
-            <td>31/12/2014</td>
-            <td>60.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>La Laguna</td>
-            <td>31/12/2014</td>
-            <td>81.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Coahuila</td>
-            <td>31/12/2010</td>
-            <td>73.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Durango</td>
-            <td>31/12/2010</td>
-            <td>69.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Nacional</td>
-            <td>31/12/2010</td>
-            <td>71.00 %</td>
-            <td>INEGI</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Datos 2010: Consulta la <a href="http://www.inegi.org.mx/est/contenidos/proyectos/ccpv/cpv2010/tabulados_urbano.aspx">Base de Datos</a>
-Datos 2014: Consulta la <a href="http://www.inegi.org.mx/est/contenidos/proyectos/encuestas/hogares/especiales/ei2015/default.aspx">Base de Datos</a></p>
-
-    </div>
   </div>
+  </div>
+</div>
 <!-- Contenido: Termina -->
         </div>
       </div></article>
-<div class="contenido-social">
-  <h5>Compartir en Redes Sociales</h5>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="trcimplan" data-lang="es">Twittear</a>
-  <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.trcimplan.gob.mx%2Findicadores-lerdo%2Fsustentabilidad-disponibilidad-de-banqueta.html&amp;width=300&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
-</div>
     </div>
     <div class="mapa-inferior">
           <div class="pull-right redes-sociales">
@@ -342,52 +247,28 @@ Datos 2014: Consulta la <a href="http://www.inegi.org.mx/est/contenidos/proyecto
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-$('#smi-indicador a[href="#smi-indicador-grafica"]').on('shown.bs.tab', function (e) {   // Gráfica
-  if (typeof vargraficaDatos === 'undefined') {
-    vargraficaDatos = Morris.Line({
-      element: 'graficaDatos',
-      data: [{ fecha: '2010-12-31', dato: 83.0000 },{ fecha: '2014-12-31', dato: 66.0000 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  } });
-$('#smi-indicador a[href="#smi-indicador-otras-regiones"]').on('shown.bs.tab', function (e) {   // Gráfica
-  if (typeof vargraficaOtrasRegiones === 'undefined') {
-    vargraficaOtrasRegiones = Morris.Bar({
-      element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 86.0000 },{ region: 'Gómez Palacio', dato: 83.0000 },{ region: 'Lerdo', dato: 66.0000 },{ region: 'Matamoros', dato: 60.0000 },{ region: 'La Laguna', dato: 81.0000 },{ region: 'Coahuila', dato: 73.0000 },{ region: 'Durango', dato: 69.0000 },{ region: 'Nacional', dato: 71.0000 }],
-      xkey: 'region',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      barColors: ['#FF5B02']
-    });
-  } });
-$(document).ready(function(){ $('#smi-indicador a:first').tab('show') });
-// DataTables
-$(document).ready(function(){
-  $('#smi-indicador-datos-tabla').DataTable( {
-    "language": {
-      "lengthMenu":   "Mostrando _MENU_ filas por página",
-      "zeroRecords":  "No se encontró nada",
-      "info":         "Mostrando página _PAGE_ de _PAGES_",
-      "infoEmpty":    "No se encontraron registros",
-      "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-      "search":       "Filtrar:",
-      "paginate": {
-        "previous":   "Anterior",
-        "next":       "Siguiente"
+  // LenguetaWeb LenguetasIndicadorDatos
+  // DataTables
+  $(document).ready(function(){
+    $('#DatosIndicador').DataTable( {
+      "language": {
+        "lengthMenu":   "Mostrando _MENU_ filas por página",
+        "zeroRecords":  "No se encontró nada",
+        "info":         "Mostrando página _PAGE_ de _PAGES_",
+        "infoEmpty":    "No se encontraron registros",
+        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
+        "search":       "Filtrar:",
+        "paginate": {
+          "previous":   "Anterior",
+          "next":       "Siguiente"
+        }
       }
-    }
+    });
   });
-});
-</script>
-<script>
-  // Twitter
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
+  $(document).ready(function(){
+    $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')
+  });
 </script>
 <!-- Javascript termina -->
 </body>

@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SociedadAlumnosConHabilidadesCientificasMatematicasBasicas
  */
-class SociedadAlumnosConHabilidadesCientificasMatematicasBasicas extends \SMIBase\PublicacionWeb {
+class SociedadAlumnosConHabilidadesCientificasMatematicasBasicas extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class SociedadAlumnosConHabilidadesCientificasMatematicasBasicas extends \SMIBas
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Alumnos con Habilidades Científicas-Matemáticas Básicas en Gómez Palacio';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2016-01-20T13:16:51';
         // El nombre del archivo a crear
         $this->archivo     = 'sociedad-alumnos-con-habilidades-cientificas-matematicas-basicas';
@@ -49,180 +48,27 @@ class SociedadAlumnosConHabilidadesCientificasMatematicasBasicas extends \SMIBas
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
-            array('fecha' => '2015-12-01', 'valor' => '16.7000', 'fuente_nombre' => 'SEP', 'notas' => '')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
 
     /**
-     * Sección Datos JavaScript
+     * Datos
      *
-     * @return string Código JavaScript
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * Sección Otras Regiones HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_otras_regiones_html() {
-        return <<<FINAL
-      <h3>Gráfica con los últimos datos de Alumnos con Habilidades Científicas-Matemáticas Básicas</h3>
-      <div id="graficaOtrasRegiones" class="grafica"></div>
-      <h3>Últimos datos de Alumnos con Habilidades Científicas-Matemáticas Básicas</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Región</th>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Torreón</td>
-            <td>01/12/2015</td>
-            <td>17.40 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Gómez Palacio</td>
-            <td>01/12/2015</td>
-            <td>16.70 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Lerdo</td>
-            <td>01/12/2015</td>
-            <td>16.40 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Matamoros</td>
-            <td>01/12/2015</td>
-            <td>17.10 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>La Laguna</td>
-            <td>01/12/2015</td>
-            <td>17.00 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Coahuila</td>
-            <td>01/12/2015</td>
-            <td>18.10 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Durango</td>
-            <td>01/12/2015</td>
-            <td>18.50 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Nacional</td>
-            <td>01/12/2015</td>
-            <td>18.90 %</td>
-            <td>SEP</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Nivel II: Resuelven problemas aritméticos con números naturales. Lea el análisis <a href="http://www.trcimplan.gob.mx/blog/competencias-en-lenguaje-y-matematicas-en-los-estudiantes-de-la-comarca-parte-1.html">Competencias en Lenguaje y Matemáticas en los Estudiantes de la Comarca</a>. Consulta la <a href="http://planea.sep.gob.mx/ba/base_de_datos_2015/">Base de Datos</a>.</p>
-
-FINAL;
-    } // seccion_otras_regiones_html
-
-    /**
-     * Sección Otras Regiones JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_otras_regiones_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaOtrasRegiones === 'undefined') {
-    vargraficaOtrasRegiones = Morris.Bar({
-      element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 17.4000 },{ region: 'Gómez Palacio', dato: 16.7000 },{ region: 'Lerdo', dato: 16.4000 },{ region: 'Matamoros', dato: 17.1000 },{ region: 'La Laguna', dato: 17.0000 },{ region: 'Coahuila', dato: 18.1000 },{ region: 'Durango', dato: 18.5000 },{ region: 'Nacional', dato: 18.9000 }],
-      xkey: 'region',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      barColors: ['#FF5B02']
-    });
-  }
-FINAL;
-    } // seccion_otras_regiones_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
-        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+    public function datos() {
+        return array(
+            array('fecha' => '2015-12-01', 'valor' => '16.7000', 'fuente_nombre' => 'SEP', 'notas' => ''));
+    } // datos
 
 } // Clase SociedadAlumnosConHabilidadesCientificasMatematicasBasicas
 

@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion
  */
-class SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion extends \SMIBase\PublicacionWeb {
+class SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion extends \SMIB
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Uso de Twitter como Proxy de Uso de Tecnologías de Información en Matamoros';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2015-07-14T15:58:42';
         // El nombre del archivo a crear
         $this->archivo     = 'sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion';
@@ -49,204 +48,31 @@ class SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion extends \SMIB
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
+
+    /**
+     * Datos
+     *
+     * @return array Arreglo asociativo
+     */
+    public function datos() {
+        return array(
             array('fecha' => '2008-12-31', 'valor' => '0.0999', 'fuente_nombre' => 'IMCO', 'notas' => ''),
             array('fecha' => '2009-12-31', 'valor' => '0.0999', 'fuente_nombre' => 'IMCO', 'notas' => ''),
             array('fecha' => '2010-12-31', 'valor' => '0.0999', 'fuente_nombre' => 'IMCO', 'notas' => ''),
             array('fecha' => '2011-12-31', 'valor' => '0.0999', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '1.1490', 'fuente_nombre' => 'IMCO', 'notas' => '')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
-
-    /**
-     * Sección Datos JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * Sección Gráfica HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_grafica_html() {
-        return <<<FINAL
-      <h3>Gráfica de Uso de Twitter como Proxy de Uso de Tecnologías de Información en Matamoros</h3>
-      <div id="graficaDatos" class="grafica"></div>
-      <p><b>Unidad:</b> Twits por Hora por cada mil habitantes.</p>
-      <h3>Observaciones</h3>
-<p>Fuente: IMCO, 2013.</p>
-
-FINAL;
-    } // seccion_grafica_html
-
-    /**
-     * Sección Gráfica JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_grafica_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaDatos === 'undefined') {
-    vargraficaDatos = Morris.Line({
-      element: 'graficaDatos',
-      data: [{ fecha: '2008-12-31', dato: 0.0999 },{ fecha: '2009-12-31', dato: 0.0999 },{ fecha: '2010-12-31', dato: 0.0999 },{ fecha: '2011-12-31', dato: 0.0999 },{ fecha: '2012-12-31', dato: 1.1490 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-FINAL;
-    } // seccion_grafica_javascript
-
-    /**
-     * Sección Otras Regiones HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_otras_regiones_html() {
-        return <<<FINAL
-      <h3>Gráfica con los últimos datos de Uso de Twitter como Proxy de Uso de Tecnologías de Información</h3>
-      <div id="graficaOtrasRegiones" class="grafica"></div>
-      <h3>Últimos datos de Uso de Twitter como Proxy de Uso de Tecnologías de Información</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Región</th>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Torreón</td>
-            <td>31/12/2012</td>
-            <td>8.2249</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Gómez Palacio</td>
-            <td>31/12/2012</td>
-            <td>2.8366</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Lerdo</td>
-            <td>31/12/2012</td>
-            <td>2.1624</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Matamoros</td>
-            <td>31/12/2012</td>
-            <td>1.1490</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>La Laguna</td>
-            <td>31/12/2012</td>
-            <td>5.4432</td>
-            <td>IMCO</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Twits por Hora por cada mil habitantes.</p>
-      <h3>Observaciones</h3>
-<p>Fuente: IMCO, 2013.</p>
-
-FINAL;
-    } // seccion_otras_regiones_html
-
-    /**
-     * Sección Otras Regiones JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_otras_regiones_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaOtrasRegiones === 'undefined') {
-    vargraficaOtrasRegiones = Morris.Bar({
-      element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 8.2249 },{ region: 'Gómez Palacio', dato: 2.8366 },{ region: 'Lerdo', dato: 2.1624 },{ region: 'Matamoros', dato: 1.1490 },{ region: 'La Laguna', dato: 5.4432 }],
-      xkey: 'region',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      barColors: ['#FF5B02']
-    });
-  }
-FINAL;
-    } // seccion_otras_regiones_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->agregar('smi-indicador-grafica', 'Gráfica', $this->seccion_grafica_html());
-        $this->lenguetas->agregar_javascript($this->seccion_grafica_javascript());
-        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
-        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+            array('fecha' => '2012-12-31', 'valor' => '1.1490', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+    } // datos
 
 } // Clase SociedadUsoDeTwitterComoProxyDeUsoDeTecnologiasDeInformacion
 

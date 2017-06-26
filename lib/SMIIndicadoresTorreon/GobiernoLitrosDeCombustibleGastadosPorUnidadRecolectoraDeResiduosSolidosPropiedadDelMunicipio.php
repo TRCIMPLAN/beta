@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPropiedadDelMunicipio
  */
-class GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPropiedadDelMunicipio extends \SMIBase\PublicacionWeb {
+class GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPropiedadDelMunicipio extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPr
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Litros de Combustible Gastados por Unidad Recolectora de Residuos Sólidos Propiedad del Municipio en Torreón';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2015-07-14T18:44:49';
         // El nombre del archivo a crear
         $this->archivo     = 'gobierno-litros-de-combustible-gastados-por-unidad-recolectora-de-residuos-solidos-propiedad-del-municipio';
@@ -49,71 +48,27 @@ class GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPr
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'dinero'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
-            array('fecha' => '2014-06-30', 'valor' => '21430.36', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => '')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
 
     /**
-     * Sección Datos JavaScript
+     * Datos
      *
-     * @return string Código JavaScript
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+    public function datos() {
+        return array(
+            array('fecha' => '2014-06-30', 'valor' => '21430.36', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => ''));
+    } // datos
 
 } // Clase GobiernoLitrosDeCombustibleGastadosPorUnidadRecolectoraDeResiduosSolidosPropiedadDelMunicipio
 

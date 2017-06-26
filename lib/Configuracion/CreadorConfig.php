@@ -43,6 +43,13 @@ class CreadorConfig {
      */
     public function __construct() {
         $this->imprentas                = array(
+            '\\SMIIndicadoresGomezPalacio\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresLerdo\\Imprenta',
+            '\\SMIIndicadoresMatamoros\\Imprenta',
+            '\\SMIIndicadoresTorreon\\Imprenta',
+            '\\Terminos\\Imprenta');
+    /*  $this->imprentas                = array(
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
@@ -67,8 +74,8 @@ class CreadorConfig {
             '\\SMIIndicadoresLerdo\\Imprenta',
             '\\SMIIndicadoresMatamoros\\Imprenta',
             '\\SMIIndicadoresTorreon\\Imprenta',
-            '\\Terminos\\Imprenta');
-        $this->imprentas_mapa_sitio     = $this->imprentas;
+            '\\Terminos\\Imprenta'); */
+    /*  $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
             '\\Blog\\Imprenta',
             '\\PET\\Imprenta',
@@ -86,16 +93,7 @@ class CreadorConfig {
         $this->imprentas_json           = array(
             '\\IBCColoniasTorreon\\ImprentaJSONs');
         $this->imprentas_csv            = array(
-            '\\IBCColoniasTorreon\\ImprentaCSV');
-        /* Había retirado los indicadores para que no aparecieran en Últimas Publicaciones
-         * Pero la cantidad de publicaciones salía mucho menos :-(
-        $this->imprentas_pagina_inicial = array(
-            '\\Blog\\Imprenta',
-            '\\PET\\Imprenta',
-            '\\Proyectos\\Imprenta',
-            '\\SalaPrensa\\Imprenta',
-            '\\SIGMapasTorreon\\Imprenta');
-        */
+            '\\IBCColoniasTorreon\\ImprentaCSV'); */
     } // constructor
 
 } // Clase CreadorConfig

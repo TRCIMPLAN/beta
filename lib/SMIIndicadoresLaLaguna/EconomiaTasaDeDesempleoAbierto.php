@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase EconomiaTasaDeDesempleoAbierto
  */
-class EconomiaTasaDeDesempleoAbierto extends \SMIBase\PublicacionWeb {
+class EconomiaTasaDeDesempleoAbierto extends \SMIBaseNUEVO\PublicacionWeb {
 
     /**
      * Constructor
@@ -33,9 +33,8 @@ class EconomiaTasaDeDesempleoAbierto extends \SMIBase\PublicacionWeb {
     public function __construct() {
         // Ejecutar constructor en el padre
         parent::__construct();
-        // Título, autor y fecha
+        // Título y fecha
         $this->nombre      = 'Tasa de Desempleo Abierto en La Laguna';
-        $this->autor       = 'Dirección de Investigación Estratégica';
         $this->fecha       = '2014-10-21T16:19:49';
         // El nombre del archivo a crear
         $this->archivo     = 'economia-tasa-de-desempleo-abierto';
@@ -49,17 +48,25 @@ class EconomiaTasaDeDesempleoAbierto extends \SMIBase\PublicacionWeb {
     } // constructor
 
     /**
-     * Sección Datos HTML
+     * Estructura
      *
-     * @return string Código HTML
+     * @return array Arreglo asociativo
      */
-    protected function seccion_datos_html() {
-        $this->datos_tabla->definir_estructura(array(
+    public function estructura() {
+        return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
-            'notas' => array('enca' => 'Notas', 'formato' => 'texto')));
-        $this->datos_tabla->definir_panal(array(
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
+    } // estructura
+
+    /**
+     * Datos
+     *
+     * @return array Arreglo asociativo
+     */
+    public function datos() {
+        return array(
             array('fecha' => '1990-03-12', 'valor' => '2.8100', 'fuente_nombre' => 'INEGI', 'notas' => ''),
             array('fecha' => '2000-02-14', 'valor' => '1.0300', 'fuente_nombre' => 'INEGI', 'notas' => ''),
             array('fecha' => '2005-03-31', 'valor' => '4.9618', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => ''),
@@ -116,344 +123,8 @@ class EconomiaTasaDeDesempleoAbierto extends \SMIBase\PublicacionWeb {
             array('fecha' => '2016-06-30', 'valor' => '5.6400', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => ''),
             array('fecha' => '2016-09-30', 'valor' => '5.7500', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => ''),
             array('fecha' => '2016-12-31', 'valor' => '4.3900', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => ''),
-            array('fecha' => '2017-03-31', 'valor' => '4.8600', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => '')));
-        // Entregar
-        return $this->datos_tabla->html();
-    } // seccion_datos_html
-
-    /**
-     * Sección Datos JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_datos_javascript() {
-        return $this->datos_tabla->javascript();
-    } // seccion_datos_javascript
-
-    /**
-     * Sección Gráfica 1 HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_grafica_1_html() {
-        return <<<FINAL
-      <h3>Gráfica de Tasa de Desempleo Abierto en La Laguna con fuente INEGI</h3>
-      <div id="graficaDatosInegi" class="grafica"></div>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Media nacional del indicador:</p>
-
-<ul>
-<li>2010 = 3.72</li>
-<li>2010 = 0.98%</li>
-<li>1990 = 2.32%</li>
-</ul>
-
-<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&amp;s=est">INEGI. Censos de población y vivienda</a></p>
-
-<p>Media Nacional 2014:
-1er. Trimestre: 4.80 %
-2do. Trimestre: 4.90 %
-3er. Trimestre: 5.20 %</p>
-
-FINAL;
-    } // seccion_grafica_html
-
-    /**
-     * Sección Gráfica 1 JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_grafica_1_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaDatosInegi === 'undefined') {
-    vargraficaDatosInegi = Morris.Line({
-      element: 'graficaDatosInegi',
-      data: [{ fecha: '1990-03-12', dato: 2.8100 },{ fecha: '2000-02-14', dato: 1.0300 },{ fecha: '2010-06-25', dato: 7.4300 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-FINAL;
-    } // seccion_grafica_javascript
-
-    /**
-     * Sección Gráfica 2 HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_grafica_2_html() {
-        return <<<FINAL
-      <h3>Gráfica de Tasa de Desempleo Abierto en La Laguna con fuente Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</h3>
-      <div id="graficaDatosEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos" class="grafica"></div>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Media nacional del indicador:</p>
-
-<ul>
-<li>2010 = 3.72</li>
-<li>2010 = 0.98%</li>
-<li>1990 = 2.32%</li>
-</ul>
-
-<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&amp;s=est">INEGI. Censos de población y vivienda</a></p>
-
-<p>Media Nacional 2014:
-1er. Trimestre: 4.80 %
-2do. Trimestre: 4.90 %
-3er. Trimestre: 5.20 %</p>
-
-FINAL;
-    } // seccion_grafica_html
-
-    /**
-     * Sección Gráfica 2 JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_grafica_2_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaDatosEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos === 'undefined') {
-    vargraficaDatosEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos = Morris.Line({
-      element: 'graficaDatosEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos',
-      data: [{ fecha: '2005-03-31', dato: 4.9618 },{ fecha: '2005-06-30', dato: 3.7779 },{ fecha: '2005-09-30', dato: 2.6576 },{ fecha: '2005-12-31', dato: 3.1532 },{ fecha: '2006-03-31', dato: 4.8006 },{ fecha: '2006-06-30', dato: 4.7273 },{ fecha: '2006-09-30', dato: 6.1928 },{ fecha: '2006-12-30', dato: 4.7101 },{ fecha: '2007-03-31', dato: 5.9297 },{ fecha: '2007-06-30', dato: 3.6490 },{ fecha: '2007-09-30', dato: 4.5558 },{ fecha: '2007-12-31', dato: 3.7818 },{ fecha: '2008-03-31', dato: 5.3558 },{ fecha: '2008-06-30', dato: 4.8084 },{ fecha: '2008-09-30', dato: 4.7836 },{ fecha: '2008-12-31', dato: 6.1224 },{ fecha: '2009-03-31', dato: 7.3877 },{ fecha: '2009-06-30', dato: 7.1599 },{ fecha: '2009-09-30', dato: 9.1900 },{ fecha: '2009-12-31', dato: 8.6179 },{ fecha: '2010-03-31', dato: 8.0321 },{ fecha: '2010-06-30', dato: 6.9712 },{ fecha: '2010-09-30', dato: 7.8947 },{ fecha: '2010-12-31', dato: 7.2250 },{ fecha: '2011-03-31', dato: 6.3900 },{ fecha: '2011-06-30', dato: 6.1300 },{ fecha: '2011-09-30', dato: 7.2500 },{ fecha: '2011-12-31', dato: 5.9100 },{ fecha: '2012-03-31', dato: 6.1900 },{ fecha: '2012-06-30', dato: 6.5500 },{ fecha: '2012-09-30', dato: 5.7000 },{ fecha: '2012-12-31', dato: 6.5400 },{ fecha: '2013-03-31', dato: 6.4100 },{ fecha: '2013-06-30', dato: 6.5400 },{ fecha: '2013-09-30', dato: 6.2400 },{ fecha: '2013-12-31', dato: 5.4900 },{ fecha: '2014-03-31', dato: 5.9300 },{ fecha: '2014-06-30', dato: 4.8400 },{ fecha: '2014-09-30', dato: 5.7400 },{ fecha: '2014-12-31', dato: 6.9900 },{ fecha: '2015-03-31', dato: 5.8500 },{ fecha: '2015-06-30', dato: 5.8700 },{ fecha: '2015-09-30', dato: 5.2529 },{ fecha: '2015-12-31', dato: 5.0883 },{ fecha: '2016-03-31', dato: 4.9520 },{ fecha: '2016-06-30', dato: 5.6400 },{ fecha: '2016-09-30', dato: 5.7500 },{ fecha: '2016-12-31', dato: 4.3900 },{ fecha: '2017-03-31', dato: 4.8600 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-FINAL;
-    } // seccion_grafica_javascript
-
-    /**
-     * Sección Gráfica 3 HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_grafica_3_html() {
-        return <<<FINAL
-      <h3>Gráfica de Tasa de Desempleo Abierto en La Laguna con fuente IMCO</h3>
-      <div id="graficaDatosImco" class="grafica"></div>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Media nacional del indicador:</p>
-
-<ul>
-<li>2010 = 3.72</li>
-<li>2010 = 0.98%</li>
-<li>1990 = 2.32%</li>
-</ul>
-
-<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&amp;s=est">INEGI. Censos de población y vivienda</a></p>
-
-<p>Media Nacional 2014:
-1er. Trimestre: 4.80 %
-2do. Trimestre: 4.90 %
-3er. Trimestre: 5.20 %</p>
-
-FINAL;
-    } // seccion_grafica_html
-
-    /**
-     * Sección Gráfica 3 JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_grafica_3_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaDatosImco === 'undefined') {
-    vargraficaDatosImco = Morris.Line({
-      element: 'graficaDatosImco',
-      data: [{ fecha: '2008-12-31', dato: 5.6911 },{ fecha: '2009-12-31', dato: 8.0777 },{ fecha: '2010-12-31', dato: 7.2121 },{ fecha: '2011-12-31', dato: 5.9828 },{ fecha: '2012-12-31', dato: 6.0168 }],
-      xkey: 'fecha',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      lineColors: ['#FF5B02'],
-      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
-      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
-    });
-  }
-FINAL;
-    } // seccion_grafica_javascript
-
-    /**
-     * Sección Otras Regiones HTML
-     *
-     * @return string Código HTML
-     */
-    protected function seccion_otras_regiones_html() {
-        return <<<FINAL
-      <h3>Gráfica con los últimos datos de Tasa de Desempleo Abierto</h3>
-      <div id="graficaOtrasRegiones" class="grafica"></div>
-      <h3>Últimos datos de Tasa de Desempleo Abierto</h3>
-      <table class="table table-hover table-bordered matriz">
-        <thead>
-          <tr>
-            <th>Región</th>
-            <th>Fecha</th>
-            <th>Dato</th>
-            <th>Fuente</th>
-            <th>Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Torreón</td>
-            <td>31/03/2017</td>
-            <td>4.29 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Gómez Palacio</td>
-            <td>31/03/2017</td>
-            <td>5.97 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Lerdo</td>
-            <td>31/03/2017</td>
-            <td>2.65 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Matamoros</td>
-            <td>31/03/2017</td>
-            <td>5.67 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>La Laguna</td>
-            <td>31/03/2017</td>
-            <td>4.86 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Coahuila</td>
-            <td>31/03/2017</td>
-            <td>4.55 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Durango</td>
-            <td>31/03/2017</td>
-            <td>4.03 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Nacional</td>
-            <td>31/03/2017</td>
-            <td>3.39 %</td>
-            <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Unidad:</b> Porcentaje.</p>
-      <h3>Observaciones</h3>
-<p>Media nacional del indicador:</p>
-
-<ul>
-<li>2010 = 3.72</li>
-<li>2010 = 0.98%</li>
-<li>1990 = 2.32%</li>
-</ul>
-
-<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&amp;s=est">INEGI. Censos de población y vivienda</a></p>
-
-<p>Media Nacional 2014:
-1er. Trimestre: 4.80 %
-2do. Trimestre: 4.90 %
-3er. Trimestre: 5.20 %</p>
-
-FINAL;
-    } // seccion_otras_regiones_html
-
-    /**
-     * Sección Otras Regiones JavaScript
-     *
-     * @return string Código JavaScript
-     */
-    protected function seccion_otras_regiones_javascript() {
-        return <<<FINAL
-  // Gráfica
-  if (typeof vargraficaOtrasRegiones === 'undefined') {
-    vargraficaOtrasRegiones = Morris.Bar({
-      element: 'graficaOtrasRegiones',
-      data: [{ region: 'Torreón', dato: 4.2900 },{ region: 'Gómez Palacio', dato: 5.9700 },{ region: 'Lerdo', dato: 2.6500 },{ region: 'Matamoros', dato: 5.6700 },{ region: 'La Laguna', dato: 4.8600 },{ region: 'Coahuila', dato: 4.5500 },{ region: 'Durango', dato: 4.0300 },{ region: 'Nacional', dato: 3.3900 }],
-      xkey: 'region',
-      ykeys: ['dato'],
-      labels: ['Dato'],
-      barColors: ['#FF5B02']
-    });
-  }
-FINAL;
-    } // seccion_otras_regiones_javascript
-
-    /**
-     * HTML
-     *
-     * @return string Código HTML
-     */
-    public function html() {
-        // Ejecutar los métodos que alimentan cada lengüeta
-        $this->lenguetas->agregar('smi-indicador-datos', 'Datos', $this->seccion_datos_html());
-        $this->lenguetas->agregar('smi-indicador-grafica-1', 'Gráfica 1', $this->seccion_grafica_1_html());
-        $this->lenguetas->agregar_javascript($this->seccion_grafica_1_javascript());
-        $this->lenguetas->agregar('smi-indicador-grafica-2', 'Gráfica 2', $this->seccion_grafica_2_html());
-        $this->lenguetas->agregar_javascript($this->seccion_grafica_2_javascript());
-        $this->lenguetas->agregar('smi-indicador-grafica-3', 'Gráfica 3', $this->seccion_grafica_3_html());
-        $this->lenguetas->agregar_javascript($this->seccion_grafica_3_javascript());
-        $this->lenguetas->agregar('smi-indicador-otras-regiones', 'Otras regiones', $this->seccion_otras_regiones_html());
-        $this->lenguetas->agregar_javascript($this->seccion_otras_regiones_javascript());
-        $this->lenguetas->definir_activa(); // Primer lengüeta activa
-        // Definir el contenido de esta publicación que es un SchemaArticle
-        $this->contenido->articleBody = $this->lenguetas->html();
-        // Ejecutar este método en el padre
-        return parent::html();
-    } // html
-
-    /**
-     * Javascript
-     *
-     * @return string Código Javascript
-     */
-    public function javascript() {
-        // JavaScript de las lengüetas, es el de las gráficas
-        $this->javascript[] = $this->lenguetas->javascript();
-        // JavaScript para la carga completa del documento, es el de la tabla con los datos
-        $this->javascript[] = $this->datos_tabla->javascript();
-        // Ejecutar este método en el padre
-        return parent::javascript();
-    } // javascript
-
-    /**
-     * Redifusion HTML
-     *
-     * @return string Código HTML
-     */
-    public function redifusion_html() {
-        // Código HTML para redifusión
-        $this->redifusion = $this->descripcion;
-        // Ejecutar este método en el padre
-        return parent::redifusion_html();
-    } // redifusion_html
+            array('fecha' => '2017-03-31', 'valor' => '4.8600', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos', 'notas' => ''));
+    } // datos
 
 } // Clase EconomiaTasaDeDesempleoAbierto
 
