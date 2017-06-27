@@ -28,6 +28,12 @@ namespace SMIBaseNUEVO;
 class GraficaBarrasWeb extends Grafica implements SalidaWeb {
 
     // protected $identificador;
+    // protected $clave_x;
+    // protected $claves_y;
+    // protected $etiquetas_y;
+    // protected $colores_y;
+    // protected $datos;
+    // protected $formato_x;
 
     /**
      * HTML
