@@ -25,7 +25,7 @@ namespace SMIBaseNUEVO;
 /**
  * Clase GraficaLineasWeb
  */
-class GraficaBarrasWeb extends Grafica implements SalidaWeb {
+class GraficaLineasWeb extends Grafica implements SalidaWeb {
 
     // protected $identificador;
 
@@ -38,7 +38,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         // Validar
         $this->validar();
         // Entregar
-        return "<div id=\"{$this->identificador}\" class=\"grafica\"></div>";
+        return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
     /**
@@ -62,7 +62,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
             }
             $d[] = "{ {$this->clave_x}: '$x', ".implode(', ', $b)." }";
         }
-        $a[] = "data: [".implode(",", $d)."]";
+        $a[] = "data: [\n        ".implode(",\n        ", $d)."]";
         // Acumular clave del eje x
         $a[] = "xkey: '{$this->clave_x}'";
         // Acumular claves del eje y
@@ -96,7 +96,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         return <<<FINAL
   // MorrisJS grafica de lineas
   if (typeof var{$this->identificador} === 'undefined') {
-    var{$this->identificador} = Morris.$objeto({
+    var{$this->identificador} = Morris.Line({
       $interior
     });
   }

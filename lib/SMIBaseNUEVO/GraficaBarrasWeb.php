@@ -38,7 +38,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         // Validar
         $this->validar();
         // Entregar
-        return "<div id=\"{$this->identificador}\" class=\"grafica\"></div>";
+        return "    <div id=\"{$this->identificador}\" class=\"grafica\"></div>";
     } // html
 
     /**
@@ -88,7 +88,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         return <<<FINAL
   // MorrisJS grafica de barras
   if (typeof var{$this->identificador} === 'undefined') {
-    var{$this->identificador} = Morris.$objeto({
+    var{$this->identificador} = Morris.Bar({
       $interior
     });
   }

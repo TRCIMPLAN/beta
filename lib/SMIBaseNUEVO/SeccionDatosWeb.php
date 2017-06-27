@@ -27,10 +27,9 @@ namespace SMIBaseNUEVO;
  */
 class SeccionDatosWeb implements SalidaWeb {
 
-    protected $publicacion;                    // Instancia de PublicacionWeb
-    protected $tabla;                          // Instancia de TablaWeb
-    protected $preparado   = FALSE;            // Bandera
-    const     TABLA_ID     = 'DatosIndicador'; // Identificador único para la tabla web
+    protected $publicacion;       // Instancia de PublicacionWeb
+    protected $tabla;             // Instancia de TablaWeb
+    protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
@@ -46,7 +45,8 @@ class SeccionDatosWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
-            $this->tabla = new TablaWeb(self::TABLA_ID);
+            $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Datos '.$this->publicacion->nombre);
+            $this->tabla = new TablaWeb($identificador);
             $this->tabla->definir_estructura($this->publicacion->estructura());
             $this->tabla->definir_panal($this->publicacion->datos());
             $this->preparado = TRUE;

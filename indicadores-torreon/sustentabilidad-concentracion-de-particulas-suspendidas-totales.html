@@ -187,10 +187,17 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica1" aria-controls="LenguetasIndicadorGrafica1" role="tab" data-toggle="tab">Gráfica 1</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica3" aria-controls="LenguetasIndicadorGrafica3" role="tab" data-toggle="tab">Gráfica 3</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica4" aria-controls="LenguetasIndicadorGrafica4" role="tab" data-toggle="tab">Gráfica 4</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica5" aria-controls="LenguetasIndicadorGrafica5" role="tab" data-toggle="tab">Gráfica 5</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica6" aria-controls="LenguetasIndicadorGrafica6" role="tab" data-toggle="tab">Gráfica 6</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica7" aria-controls="LenguetasIndicadorGrafica7" role="tab" data-toggle="tab">Gráfica 7</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -2201,6 +2208,27 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica1">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica3">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica4">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica5">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica6">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica7">
+    <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -2236,7 +2264,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -2251,6 +2279,437 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica1 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica1"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia',
+      data: [
+        { fecha: '2016-01-13', dato: 172 },
+        { fecha: '2016-01-20', dato: 193 },
+        { fecha: '2016-01-27', dato: 91 },
+        { fecha: '2016-02-03', dato: 144 },
+        { fecha: '2016-02-10', dato: 229 },
+        { fecha: '2016-02-17', dato: 199 },
+        { fecha: '2016-02-24', dato: 114 },
+        { fecha: '2016-03-02', dato: 174 },
+        { fecha: '2016-03-09', dato: 32 },
+        { fecha: '2016-03-16', dato: 142 },
+        { fecha: '2016-03-30', dato: 117 },
+        { fecha: '2016-04-06', dato: 248 },
+        { fecha: '2016-04-13', dato: 234 },
+        { fecha: '2016-04-20', dato: 222 },
+        { fecha: '2016-04-27', dato: 152 },
+        { fecha: '2016-05-04', dato: 131 },
+        { fecha: '2016-05-11', dato: 119 },
+        { fecha: '2016-05-18', dato: 134 },
+        { fecha: '2016-05-25', dato: 274 },
+        { fecha: '2016-06-01', dato: 153 },
+        { fecha: '2016-06-08', dato: 140 },
+        { fecha: '2016-06-15', dato: 197 },
+        { fecha: '2016-06-22', dato: 85 },
+        { fecha: '2016-06-29', dato: 133 },
+        { fecha: '2016-07-06', dato: 107 },
+        { fecha: '2016-07-13', dato: 63 },
+        { fecha: '2016-07-20', dato: 70 },
+        { fecha: '2016-07-27', dato: 119 },
+        { fecha: '2016-08-03', dato: 113 },
+        { fecha: '2016-08-10', dato: 91 },
+        { fecha: '2016-08-17', dato: 84 },
+        { fecha: '2016-08-24', dato: 77 },
+        { fecha: '2016-09-07', dato: 132 },
+        { fecha: '2016-09-14', dato: 102 },
+        { fecha: '2016-09-21', dato: 118 },
+        { fecha: '2016-09-28', dato: 159 },
+        { fecha: '2016-10-05', dato: 167 },
+        { fecha: '2016-10-12', dato: 209 },
+        { fecha: '2016-10-19', dato: 204 },
+        { fecha: '2016-10-26', dato: 139 },
+        { fecha: '2016-11-02', dato: 204 },
+        { fecha: '2016-11-09', dato: 58 },
+        { fecha: '2016-11-23', dato: 169 },
+        { fecha: '2016-11-30', dato: 206 },
+        { fecha: '2016-12-07', dato: 206 },
+        { fecha: '2016-12-14', dato: 261 },
+        { fecha: '2016-12-21', dato: 245 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares',
+      data: [
+        { fecha: '2016-01-13', dato: 196 },
+        { fecha: '2016-01-20', dato: 254 },
+        { fecha: '2016-01-27', dato: 88 },
+        { fecha: '2016-02-03', dato: 136 },
+        { fecha: '2016-02-10', dato: 213 },
+        { fecha: '2016-02-17', dato: 215 },
+        { fecha: '2016-02-24', dato: 204 },
+        { fecha: '2016-03-02', dato: 183 },
+        { fecha: '2016-03-09', dato: 55 },
+        { fecha: '2016-03-16', dato: 193 },
+        { fecha: '2016-03-30', dato: 107 },
+        { fecha: '2016-04-06', dato: 218 },
+        { fecha: '2016-04-13', dato: 149 },
+        { fecha: '2016-04-20', dato: 234 },
+        { fecha: '2016-04-27', dato: 167 },
+        { fecha: '2016-05-04', dato: 132 },
+        { fecha: '2016-05-11', dato: 132 },
+        { fecha: '2016-05-18', dato: 148 },
+        { fecha: '2016-05-25', dato: 287 },
+        { fecha: '2016-06-01', dato: 164 },
+        { fecha: '2016-06-08', dato: 135 },
+        { fecha: '2016-06-15', dato: 186 },
+        { fecha: '2016-06-22', dato: 101 },
+        { fecha: '2016-06-29', dato: 111 },
+        { fecha: '2016-07-06', dato: 123 },
+        { fecha: '2016-07-13', dato: 88 },
+        { fecha: '2016-07-20', dato: 101 },
+        { fecha: '2016-07-27', dato: 148 },
+        { fecha: '2016-08-03', dato: 138 },
+        { fecha: '2016-08-10', dato: 107 },
+        { fecha: '2016-08-17', dato: 89 },
+        { fecha: '2016-08-24', dato: 79 },
+        { fecha: '2016-09-07', dato: 134 },
+        { fecha: '2016-09-14', dato: 144 },
+        { fecha: '2016-09-21', dato: 127 },
+        { fecha: '2016-09-28', dato: 147 },
+        { fecha: '2016-10-05', dato: 203 },
+        { fecha: '2016-10-12', dato: 216 },
+        { fecha: '2016-10-19', dato: 193 },
+        { fecha: '2016-10-26', dato: 162 },
+        { fecha: '2016-11-02', dato: 226 },
+        { fecha: '2016-11-09', dato: 77 },
+        { fecha: '2016-11-23', dato: 185 },
+        { fecha: '2016-11-30', dato: 259 },
+        { fecha: '2016-12-07', dato: 277 },
+        { fecha: '2016-12-14', dato: 374 },
+        { fecha: '2016-12-21', dato: 324 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica3 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica3"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion',
+      data: [
+        { fecha: '2016-01-12', dato: 137 },
+        { fecha: '2016-01-19', dato: 222 },
+        { fecha: '2016-01-26', dato: 208 },
+        { fecha: '2016-02-02', dato: 106 },
+        { fecha: '2016-02-09', dato: 171 },
+        { fecha: '2016-02-16', dato: 240 },
+        { fecha: '2016-02-23', dato: 236 },
+        { fecha: '2016-03-01', dato: 171 },
+        { fecha: '2016-03-08', dato: 190 },
+        { fecha: '2016-03-12', dato: 185 },
+        { fecha: '2016-03-15', dato: 158 },
+        { fecha: '2016-03-19', dato: 236 },
+        { fecha: '2016-03-26', dato: 96 },
+        { fecha: '2016-03-29', dato: 89 },
+        { fecha: '2016-04-05', dato: 161 },
+        { fecha: '2016-05-03', dato: 158 },
+        { fecha: '2016-05-10', dato: 148 },
+        { fecha: '2016-05-17', dato: 97 },
+        { fecha: '2016-05-24', dato: 151 },
+        { fecha: '2016-05-31', dato: 167 },
+        { fecha: '2016-06-07', dato: 139 },
+        { fecha: '2016-06-14', dato: 128 },
+        { fecha: '2016-06-21', dato: 71 },
+        { fecha: '2016-06-28', dato: 83 },
+        { fecha: '2016-07-05', dato: 91 },
+        { fecha: '2016-07-12', dato: 148 },
+        { fecha: '2016-07-19', dato: 129 },
+        { fecha: '2016-07-26', dato: 125 },
+        { fecha: '2016-08-02', dato: 129 },
+        { fecha: '2016-08-09', dato: 84 },
+        { fecha: '2016-08-16', dato: 106 },
+        { fecha: '2016-08-23', dato: 114 },
+        { fecha: '2016-09-06', dato: 116 },
+        { fecha: '2016-09-13', dato: 140 },
+        { fecha: '2016-09-20', dato: 127 },
+        { fecha: '2016-09-27', dato: 138 },
+        { fecha: '2016-10-04', dato: 140 },
+        { fecha: '2016-10-11', dato: 141 },
+        { fecha: '2016-10-18', dato: 223 },
+        { fecha: '2016-10-25', dato: 129 },
+        { fecha: '2016-11-01', dato: 203 },
+        { fecha: '2016-11-08', dato: 141 },
+        { fecha: '2016-11-15', dato: 140 },
+        { fecha: '2016-11-22', dato: 159 },
+        { fecha: '2016-11-29', dato: 137 },
+        { fecha: '2016-12-07', dato: 220 },
+        { fecha: '2016-12-13', dato: 204 },
+        { fecha: '2016-12-21', dato: 241 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica4 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica4"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata',
+      data: [
+        { fecha: '2016-01-12', dato: 178 },
+        { fecha: '2016-01-19', dato: 377 },
+        { fecha: '2016-01-26', dato: 230 },
+        { fecha: '2016-02-02', dato: 122 },
+        { fecha: '2016-02-09', dato: 230 },
+        { fecha: '2016-02-16', dato: 398 },
+        { fecha: '2016-02-23', dato: 266 },
+        { fecha: '2016-03-01', dato: 246 },
+        { fecha: '2016-03-08', dato: 393 },
+        { fecha: '2016-03-12', dato: 236 },
+        { fecha: '2016-03-15', dato: 289 },
+        { fecha: '2016-03-19', dato: 354 },
+        { fecha: '2016-03-26', dato: 136 },
+        { fecha: '2016-03-29', dato: 164 },
+        { fecha: '2016-04-05', dato: 213 },
+        { fecha: '2016-05-03', dato: 163 },
+        { fecha: '2016-05-10', dato: 188 },
+        { fecha: '2016-05-17', dato: 134 },
+        { fecha: '2016-05-24', dato: 199 },
+        { fecha: '2016-05-31', dato: 204 },
+        { fecha: '2016-06-07', dato: 196 },
+        { fecha: '2016-06-14', dato: 172 },
+        { fecha: '2016-06-21', dato: 130 },
+        { fecha: '2016-06-28', dato: 91 },
+        { fecha: '2016-07-05', dato: 130 },
+        { fecha: '2016-07-12', dato: 167 },
+        { fecha: '2016-07-19', dato: 156 },
+        { fecha: '2016-07-26', dato: 153 },
+        { fecha: '2016-08-02', dato: 123 },
+        { fecha: '2016-08-09', dato: 71 },
+        { fecha: '2016-08-16', dato: 83 },
+        { fecha: '2016-08-23', dato: 153 },
+        { fecha: '2016-09-06', dato: 116 },
+        { fecha: '2016-09-13', dato: 167 },
+        { fecha: '2016-09-20', dato: 133 },
+        { fecha: '2016-09-27', dato: 97 },
+        { fecha: '2016-10-04', dato: 184 },
+        { fecha: '2016-10-11', dato: 300 },
+        { fecha: '2016-10-18', dato: 271 },
+        { fecha: '2016-10-25', dato: 141 },
+        { fecha: '2016-11-01', dato: 293 },
+        { fecha: '2016-11-08', dato: 137 },
+        { fecha: '2016-11-15', dato: 329 },
+        { fecha: '2016-11-22', dato: 213 },
+        { fecha: '2016-11-29', dato: 251 },
+        { fecha: '2016-12-06', dato: 267 },
+        { fecha: '2016-12-13', dato: 477 },
+        { fecha: '2016-12-20', dato: 342 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica5 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica5"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2 === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2 = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2',
+      data: [
+        { fecha: '2016-01-12', dato: 152 },
+        { fecha: '2016-01-19', dato: 212 },
+        { fecha: '2016-01-26', dato: 171 },
+        { fecha: '2016-02-02', dato: 109 },
+        { fecha: '2016-02-09', dato: 165 },
+        { fecha: '2016-02-16', dato: 268 },
+        { fecha: '2016-02-23', dato: 191 },
+        { fecha: '2016-03-01', dato: 133 },
+        { fecha: '2016-03-08', dato: 307 },
+        { fecha: '2016-03-12', dato: 172 },
+        { fecha: '2016-03-15', dato: 206 },
+        { fecha: '2016-03-19', dato: 236 },
+        { fecha: '2016-03-26', dato: 92 },
+        { fecha: '2016-03-29', dato: 121 },
+        { fecha: '2016-04-05', dato: 164 },
+        { fecha: '2016-05-03', dato: 133 },
+        { fecha: '2016-05-10', dato: 141 },
+        { fecha: '2016-05-17', dato: 116 },
+        { fecha: '2016-05-24', dato: 156 },
+        { fecha: '2016-05-31', dato: 162 },
+        { fecha: '2016-06-07', dato: 126 },
+        { fecha: '2016-06-14', dato: 129 },
+        { fecha: '2016-06-21', dato: 96 },
+        { fecha: '2016-06-28', dato: 87 },
+        { fecha: '2016-07-05', dato: 110 },
+        { fecha: '2016-07-12', dato: 141 },
+        { fecha: '2016-07-19', dato: 164 },
+        { fecha: '2016-07-26', dato: 117 },
+        { fecha: '2016-08-02', dato: 114 },
+        { fecha: '2016-08-09', dato: 73 },
+        { fecha: '2016-08-16', dato: 87 },
+        { fecha: '2016-08-23', dato: 114 },
+        { fecha: '2016-09-06', dato: 103 },
+        { fecha: '2016-09-13', dato: 147 },
+        { fecha: '2016-09-20', dato: 108 },
+        { fecha: '2016-09-27', dato: 97 },
+        { fecha: '2016-10-04', dato: 161 },
+        { fecha: '2016-10-11', dato: 161 },
+        { fecha: '2016-10-18', dato: 229 },
+        { fecha: '2016-10-25', dato: 124 },
+        { fecha: '2016-11-01', dato: 215 },
+        { fecha: '2016-11-08', dato: 129 },
+        { fecha: '2016-11-15', dato: 216 },
+        { fecha: '2016-11-22', dato: 187 },
+        { fecha: '2016-11-29', dato: 154 },
+        { fecha: '2016-12-07', dato: 261 },
+        { fecha: '2016-12-13', dato: 311 },
+        { fecha: '2016-12-21', dato: 306 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica6 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica6"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3 === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3 = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3',
+      data: [
+        { fecha: '2016-01-13', dato: 205 },
+        { fecha: '2016-01-20', dato: 296 },
+        { fecha: '2016-01-27', dato: 83 },
+        { fecha: '2016-02-03', dato: 154 },
+        { fecha: '2016-02-10', dato: 218 },
+        { fecha: '2016-02-17', dato: 216 },
+        { fecha: '2016-02-24', dato: 224 },
+        { fecha: '2016-03-02', dato: 202 },
+        { fecha: '2016-03-09', dato: 50 },
+        { fecha: '2016-03-16', dato: 215 },
+        { fecha: '2016-03-30', dato: 140 },
+        { fecha: '2016-04-06', dato: 246 },
+        { fecha: '2016-04-13', dato: 169 },
+        { fecha: '2016-04-20', dato: 262 },
+        { fecha: '2016-04-27', dato: 160 },
+        { fecha: '2016-05-04', dato: 130 },
+        { fecha: '2016-05-11', dato: 135 },
+        { fecha: '2016-05-18', dato: 141 },
+        { fecha: '2016-05-25', dato: 331 },
+        { fecha: '2016-06-01', dato: 210 },
+        { fecha: '2016-06-08', dato: 122 },
+        { fecha: '2016-06-15', dato: 227 },
+        { fecha: '2016-06-22', dato: 98 },
+        { fecha: '2016-06-29', dato: 110 },
+        { fecha: '2016-07-06', dato: 118 },
+        { fecha: '2016-07-13', dato: 80 },
+        { fecha: '2016-07-20', dato: 91 },
+        { fecha: '2016-07-27', dato: 124 },
+        { fecha: '2016-08-03', dato: 116 },
+        { fecha: '2016-08-10', dato: 112 },
+        { fecha: '2016-08-17', dato: 74 },
+        { fecha: '2016-08-24', dato: 98 },
+        { fecha: '2016-09-07', dato: 147 },
+        { fecha: '2016-09-14', dato: 146 },
+        { fecha: '2016-09-21', dato: 112 },
+        { fecha: '2016-09-28', dato: 169 },
+        { fecha: '2016-10-05', dato: 248 },
+        { fecha: '2016-10-12', dato: 240 },
+        { fecha: '2016-10-19', dato: 236 },
+        { fecha: '2016-10-26', dato: 130 },
+        { fecha: '2016-11-02', dato: 264 },
+        { fecha: '2016-11-09', dato: 70 },
+        { fecha: '2016-11-16', dato: 206 },
+        { fecha: '2016-11-23', dato: 201 },
+        { fecha: '2016-11-30', dato: 296 },
+        { fecha: '2016-12-07', dato: 321 },
+        { fecha: '2016-12-14', dato: 503 },
+        { fecha: '2016-12-21', dato: 227 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica7 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica7"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83 === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83 = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83',
+      data: [
+        { fecha: '2016-01-13', dato: 248 },
+        { fecha: '2016-01-20', dato: 390 },
+        { fecha: '2016-01-27', dato: 129 },
+        { fecha: '2016-02-03', dato: 172 },
+        { fecha: '2016-02-10', dato: 307 },
+        { fecha: '2016-02-17', dato: 309 },
+        { fecha: '2016-02-24', dato: 325 },
+        { fecha: '2016-03-02', dato: 322 },
+        { fecha: '2016-03-09', dato: 67 },
+        { fecha: '2016-03-16', dato: 315 },
+        { fecha: '2016-03-30', dato: 169 },
+        { fecha: '2016-04-06', dato: 292 },
+        { fecha: '2016-04-13', dato: 209 },
+        { fecha: '2016-04-20', dato: 301 },
+        { fecha: '2016-04-27', dato: 298 },
+        { fecha: '2016-05-04', dato: 213 },
+        { fecha: '2016-05-11', dato: 191 },
+        { fecha: '2016-05-18', dato: 195 },
+        { fecha: '2016-05-25', dato: 425 },
+        { fecha: '2016-06-01', dato: 289 },
+        { fecha: '2016-06-08', dato: 176 },
+        { fecha: '2016-06-15', dato: 285 },
+        { fecha: '2016-06-22', dato: 167 },
+        { fecha: '2016-06-29', dato: 143 },
+        { fecha: '2016-07-06', dato: 161 },
+        { fecha: '2016-07-13', dato: 111 },
+        { fecha: '2016-07-20', dato: 157 },
+        { fecha: '2016-07-27', dato: 162 },
+        { fecha: '2016-08-03', dato: 151 },
+        { fecha: '2016-08-10', dato: 123 },
+        { fecha: '2016-08-17', dato: 102 },
+        { fecha: '2016-08-24', dato: 108 },
+        { fecha: '2016-09-07', dato: 203 },
+        { fecha: '2016-09-14', dato: 220 },
+        { fecha: '2016-09-21', dato: 193 },
+        { fecha: '2016-09-28', dato: 214 },
+        { fecha: '2016-10-05', dato: 306 },
+        { fecha: '2016-10-12', dato: 313 },
+        { fecha: '2016-10-19', dato: 227 },
+        { fecha: '2016-10-26', dato: 213 },
+        { fecha: '2016-11-02', dato: 293 },
+        { fecha: '2016-11-09', dato: 97 },
+        { fecha: '2016-11-16', dato: 258 },
+        { fecha: '2016-11-30', dato: 341 },
+        { fecha: '2016-12-07', dato: 327 },
+        { fecha: '2016-12-14', dato: 477 },
+        { fecha: '2016-12-21', dato: 371 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

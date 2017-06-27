@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosPoblacionEstimadaEnGomezPalacio" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -263,6 +264,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasPoblacionEstimadaEnGomezPalacio" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -298,7 +302,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosPoblacionEstimadaEnGomezPalacio').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -313,6 +317,30 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasPoblacionEstimadaEnGomezPalacio === 'undefined') {
+    varSmiGraficasPoblacionEstimadaEnGomezPalacio = Morris.Line({
+      element: 'SmiGraficasPoblacionEstimadaEnGomezPalacio',
+      data: [
+        { fecha: '2011-06-30', dato: 339355 },
+        { fecha: '2012-06-30', dato: 343135 },
+        { fecha: '2013-06-30', dato: 346836 },
+        { fecha: '2014-06-30', dato: 350513 },
+        { fecha: '2015-06-30', dato: 354123 },
+        { fecha: '2016-06-30', dato: 357664 },
+        { fecha: '2017-06-30', dato: 361144 },
+        { fecha: '2018-06-30', dato: 364540 },
+        { fecha: '2019-06-30', dato: 367828 },
+        { fecha: '2020-06-30', dato: 371002 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

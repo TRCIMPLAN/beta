@@ -223,10 +223,11 @@ Porcentaje de población ocupada con ingresos de hasta 2 salarios mínimos</div>
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosIndiceDeMarginacionEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -269,6 +270,9 @@ Porcentaje de población ocupada con ingresos de hasta 2 salarios mínimos</div>
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasIndiceDeMarginacionEnTorreon" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -304,7 +308,7 @@ Porcentaje de población ocupada con ingresos de hasta 2 salarios mínimos</div>
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosIndiceDeMarginacionEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -319,6 +323,25 @@ Porcentaje de población ocupada con ingresos de hasta 2 salarios mínimos</div>
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasIndiceDeMarginacionEnTorreon === 'undefined') {
+    varSmiGraficasIndiceDeMarginacionEnTorreon = Morris.Line({
+      element: 'SmiGraficasIndiceDeMarginacionEnTorreon',
+      data: [
+        { fecha: '1990-12-31', dato: -1.9980 },
+        { fecha: '1995-12-31', dato: -1.7440 },
+        { fecha: '2000-12-31', dato: -1.9830 },
+        { fecha: '2005-12-31', dato: -1.8930 },
+        { fecha: '2015-12-31', dato: -1.7220 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

@@ -187,10 +187,13 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica1" aria-controls="LenguetasIndicadorGrafica1" role="tab" data-toggle="tab">Gráfica 1</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica3" aria-controls="LenguetasIndicadorGrafica3" role="tab" data-toggle="tab">Gráfica 3</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosConcentracionDeParticulasMenoresA10MicrasEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -845,6 +848,15 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica1">
+    <div id="SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonCentroCulturalJoseRMijares" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <div id="SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonDifRevolucion" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica3">
+    <div id="SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonHecat" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -880,7 +892,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosConcentracionDeParticulasMenoresA10MicrasEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -895,6 +907,155 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica1 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica1"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonCentroCulturalJoseRMijares === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonCentroCulturalJoseRMijares = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonCentroCulturalJoseRMijares',
+      data: [
+        { fecha: '2016-09-27', dato: 41 },
+        { fecha: '2016-10-04', dato: 111 },
+        { fecha: '2016-10-11', dato: 106 },
+        { fecha: '2016-10-18', dato: 169 },
+        { fecha: '2016-10-25', dato: 70 },
+        { fecha: '2016-11-01', dato: 155 },
+        { fecha: '2016-11-08', dato: 71 },
+        { fecha: '2016-11-15', dato: 116 },
+        { fecha: '2016-11-22', dato: 89 },
+        { fecha: '2016-11-29', dato: 84 },
+        { fecha: '2016-12-06', dato: 149 },
+        { fecha: '2016-12-13', dato: 174 },
+        { fecha: '2016-12-20', dato: 192 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonDifRevolucion === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonDifRevolucion = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonDifRevolucion',
+      data: [
+        { fecha: '2016-01-12', dato: 59 },
+        { fecha: '2016-01-19', dato: 83 },
+        { fecha: '2016-01-26', dato: 40 },
+        { fecha: '2016-02-02', dato: 27 },
+        { fecha: '2016-02-09', dato: 61 },
+        { fecha: '2016-02-16', dato: 84 },
+        { fecha: '2016-02-23', dato: 54 },
+        { fecha: '2016-03-01', dato: 49 },
+        { fecha: '2016-03-08', dato: 34 },
+        { fecha: '2016-03-12', dato: 42 },
+        { fecha: '2016-03-15', dato: 56 },
+        { fecha: '2016-03-19', dato: 57 },
+        { fecha: '2016-03-26', dato: 30 },
+        { fecha: '2016-03-29', dato: 21 },
+        { fecha: '2016-04-05', dato: 55 },
+        { fecha: '2016-05-03', dato: 42 },
+        { fecha: '2016-05-10', dato: 44 },
+        { fecha: '2016-05-17', dato: 30 },
+        { fecha: '2016-05-24', dato: 51 },
+        { fecha: '2016-05-31', dato: 43 },
+        { fecha: '2016-06-07', dato: 50 },
+        { fecha: '2016-06-14', dato: 37 },
+        { fecha: '2016-06-21', dato: 28 },
+        { fecha: '2016-07-05', dato: 28 },
+        { fecha: '2016-07-12', dato: 35 },
+        { fecha: '2016-07-19', dato: 28 },
+        { fecha: '2016-07-26', dato: 35 },
+        { fecha: '2016-08-02', dato: 43 },
+        { fecha: '2016-08-09', dato: 25 },
+        { fecha: '2016-08-16', dato: 35 },
+        { fecha: '2016-08-23', dato: 35 },
+        { fecha: '2016-09-06', dato: 29 },
+        { fecha: '2016-09-13', dato: 42 },
+        { fecha: '2016-09-20', dato: 43 },
+        { fecha: '2016-09-27', dato: 48 },
+        { fecha: '2016-10-04', dato: 42 },
+        { fecha: '2016-10-11', dato: 48 },
+        { fecha: '2016-10-18', dato: 64 },
+        { fecha: '2016-10-25', dato: 42 },
+        { fecha: '2016-11-01', dato: 70 },
+        { fecha: '2016-11-08', dato: 41 },
+        { fecha: '2016-11-15', dato: 47 },
+        { fecha: '2016-11-22', dato: 49 },
+        { fecha: '2016-11-29', dato: 34 },
+        { fecha: '2016-12-06', dato: 65 },
+        { fecha: '2016-12-13', dato: 68 },
+        { fecha: '2016-12-20', dato: 76 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorGrafica3 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica3"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonHecat === 'undefined') {
+    varSmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonHecat = Morris.Line({
+      element: 'SmiGraficasConcentracionDeParticulasMenoresA10MicrasEnTorreonHecat',
+      data: [
+        { fecha: '2016-01-13', dato: 67 },
+        { fecha: '2016-01-20', dato: 123 },
+        { fecha: '2016-01-27', dato: 36 },
+        { fecha: '2016-02-03', dato: 49 },
+        { fecha: '2016-02-10', dato: 91 },
+        { fecha: '2016-02-17', dato: 87 },
+        { fecha: '2016-02-24', dato: 84 },
+        { fecha: '2016-03-02', dato: 89 },
+        { fecha: '2016-03-09', dato: 59 },
+        { fecha: '2016-03-16', dato: 71 },
+        { fecha: '2016-03-30', dato: 92 },
+        { fecha: '2016-04-06', dato: 96 },
+        { fecha: '2016-04-13', dato: 64 },
+        { fecha: '2016-04-20', dato: 103 },
+        { fecha: '2016-04-27', dato: 47 },
+        { fecha: '2016-05-11', dato: 68 },
+        { fecha: '2016-05-18', dato: 66 },
+        { fecha: '2016-05-25', dato: 136 },
+        { fecha: '2016-06-01', dato: 77 },
+        { fecha: '2016-06-08', dato: 34 },
+        { fecha: '2016-06-15', dato: 105 },
+        { fecha: '2016-06-22', dato: 59 },
+        { fecha: '2016-06-29', dato: 54 },
+        { fecha: '2016-07-06', dato: 66 },
+        { fecha: '2016-07-13', dato: 45 },
+        { fecha: '2016-07-20', dato: 65 },
+        { fecha: '2016-07-27', dato: 64 },
+        { fecha: '2016-08-03', dato: 52 },
+        { fecha: '2016-08-10', dato: 52 },
+        { fecha: '2016-08-17', dato: 32 },
+        { fecha: '2016-08-24', dato: 32 },
+        { fecha: '2016-09-07', dato: 71 },
+        { fecha: '2016-09-14', dato: 64 },
+        { fecha: '2016-09-21', dato: 52 },
+        { fecha: '2016-09-28', dato: 63 },
+        { fecha: '2016-10-05', dato: 97 },
+        { fecha: '2016-10-12', dato: 109 },
+        { fecha: '2016-10-19', dato: 109 },
+        { fecha: '2016-10-26', dato: 64 },
+        { fecha: '2016-11-02', dato: 109 },
+        { fecha: '2016-11-09', dato: 25 },
+        { fecha: '2016-11-16', dato: 90 },
+        { fecha: '2016-11-23', dato: 76 },
+        { fecha: '2016-11-30', dato: 105 },
+        { fecha: '2016-12-07', dato: 99 },
+        { fecha: '2016-12-14', dato: 180 },
+        { fecha: '2016-12-21', dato: 126 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

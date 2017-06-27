@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosTasaDeInformalidadEnLaLaguna" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -335,6 +336,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasTasaDeInformalidadEnLaLaguna" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -370,7 +374,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosTasaDeInformalidadEnLaLaguna').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -385,6 +389,42 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasTasaDeInformalidadEnLaLaguna === 'undefined') {
+    varSmiGraficasTasaDeInformalidadEnLaLaguna = Morris.Line({
+      element: 'SmiGraficasTasaDeInformalidadEnLaLaguna',
+      data: [
+        { fecha: '2011-12-31', dato: 46.9800 },
+        { fecha: '2012-03-31', dato: 50.1600 },
+        { fecha: '2012-06-30', dato: 50.3400 },
+        { fecha: '2012-09-30', dato: 53.1100 },
+        { fecha: '2012-12-31', dato: 51.7700 },
+        { fecha: '2013-03-31', dato: 47.1100 },
+        { fecha: '2013-06-30', dato: 44.8200 },
+        { fecha: '2013-09-30', dato: 45.5400 },
+        { fecha: '2013-12-31', dato: 43.2100 },
+        { fecha: '2014-03-31', dato: 42.6900 },
+        { fecha: '2014-06-30', dato: 43.5300 },
+        { fecha: '2014-09-30', dato: 43.8000 },
+        { fecha: '2014-12-31', dato: 43.3700 },
+        { fecha: '2015-03-31', dato: 44.8900 },
+        { fecha: '2015-06-30', dato: 44.0980 },
+        { fecha: '2015-09-30', dato: 45.4203 },
+        { fecha: '2015-12-31', dato: 44.2293 },
+        { fecha: '2016-03-31', dato: 42.1462 },
+        { fecha: '2016-06-30', dato: 41.9600 },
+        { fecha: '2016-09-30', dato: 45.3900 },
+        { fecha: '2016-12-31', dato: 43.1100 },
+        { fecha: '2017-03-31', dato: 43.4600 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

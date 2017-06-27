@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosPermisoDeConstruccionEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -229,6 +230,9 @@ Costo (% de ingreso per cápita) = 40,6</td>
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasPermisoDeConstruccionEnTorreon" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -264,7 +268,7 @@ Costo (% de ingreso per cápita) = 40,6</td>
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosPermisoDeConstruccionEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -279,6 +283,23 @@ Costo (% de ingreso per cápita) = 40,6</td>
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasPermisoDeConstruccionEnTorreon === 'undefined') {
+    varSmiGraficasPermisoDeConstruccionEnTorreon = Morris.Line({
+      element: 'SmiGraficasPermisoDeConstruccionEnTorreon',
+      data: [
+        { fecha: '2012-12-31', dato: 72 },
+        { fecha: '2013-10-31', dato: 107 },
+        { fecha: '2015-12-31', dato: 94 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

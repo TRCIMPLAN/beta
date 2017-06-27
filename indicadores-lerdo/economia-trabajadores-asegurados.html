@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosTrabajadoresAseguradosEnLerdo" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -449,6 +450,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <div id="SmiGraficasTrabajadoresAseguradosEnLerdoInstitutoMexicanoDelSeguroSocialImss" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -484,7 +488,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosTrabajadoresAseguradosEnLerdo').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -499,6 +503,60 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasTrabajadoresAseguradosEnLerdoInstitutoMexicanoDelSeguroSocialImss === 'undefined') {
+    varSmiGraficasTrabajadoresAseguradosEnLerdoInstitutoMexicanoDelSeguroSocialImss = Morris.Line({
+      element: 'SmiGraficasTrabajadoresAseguradosEnLerdoInstitutoMexicanoDelSeguroSocialImss',
+      data: [
+        { fecha: '2013-11-30', dato: 13739 },
+        { fecha: '2013-12-31', dato: 13518 },
+        { fecha: '2014-01-31', dato: 13811 },
+        { fecha: '2014-02-28', dato: 13947 },
+        { fecha: '2014-03-31', dato: 13894 },
+        { fecha: '2014-04-30', dato: 13791 },
+        { fecha: '2014-05-31', dato: 13667 },
+        { fecha: '2014-06-30', dato: 13347 },
+        { fecha: '2014-07-31', dato: 13336 },
+        { fecha: '2014-08-31', dato: 13314 },
+        { fecha: '2014-09-30', dato: 13251 },
+        { fecha: '2014-10-31', dato: 12960 },
+        { fecha: '2014-11-30', dato: 12994 },
+        { fecha: '2014-12-31', dato: 12906 },
+        { fecha: '2015-01-31', dato: 12590 },
+        { fecha: '2015-02-28', dato: 13380 },
+        { fecha: '2015-03-31', dato: 13448 },
+        { fecha: '2015-04-30', dato: 13540 },
+        { fecha: '2015-05-31', dato: 13905 },
+        { fecha: '2015-06-30', dato: 13933 },
+        { fecha: '2015-07-31', dato: 14011 },
+        { fecha: '2015-08-31', dato: 14056 },
+        { fecha: '2015-09-30', dato: 14112 },
+        { fecha: '2015-10-31', dato: 14152 },
+        { fecha: '2015-11-30', dato: 14237 },
+        { fecha: '2015-12-31', dato: 14230 },
+        { fecha: '2016-01-31', dato: 14086 },
+        { fecha: '2016-02-29', dato: 14113 },
+        { fecha: '2016-03-31', dato: 14428 },
+        { fecha: '2016-04-30', dato: 14414 },
+        { fecha: '2016-05-31', dato: 14928 },
+        { fecha: '2016-06-30', dato: 14641 },
+        { fecha: '2016-07-31', dato: 14364 },
+        { fecha: '2016-08-31', dato: 14651 },
+        { fecha: '2016-09-30', dato: 14257 },
+        { fecha: '2016-10-31', dato: 14119 },
+        { fecha: '2016-12-31', dato: 14273 },
+        { fecha: '2017-01-31', dato: 14246 },
+        { fecha: '2017-02-28', dato: 14857 },
+        { fecha: '2017-03-31', dato: 15139 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

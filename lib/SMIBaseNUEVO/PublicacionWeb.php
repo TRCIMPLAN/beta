@@ -89,10 +89,28 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
         if ($this->validado) {
             return;
         }
+        // Ejecutar padre
+        parent::validar();
+        // Extraer las fuentes para hacer una gráfica por cada una de éstas
+        $fuentes = array();
+        foreach ($this->datos() as $d) {
+            if (isset($d['fuente_nombre']) && !in_array($d['fuente_nombre'], $fuentes)) {
+                $fuentes[] = $d['fuente_nombre'];
+            }
+        }
+        sort($fuentes);
         // Elaborar lengüetas
         $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
         $this->lenguetas->agregar('Datos', new SeccionDatosWeb($this));
-    //~ $this->lenguetas->agregar('Gráfica', new SeccionGraficasWeb($this));
+        if (count($fuentes) > 1) {
+            $c = 0;
+            foreach ($fuentes as $f) {
+                $c++;
+                $this->lenguetas->agregar("Gráfica $c", new SeccionGraficasWeb($this, $f));
+            }
+        } else {
+            $this->lenguetas->agregar('Gráfica', new SeccionGraficasWeb($this));
+        }
     //~ $this->lenguetas->agregar('Otras regiones', new SeccionOtrasRegionesWeb($this));
     } // validar
 
@@ -137,6 +155,8 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function redifusion_html() {
+        // Validar
+        $this->validar();
         // Elaborar redifusión
         $this->redifusion = "Debe haber algo aquí.";
         // Entregar

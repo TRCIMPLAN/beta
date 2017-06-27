@@ -46,6 +46,7 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
+            $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Otras Regiones '.$this->publicacion->nombre);
             $this->preparado = TRUE;
         }
     } // preparar

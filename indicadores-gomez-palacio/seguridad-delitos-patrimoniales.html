@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosDelitosPatrimonialesEnGomezPalacio" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -371,6 +372,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasDelitosPatrimonialesEnGomezPalacio" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -406,7 +410,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosDelitosPatrimonialesEnGomezPalacio').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -421,6 +425,48 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasDelitosPatrimonialesEnGomezPalacio === 'undefined') {
+    varSmiGraficasDelitosPatrimonialesEnGomezPalacio = Morris.Line({
+      element: 'SmiGraficasDelitosPatrimonialesEnGomezPalacio',
+      data: [
+        { fecha: '2015-01-31', dato: 23 },
+        { fecha: '2015-02-28', dato: 20 },
+        { fecha: '2015-03-31', dato: 25 },
+        { fecha: '2015-04-30', dato: 17 },
+        { fecha: '2015-05-31', dato: 36 },
+        { fecha: '2015-06-30', dato: 29 },
+        { fecha: '2015-07-31', dato: 26 },
+        { fecha: '2015-08-31', dato: 63 },
+        { fecha: '2015-09-30', dato: 101 },
+        { fecha: '2015-10-31', dato: 116 },
+        { fecha: '2015-11-30', dato: 77 },
+        { fecha: '2015-12-31', dato: 115 },
+        { fecha: '2016-01-31', dato: 80 },
+        { fecha: '2016-02-29', dato: 215 },
+        { fecha: '2016-03-31', dato: 103 },
+        { fecha: '2016-04-30', dato: 122 },
+        { fecha: '2016-05-31', dato: 143 },
+        { fecha: '2016-06-30', dato: 120 },
+        { fecha: '2016-07-31', dato: 94 },
+        { fecha: '2016-08-31', dato: 98 },
+        { fecha: '2016-09-30', dato: 121 },
+        { fecha: '2016-10-31', dato: 109 },
+        { fecha: '2016-11-30', dato: 116 },
+        { fecha: '2016-12-31', dato: 81 },
+        { fecha: '2017-01-31', dato: 100 },
+        { fecha: '2017-02-28', dato: 91 },
+        { fecha: '2017-03-31', dato: 125 },
+        { fecha: '2017-04-30', dato: 116 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

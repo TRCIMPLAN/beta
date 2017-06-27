@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosInversionPerCapitaEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -251,6 +252,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <div id="SmiGraficasInversionPerCapitaEnTorreon" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -286,7 +290,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosInversionPerCapitaEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -301,6 +305,28 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasInversionPerCapitaEnTorreon === 'undefined') {
+    varSmiGraficasInversionPerCapitaEnTorreon = Morris.Line({
+      element: 'SmiGraficasInversionPerCapitaEnTorreon',
+      data: [
+        { fecha: '2007-12-31', dato: 604.26 },
+        { fecha: '2008-12-31', dato: 767.48 },
+        { fecha: '2009-12-31', dato: 497.90 },
+        { fecha: '2010-12-31', dato: 236.57 },
+        { fecha: '2011-12-31', dato: 529.86 },
+        { fecha: '2012-12-31', dato: 348.09 },
+        { fecha: '2013-12-31', dato: 407.71 },
+        { fecha: '2014-12-31', dato: 570.42 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosDelitosEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -443,6 +444,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <div id="SmiGraficasDelitosEnTorreonSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -478,7 +482,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosDelitosEnTorreon').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -493,6 +497,59 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasDelitosEnTorreonSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica === 'undefined') {
+    varSmiGraficasDelitosEnTorreonSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica = Morris.Line({
+      element: 'SmiGraficasDelitosEnTorreonSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica',
+      data: [
+        { fecha: '2014-01-31', dato: 935 },
+        { fecha: '2014-02-28', dato: 841 },
+        { fecha: '2014-03-31', dato: 742 },
+        { fecha: '2014-04-30', dato: 702 },
+        { fecha: '2014-05-31', dato: 1054 },
+        { fecha: '2014-06-30', dato: 786 },
+        { fecha: '2014-07-31', dato: 730 },
+        { fecha: '2014-08-31', dato: 818 },
+        { fecha: '2014-09-30', dato: 754 },
+        { fecha: '2014-10-31', dato: 784 },
+        { fecha: '2014-11-30', dato: 597 },
+        { fecha: '2014-12-31', dato: 501 },
+        { fecha: '2015-01-31', dato: 783 },
+        { fecha: '2015-02-28', dato: 703 },
+        { fecha: '2015-03-31', dato: 600 },
+        { fecha: '2015-04-30', dato: 771 },
+        { fecha: '2015-05-31', dato: 592 },
+        { fecha: '2015-06-30', dato: 654 },
+        { fecha: '2015-07-31', dato: 597 },
+        { fecha: '2015-08-31', dato: 677 },
+        { fecha: '2015-09-30', dato: 670 },
+        { fecha: '2015-10-31', dato: 789 },
+        { fecha: '2015-11-30', dato: 700 },
+        { fecha: '2015-12-31', dato: 753 },
+        { fecha: '2016-01-31', dato: 745 },
+        { fecha: '2016-02-29', dato: 802 },
+        { fecha: '2016-03-31', dato: 901 },
+        { fecha: '2016-04-30', dato: 959 },
+        { fecha: '2016-05-31', dato: 1053 },
+        { fecha: '2016-06-30', dato: 1387 },
+        { fecha: '2016-07-31', dato: 970 },
+        { fecha: '2016-08-31', dato: 975 },
+        { fecha: '2016-09-30', dato: 1281 },
+        { fecha: '2016-10-31', dato: 1032 },
+        { fecha: '2016-12-31', dato: 1220 },
+        { fecha: '2017-01-31', dato: 959 },
+        { fecha: '2017-02-28', dato: 994 },
+        { fecha: '2017-03-31', dato: 1401 },
+        { fecha: '2017-04-30', dato: 935 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

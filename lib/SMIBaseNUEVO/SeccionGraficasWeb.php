@@ -27,18 +27,20 @@ namespace SMIBaseNUEVO;
  */
 class SeccionGraficasWeb implements SalidaWeb {
 
-    protected $publicacion;                      // Instancia de PublicacionWeb
-    protected $grafica;                          // Instancia de GraficaLineasWeb
-    protected $preparado   = FALSE;              // Bandera
-    const     GRAFICA_ID   = 'GraficaIndicador'; // Identificador único para la gráfica
+    protected $publicacion;       // Instancia de PublicacionWeb
+    protected $fuente_nombre;     // Texto, nombre de la fuente a filtrar
+    protected $grafica;           // Instancia de GraficaLineasWeb
+    protected $preparado = FALSE; // Bandera
 
     /**
      * Constructor
      *
-     * @param mixed Instancia de PublicacionWeb
+     * @param mixed  Instancia de PublicacionWeb
+     * @param string Fuente
      */
-    public function __construct(PublicacionWeb $publicacion) {
-        $this->publicacion = $publicacion;
+    public function __construct(PublicacionWeb $in_publicacion, $in_fuente_nombre = NULL) {
+        $this->publicacion   = $in_publicacion;
+        $this->fuente_nombre = $in_fuente_nombre;
     } // constructor
 
     /**
@@ -46,8 +48,20 @@ class SeccionGraficasWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
-            if (count($this->publicacion->datos()) >= 2) {
-
+            if ($this->fuente_nombre === NULL) {
+                $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Graficas '.$this->publicacion->nombre);
+            } else {
+                $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Graficas '.$this->publicacion->nombre.' '.$this->fuente_nombre);
+            }
+            $this->grafica = new GraficaLineasWeb($identificador);
+            $this->grafica->definir_clave_x('fecha');
+            $this->grafica->definir_claves_y('dato', 'Dato', '#FF5B02');
+            foreach ($this->publicacion->datos() as $d) {
+                if ($this->fuente_nombre === NULL) {
+                    $this->grafica->agregar_datos($d['fecha'], $d['valor']);
+                } elseif ($this->fuente_nombre == $d['fuente_nombre']) {
+                    $this->grafica->agregar_datos($d['fecha'], $d['valor']);
+                }
             }
             $this->preparado = TRUE;
         }
@@ -59,7 +73,12 @@ class SeccionGraficasWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        return NULL;
+        try {
+            $this->preparar();
+            return $this->grafica->html();
+        } catch (GraficaExceptionSinValores $e) {
+            return NULL;
+        }
     } // html
 
     /**
@@ -68,7 +87,12 @@ class SeccionGraficasWeb implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
-        return NULL;
+        try {
+            $this->preparar();
+            return $this->grafica->javascript();
+        } catch (GraficaExceptionSinValores $e) {
+            return NULL;
+        }
     } // javascript
 
 } // Clase SeccionGraficasWeb

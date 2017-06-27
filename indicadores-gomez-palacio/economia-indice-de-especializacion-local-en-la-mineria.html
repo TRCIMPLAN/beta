@@ -187,10 +187,11 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
-  <table id="DatosIndicador" class="table table-hover table-bordered">
+  <table id="SmiDatosIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacio" class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Fecha</th>
@@ -227,6 +228,9 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <div id="SmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacioInegi" class="grafica"></div>
+  </div>
   </div>
 </div>
 <!-- Contenido: Termina -->
@@ -262,7 +266,7 @@
   // LenguetaWeb LenguetasIndicadorDatos
   // DataTables
   $(document).ready(function(){
-    $('#DatosIndicador').DataTable( {
+    $('#SmiDatosIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacio').DataTable( {
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -277,6 +281,23 @@
       }
     });
   });
+  // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
+  // MorrisJS grafica de lineas
+  if (typeof varSmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacioInegi === 'undefined') {
+    varSmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacioInegi = Morris.Line({
+      element: 'SmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnGomezPalacioInegi',
+      data: [
+        { fecha: '1998-12-31', dato: 0.1400 },
+        { fecha: '2003-12-31', dato: 0.1400 },
+        { fecha: '2008-12-31', dato: 0.2000 }],
+      xkey: 'fecha',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      lineColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')
