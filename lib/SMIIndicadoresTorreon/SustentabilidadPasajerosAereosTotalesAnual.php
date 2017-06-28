@@ -67,17 +67,28 @@ class SustentabilidadPasajerosAereosTotalesAnual extends \SMIBaseNUEVO\Publicaci
      */
     public function datos() {
         return array(
-            array('fecha' => '2006-12-31', 'valor' => '410100', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '522300', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '481265', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '394377', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '338003', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '375669', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '415244', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '508133', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '556449', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''));
+            array('fecha' => '2006-12-31', 'valor' => '410100', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2007-12-31', 'valor' => '522300', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2008-12-31', 'valor' => '481265', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2009-12-31', 'valor' => '394377', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2010-12-31', 'valor' => '338003', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2011-12-31', 'valor' => '375669', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2012-12-31', 'valor' => '415244', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2013-12-31', 'valor' => '508133', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2015-12-31', 'valor' => '556449', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '556449', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
+    } // otras_regiones
 
 } // Clase SustentabilidadPasajerosAereosTotalesAnual
 

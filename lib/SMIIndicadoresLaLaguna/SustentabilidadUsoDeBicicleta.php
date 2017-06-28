@@ -67,8 +67,17 @@ class SustentabilidadUsoDeBicicleta extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2011-12-31', 'valor' => '2.0000', 'fuente_nombre' => 'Logit', 'notas' => ''));
+            array('fecha' => '2011-12-31', 'valor' => '2.0000', 'fuente_nombre' => 'Logit'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase SustentabilidadUsoDeBicicleta
 

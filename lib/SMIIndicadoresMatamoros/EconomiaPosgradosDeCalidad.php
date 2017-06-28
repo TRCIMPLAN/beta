@@ -67,8 +67,21 @@ class EconomiaPosgradosDeCalidad extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-03-31', 'valor' => '0', 'fuente_nombre' => 'CONACYT', 'notas' => ''));
+            array('fecha' => '2014-03-31', 'valor' => '0', 'fuente_nombre' => 'CONACYT'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-04-30', 'valor' => '11', 'fuente_nombre' => 'CONACYT'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => '0', 'fuente_nombre' => 'CONACYT'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2014-04-30', 'valor' => '51', 'fuente_nombre' => 'CONACYT', 'notas' => 'Fuente: [CONACYT](http://www.conacyt.gob.mx)'),
+            array('region_nombre' => 'Durango', 'fecha' => '2014-04-30', 'valor' => '15', 'fuente_nombre' => 'CONACYT'));
+    } // otras_regiones
 
 } // Clase EconomiaPosgradosDeCalidad
 

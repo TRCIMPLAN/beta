@@ -67,8 +67,21 @@ class SustentabilidadDensidadMediaUrbana extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '82.2000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '52.6000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '58.8000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI', 'notas' => 'Consulta y descarga la [base de datos](http://www.conapo.gob.mx/en/CONAPO/Catalogo_Sistema_Urbano_Nacional_2012)'));
+    } // otras_regiones
 
 } // Clase SustentabilidadDensidadMediaUrbana
 

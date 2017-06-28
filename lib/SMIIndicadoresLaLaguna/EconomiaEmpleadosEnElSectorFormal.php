@@ -67,12 +67,26 @@ class EconomiaEmpleadosEnElSectorFormal extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '70.0486', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '70.1246', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '57.2976', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '55.2093', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '48.7339', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '70.0486', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2009-12-31', 'valor' => '70.1246', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2010-12-31', 'valor' => '57.2976', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2011-12-31', 'valor' => '55.2093', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2012-12-31', 'valor' => '48.7339', 'fuente_nombre' => 'IMCO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '48.8560', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '56.3498', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '34.1412', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '46.0290', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '48.7339', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase EconomiaEmpleadosEnElSectorFormal
 

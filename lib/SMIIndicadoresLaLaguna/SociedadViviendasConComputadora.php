@@ -67,13 +67,27 @@ class SociedadViviendasConComputadora extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '27.1800', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '29.8000', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '33.2000', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '32.6800', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '34.6900', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '36.8400', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '27.1800', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2009-12-31', 'valor' => '29.8000', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2010-12-31', 'valor' => '33.2000', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '32.6800', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2011-12-31', 'valor' => '34.6900', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2012-12-31', 'valor' => '36.8400', 'fuente_nombre' => 'IMCO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '39.8100', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '30.5400', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '28.4800', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '20.8500', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '36.8400', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase SociedadViviendasConComputadora
 

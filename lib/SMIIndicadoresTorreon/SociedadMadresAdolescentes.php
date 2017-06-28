@@ -67,13 +67,22 @@ class SociedadMadresAdolescentes extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '2302', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '2056', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '1442', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '1296', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '1198', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '1778', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '2302', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2009-12-31', 'valor' => '2056', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2010-12-31', 'valor' => '1442', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2011-12-31', 'valor' => '1296', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2012-12-31', 'valor' => '1198', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2013-12-31', 'valor' => '1778', 'fuente_nombre' => 'SINAIS (SSA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase SociedadMadresAdolescentes
 

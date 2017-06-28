@@ -67,8 +67,25 @@ class SociedadAlumnosConHabilidadesGramaticasLinguisticasAvanzadas extends \SMIB
      */
     public function datos() {
         return array(
-            array('fecha' => '2015-12-01', 'valor' => '7.4000', 'fuente_nombre' => 'SEP', 'notas' => ''));
+            array('fecha' => '2015-12-01', 'valor' => '7.4000', 'fuente_nombre' => 'SEP'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-01', 'valor' => '7.4000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-01', 'valor' => '5.0000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-01', 'valor' => '3.7000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-01', 'valor' => '1.8000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-01', 'valor' => '5.8000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2015-12-01', 'valor' => '3.5000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Durango', 'fecha' => '2015-12-01', 'valor' => '2.2000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2015-12-01', 'valor' => '2.6000', 'fuente_nombre' => 'SEP'));
+    } // otras_regiones
 
 } // Clase SociedadAlumnosConHabilidadesGramaticasLinguisticasAvanzadas
 

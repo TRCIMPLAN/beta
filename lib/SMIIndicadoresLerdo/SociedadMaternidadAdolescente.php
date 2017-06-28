@@ -67,8 +67,21 @@ class SociedadMaternidadAdolescente extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '17.2000', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '17.2000', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '13.9000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '16.3000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '17.2000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '19.9000', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SociedadMaternidadAdolescente
 

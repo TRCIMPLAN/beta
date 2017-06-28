@@ -67,11 +67,28 @@ class EconomiaPersonalOcupadoEnElComercio extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '1998-12-31', 'valor' => '38.4200', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '45.9700', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '34.3232', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '35.3180', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''));
+            array('fecha' => '1998-12-31', 'valor' => '38.4200', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '45.9700', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '34.3232', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '35.3180', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '26.9458', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '29.4578', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '24.1890', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '35.3180', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '27.6995', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2013-12-31', 'valor' => '22.8278', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Durango', 'fecha' => '2013-12-31', 'valor' => '30.6424', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2013-12-31', 'valor' => '29.6141', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+    } // otras_regiones
 
 } // Clase EconomiaPersonalOcupadoEnElComercio
 

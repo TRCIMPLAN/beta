@@ -67,23 +67,40 @@ class SustentabilidadMotorizacion extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2000-12-31', 'valor' => '147', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2001-12-31', 'valor' => '222', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2002-12-31', 'valor' => '270', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '243', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2004-12-31', 'valor' => '246', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '242', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2006-12-31', 'valor' => '240', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '243', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '255', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '236', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '239', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '219', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '226', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '223', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '217', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '211', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2000-12-31', 'valor' => '147', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2001-12-31', 'valor' => '222', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2002-12-31', 'valor' => '270', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '243', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2004-12-31', 'valor' => '246', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2005-12-31', 'valor' => '242', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2006-12-31', 'valor' => '240', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2007-12-31', 'valor' => '243', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '255', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2009-12-31', 'valor' => '236', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '239', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2011-12-31', 'valor' => '219', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2012-12-31', 'valor' => '226', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '223', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '217', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2015-12-31', 'valor' => '211', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '211', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '405', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '304', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '170', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-31', 'valor' => '271', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2015-12-31', 'valor' => '257', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Durango', 'fecha' => '2015-12-31', 'valor' => '325', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2015-12-31', 'valor' => '245', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SustentabilidadMotorizacion
 

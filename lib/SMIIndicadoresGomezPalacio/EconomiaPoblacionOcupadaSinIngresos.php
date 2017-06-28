@@ -67,12 +67,26 @@ class EconomiaPoblacionOcupadaSinIngresos extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '10.0800', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '5.0400', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '4.5600', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '7.7100', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '7.5200', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '10.0800', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2009-12-31', 'valor' => '5.0400', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2010-12-31', 'valor' => '4.5600', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2011-12-31', 'valor' => '7.7100', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2012-12-31', 'valor' => '7.5200', 'fuente_nombre' => 'IMCO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '11.6300', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '7.5200', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '0.2200', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '7.9300', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '9.1700', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase EconomiaPoblacionOcupadaSinIngresos
 

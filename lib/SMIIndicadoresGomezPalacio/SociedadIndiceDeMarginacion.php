@@ -76,12 +76,25 @@ Porcentaje de población ocupada con ingresos de hasta 2 salarios mínimos';
      */
     public function datos() {
         return array(
-            array('fecha' => '1990-12-31', 'valor' => '-1.5290', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '1995-12-31', 'valor' => '-1.3850', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2000-12-31', 'valor' => '-1.6380', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '-1.5570', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '-1.4880', 'fuente_nombre' => 'CONAPO', 'notas' => ''));
+            array('fecha' => '1990-12-31', 'valor' => '-1.5290', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '1995-12-31', 'valor' => '-1.3850', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2000-12-31', 'valor' => '-1.6380', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2005-12-31', 'valor' => '-1.5570', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2015-12-31', 'valor' => '-1.4880', 'fuente_nombre' => 'CONAPO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '-1.7220', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '-1.4880', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '-1.2150', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '-1.0980', 'fuente_nombre' => 'CONAPO'));
+    } // otras_regiones
 
 } // Clase SociedadIndiceDeMarginacion
 

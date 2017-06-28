@@ -67,8 +67,21 @@ class SociedadRezagoAlimentario extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '20.8900', 'fuente_nombre' => 'CONEVAL', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '20.8900', 'fuente_nombre' => 'CONEVAL'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '17.7700', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '18.1100', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '20.8900', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '25.1000', 'fuente_nombre' => 'CONEVAL'));
+    } // otras_regiones
 
 } // Clase SociedadRezagoAlimentario
 

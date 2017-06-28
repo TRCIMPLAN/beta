@@ -67,8 +67,22 @@ class SociedadIndiceDeHacinamiento extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-06-25', 'valor' => '0.8800', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda', 'notas' => ''));
+            array('fecha' => '2010-06-25', 'valor' => '0.8800', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-06-25', 'valor' => '0.8800', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-06-25', 'valor' => '0.9700', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-06-25', 'valor' => '1.0500', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-06-25', 'valor' => '1.0900', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-06-25', 'valor' => '1.0600', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
+    } // otras_regiones
 
 } // Clase SociedadIndiceDeHacinamiento
 

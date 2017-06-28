@@ -67,12 +67,27 @@ class EconomiaUnidadesEconomicasDedicadasALaIndustriaManufacturera extends \SMIB
      */
     public function datos() {
         return array(
-            array('fecha' => '1998-12-31', 'valor' => '11.7800', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '9.7800', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '9.7500', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2013-10-31', 'valor' => '8.6900', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '7.4282', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '1998-12-31', 'valor' => '11.7800', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '9.7800', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '9.7500', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2013-10-31', 'valor' => '8.6900', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '7.4282', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '7.1935', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '7.9537', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '7.5766', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '7.4123', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '7.4282', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2013-10-31', 'valor' => '10.7100', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase EconomiaUnidadesEconomicasDedicadasALaIndustriaManufacturera
 

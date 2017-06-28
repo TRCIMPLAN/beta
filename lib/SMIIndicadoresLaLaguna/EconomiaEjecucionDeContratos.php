@@ -67,12 +67,26 @@ class EconomiaEjecucionDeContratos extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '345.5000', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '264.5000', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '264.5000', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '345.5000', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2009-12-31', 'valor' => '264.5000', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2010-12-31', 'valor' => '264.5000', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2011-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2012-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '200', 'fuente_nombre' => 'Doing Business'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '243', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '243', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase EconomiaEjecucionDeContratos
 

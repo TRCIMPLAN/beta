@@ -67,14 +67,28 @@ class GobiernoIngresosPorCobroDeServicios extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2007-12-31', 'valor' => '575374852.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '596172106.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '599061383.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '595186051.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '578219346.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '792240176.00', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '848020707.00', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2007-12-31', 'valor' => '575374852.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '596172106.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2009-12-31', 'valor' => '599061383.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '595186051.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2011-12-31', 'valor' => '578219346.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2012-12-31', 'valor' => '792240176.00', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '848020707.00', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '848020707.00', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '523339253.00', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '54082713.00', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '30798906.00', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '1400461048.00', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase GobiernoIngresosPorCobroDeServicios
 

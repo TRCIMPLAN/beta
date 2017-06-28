@@ -70,6 +70,20 @@ class GobiernoCompetenciaElectoralDiferenciaDeVotos extends \SMIBaseNUEVO\Public
             array('fecha' => '2012-07-01', 'valor' => '32140', 'fuente_nombre' => 'INE-IEPCC', 'notas' => 'En esta cifra se incluye solo a los municipios de Torreón, Matamoros, Gómez Palacio y Lerdo'));
     } // datos
 
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2012-07-01', 'valor' => '4367', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-07-01', 'valor' => '5784', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-07-01', 'valor' => '2910', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-07-01', 'valor' => '19079', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-07-01', 'valor' => '32140', 'fuente_nombre' => 'INE-IEPCC', 'notas' => 'En esta cifra se incluye solo a los municipios de Torreón, Matamoros, Gómez Palacio y Lerdo'));
+    } // otras_regiones
+
 } // Clase GobiernoCompetenciaElectoralDiferenciaDeVotos
 
 ?>

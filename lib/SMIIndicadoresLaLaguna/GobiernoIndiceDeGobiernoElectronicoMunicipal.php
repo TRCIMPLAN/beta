@@ -67,8 +67,22 @@ class GobiernoIndiceDeGobiernoElectronicoMunicipal extends \SMIBaseNUEVO\Publica
      */
     public function datos() {
         return array(
-            array('fecha' => '2011-12-31', 'valor' => '0.5440', 'fuente_nombre' => 'CIDE', 'notas' => ''));
+            array('fecha' => '2011-12-31', 'valor' => '0.5440', 'fuente_nombre' => 'CIDE'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2011-12-31', 'valor' => '0.6916', 'fuente_nombre' => 'CIDE'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2011-12-31', 'valor' => '0.4763', 'fuente_nombre' => 'CIDE'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2011-12-31', 'valor' => '0.4714', 'fuente_nombre' => 'CIDE'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2011-12-31', 'valor' => '0.5366', 'fuente_nombre' => 'CIDE'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2011-12-31', 'valor' => '0.5440', 'fuente_nombre' => 'CIDE'));
+    } // otras_regiones
 
 } // Clase GobiernoIndiceDeGobiernoElectronicoMunicipal
 

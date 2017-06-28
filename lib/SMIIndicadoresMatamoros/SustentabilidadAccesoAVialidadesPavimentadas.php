@@ -67,9 +67,23 @@ class SustentabilidadAccesoAVialidadesPavimentadas extends \SMIBaseNUEVO\Publica
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '73.0000', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '73.0000', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '94.0000', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '91.0000', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '89.0000', 'fuente_nombre' => 'IMPLAN'));
+    } // otras_regiones
 
 } // Clase SustentabilidadAccesoAVialidadesPavimentadas
 

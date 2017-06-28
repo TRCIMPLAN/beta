@@ -67,9 +67,23 @@ class SociedadViviendasHabitadas extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '172719', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '191890', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '172719', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2015-12-31', 'valor' => '191890', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '191890', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '91600', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '39837', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '27215', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-31', 'valor' => '350542', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SociedadViviendasHabitadas
 

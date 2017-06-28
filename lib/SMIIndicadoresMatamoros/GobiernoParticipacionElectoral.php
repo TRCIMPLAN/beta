@@ -67,8 +67,22 @@ class GobiernoParticipacionElectoral extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2012-07-01', 'valor' => '64.5800', 'fuente_nombre' => 'INE-IEPCC', 'notas' => ''));
+            array('fecha' => '2012-07-01', 'valor' => '64.5800', 'fuente_nombre' => 'INE-IEPCC'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2012-07-01', 'valor' => '53.7500', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-07-01', 'valor' => '58.3100', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-07-01', 'valor' => '59.5700', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-07-01', 'valor' => '64.5800', 'fuente_nombre' => 'INE-IEPCC'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-07-01', 'valor' => '57.6800', 'fuente_nombre' => 'INE-IEPCC'));
+    } // otras_regiones
 
 } // Clase GobiernoParticipacionElectoral
 

@@ -67,16 +67,33 @@ class GobiernoRelacionDeIngresosPropiosYTotales extends \SMIBaseNUEVO\Publicacio
      */
     public function datos() {
         return array(
-            array('fecha' => '2007-12-31', 'valor' => '33.5900', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '30.0800', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '36.4200', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '28.8200', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '32.9500', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '39.9600', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '40.9300', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '40.9580', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '32.4379', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''));
+            array('fecha' => '2007-12-31', 'valor' => '33.5900', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '30.0800', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2009-12-31', 'valor' => '36.4200', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '28.8200', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2011-12-31', 'valor' => '32.9500', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2012-12-31', 'valor' => '39.9600', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '40.9300', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '40.9580', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '32.4379', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '38.3748', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '24.3200', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '33.3260', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '9.7467', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '32.4379', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2014-12-31', 'valor' => '30.7383', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Durango', 'fecha' => '2014-12-31', 'valor' => '20.8938', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2014-12-31', 'valor' => '21.2090', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+    } // otras_regiones
 
 } // Clase GobiernoRelacionDeIngresosPropiosYTotales
 

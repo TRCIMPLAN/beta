@@ -47,6 +47,8 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
     private function preparar() {
         if (!$this->preparado) {
             $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Otras Regiones '.$this->publicacion->nombre);
+            $this->grafica = new GraficaBarrasWeb($identificador);
+
             $this->preparado = TRUE;
         }
     } // preparar
@@ -57,7 +59,12 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        return NULL;
+        try {
+            $this->preparar();
+            return $this->grafica->html();
+        } catch (GraficaExceptionSinValores $e) {
+            return NULL;
+        }
     } // html
 
     /**
@@ -66,7 +73,12 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
-        return NULL;
+        try {
+            $this->preparar();
+            return $this->grafica->javascript();
+        } catch (GraficaExceptionSinValores $e) {
+            return NULL;
+        }
     } // javascript
 
 } // Clase SeccionOtrasRegionesWeb

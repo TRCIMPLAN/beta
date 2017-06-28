@@ -67,8 +67,25 @@ class SustentabilidadGeneracionDeBasura extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '8.7000', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '8.7000', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '7.7000', 'fuente_nombre' => 'Dirección General de Servicios Públicos Municipales', 'notas' => 'Consulta la Base de Datos : http://datostrc.gob.mx/datasets/ver/32931'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '8.7000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '7.8000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '2.8000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '8.0300', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '8.8000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '6.1000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '7.6000', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SustentabilidadGeneracionDeBasura
 

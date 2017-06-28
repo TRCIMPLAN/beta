@@ -73,6 +73,15 @@ class EconomiaObtencionDeCreditoCreacionDeGarantias extends \SMIBaseNUEVO\Public
 - Ranking en crear una garantía: 6'));
     } // datos
 
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
+
 } // Clase EconomiaObtencionDeCreditoCreacionDeGarantias
 
 ?>

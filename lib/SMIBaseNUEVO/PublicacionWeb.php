@@ -68,6 +68,7 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
     // protected $validado;
     protected $lenguetas;                          // Instancia de LenguetasWeb
     const     LENGUETAS_ID = 'LenguetasIndicador'; // Identificador único para las lengüetas
+    protected $preparado   = FALSE;                // Bandera
 
     /**
      * Constructor
@@ -80,39 +81,39 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
     } // constructor
 
     /**
-     * Validar
+     * Preparar
      *
      * Puede causar excepción si falta una propiedad obligatoria. También busca definir las opcionales.
      */
-    public function validar() {
-        // Si ya fue validado, no se hace nada
-        if ($this->validado) {
-            return;
-        }
-        // Ejecutar padre
-        parent::validar();
-        // Extraer las fuentes para hacer una gráfica por cada una de éstas
-        $fuentes = array();
-        foreach ($this->datos() as $d) {
-            if (isset($d['fuente_nombre']) && !in_array($d['fuente_nombre'], $fuentes)) {
-                $fuentes[] = $d['fuente_nombre'];
+    public function preparar() {
+        if (!$this->preparado) {
+            // Extraer las fuentes para hacer una gráfica por cada una de éstas
+            $fuentes = array();
+            foreach ($this->datos() as $d) {
+                if (isset($d['fuente_nombre']) && !in_array($d['fuente_nombre'], $fuentes)) {
+                    $fuentes[] = $d['fuente_nombre'];
+                }
             }
-        }
-        sort($fuentes);
-        // Elaborar lengüetas
-        $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
-        $this->lenguetas->agregar('Datos', new SeccionDatosWeb($this));
-        if (count($fuentes) > 1) {
-            $c = 0;
-            foreach ($fuentes as $f) {
-                $c++;
-                $this->lenguetas->agregar("Gráfica $c", new SeccionGraficasWeb($this, $f));
+            sort($fuentes);
+            // Elaborar lengüetas
+            $this->lenguetas = new LenguetasWeb(self::LENGUETAS_ID);
+            $this->lenguetas->agregar('Datos', new SeccionDatosWeb($this));
+            if (count($fuentes) > 1) {
+                // Van a ser dos o más gráficas
+                $c = 0;
+                foreach ($fuentes as $f) {
+                    $c++;
+                    $this->lenguetas->agregar("Gráfica $c", new SeccionGraficasWeb($this, $f));
+                }
+            } else {
+                // Sólo una gráfica
+                $this->lenguetas->agregar('Gráfica', new SeccionGraficasWeb($this));
             }
-        } else {
-            $this->lenguetas->agregar('Gráfica', new SeccionGraficasWeb($this));
+        //~ $this->lenguetas->agregar('Otras regiones', new SeccionOtrasRegionesWeb($this));
+            // Levantar bandera
+            $this->preparado = TRUE;
         }
-    //~ $this->lenguetas->agregar('Otras regiones', new SeccionOtrasRegionesWeb($this));
-    } // validar
+    } // preparar
 
     /**
      * HTML
@@ -120,8 +121,9 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function html() {
-        // Validar
+        // Validar y preparar
         $this->validar();
+        $this->preparar();
         // Definir propiedades del contenido que es un SchemaArticle
         $this->contenido->big_heading   = TRUE;
         $this->contenido->headline      = $this->nombre;
@@ -141,8 +143,9 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código Javascript
      */
     public function javascript() {
-        // Validar
+        // Validar y preparar
         $this->validar();
+        $this->preparar();
         // Acumular Javascript de las lengüetas
         $this->javascript[] = $this->lenguetas->javascript();
         // Entregar
@@ -155,8 +158,9 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return string Código HTML
      */
     public function redifusion_html() {
-        // Validar
+        // Validar y preparar
         $this->validar();
+        $this->preparar();
         // Elaborar redifusión
         $this->redifusion = "Debe haber algo aquí.";
         // Entregar
@@ -176,6 +180,13 @@ abstract class PublicacionWeb extends \Base\Publicacion implements SalidaWeb {
      * @return array Arreglo de arreglos con los datos
      */
     abstract public function datos();
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo de arreglos con los datos de otras regiones
+     */
+    abstract public function otras_regiones();
 
 } // Clase abstracta PublicacionWeb
 

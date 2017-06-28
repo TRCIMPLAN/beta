@@ -67,8 +67,22 @@ class EconomiaIndiceDeGini extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '0.3831', 'fuente_nombre' => 'CONEVAL', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '0.3831', 'fuente_nombre' => 'CONEVAL'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '0.4520', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '0.4208', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '0.4387', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '0.3831', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '0.4238', 'fuente_nombre' => 'CONEVAL'));
+    } // otras_regiones
 
 } // Clase EconomiaIndiceDeGini
 

@@ -67,16 +67,30 @@ class GobiernoCumplimientoEnInformacionPublicaMinina extends \SMIBaseNUEVO\Publi
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-03-03', 'valor' => '100.0000', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2014-06-30', 'valor' => '98.7200', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2014-09-30', 'valor' => '96.0000', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2014-10-31', 'valor' => '72.0000', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2014-11-30', 'valor' => '83.0000', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '82.6700', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2015-01-31', 'valor' => '82.6700', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2015-02-28', 'valor' => '89.3300', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''),
-            array('fecha' => '2015-03-31', 'valor' => '89.3300', 'fuente_nombre' => 'ICAI-IDAIP', 'notas' => ''));
+            array('fecha' => '2014-03-03', 'valor' => '100.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2014-06-30', 'valor' => '98.7200', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2014-09-30', 'valor' => '96.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2014-10-31', 'valor' => '72.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2014-11-30', 'valor' => '83.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2014-12-31', 'valor' => '82.6700', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2015-01-31', 'valor' => '82.6700', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2015-02-28', 'valor' => '89.3300', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('fecha' => '2015-03-31', 'valor' => '89.3300', 'fuente_nombre' => 'ICAI-IDAIP'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-03-31', 'valor' => '89.3300', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-08-31', 'valor' => '86.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-08-31', 'valor' => '100.0000', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-03-31', 'valor' => '70.6700', 'fuente_nombre' => 'ICAI-IDAIP'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '80.0000', 'fuente_nombre' => 'ICAI-IDAIP'));
+    } // otras_regiones
 
 } // Clase GobiernoCumplimientoEnInformacionPublicaMinina
 

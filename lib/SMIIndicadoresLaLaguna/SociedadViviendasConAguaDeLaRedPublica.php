@@ -67,8 +67,22 @@ class SociedadViviendasConAguaDeLaRedPublica extends \SMIBaseNUEVO\PublicacionWe
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '98.0400', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '98.0400', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '99.2000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '99.2900', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '98.2500', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '98.4600', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '98.0400', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SociedadViviendasConAguaDeLaRedPublica
 

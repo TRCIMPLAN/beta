@@ -67,12 +67,26 @@ class EconomiaCantidadDeCreditosHipotecariosTrimestral extends \SMIBaseNUEVO\Pub
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '1548', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '2755', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '3124', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '2915', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
+            array('fecha' => '2010-12-31', 'valor' => '1548', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2011-12-31', 'valor' => '2755', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2012-12-31', 'valor' => '3124', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2013-12-31', 'valor' => '2915', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
             array('fecha' => '2014-03-31', 'valor' => '401', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-03-31', 'valor' => '284', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-03-31', 'valor' => '85', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-03-31', 'valor' => '27', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => '5', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-03-31', 'valor' => '401', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'));
+    } // otras_regiones
 
 } // Clase EconomiaCantidadDeCreditosHipotecariosTrimestral
 

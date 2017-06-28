@@ -67,9 +67,23 @@ class SustentabilidadPoblacionQueTrabajaEnSuPropioMunicipio extends \SMIBaseNUEV
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '82.9000', 'fuente_nombre' => 'CONAPO-INEGI', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '82.9000', 'fuente_nombre' => 'CONAPO-INEGI'),
+            array('fecha' => '2015-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '91.5000', 'fuente_nombre' => 'CONAPO-INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '83.0000', 'fuente_nombre' => 'CONAPO-INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '65.5000', 'fuente_nombre' => 'CONAPO-INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '65.6000', 'fuente_nombre' => 'CONAPO-INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-INEGI'));
+    } // otras_regiones
 
 } // Clase SustentabilidadPoblacionQueTrabajaEnSuPropioMunicipio
 

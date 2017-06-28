@@ -67,9 +67,18 @@ class GobiernoCapacitacionAEmpleadosDeConfianza extends \SMIBaseNUEVO\Publicacio
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-06-30', 'valor' => '11.6200', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => ''),
-            array('fecha' => '2014-12-30', 'valor' => '3.1500', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => ''));
+            array('fecha' => '2014-06-30', 'valor' => '11.6200', 'fuente_nombre' => 'Ayuntamiento de Torreón'),
+            array('fecha' => '2014-12-30', 'valor' => '3.1500', 'fuente_nombre' => 'Ayuntamiento de Torreón'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase GobiernoCapacitacionAEmpleadosDeConfianza
 

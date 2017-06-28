@@ -67,8 +67,17 @@ class SustentabilidadRedDeTransportePublico extends \SMIBaseNUEVO\PublicacionWeb
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-03-31', 'valor' => '250', 'fuente_nombre' => 'IMPLAN', 'notas' => ''));
+            array('fecha' => '2014-03-31', 'valor' => '250', 'fuente_nombre' => 'IMPLAN'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase SustentabilidadRedDeTransportePublico
 

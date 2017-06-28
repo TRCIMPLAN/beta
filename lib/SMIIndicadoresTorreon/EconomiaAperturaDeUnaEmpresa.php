@@ -87,6 +87,15 @@ Requisito de capital mínimo pagado (% de ingreso per cápita) = 0,0'),
             array('fecha' => '2015-12-31', 'valor' => '11.5000', 'fuente_nombre' => 'Doing Business', 'notas' => 'Obtenido del reporte Doing Business en México 2016.'));
     } // datos
 
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
+
 } // Clase EconomiaAperturaDeUnaEmpresa
 
 ?>

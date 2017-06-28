@@ -67,8 +67,22 @@ class SustentabilidadViviendasOcupadasTemporalmente extends \SMIBaseNUEVO\Public
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '2.9000', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '2.9000', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '2.9000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '3.3000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '3.6000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '2.8000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '3.0000', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SustentabilidadViviendasOcupadasTemporalmente
 

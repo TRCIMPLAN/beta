@@ -72,23 +72,37 @@ class EconomiaEjecucionDeContratos extends \SMIBaseNUEVO\PublicacionWeb {
 - Índice de complejidad (1-100): 84 
 - Costo (% de la deuda): 20
 - Ranking en ejecución de contratos: 19'),
-            array('fecha' => '2008-12-31', 'valor' => '386', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2008-12-31', 'valor' => '386', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2009-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2010-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
+            array('fecha' => '2011-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
             array('fecha' => '2012-12-31', 'valor' => '270', 'fuente_nombre' => 'Doing Business', 'notas' => 'En el tema de apertura de negocio Doing Business califica otros dos aspectos. Los resultados de 2012 para Torreón son: 
 
 - # de procedimientos: 37 
 - Costo (% de cantidad demandada): 27.9 
 - Ranking en ejecución de contratos: 7'),
-            array('fecha' => '2012-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO', 'notas' => ''),
+            array('fecha' => '2012-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
             array('fecha' => '2013-10-31', 'valor' => '270', 'fuente_nombre' => 'Doing Business', 'notas' => 'Dato obtenido del estudio elaborado por Doing Business de octubre de 2011 a octubre de 2013 y publicado en su reporte Doing Business en México 2014. 
 
 Los Indicadores complementarios en ejecución de contratos fueron los siguientes para Torreón: 
 Procedimientos (número) = 37 ; 
 Costo (% de cantidad demandada) = 27,9'),
-            array('fecha' => '2015-12-31', 'valor' => '200', 'fuente_nombre' => 'Doing Business', 'notas' => ''));
+            array('fecha' => '2015-12-31', 'valor' => '200', 'fuente_nombre' => 'Doing Business'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '200', 'fuente_nombre' => 'Doing Business'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '243', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '243', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '270', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '256.5000', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase EconomiaEjecucionDeContratos
 

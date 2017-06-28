@@ -67,8 +67,22 @@ class SustentabilidadUsuariosDeTransporteColectivoPrivado extends \SMIBaseNUEVO\
      */
     public function datos() {
         return array(
-            array('fecha' => '2015-12-31', 'valor' => '7.7600', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2015-12-31', 'valor' => '7.7600', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '6.2100', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '7.7600', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '7.0700', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '12.6400', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-31', 'valor' => '7.6800', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SustentabilidadUsuariosDeTransporteColectivoPrivado
 

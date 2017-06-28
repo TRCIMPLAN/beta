@@ -67,17 +67,34 @@ class SociedadAdultosMayoresFemenino extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2011-06-30', 'valor' => '22525', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2012-06-30', 'valor' => '23403', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2013-06-30', 'valor' => '24330', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
+            array('fecha' => '2011-06-30', 'valor' => '22525', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2012-06-30', 'valor' => '23403', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2013-06-30', 'valor' => '24330', 'fuente_nombre' => 'CONAPO'),
             array('fecha' => '2014-06-30', 'valor' => '25310', 'fuente_nombre' => 'CONAPO', 'notas' => 'Personas de 65 años o más'),
-            array('fecha' => '2015-06-30', 'valor' => '26342', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2016-06-30', 'valor' => '27426', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2017-06-30', 'valor' => '28563', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2018-06-30', 'valor' => '29751', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2019-06-30', 'valor' => '30988', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2020-06-30', 'valor' => '32270', 'fuente_nombre' => 'CONAPO', 'notas' => ''));
+            array('fecha' => '2015-06-30', 'valor' => '26342', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2016-06-30', 'valor' => '27426', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2017-06-30', 'valor' => '28563', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2018-06-30', 'valor' => '29751', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2019-06-30', 'valor' => '30988', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2020-06-30', 'valor' => '32270', 'fuente_nombre' => 'CONAPO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2016-06-30', 'valor' => '27426', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2016-06-30', 'valor' => '11784', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2016-06-30', 'valor' => '5325', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2016-06-30', 'valor' => '3975', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2016-06-30', 'valor' => '48510', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2016-06-30', 'valor' => '108300', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Durango', 'fecha' => '2016-06-30', 'valor' => '66688', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2016-06-30', 'valor' => '4477892', 'fuente_nombre' => 'CONAPO'));
+    } // otras_regiones
 
 } // Clase SociedadAdultosMayoresFemenino
 

@@ -67,26 +67,42 @@ class SeguridadAccidentesViales extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '1997-12-31', 'valor' => '691', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '1998-12-31', 'valor' => '1600', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '1999-12-31', 'valor' => '2422', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2000-12-31', 'valor' => '2797', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2001-12-31', 'valor' => '2876', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2002-12-31', 'valor' => '2783', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '2225', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2004-12-31', 'valor' => '2396', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '2524', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2006-12-31', 'valor' => '2323', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '2211', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '2049', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '1714', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '1593', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '1596', 'fuente_nombre' => 'INEGI', 'notas' => ''),
+            array('fecha' => '1997-12-31', 'valor' => '691', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '1998-12-31', 'valor' => '1600', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '1999-12-31', 'valor' => '2422', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2000-12-31', 'valor' => '2797', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2001-12-31', 'valor' => '2876', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2002-12-31', 'valor' => '2783', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '2225', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2004-12-31', 'valor' => '2396', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2005-12-31', 'valor' => '2524', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2006-12-31', 'valor' => '2323', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2007-12-31', 'valor' => '2211', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '2049', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2009-12-31', 'valor' => '1714', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '1593', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2011-12-31', 'valor' => '1596', 'fuente_nombre' => 'INEGI'),
             array('fecha' => '2012-12-31', 'valor' => '1498', 'fuente_nombre' => 'INEGI', 'notas' => 'Número de accidentes registrados durante el año 2012.'),
-            array('fecha' => '2013-12-31', 'valor' => '1128', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '1682', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '1585', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2013-12-31', 'valor' => '1128', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '1682', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2015-12-31', 'valor' => '1585', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '4876', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '1585', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '343', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '209', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-31', 'valor' => '7013', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2015-12-31', 'valor' => '14641', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Durango', 'fecha' => '2015-12-31', 'valor' => '5379', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SeguridadAccidentesViales
 

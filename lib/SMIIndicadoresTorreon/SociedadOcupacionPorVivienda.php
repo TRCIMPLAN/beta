@@ -67,8 +67,22 @@ class SociedadOcupacionPorVivienda extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '3.7000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '3.7000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '3.7000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '3.9000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '4.1000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '4.1000', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '3.9500', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
+    } // otras_regiones
 
 } // Clase SociedadOcupacionPorVivienda
 

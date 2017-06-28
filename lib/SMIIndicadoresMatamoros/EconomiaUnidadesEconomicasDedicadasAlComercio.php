@@ -67,12 +67,27 @@ class EconomiaUnidadesEconomicasDedicadasAlComercio extends \SMIBaseNUEVO\Public
      */
     public function datos() {
         return array(
-            array('fecha' => '1998-12-31', 'valor' => '64.3500', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '64.4300', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '57.4200', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2013-10-31', 'valor' => '51.2700', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '48.6102', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '1998-12-31', 'valor' => '64.3500', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '64.4300', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '57.4200', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2013-10-31', 'valor' => '51.2700', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '48.6102', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '40.5365', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '41.7020', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '44.0892', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '48.6102', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '41.6515', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2013-10-31', 'valor' => '46.6700', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase EconomiaUnidadesEconomicasDedicadasAlComercio
 

@@ -70,6 +70,15 @@ class SustentabilidadTrasladosAPie extends \SMIBaseNUEVO\PublicacionWeb {
             array('fecha' => '2011-12-31', 'valor' => '19.0000', 'fuente_nombre' => 'Logit', 'notas' => 'Viajes completos realizados a pie. No incluyen los viajes para tomar el transporte público.'));
     } // datos
 
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
+
 } // Clase SustentabilidadTrasladosAPie
 
 ?>

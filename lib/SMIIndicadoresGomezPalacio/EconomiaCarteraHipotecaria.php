@@ -67,12 +67,26 @@ class EconomiaCarteraHipotecaria extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '428193681.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '487730197.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '549445038.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '588858276.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => ''),
+            array('fecha' => '2010-12-31', 'valor' => '428193681.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2011-12-31', 'valor' => '487730197.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2012-12-31', 'valor' => '549445038.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
+            array('fecha' => '2013-12-31', 'valor' => '588858276.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)'),
             array('fecha' => '2014-03-31', 'valor' => '614765352.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-03-31', 'valor' => '4664619926.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-03-31', 'valor' => '614765352.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-03-31', 'valor' => '334888287.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => '57702472.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-03-31', 'valor' => '5671976037.00', 'fuente_nombre' => 'Comisión Nacional Bancaria y de Valores (CNBV)', 'notas' => 'Dato trimestral'));
+    } // otras_regiones
 
 } // Clase EconomiaCarteraHipotecaria
 

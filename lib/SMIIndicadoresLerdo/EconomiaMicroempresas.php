@@ -67,9 +67,26 @@ class EconomiaMicroempresas extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2013-12-31', 'valor' => '89.8700', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)', 'notas' => ''),
-            array('fecha' => '2014-07-31', 'valor' => '92.7000', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)', 'notas' => ''));
+            array('fecha' => '2013-12-31', 'valor' => '89.8700', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('fecha' => '2014-07-31', 'valor' => '92.7000', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-07-31', 'valor' => '89.6500', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-07-31', 'valor' => '88.8800', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-07-31', 'valor' => '92.7000', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-07-31', 'valor' => '95.3800', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-07-31', 'valor' => '89.6500', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2014-07-31', 'valor' => '89.5100', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Durango', 'fecha' => '2014-07-31', 'valor' => '91.3500', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2014-07-31', 'valor' => '92.9900', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'));
+    } // otras_regiones
 
 } // Clase EconomiaMicroempresas
 

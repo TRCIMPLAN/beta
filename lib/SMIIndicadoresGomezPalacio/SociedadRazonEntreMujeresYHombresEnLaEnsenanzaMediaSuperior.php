@@ -67,8 +67,24 @@ class SociedadRazonEntreMujeresYHombresEnLaEnsenanzaMediaSuperior extends \SMIBa
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '1.0210', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '1.0210', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '1.0020', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '1.0210', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '1.0300', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '1.0780', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '0.9940', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '1.0230', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '1.0140', 'fuente_nombre' => 'INEGI. Censos de Población y Vivienda'));
+    } // otras_regiones
 
 } // Clase SociedadRazonEntreMujeresYHombresEnLaEnsenanzaMediaSuperior
 

@@ -67,9 +67,18 @@ class SeguridadCantidadDePolicias extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-02-28', 'valor' => '768', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => ''),
-            array('fecha' => '2016-01-31', 'valor' => '700', 'fuente_nombre' => 'Ayuntamiento de Torreón, Portal de Transparencia', 'notas' => ''));
+            array('fecha' => '2014-02-28', 'valor' => '768', 'fuente_nombre' => 'Ayuntamiento de Torreón'),
+            array('fecha' => '2016-01-31', 'valor' => '700', 'fuente_nombre' => 'Ayuntamiento de Torreón, Portal de Transparencia'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase SeguridadCantidadDePolicias
 

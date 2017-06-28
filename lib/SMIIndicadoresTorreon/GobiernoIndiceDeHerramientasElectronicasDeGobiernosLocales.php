@@ -67,8 +67,19 @@ class GobiernoIndiceDeHerramientasElectronicasDeGobiernosLocales extends \SMIBas
      */
     public function datos() {
         return array(
-            array('fecha' => '2015-01-22', 'valor' => '35.8000', 'fuente_nombre' => 'IMCO', 'notas' => ''));
+            array('fecha' => '2015-01-22', 'valor' => '35.8000', 'fuente_nombre' => 'IMCO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-01-22', 'valor' => '35.8000', 'fuente_nombre' => 'IMCO'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2015-01-22', 'valor' => '42.0000', 'fuente_nombre' => 'IMCO'));
+    } // otras_regiones
 
 } // Clase GobiernoIndiceDeHerramientasElectronicasDeGobiernosLocales
 

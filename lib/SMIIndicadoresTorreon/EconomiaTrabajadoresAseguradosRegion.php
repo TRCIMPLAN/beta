@@ -67,14 +67,23 @@ class EconomiaTrabajadoresAseguradosRegion extends \SMIBaseNUEVO\PublicacionWeb 
      */
     public function datos() {
         return array(
-            array('fecha' => '2007-12-31', 'valor' => '171936', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '164258', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '157898', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '168723', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '176045', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '184407', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '187050', 'fuente_nombre' => 'IMSS Subdelegación Torreón', 'notas' => ''));
+            array('fecha' => '2007-12-31', 'valor' => '171936', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2008-12-31', 'valor' => '164258', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2009-12-31', 'valor' => '157898', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2010-12-31', 'valor' => '168723', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2011-12-31', 'valor' => '176045', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2012-12-31', 'valor' => '184407', 'fuente_nombre' => 'IMSS Subdelegación Torreón'),
+            array('fecha' => '2013-12-31', 'valor' => '187050', 'fuente_nombre' => 'IMSS Subdelegación Torreón'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase EconomiaTrabajadoresAseguradosRegion
 

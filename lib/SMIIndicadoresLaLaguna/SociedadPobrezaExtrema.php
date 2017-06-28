@@ -67,8 +67,25 @@ class SociedadPobrezaExtrema extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'CONEVAL', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'CONEVAL'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '2.8400', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '6.8000', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '3.9000', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '2.9400', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '10.1200', 'fuente_nombre' => 'CONEVAL'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '11.2000', 'fuente_nombre' => 'CONEVAL'));
+    } // otras_regiones
 
 } // Clase SociedadPobrezaExtrema
 

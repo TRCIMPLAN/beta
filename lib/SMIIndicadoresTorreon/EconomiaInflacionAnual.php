@@ -67,23 +67,34 @@ class EconomiaInflacionAnual extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2001-12-31', 'valor' => '5.8600', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2002-12-31', 'valor' => '4.3200', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '4.4100', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2004-12-31', 'valor' => '5.3500', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '2.7200', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2006-12-31', 'valor' => '4.1200', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '5.8900', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '7.2400', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '3.3100', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '4.2100', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '2.6900', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '2.8400', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '3.1100', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '4.2800', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2015-12-31', 'valor' => '1.6700', 'fuente_nombre' => 'INEGI', 'notas' => ''),
-            array('fecha' => '2016-12-31', 'valor' => '2.9400', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2001-12-31', 'valor' => '5.8600', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2002-12-31', 'valor' => '4.3200', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2003-12-31', 'valor' => '4.4100', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2004-12-31', 'valor' => '5.3500', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2005-12-31', 'valor' => '2.7200', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2006-12-31', 'valor' => '4.1200', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2007-12-31', 'valor' => '5.8900', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2008-12-31', 'valor' => '7.2400', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2009-12-31', 'valor' => '3.3100', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2010-12-31', 'valor' => '4.2100', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2011-12-31', 'valor' => '2.6900', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2012-12-31', 'valor' => '2.8400', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2013-12-31', 'valor' => '3.1100', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2014-12-31', 'valor' => '4.2800', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2015-12-31', 'valor' => '1.6700', 'fuente_nombre' => 'INEGI'),
+            array('fecha' => '2016-12-31', 'valor' => '2.9400', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2016-12-31', 'valor' => '2.9400', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2016-12-31', 'valor' => '3.3600', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase EconomiaInflacionAnual
 

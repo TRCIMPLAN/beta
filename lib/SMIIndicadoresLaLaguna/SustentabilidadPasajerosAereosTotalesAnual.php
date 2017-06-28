@@ -67,9 +67,20 @@ class SustentabilidadPasajerosAereosTotalesAnual extends \SMIBaseNUEVO\Publicaci
      */
     public function datos() {
         return array(
-            array('fecha' => '2013-12-31', 'valor' => '508133', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''));
+            array('fecha' => '2013-12-31', 'valor' => '508133', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '556449', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '523783', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
+    } // otras_regiones
 
 } // Clase SustentabilidadPasajerosAereosTotalesAnual
 

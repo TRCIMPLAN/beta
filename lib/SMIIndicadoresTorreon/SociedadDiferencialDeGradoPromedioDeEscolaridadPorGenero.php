@@ -67,8 +67,21 @@ class SociedadDiferencialDeGradoPromedioDeEscolaridadPorGenero extends \SMIBaseN
      */
     public function datos() {
         return array(
-            array('fecha' => '2010-12-31', 'valor' => '-0.3200', 'fuente_nombre' => 'INEGI', 'notas' => ''));
+            array('fecha' => '2010-12-31', 'valor' => '-0.3200', 'fuente_nombre' => 'INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '-0.3200', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '-0.2000', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '-0.0600', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '0.0200', 'fuente_nombre' => 'INEGI'));
+    } // otras_regiones
 
 } // Clase SociedadDiferencialDeGradoPromedioDeEscolaridadPorGenero
 

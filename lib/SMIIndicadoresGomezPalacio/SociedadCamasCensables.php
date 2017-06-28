@@ -67,20 +67,37 @@ class SociedadCamasCensables extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2001-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2002-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2004-12-31', 'valor' => '74', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '74', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2006-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '75', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '64', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '64', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2014-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''));
+            array('fecha' => '2001-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2002-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2004-12-31', 'valor' => '74', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2005-12-31', 'valor' => '74', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2006-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2007-12-31', 'valor' => '75', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2008-12-31', 'valor' => '64', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2009-12-31', 'valor' => '64', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2010-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2011-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2012-12-31', 'valor' => '72', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2013-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2014-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-08-30', 'valor' => '893', 'fuente_nombre' => 'Secretaria de Salud del Estado de Coahuila', 'notas' => 'A la cifra 2014 se agregan las 55 camas censables nuevas disponibles con el nuevo Hospital General de la ciudad (Julio 2015)'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '38', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '40', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '1262', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2014-12-31', 'valor' => '2686', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Durango', 'fecha' => '2014-12-31', 'valor' => '1700', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2014-12-31', 'valor' => '88903', 'fuente_nombre' => 'SINAIS (SSA)'));
+    } // otras_regiones
 
 } // Clase SociedadCamasCensables
 

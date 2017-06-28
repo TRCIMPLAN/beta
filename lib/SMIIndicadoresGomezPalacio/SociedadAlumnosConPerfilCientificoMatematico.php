@@ -67,8 +67,22 @@ class SociedadAlumnosConPerfilCientificoMatematico extends \SMIBaseNUEVO\Publica
      */
     public function datos() {
         return array(
-            array('fecha' => '2013-12-31', 'valor' => '35.0000', 'fuente_nombre' => 'SEP', 'notas' => ''));
+            array('fecha' => '2013-12-31', 'valor' => '35.0000', 'fuente_nombre' => 'SEP'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '46.0000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '35.0000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '43.0000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '41.0000', 'fuente_nombre' => 'SEP'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '42.0000', 'fuente_nombre' => 'SEP'));
+    } // otras_regiones
 
 } // Clase SociedadAlumnosConPerfilCientificoMatematico
 

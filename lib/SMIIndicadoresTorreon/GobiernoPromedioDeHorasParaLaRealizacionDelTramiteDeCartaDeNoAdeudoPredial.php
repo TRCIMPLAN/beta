@@ -67,8 +67,17 @@ class GobiernoPromedioDeHorasParaLaRealizacionDelTramiteDeCartaDeNoAdeudoPredial
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-06-30', 'valor' => '0.1100', 'fuente_nombre' => 'Ayuntamiento de Torreón', 'notas' => ''));
+            array('fecha' => '2014-06-30', 'valor' => '0.1100', 'fuente_nombre' => 'Ayuntamiento de Torreón'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase GobiernoPromedioDeHorasParaLaRealizacionDelTramiteDeCartaDeNoAdeudoPredial
 

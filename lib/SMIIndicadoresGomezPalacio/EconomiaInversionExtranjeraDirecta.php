@@ -67,8 +67,23 @@ class EconomiaInversionExtranjeraDirecta extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2012-12-31', 'valor' => '214.49', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía', 'notas' => ''));
+            array('fecha' => '2012-12-31', 'valor' => '214.49', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '46.50', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '214.49', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2012-05-31', 'valor' => '9.79', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '0.61', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '271.40', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2012-12-31', 'valor' => '20685.96', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI y la Secretaría de Economía'));
+    } // otras_regiones
 
 } // Clase EconomiaInversionExtranjeraDirecta
 

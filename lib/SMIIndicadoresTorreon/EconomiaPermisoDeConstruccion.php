@@ -77,8 +77,17 @@ class EconomiaPermisoDeConstruccion extends \SMIBaseNUEVO\PublicacionWeb {
 Los Indicadores complementarios en permiso de construcción fueron los siguientes para Torreón: 
 Procedimientos (número) = 13 ; 
 Costo (% de ingreso per cápita) = 40,6'),
-            array('fecha' => '2015-12-31', 'valor' => '94', 'fuente_nombre' => 'Doing Business', 'notas' => ''));
+            array('fecha' => '2015-12-31', 'valor' => '94', 'fuente_nombre' => 'Doing Business'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase EconomiaPermisoDeConstruccion
 

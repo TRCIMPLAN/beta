@@ -67,8 +67,22 @@ class SustentabilidadDestinosViaTerrestre extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'IMPLAN', 'notas' => ''));
+            array('fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'IMPLAN'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-03-31', 'valor' => '28', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-03-31', 'valor' => '28', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'IMPLAN'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-03-31', 'valor' => '28', 'fuente_nombre' => 'IMPLAN'));
+    } // otras_regiones
 
 } // Clase SustentabilidadDestinosViaTerrestre
 

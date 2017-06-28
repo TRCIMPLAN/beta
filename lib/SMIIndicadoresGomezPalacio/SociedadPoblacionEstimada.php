@@ -67,17 +67,34 @@ class SociedadPoblacionEstimada extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2011-06-30', 'valor' => '339355', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2012-06-30', 'valor' => '343135', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2013-06-30', 'valor' => '346836', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2014-06-30', 'valor' => '350513', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2015-06-30', 'valor' => '354123', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2016-06-30', 'valor' => '357664', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2017-06-30', 'valor' => '361144', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2018-06-30', 'valor' => '364540', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2019-06-30', 'valor' => '367828', 'fuente_nombre' => 'CONAPO', 'notas' => ''),
-            array('fecha' => '2020-06-30', 'valor' => '371002', 'fuente_nombre' => 'CONAPO', 'notas' => ''));
+            array('fecha' => '2011-06-30', 'valor' => '339355', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2012-06-30', 'valor' => '343135', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2013-06-30', 'valor' => '346836', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2014-06-30', 'valor' => '350513', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2015-06-30', 'valor' => '354123', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2016-06-30', 'valor' => '357664', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2017-06-30', 'valor' => '361144', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2018-06-30', 'valor' => '364540', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2019-06-30', 'valor' => '367828', 'fuente_nombre' => 'CONAPO'),
+            array('fecha' => '2020-06-30', 'valor' => '371002', 'fuente_nombre' => 'CONAPO'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2016-06-30', 'valor' => '700656', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2016-06-30', 'valor' => '357664', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2016-06-30', 'valor' => '154621', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2016-06-30', 'valor' => '114829', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2016-06-30', 'valor' => '1327769', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2016-06-30', 'valor' => '2995374', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Durango', 'fecha' => '2016-06-30', 'valor' => '1782205', 'fuente_nombre' => 'CONAPO'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2016-06-30', 'valor' => '122273473', 'fuente_nombre' => 'CONAPO'));
+    } // otras_regiones
 
 } // Clase SociedadPoblacionEstimada
 

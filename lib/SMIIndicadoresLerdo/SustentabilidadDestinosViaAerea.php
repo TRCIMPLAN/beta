@@ -67,8 +67,22 @@ class SustentabilidadDestinosViaAerea extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => ''));
+            array('fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2016-08-25', 'valor' => '11', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)', 'notas' => 'Se incluyen: Chihuahua, Chih.- CDMX- Guadalajara, Jal.- Hermosillo, Son.- Monterrey, N.L.- Tijuana, B.C.- Bajío- Ciudad Juárez, Chih.- Manzanillo, Col.- Mazatlán, Sin.- Dallas, Tx.'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => 'X', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-03-31', 'valor' => '7', 'fuente_nombre' => 'Operadora Mexicana de Aeropuertos (OMA)'));
+    } // otras_regiones
 
 } // Clase SustentabilidadDestinosViaAerea
 

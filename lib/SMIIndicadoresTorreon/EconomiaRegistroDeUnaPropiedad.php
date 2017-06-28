@@ -82,8 +82,17 @@ class EconomiaRegistroDeUnaPropiedad extends \SMIBaseNUEVO\PublicacionWeb {
 Los Indicadores complementarios en registro de propiedades fueron los siguientes para Torreón: 
 Procedimientos (número) = 6 ; 
 Costo (% del valor de la propiedad) = 4,5'),
-            array('fecha' => '2015-12-31', 'valor' => '24', 'fuente_nombre' => 'Doing Business', 'notas' => ''));
+            array('fecha' => '2015-12-31', 'valor' => '24', 'fuente_nombre' => 'Doing Business'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase EconomiaRegistroDeUnaPropiedad
 

@@ -67,8 +67,22 @@ class EconomiaEmpresasExportadoras extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2014-11-24', 'valor' => '5', 'fuente_nombre' => 'Secretaría de Economía', 'notas' => ''));
+            array('fecha' => '2014-11-24', 'valor' => '5', 'fuente_nombre' => 'Secretaría de Economía'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2014-11-24', 'valor' => '113', 'fuente_nombre' => 'Secretaría de Economía'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-11-24', 'valor' => '55', 'fuente_nombre' => 'Secretaría de Economía'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2014-11-24', 'valor' => '11', 'fuente_nombre' => 'Secretaría de Economía'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2014-11-24', 'valor' => '5', 'fuente_nombre' => 'Secretaría de Economía'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2014-11-24', 'valor' => '184', 'fuente_nombre' => 'Secretaría de Economía'));
+    } // otras_regiones
 
 } // Clase EconomiaEmpresasExportadoras
 

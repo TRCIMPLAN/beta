@@ -67,8 +67,23 @@ class EconomiaSectoresQueHanFrenadoElCrecimiento extends \SMIBaseNUEVO\Publicaci
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '56.4000', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '56.4000', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2008-12-31', 'valor' => '7.3600', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2008-12-31', 'valor' => '9.8400', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2008-12-31', 'valor' => '40.9700', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2008-12-31', 'valor' => '56.4000', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2008-12-31', 'valor' => '16.8100', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2008-12-31', 'valor' => '25.6600', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+    } // otras_regiones
 
 } // Clase EconomiaSectoresQueHanFrenadoElCrecimiento
 

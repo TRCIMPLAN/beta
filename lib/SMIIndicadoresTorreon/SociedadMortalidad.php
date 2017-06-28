@@ -67,21 +67,38 @@ class SociedadMortalidad extends \SMIBaseNUEVO\PublicacionWeb {
      */
     public function datos() {
         return array(
-            array('fecha' => '2000-12-31', 'valor' => '4.9000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2001-12-31', 'valor' => '5.0000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2002-12-31', 'valor' => '5.0000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2003-12-31', 'valor' => '5.1000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2004-12-31', 'valor' => '4.9000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2005-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2006-12-31', 'valor' => '5.2000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2007-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2008-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '5.4000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '5.8000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '6.0000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '6.1000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''),
-            array('fecha' => '2013-12-31', 'valor' => '5.8000', 'fuente_nombre' => 'SINAIS (SSA)', 'notas' => ''));
+            array('fecha' => '2000-12-31', 'valor' => '4.9000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2001-12-31', 'valor' => '5.0000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2002-12-31', 'valor' => '5.0000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2003-12-31', 'valor' => '5.1000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2004-12-31', 'valor' => '4.9000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2005-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2006-12-31', 'valor' => '5.2000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2007-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2008-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2009-12-31', 'valor' => '5.4000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2010-12-31', 'valor' => '5.8000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2011-12-31', 'valor' => '6.0000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2012-12-31', 'valor' => '6.1000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('fecha' => '2013-12-31', 'valor' => '5.8000', 'fuente_nombre' => 'SINAIS (SSA)'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '5.8000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '7.0000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '3.2000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '4.9000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '5.6000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2013-12-31', 'valor' => '5.4000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Durango', 'fecha' => '2013-12-31', 'valor' => '5.4000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2013-12-31', 'valor' => '5.1000', 'fuente_nombre' => 'SINAIS (SSA)'));
+    } // otras_regiones
 
 } // Clase SociedadMortalidad
 

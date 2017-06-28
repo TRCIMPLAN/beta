@@ -67,12 +67,21 @@ class SociedadEstimacionDeMenoresHuerfanosPorAgresiones extends \SMIBaseNUEVO\Pu
      */
     public function datos() {
         return array(
-            array('fecha' => '2008-12-31', 'valor' => '544', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2009-12-31', 'valor' => '597', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2010-12-31', 'valor' => '753', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2011-12-31', 'valor' => '858', 'fuente_nombre' => 'IMPLAN', 'notas' => ''),
-            array('fecha' => '2012-12-31', 'valor' => '1253', 'fuente_nombre' => 'IMPLAN', 'notas' => ''));
+            array('fecha' => '2008-12-31', 'valor' => '544', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2009-12-31', 'valor' => '597', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2010-12-31', 'valor' => '753', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2011-12-31', 'valor' => '858', 'fuente_nombre' => 'IMPLAN'),
+            array('fecha' => '2012-12-31', 'valor' => '1253', 'fuente_nombre' => 'IMPLAN'));
     } // datos
+
+    /**
+     * Otras regiones
+     *
+     * @return array Arreglo asociativo
+     */
+    public function otras_regiones() {
+        return NULL;
+    } // otras_regiones
 
 } // Clase SociedadEstimacionDeMenoresHuerfanosPorAgresiones
 
