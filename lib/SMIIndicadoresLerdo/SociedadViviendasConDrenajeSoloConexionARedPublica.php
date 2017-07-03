@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase SociedadViviendasConDrenajeSoloConexionARedPublica
  */
-class SociedadViviendasConDrenajeSoloConexionARedPublica extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadViviendasConDrenajeSoloConexionARedPublica extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadViviendasConDrenajeSoloConexionARedPublica extends \SMIBaseNUEVO\P
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -75,18 +75,42 @@ class SociedadViviendasConDrenajeSoloConexionARedPublica extends \SMIBaseNUEVO\P
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '89.9200', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '83.4900', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '79.5100', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '86.4600', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '86.8100', 'fuente_nombre' => 'IMCO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Fuente: Estimaciones de IMCO a partir del Módulo de Condiciones Socioeconómicas (MCS) del Consejo Nacional para la Evaluación de la Política de Desarrollo Social (CONEVAL). El SMI cuenta con el indicador "Viviendas con Drenaje" el cual está basado en datos del Censo de Población y Vivienda 2010 de INEGI.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadViviendasConDrenajeSoloConexionARedPublica
 

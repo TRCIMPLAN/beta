@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SociedadEspaciosCulturalesSegunImco
  */
-class SociedadEspaciosCulturalesSegunImco extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadEspaciosCulturalesSegunImco extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadEspaciosCulturalesSegunImco extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -75,18 +75,42 @@ class SociedadEspaciosCulturalesSegunImco extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '0.3600', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '0.1500', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '0.2200', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '0.1100', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '0.2600', 'fuente_nombre' => 'IMCO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Fuente: Consejo Nacional para la Cultura y las Artes (CONACULTA). Se cuenta con un indicador con el mismo nombre en el SMI y se diferencia del aportado por IMCO debido a que se realizó un filtrado básico de la totalidad de los espacios culturales considerados por CONACULTA, ya que ellos consideran programas, fondos y proyectos a sus estadísticas totales, así como eventos que fueron realizados en una ocasión y datan de hace más de 5 años. Por lo que este indicador aparece únicamente en la categoria "Índice de Competitividad Urbana" Consulta la [Base de Datos completa](http://www.sic.gob.mx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadEspaciosCulturalesSegunImco
 

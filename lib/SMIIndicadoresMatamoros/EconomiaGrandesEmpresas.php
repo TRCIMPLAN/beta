@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase EconomiaGrandesEmpresas
  */
-class EconomiaGrandesEmpresas extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaGrandesEmpresas extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaGrandesEmpresas extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'texto'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -72,21 +72,44 @@ class EconomiaGrandesEmpresas extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-07-31', 'valor' => '1.1300', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-07-31', 'valor' => '0.9800', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-07-31', 'valor' => '0.0000', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-07-31', 'valor' => '0.5800', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-07-31', 'valor' => '1.0700', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2014-07-31', 'valor' => '1.0400', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Durango', 'fecha' => '2014-07-31', 'valor' => '0.7800', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2014-07-31', 'valor' => '0.5900', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+A nivel nacional, el 0.63% de las empresas son grandes.
+
+Datos obtenidos de [SIEM](http://www.siem.gob.mx/siem/estadisticas/EstadoTamanoPublico.asp?p=1)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaGrandesEmpresas
 

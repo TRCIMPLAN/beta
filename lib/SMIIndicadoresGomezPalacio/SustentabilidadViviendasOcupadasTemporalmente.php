@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SustentabilidadViviendasOcupadasTemporalmente
  */
-class SustentabilidadViviendasOcupadasTemporalmente extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadViviendasOcupadasTemporalmente extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadViviendasOcupadasTemporalmente extends \SMIBaseNUEVO\Public
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,40 @@ class SustentabilidadViviendasOcupadasTemporalmente extends \SMIBaseNUEVO\Public
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '2.9000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '3.3000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '3.6000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '2.8000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '3.0000', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return NULL;
+    } // observaciones
 
 } // Clase SustentabilidadViviendasOcupadasTemporalmente
 

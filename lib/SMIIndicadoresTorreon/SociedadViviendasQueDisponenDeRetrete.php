@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SociedadViviendasQueDisponenDeRetrete
  */
-class SociedadViviendasQueDisponenDeRetrete extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadViviendasQueDisponenDeRetrete extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadViviendasQueDisponenDeRetrete extends \SMIBaseNUEVO\PublicacionWeb
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,46 @@ class SociedadViviendasQueDisponenDeRetrete extends \SMIBaseNUEVO\PublicacionWeb
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '98.7100', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '97.1000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '94.6000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '95.1400', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '97.5400', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return <<<MAPAS_FINAL
+<iframe width='100%' height='520' frameborder='0' src='https://implantorreon.cartodb.com/u/sigimplan/viz/c39b756e-de1b-11e4-9b88-0e0c41326911/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+MAPAS_FINAL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Consulta la [Base de Datos](http://www.inegi.org.mx/biinegi/).
+
+Enlace al [Sistema de Información Geográfica](http://201.159.104.45:8080/apps/implan2.html).
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadViviendasQueDisponenDeRetrete
 

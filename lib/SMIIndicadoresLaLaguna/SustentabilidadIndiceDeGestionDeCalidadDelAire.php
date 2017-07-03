@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase SustentabilidadIndiceDeGestionDeCalidadDelAire
  */
-class SustentabilidadIndiceDeGestionDeCalidadDelAire extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadIndiceDeGestionDeCalidadDelAire extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadIndiceDeGestionDeCalidadDelAire extends \SMIBaseNUEVO\Publi
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -75,18 +75,43 @@ class SustentabilidadIndiceDeGestionDeCalidadDelAire extends \SMIBaseNUEVO\Publi
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Unidades: Variable discreta que asigna valores de 0 a 3, según la medición de la calidad del aire (se da el valor de: 1 si mide calidad, 2 si la reporta, 3 si cuenta con PROAIRE, 0 en otro caso). No se penaliza a las ciudades que no tienen la obligación de medir su calidad del aire
+de acuerdo con la NOM-156-SEMARNAT-2012, por lo que a ésas se les asigna el valor 3. Fuente: IMCO, con información al 2013.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadIndiceDeGestionDeCalidadDelAire
 

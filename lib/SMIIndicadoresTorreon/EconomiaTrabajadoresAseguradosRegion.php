@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase EconomiaTrabajadoresAseguradosRegion
  */
-class EconomiaTrabajadoresAseguradosRegion extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaTrabajadoresAseguradosRegion extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaTrabajadoresAseguradosRegion extends \SMIBaseNUEVO\PublicacionWeb 
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -77,13 +77,44 @@ class EconomiaTrabajadoresAseguradosRegion extends \SMIBaseNUEVO\PublicacionWeb 
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
         return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+El dato incluye a los trabajadores asegurados de los municipios de la región abarcados por la subdelegación Torreón.
+
+Datos obtenidos de [IMSS](http://201.144.108.20/imssdigital/conoce/estadisticas/pages/memoria2012.aspx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaTrabajadoresAseguradosRegion
 

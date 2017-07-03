@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase EconomiaIndiceDeGini
  */
-class EconomiaIndiceDeGini extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaIndiceDeGini extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaIndiceDeGini extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,42 @@ class EconomiaIndiceDeGini extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '0.4520', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '0.4208', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '0.4387', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '0.3831', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '0.4238', 'fuente_nombre' => 'CONEVAL'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+El índice de Ginni a nivel nacional es de: 0.472. Datos obtenidos de [CONEVAL](http://www.coneval.gob.mx/Paginas/principal.aspx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaIndiceDeGini
 

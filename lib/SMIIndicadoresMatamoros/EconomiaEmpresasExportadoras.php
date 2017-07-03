@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase EconomiaEmpresasExportadoras
  */
-class EconomiaEmpresasExportadoras extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaEmpresasExportadoras extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaEmpresasExportadoras extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,42 @@ class EconomiaEmpresasExportadoras extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-11-24', 'valor' => '113', 'fuente_nombre' => 'Secretaría de Economía'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-11-24', 'valor' => '55', 'fuente_nombre' => 'Secretaría de Economía'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-11-24', 'valor' => '11', 'fuente_nombre' => 'Secretaría de Economía'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-11-24', 'valor' => '5', 'fuente_nombre' => 'Secretaría de Economía'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-11-24', 'valor' => '184', 'fuente_nombre' => 'Secretaría de Economía'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Datos obtenidos de [Secretaría de Economía](http://www.economia.gob.mx/comunidad-negocios/industria-y-comercio/instrumentos-de-comercio-exterior/directorios-y-discos-de-captura)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaEmpresasExportadoras
 

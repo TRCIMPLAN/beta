@@ -2209,28 +2209,52 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica1">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Cap. Divina Providencia</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Centro Cultural José R. Mijares</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica3">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente DIF Revolución</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica4">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Esc. Primaria Emiliano Zapata</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica5">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Esc. Secundaria General No. 2</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica6">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Esc. Secundaria General No. 3</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica7">
+    <h3>Concentración de Partículas Suspendidas Totales en Torreón con fuente Esc. Secundaria Técnica No. 83</h3>
+
     <div id="SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<ul>
+<li>En 2016 Torreón contaba con 7 equipos manuales de PST (Partículas Suspendidas Totales) y 3 equipos de PM10 (Partículas Menores a 10 micras). En 2017 sólo se tienen operando los 3 equipos de PM10.</li>
+<li>Se ajustaron las fuentes para generar varias gráficas, una por cada estación de monitoreo.</li>
+<li>Fuente: <a href="http://www.torreon.gob.mx/medioambiente/">Dirección General de Medio Ambiente de Torreón</a></li>
+<li>Descarga: <a href="http://datostrc.gob.mx/datasets/ver/32732">Portal de Datos Públicos de Torreón - Resultados de Monitoreo Atmosférico</a></li>
+<li><a href="http://www.salud.gob.mx/unidades/cdi/nom/025ssa13.html">Norma Oficial Mexicana NOM-025-SSA1-1993</a></li>
+<li><a href="http://dof.gob.mx/nota_detalle.php?codigo=5357042&amp;fecha=20/08/2014">Norma Oficial Mexicana NOM-025-SSA1-2014</a></li>
+</ul>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -2262,9 +2286,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon').DataTable( {
+  if (typeof varSmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon === 'undefined') {
+     $('#SmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -2278,10 +2301,10 @@
         }
       }
     });
-  });
+    varSmiDatosConcentracionDeParticulasSuspendidasTotalesEnTorreon = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica1 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica1"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCapDivinaProvidencia',
@@ -2336,13 +2359,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonCentroCulturalJoseRMijares',
@@ -2397,13 +2421,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica3 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica3"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonDifRevolucion',
@@ -2459,13 +2484,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica4 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica4"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscPrimariaEmilianoZapata',
@@ -2521,13 +2547,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica5 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica5"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2 === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2 = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo2',
@@ -2583,13 +2610,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica6 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica6"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3 === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3 = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaGeneralNo3',
@@ -2645,13 +2673,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica7 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica7"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83 === 'undefined') {
     varSmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83 = Morris.Line({
       element: 'SmiGraficasConcentracionDeParticulasSuspendidasTotalesEnTorreonEscSecundariaTecnicaNo83',
@@ -2706,7 +2735,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

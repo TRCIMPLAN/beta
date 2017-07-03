@@ -763,6 +763,8 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Nuevas Empresas en Torreón </h3>
+
     <div id="SmiGraficasNuevasEmpresasEnTorreon" class="grafica"></div>
   </div>
   </div>
@@ -798,9 +800,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosNuevasEmpresasEnTorreon').DataTable( {
+  if (typeof varSmiDatosNuevasEmpresasEnTorreon === 'undefined') {
+     $('#SmiDatosNuevasEmpresasEnTorreon').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -814,10 +815,10 @@
         }
       }
     });
-  });
+    varSmiDatosNuevasEmpresasEnTorreon = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasNuevasEmpresasEnTorreon === 'undefined') {
     varSmiGraficasNuevasEmpresasEnTorreon = Morris.Line({
       element: 'SmiGraficasNuevasEmpresasEnTorreon',
@@ -918,7 +919,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

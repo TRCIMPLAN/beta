@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - LenguetasWeb
+ * TrcIMPLAN SMIBase - LenguetasWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase LenguetasWeb

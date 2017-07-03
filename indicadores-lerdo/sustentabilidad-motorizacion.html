@@ -301,10 +301,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Motorización en Lerdo </h3>
+
     <div id="SmiGraficasMotorizacionEnLerdo" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Índice de motorización. Consulta la <a href="http://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/transporte/vehiculos.asp?s=est&amp;c=13158&amp;proy=vmrc_vehiculos">Base de Datos</a></p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -336,9 +341,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosMotorizacionEnLerdo').DataTable( {
+  if (typeof varSmiDatosMotorizacionEnLerdo === 'undefined') {
+     $('#SmiDatosMotorizacionEnLerdo').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -352,10 +356,10 @@
         }
       }
     });
-  });
+    varSmiDatosMotorizacionEnLerdo = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasMotorizacionEnLerdo === 'undefined') {
     varSmiGraficasMotorizacionEnLerdo = Morris.Line({
       element: 'SmiGraficasMotorizacionEnLerdo',
@@ -379,7 +383,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

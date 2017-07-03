@@ -289,10 +289,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Mortalidad en Gómez Palacio </h3>
+
     <div id="SmiGraficasMortalidadEnGomezPalacio" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Fuente: Dirección General de Información en Salud (DGIS). Base de datos de defunciones generales 1979-2013. Base de Datos Defunciones Cifras Oficiales Preliminares-SEED [en línea]: Sistema Nacional de Información en Salud (SINAIS). [México]: Secretaría de Salud. &lt;www.dgis.salud.gob.mx> [Consulta: 29 Junio 2015]. Con estimaciones de población de CONAPO.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -324,9 +329,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosMortalidadEnGomezPalacio').DataTable( {
+  if (typeof varSmiDatosMortalidadEnGomezPalacio === 'undefined') {
+     $('#SmiDatosMortalidadEnGomezPalacio').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -340,10 +344,10 @@
         }
       }
     });
-  });
+    varSmiDatosMortalidadEnGomezPalacio = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasMortalidadEnGomezPalacio === 'undefined') {
     varSmiGraficasMortalidadEnGomezPalacio = Morris.Line({
       element: 'SmiGraficasMortalidadEnGomezPalacio',
@@ -365,7 +369,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

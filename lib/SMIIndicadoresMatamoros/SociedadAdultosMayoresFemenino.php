@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase SociedadAdultosMayoresFemenino
  */
-class SociedadAdultosMayoresFemenino extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadAdultosMayoresFemenino extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadAdultosMayoresFemenino extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -80,21 +80,40 @@ class SociedadAdultosMayoresFemenino extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2016-06-30', 'valor' => '27426', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2016-06-30', 'valor' => '11784', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2016-06-30', 'valor' => '5325', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2016-06-30', 'valor' => '3975', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2016-06-30', 'valor' => '48510', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2016-06-30', 'valor' => '108300', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Durango', 'fecha' => '2016-06-30', 'valor' => '66688', 'fuente_nombre' => 'CONAPO'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2016-06-30', 'valor' => '4477892', 'fuente_nombre' => 'CONAPO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return NULL;
+    } // observaciones
 
 } // Clase SociedadAdultosMayoresFemenino
 

@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SustentabilidadAccesoAVialidadesPavimentadas
  */
-class SustentabilidadAccesoAVialidadesPavimentadas extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadAccesoAVialidadesPavimentadas extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadAccesoAVialidadesPavimentadas extends \SMIBaseNUEVO\Publica
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -72,18 +72,43 @@ class SustentabilidadAccesoAVialidadesPavimentadas extends \SMIBaseNUEVO\Publica
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '94.0000', 'fuente_nombre' => 'IMPLAN'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '91.0000', 'fuente_nombre' => 'IMPLAN'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '74.0000', 'fuente_nombre' => 'IMPLAN'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '89.0000', 'fuente_nombre' => 'IMPLAN'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Censo de Población y Vivienda 2010. Consulta las [Bases de Datos](http://www.inegi.org.mx/est/contenidos/proyectos/ccpv/cpv2010/tabulados_urbano.aspx)
+Encuesta Intercensal 2015. Consulta la [Base de Datos](http://www.inegi.org.mx/est/contenidos/proyectos/encuestas/hogares/especiales/ei2015/default.aspx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadAccesoAVialidadesPavimentadas
 

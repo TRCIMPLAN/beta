@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase SustentabilidadAreaNoUrbanizada
  */
-class SustentabilidadAreaNoUrbanizada extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadAreaNoUrbanizada extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadAreaNoUrbanizada extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,42 @@ class SustentabilidadAreaNoUrbanizada extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '88.9000', 'fuente_nombre' => 'INEGI', 'notas' => 'La distribución geográfica de Torreón es de considerarse aparte, ya que el municipio se encuentra dividido en dos partes: Norte; en la cual está asentada la cabecera municipal y la mancha urbana, y el Sur; que abarca aproximadamente tres cuartas partes de la superficie municipal, separadas tanto por la Sierra de las Noas como por extensiones de los municipios de Matamoros y Viesca.'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '92.9000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '98.4000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '96.9000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '94.9000', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Descarga de [Base de Datos](http://www3.inegi.org.mx/sistemas/productos/default.aspx?c=265&upc=0&s=est&tg=3594&f=2&cl=0&pf=prod&ef=0&ct=201100000&pg=2)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadAreaNoUrbanizada
 

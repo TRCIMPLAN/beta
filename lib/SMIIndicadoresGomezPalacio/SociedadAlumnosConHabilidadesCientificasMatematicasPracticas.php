@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SociedadAlumnosConHabilidadesCientificasMatematicasPracticas
  */
-class SociedadAlumnosConHabilidadesCientificasMatematicasPracticas extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadAlumnosConHabilidadesCientificasMatematicasPracticas extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadAlumnosConHabilidadesCientificasMatematicasPracticas extends \SMIB
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,21 +71,42 @@ class SociedadAlumnosConHabilidadesCientificasMatematicasPracticas extends \SMIB
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-01', 'valor' => '15.0000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-01', 'valor' => '12.8000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-01', 'valor' => '12.1000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-01', 'valor' => '10.9000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2015-12-01', 'valor' => '13.6000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2015-12-01', 'valor' => '15.6000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Durango', 'fecha' => '2015-12-01', 'valor' => '13.9000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2015-12-01', 'valor' => '13.8000', 'fuente_nombre' => 'SEP'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Resuelven problemas aritméticos con números naturales o decimales. Resuelven problemas de aplicación de perímetros. Lea el análisis [Competencias en Lenguaje y Matemáticas en los Estudiantes de la Comarca](http://www.trcimplan.gob.mx/blog/competencias-en-lenguaje-y-matematicas-en-los-estudiantes-de-la-comarca-parte-1.html). Consulta la [Base de Datos](http://planea.sep.gob.mx/ba/base_de_datos_2015/).
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadAlumnosConHabilidadesCientificasMatematicasPracticas
 

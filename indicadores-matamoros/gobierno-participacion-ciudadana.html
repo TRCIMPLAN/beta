@@ -235,10 +235,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Participación Ciudadana en Matamoros </h3>
+
     <div id="SmiGraficasParticipacionCiudadanaEnMatamoros" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Para los años 2008, 2009 y 2010 se consideraron los datos de las elecciones de 2009, mientras que para los años 2011 y 2012 se tomaron datos de las elecciones de 2012. Unidades: Porcentaje de la lista nominal. Fuente: Instituto Federal Electoral (IFE), 2009 y 2012.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -269,27 +274,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosParticipacionCiudadanaEnMatamoros').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasParticipacionCiudadanaEnMatamoros === 'undefined') {
     varSmiGraficasParticipacionCiudadanaEnMatamoros = Morris.Line({
       element: 'SmiGraficasParticipacionCiudadanaEnMatamoros',
@@ -302,7 +288,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

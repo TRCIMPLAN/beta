@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase SociedadCamasCensables
  */
-class SociedadCamasCensables extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadCamasCensables extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadCamasCensables extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -84,21 +84,43 @@ class SociedadCamasCensables extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2015-08-30', 'valor' => '893', 'fuente_nombre' => 'Secretaria de Salud del Estado de Coahuila', 'notas' => 'A la cifra 2014 se agregan las 55 camas censables nuevas disponibles con el nuevo Hospital General de la ciudad (Julio 2015)'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '346', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '38', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '40', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '1262', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2014-12-31', 'valor' => '2686', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'Durango', 'fecha' => '2014-12-31', 'valor' => '1700', 'fuente_nombre' => 'SINAIS (SSA)'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2014-12-31', 'valor' => '88903', 'fuente_nombre' => 'SINAIS (SSA)'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+1. Hasta los datos de 2012 la Dirección General de Información de Salud (DGIS) considera únicamente al Hospital General de Torreón y el Hospital Integral de Matamoros, Hospital General de Lerdo y el Hospital General de Gómez Palacio. Para 2013 y 2014 se agregan las cifras de las unidades pertenecientes al IMSS, SEDENA, SSA, ISSSTE y Universitarios.
+2. Los datos de años anteriores a 2013 irán aumentando debido a la carga de la información concerniente al punto anterior.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadCamasCensables
 

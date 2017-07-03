@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - Grafica
+ * TrcIMPLAN SMIBase - Grafica
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase abstracta Grafica
@@ -118,7 +118,7 @@ abstract class Grafica {
             $formato_x = NULL;
         }
         // Si es el primer dato se conserva el formato detectado, si cambia se pierde
-        if (count($this->datos) == 0) {
+        if (count($this->datos) == 1) {
             $this->formato_x = $formato_x;
         } elseif (($this->formato_x != '') && ($formato_x !== $this->formato_x)) {
             $this->formato_x = NULL;
@@ -176,7 +176,7 @@ abstract class Grafica {
         }
         // Validar que haya suficientes valores
         if (count($this->datos) < 2) {
-            throw new GraficaExceptionSinValores();
+            throw new GraficaExceptionSinValores("Aviso en Grafica: Sólo se tiene un valor. Debe haber dos o más.");
         }
     } // validar
 

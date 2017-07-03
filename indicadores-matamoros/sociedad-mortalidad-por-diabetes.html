@@ -293,10 +293,15 @@ Se incluye en el subíndice "Sociedad Incluyente, Preparada y Sana" de IMCO.</di
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Mortalidad por Diabetes en Matamoros </h3>
+
     <div id="SmiGraficasMortalidadPorDiabetesEnMatamoros" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Los datos pueden modificarse debido al manejo de los registros administrativos por parte de la Secretaria de Salud.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -328,9 +333,8 @@ Se incluye en el subíndice "Sociedad Incluyente, Preparada y Sana" de IMCO.</di
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosMortalidadPorDiabetesEnMatamoros').DataTable( {
+  if (typeof varSmiDatosMortalidadPorDiabetesEnMatamoros === 'undefined') {
+     $('#SmiDatosMortalidadPorDiabetesEnMatamoros').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -344,10 +348,10 @@ Se incluye en el subíndice "Sociedad Incluyente, Preparada y Sana" de IMCO.</di
         }
       }
     });
-  });
+    varSmiDatosMortalidadPorDiabetesEnMatamoros = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasMortalidadPorDiabetesEnMatamoros === 'undefined') {
     varSmiGraficasMortalidadPorDiabetesEnMatamoros = Morris.Line({
       element: 'SmiGraficasMortalidadPorDiabetesEnMatamoros',
@@ -369,7 +373,9 @@ Se incluye en el subíndice "Sociedad Incluyente, Preparada y Sana" de IMCO.</di
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

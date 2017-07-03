@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase GobiernoDuracionDePeriodoParaEdilesYDelegados
  */
-class GobiernoDuracionDePeriodoParaEdilesYDelegados extends \SMIBaseNUEVO\PublicacionWeb {
+class GobiernoDuracionDePeriodoParaEdilesYDelegados extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class GobiernoDuracionDePeriodoParaEdilesYDelegados extends \SMIBaseNUEVO\Public
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -75,18 +75,42 @@ class GobiernoDuracionDePeriodoParaEdilesYDelegados extends \SMIBaseNUEVO\Public
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '3.0000', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '3.0000', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '3.5000', 'fuente_nombre' => 'IMCO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Unidades: Años. Fuente: IMCO con información del Sistema Nacional de Información Municipal del Instituto Nacional para el Federalismo y el Desarrollo Municipal (INAFED), 2013.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase GobiernoDuracionDePeriodoParaEdilesYDelegados
 

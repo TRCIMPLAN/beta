@@ -229,10 +229,21 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Índice de Especialización Local en la Minería en Torreón con fuente INEGI</h3>
+
     <div id="SmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnTorreonInegi" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>El índice de especialización en manufactura a nivel nacional es de:</p>
+
+<ul>
+<li>2008 = 11.81%</li>
+</ul>
+
+<p>Datos obtenidos de <a href="http://www3.inegi.org.mx/sistemas/saic/">INEGI. Censos económicos</a></p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -263,27 +274,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosIndiceDeEspecializacionLocalEnLaMineriaEnTorreon').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnTorreonInegi === 'undefined') {
     varSmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnTorreonInegi = Morris.Line({
       element: 'SmiGraficasIndiceDeEspecializacionLocalEnLaMineriaEnTorreonInegi',
@@ -294,7 +286,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

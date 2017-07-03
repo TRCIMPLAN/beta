@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SeguridadPersonasInvolucradasEnDelitosDelFueroComun
  */
-class SeguridadPersonasInvolucradasEnDelitosDelFueroComun extends \SMIBaseNUEVO\PublicacionWeb {
+class SeguridadPersonasInvolucradasEnDelitosDelFueroComun extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SeguridadPersonasInvolucradasEnDelitosDelFueroComun extends \SMIBaseNUEVO\
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'caracter'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,17 +71,42 @@ class SeguridadPersonasInvolucradasEnDelitosDelFueroComun extends \SMIBaseNUEVO\
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => 'X', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '31455', 'fuente_nombre' => 'INEGI', 'notas' => 'Fuente: [INEGI](http://www.inegi.org.mx/est/lista_cubos/consulta.aspx?p=gob&c=5)'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => 'X', 'fuente_nombre' => 'INEGI', 'notas' => 'Fuente: [INEGI](http://www.inegi.org.mx/est/lista_cubos/consulta.aspx?p=gob&c=5)'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '2561', 'fuente_nombre' => 'INEGI', 'notas' => 'Fuente: [INEGI](http://www.inegi.org.mx/est/lista_cubos/consulta.aspx?p=gob&c=5)'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Fuente: [INEGI](http://www.inegi.org.mx/est/lista_cubos/consulta.aspx?p=gob&c=5)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SeguridadPersonasInvolucradasEnDelitosDelFueroComun
 

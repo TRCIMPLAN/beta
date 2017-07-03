@@ -235,10 +235,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Crecimiento en Acceso a Servicios de Salud en Lerdo </h3>
+
     <div id="SmiGraficasCrecimientoEnAccesoAServiciosDeSaludEnLerdo" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Fuente: INEGI (ENOE).</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -269,27 +274,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosCrecimientoEnAccesoAServiciosDeSaludEnLerdo').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasCrecimientoEnAccesoAServiciosDeSaludEnLerdo === 'undefined') {
     varSmiGraficasCrecimientoEnAccesoAServiciosDeSaludEnLerdo = Morris.Line({
       element: 'SmiGraficasCrecimientoEnAccesoAServiciosDeSaludEnLerdo',
@@ -302,7 +288,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

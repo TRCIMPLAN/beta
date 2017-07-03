@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SustentabilidadConcentracionDeParticulasSuspendidasTotales
  */
-class SustentabilidadConcentracionDeParticulasSuspendidasTotales extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadConcentracionDeParticulasSuspendidasTotales extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadConcentracionDeParticulasSuspendidasTotales extends \SMIBas
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -403,13 +403,47 @@ class SustentabilidadConcentracionDeParticulasSuspendidasTotales extends \SMIBas
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
         return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+* En 2016 Torreón contaba con 7 equipos manuales de PST (Partículas Suspendidas Totales) y 3 equipos de PM10 (Partículas Menores a 10 micras). En 2017 sólo se tienen operando los 3 equipos de PM10.
+* Se ajustaron las fuentes para generar varias gráficas, una por cada estación de monitoreo.
+* Fuente: [Dirección General de Medio Ambiente de Torreón](http://www.torreon.gob.mx/medioambiente/)
+* Descarga: [Portal de Datos Públicos de Torreón - Resultados de Monitoreo Atmosférico](http://datostrc.gob.mx/datasets/ver/32732)
+* [Norma Oficial Mexicana NOM-025-SSA1-1993](http://www.salud.gob.mx/unidades/cdi/nom/025ssa13.html)
+* [Norma Oficial Mexicana NOM-025-SSA1-2014](http://dof.gob.mx/nota_detalle.php?codigo=5357042&fecha=20/08/2014)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadConcentracionDeParticulasSuspendidasTotales
 

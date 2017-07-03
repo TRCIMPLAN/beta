@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SustentabilidadSistemaDeTransporteMasivo
  */
-class SustentabilidadSistemaDeTransporteMasivo extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadSistemaDeTransporteMasivo extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadSistemaDeTransporteMasivo extends \SMIBaseNUEVO\Publicacion
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -75,18 +75,42 @@ class SustentabilidadSistemaDeTransporteMasivo extends \SMIBaseNUEVO\Publicacion
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2012-12-31', 'valor' => '1', 'fuente_nombre' => 'IMCO'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Unidades: Variable categórica que toma el valor de tres si se trata de una ciudad con un sistema de trasporte masivo en operación, dos si el sistema se encuentra en construcción o bien si se trata de una ciudad de menos de 250 mil habitantes, uno si se tiene aprobado el proyecto ejecutivo del sistema por parte de Banobras, o cero en otro caso. Fuente: Centro de Transporte Sustentable (CTS)/ Banco Nacional de Obras y Servicios Públicos (Banobras)/ El Poder del Consumidor A.C. (EPC), 2008-2012.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadSistemaDeTransporteMasivo
 

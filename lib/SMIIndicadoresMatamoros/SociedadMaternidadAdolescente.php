@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase SociedadMaternidadAdolescente
  */
-class SociedadMaternidadAdolescente extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadMaternidadAdolescente extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadMaternidadAdolescente extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,17 +71,42 @@ class SociedadMaternidadAdolescente extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '13.9000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '16.3000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '17.2000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '19.9000', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Enlace al [Sistema de Información Geográfica](http://201.159.104.45:8080/apps/implan2.html)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadMaternidadAdolescente
 

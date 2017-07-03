@@ -451,6 +451,8 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Secuestros en Torreón </h3>
+
     <div id="SmiGraficasSecuestrosEnTorreon" class="grafica"></div>
   </div>
   </div>
@@ -486,9 +488,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosSecuestrosEnTorreon').DataTable( {
+  if (typeof varSmiDatosSecuestrosEnTorreon === 'undefined') {
+     $('#SmiDatosSecuestrosEnTorreon').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -502,10 +503,10 @@
         }
       }
     });
-  });
+    varSmiDatosSecuestrosEnTorreon = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasSecuestrosEnTorreon === 'undefined') {
     varSmiGraficasSecuestrosEnTorreon = Morris.Line({
       element: 'SmiGraficasSecuestrosEnTorreon',
@@ -553,7 +554,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

@@ -253,10 +253,26 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Ingresos Totales Per Cápita en Gómez Palacio </h3>
+
     <div id="SmiGraficasIngresosTotalesPerCapitaEnGomezPalacio" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>El ingreso per cápita a nivel nacional es de:</p>
+
+<ul>
+<li>2012 = $2,486.26 </li>
+<li>2011 = $2,697.76 </li>
+<li>2010 = $2,458.53 </li>
+<li>2009 = $2,418.96 </li>
+<li>2008 = $2,300.63 </li>
+<li>2007 = $1,865.79 </li>
+</ul>
+
+<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/finanzaspublicas/FPMun.asp?s=est&amp;c=11289&amp;proy=efipem_fmun">INEGI. Estadística de finanzas públicas estatales y municipales</a></p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -287,27 +303,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosIngresosTotalesPerCapitaEnGomezPalacio').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasIngresosTotalesPerCapitaEnGomezPalacio === 'undefined') {
     varSmiGraficasIngresosTotalesPerCapitaEnGomezPalacio = Morris.Line({
       element: 'SmiGraficasIngresosTotalesPerCapitaEnGomezPalacio',
@@ -323,7 +320,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

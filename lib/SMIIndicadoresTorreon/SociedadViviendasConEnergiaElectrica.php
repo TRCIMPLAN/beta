@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SociedadViviendasConEnergiaElectrica
  */
-class SociedadViviendasConEnergiaElectrica extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadViviendasConEnergiaElectrica extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadViviendasConEnergiaElectrica extends \SMIBaseNUEVO\PublicacionWeb 
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -72,18 +72,46 @@ class SociedadViviendasConEnergiaElectrica extends \SMIBaseNUEVO\PublicacionWeb 
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '99.8300', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '99.7200', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '99.4900', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '99.5000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '99.4600', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return <<<MAPAS_FINAL
+<iframe width='100%' height='520' frameborder='0' src='https://implantorreon.cartodb.com/u/sigimplan/viz/b096d846-de20-11e4-868a-0e4fddd5de28/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+MAPAS_FINAL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Consulta la [Base de Datos](http://www.inegi.org.mx/biinegi/). Los datos de 2015 corresponden a la Encuesta Intercensal 2015 de INEGI y son estimaciones.
+
+Enlace al [Sistema de Información Geográfica](http://201.159.104.45:8080/apps/implan2.html).
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadViviendasConEnergiaElectrica
 

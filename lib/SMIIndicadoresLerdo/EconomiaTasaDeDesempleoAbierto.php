@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase EconomiaTasaDeDesempleoAbierto
  */
-class EconomiaTasaDeDesempleoAbierto extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaTasaDeDesempleoAbierto extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaTasaDeDesempleoAbierto extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -128,21 +128,53 @@ class EconomiaTasaDeDesempleoAbierto extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2017-03-31', 'valor' => '4.2900', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2017-03-31', 'valor' => '5.9700', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2017-03-31', 'valor' => '2.6500', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2017-03-31', 'valor' => '5.6700', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2017-03-31', 'valor' => '4.8600', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2017-03-31', 'valor' => '4.5500', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Durango', 'fecha' => '2017-03-31', 'valor' => '4.0300', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2017-03-31', 'valor' => '3.3900', 'fuente_nombre' => 'Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Media nacional del indicador:
+
+- 2010 = 3.72
+- 2010 = 0.98%
+- 1990 = 2.32%
+
+Datos obtenidos de [INEGI. Censos de población y vivienda](http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&s=est)
+
+Media Nacional 2014:
+1er. Trimestre: 4.80 %
+2do. Trimestre: 4.90 %
+3er. Trimestre: 5.20 %
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaTasaDeDesempleoAbierto
 

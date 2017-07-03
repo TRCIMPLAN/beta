@@ -25,7 +25,7 @@ namespace SMIIndicadoresMatamoros;
 /**
  * Clase SustentabilidadDisponibilidadDeBanqueta
  */
-class SustentabilidadDisponibilidadDeBanqueta extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadDisponibilidadDeBanqueta extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadDisponibilidadDeBanqueta extends \SMIBaseNUEVO\PublicacionW
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -72,21 +72,43 @@ class SustentabilidadDisponibilidadDeBanqueta extends \SMIBaseNUEVO\PublicacionW
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '86.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '83.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '66.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '60.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '81.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '73.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '69.0000', 'fuente_nombre' => 'INEGI'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '71.0000', 'fuente_nombre' => 'INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Datos 2010: Consulta la [Base de Datos](http://www.inegi.org.mx/est/contenidos/proyectos/ccpv/cpv2010/tabulados_urbano.aspx)
+Datos 2014: Consulta la [Base de Datos](http://www.inegi.org.mx/est/contenidos/proyectos/encuestas/hogares/especiales/ei2015/default.aspx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadDisponibilidadDeBanqueta
 

@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionDeUnaAdicionResidencialOComercial
  */
-class EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionDeUnaAdicionResidencialOComercial extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionDeUnaAdicionResidencialOComercial extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionD
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,13 +71,42 @@ class EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionD
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
         return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Sistema de Indicadores de Desempeño (SINDES) con metodología de la Asociación de Administración de ciudades y condados (ICMA) http://www.icmaml.org/sindes/
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaPromedioDeHorasParaLaRealizacionDelTramiteDePermisoDeConstruccionDeUnaAdicionResidencialOComercial
 

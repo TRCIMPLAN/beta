@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SeguridadTasaDeRoboDeVehiculoConViolencia
  */
-class SeguridadTasaDeRoboDeVehiculoConViolencia extends \SMIBaseNUEVO\PublicacionWeb {
+class SeguridadTasaDeRoboDeVehiculoConViolencia extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SeguridadTasaDeRoboDeVehiculoConViolencia extends \SMIBaseNUEVO\Publicacio
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'caracter'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,20 +71,42 @@ class SeguridadTasaDeRoboDeVehiculoConViolencia extends \SMIBaseNUEVO\Publicacio
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2015-03-31', 'valor' => 'Y', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => 'El dato proporcionado es estatal. De clic en la pestaña Otras Regiones.'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-03-31', 'valor' => 'Y', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => 'El dato proporcionado es estatal. De clic en la pestaña Otras Regiones.'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2015-03-31', 'valor' => 'Y', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => 'El dato proporcionado es estatal. De clic en la pestaña Otras Regiones.'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2015-03-31', 'valor' => 'Y', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => 'El dato proporcionado es estatal. De clic en la pestaña Otras Regiones.'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2015-03-31', 'valor' => 'Y', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública', 'notas' => 'El dato proporcionado es estatal. De clic en la pestaña Otras Regiones.'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2017-04-30', 'valor' => '1.4900', 'fuente_nombre' => 'Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública'),
-            array('region_nombre' => 'Durango', 'fecha' => '2017-04-30', 'valor' => '3.8900', 'fuente_nombre' => 'Ayuntamiento de Torreón'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Fuente: [Secretariado Ejecutivo del Sistema Nacional de Seguridad](http://secretariadoejecutivo.gob.mx/incidencia-delictiva/incidencia-delictiva-fuero-comun.php)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SeguridadTasaDeRoboDeVehiculoConViolencia
 

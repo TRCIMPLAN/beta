@@ -241,10 +241,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Sectores que Han Presentado Alto Crecimiento en Torreón con fuente IMCO</h3>
+
     <div id="SmiGraficasSectoresQueHanPresentadoAltoCrecimientoEnTorreonImco" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Porcentaje del PIB de la ciudad.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -275,27 +280,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosSectoresQueHanPresentadoAltoCrecimientoEnTorreon').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasSectoresQueHanPresentadoAltoCrecimientoEnTorreonImco === 'undefined') {
     varSmiGraficasSectoresQueHanPresentadoAltoCrecimientoEnTorreonImco = Morris.Line({
       element: 'SmiGraficasSectoresQueHanPresentadoAltoCrecimientoEnTorreonImco',
@@ -308,7 +294,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

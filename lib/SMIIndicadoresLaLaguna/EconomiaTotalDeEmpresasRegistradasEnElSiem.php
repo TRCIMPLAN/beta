@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase EconomiaTotalDeEmpresasRegistradasEnElSiem
  */
-class EconomiaTotalDeEmpresasRegistradasEnElSiem extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaTotalDeEmpresasRegistradasEnElSiem extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaTotalDeEmpresasRegistradasEnElSiem extends \SMIBaseNUEVO\Publicaci
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -72,21 +72,43 @@ class EconomiaTotalDeEmpresasRegistradasEnElSiem extends \SMIBaseNUEVO\Publicaci
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-07-31', 'valor' => '7402', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-07-31', 'valor' => '2032', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-07-31', 'valor' => '178', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-07-31', 'valor' => '173', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-07-31', 'valor' => '9785', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2014-07-31', 'valor' => '17810', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Durango', 'fecha' => '2014-07-31', 'valor' => '7193', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2014-07-31', 'valor' => '701136', 'fuente_nombre' => 'Sistema de Información Empresarial Mexicano (SIEM)'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Las empresas de La Laguna representan el 1.34% del total de 666,684 empresas a nivel nacional para el año 2013.
+Datos obtenidos de [SIEM](http://www.siem.gob.mx/siem/estadisticas/EstadoTamanoPublico.asp?p=1)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaTotalDeEmpresasRegistradasEnElSiem
 

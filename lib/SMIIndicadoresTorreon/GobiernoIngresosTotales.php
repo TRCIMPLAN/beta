@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase GobiernoIngresosTotales
  */
-class GobiernoIngresosTotales extends \SMIBaseNUEVO\PublicacionWeb {
+class GobiernoIngresosTotales extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class GobiernoIngresosTotales extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'dinero'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -79,21 +79,51 @@ class GobiernoIngresosTotales extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '2077991769.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '929690716.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '525402020.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '231643308.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '3764727813.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2014-12-31', 'valor' => '6649116096.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Durango', 'fecha' => '2014-12-31', 'valor' => '5277880579.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2014-12-31', 'valor' => '284519582697.00', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+El promedio nacional de los ingresos totales por municipio es de:
+
+- 2012 = 118495956.6
+- 2011 = 127070246.1
+- 2010 = 114373415.8
+- 2009 = 111150577.4
+- 2008 = 104258227.4
+- 2007 = 83404076.21
+
+Datos obtenidos de [INEGI. Estadística de finanzas públicas estatales y municipales](http://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/finanzaspublicas/FPMun.asp?s=est&c=11289&proy=efipem_fmun)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase GobiernoIngresosTotales
 

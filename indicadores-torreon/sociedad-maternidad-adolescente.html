@@ -186,10 +186,14 @@
 <!-- Contenido: Inicia  -->
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
-    <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation" class="active"><a href="#LenguetasIndicadorMapas" aria-controls="LenguetasIndicadorMapas" role="tab" data-toggle="tab">Mapas</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-  <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
+  <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorMapas">
+<iframe width='100%' height='520' frameborder='0' src='https://implantorreon.cartodb.com/u/sigimplan/viz/476c744c-de26-11e4-b88e-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorDatos">
   <table id="SmiDatosMaternidadAdolescenteEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
@@ -211,6 +215,9 @@
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Enlace al <a href="http://201.159.104.45:8080/apps/implan2.html">Sistema de Información Geográfica</a></p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -241,27 +248,9 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
+  // LenguetasWeb LenguetasIndicador ordenar que Mapas es la que se mostrará
   $(document).ready(function(){
-    $('#SmiDatosMaternidadAdolescenteEnTorreon').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
-  // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
-  $(document).ready(function(){
-    $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')
+    $('#LenguetasIndicador a[href="#LenguetasIndicadorMapas"]').tab('show')
   });
 </script>
 <!-- Javascript termina -->

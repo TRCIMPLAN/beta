@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - PublicacionWeb
+ * TrcIMPLAN SMIBase - GraficaExceptionSinValores
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,17 +20,11 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
- * Interfaz SalidaWeb
+ * Clase GraficaExceptionSinValores
  */
-interface SalidaWeb {
-
-    public function html();
-
-    public function javascript();
-
-} // Interfaz SalidaWeb
+class GraficaExceptionSinValores extends \Exception {}
 
 ?>

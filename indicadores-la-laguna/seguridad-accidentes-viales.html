@@ -313,10 +313,15 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Accidentes Viales en La Laguna </h3>
+
     <div id="SmiGraficasAccidentesVialesEnLaLaguna" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Consulta la <a href="http://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/transporte/accidentes.asp?s=est&amp;c=13159&amp;proy=atus_accidentes">Base de Datos</a></p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -348,9 +353,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosAccidentesVialesEnLaLaguna').DataTable( {
+  if (typeof varSmiDatosAccidentesVialesEnLaLaguna === 'undefined') {
+     $('#SmiDatosAccidentesVialesEnLaLaguna').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -364,10 +368,10 @@
         }
       }
     });
-  });
+    varSmiDatosAccidentesVialesEnLaLaguna = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasAccidentesVialesEnLaLaguna === 'undefined') {
     varSmiGraficasAccidentesVialesEnLaLaguna = Morris.Line({
       element: 'SmiGraficasAccidentesVialesEnLaLaguna',
@@ -393,7 +397,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

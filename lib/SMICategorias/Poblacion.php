@@ -25,36 +25,28 @@ namespace SMICategorias;
 /**
  * Clase Poblacion
  */
-class Poblacion extends \SMIBase\PublicacionWeb {
+class Poblacion extends \Base\Publicacion {
 
     /**
      * Constructor
      */
     public function __construct() {
-        // Título, autor y fecha
-        $this->nombre                    = 'Población';
-        $this->autor                     = 'Dirección de Investigación Estratégica';
-        $this->fecha                     = '2015-01-01T08:00'; // Fecha fija
+        // Título y fecha
+        $this->nombre        = 'Población';
+        $this->fecha         = '2015-01-01T08:00'; // Fecha fija
         // El nombre del archivo a crear
-        $this->archivo                   = 'poblacion';
+        $this->archivo       = 'poblacion';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion               = 'Sistema Metropolitano de Indicadores - Categoría Población';
-        $this->claves                    = 'IMPLAN, Indicadores, Categoría, Población';
-        // Opción de navegación a poner como activa
-        $this->nombre_menu               = 'Indicadores > Indicadores por Categoría';
-        // Banderas
-        $this->poner_imagen_en_contenido = FALSE;
-        $this->para_compartir            = FALSE;
-        // El estado puede ser 'publicar', 'revisar' o 'ignorar'
-        $this->estado                    = 'publicar';
+        $this->descripcion   = 'Sistema Metropolitano de Indicadores - Categoría Población';
+        $this->claves        = 'IMPLAN, Indicadores, Categoría, Población';
         // Para el Organizador
-        $this->categorias                = array();
-        $this->fuentes                   = array();
-        $this->regiones                  = array();
+        $this->categorias    = array();
+        $this->fuentes       = array();
+        $this->regiones      = array();
         // Rutas relativas a las imágenes, apuntan a íconos interactivos para cada categoría
-        $this->imagen                    = '../imagenes/categorias/poblacion.jpg';
-        $this->imagen_previa             = '../imagenes/categorias/poblacion.jpg';
-        $this->imagen_id                 = 'categorias-poblacion';
+        $this->imagen        = '../imagenes/categorias/poblacion.jpg';
+        $this->imagen_previa = '../imagenes/categorias/poblacion.jpg';
+        $this->imagen_id     = 'categorias-poblacion';
     } // constructor
 
     /**
@@ -64,7 +56,7 @@ class Poblacion extends \SMIBase\PublicacionWeb {
      */
     public function html() {
         // Definir contenido HTML en el esquema
-        $this->contenido->articleBody = <<<FINAL
+        $this->contenido = <<<FINAL
 <table class="table table-hover table-bordered matriz">
 <thead>
   <tr>
@@ -108,11 +100,11 @@ class Poblacion extends \SMIBase\PublicacionWeb {
   <tr>
     <td class="subindice color4">Sociedad</td>
     <td class="indicador color4">Población Estimada</td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">700656</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">357664</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">154621</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">114829</a></td>
-    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2016, CONAPO">1327769</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-torreon/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2017, CONAPO">708755</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-gomez-palacio/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2017, CONAPO">361144</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-lerdo/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2017, CONAPO">156161</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-matamoros/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2017, CONAPO">116078</a></td>
+    <td class="derecha color4"><a class="vinculo" href="../indicadores-la-laguna/sociedad-poblacion-estimada.html" data-toggle="tooltip" title="Cantidad, 30/06/2017, CONAPO">1342139</a></td>
   </tr>
   <tr>
     <td class="subindice color4">Sociedad</td>

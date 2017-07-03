@@ -421,6 +421,8 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Secuestros en Gómez Palacio con fuente Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</h3>
+
     <div id="SmiGraficasSecuestrosEnGomezPalacioSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica" class="grafica"></div>
   </div>
   </div>
@@ -456,9 +458,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosSecuestrosEnGomezPalacio').DataTable( {
+  if (typeof varSmiDatosSecuestrosEnGomezPalacio === 'undefined') {
+     $('#SmiDatosSecuestrosEnGomezPalacio').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -472,10 +473,10 @@
         }
       }
     });
-  });
+    varSmiDatosSecuestrosEnGomezPalacio = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasSecuestrosEnGomezPalacioSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica === 'undefined') {
     varSmiGraficasSecuestrosEnGomezPalacioSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica = Morris.Line({
       element: 'SmiGraficasSecuestrosEnGomezPalacioSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica',
@@ -518,7 +519,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

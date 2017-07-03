@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - SeccionGraficasWeb
+ * TrcIMPLAN SMIBase - SeccionGraficasWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase SeccionGraficasWeb
@@ -48,11 +48,13 @@ class SeccionGraficasWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
+            // Definir identificador único para la gráfica
             if ($this->fuente_nombre === NULL) {
                 $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Graficas '.$this->publicacion->nombre);
             } else {
                 $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Graficas '.$this->publicacion->nombre.' '.$this->fuente_nombre);
             }
+            // Preparar gráfica
             $this->grafica = new GraficaLineasWeb($identificador);
             $this->grafica->definir_clave_x('fecha');
             $this->grafica->definir_claves_y('dato', 'Dato', '#FF5B02');
@@ -63,6 +65,7 @@ class SeccionGraficasWeb implements SalidaWeb {
                     $this->grafica->agregar_datos($d['fecha'], $d['valor']);
                 }
             }
+            // Levantar la bandera
             $this->preparado = TRUE;
         }
     } // preparar
@@ -75,8 +78,16 @@ class SeccionGraficasWeb implements SalidaWeb {
     public function html() {
         try {
             $this->preparar();
-            return $this->grafica->html();
+            if ($this->fuente_nombre === NULL) {
+                $encabezado = "    <h3>{$this->publicacion->nombre} </h3>\n";
+            } else {
+                $encabezado = "    <h3>{$this->publicacion->nombre} con fuente {$this->fuente_nombre}</h3>\n";
+            }
+            return "$encabezado\n{$this->grafica->html()}";
         } catch (GraficaExceptionSinValores $e) {
+        /*  $mensaje_web = new MensajeWeb();
+            $mensaje_web->definir_mensaje_aviso('Aviso', $e->getMessage());
+            return $mensaje_web->html(); */
             return NULL;
         }
     } // html

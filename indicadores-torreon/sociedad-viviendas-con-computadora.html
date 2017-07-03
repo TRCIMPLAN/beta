@@ -186,12 +186,16 @@
 <!-- Contenido: Inicia  -->
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
-    <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation" class="active"><a href="#LenguetasIndicadorMapas" aria-controls="LenguetasIndicadorMapas" role="tab" data-toggle="tab">Mapas</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica1" aria-controls="LenguetasIndicadorGrafica1" role="tab" data-toggle="tab">Gráfica 1</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-  <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
+  <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorMapas">
+<iframe width='100%' height='520' frameborder='0' src='https://implantorreon.cartodb.com/u/sigimplan/viz/0b2a1d1e-de25-11e4-91b0-0e4fddd5de28/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorDatos">
   <table id="SmiDatosViviendasConComputadoraEnTorreon" class="table table-hover table-bordered">
     <thead>
       <tr>
@@ -248,13 +252,22 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica1">
+    <h3>Viviendas con Computadora en Torreón con fuente IMCO</h3>
+
     <div id="SmiGraficasViviendasConComputadoraEnTorreonImco" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Viviendas con Computadora en Torreón con fuente INEGI</h3>
+
     <div id="SmiGraficasViviendasConComputadoraEnTorreonInegi" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Consulta la <a href="http://www.inegi.org.mx/biinegi/">Base de Datos</a>. Los datos de 2015 son de la Encuesta Intercensal 2015 de INEGI y son estimaciones.</p>
+
+<p>Enlace al <a href="http://201.159.104.45:8080/apps/implan2.html">Sistema de Información Geográfica</a>.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -285,27 +298,8 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosViviendasConComputadoraEnTorreon').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica1 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica1"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasViviendasConComputadoraEnTorreonImco === 'undefined') {
     varSmiGraficasViviendasConComputadoraEnTorreonImco = Morris.Line({
       element: 'SmiGraficasViviendasConComputadoraEnTorreonImco',
@@ -318,13 +312,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasViviendasConComputadoraEnTorreonInegi === 'undefined') {
     varSmiGraficasViviendasConComputadoraEnTorreonInegi = Morris.Line({
       element: 'SmiGraficasViviendasConComputadoraEnTorreonInegi',
@@ -334,13 +329,15 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
-  // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
+  // LenguetasWeb LenguetasIndicador ordenar que Mapas es la que se mostrará
   $(document).ready(function(){
-    $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')
+    $('#LenguetasIndicador a[href="#LenguetasIndicadorMapas"]').tab('show')
   });
 </script>
 <!-- Javascript termina -->

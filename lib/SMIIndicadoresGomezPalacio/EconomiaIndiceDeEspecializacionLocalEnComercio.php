@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase EconomiaIndiceDeEspecializacionLocalEnComercio
  */
-class EconomiaIndiceDeEspecializacionLocalEnComercio extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaIndiceDeEspecializacionLocalEnComercio extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaIndiceDeEspecializacionLocalEnComercio extends \SMIBaseNUEVO\Publi
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -74,21 +74,48 @@ class EconomiaIndiceDeEspecializacionLocalEnComercio extends \SMIBaseNUEVO\Publi
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '9.0330', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '11.1544', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '16.6048', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '17.5070', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '9.7923', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2013-12-31', 'valor' => '6.2391', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Durango', 'fecha' => '2013-12-31', 'valor' => '15.7595', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2013-12-31', 'valor' => '10.6810', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+El índice de especialización nacional en el comercio es de:
+
+- 2008 = 9.76%
+- 2003 = 13.17%
+- 1998 = 13.82%
+
+Datos obtenidos de [INEGI. Censos económicos](http://www3.inegi.org.mx/sistemas/saic/)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaIndiceDeEspecializacionLocalEnComercio
 

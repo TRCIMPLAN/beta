@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - SeccionOtrasRegionesWeb
+ * TrcIMPLAN SMIBase - SeccionOtrasRegionesWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase SeccionOtrasRegionesWeb
@@ -29,6 +29,7 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
 
     protected $publicacion;                            // Instancia de PublicacionWeb
     protected $grafica;                                // Instancia de GraficaBarrasWeb
+    protected $tabla;                                  // Instancia de TablaWeb
     protected $preparado   = FALSE;                    // Bandera
     const     GRAFICA_ID   = 'OtrasRegionesIndicador'; // Identificador único para la gráfica
 
@@ -46,9 +47,26 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
-            $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Otras Regiones '.$this->publicacion->nombre);
-            $this->grafica = new GraficaBarrasWeb($identificador);
-
+            // Si la publicación tiene datos de otras regiones
+            if (is_array($this->publicacion->otras_regiones())) {
+                // Definir identificador único para la gráfica
+                $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Otras Regiones '.$this->publicacion->nombre);
+                // Preparar la gráfica
+                $this->grafica = new GraficaBarrasWeb($identificador.'Grafica');
+                $this->grafica->definir_clave_x('region');
+                $this->grafica->definir_claves_y('dato', 'Dato', '#FF5B02');
+                foreach ($this->publicacion->otras_regiones() as $or) {
+                    $this->grafica->agregar_datos($or['region_nombre'], $or['valor']);
+                }
+                // Preparar la tabla
+                $this->tabla = new TablaWeb($identificador.'Tabla');
+                $this->tabla->definir_estructura($this->publicacion->otras_regiones_estructura());
+                $this->tabla->definir_panal($this->publicacion->otras_regiones());
+                $this->tabla->deshabilitar_datatables();
+            } else {
+                throw new GraficaExceptionSinValores("Aviso en SeccionOtrasRegionesWeb: NO se tienen datos de otras regiones.");
+            }
+            // Levantar la bandera
             $this->preparado = TRUE;
         }
     } // preparar
@@ -61,8 +79,12 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
     public function html() {
         try {
             $this->preparar();
-            return $this->grafica->html();
+            $encabezado = "    <h3>Últimos datos de {$this->publicacion->nombre}</h3>";
+            return "$encabezado\n{$this->grafica->html()}\n{$this->tabla->html()}";
         } catch (GraficaExceptionSinValores $e) {
+        /*  $mensaje_web = new MensajeWeb();
+            $mensaje_web->definir_mensaje_aviso('Aviso', $e->getMessage());
+            return $mensaje_web->html(); */
             return NULL;
         }
     } // html
@@ -75,7 +97,12 @@ class SeccionOtrasRegionesWeb implements SalidaWeb {
     public function javascript() {
         try {
             $this->preparar();
-            return $this->grafica->javascript();
+            $tabla_js = $this->tabla->javascript();
+            if ($tabla_js === NULL) {
+                return $this->grafica->javascript();
+            } else {
+                return $this->grafica->javascript()."\n".$this->tabla->javascript();
+            }
         } catch (GraficaExceptionSinValores $e) {
             return NULL;
         }

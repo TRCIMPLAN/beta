@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SociedadAlumnosConPerfilGramaticoEspanol
  */
-class SociedadAlumnosConPerfilGramaticoEspanol extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadAlumnosConPerfilGramaticoEspanol extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadAlumnosConPerfilGramaticoEspanol extends \SMIBaseNUEVO\Publicacion
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,43 @@ class SociedadAlumnosConPerfilGramaticoEspanol extends \SMIBaseNUEVO\Publicacion
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '44.0000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '37.0000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '37.0000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '32.0000', 'fuente_nombre' => 'SEP'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '40.0000', 'fuente_nombre' => 'SEP'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+El criterio de "Alumnos buenos y excelentes" provienen de [mejoratuescuela.org](http://www.mejoratuescuela.org)
+Consulta la [Base de datos](http://www.enlace.sep.gob.mx/content/ba/pages/base_de_datos_completa_2013/)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadAlumnosConPerfilGramaticoEspanol
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - MensajeWeb
+ * TrcIMPLAN SMIBase - MensajeWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase MensajeWeb
@@ -33,6 +33,9 @@ class MensajeWeb implements SalidaWeb {
 
     /**
      * Definir mensaje aviso
+     *
+     * @param string Encabezado
+     * @param string Contenido
      */
     public function definir_mensaje_aviso($encabezado, $contenido) {
         $this->encabezado = $encabezado;
@@ -42,6 +45,9 @@ class MensajeWeb implements SalidaWeb {
 
     /**
      * Definir mensaje error
+     *
+     * @param string Encabezado
+     * @param string Contenido
      */
     public function definir_mensaje_error($encabezado, $contenido) {
         $this->encabezado = $encabezado;
@@ -51,6 +57,9 @@ class MensajeWeb implements SalidaWeb {
 
     /**
      * Definir mensaje info
+     *
+     * @param string Encabezado
+     * @param string Contenido
      */
     public function definir_mensaje_info($encabezado, $contenido) {
         $this->encabezado = $encabezado;
@@ -60,6 +69,9 @@ class MensajeWeb implements SalidaWeb {
 
     /**
      * Definir mensaje tip
+     *
+     * @param string Encabezado
+     * @param string Contenido
      */
     public function definir_mensaje_tip($encabezado, $contenido) {
         $this->encabezado = $encabezado;

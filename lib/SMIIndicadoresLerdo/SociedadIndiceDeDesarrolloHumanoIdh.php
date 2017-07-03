@@ -25,7 +25,7 @@ namespace SMIIndicadoresLerdo;
 /**
  * Clase SociedadIndiceDeDesarrolloHumanoIdh
  */
-class SociedadIndiceDeDesarrolloHumanoIdh extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadIndiceDeDesarrolloHumanoIdh extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadIndiceDeDesarrolloHumanoIdh extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -73,21 +73,40 @@ class SociedadIndiceDeDesarrolloHumanoIdh extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '0.8976', 'fuente_nombre' => 'INAFED-PNUD', 'notas' => 'Consulta la [Base de Datos](http://www.inafed.gob.mx/es/inafed/Socioeconomico_Municipal)'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '0.8681', 'fuente_nombre' => 'INAFED-PNUD', 'notas' => 'Consulta la [Base de Datos](http://www.inafed.gob.mx/es/inafed/Socioeconomico_Municipal)'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '0.8661', 'fuente_nombre' => 'INAFED-PNUD', 'notas' => 'Consulta la [Base de Datos](http://www.inafed.gob.mx/es/inafed/Socioeconomico_Municipal)'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '0.8404', 'fuente_nombre' => 'INAFED-PNUD', 'notas' => 'Consulta la [Base de Datos](http://www.inafed.gob.mx/es/inafed/Socioeconomico_Municipal)'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '0.8680', 'fuente_nombre' => 'INAFED-PNUD', 'notas' => 'El dato es un promedio de los cuatro municipios que integran la Zona Metropolitana de la Laguna. Se publica únicamente como referencia. Consulta la [Base de Datos](http://www.inafed.gob.mx/es/inafed/Socioeconomico_Municipal)'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '0.7760', 'fuente_nombre' => 'INAFED-PNUD'),
-            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '0.7320', 'fuente_nombre' => 'INAFED-PNUD'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '0.7500', 'fuente_nombre' => 'INAFED-PNUD'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return NULL;
+    } // observaciones
 
 } // Clase SociedadIndiceDeDesarrolloHumanoIdh
 

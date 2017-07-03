@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - GraficaBarrasWeb
+ * TrcIMPLAN SMIBase - GraficaLineasWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,12 +20,12 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
- * Clase GraficaBarrasWeb
+ * Clase GraficaLineasWeb
  */
-class GraficaBarrasWeb extends Grafica implements SalidaWeb {
+class GraficaLineasWeb extends Grafica implements SalidaWeb {
 
     // protected $identificador;
     // protected $clave_x;
@@ -68,7 +68,7 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
             }
             $d[] = "{ {$this->clave_x}: '$x', ".implode(', ', $b)." }";
         }
-        $a[] = "data: [".implode(",", $d)."]";
+        $a[] = "data: [\n        ".implode(",\n        ", $d)."]";
         // Acumular clave del eje x
         $a[] = "xkey: '{$this->clave_x}'";
         // Acumular claves del eje y
@@ -88,19 +88,26 @@ class GraficaBarrasWeb extends Grafica implements SalidaWeb {
         foreach ($this->colores_y as $color) {
             $c[] = "'$color'";
         }
-        $a[] = "barColors: [".implode(', ', $c)."]";
+        $a[] = "lineColors: [".implode(', ', $c)."]";
+        // Corregir fechas
+        if ($this->formato_x == 'YYYY-MM-DD') {
+            $a[] = "xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); }";
+            $a[] = "dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }";
+        } elseif ($this->formato_x == 'YYYY-MM') {
+            $a[] = "xLabelFormat: function(d) { return (d.getMonth()+1)+'/'+d.getFullYear(); }";
+            $a[] = "dateFormat: function(ts) { var d = new Date(ts); return (d.getMonth() + 1) + '/' + d.getFullYear(); }";
+        }
         // Entregar
         $interior = implode(",\n      ", $a);
         return <<<FINAL
-  // MorrisJS grafica de barras
   if (typeof var{$this->identificador} === 'undefined') {
-    var{$this->identificador} = Morris.Bar({
+    var{$this->identificador} = Morris.Line({
       $interior
     });
   }
 FINAL;
     } // javascript
 
-} // Clase GraficaBarrasWeb
+} // Clase GraficaLineasWeb
 
 ?>

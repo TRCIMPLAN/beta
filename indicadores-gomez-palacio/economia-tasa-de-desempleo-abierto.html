@@ -555,16 +555,38 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica1">
+    <h3>Tasa de Desempleo Abierto en Gómez Palacio con fuente Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</h3>
+
     <div id="SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica2">
+    <h3>Tasa de Desempleo Abierto en Gómez Palacio con fuente IMCO</h3>
+
     <div id="SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioImco" class="grafica"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica3">
+    <h3>Tasa de Desempleo Abierto en Gómez Palacio con fuente INEGI</h3>
+
     <div id="SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioInegi" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Media nacional del indicador:</p>
+
+<ul>
+<li>2010 = 3.72</li>
+<li>2010 = 0.98%</li>
+<li>1990 = 2.32%</li>
+</ul>
+
+<p>Datos obtenidos de <a href="http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&amp;s=est">INEGI. Censos de población y vivienda</a></p>
+
+<p>Media Nacional 2014:
+1er. Trimestre: 4.80 %
+2do. Trimestre: 4.90 %
+3er. Trimestre: 5.20 %</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -596,9 +618,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosTasaDeDesempleoAbiertoEnGomezPalacio').DataTable( {
+  if (typeof varSmiDatosTasaDeDesempleoAbiertoEnGomezPalacio === 'undefined') {
+     $('#SmiDatosTasaDeDesempleoAbiertoEnGomezPalacio').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -612,10 +633,10 @@
         }
       }
     });
-  });
+    varSmiDatosTasaDeDesempleoAbiertoEnGomezPalacio = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica1 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica1"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos === 'undefined') {
     varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos = Morris.Line({
       element: 'SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioEncuestaNacionalDeOcupacionYEmpleoEnoeMicrodatos',
@@ -672,13 +693,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica2 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica2"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioImco === 'undefined') {
     varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioImco = Morris.Line({
       element: 'SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioImco',
@@ -691,13 +713,14 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
   // LenguetaWeb LenguetasIndicadorGrafica3 ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica3"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioInegi === 'undefined') {
     varSmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioInegi = Morris.Line({
       element: 'SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioInegi',
@@ -709,7 +732,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

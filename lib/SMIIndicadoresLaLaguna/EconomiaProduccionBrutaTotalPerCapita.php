@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase EconomiaProduccionBrutaTotalPerCapita
  */
-class EconomiaProduccionBrutaTotalPerCapita extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaProduccionBrutaTotalPerCapita extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaProduccionBrutaTotalPerCapita extends \SMIBaseNUEVO\PublicacionWeb
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'dinero'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -74,21 +74,56 @@ class EconomiaProduccionBrutaTotalPerCapita extends \SMIBaseNUEVO\PublicacionWeb
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '225170.46', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '154519.29', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2013-12-31', 'valor' => '26085.15', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '18450.05', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2013-12-31', 'valor' => '164908.36', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2013-12-31', 'valor' => '218704.95', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Durango', 'fecha' => '2013-12-31', 'valor' => '63345.06', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2013-12-31', 'valor' => '118115.69', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+La producción bruta total per cápita a nivel nacional es de:
+
+- 2008 = $103,094.93 
+- 2003 = $60,324.54 
+- 1998 = $37,765.57 
+
+La producción bruta total per cápita en dólares a nivel nacional es de:
+
+- 2008 = $7,453.09 
+- 2003 = $5,368.29 
+- 1998 = $3,816.13 
+
+Calculados con el tipo de cambio Fix publicado por el Banxico al cierre del año correspondiente.
+
+Datos obtenidos de [INEGI Censos económicos.](http://www3.inegi.org.mx/sistemas/saic/)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaProduccionBrutaTotalPerCapita
 

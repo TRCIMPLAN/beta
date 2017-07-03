@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - TablaExceptionSinValores
+ * TrcIMPLAN SMIBase - SeccionOtrasRegionesWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,11 +20,42 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
- * Clase TablaExceptionSinValores
+ * Clase SeccionMapasWeb
  */
-class TablaExceptionSinValores extends \Exception {}
+class SeccionMapasWeb implements SalidaWeb {
+
+    protected $publicacion; // Instancia de PublicacionWeb
+
+    /**
+     * Constructor
+     *
+     * @param mixed Instancia de PublicacionWeb
+     */
+    public function __construct(PublicacionWeb $publicacion) {
+        $this->publicacion = $publicacion;
+    } // constructor
+
+    /**
+     * HTML
+     *
+     * @return string Código HTML
+     */
+    public function html() {
+        return $this->publicacion->mapas();
+    } // html
+
+    /**
+     * Javascript
+     *
+     * @return string Código Javascript
+     */
+    public function javascript() {
+        return NULL;
+    } // javascript
+
+} // Clase SeccionMapasWeb
 
 ?>

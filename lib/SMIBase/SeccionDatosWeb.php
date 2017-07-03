@@ -1,6 +1,6 @@
 <?php
 /**
- * TrcIMPLAN SMIBaseNUEVO - SeccionDatosWeb
+ * TrcIMPLAN SMIBase - SeccionDatosWeb
  *
  * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
@@ -20,7 +20,7 @@
  * @package TrcIMPLANSitioWeb
  */
 
-namespace SMIBaseNUEVO;
+namespace SMIBase;
 
 /**
  * Clase SeccionDatosWeb
@@ -45,10 +45,13 @@ class SeccionDatosWeb implements SalidaWeb {
      */
     private function preparar() {
         if (!$this->preparado) {
+            // Definir identificador único para la tabla web
             $identificador = UtileriasParaFormatos::caracteres_para_clase('SMI Datos '.$this->publicacion->nombre);
+            // Preparar tabla web
             $this->tabla = new TablaWeb($identificador);
-            $this->tabla->definir_estructura($this->publicacion->estructura());
+            $this->tabla->definir_estructura($this->publicacion->datos_estructura());
             $this->tabla->definir_panal($this->publicacion->datos());
+            // Levantar la bandera
             $this->preparado = TRUE;
         }
     } // preparar

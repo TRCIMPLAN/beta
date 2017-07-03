@@ -25,7 +25,7 @@ namespace SMIIndicadoresLaLaguna;
 /**
  * Clase EconomiaInversionPerCapita
  */
-class EconomiaInversionPerCapita extends \SMIBaseNUEVO\PublicacionWeb {
+class EconomiaInversionPerCapita extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class EconomiaInversionPerCapita extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'dinero'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -78,21 +78,51 @@ class EconomiaInversionPerCapita extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-12-31', 'valor' => '570.42', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-12-31', 'valor' => '339.25', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-12-31', 'valor' => '546.12', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-12-31', 'valor' => '585.97', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-12-31', 'valor' => '506.52', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2014-12-31', 'valor' => '475.91', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Durango', 'fecha' => '2014-12-31', 'valor' => '659.04', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2014-12-31', 'valor' => '534.84', 'fuente_nombre' => 'Elaboración propia con datos obtenidos del INEGI'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+La inversión nacional per cápita es de:
+
+- 2012 = $553.80 
+- 2011 = $747.22 
+- 2010 = $698.38 
+- 2009 = $765.24 
+- 2008 = $636.13 
+- 2007 = $484.72 
+
+Datos obtenidos de [INEGI. Estadística de finanzas públicas estatales y municipales](http://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/finanzaspublicas/FPMun.asp?s=est&c=11289&proy=efipem_fmun)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase EconomiaInversionPerCapita
 

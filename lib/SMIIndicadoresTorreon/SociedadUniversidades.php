@@ -25,7 +25,7 @@ namespace SMIIndicadoresTorreon;
 /**
  * Clase SociedadUniversidades
  */
-class SociedadUniversidades extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadUniversidades extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadUniversidades extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'cantidad'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,18 +71,74 @@ class SociedadUniversidades extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2014-03-31', 'valor' => '18', 'fuente_nombre' => 'CIESLAG-FOMEC'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2014-03-31', 'valor' => '9', 'fuente_nombre' => 'CIESLAG-FOMEC'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2014-03-31', 'valor' => '3', 'fuente_nombre' => 'CIESLAG-FOMEC'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2014-03-31', 'valor' => '1', 'fuente_nombre' => 'CIESLAG-FOMEC'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2014-03-31', 'valor' => '31', 'fuente_nombre' => 'CIESLAG-FOMEC'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Las escuelas y facultades de la UAdeC son contabilizadas en una unidad. Únicamente se contabilizan los planteles ubicados en Matamoros, Torreón, Gómez Palacio y Lerdo.
+
+* Escuela Normal de la Laguna
+* Escuela Normal de Torreón
+* Instituto 18 de Marzo
+* Instituto Superior Francisco Gonzalez de la Vega
+* Instituto Tecnológico de Torreón (ITA 10)
+* Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Laguna
+* Instituto Tecnológico de la Laguna
+* Instituto Tecnológico Superior de Lerdo
+* Universidad Autónoma Agraria Antonio Narro
+* Universidad Autónoma de Coahuila
+* Universidad Autónoma de la Laguna
+* Universidad Autónoma del Noreste
+* Universidad Iberoamericana
+* Universidad Juárez del Estado de Durango
+* Universidad La Salle
+* Universidad Pedagógica Nacional
+* Universidad del Valle de México
+* Universidad Tec Milenio
+* Universidad Interamericana para el Desarrollo
+* Universidad Politécnica de Gómez Palacio
+* Universidad del Desarrollo Profesional
+* National Institute of Information Technologies
+* Universidad Tecnológica de Torreón
+* Instituto Estatal de Desarrollo Docente e investigación Educativa Unidad Matamoros
+* Instituto Estatal de Desarrollo Docente e investigación Educativa Unidad Torreón
+* Universidad Autónoma de Durango Campus Gómez Palacio
+* Universidad Autónoma de Durango Campus Torreón
+* Instituto Ma Esther Zuno de Echeverría
+* Instituto de Estudios Superiores y Educación Normal Gral. Lázaro Cárdenas
+* Universidad Tecnológica de La Laguna Durango
+* Universidad Pedagógica de Durango-UGP
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadUniversidades
 

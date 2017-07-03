@@ -299,6 +299,8 @@
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Inflación Anual en Torreón </h3>
+
     <div id="SmiGraficasInflacionAnualEnTorreon" class="grafica"></div>
   </div>
   </div>
@@ -334,9 +336,8 @@
 <!-- Javascript inicia -->
 <script>
   // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosInflacionAnualEnTorreon').DataTable( {
+  if (typeof varSmiDatosInflacionAnualEnTorreon === 'undefined') {
+     $('#SmiDatosInflacionAnualEnTorreon').DataTable({
       "language": {
         "lengthMenu":   "Mostrando _MENU_ filas por página",
         "zeroRecords":  "No se encontró nada",
@@ -350,10 +351,10 @@
         }
       }
     });
-  });
+    varSmiDatosInflacionAnualEnTorreon = 1;
+  }
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasInflacionAnualEnTorreon === 'undefined') {
     varSmiGraficasInflacionAnualEnTorreon = Morris.Line({
       element: 'SmiGraficasInflacionAnualEnTorreon',
@@ -377,7 +378,9 @@
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })

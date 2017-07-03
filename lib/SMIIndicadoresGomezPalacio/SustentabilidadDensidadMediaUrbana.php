@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SustentabilidadDensidadMediaUrbana
  */
-class SustentabilidadDensidadMediaUrbana extends \SMIBaseNUEVO\PublicacionWeb {
+class SustentabilidadDensidadMediaUrbana extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SustentabilidadDensidadMediaUrbana extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,17 +71,43 @@ class SustentabilidadDensidadMediaUrbana extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '81.3000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '82.2000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '52.6000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '58.8000', 'fuente_nombre' => 'CONAPO-SEDESOL-INEGI', 'notas' => 'Consulta y descarga la [base de datos](http://www.conapo.gob.mx/en/CONAPO/Catalogo_Sistema_Urbano_Nacional_2012)'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Da idea de lo compacta o dispersa que es una ciudad y por
+tanto del carácter urbano de las unidades territoriales que conforman el SUN. Para su estimación se toman los datos por Área Geoestadística Básica (AGEB) Urbana.
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SustentabilidadDensidadMediaUrbana
 

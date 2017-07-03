@@ -25,7 +25,7 @@ namespace SMIIndicadoresGomezPalacio;
 /**
  * Clase SociedadPobrezaExtrema
  */
-class SociedadPobrezaExtrema extends \SMIBaseNUEVO\PublicacionWeb {
+class SociedadPobrezaExtrema extends \SMIBase\PublicacionWeb {
 
     /**
      * Constructor
@@ -48,22 +48,22 @@ class SociedadPobrezaExtrema extends \SMIBaseNUEVO\PublicacionWeb {
     } // constructor
 
     /**
-     * Estructura
+     * Datos Estructura
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
-    public function estructura() {
+    public function datos_estructura() {
         return array(
             'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
             'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
             'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
             'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
-    } // estructura
+    } // datos_estructura
 
     /**
      * Datos
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function datos() {
         return array(
@@ -71,21 +71,42 @@ class SociedadPobrezaExtrema extends \SMIBaseNUEVO\PublicacionWeb {
     } // datos
 
     /**
+     * Otras Regiones Estructura
+     *
+     * @return array Arreglo con arreglos asociativos
+     */
+    public function otras_regiones_estructura() {
+        return NULL;
+    } // otras_regiones_estructura
+
+    /**
      * Otras regiones
      *
-     * @return array Arreglo asociativo
+     * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return array(
-            array('region_nombre' => 'Torreón', 'fecha' => '2010-12-31', 'valor' => '2.8400', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2010-12-31', 'valor' => '5.3000', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Lerdo', 'fecha' => '2010-12-31', 'valor' => '6.8000', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Matamoros', 'fecha' => '2010-12-31', 'valor' => '3.9000', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '4.0000', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Coahuila', 'fecha' => '2010-12-31', 'valor' => '2.9400', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Durango', 'fecha' => '2010-12-31', 'valor' => '10.1200', 'fuente_nombre' => 'CONEVAL'),
-            array('region_nombre' => 'Nacional', 'fecha' => '2010-12-31', 'valor' => '11.2000', 'fuente_nombre' => 'CONEVAL'));
+        return NULL;
     } // otras_regiones
+
+    /**
+     * Mapas
+     *
+     * @return string Código HTML con el iframe de Carto
+     */
+    public function mapas() {
+        return NULL;
+    } // mapas
+
+    /**
+     * Observaciones
+     *
+     * @return string Markdown
+     */
+    public function observaciones() {
+        return <<<OBSERVACIONES_FINAL
+Consulta la [Base de Datos](http://www.coneval.gob.mx/Medicion/Paginas/Medici%C3%B3n/Pobreza%202012/Pobreza-2012.aspx)
+OBSERVACIONES_FINAL;
+    } // observaciones
 
 } // Clase SociedadPobrezaExtrema
 

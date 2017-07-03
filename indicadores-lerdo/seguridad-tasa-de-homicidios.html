@@ -239,10 +239,15 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
   </table>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorGrafica">
+    <h3>Tasa de Homicidios en Lerdo </h3>
+
     <div id="SmiGraficasTasaDeHomicidiosEnLerdo" class="grafica"></div>
   </div>
   </div>
 </div>
+<h3>Observaciones</h3>
+<p>Fuente: Instituto Nacional de Estadística y Geografía (INEGI), 2008-2012.</p>
+
 <!-- Contenido: Termina -->
         </div>
       </div></article>
@@ -273,27 +278,8 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
-  // LenguetaWeb LenguetasIndicadorDatos
-  // DataTables
-  $(document).ready(function(){
-    $('#SmiDatosTasaDeHomicidiosEnLerdo').DataTable( {
-      "language": {
-        "lengthMenu":   "Mostrando _MENU_ filas por página",
-        "zeroRecords":  "No se encontró nada",
-        "info":         "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty":    "No se encontraron registros",
-        "infoFiltered": "(fitrados a partir de un máximo de _MAX_ registros)",
-        "search":       "Filtrar:",
-        "paginate": {
-          "previous":   "Anterior",
-          "next":       "Siguiente"
-        }
-      }
-    });
-  });
   // LenguetaWeb LenguetasIndicadorGrafica ejecuta lo siguiente al mostrar
   $('#LenguetasIndicador a[href="#LenguetasIndicadorGrafica"]').on('shown.bs.tab', function(e){
-  // MorrisJS grafica de lineas
   if (typeof varSmiGraficasTasaDeHomicidiosEnLerdo === 'undefined') {
     varSmiGraficasTasaDeHomicidiosEnLerdo = Morris.Line({
       element: 'SmiGraficasTasaDeHomicidiosEnLerdo',
@@ -306,7 +292,9 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
-      lineColors: ['#FF5B02']
+      lineColors: ['#FF5B02'],
+      xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
+      dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
     });
   }
   })
