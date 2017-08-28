@@ -42,13 +42,10 @@ class LaLagunaCapitalHumanoYCalidadDeVida extends \Base\PublicacionSchemaBlogPos
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'La Zona Metropolitana mantiene primeros lugares a nivel nacional en diferentes rubros, que la ubican como una de las mejores regiones para habitar. Torreón destaca como ejemplo.';
         $this->claves                     = 'IMPLAN, Torreon, Capital Humano, Calidad de Vida';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Análisis Publicados';
-        // Se define una ruta a una archivo markdown para que cuando se ejecute el método HTML se cargue
+        // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/LaLagunaCapitalHumanoYCalidadDeVida.md';
         // Banderas
         $this->poner_imagen_en_contenido  = FALSE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Educación', 'Empleo', 'Género', 'Población', 'Salud');
         $this->fuentes                    = array('INEGI', 'CONAPO', 'IMCO', 'SEP', 'CONEVAL');

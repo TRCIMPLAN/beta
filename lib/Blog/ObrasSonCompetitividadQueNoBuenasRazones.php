@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - ObrasSonCompetitividadQueNoBuenasRazones
+ * TrcIMPLAN Sitio Web - Obras son competitividad, que no buenas razones
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,6 +31,8 @@ class ObrasSonCompetitividadQueNoBuenasRazones extends \Base\PublicacionSchemaBl
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
         $this->nombre                     = 'Obras son competitividad, que no buenas razones';
         $this->autor                      = 'Lic. Adriana Vargas Flores';
@@ -40,13 +42,8 @@ class ObrasSonCompetitividadQueNoBuenasRazones extends \Base\PublicacionSchemaBl
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'El Complejo Cultural y Deportivo La Jabonera, La Línea Verde, el Metrobús o el Paseo Morelos, son obras que van de acuerdo con las visiones y proyectos del Plan TRC2040 y que buscan ayudar a crear  una ciudad más densificada e incluyente.';
         $this->claves                     = 'IMPLAN, Torreon, Obras, Competitividad';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación.
-        $this->nombre_menu                = 'Análisis Publicados';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/ObrasSonCompetitividadQueNoBuenasRazones.md';
-        // Banderas
-        $this->poner_imagen_en_contenido  = TRUE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Infraestructura');
         $this->fuentes                    = array('INEGI');

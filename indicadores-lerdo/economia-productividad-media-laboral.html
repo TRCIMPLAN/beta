@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Productividad Media Laboral en Lerdo - IMPLAN Torreón">
   <meta name="twitter:description" content="Incluido en el subíndice de 'Mercado Laboral'. Mide la productividad promedio de los trabajadores, descontando el efecto de las actividades de extracción en el sector minero/petrolero y de refinación y petroquímica (contabilizadas en las actividades económicas 21, 324 y 32511 según el Sistema de Clasificación Industrial de América del Norte). Este indicador se calculó dividiendo el PIB de la ciudad descontado por uno menos el porcentaje que aporta el sector minero y las actividades de refinación y petroquímica, entre el número de trabajadores en la PEA.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/economia-productividad-media-laboral.html">
   <meta name="og:title" content="Productividad Media Laboral en Lerdo - IMPLAN Torreón">
   <meta name="og:description" content="Incluido en el subíndice de 'Mercado Laboral'. Mide la productividad promedio de los trabajadores, descontando el efecto de las actividades de extracción en el sector minero/petrolero y de refinación y petroquímica (contabilizadas en las actividades económicas 21, 324 y 32511 según el Sistema de Clasificación Industrial de América del Norte). Este indicador se calculó dividiendo el PIB de la ciudad descontado por uno menos el porcentaje que aporta el sector minero y las actividades de refinación y petroquímica, entre el número de trabajadores en la PEA.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-lerdo/economia-productividad-media-laboral.html">
   <title>Productividad Media Laboral en Lerdo - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -188,6 +190,7 @@
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -238,6 +241,58 @@
     <h3>Productividad Media Laboral en Lerdo </h3>
 
     <div id="SmiGraficasProductividadMediaLaboralEnLerdo" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Productividad Media Laboral en Lerdo</h3>
+    <div id="SmiOtrasRegionesProductividadMediaLaboralEnLerdoGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesProductividadMediaLaboralEnLerdoTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2012-12-31</td>
+        <td>729.82</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2012-12-31</td>
+        <td>1771.11</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2012-12-31</td>
+        <td>4094.59</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2012-12-31</td>
+        <td>4496.77</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2012-12-31</td>
+        <td>416.42</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   </div>
 </div>
@@ -291,6 +346,19 @@
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesProductividadMediaLaboralEnLerdoGrafica === 'undefined') {
+    varSmiOtrasRegionesProductividadMediaLaboralEnLerdoGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesProductividadMediaLaboralEnLerdoGrafica',
+      data: [{ region: 'Torreón', dato: 729.82 },{ region: 'Gómez Palacio', dato: 1771.11 },{ region: 'Lerdo', dato: 4094.59 },{ region: 'Matamoros', dato: 4496.77 },{ region: 'La Laguna', dato: 416.42 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

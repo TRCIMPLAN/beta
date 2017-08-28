@@ -33,14 +33,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Colonia Metalúrgica en Torreón, Coahuila de Zaragoza, México.">
-  <meta name="author" content="Dirección de Investigación Estratégica">
+  <meta name="author" content="TrcIMPLAN Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Indicadores, Colonia, Metalúrgica">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Metalúrgica - IMPLAN Torreón">
   <meta name="twitter:description" content="Colonia Metalúrgica en Torreón, Coahuila de Zaragoza, México.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/ibc-colonias-torreon/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/ibc-colonias-torreon/metalurgica.html">
   <meta name="og:title" content="Metalúrgica - IMPLAN Torreón">
   <meta name="og:description" content="Colonia Metalúrgica en Torreón, Coahuila de Zaragoza, México.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/ibc-colonias-torreon/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/ibc-colonias-torreon/metalurgica.html">
   <title>Metalúrgica - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -178,8 +180,8 @@
           <h1 itemprop="headline">Metalúrgica</h1>
           <div class="encabezado-descripcion" itemprop="description">Colonia Metalúrgica en Torreón, Coahuila de Zaragoza, México.</div>
           <div class="encabezado-autor-fecha">
-            Por <span itemprop="author">Dirección de Investigación Estratégica</span> -
-            <meta itemprop="datePublished" content="2010-01-01">01/01/2010
+            Por <span itemprop="author">TrcIMPLAN Staff</span> -
+            <meta itemprop="datePublished" content="2017-07-03T12:33:21">03/07/2017 12:33
           </div>
         </div>
               <div style="display:none" itemprop="spatial" itemscope itemtype="http://schema.org/Place">
@@ -193,12 +195,27 @@
       <!-- Contenido: Inicia  -->
   <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasConglomerado">
-    <li role="presentation" class="active"><a href="#LenguetasConglomeradoMapas" aria-controls="LenguetasConglomeradoMapas" role="tab" data-toggle="tab">Mapas</a></li>
+    <li role="presentation" class="active"><a href="#LenguetasConglomeradoResena" aria-controls="LenguetasConglomeradoResena" role="tab" data-toggle="tab">Reseña</a></li>
+    <li role="presentation"><a href="#LenguetasConglomeradoMapas" aria-controls="LenguetasConglomeradoMapas" role="tab" data-toggle="tab">Mapas</a></li>
     <li role="presentation"><a href="#LenguetasConglomeradoDatos" aria-controls="LenguetasConglomeradoDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasConglomeradoGraficas" aria-controls="LenguetasConglomeradoGraficas" role="tab" data-toggle="tab">Gráficas</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
-  <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoMapas">
+  <div role="tabpanel" class="tab-pane active" id="LenguetasConglomeradoResena">
+<h3>Historia</h3>
+
+<p>En 1901, la Compañía Metalúrgica de Torreón empezó a trabajar, se encontraba en las afueras de la Villa la cual para 1907 pasaría a ser la ciudad de Torreón. La Compañía Metalúrgica contaba con una colonia, escuela y hospital, para que los trabajadores vivieran cerca de la fábrica.</p>
+
+<p>Para 1983, se comenzó con el proceso de demolición de la Colonia, para ser parte de la Compañía Peñoles.</p>
+
+<h3>Fuentes</h3>
+
+<ul>
+<li><a href="http://h.elsiglodetorreon.com.mx/">Hemeroteca El Siglo de Torreón</a></li>
+</ul>
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoMapas">
     <div id="MapaLimites" class="mapa"></div>
   </div>
   <div role="tabpanel" class="tab-pane" id="LenguetasConglomeradoDatos">
@@ -410,7 +427,8 @@ La cantidad de Hogares es cero.
   google.charts.load('current', {'packages':['corechart']});
   // Carto mapas
   var mapa_limites_cargado = false;
-  // LenguetaWeb LenguetasConglomeradoMapas
+  // LenguetaWeb LenguetasConglomeradoMapas ejecuta lo siguiente al mostrar
+  $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').on('shown.bs.tab', function(e){
     if (mapa_limites_cargado == false) {
       var carto_json = 'https://guivaloz.carto.com/api/v2/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/viz.json'
       cartodb.createVis('MapaLimites', carto_json, {
@@ -430,6 +448,7 @@ La cantidad de Hogares es cero.
       });
       mapa_limites_cargado = true;
     }
+  })
   // LenguetaWeb LenguetasConglomeradoGraficas ejecuta lo siguiente al mostrar
   $('#LenguetasConglomerado a[href="#LenguetasConglomeradoGraficas"]').on('shown.bs.tab', function(e){
   // AcordeonWeb GraficasUnidadesEconomicas ejecuta lo siguiente al mostrar
@@ -452,9 +471,9 @@ La cantidad de Hogares es cero.
       }
   })
   })
-  // LenguetasWeb LenguetasConglomerado ordenar que Mapas es la que se mostrará
+  // LenguetasWeb LenguetasConglomerado ordenar que Reseña es la que se mostrará
   $(document).ready(function(){
-    $('#LenguetasConglomerado a[href="#LenguetasConglomeradoMapas"]').tab('show')
+    $('#LenguetasConglomerado a[href="#LenguetasConglomeradoResena"]').tab('show')
   });
 </script>
 <!-- Javascript termina -->

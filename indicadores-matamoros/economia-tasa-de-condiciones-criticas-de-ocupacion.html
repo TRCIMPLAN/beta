@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tasa de Condiciones Críticas de Ocupación en Matamoros - IMPLAN Torreón">
   <meta name="twitter:description" content="Porcentaje de la población ocupada en alguna de las siguientes situaciones: 1) trabaja menos de 35 horas a la semana por razones de mercado, 2) trabaja más de 35 horas con ingresos inferiores al salario mínimo o 3) labora más de 48 horas con una percepción de hasta dos salarios mínimos.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/economia-tasa-de-condiciones-criticas-de-ocupacion.html">
   <meta name="og:title" content="Tasa de Condiciones Críticas de Ocupación en Matamoros - IMPLAN Torreón">
   <meta name="og:description" content="Porcentaje de la población ocupada en alguna de las siguientes situaciones: 1) trabaja menos de 35 horas a la semana por razones de mercado, 2) trabaja más de 35 horas con ingresos inferiores al salario mínimo o 3) labora más de 48 horas con una percepción de hasta dos salarios mínimos.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/economia-tasa-de-condiciones-criticas-de-ocupacion.html">
   <title>Tasa de Condiciones Críticas de Ocupación en Matamoros - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -188,6 +190,7 @@
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -232,6 +235,79 @@
     <h3>Tasa de Condiciones Críticas de Ocupación en Matamoros </h3>
 
     <div id="SmiGraficasTasaDeCondicionesCriticasDeOcupacionEnMatamoros" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Tasa de Condiciones Críticas de Ocupación en Matamoros</h3>
+    <div id="SmiOtrasRegionesTasaDeCondicionesCriticasDeOcupacionEnMatamorosGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesTasaDeCondicionesCriticasDeOcupacionEnMatamorosTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2017-03-31</td>
+        <td>10.4000</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2017-03-31</td>
+        <td>14.5900</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2017-03-31</td>
+        <td>11.8200</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2017-03-31</td>
+        <td>14.2900</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2017-06-30</td>
+        <td>10.1654</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Coahuila</td>
+        <td>2017-06-30</td>
+        <td>8.4573</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Durango</td>
+        <td>2017-06-30</td>
+        <td>14.1352</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Nacional</td>
+        <td>2017-06-30</td>
+        <td>13.2448</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   </div>
 </div>
@@ -281,6 +357,19 @@
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesTasaDeCondicionesCriticasDeOcupacionEnMatamorosGrafica === 'undefined') {
+    varSmiOtrasRegionesTasaDeCondicionesCriticasDeOcupacionEnMatamorosGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesTasaDeCondicionesCriticasDeOcupacionEnMatamorosGrafica',
+      data: [{ region: 'Torreón', dato: 10.4000 },{ region: 'Gómez Palacio', dato: 14.5900 },{ region: 'Lerdo', dato: 11.8200 },{ region: 'Matamoros', dato: 14.2900 },{ region: 'La Laguna', dato: 10.1654 },{ region: 'Coahuila', dato: 8.4573 },{ region: 'Durango', dato: 14.1352 },{ region: 'Nacional', dato: 13.2448 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

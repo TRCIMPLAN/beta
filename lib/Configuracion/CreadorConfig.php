@@ -43,13 +43,6 @@ class CreadorConfig {
      */
     public function __construct() {
         $this->imprentas                = array(
-            '\\SMIIndicadoresGomezPalacio\\Imprenta',
-            '\\SMIIndicadoresLaLaguna\\Imprenta',
-            '\\SMIIndicadoresLerdo\\Imprenta',
-            '\\SMIIndicadoresMatamoros\\Imprenta',
-            '\\SMIIndicadoresTorreon\\Imprenta',
-            '\\Terminos\\Imprenta');
-    /*  $this->imprentas                = array(
             '\\Blog\\Imprenta',
             '\\ConsejoDirectivo\\Imprenta',
             '\\Contacto\\Imprenta',
@@ -69,31 +62,38 @@ class CreadorConfig {
             '\\SMI\\Imprenta',
             '\\SMICategorias\\Imprenta',
             '\\SMIGeorreferenciados\\Imprenta',
-            '\\SMIIndicadoresGomezPalacio\\Imprenta',
-            '\\SMIIndicadoresLaLaguna\\Imprenta',
-            '\\SMIIndicadoresLerdo\\Imprenta',
-            '\\SMIIndicadoresMatamoros\\Imprenta',
             '\\SMIIndicadoresTorreon\\Imprenta',
-            '\\Terminos\\Imprenta'); */
-    /*  $this->imprentas_mapa_sitio     = $this->imprentas;
+            '\\SMIIndicadoresGomezPalacio\\Imprenta',
+            '\\SMIIndicadoresMatamoros\\Imprenta',
+            '\\SMIIndicadoresLerdo\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresCoahuila\\Imprenta',
+            '\\SMIIndicadoresDurango\\Imprenta',
+            '\\SMIIndicadoresNacional\\Imprenta',
+            '\\Terminos\\Imprenta');
+        $this->imprentas_mapa_sitio     = $this->imprentas;
         $this->imprentas_autores        = array(
             '\\Blog\\Imprenta',
+            '\\Investigaciones\\Imprenta',
             '\\PET\\Imprenta',
             '\\Proyectos\\Imprenta',
             '\\SalaPrensa\\Imprenta',
             '\\SIGMapasTorreon\\Imprenta',
+            '\\SMIIndicadoresTorreon\\Imprenta',
             '\\SMIIndicadoresGomezPalacio\\Imprenta',
-            '\\SMIIndicadoresLaLaguna\\Imprenta',
-            '\\SMIIndicadoresLerdo\\Imprenta',
             '\\SMIIndicadoresMatamoros\\Imprenta',
-            '\\SMIIndicadoresTorreon\\Imprenta');
+            '\\SMIIndicadoresLerdo\\Imprenta',
+            '\\SMIIndicadoresLaLaguna\\Imprenta',
+            '\\SMIIndicadoresCoahuila\\Imprenta',
+            '\\SMIIndicadoresDurango\\Imprenta',
+            '\\SMIIndicadoresNacional\\Imprenta');
         $this->imprentas_categorias     = $this->imprentas_autores;
         $this->imprentas_redifusion     = $this->imprentas_autores;
         $this->imprentas_pagina_inicial = $this->imprentas_autores;
         $this->imprentas_json           = array(
             '\\IBCColoniasTorreon\\ImprentaJSONs');
         $this->imprentas_csv            = array(
-            '\\IBCColoniasTorreon\\ImprentaCSV'); */
+            '\\IBCColoniasTorreon\\ImprentaCSV');
     } // constructor
 
 } // Clase CreadorConfig

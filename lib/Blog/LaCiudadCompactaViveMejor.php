@@ -42,13 +42,8 @@ class LaCiudadCompactaViveMejor extends \Base\PublicacionSchemaBlogPosting {
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'La política pública a adoptar como estrategia debe ser la de crecimiento interno: densificar la ciudad implotando su crecimiento hacia adentro y hacia arriba.';
         $this->claves                     = 'IMPLAN, Torreon';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Análisis Publicados';
-        // Se define una ruta a una archivo markdown para que cuando se ejecute el método HTML se cargue
+        // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/LaCiudadCompactaViveMejor.md';
-        // Banderas
-        $this->poner_imagen_en_contenido  = TRUE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Infraestructura', 'Vivienda');
         $this->fuentes                    = array('IMPLAN');

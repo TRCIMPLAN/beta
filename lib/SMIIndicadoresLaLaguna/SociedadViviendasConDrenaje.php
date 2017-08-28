@@ -76,7 +76,12 @@ class SociedadViviendasConDrenaje extends \SMIBase\PublicacionWeb {
      * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones_estructura() {
-        return NULL;
+        return array(
+            'region_nombre' => array('enca' => 'Región', 'formato' => 'texto'),
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'porcentaje'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
     } // otras_regiones_estructura
 
     /**
@@ -85,7 +90,12 @@ class SociedadViviendasConDrenaje extends \SMIBase\PublicacionWeb {
      * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return NULL;
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2015-12-31', 'valor' => '98.1300', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2015-12-31', 'valor' => '95.9500', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2015-12-31', 'valor' => '95.7700', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2015-12-31', 'valor' => '94.0700', 'fuente_nombre' => 'INEGI'),
+            array('region_nombre' => 'La Laguna', 'fecha' => '2010-12-31', 'valor' => '96.2600', 'fuente_nombre' => 'INEGI'));
     } // otras_regiones
 
     /**
@@ -105,8 +115,6 @@ class SociedadViviendasConDrenaje extends \SMIBase\PublicacionWeb {
     public function observaciones() {
         return <<<OBSERVACIONES_FINAL
 Consulta la [Base de Datos](http://www.inegi.org.mx/biinegi/). Los datos 2015 corresponden a la Encuesta Intercensal 2015 de INEGI y son estimaciones.
-
-Enlace al [Sistema de Información Geográfica](http://201.159.104.45:8080/apps/implan2.html).
 OBSERVACIONES_FINAL;
     } // observaciones
 

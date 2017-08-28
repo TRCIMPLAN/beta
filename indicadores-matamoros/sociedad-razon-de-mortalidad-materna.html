@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Razón de Mortalidad Materna en Matamoros - IMPLAN Torreón">
   <meta name="twitter:description" content="La razón de mortalidad materna es la medida de mortalidad materna más usada. Mide el riesgo obstétrico una vez que la mujer queda embarazada.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/sociedad-razon-de-mortalidad-materna.html">
   <meta name="og:title" content="Razón de Mortalidad Materna en Matamoros - IMPLAN Torreón">
   <meta name="og:description" content="La razón de mortalidad materna es la medida de mortalidad materna más usada. Mide el riesgo obstétrico una vez que la mujer queda embarazada.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-matamoros/sociedad-razon-de-mortalidad-materna.html">
   <title>Razón de Mortalidad Materna en Matamoros - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -187,6 +189,7 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -209,10 +212,76 @@
     </tbody>
   </table>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Razón de Mortalidad Materna en Matamoros</h3>
+    <div id="SmiOtrasRegionesRazonDeMortalidadMaternaEnMatamorosGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesRazonDeMortalidadMaternaEnMatamorosTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2013-12-31</td>
+        <td>33.0000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2013-12-31</td>
+        <td>33.3000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2011-12-31</td>
+        <td>55.3000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2013-12-31</td>
+        <td>62.7000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Coahuila</td>
+        <td>2013-12-31</td>
+        <td>26.9000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Durango</td>
+        <td>2013-12-31</td>
+        <td>43.6000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Nacional</td>
+        <td>2013-12-31</td>
+        <td>39.2000</td>
+        <td>SINAIS (SSA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
   </div>
 </div>
 <h3>Observaciones</h3>
-<p>Utilizado como uno de los indicadores para los Objetivos del Milenio (Mejorar la Salud Materna). Dirección General de Información en Salud (DGIS). Base de datos de muertes maternas, 2013. [en línea]: Sistema Nacional de Información en Salud (SINAIS). [México]: Secretaría de Salud. [Consulta: 13 de enero 2015].</p>
+<p>Utilizado como uno de los indicadores para los Objetivos del Milenio (Mejorar la Salud Materna). Dirección General de Información en Salud (DGIS). Base de datos de muertes maternas, 2013. Sistema Nacional de Información en Salud (SINAIS). Secretaría de Salud. Consulta: 13 de enero 2015.</p>
 
 <!-- Contenido: Termina -->
         </div>
@@ -244,6 +313,19 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesRazonDeMortalidadMaternaEnMatamorosGrafica === 'undefined') {
+    varSmiOtrasRegionesRazonDeMortalidadMaternaEnMatamorosGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesRazonDeMortalidadMaternaEnMatamorosGrafica',
+      data: [{ region: 'Torreón', dato: 33.0000 },{ region: 'Gómez Palacio', dato: 33.3000 },{ region: 'Lerdo', dato: 55.3000 },{ region: 'Matamoros', dato: 62.7000 },{ region: 'Coahuila', dato: 26.9000 },{ region: 'Durango', dato: 43.6000 },{ region: 'Nacional', dato: 39.2000 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

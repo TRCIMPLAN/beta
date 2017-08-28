@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tasa de Desempleo Abierto en Gómez Palacio - IMPLAN Torreón">
   <meta name="twitter:description" content="Número total de desempleados entre la Población económicamente activa.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/economia-tasa-de-desempleo-abierto.html">
   <meta name="og:title" content="Tasa de Desempleo Abierto en Gómez Palacio - IMPLAN Torreón">
   <meta name="og:description" content="Número total de desempleados entre la Población económicamente activa.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/economia-tasa-de-desempleo-abierto.html">
   <title>Tasa de Desempleo Abierto en Gómez Palacio - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -190,6 +192,7 @@
     <li role="presentation"><a href="#LenguetasIndicadorGrafica1" aria-controls="LenguetasIndicadorGrafica1" role="tab" data-toggle="tab">Gráfica 1</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica3" aria-controls="LenguetasIndicadorGrafica3" role="tab" data-toggle="tab">Gráfica 3</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -569,6 +572,79 @@
 
     <div id="SmiGraficasTasaDeDesempleoAbiertoEnGomezPalacioInegi" class="grafica"></div>
   </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Tasa de Desempleo Abierto en Gómez Palacio</h3>
+    <div id="SmiOtrasRegionesTasaDeDesempleoAbiertoEnGomezPalacioGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesTasaDeDesempleoAbiertoEnGomezPalacioTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2017-03-31</td>
+        <td>4.2900</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2017-03-31</td>
+        <td>5.9700</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2017-03-31</td>
+        <td>2.6500</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2017-03-31</td>
+        <td>5.6700</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Microdatos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2017-06-30</td>
+        <td>4.8803</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Coahuila</td>
+        <td>2017-06-30</td>
+        <td>5.0377</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Durango</td>
+        <td>2017-06-30</td>
+        <td>4.0047</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Nacional</td>
+        <td>2017-06-30</td>
+        <td>3.4589</td>
+        <td>Encuesta Nacional de Ocupación y Empleo (ENOE) Indicadores Estratégicos</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
   </div>
 </div>
 <h3>Observaciones</h3>
@@ -735,6 +811,19 @@
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesTasaDeDesempleoAbiertoEnGomezPalacioGrafica === 'undefined') {
+    varSmiOtrasRegionesTasaDeDesempleoAbiertoEnGomezPalacioGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesTasaDeDesempleoAbiertoEnGomezPalacioGrafica',
+      data: [{ region: 'Torreón', dato: 4.2900 },{ region: 'Gómez Palacio', dato: 5.9700 },{ region: 'Lerdo', dato: 2.6500 },{ region: 'Matamoros', dato: 5.6700 },{ region: 'La Laguna', dato: 4.8803 },{ region: 'Coahuila', dato: 5.0377 },{ region: 'Durango', dato: 4.0047 },{ region: 'Nacional', dato: 3.4589 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Alumnos de Secundaria por Docente en Gómez Palacio - IMPLAN Torreón">
   <meta name="twitter:description" content="Número de alumnos (estudiantes) promedio por docente a nivel de educación secundaria y en un año escolar dado, basado en el número bruto de estudiantes y de docentes. Incluye las escuelas públicas y privadas, así como de localidades urbanas y rurales.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/sociedad-alumnos-de-secundaria-por-docente.html">
   <meta name="og:title" content="Alumnos de Secundaria por Docente en Gómez Palacio - IMPLAN Torreón">
   <meta name="og:description" content="Número de alumnos (estudiantes) promedio por docente a nivel de educación secundaria y en un año escolar dado, basado en el número bruto de estudiantes y de docentes. Incluye las escuelas públicas y privadas, así como de localidades urbanas y rurales.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-gomez-palacio/sociedad-alumnos-de-secundaria-por-docente.html">
   <title>Alumnos de Secundaria por Docente en Gómez Palacio - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -187,6 +189,7 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -203,6 +206,79 @@
       <tr>
         <td>2014-07-01</td>
         <td>14.3000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Alumnos de Secundaria por Docente en Gómez Palacio</h3>
+    <div id="SmiOtrasRegionesAlumnosDeSecundariaPorDocenteEnGomezPalacioGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesAlumnosDeSecundariaPorDocenteEnGomezPalacioTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2014-07-01</td>
+        <td>12.7000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2014-07-01</td>
+        <td>14.3000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2014-07-01</td>
+        <td>14.7000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2014-07-01</td>
+        <td>14.9000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2014-07-01</td>
+        <td>13.5000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Coahuila</td>
+        <td>2014-07-01</td>
+        <td>14.1000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Durango</td>
+        <td>2014-07-01</td>
+        <td>13.1000</td>
+        <td>SEP</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Nacional</td>
+        <td>2014-07-01</td>
+        <td>16.4000</td>
         <td>SEP</td>
         <td class="nd">N/D</td>
       </tr>
@@ -244,6 +320,19 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesAlumnosDeSecundariaPorDocenteEnGomezPalacioGrafica === 'undefined') {
+    varSmiOtrasRegionesAlumnosDeSecundariaPorDocenteEnGomezPalacioGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesAlumnosDeSecundariaPorDocenteEnGomezPalacioGrafica',
+      data: [{ region: 'Torreón', dato: 12.7000 },{ region: 'Gómez Palacio', dato: 14.3000 },{ region: 'Lerdo', dato: 14.7000 },{ region: 'Matamoros', dato: 14.9000 },{ region: 'La Laguna', dato: 13.5000 },{ region: 'Coahuila', dato: 14.1000 },{ region: 'Durango', dato: 13.1000 },{ region: 'Nacional', dato: 16.4000 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

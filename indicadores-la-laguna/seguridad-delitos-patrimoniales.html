@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Delitos Patrimoniales en La Laguna - IMPLAN Torreón">
   <meta name="twitter:description" content="Son delitos que contemplan Abuso de confianza, Daño en propiedad ajena, Extorsión, Fraude, Despojo con violencia y Despojo sin violencia.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/seguridad-delitos-patrimoniales.html">
   <meta name="og:title" content="Delitos Patrimoniales en La Laguna - IMPLAN Torreón">
   <meta name="og:description" content="Son delitos que contemplan Abuso de confianza, Daño en propiedad ajena, Extorsión, Fraude, Despojo con violencia y Despojo sin violencia.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/seguridad-delitos-patrimoniales.html">
   <title>Delitos Patrimoniales en La Laguna - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -188,6 +190,7 @@
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica2" aria-controls="LenguetasIndicadorGrafica2" role="tab" data-toggle="tab">Gráfica 2</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -369,6 +372,18 @@
         <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
         <td class="nd">N/D</td>
       </tr>
+      <tr>
+        <td>2017-05-31</td>
+        <td>335</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>2017-06-30</td>
+        <td>436</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
     </tbody>
   </table>
   </div>
@@ -376,6 +391,58 @@
     <h3>Delitos Patrimoniales en La Laguna con fuente Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</h3>
 
     <div id="SmiGraficasDelitosPatrimonialesEnLaLagunaSecretariadoEjecutivoDelSistemaNacionalDeSeguridadPublica" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Delitos Patrimoniales en La Laguna</h3>
+    <div id="SmiOtrasRegionesDelitosPatrimonialesEnLaLagunaGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesDelitosPatrimonialesEnLaLagunaTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2017-06-30</td>
+        <td>204</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2017-06-30</td>
+        <td>157</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2017-06-30</td>
+        <td>45</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2017-06-30</td>
+        <td>30</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2017-06-30</td>
+        <td>436</td>
+        <td>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   </div>
 </div>
@@ -459,13 +526,28 @@
         { fecha: '2016-12-31', dato: 273 },
         { fecha: '2017-01-31', dato: 271 },
         { fecha: '2017-02-28', dato: 292 },
-        { fecha: '2017-04-30', dato: 276 }],
+        { fecha: '2017-04-30', dato: 276 },
+        { fecha: '2017-05-31', dato: 335 },
+        { fecha: '2017-06-30', dato: 436 }],
       xkey: 'fecha',
       ykeys: ['dato'],
       labels: ['Dato'],
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesDelitosPatrimonialesEnLaLagunaGrafica === 'undefined') {
+    varSmiOtrasRegionesDelitosPatrimonialesEnLaLagunaGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesDelitosPatrimonialesEnLaLagunaGrafica',
+      data: [{ region: 'Torreón', dato: 204 },{ region: 'Gómez Palacio', dato: 157 },{ region: 'Lerdo', dato: 45 },{ region: 'Matamoros', dato: 30 },{ region: 'La Laguna', dato: 436 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

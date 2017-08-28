@@ -1,8 +1,8 @@
 <?php
 /**
- * TrcIMPLAN Sitio Web - RegeneracionUrbanaParaUnaMejorCalidadDeVida2017
+ * TrcIMPLAN Sitio Web - Regeneración urbana para una mejor calidad de vida
  *
- * Copyright (C) 2016 IMPLAN Torreón
+ * Copyright (C) 2017 Guillermo Valdés Lozano <guivaloz@movimientolibre.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,6 +31,8 @@ class RegeneracionUrbanaParaUnaMejorCalidadDeVida2017 extends \Base\PublicacionS
      * Constructor
      */
     public function __construct() {
+        // Ejecutar constructor en el padre
+        parent::__construct();
         // Título, autor y fecha
         $this->nombre                     = 'Regeneración urbana para una mejor calidad de vida';
         $this->autor                      = 'Arq. Jair Miramontes Chávez';
@@ -40,13 +42,8 @@ class RegeneracionUrbanaParaUnaMejorCalidadDeVida2017 extends \Base\PublicacionS
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Poco a poco algunas zona olvidadas de Torreón están reviviendo por el fenómeno de regeneración urbana, que implica la rehabilitación de algún espacio que se encontraba en condiciones deplorables, como es el caso de la Línea Verde al oriente de la ciudad.';
         $this->claves                     = 'IMPLAN, Torreon, Regeneracion, Urbana, Espacios, Publicos, Ciudad';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación.
-        $this->nombre_menu                = 'Análisis Publicados';
         // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/RegeneracionUrbanaParaUnaMejorCalidadDeVida2017.md';
-        // Banderas
-        $this->poner_imagen_en_contenido  = TRUE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Bienestar', 'Infraestructura');
         $this->fuentes                    = array();

@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Consumo de Diesel en Transporte de Bienes en La Laguna - IMPLAN Torreón">
   <meta name="twitter:description" content="Incluido en el subíndice 'Precursores'. Qué mide: El consumo de diesel en metros cúbicos por cada 10 mil habitantes por kilómetro de carretera. Este indicador intenta medir la eficiencia en la distribución de bienes dentro de la ciudad por medio del consumo de diesel. Mientras más poblada y más densa sea la ciudad, el costo unitario de distribución de bienes debe de ser menor debido a las economías de densidad. Un menor consumo de diesel, por kilómetro recorrido y habitante abastecido, es más eficiente que un consumo mayor ya que nos indica que para dicha ciudad, se necesita menos combustible para mover los bienes de un lugar a otro. Esto último provoca beneficios tanto económicos (el costo por unidad transportada es menor) como ambientales.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/sustentabilidad-consumo-de-diesel-en-transporte-de-bienes.html">
   <meta name="og:title" content="Consumo de Diesel en Transporte de Bienes en La Laguna - IMPLAN Torreón">
   <meta name="og:description" content="Incluido en el subíndice 'Precursores'. Qué mide: El consumo de diesel en metros cúbicos por cada 10 mil habitantes por kilómetro de carretera. Este indicador intenta medir la eficiencia en la distribución de bienes dentro de la ciudad por medio del consumo de diesel. Mientras más poblada y más densa sea la ciudad, el costo unitario de distribución de bienes debe de ser menor debido a las economías de densidad. Un menor consumo de diesel, por kilómetro recorrido y habitante abastecido, es más eficiente que un consumo mayor ya que nos indica que para dicha ciudad, se necesita menos combustible para mover los bienes de un lugar a otro. Esto último provoca beneficios tanto económicos (el costo por unidad transportada es menor) como ambientales.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/sustentabilidad-consumo-de-diesel-en-transporte-de-bienes.html">
   <title>Consumo de Diesel en Transporte de Bienes en La Laguna - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -188,6 +190,7 @@
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -238,6 +241,58 @@
     <h3>Consumo de Diesel en Transporte de Bienes en La Laguna </h3>
 
     <div id="SmiGraficasConsumoDeDieselEnTransporteDeBienesEnLaLaguna" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Consumo de Diesel en Transporte de Bienes en La Laguna</h3>
+    <div id="SmiOtrasRegionesConsumoDeDieselEnTransporteDeBienesEnLaLagunaGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesConsumoDeDieselEnTransporteDeBienesEnLaLagunaTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2012-12-31</td>
+        <td>1.8470</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2012-12-31</td>
+        <td>1.8470</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2012-12-31</td>
+        <td>1.8470</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2012-12-31</td>
+        <td>1.8470</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2012-12-31</td>
+        <td>1.8470</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   </div>
 </div>
@@ -291,6 +346,19 @@
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesConsumoDeDieselEnTransporteDeBienesEnLaLagunaGrafica === 'undefined') {
+    varSmiOtrasRegionesConsumoDeDieselEnTransporteDeBienesEnLaLagunaGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesConsumoDeDieselEnTransporteDeBienesEnLaLagunaGrafica',
+      data: [{ region: 'Torreón', dato: 1.8470 },{ region: 'Gómez Palacio', dato: 1.8470 },{ region: 'Lerdo', dato: 1.8470 },{ region: 'Matamoros', dato: 1.8470 },{ region: 'La Laguna', dato: 1.8470 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

@@ -38,9 +38,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Destinos Vía Aérea en La Laguna - IMPLAN Torreón">
   <meta name="twitter:description" content="Destinos directos ofertados desde el Aeropuerto Internacional Francisco Sarabia de la ciudad de Torreón.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/sustentabilidad-destinos-via-aerea.html">
   <meta name="og:title" content="Destinos Vía Aérea en La Laguna - IMPLAN Torreón">
   <meta name="og:description" content="Destinos directos ofertados desde el Aeropuerto Internacional Francisco Sarabia de la ciudad de Torreón.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/sustentabilidad-destinos-via-aerea.html">
   <title>Destinos Vía Aérea en La Laguna - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -187,6 +189,7 @@
 <div>
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -201,6 +204,37 @@
     </thead>
     <tbody>
       <tr>
+        <td>2014-03-31</td>
+        <td>7</td>
+        <td>Operadora Mexicana de Aeropuertos (OMA)</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Destinos Vía Aérea en La Laguna</h3>
+    <div id="SmiOtrasRegionesDestinosViaAereaEnLaLagunaGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesDestinosViaAereaEnLaLagunaTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2016-08-25</td>
+        <td>11</td>
+        <td>Operadora Mexicana de Aeropuertos (OMA)</td>
+        <td>Se incluyen: Chihuahua, Chih.- CDMX- Guadalajara, Jal.- Hermosillo, Son.- Monterrey, N.L.- Tijuana, B.C.- Bajío- Ciudad Juárez, Chih.- Manzanillo, Col.- Mazatlán, Sin.- Dallas, Tx.</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
         <td>2014-03-31</td>
         <td>7</td>
         <td>Operadora Mexicana de Aeropuertos (OMA)</td>
@@ -244,6 +278,19 @@
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
 <script>
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesDestinosViaAereaEnLaLagunaGrafica === 'undefined') {
+    varSmiOtrasRegionesDestinosViaAereaEnLaLagunaGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesDestinosViaAereaEnLaLagunaGrafica',
+      data: [{ region: 'Torreón', dato: 11 },{ region: 'La Laguna', dato: 7 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
+    });
+  }
+  })
   // LenguetasWeb LenguetasIndicador ordenar que Datos es la que se mostrará
   $(document).ready(function(){
     $('#LenguetasIndicador a[href="#LenguetasIndicadorDatos"]').tab('show')

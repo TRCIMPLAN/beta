@@ -178,8 +178,6 @@ class PorRegiones extends \Base\Publicacion {
               <li><a href="../indicadores-torreon/seguridad-homicidios.html" target="_blank">Homicidios</a></li>
               <li><a href="../indicadores-torreon/seguridad-monto-reportado-en-robo-de-mercancias.html" target="_blank">Monto Reportado en Robo de Mercancías</a></li>
               <li><a href="../indicadores-torreon/seguridad-percepcion-de-inseguridad.html" target="_blank">Percepción de Inseguridad</a></li>
-              <li><a href="../indicadores-torreon/seguridad-personas-involucradas-en-delitos-del-fuero-comun.html" target="_blank">Personas Involucradas en Delitos del Fuero Común</a></li>
-              <li><a href="../indicadores-torreon/seguridad-personas-involucradas-en-delitos-del-fuero-federal.html" target="_blank">Personas Involucradas en Delitos del Fuero Federal</a></li>
               <li><a href="../indicadores-torreon/seguridad-porcentaje-de-accidentes-viales-fatales.html" target="_blank">Porcentaje de Accidentes Viales Fatales</a></li>
               <li><a href="../indicadores-torreon/seguridad-presuntos-delitos-del-fuero-comun.html" target="_blank">Presuntos Delitos del Fuero Común</a></li>
               <li><a href="../indicadores-torreon/seguridad-presuntos-delitos-del-fuero-federal.html" target="_blank">Presuntos Delitos del Fuero Federal</a></li>
@@ -189,13 +187,8 @@ class PorRegiones extends \Base\Publicacion {
               <li><a href="../indicadores-torreon/seguridad-robos-a-casa-habitacion.html" target="_blank">Robos a Casa Habitación</a></li>
               <li><a href="../indicadores-torreon/seguridad-robos-totales.html" target="_blank">Robos Totales</a></li>
               <li><a href="../indicadores-torreon/seguridad-secuestros.html" target="_blank">Secuestros</a></li>
-              <li><a href="../indicadores-torreon/seguridad-tasa-de-extorsion.html" target="_blank">Tasa de Extorsión</a></li>
-              <li><a href="../indicadores-torreon/seguridad-tasa-de-homicidio-doloso.html" target="_blank">Tasa de Homicidio Doloso</a></li>
               <li><a href="../indicadores-torreon/seguridad-tasa-de-homicidios.html" target="_blank">Tasa de Homicidios</a></li>
-              <li><a href="../indicadores-torreon/seguridad-tasa-de-robo-de-vehiculo-con-violencia.html" target="_blank">Tasa de Robo de Vehículo con Violencia</a></li>
               <li><a href="../indicadores-torreon/seguridad-tasa-de-robo-de-vehiculos.html" target="_blank">Tasa de Robo de VehÍculos</a></li>
-              <li><a href="../indicadores-torreon/seguridad-tasa-de-robo-de-vehiculo-sin-violencia.html" target="_blank">Tasa de Robo de Vehículo Sin Violencia</a></li>
-              <li><a href="../indicadores-torreon/seguridad-tasa-de-secuestro.html" target="_blank">Tasa de Secuestro</a></li>
             </ul>
           </div>
           <div class="col-md-2 indicadores-vinculos">
@@ -267,7 +260,6 @@ class PorRegiones extends \Base\Publicacion {
               <li><a href="../indicadores-torreon/sociedad-universidades-de-calidad.html" target="_blank">Universidades de Calidad</a></li>
               <li><a href="../indicadores-torreon/sociedad-uso-de-servicios-financieros.html" target="_blank">Uso de Servicios Financieros</a></li>
               <li><a href="../indicadores-torreon/sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion.html" target="_blank">Uso de Twitter como Proxy de Uso de Tecnologías de Información</a></li>
-              <li><a href="../indicadores-torreon/sociedad-usuarios-de-internet.html" target="_blank">Usuarios de Internet</a></li>
               <li><a href="../indicadores-torreon/sociedad-visitas-a-museos-inah.html" target="_blank">Visitas a Museos INAH</a></li>
               <li><a href="../indicadores-torreon/sociedad-viviendas-con-agua-de-la-red-publica.html" target="_blank">Viviendas con Agua de la Red Pública</a></li>
               <li><a href="../indicadores-torreon/sociedad-viviendas-con-computadora.html" target="_blank">Viviendas con Computadora</a></li>
@@ -459,13 +451,8 @@ FINAL;
               <li><a href="../indicadores-gomez-palacio/seguridad-robos-a-casa-habitacion.html" target="_blank">Robos a Casa Habitación</a></li>
               <li><a href="../indicadores-gomez-palacio/seguridad-robos-totales.html" target="_blank">Robos Totales</a></li>
               <li><a href="../indicadores-gomez-palacio/seguridad-secuestros.html" target="_blank">Secuestros</a></li>
-              <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-extorsion.html" target="_blank">Tasa de Extorsión</a></li>
-              <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-homicidio-doloso.html" target="_blank">Tasa de Homicidio Doloso</a></li>
               <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-homicidios.html" target="_blank">Tasa de Homicidios</a></li>
-              <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-robo-de-vehiculo-con-violencia.html" target="_blank">Tasa de Robo de Vehículo con Violencia</a></li>
               <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-robo-de-vehiculos.html" target="_blank">Tasa de Robo de VehÍculos</a></li>
-              <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-robo-de-vehiculo-sin-violencia.html" target="_blank">Tasa de Robo de Vehículo Sin Violencia</a></li>
-              <li><a href="../indicadores-gomez-palacio/seguridad-tasa-de-secuestro.html" target="_blank">Tasa de Secuestro</a></li>
             </ul>
           </div>
           <div class="col-md-2 indicadores-vinculos">
@@ -534,7 +521,6 @@ FINAL;
               <li><a href="../indicadores-gomez-palacio/sociedad-universidades-de-calidad.html" target="_blank">Universidades de Calidad</a></li>
               <li><a href="../indicadores-gomez-palacio/sociedad-uso-de-servicios-financieros.html" target="_blank">Uso de Servicios Financieros</a></li>
               <li><a href="../indicadores-gomez-palacio/sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion.html" target="_blank">Uso de Twitter como Proxy de Uso de Tecnologías de Información</a></li>
-              <li><a href="../indicadores-gomez-palacio/sociedad-usuarios-de-internet.html" target="_blank">Usuarios de Internet</a></li>
               <li><a href="../indicadores-gomez-palacio/sociedad-visitas-a-museos-inah.html" target="_blank">Visitas a Museos INAH</a></li>
               <li><a href="../indicadores-gomez-palacio/sociedad-viviendas-con-agua-de-la-red-publica.html" target="_blank">Viviendas con Agua de la Red Pública</a></li>
               <li><a href="../indicadores-gomez-palacio/sociedad-viviendas-con-computadora.html" target="_blank">Viviendas con Computadora</a></li>
@@ -562,7 +548,6 @@ FINAL;
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-consumo-de-diesel-en-transporte-de-bienes.html" target="_blank">Consumo de Diesel en Transporte de Bienes</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-densidad-media-urbana.html" target="_blank">Densidad Media Urbana</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-desastres-naturales.html" target="_blank">Desastres Naturales</a></li>
-              <li><a href="../indicadores-gomez-palacio/sustentabilidad-destinos-via-aerea.html" target="_blank">Destinos Vía Aérea</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-destinos-via-terrestre.html" target="_blank">Destinos Vía Terrestre</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-disponibilidad-de-banqueta.html" target="_blank">Disponibilidad de Banqueta</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-disposicion-adecuada-de-residuos-solidos.html" target="_blank">Disposición Adecuada de Residuos Sólidos</a></li>
@@ -574,7 +559,6 @@ FINAL;
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-indice-de-gestion-de-calidad-del-aire.html" target="_blank">Índice de Gestión de Calidad del Aire</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
-              <li><a href="../indicadores-gomez-palacio/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
               <li><a href="../indicadores-gomez-palacio/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
@@ -708,24 +692,15 @@ FINAL;
               <li><a href="../indicadores-lerdo/seguridad-homicidios.html" target="_blank">Homicidios</a></li>
               <li><a href="../indicadores-lerdo/seguridad-monto-reportado-en-robo-de-mercancias.html" target="_blank">Monto Reportado en Robo de Mercancías</a></li>
               <li><a href="../indicadores-lerdo/seguridad-percepcion-de-inseguridad.html" target="_blank">Percepción de Inseguridad</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-personas-involucradas-en-delitos-del-fuero-comun.html" target="_blank">Personas Involucradas en Delitos del Fuero Común</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-personas-involucradas-en-delitos-del-fuero-federal.html" target="_blank">Personas Involucradas en Delitos del Fuero Federal</a></li>
               <li><a href="../indicadores-lerdo/seguridad-porcentaje-de-accidentes-viales-fatales.html" target="_blank">Porcentaje de Accidentes Viales Fatales</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-presuntos-delitos-del-fuero-comun.html" target="_blank">Presuntos Delitos del Fuero Común</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-presuntos-delitos-del-fuero-federal.html" target="_blank">Presuntos Delitos del Fuero Federal</a></li>
               <li><a href="../indicadores-lerdo/seguridad-robo-a-negocios.html" target="_blank">Robo a Negocios</a></li>
               <li><a href="../indicadores-lerdo/seguridad-robo-a-transeuntes.html" target="_blank">Robo a Transeuntes</a></li>
               <li><a href="../indicadores-lerdo/seguridad-robo-de-vehiculos.html" target="_blank">Robo de Vehículos</a></li>
               <li><a href="../indicadores-lerdo/seguridad-robos-a-casa-habitacion.html" target="_blank">Robos a Casa Habitación</a></li>
               <li><a href="../indicadores-lerdo/seguridad-robos-totales.html" target="_blank">Robos Totales</a></li>
               <li><a href="../indicadores-lerdo/seguridad-secuestros.html" target="_blank">Secuestros</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-tasa-de-extorsion.html" target="_blank">Tasa de Extorsión</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-tasa-de-homicidio-doloso.html" target="_blank">Tasa de Homicidio Doloso</a></li>
               <li><a href="../indicadores-lerdo/seguridad-tasa-de-homicidios.html" target="_blank">Tasa de Homicidios</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-tasa-de-robo-de-vehiculo-con-violencia.html" target="_blank">Tasa de Robo de Vehículo con Violencia</a></li>
               <li><a href="../indicadores-lerdo/seguridad-tasa-de-robo-de-vehiculos.html" target="_blank">Tasa de Robo de VehÍculos</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-tasa-de-robo-de-vehiculo-sin-violencia.html" target="_blank">Tasa de Robo de Vehículo Sin Violencia</a></li>
-              <li><a href="../indicadores-lerdo/seguridad-tasa-de-secuestro.html" target="_blank">Tasa de Secuestro</a></li>
             </ul>
           </div>
           <div class="col-md-2 indicadores-vinculos">
@@ -794,7 +769,6 @@ FINAL;
               <li><a href="../indicadores-lerdo/sociedad-universidades-de-calidad.html" target="_blank">Universidades de Calidad</a></li>
               <li><a href="../indicadores-lerdo/sociedad-uso-de-servicios-financieros.html" target="_blank">Uso de Servicios Financieros</a></li>
               <li><a href="../indicadores-lerdo/sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion.html" target="_blank">Uso de Twitter como Proxy de Uso de Tecnologías de Información</a></li>
-              <li><a href="../indicadores-lerdo/sociedad-usuarios-de-internet.html" target="_blank">Usuarios de Internet</a></li>
               <li><a href="../indicadores-lerdo/sociedad-visitas-a-museos-inah.html" target="_blank">Visitas a Museos INAH</a></li>
               <li><a href="../indicadores-lerdo/sociedad-viviendas-con-agua-de-la-red-publica.html" target="_blank">Viviendas con Agua de la Red Pública</a></li>
               <li><a href="../indicadores-lerdo/sociedad-viviendas-con-computadora.html" target="_blank">Viviendas con Computadora</a></li>
@@ -822,8 +796,6 @@ FINAL;
               <li><a href="../indicadores-lerdo/sustentabilidad-consumo-de-diesel-en-transporte-de-bienes.html" target="_blank">Consumo de Diesel en Transporte de Bienes</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-densidad-media-urbana.html" target="_blank">Densidad Media Urbana</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-desastres-naturales.html" target="_blank">Desastres Naturales</a></li>
-              <li><a href="../indicadores-lerdo/sustentabilidad-destinos-via-aerea.html" target="_blank">Destinos Vía Aérea</a></li>
-              <li><a href="../indicadores-lerdo/sustentabilidad-destinos-via-terrestre.html" target="_blank">Destinos Vía Terrestre</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-disponibilidad-de-banqueta.html" target="_blank">Disponibilidad de Banqueta</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-disposicion-adecuada-de-residuos-solidos.html" target="_blank">Disposición Adecuada de Residuos Sólidos</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-economia-intensiva-en-energia.html" target="_blank">Economía Intensiva en Energía</a></li>
@@ -834,7 +806,6 @@ FINAL;
               <li><a href="../indicadores-lerdo/sustentabilidad-indice-de-gestion-de-calidad-del-aire.html" target="_blank">Índice de Gestión de Calidad del Aire</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
-              <li><a href="../indicadores-lerdo/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
               <li><a href="../indicadores-lerdo/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
@@ -980,13 +951,8 @@ FINAL;
               <li><a href="../indicadores-matamoros/seguridad-robos-a-casa-habitacion.html" target="_blank">Robos a Casa Habitación</a></li>
               <li><a href="../indicadores-matamoros/seguridad-robos-totales.html" target="_blank">Robos Totales</a></li>
               <li><a href="../indicadores-matamoros/seguridad-secuestros.html" target="_blank">Secuestros</a></li>
-              <li><a href="../indicadores-matamoros/seguridad-tasa-de-extorsion.html" target="_blank">Tasa de Extorsión</a></li>
-              <li><a href="../indicadores-matamoros/seguridad-tasa-de-homicidio-doloso.html" target="_blank">Tasa de Homicidio Doloso</a></li>
               <li><a href="../indicadores-matamoros/seguridad-tasa-de-homicidios.html" target="_blank">Tasa de Homicidios</a></li>
-              <li><a href="../indicadores-matamoros/seguridad-tasa-de-robo-de-vehiculo-con-violencia.html" target="_blank">Tasa de Robo de Vehículo con Violencia</a></li>
               <li><a href="../indicadores-matamoros/seguridad-tasa-de-robo-de-vehiculos.html" target="_blank">Tasa de Robo de VehÍculos</a></li>
-              <li><a href="../indicadores-matamoros/seguridad-tasa-de-robo-de-vehiculo-sin-violencia.html" target="_blank">Tasa de Robo de Vehículo Sin Violencia</a></li>
-              <li><a href="../indicadores-matamoros/seguridad-tasa-de-secuestro.html" target="_blank">Tasa de Secuestro</a></li>
             </ul>
           </div>
           <div class="col-md-2 indicadores-vinculos">
@@ -1055,7 +1021,6 @@ FINAL;
               <li><a href="../indicadores-matamoros/sociedad-universidades-de-calidad.html" target="_blank">Universidades de Calidad</a></li>
               <li><a href="../indicadores-matamoros/sociedad-uso-de-servicios-financieros.html" target="_blank">Uso de Servicios Financieros</a></li>
               <li><a href="../indicadores-matamoros/sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion.html" target="_blank">Uso de Twitter como Proxy de Uso de Tecnologías de Información</a></li>
-              <li><a href="../indicadores-matamoros/sociedad-usuarios-de-internet.html" target="_blank">Usuarios de Internet</a></li>
               <li><a href="../indicadores-matamoros/sociedad-visitas-a-museos-inah.html" target="_blank">Visitas a Museos INAH</a></li>
               <li><a href="../indicadores-matamoros/sociedad-viviendas-con-agua-de-la-red-publica.html" target="_blank">Viviendas con Agua de la Red Pública</a></li>
               <li><a href="../indicadores-matamoros/sociedad-viviendas-con-computadora.html" target="_blank">Viviendas con Computadora</a></li>
@@ -1083,8 +1048,6 @@ FINAL;
               <li><a href="../indicadores-matamoros/sustentabilidad-consumo-de-diesel-en-transporte-de-bienes.html" target="_blank">Consumo de Diesel en Transporte de Bienes</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-densidad-media-urbana.html" target="_blank">Densidad Media Urbana</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-desastres-naturales.html" target="_blank">Desastres Naturales</a></li>
-              <li><a href="../indicadores-matamoros/sustentabilidad-destinos-via-aerea.html" target="_blank">Destinos Vía Aérea</a></li>
-              <li><a href="../indicadores-matamoros/sustentabilidad-destinos-via-terrestre.html" target="_blank">Destinos Vía Terrestre</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-disponibilidad-de-banqueta.html" target="_blank">Disponibilidad de Banqueta</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-disposicion-adecuada-de-residuos-solidos.html" target="_blank">Disposición Adecuada de Residuos Sólidos</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-economia-intensiva-en-energia.html" target="_blank">Economía Intensiva en Energía</a></li>
@@ -1095,7 +1058,6 @@ FINAL;
               <li><a href="../indicadores-matamoros/sustentabilidad-indice-de-gestion-de-calidad-del-aire.html" target="_blank">Índice de Gestión de Calidad del Aire</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-lineas-de-autobus.html" target="_blank">Líneas de Autobús</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-motorizacion.html" target="_blank">Motorización</a></li>
-              <li><a href="../indicadores-matamoros/sustentabilidad-pasajeros-aereos-internacionales-anuales.html" target="_blank">Pasajeros Aéreos Internacionales Anuales</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-peatones.html" target="_blank">Peatones</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-poblacion-que-trabaja-en-otro-municipio.html" target="_blank">Población que Trabaja en OTRO Municipio</a></li>
               <li><a href="../indicadores-matamoros/sustentabilidad-poblacion-que-trabaja-en-su-propio-municipio.html" target="_blank">Población que Trabaja en su PROPIO Municipio</a></li>
@@ -1236,13 +1198,8 @@ FINAL;
               <li><a href="../indicadores-la-laguna/seguridad-robos-a-casa-habitacion.html" target="_blank">Robos a Casa Habitación</a></li>
               <li><a href="../indicadores-la-laguna/seguridad-robos-totales.html" target="_blank">Robos Totales</a></li>
               <li><a href="../indicadores-la-laguna/seguridad-secuestros.html" target="_blank">Secuestros</a></li>
-              <li><a href="../indicadores-la-laguna/seguridad-tasa-de-extorsion.html" target="_blank">Tasa de Extorsión</a></li>
-              <li><a href="../indicadores-la-laguna/seguridad-tasa-de-homicidio-doloso.html" target="_blank">Tasa de Homicidio Doloso</a></li>
               <li><a href="../indicadores-la-laguna/seguridad-tasa-de-homicidios.html" target="_blank">Tasa de Homicidios</a></li>
-              <li><a href="../indicadores-la-laguna/seguridad-tasa-de-robo-de-vehiculo-con-violencia.html" target="_blank">Tasa de Robo de Vehículo con Violencia</a></li>
               <li><a href="../indicadores-la-laguna/seguridad-tasa-de-robo-de-vehiculos.html" target="_blank">Tasa de Robo de VehÍculos</a></li>
-              <li><a href="../indicadores-la-laguna/seguridad-tasa-de-robo-de-vehiculo-sin-violencia.html" target="_blank">Tasa de Robo de Vehículo Sin Violencia</a></li>
-              <li><a href="../indicadores-la-laguna/seguridad-tasa-de-secuestro.html" target="_blank">Tasa de Secuestro</a></li>
             </ul>
           </div>
           <div class="col-md-2 indicadores-vinculos">
@@ -1302,7 +1259,6 @@ FINAL;
               <li><a href="../indicadores-la-laguna/sociedad-universidades-de-calidad.html" target="_blank">Universidades de Calidad</a></li>
               <li><a href="../indicadores-la-laguna/sociedad-uso-de-servicios-financieros.html" target="_blank">Uso de Servicios Financieros</a></li>
               <li><a href="../indicadores-la-laguna/sociedad-uso-de-twitter-como-proxy-de-uso-de-tecnologias-de-informacion.html" target="_blank">Uso de Twitter como Proxy de Uso de Tecnologías de Información</a></li>
-              <li><a href="../indicadores-la-laguna/sociedad-usuarios-de-internet.html" target="_blank">Usuarios de Internet</a></li>
               <li><a href="../indicadores-la-laguna/sociedad-visitas-a-museos-inah.html" target="_blank">Visitas a Museos INAH</a></li>
               <li><a href="../indicadores-la-laguna/sociedad-viviendas-con-agua-de-la-red-publica.html" target="_blank">Viviendas con Agua de la Red Pública</a></li>
               <li><a href="../indicadores-la-laguna/sociedad-viviendas-con-computadora.html" target="_blank">Viviendas con Computadora</a></li>

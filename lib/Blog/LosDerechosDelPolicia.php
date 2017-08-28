@@ -42,13 +42,8 @@ class LosDerechosDelPolicia extends \Base\PublicacionSchemaBlogPosting {
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'Las condiciones laborales del policía pueden ser un factor que obstaculice la buena marcha de la seguridad ciudadana.';
         $this->claves                     = 'IMPLAN, Torreon';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Análisis Publicados';
-        // Se define una ruta a una archivo markdown para que cuando se ejecute el método HTML se cargue
+        // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/LosDerechosDelPolicia.md';
-        // Banderas
-        $this->poner_imagen_en_contenido  = TRUE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Delincuencia', 'Seguridad');
         $this->fuentes                    = array();

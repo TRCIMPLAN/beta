@@ -40,10 +40,12 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
   <meta name="twitter:title" content="Tasa de Homicidios en La Laguna - IMPLAN Torreón">
   <meta name="twitter:description" content="Forma parte de subíndice de 'Sistema de Derecho Confiable y Objetivo'. Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.
 Las tasas de elaboración propia consideran las defunciones por homicidio ocurridas en el municipio de acuerdo a los registros administrativos de INEGI.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/seguridad-tasa-de-homicidios.html">
   <meta name="og:title" content="Tasa de Homicidios en La Laguna - IMPLAN Torreón">
   <meta name="og:description" content="Forma parte de subíndice de 'Sistema de Derecho Confiable y Objetivo'. Mide el número relativo de homicidios en cada ciudad. A través del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) fue posible identificar el número de homicidios a nivel municipal. Unidades: Homicidios por cada 100 mil habitantes.
 Las tasas de elaboración propia consideran las defunciones por homicidio ocurridas en el municipio de acuerdo a los registros administrativos de INEGI.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/indicadores-la-laguna/seguridad-tasa-de-homicidios.html">
   <title>Tasa de Homicidios en La Laguna - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -192,6 +194,7 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
   <ul class="nav nav-tabs lenguetas" role="tablist" id="LenguetasIndicador">
     <li role="presentation" class="active"><a href="#LenguetasIndicadorDatos" aria-controls="LenguetasIndicadorDatos" role="tab" data-toggle="tab">Datos</a></li>
     <li role="presentation"><a href="#LenguetasIndicadorGrafica" aria-controls="LenguetasIndicadorGrafica" role="tab" data-toggle="tab">Gráfica</a></li>
+    <li role="presentation"><a href="#LenguetasIndicadorOtrasRegiones" aria-controls="LenguetasIndicadorOtrasRegiones" role="tab" data-toggle="tab">Otras regiones</a></li>
   </ul>
   <div class="tab-content lengueta-contenido">
   <div role="tabpanel" class="tab-pane active" id="LenguetasIndicadorDatos">
@@ -242,6 +245,58 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
     <h3>Tasa de Homicidios en La Laguna </h3>
 
     <div id="SmiGraficasTasaDeHomicidiosEnLaLaguna" class="grafica"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="LenguetasIndicadorOtrasRegiones">
+    <h3>Últimos datos de Tasa de Homicidios en La Laguna</h3>
+    <div id="SmiOtrasRegionesTasaDeHomicidiosEnLaLagunaGrafica" class="grafica"></div>
+  <table id="SmiOtrasRegionesTasaDeHomicidiosEnLaLagunaTabla" class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Fecha</th>
+        <th>Dato</th>
+        <th>Fuente</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Torreón</td>
+        <td>2012-12-31</td>
+        <td>109.7160</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Gómez Palacio</td>
+        <td>2012-12-31</td>
+        <td>43.7146</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Lerdo</td>
+        <td>2012-12-31</td>
+        <td>41.8962</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>Matamoros</td>
+        <td>2012-12-31</td>
+        <td>36.2831</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+      <tr>
+        <td>La Laguna</td>
+        <td>2012-12-31</td>
+        <td>77.5463</td>
+        <td>IMCO</td>
+        <td class="nd">N/D</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   </div>
 </div>
@@ -295,6 +350,19 @@ Las tasas de elaboración propia consideran las defunciones por homicidio ocurri
       lineColors: ['#FF5B02'],
       xLabelFormat: function(d) { return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear(); },
       dateFormat: function(ts) { var d = new Date(ts); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); }
+    });
+  }
+  })
+  // LenguetaWeb LenguetasIndicadorOtrasRegiones ejecuta lo siguiente al mostrar
+  $('#LenguetasIndicador a[href="#LenguetasIndicadorOtrasRegiones"]').on('shown.bs.tab', function(e){
+  if (typeof varSmiOtrasRegionesTasaDeHomicidiosEnLaLagunaGrafica === 'undefined') {
+    varSmiOtrasRegionesTasaDeHomicidiosEnLaLagunaGrafica = Morris.Bar({
+      element: 'SmiOtrasRegionesTasaDeHomicidiosEnLaLagunaGrafica',
+      data: [{ region: 'Torreón', dato: 109.7160 },{ region: 'Gómez Palacio', dato: 43.7146 },{ region: 'Lerdo', dato: 41.8962 },{ region: 'Matamoros', dato: 36.2831 },{ region: 'La Laguna', dato: 77.5463 }],
+      xkey: 'region',
+      ykeys: ['dato'],
+      labels: ['Dato'],
+      barColors: ['#FF5B02']
     });
   }
   })

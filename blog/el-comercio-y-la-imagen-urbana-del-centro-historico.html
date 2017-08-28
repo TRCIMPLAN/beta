@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<!-- ===================================================================================================
+
+        Instituto Municipal de Planeación y Competitividad (IMPLAN) de Torreón.
+
+        3er. generación de la Plataforma del Conocimiento
+        Desarrollado por Ing. Guillermo Valdés Lozano <guivaloz en movimientolibre.com>
+
+        El software que lo construye está bajo la licencia GPL versión 3. © 2014, 2015, 2016, 2017.
+        Una copia está contenida en el archivo LICENCE al bajar desde GitHub.
+
+        Al usar, estudiar y copiar está aceptando los términos de uso de la información y del sitio web:
+          http://www.trcimplan.gob.mx/terminos/terminos-informacion.html
+          http://www.trcimplan.gob.mx/terminos/terminos-sitio.html
+
+        Descargue, estudie y colabore bajando todo este sitio web:
+          IMPLAN Torreón     https://github.com/TRCIMPLAN/trcimplan.github.io
+
+        Agradecemos y compartimos las tecnologías abiertas y gratuitas sobre las que se basa:
+          PHP                http://php.net
+          Twitter Bootstrap  http://getbootstrap.com
+          StartBootStrap     http://startbootstrap.com
+          Morris.js          https://morrisjs.github.io/morris.js/
+          Font Awesome       http://fontawesome.io
+          DataTables         https://www.datatables.net
+          Carto              https://carto.com
+          GitHub             https://github.com
+
+     =================================================================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En el Centro Histórico el comercio es el protagonista principal de la imagen urbana, misma que en muchos de los casos  genera una contaminación visual, luciendo excesivos anuncios publicitarios, sin orden y uniformidad.">
+  <meta name="author" content="Arq. Julio Alexis Magaña Cisneros">
+  <meta name="keywords" content="IMPLAN, Torreon, ">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="El comercio y la imagen urbana del Centro Histórico - IMPLAN Torreón">
+  <meta name="twitter:description" content="En el Centro Histórico el comercio es el protagonista principal de la imagen urbana, misma que en muchos de los casos  genera una contaminación visual, luciendo excesivos anuncios publicitarios, sin orden y uniformidad.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/blog/el-comercio-y-la-imagen-urbana-del-centro-historico/imagen-previa.jpg">
+  <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/blog/el-comercio-y-la-imagen-urbana-del-centro-historico.html">
+  <meta name="og:title" content="El comercio y la imagen urbana del Centro Histórico - IMPLAN Torreón">
+  <meta name="og:description" content="En el Centro Histórico el comercio es el protagonista principal de la imagen urbana, misma que en muchos de los casos  genera una contaminación visual, luciendo excesivos anuncios publicitarios, sin orden y uniformidad.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/blog/el-comercio-y-la-imagen-urbana-del-centro-historico/imagen-previa.jpg">
+  <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/blog/el-comercio-y-la-imagen-urbana-del-centro-historico.html">
+  <title>El comercio y la imagen urbana del Centro Histórico - IMPLAN Torreón</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="../imagenes/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="icon" href="../imagenes/icon-hires.png" sizes="192x192">
+  <link rel="icon" href="../imagenes/icon-normal.png" sizes="128x128">
+  <link rel="alternate" type="application/rss+xml" href="../rss.xml" title="IMPLAN Torreón">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/metisMenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/datatables-plugins/dataTables.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/morrisjs/morris.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/sb-admin-2.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/plataforma-de-conocimiento.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed:400,700">
+  <link rel="stylesheet" type="text/css" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/trcimplan.css">
+  <!-- SOPORTE PARA IE -->
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../imagenes/implan-barra-logo-chico-gris.png" alt="IMPLAN Torreón"></a>
+    </div>
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search">
+          <form method="get" id="searchbox_015475140351266618625:04hulmghdys" action="http://www.trcimplan.gob.mx/buscador-resultados.html">
+            <input type="hidden" value="015475140351266618625:04hulmghdys" name="cx">
+            <input type="hidden" value="FORID:11" name="cof">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Buscar..." value="" name="s" id="s">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="active"><a href="../blog/index.html"><span class="navegacion-icono"><i class="fa fa-lightbulb-o"></i></span> Análisis Publicados</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-area-chart"></i></span> Indicadores<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../smi/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al SMI</a></li>
+            <li><a href="../indicadores-categorias/index.html"><span class="navegacion-icono"><i class="fa fa-th-list"></i></span> Indicadores por Categoría</a></li>
+            <li><a href="../smi/por-region.html"><span class="navegacion-icono"><i class="fa fa-table"></i></span> Indicadores por Región</a></li>
+            <li><a href="../smi-georreferenciados/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Georreferenciados</a></li>
+            <li><a href="../smi/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-puzzle-piece"></i></span> Indicadores Básicos de Colonias<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../ibc/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al IBC</a></li>
+            <li><a href="../ibc-colonias-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Colonias de Torreón</a></li>
+            <li><a href="../ibc/catalogo-conceptos.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Catálogo de Conceptos</a></li>
+            <li><a href="../ibc/datos-abiertos.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Datos Abiertos</a></li>
+            <li><a href="https://guivaloz.carto.com/viz/f0e6db7c-ac40-11e6-9146-0e3a376473ab/embed_map" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Mapa Completo</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Información Geográfica<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../sig/introduccion.html"><span class="navegacion-icono"><i class="fa fa-file-text-o"></i></span> Introducción al SIG</a></li>
+            <li><a href="../sig-planes/index.html"><span class="navegacion-icono"><i class="fa fa-file-pdf-o"></i></span> Planes</a></li>
+            <li><a href="../sig-mapas-torreon/index.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Mapas de Torreón</a></li>
+            <li><a href="../sig-mapas-torreon/zonificacion-secundaria.html"><span class="navegacion-icono"><i class="fa fa-map-marker"></i></span> Zonificación Secundaria</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-book"></i></span> Plan Estratégico Torreón 2040<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../pet/indice.html"><span class="navegacion-icono"><i class="fa fa-list-ul"></i></span> Índice General</a></li>
+            <li><a href="../pet/index.html"><span class="navegacion-icono"><i class="fa fa-font"></i></span> Índice Alfabético</a></li>
+            <li><a href="../plan-estrategico-torreon-enfoque-metropolitano-2040/index.html"><span class="navegacion-icono"><i class="fa fa-download"></i></span> Descargar</a></li>
+            <li><a href="https://docs.google.com/document/d/1V4nwGxAd8umhGQDuWCOAJD7pVu-ghVGqcIrJ1xNU5wM/edit?usp=sharing" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentar</a></li>
+            <li><a href="../plan-estrategico-metropolitano/descripcion-del-proceso.html"><span class="navegacion-icono"><i class="fa fa-calendar"></i></span> Descripción del proceso</a></li>
+            <li><a href="../proyectos/index.html"><span class="navegacion-icono"><i class="fa fa-check-square"></i></span> Proyectos</a></li>
+          </ul>
+        </li>
+        <li><a href="../investigaciones/index.html"><span class="navegacion-icono"><i class="fa fa-briefcase"></i></span> Investigaciones</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-building-o"></i></span> Institucional<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../institucional/vision-mision.html"><span class="navegacion-icono"><i class="fa fa-trophy"></i></span> Visión / Misión</a></li>
+            <li><a href="../institucional/mensaje-director.html"><span class="navegacion-icono"><i class="fa fa-comment"></i></span> Mensaje del Director</a></li>
+            <li><a href="../autores/index.html"><span class="navegacion-icono"><i class="fa fa-user"></i></span> Quienes Somos</a></li>
+            <li><a href="../institucional/estructura-organica.html"><span class="navegacion-icono"><i class="fa fa-sitemap"></i></span> Estructura Orgánica</a></li>
+            <li><a href="../institucional/modelo-operativo-universal.html"><span class="navegacion-icono"><i class="fa fa-slideshare"></i></span> Modelo Operativo Univ.</a></li>
+            <li><a href="../institucional/reglamentos.html"><span class="navegacion-icono"><i class="fa fa-gavel"></i></span> Reglamentos</a></li>
+            <li><a href="http://www.icai.org.mx:8282/ipo/dependencia.php?dep=178" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Transparencia</a></li>
+          </ul>
+        </li>
+        <li><a href="../consejo-directivo/integrantes.html"><span class="navegacion-icono"><i class="fa fa-users"></i></span> Consejo Directivo</a></li>
+        <li><a href="../sala-prensa/index.html"><span class="navegacion-icono"><i class="fa fa-newspaper-o"></i></span> Sala de Prensa</a></li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-share-alt"></i></span> Términos de Uso<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../terminos/terminos-informacion.html"><span class="navegacion-icono"><i class="fa fa-cubes"></i></span> De la información</a></li>
+            <li><a href="../terminos/terminos-sitio.html"><span class="navegacion-icono"><i class="fa fa-globe"></i></span> Del sitio web</a></li>
+            <li><a href="../terminos/privacidad.html"><span class="navegacion-icono"><i class="fa fa-lock"></i></span> Aviso de Privacidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Contacto<span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="../contacto/contacto.html"><span class="navegacion-icono"><i class="fa fa-phone"></i></span> Medios de contacto</a></li>
+            <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html"><span class="navegacion-icono"><i class="fa fa-question"></i></span> Preguntas Frecuentes</a></li>
+            <li><a href="http://goo.gl/forms/1rdX4X128PpMOif73" target="_blank"><span class="navegacion-icono"><i class="fa fa-external-link"></i></span> Comentarios y Sugerencias</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="cuerpo">
+      <article><div itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="encabezado">
+          <h1 itemprop="headline">El comercio y la imagen urbana del Centro Histórico</h1>
+          <div class="encabezado-descripcion" itemprop="description">En el Centro Histórico el comercio es el protagonista principal de la imagen urbana, misma que en muchos de los casos  genera una contaminación visual, luciendo excesivos anuncios publicitarios, sin orden y uniformidad.</div>
+          <div class="encabezado-autor-fecha">
+            Por <span itemprop="author">Arq. Julio Alexis Magaña Cisneros</span> -
+            <meta itemprop="datePublished" content="2017-08-08T05:00">08/08/2017 05:00
+          </div>
+        </div>
+        <div itemprop="articleBody">
+<!-- Contenido: Inicia  -->
+<p>El polígono del <strong>Centro Histórico de Torreón</strong> está conformado por <strong>241 manzanas,</strong> delimitado al norte por Bulevar Constitución, al sur por calles y avenidas de las primeras manzanas después del Blvd. Revolución, al este por la privada García Carrillo y al oeste  por las Calles Torreón Viejo y 5 de mayo.</p>
+
+<p>Es un área que cuenta con una alta actividad comercial que viene desde antes que la ciudad fuera fundada, la cultura comercial está arraigada desde los orígenes de la región lagunera.</p>
+
+<p><strong>El número de unidades económicas que existe actualmente en Torreón es de 28,272 de las que 4,634 se encuentran en el Centro Histórico, de estas 544 son establecimientos de alojamiento temporal.</strong> Esto hace al comercio el uso de suelo predominante en el C.H. y un fuerte elemento en la imagen urbana del mismo.</p>
+
+<p><strong>La imagen urbana es el marco visual de la ciudad y está conformado por los elementos naturales y artificiales que en ella existen. En el Centro Histórico el comercio es el protagonista principal de la imagen urbana, misma que en muchos de los casos  genera una contaminación visual, luciendo excesivos anuncios publicitarios, sin orden y uniformidad.</strong></p>
+
+<p>La ciudad cuenta con el <strong>Reglamento de Anuncios Para el Municipio de Torreón, Coahuila,</strong> de la administración 2006-2009, cuyo objetivo principal es el de regular la fijación, colocación, ubicación, instalación, modificación, retiro y distribución de toda clase de anuncios. Así como de prevenir daños a la integridad de las personas y el patrimonio histórico y cultural, que se vea afectado por los mismos.</p>
+
+<p><strong>En este se establece que el anunciante deberá cumplir con un registro y autorización previa de la administración municipal, con el fin de que se otorgue la Licencia para el anuncio.</strong> También hace una clasificación de los anuncios y las especificaciones de los mismos, diferenciados por: permanencia, contenido, instalación, los materiales empleados, el lugar de su ubicación específica y su tamaño.</p>
+
+<p>En el Capítulo V de este reglamento se establecen los artículos en cuanto a los anuncios en el Centro Histórico. Se especifica que deberán respetar la homogeneidad y armonía de los inmuebles en los que se coloquen. Prohíbe los anuncios sobre tejados, azoteas, cornisas y balcones, banquetas, árboles o cualquier otro elemento del mobiliario urbano así como aquellos que provoquen contaminación auditiva o visual y deterioren la imagen urbana, incluyendo la publicidad y la propaganda.</p>
+
+<p><strong>Los lineamientos son:</strong></p>
+
+<ul>
+<li>Los textos de anuncios o letreros, deben limitarse a mencionar únicamente la naturaleza o giro de establecimiento, el nombre o razón social y un logotipo.</li>
+<li>La tipografía debe ser sencilla, de fácil lectura y no se usaran palabras en idioma extranjero, a menos que se refiera al propio nombre comercial de la negociación.</li>
+</ul>
+
+<p><strong>En cuanto a la colocación de los anuncios:</strong></p>
+
+<ul>
+<li>En locales comerciales o de servicios, solo se permitirá la colocación de un letrero, que deberá estar bajo el dintel de los vanos de la planta baja, ocupando como máximo, la quinta parte de la altura.</li>
+<li>No estarán adosados o pintados en los macizos de la fachada</li>
+<li>Los colores deben armonizar con los de la fachada del inmueble.</li>
+<li>Para los anuncios que no armonicen con el diseño y la tipografía en general, de acuerdo a dictamen técnico se deberán adecuar o ser retirados por sus propietarios o en su lugar por la autoridad.</li>
+</ul>
+
+<p><strong>Para los anuncios colocados sin previa obtención de la Licencia se especifica que el propietario del anuncio será notificado para demoler y/o retirar el anuncio dentro de quince días naturales después de la notificación,</strong> que de no hacerse, se procederá inmediatamente y el anunciante se hará acreedor a una sanción de entre 30 y 300 salarios mínimos.</p>
+
+<p>La verificación y aplicación del reglamento mencionado en el sector del Centro Histórico, haría una notable mejora en la imagen urbana del mismo, permitiendo que exista una homogeneidad en la publicidad de los comercios y armonía de los anuncios con los edificios, disminuyendo también la contaminación visual y sin ser invasivo con su marco visual.</p>
+
+<p><img class="img-responsive" src="el-comercio-y-la-imagen-urbana-del-centro-historico/anuncios-en-edificio-del-centro-historico.jpg" alt="Anuncios en el Centro Histórico de Torreón"></p>
+
+<!-- Contenido: Termina -->
+        </div>
+              <div class="publicador" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+          <span class="contenido-imagen-previa"><img class="img-responsive" itemprop="image" alt="Instituto Municipal de Planeación y Competitividad de Torreón" src="../imagenes/implan-logo.png"></span>
+          <h3 class="titulo" itemprop="name">Instituto Municipal de Planeación y Competitividad de Torreón</h3>
+          <div class="descripcion" itemprop="description">Órgano técnico responsable de la planeación del desarrollo del municipio de Torreón, Coahuila, México.</div>
+          <div class="contenido-imagen-previa-final"></div>
+        </div>
+      </div></article>
+    </div>
+    <div class="mapa-inferior">
+          <div class="pull-right redes-sociales">
+            <a class="fa fa-twitter-square" href="http://www.twitter.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-facebook-square" href="https://facebook.com/trcimplan" target="_blank"></a>
+            <a class="fa fa-google-plus-square" href="https://plus.google.com/106220426241750550649" target="_blank"></a>
+            <a class="fa fa-github-square" href="https://github.com/TRCIMPLAN" target="_blank"></a>
+            <a class="fa fa-rss-square" href="../rss.xml"></a>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Javascript global inicia -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/metisMenu/metisMenu.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+<script type="text/javascript" src="../vendor/raphael/raphael.min.js"></script>
+<script type="text/javascript" src="../vendor/morrisjs/morris.min.js"></script>
+<script type="text/javascript" src="../dist/js/sb-admin-2.min.js"></script>
+<script type="text/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Javascript global termina -->
+<!-- Javascript inicia -->
+<!-- Javascript termina -->
+</body>
+</html>

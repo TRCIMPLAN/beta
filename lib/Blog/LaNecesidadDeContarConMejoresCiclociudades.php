@@ -42,13 +42,8 @@ class LaNecesidadDeContarConMejoresCiclociudades extends \Base\PublicacionSchema
         // La descripción y claves dan información a los buscadores y redes sociales
         $this->descripcion                = 'En el 2015 La Laguna se posicionó en el lugar 7 de 30 entidades evaluadas en el ranking de ciclociudades, sin embargo su infraestructura ciclista aún es escasa. Se calcula que sólo 2% de los viajes se realizan en bicicleta.';
         $this->claves                     = 'IMPLAN, Torreon, Transporte, Bicicleta';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Análisis Publicados';
-        // Se define una ruta a una archivo markdown para que cuando se ejecute el método HTML se cargue
+        // Ruta al archivo markdown con el contenido
         $this->contenido_archivo_markdown = 'lib/Blog/LaNecesidadDeContarConMejoresCiclociudades.md';
-        // Banderas
-        $this->poner_imagen_en_contenido  = TRUE;
-        $this->para_compartir             = TRUE;
         // Para el Organizador
         $this->categorias                 = array('Movilidad');
         $this->fuentes                    = array('Instituto de Políticas para el Transporte y el Desarrollo (ITDP)');

@@ -33,14 +33,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Introducción a los Indicadores Básicos por Colonias del IMPLAN Torreón.">
-  <meta name="author" content="Dirección de Investigación Estratégica">
+  <meta name="author" content="TrcIMPLAN Staff">
   <meta name="keywords" content="IMPLAN, Torreon, Indicadores, Basicos, Colonias">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Introducción a los Indicadores Básicos por Colonias - IMPLAN Torreón">
   <meta name="twitter:description" content="Introducción a los Indicadores Básicos por Colonias del IMPLAN Torreón.">
+  <meta name="twitter:image" content="http://www.trcimplan.gob.mx/beta/ibc/../imagenes/imagen-previa.jpg">
   <meta name="twitter:url" content="http://www.trcimplan.gob.mx/beta/ibc/introduccion.html">
   <meta name="og:title" content="Introducción a los Indicadores Básicos por Colonias - IMPLAN Torreón">
   <meta name="og:description" content="Introducción a los Indicadores Básicos por Colonias del IMPLAN Torreón.">
+  <meta name="og:image" content="http://www.trcimplan.gob.mx/beta/ibc/../imagenes/imagen-previa.jpg">
   <meta name="og:url" content="http://www.trcimplan.gob.mx/beta/ibc/introduccion.html">
   <title>Introducción a los Indicadores Básicos por Colonias - IMPLAN Torreón</title>
   <link rel="shortcut icon" type="image/x-icon" href="../imagenes/apple-touch-icon.png">
@@ -178,11 +180,36 @@
           <h1 itemprop="headline">Introducción a los Indicadores Básicos por Colonias</h1>
           <div class="encabezado-descripcion" itemprop="description">Introducción a los Indicadores Básicos por Colonias del IMPLAN Torreón.</div>
           <div class="encabezado-autor-fecha">
+            Por <span itemprop="author">TrcIMPLAN Staff</span> -
             <meta itemprop="datePublished" content="2017-06-01T08:00">01/06/2017 08:00
           </div>
         </div>
         <div itemprop="articleBody">
 <!-- Contenido: Inicia  -->
+<!-- Archivo /lib/IBC/IntroduccionPresentacion.html inicia -->
+<h3>Presentación</h3>
+<div id="presentacion-ibc" style="position: relative; top: 0px; left: 0px; width: 800px; height: 500px;">
+  <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 500px; overflow: hidden;">
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-02.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-03.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-04.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-05.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-06.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-07.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-08.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-09.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-10.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-11.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-12.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-13.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-14.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-15.jpg"></div>
+    <div><img u="image" src="introduccion/presentacion-ibc-2017-05-27-16.jpg"></div>
+  </div>
+  <a style="display: none" href="http://www.jssor.com">Image Slider</a>
+</div>
+<p><b>Instrucciones:</b> Cada 12 segundos cambia la imagen. Puede arrastrar a la izquierda para avanzar y a la derecha para retroceder.</p>
+<!-- Archivo /lib/IBC/IntroduccionPresentacion.html termina -->
 <h3>Antecedentes</h3>
 
 <p><strong>Es la colonia la forma más común en que nos referimos a un lugar de nuestra ciudad.</strong> Pero hay escasa y contradictoria información sobre la exactitud de sus límites.</p>
@@ -320,6 +347,33 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!-- Javascript global termina -->
 <!-- Javascript inicia -->
+<script type="text/javascript" src="../vendor/jssor/jssor.slider.min.js"></script>
+<script>
+  // Photo Slider Presentacion IBC inicia
+  jQuery(document).ready(function ($) {
+    var options = {
+        $AutoPlay: true,
+        $ChanceToShow: 5,
+        $DragOrientation: 1,
+        $AutoPlayInterval: 12000
+    };
+    var jssor_slider1 = new $JssorSlider$("presentacion-ibc", options);
+    function ScaleSlider() {
+        var parentWidth = $('#presentacion-ibc').parent().width();
+        if (parentWidth) {
+            jssor_slider1.$ScaleWidth(parentWidth);
+        }
+        else
+            window.setTimeout(ScaleSlider, 30);
+    }
+    ScaleSlider();
+    $(window).bind("load", ScaleSlider);
+    $(window).bind("resize", ScaleSlider);
+    $(window).bind("orientationchange", ScaleSlider);
+  });
+  // Photo Slider Presentacion IBC termina
+</script>
+
 <!-- Javascript termina -->
 </body>
 </html>

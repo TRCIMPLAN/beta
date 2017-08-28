@@ -34,19 +34,13 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
         // Ejecutar constructor en el padre
         parent::__construct();
         // Título, autor y fecha
-        $this->nombre                     = 'Primero de Mayo';
-        $this->autor                      = 'Dirección de Investigación Estratégica';
-        $this->fecha                      = '2017-05-29T20:31:44';
+        $this->nombre      = 'Primero de Mayo';
+        $this->fecha       = '2017-07-03T12:34:02';
         // El nombre del archivo a crear
-        $this->archivo                    = 'primero-de-mayo';
+        $this->archivo     = 'primero-de-mayo';
         // La descripción y claves dan información a los buscadores y redes sociales
-        $this->descripcion                = 'Colonia Primero de Mayo en Torreón, Coahuila de Zaragoza, México.';
-        $this->claves                     = 'IMPLAN, Torreon, Indicadores, Colonia, Primero de Mayo';
-        // Opción del menú Navegación a poner como activa cuando vea esta publicación
-        $this->nombre_menu                = 'Indicadores Básicos de Colonias > Colonias de Torreón';
-        // Banderas
-        $this->poner_imagen_en_contenido  = FALSE;
-        $this->para_compartir             = FALSE;
+        $this->descripcion = 'Colonia Primero de Mayo en Torreón, Coahuila de Zaragoza, México.';
+        $this->claves      = 'IMPLAN, Torreon, Indicadores, Colonia, Primero de Mayo';
     } // constructor
 
     /**
@@ -130,7 +124,17 @@ class PrimeroDeMayo extends \IBCBase\PublicacionWeb {
      * @return string
      */
     public function resena() {
-        return '';
+        return <<<FINAL
+### Historia
+
+La Colonia Primero de Mayo se fundó en 1938, por el profesor Manuel Mijares V. con los primero colonos ocupando el lugar, ayudando a su población la Sección 74 de Metalúrgicos.
+
+Para 1941, una vez desarrollada la colonia, se inauguró la Escuela Primero de Mayo, que en lo sucesivo llevó el nombre de "Emilio Carranza".
+
+### Fuentes
+
+* [Hemeroteca El Siglo de Torreón](http://h.elsiglodetorreon.com.mx/)
+FINAL;
     } // resena
 
 } // Clase PrimeroDeMayo

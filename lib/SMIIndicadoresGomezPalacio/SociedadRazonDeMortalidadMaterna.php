@@ -76,7 +76,12 @@ class SociedadRazonDeMortalidadMaterna extends \SMIBase\PublicacionWeb {
      * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones_estructura() {
-        return NULL;
+        return array(
+            'region_nombre' => array('enca' => 'Región', 'formato' => 'texto'),
+            'fecha' => array('enca' => 'Fecha', 'formato' => 'fecha'),
+            'valor' => array('enca' => 'Dato', 'formato' => 'decimal'),
+            'fuente_nombre' => array('enca' => 'Fuente', 'formato' => 'texto'),
+            'notas' => array('enca' => 'Notas', 'formato' => 'texto'));
     } // otras_regiones_estructura
 
     /**
@@ -85,7 +90,14 @@ class SociedadRazonDeMortalidadMaterna extends \SMIBase\PublicacionWeb {
      * @return array Arreglo con arreglos asociativos
      */
     public function otras_regiones() {
-        return NULL;
+        return array(
+            array('region_nombre' => 'Torreón', 'fecha' => '2013-12-31', 'valor' => '33.0000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Gómez Palacio', 'fecha' => '2013-12-31', 'valor' => '33.3000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Lerdo', 'fecha' => '2011-12-31', 'valor' => '55.3000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Matamoros', 'fecha' => '2013-12-31', 'valor' => '62.7000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Coahuila', 'fecha' => '2013-12-31', 'valor' => '26.9000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Durango', 'fecha' => '2013-12-31', 'valor' => '43.6000', 'fuente_nombre' => 'SINAIS (SSA)'),
+            array('region_nombre' => 'Nacional', 'fecha' => '2013-12-31', 'valor' => '39.2000', 'fuente_nombre' => 'SINAIS (SSA)'));
     } // otras_regiones
 
     /**
@@ -104,7 +116,7 @@ class SociedadRazonDeMortalidadMaterna extends \SMIBase\PublicacionWeb {
      */
     public function observaciones() {
         return <<<OBSERVACIONES_FINAL
-Utilizado como uno de los indicadores para los Objetivos del Milenio (Mejorar la Salud Materna). Dirección General de Información en Salud (DGIS). Base de datos de muertes maternas, 2013. [en línea]: Sistema Nacional de Información en Salud (SINAIS). [México]: Secretaría de Salud. [Consulta: 13 de enero 2015].
+Utilizado como uno de los indicadores para los Objetivos del Milenio (Mejorar la Salud Materna). Dirección General de Información en Salud (DGIS). Base de datos de muertes maternas, 2013. Sistema Nacional de Información en Salud (SINAIS). Secretaría de Salud. Consulta: 13 de enero 2015.
 OBSERVACIONES_FINAL;
     } // observaciones
 
